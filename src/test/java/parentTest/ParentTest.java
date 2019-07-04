@@ -7,6 +7,7 @@ import org.junit.Before;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import pages.DashboardPage;
+import pages.EldPage;
 import pages.LoginPage;
 
 import java.io.File;
@@ -17,6 +18,7 @@ public class ParentTest {
     Logger logger = Logger.getLogger(getClass());
     protected LoginPage loginPage;
     protected DashboardPage dashboardPage;
+    protected EldPage eldPage;
 
 
     @Before
@@ -28,6 +30,8 @@ public class ParentTest {
         webDriver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
         loginPage = new LoginPage(webDriver);
         dashboardPage = new DashboardPage(webDriver);
+        eldPage = new EldPage(webDriver);
+
 
     }
     @After
