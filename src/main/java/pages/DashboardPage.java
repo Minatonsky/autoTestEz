@@ -11,7 +11,7 @@ public class DashboardPage extends ParentPage {
     @FindBy(xpath = ".//*[@class=\"stub\"]")
     private WebElement menuDash;
 
-    @FindBy(xpath = ".//li[@class=\"nav_icon nav_eld nav_top active_nav\"]//a[@class=\"dash_url_button\"]")
+    @FindBy(xpath = ".//div[@class=\"dash_nav\"]//a[@href=\"/dash/eld/\"]")
     private WebElement menuPageELD;
 
     @FindBy(xpath = ".//button[@class='btn btn-primary']")
@@ -24,11 +24,10 @@ public class DashboardPage extends ParentPage {
         return actionsWithOurElements.isElementEnable(dashboard);
     }
 
-    public void clickOnMenuDash() {
-        actionsWithOurElements.clickOnElement(menuDash);
-    }
+    public void clickOnMenuDash() { actionsWithOurElements.clickOnElement(menuDash); }
 
     public void clickOnMenuPageELD(){
+
         actionsWithOurElements.clickOnElement(menuPageELD);
     }
 

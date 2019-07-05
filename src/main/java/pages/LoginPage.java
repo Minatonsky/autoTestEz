@@ -65,7 +65,6 @@ public class LoginPage extends ParentPage {
         clickOnSubmitButton();
 
         dashboardPage.isDashboardPresent();
-        //dashboardPage.checkCurrentUrl();
 
     }
 }
