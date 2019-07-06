@@ -6,6 +6,8 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import pages.DashboardPage;
 import pages.ModalEldPage;
 import pages.LoginPage;
@@ -19,13 +21,12 @@ public class ParentTest {
     protected LoginPage loginPage;
     protected DashboardPage dashboardPage;
     protected ModalEldPage modalEldPage;
+    String browser = System.getProperty("browser");
 
 
     @Before
     public void setUp() {
-        File file = new File("./src/drivers/chromedriver.exe");
-        System.setProperty("webdriver.chrome.driver", file.getAbsolutePath());
-        webDriver = new ChromeDriver();
+        initDriver(browser);
         webDriver.manage().window().maximize();
         webDriver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         loginPage = new LoginPage(webDriver);
@@ -34,6 +35,31 @@ public class ParentTest {
 
 
     }
+
+    private void initDriver(String browserName) {
+        if ( browserName == null || browserName.equals("chrome")) {
+            logger.info("Chrome will be started");
+            File file = new File("./src/drivers/chromedriver.exe");
+            System.setProperty("webdriver.chrome.driver", file.getAbsolutePath());
+            webDriver = new ChromeDriver();
+            logger.info("Chrome is started");
+        } else if ("fireFox".equals(browserName)){
+            logger.info("FireFox will be started");
+            File fileFF = new File("./src/drivers/geckodriver.exe");
+            System.setProperty("webdriver.gecko.driver", fileFF.getAbsolutePath());
+            FirefoxOptions profile = new FirefoxOptions();
+            profile.addPreference("browser.startup.page", 0); // Empty start page
+            profile.addPreference("browser.startup.homepage_override.mstone", "ignore"); // Suppress the "What's new" page
+            webDriver = new FirefoxDriver();
+            logger.info("FireFox is started");
+
+        }
+        else {
+            logger.error("Can`t init driver");
+            Assert.fail("Can`t init driver");
+        }
+    }
+
     @After
     public void tearDown(){ webDriver.quit();}
 
