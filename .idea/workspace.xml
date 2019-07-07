@@ -2,13 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="660eb711-957d-418e-9483-8b2931da6e6e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/drivers/geckodriver.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/libs/ConfigProperties.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/libs/ConfigProperties.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/libs/Utils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/data/testData.xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/data/testDataSuit.xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/libs/ConfigData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/libs/Database.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/libs/ExcelDriver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/libs/SpreadsheetData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/libs/UtilsForDB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/loginTests/LoginTestWithExel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/loginTests/unValidLoginWithParamsWithExcel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/testDB/TestDataBase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/ParentPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/ParentPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/libs/ActionsWithOurElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/libs/ActionsWithOurElements.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/libs/ConfigProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/libs/ConfigProperties.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/libs/ConfigProperties.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/libs/ConfigProperties.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/orders/NewEldOrderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/orders/NewEldOrderTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/parentTest/ParentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/parentTest/ParentTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -19,16 +28,46 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/parentTest/ParentTest.java">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="884">
-              <caret line="52" column="28" selection-start-line="52" selection-start-column="28" selection-end-line="52" selection-end-column="28" />
+            <state relative-caret-position="230">
+              <caret line="50" column="21" selection-start-line="50" selection-start-column="21" selection-end-line="50" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/libs/ConfigProperties.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="19" column="27" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/libs/UtilsForDB.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/libs/Database.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -37,10 +76,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pages/ParentPage.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/libs/ConfigData.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="20" column="46" selection-start-line="20" selection-start-column="46" selection-end-line="20" selection-end-column="46" />
+            <state relative-caret-position="68">
+              <caret line="4" column="7" lean-forward="true" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/testDB/TestDataBase.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -49,40 +100,13 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/libs/Utils.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/orders/NewEldOrderTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-153">
-              <caret line="45" column="32" lean-forward="true" selection-start-line="45" selection-start-column="32" selection-end-line="45" selection-end-column="32" />
+            <state relative-caret-position="401">
+              <caret line="37" column="10" selection-start-line="37" selection-start-column="10" selection-end-line="37" selection-end-column="10" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="314">
-              <caret line="39" selection-start-line="39" selection-end-line="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/libs/ConfigProperties.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-69">
-              <caret column="31" selection-start-column="31" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/libs/ConfigProperties.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -117,14 +141,21 @@
         <option value="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/pages/ModalEldPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/pages/DashboardPage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/libs/ActionsWithOurElements.java" />
-        <option value="$PROJECT_DIR$/src/test/java/orders/NewEldOrderTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/loginTests/unValidLoginWithParams.java" />
-        <option value="$PROJECT_DIR$/src/test/java/parentTest/ParentTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/libs/ConfigProperties.properties" />
         <option value="$PROJECT_DIR$/src/main/java/pages/ParentPage.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/libs/Utils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/libs/ExcelDriver.java" />
+        <option value="$PROJECT_DIR$/src/test/java/loginTests/LoginTestWithExell.java" />
+        <option value="$PROJECT_DIR$/src/test/java/parentTest/ParentTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/loginTests/LoginTestWithExel.java" />
+        <option value="$PROJECT_DIR$/src/test/java/loginTests/unValidLoginWithParamsWithExel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/libs/ConfigProperties.java" />
+        <option value="$PROJECT_DIR$/src/test/java/loginTests/unValidLoginWithParamsWithExcel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/libs/ActionsWithOurElements.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/testDB/TestDataBase.java" />
+        <option value="$PROJECT_DIR$/src/main/java/libs/ConfigProperties.properties" />
+        <option value="$PROJECT_DIR$/src/test/java/orders/NewEldOrderTest.java" />
       </list>
     </option>
   </component>
@@ -152,9 +183,9 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="69" />
-    <option name="y" value="11" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="1667" />
+    <option name="y" value="-22" />
     <option name="width" value="1212" />
     <option name="height" value="708" />
   </component>
@@ -182,6 +213,12 @@
               <item name="testdevEzlogz" type="b2602c69:ProjectViewProjectNode" />
               <item name="testdevEzlogz" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="drivers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="testdevEzlogz" type="b2602c69:ProjectViewProjectNode" />
+              <item name="testdevEzlogz" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -197,7 +234,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="libs" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="testdevEzlogz" type="b2602c69:ProjectViewProjectNode" />
@@ -235,8 +272,12 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\workspace\testdevEzlogz\src\drivers" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="loginTests" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\workspace\testdevEzlogz\src\main\java\libs" />
+      <recent name="C:\workspace\testdevEzlogz\src\main\java\data" />
       <recent name="C:\workspace\testdevEzlogz\src" />
     </key>
   </component>
@@ -252,8 +293,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.LoginTest. run with diff browser">
-    <configuration name="LoginTest. run with diff browser" type="JUnit" factoryName="JUnit" temporary="true">
+  <component name="RunManager" selected="JUnit.TestDataBase.testDataBase">
+    <configuration name="LoginTestWithExel.validLogin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="testdevEzlogz" />
       <extension name="coverage">
         <pattern>
@@ -262,16 +303,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="loginTests" />
-      <option name="MAIN_CLASS_NAME" value="loginTests.LoginTest" />
+      <option name="MAIN_CLASS_NAME" value="loginTests.LoginTestWithExel" />
       <option name="METHOD_NAME" value="validLogin" />
       <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea -Dbrowser=fireFox" />
-      <option name="PARAMETERS" value="" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginTest.validLogin run with diff browser" type="JUnit" factoryName="JUnit" temporary="true">
+    <configuration name="LoginTest. run with diff browser" type="JUnit" factoryName="JUnit" temporary="true">
       <module name="testdevEzlogz" />
       <extension name="coverage">
         <pattern>
@@ -305,23 +344,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NewEldOrderTest.addNewOrder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestDataBase.testDataBase" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="testdevEzlogz" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="orders.*" />
+          <option name="PATTERN" value="testDB.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="orders" />
-      <option name="MAIN_CLASS_NAME" value="orders.NewEldOrderTest" />
-      <option name="METHOD_NAME" value="addNewOrder" />
+      <option name="PACKAGE_NAME" value="testDB" />
+      <option name="MAIN_CLASS_NAME" value="testDB.TestDataBase" />
+      <option name="METHOD_NAME" value="testDataBase" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="unValidLoginWithParams.inValidLogIn" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="unValidLoginWithParamsWithExcel.inValidLogIn" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="testdevEzlogz" />
       <extension name="coverage">
         <pattern>
@@ -330,7 +369,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="loginTests" />
-      <option name="MAIN_CLASS_NAME" value="loginTests.unValidLoginWithParams" />
+      <option name="MAIN_CLASS_NAME" value="loginTests.unValidLoginWithParamsWithExcel" />
       <option name="METHOD_NAME" value="inValidLogIn" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -339,18 +378,18 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.LoginTest. run with diff browser" />
-      <item itemvalue="JUnit.NewEldOrderTest.addNewOrder" />
-      <item itemvalue="JUnit.unValidLoginWithParams.inValidLogIn" />
-      <item itemvalue="JUnit.LoginTest.validLogin run with diff browser" />
       <item itemvalue="JUnit.LoginTest.validLogin" />
+      <item itemvalue="JUnit.LoginTestWithExel.validLogin" />
+      <item itemvalue="JUnit.unValidLoginWithParamsWithExcel.inValidLogIn" />
+      <item itemvalue="JUnit.TestDataBase.testDataBase" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestDataBase.testDataBase" />
+        <item itemvalue="JUnit.unValidLoginWithParamsWithExcel.inValidLogIn" />
+        <item itemvalue="JUnit.LoginTestWithExel.validLogin" />
         <item itemvalue="JUnit.LoginTest. run with diff browser" />
         <item itemvalue="JUnit.LoginTest.validLogin" />
-        <item itemvalue="JUnit.LoginTest.validLogin run with diff browser" />
-        <item itemvalue="JUnit.unValidLoginWithParams.inValidLogIn" />
-        <item itemvalue="JUnit.NewEldOrderTest.addNewOrder" />
       </list>
     </recent_temporary>
   </component>
@@ -367,7 +406,7 @@
       <workItem from="1562184182834" duration="5914000" />
       <workItem from="1562217916564" duration="48523000" />
       <workItem from="1562306849625" duration="26488000" />
-      <workItem from="1562409011140" duration="7591000" />
+      <workItem from="1562409011140" duration="24585000" />
     </task>
     <task id="LOCAL-00001" summary="add xml">
       <created>1562227932890</created>
@@ -411,31 +450,17 @@
       <option name="project" value="LOCAL" />
       <updated>1562409190222</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="config properties and utils was add">
+      <created>1562416938705</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1562416938705</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="NewEldOrderTest_addNewOrder - 2019.07.05 at 17h 46m 09s.xml">
-      <configuration name="NewEldOrderTest.addNewOrder" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="NewEldOrderTest_addNewOrder - 2019.07.05 at 23h 27m 42s.xml">
-      <configuration name="NewEldOrderTest.addNewOrder" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="NewEldOrderTest_addNewOrder - 2019.07.05 at 23h 32m 12s.xml">
-      <configuration name="NewEldOrderTest.addNewOrder" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="unValidLoginWithParams_inValidLogIn - 2019.07.05 at 23h 58m 11s.xml">
-      <configuration name="unValidLoginWithParams.inValidLogIn" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LoginTest_validLogin - 2019.07.06 at 14h 02m 48s.xml">
-      <configuration name="LoginTest.validLogin" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LoginTest_validLogin - 2019.07.06 at 14h 05m 56s.xml">
-      <configuration name="LoginTest.validLogin" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LoginTest_validLogin - 2019.07.06 at 14h 42m 31s.xml">
-      <configuration name="LoginTest.validLogin" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="LoginTest_validLogin - 2019.07.06 at 14h 45m 02s.xml">
       <configuration name="LoginTest.validLogin" configurationId="JUnit" />
     </history-entry>
@@ -445,9 +470,30 @@
     <history-entry file="LoginTest__run_with_diff_browser - 2019.07.06 at 14h 48m 02s.xml">
       <configuration name="LoginTest. run with diff browser" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="LoginTestWithExel_validLogin - 2019.07.07 at 20h 00m 25s.xml">
+      <configuration name="LoginTestWithExel.validLogin" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="unValidLoginWithParamsWithExcel_inValidLogIn - 2019.07.07 at 20h 26m 22s.xml">
+      <configuration name="unValidLoginWithParamsWithExcel.inValidLogIn" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestDataBase_testDataBase - 2019.07.07 at 22h 58m 15s.xml">
+      <configuration name="TestDataBase.testDataBase" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestDataBase_testDataBase - 2019.07.07 at 23h 00m 52s.xml">
+      <configuration name="TestDataBase.testDataBase" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestDataBase_testDataBase - 2019.07.07 at 23h 06m 35s.xml">
+      <configuration name="TestDataBase.testDataBase" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestDataBase_testDataBase - 2019.07.07 at 23h 13m 27s.xml">
+      <configuration name="TestDataBase.testDataBase" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestDataBase_testDataBase - 2019.07.07 at 23h 45m 29s.xml">
+      <configuration name="TestDataBase.testDataBase" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="88516000" />
+    <option name="totallyTimeSpent" value="105510000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -459,10 +505,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="69" y="11" width="1212" height="708" extended-state="0" />
-    <editor active="true" />
+    <frame x="1358" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27864584" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17110874" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -471,24 +516,24 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.2826087" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3422222" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32993197" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.17857143" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="8" visible="true" weight="0.29333332" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.22258593" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.32312927" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32222223" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Database" order="4" />
       <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="right" id="Maven" order="6" weight="0.5373264" />
+      <window_info anchor="right" id="Maven" order="6" weight="0.537065" />
       <window_info anchor="right" id="Capture Analysis" order="7" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
     </layout>
@@ -502,7 +547,8 @@
     <MESSAGE value="new page\test was added" />
     <MESSAGE value="eld page/test was add" />
     <MESSAGE value="invalid login\pass test was add" />
-    <option name="LAST_COMMIT_MESSAGE" value="invalid login\pass test was add" />
+    <MESSAGE value="config properties and utils was add" />
+    <option name="LAST_COMMIT_MESSAGE" value="config properties and utils was add" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/test/java/loginTests/LoginTestWithOutPageObject.java">
@@ -532,16 +578,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="30" column="38" selection-start-line="30" selection-start-column="38" selection-end-line="30" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/orders/NewEldOrderTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="428">
-          <caret line="36" column="10" selection-start-line="36" selection-start-column="10" selection-end-line="36" selection-end-column="10" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -588,13 +624,64 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/libs/ActionsWithOurElements.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/loginTests/LoginTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="33" column="87" selection-start-line="33" selection-start-column="87" selection-end-line="33" selection-end-column="87" />
+        <state relative-caret-position="306">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pages/ParentPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="20" column="46" selection-start-line="20" selection-start-column="46" selection-end-line="20" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/libs/ExcelDriver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="816">
+          <caret line="59" selection-start-line="59" selection-end-line="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/libs/Utils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="918">
+          <caret line="68" column="28" lean-forward="true" selection-start-line="68" selection-start-column="28" selection-end-line="68" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/parentTest/ParentTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="26" column="102" selection-start-line="26" selection-start-column="102" selection-end-line="26" selection-end-column="102" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/libs/ConfigProperties.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/loginTests/unValidLoginWithParamsWithExcel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="36" column="21" lean-forward="true" selection-start-line="36" selection-start-column="21" selection-end-line="36" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -608,44 +695,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/loginTests/LoginTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/libs/SpreadsheetData.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        <state relative-caret-position="17">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/loginTests/LoginTestWithExel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/parentTest/ParentTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/libs/ActionsWithOurElements.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="884">
-          <caret line="52" column="28" selection-start-line="52" selection-start-column="28" selection-end-line="52" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/libs/ConfigProperties.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-69">
-          <caret column="31" selection-start-column="31" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/libs/ConfigProperties.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pages/ParentPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="20" column="46" selection-start-line="20" selection-start-column="46" selection-end-line="20" selection-end-column="46" />
+        <state relative-caret-position="190">
+          <caret line="59" column="13" selection-start-line="59" selection-start-column="13" selection-end-line="59" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -654,15 +724,66 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="39" selection-start-line="39" selection-end-line="39" />
+        <state relative-caret-position="230">
+          <caret line="50" column="21" selection-start-line="50" selection-start-column="21" selection-end-line="50" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/libs/Utils.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_162/src.zip!/java/sql/DriverManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-153">
-          <caret line="45" column="32" lean-forward="true" selection-start-line="45" selection-start-column="32" selection-end-line="45" selection-end-column="32" />
+        <state relative-caret-position="5257">
+          <caret line="688" selection-start-line="688" selection-end-line="688" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/libs/UtilsForDB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/libs/ConfigData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="7" lean-forward="true" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/libs/Database.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/libs/ConfigProperties.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="27" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/testDB/TestDataBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/orders/NewEldOrderTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="401">
+          <caret line="37" column="10" selection-start-line="37" selection-start-column="10" selection-end-line="37" selection-end-column="10" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

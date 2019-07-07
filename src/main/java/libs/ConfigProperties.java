@@ -9,7 +9,7 @@ public interface ConfigProperties extends Config {
 
 	String base_url();
 	String DATA_FILE();
-	String DATA_FILE_SUITE();
+	String DATA_FILE_PATH();
 	String Oracle();
 	String MySQL();
 	String sqlServer();

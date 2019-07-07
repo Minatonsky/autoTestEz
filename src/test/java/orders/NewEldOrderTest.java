@@ -1,7 +1,6 @@
 package orders;
 
 import org.junit.Test;
-import pages.ModalEldPage;
 import parentTest.ParentTest;
 
 public class NewEldOrderTest extends ParentTest {
@@ -34,7 +33,7 @@ public class NewEldOrderTest extends ParentTest {
         modalEldPage.clickAgreement();
         modalEldPage.clickButtonFastMove();
         modalEldPage.clickButtonAgree();
-        //modalEldPage.clickButtonOrder();
+        modalEldPage.clickButtonOrder();
 
         //checkAC("New order wasn`t added", ModalEldPage.isNewOrderAdded(idOfOrder), true);
 
