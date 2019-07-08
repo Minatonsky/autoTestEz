@@ -1,6 +1,7 @@
 package testDB;
 
 import libs.Database;
+import libs.UtilsForDB;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -30,8 +31,12 @@ public class TestDataBase {
     }
 
     @Test
-    public void testDataBase() throws SQLException {
-        List<Map<String, String>> dataAdmin_ezlogz_api = dbMySql.selectTable("select * from agri_centers");
+    public void testDataBase() throws SQLException, IOException, ClassNotFoundException {
+        List<Map<String, String>> dataAdmin_ezlogz_api = dbMySql.selectTable("SELECT id FROM eld_orders WHERE fleetId = 518 ORDER BY orderDate desc LIMIT 1;");
         logger.info(" Result = " + dataAdmin_ezlogz_api);
+        //int effectedRows = dbMySql.changeTable("UPDATE ez_finances SET `currentDue`='-1000' WHERE `carrierId`='518'");
+        UtilsForDB utilsForDB = new UtilsForDB();
+        logger.info(utilsForDB.getOrderIdForFleet("518"));
     }
+
 }

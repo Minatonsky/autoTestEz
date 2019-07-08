@@ -31,7 +31,7 @@ public class ParentTest {
     public void setUp() {
         initDriver(browser);
         webDriver.manage().window().maximize();
-        webDriver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        webDriver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         loginPage = new LoginPage(webDriver);
         dashboardPage = new DashboardPage(webDriver);
         modalEldPage = new ModalEldPage(webDriver);

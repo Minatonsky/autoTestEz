@@ -18,6 +18,7 @@ public class NewEldOrderTest extends ParentTest {
         loginPage.userValidLogIn("rose@emailate.com", "testtest");
         dashboardPage.clickOnMenuDash();
         dashboardPage.clickOnMenuPageELD();
+        Thread.sleep(1000);
         dashboardPage.clickOnOrderELD();
         modalEldPage.checkCurrentUrl();
         modalEldPage.enterQuantityDevices(quantityOfDevices);

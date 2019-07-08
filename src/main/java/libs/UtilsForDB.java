@@ -12,11 +12,11 @@ public class UtilsForDB {
 
 
 
-    public String getPassForLogin(String login) throws SQLException, IOException, ClassNotFoundException {
+    public String getOrderIdForFleet(String id) throws SQLException, IOException, ClassNotFoundException {
         log.info("--- Conect MySQL DB --------");
         dBMySQL = new Database("MySQL_PADB_DB", "MySQL");
         log.info("--- Conected to MySQL --------");
-        String tempPass = dBMySQL.selectValue("select passWord from seleniumTable where login = '" + login + "'");
+        String tempPass = dBMySQL.selectValue("SELECT id FROM eld_orders WHERE fleetId = " + id + " ORDER BY orderDate desc LIMIT 1;");
         dBMySQL.quit();
         return tempPass;
 
