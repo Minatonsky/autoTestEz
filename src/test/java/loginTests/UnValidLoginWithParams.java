@@ -10,10 +10,10 @@ import java.util.Collection;
 
 
 @RunWith(Parameterized.class)
-public class unValidLoginWithParams extends ParentTest {
+public class UnValidLoginWithParams extends ParentTest {
     String login, pass;
 
-    public unValidLoginWithParams(String login, String pass) {
+    public UnValidLoginWithParams(String login, String pass) {
         this.login = login;
         this.pass = pass;
     }

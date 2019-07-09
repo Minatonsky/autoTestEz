@@ -5,15 +5,14 @@ import libs.UtilsForDB;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
+import parentTest.ParentTest;
 
 import java.io.IOException;
 import java.sql.SQLException;
-import java.util.List;
-import java.util.Map;
 import java.util.logging.Logger;
 
 
-public class TestDataBase {
+public class TestDataBase extends ParentTest {
     static Database dbMySql;
     static Logger logger = Logger.getLogger(String.valueOf(TestDataBase.class));
 
@@ -31,12 +30,19 @@ public class TestDataBase {
     }
 
     @Test
-    public void testDataBase() throws SQLException, IOException, ClassNotFoundException {
-        List<Map<String, String>> dataAdmin_ezlogz_api = dbMySql.selectTable("SELECT id FROM eld_orders WHERE fleetId = 518 ORDER BY orderDate desc LIMIT 1;");
-        logger.info(" Result = " + dataAdmin_ezlogz_api);
-        //int effectedRows = dbMySql.changeTable("UPDATE ez_finances SET `currentDue`='-1000' WHERE `carrierId`='518'");
+    public void testDBGetLastOrderIdFromFleet() throws SQLException, IOException, ClassNotFoundException {
         UtilsForDB utilsForDB = new UtilsForDB();
         logger.info(utilsForDB.getOrderIdForFleet("518"));
     }
+
+    @Test
+    public void testDBSetCurrentDueForFleet() throws SQLException, IOException, ClassNotFoundException {
+        UtilsForDB utilsForDB = new UtilsForDB();
+        utilsForDB.getSetCurrentDueForFleet("-1000", "518");
+    }
+//
+//        List<ArrayList> dataAdmin_ezlogz_api = dbMySql.selectTable("SELECT id FROM eld_orders WHERE fleetId = 518 ORDER BY orderDate desc LIMIT 1;");
+//        logger.info(" Result = " + dataAdmin_ezlogz_api)
+//        logger.info(" Result = " + dataAdmin_ezlogz_api.get(2).get(2);
 
 }

@@ -3,6 +3,9 @@ package orders;
 import org.junit.Test;
 import parentTest.ParentTest;
 
+import java.io.IOException;
+import java.sql.SQLException;
+
 public class NewEldOrderTest extends ParentTest {
     final String quantityOfDevices = "1";
     final String firstName = "Autotest";
@@ -14,7 +17,8 @@ public class NewEldOrderTest extends ParentTest {
     final String zipCode = "30606";
 
     @Test
-    public void addNewOrder() throws InterruptedException {
+    public void addNewOrder() throws InterruptedException, SQLException, IOException, ClassNotFoundException {
+        testDataBase.testDBGetLastOrderIdFromFleet();
         loginPage.userValidLogIn("rose@emailate.com", "testtest");
         dashboardPage.clickOnMenuDash();
         dashboardPage.clickOnMenuPageELD();
@@ -35,6 +39,8 @@ public class NewEldOrderTest extends ParentTest {
         modalEldPage.clickButtonFastMove();
         modalEldPage.clickButtonAgree();
         modalEldPage.clickButtonOrder();
+
+
 
         //checkAC("New order wasn`t added", ModalEldPage.isNewOrderAdded(idOfOrder), true);
 

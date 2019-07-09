@@ -15,10 +15,10 @@ import java.util.Collection;
 
 
 @RunWith(Parameterized.class)
-public class unValidLoginWithParamsWithExcel extends ParentTest {
+public class UnValidLoginWithParamsWithExcel extends ParentTest {
     String login, pass;
 
-    public unValidLoginWithParamsWithExcel(String login, String pass) {
+    public UnValidLoginWithParamsWithExcel(String login, String pass) {
         this.login = login;
         this.pass = pass;
     }

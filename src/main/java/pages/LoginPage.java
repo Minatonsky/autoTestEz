@@ -1,5 +1,6 @@
 package pages;
 
+import io.qameta.allure.Step;
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -27,6 +28,7 @@ public class LoginPage extends ParentPage {
         dashboardPage = new DashboardPage(webDriver);
     }
 
+   @Step
     public void openPage() {
         try {
             webDriver.get(baseUrl + "/");
@@ -37,19 +39,22 @@ public class LoginPage extends ParentPage {
             Assert.fail("Can not open LoginPage");
         }
     }
-
+    @Step
     public void openLoginForm() {
         actionsWithOurElements.clickOnElement(loginButton);
     }
 
+    @Step
     public void enterLogin(String login) {
        actionsWithOurElements.enterTextToElement(userLoginInput, login);
     }
 
+    @Step
     public void enterPass(String pass) {
         actionsWithOurElements.enterTextToElement(userPasswordInput, pass);
     }
 
+    @Step
     public void clickOnSubmitButton() { actionsWithOurElements.clickOnElement(submitButton); }
 
     /**
@@ -57,6 +62,7 @@ public class LoginPage extends ParentPage {
      * @param login (ONLY Valid Login)
      * @param passWord (ONLY Valid Pass)
      */
+    @Step
     public void userValidLogIn(String login, String passWord) {
         openPage();
         openLoginForm();

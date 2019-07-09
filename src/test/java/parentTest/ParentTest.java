@@ -1,5 +1,6 @@
 package parentTest;
 
+import io.qameta.allure.Step;
 import libs.ConfigProperties;
 import org.aeonbits.owner.ConfigFactory;
 import org.apache.log4j.Logger;
@@ -11,10 +12,13 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import pages.DashboardPage;
-import pages.ModalEldPage;
 import pages.LoginPage;
+import pages.ModalEldPage;
+import testDB.TestDataBase;
 
 import java.io.File;
+import java.io.IOException;
+import java.sql.SQLException;
 import java.util.concurrent.TimeUnit;
 
 public class ParentTest {
@@ -25,10 +29,11 @@ public class ParentTest {
     protected ModalEldPage modalEldPage;
     String browser = System.getProperty("browser");
     protected static ConfigProperties configProperties = ConfigFactory.create(ConfigProperties.class);
+    protected TestDataBase testDataBase;
 
 
     @Before
-    public void setUp() {
+    public void setUp() throws SQLException, IOException, ClassNotFoundException {
         initDriver(browser);
         webDriver.manage().window().maximize();
         webDriver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
@@ -64,13 +69,50 @@ public class ParentTest {
     }
 
     @After
-    public void tearDown(){ webDriver.quit();}
+    public void tearDown() throws SQLException { webDriver.quit();
+    }
 
+    @Step
     protected void checkAC(String message, boolean actual, boolean expected){
         if (actual != expected){
             logger.error("AC failed: " + message);
         }
         Assert.assertEquals(message,expected,actual);
     }
+
+//       This is for do screenshot on failed test
+//    @Rule
+//    public TestWatcher watchman = new TestWatcher() {
+//        String fileName;
+//
+//        @Override
+//        protected void failed(Throwable e, Description description) {
+//            screenshot();
+//        }
+//
+//        @Attachment(value = "Page screenshot", type = "image/png")
+//        public byte[] saveScreenshot(byte[] screenShot) {
+//            return screenShot;
+//        }
+//
+//        public void screenshot() {
+//            if (webDriver == null) {
+//                logger.info("Driver for screenshot not found");
+//                return;
+//            }
+//
+//            saveScreenshot(((TakesScreenshot) webDriver).getScreenshotAs(OutputType.BYTES));
+//
+//        }
+//        @Override
+//        protected void finished(Description description) {
+//            logger.info(String.format("Finished test: %s::%s", description.getClassName(), description.getMethodName()));
+//            try {
+//                webDriver.quit();
+//            } catch (Exception e) {
+//                logger.error(e);
+//            }
+//        }
+//    };
 
 }
