@@ -5,14 +5,13 @@ import libs.UtilsForDB;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
-import parentTest.ParentTest;
 
 import java.io.IOException;
 import java.sql.SQLException;
 import java.util.logging.Logger;
 
 
-public class TestDataBase extends ParentTest {
+public class TestDataBase {
     static Database dbMySql;
     static Logger logger = Logger.getLogger(String.valueOf(TestDataBase.class));
 
@@ -32,7 +31,7 @@ public class TestDataBase extends ParentTest {
     @Test
     public void testDBGetLastOrderIdFromFleet() throws SQLException, IOException, ClassNotFoundException {
         UtilsForDB utilsForDB = new UtilsForDB();
-        logger.info(utilsForDB.getOrderIdForFleet("518"));
+        logger.info(utilsForDB.getLastOrderIdForFleet("518"));
     }
 
     @Test

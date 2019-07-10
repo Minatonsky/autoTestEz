@@ -17,6 +17,8 @@ public class DashboardPage extends ParentPage {
     @FindBy(xpath = ".//button[@class='btn btn-primary']")
     private WebElement orderELD;
 
+    //@FindBy()
+
     public DashboardPage(WebDriver webDriver) {
         super(webDriver, "/dash");
     }
@@ -34,5 +36,8 @@ public class DashboardPage extends ParentPage {
     public void clickOnOrderELD(){
         actionsWithOurElements.clickOnElement(orderELD);
     }
+//    public void clickOnMenuPageFinances(){
+//        actionsWithOurElements.clickOnElement(menuPageFinances);
+//    }
 
 }

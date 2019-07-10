@@ -12,9 +12,9 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import pages.DashboardPage;
+import pages.FinancesPage;
 import pages.LoginPage;
 import pages.ModalEldPage;
-import testDB.TestDataBase;
 
 import java.io.File;
 import java.io.IOException;
@@ -27,9 +27,9 @@ public class ParentTest {
     protected LoginPage loginPage;
     protected DashboardPage dashboardPage;
     protected ModalEldPage modalEldPage;
+    protected FinancesPage financesPage;
     String browser = System.getProperty("browser");
     protected static ConfigProperties configProperties = ConfigFactory.create(ConfigProperties.class);
-    protected TestDataBase testDataBase;
 
 
     @Before
@@ -40,6 +40,8 @@ public class ParentTest {
         loginPage = new LoginPage(webDriver);
         dashboardPage = new DashboardPage(webDriver);
         modalEldPage = new ModalEldPage(webDriver);
+        financesPage = new FinancesPage(webDriver);
+
 
 
     }

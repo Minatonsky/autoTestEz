@@ -51,6 +51,9 @@ public class ModalEldPage extends ParentPage {
     @FindBy(xpath = ".//select[@name=\"state\"]")
     private WebElement typeOfState;
 
+//    @FindBy(xpath = ".//*[@id='eld_total_order' and text()='$120.77']")
+//    private WebElement eldTotalOrder;
+
     public ModalEldPage(WebDriver webDriver) {
         super(webDriver, "/dash/eld/");
     }
@@ -60,10 +63,12 @@ public class ModalEldPage extends ParentPage {
     }
 
     public void selectState(String value) {
+
         actionsWithOurElements.selectValueInDropDown(typeOfState, value);
     }
 
     public void clickButtonOrder() {
+
         actionsWithOurElements.clickOnElement(orderButton);
     }
 
@@ -72,10 +77,12 @@ public class ModalEldPage extends ParentPage {
     }
 
     public void enterLastName(String lastName) {
+
         actionsWithOurElements.enterTextToElement(lastNameInput, lastName);
     }
 
-    public void enterPhone(String phone) {
+    public void enterPhone(String phone)
+    {
         actionsWithOurElements.enterTextToElement(phoneInput, phone);
     }
 
@@ -92,10 +99,12 @@ public class ModalEldPage extends ParentPage {
     }
 
     public void enterZipCode(String zipCode) {
+
         actionsWithOurElements.enterTextToElement(zipCodeInput, zipCode);
     }
 
     public void clickPaymentMethods() {
+
         actionsWithOurElements.clickOnElement(paymentMethods);
     }
 
@@ -104,10 +113,18 @@ public class ModalEldPage extends ParentPage {
     }
 
     public void clickButtonFastMove() {
+
         actionsWithOurElements.clickOnElement(buttonFastMove);
     }
 
     public void clickButtonAgree() {
+
         actionsWithOurElements.clickOnElement(buttonAgree);
+    }
+
+    public boolean compareTotalOrder(String eldStandardTotalOrder){
+        return actionsWithOurElements.isElementInOrder(".//*[@id='eld_total_order' and text()='$" + eldStandardTotalOrder + "']");
+
+
     }
 }

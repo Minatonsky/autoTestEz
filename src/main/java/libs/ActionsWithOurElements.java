@@ -2,6 +2,7 @@ package libs;
 
 import org.apache.log4j.Logger;
 import org.junit.Assert;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -80,4 +81,19 @@ public class ActionsWithOurElements {
             printErrorAndStopTest(e);
         }
     }
+
+    public boolean isElementInOrder(String xPathLocator) {
+        try {
+            WebElement webElementInOrder =  webDriver.findElement(By.xpath(xPathLocator));
+            if (webElementInOrder.isDisplayed()){
+                logger.info("Element is displayed");
+                return true;
+            }else {
+                return false;
+            }
+        } catch (Exception e){
+            return false;
+        }
+    }
 }
+
