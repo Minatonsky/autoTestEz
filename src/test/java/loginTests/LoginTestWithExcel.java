@@ -7,11 +7,11 @@ import parentTest.ParentTest;
 import java.io.IOException;
 import java.util.Map;
 
-public class LoginTestWithExel extends ParentTest {
+public class LoginTestWithExcel extends ParentTest {
     @Test
     public void validLogin() throws IOException {
         ExcelDriver excelDriver = new ExcelDriver();
-        Map dataForValidLogIn = excelDriver.getData(configProperties.DATA_FILE(), "validLogOn");
+        Map dataForValidLogIn = excelDriver.getData(configProperties.DATA_FILE_PATH() + "testLogin.xls", "validFleetLogin");
         loginPage.openPage();
         loginPage.openLoginForm();
         loginPage.enterLogin(dataForValidLogIn.get("login").toString());

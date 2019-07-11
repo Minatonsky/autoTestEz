@@ -1,17 +1,15 @@
 package libs;
 
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map;
-
 import org.apache.poi.hssf.usermodel.HSSFCell;
-import org.apache.poi.hssf.usermodel.HSSFRow;
 import org.apache.poi.hssf.usermodel.HSSFSheet;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.poifs.filesystem.POIFSFileSystem;
+
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.HashMap;
+import java.util.Map;
 
 /*
  *  Class that provides methods for extracting data from Excel tables.
@@ -34,7 +32,7 @@ public class ExcelDriver {
 		HSSFSheet sheet = wb.getSheet(sheetName);
 
 		// Get number of data values
-        int dataSize = sheet.getPhysicalNumberOfRows() - 1;
+		int dataSize = sheet.getPhysicalNumberOfRows() - 1;
 		// Look over the table and put key-value pairs into the Map collection
 		for (int k = 1; k < (dataSize + 1); k++) {
 			HSSFCell keyCell = sheet.getRow(k).getCell(0);
@@ -48,15 +46,35 @@ public class ExcelDriver {
 	}
 
 
-    /*
-      * Static method that retrieves testing data from Excel table and returns it
-      * as Map collection of key-value pairs. Note, please, that returned values
-      * are String. We should take care of value's type by himself when will use
-      * data values in the test.
-      */
-    public static Map getData(String dataFileName, String sheetName) throws IOException {
-        return getMultipleData(dataFileName, sheetName, 1);
-    }
+	/*
+	 * Static method that retrieves testing data from Excel table and returns it
+	 * as Map collection of key-value pairs. Note, please, that returned values
+	 * are String. We should take care of value's type by himself when will use
+	 * data values in the test.
+	 */
+	public static Map getData(String dataFileName, String sheetName) throws IOException {
+		Map<String, String> testData = new HashMap<String, String>();
+		// Create stream for reading from file
+		InputStream input = new FileInputStream(dataFileName);
+		// Get Excel WorkBook from input stream
+		HSSFWorkbook wb = new HSSFWorkbook(new POIFSFileSystem(input));
+		// Get Excel sheet from WorkBook
+		HSSFSheet sheet = wb.getSheet(sheetName);
+
+		// Get number of data values
+		int dataSize = sheet.getPhysicalNumberOfRows() - 1;
+		// Look over the table and put key-value pairs into the Map collection
+		for (int k = 1; k < (dataSize + 1); k++) {
+			HSSFCell keyCell = sheet.getRow(k).getCell(0);
+			HSSFCell valueCell = sheet.getRow(k).getCell(1);
+			valueCell.setCellType(HSSFCell.CELL_TYPE_STRING);
+			testData.put(keyCell.getStringCellValue(), valueCell.getStringCellValue());
+		}
+
+		input.close();
+		return testData;
+	}
+
 
 
 	/*

@@ -58,8 +58,8 @@ public class NewEldOrderTest extends ParentTest {
         checkAC("New order wasn`t created", idLastOrderBeforeTest.equals(idLastOrderAfterTest) , false);
 
         dashboardPage.clickOnMenuDash();
-        dashboardPage.clickOnMenuPageELD();
-        dashboardPage.checkCurrentUrl();
+        dashboardPage.clickOnMenuPageFinances();
+        financesPage.checkCurrentUrl();
 
         financesPage.compareBalance(defaultBalance);
         checkAC("Balance is not correct", financesPage.compareBalance(defaultBalance), true);

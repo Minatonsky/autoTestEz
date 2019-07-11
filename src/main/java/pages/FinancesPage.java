@@ -10,6 +10,6 @@ public class FinancesPage extends ParentPage {
 
 
     public boolean compareBalance(String defaultBalance) {
-        return actionsWithOurElements.isElementInOrder(".//*[@id=\"current_due\" and text()=\"'$" + defaultBalance + "'\"]");
+        return actionsWithOurElements.isElementInOrder(".//*[@id='current_due' and text()='$" + defaultBalance + "']");
     }
 }

@@ -13,11 +13,13 @@ public class ActionsWithOurElements {
     WebDriver webDriver;
     Logger logger = Logger.getLogger(getClass());
     WebDriverWait webDriverWait20;
+    WebDriverWait webDriverWait40;
 
     public ActionsWithOurElements(WebDriver webDriver) {
 
         this.webDriver = webDriver;
         webDriverWait20 = new WebDriverWait(webDriver, 20);
+        webDriverWait40 = new WebDriverWait(webDriver, 40);
     }
 
     public void enterTextToElement(WebElement webElement, String text){
@@ -42,6 +44,7 @@ public class ActionsWithOurElements {
 
     public boolean isElementEnable(WebElement webElement){
         try{
+            webDriverWait20.until(ExpectedConditions.visibilityOf(webElement));
             boolean state = webElement.isEnabled();
             logger.info("Element is enabled - >" + state);
             return webElement.isEnabled();
@@ -85,6 +88,7 @@ public class ActionsWithOurElements {
     public boolean isElementInOrder(String xPathLocator) {
         try {
             WebElement webElementInOrder =  webDriver.findElement(By.xpath(xPathLocator));
+            webDriverWait20.until(ExpectedConditions.visibilityOf(webElementInOrder));
             if (webElementInOrder.isDisplayed()){
                 logger.info("Element is displayed");
                 return true;
