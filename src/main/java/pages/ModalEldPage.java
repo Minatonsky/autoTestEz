@@ -36,8 +36,8 @@ public class ModalEldPage extends ParentPage {
     @FindBy(id = "zip")
     private WebElement zipCodeInput;
 
-    @FindBy(xpath = "//*[@id='eldTariffs']/*[@data-id='0']")
-    private WebElement paymentMethods;
+//    @FindBy(xpath = "//*[@id='eldTariffs']/*[@data-id='1']")
+//    private WebElement paymentMethods;
 
     @FindBy(id = "leaseAndAgreementCheckbox")
     private WebElement agreement;
@@ -58,19 +58,19 @@ public class ModalEldPage extends ParentPage {
     private WebElement checkBoxOvernightDelivery;
 
     @FindBy(xpath = "//*[@data-id='2']/td[3]/input ")
-    private WebElement QuantityPinCableInput;
+    private WebElement quantityPinCableInput;
 
     @FindBy(xpath = "//*[@data-id='3']/td[3]/input ")
-    private WebElement QuantityOBDPinCableInput;
+    private WebElement quantityOBDPinCableInput;
 
     @FindBy(xpath = "//*[@data-id='4']/td[3]/input ")
-    private WebElement QuantityStickerInput;
+    private WebElement quantityStickerInput;
 
     @FindBy(xpath = "//*[@data-id='100']/td[3]/input ")
-    private WebElement QuantityCamera1Input;
+    private WebElement quantityCamera1Input;
 
     @FindBy(xpath = "//*[@data-id='101']/td[3]/input ")
-    private WebElement QuantityCamera2Input;
+    private WebElement quantityCamera2Input;
 
 
     public ModalEldPage(WebDriver webDriver) {
@@ -124,21 +124,37 @@ ORDER LIST
 
     public void enterQuantityDevices(String quantityOfDevices) {actionsWithOurElements.enterTextToElement(quantityDeviseInput, quantityOfDevices);}
 
-    public void enterQuantityPinCable(String QuantityPinCable){actionsWithOurElements.enterTextToElement(QuantityPinCableInput, QuantityPinCable);}
+    public void enterQuantityPinCable(String quantityPinCable){actionsWithOurElements.enterTextToElement(quantityPinCableInput, quantityPinCable);}
 
-    public void enterQuantityOBDPinCable(String QuantityOBDPinCable){actionsWithOurElements.enterTextToElement(QuantityOBDPinCableInput, QuantityOBDPinCable);}
+    public void enterQuantityOBDPinCable(String quantityOBDPinCable){actionsWithOurElements.enterTextToElement(quantityOBDPinCableInput, quantityOBDPinCable);}
 
-    public void enterQuantitySticker(String QuantitySticker){actionsWithOurElements.enterTextToElement(QuantityStickerInput, QuantitySticker);}
+    public void enterQuantitySticker(String quantitySticker){actionsWithOurElements.enterTextToElement(quantityStickerInput, quantitySticker);}
 
-    public void enterQuantityCamera1(String QuantityCamera1){actionsWithOurElements.enterTextToElement(QuantityCamera1Input, QuantityCamera1);}
+    public void enterQuantityCamera1(String quantityCamera1){actionsWithOurElements.enterTextToElement(quantityCamera1Input, quantityCamera1);}
 
-    public void enterQuantityCamera2(String QuantityCamera2){actionsWithOurElements.enterTextToElement(QuantityCamera2Input, QuantityCamera2);}
+    public void enterQuantityCamera2(String quantityCamera2){actionsWithOurElements.enterTextToElement(quantityCamera2Input, quantityCamera2);}
 
 /*
 PAYMENT METHODS
  */
 
-    public void clickPaymentMethods() {actionsWithOurElements.clickOnElement(paymentMethods);}
+
+    public void clickPaymentMethods(String typeOfPaymentMethod){
+        if (isPaymentInList(typeOfPaymentMethod)){
+            clickOnPaymentMethod(typeOfPaymentMethod);
+            logger.info("Payment Method " + typeOfPaymentMethod + " was selected");
+        }
+    }
+
+    private void clickOnPaymentMethod(String typeOfPaymentMethod) {
+        actionsWithOurElements.clickOnElement(".//*[@id='eldTariffs']/*[@data-id='" + typeOfPaymentMethod + "']");
+    }
+
+    private boolean isPaymentInList(String typeOfPaymentMethod) {
+        return actionsWithOurElements.isElementInOrder(".//*[@id='eldTariffs']/*[@data-id='" + typeOfPaymentMethod + "']");
+    }
+
+
 
 /*
 BUTTON ORDER

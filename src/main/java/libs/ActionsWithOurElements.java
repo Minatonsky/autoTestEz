@@ -58,10 +58,38 @@ public class ActionsWithOurElements {
         if ("check".equals(neededState) || "uncheck".equals(neededState)){
             if (webElement.isSelected() && "check".equals(neededState)){
                 logger.info("Checkbox is already checked");
-            }else if (webElement.isSelected() && "uncheck".equals(neededState)){
+            } else if (webElement.isSelected() && "uncheck".equals(neededState)){
                 clickOnElement(webElement);
                 logger.info("CheckBox unchecked");
+            } else if (!webElement.isSelected() && "uncheck".equals(neededState)){
+            logger.info("checkbox is already unchecked");
+            } else if (!webElement.isSelected() && "check".equals(neededState)) {
+            clickOnElement(webElement);
+            logger.info("checkbox was checked");
             }
+  /*
+  public void setNeededStateToCheskBox(WebElement webElement, String neededState) {
+    if ("check".equals(neededState) || "uncheck".equals(neededState)) {
+        if (webElement.isSelected() && "check".equals(neededState)) {
+            logger.info("CheckBox is already checked");
+        } else if (webElement.isSelected() && "uncheck".equals(neededState)) {
+            clickOnElement(webElement);
+            logger.info("CheckBox was unchecked");
+        }
+        if (webElement.isSelected() != true && "check".equals(neededState)) {
+            clickOnElement(webElement);
+            logger.info("CheckBox is already checked");
+        } else if (webElement.isSelected() != true && "uncheck".equals(neededState)) {
+            logger.info("CheckBox was unchecked");
+        }
+    } else {
+        logger.error(String.format("%s - is not expected state", neededState));
+        Assert.fail(String.format("%s - is not expected state", neededState));
+    }
+}
+   */
+
+
 
         }else {
             logger.error(String.format("%s - is not expected state", neededState));
@@ -96,6 +124,26 @@ public class ActionsWithOurElements {
                 return false;
             }
         } catch (Exception e){
+            return false;
+        }
+    }
+
+    public void clickOnElement(String xPathLocator) {
+        try {
+            WebElement webElement = webDriver.findElement(By.xpath(xPathLocator));
+            clickOnElement(webElement);
+        } catch (Exception e){
+            printErrorAndStopTest(e);
+        }
+    }
+
+    public boolean isElementDisplay(WebElement webElement){
+        try{
+            boolean state = webElement.isDisplayed();
+            logger.info("Element is display - > " + state );
+            return state;
+        }catch (Exception e){
+            logger.info("Element is display - > false");
             return false;
         }
     }

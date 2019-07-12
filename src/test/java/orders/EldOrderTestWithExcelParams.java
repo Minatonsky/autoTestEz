@@ -1,21 +1,41 @@
 package orders;
 
 import libs.ExcelDriver;
+import libs.SpreadsheetData;
 import libs.UtilsForDB;
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.junit.runners.Parameterized;
 import parentTest.ParentTest;
 
+import java.io.FileInputStream;
 import java.io.IOException;
+import java.io.InputStream;
 import java.sql.SQLException;
+import java.util.Collection;
 import java.util.Map;
 
-public class EldOrderTestWithExcel extends ParentTest {
+@RunWith(Parameterized.class)
+
+public class EldOrderTestWithExcelParams extends ParentTest {
+    int columnNumber;
+
+    public EldOrderTestWithExcelParams(int columnNumber) {
+        this.columnNumber = columnNumber;
+    }
+
+
+    @Parameterized.Parameters(name = "Parameters are {0} and {1}")
+    public static Collection testData() throws IOException {
+        InputStream spreadsheet = new FileInputStream(configProperties.DATA_FILE_PATH() + "testEldOrder.xls");
+        return new SpreadsheetData(spreadsheet,"orderListData").getData();
+
+    }
 
 
     @Test
     public void addNewOrder() throws InterruptedException, SQLException, IOException, ClassNotFoundException {
         ExcelDriver excelDriver = new ExcelDriver();
-        int columnNumber = 2;
 
         Map dataForEldOrder = excelDriver.getMultipleData(configProperties.DATA_FILE_PATH() + "testEldOrder.xls", "orderListData", columnNumber);
         Map personalDataForEldOrder = excelDriver.getData(configProperties.DATA_FILE_PATH() + "testEldOrder.xls", "personalData");
@@ -49,7 +69,7 @@ PERSONAL DATA
 
 /*
 ORDER LIST
- */
+// */
         modalEldPage.enterQuantityDevices(dataForEldOrder.get("quantityOfDevices").toString());
         modalEldPage.enterQuantityPinCable(dataForEldOrder.get("quantityPinCable").toString());
         modalEldPage.enterQuantityOBDPinCable(dataForEldOrder.get("quantityOBDPinCable").toString());
@@ -57,7 +77,7 @@ ORDER LIST
         modalEldPage.enterQuantityCamera1(dataForEldOrder.get("quantityCamera1").toString());
         modalEldPage.enterQuantityCamera2(dataForEldOrder.get("quantityCamera2").toString());
 
-        modalEldPage.clickPaymentMethods(dataForEldOrder.get("typeOfPaymentMethod").toString());
+//        modalEldPage.clickPaymentMethods();
 
 /*
 CHECK BOX DELIVERY

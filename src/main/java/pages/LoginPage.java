@@ -9,16 +9,16 @@ import org.openqa.selenium.support.FindBy;
 public class LoginPage extends ParentPage {
     DashboardPage dashboardPage;
 
-    @FindBy(xpath = ".//*[@class=\"log_in btn-login\"]")
+    @FindBy(xpath = ".//*[@class='log_in btn-login']")
     private WebElement loginButton;
 
-    @FindBy(xpath = ".//*[@id=\"formLogin\"]/div[1]/input")
+    @FindBy(xpath = ".//*[@id='formLogin']/div[1]/input")
     private WebElement userLoginInput;
 
-    @FindBy(xpath = ".//*[@id=\"loginPass\"]")
+    @FindBy(xpath = ".//*[@id='loginPass']")
     private WebElement userPasswordInput;
 
-    @FindBy(xpath = ".//*[@id=\"btnLogin\"]")
+    @FindBy(xpath = ".//*[@id='btnLogin']")
     private WebElement submitButton;
 
 
