@@ -3059,3 +3059,402 @@ Session ID: 2ae9dd2ec9accbdfbae9a5fc2cbd87a6
 2019-15-07 11:18:52   INFO [libs.ActionsWithOurElements] : Element was clicked
 2019-15-07 11:18:52   INFO [libs.ActionsWithOurElements] : Element is displayed
 2019-15-07 11:18:52   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-15-07 11:52:55   INFO [orders.FleetEldOrderTestWithExcel] : Chrome will be started
+2019-15-07 11:53:04   INFO [orders.FleetEldOrderTestWithExcel] : Chrome is started
+2019-15-07 11:53:10   INFO [libs.UtilsForDB] : --- Conect MySQL DB --------
+2019-15-07 11:53:10   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-15-07 11:53:12   INFO [libs.UtilsForDB] : --- Conected to MySQL --------
+2019-15-07 11:53:13   INFO [libs.UtilsForDB] : --- Conect MySQL DB --------
+2019-15-07 11:53:13   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-15-07 11:53:14   INFO [libs.UtilsForDB] : --- Conected to MySQL --------
+2019-15-07 11:53:20   INFO [pages.LoginPage] : Login Page was opened
+2019-15-07 11:53:21   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-15-07 11:53:21   INFO [libs.ActionsWithOurElements] : rose@emailate.com was inputted into element
+2019-15-07 11:53:21   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-15-07 11:53:21   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-15-07 11:53:28   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-15-07 11:53:29   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-15-07 11:53:29   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-15-07 11:53:30   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-15-07 11:53:31   INFO [libs.ActionsWithOurElements] : Street was inputted into element
+2019-15-07 11:53:31   INFO [libs.ActionsWithOurElements] : 2 was inputted into element
+2019-15-07 11:53:31   INFO [libs.ActionsWithOurElements] : Phoenix was inputted into element
+2019-15-07 11:53:31   INFO [libs.ActionsWithOurElements] : 1 was selected in Drop-down
+2019-15-07 11:53:32   INFO [libs.ActionsWithOurElements] : 30606 was inputted into element
+2019-15-07 11:53:32   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2019-15-07 11:53:32   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2019-15-07 11:53:33   INFO [libs.ActionsWithOurElements] : 1676475006 was inputted into element
+2019-15-07 11:53:33   INFO [libs.ActionsWithOurElements] : 2 was inputted into element
+2019-15-07 11:53:33   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-15-07 11:53:33   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-15-07 11:53:33   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-15-07 11:53:33   INFO [libs.ActionsWithOurElements] : 0 was inputted into element
+2019-15-07 11:53:34   INFO [libs.ActionsWithOurElements] : 0 was inputted into element
+2019-15-07 11:53:34   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-15-07 11:53:34   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-15-07 11:53:34   INFO [pages.ModalEldPage] : Payment Method 1 was selected
+2019-15-07 11:53:34   INFO [libs.ActionsWithOurElements] : checkbox is already unchecked
+2019-15-07 11:53:34   INFO [libs.ActionsWithOurElements] : checkbox is already unchecked
+2019-15-07 11:53:34   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-15-07 11:53:34   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-15-07 11:53:35   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-15-07 11:53:35   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-15-07 11:53:36   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-15-07 11:53:36   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-15-07 11:53:36   INFO [libs.UtilsForDB] : --- Conect MySQL DB --------
+2019-15-07 11:53:36   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-15-07 11:53:38   INFO [libs.UtilsForDB] : --- Conected to MySQL --------
+2019-15-07 11:53:38   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-15-07 11:53:39   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-15-07 11:53:40   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-15-07 11:53:40   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-15-07 12:25:16   INFO [orders.FleetEldOrderTestWithExcel] : Chrome will be started
+2019-15-07 12:25:25   INFO [orders.FleetEldOrderTestWithExcel] : Chrome is started
+2019-15-07 12:25:31   INFO [libs.UtilsForDB] : --- Conect MySQL DB --------
+2019-15-07 12:25:31   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-15-07 12:25:33   INFO [libs.UtilsForDB] : --- Conected to MySQL --------
+2019-15-07 12:25:34   INFO [libs.UtilsForDB] : --- Conect MySQL DB --------
+2019-15-07 12:25:34   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-15-07 12:25:35   INFO [libs.UtilsForDB] : --- Conected to MySQL --------
+2019-15-07 12:25:42   INFO [pages.LoginPage] : Login Page was opened
+2019-15-07 12:25:42   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-15-07 12:25:42   INFO [libs.ActionsWithOurElements] : rose@emailate.com was inputted into element
+2019-15-07 12:25:43   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-15-07 12:25:43   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-15-07 12:25:49   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-15-07 12:25:50   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-15-07 12:25:50   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-15-07 12:25:51   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-15-07 12:25:52   INFO [libs.ActionsWithOurElements] : Street was inputted into element
+2019-15-07 12:25:52   INFO [libs.ActionsWithOurElements] : 2 was inputted into element
+2019-15-07 12:25:53   INFO [libs.ActionsWithOurElements] : Phoenix was inputted into element
+2019-15-07 12:25:53   INFO [libs.ActionsWithOurElements] : 1 was selected in Drop-down
+2019-15-07 12:25:53   INFO [libs.ActionsWithOurElements] : 30606 was inputted into element
+2019-15-07 12:25:54   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2019-15-07 12:25:54   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2019-15-07 12:25:54   INFO [libs.ActionsWithOurElements] : 1676475006 was inputted into element
+2019-15-07 12:25:55   INFO [libs.ActionsWithOurElements] : 2 was inputted into element
+2019-15-07 12:25:55   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-15-07 12:25:55   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-15-07 12:25:55   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-15-07 12:25:56   INFO [libs.ActionsWithOurElements] : 0 was inputted into element
+2019-15-07 12:25:56   INFO [libs.ActionsWithOurElements] : 0 was inputted into element
+2019-15-07 12:25:56   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-15-07 12:25:56   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-15-07 12:25:56   INFO [pages.ModalEldPage] : Payment Method 1 was selected
+2019-15-07 12:25:56   INFO [libs.ActionsWithOurElements] : checkbox is already unchecked
+2019-15-07 12:25:56   INFO [libs.ActionsWithOurElements] : checkbox is already unchecked
+2019-15-07 12:25:56   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-15-07 12:25:57   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-15-07 12:25:57   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-15-07 12:25:57   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-15-07 12:25:58   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-15-07 12:25:58   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-15-07 12:25:58   INFO [libs.UtilsForDB] : --- Conect MySQL DB --------
+2019-15-07 12:25:58   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-15-07 12:26:00   INFO [libs.UtilsForDB] : --- Conected to MySQL --------
+2019-15-07 12:26:00   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-15-07 12:26:01   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-15-07 12:26:02   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-15-07 12:26:02   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-15-07 12:43:05   INFO [orders.ManagerCompletedOrderTest] : Chrome will be started
+2019-15-07 12:43:13   INFO [orders.ManagerCompletedOrderTest] : Chrome is started
+2019-15-07 12:43:27   INFO [pages.LoginPage] : Login Page was opened
+2019-15-07 12:43:27   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-15-07 12:43:28   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2019-15-07 12:43:28   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-15-07 12:43:28   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-15-07 12:43:45   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-15-07 12:48:37   INFO [orders.ManagerCompletedOrderTest] : Chrome will be started
+2019-15-07 12:48:46   INFO [orders.ManagerCompletedOrderTest] : Chrome is started
+2019-15-07 12:49:01   INFO [pages.LoginPage] : Login Page was opened
+2019-15-07 12:49:02   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-15-07 12:49:02   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2019-15-07 12:49:02   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-15-07 12:49:02   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-15-07 12:49:20   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-15-07 12:49:20   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-15-07 12:49:21   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-15-07 12:50:01  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: .//button [text()='Order ELD']' (tried for 20 second(s) with 500 milliseconds interval)
+2019-15-07 13:17:12   INFO [orders.ManagerCompletedOrderTest] : Chrome will be started
+2019-15-07 13:17:20   INFO [orders.ManagerCompletedOrderTest] : Chrome is started
+2019-15-07 13:17:32   INFO [pages.LoginPage] : Login Page was opened
+2019-15-07 13:17:32   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-15-07 13:17:33   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2019-15-07 13:17:33   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-15-07 13:17:33   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-15-07 13:17:45   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-15-07 13:17:46   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-15-07 13:17:46   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-15-07 13:19:42   INFO [orders.ManagerCompletedOrderTest] : Chrome will be started
+2019-15-07 13:19:50   INFO [orders.ManagerCompletedOrderTest] : Chrome is started
+2019-15-07 13:20:02   INFO [pages.LoginPage] : Login Page was opened
+2019-15-07 13:20:02   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-15-07 13:20:02   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2019-15-07 13:20:02   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-15-07 13:20:03   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-15-07 13:20:13   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-15-07 13:20:14   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-15-07 13:20:14   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-15-07 14:00:10   INFO [orders.ManagerCompletedOrderTest] : Chrome will be started
+2019-15-07 14:00:19   INFO [orders.ManagerCompletedOrderTest] : Chrome is started
+2019-15-07 14:00:36   INFO [pages.LoginPage] : Login Page was opened
+2019-15-07 14:00:36   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-15-07 14:00:36   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2019-15-07 14:00:36   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-15-07 14:00:36   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-15-07 14:00:52   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-15-07 14:00:53   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-15-07 14:00:53   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-15-07 14:01:55   INFO [orders.ManagerCompletedOrderTest] : Chrome will be started
+2019-15-07 14:02:04   INFO [orders.ManagerCompletedOrderTest] : Chrome is started
+2019-15-07 14:02:23   INFO [pages.LoginPage] : Login Page was opened
+2019-15-07 14:02:24   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-15-07 14:02:24   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2019-15-07 14:02:24   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-15-07 14:02:24   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-15-07 14:02:45   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-15-07 14:02:45   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-15-07 14:02:46   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-15-07 14:30:06   INFO [orders.ManagerCompletedOrderTest] : Chrome will be started
+2019-15-07 14:30:15   INFO [orders.ManagerCompletedOrderTest] : Chrome is started
+2019-15-07 14:30:26   INFO [pages.LoginPage] : Login Page was opened
+2019-15-07 14:30:26   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-15-07 14:30:27   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2019-15-07 14:30:27   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-15-07 14:30:27   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-15-07 14:30:38   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-15-07 14:30:38   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-15-07 14:30:39   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-15-07 14:46:41   INFO [orders.ManagerCompletedOrderTest] : Chrome will be started
+2019-15-07 14:46:49   INFO [orders.ManagerCompletedOrderTest] : Chrome is started
+2019-15-07 14:47:00   INFO [pages.LoginPage] : Login Page was opened
+2019-15-07 14:47:00   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-15-07 14:47:01   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2019-15-07 14:47:01   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-15-07 14:47:01   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-15-07 14:47:11   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-15-07 14:47:12   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-15-07 14:47:12   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-15-07 14:49:09   INFO [orders.ManagerCompletedOrderTest] : Chrome will be started
+2019-15-07 14:49:18   INFO [orders.ManagerCompletedOrderTest] : Chrome is started
+2019-15-07 14:49:30   INFO [pages.LoginPage] : Login Page was opened
+2019-15-07 14:49:30   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-15-07 14:49:31   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2019-15-07 14:49:31   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-15-07 14:49:31   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-15-07 14:49:42   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-15-07 14:49:42   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-15-07 14:49:42   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-15-07 15:18:33   INFO [orders.ManagerCompletedOrderTest] : Chrome will be started
+2019-15-07 15:18:42   INFO [orders.ManagerCompletedOrderTest] : Chrome is started
+2019-15-07 16:22:43   INFO [orders.ManagerCompletedOrderTest] : Chrome will be started
+2019-15-07 16:22:52   INFO [orders.ManagerCompletedOrderTest] : Chrome is started
+2019-15-07 16:23:05   INFO [pages.LoginPage] : Login Page was opened
+2019-15-07 16:23:06   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-15-07 16:23:06   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2019-15-07 16:23:06   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-15-07 16:23:06   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-15-07 16:23:14   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-15-07 16:23:14   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-15-07 16:23:15   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-15-07 16:23:16  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href="/dash/eld_orders/" class="dash_url_button">...</a> is not clickable at point (247, 78). Other element would receive the click: <div id="gifBox" style="display: block; opacity: 0.740877;">...</div>
+  (Session info: chrome=75.0.3770.100)
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'DESKTOP-UD8IPI4', ip: '192.168.32.145', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.100, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\denku\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53087}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 3a07c22782de6d6cc8a6a994d1bf5dae
+2019-15-07 16:23:32   INFO [orders.ManagerCompletedOrderTest] : Chrome will be started
+2019-15-07 16:23:41   INFO [orders.ManagerCompletedOrderTest] : Chrome is started
+2019-15-07 16:23:52   INFO [pages.LoginPage] : Login Page was opened
+2019-15-07 16:23:52   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-15-07 16:23:52   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2019-15-07 16:23:53   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-15-07 16:23:53   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-15-07 16:24:02   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-15-07 16:24:02   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-15-07 16:24:03  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href="/dash/eld/" class="dash_url_button">...</a> is not clickable at point (35, 206). Other element would receive the click: <div class="stub"></div>
+  (Session info: chrome=75.0.3770.100)
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'DESKTOP-UD8IPI4', ip: '192.168.32.145', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.100, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\denku\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53183}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c99fdc1c7beb7f4ee588e1f7448f188e
+2019-15-07 16:24:37   INFO [orders.ManagerCompletedOrderTest] : Chrome will be started
+2019-15-07 16:24:46   INFO [orders.ManagerCompletedOrderTest] : Chrome is started
+2019-15-07 16:24:58   INFO [pages.LoginPage] : Login Page was opened
+2019-15-07 16:24:58   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-15-07 16:24:59   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2019-15-07 16:24:59   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-15-07 16:24:59   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-15-07 16:25:12   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-15-07 16:25:12   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-15-07 16:25:13   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-15-07 16:25:18   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-15-07 16:25:18   INFO [libs.ActionsWithOurElements] : 16201 was inputted into element
+2019-15-07 16:25:19  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <tr data-orderid="2422" onclick="getOneOrder(this)" class="pointer">...</tr> is not clickable at point (702, 329). Other element would receive the click: <div id="gifBox" style="display: block; opacity: 0.506283;">...</div>
+  (Session info: chrome=75.0.3770.100)
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'DESKTOP-UD8IPI4', ip: '192.168.32.145', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.100, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\denku\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53286}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: b2ecf59f095f85ef942ddcdb5a797b5b
+2019-15-07 16:28:04   INFO [orders.ManagerCompletedOrderTest] : Chrome will be started
+2019-15-07 16:28:13   INFO [orders.ManagerCompletedOrderTest] : Chrome is started
+2019-15-07 16:28:24   INFO [pages.LoginPage] : Login Page was opened
+2019-15-07 16:28:24   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-15-07 16:28:24   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2019-15-07 16:28:24   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-15-07 16:28:25   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-15-07 16:28:33   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-15-07 16:28:33   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-15-07 16:28:33   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-15-07 16:28:39   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-15-07 16:28:39   INFO [libs.ActionsWithOurElements] : 2422 was inputted into element
+2019-15-07 16:28:39  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <tr data-orderid="2422" onclick="getOneOrder(this)" class="pointer">...</tr> is not clickable at point (702, 329). Other element would receive the click: <div id="gifBox" style="display: block; opacity: 0.456074;">...</div>
+  (Session info: chrome=75.0.3770.100)
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'DESKTOP-UD8IPI4', ip: '192.168.32.145', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.100, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\denku\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53456}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: eeac8d47f72c4827976b81b1d8f73780
+2019-15-07 16:34:12   INFO [orders.ManagerCompletedOrderTest] : Chrome will be started
+2019-15-07 16:34:20   INFO [orders.ManagerCompletedOrderTest] : Chrome is started
+2019-15-07 16:34:33   INFO [pages.LoginPage] : Login Page was opened
+2019-15-07 16:34:33   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-15-07 16:34:33   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2019-15-07 16:34:33   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-15-07 16:34:33   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-15-07 16:34:41   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-15-07 16:34:41   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-15-07 16:34:42   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-15-07 16:34:47   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-15-07 16:34:47   INFO [libs.ActionsWithOurElements] : 2422 was inputted into element
+2019-15-07 16:34:48  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <td>...</td> is not clickable at point (124, 329). Other element would receive the click: <div id="gifBox" style="display: block; opacity: 0.602931;">...</div>
+  (Session info: chrome=75.0.3770.100)
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'DESKTOP-UD8IPI4', ip: '192.168.32.145', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.100, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\denku\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53716}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 00d8749372cd33eea85aad5eb5305a38
+2019-15-07 16:39:07   INFO [orders.ManagerCompletedOrderTest] : Chrome will be started
+2019-15-07 16:39:15   INFO [orders.ManagerCompletedOrderTest] : Chrome is started
+2019-15-07 16:39:26   INFO [pages.LoginPage] : Login Page was opened
+2019-15-07 16:39:26   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-15-07 16:39:26   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2019-15-07 16:39:26   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-15-07 16:39:27   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-15-07 16:39:35   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-15-07 16:39:36   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-15-07 16:39:36   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-15-07 16:39:41   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-15-07 16:39:42   INFO [libs.ActionsWithOurElements] : 2422 was inputted into element
+2019-15-07 16:39:42  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <tr data-orderid="2422" onclick="getOneOrder(this)" class="pointer">...</tr> is not clickable at point (702, 329). Other element would receive the click: <div id="gifBox" style="display: block; opacity: 0.596775;">...</div>
+  (Session info: chrome=75.0.3770.100)
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'DESKTOP-UD8IPI4', ip: '192.168.32.145', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.100, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\denku\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53980}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 832e50d667abc61460f7e65097b0b6e8
+2019-15-07 16:40:26   INFO [orders.ManagerCompletedOrderTest] : Chrome will be started
+2019-15-07 16:40:34   INFO [orders.ManagerCompletedOrderTest] : Chrome is started
+2019-15-07 16:40:45   INFO [pages.LoginPage] : Login Page was opened
+2019-15-07 16:40:45   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-15-07 16:40:46   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2019-15-07 16:40:46   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-15-07 16:40:46   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-15-07 16:40:56   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-15-07 16:40:56   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-15-07 16:40:57  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href="/dash/eld/" class="dash_url_button">...</a> is not clickable at point (29, 206). Other element would receive the click: <div class="stub"></div>
+  (Session info: chrome=75.0.3770.100)
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'DESKTOP-UD8IPI4', ip: '192.168.32.145', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.100, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\denku\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54094}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 3ac5f8fb904e3523391096e61444f69f
+2019-15-07 16:41:18   INFO [orders.ManagerCompletedOrderTest] : Chrome will be started
+2019-15-07 16:41:27   INFO [orders.ManagerCompletedOrderTest] : Chrome is started
+2019-15-07 16:41:37   INFO [pages.LoginPage] : Login Page was opened
+2019-15-07 16:41:37   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-15-07 16:41:37   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2019-15-07 16:41:38   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-15-07 16:41:38   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-15-07 16:41:46   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-15-07 16:41:46   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-15-07 16:41:46   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-15-07 16:41:51   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-15-07 16:41:52   INFO [libs.ActionsWithOurElements] : 2422 was inputted into element
+2019-15-07 16:41:57   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-15-07 17:05:18   INFO [orders.ManagerCompletedOrderTest] : Chrome will be started
+2019-15-07 17:05:26   INFO [orders.ManagerCompletedOrderTest] : Chrome is started
+2019-15-07 17:05:37   INFO [pages.LoginPage] : Login Page was opened
+2019-15-07 17:05:37   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-15-07 17:05:38   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2019-15-07 17:05:38   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-15-07 17:05:38   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-15-07 17:05:47   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-15-07 17:05:47   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-15-07 17:05:47   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-15-07 17:05:53   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-15-07 17:05:53   INFO [libs.ActionsWithOurElements] : 2422 was inputted into element
+2019-15-07 17:05:58   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-15-07 17:06:16   INFO [libs.ActionsWithOurElements] : 4 was selected in Drop-down
+2019-15-07 17:11:00   INFO [orders.ManagerCompletedOrderTest] : Chrome will be started
+2019-15-07 17:11:08   INFO [orders.ManagerCompletedOrderTest] : Chrome is started
+2019-15-07 17:11:20   INFO [pages.LoginPage] : Login Page was opened
+2019-15-07 17:11:20   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-15-07 17:11:21   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2019-15-07 17:11:21   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-15-07 17:11:21   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-15-07 17:11:29   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-15-07 17:11:30   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-15-07 17:11:30   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-15-07 17:11:35   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-15-07 17:11:36   INFO [libs.ActionsWithOurElements] : 2422 was inputted into element
+2019-15-07 17:11:41   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-15-07 17:11:41   INFO [libs.ActionsWithOurElements] : 4 was selected in Drop-down
+2019-15-07 17:16:32   INFO [orders.ManagerCompletedOrderTest] : Chrome will be started
+2019-15-07 17:19:42   INFO [orders.ManagerCompletedOrderTest] : Chrome will be started
+2019-15-07 17:19:50   INFO [orders.ManagerCompletedOrderTest] : Chrome is started
+2019-15-07 17:20:01   INFO [pages.LoginPage] : Login Page was opened
+2019-15-07 17:20:01   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-15-07 17:20:02   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2019-15-07 17:20:02   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-15-07 17:20:02   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-15-07 17:20:10   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-15-07 17:20:11   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-15-07 17:20:11   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-15-07 17:20:16   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-15-07 17:20:17   INFO [libs.ActionsWithOurElements] : 2422 was inputted into element
+2019-15-07 17:20:22   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-15-07 17:20:23   INFO [libs.ActionsWithOurElements] : 4 was selected in Drop-down
+2019-15-07 17:20:23   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-15-07 17:20:23   INFO [libs.ActionsWithOurElements] : 1 was selected in Drop-down
+2019-15-07 17:20:23   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-15-07 20:49:56   INFO [orders.ManagerCompletedOrderTest] : Chrome will be started
+2019-15-07 20:50:05   INFO [orders.ManagerCompletedOrderTest] : Chrome is started
+2019-15-07 20:50:16   INFO [pages.LoginPage] : Login Page was opened
+2019-15-07 20:50:16   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-15-07 20:50:17   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2019-15-07 20:50:17   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-15-07 20:50:17   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-15-07 20:50:25   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-15-07 20:50:25   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-15-07 21:14:25   INFO [orders.ManagerCompletedOrderTest] : Chrome will be started
+2019-15-07 21:14:34   INFO [orders.ManagerCompletedOrderTest] : Chrome is started
+2019-15-07 21:14:46   INFO [pages.LoginPage] : Login Page was opened
+2019-15-07 21:14:46   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-15-07 21:14:47   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2019-15-07 21:14:47   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-15-07 21:14:47   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-15-07 21:14:56   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-15-07 21:14:56   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-15-07 21:14:56   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-15-07 21:15:02   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-15-07 21:15:02   INFO [libs.ActionsWithOurElements] : 2422 was inputted into element
+2019-15-07 21:15:07   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-15-07 21:15:08   INFO [libs.ActionsWithOurElements] : 4 was selected in Drop-down
+2019-15-07 21:15:08   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-15-07 21:15:08   INFO [libs.ActionsWithOurElements] : 1 was selected in Drop-down
+2019-15-07 21:15:08   INFO [libs.ActionsWithOurElements] : Element was clicked

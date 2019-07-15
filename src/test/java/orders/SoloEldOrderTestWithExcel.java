@@ -20,7 +20,7 @@ public class SoloEldOrderTestWithExcel extends ParentTest {
         Map dataForEldOrder = excelDriver.getMultipleData(configProperties.DATA_FILE_PATH() + "testEldOrder.xls", "orderListData", columnNumber);
         Map personalDataForEldOrder = excelDriver.getData(configProperties.DATA_FILE_PATH() + "testEldOrder.xls", "personalData");
         Map dataForSoloValidLogIn = excelDriver.getData(configProperties.DATA_FILE_PATH() + "testLogin.xls", "validSoloLogin");
-        Map dataSoloId = excelDriver.getData(configProperties.DATA_FILE_PATH() + "testLogin.xls", "soloId");
+        Map dataSoloId = excelDriver.getData(configProperties.DATA_FILE_PATH() + "testLogin.xls", "validSoloLogin");
 
         UtilsForDB utilsForDB = new UtilsForDB();
         String idLastOrderBeforeTest = utilsForDB.getLastOrderIdForFleet(dataSoloId.get("soloId").toString());

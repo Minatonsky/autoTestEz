@@ -1,6 +1,7 @@
 package parentTest;
 
 import io.qameta.allure.Step;
+import libs.ActionsWithOurElements;
 import libs.ConfigProperties;
 import org.aeonbits.owner.ConfigFactory;
 import org.apache.log4j.Logger;
@@ -11,10 +12,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
-import pages.DashboardPage;
-import pages.FinancesPage;
-import pages.LoginPage;
-import pages.ModalEldPage;
+import pages.*;
 
 import java.io.File;
 import java.io.IOException;
@@ -28,6 +26,9 @@ public class ParentTest {
     protected DashboardPage dashboardPage;
     protected ModalEldPage modalEldPage;
     protected FinancesPage financesPage;
+    protected EldManagerPage eldManagerPage;
+    protected ModalOrderPage modalOrderPage;
+    protected ActionsWithOurElements actionsWithOurElements;
     String browser = System.getProperty("browser");
     protected static ConfigProperties configProperties = ConfigFactory.create(ConfigProperties.class);
 
@@ -41,6 +42,9 @@ public class ParentTest {
         dashboardPage = new DashboardPage(webDriver);
         modalEldPage = new ModalEldPage(webDriver);
         financesPage = new FinancesPage(webDriver);
+        eldManagerPage = new EldManagerPage(webDriver);
+        modalOrderPage = new ModalOrderPage(webDriver);
+
 
 
 

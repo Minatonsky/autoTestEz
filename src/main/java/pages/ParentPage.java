@@ -10,6 +10,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class ParentPage {
     Logger logger = Logger.getLogger(getClass());
+
     WebDriver webDriver;
     String expectedUrl;
     protected static ConfigProperties configProperties = ConfigFactory.create(ConfigProperties.class);
@@ -20,24 +21,23 @@ public class ParentPage {
         this.webDriver = webDriver;
         baseUrl = configProperties.base_url();
         this.expectedUrl = baseUrl + expectedUrl;
-        PageFactory.initElements(webDriver,this);
+        PageFactory.initElements(webDriver, this);
         actionsWithOurElements = new ActionsWithOurElements(webDriver);
     }
 
-    public String getCurrentUrl(){
-        return  webDriver.getCurrentUrl();
+    public String getCurrentUrl() {
+        return webDriver.getCurrentUrl();
     }
 
-    public void checkCurrentUrl(){
+    public void checkCurrentUrl() {
         try {
             Assert.assertEquals("Url is not expected", expectedUrl, getCurrentUrl());
 
-        } catch (Exception e){
+        } catch (Exception e) {
             logger.error("Cannot work with Url");
             Assert.fail("Cannot work with Url");
 
         }
     }
-
-
 }
+
