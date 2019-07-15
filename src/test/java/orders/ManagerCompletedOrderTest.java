@@ -23,6 +23,9 @@ public class ManagerCompletedOrderTest extends ParentTest {
         loginPage.userValidLogIn(dataForManagerValidLogIn.get("login").toString(),dataForManagerValidLogIn.get("pass").toString());
 
         dashboardPage.clickOnMenuDash();
+
+        modalOrderPage.selectBrowserWindow("mainWindow");
+
         dashboardPage.clickOnMenuPageELD();
         Thread.sleep(5000);
         eldManagerPage.clickOnEldOrders();

@@ -3432,3 +3432,29 @@ Session ID: 3ac5f8fb904e3523391096e61444f69f
 2019-15-07 17:20:23   INFO [libs.ActionsWithOurElements] : Element was clicked
 2019-15-07 17:20:23   INFO [libs.ActionsWithOurElements] : 1 was selected in Drop-down
 2019-15-07 17:20:23   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-15-07 20:49:56   INFO [orders.ManagerCompletedOrderTest] : Chrome will be started
+2019-15-07 20:50:05   INFO [orders.ManagerCompletedOrderTest] : Chrome is started
+2019-15-07 20:50:16   INFO [pages.LoginPage] : Login Page was opened
+2019-15-07 20:50:16   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-15-07 20:50:17   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2019-15-07 20:50:17   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-15-07 20:50:17   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-15-07 20:50:25   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-15-07 20:50:25   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-15-07 21:14:25   INFO [orders.ManagerCompletedOrderTest] : Chrome will be started
+2019-15-07 21:14:34   INFO [orders.ManagerCompletedOrderTest] : Chrome is started
+2019-15-07 21:14:46   INFO [pages.LoginPage] : Login Page was opened
+2019-15-07 21:14:46   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-15-07 21:14:47   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2019-15-07 21:14:47   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-15-07 21:14:47   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-15-07 21:14:56   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-15-07 21:14:56   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-15-07 21:14:56   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-15-07 21:15:02   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-15-07 21:15:02   INFO [libs.ActionsWithOurElements] : 2422 was inputted into element
+2019-15-07 21:15:07   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-15-07 21:15:08   INFO [libs.ActionsWithOurElements] : 4 was selected in Drop-down
+2019-15-07 21:15:08   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-15-07 21:15:08   INFO [libs.ActionsWithOurElements] : 1 was selected in Drop-down
+2019-15-07 21:15:08   INFO [libs.ActionsWithOurElements] : Element was clicked
