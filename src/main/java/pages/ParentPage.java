@@ -10,6 +10,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class ParentPage {
     Logger logger = Logger.getLogger(getClass());
+
     WebDriver webDriver;
     String expectedUrl;
     protected static ConfigProperties configProperties = ConfigFactory.create(ConfigProperties.class);
@@ -36,6 +37,14 @@ public class ParentPage {
             logger.error("Cannot work with Url");
             Assert.fail("Cannot work with Url");
 
+        }
+    }
+    public void changeWindow(WebDriver driver){
+        String handle = webDriver.getWindowHandle();
+        for (String handles : driver.getWindowHandles()) {
+            if (handles.equals(handle))
+                continue;
+            driver.switchTo().window(handles);
         }
     }
 
