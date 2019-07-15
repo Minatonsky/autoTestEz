@@ -1,52 +1,32 @@
 package orders;
 
 import libs.ExcelDriver;
-import libs.SpreadsheetData;
 import libs.UtilsForDB;
 import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.junit.runners.Parameterized;
 import parentTest.ParentTest;
 
-import java.io.FileInputStream;
 import java.io.IOException;
-import java.io.InputStream;
 import java.sql.SQLException;
-import java.util.Collection;
 import java.util.Map;
 
-@RunWith(Parameterized.class)
-
-public class EldOrderTestWithExcelParams extends ParentTest {
-    int columnNumber;
-
-    public EldOrderTestWithExcelParams(int columnNumber) {
-        this.columnNumber = columnNumber;
-    }
-
-
-    @Parameterized.Parameters()
-    public static Collection testEldOrder() throws IOException {
-        InputStream spreadsheet = new FileInputStream(configProperties.DATA_FILE_PATH() + "testEldOrder.xls");
-        return new SpreadsheetData(spreadsheet,"orderListData").getData();
-
-    }
+public class SoloEldOrderTestWithExcel extends ParentTest {
 
 
     @Test
     public void addNewOrder() throws InterruptedException, SQLException, IOException, ClassNotFoundException {
         ExcelDriver excelDriver = new ExcelDriver();
+        int columnNumber = 2;
 
         Map dataForEldOrder = excelDriver.getMultipleData(configProperties.DATA_FILE_PATH() + "testEldOrder.xls", "orderListData", columnNumber);
         Map personalDataForEldOrder = excelDriver.getData(configProperties.DATA_FILE_PATH() + "testEldOrder.xls", "personalData");
-        Map dataForFleetValidLogIn = excelDriver.getData(configProperties.DATA_FILE_PATH() + "testLogin.xls", "validFleetLogin");
-        Map dataFleetId = excelDriver.getData(configProperties.DATA_FILE_PATH() + "testLogin.xls", "fleetId");
+        Map dataForSoloValidLogIn = excelDriver.getData(configProperties.DATA_FILE_PATH() + "testLogin.xls", "validSoloLogin");
+        Map dataSoloId = excelDriver.getData(configProperties.DATA_FILE_PATH() + "testLogin.xls", "soloId");
 
         UtilsForDB utilsForDB = new UtilsForDB();
-        String idLastOrderBeforeTest = utilsForDB.getLastOrderIdForFleet(dataFleetId.get("fleetId").toString());
-        utilsForDB.getSetCurrentDueForFleet(dataForEldOrder.get("currentDue").toString(), dataFleetId.get("fleetId").toString());
+        String idLastOrderBeforeTest = utilsForDB.getLastOrderIdForFleet(dataSoloId.get("soloId").toString());
+        utilsForDB.getSetCurrentDueForSolo(dataForEldOrder.get("currentDue").toString(), dataSoloId.get("soloId").toString());
 
-        loginPage.userValidLogIn(dataForFleetValidLogIn.get("login").toString(),dataForFleetValidLogIn.get("pass").toString());
+        loginPage.userValidLogIn(dataForSoloValidLogIn.get("login").toString(),dataForSoloValidLogIn.get("pass").toString());
 
         dashboardPage.clickOnMenuDash();
         dashboardPage.clickOnMenuPageELD();
@@ -69,7 +49,7 @@ PERSONAL DATA
 
 /*
 ORDER LIST
-// */
+ */
         modalEldPage.enterQuantityDevices(dataForEldOrder.get("quantityOfDevices").toString());
         modalEldPage.enterQuantityPinCable(dataForEldOrder.get("quantityPinCable").toString());
         modalEldPage.enterQuantityOBDPinCable(dataForEldOrder.get("quantityOBDPinCable").toString());
@@ -77,7 +57,7 @@ ORDER LIST
         modalEldPage.enterQuantityCamera1(dataForEldOrder.get("quantityCamera1").toString());
         modalEldPage.enterQuantityCamera2(dataForEldOrder.get("quantityCamera2").toString());
 
-//        modalEldPage.clickPaymentMethods();
+        modalEldPage.clickPaymentMethods(dataForEldOrder.get("typeOfPaymentMethod").toString());
 
 /*
 CHECK BOX DELIVERY
@@ -94,17 +74,18 @@ EQUIPMENT LEASE AND SOFTWARE SUBSCRIPTION SERVICE AGREEMENT
         modalEldPage.clickAgreement();
         modalEldPage.clickButtonFastMove();
         modalEldPage.clickButtonAgree();
-//        modalEldPage.clickButtonOrder();
+        modalEldPage.clickButtonOrder();
 
-        String idLastOrderAfterTest = utilsForDB.getLastOrderIdForFleet(dataFleetId.get("fleetId").toString());
-        checkAC("New order wasn`t created", idLastOrderBeforeTest.equals(idLastOrderAfterTest) , true);
+        String idLastOrderAfterTest = utilsForDB.getLastOrderIdForSolo(dataSoloId.get("soloId").toString());
+        checkAC("New order wasn`t created", idLastOrderBeforeTest.equals(idLastOrderAfterTest) , false);
 
-//        dashboardPage.clickOnMenuDash();
-//        dashboardPage.clickOnMenuPageFinances();
-//        financesPage.checkCurrentUrl();
-//
-//        financesPage.compareBalance(dataForEldOrder.get("defaultBalance").toString());
-//        checkAC("Balance is not correct", financesPage.compareBalance(dataForEldOrder.get("defaultBalance").toString()), true);
+        dashboardPage.clickOnMenuDash();
+        Thread.sleep(1000);
+        dashboardPage.clickOnMenuPageFinances();
+        financesPage.checkCurrentUrl();
+
+        financesPage.compareBalance(dataForEldOrder.get("defaultBalance").toString());
+        checkAC("Balance is not correct", financesPage.compareBalance(dataForEldOrder.get("defaultBalance").toString()), true);
 
 
 

@@ -11,13 +11,13 @@ public class DashboardPage extends ParentPage {
     @FindBy(xpath = ".//*[@class='stub']")
     private WebElement menuDash;
 
-    @FindBy(xpath = ".//div[@class='dash_nav']//a[@href='/dash/eld/']")
+    @FindBy(xpath = ".//a[@href='/dash/eld/']")
     private WebElement menuPageELD;
 
-    @FindBy(xpath = ".//button[@class='btn btn-primary']")
+    @FindBy(xpath = ".//button [text()='Order ELD']")
     private WebElement orderELD;
 
-    @FindBy(xpath = ".//div[@class='dash_nav']//a[@href='/dash/finances/']")
+    @FindBy(xpath = ".//a[@href='/dash/finances/']")
     private WebElement menuPageFinances;
 
     public DashboardPage(WebDriver webDriver) {

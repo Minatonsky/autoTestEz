@@ -29,4 +29,21 @@ public class UtilsForDB {
         dBMySQL.changeTable("UPDATE ez_finances SET `currentDue`=" + valueCurrentDue + " WHERE `carrierId`= " + idCarrier + ";");
         dBMySQL.quit();
     }
+    @Step
+    public void getSetCurrentDueForSolo(String valueCurrentDue, String idSolo) throws SQLException, IOException, ClassNotFoundException {
+        log.info("--- Conect MySQL DB --------");
+        dBMySQL = new Database("MySQL_PADB_DB", "MySQL");
+        log.info("--- Conected to MySQL --------");
+        dBMySQL.changeTable("UPDATE eld_personal_finances SET `currentDue`=" + valueCurrentDue + " WHERE `userId`= " + idSolo + ";");
+        dBMySQL.quit();
+    }
+    @Step
+    public String getLastOrderIdForSolo(String id) throws SQLException, IOException, ClassNotFoundException {
+        log.info("--- Conect MySQL DB --------");
+        dBMySQL = new Database("MySQL_PADB_DB", "MySQL");
+        log.info("--- Conected to MySQL --------");
+        String tempIdOrder = dBMySQL.selectValue("SELECT id FROM eld_orders WHERE userId = " + id + " ORDER BY orderDate desc LIMIT 1;");
+        dBMySQL.quit();
+        return tempIdOrder;
+    }
 }

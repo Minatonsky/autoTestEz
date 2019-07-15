@@ -9,7 +9,7 @@ import java.io.IOException;
 import java.sql.SQLException;
 import java.util.Map;
 
-public class EldOrderTestWithExcel extends ParentTest {
+public class FleetEldOrderTestWithExcel extends ParentTest {
 
 
     @Test
@@ -80,6 +80,7 @@ EQUIPMENT LEASE AND SOFTWARE SUBSCRIPTION SERVICE AGREEMENT
         checkAC("New order wasn`t created", idLastOrderBeforeTest.equals(idLastOrderAfterTest) , false);
 
         dashboardPage.clickOnMenuDash();
+        Thread.sleep(1000);
         dashboardPage.clickOnMenuPageFinances();
         financesPage.checkCurrentUrl();
 
