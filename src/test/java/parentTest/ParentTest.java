@@ -1,7 +1,6 @@
 package parentTest;
 
 import io.qameta.allure.Step;
-import libs.ActionsWithOurElements;
 import libs.ConfigProperties;
 import org.aeonbits.owner.ConfigFactory;
 import org.apache.log4j.Logger;
@@ -28,7 +27,7 @@ public class ParentTest {
     protected FinancesPage financesPage;
     protected EldManagerPage eldManagerPage;
     protected ModalOrderPage modalOrderPage;
-    protected ActionsWithOurElements actionsWithOurElements;
+
     String browser = System.getProperty("browser");
     protected static ConfigProperties configProperties = ConfigFactory.create(ConfigProperties.class);
 
@@ -44,6 +43,7 @@ public class ParentTest {
         financesPage = new FinancesPage(webDriver);
         eldManagerPage = new EldManagerPage(webDriver);
         modalOrderPage = new ModalOrderPage(webDriver);
+
 
 
 
