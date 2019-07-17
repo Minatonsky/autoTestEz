@@ -37,7 +37,7 @@ public class TestRule extends ParentTest {
         eldManagerPage.clickOnEldOrders();
         eldManagerPage.enterIdOrder("2422");
         Thread.sleep(5000);
-        eldManagerPage.clickOnOrderOnList();
+//        eldManagerPage.clickOnOrderOnList(idLastOrderAfterTest);
         modalOrderPage.selectOrderStatus("4");
         modalOrderPage.clickButtonSave();
         modalOrderPage.selectOrderStatus("1");

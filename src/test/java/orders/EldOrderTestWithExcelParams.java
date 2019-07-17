@@ -26,7 +26,7 @@ public class EldOrderTestWithExcelParams extends ParentTest {
 
 
     @Parameterized.Parameters()
-    public static Collection testEldOrder() throws IOException {
+    public static Collection getData() throws IOException {
         InputStream spreadsheet = new FileInputStream(configProperties.DATA_FILE_PATH() + "testEldOrder.xls");
         return new SpreadsheetData(spreadsheet,"orderListData").getData();
 
@@ -82,22 +82,22 @@ ORDER LIST
 /*
 CHECK BOX DELIVERY
  */
-        modalEldPage.setPickUpFromOffice(dataForEldOrder.get("neededStatePickUpFromOffice").toString());
-        modalEldPage.setOvernightDelivery(dataForEldOrder.get("neededStateOvernightDelivery").toString());
-
-        modalEldPage.compareTotalOrder(dataForEldOrder.get("defaultTotalOrder").toString());
-        checkAC("Total Order is not correct", modalEldPage.compareTotalOrder(dataForEldOrder.get("defaultTotalOrder").toString()), true);
-
-/*
-EQUIPMENT LEASE AND SOFTWARE SUBSCRIPTION SERVICE AGREEMENT
- */
-        modalEldPage.clickAgreement();
-        modalEldPage.clickButtonFastMove();
-        modalEldPage.clickButtonAgree();
-//        modalEldPage.clickButtonOrder();
-
-        String idLastOrderAfterTest = utilsForDB.getLastOrderIdForFleet(dataFleetId.get("fleetId").toString());
-        checkAC("New order wasn`t created", idLastOrderBeforeTest.equals(idLastOrderAfterTest) , true);
+//        modalEldPage.setPickUpFromOffice(dataForEldOrder.get("neededStatePickUpFromOffice").toString());
+//        modalEldPage.setOvernightDelivery(dataForEldOrder.get("neededStateOvernightDelivery").toString());
+//
+//        modalEldPage.compareTotalOrder(dataForEldOrder.get("defaultTotalOrder").toString());
+//        checkAC("Total Order is not correct", modalEldPage.compareTotalOrder(dataForEldOrder.get("defaultTotalOrder").toString()), true);
+//
+///*
+//EQUIPMENT LEASE AND SOFTWARE SUBSCRIPTION SERVICE AGREEMENT
+// */
+//        modalEldPage.clickAgreement();
+//        modalEldPage.clickButtonFastMove();
+//        modalEldPage.clickButtonAgree();
+////        modalEldPage.clickButtonOrder();
+//
+//        String idLastOrderAfterTest = utilsForDB.getLastOrderIdForFleet(dataFleetId.get("fleetId").toString());
+//        checkAC("New order wasn`t created", idLastOrderBeforeTest.equals(idLastOrderAfterTest) , true);
 
 //        dashboardPage.clickOnMenuDash();
 //        dashboardPage.clickOnMenuPageFinances();

@@ -2799,10 +2799,10 @@ Session ID: 7b7506c323ea06641d2feab2a3649f64
 2019-15-07 10:12:24   INFO [libs.ActionsWithOurElements] : Element was clicked
 2019-15-07 10:12:25   INFO [libs.ActionsWithOurElements] : Element is displayed
 2019-15-07 10:12:25   INFO [libs.ActionsWithOurElements] : Element is displayed
-2019-15-07 10:33:04   INFO [orders.SoloEldOrderTestWithExcel] : Chrome will be started
-2019-15-07 10:33:13   INFO [orders.SoloEldOrderTestWithExcel] : Chrome is started
-2019-15-07 10:35:11   INFO [orders.SoloEldOrderTestWithExcel] : Chrome will be started
-2019-15-07 10:35:19   INFO [orders.SoloEldOrderTestWithExcel] : Chrome is started
+2019-15-07 10:33:04   INFO [orders.SoloEldOrderCompletedByManagerTest] : Chrome will be started
+2019-15-07 10:33:13   INFO [orders.SoloEldOrderCompletedByManagerTest] : Chrome is started
+2019-15-07 10:35:11   INFO [orders.SoloEldOrderCompletedByManagerTest] : Chrome will be started
+2019-15-07 10:35:19   INFO [orders.SoloEldOrderCompletedByManagerTest] : Chrome is started
 2019-15-07 10:35:26   INFO [libs.UtilsForDB] : --- Conect MySQL DB --------
 2019-15-07 10:35:26   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
 2019-15-07 10:35:28   INFO [libs.UtilsForDB] : --- Conected to MySQL --------
@@ -2823,8 +2823,8 @@ System info: host: 'DESKTOP-UD8IPI4', ip: '192.168.32.145', os.name: 'Windows 10
 Driver info: org.openqa.selenium.chrome.ChromeDriver
 Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.100, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\denku\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52190}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
 Session ID: 7c8e06f186b2904e420291469c317a09
-2019-15-07 10:39:40   INFO [orders.SoloEldOrderTestWithExcel] : Chrome will be started
-2019-15-07 10:39:48   INFO [orders.SoloEldOrderTestWithExcel] : Chrome is started
+2019-15-07 10:39:40   INFO [orders.SoloEldOrderCompletedByManagerTest] : Chrome will be started
+2019-15-07 10:39:48   INFO [orders.SoloEldOrderCompletedByManagerTest] : Chrome is started
 2019-15-07 10:39:54   INFO [libs.UtilsForDB] : --- Conect MySQL DB --------
 2019-15-07 10:39:54   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
 2019-15-07 10:39:57   INFO [libs.UtilsForDB] : --- Conected to MySQL --------
@@ -2847,8 +2847,8 @@ System info: host: 'DESKTOP-UD8IPI4', ip: '192.168.32.145', os.name: 'Windows 10
 Driver info: org.openqa.selenium.chrome.ChromeDriver
 Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.100, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\denku\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52405}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
 Session ID: ac9f9daeccb7da4f84fe93063ddfa087
-2019-15-07 10:50:20   INFO [orders.SoloEldOrderTestWithExcel] : Chrome will be started
-2019-15-07 10:50:29   INFO [orders.SoloEldOrderTestWithExcel] : Chrome is started
+2019-15-07 10:50:20   INFO [orders.SoloEldOrderCompletedByManagerTest] : Chrome will be started
+2019-15-07 10:50:29   INFO [orders.SoloEldOrderCompletedByManagerTest] : Chrome is started
 2019-15-07 10:50:35   INFO [libs.UtilsForDB] : --- Conect MySQL DB --------
 2019-15-07 10:50:35   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
 2019-15-07 10:50:38   INFO [libs.UtilsForDB] : --- Conected to MySQL --------
@@ -2892,9 +2892,9 @@ Session ID: ac9f9daeccb7da4f84fe93063ddfa087
 2019-15-07 10:50:58   INFO [libs.UtilsForDB] : --- Conect MySQL DB --------
 2019-15-07 10:50:58   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
 2019-15-07 10:51:00   INFO [libs.UtilsForDB] : --- Conected to MySQL --------
-2019-15-07 10:51:00  ERROR [orders.SoloEldOrderTestWithExcel] : AC failed: New order wasn`t created
-2019-15-07 11:04:13   INFO [orders.SoloEldOrderTestWithExcel] : Chrome will be started
-2019-15-07 11:04:21   INFO [orders.SoloEldOrderTestWithExcel] : Chrome is started
+2019-15-07 10:51:00  ERROR [orders.SoloEldOrderCompletedByManagerTest] : AC failed: New order wasn`t created
+2019-15-07 11:04:13   INFO [orders.SoloEldOrderCompletedByManagerTest] : Chrome will be started
+2019-15-07 11:04:21   INFO [orders.SoloEldOrderCompletedByManagerTest] : Chrome is started
 2019-15-07 11:04:27   INFO [libs.UtilsForDB] : --- Conect MySQL DB --------
 2019-15-07 11:04:27   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
 2019-15-07 11:04:31   INFO [libs.UtilsForDB] : --- Conected to MySQL --------
@@ -2915,8 +2915,8 @@ System info: host: 'DESKTOP-UD8IPI4', ip: '192.168.32.145', os.name: 'Windows 10
 Driver info: org.openqa.selenium.chrome.ChromeDriver
 Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.100, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\denku\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53322}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
 Session ID: 2ae9dd2ec9accbdfbae9a5fc2cbd87a6
-2019-15-07 11:11:47   INFO [orders.SoloEldOrderTestWithExcel] : Chrome will be started
-2019-15-07 11:11:55   INFO [orders.SoloEldOrderTestWithExcel] : Chrome is started
+2019-15-07 11:11:47   INFO [orders.SoloEldOrderCompletedByManagerTest] : Chrome will be started
+2019-15-07 11:11:55   INFO [orders.SoloEldOrderCompletedByManagerTest] : Chrome is started
 2019-15-07 11:12:01   INFO [libs.UtilsForDB] : --- Conect MySQL DB --------
 2019-15-07 11:12:01   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
 2019-15-07 11:12:04   INFO [libs.UtilsForDB] : --- Conected to MySQL --------
@@ -2960,9 +2960,9 @@ Session ID: 2ae9dd2ec9accbdfbae9a5fc2cbd87a6
 2019-15-07 11:12:27   INFO [libs.UtilsForDB] : --- Conect MySQL DB --------
 2019-15-07 11:12:27   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
 2019-15-07 11:12:28   INFO [libs.UtilsForDB] : --- Conected to MySQL --------
-2019-15-07 11:12:28  ERROR [orders.SoloEldOrderTestWithExcel] : AC failed: New order wasn`t created
-2019-15-07 11:15:27   INFO [orders.SoloEldOrderTestWithExcel] : Chrome will be started
-2019-15-07 11:15:35   INFO [orders.SoloEldOrderTestWithExcel] : Chrome is started
+2019-15-07 11:12:28  ERROR [orders.SoloEldOrderCompletedByManagerTest] : AC failed: New order wasn`t created
+2019-15-07 11:15:27   INFO [orders.SoloEldOrderCompletedByManagerTest] : Chrome will be started
+2019-15-07 11:15:35   INFO [orders.SoloEldOrderCompletedByManagerTest] : Chrome is started
 2019-15-07 11:15:42   INFO [libs.UtilsForDB] : --- Conect MySQL DB --------
 2019-15-07 11:15:42   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
 2019-15-07 11:15:44   INFO [libs.UtilsForDB] : --- Conected to MySQL --------
@@ -3458,8 +3458,8 @@ Session ID: 3ac5f8fb904e3523391096e61444f69f
 2019-15-07 21:15:08   INFO [libs.ActionsWithOurElements] : Element was clicked
 2019-15-07 21:15:08   INFO [libs.ActionsWithOurElements] : 1 was selected in Drop-down
 2019-15-07 21:15:08   INFO [libs.ActionsWithOurElements] : Element was clicked
-2019-16-07 11:17:31   INFO [orders.FleetEldOrderCompletedTest] : Chrome will be started
-2019-16-07 11:17:40   INFO [orders.FleetEldOrderCompletedTest] : Chrome is started
+2019-16-07 11:17:31   INFO [orders.FleetEldOrderCompletedByManagerTest] : Chrome will be started
+2019-16-07 11:17:40   INFO [orders.FleetEldOrderCompletedByManagerTest] : Chrome is started
 2019-16-07 11:17:46   INFO [libs.UtilsForDB] : --- Conect MySQL DB --------
 2019-16-07 11:17:46   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
 2019-16-07 11:17:48   INFO [libs.UtilsForDB] : --- Conected to MySQL --------
@@ -3565,8 +3565,8 @@ Session ID: 57f389d05ce9a0449d56912933d4837c
 2019-16-07 13:29:40   INFO [libs.ActionsWithOurElements] : Element was clicked
 2019-16-07 13:29:40   INFO [libs.ActionsWithOurElements] : 1 was selected in Drop-down
 2019-16-07 13:29:40   INFO [libs.ActionsWithOurElements] : Element was clicked
-2019-16-07 14:16:11   INFO [orders.FleetEldOrderCompletedTest] : Chrome will be started
-2019-16-07 14:16:20   INFO [orders.FleetEldOrderCompletedTest] : Chrome is started
+2019-16-07 14:16:11   INFO [orders.FleetEldOrderCompletedByManagerTest] : Chrome will be started
+2019-16-07 14:16:20   INFO [orders.FleetEldOrderCompletedByManagerTest] : Chrome is started
 2019-16-07 14:16:27   INFO [libs.UtilsForDB] : --- Conect MySQL DB --------
 2019-16-07 14:16:27   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
 2019-16-07 14:16:30   INFO [libs.UtilsForDB] : --- Conected to MySQL --------
@@ -3582,8 +3582,8 @@ Session ID: 57f389d05ce9a0449d56912933d4837c
 2019-16-07 14:16:45   INFO [libs.UtilsForDB] : --- Conect MySQL DB --------
 2019-16-07 14:16:45   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
 2019-16-07 14:16:46   INFO [libs.UtilsForDB] : --- Conected to MySQL --------
-2019-16-07 14:16:47   INFO [orders.FleetEldOrderCompletedTest] : Chrome will be started
-2019-16-07 14:16:53   INFO [orders.FleetEldOrderCompletedTest] : Chrome is started
+2019-16-07 14:16:47   INFO [orders.FleetEldOrderCompletedByManagerTest] : Chrome will be started
+2019-16-07 14:16:53   INFO [orders.FleetEldOrderCompletedByManagerTest] : Chrome is started
 2019-16-07 14:17:02   INFO [pages.LoginPage] : Login Page was opened
 2019-16-07 14:17:02   INFO [libs.ActionsWithOurElements] : Element was clicked
 2019-16-07 14:17:03   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
@@ -3599,8 +3599,8 @@ Session ID: 57f389d05ce9a0449d56912933d4837c
 2019-16-07 14:17:24   INFO [libs.ActionsWithOurElements] : Element was clicked
 2019-16-07 14:17:24   INFO [libs.ActionsWithOurElements] : 1 was selected in Drop-down
 2019-16-07 14:17:24   INFO [libs.ActionsWithOurElements] : Element was clicked
-2019-16-07 14:37:41   INFO [orders.FleetEldOrderCompletedTest] : Chrome will be started
-2019-16-07 14:37:49   INFO [orders.FleetEldOrderCompletedTest] : Chrome is started
+2019-16-07 14:37:41   INFO [orders.FleetEldOrderCompletedByManagerTest] : Chrome will be started
+2019-16-07 14:37:49   INFO [orders.FleetEldOrderCompletedByManagerTest] : Chrome is started
 2019-16-07 14:37:55   INFO [libs.UtilsForDB] : --- Conect MySQL DB --------
 2019-16-07 14:37:55   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
 2019-16-07 14:37:58   INFO [libs.UtilsForDB] : --- Conected to MySQL --------
@@ -3648,8 +3648,8 @@ Session ID: 57f389d05ce9a0449d56912933d4837c
 2019-16-07 14:38:24   INFO [libs.ActionsWithOurElements] : Element was clicked
 2019-16-07 14:38:24   INFO [libs.ActionsWithOurElements] : Element is displayed
 2019-16-07 14:38:24   INFO [libs.ActionsWithOurElements] : Element is displayed
-2019-16-07 14:38:25   INFO [orders.FleetEldOrderCompletedTest] : Chrome will be started
-2019-16-07 14:38:30   INFO [orders.FleetEldOrderCompletedTest] : Chrome is started
+2019-16-07 14:38:25   INFO [orders.FleetEldOrderCompletedByManagerTest] : Chrome will be started
+2019-16-07 14:38:30   INFO [orders.FleetEldOrderCompletedByManagerTest] : Chrome is started
 2019-16-07 14:38:39   INFO [pages.LoginPage] : Login Page was opened
 2019-16-07 14:38:40   INFO [libs.ActionsWithOurElements] : Element was clicked
 2019-16-07 14:38:40   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
@@ -3665,8 +3665,8 @@ Session ID: 57f389d05ce9a0449d56912933d4837c
 2019-16-07 14:39:02   INFO [libs.ActionsWithOurElements] : Element was clicked
 2019-16-07 14:39:02   INFO [libs.ActionsWithOurElements] : 1 was selected in Drop-down
 2019-16-07 14:39:02   INFO [libs.ActionsWithOurElements] : Element was clicked
-2019-16-07 14:43:36   INFO [orders.FleetEldOrderCompletedTest] : Chrome will be started
-2019-16-07 14:43:45   INFO [orders.FleetEldOrderCompletedTest] : Chrome is started
+2019-16-07 14:43:36   INFO [orders.FleetEldOrderCompletedByManagerTest] : Chrome will be started
+2019-16-07 14:43:45   INFO [orders.FleetEldOrderCompletedByManagerTest] : Chrome is started
 2019-16-07 14:43:51   INFO [libs.UtilsForDB] : --- Conect MySQL DB --------
 2019-16-07 14:43:51   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
 2019-16-07 14:43:54   INFO [libs.UtilsForDB] : --- Conected to MySQL --------
@@ -3682,8 +3682,8 @@ Session ID: 57f389d05ce9a0449d56912933d4837c
 2019-16-07 14:44:08   INFO [libs.UtilsForDB] : --- Conect MySQL DB --------
 2019-16-07 14:44:08   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
 2019-16-07 14:44:10   INFO [libs.UtilsForDB] : --- Conected to MySQL --------
-2019-16-07 14:44:11   INFO [orders.FleetEldOrderCompletedTest] : Chrome will be started
-2019-16-07 14:44:16   INFO [orders.FleetEldOrderCompletedTest] : Chrome is started
+2019-16-07 14:44:11   INFO [orders.FleetEldOrderCompletedByManagerTest] : Chrome will be started
+2019-16-07 14:44:16   INFO [orders.FleetEldOrderCompletedByManagerTest] : Chrome is started
 2019-16-07 14:44:25   INFO [pages.LoginPage] : Login Page was opened
 2019-16-07 14:44:26   INFO [libs.ActionsWithOurElements] : Element was clicked
 2019-16-07 14:44:26   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
@@ -3699,3 +3699,893 @@ Session ID: 57f389d05ce9a0449d56912933d4837c
 2019-16-07 14:44:48   INFO [libs.ActionsWithOurElements] : Element was clicked
 2019-16-07 14:44:48   INFO [libs.ActionsWithOurElements] : 1 was selected in Drop-down
 2019-16-07 14:44:48   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 13:01:07   INFO [orders.FleetEldOrderCancelByManagerTest] : Chrome will be started
+2019-17-07 13:01:17   INFO [orders.FleetEldOrderCancelByManagerTest] : Chrome is started
+2019-17-07 13:01:24   INFO [libs.UtilsForDB] : --- Conect MySQL DB --------
+2019-17-07 13:01:24   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-17-07 13:01:26   INFO [libs.UtilsForDB] : --- Conected to MySQL --------
+2019-17-07 13:01:26   INFO [libs.UtilsForDB] : --- Conect MySQL DB --------
+2019-17-07 13:01:26   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-17-07 13:01:28   INFO [libs.UtilsForDB] : --- Conected to MySQL --------
+2019-17-07 13:01:33   INFO [pages.LoginPage] : Login Page was opened
+2019-17-07 13:01:33   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 13:01:34   INFO [libs.ActionsWithOurElements] : rose@emailate.com was inputted into element
+2019-17-07 13:01:34   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-17-07 13:01:35   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 13:01:41   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-17-07 13:01:42   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 13:01:42   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 13:01:44   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 13:01:44   INFO [libs.ActionsWithOurElements] : Street was inputted into element
+2019-17-07 13:01:44   INFO [libs.ActionsWithOurElements] : 2 was inputted into element
+2019-17-07 13:01:45   INFO [libs.ActionsWithOurElements] : Phoenix was inputted into element
+2019-17-07 13:01:45   INFO [libs.ActionsWithOurElements] : 1 was selected in Drop-down
+2019-17-07 13:01:45   INFO [libs.ActionsWithOurElements] : 30606 was inputted into element
+2019-17-07 13:01:46   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2019-17-07 13:01:46   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2019-17-07 13:01:46   INFO [libs.ActionsWithOurElements] : 1676475006 was inputted into element
+2019-17-07 13:01:47   INFO [libs.ActionsWithOurElements] : 2 was inputted into element
+2019-17-07 13:01:47   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-17-07 13:01:47   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-17-07 13:01:47   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-17-07 13:01:48   INFO [libs.ActionsWithOurElements] : 0 was inputted into element
+2019-17-07 13:01:48   INFO [libs.ActionsWithOurElements] : 0 was inputted into element
+2019-17-07 13:01:48   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-17-07 13:01:48   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 13:01:48   INFO [pages.ModalEldPage] : Payment Method 1 was selected
+2019-17-07 13:01:48   INFO [libs.ActionsWithOurElements] : checkbox is already unchecked
+2019-17-07 13:01:48   INFO [libs.ActionsWithOurElements] : checkbox is already unchecked
+2019-17-07 13:01:49   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-17-07 13:01:49   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-17-07 13:01:49   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 13:01:49   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 13:01:50   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 13:01:50   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 13:01:50   INFO [libs.UtilsForDB] : --- Conect MySQL DB --------
+2019-17-07 13:01:50   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-17-07 13:01:52   INFO [libs.UtilsForDB] : --- Conected to MySQL --------
+2019-17-07 13:01:53   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 13:01:54   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 13:02:34  ERROR [orders.FleetEldOrderCancelByManagerTest] : AC failed: Balance is not correct
+2019-17-07 13:11:48   INFO [orders.FleetEldOrderCancelByManagerTest] : Chrome will be started
+2019-17-07 13:11:58   INFO [orders.FleetEldOrderCancelByManagerTest] : Chrome is started
+2019-17-07 13:12:05   INFO [libs.UtilsForDB] : --- Conect MySQL DB --------
+2019-17-07 13:12:05   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-17-07 13:12:07   INFO [libs.UtilsForDB] : --- Conected to MySQL --------
+2019-17-07 13:12:07   INFO [libs.UtilsForDB] : --- Conect MySQL DB --------
+2019-17-07 13:12:07   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-17-07 13:12:09   INFO [libs.UtilsForDB] : --- Conected to MySQL --------
+2019-17-07 13:12:14   INFO [pages.LoginPage] : Login Page was opened
+2019-17-07 13:12:15   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 13:12:15   INFO [libs.ActionsWithOurElements] : rose@emailate.com was inputted into element
+2019-17-07 13:12:16   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-17-07 13:12:16   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 13:12:23   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-17-07 13:12:23   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 13:12:24   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 13:12:25   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 13:12:26   INFO [libs.ActionsWithOurElements] : Street was inputted into element
+2019-17-07 13:12:26   INFO [libs.ActionsWithOurElements] : 2 was inputted into element
+2019-17-07 13:12:26   INFO [libs.ActionsWithOurElements] : Phoenix was inputted into element
+2019-17-07 13:12:27   INFO [libs.ActionsWithOurElements] : 1 was selected in Drop-down
+2019-17-07 13:12:27   INFO [libs.ActionsWithOurElements] : 30606 was inputted into element
+2019-17-07 13:12:27   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2019-17-07 13:12:28   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2019-17-07 13:12:28   INFO [libs.ActionsWithOurElements] : 1676475006 was inputted into element
+2019-17-07 13:12:28   INFO [libs.ActionsWithOurElements] : 2 was inputted into element
+2019-17-07 13:12:28   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-17-07 13:12:29   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-17-07 13:12:29   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-17-07 13:12:29   INFO [libs.ActionsWithOurElements] : 0 was inputted into element
+2019-17-07 13:12:29   INFO [libs.ActionsWithOurElements] : 0 was inputted into element
+2019-17-07 13:12:29   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-17-07 13:12:30   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 13:12:30   INFO [pages.ModalEldPage] : Payment Method 1 was selected
+2019-17-07 13:12:30   INFO [libs.ActionsWithOurElements] : checkbox is already unchecked
+2019-17-07 13:12:30   INFO [libs.ActionsWithOurElements] : checkbox is already unchecked
+2019-17-07 13:12:30   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-17-07 13:12:30   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-17-07 13:12:30   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 13:12:31   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 13:12:32   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 13:12:32   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 13:12:32   INFO [libs.UtilsForDB] : --- Conect MySQL DB --------
+2019-17-07 13:12:32   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-17-07 13:12:33   INFO [libs.UtilsForDB] : --- Conected to MySQL --------
+2019-17-07 13:12:34   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 13:12:35   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 13:12:35   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-17-07 13:12:35   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-17-07 13:12:36   INFO [orders.FleetEldOrderCancelByManagerTest] : Chrome will be started
+2019-17-07 13:12:42   INFO [orders.FleetEldOrderCancelByManagerTest] : Chrome is started
+2019-17-07 13:12:51   INFO [pages.LoginPage] : Login Page was opened
+2019-17-07 13:12:52   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 13:12:52   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2019-17-07 13:12:52   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-17-07 13:12:53   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 13:13:02   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-17-07 13:13:02   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 13:13:03   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 13:13:08   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 13:13:13   INFO [libs.ActionsWithOurElements] : 2434 was inputted into element
+2019-17-07 13:13:58  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: .//*[@id='eld_orders_table']//td[text()='2422']' (tried for 20 second(s) with 500 milliseconds interval)
+2019-17-07 14:11:14   INFO [orders.ManagerCompletedOrderTest] : Chrome will be started
+2019-17-07 14:11:23   INFO [orders.ManagerCompletedOrderTest] : Chrome is started
+2019-17-07 14:11:35   INFO [pages.LoginPage] : Login Page was opened
+2019-17-07 14:11:36   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 14:11:36   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2019-17-07 14:11:36   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-17-07 14:11:37   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 14:11:46   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-17-07 14:11:46   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 14:11:47   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 14:11:52   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 14:11:52   INFO [libs.ActionsWithOurElements] : 2434 was inputted into element
+2019-17-07 14:11:58   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 14:11:58   INFO [libs.ActionsWithOurElements] : 2 was selected in Drop-down
+2019-17-07 14:11:58   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 14:12:53   INFO [orders.ManagerCompletedOrderTest] : Chrome will be started
+2019-17-07 14:13:03   INFO [orders.ManagerCompletedOrderTest] : Chrome is started
+2019-17-07 14:13:15   INFO [pages.LoginPage] : Login Page was opened
+2019-17-07 14:13:15   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 14:13:16   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2019-17-07 14:13:16   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-17-07 14:13:16   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 14:13:25   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-17-07 14:13:25   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 14:13:26   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 14:13:31   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 14:13:32   INFO [libs.ActionsWithOurElements] : 2433 was inputted into element
+2019-17-07 14:13:37   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 14:13:38   INFO [libs.ActionsWithOurElements] : 2 was selected in Drop-down
+2019-17-07 14:13:38   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 14:15:29   INFO [orders.FleetEldOrderCancelByManagerTest] : Chrome will be started
+2019-17-07 14:15:39   INFO [orders.FleetEldOrderCancelByManagerTest] : Chrome is started
+2019-17-07 14:15:45   INFO [libs.UtilsForDB] : --- Conect MySQL DB --------
+2019-17-07 14:15:45   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-17-07 14:15:47   INFO [libs.UtilsForDB] : --- Conected to MySQL --------
+2019-17-07 14:15:47   INFO [libs.UtilsForDB] : --- Conect MySQL DB --------
+2019-17-07 14:15:47   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-17-07 14:15:49   INFO [libs.UtilsForDB] : --- Conected to MySQL --------
+2019-17-07 14:15:55   INFO [pages.LoginPage] : Login Page was opened
+2019-17-07 14:15:55   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 14:15:55   INFO [libs.ActionsWithOurElements] : rose@emailate.com was inputted into element
+2019-17-07 14:15:55   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-17-07 14:15:56   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 14:16:02   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-17-07 14:16:03   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 14:16:03   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 14:16:05   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 14:16:05   INFO [libs.ActionsWithOurElements] : Street was inputted into element
+2019-17-07 14:16:06   INFO [libs.ActionsWithOurElements] : 2 was inputted into element
+2019-17-07 14:16:06   INFO [libs.ActionsWithOurElements] : Phoenix was inputted into element
+2019-17-07 14:16:06   INFO [libs.ActionsWithOurElements] : 1 was selected in Drop-down
+2019-17-07 14:16:07   INFO [libs.ActionsWithOurElements] : 30606 was inputted into element
+2019-17-07 14:16:07   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2019-17-07 14:16:07   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2019-17-07 14:16:08   INFO [libs.ActionsWithOurElements] : 1676475006 was inputted into element
+2019-17-07 14:16:08   INFO [libs.ActionsWithOurElements] : 2 was inputted into element
+2019-17-07 14:16:08   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-17-07 14:16:09   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-17-07 14:16:09   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-17-07 14:16:09   INFO [libs.ActionsWithOurElements] : 0 was inputted into element
+2019-17-07 14:16:10   INFO [libs.ActionsWithOurElements] : 0 was inputted into element
+2019-17-07 14:16:10   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-17-07 14:16:10   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 14:16:10   INFO [pages.ModalEldPage] : Payment Method 1 was selected
+2019-17-07 14:16:10   INFO [libs.ActionsWithOurElements] : checkbox is already unchecked
+2019-17-07 14:16:10   INFO [libs.ActionsWithOurElements] : checkbox is already unchecked
+2019-17-07 14:16:10   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-17-07 14:16:10   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-17-07 14:16:11   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 14:16:11   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 14:16:12   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 14:16:12   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 14:16:12   INFO [libs.UtilsForDB] : --- Conect MySQL DB --------
+2019-17-07 14:16:12   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-17-07 14:16:14   INFO [libs.UtilsForDB] : --- Conected to MySQL --------
+2019-17-07 14:16:14   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 14:16:15   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 14:16:16   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-17-07 14:16:16   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-17-07 14:16:17   INFO [orders.FleetEldOrderCancelByManagerTest] : Chrome will be started
+2019-17-07 14:16:22   INFO [orders.FleetEldOrderCancelByManagerTest] : Chrome is started
+2019-17-07 14:16:31   INFO [pages.LoginPage] : Login Page was opened
+2019-17-07 14:16:31   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 14:16:32   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2019-17-07 14:16:32   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-17-07 14:16:32   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 14:16:41   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-17-07 14:16:42   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 14:16:42   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 14:16:47   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 14:16:53   INFO [libs.ActionsWithOurElements] : 2435 was inputted into element
+2019-17-07 14:16:58   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 14:16:58   INFO [libs.ActionsWithOurElements] : 2 was selected in Drop-down
+2019-17-07 14:16:59   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 14:17:00   INFO [orders.FleetEldOrderCancelByManagerTest] : Chrome will be started
+2019-17-07 14:17:05   INFO [orders.FleetEldOrderCancelByManagerTest] : Chrome is started
+2019-17-07 14:17:14   INFO [pages.LoginPage] : Login Page was opened
+2019-17-07 14:17:15   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 14:17:15   INFO [libs.ActionsWithOurElements] : rose@emailate.com was inputted into element
+2019-17-07 14:17:15   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-17-07 14:17:16   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 14:17:22   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-17-07 14:17:23   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 14:17:24   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 14:19:45   INFO [orders.FleetEldOrderCancelByManagerTest] : Chrome will be started
+2019-17-07 14:19:55   INFO [orders.FleetEldOrderCancelByManagerTest] : Chrome is started
+2019-17-07 14:20:01   INFO [libs.UtilsForDB] : --- Conect MySQL DB --------
+2019-17-07 14:20:01   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-17-07 14:20:04   INFO [libs.UtilsForDB] : --- Conected to MySQL --------
+2019-17-07 14:20:04   INFO [libs.UtilsForDB] : --- Conect MySQL DB --------
+2019-17-07 14:20:04   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-17-07 14:20:06   INFO [libs.UtilsForDB] : --- Conected to MySQL --------
+2019-17-07 14:20:11   INFO [pages.LoginPage] : Login Page was opened
+2019-17-07 14:20:11   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 14:20:12   INFO [libs.ActionsWithOurElements] : rose@emailate.com was inputted into element
+2019-17-07 14:20:12   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-17-07 14:20:12   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 14:20:20   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-17-07 14:20:20   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 14:20:20   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 14:20:22   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 14:20:22   INFO [libs.ActionsWithOurElements] : Street was inputted into element
+2019-17-07 14:20:23   INFO [libs.ActionsWithOurElements] : 2 was inputted into element
+2019-17-07 14:20:23   INFO [libs.ActionsWithOurElements] : Phoenix was inputted into element
+2019-17-07 14:20:23   INFO [libs.ActionsWithOurElements] : 1 was selected in Drop-down
+2019-17-07 14:20:24   INFO [libs.ActionsWithOurElements] : 30606 was inputted into element
+2019-17-07 14:20:24   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2019-17-07 14:20:25   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2019-17-07 14:20:25   INFO [libs.ActionsWithOurElements] : 1676475006 was inputted into element
+2019-17-07 14:20:25   INFO [libs.ActionsWithOurElements] : 2 was inputted into element
+2019-17-07 14:20:25   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-17-07 14:20:26   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-17-07 14:20:26   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-17-07 14:20:26   INFO [libs.ActionsWithOurElements] : 0 was inputted into element
+2019-17-07 14:20:26   INFO [libs.ActionsWithOurElements] : 0 was inputted into element
+2019-17-07 14:20:26   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-17-07 14:20:27   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 14:20:27   INFO [pages.ModalEldPage] : Payment Method 1 was selected
+2019-17-07 14:20:27   INFO [libs.ActionsWithOurElements] : checkbox is already unchecked
+2019-17-07 14:20:27   INFO [libs.ActionsWithOurElements] : checkbox is already unchecked
+2019-17-07 14:20:27   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-17-07 14:20:27   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-17-07 14:20:28   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 14:20:28   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 14:20:29   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 14:20:29   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 14:20:29   INFO [libs.UtilsForDB] : --- Conect MySQL DB --------
+2019-17-07 14:20:29   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-17-07 14:20:31   INFO [libs.UtilsForDB] : --- Conected to MySQL --------
+2019-17-07 14:20:31   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 14:20:32   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 14:20:32   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-17-07 14:20:32   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-17-07 14:20:34   INFO [orders.FleetEldOrderCancelByManagerTest] : Chrome will be started
+2019-17-07 14:20:39   INFO [orders.FleetEldOrderCancelByManagerTest] : Chrome is started
+2019-17-07 14:20:50   INFO [pages.LoginPage] : Login Page was opened
+2019-17-07 14:20:50   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 14:20:50   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2019-17-07 14:20:50   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-17-07 14:20:51   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 14:21:00   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-17-07 14:21:00   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 14:21:00   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 14:21:06   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 14:21:11   INFO [libs.ActionsWithOurElements] : 2436 was inputted into element
+2019-17-07 14:21:16   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 14:21:17   INFO [libs.ActionsWithOurElements] : 2 was selected in Drop-down
+2019-17-07 14:21:17   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 14:21:18   INFO [orders.FleetEldOrderCancelByManagerTest] : Chrome will be started
+2019-17-07 14:21:24   INFO [orders.FleetEldOrderCancelByManagerTest] : Chrome is started
+2019-17-07 14:21:33   INFO [pages.LoginPage] : Login Page was opened
+2019-17-07 14:21:34   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 14:21:34   INFO [libs.ActionsWithOurElements] : rose@emailate.com was inputted into element
+2019-17-07 14:21:34   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-17-07 14:21:35   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 14:21:42   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-17-07 14:21:42   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 14:21:43   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 14:21:44   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-17-07 14:21:44   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-17-07 15:31:20   INFO [orders.SoloEldOrderCancelByManagerTest] : Chrome will be started
+2019-17-07 15:31:30   INFO [orders.SoloEldOrderCancelByManagerTest] : Chrome is started
+2019-17-07 15:31:37   INFO [libs.UtilsForDB] : --- Conect MySQL DB --------
+2019-17-07 15:31:37   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-17-07 15:31:39   INFO [libs.UtilsForDB] : --- Conected to MySQL --------
+2019-17-07 15:31:39   INFO [libs.UtilsForDB] : --- Conect MySQL DB --------
+2019-17-07 15:31:39   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-17-07 15:31:41   INFO [libs.UtilsForDB] : --- Conected to MySQL --------
+2019-17-07 15:31:47   INFO [pages.LoginPage] : Login Page was opened
+2019-17-07 15:31:47   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 15:31:48   INFO [libs.ActionsWithOurElements] : jep70268@zoqqa.com was inputted into element
+2019-17-07 15:31:48   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-17-07 15:31:48   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 15:31:54   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-17-07 15:31:55   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 15:31:55   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 15:31:56   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 15:31:57   INFO [libs.ActionsWithOurElements] : Street was inputted into element
+2019-17-07 15:31:57   INFO [libs.ActionsWithOurElements] : 2 was inputted into element
+2019-17-07 15:31:58   INFO [libs.ActionsWithOurElements] : Phoenix was inputted into element
+2019-17-07 15:31:58   INFO [libs.ActionsWithOurElements] : 1 was selected in Drop-down
+2019-17-07 15:31:58   INFO [libs.ActionsWithOurElements] : 30606 was inputted into element
+2019-17-07 15:31:59   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2019-17-07 15:31:59   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2019-17-07 15:32:00   INFO [libs.ActionsWithOurElements] : 1676475006 was inputted into element
+2019-17-07 15:32:00   INFO [libs.ActionsWithOurElements] : 2 was inputted into element
+2019-17-07 15:32:00   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-17-07 15:32:00   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-17-07 15:32:01   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-17-07 15:32:01   INFO [libs.ActionsWithOurElements] : 0 was inputted into element
+2019-17-07 15:32:01   INFO [libs.ActionsWithOurElements] : 0 was inputted into element
+2019-17-07 15:32:01   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-17-07 15:32:01   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 15:32:01   INFO [pages.ModalEldPage] : Payment Method 1 was selected
+2019-17-07 15:32:02   INFO [libs.ActionsWithOurElements] : checkbox is already unchecked
+2019-17-07 15:32:02   INFO [libs.ActionsWithOurElements] : checkbox is already unchecked
+2019-17-07 15:32:02   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-17-07 15:32:02   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-17-07 15:32:02   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 15:32:03   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 15:32:04   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 15:32:04   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 15:32:04   INFO [libs.UtilsForDB] : --- Conect MySQL DB --------
+2019-17-07 15:32:04   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-17-07 15:32:06   INFO [libs.UtilsForDB] : --- Conected to MySQL --------
+2019-17-07 15:32:06   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 15:32:07   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 15:32:07   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-17-07 15:32:07   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-17-07 15:32:09   INFO [orders.SoloEldOrderCancelByManagerTest] : Chrome will be started
+2019-17-07 15:32:14   INFO [orders.SoloEldOrderCancelByManagerTest] : Chrome is started
+2019-17-07 15:32:23   INFO [pages.LoginPage] : Login Page was opened
+2019-17-07 15:32:24   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 15:32:24   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2019-17-07 15:32:24   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-17-07 15:32:25   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 15:32:34   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-17-07 15:32:35   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 15:32:35   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 15:32:40   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 15:32:46   INFO [libs.ActionsWithOurElements] : 2437 was inputted into element
+2019-17-07 15:32:51   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 15:32:52   INFO [libs.ActionsWithOurElements] : 2 was selected in Drop-down
+2019-17-07 15:32:52   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 15:32:53   INFO [orders.SoloEldOrderCancelByManagerTest] : Chrome will be started
+2019-17-07 15:32:59   INFO [orders.SoloEldOrderCancelByManagerTest] : Chrome is started
+2019-17-07 15:33:08   INFO [pages.LoginPage] : Login Page was opened
+2019-17-07 15:33:08   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 15:33:09   INFO [libs.ActionsWithOurElements] : jep70268@zoqqa.com was inputted into element
+2019-17-07 15:33:09   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-17-07 15:33:09   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 15:33:16   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-17-07 15:33:16   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 15:33:17   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 15:33:18   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-17-07 15:33:18   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-17-07 15:38:16   INFO [orders.SoloEldOrderCancelByManagerTest] : Chrome will be started
+2019-17-07 15:38:26   INFO [orders.SoloEldOrderCancelByManagerTest] : Chrome is started
+2019-17-07 15:38:32   INFO [libs.UtilsForDB] : --- Conect MySQL DB --------
+2019-17-07 15:38:32   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-17-07 15:38:35   INFO [libs.UtilsForDB] : --- Conected to MySQL --------
+2019-17-07 15:38:35   INFO [libs.UtilsForDB] : --- Conect MySQL DB --------
+2019-17-07 15:38:35   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-17-07 15:38:37   INFO [libs.UtilsForDB] : --- Conected to MySQL --------
+2019-17-07 15:38:42   INFO [pages.LoginPage] : Login Page was opened
+2019-17-07 15:38:43   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 15:38:43   INFO [libs.ActionsWithOurElements] : jep70268@zoqqa.com was inputted into element
+2019-17-07 15:38:43   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-17-07 15:38:44   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 15:38:50   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-17-07 15:38:50   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 15:38:51   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 15:38:52   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 15:38:53   INFO [libs.ActionsWithOurElements] : Street was inputted into element
+2019-17-07 15:38:53   INFO [libs.ActionsWithOurElements] : 2 was inputted into element
+2019-17-07 15:38:53   INFO [libs.ActionsWithOurElements] : Phoenix was inputted into element
+2019-17-07 15:38:54   INFO [libs.ActionsWithOurElements] : 1 was selected in Drop-down
+2019-17-07 15:38:54   INFO [libs.ActionsWithOurElements] : 30606 was inputted into element
+2019-17-07 15:38:54   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2019-17-07 15:38:55   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2019-17-07 15:38:55   INFO [libs.ActionsWithOurElements] : 1676475006 was inputted into element
+2019-17-07 15:38:55   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-17-07 15:38:55   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-17-07 15:38:56   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-17-07 15:38:56   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-17-07 15:38:56   INFO [libs.ActionsWithOurElements] : 0 was inputted into element
+2019-17-07 15:38:56   INFO [libs.ActionsWithOurElements] : 0 was inputted into element
+2019-17-07 15:38:56   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-17-07 15:38:57   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 15:38:57   INFO [pages.ModalEldPage] : Payment Method 0 was selected
+2019-17-07 15:38:57   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 15:38:57   INFO [libs.ActionsWithOurElements] : checkbox was checked
+2019-17-07 15:38:57   INFO [libs.ActionsWithOurElements] : checkbox is already unchecked
+2019-17-07 15:39:37  ERROR [orders.SoloEldOrderCancelByManagerTest] : AC failed: Total Order is not correct
+2019-17-07 15:44:58   INFO [orders.SoloEldOrderCancelByManagerTest] : Chrome will be started
+2019-17-07 15:45:09   INFO [orders.SoloEldOrderCancelByManagerTest] : Chrome is started
+2019-17-07 15:45:16   INFO [libs.UtilsForDB] : --- Conect MySQL DB --------
+2019-17-07 15:45:16   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-17-07 15:45:18   INFO [libs.UtilsForDB] : --- Conected to MySQL --------
+2019-17-07 15:45:18   INFO [libs.UtilsForDB] : --- Conect MySQL DB --------
+2019-17-07 15:45:18   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-17-07 15:45:20   INFO [libs.UtilsForDB] : --- Conected to MySQL --------
+2019-17-07 15:45:25   INFO [pages.LoginPage] : Login Page was opened
+2019-17-07 15:45:26   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 15:45:26   INFO [libs.ActionsWithOurElements] : jep70268@zoqqa.com was inputted into element
+2019-17-07 15:45:27   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-17-07 15:45:27   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 15:45:33   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-17-07 15:45:33   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 15:45:34   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 15:45:35   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 15:45:36   INFO [libs.ActionsWithOurElements] : Street was inputted into element
+2019-17-07 15:45:36   INFO [libs.ActionsWithOurElements] : 2 was inputted into element
+2019-17-07 15:45:36   INFO [libs.ActionsWithOurElements] : Phoenix was inputted into element
+2019-17-07 15:45:37   INFO [libs.ActionsWithOurElements] : 1 was selected in Drop-down
+2019-17-07 15:45:37   INFO [libs.ActionsWithOurElements] : 30606 was inputted into element
+2019-17-07 15:45:37   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2019-17-07 15:45:38   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2019-17-07 15:45:38   INFO [libs.ActionsWithOurElements] : 1676475006 was inputted into element
+2019-17-07 15:45:38   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-17-07 15:45:38   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-17-07 15:45:39   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-17-07 15:45:39   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-17-07 15:45:39   INFO [libs.ActionsWithOurElements] : 0 was inputted into element
+2019-17-07 15:45:39   INFO [libs.ActionsWithOurElements] : 0 was inputted into element
+2019-17-07 15:45:39   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-17-07 15:45:40   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 15:45:40   INFO [pages.ModalEldPage] : Payment Method 0 was selected
+2019-17-07 15:45:40   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 15:45:40   INFO [libs.ActionsWithOurElements] : checkbox was checked
+2019-17-07 15:45:40   INFO [libs.ActionsWithOurElements] : checkbox is already unchecked
+2019-17-07 15:45:40   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-17-07 15:45:40   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-17-07 15:45:40   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 15:45:41   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 15:45:42   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 15:45:42   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 15:45:42   INFO [libs.UtilsForDB] : --- Conect MySQL DB --------
+2019-17-07 15:45:42   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-17-07 15:45:44   INFO [libs.UtilsForDB] : --- Conected to MySQL --------
+2019-17-07 15:45:44   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 15:45:45   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 15:45:45   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-17-07 15:45:45   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-17-07 15:45:46   INFO [orders.SoloEldOrderCancelByManagerTest] : Chrome will be started
+2019-17-07 15:45:52   INFO [orders.SoloEldOrderCancelByManagerTest] : Chrome is started
+2019-17-07 15:46:01   INFO [pages.LoginPage] : Login Page was opened
+2019-17-07 15:46:02   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 15:46:02   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2019-17-07 15:46:03   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-17-07 15:46:03   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 15:46:12   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-17-07 15:46:12   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 15:46:13   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 15:46:18   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 15:46:23   INFO [libs.ActionsWithOurElements] : 2438 was inputted into element
+2019-17-07 15:46:29   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 15:46:29   INFO [libs.ActionsWithOurElements] : 2 was selected in Drop-down
+2019-17-07 15:46:30   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 15:46:31   INFO [orders.SoloEldOrderCancelByManagerTest] : Chrome will be started
+2019-17-07 15:46:36   INFO [orders.SoloEldOrderCancelByManagerTest] : Chrome is started
+2019-17-07 15:46:45   INFO [pages.LoginPage] : Login Page was opened
+2019-17-07 15:46:46   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 15:46:46   INFO [libs.ActionsWithOurElements] : jep70268@zoqqa.com was inputted into element
+2019-17-07 15:46:46   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-17-07 15:46:47   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 15:46:53   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-17-07 15:46:53   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 15:46:54   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 15:47:34  ERROR [orders.SoloEldOrderCancelByManagerTest] : AC failed: Balance is not correct
+2019-17-07 17:00:02   INFO [orders.FleetEldOrderCompletedByManagerTest] : Chrome will be started
+2019-17-07 17:00:12   INFO [orders.FleetEldOrderCompletedByManagerTest] : Chrome is started
+2019-17-07 17:00:19   INFO [libs.UtilsForDB] : --- Conect MySQL DB --------
+2019-17-07 17:00:19   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-17-07 17:00:21   INFO [libs.UtilsForDB] : --- Conected to MySQL --------
+2019-17-07 17:00:22   INFO [libs.UtilsForDB] : --- Conect MySQL DB --------
+2019-17-07 17:00:22   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-17-07 17:00:23   INFO [libs.UtilsForDB] : --- Conected to MySQL --------
+2019-17-07 17:00:29   INFO [pages.LoginPage] : Login Page was opened
+2019-17-07 17:00:29   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 17:00:30   INFO [libs.ActionsWithOurElements] : rose@emailate.com was inputted into element
+2019-17-07 17:00:30   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-17-07 17:00:30   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 17:00:38   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-17-07 17:00:38   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 17:00:38   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 17:00:40   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 17:00:40   INFO [libs.ActionsWithOurElements] : Street was inputted into element
+2019-17-07 17:00:41   INFO [libs.ActionsWithOurElements] : 2 was inputted into element
+2019-17-07 17:00:41   INFO [libs.ActionsWithOurElements] : Phoenix was inputted into element
+2019-17-07 17:00:41   INFO [libs.ActionsWithOurElements] : 1 was selected in Drop-down
+2019-17-07 17:00:42   INFO [libs.ActionsWithOurElements] : 30606 was inputted into element
+2019-17-07 17:00:42   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2019-17-07 17:00:43   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2019-17-07 17:00:43   INFO [libs.ActionsWithOurElements] : 1676475006 was inputted into element
+2019-17-07 17:00:43   INFO [libs.ActionsWithOurElements] : 2 was inputted into element
+2019-17-07 17:00:43   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-17-07 17:00:44   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-17-07 17:00:44   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-17-07 17:00:44   INFO [libs.ActionsWithOurElements] : 0 was inputted into element
+2019-17-07 17:00:44   INFO [libs.ActionsWithOurElements] : 0 was inputted into element
+2019-17-07 17:00:45   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-17-07 17:00:45   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 17:00:45   INFO [pages.ModalEldPage] : Payment Method 1 was selected
+2019-17-07 17:00:45   INFO [libs.ActionsWithOurElements] : checkbox is already unchecked
+2019-17-07 17:00:45   INFO [libs.ActionsWithOurElements] : checkbox is already unchecked
+2019-17-07 17:00:45   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-17-07 17:00:45   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-17-07 17:00:45   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 17:00:46   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 17:00:47   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 17:00:47   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 17:00:47   INFO [libs.UtilsForDB] : --- Conect MySQL DB --------
+2019-17-07 17:00:47   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-17-07 17:00:49   INFO [libs.UtilsForDB] : --- Conected to MySQL --------
+2019-17-07 17:00:49   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 17:00:50   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 17:00:50   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-17-07 17:00:50   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-17-07 17:00:52   INFO [orders.FleetEldOrderCompletedByManagerTest] : Chrome will be started
+2019-17-07 17:00:58   INFO [orders.FleetEldOrderCompletedByManagerTest] : Chrome is started
+2019-17-07 17:01:07   INFO [pages.LoginPage] : Login Page was opened
+2019-17-07 17:01:07   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 17:01:08   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2019-17-07 17:01:08   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-17-07 17:01:09   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 17:01:18   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-17-07 17:01:19   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 17:01:19   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 17:01:24   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 17:01:30   INFO [libs.ActionsWithOurElements] : 2439 was inputted into element
+2019-17-07 17:01:35   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 17:01:35   INFO [libs.ActionsWithOurElements] : 4 was selected in Drop-down
+2019-17-07 17:01:36   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 17:01:36   INFO [libs.ActionsWithOurElements] : 1 was selected in Drop-down
+2019-17-07 17:01:36   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 17:01:36   INFO [libs.UtilsForDB] : --- Conect MySQL DB --------
+2019-17-07 17:01:36   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-17-07 17:01:38   INFO [libs.UtilsForDB] : --- Conected to MySQL --------
+2019-17-07 17:01:38  ERROR [orders.FleetEldOrderCompletedByManagerTest] : AC failed: Device is active
+2019-17-07 17:09:58   INFO [orders.ManagerCompletedOrderTest] : Chrome will be started
+2019-17-07 17:10:08   INFO [orders.ManagerCompletedOrderTest] : Chrome is started
+2019-17-07 17:10:20   INFO [pages.LoginPage] : Login Page was opened
+2019-17-07 17:10:20   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 17:10:21   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2019-17-07 17:10:21   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-17-07 17:10:21   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 17:10:31   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-17-07 17:10:32   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 17:10:32   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 17:10:38   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 17:10:38  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=75.0.3770.100)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'DESKTOP-UD8IPI4', ip: '100.80.1.70', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.100, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\denku\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62033}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 21334481de980f9df3d505563fd3823a
+2019-17-07 17:12:13   INFO [orders.ManagerCompletedOrderTest] : Chrome will be started
+2019-17-07 17:12:23   INFO [orders.ManagerCompletedOrderTest] : Chrome is started
+2019-17-07 17:12:36   INFO [pages.LoginPage] : Login Page was opened
+2019-17-07 17:12:36   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 17:12:37   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2019-17-07 17:12:37   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-17-07 17:12:37   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 17:12:47   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-17-07 17:12:47   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 17:12:48   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 17:12:53   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 17:12:54   INFO [libs.ActionsWithOurElements] : 2432 was inputted into element
+2019-17-07 17:12:59   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 17:13:00   INFO [libs.ActionsWithOurElements] : 2 was selected in Drop-down
+2019-17-07 17:13:00   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 17:13:05   INFO [libs.UtilsForDB] : --- Conect MySQL DB --------
+2019-17-07 17:13:05   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-17-07 17:13:08   INFO [libs.UtilsForDB] : --- Conected to MySQL --------
+2019-17-07 17:13:08  ERROR [orders.ManagerCompletedOrderTest] : AC failed: Device is not active
+2019-17-07 17:14:16   INFO [orders.ManagerCompletedOrderTest] : Chrome will be started
+2019-17-07 17:14:26   INFO [orders.ManagerCompletedOrderTest] : Chrome is started
+2019-17-07 17:14:38   INFO [pages.LoginPage] : Login Page was opened
+2019-17-07 17:14:38   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 17:14:39   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2019-17-07 17:14:39   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-17-07 17:14:39   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 17:14:48   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-17-07 17:14:48   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 17:14:49   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 17:14:54   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 17:14:55   INFO [libs.ActionsWithOurElements] : 2431 was inputted into element
+2019-17-07 17:15:00   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 17:15:01   INFO [libs.ActionsWithOurElements] : 4 was selected in Drop-down
+2019-17-07 17:15:01  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=75.0.3770.100)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'DESKTOP-UD8IPI4', ip: '100.80.1.70', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.100, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\denku\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62186}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 8816ade75fd8233f0a0e77bd64e367d2
+2019-17-07 17:22:43   INFO [orders.ManagerCompletedOrderTest] : Chrome will be started
+2019-17-07 17:22:53   INFO [orders.ManagerCompletedOrderTest] : Chrome is started
+2019-17-07 17:23:06   INFO [pages.LoginPage] : Login Page was opened
+2019-17-07 17:23:06   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 17:23:07   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2019-17-07 17:23:07   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-17-07 17:23:08   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 17:23:17   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-17-07 17:23:18   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 17:23:18   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 17:23:23   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 17:23:24   INFO [libs.ActionsWithOurElements] : 2431 was inputted into element
+2019-17-07 17:23:29   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 17:23:30   INFO [libs.ActionsWithOurElements] : 4 was selected in Drop-down
+2019-17-07 17:23:35   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 17:23:40   INFO [libs.ActionsWithOurElements] : 1 was selected in Drop-down
+2019-17-07 17:23:41   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 17:23:46   INFO [libs.UtilsForDB] : --- Conect MySQL DB --------
+2019-17-07 17:23:46   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-17-07 17:23:48   INFO [libs.UtilsForDB] : --- Conected to MySQL --------
+2019-17-07 17:23:48  ERROR [orders.ManagerCompletedOrderTest] : AC failed: Device is not active
+2019-17-07 18:21:50   INFO [orders.ManagerCompletedOrderTest] : Chrome will be started
+2019-17-07 18:22:00   INFO [orders.ManagerCompletedOrderTest] : Chrome is started
+2019-17-07 18:22:13   INFO [pages.LoginPage] : Login Page was opened
+2019-17-07 18:22:13   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 18:22:14   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2019-17-07 18:22:14   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-17-07 18:22:14   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 18:22:24   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-17-07 18:22:24   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 18:22:25   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 18:22:30   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 18:22:31   INFO [libs.ActionsWithOurElements] : 2423 was inputted into element
+2019-17-07 18:22:36   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 18:22:37   INFO [libs.ActionsWithOurElements] : 4 was selected in Drop-down
+2019-17-07 18:22:42   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 18:22:47   INFO [libs.ActionsWithOurElements] : 1 was selected in Drop-down
+2019-17-07 18:22:48   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 18:22:53   INFO [libs.UtilsForDB] : --- Conect MySQL DB --------
+2019-17-07 18:22:53   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-17-07 18:22:55   INFO [libs.UtilsForDB] : --- Conected to MySQL --------
+2019-17-07 18:22:55  ERROR [orders.ManagerCompletedOrderTest] : AC failed: Device is not active
+2019-17-07 18:25:35   INFO [orders.ManagerCompletedOrderTest] : Chrome will be started
+2019-17-07 18:25:45   INFO [orders.ManagerCompletedOrderTest] : Chrome is started
+2019-17-07 18:25:58   INFO [pages.LoginPage] : Login Page was opened
+2019-17-07 18:25:58   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 18:25:59   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2019-17-07 18:25:59   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-17-07 18:26:00   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 18:26:09   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-17-07 18:26:10   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 18:26:10   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 18:26:16   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 18:26:16   INFO [libs.ActionsWithOurElements] : 2420 was inputted into element
+2019-17-07 18:26:21   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 18:26:22   INFO [libs.ActionsWithOurElements] : 4 was selected in Drop-down
+2019-17-07 18:26:28   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 18:26:33   INFO [libs.ActionsWithOurElements] : 1 was selected in Drop-down
+2019-17-07 18:26:33   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 18:26:38   INFO [libs.UtilsForDB] : --- Conect MySQL DB --------
+2019-17-07 18:26:38   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-17-07 18:26:41   INFO [libs.UtilsForDB] : --- Conected to MySQL --------
+2019-17-07 18:35:40   INFO [orders.FleetEldOrderCompletedByManagerTest] : Chrome will be started
+2019-17-07 18:35:50   INFO [orders.FleetEldOrderCompletedByManagerTest] : Chrome is started
+2019-17-07 18:35:57   INFO [libs.UtilsForDB] : --- Conect MySQL DB --------
+2019-17-07 18:35:57   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-17-07 18:35:59   INFO [libs.UtilsForDB] : --- Conected to MySQL --------
+2019-17-07 18:36:00   INFO [libs.UtilsForDB] : --- Conect MySQL DB --------
+2019-17-07 18:36:00   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-17-07 18:36:01   INFO [libs.UtilsForDB] : --- Conected to MySQL --------
+2019-17-07 18:36:07   INFO [pages.LoginPage] : Login Page was opened
+2019-17-07 18:36:07   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 18:36:07   INFO [libs.ActionsWithOurElements] : rose@emailate.com was inputted into element
+2019-17-07 18:36:08   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-17-07 18:36:08   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 18:36:15   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-17-07 18:36:15   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 18:36:16   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 18:36:17   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 18:36:18   INFO [libs.ActionsWithOurElements] : Street was inputted into element
+2019-17-07 18:36:18   INFO [libs.ActionsWithOurElements] : 2 was inputted into element
+2019-17-07 18:36:18   INFO [libs.ActionsWithOurElements] : Phoenix was inputted into element
+2019-17-07 18:36:19   INFO [libs.ActionsWithOurElements] : 1 was selected in Drop-down
+2019-17-07 18:36:20   INFO [libs.ActionsWithOurElements] : 30606 was inputted into element
+2019-17-07 18:36:20   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2019-17-07 18:36:21   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2019-17-07 18:36:21   INFO [libs.ActionsWithOurElements] : 1676475006 was inputted into element
+2019-17-07 18:36:21   INFO [libs.ActionsWithOurElements] : 2 was inputted into element
+2019-17-07 18:36:22   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-17-07 18:36:22   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-17-07 18:36:23   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-17-07 18:36:23   INFO [libs.ActionsWithOurElements] : 0 was inputted into element
+2019-17-07 18:36:23   INFO [libs.ActionsWithOurElements] : 0 was inputted into element
+2019-17-07 18:36:23   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-17-07 18:36:24   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 18:36:24   INFO [pages.ModalEldPage] : Payment Method 1 was selected
+2019-17-07 18:36:24   INFO [libs.ActionsWithOurElements] : checkbox is already unchecked
+2019-17-07 18:36:24   INFO [libs.ActionsWithOurElements] : checkbox is already unchecked
+2019-17-07 18:36:24   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-17-07 18:36:24   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-17-07 18:36:25   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 18:36:25   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 18:36:26   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 18:36:26   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 18:36:26   INFO [libs.UtilsForDB] : --- Conect MySQL DB --------
+2019-17-07 18:36:26   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-17-07 18:36:28   INFO [libs.UtilsForDB] : --- Conected to MySQL --------
+2019-17-07 18:36:29   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 18:36:30   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 18:36:30   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-17-07 18:36:30   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-17-07 18:36:31   INFO [orders.FleetEldOrderCompletedByManagerTest] : Chrome will be started
+2019-17-07 18:36:37   INFO [orders.FleetEldOrderCompletedByManagerTest] : Chrome is started
+2019-17-07 18:36:46   INFO [pages.LoginPage] : Login Page was opened
+2019-17-07 18:36:46   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 18:36:47   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2019-17-07 18:36:47   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-17-07 18:36:48   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 18:36:56   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-17-07 18:36:57   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 18:36:58   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 18:37:03   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 18:37:08   INFO [libs.ActionsWithOurElements] : 2440 was inputted into element
+2019-17-07 18:37:13   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 18:37:14   INFO [libs.ActionsWithOurElements] : 4 was selected in Drop-down
+2019-17-07 18:37:14   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 18:37:15   INFO [libs.ActionsWithOurElements] : 1 was selected in Drop-down
+2019-17-07 18:37:15   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 18:37:20   INFO [libs.UtilsForDB] : --- Conect MySQL DB --------
+2019-17-07 18:37:20   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-17-07 18:37:22   INFO [libs.UtilsForDB] : --- Conected to MySQL --------
+2019-17-07 18:40:55   INFO [orders.SoloEldOrderCompletedByManagerTest] : Chrome will be started
+2019-17-07 18:41:05   INFO [orders.SoloEldOrderCompletedByManagerTest] : Chrome is started
+2019-17-07 18:41:12   INFO [libs.UtilsForDB] : --- Conect MySQL DB --------
+2019-17-07 18:41:12   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-17-07 18:41:14   INFO [libs.UtilsForDB] : --- Conected to MySQL --------
+2019-17-07 18:41:14   INFO [libs.UtilsForDB] : --- Conect MySQL DB --------
+2019-17-07 18:41:14   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-17-07 18:41:16   INFO [libs.UtilsForDB] : --- Conected to MySQL --------
+2019-17-07 18:41:22   INFO [pages.LoginPage] : Login Page was opened
+2019-17-07 18:41:22   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 18:41:23   INFO [libs.ActionsWithOurElements] : jep70268@zoqqa.com was inputted into element
+2019-17-07 18:41:23   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-17-07 18:41:24   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 18:41:30   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-17-07 18:41:31   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 18:41:31   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 18:41:32   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 18:41:33   INFO [libs.ActionsWithOurElements] : Street was inputted into element
+2019-17-07 18:41:33   INFO [libs.ActionsWithOurElements] : 2 was inputted into element
+2019-17-07 18:41:33   INFO [libs.ActionsWithOurElements] : Phoenix was inputted into element
+2019-17-07 18:41:34   INFO [libs.ActionsWithOurElements] : 1 was selected in Drop-down
+2019-17-07 18:41:34   INFO [libs.ActionsWithOurElements] : 30606 was inputted into element
+2019-17-07 18:41:35   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2019-17-07 18:41:35   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2019-17-07 18:41:36   INFO [libs.ActionsWithOurElements] : 1676475006 was inputted into element
+2019-17-07 18:41:36   INFO [libs.ActionsWithOurElements] : 2 was inputted into element
+2019-17-07 18:41:36   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-17-07 18:41:37   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-17-07 18:41:37   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-17-07 18:41:37   INFO [libs.ActionsWithOurElements] : 0 was inputted into element
+2019-17-07 18:41:37   INFO [libs.ActionsWithOurElements] : 0 was inputted into element
+2019-17-07 18:41:38   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-17-07 18:41:38   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 18:41:38   INFO [pages.ModalEldPage] : Payment Method 1 was selected
+2019-17-07 18:41:38   INFO [libs.ActionsWithOurElements] : checkbox is already unchecked
+2019-17-07 18:41:38   INFO [libs.ActionsWithOurElements] : checkbox is already unchecked
+2019-17-07 18:41:38   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-17-07 18:41:39   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-17-07 18:41:39   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 18:41:39   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 18:41:40   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 18:41:41   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 18:41:41   INFO [libs.UtilsForDB] : --- Conect MySQL DB --------
+2019-17-07 18:41:41   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-17-07 18:41:42   INFO [libs.UtilsForDB] : --- Conected to MySQL --------
+2019-17-07 18:41:43   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 18:41:44   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 18:41:44   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-17-07 18:41:44   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-17-07 18:41:45   INFO [orders.SoloEldOrderCompletedByManagerTest] : Chrome will be started
+2019-17-07 18:41:51   INFO [orders.SoloEldOrderCompletedByManagerTest] : Chrome is started
+2019-17-07 18:42:00   INFO [pages.LoginPage] : Login Page was opened
+2019-17-07 18:42:01   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 18:42:01   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2019-17-07 18:42:01   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-17-07 18:42:02   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 18:42:11   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-17-07 18:42:12   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 18:42:12   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 18:42:17   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 18:42:23   INFO [libs.ActionsWithOurElements] : 2441 was inputted into element
+2019-17-07 18:42:28   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 18:42:29   INFO [libs.ActionsWithOurElements] : 4 was selected in Drop-down
+2019-17-07 18:42:29   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 18:42:29   INFO [libs.ActionsWithOurElements] : 1 was selected in Drop-down
+2019-17-07 18:42:29   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 18:42:34   INFO [libs.UtilsForDB] : --- Conect MySQL DB --------
+2019-17-07 18:42:34   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-17-07 18:42:36   INFO [libs.UtilsForDB] : --- Conected to MySQL --------
+2019-17-07 19:16:44   INFO [orders.SoloEldOrderCancelByManagerTest] : Chrome will be started
+2019-17-07 19:16:54   INFO [orders.SoloEldOrderCancelByManagerTest] : Chrome is started
+2019-17-07 19:17:02   INFO [libs.UtilsForDB] : --- Conect MySQL DB --------
+2019-17-07 19:17:02   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-17-07 19:17:04   INFO [libs.UtilsForDB] : --- Conected to MySQL --------
+2019-17-07 19:17:04   INFO [libs.UtilsForDB] : --- Conect MySQL DB --------
+2019-17-07 19:17:04   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-17-07 19:17:06   INFO [libs.UtilsForDB] : --- Conected to MySQL --------
+2019-17-07 19:17:12   INFO [pages.LoginPage] : Login Page was opened
+2019-17-07 19:17:12   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 19:17:12   INFO [libs.ActionsWithOurElements] : jep70268@zoqqa.com was inputted into element
+2019-17-07 19:17:13   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-17-07 19:17:13   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 19:17:20   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-17-07 19:17:20   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 19:17:20   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 19:17:22   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 19:17:22   INFO [libs.ActionsWithOurElements] : Street was inputted into element
+2019-17-07 19:17:23   INFO [libs.ActionsWithOurElements] : 2 was inputted into element
+2019-17-07 19:17:23   INFO [libs.ActionsWithOurElements] : Phoenix was inputted into element
+2019-17-07 19:17:24   INFO [libs.ActionsWithOurElements] : 1 was selected in Drop-down
+2019-17-07 19:17:24   INFO [libs.ActionsWithOurElements] : 30606 was inputted into element
+2019-17-07 19:17:25   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2019-17-07 19:17:25   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2019-17-07 19:17:26   INFO [libs.ActionsWithOurElements] : 1676475006 was inputted into element
+2019-17-07 19:17:26   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-17-07 19:17:26   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-17-07 19:17:27   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-17-07 19:17:27   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-17-07 19:17:27   INFO [libs.ActionsWithOurElements] : 0 was inputted into element
+2019-17-07 19:17:28   INFO [libs.ActionsWithOurElements] : 0 was inputted into element
+2019-17-07 19:17:28   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-17-07 19:17:28   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 19:17:28   INFO [pages.ModalEldPage] : Payment Method 0 was selected
+2019-17-07 19:17:29   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 19:17:29   INFO [libs.ActionsWithOurElements] : checkbox was checked
+2019-17-07 19:17:29   INFO [libs.ActionsWithOurElements] : checkbox is already unchecked
+2019-17-07 19:17:29   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-17-07 19:17:29   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-17-07 19:17:29   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 19:17:30   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 19:17:31   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 19:17:31   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 19:17:31   INFO [libs.UtilsForDB] : --- Conect MySQL DB --------
+2019-17-07 19:17:31   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-17-07 19:17:33   INFO [libs.UtilsForDB] : --- Conected to MySQL --------
+2019-17-07 19:17:33   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 19:17:35   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 19:17:35   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-17-07 19:17:35   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-17-07 19:17:37   INFO [orders.SoloEldOrderCancelByManagerTest] : Chrome will be started
+2019-17-07 19:17:43   INFO [orders.SoloEldOrderCancelByManagerTest] : Chrome is started
+2019-17-07 19:17:52   INFO [pages.LoginPage] : Login Page was opened
+2019-17-07 19:17:52   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 19:17:53   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2019-17-07 19:17:53   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-17-07 19:17:54   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 19:18:03   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-17-07 19:18:04   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 19:18:04   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 19:18:10   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 19:18:15   INFO [libs.ActionsWithOurElements] : 2442 was inputted into element
+2019-17-07 19:18:20   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 19:18:21   INFO [libs.ActionsWithOurElements] : 2 was selected in Drop-down
+2019-17-07 19:18:21   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 19:18:23   INFO [orders.SoloEldOrderCancelByManagerTest] : Chrome will be started
+2019-17-07 19:18:28   INFO [orders.SoloEldOrderCancelByManagerTest] : Chrome is started
+2019-17-07 19:18:38   INFO [pages.LoginPage] : Login Page was opened
+2019-17-07 19:18:38   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 19:18:39   INFO [libs.ActionsWithOurElements] : jep70268@zoqqa.com was inputted into element
+2019-17-07 19:18:39   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-17-07 19:18:39   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 19:18:46   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-17-07 19:18:46   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 19:18:47   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-17-07 19:18:48   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-17-07 19:18:49   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-17-07 19:18:54   INFO [libs.UtilsForDB] : --- Conect MySQL DB --------
+2019-17-07 19:18:54   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-17-07 19:18:55   INFO [libs.UtilsForDB] : --- Conected to MySQL --------

@@ -9,7 +9,7 @@ import java.io.IOException;
 import java.sql.SQLException;
 import java.util.Map;
 
-public class FleetEldOrderCompletedTest extends ParentTest {
+public class FleetEldOrderCompletedByManagerTest extends ParentTest {
 
 
     @Test
@@ -97,7 +97,7 @@ CHECK FINANCES
         setUp();
 
 /*
-MANAGER COMPLETED OR CANCEL ORDER
+MANAGER COMPLETED ORDER
  */
 
         Map dataForManagerValidLogIn = excelDriver.getData(configProperties.DATA_FILE_PATH() + "testLogin.xls", "ManagerLogin");
@@ -115,25 +115,22 @@ MANAGER COMPLETED OR CANCEL ORDER
         Thread.sleep(5000);
         eldManagerPage.enterIdOrder(idLastOrderAfterTest);
         Thread.sleep(5000);
-        eldManagerPage.clickOnOrderOnList();
+        eldManagerPage.clickOnOrderOnList(idLastOrderAfterTest);
         modalOrderPage.selectOrderStatus("4");
         modalOrderPage.clickButtonSave();
         modalOrderPage.selectOrderStatus("1");
         modalOrderPage.clickButtonSave();
 
-
-    }
-
-
-
-
-
-
-
-
-
+/*
+CHECK ORDER STATUS FROM DATABASE
+ */     Thread.sleep(5000);
+        String orderStatus = utilsForDB.getOrderStatus(idLastOrderAfterTest);
+        checkAC("Order is not completed", orderStatus.equals("1") , true);
 
 
 
     }
+
+
+}
 

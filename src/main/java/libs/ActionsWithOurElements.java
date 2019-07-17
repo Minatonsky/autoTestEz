@@ -24,6 +24,7 @@ public class ActionsWithOurElements {
 
     public void enterTextToElement(WebElement webElement, String text){
         try{
+            webDriverWait20.until(ExpectedConditions.visibilityOf(webElement));
             webElement.clear();
             webElement.sendKeys(text);
             logger.info(text + " was inputted into element");
@@ -42,6 +43,7 @@ public class ActionsWithOurElements {
         }
     }
 
+
     public boolean isElementEnable(WebElement webElement){
         try{
             webDriverWait20.until(ExpectedConditions.visibilityOf(webElement));
@@ -55,6 +57,7 @@ public class ActionsWithOurElements {
     }
 
     public void setNeededStateToCheckBox(WebElement webElement, String neededState){
+        webDriverWait20.until(ExpectedConditions.elementToBeClickable(webElement));
         if ("check".equals(neededState) || "uncheck".equals(neededState)){
             if (webElement.isSelected() && "check".equals(neededState)){
                 logger.info("Checkbox is already checked");
@@ -82,6 +85,7 @@ public class ActionsWithOurElements {
 
     public void selectValueInDropDown(WebElement dropDownElement, String value) {
         try {
+            webDriverWait20.until(ExpectedConditions.elementToBeClickable(dropDownElement));
             Select select = new Select(dropDownElement);
             select.selectByValue(value);
             logger.info(value + " was selected in Drop-down");
@@ -108,6 +112,7 @@ public class ActionsWithOurElements {
     public void clickOnElement(String xPathLocator) {
         try {
             WebElement webElement = webDriver.findElement(By.xpath(xPathLocator));
+            webDriverWait20.until(ExpectedConditions.elementToBeClickable(webElement));
             clickOnElement(webElement);
         } catch (Exception e){
             printErrorAndStopTest(e);

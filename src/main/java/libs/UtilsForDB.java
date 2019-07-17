@@ -46,4 +46,14 @@ public class UtilsForDB {
         dBMySQL.quit();
         return tempIdOrder;
     }
+
+    @Step
+    public String getOrderStatus(String idOrder) throws SQLException, IOException, ClassNotFoundException {
+        log.info("--- Conect MySQL DB --------");
+        dBMySQL = new Database("MySQL_PADB_DB", "MySQL");
+        log.info("--- Conected to MySQL --------");
+        String tempDeviceStatus = dBMySQL.selectValue("SELECT status FROM eld_orders WHERE id = " + idOrder + ";");
+        dBMySQL.quit();
+        return tempDeviceStatus;
+    }
 }
