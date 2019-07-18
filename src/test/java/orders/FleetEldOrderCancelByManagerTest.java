@@ -32,24 +32,16 @@ public class FleetEldOrderCancelByManagerTest extends ParentTest {
 
         loginPage.userValidLogIn(dataForFleetValidLogIn.get("login").toString(),dataForFleetValidLogIn.get("pass").toString());
 
-        dashboardPage.clickOnMenuDash();
-        dashboardPage.clickOnMenuPageELD();
-        Thread.sleep(1000);
-        dashboardPage.clickOnOrderELD();
-        modalEldPage.checkCurrentUrl();
+        dashboardPage.goToEldPageAndClickOrderEld();
 
 /*
 PERSONAL DATA
  */
 
-        modalEldPage.enterPrimaryAddressLine(personalDataForEldOrder.get("addressLine").toString());
-        modalEldPage.enterAptNumber(personalDataForEldOrder.get("aptNumber").toString());
-        modalEldPage.enterDeliveryCity(personalDataForEldOrder.get("deliveryCity").toString());
-        modalEldPage.selectState(personalDataForEldOrder.get("deliveryState").toString());
-        modalEldPage.enterZipCode(personalDataForEldOrder.get("zipCode").toString());
-        modalEldPage.enterFirstName(personalDataForEldOrder.get("firstName").toString());
-        modalEldPage.enterLastName(personalDataForEldOrder.get("lastName").toString());
-        modalEldPage.enterPhone(personalDataForEldOrder.get("phone").toString());
+        modalEldPage.enterPersonalData(personalDataForEldOrder.get("deliveryState").toString(), personalDataForEldOrder.get("firstName").toString(),
+                personalDataForEldOrder.get("lastName").toString(), personalDataForEldOrder.get("phone").toString(),
+                personalDataForEldOrder.get("addressLine").toString(), personalDataForEldOrder.get("aptNumber").toString(),
+                personalDataForEldOrder.get("deliveryCity").toString(), personalDataForEldOrder.get("zipCode").toString());
 
 /*
 ORDER LIST
@@ -78,10 +70,10 @@ CHECK BOX DELIVERY
 EQUIPMENT LEASE AND SOFTWARE SUBSCRIPTION SERVICE AGREEMENT
  */
 
-        modalEldPage.clickAgreement();
-        modalEldPage.clickButtonFastMove();
-        modalEldPage.clickButtonAgree();
-        modalEldPage.clickButtonOrder();
+        modalEldPage.clickAgreements(dataForEldOrder.get("quantityOfDevices").toString());
+/*
+CHECK LAST ID ORDER BEFORE AND AFTER TEST
+ */
 
         String idLastOrderAfterTest = utilsForDB.getLastOrderIdForFleet(dataFleetId.get("fleetId").toString());
         checkAC("New order wasn`t created", idLastOrderBeforeTest.equals(idLastOrderAfterTest) , false);
@@ -111,7 +103,7 @@ MANAGER COMPLETED OR CANCEL ORDER
 
         dashboardPage.clickOnMenuDash();
 
-        modalOrderPage.selectBrowserWindow("mainWindow");
+        selectBrowserWindow("mainWindow");
 
         dashboardPage.clickOnMenuPageELD();
         Thread.sleep(5000);

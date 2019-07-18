@@ -1,4 +1,4 @@
-package orders;
+package parameterizedOrders;
 
 import libs.ExcelDriver;
 import libs.SpreadsheetData;
@@ -17,10 +17,14 @@ import java.util.Map;
 
 @RunWith(Parameterized.class)
 
-public class EldOrderTestWithExcelParams extends ParentTest {
-    String  quantityOfDevices, typeOfPaymentMethod, quantityPinCable, quantityOBDPinCable, quantitySticker, quantityCamera1, quantityCamera2, neededStatePickUpFromOffice, neededStateOvernightDelivery, currentDue, defaultTotalOrder, defaultBalance;
+public class FleetEldOrderParameterizedTest extends ParentTest {
+    String  quantityOfDevices, typeOfPaymentMethod, quantityPinCable, quantityOBDPinCable, quantitySticker, quantityCamera1,
+            quantityCamera2, neededStatePickUpFromOffice, neededStateOvernightDelivery, currentDue, defaultTotalOrder, defaultBalance;
 
-    public EldOrderTestWithExcelParams(String quantityOfDevices, String typeOfPaymentMethod, String quantityPinCable, String quantityOBDPinCable, String quantitySticker, String quantityCamera1, String quantityCamera2, String neededStatePickUpFromOffice, String neededStateOvernightDelivery, String currentDue, String defaultTotalOrder, String defaultBalance) {
+    public FleetEldOrderParameterizedTest(String quantityOfDevices, String typeOfPaymentMethod, String quantityPinCable,
+                                          String quantityOBDPinCable, String quantitySticker, String quantityCamera1, String quantityCamera2,
+                                          String neededStatePickUpFromOffice, String neededStateOvernightDelivery, String currentDue, String defaultTotalOrder, String defaultBalance) {
+
         this.quantityOfDevices = quantityOfDevices;
         this.typeOfPaymentMethod = typeOfPaymentMethod;
         this.quantityPinCable = quantityPinCable;
@@ -35,14 +39,12 @@ public class EldOrderTestWithExcelParams extends ParentTest {
         this.defaultBalance = defaultBalance;
     }
 
-
     @Parameterized.Parameters()
     public static Collection testData() throws IOException {
         InputStream spreadsheet = new FileInputStream(configProperties.DATA_FILE_PATH() + "testEldOrder.xls");
         return new SpreadsheetData(spreadsheet,"suitOrderListData").getData();
 
     }
-
 
     @Test
     public void addNewOrder() throws InterruptedException, SQLException, IOException, ClassNotFoundException {
@@ -54,7 +56,7 @@ public class EldOrderTestWithExcelParams extends ParentTest {
 
         UtilsForDB utilsForDB = new UtilsForDB();
         String idLastOrderBeforeTest = utilsForDB.getLastOrderIdForFleet(dataFleetId.get("fleetId").toString());
-        utilsForDB.getSetCurrentDueForFleet((currentDue), dataFleetId.get("fleetId").toString());
+        utilsForDB.getSetCurrentDueForFleet(currentDue, dataFleetId.get("fleetId").toString());
 
         loginPage.userValidLogIn(dataForFleetValidLogIn.get("login").toString(),dataForFleetValidLogIn.get("pass").toString());
 
@@ -63,6 +65,7 @@ public class EldOrderTestWithExcelParams extends ParentTest {
 /*
 PERSONAL DATA
  */
+
         modalEldPage.enterPersonalData(personalDataForEldOrder.get("deliveryState").toString(), personalDataForEldOrder.get("firstName").toString(),
                 personalDataForEldOrder.get("lastName").toString(), personalDataForEldOrder.get("phone").toString(),
                 personalDataForEldOrder.get("addressLine").toString(), personalDataForEldOrder.get("aptNumber").toString(),
@@ -70,7 +73,7 @@ PERSONAL DATA
 
 /*
 ORDER LIST
-// */
+ */
         modalEldPage.enterQuantityDevices(quantityOfDevices);
         modalEldPage.enterQuantityPinCable(quantityPinCable);
         modalEldPage.enterQuantityOBDPinCable(quantityOBDPinCable);
@@ -90,17 +93,21 @@ CHECK BOX DELIVERY
         checkAC("Total Order is not correct", modalEldPage.compareTotalOrder(defaultTotalOrder), true);
 
 /*
-//EQUIPMENT LEASE AND SOFTWARE SUBSCRIPTION SERVICE AGREEMENT
+EQUIPMENT LEASE AND SOFTWARE SUBSCRIPTION SERVICE AGREEMENT
+ */
+        modalEldPage.clickAgreements(quantityOfDevices);
+/*
+CHECK LAST ID ORDER BEFORE AND AFTER TEST
  */
 
-        modalEldPage.clickAgreements(quantityOfDevices);
-
         String idLastOrderAfterTest = utilsForDB.getLastOrderIdForFleet(dataFleetId.get("fleetId").toString());
-        checkAC("New order wasn`t created", idLastOrderBeforeTest.equals(idLastOrderAfterTest) , true);
+        checkAC("New order wasn`t created", idLastOrderBeforeTest.equals(idLastOrderAfterTest) , false);
 
-//        dashboardPage.clickOnMenuDash();
+        dashboardPage.clickOnMenuDash();
+        Thread.sleep(1000);
         dashboardPage.clickOnMenuPageFinances();
         financesPage.checkCurrentUrl();
+
         financesPage.compareBalance(defaultBalance);
         checkAC("Balance is not correct", financesPage.compareBalance(defaultBalance), true);
 

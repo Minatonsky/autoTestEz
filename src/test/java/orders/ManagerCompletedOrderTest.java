@@ -27,7 +27,7 @@ public class ManagerCompletedOrderTest extends ParentTest {
 
         dashboardPage.clickOnMenuDash();
 
-        modalOrderPage.selectBrowserWindow("mainWindow");
+        selectBrowserWindow("mainWindow");
 
         dashboardPage.clickOnMenuPageELD();
         Thread.sleep(5000);

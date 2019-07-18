@@ -1,5 +1,6 @@
 package pages;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -34,11 +35,22 @@ public class DashboardPage extends ParentPage {
     public void clickOnMenuPageELD(){
         actionsWithOurElements.clickOnElement(menuPageELD);
     }
+
     public void clickOnOrderELD(){
         actionsWithOurElements.clickOnElement(orderELD);
     }
+
     public void clickOnMenuPageFinances(){
         actionsWithOurElements.clickOnElement(menuPageFinances);
+    }
+
+    @Step
+    public void goToEldPageAndClickOrderEld() throws InterruptedException {
+        clickOnMenuDash();
+        Thread.sleep(1000);
+        clickOnMenuPageELD();
+        Thread.sleep(1000);
+        clickOnOrderELD();
     }
 
 }

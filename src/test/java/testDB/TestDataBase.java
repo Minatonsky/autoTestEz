@@ -43,5 +43,10 @@ public class TestDataBase {
 //        List<ArrayList> dataAdmin_ezlogz_api = dbMySql.selectTable("SELECT id FROM eld_orders WHERE fleetId = 518 ORDER BY orderDate desc LIMIT 1;");
 //        logger.info(" Result = " + dataAdmin_ezlogz_api)
 //        logger.info(" Result = " + dataAdmin_ezlogz_api.get(2).get(2);
-
+    @Test
+    public void testLocalIdDevices() throws SQLException, IOException, ClassNotFoundException {
+        UtilsForDB utilsForDB = new UtilsForDB();
+//        utilsForDB.getLocalIdDevices("2415");
+        System.out.println(utilsForDB.getLocalIdDevices("2415"));
+    }
 }

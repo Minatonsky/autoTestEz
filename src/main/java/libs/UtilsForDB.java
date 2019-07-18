@@ -6,6 +6,8 @@ import org.apache.log4j.Logger;
 
 import java.io.IOException;
 import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
 
 public class UtilsForDB {
      Logger log = Logger.getLogger(getClass());
@@ -55,5 +57,16 @@ public class UtilsForDB {
         String tempDeviceStatus = dBMySQL.selectValue("SELECT status FROM eld_orders WHERE id = " + idOrder + ";");
         dBMySQL.quit();
         return tempDeviceStatus;
+    }
+
+    @Step
+    public List<ArrayList> getLocalIdDevices(String idOrder) throws SQLException, IOException, ClassNotFoundException {
+        log.info("--- Conect MySQL DB --------");
+        dBMySQL = new Database("MySQL_PADB_DB", "MySQL");
+        log.info("--- Conected to MySQL --------");
+        List<ArrayList> tempLocalIdDevices = dBMySQL.selectTable("SELECT localId FROM eld_scanners WHERE id IN (SELECT scannerId FROM eld_orders_ids WHERE orderId = " + idOrder + ");");
+        dBMySQL.quit();
+        return tempLocalIdDevices;
+
     }
 }

@@ -15,7 +15,7 @@ public class FleetEldOrderTestWithExcel extends ParentTest {
     @Test
     public void addNewOrder() throws InterruptedException, SQLException, IOException, ClassNotFoundException {
         ExcelDriver excelDriver = new ExcelDriver();
-        int columnNumber = 2;
+        int columnNumber = 3;
 
         Map dataForEldOrder = excelDriver.getMultipleData(configProperties.DATA_FILE_PATH() + "testEldOrder.xls", "orderListData", columnNumber);
         Map personalDataForEldOrder = excelDriver.getData(configProperties.DATA_FILE_PATH() + "testEldOrder.xls", "personalData");
@@ -28,24 +28,14 @@ public class FleetEldOrderTestWithExcel extends ParentTest {
 
         loginPage.userValidLogIn(dataForFleetValidLogIn.get("login").toString(),dataForFleetValidLogIn.get("pass").toString());
 
-        dashboardPage.clickOnMenuDash();
-        dashboardPage.clickOnMenuPageELD();
-        Thread.sleep(1000);
-        dashboardPage.clickOnOrderELD();
-        modalEldPage.checkCurrentUrl();
+        dashboardPage.goToEldPageAndClickOrderEld();
 
 /*
 PERSONAL DATA
- */
-
-        modalEldPage.enterPrimaryAddressLine(personalDataForEldOrder.get("addressLine").toString());
-        modalEldPage.enterAptNumber(personalDataForEldOrder.get("aptNumber").toString());
-        modalEldPage.enterDeliveryCity(personalDataForEldOrder.get("deliveryCity").toString());
-        modalEldPage.selectState(personalDataForEldOrder.get("deliveryState").toString());
-        modalEldPage.enterZipCode(personalDataForEldOrder.get("zipCode").toString());
-        modalEldPage.enterFirstName(personalDataForEldOrder.get("firstName").toString());
-        modalEldPage.enterLastName(personalDataForEldOrder.get("lastName").toString());
-        modalEldPage.enterPhone(personalDataForEldOrder.get("phone").toString());
+ */     modalEldPage.enterPersonalData(personalDataForEldOrder.get("deliveryState").toString(), personalDataForEldOrder.get("firstName").toString(),
+                personalDataForEldOrder.get("lastName").toString(), personalDataForEldOrder.get("phone").toString(),
+                personalDataForEldOrder.get("addressLine").toString(), personalDataForEldOrder.get("aptNumber").toString(),
+                personalDataForEldOrder.get("deliveryCity").toString(), personalDataForEldOrder.get("zipCode").toString());
 
 /*
 ORDER LIST
@@ -56,7 +46,6 @@ ORDER LIST
         modalEldPage.enterQuantitySticker(dataForEldOrder.get("quantitySticker").toString());
         modalEldPage.enterQuantityCamera1(dataForEldOrder.get("quantityCamera1").toString());
         modalEldPage.enterQuantityCamera2(dataForEldOrder.get("quantityCamera2").toString());
-
         modalEldPage.clickPaymentMethods(dataForEldOrder.get("typeOfPaymentMethod").toString());
 
 /*
@@ -71,10 +60,11 @@ CHECK BOX DELIVERY
 /*
 EQUIPMENT LEASE AND SOFTWARE SUBSCRIPTION SERVICE AGREEMENT
  */
-        modalEldPage.clickAgreement();
-        modalEldPage.clickButtonFastMove();
-        modalEldPage.clickButtonAgree();
-        modalEldPage.clickButtonOrder();
+
+        modalEldPage.clickAgreements(dataForEldOrder.get("quantityOfDevices").toString());
+/*
+CHECK LAST ID ORDER BEFORE AND AFTER TEST
+ */
 
         String idLastOrderAfterTest = utilsForDB.getLastOrderIdForFleet(dataFleetId.get("fleetId").toString());
         checkAC("New order wasn`t created", idLastOrderBeforeTest.equals(idLastOrderAfterTest) , false);

@@ -16,6 +16,8 @@ import pages.*;
 import java.io.File;
 import java.io.IOException;
 import java.sql.SQLException;
+import java.util.Iterator;
+import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
 public class ParentTest {
@@ -84,6 +86,13 @@ public class ParentTest {
             logger.error("AC failed: " + message);
         }
         Assert.assertEquals(message,expected,actual);
+    }
+
+    public void selectBrowserWindow(String window){
+        Set<String> windowIds = webDriver.getWindowHandles();
+        Iterator<String> iter = windowIds.iterator();
+        String mainWindow = iter.next();
+        String childWindow = iter.next();
     }
 
 //       This is for do screenshot on failed test
