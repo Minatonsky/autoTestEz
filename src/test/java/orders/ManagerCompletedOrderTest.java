@@ -15,7 +15,7 @@ public class ManagerCompletedOrderTest extends ParentTest {
     @Test
     public void completedNewOrder() throws IOException, InterruptedException, SQLException, ClassNotFoundException {
 
-        String idLastOrderAfterTest = "2420";
+        String idLastOrderAfterTest = "2459";
 
         ExcelDriver excelDriver = new ExcelDriver();
         Map dataForManagerValidLogIn = excelDriver.getData(configProperties.DATA_FILE_PATH() + "testLogin.xls", "ManagerLogin");

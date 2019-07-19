@@ -58,7 +58,8 @@ public class EldOrderTestWithExcelParams extends ParentTest {
 
         loginPage.userValidLogIn(dataForFleetValidLogIn.get("login").toString(),dataForFleetValidLogIn.get("pass").toString());
 
-        dashboardPage.goToEldPageAndClickOrderEld();
+        dashboardPage.goToEldPage();
+        eldUserPage.clickOnOrderELD();
 
 /*
 PERSONAL DATA

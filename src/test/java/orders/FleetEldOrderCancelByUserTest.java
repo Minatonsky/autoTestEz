@@ -28,20 +28,18 @@ public class FleetEldOrderCancelByUserTest extends ParentTest {
 
         loginPage.userValidLogIn(dataForFleetValidLogIn.get("login").toString(),dataForFleetValidLogIn.get("pass").toString());
 
-        dashboardPage.goToEldPageAndClickOrderEld();
+        dashboardPage.goToEldPage();
+        Thread.sleep(1000);
+        eldUserPage.clickOnOrderELD();
 
-/*
-PERSONAL DATA
- */
+
 
         modalEldPage.enterPersonalData(personalDataForEldOrder.get("deliveryState").toString(), personalDataForEldOrder.get("firstName").toString(),
                 personalDataForEldOrder.get("lastName").toString(), personalDataForEldOrder.get("phone").toString(),
                 personalDataForEldOrder.get("addressLine").toString(), personalDataForEldOrder.get("aptNumber").toString(),
                 personalDataForEldOrder.get("deliveryCity").toString(), personalDataForEldOrder.get("zipCode").toString());
 
-/*
-ORDER LIST
- */
+
         modalEldPage.enterQuantityDevices(dataForEldOrder.get("quantityOfDevices").toString());
         modalEldPage.enterQuantityPinCable(dataForEldOrder.get("quantityPinCable").toString());
         modalEldPage.enterQuantityOBDPinCable(dataForEldOrder.get("quantityOBDPinCable").toString());
@@ -50,40 +48,34 @@ ORDER LIST
         modalEldPage.enterQuantityCamera2(dataForEldOrder.get("quantityCamera2").toString());
         modalEldPage.clickPaymentMethods(dataForEldOrder.get("typeOfPaymentMethod").toString());
 
-/*
-CHECK BOX DELIVERY
- */
+//        modalEldPage.enterOrderData(dataForEldOrder.get("quantityOfDevices").toString(), dataForEldOrder.get("quantityPinCable").toString(), dataForEldOrder.get("quantityOBDPinCable").toString(), dataForEldOrder.get("quantitySticker").toString(),
+//                dataForEldOrder.get("quantityCamera1").toString(), dataForEldOrder.get("quantityCamera2").toString(), dataForEldOrder.get("typeOfPaymentMethod").toString(),
+//                dataForEldOrder.get("neededStatePickUpFromOffice").toString(), dataForEldOrder.get("neededStateOvernightDelivery").toString(), dataForEldOrder.get("defaultTotalOrder").toString());
+
+
         modalEldPage.setPickUpFromOffice(dataForEldOrder.get("neededStatePickUpFromOffice").toString());
         modalEldPage.setOvernightDelivery(dataForEldOrder.get("neededStateOvernightDelivery").toString());
-/*
-COMPARE TOTAL ORDER
- */
+
         modalEldPage.compareTotalOrder(dataForEldOrder.get("defaultTotalOrder").toString());
         checkAC("Total Order is not correct", modalEldPage.compareTotalOrder(dataForEldOrder.get("defaultTotalOrder").toString()), true);
 
-/*
-EQUIPMENT LEASE AND SOFTWARE SUBSCRIPTION SERVICE AGREEMENT
- */
+
         modalEldPage.clickAgreements(dataForEldOrder.get("quantityOfDevices").toString());
-/*
-CHECK LAST ID ORDER BEFORE AND AFTER TEST
- */
+
         String idLastOrderAfterTest = utilsForDB.getLastOrderIdForFleet(dataFleetId.get("fleetId").toString());
         checkAC("New order wasn`t created", idLastOrderBeforeTest.equals(idLastOrderAfterTest) , false);
-/*
-COMPARE BALANCE
- */
-        dashboardPage.clickOnMenuDash();
-        Thread.sleep(1000);
-        dashboardPage.clickOnMenuPageFinances();
+
+        dashboardPage.goToFinancesPage();
 
         financesPage.compareBalance(dataForEldOrder.get("defaultBalance").toString());
         checkAC("Balance is not correct", financesPage.compareBalance(dataForEldOrder.get("defaultBalance").toString()), true);
 
+        dashboardPage.goToEldPage();
 
-/*
-CANCELED ORDER SELECT localId FROM eld_scanners WHERE id IN (SELECT scannerId FROM eld_orders_ids WHERE orderId = 2415);
- */
+        eldUserPage.cancelEldDevices(idLastOrderAfterTest);
+
+
+
 
 
     }

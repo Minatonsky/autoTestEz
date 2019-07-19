@@ -28,7 +28,8 @@ public class SoloEldOrderCancelByManagerTest extends ParentTest {
 
         loginPage.userValidLogIn(dataForSoloValidLogIn.get("login").toString(),dataForSoloValidLogIn.get("pass").toString());
 
-        dashboardPage.goToEldPageAndClickOrderEld();
+        dashboardPage.goToEldPage();
+        eldUserPage.clickOnOrderELD();
 
 /*
 PERSONAL DATA
