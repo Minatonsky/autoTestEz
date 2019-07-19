@@ -9,13 +9,13 @@ import java.io.IOException;
 import java.sql.SQLException;
 import java.util.Map;
 
-public class SoloEldOrderTestWithExcel extends ParentTest {
+public class SoloEldOrderCancelByManagerTest extends ParentTest {
 
 
     @Test
     public void addNewOrder() throws InterruptedException, SQLException, IOException, ClassNotFoundException {
         ExcelDriver excelDriver = new ExcelDriver();
-        int columnNumber = 2;
+        int columnNumber = 1;
 
         Map dataForEldOrder = excelDriver.getMultipleData(configProperties.DATA_FILE_PATH() + "testEldOrder.xls", "orderListData", columnNumber);
         Map personalDataForEldOrder = excelDriver.getData(configProperties.DATA_FILE_PATH() + "testEldOrder.xls", "personalData");
@@ -28,24 +28,16 @@ public class SoloEldOrderTestWithExcel extends ParentTest {
 
         loginPage.userValidLogIn(dataForSoloValidLogIn.get("login").toString(),dataForSoloValidLogIn.get("pass").toString());
 
-        dashboardPage.clickOnMenuDash();
-        dashboardPage.clickOnMenuPageELD();
-        Thread.sleep(1000);
-        dashboardPage.clickOnOrderELD();
-        modalEldPage.checkCurrentUrl();
+        dashboardPage.goToEldPageAndClickOrderEld();
 
 /*
 PERSONAL DATA
  */
 
-        modalEldPage.enterPrimaryAddressLine(personalDataForEldOrder.get("addressLine").toString());
-        modalEldPage.enterAptNumber(personalDataForEldOrder.get("aptNumber").toString());
-        modalEldPage.enterDeliveryCity(personalDataForEldOrder.get("deliveryCity").toString());
-        modalEldPage.selectState(personalDataForEldOrder.get("deliveryState").toString());
-        modalEldPage.enterZipCode(personalDataForEldOrder.get("zipCode").toString());
-        modalEldPage.enterFirstName(personalDataForEldOrder.get("firstName").toString());
-        modalEldPage.enterLastName(personalDataForEldOrder.get("lastName").toString());
-        modalEldPage.enterPhone(personalDataForEldOrder.get("phone").toString());
+        modalEldPage.enterPersonalData(personalDataForEldOrder.get("deliveryState").toString(), personalDataForEldOrder.get("firstName").toString(),
+                personalDataForEldOrder.get("lastName").toString(), personalDataForEldOrder.get("phone").toString(),
+                personalDataForEldOrder.get("addressLine").toString(), personalDataForEldOrder.get("aptNumber").toString(),
+                personalDataForEldOrder.get("deliveryCity").toString(), personalDataForEldOrder.get("zipCode").toString());
 
 /*
 ORDER LIST
@@ -71,10 +63,10 @@ CHECK BOX DELIVERY
 /*
 EQUIPMENT LEASE AND SOFTWARE SUBSCRIPTION SERVICE AGREEMENT
  */
-        modalEldPage.clickAgreement();
-        modalEldPage.clickButtonFastMove();
-        modalEldPage.clickButtonAgree();
-        modalEldPage.clickButtonOrder();
+        modalEldPage.clickAgreements(dataForEldOrder.get("quantityOfDevices").toString());
+/*
+CHECK LAST ID ORDER BEFORE AND AFTER TEST
+ */
 
         String idLastOrderAfterTest = utilsForDB.getLastOrderIdForSolo(dataSoloId.get("soloId").toString());
         checkAC("New order wasn`t created", idLastOrderBeforeTest.equals(idLastOrderAfterTest) , false);
@@ -87,7 +79,61 @@ EQUIPMENT LEASE AND SOFTWARE SUBSCRIPTION SERVICE AGREEMENT
         financesPage.compareBalance(dataForEldOrder.get("defaultBalance").toString());
         checkAC("Balance is not correct", financesPage.compareBalance(dataForEldOrder.get("defaultBalance").toString()), true);
 
+        tearDown();
+        setUp();
+
+
+/*
+MANAGER COMPLETED OR CANCEL ORDER
+ */
+
+        Map dataForManagerValidLogIn = excelDriver.getData(configProperties.DATA_FILE_PATH() + "testLogin.xls", "ManagerLogin");
+
+
+        loginPage.userValidLogIn(dataForManagerValidLogIn.get("login").toString(),dataForManagerValidLogIn.get("pass").toString());
+
+        dashboardPage.clickOnMenuDash();
+
+        selectBrowserWindow("mainWindow");
+
+        dashboardPage.clickOnMenuPageELD();
+        Thread.sleep(5000);
+        eldManagerPage.clickOnEldOrders();
+        Thread.sleep(5000);
+        eldManagerPage.enterIdOrder(idLastOrderAfterTest);
+        Thread.sleep(5000);
+        eldManagerPage.clickOnOrderOnList(idLastOrderAfterTest);
+        modalOrderPage.selectOrderStatus("2");
+        modalOrderPage.clickButtonSave();
+
+
+        tearDown();
+        setUp();
+
+/*
+USER CHECK IF BALANCE IS RETURNED
+ */
+
+        loginPage.userValidLogIn(dataForSoloValidLogIn.get("login").toString(),dataForSoloValidLogIn.get("pass").toString());
+
+        dashboardPage.clickOnMenuDash();
+        Thread.sleep(1000);
+        dashboardPage.clickOnMenuPageFinances();
+
+        financesPage.compareBalance(dataForEldOrder.get("balanceIfCanceled").toString());
+        checkAC("Balance is not correct", financesPage.compareBalance(dataForEldOrder.get("balanceIfCanceled").toString()), true);
+
+
+/*
+CHECK ORDER STATUS FROM DATABASE
+ */
+
+        Thread.sleep(5000);
+        String orderStatus = utilsForDB.getOrderStatus(idLastOrderAfterTest);
+        checkAC("Order is not completed", orderStatus.equals("2") , true);
+
 
 
     }
+
 }

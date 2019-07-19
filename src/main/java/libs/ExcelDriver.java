@@ -62,9 +62,9 @@ public class ExcelDriver {
 		HSSFSheet sheet = wb.getSheet(sheetName);
 
 		// Get number of data values
-		int dataSize = sheet.getPhysicalNumberOfRows() - 1;
+		int dataSize = sheet.getPhysicalNumberOfRows() ;
 		// Look over the table and put key-value pairs into the Map collection
-		for (int k = 1; k < (dataSize + 1); k++) {
+		for (int k = 1; k < (dataSize); k++) {
 			HSSFCell keyCell = sheet.getRow(k).getCell(0);
 			HSSFCell valueCell = sheet.getRow(k).getCell(1);
 			valueCell.setCellType(HSSFCell.CELL_TYPE_STRING);

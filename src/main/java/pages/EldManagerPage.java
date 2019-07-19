@@ -13,9 +13,6 @@ public class EldManagerPage extends ParentPage {
     @FindBy(xpath = ".//*[@placeholder='Id']")
     private WebElement idHolder;
 
-    @FindBy(xpath = ".//*[@id='eld_orders_table']//td[text()='2422']")
-    private WebElement orderOnList;
-
     public EldManagerPage(WebDriver webDriver) {
         super(webDriver, "dash/eld/");
     }
@@ -24,7 +21,20 @@ public class EldManagerPage extends ParentPage {
 
     public void enterIdOrder(String idOrder){actionsWithOurElements.enterTextToElement(idHolder, idOrder);}
 
-    public void clickOnOrderOnList(){actionsWithOurElements.clickOnElement(orderOnList);}
+//    public void clickOnOrderOnList(String idOrder){
+//        if (isOrderInList(idOrder)){
+//            clickOnOrder(idOrder);
+//            logger.info("Order with id " + idOrder + "was clicked");
+//        }
+//    }
+
+    public void clickOnOrderOnList(String idOrder) {
+        actionsWithOurElements.clickOnElement(".//*[@id='eld_orders_table']//td[text()='" + idOrder + "']");
+    }
+
+//    private boolean isOrderInList(String idOrder) {
+//        return actionsWithOurElements.isElementInOrder(".//*[@id='eld_orders_table']//td[text()='" + idOrder + "']");
+//    }
 
 
 }

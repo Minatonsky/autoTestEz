@@ -1,5 +1,6 @@
 package pages;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -11,9 +12,6 @@ public class ModalEldPage extends ParentPage {
 
     @FindBy(id = "send_order")
     private WebElement orderButton;
-
-//    @FindBy(xpath = "//*[@id=\"state\"]/option[2]")
-//    private WebElement stateList;
     
     @FindBy(id = "first_name")
     private WebElement firstNameInput;
@@ -35,9 +33,6 @@ public class ModalEldPage extends ParentPage {
 
     @FindBy(id = "zip")
     private WebElement zipCodeInput;
-
-//    @FindBy(xpath = "//*[@id='eldTariffs']/*[@data-id='1']")
-//    private WebElement paymentMethods;
 
     @FindBy(id = "leaseAndAgreementCheckbox")
     private WebElement agreement;
@@ -81,7 +76,7 @@ public class ModalEldPage extends ParentPage {
 /*
 PERSONAL DATA
  */
-    public void selectState(String value) {actionsWithOurElements.selectValueInDropDown(typeOfState, value);}
+    public void selectState(String deliveryState) {actionsWithOurElements.selectValueInDropDown(typeOfState, deliveryState);}
 
     public void enterFirstName(String firstName) {actionsWithOurElements.enterTextToElement(firstNameInput, firstName);}
 
@@ -100,6 +95,18 @@ PERSONAL DATA
 
     public void enterZipCode(String zipCode) {actionsWithOurElements.enterTextToElement(zipCodeInput, zipCode);}
 
+    @Step
+    public void enterPersonalData(String deliveryState, String firstName, String lastName, String phone, String addressLine, String aptNumber, String deliveryCity, String zipCode) {
+        selectState(deliveryState);
+        enterFirstName(firstName);
+        enterLastName(lastName);
+        enterPhone(phone);
+        enterPrimaryAddressLine(addressLine);
+        enterAptNumber(aptNumber);
+        enterDeliveryCity(deliveryCity);
+        enterZipCode(zipCode);
+    }
+
 /*
 CHECK BOX DELIVERY
  */
@@ -117,6 +124,23 @@ EQUIPMENT LEASE AND SOFTWARE SUBSCRIPTION SERVICE AGREEMENT
     public void clickButtonFastMove() {actionsWithOurElements.clickOnElement(buttonFastMove);}
 
     public void clickButtonAgree() {actionsWithOurElements.clickOnElement(buttonAgree);}
+
+    public void clickAgreements(String quantityOfDevices){
+        int num = Integer.parseInt(quantityOfDevices);
+        if (num > 0){
+            clickAgreement();
+            clickButtonFastMove();
+            clickButtonAgree();
+            clickButtonOrder();
+            logger.info("quantityOfDevices > 0");
+        }
+        else {
+            clickButtonOrder();
+            logger.info("quantityOfDevices == 0");
+        }
+    }
+
+
 
 /*
 ORDER LIST
@@ -144,6 +168,9 @@ PAYMENT METHODS
             clickOnPaymentMethod(typeOfPaymentMethod);
             logger.info("Payment Method " + typeOfPaymentMethod + " was selected");
         }
+        else {
+            logger.info("Payment Method was not selected");
+        }
     }
 
     private void clickOnPaymentMethod(String typeOfPaymentMethod) {
@@ -154,15 +181,11 @@ PAYMENT METHODS
         return actionsWithOurElements.isElementInOrder(".//*[@id='eldTariffs']/*[@data-id='" + typeOfPaymentMethod + "']");
     }
 
-
-
 /*
 BUTTON ORDER
  */
 
     public void clickButtonOrder() {actionsWithOurElements.clickOnElement(orderButton);}
-
-
 
     public boolean compareTotalOrder(String eldStandardTotalOrder){
         return actionsWithOurElements.isElementInOrder(".//*[@id='eld_total_order' and text()='$" + eldStandardTotalOrder + "']");

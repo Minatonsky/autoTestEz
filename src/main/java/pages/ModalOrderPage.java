@@ -4,9 +4,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-import java.util.Iterator;
-import java.util.Set;
-
 public class ModalOrderPage extends ParentPage {
 
     @FindBy(xpath = ".//select[@id='order_status']")
@@ -23,11 +20,5 @@ public class ModalOrderPage extends ParentPage {
 
     public void clickButtonSave(){actionsWithOurElements.clickOnElement(buttonSave);}
 
-    public void selectBrowserWindow(String window){
-        Set<String> windowIds = webDriver.getWindowHandles();
-        Iterator<String> iter = windowIds.iterator();
-        String mainWindow = iter.next();
-        String childWindow = iter.next();
-    }
 
 }
