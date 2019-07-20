@@ -2,6 +2,7 @@ package parentTest;
 
 import io.qameta.allure.Step;
 import libs.ConfigProperties;
+import libs.ExcelDriver;
 import org.aeonbits.owner.ConfigFactory;
 import org.apache.log4j.Logger;
 import org.junit.After;
@@ -22,6 +23,8 @@ import java.util.concurrent.TimeUnit;
 
 public class ParentTest {
     WebDriver webDriver;
+    ExcelDriver excelDriver;
+
     Logger logger = Logger.getLogger(getClass());
     protected LoginPage loginPage;
     protected DashboardPage dashboardPage;
@@ -29,6 +32,7 @@ public class ParentTest {
     protected FinancesPage financesPage;
     protected EldManagerPage eldManagerPage;
     protected ModalOrderPage modalOrderPage;
+    protected EldUserPage eldUserPage;
 
     String browser = System.getProperty("browser");
     protected static ConfigProperties configProperties = ConfigFactory.create(ConfigProperties.class);
@@ -37,6 +41,7 @@ public class ParentTest {
     @Before
     public void setUp() throws SQLException, IOException, ClassNotFoundException {
         initDriver(browser);
+        excelDriver = new ExcelDriver();
         webDriver.manage().window().maximize();
         webDriver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         loginPage = new LoginPage(webDriver);
@@ -45,6 +50,7 @@ public class ParentTest {
         financesPage = new FinancesPage(webDriver);
         eldManagerPage = new EldManagerPage(webDriver);
         modalOrderPage = new ModalOrderPage(webDriver);
+        eldUserPage = new EldUserPage(webDriver);
 
 
 

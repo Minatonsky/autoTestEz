@@ -52,19 +52,19 @@ public class ModalEldPage extends ParentPage {
     @FindBy(name = "overnight_delivery")
     private WebElement checkBoxOvernightDelivery;
 
-    @FindBy(xpath = "//*[@data-id='2']/td[3]/input ")
+    @FindBy(xpath = ".//*[@data-id='2']/td[3]/input")
     private WebElement quantityPinCableInput;
 
-    @FindBy(xpath = "//*[@data-id='3']/td[3]/input ")
+    @FindBy(xpath = ".//*[@data-id='3']/td[3]/input")
     private WebElement quantityOBDPinCableInput;
 
-    @FindBy(xpath = "//*[@data-id='4']/td[3]/input ")
+    @FindBy(xpath = ".//*[@data-id='4']/td[3]/input")
     private WebElement quantityStickerInput;
 
-    @FindBy(xpath = "//*[@data-id='100']/td[3]/input ")
+    @FindBy(xpath = ".//*[@data-id='100']/td[3]/input")
     private WebElement quantityCamera1Input;
 
-    @FindBy(xpath = "//*[@data-id='101']/td[3]/input ")
+    @FindBy(xpath = ".//*[@data-id='101']/td[3]/input")
     private WebElement quantityCamera2Input;
 
 
@@ -107,13 +107,6 @@ PERSONAL DATA
         enterZipCode(zipCode);
     }
 
-/*
-CHECK BOX DELIVERY
- */
-
-    public void setPickUpFromOffice(String neededStatePickUpFromOffice){actionsWithOurElements.setNeededStateToCheckBox(checkBoxPickUp, neededStatePickUpFromOffice);}
-
-    public void setOvernightDelivery(String neededStateOvernightDelivery){actionsWithOurElements.setNeededStateToCheckBox(checkBoxOvernightDelivery, neededStateOvernightDelivery);}
 
 /*
 EQUIPMENT LEASE AND SOFTWARE SUBSCRIPTION SERVICE AGREEMENT
@@ -125,6 +118,7 @@ EQUIPMENT LEASE AND SOFTWARE SUBSCRIPTION SERVICE AGREEMENT
 
     public void clickButtonAgree() {actionsWithOurElements.clickOnElement(buttonAgree);}
 
+    @Step
     public void clickAgreements(String quantityOfDevices){
         int num = Integer.parseInt(quantityOfDevices);
         if (num > 0){
@@ -158,11 +152,29 @@ ORDER LIST
 
     public void enterQuantityCamera2(String quantityCamera2){actionsWithOurElements.enterTextToElement(quantityCamera2Input, quantityCamera2);}
 
+    public void setPickUpFromOffice(String neededStatePickUpFromOffice){actionsWithOurElements.setNeededStateToCheckBox(checkBoxPickUp, neededStatePickUpFromOffice);}
+
+    public void setOvernightDelivery(String neededStateOvernightDelivery){actionsWithOurElements.setNeededStateToCheckBox(checkBoxOvernightDelivery, neededStateOvernightDelivery);}
+
+    @Step
+    public void enterOrderData(String  quantityOfDevices, String quantityPinCable, String quantityOBDPinCable, String quantitySticker, String quantityCamera1, String quantityCamera2, String neededStatePickUpFromOffice, String neededStateOvernightDelivery){
+        enterQuantityDevices(quantityOfDevices);
+        enterQuantityPinCable(quantityPinCable);
+        enterQuantityOBDPinCable(quantityOBDPinCable);
+        enterQuantitySticker(quantitySticker);
+        enterQuantityCamera1(quantityCamera1);
+        enterQuantityCamera2(quantityCamera2);
+        setPickUpFromOffice(neededStatePickUpFromOffice);
+        setOvernightDelivery(neededStateOvernightDelivery);
+
+    }
+
+
 /*
 PAYMENT METHODS
  */
 
-
+    @Step
     public void clickPaymentMethods(String typeOfPaymentMethod){
         if (isPaymentInList(typeOfPaymentMethod)){
             clickOnPaymentMethod(typeOfPaymentMethod);
@@ -184,12 +196,40 @@ PAYMENT METHODS
 /*
 BUTTON ORDER
  */
-
+    @Step
     public void clickButtonOrder() {actionsWithOurElements.clickOnElement(orderButton);}
 
+
+
+
+
+    @Step
     public boolean compareTotalOrder(String eldStandardTotalOrder){
         return actionsWithOurElements.isElementInOrder(".//*[@id='eld_total_order' and text()='$" + eldStandardTotalOrder + "']");
+    }
 
+    @Step
+    public boolean compareOrderPrice(String eldOrderPrice){
+        return actionsWithOurElements.isElementInOrder(".//*[@id='eld_order_price' and text()='$" + eldOrderPrice + "']");
+    }
 
+    @Step
+    public boolean compareDeliveryPrice(String eldDeliveryPrice){
+        return actionsWithOurElements.isElementInOrder(".//*[@id='eld_delivery_price' and text()='$" + eldDeliveryPrice + "']");
+    }
+
+    @Step
+    public boolean compareFirstMonthFee(String eldFirstMonthFee){
+        return actionsWithOurElements.isElementInOrder(".//*[@id='eld_first_price' and text()='$" + eldFirstMonthFee + "']");
+    }
+
+    @Step
+    public boolean compareLastMonthFee(String eldLastMonthFee) {
+        return actionsWithOurElements.isElementInOrder(".//*[@id='eld_last_price' and text()='$" + eldLastMonthFee + "']");
+    }
+
+    @Step
+    public boolean compareDepositFee(String eldDepositFee){
+        return actionsWithOurElements.isElementInOrder(".//*[@id='eld_deposit_fee' and text()='$" + eldDepositFee + "']");
     }
 }
