@@ -200,7 +200,9 @@ BUTTON ORDER
     public void clickButtonOrder() {actionsWithOurElements.clickOnElement(orderButton);}
 
 
-
+/*
+COMPARE METHODS
+ */
 
 
     @Step

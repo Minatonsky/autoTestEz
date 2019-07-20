@@ -5,7 +5,7 @@ import parentTest.ParentTest;
 
 public class LoginTest extends ParentTest {
     @Test
-    public void validLogin(){
+    public void validLogin() throws InterruptedException {
         loginPage.openPage();
         loginPage.openLoginForm();
         loginPage.enterLogin("rose@emailate.com");
@@ -13,6 +13,15 @@ public class LoginTest extends ParentTest {
         loginPage.clickOnSubmitButton();
 
         checkAC("Dashbord is opened", dashboardPage.isDashboardPresent(), true);
+        dashboardPage.clickOnMenuDash();
+        dashboardPage.clickMenuSizeButton();
+
+        dashboardPage.goToEldPage();
+        dashboardPage.goToFinancesPage();
+        dashboardPage.goToEldPage();
+        dashboardPage.goToFinancesPage();
+
+
     }
 
 

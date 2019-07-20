@@ -1203,3 +1203,951 @@ Driver info: org.openqa.selenium.chrome.ChromeDriver
 Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\denku\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57784}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
 Session ID: cc5d9e11070bafc5bce711c1ded98df5
 *** Element info: {Using=xpath, value=.//*[@id='eld_table']//td[text()='']}
+2019-20-07 10:21:50   INFO [orders.FleetEldOrderCancelByUserTest] : Chrome will be started
+2019-20-07 10:21:59   INFO [orders.FleetEldOrderCancelByUserTest] : Chrome is started
+2019-20-07 10:22:06   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-20-07 10:22:09   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-20-07 10:22:15   INFO [pages.LoginPage] : Login Page was opened
+2019-20-07 10:22:16   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 10:22:16   INFO [libs.ActionsWithOurElements] : rose@emailate.com was inputted into element
+2019-20-07 10:22:17   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-20-07 10:22:17   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 10:22:24   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-20-07 10:22:25   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 10:22:26   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 10:22:26   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-20-07 10:22:28   INFO [libs.ActionsWithOurElements] :  was inputted into element
+2019-20-07 10:22:48  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":".//*[@id='eld_table']//td[text()='']"}
+  (Session info: chrome=75.0.3770.142)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'DESKTOP-UD8IPI4', ip: '100.80.1.70', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\denku\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50478}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: f04106157300640cf2a5d22ebe94ecb0
+*** Element info: {Using=xpath, value=.//*[@id='eld_table']//td[text()='']}
+2019-20-07 10:36:47   INFO [orders.FleetEldOrderCancelByUserTest] : Chrome will be started
+2019-20-07 10:36:57   INFO [orders.FleetEldOrderCancelByUserTest] : Chrome is started
+2019-20-07 10:37:04   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-20-07 10:37:06   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-20-07 10:37:13   INFO [pages.LoginPage] : Login Page was opened
+2019-20-07 10:37:13   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 10:37:14   INFO [libs.ActionsWithOurElements] : rose@emailate.com was inputted into element
+2019-20-07 10:37:14   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-20-07 10:37:14   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 10:37:21   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-20-07 10:37:21   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 10:37:23   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 10:37:23   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-20-07 10:43:47   INFO [orders.FleetEldOrderCancelByUserTest] : Chrome will be started
+2019-20-07 10:43:57   INFO [orders.FleetEldOrderCancelByUserTest] : Chrome is started
+2019-20-07 10:44:03   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-20-07 10:44:06   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-20-07 10:44:13   INFO [pages.LoginPage] : Login Page was opened
+2019-20-07 10:44:13   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 10:44:14   INFO [libs.ActionsWithOurElements] : rose@emailate.com was inputted into element
+2019-20-07 10:44:14   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-20-07 10:44:14   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 10:44:21   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-20-07 10:44:21   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 10:44:23   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 10:44:23   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-20-07 10:57:13   INFO [orders.FleetEldOrderCancelByUserTest] : Chrome will be started
+2019-20-07 10:57:23   INFO [orders.FleetEldOrderCancelByUserTest] : Chrome is started
+2019-20-07 10:57:30   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-20-07 10:57:33   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-20-07 10:57:39   INFO [pages.LoginPage] : Login Page was opened
+2019-20-07 10:57:39   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 10:57:40   INFO [libs.ActionsWithOurElements] : rose@emailate.com was inputted into element
+2019-20-07 10:57:40   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-20-07 10:57:40   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 10:57:47   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-20-07 10:57:47   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 10:57:49   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 10:57:49   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-20-07 10:57:51   INFO [libs.ActionsWithOurElements] :  was inputted into element
+2019-20-07 10:58:11  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":".//*[@id='eld_table']//td[text()='']"}
+  (Session info: chrome=75.0.3770.142)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'DESKTOP-UD8IPI4', ip: '100.80.1.70', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\denku\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50862}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: ac4d8cc1c4c2a89049838f545a5c36a9
+*** Element info: {Using=xpath, value=.//*[@id='eld_table']//td[text()='']}
+2019-20-07 11:00:57   INFO [orders.FleetEldOrderCancelByUserTest] : Chrome will be started
+2019-20-07 11:01:06   INFO [orders.FleetEldOrderCancelByUserTest] : Chrome is started
+2019-20-07 11:01:12   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-20-07 11:01:15   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-20-07 11:01:22   INFO [pages.LoginPage] : Login Page was opened
+2019-20-07 11:01:22   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 11:01:22   INFO [libs.ActionsWithOurElements] : rose@emailate.com was inputted into element
+2019-20-07 11:01:23   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-20-07 11:01:23   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 11:01:29   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-20-07 11:01:30   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 11:01:31   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 11:01:31   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-20-07 11:01:33   INFO [libs.ActionsWithOurElements] :  was inputted into element
+2019-20-07 11:01:33   INFO [libs.ActionsWithOurElements] : localId was inputted into element
+2019-20-07 11:01:34   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-20-07 11:01:34   INFO [libs.ActionsWithOurElements] : 168 was inputted into element
+2019-20-07 11:01:34   INFO [libs.ActionsWithOurElements] : 2 was inputted into element
+2019-20-07 11:01:34   INFO [libs.ActionsWithOurElements] : 169 was inputted into element
+2019-20-07 11:06:32   INFO [orders.FleetEldOrderCancelByUserTest] : Chrome will be started
+2019-20-07 11:06:41   INFO [orders.FleetEldOrderCancelByUserTest] : Chrome is started
+2019-20-07 11:06:48   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-20-07 11:06:51   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-20-07 11:06:57   INFO [pages.LoginPage] : Login Page was opened
+2019-20-07 11:06:58   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 11:06:58   INFO [libs.ActionsWithOurElements] : rose@emailate.com was inputted into element
+2019-20-07 11:06:59   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-20-07 11:06:59   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 11:07:05   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-20-07 11:07:06   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 11:07:07   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 11:07:07   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-20-07 11:07:09   INFO [libs.ActionsWithOurElements] :  was inputted into element
+2019-20-07 11:07:09   INFO [libs.ActionsWithOurElements] : localId was inputted into element
+2019-20-07 11:07:10   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-20-07 11:07:10   INFO [libs.ActionsWithOurElements] : 168 was inputted into element
+2019-20-07 11:07:10   INFO [libs.ActionsWithOurElements] : 2 was inputted into element
+2019-20-07 11:07:10   INFO [libs.ActionsWithOurElements] : 169 was inputted into element
+2019-20-07 11:42:41   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-20-07 11:43:47   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-20-07 11:44:40   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-20-07 11:45:09   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-20-07 11:54:36   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-20-07 11:58:44   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-20-07 11:59:13   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-20-07 12:02:40   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-20-07 12:04:21   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-20-07 12:13:46   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-20-07 12:14:14   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-20-07 12:32:19   INFO [orders.FleetEldOrderCancelByUserTest] : Chrome will be started
+2019-20-07 12:32:28   INFO [orders.FleetEldOrderCancelByUserTest] : Chrome is started
+2019-20-07 12:32:35   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-20-07 12:32:38   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-20-07 12:32:44   INFO [pages.LoginPage] : Login Page was opened
+2019-20-07 12:32:44   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 12:32:45   INFO [libs.ActionsWithOurElements] : rose@emailate.com was inputted into element
+2019-20-07 12:32:45   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-20-07 12:32:45   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 12:32:52   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-20-07 12:32:52   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 12:32:53   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 12:32:53   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-20-07 12:32:55   INFO [libs.ActionsWithOurElements] : 168 was inputted into element
+2019-20-07 12:32:56   INFO [libs.ActionsWithOurElements] : 169 was inputted into element
+2019-20-07 12:34:19   INFO [orders.FleetEldOrderCancelByUserTest] : Chrome will be started
+2019-20-07 12:34:28   INFO [orders.FleetEldOrderCancelByUserTest] : Chrome is started
+2019-20-07 12:34:35   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-20-07 12:34:37   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-20-07 12:34:44   INFO [pages.LoginPage] : Login Page was opened
+2019-20-07 12:34:44   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 12:34:45   INFO [libs.ActionsWithOurElements] : rose@emailate.com was inputted into element
+2019-20-07 12:34:45   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-20-07 12:34:45   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 12:34:52   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-20-07 12:34:52   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 12:34:54   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 12:34:54   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-20-07 12:34:56   INFO [libs.ActionsWithOurElements] : 168 was inputted into element
+2019-20-07 12:34:57   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 12:34:58   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 12:34:58   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 12:34:58   INFO [libs.ActionsWithOurElements] : 169 was inputted into element
+2019-20-07 12:35:00   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 12:35:00   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 12:35:01   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 12:47:51   INFO [orders.FleetEldOrderCancelByUserTest] : Chrome will be started
+2019-20-07 12:48:00   INFO [orders.FleetEldOrderCancelByUserTest] : Chrome is started
+2019-20-07 12:48:07   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-20-07 12:48:09   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-20-07 12:48:16   INFO [pages.LoginPage] : Login Page was opened
+2019-20-07 12:48:16   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 12:48:17   INFO [libs.ActionsWithOurElements] : rose@emailate.com was inputted into element
+2019-20-07 12:48:17   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-20-07 12:48:18   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 12:48:25   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-20-07 12:48:25   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 12:48:26   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 12:48:27   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 12:48:28   INFO [libs.ActionsWithOurElements] : 1 was selected in Drop-down
+2019-20-07 12:48:29   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2019-20-07 12:48:29   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2019-20-07 12:48:29   INFO [libs.ActionsWithOurElements] : 1676475006 was inputted into element
+2019-20-07 12:48:30   INFO [libs.ActionsWithOurElements] : Street was inputted into element
+2019-20-07 12:48:30   INFO [libs.ActionsWithOurElements] : 2 was inputted into element
+2019-20-07 12:48:30   INFO [libs.ActionsWithOurElements] : Phoenix was inputted into element
+2019-20-07 12:48:31   INFO [libs.ActionsWithOurElements] : 30606 was inputted into element
+2019-20-07 12:48:31   INFO [libs.ActionsWithOurElements] : 2 was inputted into element
+2019-20-07 12:48:31   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-20-07 12:48:31   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-20-07 12:48:32   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-20-07 12:48:32   INFO [libs.ActionsWithOurElements] : 0 was inputted into element
+2019-20-07 12:48:32   INFO [libs.ActionsWithOurElements] : 0 was inputted into element
+2019-20-07 12:48:32   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-20-07 12:48:32   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 12:48:32   INFO [pages.ModalEldPage] : Payment Method 1 was selected
+2019-20-07 12:48:33   INFO [libs.ActionsWithOurElements] : checkbox is already unchecked
+2019-20-07 12:48:33   INFO [libs.ActionsWithOurElements] : checkbox is already unchecked
+2019-20-07 12:48:33   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-20-07 12:48:33   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-20-07 12:48:33   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 12:48:33   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 12:48:35   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 12:48:35   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 12:48:35   INFO [pages.ModalEldPage] : quantityOfDevices > 0
+2019-20-07 12:48:35   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-20-07 12:48:37   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 12:48:38   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 12:48:38   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-20-07 12:48:38   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-20-07 12:49:19  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on XP (ddd7f342f9c52f1603158be527d857ee)] -> xpath: .//*[@class='stub']] (tried for 40 second(s) with 500 milliseconds interval)
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'DESKTOP-UD8IPI4', ip: '100.80.1.70', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\denku\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51991}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: ddd7f342f9c52f1603158be527d857ee
+2019-20-07 12:52:28   INFO [orders.FleetEldOrderCancelByUserTest] : Chrome will be started
+2019-20-07 12:52:38   INFO [orders.FleetEldOrderCancelByUserTest] : Chrome is started
+2019-20-07 12:52:44   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-20-07 12:52:46   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-20-07 12:52:53   INFO [pages.LoginPage] : Login Page was opened
+2019-20-07 12:52:53   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 12:52:54   INFO [libs.ActionsWithOurElements] : rose@emailate.com was inputted into element
+2019-20-07 12:52:54   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-20-07 12:52:54   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 12:53:01   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-20-07 12:53:01   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 12:53:02   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 12:53:04   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 12:53:04   INFO [libs.ActionsWithOurElements] : 1 was selected in Drop-down
+2019-20-07 12:53:05   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2019-20-07 12:53:05   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2019-20-07 12:53:06   INFO [libs.ActionsWithOurElements] : 1676475006 was inputted into element
+2019-20-07 12:53:06   INFO [libs.ActionsWithOurElements] : Street was inputted into element
+2019-20-07 12:53:06   INFO [libs.ActionsWithOurElements] : 2 was inputted into element
+2019-20-07 12:53:07   INFO [libs.ActionsWithOurElements] : Phoenix was inputted into element
+2019-20-07 12:53:07   INFO [libs.ActionsWithOurElements] : 30606 was inputted into element
+2019-20-07 12:53:07   INFO [libs.ActionsWithOurElements] : 2 was inputted into element
+2019-20-07 12:53:07   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-20-07 12:53:08   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-20-07 12:53:08   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-20-07 12:53:08   INFO [libs.ActionsWithOurElements] : 0 was inputted into element
+2019-20-07 12:53:09   INFO [libs.ActionsWithOurElements] : 0 was inputted into element
+2019-20-07 12:53:09   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-20-07 12:53:09   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 12:53:09   INFO [pages.ModalEldPage] : Payment Method 1 was selected
+2019-20-07 12:53:09   INFO [libs.ActionsWithOurElements] : checkbox is already unchecked
+2019-20-07 12:53:09   INFO [libs.ActionsWithOurElements] : checkbox is already unchecked
+2019-20-07 12:53:09   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-20-07 12:53:09   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-20-07 12:53:10   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 12:53:10   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 12:53:11   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 12:53:11   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 12:53:11   INFO [pages.ModalEldPage] : quantityOfDevices > 0
+2019-20-07 12:53:11   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-20-07 12:53:13   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 12:53:15   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 12:53:15   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-20-07 12:53:15   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-20-07 12:53:15   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 12:53:15   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-20-07 12:53:57  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: .//*[@placeholder='Id']' (tried for 20 second(s) with 500 milliseconds interval)
+2019-20-07 13:03:42   INFO [loginTests.LoginTest] : Chrome will be started
+2019-20-07 13:03:52   INFO [loginTests.LoginTest] : Chrome is started
+2019-20-07 13:04:02   INFO [pages.LoginPage] : Login Page was opened
+2019-20-07 13:04:03   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 13:04:03   INFO [libs.ActionsWithOurElements] : rose@emailate.com was inputted into element
+2019-20-07 13:04:03   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-20-07 13:04:04   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 13:04:10   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-20-07 13:04:11   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 13:04:12   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 13:04:12  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <div class="dash_nav">...</div> is not clickable at point (61, 284). Other element would receive the click: <div id="gifBox" style="display: block; opacity: 0.360504;">...</div>
+  (Session info: chrome=75.0.3770.142)
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'DESKTOP-UD8IPI4', ip: '100.80.1.70', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\denku\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52474}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 0eb4b437df88267857a7520f60c79ef5
+2019-20-07 13:34:54   INFO [loginTests.LoginTest] : Chrome will be started
+2019-20-07 13:35:04   INFO [loginTests.LoginTest] : Chrome is started
+2019-20-07 13:35:15   INFO [pages.LoginPage] : Login Page was opened
+2019-20-07 13:35:16   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 13:35:16   INFO [libs.ActionsWithOurElements] : rose@emailate.com was inputted into element
+2019-20-07 13:35:17   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-20-07 13:35:17   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 13:35:24   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-20-07 13:35:25  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href="/dash/eld/" class="dash_url_button">...</a> is not clickable at point (29, 166). Other element would receive the click: <div class="stub"></div>
+  (Session info: chrome=75.0.3770.142)
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'DESKTOP-UD8IPI4', ip: '100.80.1.70', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\denku\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53554}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 9d48c84951d3b083f21d15293b981002
+2019-20-07 15:48:34   INFO [loginTests.LoginTest] : Chrome will be started
+2019-20-07 15:48:43   INFO [loginTests.LoginTest] : Chrome is started
+2019-20-07 15:48:54   INFO [pages.LoginPage] : Login Page was opened
+2019-20-07 15:48:54   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 15:48:55   INFO [libs.ActionsWithOurElements] : rose@emailate.com was inputted into element
+2019-20-07 15:48:55   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-20-07 15:48:56   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 15:49:03   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-20-07 15:49:03   INFO [libs.ActionsWithOurElements] : Mouse over the element
+2019-20-07 15:49:03  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href="/dash/eld/" class="dash_url_button">...</a> is not clickable at point (29, 166). Other element would receive the click: <div class="stub"></div>
+  (Session info: chrome=75.0.3770.142)
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'DESKTOP-UD8IPI4', ip: '100.80.1.70', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\denku\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58130}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 11f7b0b6c7568312c88f0525912e2932
+2019-20-07 15:51:45   INFO [loginTests.LoginTest] : Chrome will be started
+2019-20-07 15:51:54   INFO [loginTests.LoginTest] : Chrome is started
+2019-20-07 15:52:05   INFO [pages.LoginPage] : Login Page was opened
+2019-20-07 15:52:05   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 15:52:05   INFO [libs.ActionsWithOurElements] : rose@emailate.com was inputted into element
+2019-20-07 15:52:06   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-20-07 15:52:06   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 15:52:13   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-20-07 15:52:13   INFO [libs.ActionsWithOurElements] : Mouse over the element
+2019-20-07 15:52:14  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href="/dash/eld/" class="dash_url_button">...</a> is not clickable at point (29, 166). Other element would receive the click: <div class="stub"></div>
+  (Session info: chrome=75.0.3770.142)
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'DESKTOP-UD8IPI4', ip: '100.80.1.70', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\denku\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58309}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: bbc96a1c014a52be1a7398b39d6e6daa
+2019-20-07 15:54:09   INFO [loginTests.LoginTest] : Chrome will be started
+2019-20-07 15:54:19   INFO [loginTests.LoginTest] : Chrome is started
+2019-20-07 15:54:30   INFO [pages.LoginPage] : Login Page was opened
+2019-20-07 15:54:31   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 15:54:32   INFO [libs.ActionsWithOurElements] : rose@emailate.com was inputted into element
+2019-20-07 15:54:32   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-20-07 15:54:32   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 15:54:39   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-20-07 15:54:40   INFO [libs.ActionsWithOurElements] : Mouse over the element
+2019-20-07 15:54:41  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href="/dash/eld/" class="dash_url_button">...</a> is not clickable at point (29, 166). Other element would receive the click: <div class="stub"></div>
+  (Session info: chrome=75.0.3770.142)
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'DESKTOP-UD8IPI4', ip: '100.80.1.70', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\denku\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58456}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 928d5c4c986970fb75da79273e31aaf1
+2019-20-07 15:58:25   INFO [loginTests.LoginTest] : Chrome will be started
+2019-20-07 15:58:35   INFO [loginTests.LoginTest] : Chrome is started
+2019-20-07 15:58:46   INFO [pages.LoginPage] : Login Page was opened
+2019-20-07 15:58:46   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 15:58:47   INFO [libs.ActionsWithOurElements] : rose@emailate.com was inputted into element
+2019-20-07 15:58:47   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-20-07 15:58:47   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 15:58:54   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-20-07 15:58:58  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href="/dash/eld/" class="dash_url_button">...</a> is not clickable at point (29, 166). Other element would receive the click: <div class="stub"></div>
+  (Session info: chrome=75.0.3770.142)
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'DESKTOP-UD8IPI4', ip: '100.80.1.70', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\denku\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58681}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 378f2e62d0f5be7e41eb1b62c2d13cf6
+2019-20-07 16:00:40   INFO [loginTests.LoginTest] : Chrome will be started
+2019-20-07 16:00:50   INFO [loginTests.LoginTest] : Chrome is started
+2019-20-07 16:01:01   INFO [pages.LoginPage] : Login Page was opened
+2019-20-07 16:01:01   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 16:01:02   INFO [libs.ActionsWithOurElements] : rose@emailate.com was inputted into element
+2019-20-07 16:01:02   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-20-07 16:01:03   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 16:01:09   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-20-07 16:01:13   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 16:01:16  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href="/dash/eld/" class="dash_url_button">...</a> is not clickable at point (29, 166). Other element would receive the click: <div class="stub"></div>
+  (Session info: chrome=75.0.3770.142)
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'DESKTOP-UD8IPI4', ip: '100.80.1.70', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\denku\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58822}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 086a3cf643ea61ed7b5f3851c6f86f4f
+2019-20-07 16:01:41   INFO [loginTests.LoginTest] : Chrome will be started
+2019-20-07 16:01:52   INFO [loginTests.LoginTest] : Chrome is started
+2019-20-07 16:02:02   INFO [pages.LoginPage] : Login Page was opened
+2019-20-07 16:02:02   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 16:02:03   INFO [libs.ActionsWithOurElements] : rose@emailate.com was inputted into element
+2019-20-07 16:02:04   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-20-07 16:02:04   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 16:02:11   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-20-07 16:02:14   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 16:02:18   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 16:02:21  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href="/dash/finances/" class="dash_url_button">...</a> is not clickable at point (29, 486). Other element would receive the click: <div class="stub"></div>
+  (Session info: chrome=75.0.3770.142)
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'DESKTOP-UD8IPI4', ip: '100.80.1.70', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\denku\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58922}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 4f38526e89855266516c16255916f14c
+2019-20-07 16:04:16   INFO [loginTests.LoginTest] : Chrome will be started
+2019-20-07 16:04:26   INFO [loginTests.LoginTest] : Chrome is started
+2019-20-07 16:04:36   INFO [pages.LoginPage] : Login Page was opened
+2019-20-07 16:04:36   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 16:04:37   INFO [libs.ActionsWithOurElements] : rose@emailate.com was inputted into element
+2019-20-07 16:04:37   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-20-07 16:04:38   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 16:04:44   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-20-07 16:04:48   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 16:04:51   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 16:04:54   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 16:04:57   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 16:05:01   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 16:05:04   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 16:05:07   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 16:05:10   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 16:06:53   INFO [orders.FleetEldOrderCancelByUserTest] : Chrome will be started
+2019-20-07 16:07:03   INFO [orders.FleetEldOrderCancelByUserTest] : Chrome is started
+2019-20-07 16:07:11   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-20-07 16:07:13   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-20-07 16:07:20   INFO [pages.LoginPage] : Login Page was opened
+2019-20-07 16:07:21   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 16:07:21   INFO [libs.ActionsWithOurElements] : rose@emailate.com was inputted into element
+2019-20-07 16:07:22   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-20-07 16:07:22   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 16:07:28   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-20-07 16:07:32   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 16:07:35   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 16:07:36   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 16:07:37   INFO [libs.ActionsWithOurElements] : 1 was selected in Drop-down
+2019-20-07 16:07:38   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2019-20-07 16:07:38   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2019-20-07 16:07:39   INFO [libs.ActionsWithOurElements] : 1676475006 was inputted into element
+2019-20-07 16:07:39   INFO [libs.ActionsWithOurElements] : Street was inputted into element
+2019-20-07 16:07:39   INFO [libs.ActionsWithOurElements] : 2 was inputted into element
+2019-20-07 16:07:39   INFO [libs.ActionsWithOurElements] : Phoenix was inputted into element
+2019-20-07 16:07:40   INFO [libs.ActionsWithOurElements] : 30606 was inputted into element
+2019-20-07 16:07:40   INFO [libs.ActionsWithOurElements] : 2 was inputted into element
+2019-20-07 16:07:40   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-20-07 16:07:41   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-20-07 16:07:41   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-20-07 16:07:41   INFO [libs.ActionsWithOurElements] : 0 was inputted into element
+2019-20-07 16:07:42   INFO [libs.ActionsWithOurElements] : 0 was inputted into element
+2019-20-07 16:07:42   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-20-07 16:07:42   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 16:07:42   INFO [pages.ModalEldPage] : Payment Method 1 was selected
+2019-20-07 16:07:42   INFO [libs.ActionsWithOurElements] : checkbox is already unchecked
+2019-20-07 16:07:42   INFO [libs.ActionsWithOurElements] : checkbox is already unchecked
+2019-20-07 16:07:42   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-20-07 16:07:42   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-20-07 16:07:43   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 16:07:43   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 16:07:44   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 16:07:44   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 16:07:44   INFO [pages.ModalEldPage] : quantityOfDevices > 0
+2019-20-07 16:07:44   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-20-07 16:07:49   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 16:07:53   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 16:07:53   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-20-07 16:07:53   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-20-07 16:07:56   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 16:07:59  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href="/dash/eld/" class="dash_url_button">...</a> is not clickable at point (29, 166). Other element would receive the click: <div class="stub"></div>
+  (Session info: chrome=75.0.3770.142)
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'DESKTOP-UD8IPI4', ip: '100.80.1.70', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\denku\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59225}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: e5a9ef5760204403074aa17a8ba1d036
+2019-20-07 16:16:53   INFO [loginTests.LoginTest] : Chrome will be started
+2019-20-07 16:17:04   INFO [loginTests.LoginTest] : Chrome is started
+2019-20-07 16:17:15   INFO [pages.LoginPage] : Login Page was opened
+2019-20-07 16:17:15   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 16:17:16   INFO [libs.ActionsWithOurElements] : rose@emailate.com was inputted into element
+2019-20-07 16:17:16   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-20-07 16:17:16   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 16:18:27   INFO [loginTests.LoginTest] : Chrome will be started
+2019-20-07 16:18:37   INFO [loginTests.LoginTest] : Chrome is started
+2019-20-07 16:18:49   INFO [pages.LoginPage] : Login Page was opened
+2019-20-07 16:18:49   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 16:18:50   INFO [libs.ActionsWithOurElements] : rose@emailate.com was inputted into element
+2019-20-07 16:18:50   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-20-07 16:18:51   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 16:18:58   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 16:18:59   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 16:19:02   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 16:19:05   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 16:19:08   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 16:19:12   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 16:19:15   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 16:19:18   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 16:19:21   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 16:19:25   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 16:20:16   INFO [loginTests.LoginTest] : Chrome will be started
+2019-20-07 16:20:26   INFO [loginTests.LoginTest] : Chrome is started
+2019-20-07 16:20:37   INFO [pages.LoginPage] : Login Page was opened
+2019-20-07 16:20:37   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 16:20:37   INFO [libs.ActionsWithOurElements] : rose@emailate.com was inputted into element
+2019-20-07 16:20:38   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-20-07 16:20:38   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 16:20:46   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 16:20:46   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 16:20:46   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 16:20:47   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 16:20:47   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 16:20:48   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 16:20:49   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 16:24:49   INFO [orders.FleetEldOrderCancelByUserTest] : Chrome will be started
+2019-20-07 16:24:59   INFO [orders.FleetEldOrderCancelByUserTest] : Chrome is started
+2019-20-07 16:25:07   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-20-07 16:25:09   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-20-07 16:25:16   INFO [pages.LoginPage] : Login Page was opened
+2019-20-07 16:25:16   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 16:25:17   INFO [libs.ActionsWithOurElements] : rose@emailate.com was inputted into element
+2019-20-07 16:25:17   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-20-07 16:25:17   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 16:25:25   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-20-07 16:25:25   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 16:25:25   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 16:25:26   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 16:25:27  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button class="btn btn-primary" data-tutorial="addELD" onclick="newOrderForm()">...</button> is not clickable at point (1275, 140). Other element would receive the click: <div id="gifBox" style="display: block; opacity: 0.381751;">...</div>
+  (Session info: chrome=75.0.3770.142)
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'DESKTOP-UD8IPI4', ip: '100.80.1.70', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\denku\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60072}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 2802e2dffcd9635ba6ddad7f112840fc
+2019-20-07 16:32:51   INFO [orders.FleetEldOrderCancelByUserTest] : Chrome will be started
+2019-20-07 16:33:01   INFO [orders.FleetEldOrderCancelByUserTest] : Chrome is started
+2019-20-07 16:33:08   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-20-07 16:33:10   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-20-07 16:33:17   INFO [pages.LoginPage] : Login Page was opened
+2019-20-07 16:33:17   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 16:33:18   INFO [libs.ActionsWithOurElements] : rose@emailate.com was inputted into element
+2019-20-07 16:33:18   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-20-07 16:33:18   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 16:33:25   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-20-07 16:33:26   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 16:33:26   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 16:33:26   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 16:33:27  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button class="btn btn-primary" data-tutorial="addELD" onclick="newOrderForm()">...</button> is not clickable at point (1275, 140). Other element would receive the click: <div id="gifBox" style="display: block; opacity: 0.835343;">...</div>
+  (Session info: chrome=75.0.3770.142)
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'DESKTOP-UD8IPI4', ip: '100.80.1.70', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\denku\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60402}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: be406dcd223b7c0e028a2b9cc9f46906
+2019-20-07 16:35:48   INFO [orders.FleetEldOrderCancelByUserTest] : Chrome will be started
+2019-20-07 16:35:57   INFO [orders.FleetEldOrderCancelByUserTest] : Chrome is started
+2019-20-07 16:36:04   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-20-07 16:36:07   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-20-07 16:36:14   INFO [pages.LoginPage] : Login Page was opened
+2019-20-07 16:36:14   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 16:36:14   INFO [libs.ActionsWithOurElements] : rose@emailate.com was inputted into element
+2019-20-07 16:36:15   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-20-07 16:36:15   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 16:36:21   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-20-07 16:36:22   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 16:36:23   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 16:36:23   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 16:36:25   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 16:36:26   INFO [libs.ActionsWithOurElements] : 1 was selected in Drop-down
+2019-20-07 16:36:26   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2019-20-07 16:36:27   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2019-20-07 16:36:27   INFO [libs.ActionsWithOurElements] : 1676475006 was inputted into element
+2019-20-07 16:36:28   INFO [libs.ActionsWithOurElements] : Street was inputted into element
+2019-20-07 16:36:28   INFO [libs.ActionsWithOurElements] : 2 was inputted into element
+2019-20-07 16:36:28   INFO [libs.ActionsWithOurElements] : Phoenix was inputted into element
+2019-20-07 16:36:28   INFO [libs.ActionsWithOurElements] : 30606 was inputted into element
+2019-20-07 16:36:29   INFO [libs.ActionsWithOurElements] : 2 was inputted into element
+2019-20-07 16:36:29   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-20-07 16:36:29   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-20-07 16:36:30   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-20-07 16:36:30   INFO [libs.ActionsWithOurElements] : 0 was inputted into element
+2019-20-07 16:36:30   INFO [libs.ActionsWithOurElements] : 0 was inputted into element
+2019-20-07 16:36:30   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-20-07 16:36:31   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 16:36:31   INFO [pages.ModalEldPage] : Payment Method 1 was selected
+2019-20-07 16:36:31   INFO [libs.ActionsWithOurElements] : checkbox is already unchecked
+2019-20-07 16:36:31   INFO [libs.ActionsWithOurElements] : checkbox is already unchecked
+2019-20-07 16:36:31   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-20-07 16:36:31   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-20-07 16:36:31   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 16:36:31   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 16:36:33   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 16:36:33   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 16:36:33   INFO [pages.ModalEldPage] : quantityOfDevices > 0
+2019-20-07 16:36:33   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-20-07 16:36:35   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 16:36:37   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-20-07 16:36:37   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-20-07 16:36:37   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 16:36:39   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-20-07 16:36:41   INFO [libs.ActionsWithOurElements] : 178 was inputted into element
+2019-20-07 16:36:43   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 16:36:44   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 16:36:44   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 16:36:45   INFO [libs.ActionsWithOurElements] : 179 was inputted into element
+2019-20-07 16:36:46   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 16:36:47   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 16:36:47   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 16:36:47   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 16:36:49   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-20-07 16:36:49   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-20-07 19:35:42   INFO [loginTests.LoginTest] : Chrome will be started
+2019-20-07 19:35:53   INFO [loginTests.LoginTest] : Chrome is started
+2019-20-07 19:36:03   INFO [pages.LoginPage] : Login Page was opened
+2019-20-07 19:36:03   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 19:36:04   INFO [libs.ActionsWithOurElements] : rose@emailate.com was inputted into element
+2019-20-07 19:36:04   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-20-07 19:36:05   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 19:36:12   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 19:36:13   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 19:36:13   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 19:36:23   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 19:36:24   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 19:36:34   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 19:36:34   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 19:38:02   INFO [loginTests.LoginTest] : Chrome will be started
+2019-20-07 19:38:13   INFO [loginTests.LoginTest] : Chrome is started
+2019-20-07 19:38:25   INFO [pages.LoginPage] : Login Page was opened
+2019-20-07 19:38:25   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 19:38:26   INFO [libs.ActionsWithOurElements] : rose@emailate.com was inputted into element
+2019-20-07 19:38:26   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-20-07 19:38:27   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 19:38:34   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 19:38:34   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 19:38:55   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 19:38:55   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 19:39:16   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 19:39:16   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 19:43:08   INFO [loginTests.LoginTest] : Chrome will be started
+2019-20-07 19:43:19   INFO [loginTests.LoginTest] : Chrome is started
+2019-20-07 19:43:29   INFO [pages.LoginPage] : Login Page was opened
+2019-20-07 19:43:29   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 19:43:30   INFO [libs.ActionsWithOurElements] : rose@emailate.com was inputted into element
+2019-20-07 19:43:30   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-20-07 19:43:30   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 19:43:38   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 19:43:38   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 19:43:58   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 19:44:02   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 19:44:22   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 19:44:25   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 19:44:25   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 19:47:41   INFO [loginTests.LoginTest] : Chrome will be started
+2019-20-07 19:47:51   INFO [loginTests.LoginTest] : Chrome is started
+2019-20-07 19:48:02   INFO [pages.LoginPage] : Login Page was opened
+2019-20-07 19:48:02   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 19:48:03   INFO [libs.ActionsWithOurElements] : rose@emailate.com was inputted into element
+2019-20-07 19:48:03   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-20-07 19:48:04   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 19:48:11   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 19:48:12   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 19:48:22   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 19:48:33   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 19:48:43   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 19:48:53   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 19:48:53   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 19:49:27   INFO [loginTests.LoginTest] : Chrome will be started
+2019-20-07 19:49:37   INFO [loginTests.LoginTest] : Chrome is started
+2019-20-07 19:49:48   INFO [pages.LoginPage] : Login Page was opened
+2019-20-07 19:49:48   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 19:49:49   INFO [libs.ActionsWithOurElements] : rose@emailate.com was inputted into element
+2019-20-07 19:49:49   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-20-07 19:49:49   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 19:49:57   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 19:49:57   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 19:50:02   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 19:50:08   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 19:50:13   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 19:50:18   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 19:50:19   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 19:50:51   INFO [loginTests.LoginTest] : Chrome will be started
+2019-20-07 19:51:01   INFO [loginTests.LoginTest] : Chrome is started
+2019-20-07 19:51:12   INFO [pages.LoginPage] : Login Page was opened
+2019-20-07 19:51:13   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 19:51:13   INFO [libs.ActionsWithOurElements] : rose@emailate.com was inputted into element
+2019-20-07 19:51:14   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-20-07 19:51:14   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 19:51:21   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 19:51:22   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 19:51:25   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 19:51:28   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 19:51:31   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 19:51:35   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 19:51:35   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 20:30:07   INFO [parameterizedOrders.FleetCancelOrderByUserParameterizedTest] : Chrome will be started
+2019-20-07 20:30:16   INFO [parameterizedOrders.FleetCancelOrderByUserParameterizedTest] : Chrome is started
+2019-20-07 20:30:22   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-20-07 20:30:25   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-20-07 20:30:31   INFO [pages.LoginPage] : Login Page was opened
+2019-20-07 20:30:32   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 20:30:32   INFO [libs.ActionsWithOurElements] : rose@emailate.com was inputted into element
+2019-20-07 20:30:33   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-20-07 20:30:33   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 20:30:39   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-20-07 20:30:43  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href="/dash/eld/" class="dash_url_button">...</a> is not clickable at point (29, 166). Other element would receive the click: <div class="stub"></div>
+  (Session info: chrome=75.0.3770.142)
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'DESKTOP-UD8IPI4', ip: '100.80.1.70', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\denku\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64005}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 46baa0de59e9a7cb6cebbfae84c006d6
+2019-20-07 20:30:44   INFO [parameterizedOrders.FleetCancelOrderByUserParameterizedTest] : Chrome will be started
+2019-20-07 20:30:49   INFO [parameterizedOrders.FleetCancelOrderByUserParameterizedTest] : Chrome is started
+2019-20-07 20:30:54   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-20-07 20:30:55   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-20-07 20:31:02   INFO [pages.LoginPage] : Login Page was opened
+2019-20-07 20:31:02   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 20:31:03   INFO [libs.ActionsWithOurElements] : rose@emailate.com was inputted into element
+2019-20-07 20:31:03   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-20-07 20:31:03   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 20:32:27   INFO [parameterizedOrders.FleetCancelOrderByUserParameterizedTest] : Chrome will be started
+2019-20-07 20:32:36   INFO [parameterizedOrders.FleetCancelOrderByUserParameterizedTest] : Chrome is started
+2019-20-07 20:32:42   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-20-07 20:32:44   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-20-07 20:32:51   INFO [pages.LoginPage] : Login Page was opened
+2019-20-07 20:32:52   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 20:32:52   INFO [libs.ActionsWithOurElements] : rose@emailate.com was inputted into element
+2019-20-07 20:32:53   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-20-07 20:32:53   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 20:33:00   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-20-07 20:33:00   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 20:33:00   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 20:33:04   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 20:33:04  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button class="btn btn-primary" data-tutorial="addELD" onclick="newOrderForm()">...</button> is not clickable at point (1275, 140). Other element would receive the click: <div id="gifBox" style="display: block; opacity: 0.707188;">...</div>
+  (Session info: chrome=75.0.3770.142)
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'DESKTOP-UD8IPI4', ip: '100.80.1.70', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\denku\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64197}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 32058dc243eb3d6909aebd13db0958bd
+2019-20-07 20:33:06   INFO [parameterizedOrders.FleetCancelOrderByUserParameterizedTest] : Chrome will be started
+2019-20-07 20:33:11   INFO [parameterizedOrders.FleetCancelOrderByUserParameterizedTest] : Chrome is started
+2019-20-07 20:33:15   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-20-07 20:33:17   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-20-07 20:36:23   INFO [orders.FleetEldOrderCancelByUserTest] : Chrome will be started
+2019-20-07 20:36:33   INFO [orders.FleetEldOrderCancelByUserTest] : Chrome is started
+2019-20-07 20:36:40   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-20-07 20:36:42   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-20-07 20:36:49   INFO [pages.LoginPage] : Login Page was opened
+2019-20-07 20:36:49   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 20:36:49   INFO [libs.ActionsWithOurElements] : rose@emailate.com was inputted into element
+2019-20-07 20:36:50   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-20-07 20:36:50   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 20:36:57   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-20-07 20:36:57   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 20:36:58   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 20:37:01   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 20:37:02  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button class="btn btn-primary" data-tutorial="addELD" onclick="newOrderForm()">...</button> is not clickable at point (1275, 140). Other element would receive the click: <div id="gifBox" style="display: block; opacity: 0.754521;">...</div>
+  (Session info: chrome=75.0.3770.142)
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'DESKTOP-UD8IPI4', ip: '100.80.1.70', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\denku\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64392}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: b5cf219c50667d9a78f54d4ab64ef499
+2019-20-07 20:38:23   INFO [orders.FleetEldOrderCancelByUserTest] : Chrome will be started
+2019-20-07 20:38:33   INFO [orders.FleetEldOrderCancelByUserTest] : Chrome is started
+2019-20-07 20:38:39   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-20-07 20:38:42   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-20-07 20:38:48   INFO [pages.LoginPage] : Login Page was opened
+2019-20-07 20:38:49   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 20:38:49   INFO [libs.ActionsWithOurElements] : rose@emailate.com was inputted into element
+2019-20-07 20:38:50   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-20-07 20:38:50   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 20:38:57   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-20-07 20:38:57   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 20:38:57   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 20:39:01   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 20:39:04   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 20:39:05   INFO [libs.ActionsWithOurElements] : 1 was selected in Drop-down
+2019-20-07 20:39:05   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2019-20-07 20:39:06   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2019-20-07 20:39:06   INFO [libs.ActionsWithOurElements] : 1676475006 was inputted into element
+2019-20-07 20:39:07   INFO [libs.ActionsWithOurElements] : Street was inputted into element
+2019-20-07 20:39:07   INFO [libs.ActionsWithOurElements] : 2 was inputted into element
+2019-20-07 20:39:23   INFO [parameterizedOrders.FleetCancelOrderByUserParameterizedTest] : Chrome will be started
+2019-20-07 20:39:32   INFO [parameterizedOrders.FleetCancelOrderByUserParameterizedTest] : Chrome is started
+2019-20-07 20:39:38   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-20-07 20:39:40   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-20-07 20:39:47   INFO [pages.LoginPage] : Login Page was opened
+2019-20-07 20:39:47   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 20:39:48   INFO [libs.ActionsWithOurElements] : rose@emailate.com was inputted into element
+2019-20-07 20:39:48   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-20-07 20:39:48   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 20:39:55   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-20-07 20:39:55   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 20:39:55   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 20:39:59   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 20:40:02   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 20:40:03   INFO [libs.ActionsWithOurElements] : 1 was selected in Drop-down
+2019-20-07 20:40:03   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2019-20-07 20:40:04   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2019-20-07 20:40:04   INFO [libs.ActionsWithOurElements] : 1676475006 was inputted into element
+2019-20-07 20:40:04   INFO [libs.ActionsWithOurElements] : Street was inputted into element
+2019-20-07 20:40:04   INFO [libs.ActionsWithOurElements] : 2 was inputted into element
+2019-20-07 20:40:05   INFO [libs.ActionsWithOurElements] : Phoenix was inputted into element
+2019-20-07 20:40:05   INFO [libs.ActionsWithOurElements] : 30606 was inputted into element
+2019-20-07 20:40:05   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-20-07 20:40:06   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-20-07 20:40:06   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-20-07 20:40:06   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-20-07 20:40:06   INFO [libs.ActionsWithOurElements] : 0 was inputted into element
+2019-20-07 20:40:07   INFO [libs.ActionsWithOurElements] : 0 was inputted into element
+2019-20-07 20:40:07   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 20:40:07   INFO [libs.ActionsWithOurElements] : checkbox was checked
+2019-20-07 20:40:07   INFO [libs.ActionsWithOurElements] : checkbox is already unchecked
+2019-20-07 20:40:07   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-20-07 20:40:07   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 20:40:07   INFO [pages.ModalEldPage] : Payment Method 0 was selected
+2019-20-07 20:40:08   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-20-07 20:40:08   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-20-07 20:40:08   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-20-07 20:40:08   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-20-07 20:40:08   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-20-07 20:40:08   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-20-07 20:40:08   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-20-07 20:40:08   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-20-07 20:40:08   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-20-07 20:40:08   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-20-07 20:40:08   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-20-07 20:40:08   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-20-07 20:40:08   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-20-07 20:40:08   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-20-07 20:40:09   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 20:40:09   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 20:40:10   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 20:40:10   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 20:40:10   INFO [pages.ModalEldPage] : quantityOfDevices > 0
+2019-20-07 20:40:10   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-20-07 20:40:15   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 20:40:18   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-20-07 20:40:18   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-20-07 20:40:22   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 20:40:25   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-20-07 20:40:27   INFO [libs.ActionsWithOurElements] : 180 was inputted into element
+2019-20-07 20:40:28   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 20:40:29   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 20:40:29   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 20:40:32   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 20:40:35   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-20-07 20:40:35   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-20-07 20:40:36   INFO [parameterizedOrders.FleetCancelOrderByUserParameterizedTest] : Chrome will be started
+2019-20-07 20:40:42   INFO [parameterizedOrders.FleetCancelOrderByUserParameterizedTest] : Chrome is started
+2019-20-07 20:40:46   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-20-07 20:40:48   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-20-07 20:40:55   INFO [pages.LoginPage] : Login Page was opened
+2019-20-07 20:40:55   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 20:40:55   INFO [libs.ActionsWithOurElements] : rose@emailate.com was inputted into element
+2019-20-07 20:40:56   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-20-07 20:40:56   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 20:41:02   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-20-07 20:41:03   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 20:41:03   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 20:41:07   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 20:41:10   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 20:41:10   INFO [libs.ActionsWithOurElements] : 1 was selected in Drop-down
+2019-20-07 20:41:11   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2019-20-07 20:41:11   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2019-20-07 20:41:12   INFO [libs.ActionsWithOurElements] : 1676475006 was inputted into element
+2019-20-07 20:41:12   INFO [libs.ActionsWithOurElements] : Street was inputted into element
+2019-20-07 20:41:12   INFO [libs.ActionsWithOurElements] : 2 was inputted into element
+2019-20-07 20:41:12   INFO [libs.ActionsWithOurElements] : Phoenix was inputted into element
+2019-20-07 20:41:13   INFO [libs.ActionsWithOurElements] : 30606 was inputted into element
+2019-20-07 20:41:13   INFO [libs.ActionsWithOurElements] : 2 was inputted into element
+2019-20-07 20:41:13   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-20-07 20:41:14   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-20-07 20:41:14   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-20-07 20:41:14   INFO [libs.ActionsWithOurElements] : 0 was inputted into element
+2019-20-07 20:41:14   INFO [libs.ActionsWithOurElements] : 0 was inputted into element
+2019-20-07 20:41:15   INFO [libs.ActionsWithOurElements] : checkbox is already unchecked
+2019-20-07 20:41:15   INFO [libs.ActionsWithOurElements] : checkbox is already unchecked
+2019-20-07 20:41:15   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-20-07 20:41:15   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 20:41:15   INFO [pages.ModalEldPage] : Payment Method 1 was selected
+2019-20-07 20:41:16   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-20-07 20:41:16   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-20-07 20:41:16   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-20-07 20:41:16   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-20-07 20:41:16   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-20-07 20:41:16   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-20-07 20:41:16   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-20-07 20:41:16   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-20-07 20:41:16   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-20-07 20:41:16   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-20-07 20:41:16   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-20-07 20:41:16   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-20-07 20:41:16   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-20-07 20:41:16   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-20-07 20:41:17   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 20:41:17   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 20:41:18   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 20:41:18   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 20:41:18   INFO [pages.ModalEldPage] : quantityOfDevices > 0
+2019-20-07 20:41:18   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-20-07 20:41:23   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 20:41:26   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-20-07 20:41:26   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-20-07 20:41:30   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 20:41:33   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-20-07 20:41:35   INFO [libs.ActionsWithOurElements] : 181 was inputted into element
+2019-20-07 20:41:36   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 20:41:37   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 20:41:37   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 20:41:38   INFO [libs.ActionsWithOurElements] : 182 was inputted into element
+2019-20-07 20:41:39   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 20:41:40   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 20:41:40   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 20:41:43   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 20:41:46   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-20-07 20:41:46   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-20-07 20:41:47   INFO [parameterizedOrders.FleetCancelOrderByUserParameterizedTest] : Chrome will be started
+2019-20-07 20:41:53   INFO [parameterizedOrders.FleetCancelOrderByUserParameterizedTest] : Chrome is started
+2019-20-07 20:41:57   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-20-07 20:41:59   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-20-07 20:42:05   INFO [pages.LoginPage] : Login Page was opened
+2019-20-07 20:42:05   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 20:42:06   INFO [libs.ActionsWithOurElements] : rose@emailate.com was inputted into element
+2019-20-07 20:42:06   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-20-07 20:42:06   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 20:42:13   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-20-07 20:42:13   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 20:42:14   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 20:42:17   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 20:42:20   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 20:42:21   INFO [libs.ActionsWithOurElements] : 1 was selected in Drop-down
+2019-20-07 20:42:21   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2019-20-07 20:42:22   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2019-20-07 20:42:22   INFO [libs.ActionsWithOurElements] : 1676475006 was inputted into element
+2019-20-07 20:42:22   INFO [libs.ActionsWithOurElements] : Street was inputted into element
+2019-20-07 20:42:23   INFO [libs.ActionsWithOurElements] : 2 was inputted into element
+2019-20-07 20:42:23   INFO [libs.ActionsWithOurElements] : Phoenix was inputted into element
+2019-20-07 20:42:23   INFO [libs.ActionsWithOurElements] : 30606 was inputted into element
+2019-20-07 20:42:23   INFO [libs.ActionsWithOurElements] : 0 was inputted into element
+2019-20-07 20:42:24   INFO [libs.ActionsWithOurElements] : 0 was inputted into element
+2019-20-07 20:42:24   INFO [libs.ActionsWithOurElements] : 0 was inputted into element
+2019-20-07 20:42:24   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-20-07 20:42:24   INFO [libs.ActionsWithOurElements] : 0 was inputted into element
+2019-20-07 20:42:25   INFO [libs.ActionsWithOurElements] : 0 was inputted into element
+2019-20-07 20:42:25   INFO [libs.ActionsWithOurElements] : checkbox is already unchecked
+2019-20-07 20:42:25   INFO [libs.ActionsWithOurElements] : checkbox is already unchecked
+2019-20-07 20:42:45   INFO [pages.ModalEldPage] : Payment Method was not selected
+2019-20-07 20:42:45   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-20-07 20:42:45   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-20-07 20:42:45   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-20-07 20:42:45   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-20-07 20:42:45   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-20-07 20:42:46   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-20-07 20:42:46   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-20-07 20:42:46   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-20-07 20:42:46   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-20-07 20:42:46   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-20-07 20:42:46   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-20-07 20:42:46   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-20-07 20:42:46   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-20-07 20:42:46   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-20-07 20:42:46   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 20:42:46   INFO [pages.ModalEldPage] : quantityOfDevices == 0
+2019-20-07 20:42:46   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-20-07 20:42:51   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 20:42:54   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-20-07 20:42:54   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-20-07 20:42:58   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 20:43:01   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-20-07 20:43:06   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-20-07 20:43:49  ERROR [parameterizedOrders.FleetCancelOrderByUserParameterizedTest] : AC failed: Balance is not correct

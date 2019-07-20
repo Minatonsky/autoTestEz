@@ -1,5 +1,6 @@
 package pages;
 
+import io.qameta.allure.Step;
 import libs.UtilsForDB;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -7,11 +8,11 @@ import org.openqa.selenium.support.FindBy;
 
 import java.io.IOException;
 import java.sql.SQLException;
-import java.util.ArrayList;
+import java.util.List;
 
 public class EldUserPage extends ParentPage {
 
-    @FindBy(xpath = ".//button [text()='Order ELD']")
+    @FindBy(xpath = ".//button[@data-tutorial='addELD']")
     private WebElement orderELD;
 
     @FindBy(xpath = ".//*[@placeholder='Id']")
@@ -27,21 +28,17 @@ public class EldUserPage extends ParentPage {
         actionsWithOurElements.clickOnElement(orderELD);
     }
 
-
+    @Step
     public void cancelEldDevices(String idOrder) throws SQLException, IOException, ClassNotFoundException {
         UtilsForDB utilsForDB = new UtilsForDB();
-
-        for (ArrayList<String> line : utilsForDB.getLocalIdDevices(idOrder)) {
-            for (String idLocalDevice : line
-            ) {
-                enterIdOrder(idOrder);
-                clickOnOrderOnList(idLocalDevice);
-                clickOnButtonCancelOrderDevice();
-                clickOnOrderEldConfirm();
-
+        List<String> localId = utilsForDB.getLocalIdDevices(idOrder);
+        for (String element: localId) {
+            enterIdOrder(element);
+            clickOnOrderOnList(element);
+            clickOnButtonCancelOrderDevice();
+            clickOnOrderEldConfirm();
             }
 
-        }
     }
 
     private void clickOnOrderEldConfirm() {

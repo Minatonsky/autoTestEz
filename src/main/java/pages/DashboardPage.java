@@ -5,11 +5,13 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+import static libs.Utils.waitABit;
+
 public class DashboardPage extends ParentPage {
     @FindBy(xpath = "//*[@id='dash_head']")
     private WebElement dashboard;
 
-    @FindBy(xpath = ".//*[@class='stub']")
+    @FindBy(xpath = ".//div[@class='dash_nav']")
     private WebElement menuDash;
 
     @FindBy(xpath = ".//a[@href='/dash/eld/']")
@@ -17,6 +19,9 @@ public class DashboardPage extends ParentPage {
 
     @FindBy(xpath = ".//a[@href='/dash/finances/']")
     private WebElement menuPageFinances;
+
+    @FindBy(xpath = ".//i[@class='fa fa-angle-double-left minimize-arrow']")
+    private WebElement menuSizeButton;
 
     public DashboardPage(WebDriver webDriver) {
 
@@ -39,19 +44,22 @@ public class DashboardPage extends ParentPage {
         actionsWithOurElements.clickOnElement(menuPageFinances);
     }
 
+    public void clickMenuSizeButton(){
+        actionsWithOurElements.clickOnElement(menuSizeButton);
+    }
+
 
     @Step
-    public void goToEldPage() throws InterruptedException {
-        clickOnMenuDash();
-        Thread.sleep(1000);
+    public void goToEldPage(){
+        waitABit(3);
         clickOnMenuPageELD();
+        waitABit(3);
     }
 
     @Step
-    public void goToFinancesPage() throws InterruptedException {
-        clickOnMenuDash();
-        Thread.sleep(1000);
+    public void goToFinancesPage(){
+        waitABit(3);
         clickOnMenuPageFinances();
+        waitABit(3);
     }
-
 }
