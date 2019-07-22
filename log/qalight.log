@@ -2151,3 +2151,1715 @@ Session ID: b5cf219c50667d9a78f54d4ab64ef499
 2019-20-07 20:43:01   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
 2019-20-07 20:43:06   INFO [libs.ActionsWithOurElements] : Element was clicked
 2019-20-07 20:43:49  ERROR [parameterizedOrders.FleetCancelOrderByUserParameterizedTest] : AC failed: Balance is not correct
+2019-22-07 12:30:08   INFO [parameterizedOrders.SoloCancelOrderByUserParameterizedTest] : Chrome will be started
+2019-22-07 12:30:18   INFO [parameterizedOrders.SoloCancelOrderByUserParameterizedTest] : Chrome is started
+2019-22-07 12:30:24   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-22-07 12:30:27   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-22-07 12:30:34   INFO [pages.LoginPage] : Login Page was opened
+2019-22-07 12:30:34   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 12:30:34   INFO [libs.ActionsWithOurElements] : jep70268@zoqqa.com was inputted into element
+2019-22-07 12:30:35   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-22-07 12:30:35   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 12:30:40   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-22-07 12:30:41   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 12:30:41   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 12:30:44   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 12:30:48   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 12:30:49   INFO [libs.ActionsWithOurElements] : 1 was selected in Drop-down
+2019-22-07 12:30:49   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2019-22-07 12:30:49   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2019-22-07 12:30:50   INFO [libs.ActionsWithOurElements] : 1676475006 was inputted into element
+2019-22-07 12:30:50   INFO [libs.ActionsWithOurElements] : Street was inputted into element
+2019-22-07 12:30:50   INFO [libs.ActionsWithOurElements] : 2 was inputted into element
+2019-22-07 12:30:51   INFO [libs.ActionsWithOurElements] : Phoenix was inputted into element
+2019-22-07 12:30:51   INFO [libs.ActionsWithOurElements] : 30606 was inputted into element
+2019-22-07 12:30:51   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-22-07 12:30:52   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-22-07 12:30:52   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-22-07 12:30:52   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-22-07 12:30:52   INFO [libs.ActionsWithOurElements] : 0 was inputted into element
+2019-22-07 12:30:53   INFO [libs.ActionsWithOurElements] : 0 was inputted into element
+2019-22-07 12:30:53   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 12:30:53   INFO [libs.ActionsWithOurElements] : checkbox was checked
+2019-22-07 12:30:53   INFO [libs.ActionsWithOurElements] : checkbox is already unchecked
+2019-22-07 12:30:53   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 12:30:54   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 12:30:54   INFO [pages.ModalEldPage] : Payment Method 0 was selected
+2019-22-07 12:30:54   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 12:30:54   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 12:30:54   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 12:30:54   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 12:30:54   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 12:30:54   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 12:30:54   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 12:30:54   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 12:30:54   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 12:30:54   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 12:30:54   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 12:30:54   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 12:30:55   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 12:30:55   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 12:30:56   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 12:30:56   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 12:30:56   INFO [pages.ModalEldPage] : quantityOfDevices > 0
+2019-22-07 12:30:56   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-22-07 12:31:02   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 12:31:05   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 12:31:05   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 12:31:08   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 12:31:11   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-22-07 12:31:14   INFO [libs.ActionsWithOurElements] : 48 was inputted into element
+2019-22-07 12:31:15   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 12:31:16   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 12:31:16   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 12:31:20   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 12:31:23   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 12:31:23   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 12:31:24   INFO [parameterizedOrders.SoloCancelOrderByUserParameterizedTest] : Chrome will be started
+2019-22-07 12:31:30   INFO [parameterizedOrders.SoloCancelOrderByUserParameterizedTest] : Chrome is started
+2019-22-07 12:31:34   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-22-07 12:31:36   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-22-07 12:31:42   INFO [pages.LoginPage] : Login Page was opened
+2019-22-07 12:31:42   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 12:31:43   INFO [libs.ActionsWithOurElements] : jep70268@zoqqa.com was inputted into element
+2019-22-07 12:31:43   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-22-07 12:31:43   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 12:31:49   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-22-07 12:31:49   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 12:31:50   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 12:31:53   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 12:31:57   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 12:31:58   INFO [libs.ActionsWithOurElements] : 1 was selected in Drop-down
+2019-22-07 12:31:58   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2019-22-07 12:31:58   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2019-22-07 12:31:59   INFO [libs.ActionsWithOurElements] : 1676475006 was inputted into element
+2019-22-07 12:31:59   INFO [libs.ActionsWithOurElements] : Street was inputted into element
+2019-22-07 12:31:59   INFO [libs.ActionsWithOurElements] : 2 was inputted into element
+2019-22-07 12:32:00   INFO [libs.ActionsWithOurElements] : Phoenix was inputted into element
+2019-22-07 12:32:00   INFO [libs.ActionsWithOurElements] : 30606 was inputted into element
+2019-22-07 12:32:00   INFO [libs.ActionsWithOurElements] : 2 was inputted into element
+2019-22-07 12:32:01   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-22-07 12:32:01   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-22-07 12:32:01   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-22-07 12:32:01   INFO [libs.ActionsWithOurElements] : 0 was inputted into element
+2019-22-07 12:32:02   INFO [libs.ActionsWithOurElements] : 0 was inputted into element
+2019-22-07 12:32:02   INFO [libs.ActionsWithOurElements] : checkbox is already unchecked
+2019-22-07 12:32:02   INFO [libs.ActionsWithOurElements] : checkbox is already unchecked
+2019-22-07 12:32:02   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 12:32:02   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 12:32:02   INFO [pages.ModalEldPage] : Payment Method 1 was selected
+2019-22-07 12:32:03   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 12:32:03   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 12:32:03   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 12:32:03   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 12:32:03   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 12:32:03   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 12:32:04   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 12:32:04   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 12:32:04   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 12:32:04   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 12:32:04   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 12:32:04   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 12:32:04   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 12:32:05   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 12:32:06   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 12:32:06   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 12:32:06   INFO [pages.ModalEldPage] : quantityOfDevices > 0
+2019-22-07 12:32:06   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-22-07 12:32:11   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 12:32:14   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 12:32:15   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 12:32:18   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 12:32:21   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-22-07 12:32:23   INFO [libs.ActionsWithOurElements] : 49 was inputted into element
+2019-22-07 12:32:24   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 12:32:25   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 12:32:25   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 12:32:26   INFO [libs.ActionsWithOurElements] : 50 was inputted into element
+2019-22-07 12:32:27   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 12:32:28   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 12:32:28   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 12:32:32   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 12:32:35   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 12:32:35   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 12:59:05   INFO [parameterizedOrders.FleetOrderCancelByManagerParameterizedTest] : Chrome will be started
+2019-22-07 12:59:14   INFO [parameterizedOrders.FleetOrderCancelByManagerParameterizedTest] : Chrome is started
+2019-22-07 12:59:20   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-22-07 12:59:22   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-22-07 12:59:28   INFO [pages.LoginPage] : Login Page was opened
+2019-22-07 12:59:29   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 12:59:29   INFO [libs.ActionsWithOurElements] : rose@emailate.com was inputted into element
+2019-22-07 12:59:29   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-22-07 12:59:30   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 12:59:37   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-22-07 12:59:37   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 12:59:37   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 12:59:41   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 12:59:44   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 12:59:45   INFO [libs.ActionsWithOurElements] : 1 was selected in Drop-down
+2019-22-07 12:59:45   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2019-22-07 12:59:46   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2019-22-07 12:59:46   INFO [libs.ActionsWithOurElements] : 1676475006 was inputted into element
+2019-22-07 12:59:46   INFO [libs.ActionsWithOurElements] : Street was inputted into element
+2019-22-07 12:59:47   INFO [libs.ActionsWithOurElements] : 2 was inputted into element
+2019-22-07 12:59:47   INFO [libs.ActionsWithOurElements] : Phoenix was inputted into element
+2019-22-07 12:59:47   INFO [libs.ActionsWithOurElements] : 30606 was inputted into element
+2019-22-07 12:59:48   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-22-07 12:59:48   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-22-07 12:59:48   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-22-07 12:59:48   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-22-07 12:59:49   INFO [libs.ActionsWithOurElements] : 0 was inputted into element
+2019-22-07 12:59:49   INFO [libs.ActionsWithOurElements] : 0 was inputted into element
+2019-22-07 12:59:49   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 12:59:49   INFO [libs.ActionsWithOurElements] : checkbox was checked
+2019-22-07 12:59:50   INFO [libs.ActionsWithOurElements] : checkbox is already unchecked
+2019-22-07 12:59:50   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 12:59:50   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 12:59:50   INFO [pages.ModalEldPage] : Payment Method 0 was selected
+2019-22-07 12:59:50   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 12:59:50   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 12:59:50   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 12:59:50   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 12:59:50   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 12:59:50   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 12:59:50   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 12:59:50   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 12:59:50   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 12:59:51   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 12:59:51   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 12:59:51   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 12:59:51   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 12:59:51   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 12:59:51   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 12:59:51   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 12:59:52   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 12:59:53   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 12:59:53   INFO [pages.ModalEldPage] : quantityOfDevices > 0
+2019-22-07 12:59:53   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-22-07 13:00:00   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 13:00:03   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 13:00:04   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 13:00:05   INFO [parameterizedOrders.FleetOrderCancelByManagerParameterizedTest] : Chrome will be started
+2019-22-07 13:00:10   INFO [parameterizedOrders.FleetOrderCancelByManagerParameterizedTest] : Chrome is started
+2019-22-07 13:00:19   INFO [pages.LoginPage] : Login Page was opened
+2019-22-07 13:00:19   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 13:00:20   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2019-22-07 13:00:20   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-22-07 13:00:20   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 13:00:30   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-22-07 13:00:31   INFO [parameterizedOrders.FleetOrderCancelByManagerParameterizedTest] : Chrome will be started
+2019-22-07 13:00:37   INFO [parameterizedOrders.FleetOrderCancelByManagerParameterizedTest] : Chrome is started
+2019-22-07 13:00:41   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-22-07 13:00:43   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-22-07 13:00:49   INFO [pages.LoginPage] : Login Page was opened
+2019-22-07 13:00:50   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 13:00:50   INFO [libs.ActionsWithOurElements] : rose@emailate.com was inputted into element
+2019-22-07 13:00:51   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-22-07 13:00:51   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 13:00:57   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-22-07 13:00:58   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 13:00:58   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 13:01:01   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 13:01:05   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 13:01:05   INFO [libs.ActionsWithOurElements] : 1 was selected in Drop-down
+2019-22-07 13:01:06   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2019-22-07 13:01:06   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2019-22-07 13:01:07   INFO [libs.ActionsWithOurElements] : 1676475006 was inputted into element
+2019-22-07 13:01:07   INFO [libs.ActionsWithOurElements] : Street was inputted into element
+2019-22-07 13:01:07   INFO [libs.ActionsWithOurElements] : 2 was inputted into element
+2019-22-07 13:01:08   INFO [libs.ActionsWithOurElements] : Phoenix was inputted into element
+2019-22-07 13:01:08   INFO [libs.ActionsWithOurElements] : 30606 was inputted into element
+2019-22-07 13:01:08   INFO [libs.ActionsWithOurElements] : 2 was inputted into element
+2019-22-07 13:01:08   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-22-07 13:01:09   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-22-07 13:01:09   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-22-07 13:01:09   INFO [libs.ActionsWithOurElements] : 0 was inputted into element
+2019-22-07 13:01:09   INFO [libs.ActionsWithOurElements] : 0 was inputted into element
+2019-22-07 13:01:10   INFO [libs.ActionsWithOurElements] : checkbox is already unchecked
+2019-22-07 13:01:10   INFO [libs.ActionsWithOurElements] : checkbox is already unchecked
+2019-22-07 13:01:10   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 13:01:10   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 13:01:10   INFO [pages.ModalEldPage] : Payment Method 1 was selected
+2019-22-07 13:01:11   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 13:01:11   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 13:01:11   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 13:01:11   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 13:01:11   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 13:01:11   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 13:01:11   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 13:01:11   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 13:01:11   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 13:01:12   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 13:01:12   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 13:01:12   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 13:01:12   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 13:01:12   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 13:01:12   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 13:01:12   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 13:01:14   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 13:01:14   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 13:01:14   INFO [pages.ModalEldPage] : quantityOfDevices > 0
+2019-22-07 13:01:14   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-22-07 13:01:19   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 13:01:22   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 13:01:22   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 13:01:23   INFO [parameterizedOrders.FleetOrderCancelByManagerParameterizedTest] : Chrome will be started
+2019-22-07 13:01:29   INFO [parameterizedOrders.FleetOrderCancelByManagerParameterizedTest] : Chrome is started
+2019-22-07 13:01:38   INFO [pages.LoginPage] : Login Page was opened
+2019-22-07 13:01:38   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 13:01:39   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2019-22-07 13:01:39   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-22-07 13:01:39   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 13:01:49   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-22-07 13:04:02   INFO [parameterizedOrders.FleetOrderCancelByManagerParameterizedTest] : Chrome will be started
+2019-22-07 13:04:11   INFO [parameterizedOrders.FleetOrderCancelByManagerParameterizedTest] : Chrome is started
+2019-22-07 13:04:17   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-22-07 13:04:19   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-22-07 13:04:26   INFO [pages.LoginPage] : Login Page was opened
+2019-22-07 13:04:26   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 13:04:26   INFO [libs.ActionsWithOurElements] : rose@emailate.com was inputted into element
+2019-22-07 13:04:27   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-22-07 13:04:27   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 13:04:40   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-22-07 13:04:41   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 13:04:41   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 13:04:45   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 13:04:48   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 13:04:49   INFO [libs.ActionsWithOurElements] : 1 was selected in Drop-down
+2019-22-07 13:04:49   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2019-22-07 13:04:49   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2019-22-07 13:04:50   INFO [libs.ActionsWithOurElements] : 1676475006 was inputted into element
+2019-22-07 13:04:50   INFO [libs.ActionsWithOurElements] : Street was inputted into element
+2019-22-07 13:04:50   INFO [libs.ActionsWithOurElements] : 2 was inputted into element
+2019-22-07 13:04:51   INFO [libs.ActionsWithOurElements] : Phoenix was inputted into element
+2019-22-07 13:04:51   INFO [libs.ActionsWithOurElements] : 30606 was inputted into element
+2019-22-07 13:04:51   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-22-07 13:04:52   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-22-07 13:04:52   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-22-07 13:04:52   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-22-07 13:04:53   INFO [libs.ActionsWithOurElements] : 0 was inputted into element
+2019-22-07 13:04:53   INFO [libs.ActionsWithOurElements] : 0 was inputted into element
+2019-22-07 13:04:53   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 13:04:53   INFO [libs.ActionsWithOurElements] : checkbox was checked
+2019-22-07 13:04:54   INFO [libs.ActionsWithOurElements] : checkbox is already unchecked
+2019-22-07 13:04:54   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 13:04:54   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 13:04:54   INFO [pages.ModalEldPage] : Payment Method 0 was selected
+2019-22-07 13:04:54   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 13:04:54   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 13:04:54   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 13:04:54   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 13:04:54   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 13:04:54   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 13:04:54   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 13:04:54   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 13:04:54   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 13:04:54   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 13:04:55   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 13:04:55   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 13:04:55   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 13:04:55   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 13:04:55   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 13:04:55   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 13:04:56   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 13:04:57   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 13:04:57   INFO [pages.ModalEldPage] : quantityOfDevices > 0
+2019-22-07 13:04:57   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-22-07 13:05:02   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 13:05:05   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 13:05:05   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 13:05:06   INFO [parameterizedOrders.FleetOrderCancelByManagerParameterizedTest] : Chrome will be started
+2019-22-07 13:05:12   INFO [parameterizedOrders.FleetOrderCancelByManagerParameterizedTest] : Chrome is started
+2019-22-07 13:05:23   INFO [pages.LoginPage] : Login Page was opened
+2019-22-07 13:05:23   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 13:05:24   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2019-22-07 13:05:24   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-22-07 13:05:24   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 13:05:33   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-22-07 13:05:33   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 13:05:34   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 13:05:35   INFO [parameterizedOrders.FleetOrderCancelByManagerParameterizedTest] : Chrome will be started
+2019-22-07 13:05:41   INFO [parameterizedOrders.FleetOrderCancelByManagerParameterizedTest] : Chrome is started
+2019-22-07 13:05:45   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-22-07 13:05:47   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-22-07 13:05:54   INFO [pages.LoginPage] : Login Page was opened
+2019-22-07 13:05:54   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 13:05:54   INFO [libs.ActionsWithOurElements] : rose@emailate.com was inputted into element
+2019-22-07 13:05:54   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-22-07 13:05:55   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 13:06:02   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-22-07 13:06:02   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 13:06:03   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 13:06:06   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 13:07:35   INFO [parameterizedOrders.FleetOrderCancelByManagerParameterizedTest] : Chrome will be started
+2019-22-07 13:07:44   INFO [parameterizedOrders.FleetOrderCancelByManagerParameterizedTest] : Chrome is started
+2019-22-07 13:07:50   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-22-07 13:07:52   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-22-07 13:07:59   INFO [pages.LoginPage] : Login Page was opened
+2019-22-07 13:08:00   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 13:08:00   INFO [libs.ActionsWithOurElements] : rose@emailate.com was inputted into element
+2019-22-07 13:08:00   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-22-07 13:08:01   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 13:08:08   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-22-07 13:08:08   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 13:08:09   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 13:08:12   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 13:08:16   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 13:08:17   INFO [libs.ActionsWithOurElements] : 1 was selected in Drop-down
+2019-22-07 13:08:17   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2019-22-07 13:08:17   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2019-22-07 13:08:18   INFO [libs.ActionsWithOurElements] : 1676475006 was inputted into element
+2019-22-07 13:08:18   INFO [libs.ActionsWithOurElements] : Street was inputted into element
+2019-22-07 13:08:18   INFO [libs.ActionsWithOurElements] : 2 was inputted into element
+2019-22-07 13:08:19   INFO [libs.ActionsWithOurElements] : Phoenix was inputted into element
+2019-22-07 13:08:19   INFO [libs.ActionsWithOurElements] : 30606 was inputted into element
+2019-22-07 13:08:19   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-22-07 13:08:20   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-22-07 13:08:20   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-22-07 13:08:20   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-22-07 13:08:21   INFO [libs.ActionsWithOurElements] : 0 was inputted into element
+2019-22-07 13:08:21   INFO [libs.ActionsWithOurElements] : 0 was inputted into element
+2019-22-07 13:08:21   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 13:08:21   INFO [libs.ActionsWithOurElements] : checkbox was checked
+2019-22-07 13:08:21   INFO [libs.ActionsWithOurElements] : checkbox is already unchecked
+2019-22-07 13:08:21   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 13:08:22   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 13:08:22   INFO [pages.ModalEldPage] : Payment Method 0 was selected
+2019-22-07 13:08:22   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 13:08:22   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 13:08:22   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 13:08:22   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 13:08:22   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 13:08:22   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 13:08:22   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 13:08:22   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 13:08:22   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 13:08:22   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 13:08:22   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 13:08:22   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 13:08:23   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 13:08:23   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 13:08:23   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 13:08:23   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 13:08:25   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 13:08:25   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 13:08:25   INFO [pages.ModalEldPage] : quantityOfDevices > 0
+2019-22-07 13:08:25   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-22-07 13:08:31   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 13:08:34   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 13:08:35   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 13:08:36   INFO [parameterizedOrders.FleetOrderCancelByManagerParameterizedTest] : Chrome will be started
+2019-22-07 13:08:41   INFO [parameterizedOrders.FleetOrderCancelByManagerParameterizedTest] : Chrome is started
+2019-22-07 13:08:51   INFO [pages.LoginPage] : Login Page was opened
+2019-22-07 13:08:52   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 13:08:52   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2019-22-07 13:08:52   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-22-07 13:08:53   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 13:09:07   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-22-07 13:09:07   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 13:09:08   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 13:09:08   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 13:09:14   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 13:09:19   INFO [libs.ActionsWithOurElements] : 2474 was inputted into element
+2019-22-07 13:09:25   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 13:09:25   INFO [libs.ActionsWithOurElements] : 2 was selected in Drop-down
+2019-22-07 13:09:26   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 13:09:26   INFO [parameterizedOrders.FleetOrderCancelByManagerParameterizedTest] : Chrome will be started
+2019-22-07 13:09:32   INFO [parameterizedOrders.FleetOrderCancelByManagerParameterizedTest] : Chrome is started
+2019-22-07 13:09:49   INFO [pages.LoginPage] : Login Page was opened
+2019-22-07 13:09:49   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 13:09:49   INFO [libs.ActionsWithOurElements] : rose@emailate.com was inputted into element
+2019-22-07 13:09:49   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-22-07 13:09:50   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 13:10:04   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-22-07 13:10:04   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 13:10:05   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 13:10:05   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 13:10:06   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 13:10:06   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 13:10:07   INFO [parameterizedOrders.FleetOrderCancelByManagerParameterizedTest] : Chrome will be started
+2019-22-07 13:10:13   INFO [parameterizedOrders.FleetOrderCancelByManagerParameterizedTest] : Chrome is started
+2019-22-07 13:10:17   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-22-07 13:10:19   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-22-07 13:10:28   INFO [pages.LoginPage] : Login Page was opened
+2019-22-07 13:10:28   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 13:10:29   INFO [libs.ActionsWithOurElements] : rose@emailate.com was inputted into element
+2019-22-07 13:10:29   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-22-07 13:10:29   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 13:10:36   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-22-07 13:10:36   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 13:10:36   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 13:10:40   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 13:10:43   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 13:10:44   INFO [libs.ActionsWithOurElements] : 1 was selected in Drop-down
+2019-22-07 13:10:45   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2019-22-07 13:10:45   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2019-22-07 13:10:45   INFO [libs.ActionsWithOurElements] : 1676475006 was inputted into element
+2019-22-07 13:10:46   INFO [libs.ActionsWithOurElements] : Street was inputted into element
+2019-22-07 13:10:46   INFO [libs.ActionsWithOurElements] : 2 was inputted into element
+2019-22-07 13:10:46   INFO [libs.ActionsWithOurElements] : Phoenix was inputted into element
+2019-22-07 13:10:47   INFO [libs.ActionsWithOurElements] : 30606 was inputted into element
+2019-22-07 13:10:47   INFO [libs.ActionsWithOurElements] : 2 was inputted into element
+2019-22-07 13:10:47   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-22-07 13:10:47   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-22-07 13:10:48   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-22-07 13:10:48   INFO [libs.ActionsWithOurElements] : 0 was inputted into element
+2019-22-07 13:10:48   INFO [libs.ActionsWithOurElements] : 0 was inputted into element
+2019-22-07 13:10:48   INFO [libs.ActionsWithOurElements] : checkbox is already unchecked
+2019-22-07 13:10:48   INFO [libs.ActionsWithOurElements] : checkbox is already unchecked
+2019-22-07 13:10:49   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 13:10:49   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 13:10:49   INFO [pages.ModalEldPage] : Payment Method 1 was selected
+2019-22-07 13:10:49   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 13:10:49   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 13:10:49   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 13:10:50   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 13:10:50   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 13:10:50   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 13:10:50   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 13:10:50   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 13:10:50   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 13:10:50   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 13:10:50   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 13:10:50   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 13:10:50   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 13:10:50   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 13:10:51   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 13:10:51   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 13:10:52   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 13:10:53   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 13:10:53   INFO [pages.ModalEldPage] : quantityOfDevices > 0
+2019-22-07 13:10:53   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-22-07 13:10:58   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 13:11:01   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 13:11:01   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 13:11:02   INFO [parameterizedOrders.FleetOrderCancelByManagerParameterizedTest] : Chrome will be started
+2019-22-07 13:11:08   INFO [parameterizedOrders.FleetOrderCancelByManagerParameterizedTest] : Chrome is started
+2019-22-07 13:11:16   INFO [pages.LoginPage] : Login Page was opened
+2019-22-07 13:11:17   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 13:11:17   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2019-22-07 13:11:17   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-22-07 13:11:17   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 13:11:26   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-22-07 13:11:26   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 13:11:27   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 13:11:27   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 13:11:32   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 13:11:38   INFO [libs.ActionsWithOurElements] : 2475 was inputted into element
+2019-22-07 13:11:43   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 13:11:44   INFO [libs.ActionsWithOurElements] : 2 was selected in Drop-down
+2019-22-07 13:11:44   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 13:11:45   INFO [parameterizedOrders.FleetOrderCancelByManagerParameterizedTest] : Chrome will be started
+2019-22-07 13:11:50   INFO [parameterizedOrders.FleetOrderCancelByManagerParameterizedTest] : Chrome is started
+2019-22-07 13:11:59   INFO [pages.LoginPage] : Login Page was opened
+2019-22-07 13:11:59   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 13:12:00   INFO [libs.ActionsWithOurElements] : rose@emailate.com was inputted into element
+2019-22-07 13:12:00   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-22-07 13:12:00   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 13:12:06   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-22-07 13:12:07   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 13:12:07   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 13:12:08   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 13:12:09   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 13:12:09   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 13:45:37   INFO [parameterizedOrders.FleetOrderCompletedByManagerParameterizedTest] : Chrome will be started
+2019-22-07 13:45:46   INFO [parameterizedOrders.FleetOrderCompletedByManagerParameterizedTest] : Chrome is started
+2019-22-07 13:45:51   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-22-07 13:45:54   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-22-07 13:46:02   INFO [pages.LoginPage] : Login Page was opened
+2019-22-07 13:46:03   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 13:46:03   INFO [libs.ActionsWithOurElements] : rose@emailate.com was inputted into element
+2019-22-07 13:46:03   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-22-07 13:46:04   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 13:46:10   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-22-07 13:46:11   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 13:46:11   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 13:46:14   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 13:46:18   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 13:46:19   INFO [libs.ActionsWithOurElements] : 1 was selected in Drop-down
+2019-22-07 13:46:19   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2019-22-07 13:46:19   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2019-22-07 13:46:20   INFO [libs.ActionsWithOurElements] : 1676475006 was inputted into element
+2019-22-07 13:46:20   INFO [libs.ActionsWithOurElements] : Street was inputted into element
+2019-22-07 13:46:20   INFO [libs.ActionsWithOurElements] : 2 was inputted into element
+2019-22-07 13:46:21   INFO [libs.ActionsWithOurElements] : Phoenix was inputted into element
+2019-22-07 13:46:21   INFO [libs.ActionsWithOurElements] : 30606 was inputted into element
+2019-22-07 13:46:21   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-22-07 13:46:22   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-22-07 13:46:22   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-22-07 13:46:22   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-22-07 13:46:23   INFO [libs.ActionsWithOurElements] : 0 was inputted into element
+2019-22-07 13:46:23   INFO [libs.ActionsWithOurElements] : 0 was inputted into element
+2019-22-07 13:46:23   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 13:46:23   INFO [libs.ActionsWithOurElements] : checkbox was checked
+2019-22-07 13:46:24   INFO [libs.ActionsWithOurElements] : checkbox is already unchecked
+2019-22-07 13:46:24   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 13:46:24   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 13:46:24   INFO [pages.ModalEldPage] : Payment Method 0 was selected
+2019-22-07 13:46:24   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 13:46:24   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 13:46:24   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 13:46:24   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 13:46:24   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 13:46:25   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 13:46:25   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 13:46:25   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 13:46:25   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 13:46:25   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 13:46:25   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 13:46:25   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 13:46:25   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 13:46:25   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 13:46:25   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 13:46:26   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 13:46:27   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 13:46:27   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 13:46:27   INFO [pages.ModalEldPage] : quantityOfDevices > 0
+2019-22-07 13:46:27   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-22-07 13:46:32   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 13:46:35   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 13:46:35   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 13:46:36   INFO [parameterizedOrders.FleetOrderCompletedByManagerParameterizedTest] : Chrome will be started
+2019-22-07 13:46:42   INFO [parameterizedOrders.FleetOrderCompletedByManagerParameterizedTest] : Chrome is started
+2019-22-07 13:46:54   INFO [pages.LoginPage] : Login Page was opened
+2019-22-07 13:46:54   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 13:46:55   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2019-22-07 13:46:55   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-22-07 13:46:55   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 13:47:10   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-22-07 13:47:11   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 13:47:12   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 13:47:12   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 13:47:18   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 13:47:23   INFO [libs.ActionsWithOurElements] : 2476 was inputted into element
+2019-22-07 13:47:28   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 13:47:29   INFO [libs.ActionsWithOurElements] : 4 was selected in Drop-down
+2019-22-07 13:47:30   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 13:47:30   INFO [libs.ActionsWithOurElements] : 1 was selected in Drop-down
+2019-22-07 13:47:30   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 13:47:35   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-22-07 13:47:38   INFO [parameterizedOrders.FleetOrderCompletedByManagerParameterizedTest] : Chrome will be started
+2019-22-07 13:47:43   INFO [parameterizedOrders.FleetOrderCompletedByManagerParameterizedTest] : Chrome is started
+2019-22-07 13:47:48   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-22-07 13:47:49   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-22-07 13:47:58   INFO [pages.LoginPage] : Login Page was opened
+2019-22-07 13:47:58   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 13:47:58   INFO [libs.ActionsWithOurElements] : rose@emailate.com was inputted into element
+2019-22-07 13:47:59   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-22-07 13:47:59   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 13:48:05   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-22-07 13:48:06   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 13:48:06   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 13:48:09   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 13:48:13   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 13:48:14   INFO [libs.ActionsWithOurElements] : 1 was selected in Drop-down
+2019-22-07 13:48:14   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2019-22-07 13:48:14   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2019-22-07 13:48:15   INFO [libs.ActionsWithOurElements] : 1676475006 was inputted into element
+2019-22-07 13:48:15   INFO [libs.ActionsWithOurElements] : Street was inputted into element
+2019-22-07 13:48:15   INFO [libs.ActionsWithOurElements] : 2 was inputted into element
+2019-22-07 13:48:16   INFO [libs.ActionsWithOurElements] : Phoenix was inputted into element
+2019-22-07 13:48:16   INFO [libs.ActionsWithOurElements] : 30606 was inputted into element
+2019-22-07 13:48:16   INFO [libs.ActionsWithOurElements] : 2 was inputted into element
+2019-22-07 13:48:17   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-22-07 13:48:17   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-22-07 13:48:17   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-22-07 13:48:17   INFO [libs.ActionsWithOurElements] : 0 was inputted into element
+2019-22-07 13:48:18   INFO [libs.ActionsWithOurElements] : 0 was inputted into element
+2019-22-07 13:48:18   INFO [libs.ActionsWithOurElements] : checkbox is already unchecked
+2019-22-07 13:48:18   INFO [libs.ActionsWithOurElements] : checkbox is already unchecked
+2019-22-07 13:48:18   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 13:48:18   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 13:48:18   INFO [pages.ModalEldPage] : Payment Method 1 was selected
+2019-22-07 13:48:19   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 13:48:19   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 13:48:19   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 13:48:19   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 13:48:19   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 13:48:19   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 13:48:19   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 13:48:19   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 13:48:19   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 13:48:19   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 13:48:19   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 13:48:19   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 13:48:19   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 13:48:19   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 13:48:20   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 13:48:20   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 13:48:21   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 13:48:22   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 13:48:22   INFO [pages.ModalEldPage] : quantityOfDevices > 0
+2019-22-07 13:48:22   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-22-07 13:48:27   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 13:48:30   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 13:48:30   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 13:48:31   INFO [parameterizedOrders.FleetOrderCompletedByManagerParameterizedTest] : Chrome will be started
+2019-22-07 13:48:37   INFO [parameterizedOrders.FleetOrderCompletedByManagerParameterizedTest] : Chrome is started
+2019-22-07 13:48:48   INFO [pages.LoginPage] : Login Page was opened
+2019-22-07 13:48:48   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 13:48:48   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2019-22-07 13:48:49   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-22-07 13:48:49   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 13:49:02   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-22-07 13:49:03   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 13:49:04   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 13:49:04   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 13:49:09   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 13:49:15   INFO [libs.ActionsWithOurElements] : 2477 was inputted into element
+2019-22-07 13:49:20   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 13:49:21   INFO [libs.ActionsWithOurElements] : 4 was selected in Drop-down
+2019-22-07 13:49:21   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 13:49:22   INFO [libs.ActionsWithOurElements] : 1 was selected in Drop-down
+2019-22-07 13:49:22   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 13:49:27   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-22-07 14:13:06   INFO [parameterizedOrders.FleetCancelOrderByUserParameterizedTest] : Chrome will be started
+2019-22-07 14:13:15   INFO [parameterizedOrders.FleetCancelOrderByUserParameterizedTest] : Chrome is started
+2019-22-07 14:13:21   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-22-07 14:13:23   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-22-07 14:13:31   INFO [pages.LoginPage] : Login Page was opened
+2019-22-07 14:13:31   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 14:13:32   INFO [libs.ActionsWithOurElements] : rose@emailate.com was inputted into element
+2019-22-07 14:13:32   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-22-07 14:13:32   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 14:13:38   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-22-07 14:13:39   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 14:13:39   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 14:13:43   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 14:13:46   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 14:13:46   INFO [libs.ActionsWithOurElements] : 1 was selected in Drop-down
+2019-22-07 14:13:47   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2019-22-07 14:13:47   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2019-22-07 14:13:48   INFO [libs.ActionsWithOurElements] : 1676475006 was inputted into element
+2019-22-07 14:13:48   INFO [libs.ActionsWithOurElements] : Street was inputted into element
+2019-22-07 14:13:48   INFO [libs.ActionsWithOurElements] : 2 was inputted into element
+2019-22-07 14:13:49   INFO [libs.ActionsWithOurElements] : Phoenix was inputted into element
+2019-22-07 14:13:49   INFO [libs.ActionsWithOurElements] : 30606 was inputted into element
+2019-22-07 14:13:49   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-22-07 14:13:50   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-22-07 14:13:50   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-22-07 14:13:50   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-22-07 14:13:50   INFO [libs.ActionsWithOurElements] : 0 was inputted into element
+2019-22-07 14:13:51   INFO [libs.ActionsWithOurElements] : 0 was inputted into element
+2019-22-07 14:13:51   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 14:13:51   INFO [libs.ActionsWithOurElements] : checkbox was checked
+2019-22-07 14:13:51   INFO [libs.ActionsWithOurElements] : checkbox is already unchecked
+2019-22-07 14:13:51   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 14:13:51   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 14:13:51   INFO [pages.ModalEldPage] : Payment Method 0 was selected
+2019-22-07 14:13:52   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 14:13:52   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 14:13:52   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 14:13:52   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 14:13:52   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 14:13:52   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 14:13:52   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 14:13:52   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 14:13:52   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 14:13:52   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 14:13:52   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 14:13:52   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 14:13:52   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 14:13:52   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 14:13:53   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 14:13:53   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 14:13:54   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 14:13:54   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 14:13:54   INFO [pages.ModalEldPage] : quantityOfDevices > 0
+2019-22-07 14:13:54   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-22-07 14:13:59   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 14:14:02   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 14:14:02   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 14:14:06   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 14:14:09   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-22-07 14:14:10   INFO [libs.ActionsWithOurElements] : 190 was inputted into element
+2019-22-07 14:14:12   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 14:14:13   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 14:14:13   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 14:14:16   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 14:14:19   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 14:14:19   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 14:14:20   INFO [parameterizedOrders.FleetCancelOrderByUserParameterizedTest] : Chrome will be started
+2019-22-07 14:14:26   INFO [parameterizedOrders.FleetCancelOrderByUserParameterizedTest] : Chrome is started
+2019-22-07 14:14:30   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-22-07 14:14:32   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-22-07 14:14:40   INFO [pages.LoginPage] : Login Page was opened
+2019-22-07 14:14:40   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 14:14:40   INFO [libs.ActionsWithOurElements] : rose@emailate.com was inputted into element
+2019-22-07 14:14:41   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-22-07 14:14:41   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 14:14:47   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-22-07 14:14:48   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 14:14:48   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 14:14:51   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 14:14:55   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 14:14:55   INFO [libs.ActionsWithOurElements] : 1 was selected in Drop-down
+2019-22-07 14:14:56   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2019-22-07 14:14:56   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2019-22-07 14:14:56   INFO [libs.ActionsWithOurElements] : 1676475006 was inputted into element
+2019-22-07 14:14:57   INFO [libs.ActionsWithOurElements] : Street was inputted into element
+2019-22-07 14:14:57   INFO [libs.ActionsWithOurElements] : 2 was inputted into element
+2019-22-07 14:14:57   INFO [libs.ActionsWithOurElements] : Phoenix was inputted into element
+2019-22-07 14:14:57   INFO [libs.ActionsWithOurElements] : 30606 was inputted into element
+2019-22-07 14:14:58   INFO [libs.ActionsWithOurElements] : 2 was inputted into element
+2019-22-07 14:14:58   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-22-07 14:14:58   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-22-07 14:14:58   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-22-07 14:14:59   INFO [libs.ActionsWithOurElements] : 0 was inputted into element
+2019-22-07 14:14:59   INFO [libs.ActionsWithOurElements] : 0 was inputted into element
+2019-22-07 14:14:59   INFO [libs.ActionsWithOurElements] : checkbox is already unchecked
+2019-22-07 14:14:59   INFO [libs.ActionsWithOurElements] : checkbox is already unchecked
+2019-22-07 14:14:59   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 14:15:00   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 14:15:00   INFO [pages.ModalEldPage] : Payment Method 1 was selected
+2019-22-07 14:15:00   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 14:15:00   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 14:15:00   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 14:15:00   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 14:15:00   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 14:15:00   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 14:15:01   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 14:15:01   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 14:15:01   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 14:15:01   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 14:15:01   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 14:15:01   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 14:15:01   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 14:15:01   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 14:15:01   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 14:15:02   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 14:15:03   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 14:15:03   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 14:15:03   INFO [pages.ModalEldPage] : quantityOfDevices > 0
+2019-22-07 14:15:03   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-22-07 14:15:08   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 14:15:11   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 14:15:11   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 14:15:14   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 14:15:17   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-22-07 14:15:19   INFO [libs.ActionsWithOurElements] : 191 was inputted into element
+2019-22-07 14:15:21   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 14:15:21   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 14:15:22   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 14:15:22   INFO [libs.ActionsWithOurElements] : 192 was inputted into element
+2019-22-07 14:15:23   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 14:15:24   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 14:15:24   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 14:15:27   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 14:15:30   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 14:15:30   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 15:33:10   INFO [parameterizedOrders.ManagerDoOrderForFleetParameterizedTest] : Chrome will be started
+2019-22-07 15:33:20   INFO [parameterizedOrders.ManagerDoOrderForFleetParameterizedTest] : Chrome is started
+2019-22-07 15:33:34   INFO [pages.LoginPage] : Login Page was opened
+2019-22-07 15:33:34   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 15:33:35   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2019-22-07 15:33:35   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-22-07 15:33:35   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 15:33:55   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-22-07 15:33:56   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 15:33:56   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 15:33:56   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 15:33:59   INFO [parameterizedOrders.ManagerDoOrderForFleetParameterizedTest] : Chrome will be started
+2019-22-07 15:34:04   INFO [parameterizedOrders.ManagerDoOrderForFleetParameterizedTest] : Chrome is started
+2019-22-07 15:34:16   INFO [pages.LoginPage] : Login Page was opened
+2019-22-07 15:34:16   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 15:34:17   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2019-22-07 15:34:17   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-22-07 15:34:17   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 15:34:35   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-22-07 15:34:35   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 15:34:36   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 15:34:36   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 18:50:04   INFO [parameterizedOrders.ManagerDoOrderForFleetParameterizedTest] : Chrome will be started
+2019-22-07 18:50:15   INFO [parameterizedOrders.ManagerDoOrderForFleetParameterizedTest] : Chrome is started
+2019-22-07 18:50:26   INFO [pages.LoginPage] : Login Page was opened
+2019-22-07 18:50:26   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 18:50:27   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2019-22-07 18:50:27   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-22-07 18:50:27   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 18:50:36   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-22-07 18:50:36   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 18:50:36   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 18:50:37   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 18:50:38  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button class="new_order btn btn-default" onclick="createOrder();" style="margin-top: 0px;">...</button> is not clickable at point (264, 195). Other element would receive the click: <div id="gifBox" style="display: block; opacity: 0.443572;">...</div>
+  (Session info: chrome=75.0.3770.142)
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'DESKTOP-UD8IPI4', ip: '100.80.1.70', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\denku\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56181}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 7fd09e60e1b4b8c63b11270536e12258
+2019-22-07 18:50:39   INFO [parameterizedOrders.ManagerDoOrderForFleetParameterizedTest] : Chrome will be started
+2019-22-07 18:50:44   INFO [parameterizedOrders.ManagerDoOrderForFleetParameterizedTest] : Chrome is started
+2019-22-07 18:50:54   INFO [pages.LoginPage] : Login Page was opened
+2019-22-07 18:50:54   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 18:50:55   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2019-22-07 18:50:55   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-22-07 18:50:56   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 18:51:04   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-22-07 18:51:05   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 18:51:05   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 18:51:05   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 18:51:06  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button class="new_order btn btn-default" onclick="createOrder();" style="margin-top: 0px;">...</button> is not clickable at point (264, 195). Other element would receive the click: <div id="gifBox" style="display: block; opacity: 0.678206;">...</div>
+  (Session info: chrome=75.0.3770.142)
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'DESKTOP-UD8IPI4', ip: '100.80.1.70', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\denku\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56261}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 4d4941dce72b0e16413790e163c1882a
+2019-22-07 18:56:20   INFO [parameterizedOrders.ManagerDoOrderForFleetParameterizedTest] : Chrome will be started
+2019-22-07 18:56:30   INFO [parameterizedOrders.ManagerDoOrderForFleetParameterizedTest] : Chrome is started
+2019-22-07 18:56:41   INFO [pages.LoginPage] : Login Page was opened
+2019-22-07 18:56:41   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 18:56:42   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2019-22-07 18:56:42   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-22-07 18:56:42   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 18:56:51   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-22-07 18:56:51   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 18:56:52   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 18:56:52   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 18:56:55   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 18:56:56   INFO [parameterizedOrders.ManagerDoOrderForFleetParameterizedTest] : Chrome will be started
+2019-22-07 18:57:01   INFO [parameterizedOrders.ManagerDoOrderForFleetParameterizedTest] : Chrome is started
+2019-22-07 18:57:10   INFO [pages.LoginPage] : Login Page was opened
+2019-22-07 18:57:11   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 18:57:11   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2019-22-07 18:57:12   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-22-07 18:57:12   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 18:57:21   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-22-07 18:57:21   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 18:57:21   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 18:57:22   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 18:57:24   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 18:58:08   INFO [parameterizedOrders.ManagerDoOrderForFleetParameterizedTest] : Chrome will be started
+2019-22-07 18:58:18   INFO [parameterizedOrders.ManagerDoOrderForFleetParameterizedTest] : Chrome is started
+2019-22-07 18:58:29   INFO [pages.LoginPage] : Login Page was opened
+2019-22-07 18:58:29   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 18:58:30   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2019-22-07 18:58:30   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-22-07 18:58:30   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 18:58:39   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-22-07 18:58:39   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 18:58:40   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 18:58:43   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 18:58:46   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 18:58:47   INFO [parameterizedOrders.ManagerDoOrderForFleetParameterizedTest] : Chrome will be started
+2019-22-07 18:58:53   INFO [parameterizedOrders.ManagerDoOrderForFleetParameterizedTest] : Chrome is started
+2019-22-07 18:59:02   INFO [pages.LoginPage] : Login Page was opened
+2019-22-07 18:59:02   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 18:59:03   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2019-22-07 18:59:03   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-22-07 18:59:04   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 18:59:12   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-22-07 18:59:12   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 18:59:13   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 18:59:16   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 18:59:19   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 20:44:02   INFO [parameterizedOrders.ManagerDoOrderForFleetParameterizedTest] : Chrome will be started
+2019-22-07 20:44:12   INFO [parameterizedOrders.ManagerDoOrderForFleetParameterizedTest] : Chrome is started
+2019-22-07 20:44:24   INFO [pages.LoginPage] : Login Page was opened
+2019-22-07 20:44:24   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 20:44:24   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2019-22-07 20:44:25   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-22-07 20:44:25   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 20:44:34   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-22-07 20:44:34   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 20:44:35   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 20:44:38   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 20:44:41   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 20:44:43   INFO [parameterizedOrders.ManagerDoOrderForFleetParameterizedTest] : Chrome will be started
+2019-22-07 20:44:49   INFO [parameterizedOrders.ManagerDoOrderForFleetParameterizedTest] : Chrome is started
+2019-22-07 20:44:58   INFO [pages.LoginPage] : Login Page was opened
+2019-22-07 20:44:58   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 20:44:59   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2019-22-07 20:44:59   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-22-07 20:45:00   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 20:45:09   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-22-07 20:45:09   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 20:45:09   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 20:45:13   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 20:45:16   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 20:48:05   INFO [parameterizedOrders.ManagerDoOrderForFleetParameterizedTest] : Chrome will be started
+2019-22-07 20:48:15   INFO [parameterizedOrders.ManagerDoOrderForFleetParameterizedTest] : Chrome is started
+2019-22-07 20:48:25   INFO [pages.LoginPage] : Login Page was opened
+2019-22-07 20:48:26   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 20:48:26   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2019-22-07 20:48:27   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-22-07 20:48:27   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 20:48:36   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-22-07 20:48:36   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 20:48:37   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 20:48:40   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 20:48:43   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 20:48:45   INFO [parameterizedOrders.ManagerDoOrderForFleetParameterizedTest] : Chrome will be started
+2019-22-07 20:48:50   INFO [parameterizedOrders.ManagerDoOrderForFleetParameterizedTest] : Chrome is started
+2019-22-07 20:48:59   INFO [pages.LoginPage] : Login Page was opened
+2019-22-07 20:49:00   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 20:49:00   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2019-22-07 20:49:01   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-22-07 20:49:01   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 20:49:09   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-22-07 20:49:09   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 20:49:10   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 20:49:13   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 20:49:16   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 20:50:13   INFO [parameterizedOrders.ManagerDoOrderForFleetParameterizedTest] : Chrome will be started
+2019-22-07 20:50:22   INFO [parameterizedOrders.ManagerDoOrderForFleetParameterizedTest] : Chrome is started
+2019-22-07 20:50:33   INFO [pages.LoginPage] : Login Page was opened
+2019-22-07 20:50:33   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 20:50:33   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2019-22-07 20:50:34   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-22-07 20:50:34   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 20:50:42   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-22-07 20:50:43   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 20:50:43   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 20:50:47   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 20:50:50   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 20:50:51   INFO [parameterizedOrders.ManagerDoOrderForFleetParameterizedTest] : Chrome will be started
+2019-22-07 20:50:57   INFO [parameterizedOrders.ManagerDoOrderForFleetParameterizedTest] : Chrome is started
+2019-22-07 20:51:06   INFO [pages.LoginPage] : Login Page was opened
+2019-22-07 20:51:06   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 20:51:07   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2019-22-07 20:51:07   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-22-07 20:51:08   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 20:51:16   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-22-07 20:51:16   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 20:51:17   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 20:51:20   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 20:51:23   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 20:53:59   INFO [parameterizedOrders.ManagerDoOrderForFleetParameterizedTest] : Chrome will be started
+2019-22-07 20:54:08   INFO [parameterizedOrders.ManagerDoOrderForFleetParameterizedTest] : Chrome is started
+2019-22-07 20:54:19   INFO [pages.LoginPage] : Login Page was opened
+2019-22-07 20:54:19   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 20:54:20   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2019-22-07 20:54:20   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-22-07 20:54:20   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 20:54:29   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-22-07 20:54:29   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 20:54:29   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 20:54:32   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 20:54:36   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 20:54:39   INFO [parameterizedOrders.ManagerDoOrderForFleetParameterizedTest] : Chrome will be started
+2019-22-07 20:54:45   INFO [parameterizedOrders.ManagerDoOrderForFleetParameterizedTest] : Chrome is started
+2019-22-07 20:54:54   INFO [pages.LoginPage] : Login Page was opened
+2019-22-07 20:54:54   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 20:54:55   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2019-22-07 20:54:55   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-22-07 20:54:55   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 20:55:04   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-22-07 20:55:05   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 20:55:05   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 20:55:08   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 20:55:12   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 20:59:14   INFO [parameterizedOrders.ManagerDoOrderForFleetParameterizedTest] : Chrome will be started
+2019-22-07 20:59:24   INFO [parameterizedOrders.ManagerDoOrderForFleetParameterizedTest] : Chrome is started
+2019-22-07 20:59:35   INFO [pages.LoginPage] : Login Page was opened
+2019-22-07 20:59:36   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 20:59:36   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2019-22-07 20:59:36   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-22-07 20:59:37   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 20:59:45   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-22-07 20:59:45   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 20:59:46   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 20:59:49   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 20:59:53   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 20:59:56   INFO [parameterizedOrders.ManagerDoOrderForFleetParameterizedTest] : Chrome will be started
+2019-22-07 21:03:57   INFO [parameterizedOrders.ManagerDoOrderForFleetParameterizedTest] : Chrome will be started
+2019-22-07 21:04:07   INFO [parameterizedOrders.ManagerDoOrderForFleetParameterizedTest] : Chrome is started
+2019-22-07 21:04:18   INFO [pages.LoginPage] : Login Page was opened
+2019-22-07 21:04:18   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 21:04:19   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2019-22-07 21:04:19   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-22-07 21:04:20   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 21:04:28   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-22-07 21:04:28   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 21:04:29   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 21:04:32   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 21:04:35   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 21:04:39   INFO [parameterizedOrders.ManagerDoOrderForFleetParameterizedTest] : Chrome will be started
+2019-22-07 21:07:55   INFO [parameterizedOrders.ManagerDoOrderForFleetParameterizedTest] : Chrome will be started
+2019-22-07 21:08:05   INFO [parameterizedOrders.ManagerDoOrderForFleetParameterizedTest] : Chrome is started
+2019-22-07 21:08:15   INFO [pages.LoginPage] : Login Page was opened
+2019-22-07 21:08:16   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 21:08:16   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2019-22-07 21:08:17   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-22-07 21:08:17   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 21:08:25   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-22-07 21:08:26   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 21:08:26   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 21:08:29   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 21:08:33   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 21:08:35   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 21:08:36   INFO [parameterizedOrders.ManagerDoOrderForFleetParameterizedTest] : Chrome will be started
+2019-22-07 21:08:41   INFO [parameterizedOrders.ManagerDoOrderForFleetParameterizedTest] : Chrome is started
+2019-22-07 21:08:51   INFO [pages.LoginPage] : Login Page was opened
+2019-22-07 21:08:51   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 21:08:52   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2019-22-07 21:08:52   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-22-07 21:08:52   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 21:09:01   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-22-07 21:09:01   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 21:09:01   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 21:09:04   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 21:09:08   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 21:09:10   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 21:10:37   INFO [parameterizedOrders.ManagerDoOrderForFleetParameterizedTest] : Chrome will be started
+2019-22-07 21:10:47   INFO [parameterizedOrders.ManagerDoOrderForFleetParameterizedTest] : Chrome is started
+2019-22-07 21:10:57   INFO [pages.LoginPage] : Login Page was opened
+2019-22-07 21:10:58   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 21:10:58   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2019-22-07 21:10:59   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-22-07 21:10:59   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 21:11:08   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-22-07 21:11:08   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 21:11:09   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 21:11:12   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 21:11:15   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 21:11:18   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 21:11:22   INFO [parameterizedOrders.ManagerDoOrderForFleetParameterizedTest] : Chrome will be started
+2019-22-07 21:11:27   INFO [parameterizedOrders.ManagerDoOrderForFleetParameterizedTest] : Chrome is started
+2019-22-07 21:12:55   INFO [parameterizedOrders.ManagerDoOrderForFleetParameterizedTest] : Chrome will be started
+2019-22-07 21:13:05   INFO [parameterizedOrders.ManagerDoOrderForFleetParameterizedTest] : Chrome is started
+2019-22-07 21:13:16   INFO [pages.LoginPage] : Login Page was opened
+2019-22-07 21:13:16   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 21:13:16   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2019-22-07 21:13:17   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-22-07 21:13:17   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 21:13:25   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-22-07 21:13:25   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 21:13:26   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 21:13:29   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 21:13:33   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 21:13:35   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 21:13:39   INFO [parameterizedOrders.ManagerDoOrderForFleetParameterizedTest] : Chrome will be started
+2019-22-07 21:14:37   INFO [parameterizedOrders.ManagerDoOrderForFleetParameterizedTest] : Chrome will be started
+2019-22-07 21:14:47   INFO [parameterizedOrders.ManagerDoOrderForFleetParameterizedTest] : Chrome is started
+2019-22-07 21:14:58   INFO [pages.LoginPage] : Login Page was opened
+2019-22-07 21:14:58   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 21:14:59   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2019-22-07 21:14:59   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-22-07 21:15:00   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 21:15:08   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-22-07 21:15:08   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 21:15:08   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 21:15:12   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 21:15:15   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 21:15:17   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 21:15:21   INFO [libs.ActionsWithOurElements] : 234563546 was inputted into element
+2019-22-07 21:15:21   INFO [pages.ManagerModalEldPage] :  USDOT is 234563546
+2019-22-07 21:15:22   INFO [parameterizedOrders.ManagerDoOrderForFleetParameterizedTest] : Chrome will be started
+2019-22-07 21:15:27   INFO [parameterizedOrders.ManagerDoOrderForFleetParameterizedTest] : Chrome is started
+2019-22-07 21:15:37   INFO [pages.LoginPage] : Login Page was opened
+2019-22-07 21:15:37   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 21:15:37   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2019-22-07 21:15:38   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-22-07 21:15:38   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 21:15:47   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-22-07 21:15:47   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 21:15:48   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 21:15:51   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 21:15:54   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 21:15:57   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 21:16:00   INFO [libs.ActionsWithOurElements] : 234563546 was inputted into element
+2019-22-07 21:16:00   INFO [pages.ManagerModalEldPage] :  USDOT is 234563546
+2019-22-07 21:31:56   INFO [parameterizedOrders.ManagerDoOrderForFleetParameterizedTest] : Chrome will be started
+2019-22-07 21:32:06   INFO [parameterizedOrders.ManagerDoOrderForFleetParameterizedTest] : Chrome is started
+2019-22-07 21:32:17   INFO [pages.LoginPage] : Login Page was opened
+2019-22-07 21:32:17   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 21:32:18   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2019-22-07 21:32:18   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-22-07 21:32:18   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 21:32:26   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-22-07 21:32:26   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 21:32:27   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 21:32:30   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 21:32:33   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 21:32:35   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 21:32:39   INFO [libs.ActionsWithOurElements] : 234563546 was inputted into element
+2019-22-07 21:32:39   INFO [pages.ManagerModalEldPage] :  USDOT is 234563546
+2019-22-07 21:32:40   INFO [parameterizedOrders.ManagerDoOrderForFleetParameterizedTest] : Chrome will be started
+2019-22-07 21:33:32   INFO [parameterizedOrders.ManagerDoOrderForFleetParameterizedTest] : Chrome will be started
+2019-22-07 21:33:42   INFO [parameterizedOrders.ManagerDoOrderForFleetParameterizedTest] : Chrome is started
+2019-22-07 21:33:53   INFO [pages.LoginPage] : Login Page was opened
+2019-22-07 21:33:53   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 21:33:53   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2019-22-07 21:33:54   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-22-07 21:33:54   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 21:34:04   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-22-07 21:34:04   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 21:34:05   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 21:34:08   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 21:34:11   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 21:34:12   INFO [libs.ActionsWithOurElements] : 234563546 was inputted into element
+2019-22-07 21:34:12   INFO [pages.ManagerModalEldPage] :  USDOT is 234563546
+2019-22-07 21:34:13   INFO [parameterizedOrders.ManagerDoOrderForFleetParameterizedTest] : Chrome will be started
+2019-22-07 21:34:49   INFO [parameterizedOrders.ManagerDoOrderForFleetParameterizedTest] : Chrome will be started
+2019-22-07 21:34:58   INFO [parameterizedOrders.ManagerDoOrderForFleetParameterizedTest] : Chrome is started
+2019-22-07 21:35:09   INFO [pages.LoginPage] : Login Page was opened
+2019-22-07 21:35:10   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 21:35:10   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2019-22-07 21:35:11   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-22-07 21:35:11   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 21:35:19   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-22-07 21:35:19   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 21:35:20   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 21:35:23   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 21:35:27   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 21:35:29   INFO [libs.ActionsWithOurElements] : 234563546 was inputted into element
+2019-22-07 21:35:29   INFO [pages.ManagerModalEldPage] :  USDOT is 234563546
+2019-22-07 21:35:51  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on XP (f09c278c325c493333a1fa808a0e2789)] -> id: fleetList] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'DESKTOP-UD8IPI4', ip: '100.80.1.70', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\denku\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50740}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: f09c278c325c493333a1fa808a0e2789
+2019-22-07 21:35:52   INFO [parameterizedOrders.ManagerDoOrderForFleetParameterizedTest] : Chrome will be started
+2019-22-07 21:37:31   INFO [parameterizedOrders.ManagerDoOrderForFleetParameterizedTest] : Chrome will be started
+2019-22-07 21:37:40   INFO [parameterizedOrders.ManagerDoOrderForFleetParameterizedTest] : Chrome is started
+2019-22-07 21:37:51   INFO [pages.LoginPage] : Login Page was opened
+2019-22-07 21:37:51   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 21:37:52   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2019-22-07 21:37:52   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-22-07 21:37:53   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 21:38:01   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-22-07 21:38:01   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 21:38:01   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 21:38:05   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 21:38:08   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 21:38:10   INFO [libs.ActionsWithOurElements] : 234563546 was inputted into element
+2019-22-07 21:38:10   INFO [pages.ManagerModalEldPage] :  USDOT is 234563546
+2019-22-07 21:40:06   INFO [parameterizedOrders.ManagerDoOrderForFleetParameterizedTest] : Chrome will be started
+2019-22-07 21:40:15   INFO [parameterizedOrders.ManagerDoOrderForFleetParameterizedTest] : Chrome is started
+2019-22-07 21:40:26   INFO [pages.LoginPage] : Login Page was opened
+2019-22-07 21:40:26   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 21:40:27   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2019-22-07 21:40:27   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-22-07 21:40:27   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 21:40:36   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-22-07 21:40:36   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 21:40:36   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 21:40:39   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 21:40:43   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 21:40:43   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 21:40:45   INFO [libs.ActionsWithOurElements] : 234563546 was inputted into element
+2019-22-07 21:40:45   INFO [pages.ManagerModalEldPage] :  USDOT is 234563546
+2019-22-07 21:40:49   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 21:40:51   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 21:40:51   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 21:40:52   INFO [libs.ActionsWithOurElements] : 1 was selected in Drop-down
+2019-22-07 21:40:52   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2019-22-07 21:40:53   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2019-22-07 21:40:53   INFO [libs.ActionsWithOurElements] : 1676475006 was inputted into element
+2019-22-07 21:40:53   INFO [libs.ActionsWithOurElements] : Street was inputted into element
+2019-22-07 21:40:53   INFO [libs.ActionsWithOurElements] : 2 was inputted into element
+2019-22-07 21:40:54   INFO [libs.ActionsWithOurElements] : Phoenix was inputted into element
+2019-22-07 21:40:54   INFO [libs.ActionsWithOurElements] : 30606 was inputted into element
+2019-22-07 21:40:55   INFO [parameterizedOrders.ManagerDoOrderForFleetParameterizedTest] : Chrome will be started
+2019-22-07 21:44:11   INFO [parameterizedOrders.ManagerDoOrderForFleetParameterizedTest] : Chrome will be started
+2019-22-07 21:44:21   INFO [parameterizedOrders.ManagerDoOrderForFleetParameterizedTest] : Chrome is started
+2019-22-07 21:44:32   INFO [pages.LoginPage] : Login Page was opened
+2019-22-07 21:44:32   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 21:44:33   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2019-22-07 21:44:33   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-22-07 21:44:34   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 21:44:42   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-22-07 21:44:42   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 21:44:43   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 21:44:46   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 21:44:49   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 21:44:50   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 21:44:52   INFO [libs.ActionsWithOurElements] : 234563546 was inputted into element
+2019-22-07 21:44:52   INFO [pages.ManagerModalEldPage] :  USDOT is 234563546
+2019-22-07 21:44:55   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 21:44:57   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 21:44:57   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 21:44:58   INFO [libs.ActionsWithOurElements] : 1 was selected in Drop-down
+2019-22-07 21:44:58   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2019-22-07 21:44:58   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2019-22-07 21:44:59   INFO [libs.ActionsWithOurElements] : 1676475006 was inputted into element
+2019-22-07 21:44:59   INFO [libs.ActionsWithOurElements] : Street was inputted into element
+2019-22-07 21:44:59   INFO [libs.ActionsWithOurElements] : 2 was inputted into element
+2019-22-07 21:45:00   INFO [libs.ActionsWithOurElements] : Phoenix was inputted into element
+2019-22-07 21:45:00   INFO [libs.ActionsWithOurElements] : 30606 was inputted into element
+2019-22-07 21:45:00   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-22-07 21:45:01   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-22-07 21:45:01   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-22-07 21:45:01   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-22-07 21:45:02   INFO [parameterizedOrders.ManagerDoOrderForFleetParameterizedTest] : Chrome will be started
+2019-22-07 22:05:32   INFO [parameterizedOrders.ManagerDoOrderForFleetParameterizedTest] : Chrome will be started
+2019-22-07 22:05:41   INFO [parameterizedOrders.ManagerDoOrderForFleetParameterizedTest] : Chrome is started
+2019-22-07 22:05:52   INFO [pages.LoginPage] : Login Page was opened
+2019-22-07 22:05:53   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 22:05:53   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2019-22-07 22:05:54   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-22-07 22:05:54   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 22:06:02   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-22-07 22:06:03   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 22:06:03   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 22:06:06   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 22:06:09   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 22:06:10   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 22:06:12   INFO [libs.ActionsWithOurElements] : 234563546 was inputted into element
+2019-22-07 22:06:12   INFO [pages.ManagerModalEldPage] :  USDOT is 234563546
+2019-22-07 22:06:14   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 22:06:17   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 22:06:17   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 22:06:17   INFO [libs.ActionsWithOurElements] : 1 was selected in Drop-down
+2019-22-07 22:06:18   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2019-22-07 22:06:18   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2019-22-07 22:06:18   INFO [libs.ActionsWithOurElements] : 1676475006 was inputted into element
+2019-22-07 22:06:19   INFO [libs.ActionsWithOurElements] : Street was inputted into element
+2019-22-07 22:06:19   INFO [libs.ActionsWithOurElements] : 2 was inputted into element
+2019-22-07 22:06:19   INFO [libs.ActionsWithOurElements] : Phoenix was inputted into element
+2019-22-07 22:06:20   INFO [libs.ActionsWithOurElements] : 30606 was inputted into element
+2019-22-07 22:06:20   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-22-07 22:06:20   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-22-07 22:06:20   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-22-07 22:06:21   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-22-07 22:06:21   INFO [libs.ActionsWithOurElements] : 0 was selected in Drop-down
+2019-22-07 22:06:22   INFO [parameterizedOrders.ManagerDoOrderForFleetParameterizedTest] : Chrome will be started
+2019-22-07 22:10:48   INFO [parameterizedOrders.ManagerDoOrderForFleetParameterizedTest] : Chrome will be started
+2019-22-07 22:10:57   INFO [parameterizedOrders.ManagerDoOrderForFleetParameterizedTest] : Chrome is started
+2019-22-07 22:11:08   INFO [pages.LoginPage] : Login Page was opened
+2019-22-07 22:11:09   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 22:11:09   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2019-22-07 22:11:10   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-22-07 22:11:10   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 22:11:18   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-22-07 22:11:18   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 22:11:19   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 22:11:22   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 22:11:25   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 22:11:25   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 22:11:28   INFO [libs.ActionsWithOurElements] : 234563546 was inputted into element
+2019-22-07 22:11:28   INFO [pages.ManagerModalEldPage] :  USDOT is 234563546
+2019-22-07 22:11:30   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 22:11:32   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 22:11:33  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=75.0.3770.142)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'DESKTOP-UD8IPI4', ip: '100.80.1.70', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\denku\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53174}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 5acaf3f94fc1636a6cd8e35ba17d2943
+2019-22-07 22:11:34   INFO [parameterizedOrders.ManagerDoOrderForFleetParameterizedTest] : Chrome will be started
+2019-22-07 22:11:39   INFO [parameterizedOrders.ManagerDoOrderForFleetParameterizedTest] : Chrome is started
+2019-22-07 22:13:02   INFO [parameterizedOrders.ManagerDoOrderForFleetParameterizedTest] : Chrome will be started
+2019-22-07 22:13:12   INFO [parameterizedOrders.ManagerDoOrderForFleetParameterizedTest] : Chrome is started
+2019-22-07 22:13:23   INFO [pages.LoginPage] : Login Page was opened
+2019-22-07 22:13:23   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 22:13:23   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2019-22-07 22:13:24   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-22-07 22:13:24   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 22:13:32   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-22-07 22:13:32   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 22:13:32   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 22:13:36   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 22:13:39   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 22:13:39   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 22:13:41   INFO [libs.ActionsWithOurElements] : 234563546 was inputted into element
+2019-22-07 22:13:41   INFO [pages.ManagerModalEldPage] :  USDOT is 234563546
+2019-22-07 22:13:44   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 22:13:46   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 22:13:46   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 22:13:47   INFO [libs.ActionsWithOurElements] : 1 was selected in Drop-down
+2019-22-07 22:13:47   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2019-22-07 22:13:48   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2019-22-07 22:13:48   INFO [libs.ActionsWithOurElements] : 1676475006 was inputted into element
+2019-22-07 22:13:48   INFO [libs.ActionsWithOurElements] : Street was inputted into element
+2019-22-07 22:13:48   INFO [libs.ActionsWithOurElements] : 2 was inputted into element
+2019-22-07 22:13:49   INFO [libs.ActionsWithOurElements] : Phoenix was inputted into element
+2019-22-07 22:13:49   INFO [libs.ActionsWithOurElements] : 30606 was inputted into element
+2019-22-07 22:13:49   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-22-07 22:13:50   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-22-07 22:13:50   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-22-07 22:13:50   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-22-07 22:13:50   INFO [libs.ActionsWithOurElements] : 0 was selected in Drop-down
+2019-22-07 22:14:30  ERROR [parameterizedOrders.ManagerDoOrderForFleetParameterizedTest] : AC failed: Total Order is not correct
+2019-22-07 22:14:31   INFO [parameterizedOrders.ManagerDoOrderForFleetParameterizedTest] : Chrome will be started
+2019-22-07 22:17:30   INFO [parameterizedOrders.ManagerDoOrderForFleetParameterizedTest] : Chrome will be started
+2019-22-07 22:17:39   INFO [parameterizedOrders.ManagerDoOrderForFleetParameterizedTest] : Chrome is started
+2019-22-07 22:17:50   INFO [pages.LoginPage] : Login Page was opened
+2019-22-07 22:17:50   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 22:17:51   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2019-22-07 22:17:51   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-22-07 22:17:51   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 22:18:00   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-22-07 22:18:00   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 22:18:01   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 22:18:04   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 22:18:07   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 22:18:07   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 22:18:10   INFO [libs.ActionsWithOurElements] : 234563546 was inputted into element
+2019-22-07 22:18:10   INFO [pages.ManagerModalEldPage] :  USDOT is 234563546
+2019-22-07 22:18:12   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 22:18:14   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 22:18:15   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 22:18:15   INFO [libs.ActionsWithOurElements] : 1 was selected in Drop-down
+2019-22-07 22:18:15   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2019-22-07 22:18:16   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2019-22-07 22:18:16   INFO [libs.ActionsWithOurElements] : 1676475006 was inputted into element
+2019-22-07 22:18:16   INFO [libs.ActionsWithOurElements] : Street was inputted into element
+2019-22-07 22:18:17   INFO [libs.ActionsWithOurElements] : 2 was inputted into element
+2019-22-07 22:18:17   INFO [libs.ActionsWithOurElements] : Phoenix was inputted into element
+2019-22-07 22:18:17   INFO [libs.ActionsWithOurElements] : 30606 was inputted into element
+2019-22-07 22:18:17   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-22-07 22:18:18   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-22-07 22:18:18   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-22-07 22:18:18   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-22-07 22:18:18   INFO [libs.ActionsWithOurElements] : checkbox is already unchecked
+2019-22-07 22:18:19   INFO [libs.ActionsWithOurElements] : 0 was selected in Drop-down
+2019-22-07 22:20:16   INFO [parameterizedOrders.ManagerDoOrderForFleetParameterizedTest] : Chrome will be started
+2019-22-07 22:20:25   INFO [parameterizedOrders.ManagerDoOrderForFleetParameterizedTest] : Chrome is started
+2019-22-07 22:20:36   INFO [pages.LoginPage] : Login Page was opened
+2019-22-07 22:20:37   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 22:20:37   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2019-22-07 22:20:38   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-22-07 22:20:38   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 22:20:46   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-22-07 22:20:46   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 22:20:47   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 22:20:50   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 22:20:54   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 22:20:54   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 22:20:56   INFO [libs.ActionsWithOurElements] : 234563546 was inputted into element
+2019-22-07 22:20:56   INFO [pages.ManagerModalEldPage] :  USDOT is 234563546
+2019-22-07 22:20:59   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 22:21:01   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 22:21:01  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=75.0.3770.142)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'DESKTOP-UD8IPI4', ip: '100.80.1.70', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\denku\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53918}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 069d64264c24c8481c376e101ab92034
+2019-22-07 22:21:02   INFO [parameterizedOrders.ManagerDoOrderForFleetParameterizedTest] : Chrome will be started
+2019-22-07 22:21:08   INFO [parameterizedOrders.ManagerDoOrderForFleetParameterizedTest] : Chrome is started
+2019-22-07 22:21:17   INFO [pages.LoginPage] : Login Page was opened
+2019-22-07 22:21:17   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 22:21:18   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2019-22-07 22:21:18   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-22-07 22:21:18   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 22:21:27   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-22-07 22:21:27   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 22:21:28   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 22:21:31   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 22:21:35   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 22:21:35   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 22:21:37   INFO [libs.ActionsWithOurElements] : 234563546 was inputted into element
+2019-22-07 22:21:37   INFO [pages.ManagerModalEldPage] :  USDOT is 234563546
+2019-22-07 22:21:39   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 22:21:42   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 22:21:42   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 22:21:42   INFO [libs.ActionsWithOurElements] : 1 was selected in Drop-down
+2019-22-07 22:21:43   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2019-22-07 22:21:43   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2019-22-07 22:21:43   INFO [libs.ActionsWithOurElements] : 1676475006 was inputted into element
+2019-22-07 22:21:44   INFO [libs.ActionsWithOurElements] : Street was inputted into element
+2019-22-07 22:21:44   INFO [libs.ActionsWithOurElements] : 2 was inputted into element
+2019-22-07 22:21:44   INFO [libs.ActionsWithOurElements] : Phoenix was inputted into element
+2019-22-07 22:21:45   INFO [libs.ActionsWithOurElements] : 30606 was inputted into element
+2019-22-07 22:21:45   INFO [libs.ActionsWithOurElements] : 2 was inputted into element
+2019-22-07 22:21:45   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-22-07 22:21:45   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-22-07 22:21:46   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-22-07 22:21:46   INFO [libs.ActionsWithOurElements] : checkbox is already unchecked
+2019-22-07 22:21:46   INFO [libs.ActionsWithOurElements] : 1 was selected in Drop-down
+2019-22-07 22:21:46   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 22:22:06  ERROR [parameterizedOrders.ManagerDoOrderForFleetParameterizedTest] : AC failed: OrderPrice is not correct
+2019-22-07 22:27:49   INFO [parameterizedOrders.ManagerDoOrderForFleetParameterizedTest] : Chrome will be started
+2019-22-07 22:27:59   INFO [parameterizedOrders.ManagerDoOrderForFleetParameterizedTest] : Chrome is started
+2019-22-07 22:28:10   INFO [pages.LoginPage] : Login Page was opened
+2019-22-07 22:28:10   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 22:28:11   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2019-22-07 22:28:11   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-22-07 22:28:11   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 22:28:19   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-22-07 22:28:20   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 22:28:20   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 22:28:23   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 22:28:27   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 22:28:29   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 22:28:31   INFO [libs.ActionsWithOurElements] : 234563546 was inputted into element
+2019-22-07 22:28:31   INFO [pages.ManagerModalEldPage] :  USDOT is 234563546
+2019-22-07 22:28:34   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 22:28:36   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 22:28:38   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 22:28:38   INFO [libs.ActionsWithOurElements] : 1 was selected in Drop-down
+2019-22-07 22:28:39   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2019-22-07 22:28:39   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2019-22-07 22:28:39   INFO [libs.ActionsWithOurElements] : 1676475006 was inputted into element
+2019-22-07 22:28:40   INFO [libs.ActionsWithOurElements] : Street was inputted into element
+2019-22-07 22:28:40   INFO [libs.ActionsWithOurElements] : 2 was inputted into element
+2019-22-07 22:28:41   INFO [libs.ActionsWithOurElements] : Phoenix was inputted into element
+2019-22-07 22:28:41   INFO [libs.ActionsWithOurElements] : 30606 was inputted into element
+2019-22-07 22:28:41   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-22-07 22:28:41   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-22-07 22:28:42   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-22-07 22:28:42   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-22-07 22:28:42   INFO [libs.ActionsWithOurElements] : checkbox is already unchecked
+2019-22-07 22:28:42   INFO [libs.ActionsWithOurElements] : 0 was selected in Drop-down
+2019-22-07 22:28:44   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 22:29:04  ERROR [parameterizedOrders.ManagerDoOrderForFleetParameterizedTest] : AC failed: OrderPrice is not correct
+2019-22-07 22:29:05   INFO [parameterizedOrders.ManagerDoOrderForFleetParameterizedTest] : Chrome will be started
+2019-22-07 22:29:37   INFO [parameterizedOrders.ManagerDoOrderForFleetParameterizedTest] : Chrome will be started
+2019-22-07 22:29:47   INFO [parameterizedOrders.ManagerDoOrderForFleetParameterizedTest] : Chrome is started
+2019-22-07 22:29:57   INFO [pages.LoginPage] : Login Page was opened
+2019-22-07 22:29:58   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 22:29:58   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2019-22-07 22:29:58   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-22-07 22:29:59   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 22:30:07   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-22-07 22:30:07   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 22:30:08   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 22:30:11   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 22:30:14   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 22:30:17   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 22:30:19   INFO [libs.ActionsWithOurElements] : 234563546 was inputted into element
+2019-22-07 22:30:19   INFO [pages.ManagerModalEldPage] :  USDOT is 234563546
+2019-22-07 22:30:21   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 22:30:23   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 22:30:26   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 22:30:26   INFO [libs.ActionsWithOurElements] : 1 was selected in Drop-down
+2019-22-07 22:30:26   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2019-22-07 22:30:27   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2019-22-07 22:30:27   INFO [libs.ActionsWithOurElements] : 1676475006 was inputted into element
+2019-22-07 22:30:27   INFO [libs.ActionsWithOurElements] : Street was inputted into element
+2019-22-07 22:30:28   INFO [libs.ActionsWithOurElements] : 2 was inputted into element
+2019-22-07 22:30:28   INFO [libs.ActionsWithOurElements] : Phoenix was inputted into element
+2019-22-07 22:30:29   INFO [libs.ActionsWithOurElements] : 30606 was inputted into element
+2019-22-07 22:30:29   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-22-07 22:30:29   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-22-07 22:30:29   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-22-07 22:30:29   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-22-07 22:30:30   INFO [libs.ActionsWithOurElements] : checkbox is already unchecked
+2019-22-07 22:30:30   INFO [libs.ActionsWithOurElements] : 0 was selected in Drop-down
+2019-22-07 22:30:32   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 22:31:30   INFO [parameterizedOrders.ManagerDoOrderForFleetParameterizedTest] : Chrome will be started
+2019-22-07 22:31:39   INFO [parameterizedOrders.ManagerDoOrderForFleetParameterizedTest] : Chrome is started
+2019-22-07 22:31:50   INFO [pages.LoginPage] : Login Page was opened
+2019-22-07 22:31:51   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 22:31:51   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2019-22-07 22:31:51   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-22-07 22:31:52   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 22:32:00   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-22-07 22:32:01   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 22:32:01   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 22:32:04   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 22:32:08   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 22:32:10   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 22:32:12   INFO [libs.ActionsWithOurElements] : 234563546 was inputted into element
+2019-22-07 22:32:12   INFO [pages.ManagerModalEldPage] :  USDOT is 234563546
+2019-22-07 22:32:14   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 22:32:17   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 22:32:19   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 22:32:19   INFO [libs.ActionsWithOurElements] : 1 was selected in Drop-down
+2019-22-07 22:32:20   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2019-22-07 22:32:20   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2019-22-07 22:32:21   INFO [libs.ActionsWithOurElements] : 1676475006 was inputted into element
+2019-22-07 22:32:21   INFO [libs.ActionsWithOurElements] : Street was inputted into element
+2019-22-07 22:32:21   INFO [libs.ActionsWithOurElements] : 2 was inputted into element
+2019-22-07 22:32:22   INFO [libs.ActionsWithOurElements] : Phoenix was inputted into element
+2019-22-07 22:32:22   INFO [libs.ActionsWithOurElements] : 30606 was inputted into element
+2019-22-07 22:32:22   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-22-07 22:32:22   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-22-07 22:32:23   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-22-07 22:32:23   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-22-07 22:32:23   INFO [libs.ActionsWithOurElements] : checkbox is already unchecked
+2019-22-07 22:32:23   INFO [libs.ActionsWithOurElements] : 0 was selected in Drop-down
+2019-22-07 22:32:25   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 22:32:45  ERROR [parameterizedOrders.ManagerDoOrderForFleetParameterizedTest] : AC failed: OrderPrice is not correct
+2019-22-07 22:32:46   INFO [parameterizedOrders.ManagerDoOrderForFleetParameterizedTest] : Chrome will be started
+2019-22-07 22:34:44   INFO [parameterizedOrders.ManagerDoOrderForFleetParameterizedTest] : Chrome will be started
+2019-22-07 22:34:53   INFO [parameterizedOrders.ManagerDoOrderForFleetParameterizedTest] : Chrome is started
+2019-22-07 22:35:04   INFO [pages.LoginPage] : Login Page was opened
+2019-22-07 22:35:05   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 22:35:05   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2019-22-07 22:35:05   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-22-07 22:35:06   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 22:35:14   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-22-07 22:35:14   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 22:35:15   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 22:35:18   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 22:35:21   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 22:35:24   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 22:35:26   INFO [libs.ActionsWithOurElements] : 234563546 was inputted into element
+2019-22-07 22:35:26   INFO [pages.ManagerModalEldPage] :  USDOT is 234563546
+2019-22-07 22:35:28   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 22:35:31   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 22:35:33   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 22:35:33   INFO [libs.ActionsWithOurElements] : 1 was selected in Drop-down
+2019-22-07 22:35:33   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2019-22-07 22:35:34   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2019-22-07 22:35:34   INFO [libs.ActionsWithOurElements] : 1676475006 was inputted into element
+2019-22-07 22:35:35   INFO [libs.ActionsWithOurElements] : Street was inputted into element
+2019-22-07 22:35:35   INFO [libs.ActionsWithOurElements] : 2 was inputted into element
+2019-22-07 22:35:35   INFO [libs.ActionsWithOurElements] : Phoenix was inputted into element
+2019-22-07 22:35:36   INFO [libs.ActionsWithOurElements] : 30606 was inputted into element
+2019-22-07 22:35:36   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-22-07 22:35:36   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-22-07 22:35:37   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-22-07 22:35:37   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-22-07 22:35:37   INFO [libs.ActionsWithOurElements] : checkbox is already unchecked
+2019-22-07 22:35:37   INFO [libs.ActionsWithOurElements] : 0 was selected in Drop-down
+2019-22-07 22:35:39   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 22:35:39   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 22:36:19  ERROR [parameterizedOrders.ManagerDoOrderForFleetParameterizedTest] : AC failed: DeliveryPrice is not correct
+2019-22-07 22:36:20   INFO [parameterizedOrders.ManagerDoOrderForFleetParameterizedTest] : Chrome will be started
+2019-22-07 22:40:11   INFO [parameterizedOrders.ManagerDoOrderForFleetParameterizedTest] : Chrome will be started
+2019-22-07 22:40:20   INFO [parameterizedOrders.ManagerDoOrderForFleetParameterizedTest] : Chrome is started
+2019-22-07 22:40:31   INFO [pages.LoginPage] : Login Page was opened
+2019-22-07 22:40:32   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 22:40:32   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2019-22-07 22:40:33   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-22-07 22:40:33   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 22:40:41   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-22-07 22:40:41   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 22:40:42   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 22:40:45   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 22:40:48   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 22:40:50   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 22:40:53   INFO [libs.ActionsWithOurElements] : 234563546 was inputted into element
+2019-22-07 22:40:53   INFO [pages.ManagerModalEldPage] :  USDOT is 234563546
+2019-22-07 22:40:55   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 22:40:57   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 22:41:00   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 22:41:00   INFO [libs.ActionsWithOurElements] : 1 was selected in Drop-down
+2019-22-07 22:41:00   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2019-22-07 22:41:01   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2019-22-07 22:41:01   INFO [libs.ActionsWithOurElements] : 1676475006 was inputted into element
+2019-22-07 22:41:02   INFO [libs.ActionsWithOurElements] : Street was inputted into element
+2019-22-07 22:41:02   INFO [libs.ActionsWithOurElements] : 2 was inputted into element
+2019-22-07 22:41:02   INFO [libs.ActionsWithOurElements] : Phoenix was inputted into element
+2019-22-07 22:41:03   INFO [libs.ActionsWithOurElements] : 30606 was inputted into element
+2019-22-07 22:41:03   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-22-07 22:41:03   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-22-07 22:41:03   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-22-07 22:41:04   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-22-07 22:41:04   INFO [libs.ActionsWithOurElements] : checkbox is already unchecked
+2019-22-07 22:41:04   INFO [libs.ActionsWithOurElements] : 0 was selected in Drop-down
+2019-22-07 22:41:06   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 22:41:06   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 22:41:06   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 22:41:06   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 22:41:06   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 22:41:06   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 22:41:06   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 22:41:07   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 22:41:07   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 22:41:07   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 22:41:07   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 22:41:08   INFO [parameterizedOrders.ManagerDoOrderForFleetParameterizedTest] : Chrome will be started
+2019-22-07 22:41:14   INFO [parameterizedOrders.ManagerDoOrderForFleetParameterizedTest] : Chrome is started
+2019-22-07 22:41:23   INFO [pages.LoginPage] : Login Page was opened
+2019-22-07 22:41:23   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 22:41:24   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2019-22-07 22:41:24   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-22-07 22:41:24   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 22:41:33   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-22-07 22:41:33   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 22:41:33   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 22:41:36   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 22:41:40   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 22:41:42   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 22:41:44   INFO [libs.ActionsWithOurElements] : 234563546 was inputted into element
+2019-22-07 22:41:44   INFO [pages.ManagerModalEldPage] :  USDOT is 234563546
+2019-22-07 22:41:47   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 22:41:49   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 22:41:51   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 22:41:51   INFO [libs.ActionsWithOurElements] : 1 was selected in Drop-down
+2019-22-07 22:41:52   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2019-22-07 22:41:52   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2019-22-07 22:41:52   INFO [libs.ActionsWithOurElements] : 1676475006 was inputted into element
+2019-22-07 22:41:53   INFO [libs.ActionsWithOurElements] : Street was inputted into element
+2019-22-07 22:41:53   INFO [libs.ActionsWithOurElements] : 2 was inputted into element
+2019-22-07 22:41:53   INFO [libs.ActionsWithOurElements] : Phoenix was inputted into element
+2019-22-07 22:41:53   INFO [libs.ActionsWithOurElements] : 30606 was inputted into element
+2019-22-07 22:41:54   INFO [libs.ActionsWithOurElements] : 2 was inputted into element
+2019-22-07 22:41:54   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-22-07 22:41:54   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-22-07 22:41:54   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-22-07 22:41:54   INFO [libs.ActionsWithOurElements] : checkbox is already unchecked
+2019-22-07 22:41:55   INFO [libs.ActionsWithOurElements] : 1 was selected in Drop-down
+2019-22-07 22:41:57   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 22:41:57   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 22:42:37  ERROR [parameterizedOrders.ManagerDoOrderForFleetParameterizedTest] : AC failed: DeliveryPrice is not correct
+2019-22-07 22:45:39   INFO [parameterizedOrders.ManagerDoOrderForFleetParameterizedTest] : Chrome will be started
+2019-22-07 22:45:49   INFO [parameterizedOrders.ManagerDoOrderForFleetParameterizedTest] : Chrome is started
+2019-22-07 22:46:00   INFO [pages.LoginPage] : Login Page was opened
+2019-22-07 22:46:00   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 22:46:01   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2019-22-07 22:46:01   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-22-07 22:46:02   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 22:46:10   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-22-07 22:46:10   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 22:46:11   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 22:46:14   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 22:46:17   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 22:46:20   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 22:46:22   INFO [libs.ActionsWithOurElements] : 234563546 was inputted into element
+2019-22-07 22:46:22   INFO [pages.ManagerModalEldPage] :  USDOT is 234563546
+2019-22-07 22:46:24   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 22:46:27   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 22:46:29   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 22:46:29   INFO [libs.ActionsWithOurElements] : 1 was selected in Drop-down
+2019-22-07 22:46:30   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2019-22-07 22:46:30   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2019-22-07 22:46:31   INFO [libs.ActionsWithOurElements] : 1676475006 was inputted into element
+2019-22-07 22:46:31   INFO [libs.ActionsWithOurElements] : Street was inputted into element
+2019-22-07 22:46:31   INFO [libs.ActionsWithOurElements] : 2 was inputted into element
+2019-22-07 22:46:32   INFO [libs.ActionsWithOurElements] : Phoenix was inputted into element
+2019-22-07 22:46:32   INFO [libs.ActionsWithOurElements] : 30606 was inputted into element
+2019-22-07 22:46:32   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-22-07 22:46:32   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-22-07 22:46:33   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-22-07 22:46:33   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-22-07 22:46:33   INFO [libs.ActionsWithOurElements] : checkbox is already unchecked
+2019-22-07 22:46:33   INFO [libs.ActionsWithOurElements] : 0 was selected in Drop-down
+2019-22-07 22:46:35   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 22:46:36   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 22:46:36   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 22:46:36   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 22:46:36   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 22:46:36   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 22:46:36   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 22:46:36   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 22:46:36   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 22:46:36   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 22:46:36   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 22:46:37   INFO [parameterizedOrders.ManagerDoOrderForFleetParameterizedTest] : Chrome will be started
+2019-22-07 22:46:43   INFO [parameterizedOrders.ManagerDoOrderForFleetParameterizedTest] : Chrome is started
+2019-22-07 22:46:52   INFO [pages.LoginPage] : Login Page was opened
+2019-22-07 22:46:52   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 22:46:53   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2019-22-07 22:46:53   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-22-07 22:46:53   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 22:47:01   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-22-07 22:47:02   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 22:47:02   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 22:47:06   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 22:47:09   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 22:47:11   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 22:47:13   INFO [libs.ActionsWithOurElements] : 234563546 was inputted into element
+2019-22-07 22:47:13   INFO [pages.ManagerModalEldPage] :  USDOT is 234563546
+2019-22-07 22:47:16   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 22:47:18   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 22:47:20   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-22-07 22:47:20   INFO [libs.ActionsWithOurElements] : 1 was selected in Drop-down
+2019-22-07 22:47:21   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2019-22-07 22:47:21   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2019-22-07 22:47:21   INFO [libs.ActionsWithOurElements] : 1676475006 was inputted into element
+2019-22-07 22:47:22   INFO [libs.ActionsWithOurElements] : Street was inputted into element
+2019-22-07 22:47:22   INFO [libs.ActionsWithOurElements] : 2 was inputted into element
+2019-22-07 22:47:22   INFO [libs.ActionsWithOurElements] : Phoenix was inputted into element
+2019-22-07 22:47:22   INFO [libs.ActionsWithOurElements] : 30606 was inputted into element
+2019-22-07 22:47:23   INFO [libs.ActionsWithOurElements] : 2 was inputted into element
+2019-22-07 22:47:23   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-22-07 22:47:23   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-22-07 22:47:23   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-22-07 22:47:24   INFO [libs.ActionsWithOurElements] : checkbox is already unchecked
+2019-22-07 22:47:24   INFO [libs.ActionsWithOurElements] : 1 was selected in Drop-down
+2019-22-07 22:47:26   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 22:47:26   INFO [libs.ActionsWithOurElements] : Element is displayed
+2019-22-07 22:48:06  ERROR [parameterizedOrders.ManagerDoOrderForFleetParameterizedTest] : AC failed: DeliveryPrice is not correct

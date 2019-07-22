@@ -4,7 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class EldManagerPage extends ParentPage {
+public class ManagerEldPage extends ParentPage {
 
 
     @FindBy(xpath = ".//a[@href='/dash/eld_orders/']")
@@ -13,7 +13,10 @@ public class EldManagerPage extends ParentPage {
     @FindBy(xpath = ".//*[@placeholder='Id']")
     private WebElement idHolder;
 
-    public EldManagerPage(WebDriver webDriver) {
+    @FindBy(xpath = ".//button[@onclick='createOrder();']")
+    private WebElement newOrderButton;
+
+    public ManagerEldPage(WebDriver webDriver) {
 
         super(webDriver, "dash/eld/");
     }
@@ -25,6 +28,10 @@ public class EldManagerPage extends ParentPage {
 
     public void clickOnOrderOnList(String idOrder) {
         actionsWithOurElements.clickOnElement(".//*[@id='eld_orders_table']//td[text()='" + idOrder + "']");
+    }
+
+    public void clickOnNewOrderButton(){
+        actionsWithOurElements.clickOnElement(newOrderButton);
     }
 
 }

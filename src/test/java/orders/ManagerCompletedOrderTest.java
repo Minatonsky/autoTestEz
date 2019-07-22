@@ -31,10 +31,10 @@ public class ManagerCompletedOrderTest extends ParentTest {
 
         dashboardPage.clickOnMenuPageELD();
         Thread.sleep(5000);
-        eldManagerPage.clickOnEldOrders();
-        eldManagerPage.enterIdOrder(idLastOrderAfterTest);
+        managerEldPage.clickOnEldOrders();
+        managerEldPage.enterIdOrder(idLastOrderAfterTest);
         Thread.sleep(5000);
-        eldManagerPage.clickOnOrderOnList(idLastOrderAfterTest);
+        managerEldPage.clickOnOrderOnList(idLastOrderAfterTest);
         modalOrderPage.selectOrderStatus("4");
         Thread.sleep(5000);
         modalOrderPage.clickButtonSave();

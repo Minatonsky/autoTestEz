@@ -99,11 +99,11 @@ MANAGER COMPLETED OR CANCEL ORDER
 
         dashboardPage.clickOnMenuPageELD();
         Thread.sleep(5000);
-        eldManagerPage.clickOnEldOrders();
+        managerEldPage.clickOnEldOrders();
         Thread.sleep(5000);
-        eldManagerPage.enterIdOrder(idLastOrderAfterTest);
+        managerEldPage.enterIdOrder(idLastOrderAfterTest);
         Thread.sleep(5000);
-        eldManagerPage.clickOnOrderOnList(idLastOrderAfterTest);
+        managerEldPage.clickOnOrderOnList(idLastOrderAfterTest);
         modalOrderPage.selectOrderStatus("2");
         modalOrderPage.clickButtonSave();
 

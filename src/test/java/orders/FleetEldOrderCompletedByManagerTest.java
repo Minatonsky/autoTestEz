@@ -104,11 +104,11 @@ MANAGER COMPLETED ORDER
 
         dashboardPage.clickOnMenuPageELD();
         Thread.sleep(5000);
-        eldManagerPage.clickOnEldOrders();
+        managerEldPage.clickOnEldOrders();
         Thread.sleep(5000);
-        eldManagerPage.enterIdOrder(idLastOrderAfterTest);
+        managerEldPage.enterIdOrder(idLastOrderAfterTest);
         Thread.sleep(5000);
-        eldManagerPage.clickOnOrderOnList(idLastOrderAfterTest);
+        managerEldPage.clickOnOrderOnList(idLastOrderAfterTest);
         modalOrderPage.selectOrderStatus("4");
         modalOrderPage.clickButtonSave();
         modalOrderPage.selectOrderStatus("1");
