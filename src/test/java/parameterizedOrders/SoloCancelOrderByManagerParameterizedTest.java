@@ -134,7 +134,9 @@ MANAGER CANCEL ORDER
         tearDown();
         setUp();
 
-
+/*
+USER CHECK BALANCE
+ */
         loginPage.userValidLogIn(dataForSoloValidLogIn.get("login").toString(),dataForSoloValidLogIn.get("pass").toString());
 
         dashboardPage.clickOnMenuDash();

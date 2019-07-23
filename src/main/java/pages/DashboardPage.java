@@ -48,6 +48,14 @@ public class DashboardPage extends ParentPage {
         actionsWithOurElements.clickOnElement(menuSizeButton);
     }
 
+    @Step
+    public void openMenuDash(){
+        waitABit(3);
+        clickOnMenuDash();
+        clickMenuSizeButton();
+        waitABit(3);
+    }
+
 
     @Step
     public void goToEldPage(){

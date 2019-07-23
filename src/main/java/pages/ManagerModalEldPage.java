@@ -5,7 +5,20 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+import static libs.Utils.waitABit;
+
 public class ManagerModalEldPage extends ParentPage {
+
+    @FindBy(id = "checkboxFleetOrSolo")
+    private WebElement soloCheckBox;
+
+    @FindBy(id = "solo_driver_select")
+    private WebElement soloDriverSelect;
+
+    @FindBy(id = "soloDriverList")
+    private WebElement soloDriverList;
+
+
 
     @FindBy(id = "fleet_select")
     private WebElement usdotFleetInput;
@@ -66,6 +79,8 @@ public class ManagerModalEldPage extends ParentPage {
     private WebElement quantityStickerInput;
 
 
+
+
 //    @FindBy(xpath = ".//*[@data-id='100']/td[3]/input")
 //    private WebElement quantityCamera1Input;
 //
@@ -80,13 +95,15 @@ public class ManagerModalEldPage extends ParentPage {
         super(webDriver, "/dash/eld/");
     }
 
-///////////////
+/*
+SELECT FLEET/SOLO IN ORDER
+ */
     public void clickOnUsdotField(){
         actionsWithOurElements.clickOnElement(usdotFleetInput);
     }
+
     public void enterUsdotFleet(String usdotFleet){
         actionsWithOurElements.enterTextToElement(usdotFleetInput, usdotFleet);
-        logger.info(" USDOT is " + usdotFleet);
     }
 
     public void clickOnFleetInFleetList(){
@@ -103,16 +120,46 @@ public class ManagerModalEldPage extends ParentPage {
 
     @Step
     public void selectFleetInOrder(String usdotFleet) throws InterruptedException {
-        Thread.sleep(2000);
+        waitABit(2);
         clickOnUsdotField();
-        Thread.sleep(2000);
+        waitABit(2);
         enterUsdotFleet(usdotFleet);
-        Thread.sleep(2000);
+        waitABit(2);
         clickOnFleetInFleetList();
-        Thread.sleep(2000);
+        waitABit(2);
         clickOnUserField();
-        Thread.sleep(2000);
+        waitABit(2);
         selectUser();
+    }
+
+
+    public void clickSoloCheckBox(){
+        actionsWithOurElements.clickOnElement(soloCheckBox);
+    }
+
+    public void clickSoloDriverField(){
+        actionsWithOurElements.clickOnElement(soloDriverSelect);
+    }
+
+    public void enterSoloDriverEmail(String soloLogin){
+        actionsWithOurElements.enterTextToElement(soloDriverSelect ,soloLogin);
+    }
+
+    public void clickSoloDriverList(){
+        actionsWithOurElements.clickOnElement(soloDriverList);
+    }
+
+    @Step
+    public void selectSoloDriverInOrder(String soloLogin){
+        waitABit(2);
+        clickSoloCheckBox();
+        waitABit(2);
+        clickSoloDriverField();
+        waitABit(2);
+        enterSoloDriverEmail(soloLogin);
+        waitABit(2);
+        clickSoloDriverList();
+
     }
 
 
@@ -169,8 +216,6 @@ ORDER LIST
 
 //    public void enterQuantityCamera2(String quantityCamera2){actionsWithOurElements.enterTextToElement(quantityCamera2Input, quantityCamera2);}
 
-//    public void setPickUpFromOffice(String neededStatePickUpFromOffice){actionsWithOurElements.setNeededStateToCheckBox(checkBoxPickUp, neededStatePickUpFromOffice);}
-
     public void setOvernightDelivery(String neededStateOvernightDelivery){actionsWithOurElements.setNeededStateToCheckBox(checkBoxOvernightDelivery, neededStateOvernightDelivery);}
 
     @Step
@@ -181,12 +226,13 @@ ORDER LIST
         enterQuantitySticker(quantitySticker);
 //        enterQuantityCamera1(quantityCamera1);
 //        enterQuantityCamera2(quantityCamera2);
-//        setPickUpFromOffice(neededStatePickUpFromOffice);
         setOvernightDelivery(neededStateOvernightDelivery);
 
     }
 
-
+    public void setDeliveryCost(String neededStateDeliveryCost){
+        actionsWithOurElements.clickOnElement(".//*[@id='deliveryCalculate']/button[@data-val='" + neededStateDeliveryCost + "']");
+    }
 
 
     public void setPaymentMethod(String typeOfPaymentMethod) {

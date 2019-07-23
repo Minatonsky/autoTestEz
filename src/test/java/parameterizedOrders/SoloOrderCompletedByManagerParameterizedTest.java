@@ -51,16 +51,17 @@ public class SoloOrderCompletedByManagerParameterizedTest extends ParentTest {St
     @Test
     public void addNewOrder() throws InterruptedException, SQLException, IOException, ClassNotFoundException {
         ExcelDriver excelDriver = new ExcelDriver();
+        UtilsForDB utilsForDB = new UtilsForDB();
 
         Map personalDataForEldOrder = excelDriver.getData(configProperties.DATA_FILE_PATH() + "testEldOrder.xls", "personalData");
-        Map dataForFleetValidLogIn = excelDriver.getData(configProperties.DATA_FILE_PATH() + "testLogin.xls", "validFleetLogin");
-        Map dataFleetId = excelDriver.getData(configProperties.DATA_FILE_PATH() + "testLogin.xls", "validFleetLogin");
+        Map dataForSoloValidLogIn = ExcelDriver.getData(configProperties.DATA_FILE_PATH() + "testLogin.xls", "validSoloLogin");
+        Map dataSoloId = ExcelDriver.getData(configProperties.DATA_FILE_PATH() + "testLogin.xls", "validSoloLogin");
 
-        UtilsForDB utilsForDB = new UtilsForDB();
-        String idLastOrderBeforeTest = utilsForDB.getLastOrderIdForFleet(dataFleetId.get("fleetId").toString());
-        utilsForDB.getSetCurrentDueForFleet(currentDue, dataFleetId.get("fleetId").toString());
 
-        loginPage.userValidLogIn(dataForFleetValidLogIn.get("login").toString(),dataForFleetValidLogIn.get("pass").toString());
+        String idLastOrderBeforeTest = utilsForDB.getLastOrderIdForFleet(dataSoloId.get("soloId").toString());
+        utilsForDB.getSetCurrentDueForSolo(currentDue, dataSoloId.get("soloId").toString());
+
+        loginPage.userValidLogIn(dataForSoloValidLogIn.get("login").toString(),dataForSoloValidLogIn.get("pass").toString());
 
         dashboardPage.clickOnMenuDash();
         dashboardPage.clickMenuSizeButton();
@@ -99,7 +100,7 @@ public class SoloOrderCompletedByManagerParameterizedTest extends ParentTest {St
         modalEldPage.clickAgreements(quantityOfDevices);
 
 
-        String idLastOrderAfterTest = utilsForDB.getLastOrderIdForFleet(dataFleetId.get("fleetId").toString());
+        String idLastOrderAfterTest = utilsForDB.getLastOrderIdForSolo(dataSoloId.get("soloId").toString());
         checkAC("New order wasn`t created", idLastOrderBeforeTest.equals(idLastOrderAfterTest) , false);
 
         dashboardPage.goToFinancesPage();
