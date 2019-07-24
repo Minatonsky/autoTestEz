@@ -17,9 +17,9 @@ import java.util.Map;
 
 @RunWith(Parameterized.class)
 
-public class ManagerDoOrderFleetCancelParamsTest extends ParentTest {String  quantityOfDevices, typeOfPaymentMethod, quantityPinCable, quantityOBDPinCable, quantitySticker, quantityCamera1, quantityCamera2, neededStateDeliveryCost, neededStateOvernightDelivery, currentDue, eldOrderPrice, eldDeliveryPrice, eldFirstMonthFee, eldLastMonthFee, eldDepositFee, defaultTotalOrder, defaultBalance, balanceIfCanceled;
+public class ManagerDoOrderSoloCanceledParamsTest extends ParentTest {String  quantityOfDevices, typeOfPaymentMethod, quantityPinCable, quantityOBDPinCable, quantitySticker, quantityCamera1, quantityCamera2, neededStateDeliveryCost, neededStateOvernightDelivery, currentDue, eldOrderPrice, eldDeliveryPrice, eldFirstMonthFee, eldLastMonthFee, eldDepositFee, defaultTotalOrder, defaultBalance, balanceIfCanceled;
 
-    public ManagerDoOrderFleetCancelParamsTest(String quantityOfDevices, String typeOfPaymentMethod, String quantityPinCable, String quantityOBDPinCable, String quantitySticker, String quantityCamera1, String quantityCamera2, String neededStateDeliveryCost, String neededStateOvernightDelivery, String currentDue, String eldOrderPrice, String eldDeliveryPrice, String eldFirstMonthFee, String eldLastMonthFee, String eldDepositFee, String defaultTotalOrder, String defaultBalance, String balanceIfCanceled) {
+    public ManagerDoOrderSoloCanceledParamsTest(String quantityOfDevices, String typeOfPaymentMethod, String quantityPinCable, String quantityOBDPinCable, String quantitySticker, String quantityCamera1, String quantityCamera2, String neededStateDeliveryCost, String neededStateOvernightDelivery, String currentDue, String eldOrderPrice, String eldDeliveryPrice, String eldFirstMonthFee, String eldLastMonthFee, String eldDepositFee, String defaultTotalOrder, String defaultBalance, String balanceIfCanceled) {
         this.quantityOfDevices = quantityOfDevices;
         this.typeOfPaymentMethod = typeOfPaymentMethod;
         this.quantityPinCable = quantityPinCable;
@@ -51,32 +51,24 @@ public class ManagerDoOrderFleetCancelParamsTest extends ParentTest {String  qua
         UtilsForDB utilsForDB = new UtilsForDB();
 
         Map personalDataForEldOrder = excelDriver.getData(configProperties.DATA_FILE_PATH() + "testEldOrder.xls", "personalData");
-        Map dataForFleetValidLogIn = excelDriver.getData(configProperties.DATA_FILE_PATH() + "testLogin.xls", "validFleetLogin");
         Map dataForManagerValidLogIn = excelDriver.getData(configProperties.DATA_FILE_PATH() + "testLogin.xls", "ManagerLogin");
-        Map dataFleetId = excelDriver.getData(configProperties.DATA_FILE_PATH() + "testLogin.xls", "validFleetLogin");
-
-//        int countNewOrder = utilsForDB.getCountNewOrder(dataFleetId.get("fleetId").toString());
-//        if (countNewOrder > 0)
-//            loginPage.userValidLogIn(dataForFleetValidLogIn.get("login").toString(),dataForFleetValidLogIn.get("pass").toString());
-//        waitABit(3);
-//        modalEldPage.doCancelAgreementForManagerOrder();
-//
-//
-//        tearDown();
-//        setUp();
+        Map dataForSoloValidLogIn = ExcelDriver.getData(configProperties.DATA_FILE_PATH() + "testLogin.xls", "validSoloLogin");
+        Map dataSoloId = ExcelDriver.getData(configProperties.DATA_FILE_PATH() + "testLogin.xls", "validSoloLogin");
 
 
-        utilsForDB.getSetCurrentDueForFleet(currentDue, dataFleetId.get("fleetId").toString());
+        String idLastOrderBeforeTest = utilsForDB.getLastOrderIdForFleet(dataSoloId.get("soloId").toString());
+        utilsForDB.getSetCurrentDueForSolo(currentDue, dataSoloId.get("soloId").toString());
+
 
         loginPage.userValidLogIn(dataForManagerValidLogIn.get("login").toString(),dataForManagerValidLogIn.get("pass").toString());
 
         dashboardPage.openMenuDash();
-
         dashboardPage.goToEldPage();
 
         managerEldPage.clickOnNewOrderButton();
 
-        managerModalEldPage.selectFleetInOrder(dataForFleetValidLogIn.get("usdot").toString());
+        managerModalEldPage.selectSoloDriverInOrder(dataForSoloValidLogIn.get("login").toString());
+
         managerModalEldPage.enterPersonalData(personalDataForEldOrder.get("deliveryState").toString(), personalDataForEldOrder.get("firstName").toString(), personalDataForEldOrder.get("lastName").toString(), personalDataForEldOrder.get("phone").toString(), personalDataForEldOrder.get("addressLine").toString(), personalDataForEldOrder.get("aptNumber").toString(), personalDataForEldOrder.get("deliveryCity").toString(), personalDataForEldOrder.get("zipCode").toString());
         managerModalEldPage.enterOrderData(quantityOfDevices, quantityPinCable, quantityOBDPinCable, quantitySticker, quantityCamera1, quantityCamera2, neededStateDeliveryCost, neededStateOvernightDelivery);
 
@@ -109,7 +101,7 @@ public class ManagerDoOrderFleetCancelParamsTest extends ParentTest {String  qua
         tearDown();
         setUp();
 
-        loginPage.userValidLogIn(dataForFleetValidLogIn.get("login").toString(),dataForFleetValidLogIn.get("pass").toString());
+        loginPage.userValidLogIn(dataForSoloValidLogIn.get("login").toString(),dataForSoloValidLogIn.get("pass").toString());
 
         modalEldPage.doCancelAgreementForManagerOrder();
 

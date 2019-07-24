@@ -17,9 +17,9 @@ import java.util.Map;
 
 @RunWith(Parameterized.class)
 
-public class SoloOrderCompletedByManagerParameterizedTest extends ParentTest {String  quantityOfDevices, typeOfPaymentMethod, quantityPinCable, quantityOBDPinCable, quantitySticker, quantityCamera1, quantityCamera2, neededStatePickUpFromOffice, neededStateOvernightDelivery, currentDue, eldOrderPrice, eldDeliveryPrice, eldFirstMonthFee, eldLastMonthFee, eldDepositFee, defaultTotalOrder, defaultBalance, balanceIfCanceled;
+public class FleetDoOrderManagerCompletedOrderParamsTest extends ParentTest {String  quantityOfDevices, typeOfPaymentMethod, quantityPinCable, quantityOBDPinCable, quantitySticker, quantityCamera1, quantityCamera2, neededStatePickUpFromOffice, neededStateOvernightDelivery, currentDue, eldOrderPrice, eldDeliveryPrice, eldFirstMonthFee, eldLastMonthFee, eldDepositFee, defaultTotalOrder, defaultBalance, balanceIfCanceled;
 
-    public SoloOrderCompletedByManagerParameterizedTest(String quantityOfDevices, String typeOfPaymentMethod, String quantityPinCable, String quantityOBDPinCable, String quantitySticker, String quantityCamera1, String quantityCamera2, String neededStatePickUpFromOffice, String neededStateOvernightDelivery, String currentDue, String eldOrderPrice, String eldDeliveryPrice, String eldFirstMonthFee, String eldLastMonthFee, String eldDepositFee, String defaultTotalOrder, String defaultBalance, String balanceIfCanceled) {
+    public FleetDoOrderManagerCompletedOrderParamsTest(String quantityOfDevices, String typeOfPaymentMethod, String quantityPinCable, String quantityOBDPinCable, String quantitySticker, String quantityCamera1, String quantityCamera2, String neededStatePickUpFromOffice, String neededStateOvernightDelivery, String currentDue, String eldOrderPrice, String eldDeliveryPrice, String eldFirstMonthFee, String eldLastMonthFee, String eldDepositFee, String defaultTotalOrder, String defaultBalance, String balanceIfCanceled) {
 
         this.quantityOfDevices = quantityOfDevices;
         this.typeOfPaymentMethod = typeOfPaymentMethod;
@@ -51,20 +51,18 @@ public class SoloOrderCompletedByManagerParameterizedTest extends ParentTest {St
     @Test
     public void addNewOrder() throws InterruptedException, SQLException, IOException, ClassNotFoundException {
         ExcelDriver excelDriver = new ExcelDriver();
-        UtilsForDB utilsForDB = new UtilsForDB();
 
         Map personalDataForEldOrder = excelDriver.getData(configProperties.DATA_FILE_PATH() + "testEldOrder.xls", "personalData");
-        Map dataForSoloValidLogIn = ExcelDriver.getData(configProperties.DATA_FILE_PATH() + "testLogin.xls", "validSoloLogin");
-        Map dataSoloId = ExcelDriver.getData(configProperties.DATA_FILE_PATH() + "testLogin.xls", "validSoloLogin");
+        Map dataForFleetValidLogIn = excelDriver.getData(configProperties.DATA_FILE_PATH() + "testLogin.xls", "validFleetLogin");
+        Map dataFleetId = excelDriver.getData(configProperties.DATA_FILE_PATH() + "testLogin.xls", "validFleetLogin");
 
+        UtilsForDB utilsForDB = new UtilsForDB();
+        String idLastOrderBeforeTest = utilsForDB.getLastOrderIdForFleet(dataFleetId.get("fleetId").toString());
+        utilsForDB.getSetCurrentDueForFleet(currentDue, dataFleetId.get("fleetId").toString());
 
-        String idLastOrderBeforeTest = utilsForDB.getLastOrderIdForFleet(dataSoloId.get("soloId").toString());
-        utilsForDB.getSetCurrentDueForSolo(currentDue, dataSoloId.get("soloId").toString());
+        loginPage.userValidLogIn(dataForFleetValidLogIn.get("login").toString(),dataForFleetValidLogIn.get("pass").toString());
 
-        loginPage.userValidLogIn(dataForSoloValidLogIn.get("login").toString(),dataForSoloValidLogIn.get("pass").toString());
-
-        dashboardPage.clickOnMenuDash();
-        dashboardPage.clickMenuSizeButton();
+        dashboardPage.openMenuDash();
         dashboardPage.goToEldPage();
 
         eldUserPage.clickOnOrderELD();
@@ -75,8 +73,6 @@ public class SoloOrderCompletedByManagerParameterizedTest extends ParentTest {St
         modalEldPage.enterOrderData(quantityOfDevices, quantityPinCable, quantityOBDPinCable, quantitySticker, quantityCamera1, quantityCamera2, neededStatePickUpFromOffice, neededStateOvernightDelivery);
         modalEldPage.clickPaymentMethods(typeOfPaymentMethod);
 
-        modalEldPage.compareTotalOrder(defaultTotalOrder);
-        checkAC("Total Order is not correct", modalEldPage.compareTotalOrder(defaultTotalOrder), true);
 
         modalEldPage.compareOrderPrice(eldOrderPrice);
         checkAC("OrderPrice is not correct", modalEldPage.compareOrderPrice(eldOrderPrice), true);
@@ -100,15 +96,13 @@ public class SoloOrderCompletedByManagerParameterizedTest extends ParentTest {St
         modalEldPage.clickAgreements(quantityOfDevices);
 
 
-        String idLastOrderAfterTest = utilsForDB.getLastOrderIdForSolo(dataSoloId.get("soloId").toString());
+        String idLastOrderAfterTest = utilsForDB.getLastOrderIdForFleet(dataFleetId.get("fleetId").toString());
         checkAC("New order wasn`t created", idLastOrderBeforeTest.equals(idLastOrderAfterTest) , false);
 
         dashboardPage.goToFinancesPage();
 
         financesPage.compareBalance(defaultBalance);
         checkAC("Balance is not correct", financesPage.compareBalance(defaultBalance), true);
-
-
 
 
         tearDown();
@@ -122,22 +116,13 @@ MANAGER COMPLETED ORDER
 
         loginPage.userValidLogIn(dataForManagerValidLogIn.get("login").toString(),dataForManagerValidLogIn.get("pass").toString());
 
-
-        dashboardPage.clickOnMenuDash();
-        dashboardPage.clickMenuSizeButton();
-//        selectBrowserWindow("mainWindow");
+        dashboardPage.openMenuDash();
 
         dashboardPage.clickOnMenuPageELD();
-        Thread.sleep(5000);
-        managerEldPage.clickOnEldOrders();
-        Thread.sleep(5000);
-        managerEldPage.enterIdOrder(idLastOrderAfterTest);
-        Thread.sleep(5000);
-        managerEldPage.clickOnOrderOnList(idLastOrderAfterTest);
-        modalOrderPage.selectOrderStatus("4");
-        modalOrderPage.clickButtonSave();
-        modalOrderPage.selectOrderStatus("1");
-        modalOrderPage.clickButtonSave();
+
+        managerEldPage.openOrderInfo(idLastOrderAfterTest);
+
+        modalOrderPage.completedOrder();
 
 /*
 CHECK ORDER STATUS FROM DATABASE

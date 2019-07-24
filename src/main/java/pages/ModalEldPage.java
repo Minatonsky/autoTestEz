@@ -8,6 +8,7 @@ import org.openqa.selenium.support.FindBy;
 import static libs.Utils.waitABit;
 
 public class ModalEldPage extends ParentPage {
+    LoginPage loginPage;
 
     @FindBy(id = "number_device")
     private WebElement quantityDeviseInput;
@@ -39,16 +40,16 @@ public class ModalEldPage extends ParentPage {
     @FindBy(id = "leaseAndAgreementCheckbox")
     private WebElement agreement;
 
-    @FindBy(xpath = "//button[@class='fast_move']/i[@class='fa fa-arrow-down']")
+    @FindBy(xpath = ".//button[@class='fast_move']/i[@class='fa fa-arrow-down']")
     private WebElement buttonFastMove;
 
-    @FindBy(xpath = "//button[(text()= 'I Agree')]")
+    @FindBy(xpath = ".//button[(text()= 'I Agree')]")
     private WebElement buttonAgree;
 
-    @FindBy(xpath = "//div[@class='col-sm-6 text-center text-md-left mb-1 hidden-xs']/button[(text()='Cancel order')]")
+    @FindBy(xpath = ".//div[@class='col-sm-6 text-center text-md-left mb-1 hidden-xs']/button[(text()='Cancel order')]")
     private WebElement buttonCancel;
 
-    @FindBy(xpath = "//button[text()='Confirm']")
+    @FindBy(xpath = ".//button[text()='Confirm']")
     private WebElement buttonConfirm;
 
     @FindBy(xpath = ".//select[@name='state']")
@@ -79,11 +80,11 @@ public class ModalEldPage extends ParentPage {
     public ModalEldPage(WebDriver webDriver) {
         super(webDriver, "/dash/eld/");
     }
+    
 
-
-/*
-PERSONAL DATA
- */
+    /*
+    PERSONAL DATA
+     */
     public void selectState(String deliveryState) {actionsWithOurElements.selectValueInDropDown(typeOfState, deliveryState);}
 
     public void enterFirstName(String firstName) {actionsWithOurElements.enterTextToElement(firstNameInput, firstName);}
@@ -134,11 +135,16 @@ EQUIPMENT LEASE AND SOFTWARE SUBSCRIPTION SERVICE AGREEMENT
 
     @Step
     public void doCancelAgreementForManagerOrder(){
-        waitABit(3);
-        clickButtonFastMove();
-        clickButtonCancel();
-        clickButtonConfirm();
-        waitABit(3);
+
+            waitABit(3);
+            clickButtonFastMove();
+            waitABit(3);
+            clickButtonCancel();
+            waitABit(3);
+            clickButtonConfirm();
+            waitABit(3);
+            logger.info("Order was canceled");
+
     }
 
     @Step

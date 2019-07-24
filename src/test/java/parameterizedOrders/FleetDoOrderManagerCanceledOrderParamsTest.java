@@ -17,9 +17,9 @@ import java.util.Map;
 
 @RunWith(Parameterized.class)
 
-public class FleetCancelOrderByUserParameterizedTest extends ParentTest {String  quantityOfDevices, typeOfPaymentMethod, quantityPinCable, quantityOBDPinCable, quantitySticker, quantityCamera1, quantityCamera2, neededStatePickUpFromOffice, neededStateOvernightDelivery, currentDue, eldOrderPrice, eldDeliveryPrice, eldFirstMonthFee, eldLastMonthFee, eldDepositFee, defaultTotalOrder, defaultBalance, balanceIfCanceled;
+public class FleetDoOrderManagerCanceledOrderParamsTest extends ParentTest {String  quantityOfDevices, typeOfPaymentMethod, quantityPinCable, quantityOBDPinCable, quantitySticker, quantityCamera1, quantityCamera2, neededStatePickUpFromOffice, neededStateOvernightDelivery, currentDue, eldOrderPrice, eldDeliveryPrice, eldFirstMonthFee, eldLastMonthFee, eldDepositFee, defaultTotalOrder, defaultBalance, balanceIfCanceled;
 
-    public FleetCancelOrderByUserParameterizedTest(String quantityOfDevices, String typeOfPaymentMethod, String quantityPinCable, String quantityOBDPinCable, String quantitySticker, String quantityCamera1, String quantityCamera2, String neededStatePickUpFromOffice, String neededStateOvernightDelivery, String currentDue, String eldOrderPrice, String eldDeliveryPrice, String eldFirstMonthFee, String eldLastMonthFee, String eldDepositFee, String defaultTotalOrder, String defaultBalance, String balanceIfCanceled) {
+    public FleetDoOrderManagerCanceledOrderParamsTest(String quantityOfDevices, String typeOfPaymentMethod, String quantityPinCable, String quantityOBDPinCable, String quantitySticker, String quantityCamera1, String quantityCamera2, String neededStatePickUpFromOffice, String neededStateOvernightDelivery, String currentDue, String eldOrderPrice, String eldDeliveryPrice, String eldFirstMonthFee, String eldLastMonthFee, String eldDepositFee, String defaultTotalOrder, String defaultBalance, String balanceIfCanceled) {
 
         this.quantityOfDevices = quantityOfDevices;
         this.typeOfPaymentMethod = typeOfPaymentMethod;
@@ -54,16 +54,15 @@ public class FleetCancelOrderByUserParameterizedTest extends ParentTest {String 
 
         Map personalDataForEldOrder = excelDriver.getData(configProperties.DATA_FILE_PATH() + "testEldOrder.xls", "personalData");
         Map dataForFleetValidLogIn = excelDriver.getData(configProperties.DATA_FILE_PATH() + "testLogin.xls", "validFleetLogin");
-
+        Map dataFleetId = excelDriver.getData(configProperties.DATA_FILE_PATH() + "testLogin.xls", "validFleetLogin");
 
         UtilsForDB utilsForDB = new UtilsForDB();
-        String idLastOrderBeforeTest = utilsForDB.getLastOrderIdForFleet(dataForFleetValidLogIn.get("fleetId").toString());
-        utilsForDB.getSetCurrentDueForFleet(currentDue, dataForFleetValidLogIn.get("fleetId").toString());
+        String idLastOrderBeforeTest = utilsForDB.getLastOrderIdForFleet(dataFleetId.get("fleetId").toString());
+        utilsForDB.getSetCurrentDueForFleet(currentDue, dataFleetId.get("fleetId").toString());
 
         loginPage.userValidLogIn(dataForFleetValidLogIn.get("login").toString(),dataForFleetValidLogIn.get("pass").toString());
 
-        dashboardPage.clickOnMenuDash();
-        dashboardPage.clickMenuSizeButton();
+        dashboardPage.openMenuDash();
         dashboardPage.goToEldPage();
 
         eldUserPage.clickOnOrderELD();
@@ -95,11 +94,9 @@ public class FleetCancelOrderByUserParameterizedTest extends ParentTest {String 
         modalEldPage.compareTotalOrder(defaultTotalOrder);
         checkAC("Total Order is not correct", modalEldPage.compareTotalOrder(defaultTotalOrder), true);
 
-
         modalEldPage.clickAgreements(quantityOfDevices);
 
-
-        String idLastOrderAfterTest = utilsForDB.getLastOrderIdForFleet(dataForFleetValidLogIn.get("fleetId").toString());
+        String idLastOrderAfterTest = utilsForDB.getLastOrderIdForFleet(dataFleetId.get("fleetId").toString());
         checkAC("New order wasn`t created", idLastOrderBeforeTest.equals(idLastOrderAfterTest) , false);
 
         dashboardPage.goToFinancesPage();
@@ -107,18 +104,43 @@ public class FleetCancelOrderByUserParameterizedTest extends ParentTest {String 
         financesPage.compareBalance(defaultBalance);
         checkAC("Balance is not correct", financesPage.compareBalance(defaultBalance), true);
 
-        ///////////////
 
-        dashboardPage.goToEldPage();
+        tearDown();
+        setUp();
 
-        eldUserPage.cancelEldDevices(idLastOrderAfterTest);
+/*
+MANAGER CANCEL ORDER
+ */
 
-        dashboardPage.goToFinancesPage();
+        Map dataForManagerValidLogIn = excelDriver.getData(configProperties.DATA_FILE_PATH() + "testLogin.xls", "ManagerLogin");
+
+        loginPage.userValidLogIn(dataForManagerValidLogIn.get("login").toString(),dataForManagerValidLogIn.get("pass").toString());
+
+        dashboardPage.openMenuDash();
+        dashboardPage.clickOnMenuPageELD();
+
+        managerEldPage.openOrderInfo(idLastOrderAfterTest);
+
+        modalOrderPage.selectOrderStatus("2");
+        modalOrderPage.clickButtonSave();
+
+        tearDown();
+        setUp();
+
+/*
+USER CHECK IF BALANCE NOT CHANGED
+ */
+
+        loginPage.userValidLogIn(dataForFleetValidLogIn.get("login").toString(),dataForFleetValidLogIn.get("pass").toString());
+
+        dashboardPage.openMenuDash();
+
+        dashboardPage.clickOnMenuPageFinances();
 
         financesPage.compareBalance(balanceIfCanceled);
         checkAC("Balance is not correct", financesPage.compareBalance(balanceIfCanceled), true);
-
-
-
     }
+
+
 }
+

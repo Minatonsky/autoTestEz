@@ -21,4 +21,10 @@ public class ModalOrderPage extends ParentPage {
     public void clickButtonSave(){actionsWithOurElements.clickOnElement(buttonSave);}
 
 
+    public void completedOrder() {
+        selectOrderStatus("4");
+        clickButtonSave();
+        selectOrderStatus("1");
+        clickButtonSave();
+    }
 }
