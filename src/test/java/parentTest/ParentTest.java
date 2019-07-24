@@ -30,9 +30,10 @@ public class ParentTest {
     protected DashboardPage dashboardPage;
     protected ModalEldPage modalEldPage;
     protected FinancesPage financesPage;
-    protected EldManagerPage eldManagerPage;
+    protected ManagerEldPage managerEldPage;
     protected ModalOrderPage modalOrderPage;
     protected EldUserPage eldUserPage;
+    protected ManagerModalEldPage managerModalEldPage;
 
     String browser = System.getProperty("browser");
     protected static ConfigProperties configProperties = ConfigFactory.create(ConfigProperties.class);
@@ -48,9 +49,10 @@ public class ParentTest {
         dashboardPage = new DashboardPage(webDriver);
         modalEldPage = new ModalEldPage(webDriver);
         financesPage = new FinancesPage(webDriver);
-        eldManagerPage = new EldManagerPage(webDriver);
+        managerEldPage = new ManagerEldPage(webDriver);
         modalOrderPage = new ModalOrderPage(webDriver);
         eldUserPage = new EldUserPage(webDriver);
+        managerModalEldPage = new ManagerModalEldPage(webDriver);
 
 
 

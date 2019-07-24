@@ -2,7 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="660eb711-957d-418e-9483-8b2931da6e6e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/parameterizedOrders/ManagerDoOrderFleetCancelParamsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/parameterizedOrders/ManagerDoOrderSoloAgreeParamsTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/qalight.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/qalight.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/data/testParameterizedOrder.xls" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/data/testParameterizedOrder.xls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/DashboardPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/DashboardPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/ManagerModalEldPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/ManagerModalEldPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/ModalEldPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/ModalEldPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/parameterizedOrders/ManagerDoOrderForFleetParameterizedTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/parameterizedOrders/ManagerDoOrderFleetAgreeParamsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/parameterizedOrders/SoloCancelOrderByManagerParameterizedTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/parameterizedOrders/SoloCancelOrderByManagerParameterizedTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/parameterizedOrders/SoloOrderCompletedByManagerParameterizedTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/parameterizedOrders/SoloOrderCompletedByManagerParameterizedTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -23,8 +33,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/pages/ModalEldPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2703">
-              <caret line="167" column="59" selection-start-line="167" selection-start-column="59" selection-end-line="167" selection-end-column="59" />
+            <state relative-caret-position="392">
+              <caret line="136" column="20" lean-forward="true" selection-start-line="136" selection-start-column="8" selection-end-line="136" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -33,19 +43,41 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/orders/FleetEldOrderCancelByUserTest.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pages/ManagerModalEldPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1139">
-              <caret line="74" column="27" selection-start-line="74" selection-start-column="27" selection-end-line="74" selection-end-column="27" />
+            <state relative-caret-position="622">
+              <caret line="156" column="31" lean-forward="true" selection-start-line="156" selection-start-column="31" selection-end-line="156" selection-end-column="31" />
+              <folding>
+                <element signature="e#2267#2448#0" />
+                <element signature="e#3625#3762#0" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pages/EldUserPage.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/parameterizedOrders/ManagerDoOrderSoloAgreeParamsTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="648">
-              <caret line="56" column="5" selection-start-line="56" selection-start-column="5" selection-end-line="56" selection-end-column="5" />
+            <state relative-caret-position="-221">
+              <caret line="48" column="23" lean-forward="true" selection-start-line="48" selection-start-column="23" selection-end-line="48" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/parameterizedOrders/ManagerDoOrderFleetCancelParamsTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="92">
+              <caret line="61" column="8" lean-forward="true" selection-start-line="61" selection-start-column="8" selection-end-line="61" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/parameterizedOrders/ManagerDoOrderFleetAgreeParamsTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="883">
+              <caret line="102" column="37" selection-start-line="102" selection-start-column="37" selection-end-line="102" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -71,27 +103,13 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Den-11-07" />
+        <entry key="$PROJECT_DIR$" value="Den-12-07" />
       </map>
     </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/libs/Utils.java" />
-        <option value="$PROJECT_DIR$/src/test/java/loginTests/LoginTestWithExell.java" />
-        <option value="$PROJECT_DIR$/src/test/java/loginTests/unValidLoginWithParamsWithExel.java" />
-        <option value="$PROJECT_DIR$/src/main/java/libs/ConfigProperties.java" />
-        <option value="$PROJECT_DIR$/src/test/java/loginTests/unValidLoginWithParamsWithExcel.java" />
-        <option value="$PROJECT_DIR$/src/main/java/libs/ConfigProperties.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/libs/Database.java" />
-        <option value="$PROJECT_DIR$/src/test/java/loginTests/UnValidLoginWithParams.java" />
-        <option value="$PROJECT_DIR$/src/test/java/loginTests/LoginTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pages/Finances.java" />
-        <option value="$PROJECT_DIR$/src/test/java/orders/NewEldOrderTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/orders/EldOrderWithParamsExcel.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pages/ExcelDriver.java" />
-        <option value="$PROJECT_DIR$/src/test/java/loginTests/LoginTestWithExel.java" />
         <option value="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" />
         <option value="$PROJECT_DIR$/src/main/resources/allure.properties.properties" />
         <option value="$PROJECT_DIR$/pom.xml" />
@@ -109,9 +127,7 @@
         <option value="$PROJECT_DIR$/src/test/java/loginTests/UnValidLoginWithParamsWithExcel.java" />
         <option value="$PROJECT_DIR$/src/main/java/libs/ExcelDriver.java" />
         <option value="$PROJECT_DIR$/src/test/java/parameterizedOrders/FleetEldOrderParameterzedTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/libs/ActionsWithOurElements.java" />
         <option value="$PROJECT_DIR$/src/main/java/pages/ModalOrderPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/parameterizedOrders/FleetEldOrderParameterizedTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/orders/EldOrderTestWithExcelParams.java" />
         <option value="$PROJECT_DIR$/src/test/java/orders/FleetEldOrderCancelByManagerTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/orders/FleetEldOrderCompletedByManagerTest.java" />
@@ -119,16 +135,32 @@
         <option value="$PROJECT_DIR$/src/test/java/orders/SoloEldOrderCancelByManagerTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/orders/SoloEldOrderCompletedByManagerTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/orders/ManagerCompletedOrderTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pages/ModalEldPage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pages/EldManagerPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/parentTest/ParentTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pages/DashboardPage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/libs/UtilsForDB.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pages/EldUserPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/testDB/TestDataBase.java" />
         <option value="$PROJECT_DIR$/src/test/java/parameterizedOrders/SoloEldOrderParameterizedTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/orders/SoloEldOrderCancelByUserTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/libs/UtilsForDB.java" />
+        <option value="$PROJECT_DIR$/src/test/java/testDB/TestDataBase.java" />
+        <option value="$PROJECT_DIR$/src/main/java/libs/Utils.java" />
+        <option value="$PROJECT_DIR$/src/test/java/loginTests/LoginTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/libs/ActionsWithOurElements.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pages/EldUserPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/orders/FleetEldOrderCancelByUserTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/parameterizedOrders/FleetEldOrderParameterizedTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/parameterizedOrders/SoloCancelOrderParameterizedTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/parameterizedOrders/FleetOrderCancelByManagerParameterizedTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/parameterizedOrders/ManagerDoOrderForUserParameterizedTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/parameterizedOrders/FleetCancelOrderByUserParameterizedTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pages/EldManagerPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/parentTest/ParentTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/parameterizedOrders/FleetOrderCompletedByManagerParameterizedTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/parameterizedOrders/ManagerDoOrderForFleetParameterizedTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/parameterizedOrders/SoloCancelOrderByManagerParameterizedTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pages/DashboardPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/parameterizedOrders/ManagerDoOrderFleetCancelParamsTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/parameterizedOrders/SoloOrderCompletedByManagerParameterizedTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pages/ModalEldPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/parameterizedOrders/ManagerDoOrderFleetAgreeParamsTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pages/ManagerModalEldPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/parameterizedOrders/ManagerDoOrderSoloAgreeParamsTest.java" />
       </list>
     </option>
   </component>
@@ -162,10 +194,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1571" />
-    <option name="y" value="-25" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="x" value="1786" />
+    <option name="y" value="-18" />
+    <option name="width" value="1026" />
+    <option name="height" value="546" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -173,22 +205,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Scope 'Production'; set:Production; class com.intellij.psi.search.scope.ProjectProductionScope">
-          <expand>
-            <path>
-              <item name="testdevEzlogz" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="testdevEzlogz" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-            </path>
-            <path>
-              <item name="testdevEzlogz" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="testdevEzlogz" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -225,7 +241,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="libs" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="testdevEzlogz" type="b2602c69:ProjectViewProjectNode" />
@@ -264,13 +280,21 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="parentTest" type="462c0819:PsiDirectoryNode" />
             </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Scope 'Production'; set:Production; class com.intellij.psi.search.scope.ProjectProductionScope">
+          <expand>
             <path>
-              <item name="testdevEzlogz" type="b2602c69:ProjectViewProjectNode" />
-              <item name="testdevEzlogz" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="testDB" type="462c0819:PsiDirectoryNode" />
+              <item name="testdevEzlogz" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="testdevEzlogz" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+            </path>
+            <path>
+              <item name="testdevEzlogz" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="testdevEzlogz" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
           </expand>
           <select />
@@ -293,21 +317,22 @@
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\workspace\testdevEzlogz\src\main\java\pages" />
+      <recent name="C:\workspace\testdevEzlogz\src\main\java\data" />
+      <recent name="C:\workspace\testdevEzlogz\src\drivers" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="parameterizedOrders" />
+      <recent name="pages" />
+      <recent name="loginTests" />
+      <recent name="orders" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\workspace\testdevEzlogz\src\main\java\data" />
       <recent name="C:\workspace\testdevEzlogz\src\main\java\libs" />
       <recent name="C:\workspace\testdevEzlogz\src\test\java\restTest" />
       <recent name="C:\workspace\testdevEzlogz\src" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="parameterizedOrders" />
-      <recent name="loginTests" />
-      <recent name="orders" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\workspace\testdevEzlogz\src\main\java\pages" />
-      <recent name="C:\workspace\testdevEzlogz\src\main\java\data" />
-      <recent name="C:\workspace\testdevEzlogz\src\drivers" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -322,24 +347,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.FleetEldOrderCancelByUserTest.addNewOrder">
-    <configuration name="FleetEldOrderCancelByUserTest.addNewOrder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="testdevEzlogz" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="orders.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="orders" />
-      <option name="MAIN_CLASS_NAME" value="orders.FleetEldOrderCancelByUserTest" />
-      <option name="METHOD_NAME" value="addNewOrder" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SoloEldOrderParameterizedTest.addNewOrder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.ManagerDoOrderSoloAgreeParamsTest.addNewOrder">
+    <configuration name="FleetCancelOrderByUserParameterizedTest.addNewOrder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="testdevEzlogz" />
       <extension name="coverage">
         <pattern>
@@ -348,55 +357,71 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="parameterizedOrders" />
-      <option name="MAIN_CLASS_NAME" value="parameterizedOrders.SoloEldOrderParameterizedTest" />
+      <option name="MAIN_CLASS_NAME" value="parameterizedOrders.FleetCancelOrderByUserParameterizedTest" />
       <option name="METHOD_NAME" value="addNewOrder" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestDataBase" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ManagerDoOrderFleetAgreeParamsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="testdevEzlogz" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="testDB.*" />
+          <option name="PATTERN" value="parameterizedOrders.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="testDB" />
-      <option name="MAIN_CLASS_NAME" value="testDB.TestDataBase" />
+      <option name="PACKAGE_NAME" value="parameterizedOrders" />
+      <option name="MAIN_CLASS_NAME" value="parameterizedOrders.ManagerDoOrderFleetAgreeParamsTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestDataBase.testDBSetCurrentDueForFleet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ManagerDoOrderFleetAgreeParamsTest.addNewOrder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="testdevEzlogz" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="testDB.*" />
+          <option name="PATTERN" value="parameterizedOrders.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="testDB" />
-      <option name="MAIN_CLASS_NAME" value="testDB.TestDataBase" />
-      <option name="METHOD_NAME" value="testDBSetCurrentDueForFleet" />
+      <option name="PACKAGE_NAME" value="parameterizedOrders" />
+      <option name="MAIN_CLASS_NAME" value="parameterizedOrders.ManagerDoOrderFleetAgreeParamsTest" />
+      <option name="METHOD_NAME" value="addNewOrder" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestDataBase.testGetLocalIdDevicesForLastOrder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ManagerDoOrderFleetCancelParamsTest.addNewOrder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="testdevEzlogz" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="testDB.*" />
+          <option name="PATTERN" value="parameterizedOrders.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="testDB" />
-      <option name="MAIN_CLASS_NAME" value="testDB.TestDataBase" />
-      <option name="METHOD_NAME" value="testGetLocalIdDevicesForLastOrder" />
+      <option name="PACKAGE_NAME" value="parameterizedOrders" />
+      <option name="MAIN_CLASS_NAME" value="parameterizedOrders.ManagerDoOrderFleetCancelParamsTest" />
+      <option name="METHOD_NAME" value="addNewOrder" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ManagerDoOrderSoloAgreeParamsTest.addNewOrder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="testdevEzlogz" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="parameterizedOrders.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="parameterizedOrders" />
+      <option name="MAIN_CLASS_NAME" value="parameterizedOrders.ManagerDoOrderSoloAgreeParamsTest" />
+      <option name="METHOD_NAME" value="addNewOrder" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -447,20 +472,20 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="JUnit.FleetEldOrderCancelByUserTest.addNewOrder" />
-      <item itemvalue="JUnit.SoloEldOrderParameterizedTest.addNewOrder" />
-      <item itemvalue="JUnit.TestDataBase" />
-      <item itemvalue="JUnit.TestDataBase.testDBSetCurrentDueForFleet" />
-      <item itemvalue="JUnit.TestDataBase.testGetLocalIdDevicesForLastOrder" />
+      <item itemvalue="JUnit.FleetCancelOrderByUserParameterizedTest.addNewOrder" />
+      <item itemvalue="JUnit.ManagerDoOrderFleetAgreeParamsTest.addNewOrder" />
       <item itemvalue="Maven.Run testdevEzlogz []" />
+      <item itemvalue="JUnit.ManagerDoOrderFleetAgreeParamsTest" />
+      <item itemvalue="JUnit.ManagerDoOrderFleetCancelParamsTest.addNewOrder" />
+      <item itemvalue="JUnit.ManagerDoOrderSoloAgreeParamsTest.addNewOrder" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.FleetEldOrderCancelByUserTest.addNewOrder" />
-        <item itemvalue="JUnit.SoloEldOrderParameterizedTest.addNewOrder" />
-        <item itemvalue="JUnit.TestDataBase.testGetLocalIdDevicesForLastOrder" />
-        <item itemvalue="JUnit.TestDataBase" />
-        <item itemvalue="JUnit.TestDataBase.testDBSetCurrentDueForFleet" />
+        <item itemvalue="JUnit.ManagerDoOrderSoloAgreeParamsTest.addNewOrder" />
+        <item itemvalue="JUnit.ManagerDoOrderFleetCancelParamsTest.addNewOrder" />
+        <item itemvalue="JUnit.ManagerDoOrderFleetAgreeParamsTest.addNewOrder" />
+        <item itemvalue="JUnit.ManagerDoOrderFleetAgreeParamsTest" />
+        <item itemvalue="JUnit.FleetCancelOrderByUserParameterizedTest.addNewOrder" />
       </list>
     </recent_temporary>
   </component>
@@ -622,39 +647,60 @@
       <option name="project" value="LOCAL" />
       <updated>1563572336121</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="cancel 2 test was added">
+      <created>1563606652999</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1563606653000</updated>
+    </task>
+    <task id="LOCAL-00022" summary="cancel with params test was added">
+      <created>1563645302856</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1563645302856</updated>
+    </task>
+    <task id="LOCAL-00023" summary="manager do order with params test was added">
+      <created>1563825094650</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1563825094650</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestDataBase_testGetLocalIdDevicesForLastOrder - 2019.07.19 at 20h 06m 31s.xml">
-      <configuration name="TestDataBase.testGetLocalIdDevicesForLastOrder" configurationId="JUnit" />
+    <history-entry file="ManagerDoOrderForFleetParameterizedTest_addNewOrder - 2019.07.23 at 17h 00m 12s.xml">
+      <configuration name="ManagerDoOrderForFleetParameterizedTest.addNewOrder" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestDataBase_testGetLocalIdDevicesForLastOrder - 2019.07.19 at 20h 07m 25s.xml">
-      <configuration name="TestDataBase.testGetLocalIdDevicesForLastOrder" configurationId="JUnit" />
+    <history-entry file="ManagerDoOrderForFleetParameterizedTest_addNewOrder - 2019.07.23 at 17h 05m 51s.xml">
+      <configuration name="ManagerDoOrderForFleetParameterizedTest.addNewOrder" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestDataBase - 2019.07.19 at 20h 08m 50s.xml">
-      <configuration name="TestDataBase" configurationId="JUnit" />
+    <history-entry file="ManagerDoOrderFleetAgreeParamsTest_addNewOrder - 2019.07.23 at 19h 02m 49s.xml">
+      <configuration name="ManagerDoOrderFleetAgreeParamsTest.addNewOrder" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestDataBase - 2019.07.19 at 20h 12m 09s.xml">
-      <configuration name="TestDataBase" configurationId="JUnit" />
+    <history-entry file="ManagerDoOrderFleetCancelParamsTest_addNewOrder - 2019.07.23 at 19h 16m 54s.xml">
+      <configuration name="ManagerDoOrderFleetCancelParamsTest.addNewOrder" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestDataBase_testGetLocalIdDevicesForLastOrder - 2019.07.19 at 20h 59m 37s.xml">
-      <configuration name="TestDataBase.testGetLocalIdDevicesForLastOrder" configurationId="JUnit" />
+    <history-entry file="ManagerDoOrderFleetCancelParamsTest_addNewOrder - 2019.07.23 at 19h 38m 14s.xml">
+      <configuration name="ManagerDoOrderFleetCancelParamsTest.addNewOrder" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestDataBase_testGetLocalIdDevicesForLastOrder - 2019.07.19 at 21h 00m 23s.xml">
-      <configuration name="TestDataBase.testGetLocalIdDevicesForLastOrder" configurationId="JUnit" />
+    <history-entry file="ManagerDoOrderFleetCancelParamsTest_addNewOrder - 2019.07.23 at 19h 52m 16s.xml">
+      <configuration name="ManagerDoOrderFleetCancelParamsTest.addNewOrder" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestDataBase_testGetLocalIdDevicesForLastOrder - 2019.07.19 at 21h 33m 42s.xml">
-      <configuration name="TestDataBase.testGetLocalIdDevicesForLastOrder" configurationId="JUnit" />
+    <history-entry file="ManagerDoOrderFleetCancelParamsTest_addNewOrder - 2019.07.23 at 19h 57m 27s.xml">
+      <configuration name="ManagerDoOrderFleetCancelParamsTest.addNewOrder" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SoloEldOrderParameterizedTest_addNewOrder - 2019.07.20 at 00h 13m 30s.xml">
-      <configuration name="SoloEldOrderParameterizedTest.addNewOrder" configurationId="JUnit" />
+    <history-entry file="ManagerDoOrderSoloAgreeParamsTest_addNewOrder - 2019.07.23 at 20h 37m 49s.xml">
+      <configuration name="ManagerDoOrderSoloAgreeParamsTest.addNewOrder" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FleetEldOrderCancelByUserTest_addNewOrder - 2019.07.20 at 00h 26m 37s.xml">
-      <configuration name="FleetEldOrderCancelByUserTest.addNewOrder" configurationId="JUnit" />
+    <history-entry file="ManagerDoOrderSoloAgreeParamsTest_addNewOrder - 2019.07.23 at 20h 39m 41s.xml">
+      <configuration name="ManagerDoOrderSoloAgreeParamsTest.addNewOrder" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FleetEldOrderCancelByUserTest_addNewOrder - 2019.07.20 at 00h 36m 06s.xml">
-      <configuration name="FleetEldOrderCancelByUserTest.addNewOrder" configurationId="JUnit" />
+    <history-entry file="ManagerDoOrderSoloAgreeParamsTest_addNewOrder - 2019.07.23 at 21h 16m 22s.xml">
+      <configuration name="ManagerDoOrderSoloAgreeParamsTest.addNewOrder" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
@@ -672,7 +718,7 @@
   <component name="ToolWindowManager">
     <frame x="1358" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21481876" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21162046" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -680,16 +726,16 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.45666668" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.28444445" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.45555556" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.11111111" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.34353742" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32993197" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3288889" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="8" visible="true" weight="0.15222222" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.24111111" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.096938774" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.33777776" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.2488889" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -703,7 +749,7 @@
       <window_info anchor="right" id="Palette&#9;" order="8" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.2397882" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20948827" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -711,18 +757,18 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3265306" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.41326532" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.24111111" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.45578232" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.27" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.34353742" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32993197" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3288889" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" visible="true" weight="0.105442174" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.093333334" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.096938774" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.33777776" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.05" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.2488889" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -736,6 +782,32 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add xml" />
@@ -756,14 +828,17 @@
     <MESSAGE value="solo and manager different test was added" />
     <MESSAGE value="parameters test was added" />
     <MESSAGE value="cancel test was added" />
-    <option name="LAST_COMMIT_MESSAGE" value="cancel test was added" />
+    <MESSAGE value="cancel 2 test was added" />
+    <MESSAGE value="cancel with params test was added" />
+    <MESSAGE value="manager do order with params test was added" />
+    <option name="LAST_COMMIT_MESSAGE" value="manager do order with params test was added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/parentTest/ParentTest.java</url>
-          <line>93</line>
+          <line>95</line>
           <properties />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
@@ -779,94 +854,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/loginTests/UnValidLoginWithParams.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="29" column="19" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi/4.1.0/poi-4.1.0.jar!/org/apache/poi/hssf/usermodel/HSSFCell.class" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/orders/EldOrderWithParamsExcel.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/libs/ConfigProperties.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pages/ExcelDriver.java" />
-    <entry file="file://$PROJECT_DIR$/.allure/allure-2.0.1/bin/allure">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-612" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.allure/allure-2.0.1/plugins/README.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/allure.properties.properties" />
-    <entry file="file://$PROJECT_DIR$/.allure/allure-2.0.1/plugins/junit-plugin/allure-plugin.yml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="89" column="37" lean-forward="true" selection-start-line="89" selection-start-column="37" selection-end-line="89" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/libs/Utils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1054">
-          <caret line="68" column="28" selection-start-line="68" selection-start-column="28" selection-end-line="68" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#411#412#0" expanded="true" />
-            <element signature="e#461#462#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/loginTests/LoginTestWithExcel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="21" lean-forward="true" selection-end-line="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/libs/ConfigData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.11/junit-4.11.jar!/org/junit/runners/Parameterized.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-731">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/loginTests/LoginTestWithOutPageObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="548">
-          <caret line="49" column="25" selection-start-line="49" selection-start-column="25" selection-end-line="49" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/loginTests/TestRule.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/orders/NewEldOrderTest.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/lang/String.java">
@@ -882,16 +869,6 @@
           <caret line="1" column="2" lean-forward="true" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="2" />
           <folding>
             <element signature="e#0#1069#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/loginTests/LoginTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="40" lean-forward="true" selection-start-line="8" selection-start-column="8" selection-end-line="12" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -914,27 +891,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/loginTests/OrderWithParamsWithExcel.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/pages/LoginPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="60" column="25" selection-start-line="60" selection-start-column="25" selection-end-line="60" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-support/3.12.0/selenium-support-3.12.0.jar!/org/openqa/selenium/support/ui/WebDriverWait.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-api/3.8.1/selenium-api-3.8.1.jar!/org/openqa/selenium/WebDriver.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="91" column="47" selection-start-line="91" selection-start-column="47" selection-end-line="91" selection-end-column="47" />
         </state>
       </provider>
     </entry>
@@ -948,23 +908,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pages/ParentPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="27" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/parameterizedOrders/FleetEldOrderParameterizedTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-135">
-          <caret line="64" column="38" selection-start-line="64" selection-start-column="38" selection-end-line="64" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/orders/EldOrderTestWithExcelParams.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-197">
@@ -972,13 +915,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/orders/FleetEldOrderCancelByManagerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-814">
-          <caret line="35" column="38" selection-start-line="35" selection-start-column="38" selection-end-line="35" selection-end-column="38" />
         </state>
       </provider>
     </entry>
@@ -996,13 +932,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/orders/SoloEldOrderCompletedByManagerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="31" column="38" selection-start-line="31" selection-start-column="38" selection-end-line="31" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/libs/ConfigProperties.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -1010,10 +939,224 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/orders/SoloEldOrderCancelByManagerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-209">
+          <caret line="31" column="38" selection-start-line="31" selection-start-column="38" selection-end-line="31" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/orders/SoloEldOrderCancelByUserTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="111" column="16" lean-forward="true" selection-start-line="111" selection-start-column="16" selection-end-line="111" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/libs/Database.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="321">
+          <caret line="108" column="20" selection-start-line="108" selection-start-column="8" selection-end-line="108" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/libs/UtilsForDB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="49" column="23" selection-start-line="49" selection-start-column="11" selection-end-line="49" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/testDB/TestDataBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="47" column="40" selection-start-line="44" selection-start-column="7" selection-end-line="47" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/libs/ConfigProperties.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/libs/ConfigData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-api/3.8.1/selenium-api-3.8.1.jar!/org/openqa/selenium/WebDriver.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="95" column="62" selection-start-line="95" selection-start-column="8" selection-end-line="95" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/util/concurrent/TimeUnit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="119" column="4" selection-start-line="119" selection-start-column="4" selection-end-line="119" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pages/ParentPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="27" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/libs/Utils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="43" column="33" selection-start-line="43" selection-start-column="33" selection-end-line="43" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#411#412#0" expanded="true" />
+            <element signature="e#461#462#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pages/LoginPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="60" column="25" selection-start-line="60" selection-start-column="25" selection-end-line="60" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/loginTests/LoginTestWithExcel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/parameterizedOrders/FleetEldOrderParameterizedTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="430">
+          <caret line="105" selection-start-line="105" selection-end-line="105" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pages/FinancesPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/loginTests/LoginTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="44" lean-forward="true" selection-start-line="15" selection-start-column="8" selection-end-line="16" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/orders/FleetEldOrderCancelByUserTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="15" column="20" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/orders/FleetEldOrderCancelByManagerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="295">
+          <caret line="136" lean-forward="true" selection-start-line="92" selection-start-column="7" selection-end-line="136" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/orders/SoloEldOrderCompletedByManagerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="417">
+          <caret line="122" column="5" lean-forward="true" selection-start-line="122" selection-start-column="5" selection-end-line="122" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/parameterizedOrders/SoloCancelOrderByUserParameterizedTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-789">
+          <caret line="51" column="22" selection-start-line="51" selection-start-column="22" selection-end-line="51" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/parameterizedOrders/FleetOrderCancelByManagerParameterizedTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="154" column="96" lean-forward="true" selection-start-line="148" selection-start-column="8" selection-end-line="154" selection-end-column="96" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/parameterizedOrders/FleetCancelOrderByUserParameterizedTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="67" lean-forward="true" selection-start-line="67" selection-end-line="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/orders/ManagerCompletedOrderTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="20" column="128" lean-forward="true" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="128" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pages/EldUserPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="14" column="55" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#clickOnOrderELD#0;class#EldUserPage#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/parentTest/ParentTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="25" column="28" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
+        <state relative-caret-position="34">
+          <caret line="35" column="54" selection-start-line="35" selection-start-column="54" selection-end-line="35" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/libs/ActionsWithOurElements.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="86" column="16" selection-start-line="86" selection-start-column="16" selection-end-line="86" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1030,128 +1173,103 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/orders/ManagerCompletedOrderTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/pages/ManagerEldPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="32" column="27" lean-forward="true" selection-start-line="32" selection-start-column="27" selection-end-line="32" selection-end-column="27" />
+        <state relative-caret-position="255">
+          <caret line="15" column="57" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="57" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#960#961#0" expanded="true" />
+            <element signature="e#1029#1030#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/orders/SoloEldOrderCancelByManagerTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/parameterizedOrders/SoloCancelOrderByManagerParameterizedTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-209">
-          <caret line="31" column="38" selection-start-line="31" selection-start-column="38" selection-end-line="31" selection-end-column="38" />
+        <state relative-caret-position="526">
+          <caret line="146" column="53" selection-start-line="146" selection-start-column="36" selection-end-line="146" selection-end-column="53" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pages/DashboardPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-16">
-          <caret line="22" column="8" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
+        <state relative-caret-position="296">
+          <caret line="51" column="28" selection-start-line="51" selection-start-column="16" selection-end-line="51" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#DashboardPage#0;class#DashboardPage#0" />
+            <element signature="e#949#950#0" expanded="true" />
+            <element signature="e#1012#1013#0" expanded="true" />
+            <element signature="e#1051#1052#0" expanded="true" />
+            <element signature="e#1117#1118#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/libs/Database.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/parameterizedOrders/FleetOrderCompletedByManagerParameterizedTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2006">
-          <caret line="142" column="50" selection-start-line="142" selection-start-column="50" selection-end-line="142" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pages/EldManagerPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="426">
-          <caret line="29" column="1" lean-forward="true" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pages/FinancesPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        <state relative-caret-position="1488">
+          <caret line="109" selection-start-line="109" selection-end-line="109" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/parameterizedOrders/SoloEldOrderParameterizedTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="70" lean-forward="true" selection-start-line="70" selection-end-line="70" />
+        <state relative-caret-position="500">
+          <caret line="95" column="104" lean-forward="true" selection-start-line="94" selection-start-column="8" selection-end-line="95" selection-end-column="104" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/libs/ActionsWithOurElements.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/parameterizedOrders/SoloOrderCompletedByManagerParameterizedTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="35" column="16" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="16" />
+        <state relative-caret-position="-92">
+          <caret line="103" column="104" lean-forward="true" selection-start-line="102" selection-start-column="8" selection-end-line="103" selection-end-column="104" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/parameterizedOrders/ManagerDoOrderFleetCancelParamsTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="61" column="8" lean-forward="true" selection-start-line="61" selection-start-column="8" selection-end-line="61" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/parameterizedOrders/ManagerDoOrderFleetAgreeParamsTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="883">
+          <caret line="102" column="37" selection-start-line="102" selection-start-column="37" selection-end-line="102" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/testDB/TestDataBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="37" selection-start-line="37" selection-end-line="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/libs/UtilsForDB.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="51" column="27" selection-start-line="51" selection-start-column="27" selection-end-line="51" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/orders/SoloEldOrderCancelByUserTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="111" column="16" lean-forward="true" selection-start-line="111" selection-start-column="16" selection-end-line="111" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pages/ModalEldPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2703">
-          <caret line="167" column="59" selection-start-line="167" selection-start-column="59" selection-end-line="167" selection-end-column="59" />
+        <state relative-caret-position="392">
+          <caret line="136" column="20" lean-forward="true" selection-start-line="136" selection-start-column="8" selection-end-line="136" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/orders/FleetEldOrderCancelByUserTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/pages/ManagerModalEldPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1139">
-          <caret line="74" column="27" selection-start-line="74" selection-start-column="27" selection-end-line="74" selection-end-column="27" />
+        <state relative-caret-position="622">
+          <caret line="156" column="31" lean-forward="true" selection-start-line="156" selection-start-column="31" selection-end-line="156" selection-end-column="31" />
+          <folding>
+            <element signature="e#2267#2448#0" />
+            <element signature="e#3625#3762#0" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pages/EldUserPage.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/parameterizedOrders/ManagerDoOrderSoloAgreeParamsTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="648">
-          <caret line="56" column="5" selection-start-line="56" selection-start-column="5" selection-end-line="56" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="-221">
+          <caret line="48" column="23" lean-forward="true" selection-start-line="48" selection-start-column="23" selection-end-line="48" selection-end-column="23" />
         </state>
       </provider>
     </entry>

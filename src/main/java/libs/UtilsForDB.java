@@ -5,7 +5,6 @@ import io.qameta.allure.Step;
 
 import java.io.IOException;
 import java.sql.SQLException;
-import java.util.ArrayList;
 import java.util.List;
 
 public class UtilsForDB {
@@ -47,13 +46,22 @@ public class UtilsForDB {
         dBMySQL.quit();
         return tempDeviceStatus;
     }
-
     @Step
-    public List<ArrayList> getLocalIdDevices(String idOrder) throws SQLException, IOException, ClassNotFoundException {
+    public List<String> getLocalIdDevices(String idOrder) throws SQLException, IOException, ClassNotFoundException {
         dBMySQL = new Database("MySQL_PADB_DB", "MySQL");
-        List<ArrayList> tempLocalIdDevices = dBMySQL.selectTable("SELECT localId FROM eld_scanners WHERE id IN (SELECT scannerId FROM eld_orders_ids WHERE orderId = " + idOrder + ");");
+        List<String> tempLocalIdDevices = dBMySQL.selectResultSet("SELECT localId FROM eld_scanners WHERE id IN (SELECT scannerId FROM eld_orders_ids WHERE orderId = " + idOrder + ");");
         dBMySQL.quit();
         return tempLocalIdDevices;
     }
+
+//    @Step
+//    public List<ArrayList> getLocalIdDevices(String idOrder) throws SQLException, IOException, ClassNotFoundException {
+//        dBMySQL = new Database("MySQL_PADB_DB", "MySQL");
+//        List<ArrayList> tempLocalIdDevices = dBMySQL.selectTable("SELECT localId FROM eld_scanners WHERE id IN (SELECT scannerId FROM eld_orders_ids WHERE orderId = " + idOrder + ");");
+//        dBMySQL.quit();
+//        return tempLocalIdDevices;
+//    }
+
+
 
 }

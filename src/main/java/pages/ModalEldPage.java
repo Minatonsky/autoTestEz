@@ -5,6 +5,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+import static libs.Utils.waitABit;
+
 public class ModalEldPage extends ParentPage {
 
     @FindBy(id = "number_device")
@@ -40,8 +42,14 @@ public class ModalEldPage extends ParentPage {
     @FindBy(xpath = "//button[@class='fast_move']/i[@class='fa fa-arrow-down']")
     private WebElement buttonFastMove;
 
-    @FindBy(xpath = "//div[@class='modal-body']/*[contains(text(), 'I Agree')]")
+    @FindBy(xpath = "//button[(text()= 'I Agree')]")
     private WebElement buttonAgree;
+
+    @FindBy(xpath = "//div[@class='col-sm-6 text-center text-md-left mb-1 hidden-xs']/button[(text()='Cancel order')]")
+    private WebElement buttonCancel;
+
+    @FindBy(xpath = "//button[text()='Confirm']")
+    private WebElement buttonConfirm;
 
     @FindBy(xpath = ".//select[@name='state']")
     private WebElement typeOfState;
@@ -117,6 +125,29 @@ EQUIPMENT LEASE AND SOFTWARE SUBSCRIPTION SERVICE AGREEMENT
     public void clickButtonFastMove() {actionsWithOurElements.clickOnElement(buttonFastMove);}
 
     public void clickButtonAgree() {actionsWithOurElements.clickOnElement(buttonAgree);}
+
+    public void clickButtonCancel(){actionsWithOurElements.clickOnElement(buttonCancel);}
+
+    public void clickButtonConfirm(){
+        actionsWithOurElements.clickOnElement(buttonConfirm);
+    }
+
+    @Step
+    public void doCancelAgreementForManagerOrder(){
+        waitABit(3);
+        clickButtonFastMove();
+        clickButtonCancel();
+        clickButtonConfirm();
+        waitABit(3);
+    }
+
+    @Step
+    public void doAgreeAgreementForManagerOrder(){
+        waitABit(3);
+        clickButtonFastMove();
+        clickButtonAgree();
+        waitABit(3);
+    }
 
     @Step
     public void clickAgreements(String quantityOfDevices){
@@ -200,7 +231,9 @@ BUTTON ORDER
     public void clickButtonOrder() {actionsWithOurElements.clickOnElement(orderButton);}
 
 
-
+/*
+COMPARE METHODS
+ */
 
 
     @Step

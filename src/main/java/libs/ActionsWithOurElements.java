@@ -5,6 +5,7 @@ import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -35,7 +36,7 @@ public class ActionsWithOurElements {
 
     public void clickOnElement(WebElement webElement){
         try{
-            webDriverWait40.until(ExpectedConditions.elementToBeClickable(webElement));
+            webDriverWait20.until(ExpectedConditions.elementToBeClickable(webElement));
             webElement.click();
             logger.info("Element was clicked");
         } catch (Exception e){
@@ -127,6 +128,18 @@ public class ActionsWithOurElements {
         }catch (Exception e){
             logger.info("Element is display - > false");
             return false;
+        }
+    }
+
+    public void moveToElement(WebElement webElement){
+        try {
+            Actions builder = new Actions(webDriver);
+            webDriverWait20.until(ExpectedConditions.visibilityOf(webElement));
+            builder.build().perform();
+            logger.info("Mouse over the element");
+
+        }catch (Exception e){
+            logger.info("Can not move to element");
         }
     }
 
