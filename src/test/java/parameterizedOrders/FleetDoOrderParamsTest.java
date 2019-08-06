@@ -74,9 +74,6 @@ public class FleetDoOrderParamsTest extends ParentTest {String  quantityOfDevice
         modalEldPage.compareTotalOrder(defaultTotalOrder);
         checkAC("Total Order is not correct", modalEldPage.compareTotalOrder(defaultTotalOrder), true);
 
-        modalEldPage.compareOrderPrice(eldOrderPrice);
-        checkAC("OrderPrice is not correct", modalEldPage.compareOrderPrice(eldOrderPrice), true);
-
         modalEldPage.compareDeliveryPrice(eldDeliveryPrice);
         checkAC("DeliveryPrice is not correct", modalEldPage.compareDeliveryPrice(eldDeliveryPrice), true);
 
@@ -93,7 +90,7 @@ public class FleetDoOrderParamsTest extends ParentTest {String  quantityOfDevice
         checkAC("Total Order is not correct", modalEldPage.compareTotalOrder(defaultTotalOrder), true);
 
 
-        modalEldPage.clickAgreements(quantityOfDevices);
+        modalEldPage.doAgreeAgreement(quantityOfDevices);
 
 
         String idLastOrderAfterTest = utilsForDB.getLastOrderIdForFleet(dataFleetId.get("fleetId").toString());

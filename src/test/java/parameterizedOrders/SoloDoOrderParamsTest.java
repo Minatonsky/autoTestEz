@@ -48,7 +48,7 @@ public class SoloDoOrderParamsTest extends ParentTest { String  quantityOfDevice
     }
 
     @Test
-    public void addNewOrder() throws InterruptedException, SQLException, IOException, ClassNotFoundException {
+    public void addNewOrder() throws SQLException, IOException, ClassNotFoundException {
 
         Map personalDataForEldOrder = ExcelDriver.getData(configProperties.DATA_FILE_PATH() + "testEldOrder.xls", "personalData");
         Map dataForSoloValidLogIn = ExcelDriver.getData(configProperties.DATA_FILE_PATH() + "testLogin.xls", "validSoloLogin");
@@ -62,6 +62,7 @@ public class SoloDoOrderParamsTest extends ParentTest { String  quantityOfDevice
 
         dashboardPage.openMenuDash();
         dashboardPage.goToEldPage();
+
         eldUserPage.clickOnOrderELD();
 
         modalEldPage.enterPersonalData(personalDataForEldOrder.get("deliveryState").toString(), personalDataForEldOrder.get("firstName").toString(), personalDataForEldOrder.get("lastName").toString(), personalDataForEldOrder.get("phone").toString(), personalDataForEldOrder.get("addressLine").toString(), personalDataForEldOrder.get("aptNumber").toString(), personalDataForEldOrder.get("deliveryCity").toString(), personalDataForEldOrder.get("zipCode").toString());
@@ -70,38 +71,28 @@ public class SoloDoOrderParamsTest extends ParentTest { String  quantityOfDevice
         modalEldPage.clickPaymentMethods(typeOfPaymentMethod);
 
 
+        modalEldPage.compareOrderPrices(eldOrderPrice, eldDeliveryPrice, eldFirstMonthFee, eldLastMonthFee, eldDepositFee, defaultTotalOrder);
 
-        modalEldPage.compareOrderPrice(eldOrderPrice);
-        checkAC("OrderPrice is not correct", modalEldPage.compareOrderPrice(eldOrderPrice), true);
-
-        modalEldPage.compareDeliveryPrice(eldDeliveryPrice);
         checkAC("DeliveryPrice is not correct", modalEldPage.compareDeliveryPrice(eldDeliveryPrice), true);
 
-        modalEldPage.compareFirstMonthFee(eldFirstMonthFee);
         checkAC("FirstMonthFee is not correct", modalEldPage.compareFirstMonthFee(eldFirstMonthFee), true);
 
-        modalEldPage.compareLastMonthFee(eldLastMonthFee);
         checkAC("LastMonthFee is not correct", modalEldPage.compareLastMonthFee(eldLastMonthFee), true);
 
-        modalEldPage.compareDepositFee(eldDepositFee);
         checkAC("DepositFee is not correct", modalEldPage.compareDepositFee(eldDepositFee), true);
 
-        modalEldPage.compareTotalOrder(defaultTotalOrder);
         checkAC("Total Order is not correct", modalEldPage.compareTotalOrder(defaultTotalOrder), true);
 
 
-
-        modalEldPage.clickAgreements(quantityOfDevices);
+        modalEldPage.doAgreeAgreement(quantityOfDevices);
 
         String idLastOrderAfterTest = utilsForDB.getLastOrderIdForSolo(dataSoloId.get("soloId").toString());
-        checkAC("New order wasn`t created", idLastOrderBeforeTest.equals(idLastOrderAfterTest) , false);
+        checkAC("New order was not created", idLastOrderBeforeTest.equals(idLastOrderAfterTest) , false);
 
         dashboardPage.goToFinancesPage();
 
         financesPage.compareBalance(defaultBalance);
         checkAC("Balance is not correct", financesPage.compareBalance(defaultBalance), true);
-        Thread.sleep(2000);
-
 
 
     }

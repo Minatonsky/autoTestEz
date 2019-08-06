@@ -77,9 +77,6 @@ public class SoloDoOrderManagerCompletedParamsTest extends ParentTest {String  q
         modalEldPage.compareTotalOrder(defaultTotalOrder);
         checkAC("Total Order is not correct", modalEldPage.compareTotalOrder(defaultTotalOrder), true);
 
-        modalEldPage.compareOrderPrice(eldOrderPrice);
-        checkAC("OrderPrice is not correct", modalEldPage.compareOrderPrice(eldOrderPrice), true);
-
         modalEldPage.compareDeliveryPrice(eldDeliveryPrice);
         checkAC("DeliveryPrice is not correct", modalEldPage.compareDeliveryPrice(eldDeliveryPrice), true);
 
@@ -98,7 +95,7 @@ public class SoloDoOrderManagerCompletedParamsTest extends ParentTest {String  q
 
 
 
-        modalEldPage.clickAgreements(quantityOfDevices);
+        modalEldPage.doAgreeAgreement(quantityOfDevices);
 
 
         String idLastOrderAfterTest = utilsForDB.getLastOrderIdForSolo(dataSoloId.get("soloId").toString());

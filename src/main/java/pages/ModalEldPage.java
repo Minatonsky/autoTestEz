@@ -10,16 +10,16 @@ import static libs.Utils.waitABit;
 public class ModalEldPage extends ParentPage {
     LoginPage loginPage;
 
-    @FindBy(id = "number_device")
+    @FindBy(name ="amount")
     private WebElement quantityDeviseInput;
 
     @FindBy(id = "send_order")
     private WebElement orderButton;
     
-    @FindBy(id = "first_name")
+    @FindBy(id = "name")
     private WebElement firstNameInput;
 
-    @FindBy(id = "last_name")
+    @FindBy(id = "surname")
     private WebElement lastNameInput;
 
     @FindBy(id = "phone")
@@ -40,6 +40,9 @@ public class ModalEldPage extends ParentPage {
     @FindBy(id = "leaseAndAgreementCheckbox")
     private WebElement agreement;
 
+    @FindBy(id ="leaseAndAgreementCameraCheckbox")
+    private WebElement agreementCamera;
+
     @FindBy(xpath = ".//button[@class='fast_move']/i[@class='fa fa-arrow-down']")
     private WebElement buttonFastMove;
 
@@ -58,33 +61,32 @@ public class ModalEldPage extends ParentPage {
     @FindBy(name = "pick_up")
     private WebElement checkBoxPickUp;
 
-    @FindBy(name = "overnight_delivery")
+    @FindBy(name = "overnight")
     private WebElement checkBoxOvernightDelivery;
 
-    @FindBy(xpath = ".//*[@data-id='2']/td[3]/input")
+    @FindBy(name = "products[2]")
     private WebElement quantityPinCableInput;
 
-    @FindBy(xpath = ".//*[@data-id='3']/td[3]/input")
+    @FindBy(name = "products[3]")
     private WebElement quantityOBDPinCableInput;
 
-    @FindBy(xpath = ".//*[@data-id='4']/td[3]/input")
+    @FindBy(name = "products[4]")
     private WebElement quantityStickerInput;
 
-    @FindBy(xpath = ".//*[@data-id='100']/td[3]/input")
+    @FindBy(name = "products[5]")
     private WebElement quantityCamera1Input;
 
-    @FindBy(xpath = ".//*[@data-id='101']/td[3]/input")
+    @FindBy(name = "products[6]")
     private WebElement quantityCamera2Input;
 
 
     public ModalEldPage(WebDriver webDriver) {
         super(webDriver, "/dash/eld/");
     }
-    
 
-    /*
-    PERSONAL DATA
-     */
+/*
+ PERSONAL DATA
+*/
     public void selectState(String deliveryState) {actionsWithOurElements.selectValueInDropDown(typeOfState, deliveryState);}
 
     public void enterFirstName(String firstName) {actionsWithOurElements.enterTextToElement(firstNameInput, firstName);}
@@ -123,6 +125,8 @@ EQUIPMENT LEASE AND SOFTWARE SUBSCRIPTION SERVICE AGREEMENT
 
     public void clickAgreement() { actionsWithOurElements.clickOnElement(agreement);}
 
+    public void clickAgreementCamera() { actionsWithOurElements.clickOnElement(agreementCamera);}
+
     public void clickButtonFastMove() {actionsWithOurElements.clickOnElement(buttonFastMove);}
 
     public void clickButtonAgree() {actionsWithOurElements.clickOnElement(buttonAgree);}
@@ -132,6 +136,8 @@ EQUIPMENT LEASE AND SOFTWARE SUBSCRIPTION SERVICE AGREEMENT
     public void clickButtonConfirm(){
         actionsWithOurElements.clickOnElement(buttonConfirm);
     }
+
+
 
     @Step
     public void doCancelAgreementForManagerOrder(){
@@ -155,8 +161,12 @@ EQUIPMENT LEASE AND SOFTWARE SUBSCRIPTION SERVICE AGREEMENT
         waitABit(3);
     }
 
+    /**
+     *
+     * @param quantityOfDevices
+     */
     @Step
-    public void clickAgreements(String quantityOfDevices){
+    public void doAgreeAgreement(String quantityOfDevices){
         int num = Integer.parseInt(quantityOfDevices);
         if (num > 0){
             clickAgreement();
@@ -168,6 +178,22 @@ EQUIPMENT LEASE AND SOFTWARE SUBSCRIPTION SERVICE AGREEMENT
         else {
             clickButtonOrder();
             logger.info("quantityOfDevices == 0");
+        }
+    }
+
+    @Step
+    public void clickAgreementCamera(String quantityOfCamera){
+        int num = Integer.parseInt(quantityOfCamera);
+        if (num > 0){
+            clickAgreementCamera();
+            clickButtonFastMove();
+            clickButtonAgree();
+            clickButtonOrder();
+            logger.info("quantityOfCamera > 0");
+        }
+        else {
+            clickButtonOrder();
+            logger.info("quantityOfCamera == 0");
         }
     }
 
@@ -201,6 +227,7 @@ ORDER LIST
         enterQuantitySticker(quantitySticker);
         enterQuantityCamera1(quantityCamera1);
         enterQuantityCamera2(quantityCamera2);
+
         setPickUpFromOffice(neededStatePickUpFromOffice);
         setOvernightDelivery(neededStateOvernightDelivery);
 
@@ -223,14 +250,37 @@ PAYMENT METHODS
     }
 
     private void clickOnPaymentMethod(String typeOfPaymentMethod) {
-        actionsWithOurElements.clickOnElement(".//*[@id='eldTariffs']/*[@data-id='" + typeOfPaymentMethod + "']");
+        actionsWithOurElements.clickOnElement(".//*[@data-id='" + typeOfPaymentMethod + "']");
     }
 
     private boolean isPaymentInList(String typeOfPaymentMethod) {
-        return actionsWithOurElements.isElementInOrder(".//*[@id='eldTariffs']/*[@data-id='" + typeOfPaymentMethod + "']");
+        return actionsWithOurElements.isElementInOrder(".//*[@data-id='" + typeOfPaymentMethod + "']");
     }
 
+
 /*
+PAYMENTS METHODS CAMERA
+ */
+    @Step
+    public void clickPaymentMethodsCamera(String typeOfPaymentMethodCamera){
+        if (isPaymentCameraInList(typeOfPaymentMethodCamera)){
+            clickOnPaymentMethodCamera(typeOfPaymentMethodCamera);
+            logger.info("Payment Method Camera" + typeOfPaymentMethodCamera + " was selected");
+        }
+        else {
+            logger.info("Payment Method Camera was not selected");
+        }
+    }
+
+    private void clickOnPaymentMethodCamera(String typeOfPaymentMethodCamera) {
+        actionsWithOurElements.clickOnElement(".//*[@data-id='" + typeOfPaymentMethodCamera + "']");
+    }
+
+    private boolean isPaymentCameraInList(String typeOfPaymentMethodCamera) {
+        return actionsWithOurElements.isElementInOrder(".//*[@data-id='" + typeOfPaymentMethodCamera + "']");
+    }
+
+ /*
 BUTTON ORDER
  */
     @Step
@@ -243,32 +293,102 @@ COMPARE METHODS
 
 
     @Step
-    public boolean compareTotalOrder(String eldStandardTotalOrder){
-        return actionsWithOurElements.isElementInOrder(".//*[@id='eld_total_order' and text()='$" + eldStandardTotalOrder + "']");
+    public boolean compareTotalOrder(String eldTotalOrder){
+        return actionsWithOurElements.isElementInOrder("//td[2][text()='$" + eldTotalOrder + "' and //*[text()='TOTAL' ]]");
     }
 
-    @Step
-    public boolean compareOrderPrice(String eldOrderPrice){
-        return actionsWithOurElements.isElementInOrder(".//*[@id='eld_order_price' and text()='$" + eldOrderPrice + "']");
-    }
-
-    @Step
-    public boolean compareDeliveryPrice(String eldDeliveryPrice){
-        return actionsWithOurElements.isElementInOrder(".//*[@id='eld_delivery_price' and text()='$" + eldDeliveryPrice + "']");
-    }
-
-    @Step
     public boolean compareFirstMonthFee(String eldFirstMonthFee){
-        return actionsWithOurElements.isElementInOrder(".//*[@id='eld_first_price' and text()='$" + eldFirstMonthFee + "']");
+        return actionsWithOurElements.isElementInOrder(".//input[@value='ELD first month fee $29.99']/following-sibling::input[@name='credit[services][fee_price][total]' and @value='" + eldFirstMonthFee + "']");
     }
 
-    @Step
     public boolean compareLastMonthFee(String eldLastMonthFee) {
-        return actionsWithOurElements.isElementInOrder(".//*[@id='eld_last_price' and text()='$" + eldLastMonthFee + "']");
+        return actionsWithOurElements.isElementInOrder(".//input[@value='ELD last month fee $29.99']/following-sibling::input[@name='credit[services][last_month_fee][total]' and @value='" + eldLastMonthFee + "']");
+    }
+
+    public boolean compareEldOneYearPrice(String eldOneYearPrice) {
+        return actionsWithOurElements.isElementInOrder(".//input[@value='ELD price $329.89']/following-sibling::input[@name='credit[services][orderPrice][total]' and @value='" + eldOneYearPrice + "']");
+    }
+
+    public boolean compareEldTwoYearPrice(String eldTwoYearPrice) {
+        return actionsWithOurElements.isElementInOrder(".//input[@value='ELD price $629.79']/following-sibling::input[@name='credit[services][orderPrice][total]' and @value='" + eldTwoYearPrice + "']");
     }
 
     @Step
     public boolean compareDepositFee(String eldDepositFee){
-        return actionsWithOurElements.isElementInOrder(".//*[@id='eld_deposit_fee' and text()='$" + eldDepositFee + "']");
+        return actionsWithOurElements.isElementInOrder(".//input[@value='ELD Deposit fee $49.99']/following-sibling::input[@name='credit[services][deposit_fee][total]' and @value='" + eldDepositFee + "']");
+    }
+
+    @Step
+    public boolean compareDeliveryPrice(String eldDeliveryPrice){
+        return actionsWithOurElements.isElementInOrder(".//input[@value='Delivery price']/following-sibling::input[@name='credit[services][delivery_price][total]' and @value='" + eldDeliveryPrice + "']");
+    }
+
+    @Step
+    public boolean comparePinCable(String eldPinCable){
+        return actionsWithOurElements.isElementInOrder(".//input[@value='6 Pin Cable']/following-sibling::input[@name='credit[products][2][total]' and @value='" + eldPinCable + "']");
+    }
+
+    @Step
+    public boolean compareOBDPinCable(String eldOBDPinCable){
+        return actionsWithOurElements.isElementInOrder(".//input[@value='OBDII 16 pin Cable']/following-sibling::input[@name='credit[products][3][total]' and @value='" + eldOBDPinCable + "']");
+    }
+
+    @Step
+    public boolean compareStickerLabel(String eldStickerLabel){
+        return actionsWithOurElements.isElementInOrder(".//input[@value='Sticker Label']/following-sibling::input[@name='credit[products][4][total]' and @value='" + eldStickerLabel + "']");
+    }
+
+    public void compareEldPrice(String  quantityOfDevices, String typeOfPaymentMethod, String eldFirstMonthFee, String eldLastMonthFee, String eldOneYearPrice, String eldTwoYearPrice){
+
+        if (Integer.parseInt(quantityOfDevices) > 0){
+
+            if (Integer.parseInt(typeOfPaymentMethod) == 0){
+                if (compareFirstMonthFee(eldFirstMonthFee) == true){
+                    logger.info("AC failed: FirstMonthFee is correct");
+                }
+                if (compareLastMonthFee(eldLastMonthFee) == true){
+                    logger.info("AC failed: LastMonthFee is correct");
+                }
+                else {
+                    logger.info("AC failed: LastMonthFee/FirstMonthFee is not correct");
+                }
+
+            }
+            else if (typeOfPaymentMethod == "1"){
+                compareEldOneYearPrice(eldOneYearPrice);
+                if (compareEldOneYearPrice(eldOneYearPrice) == true){
+                    logger.info("AC failed: EldOneYearPrice is correct");
+                }
+                else {
+                    logger.info("AC failed: EldOneYearPrice is not correct");
+                }
+            }
+            else if (typeOfPaymentMethod == "2") {
+                compareEldTwoYearPrice(eldTwoYearPrice);
+                if (compareEldTwoYearPrice(eldTwoYearPrice) == true){
+                    logger.info("AC failed: EldOneYearPrice is correct");
+                }
+                else {
+                    logger.info("AC failed: EldOneYearPrice is not correct");
+                }
+            }
+            else {
+                logger.info(" no compareable");
+            }
+        }
+        else {
+            logger.info("No ELD Devices in Order");
+        }
+
+    }
+
+    public void compareOrderPrices(String eldTotalOrder, String eldPinCable, String eldDeliveryPrice, String eldDepositFee, String eldStickerLabel, String eldOBDPinCable) {
+        compareTotalOrder(eldTotalOrder);
+        comparePinCable(eldPinCable);
+        compareDeliveryPrice(eldDeliveryPrice);
+        compareDepositFee(eldDepositFee);
+        compareStickerLabel(eldStickerLabel);
+        compareOBDPinCable(eldOBDPinCable);
+
     }
 }

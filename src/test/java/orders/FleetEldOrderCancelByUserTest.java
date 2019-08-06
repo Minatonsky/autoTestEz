@@ -52,7 +52,7 @@ public class FleetEldOrderCancelByUserTest extends ParentTest {
         modalEldPage.compareTotalOrder(dataForEldOrder.get("defaultTotalOrder").toString());
         checkAC("Total Order is not correct", modalEldPage.compareTotalOrder(dataForEldOrder.get("defaultTotalOrder").toString()), true);
 
-        modalEldPage.clickAgreements(dataForEldOrder.get("quantityOfDevices").toString());
+        modalEldPage.doAgreeAgreement(dataForEldOrder.get("quantityOfDevices").toString());
 
         String idLastOrderAfterTest = utilsForDB.getLastOrderIdForFleet(dataFleetId.get("fleetId").toString());
         checkAC("New order wasn`t created", idLastOrderBeforeTest.equals(idLastOrderAfterTest) , false);

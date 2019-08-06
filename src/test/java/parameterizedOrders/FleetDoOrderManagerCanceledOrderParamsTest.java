@@ -76,9 +76,6 @@ public class FleetDoOrderManagerCanceledOrderParamsTest extends ParentTest {Stri
         modalEldPage.compareTotalOrder(defaultTotalOrder);
         checkAC("Total Order is not correct", modalEldPage.compareTotalOrder(defaultTotalOrder), true);
 
-        modalEldPage.compareOrderPrice(eldOrderPrice);
-        checkAC("OrderPrice is not correct", modalEldPage.compareOrderPrice(eldOrderPrice), true);
-
         modalEldPage.compareDeliveryPrice(eldDeliveryPrice);
         checkAC("DeliveryPrice is not correct", modalEldPage.compareDeliveryPrice(eldDeliveryPrice), true);
 
@@ -94,7 +91,7 @@ public class FleetDoOrderManagerCanceledOrderParamsTest extends ParentTest {Stri
         modalEldPage.compareTotalOrder(defaultTotalOrder);
         checkAC("Total Order is not correct", modalEldPage.compareTotalOrder(defaultTotalOrder), true);
 
-        modalEldPage.clickAgreements(quantityOfDevices);
+        modalEldPage.doAgreeAgreement(quantityOfDevices);
 
         String idLastOrderAfterTest = utilsForDB.getLastOrderIdForFleet(dataFleetId.get("fleetId").toString());
         checkAC("New order wasn`t created", idLastOrderBeforeTest.equals(idLastOrderAfterTest) , false);

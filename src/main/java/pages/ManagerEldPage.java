@@ -15,7 +15,7 @@ public class ManagerEldPage extends ParentPage {
     @FindBy(xpath = ".//*[@placeholder='Id']")
     private WebElement idHolder;
 
-    @FindBy(xpath = ".//button[@onclick='createOrder();']")
+    @FindBy(xpath = ".//button[text()='New Order']")
     private WebElement newOrderButton;
 
     public ManagerEldPage(WebDriver webDriver) {

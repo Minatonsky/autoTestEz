@@ -9,13 +9,15 @@ import java.io.IOException;
 import java.sql.SQLException;
 import java.util.Map;
 
+import static libs.Utils.waitABit;
+
 public class FleetEldOrderTestWithExcel extends ParentTest {
 
 
     @Test
     public void addNewOrder() throws InterruptedException, SQLException, IOException, ClassNotFoundException {
         ExcelDriver excelDriver = new ExcelDriver();
-        int columnNumber = 3;
+        int columnNumber = 1;
 
         Map dataForEldOrder = excelDriver.getMultipleData(configProperties.DATA_FILE_PATH() + "testEldOrder.xls", "orderListData", columnNumber);
         Map personalDataForEldOrder = excelDriver.getData(configProperties.DATA_FILE_PATH() + "testEldOrder.xls", "personalData");
@@ -28,6 +30,7 @@ public class FleetEldOrderTestWithExcel extends ParentTest {
 
         loginPage.userValidLogIn(dataForFleetValidLogIn.get("login").toString(),dataForFleetValidLogIn.get("pass").toString());
 
+        dashboardPage.openMenuDash();
         dashboardPage.goToEldPage();
         eldUserPage.clickOnOrderELD();
 
@@ -38,6 +41,13 @@ PERSONAL DATA
                 personalDataForEldOrder.get("addressLine").toString(), personalDataForEldOrder.get("aptNumber").toString(),
                 personalDataForEldOrder.get("deliveryCity").toString(), personalDataForEldOrder.get("zipCode").toString());
 
+ /*
+CHECK BOX DELIVERY
+ */
+        modalEldPage.setPickUpFromOffice(dataForEldOrder.get("neededStatePickUpFromOffice").toString());
+        modalEldPage.setOvernightDelivery(dataForEldOrder.get("neededStateOvernightDelivery").toString());
+
+
 /*
 ORDER LIST
  */
@@ -45,24 +55,24 @@ ORDER LIST
         modalEldPage.enterQuantityPinCable(dataForEldOrder.get("quantityPinCable").toString());
         modalEldPage.enterQuantityOBDPinCable(dataForEldOrder.get("quantityOBDPinCable").toString());
         modalEldPage.enterQuantitySticker(dataForEldOrder.get("quantitySticker").toString());
-        modalEldPage.enterQuantityCamera1(dataForEldOrder.get("quantityCamera1").toString());
-        modalEldPage.enterQuantityCamera2(dataForEldOrder.get("quantityCamera2").toString());
-        modalEldPage.clickPaymentMethods(dataForEldOrder.get("typeOfPaymentMethod").toString());
 
-/*
-CHECK BOX DELIVERY
- */
-        modalEldPage.setPickUpFromOffice(dataForEldOrder.get("neededStatePickUpFromOffice").toString());
-        modalEldPage.setOvernightDelivery(dataForEldOrder.get("neededStateOvernightDelivery").toString());
 
-        modalEldPage.compareTotalOrder(dataForEldOrder.get("defaultTotalOrder").toString());
+        waitABit(5);
+
+
+        checkAC("First month is not correct", modalEldPage.compareFirstMonthFee(dataForEldOrder.get("eldFirstMonthFee").toString()), true);
+
+//        modalEldPage.compareEldPrice(dataForEldOrder.get("quantityOfDevices").toString(), dataForEldOrder.get("typeOfPaymentMethod").toString(), dataForEldOrder.get("eldFirstMonthFee").toString(), dataForEldOrder.get("eldLastMonthFee").toString(), dataForEldOrder.get("eldOneYearPrice").toString(), dataForEldOrder.get("eldTwoYearPrice").toString());
+
+
         checkAC("Total Order is not correct", modalEldPage.compareTotalOrder(dataForEldOrder.get("defaultTotalOrder").toString()), true);
 
 /*
 EQUIPMENT LEASE AND SOFTWARE SUBSCRIPTION SERVICE AGREEMENT
  */
 
-        modalEldPage.clickAgreements(dataForEldOrder.get("quantityOfDevices").toString());
+       // modalEldPage.doAgreeAgreement(dataForEldOrder.get("quantityOfDevices").toString());
+
 /*
 CHECK LAST ID ORDER BEFORE AND AFTER TEST
  */
@@ -70,10 +80,8 @@ CHECK LAST ID ORDER BEFORE AND AFTER TEST
         String idLastOrderAfterTest = utilsForDB.getLastOrderIdForFleet(dataFleetId.get("fleetId").toString());
         checkAC("New order wasn`t created", idLastOrderBeforeTest.equals(idLastOrderAfterTest) , false);
 
-        dashboardPage.clickOnMenuDash();
-        Thread.sleep(1000);
-        dashboardPage.clickOnMenuPageFinances();
-        financesPage.checkCurrentUrl();
+        dashboardPage.goToFinancesPage();
+
 
         financesPage.compareBalance(dataForEldOrder.get("defaultBalance").toString());
         checkAC("Balance is not correct", financesPage.compareBalance(dataForEldOrder.get("defaultBalance").toString()), true);

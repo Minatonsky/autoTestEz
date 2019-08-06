@@ -67,7 +67,7 @@ CHECK BOX DELIVERY
 EQUIPMENT LEASE AND SOFTWARE SUBSCRIPTION SERVICE AGREEMENT
  */
 
-        modalEldPage.clickAgreements(dataForEldOrder.get("quantityOfDevices").toString());
+        modalEldPage.doAgreeAgreement(dataForEldOrder.get("quantityOfDevices").toString());
 /*
 CHECK LAST ID ORDER BEFORE AND AFTER TEST
  */
