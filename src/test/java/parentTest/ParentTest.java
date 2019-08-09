@@ -85,7 +85,8 @@ public class ParentTest {
     }
 
     @After
-    public void tearDown() throws SQLException { webDriver.quit();
+    public void tearDown() throws SQLException {
+        webDriver.quit();
     }
 
     @Step
@@ -94,6 +95,7 @@ public class ParentTest {
             logger.error("AC failed: " + message);
         }
         Assert.assertEquals(message,expected,actual);
+        logger.info("AC passed");
     }
 
     public void selectBrowserWindow(String window){

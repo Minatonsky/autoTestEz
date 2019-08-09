@@ -70,21 +70,10 @@ public class SoloCancelOrderByUserParameterizedTest extends ParentTest { String 
         modalEldPage.enterPersonalData(personalDataForEldOrder.get("deliveryState").toString(), personalDataForEldOrder.get("firstName").toString(), personalDataForEldOrder.get("lastName").toString(), personalDataForEldOrder.get("phone").toString(), personalDataForEldOrder.get("addressLine").toString(), personalDataForEldOrder.get("aptNumber").toString(), personalDataForEldOrder.get("deliveryCity").toString(), personalDataForEldOrder.get("zipCode").toString());
 
         modalEldPage.enterOrderData(quantityOfDevices, quantityPinCable, quantityOBDPinCable, quantitySticker, quantityCamera1, quantityCamera2, neededStatePickUpFromOffice, neededStateOvernightDelivery);
-        modalEldPage.clickPaymentMethods(typeOfPaymentMethod);
+//        modalEldPage.clickPaymentMethods(typeOfPaymentMethod);
 
 
 
-        modalEldPage.compareDeliveryPrice(eldDeliveryPrice);
-        checkAC("DeliveryPrice is not correct", modalEldPage.compareDeliveryPrice(eldDeliveryPrice), true);
-
-        modalEldPage.compareFirstMonthFee(eldFirstMonthFee);
-        checkAC("FirstMonthFee is not correct", modalEldPage.compareFirstMonthFee(eldFirstMonthFee), true);
-
-        modalEldPage.compareLastMonthFee(eldLastMonthFee);
-        checkAC("LastMonthFee is not correct", modalEldPage.compareLastMonthFee(eldLastMonthFee), true);
-
-        modalEldPage.compareDepositFee(eldDepositFee);
-        checkAC("DepositFee is not correct", modalEldPage.compareDepositFee(eldDepositFee), true);
 
         modalEldPage.compareTotalOrder(defaultTotalOrder);
         checkAC("Total Order is not correct", modalEldPage.compareTotalOrder(defaultTotalOrder), true);

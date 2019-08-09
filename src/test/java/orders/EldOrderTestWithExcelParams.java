@@ -79,7 +79,7 @@ ORDER LIST
 //        modalEldPage.enterQuantityCamera1(quantityCamera1);
 //        modalEldPage.enterQuantityCamera2(quantityCamera2);
 
-        modalEldPage.clickPaymentMethods(typeOfPaymentMethod);
+//        modalEldPage.clickPaymentMethods(typeOfPaymentMethod);
 
 /*
 CHECK BOX DELIVERY

@@ -45,7 +45,7 @@ public class FleetEldOrderCancelByUserTest extends ParentTest {
         modalEldPage.enterQuantitySticker(dataForEldOrder.get("quantitySticker").toString());
         modalEldPage.enterQuantityCamera1(dataForEldOrder.get("quantityCamera1").toString());
         modalEldPage.enterQuantityCamera2(dataForEldOrder.get("quantityCamera2").toString());
-        modalEldPage.clickPaymentMethods(dataForEldOrder.get("typeOfPaymentMethod").toString());
+        modalEldPage.clickPaymentMethods(dataForEldOrder.get("typeOfPaymentMethod").toString(), dataForEldOrder.get("quantityOfDevices").toString());
         modalEldPage.setPickUpFromOffice(dataForEldOrder.get("neededStatePickUpFromOffice").toString());
         modalEldPage.setOvernightDelivery(dataForEldOrder.get("neededStateOvernightDelivery").toString());
 

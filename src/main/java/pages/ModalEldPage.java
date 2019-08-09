@@ -79,6 +79,46 @@ public class ModalEldPage extends ParentPage {
     @FindBy(name = "products[6]")
     private WebElement quantityCamera2Input;
 
+    @FindBy(xpath = ".//*[text()='TOTAL']/../../td[@class='text-center price']")
+    private WebElement totalOrderText;
+
+    @FindBy(xpath = "//*[text()='ELD first month fee $29.99']/../td[@class='text-center price']")
+    private WebElement firstMonthFeeText;
+
+    @FindBy(xpath = "//*[text()='ELD last month fee $29.99']/../td[@class='text-center price']")
+    private WebElement lastMonthFeeText;
+
+    @FindBy(xpath = "//*[text()='ELD price $329.89']/../td[@class='text-center price']")
+    private WebElement eldOneYearPriceText;
+
+    @FindBy(xpath = "//*[text()='ELD price $629.79']/../td[@class='text-center price']")
+    private WebElement eldTwoYearPriceText;
+
+    @FindBy(xpath = "//*[text()='ELD Deposit fee $49.99']/../td[@class='text-center price']")
+    private WebElement eldDepositFeeText;
+
+    @FindBy(xpath = "//*[text()='Delivery price']/../td[@class='text-center price']")
+    private WebElement eldDeliveryPriceText;
+
+    @FindBy(xpath = "//*[text()='6 Pin Cable']/../td[@class='text-center price']")
+    private WebElement eldPinCableText;
+
+    @FindBy(xpath = "//*[text()='OBDII 16 pin Cable']/../td[@class='text-center price']")
+    private WebElement eldOBDPinCableText;
+
+    @FindBy(xpath = "//*[text()='Sticker Label']/../td[@class='text-center price']")
+    private WebElement eldStickerLabelText;
+
+    @FindBy(xpath = ".//div[@data-id='0']")
+    private WebElement monthToMonth;
+
+    @FindBy(xpath = ".//*[@data-id='1']")
+    private WebElement oneYearSubscription;
+
+    @FindBy(xpath = ".//div[@data-id='2']")
+    private WebElement twoYearSubscription;
+
+
 
     public ModalEldPage(WebDriver webDriver) {
         super(webDriver, "/dash/eld/");
@@ -173,11 +213,10 @@ EQUIPMENT LEASE AND SOFTWARE SUBSCRIPTION SERVICE AGREEMENT
             clickButtonFastMove();
             clickButtonAgree();
             clickButtonOrder();
-            logger.info("quantityOfDevices > 0");
         }
         else {
             clickButtonOrder();
-            logger.info("quantityOfDevices == 0");
+            logger.info("quantityOfDevices = 0");
         }
     }
 
@@ -227,7 +266,6 @@ ORDER LIST
         enterQuantitySticker(quantitySticker);
         enterQuantityCamera1(quantityCamera1);
         enterQuantityCamera2(quantityCamera2);
-
         setPickUpFromOffice(neededStatePickUpFromOffice);
         setOvernightDelivery(neededStateOvernightDelivery);
 
@@ -239,24 +277,25 @@ PAYMENT METHODS
  */
 
     @Step
-    public void clickPaymentMethods(String typeOfPaymentMethod){
-        if (isPaymentInList(typeOfPaymentMethod)){
-            clickOnPaymentMethod(typeOfPaymentMethod);
-            logger.info("Payment Method " + typeOfPaymentMethod + " was selected");
+    public void clickPaymentMethods(String typeOfPaymentMethod, String quantityOfDevices){
+
+        if (Integer.parseInt(quantityOfDevices) > 0) {
+
+            if (Integer.parseInt(typeOfPaymentMethod) == 0) {
+                actionsWithOurElements.doubleClickElement(monthToMonth);
+                logger.info("Payment Method monthToMonth was selected");
+            } else if (Integer.parseInt(typeOfPaymentMethod) == 1){
+                actionsWithOurElements.doubleClickElement(oneYearSubscription);
+                logger.info("Payment Method oneYearSubscription was selected");
+            } else if (Integer.parseInt(typeOfPaymentMethod) == 2){
+                actionsWithOurElements.doubleClickElement(twoYearSubscription);
+                logger.info("Payment Method twoYearSubscription was selected");
+            }
         }
         else {
-            logger.info("Payment Method was not selected");
+            logger.info("Payment Method was not selected no devices in order");
         }
     }
-
-    private void clickOnPaymentMethod(String typeOfPaymentMethod) {
-        actionsWithOurElements.clickOnElement(".//*[@data-id='" + typeOfPaymentMethod + "']");
-    }
-
-    private boolean isPaymentInList(String typeOfPaymentMethod) {
-        return actionsWithOurElements.isElementInOrder(".//*[@data-id='" + typeOfPaymentMethod + "']");
-    }
-
 
 /*
 PAYMENTS METHODS CAMERA
@@ -291,104 +330,93 @@ BUTTON ORDER
 COMPARE METHODS
  */
 
-
-    @Step
     public boolean compareTotalOrder(String eldTotalOrder){
-        return actionsWithOurElements.isElementInOrder("//td[2][text()='$" + eldTotalOrder + "' and //*[text()='TOTAL' ]]");
+        return getTotalOrder().equals("$" + eldTotalOrder);
+    }
+    public String getTotalOrder(){
+        return totalOrderText.getText();
     }
 
-    public boolean compareFirstMonthFee(String eldFirstMonthFee){
-        return actionsWithOurElements.isElementInOrder(".//input[@value='ELD first month fee $29.99']/following-sibling::input[@name='credit[services][fee_price][total]' and @value='" + eldFirstMonthFee + "']");
+    public String getFirstMonthFee(){
+        return firstMonthFeeText.getText();
     }
 
-    public boolean compareLastMonthFee(String eldLastMonthFee) {
-        return actionsWithOurElements.isElementInOrder(".//input[@value='ELD last month fee $29.99']/following-sibling::input[@name='credit[services][last_month_fee][total]' and @value='" + eldLastMonthFee + "']");
+    public String getLastMonthFee(){
+        return lastMonthFeeText.getText();
     }
 
-    public boolean compareEldOneYearPrice(String eldOneYearPrice) {
-        return actionsWithOurElements.isElementInOrder(".//input[@value='ELD price $329.89']/following-sibling::input[@name='credit[services][orderPrice][total]' and @value='" + eldOneYearPrice + "']");
+    public String getEldOneYearPrice(){
+        return eldOneYearPriceText.getText();
     }
 
-    public boolean compareEldTwoYearPrice(String eldTwoYearPrice) {
-        return actionsWithOurElements.isElementInOrder(".//input[@value='ELD price $629.79']/following-sibling::input[@name='credit[services][orderPrice][total]' and @value='" + eldTwoYearPrice + "']");
+    public String getEldTwoYearPrice(){
+        return eldTwoYearPriceText.getText();
     }
 
-    @Step
-    public boolean compareDepositFee(String eldDepositFee){
-        return actionsWithOurElements.isElementInOrder(".//input[@value='ELD Deposit fee $49.99']/following-sibling::input[@name='credit[services][deposit_fee][total]' and @value='" + eldDepositFee + "']");
+    public String getEldDepositFee(){
+        return eldDepositFeeText.getText();
     }
 
-    @Step
-    public boolean compareDeliveryPrice(String eldDeliveryPrice){
-        return actionsWithOurElements.isElementInOrder(".//input[@value='Delivery price']/following-sibling::input[@name='credit[services][delivery_price][total]' and @value='" + eldDeliveryPrice + "']");
+    public String getEldDeliveryPrice(){
+        return eldDeliveryPriceText.getText();
     }
 
-    @Step
-    public boolean comparePinCable(String eldPinCable){
-        return actionsWithOurElements.isElementInOrder(".//input[@value='6 Pin Cable']/following-sibling::input[@name='credit[products][2][total]' and @value='" + eldPinCable + "']");
+    public String getEldPinCable(){
+        return eldPinCableText.getText();
     }
 
-    @Step
-    public boolean compareOBDPinCable(String eldOBDPinCable){
-        return actionsWithOurElements.isElementInOrder(".//input[@value='OBDII 16 pin Cable']/following-sibling::input[@name='credit[products][3][total]' and @value='" + eldOBDPinCable + "']");
+    public String getEldOBDPinCable(){
+        return eldOBDPinCableText.getText();
     }
 
-    @Step
-    public boolean compareStickerLabel(String eldStickerLabel){
-        return actionsWithOurElements.isElementInOrder(".//input[@value='Sticker Label']/following-sibling::input[@name='credit[products][4][total]' and @value='" + eldStickerLabel + "']");
+    public String getEldStickerLabel(){
+        return eldStickerLabelText.getText();
     }
 
-    public void compareEldPrice(String  quantityOfDevices, String typeOfPaymentMethod, String eldFirstMonthFee, String eldLastMonthFee, String eldOneYearPrice, String eldTwoYearPrice){
+    public boolean compareEldPrice(String  quantityOfDevices, String typeOfPaymentMethod, String eldFirstMonthFee, String eldLastMonthFee, String eldOneYearPrice, String eldTwoYearPrice) {
 
-        if (Integer.parseInt(quantityOfDevices) > 0){
+        if (Integer.parseInt(quantityOfDevices) > 0) {
 
-            if (Integer.parseInt(typeOfPaymentMethod) == 0){
-                if (compareFirstMonthFee(eldFirstMonthFee) == true){
-                    logger.info("AC failed: FirstMonthFee is correct");
-                }
-                if (compareLastMonthFee(eldLastMonthFee) == true){
-                    logger.info("AC failed: LastMonthFee is correct");
-                }
-                else {
-                    logger.info("AC failed: LastMonthFee/FirstMonthFee is not correct");
-                }
+            if (Integer.parseInt(typeOfPaymentMethod) == 0) {
+                if (getFirstMonthFee().equals("$" + eldFirstMonthFee) == true)
+                    return getLastMonthFee().equals("$" + eldLastMonthFee);
+                else return false;
 
-            }
-            else if (typeOfPaymentMethod == "1"){
-                compareEldOneYearPrice(eldOneYearPrice);
-                if (compareEldOneYearPrice(eldOneYearPrice) == true){
-                    logger.info("AC failed: EldOneYearPrice is correct");
-                }
-                else {
-                    logger.info("AC failed: EldOneYearPrice is not correct");
-                }
-            }
-            else if (typeOfPaymentMethod == "2") {
-                compareEldTwoYearPrice(eldTwoYearPrice);
-                if (compareEldTwoYearPrice(eldTwoYearPrice) == true){
-                    logger.info("AC failed: EldOneYearPrice is correct");
-                }
-                else {
-                    logger.info("AC failed: EldOneYearPrice is not correct");
-                }
-            }
-            else {
-                logger.info(" no compareable");
-            }
-        }
-        else {
-            logger.info("No ELD Devices in Order");
-        }
+            } else if (Integer.parseInt(typeOfPaymentMethod) == 1) {
+                return getEldOneYearPrice().equals("$" + eldOneYearPrice);
 
+            } else if (Integer.parseInt(typeOfPaymentMethod) == 2) {
+                return getEldTwoYearPrice().equals("$" + eldTwoYearPrice);
+            } else return false;
+        } return true;
     }
 
-    public void compareOrderPrices(String eldTotalOrder, String eldPinCable, String eldDeliveryPrice, String eldDepositFee, String eldStickerLabel, String eldOBDPinCable) {
-        compareTotalOrder(eldTotalOrder);
-        comparePinCable(eldPinCable);
-        compareDeliveryPrice(eldDeliveryPrice);
-        compareDepositFee(eldDepositFee);
-        compareStickerLabel(eldStickerLabel);
-        compareOBDPinCable(eldOBDPinCable);
-
+    public boolean compareDepositFee(String  quantityOfDevices, String eldDepositFee){
+        if (Integer.parseInt(quantityOfDevices) > 0)
+            return getEldDepositFee().equals("$" + eldDepositFee);
+        else return true;
     }
+    public boolean compareDeliveryPrice(String neededStatePickUpFromOffice, String eldDeliveryPrice){
+        if (neededStatePickUpFromOffice.equals("uncheck"))
+            return getEldDeliveryPrice().equals("$" + eldDeliveryPrice);
+        else return true;
+    }
+    public boolean compareEldPinCable(String quantityPinCable, String eldPinCablePrice){
+        if (Integer.parseInt(quantityPinCable) > 0 )
+            return getEldPinCable().equals("$" + eldPinCablePrice);
+        else return true;
+    }
+    public boolean compareEldOBDPinCable(String quantityOBDPinCable, String eldEldOBDPinCablePrice){
+        if (Integer.parseInt(quantityOBDPinCable) > 0 )
+            return getEldOBDPinCable().equals("$" + eldEldOBDPinCablePrice);
+        else return true;
+    }
+    public boolean compareEldStickerLabel(String quantitySticker, String eldEldStickerLabelPrice){
+        if (Integer.parseInt(quantitySticker) > 0 )
+            return getEldStickerLabel().equals("$" + eldEldStickerLabelPrice);
+        else return true;
+    }
+
 }
+
+
