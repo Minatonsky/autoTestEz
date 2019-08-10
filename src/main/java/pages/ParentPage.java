@@ -5,6 +5,7 @@ import libs.ConfigProperties;
 import org.aeonbits.owner.ConfigFactory;
 import org.apache.log4j.Logger;
 import org.junit.Assert;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 
@@ -12,6 +13,7 @@ public class ParentPage {
     Logger logger = Logger.getLogger(getClass());
 
     WebDriver webDriver;
+    JavascriptExecutor js = (JavascriptExecutor) webDriver;
     String expectedUrl;
     protected static ConfigProperties configProperties = ConfigFactory.create(ConfigProperties.class);
     String baseUrl;

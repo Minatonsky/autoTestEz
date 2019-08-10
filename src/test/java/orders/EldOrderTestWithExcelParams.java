@@ -76,10 +76,10 @@ ORDER LIST
         modalEldPage.enterQuantityPinCable(quantityPinCable);
         modalEldPage.enterQuantityOBDPinCable(quantityOBDPinCable);
         modalEldPage.enterQuantitySticker(quantitySticker);
-        modalEldPage.enterQuantityCamera1(quantityCamera1);
-        modalEldPage.enterQuantityCamera2(quantityCamera2);
+//        modalEldPage.enterQuantityCamera1(quantityCamera1);
+//        modalEldPage.enterQuantityCamera2(quantityCamera2);
 
-        modalEldPage.clickPaymentMethods(typeOfPaymentMethod);
+//        modalEldPage.clickPaymentMethods(typeOfPaymentMethod);
 
 /*
 CHECK BOX DELIVERY
@@ -94,7 +94,7 @@ CHECK BOX DELIVERY
 //EQUIPMENT LEASE AND SOFTWARE SUBSCRIPTION SERVICE AGREEMENT
  */
 
-        modalEldPage.clickAgreements(quantityOfDevices);
+        modalEldPage.doAgreeAgreement(quantityOfDevices);
 
         String idLastOrderAfterTest = utilsForDB.getLastOrderIdForFleet(dataFleetId.get("fleetId").toString());
         checkAC("New order wasn`t created", idLastOrderBeforeTest.equals(idLastOrderAfterTest) , true);

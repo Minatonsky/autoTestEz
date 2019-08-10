@@ -1,6 +1,8 @@
 package pages;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 
 public class FinancesPage extends ParentPage {
 
@@ -8,8 +10,14 @@ public class FinancesPage extends ParentPage {
         super(webDriver, "/dash/finances/");
     }
 
+    @FindBy(xpath = ".//*[@id='current_due']")
+    private WebElement financeBalanceText;
 
-    public boolean compareBalance(String defaultBalance) {
-        return actionsWithOurElements.isElementInOrder(".//*[@id='current_due' and text()='$" + defaultBalance + "']");
+    public String getFinanceBalance(){
+        return financeBalanceText.getText();
     }
+    public boolean compareBalance(String defaultBalance) {
+        return getFinanceBalance().equals("$" + defaultBalance);
+    }
+
 }

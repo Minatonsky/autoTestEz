@@ -8,17 +8,18 @@ import org.openqa.selenium.support.FindBy;
 import static libs.Utils.waitABit;
 
 public class ModalEldPage extends ParentPage {
+    LoginPage loginPage;
 
-    @FindBy(id = "number_device")
+    @FindBy(name ="amount")
     private WebElement quantityDeviseInput;
 
     @FindBy(id = "send_order")
     private WebElement orderButton;
     
-    @FindBy(id = "first_name")
+    @FindBy(id = "name")
     private WebElement firstNameInput;
 
-    @FindBy(id = "last_name")
+    @FindBy(id = "surname")
     private WebElement lastNameInput;
 
     @FindBy(id = "phone")
@@ -39,16 +40,19 @@ public class ModalEldPage extends ParentPage {
     @FindBy(id = "leaseAndAgreementCheckbox")
     private WebElement agreement;
 
-    @FindBy(xpath = "//button[@class='fast_move']/i[@class='fa fa-arrow-down']")
+    @FindBy(id ="leaseAndAgreementCameraCheckbox")
+    private WebElement agreementCamera;
+
+    @FindBy(xpath = ".//button[@class='fast_move']/i[@class='fa fa-arrow-down']")
     private WebElement buttonFastMove;
 
-    @FindBy(xpath = "//button[(text()= 'I Agree')]")
+    @FindBy(xpath = ".//button[(text()= 'I Agree')]")
     private WebElement buttonAgree;
 
-    @FindBy(xpath = "//div[@class='col-sm-6 text-center text-md-left mb-1 hidden-xs']/button[(text()='Cancel order')]")
+    @FindBy(xpath = ".//div[@class='col-sm-6 text-center text-md-left mb-1 hidden-xs']/button[(text()='Cancel order')]")
     private WebElement buttonCancel;
 
-    @FindBy(xpath = "//button[text()='Confirm']")
+    @FindBy(xpath = ".//button[text()='Confirm']")
     private WebElement buttonConfirm;
 
     @FindBy(xpath = ".//select[@name='state']")
@@ -57,33 +61,72 @@ public class ModalEldPage extends ParentPage {
     @FindBy(name = "pick_up")
     private WebElement checkBoxPickUp;
 
-    @FindBy(name = "overnight_delivery")
+    @FindBy(name = "overnight")
     private WebElement checkBoxOvernightDelivery;
 
-    @FindBy(xpath = ".//*[@data-id='2']/td[3]/input")
+    @FindBy(name = "products[2]")
     private WebElement quantityPinCableInput;
 
-    @FindBy(xpath = ".//*[@data-id='3']/td[3]/input")
+    @FindBy(name = "products[3]")
     private WebElement quantityOBDPinCableInput;
 
-    @FindBy(xpath = ".//*[@data-id='4']/td[3]/input")
+    @FindBy(name = "products[4]")
     private WebElement quantityStickerInput;
 
-    @FindBy(xpath = ".//*[@data-id='100']/td[3]/input")
+    @FindBy(name = "products[5]")
     private WebElement quantityCamera1Input;
 
-    @FindBy(xpath = ".//*[@data-id='101']/td[3]/input")
+    @FindBy(name = "products[6]")
     private WebElement quantityCamera2Input;
+
+    @FindBy(xpath = ".//*[text()='TOTAL']/../../td[@class='text-center price']")
+    private WebElement totalOrderText;
+
+    @FindBy(xpath = "//*[text()='ELD first month fee $29.99']/../td[@class='text-center price']")
+    private WebElement firstMonthFeeText;
+
+    @FindBy(xpath = "//*[text()='ELD last month fee $29.99']/../td[@class='text-center price']")
+    private WebElement lastMonthFeeText;
+
+    @FindBy(xpath = "//*[text()='ELD price $329.89']/../td[@class='text-center price']")
+    private WebElement eldOneYearPriceText;
+
+    @FindBy(xpath = "//*[text()='ELD price $629.79']/../td[@class='text-center price']")
+    private WebElement eldTwoYearPriceText;
+
+    @FindBy(xpath = "//*[text()='ELD Deposit fee $49.99']/../td[@class='text-center price']")
+    private WebElement eldDepositFeeText;
+
+    @FindBy(xpath = "//*[text()='Delivery price']/../td[@class='text-center price']")
+    private WebElement eldDeliveryPriceText;
+
+    @FindBy(xpath = "//*[text()='6 Pin Cable']/../td[@class='text-center price']")
+    private WebElement eldPinCableText;
+
+    @FindBy(xpath = "//*[text()='OBDII 16 pin Cable']/../td[@class='text-center price']")
+    private WebElement eldOBDPinCableText;
+
+    @FindBy(xpath = "//*[text()='Sticker Label']/../td[@class='text-center price']")
+    private WebElement eldStickerLabelText;
+
+    @FindBy(xpath = ".//div[@data-id='0']")
+    private WebElement monthToMonth;
+
+    @FindBy(xpath = ".//*[@data-id='1']")
+    private WebElement oneYearSubscription;
+
+    @FindBy(xpath = ".//div[@data-id='2']")
+    private WebElement twoYearSubscription;
+
 
 
     public ModalEldPage(WebDriver webDriver) {
         super(webDriver, "/dash/eld/");
     }
 
-
 /*
-PERSONAL DATA
- */
+ PERSONAL DATA
+*/
     public void selectState(String deliveryState) {actionsWithOurElements.selectValueInDropDown(typeOfState, deliveryState);}
 
     public void enterFirstName(String firstName) {actionsWithOurElements.enterTextToElement(firstNameInput, firstName);}
@@ -122,6 +165,8 @@ EQUIPMENT LEASE AND SOFTWARE SUBSCRIPTION SERVICE AGREEMENT
 
     public void clickAgreement() { actionsWithOurElements.clickOnElement(agreement);}
 
+    public void clickAgreementCamera() { actionsWithOurElements.clickOnElement(agreementCamera);}
+
     public void clickButtonFastMove() {actionsWithOurElements.clickOnElement(buttonFastMove);}
 
     public void clickButtonAgree() {actionsWithOurElements.clickOnElement(buttonAgree);}
@@ -132,13 +177,20 @@ EQUIPMENT LEASE AND SOFTWARE SUBSCRIPTION SERVICE AGREEMENT
         actionsWithOurElements.clickOnElement(buttonConfirm);
     }
 
+
+
     @Step
     public void doCancelAgreementForManagerOrder(){
-        waitABit(3);
-        clickButtonFastMove();
-        clickButtonCancel();
-        clickButtonConfirm();
-        waitABit(3);
+
+            waitABit(3);
+            clickButtonFastMove();
+            waitABit(3);
+            clickButtonCancel();
+            waitABit(3);
+            clickButtonConfirm();
+            waitABit(3);
+            logger.info("Order was canceled");
+
     }
 
     @Step
@@ -149,19 +201,38 @@ EQUIPMENT LEASE AND SOFTWARE SUBSCRIPTION SERVICE AGREEMENT
         waitABit(3);
     }
 
+    /**
+     *
+     * @param quantityOfDevices
+     */
     @Step
-    public void clickAgreements(String quantityOfDevices){
+    public void doAgreeAgreement(String quantityOfDevices){
         int num = Integer.parseInt(quantityOfDevices);
         if (num > 0){
             clickAgreement();
             clickButtonFastMove();
             clickButtonAgree();
             clickButtonOrder();
-            logger.info("quantityOfDevices > 0");
         }
         else {
             clickButtonOrder();
-            logger.info("quantityOfDevices == 0");
+            logger.info("quantityOfDevices = 0");
+        }
+    }
+
+    @Step
+    public void clickAgreementCamera(String quantityOfCamera){
+        int num = Integer.parseInt(quantityOfCamera);
+        if (num > 0){
+            clickAgreementCamera();
+            clickButtonFastMove();
+            clickButtonAgree();
+            clickButtonOrder();
+            logger.info("quantityOfCamera > 0");
+        }
+        else {
+            clickButtonOrder();
+            logger.info("quantityOfCamera == 0");
         }
     }
 
@@ -206,25 +277,49 @@ PAYMENT METHODS
  */
 
     @Step
-    public void clickPaymentMethods(String typeOfPaymentMethod){
-        if (isPaymentInList(typeOfPaymentMethod)){
-            clickOnPaymentMethod(typeOfPaymentMethod);
-            logger.info("Payment Method " + typeOfPaymentMethod + " was selected");
+    public void clickPaymentMethods(String typeOfPaymentMethod, String quantityOfDevices){
+
+        if (Integer.parseInt(quantityOfDevices) > 0) {
+
+            if (Integer.parseInt(typeOfPaymentMethod) == 0) {
+                actionsWithOurElements.doubleClickElement(monthToMonth);
+                logger.info("Payment Method monthToMonth was selected");
+            } else if (Integer.parseInt(typeOfPaymentMethod) == 1){
+                actionsWithOurElements.doubleClickElement(oneYearSubscription);
+                logger.info("Payment Method oneYearSubscription was selected");
+            } else if (Integer.parseInt(typeOfPaymentMethod) == 2){
+                actionsWithOurElements.doubleClickElement(twoYearSubscription);
+                logger.info("Payment Method twoYearSubscription was selected");
+            }
         }
         else {
-            logger.info("Payment Method was not selected");
+            logger.info("Payment Method was not selected no devices in order");
         }
-    }
-
-    private void clickOnPaymentMethod(String typeOfPaymentMethod) {
-        actionsWithOurElements.clickOnElement(".//*[@id='eldTariffs']/*[@data-id='" + typeOfPaymentMethod + "']");
-    }
-
-    private boolean isPaymentInList(String typeOfPaymentMethod) {
-        return actionsWithOurElements.isElementInOrder(".//*[@id='eldTariffs']/*[@data-id='" + typeOfPaymentMethod + "']");
     }
 
 /*
+PAYMENTS METHODS CAMERA
+ */
+    @Step
+    public void clickPaymentMethodsCamera(String typeOfPaymentMethodCamera){
+        if (isPaymentCameraInList(typeOfPaymentMethodCamera)){
+            clickOnPaymentMethodCamera(typeOfPaymentMethodCamera);
+            logger.info("Payment Method Camera" + typeOfPaymentMethodCamera + " was selected");
+        }
+        else {
+            logger.info("Payment Method Camera was not selected");
+        }
+    }
+
+    private void clickOnPaymentMethodCamera(String typeOfPaymentMethodCamera) {
+        actionsWithOurElements.clickOnElement(".//*[@data-id='" + typeOfPaymentMethodCamera + "']");
+    }
+
+    private boolean isPaymentCameraInList(String typeOfPaymentMethodCamera) {
+        return actionsWithOurElements.isElementInOrder(".//*[@data-id='" + typeOfPaymentMethodCamera + "']");
+    }
+
+ /*
 BUTTON ORDER
  */
     @Step
@@ -235,34 +330,93 @@ BUTTON ORDER
 COMPARE METHODS
  */
 
-
-    @Step
-    public boolean compareTotalOrder(String eldStandardTotalOrder){
-        return actionsWithOurElements.isElementInOrder(".//*[@id='eld_total_order' and text()='$" + eldStandardTotalOrder + "']");
+    public boolean compareTotalOrder(String eldTotalOrder){
+        return getTotalOrder().equals("$" + eldTotalOrder);
+    }
+    public String getTotalOrder(){
+        return totalOrderText.getText();
     }
 
-    @Step
-    public boolean compareOrderPrice(String eldOrderPrice){
-        return actionsWithOurElements.isElementInOrder(".//*[@id='eld_order_price' and text()='$" + eldOrderPrice + "']");
+    public String getFirstMonthFee(){
+        return firstMonthFeeText.getText();
     }
 
-    @Step
-    public boolean compareDeliveryPrice(String eldDeliveryPrice){
-        return actionsWithOurElements.isElementInOrder(".//*[@id='eld_delivery_price' and text()='$" + eldDeliveryPrice + "']");
+    public String getLastMonthFee(){
+        return lastMonthFeeText.getText();
     }
 
-    @Step
-    public boolean compareFirstMonthFee(String eldFirstMonthFee){
-        return actionsWithOurElements.isElementInOrder(".//*[@id='eld_first_price' and text()='$" + eldFirstMonthFee + "']");
+    public String getEldOneYearPrice(){
+        return eldOneYearPriceText.getText();
     }
 
-    @Step
-    public boolean compareLastMonthFee(String eldLastMonthFee) {
-        return actionsWithOurElements.isElementInOrder(".//*[@id='eld_last_price' and text()='$" + eldLastMonthFee + "']");
+    public String getEldTwoYearPrice(){
+        return eldTwoYearPriceText.getText();
     }
 
-    @Step
-    public boolean compareDepositFee(String eldDepositFee){
-        return actionsWithOurElements.isElementInOrder(".//*[@id='eld_deposit_fee' and text()='$" + eldDepositFee + "']");
+    public String getEldDepositFee(){
+        return eldDepositFeeText.getText();
     }
+
+    public String getEldDeliveryPrice(){
+        return eldDeliveryPriceText.getText();
+    }
+
+    public String getEldPinCable(){
+        return eldPinCableText.getText();
+    }
+
+    public String getEldOBDPinCable(){
+        return eldOBDPinCableText.getText();
+    }
+
+    public String getEldStickerLabel(){
+        return eldStickerLabelText.getText();
+    }
+
+    public boolean compareEldPrice(String  quantityOfDevices, String typeOfPaymentMethod, String eldFirstMonthFee, String eldLastMonthFee, String eldOneYearPrice, String eldTwoYearPrice) {
+
+        if (Integer.parseInt(quantityOfDevices) > 0) {
+
+            if (Integer.parseInt(typeOfPaymentMethod) == 0) {
+                if (getFirstMonthFee().equals("$" + eldFirstMonthFee) == true)
+                    return getLastMonthFee().equals("$" + eldLastMonthFee);
+                else return false;
+
+            } else if (Integer.parseInt(typeOfPaymentMethod) == 1) {
+                return getEldOneYearPrice().equals("$" + eldOneYearPrice);
+
+            } else if (Integer.parseInt(typeOfPaymentMethod) == 2) {
+                return getEldTwoYearPrice().equals("$" + eldTwoYearPrice);
+            } else return false;
+        } return true;
+    }
+
+    public boolean compareDepositFee(String  quantityOfDevices, String eldDepositFee){
+        if (Integer.parseInt(quantityOfDevices) > 0)
+            return getEldDepositFee().equals("$" + eldDepositFee);
+        else return true;
+    }
+    public boolean compareDeliveryPrice(String neededStatePickUpFromOffice, String eldDeliveryPrice){
+        if (neededStatePickUpFromOffice.equals("uncheck"))
+            return getEldDeliveryPrice().equals("$" + eldDeliveryPrice);
+        else return true;
+    }
+    public boolean compareEldPinCable(String quantityPinCable, String eldPinCablePrice){
+        if (Integer.parseInt(quantityPinCable) > 0 )
+            return getEldPinCable().equals("$" + eldPinCablePrice);
+        else return true;
+    }
+    public boolean compareEldOBDPinCable(String quantityOBDPinCable, String eldEldOBDPinCablePrice){
+        if (Integer.parseInt(quantityOBDPinCable) > 0 )
+            return getEldOBDPinCable().equals("$" + eldEldOBDPinCablePrice);
+        else return true;
+    }
+    public boolean compareEldStickerLabel(String quantitySticker, String eldEldStickerLabelPrice){
+        if (Integer.parseInt(quantitySticker) > 0 )
+            return getEldStickerLabel().equals("$" + eldEldStickerLabelPrice);
+        else return true;
+    }
+
 }
+
+

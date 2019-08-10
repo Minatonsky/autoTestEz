@@ -4,6 +4,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+import static libs.Utils.waitABit;
+
 public class ManagerEldPage extends ParentPage {
 
 
@@ -13,7 +15,7 @@ public class ManagerEldPage extends ParentPage {
     @FindBy(xpath = ".//*[@placeholder='Id']")
     private WebElement idHolder;
 
-    @FindBy(xpath = ".//button[@onclick='createOrder();']")
+    @FindBy(xpath = ".//button[text()='New Order']")
     private WebElement newOrderButton;
 
     public ManagerEldPage(WebDriver webDriver) {
@@ -32,6 +34,16 @@ public class ManagerEldPage extends ParentPage {
 
     public void clickOnNewOrderButton(){
         actionsWithOurElements.clickOnElement(newOrderButton);
+    }
+
+    public void openOrderInfo(String orderId){
+        waitABit(2);
+        clickOnEldOrders();
+        waitABit(2);
+        enterIdOrder(orderId);
+        waitABit(2);
+        clickOnOrderOnList(orderId);
+        waitABit(2);
     }
 
 }

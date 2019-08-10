@@ -51,7 +51,7 @@ ORDER LIST
         modalEldPage.enterQuantityCamera1(dataForEldOrder.get("quantityCamera1").toString());
         modalEldPage.enterQuantityCamera2(dataForEldOrder.get("quantityCamera2").toString());
 
-        modalEldPage.clickPaymentMethods(dataForEldOrder.get("typeOfPaymentMethod").toString());
+        modalEldPage.clickPaymentMethods(dataForEldOrder.get("typeOfPaymentMethod").toString(), dataForEldOrder.get("quantityOfDevices").toString());
 
 /*
 CHECK BOX DELIVERY
@@ -65,7 +65,7 @@ CHECK BOX DELIVERY
 /*
 EQUIPMENT LEASE AND SOFTWARE SUBSCRIPTION SERVICE AGREEMENT
  */
-        modalEldPage.clickAgreements(dataForEldOrder.get("quantityOfDevices").toString());
+        modalEldPage.doAgreeAgreement(dataForEldOrder.get("quantityOfDevices").toString());
 /*
 CHECK LAST ID ORDER BEFORE AND AFTER TEST
  */

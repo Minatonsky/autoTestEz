@@ -280,4 +280,5 @@ COMPARE METHODS
     public boolean compareDepositFee(String eldDepositFee){
         return actionsWithOurElements.isElementInOrder(".//*[@id='eld_deposit_fee']/b[text()='$ " + eldDepositFee + "']");
     }
+
 }

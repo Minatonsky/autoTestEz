@@ -12,6 +12,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class ActionsWithOurElements {
     WebDriver webDriver;
+    Actions action;
     Logger logger = Logger.getLogger(getClass());
     WebDriverWait webDriverWait20;
     WebDriverWait webDriverWait40;
@@ -21,6 +22,7 @@ public class ActionsWithOurElements {
         this.webDriver = webDriver;
         webDriverWait20 = new WebDriverWait(webDriver, 20);
         webDriverWait40 = new WebDriverWait(webDriver, 40);
+        action = new Actions(webDriver);
     }
 
     public void enterTextToElement(WebElement webElement, String text){
@@ -38,6 +40,26 @@ public class ActionsWithOurElements {
         try{
             webDriverWait20.until(ExpectedConditions.elementToBeClickable(webElement));
             webElement.click();
+            logger.info("Element was clicked");
+        } catch (Exception e){
+            printErrorAndStopTest(e);
+        }
+    }
+
+    public void submitOnElement(WebElement webElement){
+        try{
+            webDriverWait20.until(ExpectedConditions.elementToBeClickable(webElement));
+            webElement.submit();
+            logger.info("Element was clicked");
+        } catch (Exception e){
+            printErrorAndStopTest(e);
+        }
+    }
+
+    public void doubleClickElement(WebElement webElement){
+        try{
+            webDriverWait20.until(ExpectedConditions.elementToBeClickable(webElement));
+            action.doubleClick(webElement).perform();
             logger.info("Element was clicked");
         } catch (Exception e){
             printErrorAndStopTest(e);

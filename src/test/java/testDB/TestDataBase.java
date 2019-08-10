@@ -54,5 +54,11 @@ public class TestDataBase {
         }
     }
 
+    @Test
+    public void testGetRowNumberNewOrder() throws SQLException, IOException, ClassNotFoundException {
+        UtilsForDB utilsForDB = new UtilsForDB();
+        String userId = "3455";
+        System.out.println(utilsForDB.getCountNewOrder(userId));
+    }
 
 }

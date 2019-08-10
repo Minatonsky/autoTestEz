@@ -17,9 +17,9 @@ import java.util.Map;
 
 @RunWith(Parameterized.class)
 
-public class FleetOrderCancelByManagerParameterizedTest extends ParentTest {String  quantityOfDevices, typeOfPaymentMethod, quantityPinCable, quantityOBDPinCable, quantitySticker, quantityCamera1, quantityCamera2, neededStatePickUpFromOffice, neededStateOvernightDelivery, currentDue, eldOrderPrice, eldDeliveryPrice, eldFirstMonthFee, eldLastMonthFee, eldDepositFee, defaultTotalOrder, defaultBalance, balanceIfCanceled;
+public class FleetDoOrderManagerCompletedOrderParamsTest extends ParentTest {String  quantityOfDevices, typeOfPaymentMethod, quantityPinCable, quantityOBDPinCable, quantitySticker, quantityCamera1, quantityCamera2, neededStatePickUpFromOffice, neededStateOvernightDelivery, currentDue, eldOrderPrice, eldDeliveryPrice, eldFirstMonthFee, eldLastMonthFee, eldDepositFee, defaultTotalOrder, defaultBalance, balanceIfCanceled;
 
-    public FleetOrderCancelByManagerParameterizedTest(String quantityOfDevices, String typeOfPaymentMethod, String quantityPinCable, String quantityOBDPinCable, String quantitySticker, String quantityCamera1, String quantityCamera2, String neededStatePickUpFromOffice, String neededStateOvernightDelivery, String currentDue, String eldOrderPrice, String eldDeliveryPrice, String eldFirstMonthFee, String eldLastMonthFee, String eldDepositFee, String defaultTotalOrder, String defaultBalance, String balanceIfCanceled) {
+    public FleetDoOrderManagerCompletedOrderParamsTest(String quantityOfDevices, String typeOfPaymentMethod, String quantityPinCable, String quantityOBDPinCable, String quantitySticker, String quantityCamera1, String quantityCamera2, String neededStatePickUpFromOffice, String neededStateOvernightDelivery, String currentDue, String eldOrderPrice, String eldDeliveryPrice, String eldFirstMonthFee, String eldLastMonthFee, String eldDepositFee, String defaultTotalOrder, String defaultBalance, String balanceIfCanceled) {
 
         this.quantityOfDevices = quantityOfDevices;
         this.typeOfPaymentMethod = typeOfPaymentMethod;
@@ -62,8 +62,7 @@ public class FleetOrderCancelByManagerParameterizedTest extends ParentTest {Stri
 
         loginPage.userValidLogIn(dataForFleetValidLogIn.get("login").toString(),dataForFleetValidLogIn.get("pass").toString());
 
-        dashboardPage.clickOnMenuDash();
-        dashboardPage.clickMenuSizeButton();
+        dashboardPage.openMenuDash();
         dashboardPage.goToEldPage();
 
         eldUserPage.clickOnOrderELD();
@@ -72,31 +71,16 @@ public class FleetOrderCancelByManagerParameterizedTest extends ParentTest {Stri
 
 
         modalEldPage.enterOrderData(quantityOfDevices, quantityPinCable, quantityOBDPinCable, quantitySticker, quantityCamera1, quantityCamera2, neededStatePickUpFromOffice, neededStateOvernightDelivery);
-        modalEldPage.clickPaymentMethods(typeOfPaymentMethod);
+//        modalEldPage.clickPaymentMethods(typeOfPaymentMethod);
 
-        modalEldPage.compareTotalOrder(defaultTotalOrder);
-        checkAC("Total Order is not correct", modalEldPage.compareTotalOrder(defaultTotalOrder), true);
 
-        modalEldPage.compareOrderPrice(eldOrderPrice);
-        checkAC("OrderPrice is not correct", modalEldPage.compareOrderPrice(eldOrderPrice), true);
 
-        modalEldPage.compareDeliveryPrice(eldDeliveryPrice);
-        checkAC("DeliveryPrice is not correct", modalEldPage.compareDeliveryPrice(eldDeliveryPrice), true);
-
-        modalEldPage.compareFirstMonthFee(eldFirstMonthFee);
-        checkAC("FirstMonthFee is not correct", modalEldPage.compareFirstMonthFee(eldFirstMonthFee), true);
-
-        modalEldPage.compareLastMonthFee(eldLastMonthFee);
-        checkAC("LastMonthFee is not correct", modalEldPage.compareLastMonthFee(eldLastMonthFee), true);
-
-        modalEldPage.compareDepositFee(eldDepositFee);
-        checkAC("DepositFee is not correct", modalEldPage.compareDepositFee(eldDepositFee), true);
 
         modalEldPage.compareTotalOrder(defaultTotalOrder);
         checkAC("Total Order is not correct", modalEldPage.compareTotalOrder(defaultTotalOrder), true);
 
 
-        modalEldPage.clickAgreements(quantityOfDevices);
+        modalEldPage.doAgreeAgreement(quantityOfDevices);
 
 
         String idLastOrderAfterTest = utilsForDB.getLastOrderIdForFleet(dataFleetId.get("fleetId").toString());
@@ -108,51 +92,33 @@ public class FleetOrderCancelByManagerParameterizedTest extends ParentTest {Stri
         checkAC("Balance is not correct", financesPage.compareBalance(defaultBalance), true);
 
 
-
-
         tearDown();
         setUp();
 
 /*
-MANAGER CANCEL ORDER
+MANAGER COMPLETED ORDER
  */
 
         Map dataForManagerValidLogIn = excelDriver.getData(configProperties.DATA_FILE_PATH() + "testLogin.xls", "ManagerLogin");
 
         loginPage.userValidLogIn(dataForManagerValidLogIn.get("login").toString(),dataForManagerValidLogIn.get("pass").toString());
 
-
-        dashboardPage.clickOnMenuDash();
-        dashboardPage.clickMenuSizeButton();
-//        selectBrowserWindow("mainWindow");
+        dashboardPage.openMenuDash();
 
         dashboardPage.clickOnMenuPageELD();
-        Thread.sleep(5000);
-        managerEldPage.clickOnEldOrders();
-        Thread.sleep(5000);
-        managerEldPage.enterIdOrder(idLastOrderAfterTest);
-        Thread.sleep(5000);
-        managerEldPage.clickOnOrderOnList(idLastOrderAfterTest);
-        modalOrderPage.selectOrderStatus("2");
-        modalOrderPage.clickButtonSave();
 
+        managerEldPage.openOrderInfo(idLastOrderAfterTest);
 
-        tearDown();
-        setUp();
+        modalOrderPage.completedOrder();
 
 /*
-USER CHECK IF BALANCE NOT CHANGED
+CHECK ORDER STATUS FROM DATABASE
  */
 
-        loginPage.userValidLogIn(dataForFleetValidLogIn.get("login").toString(),dataForFleetValidLogIn.get("pass").toString());
+        Thread.sleep(5000);
+        String orderStatus = utilsForDB.getOrderStatus(idLastOrderAfterTest);
+        checkAC("Order is not completed", orderStatus.equals("1") , true);
 
-        dashboardPage.clickOnMenuDash();
-        dashboardPage.clickMenuSizeButton();
-
-        dashboardPage.clickOnMenuPageFinances();
-
-        financesPage.compareBalance(balanceIfCanceled);
-        checkAC("Balance is not correct", financesPage.compareBalance(balanceIfCanceled), true);
     }
 
 
