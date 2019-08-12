@@ -4008,3 +4008,217 @@ Session ID: 3ec881f0fbc6153e98340fb7f5283cdf
 2019-10-08 00:40:01   INFO [orders.FleetEldOrderTestWithExcel] : AC passed
 2019-10-08 00:40:01   INFO [orders.FleetEldOrderTestWithExcel] : AC passed
 2019-10-08 00:40:01   INFO [orders.FleetEldOrderTestWithExcel] : AC passed
+2019-12-08 18:17:32   INFO [orders.FleetEldOrderTestWithExcel] : Chrome will be started
+2019-12-08 18:17:41   INFO [orders.FleetEldOrderTestWithExcel] : Chrome is started
+2019-12-08 18:17:48   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-12-08 18:17:50   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-12-08 18:17:56   INFO [pages.LoginPage] : Login Page was opened
+2019-12-08 18:17:57   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-12-08 18:17:57   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2019-12-08 18:17:57   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-12-08 18:17:58   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-12-08 18:18:04   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-12-08 18:18:07   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-12-08 18:18:08   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-12-08 18:18:14   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-12-08 18:18:18   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-12-08 18:18:18   INFO [libs.ActionsWithOurElements] : 1 was selected in Drop-down
+2019-12-08 18:18:19   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2019-12-08 18:18:19   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2019-12-08 18:18:20   INFO [libs.ActionsWithOurElements] : 1676475006 was inputted into element
+2019-12-08 18:18:20   INFO [libs.ActionsWithOurElements] : Street was inputted into element
+2019-12-08 18:18:20   INFO [libs.ActionsWithOurElements] : 2 was inputted into element
+2019-12-08 18:18:21   INFO [libs.ActionsWithOurElements] : Phoenix was inputted into element
+2019-12-08 18:18:21   INFO [libs.ActionsWithOurElements] : 30606 was inputted into element
+2019-12-08 18:18:21   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-12-08 18:18:21   INFO [libs.ActionsWithOurElements] : checkbox was checked
+2019-12-08 18:18:21   INFO [libs.ActionsWithOurElements] : checkbox is already unchecked
+2019-12-08 18:18:22   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-12-08 18:18:22   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-12-08 18:18:23   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-12-08 18:18:23   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-12-08 18:18:23   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-12-08 18:18:24   INFO [libs.ActionsWithOurElements] : 8 was selected in Drop-down
+2019-12-08 18:18:24   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-12-08 18:18:25   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-12-08 18:18:25   INFO [pages.ModalEldPage] : Payment Method monthToMonth was selected
+2019-12-08 18:18:25   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-12-08 18:18:25   INFO [pages.ModalEldPage] : Payment Method buyoutContract was selected
+2019-12-08 18:18:28   INFO [orders.FleetEldOrderTestWithExcel] : AC passed
+2019-12-08 18:18:28   INFO [orders.FleetEldOrderTestWithExcel] : AC passed
+2019-12-08 18:18:28   INFO [orders.FleetEldOrderTestWithExcel] : AC passed
+2019-12-08 18:18:28   INFO [orders.FleetEldOrderTestWithExcel] : AC passed
+2019-12-08 18:18:28   INFO [orders.FleetEldOrderTestWithExcel] : AC passed
+2019-12-08 18:18:28   INFO [orders.FleetEldOrderTestWithExcel] : AC passed
+2019-12-08 18:18:28   INFO [orders.FleetEldOrderTestWithExcel] : AC passed
+2019-12-08 18:18:28   INFO [orders.FleetEldOrderTestWithExcel] : AC passed
+2019-12-08 18:18:28   INFO [orders.FleetEldOrderTestWithExcel] : AC passed
+2019-12-08 18:18:28   INFO [orders.FleetEldOrderTestWithExcel] : AC passed
+2019-12-08 18:18:28   INFO [orders.FleetEldOrderTestWithExcel] : AC passed
+2019-12-08 18:18:28   INFO [orders.FleetEldOrderTestWithExcel] : AC passed
+2019-12-08 18:18:29  ERROR [orders.FleetEldOrderTestWithExcel] : AC failed: Total Order is not correct
+2019-12-08 18:23:08   INFO [orders.FleetEldOrderTestWithExcel] : Chrome will be started
+2019-12-08 18:23:16   INFO [orders.FleetEldOrderTestWithExcel] : Chrome is started
+2019-12-08 18:23:23   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-12-08 18:23:25   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-12-08 18:23:32   INFO [pages.LoginPage] : Login Page was opened
+2019-12-08 18:23:32   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-12-08 18:23:32   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2019-12-08 18:23:33   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-12-08 18:23:33   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-12-08 18:23:39   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-12-08 18:23:42   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-12-08 18:23:43   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-12-08 18:23:49   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-12-08 18:23:53   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-12-08 18:23:53   INFO [libs.ActionsWithOurElements] : 1 was selected in Drop-down
+2019-12-08 18:23:54   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2019-12-08 18:23:54   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2019-12-08 18:23:55   INFO [libs.ActionsWithOurElements] : 1676475006 was inputted into element
+2019-12-08 18:23:55   INFO [libs.ActionsWithOurElements] : Street was inputted into element
+2019-12-08 18:23:55   INFO [libs.ActionsWithOurElements] : 2 was inputted into element
+2019-12-08 18:23:55   INFO [libs.ActionsWithOurElements] : Phoenix was inputted into element
+2019-12-08 18:23:56   INFO [libs.ActionsWithOurElements] : 30606 was inputted into element
+2019-12-08 18:23:56   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-12-08 18:23:56   INFO [libs.ActionsWithOurElements] : checkbox was checked
+2019-12-08 18:23:56   INFO [libs.ActionsWithOurElements] : checkbox is already unchecked
+2019-12-08 18:23:56   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-12-08 18:23:57   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-12-08 18:23:57   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-12-08 18:23:58   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-12-08 18:23:58   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-12-08 18:23:59   INFO [libs.ActionsWithOurElements] : 8 was selected in Drop-down
+2019-12-08 18:23:59   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-12-08 18:23:59   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-12-08 18:23:59   INFO [pages.ModalEldPage] : Payment Method monthToMonth was selected
+2019-12-08 18:24:00   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-12-08 18:24:00   INFO [pages.ModalEldPage] : Payment Method buyoutContract was selected
+2019-12-08 18:24:03   INFO [orders.FleetEldOrderTestWithExcel] : AC passed
+2019-12-08 18:24:03   INFO [orders.FleetEldOrderTestWithExcel] : AC passed
+2019-12-08 18:24:03   INFO [orders.FleetEldOrderTestWithExcel] : AC passed
+2019-12-08 18:24:03   INFO [orders.FleetEldOrderTestWithExcel] : AC passed
+2019-12-08 18:24:03   INFO [orders.FleetEldOrderTestWithExcel] : AC passed
+2019-12-08 18:24:03   INFO [orders.FleetEldOrderTestWithExcel] : AC passed
+2019-12-08 18:24:03   INFO [orders.FleetEldOrderTestWithExcel] : AC passed
+2019-12-08 18:24:03   INFO [orders.FleetEldOrderTestWithExcel] : AC passed
+2019-12-08 18:24:03   INFO [orders.FleetEldOrderTestWithExcel] : AC passed
+2019-12-08 18:24:03   INFO [orders.FleetEldOrderTestWithExcel] : AC passed
+2019-12-08 18:24:03   INFO [orders.FleetEldOrderTestWithExcel] : AC passed
+2019-12-08 18:24:03   INFO [orders.FleetEldOrderTestWithExcel] : AC passed
+2019-12-08 18:24:03  ERROR [orders.FleetEldOrderTestWithExcel] : AC failed: Total Order is not correct
+2019-12-08 18:25:10   INFO [orders.FleetEldOrderTestWithExcel] : Chrome will be started
+2019-12-08 18:25:18   INFO [orders.FleetEldOrderTestWithExcel] : Chrome is started
+2019-12-08 18:25:25   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-12-08 18:25:28   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-12-08 18:25:34   INFO [pages.LoginPage] : Login Page was opened
+2019-12-08 18:25:34   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-12-08 18:25:35   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2019-12-08 18:25:35   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-12-08 18:25:35   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-12-08 18:25:41   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-12-08 18:25:45   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-12-08 18:25:45   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-12-08 18:25:52   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-12-08 18:25:55   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-12-08 18:25:56   INFO [libs.ActionsWithOurElements] : 1 was selected in Drop-down
+2019-12-08 18:25:56   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2019-12-08 18:25:56   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2019-12-08 18:25:57   INFO [libs.ActionsWithOurElements] : 1676475006 was inputted into element
+2019-12-08 18:25:57   INFO [libs.ActionsWithOurElements] : Street was inputted into element
+2019-12-08 18:25:57   INFO [libs.ActionsWithOurElements] : 2 was inputted into element
+2019-12-08 18:25:58   INFO [libs.ActionsWithOurElements] : Phoenix was inputted into element
+2019-12-08 18:25:58   INFO [libs.ActionsWithOurElements] : 30606 was inputted into element
+2019-12-08 18:25:58   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-12-08 18:25:58   INFO [libs.ActionsWithOurElements] : checkbox was checked
+2019-12-08 18:25:58   INFO [libs.ActionsWithOurElements] : checkbox is already unchecked
+2019-12-08 18:25:59   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-12-08 18:25:59   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-12-08 18:26:00   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-12-08 18:26:00   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-12-08 18:26:01   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-12-08 18:26:01   INFO [libs.ActionsWithOurElements] : 8 was selected in Drop-down
+2019-12-08 18:26:02   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-12-08 18:26:02   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-12-08 18:26:02   INFO [pages.ModalEldPage] : Payment Method monthToMonth was selected
+2019-12-08 18:26:03   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-12-08 18:26:03   INFO [pages.ModalEldPage] : Payment Method buyoutContract was selected
+2019-12-08 18:26:06   INFO [orders.FleetEldOrderTestWithExcel] : AC passed
+2019-12-08 18:26:06   INFO [orders.FleetEldOrderTestWithExcel] : AC passed
+2019-12-08 18:26:06   INFO [orders.FleetEldOrderTestWithExcel] : AC passed
+2019-12-08 18:26:06   INFO [orders.FleetEldOrderTestWithExcel] : AC passed
+2019-12-08 18:26:06   INFO [orders.FleetEldOrderTestWithExcel] : AC passed
+2019-12-08 18:26:06   INFO [orders.FleetEldOrderTestWithExcel] : AC passed
+2019-12-08 18:26:06   INFO [orders.FleetEldOrderTestWithExcel] : AC passed
+2019-12-08 18:26:06   INFO [orders.FleetEldOrderTestWithExcel] : AC passed
+2019-12-08 18:26:06   INFO [orders.FleetEldOrderTestWithExcel] : AC passed
+2019-12-08 18:26:06   INFO [orders.FleetEldOrderTestWithExcel] : AC passed
+2019-12-08 18:26:06   INFO [orders.FleetEldOrderTestWithExcel] : AC passed
+2019-12-08 18:26:06   INFO [orders.FleetEldOrderTestWithExcel] : AC passed
+2019-12-08 18:26:06   INFO [orders.FleetEldOrderTestWithExcel] : AC passed
+2019-12-08 18:26:07   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-12-08 18:26:07   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-12-08 18:26:08   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-12-08 18:26:08   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-12-08 18:26:08   INFO [pages.ModalEldPage] : quantityOfCamera > 0
+2019-12-08 18:35:15   INFO [orders.FleetEldOrderTestWithExcel] : Chrome will be started
+2019-12-08 18:35:23   INFO [orders.FleetEldOrderTestWithExcel] : Chrome is started
+2019-12-08 18:35:30   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-12-08 18:35:32   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-12-08 18:35:39   INFO [pages.LoginPage] : Login Page was opened
+2019-12-08 18:35:39   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-12-08 18:35:40   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2019-12-08 18:35:40   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-12-08 18:35:40   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-12-08 18:35:46   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-12-08 18:35:50   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-12-08 18:35:50   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-12-08 18:35:57   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-12-08 18:36:00   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-12-08 18:36:01   INFO [libs.ActionsWithOurElements] : 1 was selected in Drop-down
+2019-12-08 18:36:01   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2019-12-08 18:36:02   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2019-12-08 18:36:02   INFO [libs.ActionsWithOurElements] : 1676475006 was inputted into element
+2019-12-08 18:36:02   INFO [libs.ActionsWithOurElements] : Street was inputted into element
+2019-12-08 18:36:02   INFO [libs.ActionsWithOurElements] : 2 was inputted into element
+2019-12-08 18:36:03   INFO [libs.ActionsWithOurElements] : Phoenix was inputted into element
+2019-12-08 18:36:03   INFO [libs.ActionsWithOurElements] : 30606 was inputted into element
+2019-12-08 18:36:03   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-12-08 18:36:03   INFO [libs.ActionsWithOurElements] : checkbox was checked
+2019-12-08 18:36:03   INFO [libs.ActionsWithOurElements] : checkbox is already unchecked
+2019-12-08 18:36:04   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-12-08 18:36:04   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-12-08 18:36:05   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-12-08 18:36:05   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-12-08 18:36:05   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-12-08 18:36:06   INFO [libs.ActionsWithOurElements] : 8 was selected in Drop-down
+2019-12-08 18:36:06   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-12-08 18:36:07   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-12-08 18:36:07   INFO [pages.ModalEldPage] : Payment Method monthToMonth was selected
+2019-12-08 18:36:07   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-12-08 18:36:07   INFO [pages.ModalEldPage] : Payment Method buyoutContract was selected
+2019-12-08 18:36:10   INFO [orders.FleetEldOrderTestWithExcel] : AC passed
+2019-12-08 18:36:10   INFO [orders.FleetEldOrderTestWithExcel] : AC passed
+2019-12-08 18:36:10   INFO [orders.FleetEldOrderTestWithExcel] : AC passed
+2019-12-08 18:36:10   INFO [orders.FleetEldOrderTestWithExcel] : AC passed
+2019-12-08 18:36:10   INFO [orders.FleetEldOrderTestWithExcel] : AC passed
+2019-12-08 18:36:10   INFO [orders.FleetEldOrderTestWithExcel] : AC passed
+2019-12-08 18:36:10   INFO [orders.FleetEldOrderTestWithExcel] : AC passed
+2019-12-08 18:36:10   INFO [orders.FleetEldOrderTestWithExcel] : AC passed
+2019-12-08 18:36:10   INFO [orders.FleetEldOrderTestWithExcel] : AC passed
+2019-12-08 18:36:10   INFO [orders.FleetEldOrderTestWithExcel] : AC passed
+2019-12-08 18:36:11   INFO [orders.FleetEldOrderTestWithExcel] : AC passed
+2019-12-08 18:36:11   INFO [orders.FleetEldOrderTestWithExcel] : AC passed
+2019-12-08 18:36:11   INFO [orders.FleetEldOrderTestWithExcel] : AC passed
+2019-12-08 18:36:11   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-12-08 18:36:11   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-12-08 18:36:12   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-12-08 18:36:12   INFO [pages.ModalEldPage] : Agreement camera was agreed
+2019-12-08 18:36:13   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-12-08 18:36:13   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-12-08 18:36:14   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-12-08 18:36:14   INFO [pages.ModalEldPage] : Agreement camera was agreed
+2019-12-08 18:36:14   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-12-08 18:36:14   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-12-08 18:36:19   INFO [orders.FleetEldOrderTestWithExcel] : AC passed
+2019-12-08 18:36:22   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-12-08 18:36:28   INFO [orders.FleetEldOrderTestWithExcel] : AC passed

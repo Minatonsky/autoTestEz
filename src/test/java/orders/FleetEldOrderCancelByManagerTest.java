@@ -52,8 +52,8 @@ ORDER LIST
         modalEldPage.enterQuantityPinCable(dataForEldOrder.get("quantityPinCable").toString());
         modalEldPage.enterQuantityOBDPinCable(dataForEldOrder.get("quantityOBDPinCable").toString());
         modalEldPage.enterQuantitySticker(dataForEldOrder.get("quantitySticker").toString());
-        modalEldPage.enterQuantityCamera1(dataForEldOrder.get("quantityCamera1").toString());
-        modalEldPage.enterQuantityCamera2(dataForEldOrder.get("quantityCamera2").toString());
+        modalEldPage.enterQuantityCameraCP(dataForEldOrder.get("quantityCamera1").toString());
+        modalEldPage.enterQuantityCameraSVA(dataForEldOrder.get("quantityCamera2").toString());
 
         modalEldPage.clickPaymentMethods(dataForEldOrder.get("typeOfPaymentMethod").toString(), dataForEldOrder.get("quantityOfDevices").toString());
 
