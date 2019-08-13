@@ -4222,3 +4222,154 @@ Session ID: 3ec881f0fbc6153e98340fb7f5283cdf
 2019-12-08 18:36:19   INFO [orders.FleetEldOrderTestWithExcel] : AC passed
 2019-12-08 18:36:22   INFO [libs.ActionsWithOurElements] : Element was clicked
 2019-12-08 18:36:28   INFO [orders.FleetEldOrderTestWithExcel] : AC passed
+2019-13-08 11:56:30   INFO [orders.TestFoFleetParent] : Chrome will be started
+2019-13-08 11:56:39   INFO [orders.TestFoFleetParent] : Chrome is started
+2019-13-08 11:56:51   INFO [pages.LoginPage] : Login Page was opened
+2019-13-08 11:56:52   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-13-08 11:56:52   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2019-13-08 11:56:52   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-13-08 11:56:53   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-13-08 11:59:52   INFO [orders.TestFoFleetParent] : Chrome will be started
+2019-13-08 12:00:01   INFO [orders.TestFoFleetParent] : Chrome is started
+2019-13-08 12:00:08   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-13-08 12:00:11   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-13-08 12:00:17   INFO [pages.LoginPage] : Login Page was opened
+2019-13-08 12:00:17   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-13-08 12:00:17   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2019-13-08 12:00:18   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-13-08 12:00:18   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-13-08 14:28:58   INFO [orders.TestFoFleetParent] : Chrome will be started
+2019-13-08 14:29:07   INFO [orders.TestFoFleetParent] : Chrome is started
+2019-13-08 14:29:15   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-13-08 14:29:17   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-13-08 14:29:24   INFO [pages.LoginPage] : Login Page was opened
+2019-13-08 14:29:24   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-13-08 14:29:25   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2019-13-08 14:29:25   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-13-08 14:29:26   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-13-08 14:29:32   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-13-08 14:29:35   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-13-08 14:29:36   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-13-08 14:29:42   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-13-08 14:29:46   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-13-08 14:29:46   INFO [libs.ActionsWithOurElements] : 1 was selected in Drop-down
+2019-13-08 14:29:47   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2019-13-08 14:29:47   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2019-13-08 14:29:48   INFO [libs.ActionsWithOurElements] : 1676475006 was inputted into element
+2019-13-08 14:29:48   INFO [libs.ActionsWithOurElements] : Street was inputted into element
+2019-13-08 14:29:48   INFO [libs.ActionsWithOurElements] : 2 was inputted into element
+2019-13-08 14:29:49   INFO [libs.ActionsWithOurElements] : Phoenix was inputted into element
+2019-13-08 14:29:49   INFO [libs.ActionsWithOurElements] : 30606 was inputted into element
+2019-13-08 14:29:49   INFO [libs.ActionsWithOurElements] : check was inputted into element
+2019-13-08 14:29:50   INFO [libs.ActionsWithOurElements] : uncheck was inputted into element
+2019-13-08 14:29:50   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-13-08 14:29:50   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-13-08 14:29:51   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-13-08 14:30:11  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.NoSuchElementException: Cannot locate option with value: 1
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'DESKTOP-UD8IPI4', ip: '100.80.1.70', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.1'
+Driver info: driver.version: unknown
+2019-13-08 14:38:49   INFO [orders.TestFoFleetParent] : Chrome will be started
+2019-13-08 14:38:58   INFO [orders.TestFoFleetParent] : Chrome is started
+2019-13-08 14:39:05   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-13-08 14:39:07   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-13-08 14:39:14   INFO [pages.LoginPage] : Login Page was opened
+2019-13-08 14:39:14   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-13-08 14:39:14   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2019-13-08 14:39:15   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-13-08 14:39:15   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-13-08 14:39:21   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-13-08 14:39:25   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-13-08 14:39:25   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-13-08 14:39:31   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-13-08 14:39:35   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-13-08 14:39:35   INFO [libs.ActionsWithOurElements] : 1 was selected in Drop-down
+2019-13-08 14:39:36   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2019-13-08 14:39:36   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2019-13-08 14:39:37   INFO [libs.ActionsWithOurElements] : 1676475006 was inputted into element
+2019-13-08 14:39:37   INFO [libs.ActionsWithOurElements] : Street was inputted into element
+2019-13-08 14:39:37   INFO [libs.ActionsWithOurElements] : 2 was inputted into element
+2019-13-08 14:39:38   INFO [libs.ActionsWithOurElements] : Phoenix was inputted into element
+2019-13-08 14:39:38   INFO [libs.ActionsWithOurElements] : 30606 was inputted into element
+2019-13-08 14:39:38   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-13-08 14:39:39   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-13-08 14:39:39   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-13-08 14:39:40   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-13-08 14:39:40   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-13-08 14:39:41   INFO [libs.ActionsWithOurElements] : 8 was selected in Drop-down
+2019-13-08 14:39:41   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-13-08 14:39:42   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-13-08 14:39:42   INFO [libs.ActionsWithOurElements] : checkbox was checked
+2019-13-08 14:39:42   INFO [libs.ActionsWithOurElements] : checkbox is already unchecked
+2019-13-08 14:39:42   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-13-08 14:39:42   INFO [pages.ModalEldPage] : Payment Method monthToMonth was selected
+2019-13-08 14:39:43   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-13-08 14:39:43   INFO [pages.ModalEldPage] : Payment Method buyoutContract was selected
+2019-13-08 14:39:46   INFO [orders.TestFoFleetParent] : AC passed
+2019-13-08 14:39:49   INFO [orders.TestFoFleetParent] : AC passed
+2019-13-08 14:39:52   INFO [orders.TestFoFleetParent] : AC passed
+2019-13-08 14:39:55   INFO [orders.TestFoFleetParent] : AC passed
+2019-13-08 14:39:58   INFO [orders.TestFoFleetParent] : AC passed
+2019-13-08 14:40:01   INFO [orders.TestFoFleetParent] : AC passed
+2019-13-08 14:40:04   INFO [orders.TestFoFleetParent] : AC passed
+2019-13-08 14:40:07   INFO [orders.TestFoFleetParent] : AC passed
+2019-13-08 14:40:10   INFO [orders.TestFoFleetParent] : AC passed
+2019-13-08 14:40:13   INFO [orders.TestFoFleetParent] : AC passed
+2019-13-08 14:40:16   INFO [orders.TestFoFleetParent] : AC passed
+2019-13-08 14:40:19   INFO [orders.TestFoFleetParent] : AC passed
+2019-13-08 14:40:23   INFO [orders.TestFoFleetParent] : AC passed
+2019-13-08 14:40:23   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-13-08 14:40:23   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-13-08 14:40:24   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-13-08 14:40:24   INFO [pages.ModalEldPage] : Agreement camera was agreed
+2019-13-08 14:40:25   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-13-08 14:40:25   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-13-08 14:40:26   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-13-08 14:40:26   INFO [pages.ModalEldPage] : Agreement camera was agreed
+2019-13-08 14:40:26   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-13-08 14:40:31  ERROR [orders.TestFoFleetParent] : AC failed: New order wasn`t created
+2019-13-08 23:38:07   INFO [parameterizedOrders.FleetDoOrderParamsTest] : Chrome will be started
+2019-13-08 23:38:15   INFO [parameterizedOrders.FleetDoOrderParamsTest] : Chrome is started
+2019-13-08 23:38:21   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-13-08 23:38:23   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-13-08 23:38:29   INFO [pages.LoginPage] : Login Page was opened
+2019-13-08 23:38:30   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-13-08 23:38:30   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2019-13-08 23:38:30   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-13-08 23:38:31   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-13-08 23:38:38   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-13-08 23:38:41  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <div class="dash_nav">...</div> is not clickable at point (28, 284). Other element would receive the click: <div class="modal-backdrop in"></div>
+  (Session info: chrome=76.0.3809.100)
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'DESKTOP-UD8IPI4', ip: '100.80.1.70', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.100, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\denku\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50988}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: bc438e372f3613d9df953f51d0c34ee0
+2019-13-08 23:43:25   INFO [parameterizedOrders.FleetDoOrderParamsTest] : Chrome will be started
+2019-13-08 23:43:34   INFO [parameterizedOrders.FleetDoOrderParamsTest] : Chrome is started
+2019-13-08 23:43:39   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-13-08 23:43:41   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-13-08 23:43:48   INFO [pages.LoginPage] : Login Page was opened
+2019-13-08 23:43:48   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-13-08 23:43:49   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2019-13-08 23:43:49   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-13-08 23:43:49   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-13-08 23:43:55   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2019-13-08 23:43:59   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-13-08 23:43:59   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-13-08 23:44:06   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-13-08 23:44:09   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-13-08 23:44:10   INFO [libs.ActionsWithOurElements] : 1 was selected in Drop-down
+2019-13-08 23:44:10   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2019-13-08 23:44:11   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2019-13-08 23:44:11   INFO [libs.ActionsWithOurElements] : 1676475006 was inputted into element
+2019-13-08 23:44:11   INFO [libs.ActionsWithOurElements] : Street was inputted into element
+2019-13-08 23:44:11   INFO [libs.ActionsWithOurElements] : 2 was inputted into element
+2019-13-08 23:44:12   INFO [libs.ActionsWithOurElements] : Phoenix was inputted into element
+2019-13-08 23:44:12   INFO [libs.ActionsWithOurElements] : 30606 was inputted into element
+2019-13-08 23:44:12   INFO [libs.ActionsWithOurElements] : 2 was inputted into element
+2019-13-08 23:44:13   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-13-08 23:44:13   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-13-08 23:44:14   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-13-08 23:44:14   INFO [libs.ActionsWithOurElements] : 1 was inputted into element

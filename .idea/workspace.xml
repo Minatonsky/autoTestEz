@@ -2,25 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="660eb711-957d-418e-9483-8b2931da6e6e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/orders/TestFoFleetParent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/parameterizedOrders/ParentFleetTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log/qalight.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/qalight.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/data/testEldOrder.xls" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/data/testEldOrder.xls" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/ModalEldPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/ModalEldPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/orders/FleetEldOrderCancelByManagerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/orders/FleetEldOrderCancelByManagerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/orders/FleetEldOrderCancelByUserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/orders/FleetEldOrderCancelByUserTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/orders/FleetEldOrderCompletedByManagerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/orders/FleetEldOrderCompletedByManagerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/data/testParameterizedOrder.xls" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/data/testParameterizedOrder.xls" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/orders/FleetEldOrderTestWithExcel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/orders/FleetEldOrderTestWithExcel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/orders/SoloEldOrderCancelByManagerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/orders/SoloEldOrderCancelByManagerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/orders/SoloEldOrderCancelByUserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/orders/SoloEldOrderCancelByUserTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/orders/SoloEldOrderCompletedByManagerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/orders/SoloEldOrderCompletedByManagerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/parameterizedOrders/FleetDoOrderAfterCanceledOrderParamsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/parameterizedOrders/FleetDoOrderAfterCanceledOrderParamsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/parameterizedOrders/FleetDoOrderManagerCanceledOrderParamsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/parameterizedOrders/FleetDoOrderManagerCanceledOrderParamsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/parameterizedOrders/FleetDoOrderManagerCompletedOrderParamsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/parameterizedOrders/FleetDoOrderManagerCompletedOrderParamsTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/parameterizedOrders/FleetDoOrderParamsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/parameterizedOrders/FleetDoOrderParamsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/parameterizedOrders/SoloCancelOrderByUserParameterizedTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/parameterizedOrders/SoloCancelOrderByUserParameterizedTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/parameterizedOrders/SoloDoOrderManagerCanceledParamsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/parameterizedOrders/SoloDoOrderManagerCanceledParamsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/parameterizedOrders/SoloDoOrderManagerCompletedParamsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/parameterizedOrders/SoloDoOrderManagerCompletedParamsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/parameterizedOrders/SoloDoOrderParamsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/parameterizedOrders/SoloDoOrderParamsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/parentTest/ParentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/parentTest/ParentTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -108,7 +98,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.FleetEldOrderTestWithExcel.addNewOrder">
+  <component name="RunManager" selected="JUnit.FleetDoOrderParamsTest">
     <configuration name="EldOrderTestWithExcelParams.addNewOrder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="testdevEzlogz" />
       <extension name="coverage">
@@ -125,16 +115,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FleetEldOrderTestWithExcel" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FleetDoOrderParamsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="testdevEzlogz" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="orders.*" />
+          <option name="PATTERN" value="parameterizedOrders.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="orders" />
-      <option name="MAIN_CLASS_NAME" value="orders.FleetEldOrderTestWithExcel" />
+      <option name="PACKAGE_NAME" value="parameterizedOrders" />
+      <option name="MAIN_CLASS_NAME" value="parameterizedOrders.FleetDoOrderParamsTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -172,17 +162,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SoloDoOrderParamsTest.addNewOrder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestFoFleetParent.completedNewOrder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="testdevEzlogz" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="parameterizedOrders.*" />
+          <option name="PATTERN" value="orders.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="parameterizedOrders" />
-      <option name="MAIN_CLASS_NAME" value="parameterizedOrders.SoloDoOrderParamsTest" />
-      <option name="METHOD_NAME" value="addNewOrder" />
+      <option name="PACKAGE_NAME" value="orders" />
+      <option name="MAIN_CLASS_NAME" value="orders.TestFoFleetParent" />
+      <option name="METHOD_NAME" value="completedNewOrder" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -233,20 +223,20 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="JUnit.FleetEldOrderTestWithExcel" />
       <item itemvalue="JUnit.FleetEldOrderTestWithExcel.addNewOrder" />
-      <item itemvalue="JUnit.SoloDoOrderParamsTest.addNewOrder" />
       <item itemvalue="JUnit.LoginTestWithExcel.validLogin" />
       <item itemvalue="JUnit.EldOrderTestWithExcelParams.addNewOrder" />
       <item itemvalue="Maven.Run testdevEzlogz []" />
+      <item itemvalue="JUnit.TestFoFleetParent.completedNewOrder" />
+      <item itemvalue="JUnit.FleetDoOrderParamsTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.FleetDoOrderParamsTest" />
+        <item itemvalue="JUnit.TestFoFleetParent.completedNewOrder" />
         <item itemvalue="JUnit.FleetEldOrderTestWithExcel.addNewOrder" />
         <item itemvalue="JUnit.EldOrderTestWithExcelParams.addNewOrder" />
         <item itemvalue="JUnit.LoginTestWithExcel.validLogin" />
-        <item itemvalue="JUnit.FleetEldOrderTestWithExcel" />
-        <item itemvalue="JUnit.SoloDoOrderParamsTest.addNewOrder" />
       </list>
     </recent_temporary>
   </component>
@@ -457,7 +447,14 @@
       <option name="project" value="LOCAL" />
       <updated>1565387191874</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="camera order test was add">
+      <created>1565638737622</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1565638737622</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -494,7 +491,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add xml" />
     <MESSAGE value="loginTest was added" />
     <MESSAGE value="new page\test was added" />
     <MESSAGE value="eld page/test was add" />
@@ -519,7 +515,8 @@
     <MESSAGE value="refactor params test was do" />
     <MESSAGE value="new order test was do" />
     <MESSAGE value="new modal window order test was add" />
-    <option name="LAST_COMMIT_MESSAGE" value="new modal window order test was add" />
+    <MESSAGE value="camera order test was add" />
+    <option name="LAST_COMMIT_MESSAGE" value="camera order test was add" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

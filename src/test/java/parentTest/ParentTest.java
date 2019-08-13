@@ -21,6 +21,8 @@ import java.util.Iterator;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
+import static libs.Utils.waitABit;
+
 public class ParentTest {
     WebDriver webDriver;
     ExcelDriver excelDriver;
@@ -91,6 +93,7 @@ public class ParentTest {
 
     @Step
     protected void checkAC(String message, boolean actual, boolean expected){
+        waitABit(3);
         if (actual != expected){
             logger.error("AC failed: " + message);
         }
