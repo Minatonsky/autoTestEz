@@ -377,9 +377,7 @@ COMPARE METHODS
         return firstMonthFeeText.getText();
     }
 
-    public String getLastMonthFee(){
-        return lastMonthFeeText.getText();
-    }
+    public String getLastMonthFee(){ return lastMonthFeeText.getText(); }
 
     public String getEldOneYearPrice(){
         return eldOneYearPriceText.getText();

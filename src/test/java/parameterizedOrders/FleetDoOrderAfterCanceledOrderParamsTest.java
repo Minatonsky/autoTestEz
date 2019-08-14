@@ -65,7 +65,7 @@ public class FleetDoOrderAfterCanceledOrderParamsTest extends ParentTest {String
         dashboardPage.clickOnMenuPageELD();
         dashboardPage.goToEldPage();
 
-        eldUserPage.clickOnOrderELD();
+        userEldPage.clickOnOrderELD();
 
         modalEldPage.enterPersonalData(personalDataForEldOrder.get("deliveryState").toString(), personalDataForEldOrder.get("firstName").toString(), personalDataForEldOrder.get("lastName").toString(), personalDataForEldOrder.get("phone").toString(), personalDataForEldOrder.get("addressLine").toString(), personalDataForEldOrder.get("aptNumber").toString(), personalDataForEldOrder.get("deliveryCity").toString(), personalDataForEldOrder.get("zipCode").toString());
 
@@ -98,7 +98,7 @@ public class FleetDoOrderAfterCanceledOrderParamsTest extends ParentTest {String
 
         dashboardPage.goToEldPage();
 
-        eldUserPage.cancelEldDevices(idLastOrderAfterTest);
+        userEldPage.cancelEldDevices(idLastOrderAfterTest, quantityOfDevices);
 
         dashboardPage.goToFinancesPage();
 

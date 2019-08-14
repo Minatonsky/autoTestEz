@@ -29,7 +29,7 @@ public class SoloEldOrderCancelByManagerTest extends ParentTest {
         loginPage.userValidLogIn(dataForSoloValidLogIn.get("login").toString(),dataForSoloValidLogIn.get("pass").toString());
 
         dashboardPage.goToEldPage();
-        eldUserPage.clickOnOrderELD();
+        userEldPage.clickOnOrderELD();
 
 /*
 PERSONAL DATA
@@ -104,8 +104,8 @@ MANAGER COMPLETED OR CANCEL ORDER
         managerEldPage.enterIdOrder(idLastOrderAfterTest);
         Thread.sleep(5000);
         managerEldPage.clickOnOrderOnList(idLastOrderAfterTest);
-        modalOrderPage.selectOrderStatus("2");
-        modalOrderPage.clickButtonSave();
+        orderInfoPage.selectOrderStatus("2");
+        orderInfoPage.clickButtonSave();
 
 
         tearDown();

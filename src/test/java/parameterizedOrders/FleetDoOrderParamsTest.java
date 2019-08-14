@@ -17,15 +17,9 @@ import java.util.Map;
 
 @RunWith(Parameterized.class)
 
-public class FleetDoOrderParamsTest extends ParentTest {String  quantityOfDevices, typeOfPaymentMethod, quantityPinCable, quantityOBDPinCable, quantitySticker, quantityCameraCP, valueSdCard, quantityCameraSVA, typeOfPaymentMethodCamera,
-        neededStatePickUpFromOffice, neededStateOvernightDelivery, currentDue, eldDeliveryPrice, eldFirstMonthFee, eldLastMonthFee, eldOneYearPrice, eldTwoYearPrice, eldDepositFee, eldPinCablePrice, eldEldOBDPinCablePrice, eldEldStickerLabelPrice,
-        cP2MonthFee, cameraSetupFee, cameraInstallationFee, ezSmartCamCP2, ezSmartCamSVA, sD32Gb, sD64Gb, sD128Gb,
-        defaultTotalOrder, defaultBalance, balanceIfCanceled;
+public class FleetDoOrderParamsTest extends ParentTest {String  quantityOfDevices, typeOfPaymentMethod, quantityPinCable, quantityOBDPinCable, quantitySticker, quantityCameraCP, valueSdCard, quantityCameraSVA, typeOfPaymentMethodCamera, neededStatePickUpFromOffice, neededStateOvernightDelivery, currentDue, eldDeliveryPrice, eldFirstMonthFee, eldLastMonthFee, eldOneYearPrice, eldTwoYearPrice, eldDepositFee, eldPinCablePrice, eldEldOBDPinCablePrice, eldEldStickerLabelPrice, cP2MonthFee, cameraSetupFee, cameraInstallationFee, ezSmartCamCP2, ezSmartCamSVA, sD32Gb, sD64Gb, sD128Gb, defaultTotalOrder, defaultBalance, balanceIfCanceled;
 
-    public FleetDoOrderParamsTest(String quantityOfDevices, String typeOfPaymentMethod, String quantityPinCable, String quantityOBDPinCable, String quantitySticker, String quantityCameraCP, String valueSdCard, String quantityCameraSVA, String typeOfPaymentMethodCamera,
-                                  String neededStatePickUpFromOffice, String neededStateOvernightDelivery, String currentDue, String eldDeliveryPrice, String eldFirstMonthFee, String eldLastMonthFee, String eldOneYearPrice, String eldTwoYearPrice, String eldDepositFee,
-                                  String eldPinCablePrice, String eldEldOBDPinCablePrice, String eldEldStickerLabelPrice, String cP2MonthFee, String cameraSetupFee, String cameraInstallationFee, String ezSmartCamCP2, String ezSmartCamSVA, String sD32Gb,
-                                  String sD64Gb, String sD128Gb, String defaultTotalOrder, String defaultBalance, String balanceIfCanceled) {
+    public FleetDoOrderParamsTest(String quantityOfDevices, String typeOfPaymentMethod, String quantityPinCable, String quantityOBDPinCable, String quantitySticker, String quantityCameraCP, String valueSdCard, String quantityCameraSVA, String typeOfPaymentMethodCamera, String neededStatePickUpFromOffice, String neededStateOvernightDelivery, String currentDue, String eldDeliveryPrice, String eldFirstMonthFee, String eldLastMonthFee, String eldOneYearPrice, String eldTwoYearPrice, String eldDepositFee, String eldPinCablePrice, String eldEldOBDPinCablePrice, String eldEldStickerLabelPrice, String cP2MonthFee, String cameraSetupFee, String cameraInstallationFee, String ezSmartCamCP2, String ezSmartCamSVA, String sD32Gb, String sD64Gb, String sD128Gb, String defaultTotalOrder, String defaultBalance, String balanceIfCanceled) {
 
         this.quantityOfDevices = quantityOfDevices;
         this.typeOfPaymentMethod = typeOfPaymentMethod;
@@ -84,7 +78,7 @@ public class FleetDoOrderParamsTest extends ParentTest {String  quantityOfDevice
 
         dashboardPage.openMenuDash();
         dashboardPage.goToEldPage();
-        eldUserPage.clickOnOrderELD();
+        userEldPage.clickOnOrderELD();
 
         modalEldPage.enterPersonalData(personalDataForEldOrder.get("deliveryState").toString(), personalDataForEldOrder.get("firstName").toString(), personalDataForEldOrder.get("lastName").toString(), personalDataForEldOrder.get("phone").toString(), personalDataForEldOrder.get("addressLine").toString(), personalDataForEldOrder.get("aptNumber").toString(), personalDataForEldOrder.get("deliveryCity").toString(), personalDataForEldOrder.get("zipCode").toString());
 
@@ -108,8 +102,7 @@ public class FleetDoOrderParamsTest extends ParentTest {String  quantityOfDevice
 
         modalEldPage.doAgreeAgreement(quantityOfDevices);
         modalEldPage.doAgreementCamera(quantityCameraCP);
-//        modalEldPage.clickButtonOrder();
-
+        modalEldPage.clickButtonOrder();
 
         String idLastOrderAfterTest = utilsForDB.getLastOrderIdForFleet(dataFleetId.get("fleetId").toString());
         checkAC("New order wasn`t created", idLastOrderBeforeTest.equals(idLastOrderAfterTest) , false);

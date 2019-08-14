@@ -16,6 +16,7 @@ public class FinancesPage extends ParentPage {
     public String getFinanceBalance(){
         return financeBalanceText.getText();
     }
+
     public boolean compareBalance(String defaultBalance) {
         return getFinanceBalance().equals("$" + defaultBalance);
     }

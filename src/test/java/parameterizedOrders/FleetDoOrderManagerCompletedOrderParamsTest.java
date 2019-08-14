@@ -65,7 +65,7 @@ public class FleetDoOrderManagerCompletedOrderParamsTest extends ParentTest {Str
         dashboardPage.openMenuDash();
         dashboardPage.goToEldPage();
 
-        eldUserPage.clickOnOrderELD();
+        userEldPage.clickOnOrderELD();
 
         modalEldPage.enterPersonalData(personalDataForEldOrder.get("deliveryState").toString(), personalDataForEldOrder.get("firstName").toString(), personalDataForEldOrder.get("lastName").toString(), personalDataForEldOrder.get("phone").toString(), personalDataForEldOrder.get("addressLine").toString(), personalDataForEldOrder.get("aptNumber").toString(), personalDataForEldOrder.get("deliveryCity").toString(), personalDataForEldOrder.get("zipCode").toString());
 
@@ -109,7 +109,7 @@ MANAGER COMPLETED ORDER
 
         managerEldPage.openOrderInfo(idLastOrderAfterTest);
 
-        modalOrderPage.completedOrder();
+        orderInfoPage.completedOrder();
 
 /*
 CHECK ORDER STATUS FROM DATABASE

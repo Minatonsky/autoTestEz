@@ -10,7 +10,7 @@ import java.io.IOException;
 import java.sql.SQLException;
 import java.util.List;
 
-public class EldUserPage extends ParentPage {
+public class UserEldPage extends ParentPage {
 
     @FindBy(xpath = ".//button[@data-tutorial='addELD']")
     private WebElement orderELD;
@@ -19,7 +19,7 @@ public class EldUserPage extends ParentPage {
     private WebElement idHolder;
 
 
-    public EldUserPage(WebDriver webDriver) {
+    public UserEldPage(WebDriver webDriver) {
         super(webDriver, "dash/eld/");
     }
 
@@ -29,16 +29,17 @@ public class EldUserPage extends ParentPage {
     }
 
     @Step
-    public void cancelEldDevices(String idOrder) throws SQLException, IOException, ClassNotFoundException {
+    public void cancelEldDevices(String idOrder, String quantityOfDevices) throws SQLException, IOException, ClassNotFoundException {
         UtilsForDB utilsForDB = new UtilsForDB();
         List<String> localId = utilsForDB.getLocalIdDevices(idOrder);
-        for (String element: localId) {
-            enterIdOrder(element);
-            clickOnOrderOnList(element);
-            clickOnButtonCancelOrderDevice();
-            clickOnOrderEldConfirm();
+        if (Integer.parseInt(quantityOfDevices) > 0){
+            for (String element: localId) {
+                enterIdOrder(element);
+                clickOnOrderOnList(element);
+                clickOnButtonCancelOrderDevice();
+                clickOnOrderEldConfirm();
             }
-
+        } else logger.info("Can not cancel devices, no devices in order"); webDriver.quit();
     }
 
     private void clickOnOrderEldConfirm() {

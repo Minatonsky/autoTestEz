@@ -2,41 +2,44 @@ package orders;
 
 import libs.ExcelDriver;
 import libs.UtilsForDB;
-import org.junit.After;
 import org.junit.Before;
+import org.junit.Test;
 import parentTest.ParentTest;
 
 import java.io.IOException;
 import java.sql.SQLException;
 import java.util.Map;
 
-public class FleetEldOrderTestWithExcel extends ParentTest {
+public class ParentFleetTest extends ParentTest {
+    ExcelDriver excelDriver = new ExcelDriver();
+    UtilsForDB utilsForDB = new UtilsForDB();
+    int columnNumber = 1;
 
+    Map dataForEldOrder = excelDriver.getMultipleData(configProperties.DATA_FILE_PATH() + "testEldOrder.xls", "orderListData", columnNumber);
+    Map personalDataForEldOrder = excelDriver.getData(configProperties.DATA_FILE_PATH() + "testEldOrder.xls", "personalData");
+    Map dataForFleetValidLogIn = excelDriver.getData(configProperties.DATA_FILE_PATH() + "testLogin.xls", "validFleetLogin");
+    Map dataFleetId = excelDriver.getData(configProperties.DATA_FILE_PATH() + "testLogin.xls", "validFleetLogin");
+    Map dataForManagerValidLogIn = excelDriver.getData(configProperties.DATA_FILE_PATH() + "testLogin.xls", "ManagerLogin");
+
+
+    public ParentFleetTest() throws IOException {
+    }
 
     @Before
-    public void addNewOrder() throws InterruptedException, SQLException, IOException, ClassNotFoundException {
-        ExcelDriver excelDriver = new ExcelDriver();
-        int columnNumber = 1;
+    @Test
+    public void addNewOrder() throws SQLException, IOException, ClassNotFoundException {
 
-        Map dataForEldOrder = excelDriver.getMultipleData(configProperties.DATA_FILE_PATH() + "testEldOrder.xls", "orderListData", columnNumber);
-        Map personalDataForEldOrder = excelDriver.getData(configProperties.DATA_FILE_PATH() + "testEldOrder.xls", "personalData");
-        Map dataForFleetValidLogIn = excelDriver.getData(configProperties.DATA_FILE_PATH() + "testLogin.xls", "validFleetLogin");
-        Map dataFleetId = excelDriver.getData(configProperties.DATA_FILE_PATH() + "testLogin.xls", "validFleetLogin");
-
-        UtilsForDB utilsForDB = new UtilsForDB();
         String idLastOrderBeforeTest = utilsForDB.getLastOrderIdForFleet(dataFleetId.get("fleetId").toString());
         utilsForDB.getSetCurrentDueForFleet(dataForEldOrder.get("currentDue").toString(), dataFleetId.get("fleetId").toString());
-
 
         loginPage.userValidLogIn(dataForFleetValidLogIn.get("login").toString(),dataForFleetValidLogIn.get("pass").toString());
         dashboardPage.openMenuDash();
         dashboardPage.goToEldPage();
-        eldUserPage.clickOnOrderELD();
+        userEldPage.clickOnOrderELD();
         modalEldPage.enterPersonalData(personalDataForEldOrder.get("deliveryState").toString(), personalDataForEldOrder.get("firstName").toString(), personalDataForEldOrder.get("lastName").toString(), personalDataForEldOrder.get("phone").toString(), personalDataForEldOrder.get("addressLine").toString(), personalDataForEldOrder.get("aptNumber").toString(), personalDataForEldOrder.get("deliveryCity").toString(), personalDataForEldOrder.get("zipCode").toString());
         modalEldPage.enterOrderData(dataForEldOrder.get("quantityOfDevices").toString(), dataForEldOrder.get("quantityPinCable").toString(), dataForEldOrder.get("quantityOBDPinCable").toString(), dataForEldOrder.get("quantitySticker").toString(), dataForEldOrder.get("quantityCameraCP").toString(), dataForEldOrder.get("valueSdCard").toString(), dataForEldOrder.get("quantityCameraSVA").toString(), dataForEldOrder.get("neededStatePickUpFromOffice").toString(), dataForEldOrder.get("neededStateOvernightDelivery").toString());
         modalEldPage.clickPaymentMethods(dataForEldOrder.get("typeOfPaymentMethod").toString(), dataForEldOrder.get("quantityOfDevices").toString());
         modalEldPage.clickPaymentMethodsCamera(dataForEldOrder.get("typeOfPaymentMethodCamera").toString(), dataForEldOrder.get("quantityCameraCP").toString());
-
 
         checkAC("Eld prices is not correct", modalEldPage.compareEldPrice(dataForEldOrder.get("quantityOfDevices").toString(), dataForEldOrder.get("typeOfPaymentMethod").toString(), dataForEldOrder.get("eldFirstMonthFee").toString(), dataForEldOrder.get("eldLastMonthFee").toString(), dataForEldOrder.get("eldOneYearPrice").toString(), dataForEldOrder.get("eldTwoYearPrice").toString()), true);
         checkAC("DepositFee is not correct", modalEldPage.compareDepositFee(dataForEldOrder.get("quantityOfDevices").toString(), dataForEldOrder.get("eldDepositFee").toString()), true);
@@ -62,10 +65,5 @@ public class FleetEldOrderTestWithExcel extends ParentTest {
         dashboardPage.goToFinancesPage();
 
         checkAC("Balance is not correct", financesPage.compareBalance(dataForEldOrder.get("defaultBalance").toString()), true);
-
-    }
-    @After
-    public void tearDown() throws SQLException {
-        tearDown();
     }
 }

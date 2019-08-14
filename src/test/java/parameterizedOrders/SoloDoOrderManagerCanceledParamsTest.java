@@ -63,7 +63,7 @@ public class SoloDoOrderManagerCanceledParamsTest extends ParentTest { String  q
         dashboardPage.openMenuDash();
         dashboardPage.goToEldPage();
 
-        eldUserPage.clickOnOrderELD();
+        userEldPage.clickOnOrderELD();
 
         modalEldPage.enterPersonalData(personalDataForEldOrder.get("deliveryState").toString(), personalDataForEldOrder.get("firstName").toString(), personalDataForEldOrder.get("lastName").toString(), personalDataForEldOrder.get("phone").toString(), personalDataForEldOrder.get("addressLine").toString(), personalDataForEldOrder.get("aptNumber").toString(), personalDataForEldOrder.get("deliveryCity").toString(), personalDataForEldOrder.get("zipCode").toString());
 
@@ -107,8 +107,8 @@ MANAGER CANCEL ORDER
 
         managerEldPage.openOrderInfo(idLastOrderAfterTest);
 
-        modalOrderPage.selectOrderStatus("2");
-        modalOrderPage.clickButtonSave();
+        orderInfoPage.selectOrderStatus("2");
+        orderInfoPage.clickButtonSave();
 
 
         tearDown();

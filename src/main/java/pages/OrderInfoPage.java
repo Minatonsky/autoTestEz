@@ -4,7 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class ModalOrderPage extends ParentPage {
+public class OrderInfoPage extends ParentPage {
 
     @FindBy(xpath = ".//select[@id='order_status']")
     private WebElement orderStatus;
@@ -12,7 +12,7 @@ public class ModalOrderPage extends ParentPage {
     @FindBy(xpath = ".//button[@class='btn btn-default btn-sm save_order_edit']")
     private WebElement buttonSave;
 
-    public ModalOrderPage(WebDriver webDriver) {
+    public OrderInfoPage(WebDriver webDriver) {
         super(webDriver, "dash/eld_orders/");
     }
 
