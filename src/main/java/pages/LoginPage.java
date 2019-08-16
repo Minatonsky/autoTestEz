@@ -70,7 +70,5 @@ public class LoginPage extends ParentPage {
         enterPass(passWord);
         clickOnSubmitButton();
 
-        dashboardPage.isDashboardPresent();
-
     }
 }

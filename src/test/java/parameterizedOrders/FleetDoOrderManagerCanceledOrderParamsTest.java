@@ -73,12 +73,12 @@ public class FleetDoOrderManagerCanceledOrderParamsTest extends ParentTest {Stri
 //        modalEldPage.enterOrderData(quantityOfDevices, quantityPinCable, quantityOBDPinCable, quantitySticker, quantityCamera1, quantityCamera2, neededStatePickUpFromOffice, neededStateOvernightDelivery);
 //        modalEldPage.clickPaymentMethods(typeOfPaymentMethod);
 
-        modalEldPage.compareTotalOrder(defaultTotalOrder);
-        checkAC("Total Order is not correct", modalEldPage.compareTotalOrder(defaultTotalOrder), true);
+//        modalEldPage.compareTotalOrder(defaultTotalOrder);
+//        checkAC("Total Order is not correct", modalEldPage.compareTotalOrder(defaultTotalOrder), true);
 
 
-        modalEldPage.compareTotalOrder(defaultTotalOrder);
-        checkAC("Total Order is not correct", modalEldPage.compareTotalOrder(defaultTotalOrder), true);
+//        modalEldPage.compareTotalOrder(defaultTotalOrder);
+//        checkAC("Total Order is not correct", modalEldPage.compareTotalOrder(defaultTotalOrder), true);
 
         modalEldPage.doAgreeAgreement(quantityOfDevices);
 

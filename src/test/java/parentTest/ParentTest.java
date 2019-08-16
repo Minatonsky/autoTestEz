@@ -52,11 +52,6 @@ public class ParentTest {
         orderInfoPage = new OrderInfoPage(webDriver);
         userEldPage = new UserEldPage(webDriver);
         managerModalEldPage = new ManagerModalEldPage(webDriver);
-
-
-
-
-
     }
 
     private void initDriver(String browserName) {

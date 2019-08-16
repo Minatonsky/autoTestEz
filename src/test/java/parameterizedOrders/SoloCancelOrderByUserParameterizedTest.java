@@ -75,8 +75,8 @@ public class SoloCancelOrderByUserParameterizedTest extends ParentTest { String 
 
 
 
-        modalEldPage.compareTotalOrder(defaultTotalOrder);
-        checkAC("Total Order is not correct", modalEldPage.compareTotalOrder(defaultTotalOrder), true);
+//        modalEldPage.compareTotalOrder(defaultTotalOrder);
+//        checkAC("Total Order is not correct", modalEldPage.compareTotalOrder(defaultTotalOrder), true);
 
 
 
@@ -94,7 +94,7 @@ public class SoloCancelOrderByUserParameterizedTest extends ParentTest { String 
 
         dashboardPage.goToEldPage();
 
-//        userEldPage.cancelEldDevices(idLastOrderAfterTest);
+        userEldPage.cancelEldDevices(idLastOrderAfterTest);
 
         dashboardPage.goToFinancesPage();
 

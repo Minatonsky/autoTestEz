@@ -73,14 +73,11 @@ public class FleetDoOrderAfterCanceledOrderParamsTest extends ParentTest {String
 //        modalEldPage.enterOrderData(quantityOfDevices, quantityPinCable, quantityOBDPinCable, quantitySticker, quantityCamera1, quantityCamera2, neededStatePickUpFromOffice, neededStateOvernightDelivery);
 //        modalEldPage.clickPaymentMethods(typeOfPaymentMethod);
 
-        modalEldPage.compareTotalOrder(defaultTotalOrder);
-        checkAC("Total Order is not correct", modalEldPage.compareTotalOrder(defaultTotalOrder), true);
-
-
-
-
-        modalEldPage.compareTotalOrder(defaultTotalOrder);
-        checkAC("Total Order is not correct", modalEldPage.compareTotalOrder(defaultTotalOrder), true);
+//        modalEldPage.compareTotalOrder(defaultTotalOrder);
+//        checkAC("Total Order is not correct", modalEldPage.compareTotalOrder(defaultTotalOrder), true);
+//
+//        modalEldPage.compareTotalOrder(defaultTotalOrder);
+//        checkAC("Total Order is not correct", modalEldPage.compareTotalOrder(defaultTotalOrder), true);
 
 
         modalEldPage.doAgreeAgreement(quantityOfDevices);
@@ -98,7 +95,7 @@ public class FleetDoOrderAfterCanceledOrderParamsTest extends ParentTest {String
 
         dashboardPage.goToEldPage();
 
-        userEldPage.cancelEldDevices(idLastOrderAfterTest, quantityOfDevices);
+        userEldPage.cancelEldDevices(idLastOrderAfterTest);
 
         dashboardPage.goToFinancesPage();
 

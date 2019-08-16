@@ -73,8 +73,8 @@ public class SoloDoOrderManagerCanceledParamsTest extends ParentTest { String  q
 
 
 
-        modalEldPage.compareTotalOrder(defaultTotalOrder);
-        checkAC("Total Order is not correct", modalEldPage.compareTotalOrder(defaultTotalOrder), true);
+//        modalEldPage.compareTotalOrder(defaultTotalOrder);
+//        checkAC("Total Order is not correct", modalEldPage.compareTotalOrder(defaultTotalOrder), true);
 
 
 

@@ -10,29 +10,30 @@ import java.io.IOException;
 import java.sql.SQLException;
 import java.util.Map;
 
-public class ParentFleetTest extends ParentTest {
+public class ParentSoloTest extends ParentTest {
     ExcelDriver excelDriver = new ExcelDriver();
     UtilsForDB utilsForDB = new UtilsForDB();
     int columnNumber = 1;
 
     Map dataForEldOrder = excelDriver.getMultipleData(configProperties.DATA_FILE_PATH() + "testEldOrder.xls", "orderListData", columnNumber);
     Map personalDataForEldOrder = excelDriver.getData(configProperties.DATA_FILE_PATH() + "testEldOrder.xls", "personalData");
-    Map dataForFleetValidLogIn = excelDriver.getData(configProperties.DATA_FILE_PATH() + "testLogin.xls", "validFleetLogin");
-    Map dataFleetId = excelDriver.getData(configProperties.DATA_FILE_PATH() + "testLogin.xls", "validFleetLogin");
+    Map dataForSoloValidLogIn = excelDriver.getData(configProperties.DATA_FILE_PATH() + "testLogin.xls", "validSoloLogin");
+    Map dataSoloId = excelDriver.getData(configProperties.DATA_FILE_PATH() + "testLogin.xls", "validSoloLogin");
     Map dataForManagerValidLogIn = excelDriver.getData(configProperties.DATA_FILE_PATH() + "testLogin.xls", "managerLogin");
 
 
-    public ParentFleetTest() throws IOException {
+    public ParentSoloTest() throws IOException {
     }
 
     @Before
+
     @Test
     public void addNewOrder() throws SQLException, IOException, ClassNotFoundException {
+        String idLastOrderBeforeTest = utilsForDB.getLastOrderIdForFleet(dataSoloId.get("soloId").toString());
+        utilsForDB.getSetCurrentDueForSolo(dataForEldOrder.get("currentDue").toString(), dataSoloId.get("soloId").toString());
 
-        String idLastOrderBeforeTest = utilsForDB.getLastOrderIdForFleet(dataFleetId.get("fleetId").toString());
-        utilsForDB.getSetCurrentDueForFleet(dataForEldOrder.get("currentDue").toString(), dataFleetId.get("fleetId").toString());
+        loginPage.userValidLogIn(dataForSoloValidLogIn.get("login").toString(),dataForSoloValidLogIn.get("pass").toString());
 
-        loginPage.userValidLogIn(dataForFleetValidLogIn.get("login").toString(),dataForFleetValidLogIn.get("pass").toString());
         dashboardPage.openMenuDash();
         dashboardPage.goToEldPage();
         userEldPage.clickOnOrderELD();
@@ -55,15 +56,17 @@ public class ParentFleetTest extends ParentTest {
         checkAC("SdCard prices is not correct", modalEldPage.compareSdCard(dataForEldOrder.get("quantityCameraCP").toString(), dataForEldOrder.get("valueSdCard").toString()), true);
         checkAC("Total Order is not correct", modalEldPage.compareTotalOrder(dataForEldOrder.get("quantityOfDevices").toString(), dataForEldOrder.get("typeOfPaymentMethod").toString(), dataForEldOrder.get("quantityPinCable").toString(), dataForEldOrder.get("quantityOBDPinCable").toString(), dataForEldOrder.get("quantitySticker").toString(), dataForEldOrder.get("quantityCameraCP").toString(), dataForEldOrder.get("quantityCameraSVA").toString(), dataForEldOrder.get("valueSdCard").toString()), true);
 
+
         modalEldPage.doAgreeAgreement(dataForEldOrder.get("quantityOfDevices").toString());
         modalEldPage.doAgreementCamera(dataForEldOrder.get("quantityCameraCP").toString());
-        modalEldPage.clickButtonOrder();
+//        modalEldPage.clickButtonOrder();
 
-        String idLastOrderAfterTest = utilsForDB.getLastOrderIdForFleet(dataFleetId.get("fleetId").toString());
+        String idLastOrderAfterTest = utilsForDB.getLastOrderIdForSolo(dataSoloId.get("soloId").toString());
         checkAC("New order wasn`t created", idLastOrderBeforeTest.equals(idLastOrderAfterTest) , false);
 
         dashboardPage.goToFinancesPage();
 
+        financesPage.compareBalance(dataForEldOrder.get("defaultBalance").toString());
         checkAC("Balance is not correct", financesPage.compareBalance(dataForEldOrder.get("defaultBalance").toString()), true);
 
     }

@@ -29,17 +29,17 @@ public class UserEldPage extends ParentPage {
     }
 
     @Step
-    public void cancelEldDevices(String idOrder, String quantityOfDevices) throws SQLException, IOException, ClassNotFoundException {
+    public void cancelEldDevices(String idOrder) throws SQLException, IOException, ClassNotFoundException {
         UtilsForDB utilsForDB = new UtilsForDB();
         List<String> localId = utilsForDB.getLocalIdDevices(idOrder);
-        if (Integer.parseInt(quantityOfDevices) > 0){
-            for (String element: localId) {
-                enterIdOrder(element);
-                clickOnOrderOnList(element);
-                clickOnButtonCancelOrderDevice();
-                clickOnOrderEldConfirm();
-            }
-        } else logger.info("Can not cancel devices, no devices in order"); webDriver.quit();
+        for (String element: localId) {
+            enterIdOrder(element);
+            clickOnOrderOnList(element);
+            clickOnButtonCancelOrderDevice();
+            clickOnOrderEldConfirm();
+        }
+
+
     }
 
     private void clickOnOrderEldConfirm() {

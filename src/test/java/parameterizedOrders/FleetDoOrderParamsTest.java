@@ -86,19 +86,19 @@ public class FleetDoOrderParamsTest extends ParentTest {String  quantityOfDevice
         modalEldPage.clickPaymentMethods(typeOfPaymentMethod, quantityOfDevices);
         modalEldPage.clickPaymentMethodsCamera(typeOfPaymentMethodCamera, quantityCameraCP);
 
-        checkAC("Eld prices is not correct", modalEldPage.compareEldPrice(quantityOfDevices, typeOfPaymentMethod, eldFirstMonthFee, eldLastMonthFee, eldOneYearPrice, eldTwoYearPrice), true);
-        checkAC("DepositFee is not correct", modalEldPage.compareDepositFee(quantityOfDevices, eldDepositFee), true);
-        checkAC("DeliveryPrice is not correct", modalEldPage.compareDeliveryPrice(neededStatePickUpFromOffice, eldDeliveryPrice), true);
-        checkAC("EldPinCable prices is not correct", modalEldPage.compareEldPinCable(quantityPinCable, eldPinCablePrice), true);
-        checkAC("EldOBDPinCable prices is not correct", modalEldPage.compareEldOBDPinCable(quantityOBDPinCable, eldEldOBDPinCablePrice), true);
-        checkAC("EldStickerLabel prices is not correct", modalEldPage.compareEldStickerLabel(quantitySticker, eldEldStickerLabelPrice), true);
-        checkAC("CP2MonthFee is not correct", modalEldPage.compareCP2MonthFee(quantityCameraCP, cP2MonthFee), true);
-        checkAC("CameraSetupFee is not correct", modalEldPage.compareCameraSetupFee(quantityCameraCP, cameraSetupFee), true);
-        checkAC("CameraInstallationFee is not correct", modalEldPage.compareCameraInstallationFee(quantityCameraCP, cameraInstallationFee), true);
-        checkAC("EzSmartCamCP2 prices is not correct", modalEldPage.compareEzSmartCamCP2(quantityCameraCP, ezSmartCamCP2), true);
-        checkAC("EzSmartCamSVA prices is not correct", modalEldPage.compareEzSmartCamSVA(quantityCameraCP, ezSmartCamSVA), true);
-        checkAC("SdCard prices is not correct", modalEldPage.compareSdCard(quantityCameraCP, valueSdCard, sD32Gb, sD64Gb, sD128Gb), true);
-        checkAC("Total Order is not correct", modalEldPage.compareTotalOrder(defaultTotalOrder), true);
+//        checkAC("Eld prices is not correct", modalEldPage.compareEldPrice(quantityOfDevices, typeOfPaymentMethod), true);
+        checkAC("DepositFee is not correct", modalEldPage.compareDepositFee(quantityOfDevices), true);
+        checkAC("DeliveryPrice is not correct", modalEldPage.compareDeliveryPrice(neededStatePickUpFromOffice), true);
+        checkAC("EldPinCable prices is not correct", modalEldPage.compareEldPinCable(quantityPinCable), true);
+        checkAC("EldOBDPinCable prices is not correct", modalEldPage.compareEldOBDPinCable(quantityOBDPinCable), true);
+        checkAC("EldStickerLabel prices is not correct", modalEldPage.compareEldStickerLabel(quantitySticker), true);
+        checkAC("CP2MonthFee is not correct", modalEldPage.compareCP2MonthFee(quantityCameraCP), true);
+        checkAC("CameraSetupFee is not correct", modalEldPage.compareCameraSetupFee(quantityCameraCP), true);
+        checkAC("CameraInstallationFee is not correct", modalEldPage.compareCameraInstallationFee(quantityCameraCP), true);
+        checkAC("EzSmartCamCP2 prices is not correct", modalEldPage.compareEzSmartCamCP2(quantityCameraCP), true);
+        checkAC("EzSmartCamSVA prices is not correct", modalEldPage.compareEzSmartCamSVA(quantityCameraSVA), true);
+        checkAC("SdCard prices is not correct", modalEldPage.compareSdCard(quantityCameraCP, valueSdCard), true);
+//        checkAC("Total Order is not correct", modalEldPage.compareTotalOrder(defaultTotalOrder), true);
 
         modalEldPage.doAgreeAgreement(quantityOfDevices);
         modalEldPage.doAgreementCamera(quantityCameraCP);

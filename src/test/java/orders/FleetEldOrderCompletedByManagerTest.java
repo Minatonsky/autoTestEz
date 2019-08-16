@@ -13,6 +13,8 @@ public class FleetEldOrderCompletedByManagerTest extends ParentFleetTest {
 
     @Test
     public void orderCompletedByManager() throws SQLException, IOException, ClassNotFoundException {
+        tearDown();
+        setUp();
 
         String idLastOrderAfterTest = utilsForDB.getLastOrderIdForFleet(dataFleetId.get("fleetId").toString());
 

@@ -76,8 +76,8 @@ public class FleetDoOrderManagerCompletedOrderParamsTest extends ParentTest {Str
 
 
 
-        modalEldPage.compareTotalOrder(defaultTotalOrder);
-        checkAC("Total Order is not correct", modalEldPage.compareTotalOrder(defaultTotalOrder), true);
+//        modalEldPage.compareTotalOrder(defaultTotalOrder);
+//        checkAC("Total Order is not correct", modalEldPage.compareTotalOrder(defaultTotalOrder), true);
 
 
         modalEldPage.doAgreeAgreement(quantityOfDevices);

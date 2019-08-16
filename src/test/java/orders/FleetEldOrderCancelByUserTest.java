@@ -16,7 +16,7 @@ public class FleetEldOrderCancelByUserTest extends ParentFleetTest {
 
         String idLastOrderAfterTest = utilsForDB.getLastOrderIdForFleet(dataFleetId.get("fleetId").toString());
         dashboardPage.goToEldPage();
-        userEldPage.cancelEldDevices(idLastOrderAfterTest, dataForEldOrder.get("quantityOfDevices").toString());
+        userEldPage.cancelEldDevices(idLastOrderAfterTest);
         dashboardPage.goToFinancesPage();
         financesPage.compareBalance(dataForEldOrder.get("balanceIfCanceled").toString());
         checkAC("Balance is not correct", financesPage.compareBalance(dataForEldOrder.get("balanceIfCanceled").toString()), true);
