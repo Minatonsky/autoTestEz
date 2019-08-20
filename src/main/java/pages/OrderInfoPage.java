@@ -12,6 +12,9 @@ public class OrderInfoPage extends ParentPage {
     @FindBy(xpath = ".//button[@class='btn btn-default btn-sm save_order_edit']")
     private WebElement buttonSave;
 
+    @FindBy(xpath = "//*[text()='Full order Price']//..//span[@class='form-group-content']")
+    private WebElement fullOrderPrice;
+
     public OrderInfoPage(WebDriver webDriver) {
         super(webDriver, "dash/eld_orders/");
     }
@@ -20,6 +23,10 @@ public class OrderInfoPage extends ParentPage {
 
     public void clickButtonSave(){actionsWithOurElements.clickOnElement(buttonSave);}
 
+    public String getFullOrderPrice(){
+        return fullOrderPrice.getText().substring(1);
+    }
+
 
     public void completedOrder() {
         selectOrderStatus("4");
@@ -27,4 +34,12 @@ public class OrderInfoPage extends ParentPage {
         selectOrderStatus("1");
         clickButtonSave();
     }
+
+    public boolean compareFullOrderPrice(String dueForLastOrder){
+        if (Double.parseDouble(getFullOrderPrice()) == Double.parseDouble(dueForLastOrder))
+            return true;
+        else return false;
+
+    }
+
 }

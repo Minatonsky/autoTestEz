@@ -289,9 +289,17 @@ ORDER LIST
 
     public void enterQuantityCameraCP(String quantityCameraCP){actionsWithOurElements.enterTextToElement(quantityCamera1Input, quantityCameraCP);}
 
-    public void selectSdCard(String valueSdCard) {actionsWithOurElements.selectValueInDropDown(typeOfCdCard, valueSdCard);}
+    public void selectSdCard(String valueSdCard, String quantityCameraCP) {
+        if (Integer.parseInt(quantityCameraCP) > 0)
+            actionsWithOurElements.selectValueInDropDown(typeOfCdCard, valueSdCard);
+        else logger.info("No cd card in order");
+    }
 
-    public void enterQuantityCameraSVA(String quantityCameraSVA){actionsWithOurElements.enterTextToElement(quantityCamera2Input, quantityCameraSVA);}
+    public void enterQuantityCameraSVA(String quantityCameraSVA, String quantityCameraCP){
+        if (Integer.parseInt(quantityCameraCP) > 0)
+            actionsWithOurElements.enterTextToElement(quantityCamera2Input, quantityCameraSVA);
+        else logger.info("No camera sva in order");
+       }
 
     public void setPickUpFromOffice(String neededStatePickUpFromOffice){actionsWithOurElements.setNeededStateToCheckBox(checkBoxPickUp, neededStatePickUpFromOffice);}
 
@@ -304,8 +312,8 @@ ORDER LIST
         enterQuantityOBDPinCable(quantityOBDPinCable);
         enterQuantitySticker(quantitySticker);
         enterQuantityCameraCP(quantityCameraCP);
-        selectSdCard(valueSdCard);
-        enterQuantityCameraSVA(quantityCameraSVA);
+        selectSdCard(valueSdCard, quantityCameraCP);
+        enterQuantityCameraSVA(quantityCameraSVA, quantityCameraCP);
         waitABit(1);
         setPickUpFromOffice(neededStatePickUpFromOffice);
         setOvernightDelivery(neededStateOvernightDelivery);
@@ -382,6 +390,7 @@ COMPARE METHODS
     public String getEldOneYearPrice(){
         return eldOneYearPriceText.getText();
     }
+
     public String getEldOneYearPrice2(){
         return eldOneYearPriceText2.getText();
     }
@@ -562,30 +571,77 @@ COMPARE METHODS CAMERA
 /*
 COMPARE METHODS TOTAL PRICE
 */
+    public double totalOrderPrice(String  quantityOfDevices, String typeOfPaymentMethod, String quantityPinCable, String quantityOBDPinCable, String quantitySticker,
+                                  String quantityCameraCP, String quantityCameraSVA, String valueSdCard) {
+        double totalPrice = Math.round((countEldPrice(quantityOfDevices, typeOfPaymentMethod, quantityCameraCP) + countDepositFeePrice(quantityOfDevices) + countDeliveryPrice() +
+                countEldPinCablePrice(quantityPinCable) + countOBDPinCablePrice(quantityOBDPinCable) + countStickerPrice(quantitySticker) +
+                countCP2MonthFeePrice(quantityCameraCP) + countCameraSetupFeePrice(quantityCameraCP) + countCameraInstallationFeePrice(quantityCameraCP) + countEzSmartCamCP2Price(quantityCameraCP) +
+                countCameraSVAPrice(quantityCameraSVA) + countSdCardPrice(quantityCameraCP, valueSdCard))*100.0) / 100.0;
+        return totalPrice;
+    }
+
 
     public boolean compareTotalOrder(String  quantityOfDevices, String typeOfPaymentMethod, String quantityPinCable, String quantityOBDPinCable, String quantitySticker, String quantityCameraCP, String quantityCameraSVA, String valueSdCard){
-        double totalPrice = countEldPrice(quantityOfDevices, typeOfPaymentMethod) + countDepositFeePrice(quantityOfDevices) + countDeliveryPrice() + countEldPinCablePrice(quantityPinCable) + countOBDPinCablePrice(quantityOBDPinCable) + countStickerPrice(quantitySticker) + countCP2MonthFeePrice(quantityCameraCP) + countCameraSetupFeePrice(quantityCameraCP) + countCameraInstallationFeePrice(quantityCameraCP) + countEzSmartCamCP2Price(quantityCameraCP) + countCameraSVAPrice(quantityCameraSVA) + countSdCardPrice(quantityCameraCP, valueSdCard);
+        double totalPrice =  Math.round((countEldPrice(quantityOfDevices, typeOfPaymentMethod, quantityCameraCP) + countDepositFeePrice(quantityOfDevices) + countDeliveryPrice() +
+                countEldPinCablePrice(quantityPinCable) + countOBDPinCablePrice(quantityOBDPinCable) + countStickerPrice(quantitySticker) +
+                countCP2MonthFeePrice(quantityCameraCP) + countCameraSetupFeePrice(quantityCameraCP) + countCameraInstallationFeePrice(quantityCameraCP) + countEzSmartCamCP2Price(quantityCameraCP) +
+                countCameraSVAPrice(quantityCameraSVA) + countSdCardPrice(quantityCameraCP, valueSdCard))*100.0) / 100.0;
         return Double.parseDouble(getTotalOrder().substring(1)) == totalPrice;
     }
 
-    private double countEldPrice(String  quantityOfDevices, String typeOfPaymentMethod) {
+    private double countEldPrice(String  quantityOfDevices, String typeOfPaymentMethod, String quantityCameraCP) {
+        int tempQuantityDevices1 = (Integer.parseInt(quantityOfDevices) - Integer.parseInt(quantityCameraCP));
+        int tempQuantityDevices2 = (Integer.parseInt(quantityOfDevices) - tempQuantityDevices1);
+
         if (Integer.parseInt(quantityOfDevices) > 0) {
+            if (Integer.parseInt(quantityCameraCP) > 0) {
+                if (Integer.parseInt(quantityOfDevices) <= Integer.parseInt(quantityCameraCP)) {
+                    if (Integer.parseInt(typeOfPaymentMethod) == 0) {
+                        double tempPrice = (Integer.parseInt(quantityOfDevices) * 29.99) * 2;
+                        return tempPrice;
 
-            if (Integer.parseInt(typeOfPaymentMethod) == 0) {
-                double eldPrice = (Integer.parseInt(quantityOfDevices) * 29.99) * 2;
-                return eldPrice;
+                    } else if (Integer.parseInt(typeOfPaymentMethod) == 1) {
+                        double tempPrice = Integer.parseInt(quantityOfDevices) * 299.88;
+                        return tempPrice;
 
-            } else if (Integer.parseInt(typeOfPaymentMethod) == 1) {
-                double eldPrice = Integer.parseInt(quantityOfDevices) * 329.89;
-                return eldPrice;
+                    } else if (Integer.parseInt(typeOfPaymentMethod) == 2) {
+                        double tempPrice = Integer.parseInt(quantityOfDevices) * 599.76;
+                        return tempPrice;
+                    }
+                } else if (Integer.parseInt(quantityOfDevices) > Integer.parseInt(quantityCameraCP)) {
+                    if (Integer.parseInt(typeOfPaymentMethod) == 0) {
+                        double tempPrice = (Integer.parseInt(quantityOfDevices) * 29.99) * 2;
+                        return tempPrice;
 
-            } else if (Integer.parseInt(typeOfPaymentMethod) == 2) {
-                double eldPrice = Integer.parseInt(quantityOfDevices) * 629.79;
-                return eldPrice;
-            }
+                    } else if (Integer.parseInt(typeOfPaymentMethod) == 1) {
+                        double tempPrice1 = tempQuantityDevices1 * 329.89;
+                        double tempPrice2 = tempQuantityDevices2 * 299.88;
+                        return tempPrice1 + tempPrice2;
+
+                    } else if (Integer.parseInt(typeOfPaymentMethod) == 2) {
+                        double tempPrice1 = tempQuantityDevices1 * 629.79;
+                        double tempPrice2 = tempQuantityDevices2 * 599.76;
+                        return tempPrice1 + tempPrice2;
+                    }
+                }
+            }else {
+                if (Integer.parseInt(typeOfPaymentMethod) == 0) {
+                double tempPrice = (Integer.parseInt(quantityOfDevices) * 29.99) * 2;
+                return tempPrice;
+
+                } else if (Integer.parseInt(typeOfPaymentMethod) == 1) {
+                double tempPrice = Integer.parseInt(quantityOfDevices) * 299.88;
+                return tempPrice;
+
+                } else if (Integer.parseInt(typeOfPaymentMethod) == 2) {
+                double tempPrice = Integer.parseInt(quantityOfDevices) * 599.76;
+                return tempPrice;
+                }
         }
-        return 0;
+
+    } return 0;
     }
+
 
     private double countDepositFeePrice(String  quantityOfDevices){
         double depositFee = Integer.parseInt(quantityOfDevices) * 49.99;

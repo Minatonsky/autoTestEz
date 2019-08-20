@@ -15,10 +15,14 @@ public class SoloEldOrderCancelByUserTest extends ParentSoloTest {
     public void cancelDevicesByUser() throws SQLException, IOException, ClassNotFoundException {
 
         String idLastOrderAfterTest = utilsForDB.getLastOrderIdForSolo(dataSoloId.get("soloId").toString());
+        String orderStatus = utilsForDB.getOrderStatus(idLastOrderAfterTest);
+        String dueForLastOrder = utilsForDB.getLastDueForSolo(dataSoloId.get("soloId").toString());
+
         dashboardPage.goToEldPage();
-        userEldPage.cancelEldDevices(idLastOrderAfterTest);
+        userEldPage.cancelEldDevices(idLastOrderAfterTest, dataForEldOrder.get("quantityOfDevices").toString(), dataForEldOrder.get("quantityCameraCP").toString());
+        checkAC("Order is not canceled", orderStatus.equals("2") , true);
         dashboardPage.goToFinancesPage();
-        financesPage.compareBalance(dataForEldOrder.get("balanceIfCanceled").toString());
-        checkAC("Balance is not correct", financesPage.compareBalance(dataForEldOrder.get("balanceIfCanceled").toString()), true);
+        checkAC("Balance is not correct", financesPage.compareBalanceIfCanceled(dataForEldOrder.get("currentDue").toString(), dueForLastOrder, dataForEldOrder.get("quantityOfDevices").toString()), true);
+
     }
 }

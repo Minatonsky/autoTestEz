@@ -10,10 +10,12 @@ import java.io.IOException;
 import java.sql.SQLException;
 import java.util.Map;
 
+import static libs.Utils.waitABit;
+
 public class ParentFleetTest extends ParentTest {
     ExcelDriver excelDriver = new ExcelDriver();
     UtilsForDB utilsForDB = new UtilsForDB();
-    int columnNumber = 1;
+    int columnNumber = 2;
 
     Map dataForEldOrder = excelDriver.getMultipleData(configProperties.DATA_FILE_PATH() + "testEldOrder.xls", "orderListData", columnNumber);
     Map personalDataForEldOrder = excelDriver.getData(configProperties.DATA_FILE_PATH() + "testEldOrder.xls", "personalData");
@@ -40,7 +42,7 @@ public class ParentFleetTest extends ParentTest {
         modalEldPage.enterOrderData(dataForEldOrder.get("quantityOfDevices").toString(), dataForEldOrder.get("quantityPinCable").toString(), dataForEldOrder.get("quantityOBDPinCable").toString(), dataForEldOrder.get("quantitySticker").toString(), dataForEldOrder.get("quantityCameraCP").toString(), dataForEldOrder.get("valueSdCard").toString(), dataForEldOrder.get("quantityCameraSVA").toString(), dataForEldOrder.get("neededStatePickUpFromOffice").toString(), dataForEldOrder.get("neededStateOvernightDelivery").toString());
         modalEldPage.clickPaymentMethods(dataForEldOrder.get("typeOfPaymentMethod").toString(), dataForEldOrder.get("quantityOfDevices").toString());
         modalEldPage.clickPaymentMethodsCamera(dataForEldOrder.get("typeOfPaymentMethodCamera").toString(), dataForEldOrder.get("quantityCameraCP").toString());
-
+        waitABit(2);
         checkAC("Eld prices is not correct", modalEldPage.compareEldPrice(dataForEldOrder.get("quantityOfDevices").toString(), dataForEldOrder.get("typeOfPaymentMethod").toString(), dataForEldOrder.get("quantityCameraCP").toString()), true);
         checkAC("DepositFee is not correct", modalEldPage.compareDepositFee(dataForEldOrder.get("quantityOfDevices").toString()), true);
         checkAC("DeliveryPrice is not correct", modalEldPage.compareDeliveryPrice(dataForEldOrder.get("neededStatePickUpFromOffice").toString()), true);
@@ -60,11 +62,16 @@ public class ParentFleetTest extends ParentTest {
         modalEldPage.clickButtonOrder();
 
         String idLastOrderAfterTest = utilsForDB.getLastOrderIdForFleet(dataFleetId.get("fleetId").toString());
+        waitABit(2);
         checkAC("New order wasn`t created", idLastOrderBeforeTest.equals(idLastOrderAfterTest) , false);
+        String orderStatus = utilsForDB.getOrderStatus(idLastOrderAfterTest);
+        waitABit(2);
+        checkAC("Order is not completed", orderStatus.equals("3") , true);
 
         dashboardPage.goToFinancesPage();
-
-        checkAC("Balance is not correct", financesPage.compareBalance(dataForEldOrder.get("defaultBalance").toString()), true);
+        String dueForLastOrder = utilsForDB.getLastDueForFleet(dataFleetId.get("fleetId").toString());
+        waitABit(2);
+        checkAC("Balance is not correct", financesPage.compareBalance(dataForEldOrder.get("currentDue").toString(), dueForLastOrder), true);
 
     }
 }

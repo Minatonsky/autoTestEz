@@ -15,11 +15,14 @@ public class FleetEldOrderCancelByUserTest extends ParentFleetTest {
     public void cancelDevicesByUser() throws SQLException, IOException, ClassNotFoundException {
 
         String idLastOrderAfterTest = utilsForDB.getLastOrderIdForFleet(dataFleetId.get("fleetId").toString());
+
+        String dueForLastOrder = utilsForDB.getLastDueForFleet(dataFleetId.get("fleetId").toString());
         dashboardPage.goToEldPage();
-        userEldPage.cancelEldDevices(idLastOrderAfterTest);
+        userEldPage.cancelEldDevices(idLastOrderAfterTest, dataForEldOrder.get("quantityOfDevices").toString(), dataForEldOrder.get("quantityCameraCP").toString());
         dashboardPage.goToFinancesPage();
-        financesPage.compareBalance(dataForEldOrder.get("balanceIfCanceled").toString());
-        checkAC("Balance is not correct", financesPage.compareBalance(dataForEldOrder.get("balanceIfCanceled").toString()), true);
+        String orderStatus = utilsForDB.getOrderStatus(idLastOrderAfterTest);
+        checkAC("Order is not canceled", orderStatus.equals("2") , true);
+        checkAC("Balance is not correct", financesPage.compareBalanceIfCanceled(dataForEldOrder.get("currentDue").toString(), dueForLastOrder, dataForEldOrder.get("quantityOfDevices").toString()), true);
 
     }
 }

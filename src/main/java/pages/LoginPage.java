@@ -7,7 +7,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 public class LoginPage extends ParentPage {
-    DashboardPage dashboardPage;
 
     @FindBy(xpath = ".//*[@class='log_in btn-login']")
     private WebElement loginButton;
@@ -25,10 +24,9 @@ public class LoginPage extends ParentPage {
 
     public LoginPage(WebDriver webDriver) {
         super(webDriver, "/");
-        dashboardPage = new DashboardPage(webDriver);
     }
 
-   @Step
+    @Step
     public void openPage() {
         try {
             webDriver.get(baseUrl + "/");
@@ -62,7 +60,7 @@ public class LoginPage extends ParentPage {
      * @param login (ONLY Valid Login)
      * @param passWord (ONLY Valid Pass)
      */
-    @Step
+
     public void userValidLogIn(String login, String passWord) {
         openPage();
         openLoginForm();

@@ -80,8 +80,8 @@ public class SoloDoOrderParamsTest extends ParentTest { String  quantityOfDevice
 
         dashboardPage.goToFinancesPage();
 
-        financesPage.compareBalance(defaultBalance);
-        checkAC("Balance is not correct", financesPage.compareBalance(defaultBalance), true);
+//        financesPage.compareBalance(defaultBalance);
+//        checkAC("Balance is not correct", financesPage.compareBalance(defaultBalance), true);
 
 
     }

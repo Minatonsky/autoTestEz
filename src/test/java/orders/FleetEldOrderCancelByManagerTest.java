@@ -33,8 +33,8 @@ USER CHECK IF DEVICES IS ACTIVE AND BALANCE NOT CHANGED
         loginPage.userValidLogIn(dataForFleetValidLogIn.get("login").toString(),dataForFleetValidLogIn.get("pass").toString());
         dashboardPage.openMenuDash();
         dashboardPage.goToFinancesPage();
-        financesPage.compareBalance(dataForEldOrder.get("balanceIfCanceled").toString());
-        checkAC("Balance is not correct", financesPage.compareBalance(dataForEldOrder.get("balanceIfCanceled").toString()), true);
+
+//        checkAC("Balance is not correct", financesPage.compareBalanceIfCanceled(dataForEldOrder.get("currentDue").toString()), true);
         String orderStatus = utilsForDB.getOrderStatus(idLastOrderAfterTest);
         checkAC("Order is not completed", orderStatus.equals("2") , true);
 

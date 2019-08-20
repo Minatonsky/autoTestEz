@@ -22,13 +22,13 @@ public class UtilsForDB {
     @Step
     public void getSetCurrentDueForFleet(String valueCurrentDue, String idCarrier) throws SQLException, IOException, ClassNotFoundException {
         dBMySQL = new Database("MySQL_PADB_DB", "MySQL");
-        dBMySQL.changeTable("UPDATE ez_finances SET `currentDue`=" + valueCurrentDue + " WHERE `carrierId`= " + idCarrier + ";");
+        dBMySQL.changeTable("UPDATE ez_finances SET `currentDue`=-" + valueCurrentDue + " WHERE `carrierId`= " + idCarrier + ";");
         dBMySQL.quit();
     }
     @Step
     public void getSetCurrentDueForSolo(String valueCurrentDue, String idSolo) throws SQLException, IOException, ClassNotFoundException {
         dBMySQL = new Database("MySQL_PADB_DB", "MySQL");
-        dBMySQL.changeTable("UPDATE eld_personal_finances SET `currentDue`=" + valueCurrentDue + " WHERE `userId`= " + idSolo + ";");
+        dBMySQL.changeTable("UPDATE eld_personal_finances SET `currentDue`=-" + valueCurrentDue + " WHERE `userId`= " + idSolo + ";");
         dBMySQL.quit();
     }
     @Step
@@ -62,8 +62,20 @@ public class UtilsForDB {
         return tempCountNewOrder;
     }
 
-
-
+    @Step
+    public String getLastDueForFleet(String idCarrier) throws SQLException, IOException, ClassNotFoundException {
+        dBMySQL = new Database("MySQL_PADB_DB", "MySQL");
+        String tempLastDue = dBMySQL.selectValue("SELECT amount FROM ez_due  WHERE carrierId = " + idCarrier + " ORDER BY dateTime desc LIMIT 1;");
+        dBMySQL.quit();
+        return tempLastDue;
+    }
+    @Step
+    public String getLastDueForSolo(String idSolo) throws SQLException, IOException, ClassNotFoundException {
+        dBMySQL = new Database("MySQL_PADB_DB", "MySQL");
+        String tempLastDue = dBMySQL.selectValue("SELECT amount FROM ez_due  WHERE userId = " + idSolo + " ORDER BY dateTime desc LIMIT 1;");
+        dBMySQL.quit();
+        return tempLastDue;
+    }
 
 
 }

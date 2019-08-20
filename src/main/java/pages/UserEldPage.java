@@ -29,17 +29,23 @@ public class UserEldPage extends ParentPage {
     }
 
     @Step
-    public void cancelEldDevices(String idOrder) throws SQLException, IOException, ClassNotFoundException {
+    public void cancelEldDevices(String idOrder, String quantityOfDevices, String quantityCameraCP) throws SQLException, IOException, ClassNotFoundException {
         UtilsForDB utilsForDB = new UtilsForDB();
         List<String> localId = utilsForDB.getLocalIdDevices(idOrder);
-        for (String element: localId) {
-            enterIdOrder(element);
-            clickOnOrderOnList(element);
+        if (Integer.parseInt(quantityOfDevices) > 0) {
+            if (Integer.parseInt(quantityCameraCP) == 0)
+                for (String element : localId) {
+                    enterIdOrder(element);
+                    clickOnOrderOnList(element);
+                    clickOnButtonCancelOrderDevice();
+                    clickOnOrderEldConfirm();
+                }
+            else if (Integer.parseInt(quantityCameraCP) > 0)
+                enterIdOrder(localId.get(0));
+            clickOnOrderOnList(localId.get(0));
             clickOnButtonCancelOrderDevice();
             clickOnOrderEldConfirm();
-        }
-
-
+        } else logger.info("Can not canceled devices, no devices in order");
     }
 
     private void clickOnOrderEldConfirm() {
@@ -57,4 +63,5 @@ public class UserEldPage extends ParentPage {
     public void enterIdOrder(String idLocalDevice){
         actionsWithOurElements.enterTextToElement(idHolder, idLocalDevice);
     }
+
 }

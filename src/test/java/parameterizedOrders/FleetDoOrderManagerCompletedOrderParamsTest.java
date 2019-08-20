@@ -88,8 +88,8 @@ public class FleetDoOrderManagerCompletedOrderParamsTest extends ParentTest {Str
 
         dashboardPage.goToFinancesPage();
 
-        financesPage.compareBalance(defaultBalance);
-        checkAC("Balance is not correct", financesPage.compareBalance(defaultBalance), true);
+//        financesPage.compareBalance(defaultBalance);
+//        checkAC("Balance is not correct", financesPage.compareBalance(defaultBalance), true);
 
 
         tearDown();
