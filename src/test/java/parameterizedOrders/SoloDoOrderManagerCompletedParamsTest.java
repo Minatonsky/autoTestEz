@@ -66,21 +66,19 @@ public class SoloDoOrderManagerCompletedParamsTest extends ParentTest {String  q
         dashboardPage.openMenuDash();
         dashboardPage.goToEldPage();
 
-        eldUserPage.clickOnOrderELD();
+        userEldPage.clickOnOrderELD();
 
         modalEldPage.enterPersonalData(personalDataForEldOrder.get("deliveryState").toString(), personalDataForEldOrder.get("firstName").toString(), personalDataForEldOrder.get("lastName").toString(), personalDataForEldOrder.get("phone").toString(), personalDataForEldOrder.get("addressLine").toString(), personalDataForEldOrder.get("aptNumber").toString(), personalDataForEldOrder.get("deliveryCity").toString(), personalDataForEldOrder.get("zipCode").toString());
 
 
-        modalEldPage.enterOrderData(quantityOfDevices, quantityPinCable, quantityOBDPinCable, quantitySticker, quantityCamera1, quantityCamera2, neededStatePickUpFromOffice, neededStateOvernightDelivery);
+//        modalEldPage.enterOrderData(quantityOfDevices, quantityPinCable, quantityOBDPinCable, quantitySticker, quantityCamera1, quantityCamera2, neededStatePickUpFromOffice, neededStateOvernightDelivery);
 //        modalEldPage.clickPaymentMethods(typeOfPaymentMethod);
 
-        modalEldPage.compareTotalOrder(defaultTotalOrder);
-        checkAC("Total Order is not correct", modalEldPage.compareTotalOrder(defaultTotalOrder), true);
-
-
-
-        modalEldPage.compareTotalOrder(defaultTotalOrder);
-        checkAC("Total Order is not correct", modalEldPage.compareTotalOrder(defaultTotalOrder), true);
+//        modalEldPage.compareTotalOrder(defaultTotalOrder);
+//        checkAC("Total Order is not correct", modalEldPage.compareTotalOrder(defaultTotalOrder), true);
+//
+//        modalEldPage.compareTotalOrder(defaultTotalOrder);
+//        checkAC("Total Order is not correct", modalEldPage.compareTotalOrder(defaultTotalOrder), true);
 
 
 
@@ -93,8 +91,8 @@ public class SoloDoOrderManagerCompletedParamsTest extends ParentTest {String  q
 
         dashboardPage.goToFinancesPage();
 
-        financesPage.compareBalance(defaultBalance);
-        checkAC("Balance is not correct", financesPage.compareBalance(defaultBalance), true);
+//        financesPage.compareBalance(defaultBalance);
+//        checkAC("Balance is not correct", financesPage.compareBalance(defaultBalance), true);
 
 
         tearDown();
@@ -115,7 +113,7 @@ MANAGER COMPLETED ORDER
 
         managerEldPage.openOrderInfo(idLastOrderAfterTest);
 
-        modalOrderPage.completedOrder();
+        orderInfoPage.completedOrder();
 
 
 /*

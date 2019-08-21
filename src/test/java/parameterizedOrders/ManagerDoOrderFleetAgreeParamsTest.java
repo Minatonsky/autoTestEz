@@ -108,8 +108,8 @@ public class ManagerDoOrderFleetAgreeParamsTest extends ParentTest {String  quan
         checkAC("New order wasn`t created", idLastOrderBeforeTest.equals(idLastOrderAfterTest) , false);
 
 
-        financesPage.compareBalance(defaultBalance);
-        checkAC("Balance is not correct", financesPage.compareBalance(defaultBalance), true);
+//        financesPage.compareBalance(defaultBalance);
+//        checkAC("Balance is not correct", financesPage.compareBalance(defaultBalance), true);
 
 
 

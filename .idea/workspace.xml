@@ -5,15 +5,16 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log/qalight.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/qalight.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/data/testEldOrder.xls" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/data/testEldOrder.xls" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/data/testLogin.xls" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/data/testLogin.xls" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/libs/ActionsWithOurElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/libs/ActionsWithOurElements.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/libs/UtilsForDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/libs/UtilsForDB.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/FinancesPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/FinancesPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/ModalEldPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/ModalEldPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/orders/EldOrderTestWithExcelParams.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/orders/EldOrderTestWithExcelParams.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/OrderInfoPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/OrderInfoPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/UserEldPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/UserEldPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/orders/FleetEldOrderCancelByManagerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/orders/FleetEldOrderCancelByManagerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/orders/FleetEldOrderCancelByUserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/orders/FleetEldOrderCancelByUserTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/orders/FleetEldOrderCompletedByManagerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/orders/FleetEldOrderCompletedByManagerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/orders/FleetEldOrderTestWithExcel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/orders/FleetEldOrderTestWithExcel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/orders/ParentFleetTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/orders/ParentFleetTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/orders/ParentSoloTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/orders/ParentSoloTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/orders/SoloEldOrderCancelByManagerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/orders/SoloEldOrderCancelByManagerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/orders/SoloEldOrderCancelByUserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/orders/SoloEldOrderCancelByUserTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/orders/SoloEldOrderCompletedByManagerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/orders/SoloEldOrderCompletedByManagerTest.java" afterDir="false" />
@@ -21,11 +22,14 @@
       <change beforePath="$PROJECT_DIR$/src/test/java/parameterizedOrders/FleetDoOrderManagerCanceledOrderParamsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/parameterizedOrders/FleetDoOrderManagerCanceledOrderParamsTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/parameterizedOrders/FleetDoOrderManagerCompletedOrderParamsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/parameterizedOrders/FleetDoOrderManagerCompletedOrderParamsTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/parameterizedOrders/FleetDoOrderParamsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/parameterizedOrders/FleetDoOrderParamsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/parameterizedOrders/ManagerDoOrderFleetAgreeParamsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/parameterizedOrders/ManagerDoOrderFleetAgreeParamsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/parameterizedOrders/ManagerDoOrderFleetCancelParamsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/parameterizedOrders/ManagerDoOrderFleetCancelParamsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/parameterizedOrders/ManagerDoOrderSoloAgreeParamsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/parameterizedOrders/ManagerDoOrderSoloAgreeParamsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/parameterizedOrders/ManagerDoOrderSoloCanceledParamsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/parameterizedOrders/ManagerDoOrderSoloCanceledParamsTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/parameterizedOrders/SoloCancelOrderByUserParameterizedTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/parameterizedOrders/SoloCancelOrderByUserParameterizedTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/parameterizedOrders/SoloDoOrderManagerCanceledParamsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/parameterizedOrders/SoloDoOrderManagerCanceledParamsTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/parameterizedOrders/SoloDoOrderManagerCompletedParamsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/parameterizedOrders/SoloDoOrderManagerCompletedParamsTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/parameterizedOrders/SoloDoOrderParamsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/parameterizedOrders/SoloDoOrderParamsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/parentTest/ParentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/parentTest/ParentTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -52,12 +56,12 @@
     </findStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Den-12-07" />
+        <entry key="$PROJECT_DIR$" value="Den-20-07" />
       </map>
     </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -83,11 +87,10 @@
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\workspace\testdevEzlogz\src\main\java\pages" />
       <recent name="C:\workspace\testdevEzlogz\src\main\java\data" />
-      <recent name="C:\workspace\testdevEzlogz\src\main\java\libs" />
-      <recent name="C:\workspace\testdevEzlogz\src\test\java\restTest" />
-      <recent name="C:\workspace\testdevEzlogz\src" />
+      <recent name="C:\workspace\testdevEzlogz\src\drivers" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="parameterizedOrders" />
@@ -95,10 +98,11 @@
       <recent name="loginTests" />
       <recent name="orders" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\workspace\testdevEzlogz\src\main\java\pages" />
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\workspace\testdevEzlogz\src\main\java\data" />
-      <recent name="C:\workspace\testdevEzlogz\src\drivers" />
+      <recent name="C:\workspace\testdevEzlogz\src\main\java\libs" />
+      <recent name="C:\workspace\testdevEzlogz\src\test\java\restTest" />
+      <recent name="C:\workspace\testdevEzlogz\src" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -113,8 +117,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.FleetEldOrderTestWithExcel.addNewOrder">
-    <configuration name="EldOrderTestWithExcelParams.addNewOrder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.FleetEldOrderCancelByUserTest.cancelDevicesByUser">
+    <configuration name="FleetEldOrderCancelByUserTest.cancelDevicesByUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="testdevEzlogz" />
       <extension name="coverage">
         <pattern>
@@ -123,14 +127,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="orders" />
-      <option name="MAIN_CLASS_NAME" value="orders.EldOrderTestWithExcelParams" />
-      <option name="METHOD_NAME" value="addNewOrder" />
+      <option name="MAIN_CLASS_NAME" value="orders.FleetEldOrderCancelByUserTest" />
+      <option name="METHOD_NAME" value="cancelDevicesByUser" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FleetEldOrderTestWithExcel" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ParentSoloTest.addNewOrder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="testdevEzlogz" />
       <extension name="coverage">
         <pattern>
@@ -139,13 +143,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="orders" />
-      <option name="MAIN_CLASS_NAME" value="orders.FleetEldOrderTestWithExcel" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="orders.ParentSoloTest" />
+      <option name="METHOD_NAME" value="addNewOrder" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FleetEldOrderTestWithExcel.addNewOrder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SoloEldOrderCancelByManagerTest.orderCancelByManager" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="testdevEzlogz" />
       <extension name="coverage">
         <pattern>
@@ -154,40 +159,40 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="orders" />
-      <option name="MAIN_CLASS_NAME" value="orders.FleetEldOrderTestWithExcel" />
-      <option name="METHOD_NAME" value="addNewOrder" />
+      <option name="MAIN_CLASS_NAME" value="orders.SoloEldOrderCancelByManagerTest" />
+      <option name="METHOD_NAME" value="orderCancelByManager" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginTestWithExcel.validLogin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SoloEldOrderCancelByUserTest.cancelDevicesByUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="testdevEzlogz" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="loginTests.*" />
+          <option name="PATTERN" value="orders.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="loginTests" />
-      <option name="MAIN_CLASS_NAME" value="loginTests.LoginTestWithExcel" />
-      <option name="METHOD_NAME" value="validLogin" />
+      <option name="PACKAGE_NAME" value="orders" />
+      <option name="MAIN_CLASS_NAME" value="orders.SoloEldOrderCancelByUserTest" />
+      <option name="METHOD_NAME" value="cancelDevicesByUser" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SoloDoOrderParamsTest.addNewOrder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SoloEldOrderCompletedByManagerTest.orderCompletedByManager" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="testdevEzlogz" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="parameterizedOrders.*" />
+          <option name="PATTERN" value="orders.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="parameterizedOrders" />
-      <option name="MAIN_CLASS_NAME" value="parameterizedOrders.SoloDoOrderParamsTest" />
-      <option name="METHOD_NAME" value="addNewOrder" />
+      <option name="PACKAGE_NAME" value="orders" />
+      <option name="MAIN_CLASS_NAME" value="orders.SoloEldOrderCompletedByManagerTest" />
+      <option name="METHOD_NAME" value="orderCompletedByManager" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -238,20 +243,20 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="JUnit.FleetEldOrderTestWithExcel" />
-      <item itemvalue="JUnit.FleetEldOrderTestWithExcel.addNewOrder" />
-      <item itemvalue="JUnit.SoloDoOrderParamsTest.addNewOrder" />
+      <item itemvalue="JUnit.SoloEldOrderCancelByUserTest.cancelDevicesByUser" />
+      <item itemvalue="JUnit.ParentSoloTest.addNewOrder" />
       <item itemvalue="Maven.Run testdevEzlogz []" />
-      <item itemvalue="JUnit.LoginTestWithExcel.validLogin" />
-      <item itemvalue="JUnit.EldOrderTestWithExcelParams.addNewOrder" />
+      <item itemvalue="JUnit.SoloEldOrderCompletedByManagerTest.orderCompletedByManager" />
+      <item itemvalue="JUnit.SoloEldOrderCancelByManagerTest.orderCancelByManager" />
+      <item itemvalue="JUnit.FleetEldOrderCancelByUserTest.cancelDevicesByUser" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.FleetEldOrderTestWithExcel.addNewOrder" />
-        <item itemvalue="JUnit.EldOrderTestWithExcelParams.addNewOrder" />
-        <item itemvalue="JUnit.LoginTestWithExcel.validLogin" />
-        <item itemvalue="JUnit.FleetEldOrderTestWithExcel" />
-        <item itemvalue="JUnit.SoloDoOrderParamsTest.addNewOrder" />
+        <item itemvalue="JUnit.FleetEldOrderCancelByUserTest.cancelDevicesByUser" />
+        <item itemvalue="JUnit.SoloEldOrderCancelByManagerTest.orderCancelByManager" />
+        <item itemvalue="JUnit.SoloEldOrderCompletedByManagerTest.orderCompletedByManager" />
+        <item itemvalue="JUnit.SoloEldOrderCancelByUserTest.cancelDevicesByUser" />
+        <item itemvalue="JUnit.ParentSoloTest.addNewOrder" />
       </list>
     </recent_temporary>
   </component>
@@ -455,7 +460,42 @@
       <option name="project" value="LOCAL" />
       <updated>1565122737496</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="new modal window order test was add">
+      <created>1565387191874</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1565387191874</updated>
+    </task>
+    <task id="LOCAL-00028" summary="camera order test was add">
+      <created>1565638737622</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1565638737622</updated>
+    </task>
+    <task id="LOCAL-00029" summary="camera order with params test was add">
+      <created>1565729354732</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1565729354733</updated>
+    </task>
+    <task id="LOCAL-00030" summary="refactor fleet test with excel was add">
+      <created>1565814593112</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1565814593112</updated>
+    </task>
+    <task id="LOCAL-00031" summary="count methods was add">
+      <created>1565979870989</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1565979870989</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -492,10 +532,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add xml" />
-    <MESSAGE value="loginTest was added" />
-    <MESSAGE value="new page\test was added" />
-    <MESSAGE value="eld page/test was add" />
     <MESSAGE value="invalid login\pass test was add" />
     <MESSAGE value="config properties and utils was add" />
     <MESSAGE value="work with DB was add" />
@@ -516,16 +552,16 @@
     <MESSAGE value="manager do order cancel with params test was added" />
     <MESSAGE value="refactor params test was do" />
     <MESSAGE value="new order test was do" />
-    <option name="LAST_COMMIT_MESSAGE" value="new order test was do" />
+    <MESSAGE value="new modal window order test was add" />
+    <MESSAGE value="camera order test was add" />
+    <MESSAGE value="camera order with params test was add" />
+    <MESSAGE value="refactor fleet test with excel was add" />
+    <MESSAGE value="count methods was add" />
+    <option name="LAST_COMMIT_MESSAGE" value="count methods was add" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/parentTest/ParentTest.java</url>
-          <line>96</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/libs/Utils.java</url>
           <line>18</line>

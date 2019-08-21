@@ -2,7 +2,6 @@ package parentTest;
 
 import io.qameta.allure.Step;
 import libs.ConfigProperties;
-import libs.ExcelDriver;
 import org.aeonbits.owner.ConfigFactory;
 import org.apache.log4j.Logger;
 import org.junit.After;
@@ -21,9 +20,10 @@ import java.util.Iterator;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
+import static libs.Utils.waitABit;
+
 public class ParentTest {
     WebDriver webDriver;
-    ExcelDriver excelDriver;
 
     Logger logger = Logger.getLogger(getClass());
     protected LoginPage loginPage;
@@ -31,8 +31,8 @@ public class ParentTest {
     protected ModalEldPage modalEldPage;
     protected FinancesPage financesPage;
     protected ManagerEldPage managerEldPage;
-    protected ModalOrderPage modalOrderPage;
-    protected EldUserPage eldUserPage;
+    protected OrderInfoPage orderInfoPage;
+    protected UserEldPage userEldPage;
     protected ManagerModalEldPage managerModalEldPage;
 
     String browser = System.getProperty("browser");
@@ -42,7 +42,6 @@ public class ParentTest {
     @Before
     public void setUp() throws SQLException, IOException, ClassNotFoundException {
         initDriver(browser);
-        excelDriver = new ExcelDriver();
         webDriver.manage().window().maximize();
         webDriver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         loginPage = new LoginPage(webDriver);
@@ -50,14 +49,9 @@ public class ParentTest {
         modalEldPage = new ModalEldPage(webDriver);
         financesPage = new FinancesPage(webDriver);
         managerEldPage = new ManagerEldPage(webDriver);
-        modalOrderPage = new ModalOrderPage(webDriver);
-        eldUserPage = new EldUserPage(webDriver);
+        orderInfoPage = new OrderInfoPage(webDriver);
+        userEldPage = new UserEldPage(webDriver);
         managerModalEldPage = new ManagerModalEldPage(webDriver);
-
-
-
-
-
     }
 
     private void initDriver(String browserName) {
@@ -91,6 +85,7 @@ public class ParentTest {
 
     @Step
     protected void checkAC(String message, boolean actual, boolean expected){
+        waitABit(1);
         if (actual != expected){
             logger.error("AC failed: " + message);
         }
