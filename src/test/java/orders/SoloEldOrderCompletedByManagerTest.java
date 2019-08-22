@@ -19,7 +19,6 @@ public class SoloEldOrderCompletedByManagerTest extends ParentSoloTest {
         String idLastOrderAfterTest = utilsForDB.getLastOrderIdForSolo(dataSoloId.get("soloId").toString());
         String dueForLastOrder = utilsForDB.getLastDueForSolo(dataSoloId.get("soloId").toString());
 
-
         loginPage.userValidLogIn(dataForManagerValidLogIn.get("login").toString(),dataForManagerValidLogIn.get("pass").toString());
         dashboardPage.openMenuDash();
         dashboardPage.goToEldPage();
@@ -28,7 +27,7 @@ public class SoloEldOrderCompletedByManagerTest extends ParentSoloTest {
         orderInfoPage.completedOrder();
 
         String orderStatus = utilsForDB.getOrderStatus(idLastOrderAfterTest);
-        checkAC("Order is not completed", orderStatus.equals("1") , true);
+        checkAC("Order is not completed", financesPage.compareCompletedOrderStatus(orderStatus) , true);
 
     }
 

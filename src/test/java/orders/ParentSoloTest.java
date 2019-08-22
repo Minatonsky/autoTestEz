@@ -15,7 +15,7 @@ import static libs.Utils.waitABit;
 public class ParentSoloTest extends ParentTest {
     ExcelDriver excelDriver = new ExcelDriver();
     UtilsForDB utilsForDB = new UtilsForDB();
-    int columnNumber = 1;
+    int columnNumber = 4;
 
     Map dataForEldOrder = excelDriver.getMultipleData(configProperties.DATA_FILE_PATH() + "testEldOrder.xls", "orderListData", columnNumber);
     Map personalDataForEldOrder = excelDriver.getData(configProperties.DATA_FILE_PATH() + "testEldOrder.xls", "personalData");
@@ -62,13 +62,13 @@ public class ParentSoloTest extends ParentTest {
 
         modalEldPage.doAgreeAgreement(dataForEldOrder.get("quantityOfDevices").toString());
         modalEldPage.doAgreementCamera(dataForEldOrder.get("quantityCameraCP").toString());
-        modalEldPage.clickButtonOrder();
+//        modalEldPage.clickButtonOrder();
 
         String idLastOrderAfterTest = utilsForDB.getLastOrderIdForSolo(dataSoloId.get("soloId").toString());
         checkAC("New order wasn`t created", idLastOrderBeforeTest.equals(idLastOrderAfterTest) , false);
 
         String orderStatus = utilsForDB.getOrderStatus(idLastOrderAfterTest);
-        checkAC("Order is not completed", orderStatus.equals("3") , true);
+        checkAC("Order is not Paid", financesPage.comparePaidOrderStatus(orderStatus) , true);
 
         dashboardPage.goToFinancesPage();
         String dueForLastOrder = utilsForDB.getLastDueForSolo(dataSoloId.get("soloId").toString());

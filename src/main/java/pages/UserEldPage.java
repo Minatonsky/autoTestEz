@@ -40,12 +40,21 @@ public class UserEldPage extends ParentPage {
                     clickOnButtonCancelOrderDevice();
                     clickOnOrderEldConfirm();
                 }
-            else if (Integer.parseInt(quantityCameraCP) > 0)
+            else if (Integer.parseInt(quantityCameraCP) > 0){
                 enterIdOrder(localId.get(0));
-            clickOnOrderOnList(localId.get(0));
-            clickOnButtonCancelOrderDevice();
-            clickOnOrderEldConfirm();
+                clickOnOrderOnList(localId.get(0));
+                clickOnButtonCancelOrderDevice();
+                clickOnOrderEldConfirm();
+            }
         } else logger.info("Can not canceled devices, no devices in order");
+    }
+
+    public boolean compareCancelDeviceStatusOrder(String orderStatus, String quantityOfDevices){
+        if (Integer.parseInt(quantityOfDevices) > 0){
+            return orderStatus.equals("2");
+        } else if (Integer.parseInt(quantityOfDevices) == 0){
+            return true;
+        } return false;
     }
 
     private void clickOnOrderEldConfirm() {
