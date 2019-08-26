@@ -41,7 +41,7 @@ USER CHECK IF BALANCE IS RETURNED
         checkAC("Balance is not correct", financesPage.compareBalanceIfCanceled(dataForEldOrder.get("currentDue").toString(), dueForLastOrder, dataForEldOrder.get("quantityOfDevices").toString()), true);
 
         String orderStatus = utilsForDB.getOrderStatus(idLastOrderAfterTest);
-        checkAC("Order is not completed", orderStatus.equals("2") , true);
+        checkAC("Order is not canceled", orderStatus.equals("2") , true);
 
     }
 

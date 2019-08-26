@@ -3,6 +3,7 @@ package parameterizedOrders;
 import libs.ExcelDriver;
 import libs.SpreadsheetData;
 import libs.UtilsForDB;
+import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
@@ -15,11 +16,14 @@ import java.sql.SQLException;
 import java.util.Collection;
 import java.util.Map;
 
+import static libs.Utils.waitABit;
+
+
 @RunWith(Parameterized.class)
 
-public class FleetDoOrderParamsTest extends ParentTest {String  quantityOfDevices, typeOfPaymentMethod, quantityPinCable, quantityOBDPinCable, quantitySticker, quantityCameraCP, valueSdCard, quantityCameraSVA, typeOfPaymentMethodCamera, neededStatePickUpFromOffice, neededStateOvernightDelivery, currentDue, eldDeliveryPrice, eldFirstMonthFee, eldLastMonthFee, eldOneYearPrice, eldTwoYearPrice, eldDepositFee, eldPinCablePrice, eldEldOBDPinCablePrice, eldEldStickerLabelPrice, cP2MonthFee, cameraSetupFee, cameraInstallationFee, ezSmartCamCP2, ezSmartCamSVA, sD32Gb, sD64Gb, sD128Gb, defaultTotalOrder, defaultBalance, balanceIfCanceled;
+public class ParentFleetOrderParamsTest extends ParentTest {String  quantityOfDevices, typeOfPaymentMethod, quantityPinCable, quantityOBDPinCable, quantitySticker, quantityCameraCP, valueSdCard, quantityCameraSVA, typeOfPaymentMethodCamera, neededStatePickUpFromOffice, neededStateOvernightDelivery, currentDue;
 
-    public FleetDoOrderParamsTest(String quantityOfDevices, String typeOfPaymentMethod, String quantityPinCable, String quantityOBDPinCable, String quantitySticker, String quantityCameraCP, String valueSdCard, String quantityCameraSVA, String typeOfPaymentMethodCamera, String neededStatePickUpFromOffice, String neededStateOvernightDelivery, String currentDue, String eldDeliveryPrice, String eldFirstMonthFee, String eldLastMonthFee, String eldOneYearPrice, String eldTwoYearPrice, String eldDepositFee, String eldPinCablePrice, String eldEldOBDPinCablePrice, String eldEldStickerLabelPrice, String cP2MonthFee, String cameraSetupFee, String cameraInstallationFee, String ezSmartCamCP2, String ezSmartCamSVA, String sD32Gb, String sD64Gb, String sD128Gb, String defaultTotalOrder, String defaultBalance, String balanceIfCanceled) {
+    public ParentFleetOrderParamsTest(String quantityOfDevices, String typeOfPaymentMethod, String quantityPinCable, String quantityOBDPinCable, String quantitySticker, String quantityCameraCP, String valueSdCard, String quantityCameraSVA, String typeOfPaymentMethodCamera, String neededStatePickUpFromOffice, String neededStateOvernightDelivery, String currentDue) throws IOException {
 
         this.quantityOfDevices = quantityOfDevices;
         this.typeOfPaymentMethod = typeOfPaymentMethod;
@@ -33,27 +37,15 @@ public class FleetDoOrderParamsTest extends ParentTest {String  quantityOfDevice
         this.neededStatePickUpFromOffice = neededStatePickUpFromOffice;
         this.neededStateOvernightDelivery = neededStateOvernightDelivery;
         this.currentDue = currentDue;
-        this.eldDeliveryPrice = eldDeliveryPrice;
-        this.eldFirstMonthFee = eldFirstMonthFee;
-        this.eldLastMonthFee = eldLastMonthFee;
-        this.eldOneYearPrice = eldOneYearPrice;
-        this.eldTwoYearPrice = eldTwoYearPrice;
-        this.eldDepositFee = eldDepositFee;
-        this.eldPinCablePrice = eldPinCablePrice;
-        this.eldEldOBDPinCablePrice = eldEldOBDPinCablePrice;
-        this.eldEldStickerLabelPrice = eldEldStickerLabelPrice;
-        this.cP2MonthFee = cP2MonthFee;
-        this.cameraSetupFee = cameraSetupFee;
-        this.cameraInstallationFee = cameraInstallationFee;
-        this.ezSmartCamCP2 = ezSmartCamCP2;
-        this.ezSmartCamSVA = ezSmartCamSVA;
-        this.sD32Gb = sD32Gb;
-        this.sD64Gb = sD64Gb;
-        this.sD128Gb = sD128Gb;
-        this.defaultTotalOrder = defaultTotalOrder;
-        this.defaultBalance = defaultBalance;
-        this.balanceIfCanceled = balanceIfCanceled;
+
     }
+    UtilsForDB utilsForDB = new UtilsForDB();
+    ExcelDriver excelDriver = new ExcelDriver();
+    Map personalDataForEldOrder = excelDriver.getData(configProperties.DATA_FILE_PATH() + "testEldOrder.xls", "personalData");
+    Map dataForFleetValidLogIn = excelDriver.getData(configProperties.DATA_FILE_PATH() + "testLogin.xls", "validFleetLogin");
+    Map dataFleetId = excelDriver.getData(configProperties.DATA_FILE_PATH() + "testLogin.xls", "validFleetLogin");
+    Map dataForManagerValidLogIn = excelDriver.getData(configProperties.DATA_FILE_PATH() + "testLogin.xls", "ManagerLogin");
+
 
     @Parameterized.Parameters()
     public static Collection testData() throws IOException {
@@ -61,21 +53,14 @@ public class FleetDoOrderParamsTest extends ParentTest {String  quantityOfDevice
         return new SpreadsheetData(spreadsheet,"suitOrderListData").getData();
 
     }
-
+    @Before
     @Test
     public void addNewOrder() throws  SQLException, IOException, ClassNotFoundException {
-        ExcelDriver excelDriver = new ExcelDriver();
 
-        Map personalDataForEldOrder = excelDriver.getData(configProperties.DATA_FILE_PATH() + "testEldOrder.xls", "personalData");
-        Map dataForFleetValidLogIn = excelDriver.getData(configProperties.DATA_FILE_PATH() + "testLogin.xls", "validFleetLogin");
-        Map dataFleetId = excelDriver.getData(configProperties.DATA_FILE_PATH() + "testLogin.xls", "validFleetLogin");
-
-        UtilsForDB utilsForDB = new UtilsForDB();
         String idLastOrderBeforeTest = utilsForDB.getLastOrderIdForFleet(dataFleetId.get("fleetId").toString());
         utilsForDB.getSetCurrentDueForFleet(currentDue, dataFleetId.get("fleetId").toString());
 
         loginPage.userValidLogIn(dataForFleetValidLogIn.get("login").toString(),dataForFleetValidLogIn.get("pass").toString());
-
         dashboardPage.openMenuDash();
         dashboardPage.goToEldPage();
         userEldPage.clickOnOrderELD();
@@ -85,8 +70,8 @@ public class FleetDoOrderParamsTest extends ParentTest {String  quantityOfDevice
         modalEldPage.enterOrderData(quantityOfDevices, quantityPinCable, quantityOBDPinCable, quantitySticker, quantityCameraCP, valueSdCard, quantityCameraSVA, neededStatePickUpFromOffice, neededStateOvernightDelivery);
         modalEldPage.clickPaymentMethods(typeOfPaymentMethod, quantityOfDevices);
         modalEldPage.clickPaymentMethodsCamera(typeOfPaymentMethodCamera, quantityCameraCP);
-
-//        checkAC("Eld prices is not correct", modalEldPage.compareEldPrice(quantityOfDevices, typeOfPaymentMethod), true);
+        waitABit(3);
+        checkAC("Eld prices is not correct", modalEldPage.compareEldPrice(quantityOfDevices, typeOfPaymentMethod, quantityCameraCP), true);
         checkAC("DepositFee is not correct", modalEldPage.compareDepositFee(quantityOfDevices), true);
         checkAC("DeliveryPrice is not correct", modalEldPage.compareDeliveryPrice(neededStatePickUpFromOffice), true);
         checkAC("EldPinCable prices is not correct", modalEldPage.compareEldPinCable(quantityPinCable), true);
@@ -98,7 +83,7 @@ public class FleetDoOrderParamsTest extends ParentTest {String  quantityOfDevice
         checkAC("EzSmartCamCP2 prices is not correct", modalEldPage.compareEzSmartCamCP2(quantityCameraCP), true);
         checkAC("EzSmartCamSVA prices is not correct", modalEldPage.compareEzSmartCamSVA(quantityCameraSVA), true);
         checkAC("SdCard prices is not correct", modalEldPage.compareSdCard(quantityCameraCP, valueSdCard), true);
-//        checkAC("Total Order is not correct", modalEldPage.compareTotalOrder(defaultTotalOrder), true);
+        checkAC("Total Order is not correct", modalEldPage.compareTotalOrder(quantityOfDevices, typeOfPaymentMethod, quantityPinCable, quantityOBDPinCable, quantitySticker, quantityCameraCP, quantityCameraSVA, valueSdCard), true);
 
         modalEldPage.doAgreeAgreement(quantityOfDevices);
         modalEldPage.doAgreementCamera(quantityCameraCP);
@@ -107,9 +92,12 @@ public class FleetDoOrderParamsTest extends ParentTest {String  quantityOfDevice
         String idLastOrderAfterTest = utilsForDB.getLastOrderIdForFleet(dataFleetId.get("fleetId").toString());
         checkAC("New order wasn`t created", idLastOrderBeforeTest.equals(idLastOrderAfterTest) , false);
 
+        String orderStatus = utilsForDB.getOrderStatus(idLastOrderAfterTest);
+        checkAC("Order is not Paid", financesPage.comparePaidOrderStatus(orderStatus) , true);
+
         dashboardPage.goToFinancesPage();
-//        financesPage.compareBalance(defaultBalance);
-//        checkAC("Balance is not correct", financesPage.compareBalance(defaultBalance), true);
+        String dueForLastOrder = utilsForDB.getLastDueForFleet(dataFleetId.get("fleetId").toString());
+        checkAC("Balance is not correct", financesPage.compareBalance(currentDue, dueForLastOrder), true);
 
     }
 }

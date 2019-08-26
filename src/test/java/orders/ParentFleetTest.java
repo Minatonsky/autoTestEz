@@ -15,7 +15,7 @@ import static libs.Utils.waitABit;
 public class ParentFleetTest extends ParentTest {
     ExcelDriver excelDriver = new ExcelDriver();
     UtilsForDB utilsForDB = new UtilsForDB();
-    int columnNumber = 2;
+    int columnNumber = 5;
 
     Map dataForEldOrder = excelDriver.getMultipleData(configProperties.DATA_FILE_PATH() + "testEldOrder.xls", "orderListData", columnNumber);
     Map personalDataForEldOrder = excelDriver.getData(configProperties.DATA_FILE_PATH() + "testEldOrder.xls", "personalData");
@@ -43,6 +43,7 @@ public class ParentFleetTest extends ParentTest {
         modalEldPage.clickPaymentMethods(dataForEldOrder.get("typeOfPaymentMethod").toString(), dataForEldOrder.get("quantityOfDevices").toString());
         modalEldPage.clickPaymentMethodsCamera(dataForEldOrder.get("typeOfPaymentMethodCamera").toString(), dataForEldOrder.get("quantityCameraCP").toString());
         waitABit(2);
+
         checkAC("Eld prices is not correct", modalEldPage.compareEldPrice(dataForEldOrder.get("quantityOfDevices").toString(), dataForEldOrder.get("typeOfPaymentMethod").toString(), dataForEldOrder.get("quantityCameraCP").toString()), true);
         checkAC("DepositFee is not correct", modalEldPage.compareDepositFee(dataForEldOrder.get("quantityOfDevices").toString()), true);
         checkAC("DeliveryPrice is not correct", modalEldPage.compareDeliveryPrice(dataForEldOrder.get("neededStatePickUpFromOffice").toString()), true);
@@ -66,7 +67,7 @@ public class ParentFleetTest extends ParentTest {
         checkAC("New order wasn`t created", idLastOrderBeforeTest.equals(idLastOrderAfterTest) , false);
         String orderStatus = utilsForDB.getOrderStatus(idLastOrderAfterTest);
         waitABit(2);
-        checkAC("Order is not completed", orderStatus.equals("3") , true);
+        checkAC("Order is not Paid", financesPage.comparePaidOrderStatus(orderStatus) , true);
 
         dashboardPage.goToFinancesPage();
         String dueForLastOrder = utilsForDB.getLastDueForFleet(dataFleetId.get("fleetId").toString());
