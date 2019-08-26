@@ -20,7 +20,7 @@ public class SoloDoOrderManagerCompletedParamsTest extends ParentSoloOrderParams
         setUp();
 
         String idLastOrderAfterTest = utilsForDB.getLastOrderIdForSolo(dataSoloId.get("soloId").toString());
-        String dueForLastOrder = utilsForDB.getLastOrderIdForSolo(dataSoloId.get("soloId").toString());
+        String dueForLastOrder = utilsForDB.getLastDueForSolo(dataSoloId.get("soloId").toString());
         loginPage.userValidLogIn(dataForManagerValidLogIn.get("login").toString(),dataForManagerValidLogIn.get("pass").toString());
         dashboardPage.openMenuDash();
         dashboardPage.goToEldPage();

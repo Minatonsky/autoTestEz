@@ -13,17 +13,9 @@ public class FinancesPage extends ParentPage {
     @FindBy(xpath = ".//*[@id='current_due']")
     private WebElement financeBalanceText;
 
-    @FindBy(xpath = ".//*[@id='paymentHistoryTable']/tbody/tr[1]/td[7]/span")
-    private WebElement orderPriceText;
-
     public String getFinanceBalance(){
         return financeBalanceText.getText();
     }
-
-    public String getOrderPrice(){
-        return orderPriceText.getText();
-    }
-
 
     public boolean compareBalance(String currentDue, String dueForLastOrder) {
         double tempBalance = Double.parseDouble(currentDue) - Double.parseDouble(dueForLastOrder);

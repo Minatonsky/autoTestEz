@@ -60,9 +60,7 @@ public class ParentSoloOrderParamsTest extends ParentTest { String  quantityOfDe
         dashboardPage.openMenuDash();
         dashboardPage.goToEldPage();
         userEldPage.clickOnOrderELD();
-
         modalEldPage.enterPersonalData(personalDataForEldOrder.get("deliveryState").toString(), personalDataForEldOrder.get("firstName").toString(), personalDataForEldOrder.get("lastName").toString(), personalDataForEldOrder.get("phone").toString(), personalDataForEldOrder.get("addressLine").toString(), personalDataForEldOrder.get("aptNumber").toString(), personalDataForEldOrder.get("deliveryCity").toString(), personalDataForEldOrder.get("zipCode").toString());
-
         modalEldPage.enterOrderData(quantityOfDevices, quantityPinCable, quantityOBDPinCable, quantitySticker, quantityCameraCP, valueSdCard, quantityCameraSVA, neededStatePickUpFromOffice, neededStateOvernightDelivery);
         modalEldPage.clickPaymentMethods(typeOfPaymentMethod, quantityOfDevices);
         modalEldPage.clickPaymentMethodsCamera(typeOfPaymentMethodCamera, quantityCameraCP);
@@ -92,7 +90,7 @@ public class ParentSoloOrderParamsTest extends ParentTest { String  quantityOfDe
         checkAC("Order is not Paid", financesPage.comparePaidOrderStatus(orderStatus) , true);
 
         dashboardPage.goToFinancesPage();
-        String dueForLastOrder = utilsForDB.getLastDueForFleet(dataSoloId.get("soloId").toString());
+        String dueForLastOrder = utilsForDB.getLastDueForSolo(dataSoloId.get("soloId").toString());
         checkAC("Balance is not correct", financesPage.compareBalance(currentDue, dueForLastOrder), true);
 
     }

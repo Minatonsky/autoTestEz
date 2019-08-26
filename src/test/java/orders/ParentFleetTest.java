@@ -56,12 +56,11 @@ public class ParentFleetTest extends ParentTest {
         checkAC("EzSmartCamCP2 prices is not correct", modalEldPage.compareEzSmartCamCP2(dataForEldOrder.get("quantityCameraCP").toString()), true);
         checkAC("EzSmartCamSVA prices is not correct", modalEldPage.compareEzSmartCamSVA(dataForEldOrder.get("quantityCameraSVA").toString()), true);
         checkAC("SdCard prices is not correct", modalEldPage.compareSdCard(dataForEldOrder.get("quantityCameraCP").toString(), dataForEldOrder.get("valueSdCard").toString()), true);
-//        System.out.println(modalEldPage.totalOrderPrice(dataForEldOrder.get("quantityOfDevices").toString(), dataForEldOrder.get("typeOfPaymentMethod").toString(), dataForEldOrder.get("quantityPinCable").toString(), dataForEldOrder.get("quantityOBDPinCable").toString(), dataForEldOrder.get("quantitySticker").toString(), dataForEldOrder.get("quantityCameraCP").toString(), dataForEldOrder.get("quantityCameraSVA").toString(), dataForEldOrder.get("valueSdCard").toString()));
         checkAC("Total Order is not correct", modalEldPage.compareTotalOrder(dataForEldOrder.get("quantityOfDevices").toString(), dataForEldOrder.get("typeOfPaymentMethod").toString(), dataForEldOrder.get("quantityPinCable").toString(), dataForEldOrder.get("quantityOBDPinCable").toString(), dataForEldOrder.get("quantitySticker").toString(), dataForEldOrder.get("quantityCameraCP").toString(), dataForEldOrder.get("quantityCameraSVA").toString(), dataForEldOrder.get("valueSdCard").toString()), true);
 
         modalEldPage.doAgreeAgreement(dataForEldOrder.get("quantityOfDevices").toString());
         modalEldPage.doAgreementCamera(dataForEldOrder.get("quantityCameraCP").toString());
-//        modalEldPage.clickButtonOrder();
+        modalEldPage.clickButtonOrder();
 
         String idLastOrderAfterTest = utilsForDB.getLastOrderIdForFleet(dataFleetId.get("fleetId").toString());
         waitABit(2);

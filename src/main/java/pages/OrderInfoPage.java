@@ -4,6 +4,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+import static libs.Utils.waitABit;
+
 public class OrderInfoPage extends ParentPage {
 
     @FindBy(xpath = ".//select[@id='order_status']")
@@ -29,9 +31,13 @@ public class OrderInfoPage extends ParentPage {
 
 
     public void completedOrder() {
+        waitABit(2);
         selectOrderStatus("4");
+        waitABit(2);
         clickButtonSave();
+        waitABit(2);
         selectOrderStatus("1");
+        waitABit(2);
         clickButtonSave();
     }
 
