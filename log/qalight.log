@@ -554,3 +554,104 @@
 2019-23-08 11:09:27   INFO [libs.ActionsWithOurElements] : Element was clicked
 2019-23-08 11:09:33   INFO [libs.ActionsWithOurElements] : Element was clicked
 2019-23-08 11:09:37   INFO [parameterizedOrders.SoloDoOrderManagerCompletedParamsTest] : AC passed
+2019-29-08 16:50:28   INFO [parameterizedOrders.ManagerDoOrderFleetAgreeParamsTest] : Chrome will be started
+2019-29-08 16:50:37   INFO [parameterizedOrders.ManagerDoOrderFleetAgreeParamsTest] : Chrome is started
+2019-29-08 16:50:47   INFO [pages.LoginPage] : Login Page was opened
+2019-29-08 16:50:48   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-29-08 16:50:48   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2019-29-08 16:50:48   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-29-08 16:50:48   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-29-08 16:50:57   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-29-08 16:50:58   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-29-08 16:51:04   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-29-08 16:51:08   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-29-08 16:51:08   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-29-08 16:51:10   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-29-08 16:51:14   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-29-08 16:51:17   INFO [libs.ActionsWithOurElements] : 234563546 was inputted into element
+2019-29-08 16:51:19   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-29-08 16:51:21   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-29-08 16:51:23   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-29-08 16:51:24   INFO [libs.ActionsWithOurElements] : 1 was selected in Drop-down
+2019-29-08 16:51:24   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2019-29-08 16:51:24   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2019-29-08 16:51:25   INFO [libs.ActionsWithOurElements] : 1676475006 was inputted into element
+2019-29-08 16:51:25   INFO [libs.ActionsWithOurElements] : Street was inputted into element
+2019-29-08 16:51:25   INFO [libs.ActionsWithOurElements] : 2 was inputted into element
+2019-29-08 16:51:26   INFO [libs.ActionsWithOurElements] : Phoenix was inputted into element
+2019-29-08 16:51:26   INFO [libs.ActionsWithOurElements] : 30606 was inputted into element
+2019-29-08 16:51:27   INFO [libs.ActionsWithOurElements] : 3 was inputted into element
+2019-29-08 16:51:47   INFO [parameterizedOrders.ManagerDoOrderFleetAgreeParamsTest] : Chrome will be started
+2019-29-08 16:51:55   INFO [parameterizedOrders.ManagerDoOrderFleetAgreeParamsTest] : Chrome is started
+2019-29-08 16:52:06   INFO [pages.LoginPage] : Login Page was opened
+2019-29-08 16:52:06   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-29-08 16:52:06   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2019-29-08 16:52:07   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-29-08 16:52:07   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-29-08 16:52:16   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-29-08 16:52:17   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-29-08 16:52:23   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-29-08 16:52:26   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-29-08 16:52:26   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-29-08 16:52:29   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-29-08 16:52:33   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-29-08 16:52:35   INFO [libs.ActionsWithOurElements] : 234563546 was inputted into element
+2019-29-08 16:52:37   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-29-08 16:52:40   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-29-08 16:52:42   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-29-08 16:52:42   INFO [libs.ActionsWithOurElements] : 1 was selected in Drop-down
+2019-29-08 16:52:42   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2019-29-08 16:52:43   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2019-29-08 16:52:43   INFO [libs.ActionsWithOurElements] : 1676475006 was inputted into element
+2019-29-08 16:52:43   INFO [libs.ActionsWithOurElements] : Street was inputted into element
+2019-29-08 16:52:44   INFO [libs.ActionsWithOurElements] : 2 was inputted into element
+2019-29-08 16:52:44   INFO [libs.ActionsWithOurElements] : Phoenix was inputted into element
+2019-29-08 16:52:44   INFO [libs.ActionsWithOurElements] : 30606 was inputted into element
+2019-29-08 16:52:44   INFO [libs.ActionsWithOurElements] : 3 was inputted into element
+2019-29-08 16:52:45   INFO [libs.ActionsWithOurElements] : 2 was inputted into element
+2019-29-08 16:52:45   INFO [libs.ActionsWithOurElements] : 3 was inputted into element
+2019-29-08 16:52:46   INFO [libs.ActionsWithOurElements] : 4 was inputted into element
+2019-29-08 16:52:46   INFO [libs.ActionsWithOurElements] : 0 was inputted into element
+2019-29-08 16:52:46   INFO [pages.ModalEldPage] : No cd card in order
+2019-29-08 16:52:46   INFO [pages.ModalEldPage] : No camera sva in order
+2019-29-08 16:52:48   INFO [libs.ActionsWithOurElements] : checkbox is already unchecked
+2019-29-08 16:52:48   INFO [libs.ActionsWithOurElements] : checkbox is already unchecked
+2019-29-08 16:52:49   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-29-08 16:52:49   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-29-08 16:52:49   INFO [pages.ModalEldPage] : Payment Method twoYearSubscription was selected
+2019-29-08 16:52:49   INFO [pages.ModalEldPage] : Payment Method Camera was not selected, no camera in order
+2019-29-08 16:52:50   INFO [parameterizedOrders.ManagerDoOrderFleetAgreeParamsTest] : AC passed
+2019-29-08 16:52:51   INFO [parameterizedOrders.ManagerDoOrderFleetAgreeParamsTest] : AC passed
+2019-29-08 16:52:51   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2019-29-08 16:52:52   INFO [parameterizedOrders.ManagerDoOrderFleetAgreeParamsTest] : AC passed
+2019-29-08 16:52:54   INFO [parameterizedOrders.ManagerDoOrderFleetAgreeParamsTest] : AC passed
+2019-29-08 16:52:55   INFO [parameterizedOrders.ManagerDoOrderFleetAgreeParamsTest] : AC passed
+2019-29-08 16:52:56   INFO [parameterizedOrders.ManagerDoOrderFleetAgreeParamsTest] : AC passed
+2019-29-08 16:52:57   INFO [parameterizedOrders.ManagerDoOrderFleetAgreeParamsTest] : AC passed
+2019-29-08 16:52:58   INFO [parameterizedOrders.ManagerDoOrderFleetAgreeParamsTest] : AC passed
+2019-29-08 16:52:59   INFO [parameterizedOrders.ManagerDoOrderFleetAgreeParamsTest] : AC passed
+2019-29-08 16:53:00   INFO [parameterizedOrders.ManagerDoOrderFleetAgreeParamsTest] : AC passed
+2019-29-08 16:53:01   INFO [parameterizedOrders.ManagerDoOrderFleetAgreeParamsTest] : AC passed
+2019-29-08 16:53:02   INFO [parameterizedOrders.ManagerDoOrderFleetAgreeParamsTest] : AC passed
+2019-29-08 16:53:02   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2019-29-08 16:53:03   INFO [parameterizedOrders.ManagerDoOrderFleetAgreeParamsTest] : AC passed
+2019-29-08 16:53:03   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-29-08 16:53:03   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-29-08 16:53:06   INFO [parameterizedOrders.ManagerDoOrderFleetAgreeParamsTest] : AC passed
+2019-29-08 16:53:06   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-29-08 16:53:09   INFO [parameterizedOrders.ManagerDoOrderFleetAgreeParamsTest] : AC passed
+2019-29-08 16:53:10   INFO [parameterizedOrders.ManagerDoOrderFleetAgreeParamsTest] : Chrome will be started
+2019-29-08 16:53:15   INFO [parameterizedOrders.ManagerDoOrderFleetAgreeParamsTest] : Chrome is started
+2019-29-08 16:53:24   INFO [pages.LoginPage] : Login Page was opened
+2019-29-08 16:53:24   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-29-08 16:53:25   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2019-29-08 16:53:25   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-29-08 16:53:25   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-29-08 16:53:33  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <i class="fa fa-arrow-down"></i> is not clickable at point (1199, 115). Other element would receive the click: <i class="fa fa-arrow-down"></i>
+  (Session info: chrome=76.0.3809.132)
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'DESKTOP-UD8IPI4', ip: '100.80.1.70', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.132, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\denku\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55663}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 7b63ae6d6776048505b1468b76a73812
+2019-29-08 16:53:34   INFO [parameterizedOrders.ManagerDoOrderFleetAgreeParamsTest] : Chrome will be started
