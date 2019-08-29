@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="660eb711-957d-418e-9483-8b2931da6e6e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/qalight.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/qalight.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/parameterizedOrders/ManagerDoOrderFleetAgreeParamsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/parameterizedOrders/ManagerDoOrderFleetAgreeParamsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/loginTests/LoginTestWithOutPageObject.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/loginTests/LoginTestWithOutPageObject.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -96,7 +93,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Maven.Run testdevEzlogz []">
+  <component name="RunManager" selected="JUnit.ManagerDoOrderFleetAgreeParamsTest">
     <configuration name="LoginTest.validLogin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="testdevEzlogz" />
       <extension name="coverage">
@@ -227,8 +224,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ManagerDoOrderFleetAgreeParamsTest.managerDoOrderFleetAgree" />
         <item itemvalue="JUnit.ManagerDoOrderFleetAgreeParamsTest" />
+        <item itemvalue="JUnit.ManagerDoOrderFleetAgreeParamsTest.managerDoOrderFleetAgree" />
         <item itemvalue="JUnit.SoloDoOrderManagerCompletedParamsTest.orderCompletedByManager" />
         <item itemvalue="JUnit.ParentFleetTest.addNewOrder" />
         <item itemvalue="JUnit.LoginTest.validLogin" />
@@ -491,7 +488,14 @@
       <option name="project" value="LOCAL" />
       <updated>1566814083030</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="params manager test refactor was add">
+      <created>1567088890342</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1567088890342</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TimeTrackingManager">

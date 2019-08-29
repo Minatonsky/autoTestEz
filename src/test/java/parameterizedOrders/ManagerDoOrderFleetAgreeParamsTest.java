@@ -39,14 +39,10 @@ public class ManagerDoOrderFleetAgreeParamsTest extends ParentTest {
     UtilsForDB utilsForDB = new UtilsForDB();
     ExcelDriver excelDriver = new ExcelDriver();
     Map personalDataForEldOrder = ExcelDriver.getData(configProperties.DATA_FILE_PATH() + "testEldOrder.xls", "personalData");
-    Map dataForSoloValidLogIn = ExcelDriver.getData(configProperties.DATA_FILE_PATH() + "testLogin.xls", "validSoloLogin");
-    Map dataSoloId = ExcelDriver.getData(configProperties.DATA_FILE_PATH() + "testLogin.xls", "validSoloLogin");
     Map dataForManagerValidLogIn = excelDriver.getData(configProperties.DATA_FILE_PATH() + "testLogin.xls", "ManagerLogin");
     Map dataForFleetValidLogIn = excelDriver.getData(configProperties.DATA_FILE_PATH() + "testLogin.xls", "validFleetLogin");
     Map dataFleetId = excelDriver.getData(configProperties.DATA_FILE_PATH() + "testLogin.xls", "validFleetLogin");
 
-    public ManagerDoOrderFleetAgreeParamsTest() throws IOException {
-    }
 
     @Parameterized.Parameters()
     public static Collection testData() throws IOException {

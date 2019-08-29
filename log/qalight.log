@@ -655,3 +655,12 @@ Driver info: org.openqa.selenium.chrome.ChromeDriver
 Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.132, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\denku\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55663}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
 Session ID: 7b63ae6d6776048505b1468b76a73812
 2019-29-08 16:53:34   INFO [parameterizedOrders.ManagerDoOrderFleetAgreeParamsTest] : Chrome will be started
+2019-29-08 17:35:52   INFO [parameterizedOrders.ManagerDoOrderFleetAgreeParamsTest] : Chrome will be started
+2019-29-08 17:36:01   INFO [parameterizedOrders.ManagerDoOrderFleetAgreeParamsTest] : Chrome is started
+2019-29-08 17:36:06   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-29-08 17:36:08   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-29-08 17:36:15   INFO [pages.LoginPage] : Login Page was opened
+2019-29-08 17:36:15   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-29-08 17:36:15   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2019-29-08 17:36:16   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-29-08 17:36:16   INFO [libs.ActionsWithOurElements] : Element was clicked
