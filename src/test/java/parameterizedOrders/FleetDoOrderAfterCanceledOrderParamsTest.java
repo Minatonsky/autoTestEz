@@ -22,6 +22,7 @@ public class FleetDoOrderAfterCanceledOrderParamsTest extends ParentFleetOrderPa
         userEldPage.cancelEldDevices(idLastOrderAfterTest, quantityOfDevices, quantityCameraCP);
         String orderStatus = utilsForDB.getOrderStatus(idLastOrderAfterTest);
         checkAC("Order with devices is not canceled", userEldPage.compareCancelDeviceStatusOrder(orderStatus, quantityOfDevices), true);
+        checkAC("ELD is present in canceled order", utilsForDB.isEldBlinded(idLastOrderAfterTest), false);
         dashboardPage.goToFinancesPage();
         String dueForLastOrder = utilsForDB.getLastDueForFleet(dataFleetId.get("fleetId").toString());
         checkAC("Balance is not correct", financesPage.compareBalanceIfCanceled(currentDue, dueForLastOrder, quantityOfDevices), true);

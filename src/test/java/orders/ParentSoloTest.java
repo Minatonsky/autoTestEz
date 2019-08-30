@@ -32,7 +32,7 @@ public class ParentSoloTest extends ParentTest {
     @Test
     public void addNewOrder() throws SQLException, IOException, ClassNotFoundException {
         String idLastOrderBeforeTest = utilsForDB.getLastOrderIdForFleet(dataSoloId.get("soloId").toString());
-        utilsForDB.getSetCurrentDueForSolo(dataForEldOrder.get("currentDue").toString(), dataSoloId.get("soloId").toString());
+        utilsForDB.setCurrentDueForSolo(dataForEldOrder.get("currentDue").toString(), dataSoloId.get("soloId").toString());
 
         loginPage.userValidLogIn(dataForSoloValidLogIn.get("login").toString(),dataForSoloValidLogIn.get("pass").toString());
 
@@ -62,7 +62,7 @@ public class ParentSoloTest extends ParentTest {
 
         modalEldPage.doAgreeAgreement(dataForEldOrder.get("quantityOfDevices").toString());
         modalEldPage.doAgreementCamera(dataForEldOrder.get("quantityCameraCP").toString());
-//        modalEldPage.clickButtonOrder();
+        modalEldPage.clickButtonOrder();
 
         String idLastOrderAfterTest = utilsForDB.getLastOrderIdForSolo(dataSoloId.get("soloId").toString());
         checkAC("New order wasn`t created", idLastOrderBeforeTest.equals(idLastOrderAfterTest) , false);

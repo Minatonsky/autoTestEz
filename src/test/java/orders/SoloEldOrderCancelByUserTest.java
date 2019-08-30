@@ -19,6 +19,7 @@ public class SoloEldOrderCancelByUserTest extends ParentSoloTest {
         userEldPage.cancelEldDevices(idLastOrderAfterTest, dataForEldOrder.get("quantityOfDevices").toString(), dataForEldOrder.get("quantityCameraCP").toString());
         String orderStatus = utilsForDB.getOrderStatus(idLastOrderAfterTest);
         checkAC("Order with devices is not canceled", userEldPage.compareCancelDeviceStatusOrder(orderStatus, dataForEldOrder.get("quantityOfDevices").toString()), true);
+        checkAC("ELD is present in canceled order", utilsForDB.isEldBlinded(idLastOrderAfterTest), false);
         dashboardPage.goToFinancesPage();
         String dueForLastOrder = utilsForDB.getLastDueForSolo(dataSoloId.get("soloId").toString());
         checkAC("Balance is not correct", financesPage.compareBalanceIfCanceled(dataForEldOrder.get("currentDue").toString(), dueForLastOrder, dataForEldOrder.get("quantityOfDevices").toString()), true);

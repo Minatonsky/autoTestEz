@@ -28,6 +28,7 @@ public class FleetEldOrderCancelByManagerTest extends ParentFleetTest {
         orderInfoPage.clickButtonSave();
         String orderStatus = utilsForDB.getOrderStatus(idLastOrderAfterTest);
         checkAC("Order is not canceled", financesPage.compareCancelOrderStatus(orderStatus) , true);
+        checkAC("ELD is present in canceled order", utilsForDB.isEldBlinded(idLastOrderAfterTest), false);
 
         tearDown();
         setUp();

@@ -32,7 +32,7 @@ public class ParentFleetTest extends ParentTest {
     public void addNewOrder() throws SQLException, IOException, ClassNotFoundException {
 
         String idLastOrderBeforeTest = utilsForDB.getLastOrderIdForFleet(dataFleetId.get("fleetId").toString());
-        utilsForDB.getSetCurrentDueForFleet(dataForEldOrder.get("currentDue").toString(), dataFleetId.get("fleetId").toString());
+        utilsForDB.setCurrentDueForFleet(dataForEldOrder.get("currentDue").toString(), dataFleetId.get("fleetId").toString());
 
         loginPage.userValidLogIn(dataForFleetValidLogIn.get("login").toString(),dataForFleetValidLogIn.get("pass").toString());
         dashboardPage.openMenuDash();

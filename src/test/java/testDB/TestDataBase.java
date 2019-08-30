@@ -33,7 +33,7 @@ public class TestDataBase {
     @Test
     public void testDBSetCurrentDueForFleet() throws SQLException, IOException, ClassNotFoundException {
         UtilsForDB utilsForDB = new UtilsForDB();
-        utilsForDB.getSetCurrentDueForFleet("-1000", "518");
+        utilsForDB.setCurrentDueForFleet("-1000", "518");
     }
 
     @Test
@@ -59,6 +59,13 @@ public class TestDataBase {
         UtilsForDB utilsForDB = new UtilsForDB();
         String userId = "3455";
         System.out.println(utilsForDB.getCountNewOrder(userId));
+    }
+
+    @Test
+    public void testIsEldBlinded() throws SQLException, IOException, ClassNotFoundException {
+        UtilsForDB utilsForDB = new UtilsForDB();
+        String orderId = "3066";
+        System.out.println(utilsForDB.isEldBlinded(orderId));
     }
 
 }

@@ -31,6 +31,7 @@ public class SoloDoOrderManagerCanceledParamsTest extends ParentSoloOrderParamsT
         checkAC("Full Order Price is not correct", orderInfoPage.compareFullOrderPrice(dueForLastOrder), true);
         orderInfoPage.selectOrderStatus("2");
         orderInfoPage.clickButtonSave();
+        checkAC("ELD is present in canceled order", utilsForDB.isEldBlinded(idLastOrderAfterTest), false);
 
         tearDown();
         setUp();

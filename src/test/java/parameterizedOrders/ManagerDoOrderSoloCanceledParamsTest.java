@@ -18,7 +18,7 @@ public class ManagerDoOrderSoloCanceledParamsTest extends ParentManagerOrderPara
     public void managerDoOrderSoloCanceled() throws IOException, SQLException, ClassNotFoundException {
 
         String idLastOrderBeforeTest = utilsForDB.getLastOrderIdForFleet(dataSoloId.get("soloId").toString());
-        utilsForDB.getSetCurrentDueForSolo(currentDue, dataSoloId.get("soloId").toString());
+        utilsForDB.setCurrentDueForSolo(currentDue, dataSoloId.get("soloId").toString());
 
         managerModalEldPage.selectSoloDriverInOrder(dataForSoloValidLogIn.get("login").toString());
         modalEldPage.enterPersonalData(personalDataForEldOrder.get("deliveryState").toString(), personalDataForEldOrder.get("firstName").toString(), personalDataForEldOrder.get("lastName").toString(), personalDataForEldOrder.get("phone").toString(), personalDataForEldOrder.get("addressLine").toString(), personalDataForEldOrder.get("aptNumber").toString(), personalDataForEldOrder.get("deliveryCity").toString(), personalDataForEldOrder.get("zipCode").toString());
@@ -41,7 +41,7 @@ public class ManagerDoOrderSoloCanceledParamsTest extends ParentManagerOrderPara
         checkAC("SdCard prices is not correct", modalEldPage.compareSdCard(quantityCameraCP, valueSdCard), true);
         checkAC("Total Order is not correct", modalEldPage.compareTotalOrder(quantityOfDevices, typeOfPaymentMethod, quantityPinCable, quantityOBDPinCable, quantitySticker, quantityCameraCP, quantityCameraSVA, valueSdCard), true);
 
-        modalEldPage.clickButtonOrder();
+//        modalEldPage.clickButtonOrder();
         String idLastOrderAfterTest = utilsForDB.getLastOrderIdForSolo(dataSoloId.get("soloId").toString());
         checkAC("New order was not created", idLastOrderBeforeTest.equals(idLastOrderAfterTest) , false);
 
@@ -58,6 +58,7 @@ public class ManagerDoOrderSoloCanceledParamsTest extends ParentManagerOrderPara
         dashboardPage.openMenuDash();
         String orderCancelStatus = utilsForDB.getOrderStatus(idLastOrderAfterTest);
         checkAC("Order with devices is not canceled", financesPage.compareCancelOrderStatus(orderCancelStatus), true);
+        checkAC("ELD is present in canceled order", utilsForDB.isEldBlinded(idLastOrderAfterTest), false);
         dashboardPage.goToFinancesPage();
 
         checkAC("Balance is not correct", financesPage.compareBalanceIfCanceledNewOrder(currentDue), true);

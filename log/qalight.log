@@ -890,3 +890,205 @@ Session ID: 7b63ae6d6776048505b1468b76a73812
 2019-29-08 19:29:47   INFO [parameterizedOrders.ManagerDoOrderFleetAgreeParamsTest] : AC passed
 2019-29-08 19:29:47   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
 2019-29-08 19:29:50   INFO [parameterizedOrders.ManagerDoOrderFleetAgreeParamsTest] : AC passed
+2019-30-08 11:59:29   INFO [parameterizedOrders.ManagerDoOrderSoloCanceledParamsTest] : Chrome will be started
+2019-30-08 11:59:29   INFO [parameterizedOrders.ManagerDoOrderSoloCanceledParamsTest] : Chrome will be started
+2019-30-08 11:59:38   INFO [parameterizedOrders.ManagerDoOrderSoloCanceledParamsTest] : Chrome is started
+2019-30-08 11:59:38   INFO [parameterizedOrders.ManagerDoOrderSoloCanceledParamsTest] : Chrome is started
+2019-30-08 11:59:48   INFO [pages.LoginPage] : Login Page was opened
+2019-30-08 11:59:48   INFO [pages.LoginPage] : Login Page was opened
+2019-30-08 11:59:48   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-30-08 11:59:48   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-30-08 11:59:49   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2019-30-08 11:59:49   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2019-30-08 11:59:49   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-30-08 11:59:49   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-30-08 11:59:50   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-30-08 11:59:50   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-30-08 11:59:59   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-30-08 11:59:59   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-30-08 14:18:21   INFO [parameterizedOrders.ManagerDoOrderSoloCanceledParamsTest] : Chrome will be started
+2019-30-08 14:18:29   INFO [parameterizedOrders.ManagerDoOrderSoloCanceledParamsTest] : Chrome is started
+2019-30-08 14:18:38   INFO [pages.LoginPage] : Login Page was opened
+2019-30-08 14:18:38   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-30-08 14:18:39   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2019-30-08 14:18:39   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-30-08 14:18:39   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-30-08 14:18:47   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-30-08 14:18:48   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-30-08 14:18:55   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-30-08 14:18:58   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-30-08 14:18:58   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-30-08 14:19:01   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-30-08 14:19:05   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-30-08 14:19:07   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-30-08 14:19:10   INFO [libs.ActionsWithOurElements] : jep70268@zoqqa.com was inputted into element
+2019-30-08 14:19:12   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-30-08 14:19:12   INFO [libs.ActionsWithOurElements] : 1 was selected in Drop-down
+2019-30-08 14:19:13   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2019-30-08 14:19:13   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2019-30-08 14:19:13   INFO [libs.ActionsWithOurElements] : 1676475006 was inputted into element
+2019-30-08 14:19:14   INFO [libs.ActionsWithOurElements] : Street was inputted into element
+2019-30-08 14:19:14   INFO [libs.ActionsWithOurElements] : 2 was inputted into element
+2019-30-08 14:19:14   INFO [libs.ActionsWithOurElements] : Phoenix was inputted into element
+2019-30-08 14:19:14   INFO [libs.ActionsWithOurElements] : 30606 was inputted into element
+2019-30-08 14:19:15   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-30-08 14:19:15   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-30-08 14:19:16   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-30-08 14:19:16   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-30-08 14:19:16   INFO [libs.ActionsWithOurElements] : 0 was inputted into element
+2019-30-08 14:19:16   INFO [pages.ModalEldPage] : No cd card in order
+2019-30-08 14:19:16   INFO [pages.ModalEldPage] : No camera sva in order
+2019-30-08 14:19:19   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-30-08 14:19:19   INFO [libs.ActionsWithOurElements] : checkbox was checked
+2019-30-08 14:19:19   INFO [libs.ActionsWithOurElements] : checkbox is already unchecked
+2019-30-08 14:19:19   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-30-08 14:19:19   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-30-08 14:19:19   INFO [pages.ModalEldPage] : Payment Method oneYearSubscription was selected
+2019-30-08 14:19:19   INFO [pages.ModalEldPage] : Payment Method Camera was not selected, no camera in order
+2019-30-08 14:19:20   INFO [parameterizedOrders.ManagerDoOrderSoloCanceledParamsTest] : AC passed
+2019-30-08 14:19:21   INFO [parameterizedOrders.ManagerDoOrderSoloCanceledParamsTest] : AC passed
+2019-30-08 14:19:42   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2019-30-08 14:19:43   INFO [parameterizedOrders.ManagerDoOrderSoloCanceledParamsTest] : AC passed
+2019-30-08 14:19:44  ERROR [parameterizedOrders.ManagerDoOrderSoloCanceledParamsTest] : AC failed: EldPinCable prices is not correct
+2019-30-08 14:21:11   INFO [parameterizedOrders.ManagerDoOrderSoloCanceledParamsTest] : Chrome will be started
+2019-30-08 14:21:19   INFO [parameterizedOrders.ManagerDoOrderSoloCanceledParamsTest] : Chrome is started
+2019-30-08 14:21:28   INFO [pages.LoginPage] : Login Page was opened
+2019-30-08 14:21:28   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-30-08 14:21:29   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2019-30-08 14:21:29   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-30-08 14:21:30   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-30-08 14:21:38   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-30-08 14:21:39   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-30-08 14:21:45   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-30-08 14:21:48   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-30-08 14:21:48   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-30-08 14:21:51   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-30-08 14:21:55   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-30-08 14:21:57   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-30-08 14:21:59   INFO [libs.ActionsWithOurElements] : jep70268@zoqqa.com was inputted into element
+2019-30-08 14:22:02   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-30-08 14:22:02   INFO [libs.ActionsWithOurElements] : 1 was selected in Drop-down
+2019-30-08 14:22:02   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2019-30-08 14:22:03   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2019-30-08 14:22:03   INFO [libs.ActionsWithOurElements] : 1676475006 was inputted into element
+2019-30-08 14:22:04   INFO [libs.ActionsWithOurElements] : Street was inputted into element
+2019-30-08 14:22:04   INFO [libs.ActionsWithOurElements] : 2 was inputted into element
+2019-30-08 14:22:04   INFO [libs.ActionsWithOurElements] : Phoenix was inputted into element
+2019-30-08 14:22:04   INFO [libs.ActionsWithOurElements] : 30606 was inputted into element
+2019-30-08 14:22:05   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-30-08 14:22:05   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-30-08 14:22:06   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-30-08 14:22:06   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-30-08 14:22:06   INFO [libs.ActionsWithOurElements] : 0 was inputted into element
+2019-30-08 14:22:06   INFO [pages.ModalEldPage] : No cd card in order
+2019-30-08 14:22:06   INFO [pages.ModalEldPage] : No camera sva in order
+2019-30-08 14:22:09   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-30-08 14:22:09   INFO [libs.ActionsWithOurElements] : checkbox was checked
+2019-30-08 14:22:09   INFO [libs.ActionsWithOurElements] : checkbox is already unchecked
+2019-30-08 14:22:09   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-30-08 14:22:09   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-30-08 14:22:09   INFO [pages.ModalEldPage] : Payment Method oneYearSubscription was selected
+2019-30-08 14:22:09   INFO [pages.ModalEldPage] : Payment Method Camera was not selected, no camera in order
+2019-30-08 14:22:10   INFO [parameterizedOrders.ManagerDoOrderSoloCanceledParamsTest] : AC passed
+2019-30-08 14:22:11   INFO [parameterizedOrders.ManagerDoOrderSoloCanceledParamsTest] : AC passed
+2019-30-08 14:22:32   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2019-30-08 14:22:33   INFO [parameterizedOrders.ManagerDoOrderSoloCanceledParamsTest] : AC passed
+2019-30-08 14:22:34   INFO [parameterizedOrders.ManagerDoOrderSoloCanceledParamsTest] : AC passed
+2019-30-08 14:22:35  ERROR [parameterizedOrders.ManagerDoOrderSoloCanceledParamsTest] : AC failed: EldOBDPinCable prices is not correct
+2019-30-08 14:34:16   INFO [parameterizedOrders.ManagerDoOrderSoloCanceledParamsTest] : Chrome will be started
+2019-30-08 14:34:23   INFO [parameterizedOrders.ManagerDoOrderSoloCanceledParamsTest] : Chrome is started
+2019-30-08 14:34:32   INFO [pages.LoginPage] : Login Page was opened
+2019-30-08 14:34:32   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-30-08 14:34:33   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2019-30-08 14:34:33   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-30-08 14:34:34   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-30-08 14:34:42   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-30-08 14:34:43   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-30-08 14:34:49   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-30-08 14:34:52   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-30-08 14:34:52   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-30-08 14:34:55   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-30-08 14:34:59   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-30-08 14:35:01   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-30-08 14:35:04   INFO [libs.ActionsWithOurElements] : jep70268@zoqqa.com was inputted into element
+2019-30-08 14:35:06   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-30-08 14:35:06   INFO [libs.ActionsWithOurElements] : 1 was selected in Drop-down
+2019-30-08 14:35:06   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2019-30-08 14:35:07   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2019-30-08 14:35:07   INFO [libs.ActionsWithOurElements] : 1676475006 was inputted into element
+2019-30-08 14:35:07   INFO [libs.ActionsWithOurElements] : Street was inputted into element
+2019-30-08 14:35:08   INFO [libs.ActionsWithOurElements] : 2 was inputted into element
+2019-30-08 14:35:08   INFO [libs.ActionsWithOurElements] : Phoenix was inputted into element
+2019-30-08 14:35:08   INFO [libs.ActionsWithOurElements] : 30606 was inputted into element
+2019-30-08 14:35:08   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-30-08 14:35:09   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-30-08 14:35:09   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-30-08 14:35:10   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-30-08 14:35:10   INFO [libs.ActionsWithOurElements] : 0 was inputted into element
+2019-30-08 14:35:10   INFO [pages.ModalEldPage] : No cd card in order
+2019-30-08 14:35:10   INFO [pages.ModalEldPage] : No camera sva in order
+2019-30-08 14:35:13   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-30-08 14:35:13   INFO [libs.ActionsWithOurElements] : checkbox was checked
+2019-30-08 14:35:13   INFO [libs.ActionsWithOurElements] : checkbox is already unchecked
+2019-30-08 14:35:13   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-30-08 14:35:13   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-30-08 14:35:13   INFO [pages.ModalEldPage] : Payment Method oneYearSubscription was selected
+2019-30-08 14:35:13   INFO [pages.ModalEldPage] : Payment Method Camera was not selected, no camera in order
+2019-30-08 14:35:14   INFO [parameterizedOrders.ManagerDoOrderSoloCanceledParamsTest] : AC passed
+2019-30-08 14:35:15   INFO [parameterizedOrders.ManagerDoOrderSoloCanceledParamsTest] : AC passed
+2019-30-08 14:35:17   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2019-30-08 14:35:18  ERROR [parameterizedOrders.ManagerDoOrderSoloCanceledParamsTest] : AC failed: DeliveryPrice is not correct
+2019-30-08 14:35:20   INFO [parameterizedOrders.ManagerDoOrderSoloCanceledParamsTest] : Chrome will be started
+2019-30-08 14:35:25   INFO [parameterizedOrders.ManagerDoOrderSoloCanceledParamsTest] : Chrome is started
+2019-30-08 14:35:34  ERROR [pages.LoginPage] : Cannot work with Url
+2019-30-08 14:36:36   INFO [parameterizedOrders.ManagerDoOrderSoloCanceledParamsTest] : Chrome will be started
+2019-30-08 14:36:43   INFO [parameterizedOrders.ManagerDoOrderSoloCanceledParamsTest] : Chrome is started
+2019-30-08 14:36:52   INFO [pages.LoginPage] : Login Page was opened
+2019-30-08 14:36:53   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-30-08 14:36:53   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2019-30-08 14:36:53   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-30-08 14:36:53   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-30-08 14:37:01  ERROR [libs.ActionsWithOurElements] : Cannot work with element java.lang.NullPointerException
+2019-30-08 14:37:02   INFO [parameterizedOrders.ManagerDoOrderSoloCanceledParamsTest] : Chrome will be started
+2019-30-08 14:37:08   INFO [parameterizedOrders.ManagerDoOrderSoloCanceledParamsTest] : Chrome is started
+2019-30-08 14:37:17   INFO [pages.LoginPage] : Login Page was opened
+2019-30-08 14:37:17  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button type="button" onclick="clickLogIn()" class="log_in btn-login">...</button> is not clickable at point (1040, 29). Other element would receive the click: <div class="modal-backdrop in" data-dismiss="modal"></div>
+  (Session info: chrome=76.0.3809.132)
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'DESKTOP-UD8IPI4', ip: '100.80.1.70', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.132, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\denku\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49312}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c8eda608f8d30387d8da5446a0b23388
+2019-30-08 15:50:42   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-30-08 16:12:00   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-30-08 16:12:25   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-30-08 16:24:58   INFO [orders.SoloEldOrderCancelByUserTest] : Chrome will be started
+2019-30-08 16:25:07   INFO [orders.SoloEldOrderCancelByUserTest] : Chrome is started
+2019-30-08 16:25:13   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-30-08 16:25:15   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-30-08 16:25:22   INFO [pages.LoginPage] : Login Page was opened
+2019-30-08 16:25:22   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-30-08 16:25:23   INFO [libs.ActionsWithOurElements] : jep70268@zoqqa.com was inputted into element
+2019-30-08 16:25:23   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-30-08 16:25:23   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-30-08 16:25:29   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-30-08 16:25:30   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-30-08 16:25:33   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-30-08 16:25:38   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-30-08 16:25:41   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-30-08 16:25:44   INFO [orders.SoloEldOrderCancelByUserTest] : AC passed
+2019-30-08 16:27:03   INFO [orders.SoloEldOrderCancelByUserTest] : Chrome will be started
+2019-30-08 16:27:12   INFO [orders.SoloEldOrderCancelByUserTest] : Chrome is started
+2019-30-08 16:27:17   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-30-08 16:27:20   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-30-08 16:27:26   INFO [pages.LoginPage] : Login Page was opened
+2019-30-08 16:27:27   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-30-08 16:27:27   INFO [libs.ActionsWithOurElements] : jep70268@zoqqa.com was inputted into element
+2019-30-08 16:27:27   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-30-08 16:27:27   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-30-08 16:27:33   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-30-08 16:27:34   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-30-08 16:27:37   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-30-08 16:27:42   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-30-08 16:27:45   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-30-08 16:27:48  ERROR [orders.SoloEldOrderCancelByUserTest] : AC failed: ELD is present in canceled order

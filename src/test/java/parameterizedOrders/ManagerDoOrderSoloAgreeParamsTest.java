@@ -17,7 +17,7 @@ public class ManagerDoOrderSoloAgreeParamsTest extends ParentManagerOrderParamsT
     @Test
     public void managerDoOrderSoloAgree() throws IOException, SQLException, ClassNotFoundException {
         String idLastOrderBeforeTest = utilsForDB.getLastOrderIdForFleet(dataSoloId.get("soloId").toString());
-        utilsForDB.getSetCurrentDueForSolo(currentDue, dataSoloId.get("soloId").toString());
+        utilsForDB.setCurrentDueForSolo(currentDue, dataSoloId.get("soloId").toString());
 
         managerModalEldPage.selectSoloDriverInOrder(dataForSoloValidLogIn.get("login").toString());
         modalEldPage.enterPersonalData(personalDataForEldOrder.get("deliveryState").toString(), personalDataForEldOrder.get("firstName").toString(), personalDataForEldOrder.get("lastName").toString(), personalDataForEldOrder.get("phone").toString(), personalDataForEldOrder.get("addressLine").toString(), personalDataForEldOrder.get("aptNumber").toString(), personalDataForEldOrder.get("deliveryCity").toString(), personalDataForEldOrder.get("zipCode").toString());
