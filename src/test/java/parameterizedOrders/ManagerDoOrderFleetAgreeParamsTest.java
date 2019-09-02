@@ -56,7 +56,7 @@ public class ManagerDoOrderFleetAgreeParamsTest extends ParentManagerOrderParams
         setUp();
 
         loginPage.userValidLogIn(dataForFleetValidLogIn.get("login").toString(),dataForFleetValidLogIn.get("pass").toString());
-        modalEldPage.doAgreeAgreementForManagerOrder();
+        modalEldPage.doAgreeAgreementForManagerOrder(quantityOfDevices, quantityCameraCP);
 
         dashboardPage.openMenuDash();
         dashboardPage.goToFinancesPage();

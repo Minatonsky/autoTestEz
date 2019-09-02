@@ -41,7 +41,7 @@ public class ManagerDoOrderSoloCanceledParamsTest extends ParentManagerOrderPara
         checkAC("SdCard prices is not correct", modalEldPage.compareSdCard(quantityCameraCP, valueSdCard), true);
         checkAC("Total Order is not correct", modalEldPage.compareTotalOrder(quantityOfDevices, typeOfPaymentMethod, quantityPinCable, quantityOBDPinCable, quantitySticker, quantityCameraCP, quantityCameraSVA, valueSdCard), true);
 
-//        modalEldPage.clickButtonOrder();
+        modalEldPage.clickButtonOrder();
         String idLastOrderAfterTest = utilsForDB.getLastOrderIdForSolo(dataSoloId.get("soloId").toString());
         checkAC("New order was not created", idLastOrderBeforeTest.equals(idLastOrderAfterTest) , false);
 
@@ -54,7 +54,7 @@ public class ManagerDoOrderSoloCanceledParamsTest extends ParentManagerOrderPara
  // user canceled order
 
         loginPage.userValidLogIn(dataForSoloValidLogIn.get("login").toString(),dataForSoloValidLogIn.get("pass").toString());
-        modalEldPage.doCancelAgreementForManagerOrder();
+        modalEldPage.doCancelAgreementForManagerOrder(quantityOfDevices, quantityCameraCP);
         dashboardPage.openMenuDash();
         String orderCancelStatus = utilsForDB.getOrderStatus(idLastOrderAfterTest);
         checkAC("Order with devices is not canceled", financesPage.compareCancelOrderStatus(orderCancelStatus), true);

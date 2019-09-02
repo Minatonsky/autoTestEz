@@ -54,7 +54,7 @@ public class ManagerDoOrderFleetCancelParamsTest extends ParentManagerOrderParam
 // fleet canceled order
 
         loginPage.userValidLogIn(dataForFleetValidLogIn.get("login").toString(),dataForFleetValidLogIn.get("pass").toString());
-        modalEldPage.doCancelAgreementForManagerOrder();
+        modalEldPage.doCancelAgreementForManagerOrder(quantityOfDevices, quantityCameraCP);
         dashboardPage.openMenuDash();
         String orderCancelStatus = utilsForDB.getOrderStatus(idLastOrderAfterTest);
         checkAC("Order with devices is not canceled", financesPage.compareCancelOrderStatus(orderCancelStatus), true);

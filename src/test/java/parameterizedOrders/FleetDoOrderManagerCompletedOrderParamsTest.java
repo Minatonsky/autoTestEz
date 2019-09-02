@@ -34,7 +34,7 @@ public class FleetDoOrderManagerCompletedOrderParamsTest extends ParentFleetOrde
         checkAC("Eld status in Completed order is not correct", userEldPage.compareEldStatusInCompletedOrder(idLastOrderAfterTest), true);
 
 /*
-USER CHECK IF BALANCE IS RETURNED
+USER CHECK IF BALANCE IS CORRECT
  */
 
         tearDown();
@@ -44,7 +44,7 @@ USER CHECK IF BALANCE IS RETURNED
         dashboardPage.openMenuDash();
         dashboardPage.goToFinancesPage();
 
-        checkAC("Balance is not correct", financesPage.compareBalanceIfCanceled(currentDue, dueForLastOrder, quantityOfDevices), true);
+        checkAC("Balance is not correct", financesPage.compareBalance(currentDue, dueForLastOrder), true);
 
 
     }

@@ -52,7 +52,7 @@ public class ManagerDoOrderSoloAgreeParamsTest extends ParentManagerOrderParamsT
 
 // user agree order
         loginPage.userValidLogIn(dataForSoloValidLogIn.get("login").toString(),dataForSoloValidLogIn.get("pass").toString());
-        modalEldPage.doAgreeAgreementForManagerOrder();
+        modalEldPage.doAgreeAgreementForManagerOrder(quantityOfDevices, quantityCameraCP);
 
         dashboardPage.openMenuDash();
         dashboardPage.goToFinancesPage();
