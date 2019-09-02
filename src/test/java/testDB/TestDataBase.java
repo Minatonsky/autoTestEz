@@ -67,5 +67,15 @@ public class TestDataBase {
         String orderId = "3066";
         System.out.println(utilsForDB.isEldBlinded(orderId));
     }
+    @Test
+    public void testGetEldId() throws SQLException, IOException, ClassNotFoundException {
+        UtilsForDB utilsForDB = new UtilsForDB();
+        String idOrder = "3064";
+        List<String> tempIdEld = utilsForDB.getIdEldFromOrder(idOrder);
+        for (String element: tempIdEld
+        ) {
+            System.out.println(element);
+        }
+    }
 
 }

@@ -8,8 +8,8 @@ import java.io.IOException;
 import java.sql.SQLException;
 @RunWith(Parameterized.class)
 
-public class SoloCancelOrderByUserParameterizedTest extends ParentSoloOrderParamsTest {
-    public SoloCancelOrderByUserParameterizedTest(String quantityOfDevices, String typeOfPaymentMethod, String quantityPinCable, String quantityOBDPinCable, String quantitySticker, String quantityCameraCP, String valueSdCard, String quantityCameraSVA, String typeOfPaymentMethodCamera, String neededStatePickUpFromOffice, String neededStateOvernightDelivery, String currentDue) throws IOException {
+public class SoloDoOrderAfterCanceledOrderParamsTest extends ParentSoloOrderParamsTest {
+    public SoloDoOrderAfterCanceledOrderParamsTest(String quantityOfDevices, String typeOfPaymentMethod, String quantityPinCable, String quantityOBDPinCable, String quantitySticker, String quantityCameraCP, String valueSdCard, String quantityCameraSVA, String typeOfPaymentMethodCamera, String neededStatePickUpFromOffice, String neededStateOvernightDelivery, String currentDue) throws IOException {
         super(quantityOfDevices, typeOfPaymentMethod, quantityPinCable, quantityOBDPinCable, quantitySticker, quantityCameraCP, valueSdCard, quantityCameraSVA, typeOfPaymentMethodCamera, neededStatePickUpFromOffice, neededStateOvernightDelivery, currentDue);
     }
 

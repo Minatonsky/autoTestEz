@@ -28,6 +28,7 @@ public class SoloEldOrderCompletedByManagerTest extends ParentSoloTest {
 
         String orderStatus = utilsForDB.getOrderStatus(idLastOrderAfterTest);
         checkAC("Order is not completed", financesPage.compareCompletedOrderStatus(orderStatus) , true);
+        checkAC("Eld status in Completed order is not correct", userEldPage.compareEldStatusInCompletedOrder(idLastOrderAfterTest), true);
 
     }
 

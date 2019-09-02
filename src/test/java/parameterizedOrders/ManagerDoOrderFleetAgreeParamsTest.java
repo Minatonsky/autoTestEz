@@ -66,6 +66,7 @@ public class ManagerDoOrderFleetAgreeParamsTest extends ParentManagerOrderParams
 
         String orderStatusPaid = utilsForDB.getOrderStatus(idLastOrderAfterTest);
         checkAC("Order is not Paid", financesPage.comparePaidOrderStatus(orderStatusPaid) , true);
+        checkAC("Eld status in Paid order is not correct", userEldPage.compareEldStatusInPaidOrder(idLastOrderAfterTest), true);
 
 
     }

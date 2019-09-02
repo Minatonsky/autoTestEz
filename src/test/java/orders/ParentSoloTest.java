@@ -35,7 +35,6 @@ public class ParentSoloTest extends ParentTest {
         utilsForDB.setCurrentDueForSolo(dataForEldOrder.get("currentDue").toString(), dataSoloId.get("soloId").toString());
 
         loginPage.userValidLogIn(dataForSoloValidLogIn.get("login").toString(),dataForSoloValidLogIn.get("pass").toString());
-
         dashboardPage.openMenuDash();
         dashboardPage.goToEldPage();
         userEldPage.clickOnOrderELD();
@@ -69,6 +68,7 @@ public class ParentSoloTest extends ParentTest {
 
         String orderStatus = utilsForDB.getOrderStatus(idLastOrderAfterTest);
         checkAC("Order is not Paid", financesPage.comparePaidOrderStatus(orderStatus) , true);
+        checkAC("Eld status in Paid order is not correct", userEldPage.compareEldStatusInPaidOrder(idLastOrderAfterTest), true);
 
         dashboardPage.goToFinancesPage();
         String dueForLastOrder = utilsForDB.getLastDueForSolo(dataSoloId.get("soloId").toString());

@@ -1092,3 +1092,280 @@ Session ID: c8eda608f8d30387d8da5446a0b23388
 2019-30-08 16:27:42   INFO [libs.ActionsWithOurElements] : Element was clicked
 2019-30-08 16:27:45   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
 2019-30-08 16:27:48  ERROR [orders.SoloEldOrderCancelByUserTest] : AC failed: ELD is present in canceled order
+2019-02-09 10:13:22   INFO [parameterizedOrders.SoloDoOrderAfterCanceledOrderParamsTest] : Chrome will be started
+2019-02-09 10:13:31   INFO [parameterizedOrders.SoloDoOrderAfterCanceledOrderParamsTest] : Chrome is started
+2019-02-09 10:13:36   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-02-09 10:13:39   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-02-09 10:13:47   INFO [pages.LoginPage] : Login Page was opened
+2019-02-09 10:13:47   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-02-09 10:13:47   INFO [libs.ActionsWithOurElements] : jep70268@zoqqa.com was inputted into element
+2019-02-09 10:13:47   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-02-09 10:13:48   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-02-09 10:13:54   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-02-09 10:13:55   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-02-09 10:14:01   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-02-09 10:14:04   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-02-09 10:14:05   INFO [libs.ActionsWithOurElements] : 1 was selected in Drop-down
+2019-02-09 10:14:05   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2019-02-09 10:14:06   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2019-02-09 10:14:06   INFO [libs.ActionsWithOurElements] : 1676475006 was inputted into element
+2019-02-09 10:14:06   INFO [libs.ActionsWithOurElements] : Street was inputted into element
+2019-02-09 10:14:07   INFO [libs.ActionsWithOurElements] : 2 was inputted into element
+2019-02-09 10:14:07   INFO [libs.ActionsWithOurElements] : Phoenix was inputted into element
+2019-02-09 10:14:07   INFO [libs.ActionsWithOurElements] : 30606 was inputted into element
+2019-02-09 10:14:08   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-02-09 10:14:08   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-02-09 10:14:08   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-02-09 10:14:09   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-02-09 10:14:09   INFO [libs.ActionsWithOurElements] : 0 was inputted into element
+2019-02-09 10:14:09   INFO [pages.ModalEldPage] : No cd card in order
+2019-02-09 10:14:09   INFO [pages.ModalEldPage] : No camera sva in order
+2019-02-09 10:14:11   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-02-09 10:14:11   INFO [libs.ActionsWithOurElements] : checkbox was checked
+2019-02-09 10:14:12   INFO [libs.ActionsWithOurElements] : checkbox is already unchecked
+2019-02-09 10:14:12   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-02-09 10:14:12   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-02-09 10:14:12   INFO [pages.ModalEldPage] : Payment Method oneYearSubscription was selected
+2019-02-09 10:14:12   INFO [pages.ModalEldPage] : Payment Method Camera was not selected, no camera in order
+2019-02-09 10:14:16   INFO [parameterizedOrders.SoloDoOrderAfterCanceledOrderParamsTest] : AC passed
+2019-02-09 10:14:17   INFO [parameterizedOrders.SoloDoOrderAfterCanceledOrderParamsTest] : AC passed
+2019-02-09 10:14:37   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2019-02-09 10:14:38   INFO [parameterizedOrders.SoloDoOrderAfterCanceledOrderParamsTest] : AC passed
+2019-02-09 10:15:00   INFO [parameterizedOrders.SoloDoOrderAfterCanceledOrderParamsTest] : Chrome will be started
+2019-02-09 11:18:46   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-02-09 11:19:38   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-02-09 11:20:35   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-02-09 11:21:14   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-02-09 11:21:42   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-02-09 11:23:40   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-02-09 11:37:56   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-02-09 11:57:48   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-02-09 11:58:35   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-02-09 11:59:30   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-02-09 12:02:06   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-02-09 12:03:30   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-02-09 12:05:03   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-02-09 12:05:30   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-02-09 12:05:54   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-02-09 12:12:50   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-02-09 12:13:10   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-02-09 12:13:59   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-02-09 12:23:33   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-02-09 12:27:38   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-02-09 12:47:38   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-02-09 12:50:37   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-02-09 12:56:15   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-02-09 13:02:00   INFO [orders.ParentSoloTest] : Chrome will be started
+2019-02-09 13:02:09   INFO [orders.ParentSoloTest] : Chrome is started
+2019-02-09 13:02:14   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-02-09 13:02:22   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-02-09 13:02:36   INFO [pages.LoginPage] : Login Page was opened
+2019-02-09 13:02:36   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-02-09 13:02:36   INFO [libs.ActionsWithOurElements] : jep70268@zoqqa.com was inputted into element
+2019-02-09 13:02:37   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-02-09 13:02:37   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-02-09 13:02:37   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-02-09 13:03:22  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: .//*[@placeholder='Id']' (tried for 20 second(s) with 500 milliseconds interval)
+2019-02-09 13:08:38   INFO [orders.ParentSoloTest] : Chrome will be started
+2019-02-09 13:08:46   INFO [orders.ParentSoloTest] : Chrome is started
+2019-02-09 13:08:52   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-02-09 13:08:55   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-02-09 13:09:06   INFO [pages.LoginPage] : Login Page was opened
+2019-02-09 13:09:06   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-02-09 13:09:07   INFO [libs.ActionsWithOurElements] : jep70268@zoqqa.com was inputted into element
+2019-02-09 13:09:07   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-02-09 13:09:07   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-02-09 13:09:07   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-02-09 13:09:13  ERROR [orders.ParentSoloTest] : AC failed: Total Order is not correct
+2019-02-09 13:09:56   INFO [orders.ParentSoloTest] : Chrome will be started
+2019-02-09 13:10:04   INFO [orders.ParentSoloTest] : Chrome is started
+2019-02-09 13:10:09   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-02-09 13:10:12   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-02-09 13:10:20   INFO [pages.LoginPage] : Login Page was opened
+2019-02-09 13:10:20   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-02-09 13:10:21   INFO [libs.ActionsWithOurElements] : jep70268@zoqqa.com was inputted into element
+2019-02-09 13:10:21   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-02-09 13:10:21   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-02-09 13:10:21   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-02-09 13:10:24  ERROR [orders.ParentSoloTest] : AC failed: Total Order is not correct
+2019-02-09 13:11:58   INFO [orders.ParentSoloTest] : Chrome will be started
+2019-02-09 13:12:06   INFO [orders.ParentSoloTest] : Chrome is started
+2019-02-09 13:12:11   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-02-09 13:12:13   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-02-09 13:12:21   INFO [pages.LoginPage] : Login Page was opened
+2019-02-09 13:12:21   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-02-09 13:12:21   INFO [libs.ActionsWithOurElements] : jep70268@zoqqa.com was inputted into element
+2019-02-09 13:12:22   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-02-09 13:12:22   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-02-09 13:12:22   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-02-09 13:12:25  ERROR [orders.ParentSoloTest] : AC failed: Eld status is not correct
+2019-02-09 14:13:48   INFO [orders.ParentSoloTest] : Chrome will be started
+2019-02-09 14:13:56   INFO [orders.ParentSoloTest] : Chrome is started
+2019-02-09 14:14:01   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-02-09 14:14:03   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-02-09 14:14:12   INFO [pages.LoginPage] : Login Page was opened
+2019-02-09 14:14:12   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-02-09 14:14:13   INFO [libs.ActionsWithOurElements] : jep70268@zoqqa.com was inputted into element
+2019-02-09 14:14:13   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-02-09 14:14:13   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-02-09 14:14:13   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-02-09 14:14:16   INFO [orders.ParentSoloTest] : AC passed
+2019-02-09 14:14:16   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-02-09 14:14:17   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-02-09 14:14:21   INFO [pages.LoginPage] : Login Page was opened
+2019-02-09 14:14:41  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on XP (b58a01fc66e6bbdfeb55d6c79d899538)] -> xpath: .//*[@class='log_in btn-login']] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'DESKTOP-UD8IPI4', ip: '192.168.32.62', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.132, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\denku\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62139}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: b58a01fc66e6bbdfeb55d6c79d899538
+2019-02-09 14:31:04   INFO [orders.ParentSoloTest] : Chrome will be started
+2019-02-09 14:31:12   INFO [orders.ParentSoloTest] : Chrome is started
+2019-02-09 14:31:17   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-02-09 14:31:20   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-02-09 14:31:26   INFO [pages.LoginPage] : Login Page was opened
+2019-02-09 14:31:26   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-02-09 14:31:27   INFO [libs.ActionsWithOurElements] : jep70268@zoqqa.com was inputted into element
+2019-02-09 14:31:27   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-02-09 14:31:27   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-02-09 14:31:27   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-02-09 14:31:30   INFO [orders.ParentSoloTest] : AC passed
+2019-02-09 14:31:30   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-02-09 14:31:31   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-02-09 14:31:34   INFO [pages.LoginPage] : Login Page was opened
+2019-02-09 14:31:55  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on XP (feea84d382be9ef84a09b71ab7782dbb)] -> xpath: .//*[@class='log_in btn-login']] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'DESKTOP-UD8IPI4', ip: '192.168.32.62', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.132, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\denku\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62751}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: feea84d382be9ef84a09b71ab7782dbb
+2019-02-09 14:33:18   INFO [orders.ParentSoloTest] : Chrome will be started
+2019-02-09 14:33:26   INFO [orders.ParentSoloTest] : Chrome is started
+2019-02-09 14:33:31   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-02-09 14:33:34   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-02-09 14:33:43   INFO [pages.LoginPage] : Login Page was opened
+2019-02-09 14:33:43   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-02-09 14:33:43   INFO [libs.ActionsWithOurElements] : jep70268@zoqqa.com was inputted into element
+2019-02-09 14:33:44   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-02-09 14:33:44   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-02-09 14:33:44   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-02-09 14:33:46   INFO [orders.ParentSoloTest] : AC passed
+2019-02-09 14:33:46   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-02-09 14:33:49   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-02-09 14:33:52   INFO [pages.LoginPage] : Login Page was opened
+2019-02-09 14:34:12  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on XP (0b92127499363517cc9a70ae7afff0ab)] -> xpath: .//*[@class='log_in btn-login']] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'DESKTOP-UD8IPI4', ip: '192.168.32.62', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.132, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\denku\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62890}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 0b92127499363517cc9a70ae7afff0ab
+2019-02-09 14:34:37   INFO [orders.ParentSoloTest] : Chrome will be started
+2019-02-09 14:34:46   INFO [orders.ParentSoloTest] : Chrome is started
+2019-02-09 14:34:51   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-02-09 14:34:53   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-02-09 14:35:01   INFO [pages.LoginPage] : Login Page was opened
+2019-02-09 14:35:01   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-02-09 14:35:01   INFO [libs.ActionsWithOurElements] : jep70268@zoqqa.com was inputted into element
+2019-02-09 14:35:02   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-02-09 14:35:02   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-02-09 14:35:02   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-02-09 14:35:03   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-02-09 14:35:09   INFO [pages.LoginPage] : Login Page was opened
+2019-02-09 14:35:28  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=76.0.3809.132)
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'DESKTOP-UD8IPI4', ip: '192.168.32.62', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.132, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\denku\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62992}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 7911a0ea6027740411a9e2336270d87c
+*** Element info: {Using=xpath, value=.//*[@class='log_in btn-login']}
+2019-02-09 14:36:09   INFO [orders.ParentSoloTest] : Chrome will be started
+2019-02-09 14:36:17   INFO [orders.ParentSoloTest] : Chrome is started
+2019-02-09 14:36:22   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-02-09 14:36:25   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-02-09 14:36:33   INFO [pages.LoginPage] : Login Page was opened
+2019-02-09 14:36:33   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-02-09 14:36:33   INFO [libs.ActionsWithOurElements] : jep70268@zoqqa.com was inputted into element
+2019-02-09 14:36:34   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-02-09 14:36:34   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-02-09 14:36:34   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-02-09 14:36:35   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-02-09 14:36:41   INFO [pages.LoginPage] : Login Page was opened
+2019-02-09 14:37:01  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on XP (ca8eaf40facb578ffd1f7abe2431451a)] -> xpath: .//*[@class='log_in btn-login']] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'DESKTOP-UD8IPI4', ip: '192.168.32.62', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.132, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\denku\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63125}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: ca8eaf40facb578ffd1f7abe2431451a
+2019-02-09 14:40:13   INFO [orders.ParentSoloTest] : Chrome will be started
+2019-02-09 14:40:21   INFO [orders.ParentSoloTest] : Chrome is started
+2019-02-09 14:40:27   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-02-09 14:40:29   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-02-09 14:40:35   INFO [pages.LoginPage] : Login Page was opened
+2019-02-09 14:40:36   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-02-09 14:40:36   INFO [libs.ActionsWithOurElements] : jep70268@zoqqa.com was inputted into element
+2019-02-09 14:40:36   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-02-09 14:40:36   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-02-09 14:40:42   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-02-09 14:40:43   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-02-09 14:40:49   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-02-09 14:40:52   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-02-09 14:40:54   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-02-09 14:40:57   INFO [pages.LoginPage] : Login Page was opened
+2019-02-09 14:41:17  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on XP (d368236a18d6ad7b69708965302ad6a9)] -> xpath: .//*[@class='log_in btn-login']] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'DESKTOP-UD8IPI4', ip: '192.168.32.62', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.132, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\denku\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63378}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: d368236a18d6ad7b69708965302ad6a9
+2019-02-09 14:44:18   INFO [orders.ParentSoloTest] : Chrome will be started
+2019-02-09 14:44:26   INFO [orders.ParentSoloTest] : Chrome is started
+2019-02-09 14:44:31   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-02-09 14:44:34   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-02-09 14:44:41   INFO [pages.LoginPage] : Login Page was opened
+2019-02-09 14:44:41   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-02-09 14:44:42   INFO [libs.ActionsWithOurElements] : jep70268@zoqqa.com was inputted into element
+2019-02-09 14:44:42   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-02-09 14:44:42   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-02-09 14:44:48   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-02-09 14:44:49   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-02-09 14:44:55   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-02-09 14:45:41   INFO [orders.ParentSoloTest] : Chrome will be started
+2019-02-09 14:45:49   INFO [orders.ParentSoloTest] : Chrome is started
+2019-02-09 14:45:55   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-02-09 14:45:57   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-02-09 14:46:03   INFO [pages.LoginPage] : Login Page was opened
+2019-02-09 14:46:03   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-02-09 14:46:04   INFO [libs.ActionsWithOurElements] : jep70268@zoqqa.com was inputted into element
+2019-02-09 14:46:04   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-02-09 14:46:04   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-02-09 14:46:04   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-02-09 14:46:07   INFO [orders.ParentSoloTest] : AC passed
+2019-02-09 14:46:10   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-02-09 14:46:11   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-02-09 14:46:17   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-02-09 14:47:10   INFO [orders.ParentSoloTest] : Chrome will be started
+2019-02-09 14:47:19   INFO [orders.ParentSoloTest] : Chrome is started
+2019-02-09 14:47:24   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-02-09 14:47:26   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-02-09 14:47:32   INFO [pages.LoginPage] : Login Page was opened
+2019-02-09 14:47:33   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-02-09 14:47:33   INFO [libs.ActionsWithOurElements] : jep70268@zoqqa.com was inputted into element
+2019-02-09 14:47:33   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-02-09 14:47:33   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-02-09 14:47:33   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-02-09 14:47:36  ERROR [orders.ParentSoloTest] : AC failed: Eld status is not correct
+2019-02-09 14:48:19   INFO [orders.ParentSoloTest] : Chrome will be started
+2019-02-09 14:48:27   INFO [orders.ParentSoloTest] : Chrome is started
+2019-02-09 14:48:32   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-02-09 14:48:36   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-02-09 14:48:49   INFO [pages.LoginPage] : Login Page was opened
+2019-02-09 14:48:49   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-02-09 14:48:50   INFO [libs.ActionsWithOurElements] : jep70268@zoqqa.com was inputted into element
+2019-02-09 14:48:50   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-02-09 14:48:50   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-02-09 14:48:50   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-02-09 14:48:53   INFO [orders.ParentSoloTest] : AC passed
+2019-02-09 14:48:57   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-02-09 14:48:58   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-02-09 14:49:04   INFO [libs.ActionsWithOurElements] : Element was clicked

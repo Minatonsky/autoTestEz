@@ -73,4 +73,25 @@ public class UserEldPage extends ParentPage {
         actionsWithOurElements.enterTextToElement(idHolder, idLocalDevice);
     }
 
+    @Step
+    public boolean compareEldStatusInCompletedOrder(String idOrder) throws SQLException, IOException, ClassNotFoundException {
+        UtilsForDB utilsForDB = new UtilsForDB();
+        List<String> tempStatusId = utilsForDB.getIdEldFromOrder(idOrder);
+        for (String element : tempStatusId)
+        if (element.equals("4")){
+            return true;
+        }
+        return false;
+    }
+    @Step
+    public boolean compareEldStatusInPaidOrder(String idOrder) throws SQLException, IOException, ClassNotFoundException {
+        UtilsForDB utilsForDB = new UtilsForDB();
+        List<String> tempStatusId = utilsForDB.getIdEldFromOrder(idOrder);
+        for (String element : tempStatusId)
+            if (element.equals("1")){
+                return true;
+            }
+        return false;
+    }
+
 }
