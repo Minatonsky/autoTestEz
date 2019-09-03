@@ -17,13 +17,10 @@ public class ManagerDoOrderFleetAgreeParamsTest extends ParentManagerOrderParams
 
     @Test
     public void managerDoOrderFleetAgree() throws IOException, InterruptedException, SQLException, ClassNotFoundException {
+        userEldPage.checkAndDeleteNewOrderBeforeTestFleet(dataFleetId.get("fleetId").toString());
         String idLastOrderBeforeTest = utilsForDB.getLastOrderIdForFleet(dataFleetId.get("fleetId").toString());
         utilsForDB.setCurrentDueForFleet(currentDue, dataFleetId.get("fleetId").toString());
 
-        loginPage.userValidLogIn(dataForManagerValidLogIn.get("login").toString(),dataForManagerValidLogIn.get("pass").toString());
-        dashboardPage.openMenuDash();
-        dashboardPage.goToEldPage();
-        managerEldPage.clickOnNewOrderButton();
         managerModalEldPage.selectFleetInOrder(dataForFleetValidLogIn.get("usdot").toString());
         modalEldPage.enterPersonalData(personalDataForEldOrder.get("deliveryState").toString(), personalDataForEldOrder.get("firstName").toString(), personalDataForEldOrder.get("lastName").toString(), personalDataForEldOrder.get("phone").toString(), personalDataForEldOrder.get("addressLine").toString(), personalDataForEldOrder.get("aptNumber").toString(), personalDataForEldOrder.get("deliveryCity").toString(), personalDataForEldOrder.get("zipCode").toString());
 

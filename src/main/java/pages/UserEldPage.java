@@ -11,6 +11,7 @@ import java.sql.SQLException;
 import java.util.List;
 
 public class UserEldPage extends ParentPage {
+    UtilsForDB utilsForDB = new UtilsForDB();
 
     @FindBy(xpath = ".//button[@data-tutorial='addELD']")
     private WebElement orderELD;
@@ -75,7 +76,6 @@ public class UserEldPage extends ParentPage {
 
     @Step
     public boolean compareEldStatusInCompletedOrder(String idOrder) throws SQLException, IOException, ClassNotFoundException {
-        UtilsForDB utilsForDB = new UtilsForDB();
         List<String> tempStatusId = utilsForDB.getIdEldFromOrder(idOrder);
         for (String element : tempStatusId)
         if (element.equals("4")){
@@ -85,13 +85,37 @@ public class UserEldPage extends ParentPage {
     }
     @Step
     public boolean compareEldStatusInPaidOrder(String idOrder) throws SQLException, IOException, ClassNotFoundException {
-        UtilsForDB utilsForDB = new UtilsForDB();
         List<String> tempStatusId = utilsForDB.getIdEldFromOrder(idOrder);
         for (String element : tempStatusId)
             if (element.equals("1")){
                 return true;
             }
         return false;
+    }
+    @Step
+    public void checkAndDeleteNewOrderBeforeTestFleet(String fleetId) throws SQLException, IOException, ClassNotFoundException {
+        int tempCountOrder = utilsForDB.getCountNewOrderForFleet(fleetId);
+        if (tempCountOrder > 0){
+            List<String> tempListWithOrderId = utilsForDB.getIdOrderWithStatusNewForFleet(fleetId);
+            for (String element :
+                    tempListWithOrderId) {
+                utilsForDB.deleteEventNewOrder(element);
+                logger.info("Order with status New was delete");
+            }
+        } else logger.info("User have not Order with status New");
+    }
+
+    @Step
+    public void checkAndDeleteNewOrderBeforeTestSolo(String soloId) throws SQLException, IOException, ClassNotFoundException {
+        int tempCountOrder = utilsForDB.getCountNewOrderForSolo(soloId);
+        if (tempCountOrder > 0){
+            List<String> tempListWithOrderId = utilsForDB.getIdOrderWithStatusNewForSolo(soloId);
+            for (String element :
+                    tempListWithOrderId) {
+                utilsForDB.deleteEventNewOrder(element);
+                logger.info("Order with status New was delete");
+            }
+        } else logger.info("User have not Order with status New");
     }
 
 }

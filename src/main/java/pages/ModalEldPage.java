@@ -1,6 +1,7 @@
 package pages;
 
 import io.qameta.allure.Step;
+import libs.UtilsForDB;
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -10,6 +11,7 @@ import static libs.Utils.waitABit;
 
 public class ModalEldPage extends ParentPage {
     LoginPage loginPage;
+    UtilsForDB utilsForDB = new UtilsForDB();
 
     @FindBy(name ="amount")
     private WebElement quantityDeviseInput;
