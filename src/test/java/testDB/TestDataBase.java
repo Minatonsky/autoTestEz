@@ -7,22 +7,12 @@ import java.io.IOException;
 import java.sql.SQLException;
 import java.util.List;
 import java.util.logging.Logger;
-
+// This test page is not using on test project, it just for check some methods
 
 public class TestDataBase {
-//    static Database dbMySql;
+
     static Logger logger = Logger.getLogger(String.valueOf(TestDataBase.class));
 
-//    @Before
-//    public void  setUp() throws SQLException, IOException, ClassNotFoundException {
-//        dbMySql = new Database("MySQL_PADB_DB", "MySQL");
-//        logger.info("MySql DB connected");
-//    }
-//
-//    @After
-//    public void tearDown() throws SQLException {
-//        dbMySql.quit();
-//    }
 
     @Test
     public void testDBGetLastOrderIdFromFleet() throws SQLException, IOException, ClassNotFoundException {
@@ -33,7 +23,7 @@ public class TestDataBase {
     @Test
     public void testDBSetCurrentDueForFleet() throws SQLException, IOException, ClassNotFoundException {
         UtilsForDB utilsForDB = new UtilsForDB();
-        utilsForDB.getSetCurrentDueForFleet("-1000", "518");
+        utilsForDB.setCurrentDueForFleet("-1000", "518");
     }
 
     @Test
@@ -57,8 +47,33 @@ public class TestDataBase {
     @Test
     public void testGetRowNumberNewOrder() throws SQLException, IOException, ClassNotFoundException {
         UtilsForDB utilsForDB = new UtilsForDB();
-        String userId = "3455";
-        System.out.println(utilsForDB.getCountNewOrder(userId));
+        String userId = "518";
+        int tempCountOrder = utilsForDB.getCountNewOrderForFleet(userId);
+        System.out.println(tempCountOrder);
     }
+
+    @Test
+    public void testIsEldBlinded() throws SQLException, IOException, ClassNotFoundException {
+        UtilsForDB utilsForDB = new UtilsForDB();
+        String orderId = "3066";
+        System.out.println(utilsForDB.isEldBlinded(orderId));
+    }
+    @Test
+    public void testGetEldId() throws SQLException, IOException, ClassNotFoundException {
+        UtilsForDB utilsForDB = new UtilsForDB();
+        String idOrder = "3064";
+        List<String> tempIdEld = utilsForDB.getIdEldFromOrder(idOrder);
+        for (String element: tempIdEld
+        ) {
+            System.out.println(element);
+        }
+    }
+    @Test
+    public void testActionNewOrder() throws SQLException, IOException, ClassNotFoundException {
+        UtilsForDB utilsForDB = new UtilsForDB();
+        String idOrder = "3075";
+        utilsForDB.deleteEventNewOrder(idOrder);
+    }
+
 
 }

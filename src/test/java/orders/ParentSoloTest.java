@@ -31,11 +31,11 @@ public class ParentSoloTest extends ParentTest {
 
     @Test
     public void addNewOrder() throws SQLException, IOException, ClassNotFoundException {
+        userEldPage.checkAndDeleteNewOrderBeforeTestSolo(dataSoloId.get("soloId").toString());
         String idLastOrderBeforeTest = utilsForDB.getLastOrderIdForFleet(dataSoloId.get("soloId").toString());
-        utilsForDB.getSetCurrentDueForSolo(dataForEldOrder.get("currentDue").toString(), dataSoloId.get("soloId").toString());
+        utilsForDB.setCurrentDueForSolo(dataForEldOrder.get("currentDue").toString(), dataSoloId.get("soloId").toString());
 
         loginPage.userValidLogIn(dataForSoloValidLogIn.get("login").toString(),dataForSoloValidLogIn.get("pass").toString());
-
         dashboardPage.openMenuDash();
         dashboardPage.goToEldPage();
         userEldPage.clickOnOrderELD();
@@ -62,13 +62,14 @@ public class ParentSoloTest extends ParentTest {
 
         modalEldPage.doAgreeAgreement(dataForEldOrder.get("quantityOfDevices").toString());
         modalEldPage.doAgreementCamera(dataForEldOrder.get("quantityCameraCP").toString());
-//        modalEldPage.clickButtonOrder();
+        modalEldPage.clickButtonOrder();
 
         String idLastOrderAfterTest = utilsForDB.getLastOrderIdForSolo(dataSoloId.get("soloId").toString());
         checkAC("New order wasn`t created", idLastOrderBeforeTest.equals(idLastOrderAfterTest) , false);
 
         String orderStatus = utilsForDB.getOrderStatus(idLastOrderAfterTest);
         checkAC("Order is not Paid", financesPage.comparePaidOrderStatus(orderStatus) , true);
+        checkAC("Eld status in Paid order is not correct", userEldPage.compareEldStatusInPaidOrder(idLastOrderAfterTest), true);
 
         dashboardPage.goToFinancesPage();
         String dueForLastOrder = utilsForDB.getLastDueForSolo(dataSoloId.get("soloId").toString());

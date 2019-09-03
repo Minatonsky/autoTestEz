@@ -14,12 +14,11 @@ public class ManagerDoOrderFleetCancelParamsTest extends ParentManagerOrderParam
         super(quantityOfDevices, typeOfPaymentMethod, quantityPinCable, quantityOBDPinCable, quantitySticker, quantityCameraCP, valueSdCard, quantityCameraSVA, typeOfPaymentMethodCamera, neededStatePickUpFromOffice, neededStateOvernightDelivery, currentDue);
     }
 
-
     @Test
     public void managerDoOrderFleetCanceled() throws IOException, InterruptedException, SQLException, ClassNotFoundException {
-
+        userEldPage.checkAndDeleteNewOrderBeforeTestFleet(dataFleetId.get("fleetId").toString());
         String idLastOrderBeforeTest = utilsForDB.getLastOrderIdForFleet(dataFleetId.get("fleetId").toString());
-        utilsForDB.getSetCurrentDueForFleet(currentDue, dataFleetId.get("fleetId").toString());
+        utilsForDB.setCurrentDueForFleet(currentDue, dataFleetId.get("fleetId").toString());
 
         managerModalEldPage.selectFleetInOrder(dataForFleetValidLogIn.get("usdot").toString());
         modalEldPage.enterPersonalData(personalDataForEldOrder.get("deliveryState").toString(), personalDataForEldOrder.get("firstName").toString(), personalDataForEldOrder.get("lastName").toString(), personalDataForEldOrder.get("phone").toString(), personalDataForEldOrder.get("addressLine").toString(), personalDataForEldOrder.get("aptNumber").toString(), personalDataForEldOrder.get("deliveryCity").toString(), personalDataForEldOrder.get("zipCode").toString());
@@ -55,10 +54,11 @@ public class ManagerDoOrderFleetCancelParamsTest extends ParentManagerOrderParam
 // fleet canceled order
 
         loginPage.userValidLogIn(dataForFleetValidLogIn.get("login").toString(),dataForFleetValidLogIn.get("pass").toString());
-        modalEldPage.doCancelAgreementForManagerOrder();
+        modalEldPage.doCancelAgreementForManagerOrder(quantityOfDevices, quantityCameraCP);
         dashboardPage.openMenuDash();
         String orderCancelStatus = utilsForDB.getOrderStatus(idLastOrderAfterTest);
         checkAC("Order with devices is not canceled", financesPage.compareCancelOrderStatus(orderCancelStatus), true);
+        checkAC("ELD is present in canceled order", utilsForDB.isEldBlinded(idLastOrderAfterTest), false);
 
         dashboardPage.goToFinancesPage();
 

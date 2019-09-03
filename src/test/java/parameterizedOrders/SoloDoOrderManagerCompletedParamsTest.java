@@ -30,9 +30,10 @@ public class SoloDoOrderManagerCompletedParamsTest extends ParentSoloOrderParams
 
         String orderStatus = utilsForDB.getOrderStatus(idLastOrderAfterTest);
         checkAC("Order is not completed", financesPage.compareCompletedOrderStatus(orderStatus), true);
+        checkAC("Eld status in Completed order is not correct", userEldPage.compareEldStatusInCompletedOrder(idLastOrderAfterTest), true);
 
  /*
-USER CHECK IF BALANCE IS RETURNED
+USER CHECK IF BALANCE IS CORRECT
  */
 
         tearDown();

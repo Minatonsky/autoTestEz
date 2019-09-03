@@ -1,6 +1,7 @@
 package pages;
 
 import io.qameta.allure.Step;
+import libs.UtilsForDB;
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -10,6 +11,7 @@ import static libs.Utils.waitABit;
 
 public class ModalEldPage extends ParentPage {
     LoginPage loginPage;
+    UtilsForDB utilsForDB = new UtilsForDB();
 
     @FindBy(name ="amount")
     private WebElement quantityDeviseInput;
@@ -132,35 +134,41 @@ public class ModalEldPage extends ParentPage {
     private WebElement bankContract;
 
 
-    @FindBy(xpath = "//*[text()='CP2 month fee $29.99']/../td[@class='text-center price']")
+    @FindBy(xpath = ".//*[text()='CP2 month fee $29.99']/../td[@class='text-center price']")
     private WebElement cP2MonthFeeText;
 
-    @FindBy(xpath = "//*[text()='Camera setup fee $29.99']/../td[@class='text-center price']")
+    @FindBy(xpath = ".//*[text()='Camera setup fee $29.99']/../td[@class='text-center price']")
     private WebElement cameraSetupFeeText;
 
-    @FindBy(xpath = "//*[text()='Camera installation fee $100']/../td[@class='text-center price']")
+    @FindBy(xpath = ".//*[text()='Camera installation fee $100']/../td[@class='text-center price']")
     private WebElement cameraInstallationFeeText;
 
-    @FindBy(xpath = "//*[text()='EzSmartCam CP2']/../td[@class='text-center price']")
+    @FindBy(xpath = ".//*[text()='EzSmartCam CP2']/../td[@class='text-center price']")
     private WebElement ezSmartCamCP2Text;
 
-    @FindBy(xpath = "//*[text()='EzSmartCam SVA']/../td[@class='text-center price']")
+    @FindBy(xpath = ".//*[text()='EzSmartCam SVA']/../td[@class='text-center price']")
     private WebElement ezSmartCamSVAText;
 
-    @FindBy(xpath = "//*[text()='32GB-SD']/../td[@class='text-center price']")
+    @FindBy(xpath = ".//*[text()='32GB-SD']/../td[@class='text-center price']")
     private WebElement sD32GbText;
 
-    @FindBy(xpath = "//*[text()='64GB-SD']/../td[@class='text-center price']")
+    @FindBy(xpath = ".//*[text()='64GB-SD']/../td[@class='text-center price']")
     private WebElement sD64GbText;
 
-    @FindBy(xpath = "//*[text()='128GB-SD']/../td[@class='text-center price']")
+    @FindBy(xpath = ".//*[text()='128GB-SD']/../td[@class='text-center price']")
     private WebElement sD128GbText;
 
-    @FindBy(xpath = "//td[@class='hidden-xs hidden-sm']/select[@name='related_products[5][parent_id]']")
+    @FindBy(xpath = ".//td[@class='hidden-xs hidden-sm']/select[@name='related_products[5][parent_id]']")
     private WebElement typeOfCdCard;
 
+    @FindBy(xpath = ".//h1[text()='EQUIPMENT LEASE']")
+    private WebElement leasTitle;
 
+    @FindBy(xpath = ".//h1[text()='SOFTWARE SUBSCRIPTION SERVICE (SaaS) AGREEMENT']")
+    private WebElement saasTitle;
 
+    @FindBy(xpath = ".//h1[text()='EZSMARTCAM PURCHASE AND DATA SERVICES AGREEMENT']")
+    private WebElement cameraTitle;
 
 
     public ModalEldPage(WebDriver webDriver) {
@@ -220,42 +228,105 @@ EQUIPMENT LEASE AND SOFTWARE SUBSCRIPTION SERVICE AGREEMENT
         actionsWithOurElements.clickOnElement(buttonConfirm);
     }
 
+    public void checkForSaasLeasTitleInAgreement(){
+        actionsWithOurElements.isElementDisplay(saasTitle);
+    }
+
+    public void checkForLeasTitleInAgreement(){
+        actionsWithOurElements.isElementDisplay(leasTitle);
+    }
+
+    public void checkForCameraTitleInAgreement(){
+        actionsWithOurElements.isElementDisplay(cameraTitle);
+    }
+
 
 
     @Step
-    public void doCancelAgreementForManagerOrder(){
-
+    public void doCancelAgreementForManagerOrder(String quantityOfDevices, String quantityCameraCP){
+        if (Integer.parseInt(quantityOfDevices) > 0 & Integer.parseInt(quantityCameraCP) > 0 ){
             waitABit(3);
+            checkForLeasTitleInAgreement();
+            waitABit(2);
+            checkForSaasLeasTitleInAgreement();
+            waitABit(2);
+            checkForCameraTitleInAgreement();
             clickButtonFastMove();
-            waitABit(3);
             clickButtonCancel();
             waitABit(3);
             clickButtonConfirm();
             waitABit(3);
             logger.info("Order was canceled");
+        } else if (Integer.parseInt(quantityOfDevices) > 0 & Integer.parseInt(quantityCameraCP) == 0){
+            waitABit(3);
+            checkForLeasTitleInAgreement();
+            waitABit(2);
+            checkForSaasLeasTitleInAgreement();
+            clickButtonFastMove();
+            clickButtonCancel();
+            waitABit(3);
+            clickButtonConfirm();
+            waitABit(3);
+            logger.info("Order was canceled");
+        } else if (Integer.parseInt(quantityOfDevices) == 0 & Integer.parseInt(quantityCameraCP) > 0) {
+            waitABit(3);
+            checkForCameraTitleInAgreement();
+            clickButtonFastMove();
+            clickButtonCancel();
+            waitABit(3);
+            clickButtonConfirm();
+            waitABit(3);
+            logger.info("Order was canceled");
+        } else logger.info("No device and camera in order");
 
     }
 
     @Step
-    public void doAgreeAgreementForManagerOrder(){
-        waitABit(3);
-        clickButtonFastMove();
-        clickButtonAgree();
-        waitABit(3);
+    public void doAgreeAgreementForManagerOrder(String quantityOfDevices, String quantityCameraCP){
+        if (Integer.parseInt(quantityOfDevices) > 0 & Integer.parseInt(quantityCameraCP) > 0 ){
+            waitABit(3);
+            checkForLeasTitleInAgreement();
+            waitABit(2);
+            checkForSaasLeasTitleInAgreement();
+            waitABit(2);
+            checkForCameraTitleInAgreement();
+            clickButtonFastMove();
+            clickButtonAgree();
+            waitABit(3);
+            logger.info("Order was approve");
+        } else if (Integer.parseInt(quantityOfDevices) > 0 & Integer.parseInt(quantityCameraCP) == 0){
+            waitABit(3);
+            checkForLeasTitleInAgreement();
+            waitABit(2);
+            checkForSaasLeasTitleInAgreement();
+            clickButtonFastMove();
+            clickButtonAgree();
+            waitABit(3);
+            logger.info("Order was approve");
+        } else if (Integer.parseInt(quantityOfDevices) == 0 & Integer.parseInt(quantityCameraCP) > 0) {
+            waitABit(3);
+            checkForCameraTitleInAgreement();
+            clickButtonFastMove();
+            clickButtonAgree();
+            waitABit(3);
+            logger.info("Order was approve");
+        } else logger.info("No device and camera in order");
+
+
     }
 
-    /**
-     *
-     * @param quantityOfDevices
-     */
     @Step
     public void doAgreeAgreement(String quantityOfDevices){
         int num = Integer.parseInt(quantityOfDevices);
         if (num > 0){
             clickAgreement();
+            waitABit(2);
+            checkForLeasTitleInAgreement();
+            waitABit(2);
+            checkForSaasLeasTitleInAgreement();
             clickButtonFastMove();
             clickButtonAgree();
-            logger.info("Agreement camera was agreed");
+            logger.info("Agreement ELD was agreed");
         }
         else {
             logger.info("No agreement in order");
@@ -267,6 +338,7 @@ EQUIPMENT LEASE AND SOFTWARE SUBSCRIPTION SERVICE AGREEMENT
         int num = Integer.parseInt(quantityCameraCP);
         if (num > 0){
             doAgreementCamera();
+            checkForCameraTitleInAgreement();
             clickButtonFastMove();
             clickButtonAgree();
             logger.info("Agreement camera was agreed");
