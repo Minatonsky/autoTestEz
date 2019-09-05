@@ -17,7 +17,7 @@ public class ManagerDoOrderFleetAgreeParamsTest extends ParentManagerOrderParams
 
     @Test
     public void managerDoOrderFleetAgree() throws IOException, InterruptedException, SQLException, ClassNotFoundException {
-        userEldPage.checkAndDeleteNewOrderBeforeTestFleet(dataFleetId.get("fleetId").toString());
+        userEldPage.checkAndCancelNewOrderBeforeTestFleet(dataFleetId.get("fleetId").toString());
         String idLastOrderBeforeTest = utilsForDB.getLastOrderIdForFleet(dataFleetId.get("fleetId").toString());
         utilsForDB.setCurrentDueForFleet(currentDue, dataFleetId.get("fleetId").toString());
 

@@ -56,7 +56,7 @@ public class ParentFleetOrderParamsTest extends ParentTest {String  quantityOfDe
     @Before
     @Test
     public void addNewOrder() throws  SQLException, IOException, ClassNotFoundException {
-        userEldPage.checkAndDeleteNewOrderBeforeTestFleet(dataFleetId.get("fleetId").toString());
+        userEldPage.checkAndCancelNewOrderBeforeTestFleet(dataFleetId.get("fleetId").toString());
         String idLastOrderBeforeTest = utilsForDB.getLastOrderIdForFleet(dataFleetId.get("fleetId").toString());
         utilsForDB.setCurrentDueForFleet(currentDue, dataFleetId.get("fleetId").toString());
 

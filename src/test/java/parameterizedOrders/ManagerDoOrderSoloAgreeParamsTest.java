@@ -16,7 +16,7 @@ public class ManagerDoOrderSoloAgreeParamsTest extends ParentManagerOrderParamsT
 
     @Test
     public void managerDoOrderSoloAgree() throws IOException, SQLException, ClassNotFoundException {
-        userEldPage.checkAndDeleteNewOrderBeforeTestSolo(dataSoloId.get("soloId").toString());
+        userEldPage.checkAndCancelNewOrderBeforeTestSolo(dataSoloId.get("soloId").toString());
         String idLastOrderBeforeTest = utilsForDB.getLastOrderIdForFleet(dataSoloId.get("soloId").toString());
         utilsForDB.setCurrentDueForSolo(currentDue, dataSoloId.get("soloId").toString());
 

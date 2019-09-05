@@ -1907,3 +1907,243 @@ Session ID: d368236a18d6ad7b69708965302ad6a9
 2019-03-09 17:42:22   INFO [libs.ActionsWithOurElements] : Element was clicked
 2019-03-09 17:42:22   INFO [libs.ActionsWithOurElements] : Element was clicked
 2019-03-09 17:42:29   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-03-09 18:46:40   INFO [orders.ParentFleetTest] : Chrome will be started
+2019-03-09 18:46:48   INFO [orders.ParentFleetTest] : Chrome is started
+2019-03-09 18:46:53   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-03-09 18:46:56   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-03-09 18:46:57   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-03-09 18:46:59   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-03-09 18:47:05   INFO [pages.LoginPage] : Login Page was opened
+2019-03-09 18:47:06   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-03-09 18:47:06   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2019-03-09 18:47:06   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-03-09 18:47:06   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-03-09 18:47:13   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-03-09 18:47:14   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-03-09 18:47:20  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href="/dash/eld/" class="dash_url_button">...</a> is not clickable at point (96, 166). Other element would receive the click: <h1 class="title text-center">...</h1>
+  (Session info: chrome=76.0.3809.132)
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'DESKTOP-UD8IPI4', ip: '100.80.1.70', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.132, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\denku\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51821}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: b9d1beaa832d98570023a8ea0823493a
+2019-03-09 19:01:07   INFO [orders.ParentFleetTest] : Chrome will be started
+2019-03-09 19:01:16   INFO [orders.ParentFleetTest] : Chrome is started
+2019-03-09 19:01:22   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-03-09 19:01:24   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-03-09 19:01:26   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-03-09 19:01:28   INFO [pages.UserEldPage] : Order with status New was delete
+2019-03-09 19:01:28   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-03-09 19:01:30   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-03-09 19:01:36   INFO [pages.LoginPage] : Login Page was opened
+2019-03-09 19:01:36   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-03-09 19:01:37   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2019-03-09 19:01:37   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-03-09 19:01:37   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-03-09 19:01:44   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-03-09 19:01:44   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-03-09 19:01:50   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-03-09 19:01:54   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-03-09 19:02:34  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: .//select[@name='state']' (tried for 20 second(s) with 500 milliseconds interval)
+2019-03-09 20:46:18   INFO [orders.ParentFleetTest] : Chrome will be started
+2019-03-09 20:46:28   INFO [orders.ParentFleetTest] : Chrome is started
+2019-03-09 20:46:33   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-03-09 20:46:36   INFO [pages.ModalEldPage] : User have not Order with status New
+2019-03-09 20:46:36   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-03-09 20:46:38   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-03-09 20:46:44   INFO [pages.LoginPage] : Login Page was opened
+2019-03-09 20:46:45   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-03-09 20:46:45   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2019-03-09 20:46:45   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-03-09 20:46:46   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-03-09 20:46:52   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-03-09 20:46:53   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-03-09 20:58:36   INFO [orders.ParentFleetTest] : Chrome will be started
+2019-03-09 20:58:44   INFO [orders.ParentFleetTest] : Chrome is started
+2019-03-09 20:58:49   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-03-09 20:58:52   INFO [pages.ModalEldPage] : User have not Order with status New
+2019-03-09 20:58:52   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-03-09 20:58:54   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-03-09 20:59:00   INFO [pages.LoginPage] : Login Page was opened
+2019-03-09 20:59:01   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-03-09 20:59:01   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2019-03-09 20:59:01   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-03-09 20:59:01   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-03-09 20:59:08   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-03-09 20:59:08   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-03-09 21:03:07   INFO [orders.ParentFleetTest] : Chrome will be started
+2019-03-09 21:03:15   INFO [orders.ParentFleetTest] : Chrome is started
+2019-03-09 21:03:21   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-03-09 21:03:23   INFO [pages.ModalEldPage] : 2
+2019-03-09 21:07:37   INFO [orders.ParentFleetTest] : Chrome will be started
+2019-03-09 21:07:46   INFO [orders.ParentFleetTest] : Chrome is started
+2019-03-09 21:07:51   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-03-09 21:07:58   INFO [pages.LoginPage] : Login Page was opened
+2019-03-09 21:07:58   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-03-09 21:07:58   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2019-03-09 21:07:59   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-03-09 21:07:59   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-03-09 21:07:59   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-03-09 21:08:01   INFO [pages.ModalEldPage] : 2
+2019-03-09 21:08:07  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <i class="fa fa-arrow-down"></i> is not clickable at point (1199, 115). Other element would receive the click: <i class="fa fa-arrow-down"></i>
+  (Session info: chrome=76.0.3809.132)
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'DESKTOP-UD8IPI4', ip: '100.80.1.70', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.132, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\denku\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60092}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 75888ce24b91bb7036a0b4ca4a76ebe2
+2019-03-09 21:09:06   INFO [orders.ParentFleetTest] : Chrome will be started
+2019-03-09 21:09:14   INFO [orders.ParentFleetTest] : Chrome is started
+2019-03-09 21:09:20   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-03-09 21:09:27   INFO [pages.LoginPage] : Login Page was opened
+2019-03-09 21:09:27   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-03-09 21:09:27   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2019-03-09 21:09:28   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-03-09 21:09:28   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-03-09 21:09:28   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-03-09 21:09:30   INFO [pages.ModalEldPage] : 2
+2019-03-09 21:09:36  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <i class="fa fa-arrow-down"></i> is not clickable at point (1199, 115). Other element would receive the click: <i class="fa fa-arrow-down"></i>
+  (Session info: chrome=76.0.3809.132)
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'DESKTOP-UD8IPI4', ip: '100.80.1.70', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.132, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\denku\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60240}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 974b4b6980650abd9203489b03dbf09a
+2019-03-09 21:10:16   INFO [orders.ParentFleetTest] : Chrome will be started
+2019-03-09 21:10:24   INFO [orders.ParentFleetTest] : Chrome is started
+2019-03-09 21:10:30   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-03-09 21:10:41   INFO [pages.LoginPage] : Login Page was opened
+2019-03-09 21:10:41   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-03-09 21:10:41   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2019-03-09 21:10:41   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-03-09 21:10:42   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-03-09 21:10:42   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-03-09 21:10:43   INFO [pages.ModalEldPage] : 2
+2019-03-09 21:10:50  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <i class="fa fa-arrow-down"></i> is not clickable at point (1199, 115). Other element would receive the click: <i class="fa fa-arrow-down"></i>
+  (Session info: chrome=76.0.3809.132)
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'DESKTOP-UD8IPI4', ip: '100.80.1.70', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.132, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\denku\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60371}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c5883aca96fc95004d13b7700a8c624b
+2019-03-09 21:11:26   INFO [orders.ParentFleetTest] : Chrome will be started
+2019-03-09 21:11:35   INFO [orders.ParentFleetTest] : Chrome is started
+2019-03-09 21:11:40   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-03-09 21:11:47   INFO [pages.LoginPage] : Login Page was opened
+2019-03-09 21:11:47   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-03-09 21:11:48   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2019-03-09 21:11:48   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-03-09 21:11:48   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-03-09 21:11:48   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-03-09 21:11:50   INFO [pages.ModalEldPage] : 2
+2019-03-09 21:12:00  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button class="btn btn-default btn-cancel-lees" data-eventid="764" onclick="cancelManagerOrder(this,3079);" style="">...</button> is not clickable at point (108, 565). Other element would receive the click: <center>...</center>
+  (Session info: chrome=76.0.3809.132)
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'DESKTOP-UD8IPI4', ip: '100.80.1.70', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.132, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\denku\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60515}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 8cb8bcd31890685e43d1809012982f85
+2019-03-09 21:13:07   INFO [orders.ParentFleetTest] : Chrome will be started
+2019-03-09 21:13:15   INFO [orders.ParentFleetTest] : Chrome is started
+2019-03-09 21:13:21   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-03-09 21:13:29   INFO [pages.LoginPage] : Login Page was opened
+2019-03-09 21:13:29   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-03-09 21:13:29   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2019-03-09 21:13:30   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-03-09 21:13:30   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-03-09 21:13:30   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-03-09 21:13:32   INFO [pages.ModalEldPage] : 2
+2019-03-09 21:13:52  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <i class="fa fa-arrow-down"></i> is not clickable at point (1199, 115). Other element would receive the click: <i class="fa fa-arrow-down"></i>
+  (Session info: chrome=76.0.3809.132)
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'DESKTOP-UD8IPI4', ip: '100.80.1.70', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.132, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\denku\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60678}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 66c2a6f3397ac894c5bacbe7f65f1ba4
+2019-03-09 21:47:45   INFO [orders.ParentFleetTest] : Chrome will be started
+2019-03-09 21:47:54   INFO [orders.ParentFleetTest] : Chrome is started
+2019-03-09 21:47:59   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-03-09 21:48:06   INFO [pages.LoginPage] : Login Page was opened
+2019-03-09 21:48:06   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-03-09 21:48:06   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2019-03-09 21:48:07   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-03-09 21:48:07   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-03-09 21:48:07   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-03-09 21:48:09   INFO [pages.ModalEldPage] : 0
+2019-03-09 21:48:09   INFO [pages.ModalEldPage] : User have not Order with status New
+2019-03-09 21:48:09   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-03-09 21:48:14   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-03-09 21:48:14   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-03-09 21:48:21   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-03-09 21:48:24   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-03-09 21:52:17   INFO [orders.ParentFleetTest] : Chrome will be started
+2019-03-09 21:52:26   INFO [orders.ParentFleetTest] : Chrome is started
+2019-03-09 21:52:31   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-03-09 21:52:38   INFO [pages.LoginPage] : Login Page was opened
+2019-03-09 21:52:39   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-03-09 21:52:39   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2019-03-09 21:52:39   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-03-09 21:52:40   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-03-09 21:52:40   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-03-09 21:52:41   INFO [pages.ModalEldPage] : 1
+2019-03-09 21:52:48   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-03-09 21:52:51   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-03-09 21:52:54   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-03-09 21:52:57   INFO [pages.ModalEldPage] : Order with status New was canceled
+2019-03-09 21:52:57   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-03-09 21:53:02   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-03-09 21:53:03   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-03-09 21:53:09   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-03-09 21:53:12   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-03-09 21:53:13   INFO [libs.ActionsWithOurElements] : 1 was selected in Drop-down
+2019-03-09 21:53:13   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2019-03-09 21:53:14   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2019-03-09 21:53:14   INFO [libs.ActionsWithOurElements] : 1676475006 was inputted into element
+2019-03-09 21:53:15   INFO [libs.ActionsWithOurElements] : Street was inputted into element
+2019-03-09 21:53:15   INFO [libs.ActionsWithOurElements] : 2 was inputted into element
+2019-03-09 21:53:15   INFO [libs.ActionsWithOurElements] : Phoenix was inputted into element
+2019-03-09 21:53:16   INFO [libs.ActionsWithOurElements] : 30606 was inputted into element
+2019-03-09 21:53:16   INFO [libs.ActionsWithOurElements] : 0 was inputted into element
+2019-03-09 21:53:16   INFO [libs.ActionsWithOurElements] : 0 was inputted into element
+2019-05-09 18:40:06   INFO [orders.ParentFleetTest] : Chrome will be started
+2019-05-09 18:40:18   INFO [orders.ParentFleetTest] : Chrome is started
+2019-05-09 18:40:24   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-05-09 18:40:26   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-05-09 18:40:28   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-05-09 18:40:34   INFO [pages.LoginPage] : Login Page was opened
+2019-05-09 18:40:34   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-05-09 18:40:34   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2019-05-09 18:40:35   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-05-09 18:40:35   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-05-09 18:40:35   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-05-09 18:40:42   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-05-09 18:40:42   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-05-09 18:47:44   INFO [orders.ParentFleetTest] : Chrome will be started
+2019-05-09 18:47:53   INFO [orders.ParentFleetTest] : Chrome is started
+2019-05-09 18:47:58   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-05-09 18:48:00   INFO [pages.UserEldPage] : count new order2
+2019-05-09 18:48:00   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-05-09 18:48:02   INFO [pages.UserEldPage] : list id new order2
+2019-05-09 18:48:02   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-05-09 18:48:04   INFO [pages.UserEldPage] : event was delete
+2019-05-09 18:48:04   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-05-09 18:48:06   INFO [pages.UserEldPage] : Order with status New was canceled
+2019-05-09 18:48:06   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-05-09 18:48:07   INFO [pages.UserEldPage] : event was delete
+2019-05-09 18:48:07   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-05-09 18:48:09   INFO [pages.UserEldPage] : Order with status New was canceled
+2019-05-09 18:48:09   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-05-09 18:48:15   INFO [pages.LoginPage] : Login Page was opened
+2019-05-09 18:48:15   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-05-09 18:48:16   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2019-05-09 18:48:16   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-05-09 18:48:16   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-05-09 18:48:16   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-05-09 18:48:23   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-05-09 18:48:23   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-05-09 18:48:29   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-05-09 18:48:32   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-05-09 18:48:33   INFO [libs.ActionsWithOurElements] : 1 was selected in Drop-down
+2019-05-09 18:48:34   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2019-05-09 18:48:34   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2019-05-09 18:48:35   INFO [libs.ActionsWithOurElements] : 1676475006 was inputted into element

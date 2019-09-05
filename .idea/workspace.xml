@@ -4,6 +4,8 @@
     <list default="true" id="660eb711-957d-418e-9483-8b2931da6e6e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log/qalight.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/qalight.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/data/testLogin.xls" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/data/testLogin.xls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/data/testParameterizedOrder.xls" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/data/testParameterizedOrder.xls" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/libs/UtilsForDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/libs/UtilsForDB.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/ModalEldPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/ModalEldPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/UserEldPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/UserEldPage.java" afterDir="false" />
@@ -547,7 +549,14 @@
       <option name="project" value="LOCAL" />
       <updated>1567449479891</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="checkAC if user has order with status New before test was add">
+      <created>1567523127669</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1567523127669</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -584,7 +593,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="excel test was added" />
     <MESSAGE value="payment method test was added" />
     <MESSAGE value="manager test was added" />
     <MESSAGE value="take window test was added" />
@@ -609,7 +617,8 @@
     <MESSAGE value="checkAC ELD status was add" />
     <MESSAGE value="checkAC ELD status Paid\Completed was add" />
     <MESSAGE value="checkAC ELD status2 Paid\Completed was add" />
-    <option name="LAST_COMMIT_MESSAGE" value="checkAC ELD status2 Paid\Completed was add" />
+    <MESSAGE value="checkAC if user has order with status New before test was add" />
+    <option name="LAST_COMMIT_MESSAGE" value="checkAC if user has order with status New before test was add" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

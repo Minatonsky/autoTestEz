@@ -57,19 +57,15 @@ public class UserEldPage extends ParentPage {
             return true;
         } return false;
     }
-
     private void clickOnOrderEldConfirm() {
         actionsWithOurElements.clickOnElement("//*[@class='btn btn-primary changeStatus' and text()='Confirm']");
     }
-
     private void clickOnButtonCancelOrderDevice() {
         actionsWithOurElements.clickOnElement("//*[@class='btn btn-default' and text()='Cancel Order Device']");
     }
-
     private void clickOnOrderOnList(String idLocalDevice) {
         actionsWithOurElements.clickOnElement(".//*[@id='eld_table']//td[text()='" + idLocalDevice + "']");
     }
-
     public void enterIdOrder(String idLocalDevice){
         actionsWithOurElements.enterTextToElement(idHolder, idLocalDevice);
     }
@@ -93,29 +89,31 @@ public class UserEldPage extends ParentPage {
         return false;
     }
     @Step
-    public void checkAndDeleteNewOrderBeforeTestFleet(String fleetId) throws SQLException, IOException, ClassNotFoundException {
+    public void checkAndCancelNewOrderBeforeTestFleet(String fleetId) throws SQLException, IOException, ClassNotFoundException {
         int tempCountOrder = utilsForDB.getCountNewOrderForFleet(fleetId);
         if (tempCountOrder > 0){
             List<String> tempListWithOrderId = utilsForDB.getIdOrderWithStatusNewForFleet(fleetId);
             for (String element :
                     tempListWithOrderId) {
                 utilsForDB.deleteEventNewOrder(element);
-                logger.info("Order with status New was delete");
+                utilsForDB.changeStatusOrderToCancel(element);
+                logger.info("Order with status New was canceled");
             }
         } else logger.info("User have not Order with status New");
     }
-
     @Step
-    public void checkAndDeleteNewOrderBeforeTestSolo(String soloId) throws SQLException, IOException, ClassNotFoundException {
+    public void checkAndCancelNewOrderBeforeTestSolo(String soloId) throws SQLException, IOException, ClassNotFoundException {
         int tempCountOrder = utilsForDB.getCountNewOrderForSolo(soloId);
         if (tempCountOrder > 0){
             List<String> tempListWithOrderId = utilsForDB.getIdOrderWithStatusNewForSolo(soloId);
             for (String element :
                     tempListWithOrderId) {
                 utilsForDB.deleteEventNewOrder(element);
+                utilsForDB.changeStatusOrderToCancel(element);
                 logger.info("Order with status New was delete");
             }
         } else logger.info("User have not Order with status New");
     }
+
 
 }

@@ -122,4 +122,10 @@ public class UtilsForDB {
         dBMySQL.quit();
     }
 
+    @Step
+    public void changeStatusOrderToCancel(String idOrder) throws SQLException, IOException, ClassNotFoundException {
+        dBMySQL = new Database("MySQL_PADB_DB", "MySQL");
+        dBMySQL.changeTable("UPDATE eld_orders SET status = 2 WHERE id = " + idOrder + ";");
+        dBMySQL.quit();
+    }
 }
