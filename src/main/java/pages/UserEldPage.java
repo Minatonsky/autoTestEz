@@ -50,13 +50,14 @@ public class UserEldPage extends ParentPage {
         } else logger.info("Can not canceled devices, no devices in order");
     }
 
-    public boolean compareCancelDeviceStatusOrder(String orderStatus, String quantityOfDevices){
+    public boolean compareCancelStatusOrder(String orderStatus, String quantityOfDevices){
         if (Integer.parseInt(quantityOfDevices) > 0){
             return orderStatus.equals("2");
         } else if (Integer.parseInt(quantityOfDevices) == 0){
             return true;
-        } return false;
+        } else return false;
     }
+
     private void clickOnOrderEldConfirm() {
         actionsWithOurElements.clickOnElement("//*[@class='btn btn-primary changeStatus' and text()='Confirm']");
     }
@@ -84,6 +85,15 @@ public class UserEldPage extends ParentPage {
         List<String> tempStatusId = utilsForDB.getIdEldFromOrder(idOrder);
         for (String element : tempStatusId)
             if (element.equals("1")){
+                return true;
+            }
+        return false;
+    }
+    @Step
+    public boolean compareEldStatusInNewOrder(String idOrder) throws SQLException, IOException, ClassNotFoundException {
+        List<String> tempStatusId = utilsForDB.getIdEldFromOrder(idOrder);
+        for (String element : tempStatusId)
+            if (element.equals("0")){
                 return true;
             }
         return false;

@@ -47,6 +47,15 @@ public class UtilsForDB {
         dBMySQL.quit();
         return tempDeviceStatus;
     }
+
+    @Step
+    public List<String> getStatusEldInOrder(String idOrder) throws SQLException, IOException, ClassNotFoundException {
+        dBMySQL = new Database("MySQL_PADB_DB", "MySQL");
+        List<String> tempStatusEld = dBMySQL.selectResultSet("SELECT status FROM eld_scanners WHERE id IN (SELECT scannerId FROM eld_orders_ids WHERE orderId = " + idOrder + ");");
+        dBMySQL.quit();
+        return tempStatusEld;
+    }
+
     @Step
     public List<String> getLocalIdDevices(String idOrder) throws SQLException, IOException, ClassNotFoundException {
         dBMySQL = new Database("MySQL_PADB_DB", "MySQL");
@@ -77,6 +86,7 @@ public class UtilsForDB {
         dBMySQL.quit();
         return tempResult;
     }
+
     @Step
     public List<String> getIdEldFromOrder(String idOrder) throws SQLException, IOException, ClassNotFoundException {
         dBMySQL = new Database("MySQL_PADB_DB", "MySQL");
