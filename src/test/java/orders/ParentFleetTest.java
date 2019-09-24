@@ -67,7 +67,7 @@ public class ParentFleetTest extends ParentTest {
         String orderStatus = utilsForDB.getOrderStatus(idLastOrderAfterTest);
         waitABit(2);
         checkAC("Order is not Paid", financesPage.comparePaidOrderStatus(orderStatus) , true);
-        checkAC("Eld status in Paid order is not correct", userEldPage.compareEldStatusInPaidOrder(idLastOrderAfterTest), true);
+        checkAC("Eld status in Paid order is not correct", userEldPage.compareEldStatusInPaidOrder(idLastOrderAfterTest, dataForEldOrder.get("quantityOfDevices").toString()), true);
 
 
         dashboardPage.goToFinancesPage();

@@ -28,7 +28,7 @@ public class FleetEldOrderCompletedByManagerTest extends ParentFleetTest {
 
         String orderStatus = utilsForDB.getOrderStatus(idLastOrderAfterTest);
         checkAC("Order is not completed", financesPage.compareCompletedOrderStatus(orderStatus) , true);
-        checkAC("Eld status in Completed order is not correct", userEldPage.compareEldStatusInCompletedOrder(idLastOrderAfterTest), true);
+        checkAC("Eld status in Completed order is not correct", userEldPage.compareEldStatusInCompletedOrder(idLastOrderAfterTest, dataForEldOrder.get("quantityOfDevices").toString()), true);
 
         tearDown();
         setUp();

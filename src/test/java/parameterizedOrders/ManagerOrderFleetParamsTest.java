@@ -48,7 +48,7 @@ public class ManagerOrderFleetParamsTest extends ParentManagerOrderParamsTest {
 
         String orderStatus = utilsForDB.getOrderStatus(idLastOrderAfterTest);
         checkAC("Order is not New status", financesPage.compareNewOrderStatus(orderStatus) , true);
-        checkAC("Eld status in New order is not correct", userEldPage.compareEldStatusInNewOrder(idLastOrderAfterTest), true);
+        checkAC("Eld status in New order is not correct", userEldPage.compareEldStatusInNewOrder(idLastOrderAfterTest, quantityOfDevices), true);
 
         tearDown();
         setUp();
@@ -64,7 +64,7 @@ public class ManagerOrderFleetParamsTest extends ParentManagerOrderParamsTest {
 
         String orderStatusPaid = utilsForDB.getOrderStatus(idLastOrderAfterTest);
         checkAC("Order is not Paid", financesPage.comparePaidOrderStatus(orderStatusPaid) , true);
-        checkAC("Eld status in Paid order is not correct", userEldPage.compareEldStatusInPaidOrder(idLastOrderAfterTest), true);
+        checkAC("Eld status in Paid order is not correct", userEldPage.compareEldStatusInPaidOrder(idLastOrderAfterTest, quantityOfDevices), true);
 
 
     }
@@ -101,7 +101,7 @@ public class ManagerOrderFleetParamsTest extends ParentManagerOrderParamsTest {
 
         String orderStatus = utilsForDB.getOrderStatus(idLastOrderAfterTest);
         checkAC("Order is not New status", financesPage.compareNewOrderStatus(orderStatus) , true);
-        checkAC("Eld status in New order is not correct", userEldPage.compareEldStatusInNewOrder(idLastOrderAfterTest), true);
+        checkAC("Eld status in New order is not correct", userEldPage.compareEldStatusInNewOrder(idLastOrderAfterTest, quantityOfDevices), true);
 
         tearDown();
         setUp();

@@ -571,40 +571,40 @@ COMPARE METHODS CAMERA
     }
 
     public boolean compareCP2MonthFee(String quantityCameraCP){
-        double tempPrice = Integer.parseInt(quantityCameraCP) * 29.99;
+        double tempPrice = Math.round((Integer.parseInt(quantityCameraCP) * 29.99) * 100.0) / 100.0;
         if (Integer.parseInt(quantityCameraCP) > 0 ) {
             return Double.parseDouble(getCP2MonthFee().substring(1)) == tempPrice;
         }else return true;
     }
     public boolean compareCameraSetupFee(String quantityCameraCP){
-        double tempPrice = Integer.parseInt(quantityCameraCP) * 29.99;
+        double tempPrice = Math.round((Integer.parseInt(quantityCameraCP) * 29.99) * 100.0) / 100.0;
         if (Integer.parseInt(quantityCameraCP) > 0 ) {
             return Double.parseDouble(getCameraSetupFee().substring(1)) == tempPrice;
         }else return true;
     }
     public boolean compareCameraInstallationFee(String quantityCameraCP){
-        double tempPrice = Integer.parseInt(quantityCameraCP) * 100.00;
+        double tempPrice = Math.round((Integer.parseInt(quantityCameraCP) * 100.00) * 100.0) / 100.0;
         if (Integer.parseInt(quantityCameraCP) > 0 ) {
             return Double.parseDouble(getCameraInstallationFee().substring(1)) == tempPrice;
         }else return true;
     }
     public boolean compareEzSmartCamCP2(String quantityCameraCP){
-        double tempPrice = Integer.parseInt(quantityCameraCP) * 564.99;
+        double tempPrice = Math.round((Integer.parseInt(quantityCameraCP) * 564.99) * 100.0) / 100.0;
         if (Integer.parseInt(quantityCameraCP) > 0 ) {
             return Double.parseDouble(getEzSmartCamCP2().substring(1)) == tempPrice;
         }else return true;
     }
     public boolean compareEzSmartCamSVA(String quantityCameraSVA){
-        double tempPrice = Integer.parseInt(quantityCameraSVA) * 399.99;
+        double tempPrice = Math.round((Integer.parseInt(quantityCameraSVA) * 399.99) * 100.0) / 100.0;
         if (Integer.parseInt(quantityCameraSVA) > 0 ) {
             return Double.parseDouble(getEzSmartCamSVA().substring(1)) == tempPrice;
         }else return true;
     }
     public boolean compareSdCard(String quantityCameraCP, String valueSdCard){
         if (Integer.parseInt(quantityCameraCP) > 0 ){
-            double tempPricesD32Gb = Integer.parseInt(quantityCameraCP) * 39.99;
-            double tempPricesSD64Gb = Integer.parseInt(quantityCameraCP) * 59.99;
-            double tempPricesSD128Gb = Integer.parseInt(quantityCameraCP) * 109.99;
+            double tempPricesD32Gb = Math.round((Integer.parseInt(quantityCameraCP) * 39.99) * 100.0) / 100.0;
+            double tempPricesSD64Gb = Math.round((Integer.parseInt(quantityCameraCP) * 59.99) * 100.0) / 100.0;
+            double tempPricesSD128Gb = Math.round((Integer.parseInt(quantityCameraCP) * 109.99) * 100.0) / 100.0;
             if (Integer.parseInt(valueSdCard) == 7 ) {
                 return Double.parseDouble(getSd32Gb().substring(1)) == tempPricesD32Gb;
             }else if (Integer.parseInt(valueSdCard) == 8 ) {
@@ -678,7 +678,7 @@ COMPARE METHODS TOTAL PRICE
         } return 0;
     }
     private double countDepositFeePrice(String  quantityOfDevices){
-        double depositFee = Integer.parseInt(quantityOfDevices) * 49.99;
+        double depositFee = Math.round((Integer.parseInt(quantityOfDevices) * 49.99) * 100.0) / 100.0;
         return depositFee;
     }
     private double countDeliveryPrice(){

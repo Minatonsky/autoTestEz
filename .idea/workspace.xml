@@ -2,25 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="660eb711-957d-418e-9483-8b2931da6e6e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/data/PAYMENTS METHODS.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/parameterizedOrders/FleetOrderParamsTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log/qalight.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/qalight.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/data/testParameterizedOrder.xls" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/data/testParameterizedOrder.xls" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/libs/UtilsForDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/libs/UtilsForDB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/ModalEldPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/ModalEldPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/UserEldPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/UserEldPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/orders/FleetEldOrderCancelByUserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/orders/FleetEldOrderCancelByUserTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/orders/SoloEldOrderCancelByUserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/orders/SoloEldOrderCancelByUserTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/parameterizedOrders/FleetDoOrderAfterCanceledOrderParamsTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/parameterizedOrders/FleetDoOrderManagerCanceledOrderParamsTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/parameterizedOrders/FleetDoOrderManagerCompletedOrderParamsTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/parameterizedOrders/ManagerDoOrderFleetAgreeParamsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/parameterizedOrders/ManagerOrderFleetParamsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/parameterizedOrders/ManagerDoOrderFleetCancelParamsTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/parameterizedOrders/ManagerDoOrderSoloAgreeParamsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/parameterizedOrders/ManagerOrderSoloParamsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/parameterizedOrders/ManagerDoOrderSoloCanceledParamsTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/parameterizedOrders/SoloDoOrderAfterCanceledOrderParamsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/parameterizedOrders/SoloOrderParamsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/parameterizedOrders/SoloDoOrderManagerCanceledParamsTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/parameterizedOrders/SoloDoOrderManagerCompletedParamsTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/orders/FleetEldOrderCompletedByManagerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/orders/FleetEldOrderCompletedByManagerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/orders/ParentFleetTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/orders/ParentFleetTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/orders/ParentSoloTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/orders/ParentSoloTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/orders/SoloEldOrderCompletedByManagerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/orders/SoloEldOrderCompletedByManagerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/parameterizedOrders/FleetOrderParamsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/parameterizedOrders/FleetOrderParamsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/parameterizedOrders/ManagerOrderFleetParamsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/parameterizedOrders/ManagerOrderFleetParamsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/parameterizedOrders/ManagerOrderSoloParamsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/parameterizedOrders/ManagerOrderSoloParamsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/parameterizedOrders/ParentFleetOrderParamsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/parameterizedOrders/ParentFleetOrderParamsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/parameterizedOrders/ParentSoloOrderParamsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/parameterizedOrders/ParentSoloOrderParamsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/parameterizedOrders/SoloOrderParamsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/parameterizedOrders/SoloOrderParamsTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -113,7 +109,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Maven.SoloOrders">
+  <component name="RunManager" selected="JUnit.FleetOrderParamsTest.cancelDevicesByUser">
     <configuration name="FleetOrderParamsTest.cancelDevicesByUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="testdevEzlogz" />
       <extension name="coverage">
@@ -566,7 +562,14 @@
       <option name="project" value="LOCAL" />
       <updated>1567705707560</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="refactor was add">
+      <created>1568833345015</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1568833345015</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -603,7 +606,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="manager test was added" />
     <MESSAGE value="take window test was added" />
     <MESSAGE value="union manager test was added" />
     <MESSAGE value="solo and manager different test was added" />
@@ -628,7 +630,8 @@
     <MESSAGE value="checkAC ELD status2 Paid\Completed was add" />
     <MESSAGE value="checkAC if user has order with status New before test was add" />
     <MESSAGE value="new method if user has order with status New before test was add" />
-    <option name="LAST_COMMIT_MESSAGE" value="new method if user has order with status New before test was add" />
+    <MESSAGE value="refactor was add" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor was add" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

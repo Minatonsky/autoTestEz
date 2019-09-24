@@ -2529,3 +2529,574 @@ Session ID: 66c2a6f3397ac894c5bacbe7f65f1ba4
 2019-09-09 11:16:06   INFO [libs.ActionsWithOurElements] : Element was clicked
 2019-09-09 11:16:13   INFO [libs.ActionsWithOurElements] : Element was clicked
 2019-09-09 11:16:17   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2019-24-09 09:59:11   INFO [parameterizedOrders.FleetOrderParamsTest] : Chrome will be started
+2019-24-09 09:59:22   INFO [parameterizedOrders.FleetOrderParamsTest] : Chrome is started
+2019-24-09 09:59:27   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-24-09 09:59:30   INFO [pages.UserEldPage] : User have not Order with status New
+2019-24-09 09:59:30   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-24-09 09:59:32   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-24-09 09:59:38   INFO [pages.LoginPage] : Login Page was opened
+2019-24-09 09:59:38   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-24-09 09:59:38   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2019-24-09 09:59:39   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-24-09 09:59:39   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-24-09 09:59:47   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-24-09 09:59:47   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-24-09 09:59:53   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-24-09 09:59:57   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-24-09 09:59:58   INFO [libs.ActionsWithOurElements] : 1 was selected in Drop-down
+2019-24-09 09:59:58   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2019-24-09 09:59:58   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2019-24-09 09:59:59   INFO [libs.ActionsWithOurElements] : 1676475006 was inputted into element
+2019-24-09 09:59:59   INFO [libs.ActionsWithOurElements] : Street was inputted into element
+2019-24-09 09:59:59   INFO [libs.ActionsWithOurElements] : 2 was inputted into element
+2019-24-09 09:59:59   INFO [libs.ActionsWithOurElements] : Phoenix was inputted into element
+2019-24-09 10:00:00   INFO [libs.ActionsWithOurElements] : 30606 was inputted into element
+2019-24-09 10:00:00   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-24-09 10:00:01   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-24-09 10:00:01   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-24-09 10:00:01   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-24-09 10:00:02   INFO [libs.ActionsWithOurElements] : 0 was inputted into element
+2019-24-09 10:00:02   INFO [pages.ModalEldPage] : No cd card in order
+2019-24-09 10:00:02   INFO [pages.ModalEldPage] : No camera sva in order
+2019-24-09 10:00:04   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-24-09 10:00:04   INFO [libs.ActionsWithOurElements] : checkbox was checked
+2019-24-09 10:00:04   INFO [libs.ActionsWithOurElements] : checkbox is already unchecked
+2019-24-09 10:00:05   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-24-09 10:00:05   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-24-09 10:00:05   INFO [pages.ModalEldPage] : Payment Method oneYearSubscription was selected
+2019-24-09 10:00:05   INFO [pages.ModalEldPage] : Payment Method Camera was not selected, no camera in order
+2019-24-09 10:00:09   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2019-24-09 10:00:10   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2019-24-09 10:00:30   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2019-24-09 10:00:31   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2019-24-09 10:00:32   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2019-24-09 10:00:33   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2019-24-09 10:00:34   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2019-24-09 10:00:35   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2019-24-09 10:00:36   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2019-24-09 10:00:37   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2019-24-09 10:00:38   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2019-24-09 10:00:39   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2019-24-09 10:00:40   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2019-24-09 10:01:00   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2019-24-09 10:01:01   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2019-24-09 10:01:02   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-24-09 10:01:04   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2019-24-09 10:01:06   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2019-24-09 10:01:06   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-24-09 10:01:06   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-24-09 10:01:06   INFO [pages.ModalEldPage] : Agreement ELD was agreed
+2019-24-09 10:01:06   INFO [pages.ModalEldPage] : No agreement camera in order
+2019-24-09 10:01:06   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-24-09 10:01:06   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-24-09 10:01:09   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2019-24-09 10:01:09   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-24-09 10:01:12   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2019-24-09 10:01:12   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-24-09 10:01:15   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2019-24-09 10:01:18   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-24-09 10:01:21   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-24-09 10:01:24   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2019-24-09 10:01:24   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-24-09 10:01:29   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-24-09 10:01:32   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-24-09 10:01:34   INFO [libs.ActionsWithOurElements] : 454 was inputted into element
+2019-24-09 10:01:35   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-24-09 10:01:36   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-24-09 10:01:36   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-24-09 10:01:36   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-24-09 10:01:39   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2019-24-09 10:01:39   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-24-09 10:01:42   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2019-24-09 10:01:45   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-24-09 10:01:48   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-24-09 10:01:51   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2019-24-09 10:01:52   INFO [parameterizedOrders.FleetOrderParamsTest] : Chrome will be started
+2019-24-09 10:01:58   INFO [parameterizedOrders.FleetOrderParamsTest] : Chrome is started
+2019-24-09 10:02:02   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-24-09 10:02:03   INFO [pages.UserEldPage] : User have not Order with status New
+2019-24-09 10:02:03   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-24-09 10:02:05   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-24-09 10:02:12   INFO [pages.LoginPage] : Login Page was opened
+2019-24-09 10:02:12   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-24-09 10:02:12   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2019-24-09 10:02:12   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-24-09 10:02:13   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-24-09 10:02:19   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-24-09 10:02:20   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-24-09 10:02:26   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-24-09 10:02:29   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-24-09 10:02:30   INFO [libs.ActionsWithOurElements] : 1 was selected in Drop-down
+2019-24-09 10:02:30   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2019-24-09 10:02:31   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2019-24-09 10:02:31   INFO [libs.ActionsWithOurElements] : 1676475006 was inputted into element
+2019-24-09 10:02:31   INFO [libs.ActionsWithOurElements] : Street was inputted into element
+2019-24-09 10:02:32   INFO [libs.ActionsWithOurElements] : 2 was inputted into element
+2019-24-09 10:02:32   INFO [libs.ActionsWithOurElements] : Phoenix was inputted into element
+2019-24-09 10:02:32   INFO [libs.ActionsWithOurElements] : 30606 was inputted into element
+2019-24-09 10:02:33   INFO [libs.ActionsWithOurElements] : 2 was inputted into element
+2019-24-09 10:02:33   INFO [libs.ActionsWithOurElements] : 2 was inputted into element
+2019-24-09 10:02:33   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-24-09 10:02:34   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-24-09 10:02:34   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-24-09 10:02:35   INFO [libs.ActionsWithOurElements] : 8 was selected in Drop-down
+2019-24-09 10:02:35   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2019-24-09 10:02:37   INFO [libs.ActionsWithOurElements] : checkbox is already unchecked
+2019-24-09 10:02:38   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-24-09 10:02:38   INFO [libs.ActionsWithOurElements] : checkbox was checked
+2019-24-09 10:02:38   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-24-09 10:02:38   INFO [pages.ModalEldPage] : Payment Method monthToMonth was selected
+2019-24-09 10:02:38   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-24-09 10:02:38   INFO [pages.ModalEldPage] : Payment Method buyoutContract was selected
+2019-24-09 10:02:42   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2019-24-09 10:02:43   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2019-24-09 10:02:43   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2019-24-09 10:02:44   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2019-24-09 10:02:45   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2019-24-09 10:02:46   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2019-24-09 10:02:48   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2019-24-09 10:02:49   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2019-24-09 10:02:50   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2019-24-09 10:02:51   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2019-24-09 10:02:52   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2019-24-09 10:02:53   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2019-24-09 10:02:54   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2019-24-09 10:02:54   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2019-24-09 10:02:55   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2019-24-09 10:02:56   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-24-09 10:02:58   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2019-24-09 10:03:00   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2019-24-09 10:03:00   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-24-09 10:03:00   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-24-09 10:03:00   INFO [pages.ModalEldPage] : Agreement ELD was agreed
+2019-24-09 10:03:00   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-24-09 10:03:01   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2019-24-09 10:03:01   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-24-09 10:03:01   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-24-09 10:03:01   INFO [pages.ModalEldPage] : Agreement camera was agreed
+2019-24-09 10:03:02   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-24-09 10:03:02   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-24-09 10:03:04   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2019-24-09 10:03:04   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-24-09 10:03:07   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2019-24-09 10:03:07   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-24-09 10:03:10   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2019-24-09 10:03:13   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-24-09 10:03:16   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-24-09 10:03:19   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2019-24-09 10:03:19   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-24-09 10:03:24   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-24-09 10:03:27   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-24-09 10:03:29   INFO [libs.ActionsWithOurElements] : 454 was inputted into element
+2019-24-09 10:03:31   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-24-09 10:03:31   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-24-09 10:03:32   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-24-09 10:03:32   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-24-09 10:03:34   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2019-24-09 10:03:34   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-24-09 10:03:37   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2019-24-09 10:03:40   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-24-09 10:03:43   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-24-09 10:03:46   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2019-24-09 10:03:47   INFO [parameterizedOrders.FleetOrderParamsTest] : Chrome will be started
+2019-24-09 10:03:53   INFO [parameterizedOrders.FleetOrderParamsTest] : Chrome is started
+2019-24-09 10:03:57   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-24-09 10:03:58   INFO [pages.UserEldPage] : User have not Order with status New
+2019-24-09 10:03:58   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-24-09 10:04:00   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-24-09 10:04:07   INFO [pages.LoginPage] : Login Page was opened
+2019-24-09 10:04:07   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-24-09 10:04:07   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2019-24-09 10:04:08   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-24-09 10:04:08   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-24-09 10:04:14   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-24-09 10:04:15   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-24-09 10:04:21   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-24-09 10:04:24   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-24-09 10:04:25   INFO [libs.ActionsWithOurElements] : 1 was selected in Drop-down
+2019-24-09 10:04:25   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2019-24-09 10:04:26   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2019-24-09 10:04:26   INFO [libs.ActionsWithOurElements] : 1676475006 was inputted into element
+2019-24-09 10:04:26   INFO [libs.ActionsWithOurElements] : Street was inputted into element
+2019-24-09 10:04:27   INFO [libs.ActionsWithOurElements] : 2 was inputted into element
+2019-24-09 10:04:27   INFO [libs.ActionsWithOurElements] : Phoenix was inputted into element
+2019-24-09 10:04:27   INFO [libs.ActionsWithOurElements] : 30606 was inputted into element
+2019-24-09 10:04:28   INFO [libs.ActionsWithOurElements] : 0 was inputted into element
+2019-24-09 10:04:28   INFO [libs.ActionsWithOurElements] : 3 was inputted into element
+2019-24-09 10:04:28   INFO [libs.ActionsWithOurElements] : 4 was inputted into element
+2019-24-09 10:04:28   INFO [libs.ActionsWithOurElements] : 5 was inputted into element
+2019-24-09 10:04:29   INFO [libs.ActionsWithOurElements] : 0 was inputted into element
+2019-24-09 10:04:29   INFO [pages.ModalEldPage] : No cd card in order
+2019-24-09 10:04:29   INFO [pages.ModalEldPage] : No camera sva in order
+2019-24-09 10:04:31   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-24-09 10:04:31   INFO [libs.ActionsWithOurElements] : checkbox was checked
+2019-24-09 10:04:31   INFO [libs.ActionsWithOurElements] : checkbox is already unchecked
+2019-24-09 10:04:31   INFO [pages.ModalEldPage] : Payment Method was not selected, no devices in order
+2019-24-09 10:04:31   INFO [pages.ModalEldPage] : Payment Method Camera was not selected, no camera in order
+2019-24-09 10:04:35   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2019-24-09 10:04:36   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2019-24-09 10:04:56   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2019-24-09 10:04:57   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2019-24-09 10:04:58   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2019-24-09 10:04:59   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2019-24-09 10:05:00   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2019-24-09 10:05:01   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2019-24-09 10:05:02   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2019-24-09 10:05:03   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2019-24-09 10:05:04   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2019-24-09 10:05:05   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2019-24-09 10:05:06   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2019-24-09 10:05:27   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2019-24-09 10:05:28   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2019-24-09 10:05:28   INFO [pages.ModalEldPage] : No agreement in order
+2019-24-09 10:05:28   INFO [pages.ModalEldPage] : No agreement camera in order
+2019-24-09 10:05:28   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-24-09 10:05:28   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-24-09 10:05:31   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2019-24-09 10:05:31   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-24-09 10:05:33   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2019-24-09 10:05:33   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-24-09 10:05:36  ERROR [parameterizedOrders.FleetOrderParamsTest] : AC failed: Eld status in Paid order is not correct
+2019-24-09 10:05:37   INFO [parameterizedOrders.FleetOrderParamsTest] : Chrome will be started
+2019-24-09 10:05:43   INFO [parameterizedOrders.FleetOrderParamsTest] : Chrome is started
+2019-24-09 10:05:47   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-24-09 10:05:49   INFO [pages.UserEldPage] : User have not Order with status New
+2019-24-09 10:05:49   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-24-09 10:05:50   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-24-09 10:05:57   INFO [pages.LoginPage] : Login Page was opened
+2019-24-09 10:05:57   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-24-09 10:05:57   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2019-24-09 10:05:57   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-24-09 10:05:57   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-24-09 10:06:04   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-24-09 10:06:05   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-24-09 10:06:11   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-24-09 10:06:14   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-24-09 10:06:15   INFO [libs.ActionsWithOurElements] : 1 was selected in Drop-down
+2019-24-09 10:06:15   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2019-24-09 10:06:16   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2019-24-09 10:06:16   INFO [libs.ActionsWithOurElements] : 1676475006 was inputted into element
+2019-24-09 10:06:16   INFO [libs.ActionsWithOurElements] : Street was inputted into element
+2019-24-09 10:06:16   INFO [libs.ActionsWithOurElements] : 2 was inputted into element
+2019-24-09 10:06:17   INFO [libs.ActionsWithOurElements] : Phoenix was inputted into element
+2019-24-09 10:06:17   INFO [libs.ActionsWithOurElements] : 30606 was inputted into element
+2019-24-09 10:06:17   INFO [libs.ActionsWithOurElements] : 0 was inputted into element
+2019-24-09 10:06:18   INFO [libs.ActionsWithOurElements] : 0 was inputted into element
+2019-24-09 10:06:18   INFO [libs.ActionsWithOurElements] : 0 was inputted into element
+2019-24-09 10:06:18   INFO [libs.ActionsWithOurElements] : 0 was inputted into element
+2019-24-09 10:06:18   INFO [libs.ActionsWithOurElements] : 5 was inputted into element
+2019-24-09 10:06:19   INFO [libs.ActionsWithOurElements] : 7 was selected in Drop-down
+2019-24-09 10:06:19   INFO [libs.ActionsWithOurElements] : 3 was inputted into element
+2019-24-09 10:06:21   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-24-09 10:06:21   INFO [libs.ActionsWithOurElements] : checkbox was checked
+2019-24-09 10:06:22   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-24-09 10:06:22   INFO [libs.ActionsWithOurElements] : checkbox was checked
+2019-24-09 10:06:22   INFO [pages.ModalEldPage] : Payment Method was not selected, no devices in order
+2019-24-09 10:06:22   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-24-09 10:06:22   INFO [pages.ModalEldPage] : Payment Method buyoutContract was selected
+2019-24-09 10:06:26   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2019-24-09 10:06:27   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2019-24-09 10:06:47   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2019-24-09 10:06:48   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2019-24-09 10:06:49   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2019-24-09 10:06:50   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2019-24-09 10:06:51   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2019-24-09 10:06:52   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2019-24-09 10:06:53   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2019-24-09 10:06:54   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2019-24-09 10:06:55   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2019-24-09 10:06:56   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2019-24-09 10:06:58  ERROR [parameterizedOrders.FleetOrderParamsTest] : AC failed: SdCard prices is not correct
+2019-24-09 10:06:58   INFO [parameterizedOrders.FleetOrderParamsTest] : Chrome will be started
+2019-24-09 10:07:04   INFO [parameterizedOrders.FleetOrderParamsTest] : Chrome is started
+2019-24-09 10:07:08   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-24-09 10:07:10   INFO [pages.UserEldPage] : User have not Order with status New
+2019-24-09 10:07:10   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-24-09 10:07:11   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-24-09 10:07:18   INFO [pages.LoginPage] : Login Page was opened
+2019-24-09 10:07:18   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-24-09 10:07:18   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2019-24-09 10:07:18   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-24-09 10:07:19   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-24-09 10:07:25   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-24-09 10:07:25   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-24-09 10:07:32   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-24-09 10:07:35   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-24-09 10:07:36   INFO [libs.ActionsWithOurElements] : 1 was selected in Drop-down
+2019-24-09 10:07:36   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2019-24-09 10:07:37   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2019-24-09 10:07:37   INFO [libs.ActionsWithOurElements] : 1676475006 was inputted into element
+2019-24-09 10:07:37   INFO [libs.ActionsWithOurElements] : Street was inputted into element
+2019-24-09 10:07:37   INFO [libs.ActionsWithOurElements] : 2 was inputted into element
+2019-24-09 10:07:38   INFO [libs.ActionsWithOurElements] : Phoenix was inputted into element
+2019-24-09 10:07:38   INFO [libs.ActionsWithOurElements] : 30606 was inputted into element
+2019-24-09 10:07:38   INFO [libs.ActionsWithOurElements] : 5 was inputted into element
+2019-24-09 10:07:39   INFO [libs.ActionsWithOurElements] : 5 was inputted into element
+2019-24-09 10:07:39   INFO [libs.ActionsWithOurElements] : 5 was inputted into element
+2019-24-09 10:07:40   INFO [libs.ActionsWithOurElements] : 5 was inputted into element
+2019-24-09 10:07:40   INFO [libs.ActionsWithOurElements] : 2 was inputted into element
+2019-24-09 10:07:40   INFO [libs.ActionsWithOurElements] : 9 was selected in Drop-down
+2019-24-09 10:07:41   INFO [libs.ActionsWithOurElements] : 0 was inputted into element
+2019-24-09 10:07:43   INFO [libs.ActionsWithOurElements] : checkbox is already unchecked
+2019-24-09 10:07:43   INFO [libs.ActionsWithOurElements] : checkbox is already unchecked
+2019-24-09 10:07:43   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-24-09 10:07:43   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-24-09 10:07:43   INFO [pages.ModalEldPage] : Payment Method twoYearSubscription was selected
+2019-24-09 10:07:44   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-24-09 10:07:44   INFO [pages.ModalEldPage] : Payment Method buyoutContract was selected
+2019-24-09 10:07:48   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2019-24-09 10:07:49  ERROR [parameterizedOrders.FleetOrderParamsTest] : AC failed: DepositFee is not correct
+2019-24-09 10:33:29   INFO [parameterizedOrders.FleetOrderParamsTest] : Chrome will be started
+2019-24-09 10:33:37   INFO [parameterizedOrders.FleetOrderParamsTest] : Chrome is started
+2019-24-09 10:33:43   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-24-09 10:33:45   INFO [pages.UserEldPage] : User have not Order with status New
+2019-24-09 10:33:45   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-24-09 10:33:47   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-24-09 10:33:54   INFO [pages.LoginPage] : Login Page was opened
+2019-24-09 10:33:54   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-24-09 10:33:54   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2019-24-09 10:33:54   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-24-09 10:33:55   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-24-09 10:34:02   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-24-09 10:34:02   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-24-09 10:34:08   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-24-09 10:34:11   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-24-09 10:34:12   INFO [libs.ActionsWithOurElements] : 1 was selected in Drop-down
+2019-24-09 10:34:13   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2019-24-09 10:34:13   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2019-24-09 10:34:13   INFO [libs.ActionsWithOurElements] : 1676475006 was inputted into element
+2019-24-09 10:34:14   INFO [libs.ActionsWithOurElements] : Street was inputted into element
+2019-24-09 10:34:14   INFO [libs.ActionsWithOurElements] : 2 was inputted into element
+2019-24-09 10:34:14   INFO [libs.ActionsWithOurElements] : Phoenix was inputted into element
+2019-24-09 10:34:15   INFO [libs.ActionsWithOurElements] : 30606 was inputted into element
+2019-24-09 10:34:15   INFO [libs.ActionsWithOurElements] : 0 was inputted into element
+2019-24-09 10:34:15   INFO [libs.ActionsWithOurElements] : 3 was inputted into element
+2019-24-09 10:34:15   INFO [libs.ActionsWithOurElements] : 4 was inputted into element
+2019-24-09 10:34:15   INFO [libs.ActionsWithOurElements] : 5 was inputted into element
+2019-24-09 10:34:16   INFO [libs.ActionsWithOurElements] : 0 was inputted into element
+2019-24-09 10:34:16   INFO [pages.ModalEldPage] : No cd card in order
+2019-24-09 10:34:16   INFO [pages.ModalEldPage] : No camera sva in order
+2019-24-09 10:34:18   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-24-09 10:34:18   INFO [libs.ActionsWithOurElements] : checkbox was checked
+2019-24-09 10:34:18   INFO [libs.ActionsWithOurElements] : checkbox is already unchecked
+2019-24-09 10:34:18   INFO [pages.ModalEldPage] : Payment Method was not selected, no devices in order
+2019-24-09 10:34:18   INFO [pages.ModalEldPage] : Payment Method Camera was not selected, no camera in order
+2019-24-09 10:34:22   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2019-24-09 10:34:23   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2019-24-09 10:34:44   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2019-24-09 10:34:45   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2019-24-09 10:34:46   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2019-24-09 10:34:47   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2019-24-09 10:34:48   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2019-24-09 10:34:49   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2019-24-09 10:34:50   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2019-24-09 10:34:51   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2019-24-09 10:34:52   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2019-24-09 10:34:53   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2019-24-09 10:34:54   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2019-24-09 10:35:14   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2019-24-09 10:35:15   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2019-24-09 10:35:15   INFO [pages.ModalEldPage] : No agreement in order
+2019-24-09 10:35:15   INFO [pages.ModalEldPage] : No agreement camera in order
+2019-24-09 10:35:15   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-24-09 10:35:15   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-24-09 10:35:18   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2019-24-09 10:35:18   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-24-09 10:35:21   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2019-24-09 10:35:21   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-24-09 10:35:24   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2019-24-09 10:35:28   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-24-09 10:35:31   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-24-09 10:35:33   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2019-24-09 10:35:33   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-24-09 10:35:38   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-24-09 10:35:41   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-24-09 10:35:43   INFO [pages.UserEldPage] : Can not canceled devices, no devices in order
+2019-24-09 10:35:43   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-24-09 10:35:46   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2019-24-09 10:35:46   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-24-09 10:35:49   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2019-24-09 10:35:52   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-24-09 10:35:55   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-24-09 10:35:58   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2019-24-09 10:37:37   INFO [parameterizedOrders.FleetOrderParamsTest] : Chrome will be started
+2019-24-09 10:37:45   INFO [parameterizedOrders.FleetOrderParamsTest] : Chrome is started
+2019-24-09 10:37:50   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-24-09 10:37:52   INFO [pages.UserEldPage] : User have not Order with status New
+2019-24-09 10:37:52   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-24-09 10:37:54   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-24-09 10:38:01   INFO [pages.LoginPage] : Login Page was opened
+2019-24-09 10:38:01   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-24-09 10:38:02   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2019-24-09 10:38:02   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-24-09 10:38:02   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-24-09 10:38:09   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-24-09 10:38:09   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-24-09 10:38:16   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-24-09 10:38:19   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-24-09 10:38:20   INFO [libs.ActionsWithOurElements] : 1 was selected in Drop-down
+2019-24-09 10:38:20   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2019-24-09 10:38:21   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2019-24-09 10:38:21   INFO [libs.ActionsWithOurElements] : 1676475006 was inputted into element
+2019-24-09 10:38:21   INFO [libs.ActionsWithOurElements] : Street was inputted into element
+2019-24-09 10:38:22   INFO [libs.ActionsWithOurElements] : 2 was inputted into element
+2019-24-09 10:38:22   INFO [libs.ActionsWithOurElements] : Phoenix was inputted into element
+2019-24-09 10:38:22   INFO [libs.ActionsWithOurElements] : 30606 was inputted into element
+2019-24-09 10:38:22   INFO [libs.ActionsWithOurElements] : 0 was inputted into element
+2019-24-09 10:38:23   INFO [libs.ActionsWithOurElements] : 0 was inputted into element
+2019-24-09 10:38:23   INFO [libs.ActionsWithOurElements] : 0 was inputted into element
+2019-24-09 10:38:23   INFO [libs.ActionsWithOurElements] : 0 was inputted into element
+2019-24-09 10:38:24   INFO [libs.ActionsWithOurElements] : 5 was inputted into element
+2019-24-09 10:38:24   INFO [libs.ActionsWithOurElements] : 7 was selected in Drop-down
+2019-24-09 10:38:24   INFO [libs.ActionsWithOurElements] : 3 was inputted into element
+2019-24-09 10:38:26   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-24-09 10:38:26   INFO [libs.ActionsWithOurElements] : checkbox was checked
+2019-24-09 10:38:27   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-24-09 10:38:27   INFO [libs.ActionsWithOurElements] : checkbox was checked
+2019-24-09 10:38:27   INFO [pages.ModalEldPage] : Payment Method was not selected, no devices in order
+2019-24-09 10:38:27   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-24-09 10:38:27   INFO [pages.ModalEldPage] : Payment Method buyoutContract was selected
+2019-24-09 10:38:31   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2019-24-09 10:38:32   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2019-24-09 10:38:52   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2019-24-09 10:38:53   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2019-24-09 10:38:54   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2019-24-09 10:38:55   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2019-24-09 10:38:56   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2019-24-09 10:38:57   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2019-24-09 10:38:58   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2019-24-09 10:38:59   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2019-24-09 10:39:00   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2019-24-09 10:39:01   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2019-24-09 10:39:03  ERROR [parameterizedOrders.FleetOrderParamsTest] : AC failed: SdCard prices is not correct
+2019-24-09 10:54:39   INFO [parameterizedOrders.FleetOrderParamsTest] : Chrome will be started
+2019-24-09 10:54:47   INFO [parameterizedOrders.FleetOrderParamsTest] : Chrome is started
+2019-24-09 10:54:52   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-24-09 10:54:55   INFO [pages.UserEldPage] : User have not Order with status New
+2019-24-09 10:54:55   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-24-09 10:54:57   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-24-09 10:55:03   INFO [pages.LoginPage] : Login Page was opened
+2019-24-09 10:55:03   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-24-09 10:55:04   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2019-24-09 10:55:04   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-24-09 10:55:04   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-24-09 10:55:11   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-24-09 10:55:12   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-24-09 10:55:18   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-24-09 10:55:21   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-24-09 10:55:22   INFO [libs.ActionsWithOurElements] : 1 was selected in Drop-down
+2019-24-09 10:55:23   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2019-24-09 10:55:23   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2019-24-09 10:55:23   INFO [libs.ActionsWithOurElements] : 1676475006 was inputted into element
+2019-24-09 10:55:24   INFO [libs.ActionsWithOurElements] : Street was inputted into element
+2019-24-09 10:55:24   INFO [libs.ActionsWithOurElements] : 2 was inputted into element
+2019-24-09 10:55:24   INFO [libs.ActionsWithOurElements] : Phoenix was inputted into element
+2019-24-09 10:55:25   INFO [libs.ActionsWithOurElements] : 30606 was inputted into element
+2019-24-09 10:55:25   INFO [libs.ActionsWithOurElements] : 0 was inputted into element
+2019-24-09 10:55:25   INFO [libs.ActionsWithOurElements] : 0 was inputted into element
+2019-24-09 10:55:25   INFO [libs.ActionsWithOurElements] : 0 was inputted into element
+2019-24-09 10:55:25   INFO [libs.ActionsWithOurElements] : 0 was inputted into element
+2019-24-09 10:55:26   INFO [libs.ActionsWithOurElements] : 5 was inputted into element
+2019-24-09 10:55:26   INFO [libs.ActionsWithOurElements] : 7 was selected in Drop-down
+2019-24-09 10:55:26   INFO [libs.ActionsWithOurElements] : 3 was inputted into element
+2019-24-09 10:55:29   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-24-09 10:55:29   INFO [libs.ActionsWithOurElements] : checkbox was checked
+2019-24-09 10:55:29   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-24-09 10:55:29   INFO [libs.ActionsWithOurElements] : checkbox was checked
+2019-24-09 10:55:29   INFO [pages.ModalEldPage] : Payment Method was not selected, no devices in order
+2019-24-09 10:55:29   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-24-09 10:55:29   INFO [pages.ModalEldPage] : Payment Method buyoutContract was selected
+2019-24-09 10:55:33   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2019-24-09 10:55:34   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2019-24-09 10:55:54   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2019-24-09 10:55:55   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2019-24-09 10:55:56   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2019-24-09 10:55:57   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2019-24-09 10:55:58   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2019-24-09 10:55:59   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2019-24-09 10:56:01   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2019-24-09 10:56:02   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2019-24-09 10:56:03   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2019-24-09 10:56:04   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2019-24-09 10:56:04   INFO [pages.ModalEldPage] : 199.95000000000002
+2019-24-09 10:56:05  ERROR [parameterizedOrders.FleetOrderParamsTest] : AC failed: SdCard prices is not correct
+2019-24-09 10:57:16   INFO [parameterizedOrders.FleetOrderParamsTest] : Chrome will be started
+2019-24-09 10:57:25   INFO [parameterizedOrders.FleetOrderParamsTest] : Chrome is started
+2019-24-09 10:57:31   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-24-09 10:57:34   INFO [pages.UserEldPage] : User have not Order with status New
+2019-24-09 10:57:34   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-24-09 10:57:35   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-24-09 10:57:42   INFO [pages.LoginPage] : Login Page was opened
+2019-24-09 10:57:42   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-24-09 10:57:42   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2019-24-09 10:57:42   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2019-24-09 10:57:43   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-24-09 10:57:50   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-24-09 10:57:50   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-24-09 10:57:56   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-24-09 10:57:59   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-24-09 10:58:00   INFO [libs.ActionsWithOurElements] : 1 was selected in Drop-down
+2019-24-09 10:58:01   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2019-24-09 10:58:01   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2019-24-09 10:58:02   INFO [libs.ActionsWithOurElements] : 1676475006 was inputted into element
+2019-24-09 10:58:02   INFO [libs.ActionsWithOurElements] : Street was inputted into element
+2019-24-09 10:58:02   INFO [libs.ActionsWithOurElements] : 2 was inputted into element
+2019-24-09 10:58:02   INFO [libs.ActionsWithOurElements] : Phoenix was inputted into element
+2019-24-09 10:58:03   INFO [libs.ActionsWithOurElements] : 30606 was inputted into element
+2019-24-09 10:58:03   INFO [libs.ActionsWithOurElements] : 0 was inputted into element
+2019-24-09 10:58:03   INFO [libs.ActionsWithOurElements] : 0 was inputted into element
+2019-24-09 10:58:04   INFO [libs.ActionsWithOurElements] : 0 was inputted into element
+2019-24-09 10:58:04   INFO [libs.ActionsWithOurElements] : 0 was inputted into element
+2019-24-09 10:58:04   INFO [libs.ActionsWithOurElements] : 5 was inputted into element
+2019-24-09 10:58:04   INFO [libs.ActionsWithOurElements] : 7 was selected in Drop-down
+2019-24-09 10:58:05   INFO [libs.ActionsWithOurElements] : 3 was inputted into element
+2019-24-09 10:58:07   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-24-09 10:58:07   INFO [libs.ActionsWithOurElements] : checkbox was checked
+2019-24-09 10:58:07   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-24-09 10:58:07   INFO [libs.ActionsWithOurElements] : checkbox was checked
+2019-24-09 10:58:07   INFO [pages.ModalEldPage] : Payment Method was not selected, no devices in order
+2019-24-09 10:58:08   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-24-09 10:58:08   INFO [pages.ModalEldPage] : Payment Method buyoutContract was selected
+2019-24-09 10:58:12   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2019-24-09 10:58:13   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2019-24-09 10:58:33   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2019-24-09 10:58:34   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2019-24-09 10:58:35   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2019-24-09 10:58:36   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2019-24-09 10:58:37   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2019-24-09 10:58:38   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2019-24-09 10:58:39   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2019-24-09 10:58:40   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2019-24-09 10:58:41   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2019-24-09 10:58:42   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2019-24-09 10:58:43   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2019-24-09 10:59:03   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2019-24-09 10:59:04   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2019-24-09 10:59:04   INFO [pages.ModalEldPage] : No agreement in order
+2019-24-09 10:59:05   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-24-09 10:59:05   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2019-24-09 10:59:06   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-24-09 10:59:06   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-24-09 10:59:06   INFO [pages.ModalEldPage] : Agreement camera was agreed
+2019-24-09 10:59:07   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-24-09 10:59:07   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-24-09 10:59:09   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2019-24-09 10:59:09   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-24-09 10:59:12   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2019-24-09 10:59:12   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-24-09 10:59:15   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2019-24-09 10:59:18   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-24-09 10:59:21   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-24-09 10:59:24   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2019-24-09 10:59:24   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-24-09 10:59:29   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-24-09 10:59:32   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-24-09 10:59:34   INFO [pages.UserEldPage] : Can not canceled devices, no devices in order
+2019-24-09 10:59:34   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-24-09 10:59:36   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2019-24-09 10:59:36   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-24-09 10:59:39   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2019-24-09 10:59:42   INFO [libs.ActionsWithOurElements] : Element was clicked
+2019-24-09 10:59:45   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-24-09 10:59:48   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed

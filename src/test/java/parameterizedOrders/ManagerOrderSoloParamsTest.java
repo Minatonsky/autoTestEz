@@ -47,7 +47,7 @@ public class ManagerOrderSoloParamsTest extends ParentManagerOrderParamsTest {
 
         String orderStatus = utilsForDB.getOrderStatus(idLastOrderAfterTest);
         checkAC("Order is not New status", financesPage.compareNewOrderStatus(orderStatus) , true);
-        checkAC("Eld status in New order is not correct", userEldPage.compareEldStatusInNewOrder(idLastOrderAfterTest), true);
+        checkAC("Eld status in New order is not correct", userEldPage.compareEldStatusInNewOrder(idLastOrderAfterTest, quantityOfDevices), true);
 
         tearDown();
         setUp();
@@ -64,7 +64,7 @@ public class ManagerOrderSoloParamsTest extends ParentManagerOrderParamsTest {
 
         String orderStatusPaid = utilsForDB.getOrderStatus(idLastOrderAfterTest);
         checkAC("Order is not Paid", financesPage.comparePaidOrderStatus(orderStatusPaid) , true);
-        checkAC("Eld status in Paid order is not correct", userEldPage.compareEldStatusInPaidOrder(idLastOrderAfterTest), true);
+        checkAC("Eld status in Paid order is not correct", userEldPage.compareEldStatusInPaidOrder(idLastOrderAfterTest, quantityOfDevices), true);
 
         tearDown();
         setUp();
@@ -78,7 +78,7 @@ public class ManagerOrderSoloParamsTest extends ParentManagerOrderParamsTest {
 
         String orderStatusCompleted = utilsForDB.getOrderStatus(idLastOrderAfterTest);
         checkAC("Order is not completed", financesPage.compareCompletedOrderStatus(orderStatusCompleted), true);
-        checkAC("Eld status in Completed order is not correct", userEldPage.compareEldStatusInCompletedOrder(idLastOrderAfterTest), true);
+        checkAC("Eld status in Completed order is not correct", userEldPage.compareEldStatusInCompletedOrder(idLastOrderAfterTest, quantityOfDevices), true);
 
 
     }
@@ -115,7 +115,7 @@ public class ManagerOrderSoloParamsTest extends ParentManagerOrderParamsTest {
 
         String orderStatus = utilsForDB.getOrderStatus(idLastOrderAfterTest);
         checkAC("Order is not New status", financesPage.compareNewOrderStatus(orderStatus) , true);
-        checkAC("Eld status in New order is not correct", userEldPage.compareEldStatusInNewOrder(idLastOrderAfterTest), true);
+        checkAC("Eld status in New order is not correct", userEldPage.compareEldStatusInNewOrder(idLastOrderAfterTest, quantityOfDevices), true);
 
         tearDown();
         setUp();

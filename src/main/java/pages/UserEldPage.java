@@ -72,31 +72,37 @@ public class UserEldPage extends ParentPage {
     }
 
     @Step
-    public boolean compareEldStatusInCompletedOrder(String idOrder) throws SQLException, IOException, ClassNotFoundException {
+    public boolean compareEldStatusInCompletedOrder(String idOrder, String quantityOfDevices) throws SQLException, IOException, ClassNotFoundException {
         List<String> tempStatusId = utilsForDB.getIdEldFromOrder(idOrder);
-        for (String element : tempStatusId)
-        if (element.equals("4")){
-            return true;
-        }
-        return false;
+        if (Integer.parseInt(quantityOfDevices) > 0) {
+            for (String element : tempStatusId)
+                if (element.equals("4")){
+                    return true;
+                } else return false;
+        } return true;
     }
+
     @Step
-    public boolean compareEldStatusInPaidOrder(String idOrder) throws SQLException, IOException, ClassNotFoundException {
+    public boolean compareEldStatusInPaidOrder(String idOrder, String quantityOfDevices) throws SQLException, IOException, ClassNotFoundException {
         List<String> tempStatusId = utilsForDB.getIdEldFromOrder(idOrder);
-        for (String element : tempStatusId)
-            if (element.equals("1")){
-                return true;
-            }
-        return false;
+        if (Integer.parseInt(quantityOfDevices) > 0) {
+            for (String element : tempStatusId)
+                if (element.equals("1")) {
+                    return true;
+                } else return false;
+        } return true;
     }
+
     @Step
-    public boolean compareEldStatusInNewOrder(String idOrder) throws SQLException, IOException, ClassNotFoundException {
+    public boolean compareEldStatusInNewOrder(String idOrder, String quantityOfDevices) throws SQLException, IOException, ClassNotFoundException {
         List<String> tempStatusId = utilsForDB.getIdEldFromOrder(idOrder);
-        for (String element : tempStatusId)
-            if (element.equals("0")){
-                return true;
-            }
-        return false;
+        if (Integer.parseInt(quantityOfDevices) > 0) {
+            for (String element : tempStatusId)
+                if (element.equals("0")){
+                    return true;
+                } else return false;
+        } return true;
+
     }
     @Step
     public void checkAndCancelNewOrderBeforeTestFleet(String fleetId) throws SQLException, IOException, ClassNotFoundException {
