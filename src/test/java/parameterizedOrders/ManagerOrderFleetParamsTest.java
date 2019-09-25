@@ -52,19 +52,34 @@ public class ManagerOrderFleetParamsTest extends ParentManagerOrderParamsTest {
 
         tearDown();
         setUp();
-
+// user agree order
         loginPage.userValidLogIn(dataForFleetValidLogIn.get("login").toString(),dataForFleetValidLogIn.get("pass").toString());
         modalEldPage.doAgreeAgreementForManagerOrder(quantityOfDevices, quantityCameraCP);
 
         dashboardPage.openMenuDash();
         dashboardPage.goToFinancesPage();
-
+        financesPage.payCurrentInvoiceForOrderByManager(currentDue, quantityOfDevices, quantityCameraCP);
         String dueForLastOrder = utilsForDB.getLastDueForFleet(dataFleetId.get("fleetId").toString());
         checkAC("Balance is not correct", financesPage.compareBalance(currentDue, dueForLastOrder), true);
 
         String orderStatusPaid = utilsForDB.getOrderStatus(idLastOrderAfterTest);
         checkAC("Order is not Paid", financesPage.comparePaidOrderStatus(orderStatusPaid) , true);
         checkAC("Eld status in Paid order is not correct", userEldPage.compareEldStatusInPaidOrder(idLastOrderAfterTest, quantityOfDevices), true);
+
+        tearDown();
+        setUp();
+// Manager completed order
+        loginPage.userValidLogIn(dataForManagerValidLogIn.get("login").toString(),dataForManagerValidLogIn.get("pass").toString());
+        dashboardPage.openMenuDash();
+        dashboardPage.goToEldPage();
+
+        managerEldPage.openOrderInfo(idLastOrderAfterTest);
+        checkAC("Full Order Price is not correct", orderInfoPage.compareFullOrderPrice(dueForLastOrder), true);
+        orderInfoPage.completedOrder();
+
+        String orderStatusCompleted = utilsForDB.getOrderStatus(idLastOrderAfterTest);
+        checkAC("Order is not completed", financesPage.compareCompletedOrderStatus(orderStatusCompleted), true);
+        checkAC("Eld status in Completed order is not correct", userEldPage.compareEldStatusInCompletedOrder(idLastOrderAfterTest, quantityOfDevices), true);
 
 
     }

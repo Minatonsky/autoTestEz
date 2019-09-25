@@ -52,6 +52,7 @@ public class DashboardPage extends ParentPage {
     public void openMenuDash(){
         waitABit(3);
         clickOnMenuDash();
+        waitABit(3);
         clickMenuSizeButton();
         waitABit(3);
     }

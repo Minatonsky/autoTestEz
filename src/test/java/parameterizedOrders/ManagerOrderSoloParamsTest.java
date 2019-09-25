@@ -58,7 +58,7 @@ public class ManagerOrderSoloParamsTest extends ParentManagerOrderParamsTest {
 
         dashboardPage.openMenuDash();
         dashboardPage.goToFinancesPage();
-
+        financesPage.payCurrentInvoiceForOrderByManager(currentDue, quantityOfDevices, quantityCameraCP);
         String dueForLastOrder = utilsForDB.getLastDueForSolo(dataSoloId.get("soloId").toString());
         checkAC("Balance is not correct", financesPage.compareBalance(currentDue, dueForLastOrder), true);
 
@@ -69,9 +69,12 @@ public class ManagerOrderSoloParamsTest extends ParentManagerOrderParamsTest {
         tearDown();
         setUp();
 
+// Manager completed order
+
         loginPage.userValidLogIn(dataForManagerValidLogIn.get("login").toString(),dataForManagerValidLogIn.get("pass").toString());
         dashboardPage.openMenuDash();
         dashboardPage.goToEldPage();
+
         managerEldPage.openOrderInfo(idLastOrderAfterTest);
         checkAC("Full Order Price is not correct", orderInfoPage.compareFullOrderPrice(dueForLastOrder), true);
         orderInfoPage.completedOrder();

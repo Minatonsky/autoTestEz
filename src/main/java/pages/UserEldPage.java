@@ -10,6 +10,8 @@ import java.io.IOException;
 import java.sql.SQLException;
 import java.util.List;
 
+import static libs.Utils.waitABit;
+
 public class UserEldPage extends ParentPage {
     UtilsForDB utilsForDB = new UtilsForDB();
 
@@ -33,21 +35,29 @@ public class UserEldPage extends ParentPage {
     public void cancelEldDevices(String idOrder, String quantityOfDevices, String quantityCameraCP) throws SQLException, IOException, ClassNotFoundException {
         UtilsForDB utilsForDB = new UtilsForDB();
         List<String> localId = utilsForDB.getLocalIdDevices(idOrder);
-        if (Integer.parseInt(quantityOfDevices) > 0) {
-            if (Integer.parseInt(quantityCameraCP) == 0)
-                for (String element : localId) {
-                    enterIdOrder(element);
-                    clickOnOrderOnList(element);
-                    clickOnButtonCancelOrderDevice();
-                    clickOnOrderEldConfirm();
-                }
-            else if (Integer.parseInt(quantityCameraCP) > 0){
-                enterIdOrder(localId.get(0));
-                clickOnOrderOnList(localId.get(0));
+        if (Integer.parseInt(quantityOfDevices) > 0 && Integer.parseInt(quantityCameraCP) == 0) {
+            for (String element : localId) {
+                waitABit(2);
+                enterIdOrder(element);
+                waitABit(2);
+                clickOnOrderOnList(element);
+                waitABit(2);
                 clickOnButtonCancelOrderDevice();
+                waitABit(2);
                 clickOnOrderEldConfirm();
             }
-        } else logger.info("Can not canceled devices, no devices in order");
+        } else if (Integer.parseInt(quantityOfDevices) > 0 && Integer.parseInt(quantityCameraCP) > 0) {
+            waitABit(2);
+            enterIdOrder(localId.get(0));
+            waitABit(2);
+            clickOnOrderOnList(localId.get(0));
+            waitABit(2);
+            clickOnButtonCancelOrderDevice();
+            waitABit(2);
+            clickOnOrderEldConfirm();
+        } else if (Integer.parseInt(quantityOfDevices) == 0) {
+            logger.info("Can not canceled devices, no devices in order");
+        } else logger.info("Can not canceled devices");
     }
 
     public boolean compareCancelStatusOrder(String orderStatus, String quantityOfDevices){

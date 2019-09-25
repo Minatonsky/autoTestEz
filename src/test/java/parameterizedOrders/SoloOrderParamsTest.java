@@ -18,13 +18,13 @@ public class SoloOrderParamsTest extends ParentSoloOrderParamsTest {
     public void cancelDevicesByUser() throws SQLException, IOException, ClassNotFoundException {
 
         String idLastOrderAfterTest = utilsForDB.getLastOrderIdForSolo(dataSoloId.get("soloId").toString());
+        String dueForLastOrder = utilsForDB.getLastDueForSolo(dataSoloId.get("soloId").toString());
         dashboardPage.goToEldPage();
         userEldPage.cancelEldDevices(idLastOrderAfterTest, quantityOfDevices, quantityCameraCP);
         String orderStatus = utilsForDB.getOrderStatus(idLastOrderAfterTest);
         checkAC("Order with devices is not canceled", userEldPage.compareCancelStatusOrder(orderStatus, quantityOfDevices), true);
         checkAC("ELD is present in canceled order", utilsForDB.isEldBlinded(idLastOrderAfterTest), false);
         dashboardPage.goToFinancesPage();
-        String dueForLastOrder = utilsForDB.getLastDueForSolo(dataSoloId.get("soloId").toString());
         checkAC("Balance is not correct", financesPage.compareBalanceIfCanceled(currentDue, dueForLastOrder, quantityOfDevices), true);
 
     }
