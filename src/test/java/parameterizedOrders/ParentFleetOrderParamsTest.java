@@ -42,8 +42,7 @@ public class ParentFleetOrderParamsTest extends ParentTest {String  quantityOfDe
     UtilsForDB utilsForDB = new UtilsForDB();
     ExcelDriver excelDriver = new ExcelDriver();
     Map personalDataForEldOrder = excelDriver.getData(configProperties.DATA_FILE_PATH() + "testEldOrder.xls", "personalData");
-    Map dataForFleetValidLogIn = excelDriver.getData(configProperties.DATA_FILE_PATH() + "testLogin.xls", "validFleetLogin");
-    Map dataFleetId = excelDriver.getData(configProperties.DATA_FILE_PATH() + "testLogin.xls", "validFleetLogin");
+    Map dataForFleet = excelDriver.getData(configProperties.DATA_FILE_PATH() + "testLogin.xls", "validFleetLogin");
     Map dataForManagerValidLogIn = excelDriver.getData(configProperties.DATA_FILE_PATH() + "testLogin.xls", "ManagerLogin");
 
 
@@ -56,11 +55,11 @@ public class ParentFleetOrderParamsTest extends ParentTest {String  quantityOfDe
     @Before
     @Test
     public void addNewOrder() throws  SQLException, IOException, ClassNotFoundException {
-        userEldPage.checkAndCancelNewOrderBeforeTestFleet(dataFleetId.get("fleetId").toString());
-        String idLastOrderBeforeTest = utilsForDB.getLastOrderIdForFleet(dataFleetId.get("fleetId").toString());
-        utilsForDB.setCurrentDueForFleet(currentDue, dataFleetId.get("fleetId").toString());
+        userEldPage.checkAndCancelNewOrderBeforeTestFleet(dataForFleet.get("fleetId").toString());
+        String idLastOrderBeforeTest = utilsForDB.getLastOrderIdForFleet(dataForFleet.get("fleetId").toString());
+        utilsForDB.setCurrentDueForFleet(currentDue, dataForFleet.get("fleetId").toString());
 
-        loginPage.userValidLogIn(dataForFleetValidLogIn.get("login").toString(),dataForFleetValidLogIn.get("pass").toString());
+        loginPage.userValidLogIn(dataForFleet.get("login").toString(), dataForFleet.get("pass").toString());
         dashboardPage.openMenuDash();
         dashboardPage.goToEldPage();
         userEldPage.clickOnOrderELD();
@@ -89,7 +88,7 @@ public class ParentFleetOrderParamsTest extends ParentTest {String  quantityOfDe
         modalEldPage.doAgreementCamera(quantityCameraCP);
         modalEldPage.clickButtonOrder();
 
-        String idLastOrderAfterTest = utilsForDB.getLastOrderIdForFleet(dataFleetId.get("fleetId").toString());
+        String idLastOrderAfterTest = utilsForDB.getLastOrderIdForFleet(dataForFleet.get("fleetId").toString());
         checkAC("New order wasn`t created", idLastOrderBeforeTest.equals(idLastOrderAfterTest) , false);
 
         String orderStatus = utilsForDB.getOrderStatus(idLastOrderAfterTest);
@@ -97,7 +96,7 @@ public class ParentFleetOrderParamsTest extends ParentTest {String  quantityOfDe
         checkAC("Eld status in Paid order is not correct", userEldPage.compareEldStatusInPaidOrder(idLastOrderAfterTest, quantityOfDevices), true);
 
         dashboardPage.goToFinancesPage();
-        String dueForLastOrder = utilsForDB.getLastDueForFleet(dataFleetId.get("fleetId").toString());
+        String dueForLastOrder = utilsForDB.getLastDueForFleet(dataForFleet.get("fleetId").toString());
         checkAC("Balance is not correct", financesPage.compareBalance(currentDue, dueForLastOrder), true);
 
     }

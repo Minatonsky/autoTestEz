@@ -289,7 +289,7 @@ EQUIPMENT LEASE AND SOFTWARE SUBSCRIPTION SERVICE AGREEMENT
             checkForCameraTitleInAgreement();
             clickButtonFastMove();
             clickButtonAgree();
-            waitABit(3);
+            waitABit(10);
             logger.info("Order was approve");
         } else if (Integer.parseInt(quantityOfDevices) > 0 & Integer.parseInt(quantityCameraCP) == 0){
             waitABit(3);
@@ -298,14 +298,14 @@ EQUIPMENT LEASE AND SOFTWARE SUBSCRIPTION SERVICE AGREEMENT
             checkForSaasLeasTitleInAgreement();
             clickButtonFastMove();
             clickButtonAgree();
-            waitABit(3);
+            waitABit(10);
             logger.info("Order was approve");
         } else if (Integer.parseInt(quantityOfDevices) == 0 & Integer.parseInt(quantityCameraCP) > 0) {
             waitABit(3);
             checkForCameraTitleInAgreement();
             clickButtonFastMove();
             clickButtonAgree();
-            waitABit(3);
+            waitABit(10);
             logger.info("Order was approve");
         } else logger.info("No device and camera in order");
 

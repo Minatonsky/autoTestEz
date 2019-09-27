@@ -17,8 +17,8 @@ public class FleetOrderParamsTest extends ParentFleetOrderParamsTest {
     @Test
     public void cancelDevicesByUser() throws SQLException, IOException, ClassNotFoundException {
 
-        String idLastOrderAfterTest = utilsForDB.getLastOrderIdForFleet(dataFleetId.get("fleetId").toString());
-        String dueForLastOrder = utilsForDB.getLastDueForFleet(dataFleetId.get("fleetId").toString());
+        String idLastOrderAfterTest = utilsForDB.getLastOrderIdForFleet(dataForFleet.get("fleetId").toString());
+        String dueForLastOrder = utilsForDB.getLastDueForFleet(dataForFleet.get("fleetId").toString());
         dashboardPage.goToEldPage();
         userEldPage.cancelEldDevices(idLastOrderAfterTest, quantityOfDevices, quantityCameraCP);
         String orderStatus = utilsForDB.getOrderStatus(idLastOrderAfterTest);
@@ -34,8 +34,8 @@ public class FleetOrderParamsTest extends ParentFleetOrderParamsTest {
         tearDown();
         setUp();
 
-        String idLastOrderAfterTest = utilsForDB.getLastOrderIdForFleet(dataFleetId.get("fleetId").toString());
-        String dueForLastOrder = utilsForDB.getLastDueForFleet(dataFleetId.get("fleetId").toString());
+        String idLastOrderAfterTest = utilsForDB.getLastOrderIdForFleet(dataForFleet.get("fleetId").toString());
+        String dueForLastOrder = utilsForDB.getLastDueForFleet(dataForFleet.get("fleetId").toString());
         loginPage.userValidLogIn(dataForManagerValidLogIn.get("login").toString(),dataForManagerValidLogIn.get("pass").toString());
         dashboardPage.openMenuDash();
         dashboardPage.goToEldPage();
@@ -54,7 +54,7 @@ public class FleetOrderParamsTest extends ParentFleetOrderParamsTest {
 USER CHECK IF BALANCE NOT CHANGED
  */
 
-        loginPage.userValidLogIn(dataForFleetValidLogIn.get("login").toString(),dataForFleetValidLogIn.get("pass").toString());
+        loginPage.userValidLogIn(dataForFleet.get("login").toString(), dataForFleet.get("pass").toString());
         dashboardPage.openMenuDash();
         dashboardPage.goToFinancesPage();
         checkAC("Balance is not correct", financesPage.compareBalanceIfCanceled(currentDue, dueForLastOrder, quantityOfDevices), true);
@@ -65,8 +65,8 @@ USER CHECK IF BALANCE NOT CHANGED
         tearDown();
         setUp();
 
-        String idLastOrderAfterTest = utilsForDB.getLastOrderIdForFleet(dataFleetId.get("fleetId").toString());
-        String dueForLastOrder = utilsForDB.getLastDueForFleet(dataFleetId.get("fleetId").toString());
+        String idLastOrderAfterTest = utilsForDB.getLastOrderIdForFleet(dataForFleet.get("fleetId").toString());
+        String dueForLastOrder = utilsForDB.getLastDueForFleet(dataForFleet.get("fleetId").toString());
 
         loginPage.userValidLogIn(dataForManagerValidLogIn.get("login").toString(),dataForManagerValidLogIn.get("pass").toString());
         dashboardPage.openMenuDash();
@@ -86,7 +86,7 @@ USER CHECK IF BALANCE IS CORRECT
         tearDown();
         setUp();
 
-        loginPage.userValidLogIn(dataForFleetValidLogIn.get("login").toString(),dataForFleetValidLogIn.get("pass").toString());
+        loginPage.userValidLogIn(dataForFleet.get("login").toString(), dataForFleet.get("pass").toString());
         dashboardPage.openMenuDash();
         dashboardPage.goToFinancesPage();
         checkAC("Balance is not correct", financesPage.compareBalance(currentDue, dueForLastOrder), true);

@@ -35,6 +35,7 @@ public class ParentTest {
     protected UserEldPage userEldPage;
     protected ManagerModalEldPage managerModalEldPage;
 
+
     String browser = System.getProperty("browser");
     protected static ConfigProperties configProperties = ConfigFactory.create(ConfigProperties.class);
 
@@ -52,6 +53,7 @@ public class ParentTest {
         orderInfoPage = new OrderInfoPage(webDriver);
         userEldPage = new UserEldPage(webDriver);
         managerModalEldPage = new ManagerModalEldPage(webDriver);
+
     }
 
     private void initDriver(String browserName) {

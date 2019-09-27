@@ -53,9 +53,6 @@ public class FinancesPage extends ParentPage {
 
     }
 
-    public boolean compareBalanceIfCanceledNewOrder(String currentDue) {
-        return Double.parseDouble(getFinanceBalance().substring(1)) == Double.parseDouble(currentDue);
-        }
 
     public boolean comparePaidOrderStatus(String orderStatus) {
         return orderStatus.equals("3");
@@ -69,8 +66,10 @@ public class FinancesPage extends ParentPage {
         return orderStatus.equals("1");
     }
 
-    public boolean compareNewOrderStatus(String orderStatus) {
-        return orderStatus.equals("0");
+    public boolean compareNewOrderStatus(String orderStatus, String currentDue, String quantityOfDevices, String quantityCameraCP) {
+        if (Integer.parseInt(currentDue) > 0 & Integer.parseInt(quantityOfDevices) == 0 & Integer.parseInt(quantityCameraCP) == 0){
+            return orderStatus.equals("3");
+        } else return orderStatus.equals("0");
     }
 
     public void payCurrentInvoiceForOrderByManager(String currentDue, String quantityOfDevices, String quantityCameraCP){

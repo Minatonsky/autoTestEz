@@ -83,7 +83,7 @@ public class UserEldPage extends ParentPage {
 
     @Step
     public boolean compareEldStatusInCompletedOrder(String idOrder, String quantityOfDevices) throws SQLException, IOException, ClassNotFoundException {
-        List<String> tempStatusId = utilsForDB.getIdEldFromOrder(idOrder);
+        List<String> tempStatusId = utilsForDB.getStatusEldInOrder(idOrder);
         if (Integer.parseInt(quantityOfDevices) > 0) {
             for (String element : tempStatusId)
                 if (element.equals("4")){
@@ -94,7 +94,7 @@ public class UserEldPage extends ParentPage {
 
     @Step
     public boolean compareEldStatusInPaidOrder(String idOrder, String quantityOfDevices) throws SQLException, IOException, ClassNotFoundException {
-        List<String> tempStatusId = utilsForDB.getIdEldFromOrder(idOrder);
+        List<String> tempStatusId = utilsForDB.getStatusEldInOrder(idOrder);
         if (Integer.parseInt(quantityOfDevices) > 0) {
             for (String element : tempStatusId)
                 if (element.equals("1")) {
@@ -105,7 +105,7 @@ public class UserEldPage extends ParentPage {
 
     @Step
     public boolean compareEldStatusInNewOrder(String idOrder, String quantityOfDevices) throws SQLException, IOException, ClassNotFoundException {
-        List<String> tempStatusId = utilsForDB.getIdEldFromOrder(idOrder);
+        List<String> tempStatusId = utilsForDB.getStatusEldInOrder(idOrder);
         if (Integer.parseInt(quantityOfDevices) > 0) {
             for (String element : tempStatusId)
                 if (element.equals("0")){

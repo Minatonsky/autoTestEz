@@ -7,6 +7,8 @@ import org.junit.runners.Parameterized;
 import java.io.IOException;
 import java.sql.SQLException;
 
+import static libs.Utils.waitABit;
+
 @RunWith(Parameterized.class)
 
 public class ManagerOrderSoloParamsTest extends ParentManagerOrderParamsTest {
@@ -46,7 +48,7 @@ public class ManagerOrderSoloParamsTest extends ParentManagerOrderParamsTest {
         checkAC("New order was not created", idLastOrderBeforeTest.equals(idLastOrderAfterTest) , false);
 
         String orderStatus = utilsForDB.getOrderStatus(idLastOrderAfterTest);
-        checkAC("Order is not New status", financesPage.compareNewOrderStatus(orderStatus) , true);
+        checkAC("Order is not New status", financesPage.compareNewOrderStatus(orderStatus, currentDue, quantityOfDevices, quantityCameraCP) , true);
         checkAC("Eld status in New order is not correct", userEldPage.compareEldStatusInNewOrder(idLastOrderAfterTest, quantityOfDevices), true);
 
         tearDown();
@@ -54,7 +56,9 @@ public class ManagerOrderSoloParamsTest extends ParentManagerOrderParamsTest {
 
 // user agree order
         loginPage.userValidLogIn(dataForSoloValidLogIn.get("login").toString(),dataForSoloValidLogIn.get("pass").toString());
+        waitABit(10);
         modalEldPage.doAgreeAgreementForManagerOrder(quantityOfDevices, quantityCameraCP);
+        waitABit(10);
 
         dashboardPage.openMenuDash();
         dashboardPage.goToFinancesPage();
@@ -117,23 +121,28 @@ public class ManagerOrderSoloParamsTest extends ParentManagerOrderParamsTest {
         checkAC("New order was not created", idLastOrderBeforeTest.equals(idLastOrderAfterTest) , false);
 
         String orderStatus = utilsForDB.getOrderStatus(idLastOrderAfterTest);
-        checkAC("Order is not New status", financesPage.compareNewOrderStatus(orderStatus) , true);
+        checkAC("Order is not New status", financesPage.compareNewOrderStatus(orderStatus, currentDue, quantityOfDevices, quantityCameraCP) , true);
         checkAC("Eld status in New order is not correct", userEldPage.compareEldStatusInNewOrder(idLastOrderAfterTest, quantityOfDevices), true);
 
         tearDown();
         setUp();
 
         // user canceled order
-
+        String dueForLastOrder = utilsForDB.getLastDueForSolo(dataSoloId.get("soloId").toString());
         loginPage.userValidLogIn(dataForSoloValidLogIn.get("login").toString(),dataForSoloValidLogIn.get("pass").toString());
+
+        waitABit(10);
         modalEldPage.doCancelAgreementForManagerOrder(quantityOfDevices, quantityCameraCP);
+        waitABit(10);
         dashboardPage.openMenuDash();
+        waitABit(10);
+
         String orderCancelStatus = utilsForDB.getOrderStatus(idLastOrderAfterTest);
-        checkAC("Order with devices is not canceled", financesPage.compareCancelOrderStatus(orderCancelStatus), true);
+        checkAC("Order with devices is not canceled", userEldPage.compareCancelStatusOrder(orderCancelStatus, quantityOfDevices), true);
         checkAC("ELD is present in canceled order", utilsForDB.isEldBlinded(idLastOrderAfterTest), false);
         dashboardPage.goToFinancesPage();
 
-        checkAC("Balance is not correct", financesPage.compareBalanceIfCanceledNewOrder(currentDue), true);
+        checkAC("Balance is not correct", financesPage.compareBalanceIfCanceled(currentDue, dueForLastOrder, quantityOfDevices), true);
 
     }
 }

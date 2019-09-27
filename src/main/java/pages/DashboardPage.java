@@ -57,7 +57,6 @@ public class DashboardPage extends ParentPage {
         waitABit(3);
     }
 
-
     @Step
     public void goToEldPage(){
         waitABit(3);
