@@ -87,7 +87,6 @@ public class UserEldPage extends ParentPage {
         if (Integer.parseInt(quantityOfDevices) > 0) {
             for (String element : tempStatusId)
                 if (element.equals("4")){
-                    return true;
                 } else return false;
         } return true;
     }
@@ -98,7 +97,6 @@ public class UserEldPage extends ParentPage {
         if (Integer.parseInt(quantityOfDevices) > 0) {
             for (String element : tempStatusId)
                 if (element.equals("1")) {
-                    return true;
                 } else return false;
         } return true;
     }
@@ -109,7 +107,6 @@ public class UserEldPage extends ParentPage {
         if (Integer.parseInt(quantityOfDevices) > 0) {
             for (String element : tempStatusId)
                 if (element.equals("0")){
-                    return true;
                 } else return false;
         } return true;
 

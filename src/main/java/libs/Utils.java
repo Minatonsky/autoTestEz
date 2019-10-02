@@ -54,7 +54,12 @@ public class Utils {
      */
     public static String getDateAndTimeFormated(){
 
-        return getDateAndTime("yyyy-MM-dd_HH-mm-ss");
+        return getDateAndTime("MM/dd/yyyy HH:mm:ss");
+    }
+
+    public static String getDateFormat(){
+
+        return getDateAndTime("yyyy-MM-dd");
     }
 
     /**

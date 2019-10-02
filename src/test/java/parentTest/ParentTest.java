@@ -34,7 +34,7 @@ public class ParentTest {
     protected OrderInfoPage orderInfoPage;
     protected UserEldPage userEldPage;
     protected ManagerModalEldPage managerModalEldPage;
-
+    protected ChargePage chargePage;
 
     String browser = System.getProperty("browser");
     protected static ConfigProperties configProperties = ConfigFactory.create(ConfigProperties.class);
@@ -53,7 +53,7 @@ public class ParentTest {
         orderInfoPage = new OrderInfoPage(webDriver);
         userEldPage = new UserEldPage(webDriver);
         managerModalEldPage = new ManagerModalEldPage(webDriver);
-
+        chargePage = new ChargePage(webDriver);
     }
 
     private void initDriver(String browserName) {
