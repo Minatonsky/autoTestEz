@@ -2,20 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="660eb711-957d-418e-9483-8b2931da6e6e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/chargeTest/ChargeFleetSoloTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log/qalight.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/qalight.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/drivers/chromedriver.exe" beforeDir="false" afterPath="$PROJECT_DIR$/src/drivers/chromedriver.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/libs/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/libs/Utils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/libs/UtilsForDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/libs/UtilsForDB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/ModalEldPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/ModalEldPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/ChargePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/ChargePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/UserEldPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/UserEldPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/orders/ParentFleetTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/orders/ParentFleetTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/orders/ParentSoloTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/orders/ParentSoloTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/parameterizedOrders/ManagerDoOrderFleetAgreeParamsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/parameterizedOrders/ManagerDoOrderFleetAgreeParamsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/parameterizedOrders/ManagerDoOrderFleetCancelParamsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/parameterizedOrders/ManagerDoOrderFleetCancelParamsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/parameterizedOrders/ManagerDoOrderSoloAgreeParamsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/parameterizedOrders/ManagerDoOrderSoloAgreeParamsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/parameterizedOrders/ManagerDoOrderSoloCanceledParamsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/parameterizedOrders/ManagerDoOrderSoloCanceledParamsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/parameterizedOrders/ParentFleetOrderParamsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/parameterizedOrders/ParentFleetOrderParamsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/parameterizedOrders/ParentSoloOrderParamsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/parameterizedOrders/ParentSoloOrderParamsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testDB/TestDataBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testDB/TestDataBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/chargeTest/FleetChargeTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/parentTest/ParentChargeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/parentTest/ParentChargeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/parentTest/ParentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/parentTest/ParentTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,15 +29,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="AnnotationType" />
+        <option value="Class" />
       </list>
     </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>threadcount</find>
-    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -74,11 +66,9 @@
     <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\workspace\testdevEzlogz\src\main\java\data" />
-      <recent name="C:\workspace\testdevEzlogz\src\main\java\libs" />
-      <recent name="C:\workspace\testdevEzlogz\src\test\java\restTest" />
-      <recent name="C:\workspace\testdevEzlogz\src" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="orders" />
+      <recent name="parameterizedOrders" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\workspace\testdevEzlogz\src\main\java\pages" />
@@ -91,9 +81,11 @@
       <recent name="loginTests" />
       <recent name="orders" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="orders" />
-      <recent name="parameterizedOrders" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\workspace\testdevEzlogz\src\main\java\data" />
+      <recent name="C:\workspace\testdevEzlogz\src\main\java\libs" />
+      <recent name="C:\workspace\testdevEzlogz\src\test\java\restTest" />
+      <recent name="C:\workspace\testdevEzlogz\src" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -108,8 +100,56 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ParentFleetTest.addNewOrder">
-    <configuration name="ParentFleetOrderParamsTest.addNewOrder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager">
+    <configuration name="ChargeFleetSoloTest.chargeFleetTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="testdevEzlogz" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="chargeTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="chargeTest" />
+      <option name="MAIN_CLASS_NAME" value="chargeTest.ChargeFleetSoloTest" />
+      <option name="METHOD_NAME" value="chargeFleetTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ChargeFleetSoloTest.chargeSoloTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="testdevEzlogz" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="chargeTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="chargeTest" />
+      <option name="MAIN_CLASS_NAME" value="chargeTest.ChargeFleetSoloTest" />
+      <option name="METHOD_NAME" value="chargeSoloTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginTest.validLogin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="testdevEzlogz" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="loginTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="loginTests" />
+      <option name="MAIN_CLASS_NAME" value="loginTests.LoginTest" />
+      <option name="METHOD_NAME" value="validLogin" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SoloOrderParamsTest.cancelDevicesByUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="testdevEzlogz" />
       <extension name="coverage">
         <pattern>
@@ -118,30 +158,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="parameterizedOrders" />
-      <option name="MAIN_CLASS_NAME" value="parameterizedOrders.ParentFleetOrderParamsTest" />
-      <option name="METHOD_NAME" value="addNewOrder" />
+      <option name="MAIN_CLASS_NAME" value="parameterizedOrders.SoloOrderParamsTest" />
+      <option name="METHOD_NAME" value="cancelDevicesByUser" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ParentFleetTest.addNewOrder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="testdevEzlogz" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="orders.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="orders" />
-      <option name="MAIN_CLASS_NAME" value="orders.ParentFleetTest" />
-      <option name="METHOD_NAME" value="addNewOrder" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestDataBase.getEventNewOrder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestDataBase.getEventNewOrder" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
       <module name="testdevEzlogz" />
       <extension name="coverage">
         <pattern>
@@ -157,7 +181,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestDataBase.testActionNewOrder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestDataBase.testGetEldId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="testdevEzlogz" />
       <extension name="coverage">
         <pattern>
@@ -167,29 +191,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="testDB" />
       <option name="MAIN_CLASS_NAME" value="testDB.TestDataBase" />
-      <option name="METHOD_NAME" value="testActionNewOrder" />
+      <option name="METHOD_NAME" value="testGetEldId" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestDataBase.testGetRowNumberNewOrder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="testdevEzlogz" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="testDB.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="testDB" />
-      <option name="MAIN_CLASS_NAME" value="testDB.TestDataBase" />
-      <option name="METHOD_NAME" value="testGetRowNumberNewOrder" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Run testdevEzlogz []" type="MavenRunConfiguration" factoryName="Maven">
+    <configuration name="SoloOrders" type="MavenRunConfiguration" factoryName="Maven">
       <MavenSettings>
         <option name="myGeneralSettings" />
         <option name="myRunnerSettings">
@@ -217,7 +225,8 @@
               <list>
                 <option value="clean" />
                 <option value="test" />
-                <option value="-Dtest=ManagerDoOrderSoloCanceledParamsTest#managerDoOrderSoloCanceled[*]" />
+                <option value="-Dtest=SoloOrderParamsTest#cancelDevicesByUser[*],managerCanceledOrder[*],orderCompletedByManager[*]" />
+                <option value="-Dmaven.test.failure.ignore=true" />
               </list>
             </option>
             <option name="pomFileName" />
@@ -232,20 +241,21 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Maven.Run testdevEzlogz []" />
-      <item itemvalue="JUnit.TestDataBase.testGetRowNumberNewOrder" />
       <item itemvalue="JUnit.TestDataBase.getEventNewOrder" />
-      <item itemvalue="JUnit.ParentFleetTest.addNewOrder" />
-      <item itemvalue="JUnit.TestDataBase.testActionNewOrder" />
-      <item itemvalue="JUnit.ParentFleetOrderParamsTest.addNewOrder" />
+      <item itemvalue="JUnit.TestDataBase.testGetEldId" />
+      <item itemvalue="JUnit.ChargeFleetSoloTest.chargeFleetTest" />
+      <item itemvalue="JUnit.LoginTest.validLogin" />
+      <item itemvalue="Maven.SoloOrders" />
+      <item itemvalue="JUnit.SoloOrderParamsTest.cancelDevicesByUser" />
+      <item itemvalue="JUnit.ChargeFleetSoloTest.chargeSoloTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ParentFleetTest.addNewOrder" />
-        <item itemvalue="JUnit.ParentFleetOrderParamsTest.addNewOrder" />
-        <item itemvalue="JUnit.TestDataBase.testActionNewOrder" />
-        <item itemvalue="JUnit.TestDataBase.getEventNewOrder" />
-        <item itemvalue="JUnit.TestDataBase.testGetRowNumberNewOrder" />
+        <item itemvalue="JUnit.ChargeFleetSoloTest.chargeFleetTest" />
+        <item itemvalue="JUnit.ChargeFleetSoloTest.chargeSoloTest" />
+        <item itemvalue="JUnit.SoloOrderParamsTest.cancelDevicesByUser" />
+        <item itemvalue="JUnit.LoginTest.validLogin" />
+        <item itemvalue="JUnit.TestDataBase.testGetEldId" />
       </list>
     </recent_temporary>
   </component>
@@ -547,7 +557,49 @@
       <option name="project" value="LOCAL" />
       <updated>1567449479891</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="checkAC if user has order with status New before test was add">
+      <created>1567523127669</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1567523127669</updated>
+    </task>
+    <task id="LOCAL-00042" summary="new method if user has order with status New before test was add">
+      <created>1567705707560</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1567705707560</updated>
+    </task>
+    <task id="LOCAL-00043" summary="refactor was add">
+      <created>1568833345015</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1568833345015</updated>
+    </task>
+    <task id="LOCAL-00044" summary="refactor count was add">
+      <created>1569329907994</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1569329907994</updated>
+    </task>
+    <task id="LOCAL-00045" summary="refactor price was add">
+      <created>1569441596715</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1569441596716</updated>
+    </task>
+    <task id="LOCAL-00046" summary="charge test was add">
+      <created>1569571389995</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1569571389995</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -584,12 +636,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="excel test was added" />
-    <MESSAGE value="payment method test was added" />
-    <MESSAGE value="manager test was added" />
-    <MESSAGE value="take window test was added" />
-    <MESSAGE value="union manager test was added" />
-    <MESSAGE value="solo and manager different test was added" />
     <MESSAGE value="parameters test was added" />
     <MESSAGE value="cancel test was added" />
     <MESSAGE value="cancel 2 test was added" />
@@ -609,7 +655,13 @@
     <MESSAGE value="checkAC ELD status was add" />
     <MESSAGE value="checkAC ELD status Paid\Completed was add" />
     <MESSAGE value="checkAC ELD status2 Paid\Completed was add" />
-    <option name="LAST_COMMIT_MESSAGE" value="checkAC ELD status2 Paid\Completed was add" />
+    <MESSAGE value="checkAC if user has order with status New before test was add" />
+    <MESSAGE value="new method if user has order with status New before test was add" />
+    <MESSAGE value="refactor was add" />
+    <MESSAGE value="refactor count was add" />
+    <MESSAGE value="refactor price was add" />
+    <MESSAGE value="charge test was add" />
+    <option name="LAST_COMMIT_MESSAGE" value="charge test was add" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -621,6 +673,11 @@
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/pages/ManagerModalEldPage.java</url>
+          <line>93</line>
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

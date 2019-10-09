@@ -30,11 +30,10 @@ public class ParentFleetTest extends ParentTest {
     @Before
     @Test
     public void addNewOrder() throws SQLException, IOException, ClassNotFoundException {
-        userEldPage.checkAndDeleteNewOrderBeforeTestFleet(dataFleetId.get("fleetId").toString());
+        userEldPage.checkAndCancelNewOrderBeforeTestFleet(dataFleetId.get("fleetId").toString());
         String idLastOrderBeforeTest = utilsForDB.getLastOrderIdForFleet(dataFleetId.get("fleetId").toString());
-        utilsForDB.setCurrentDueForFleet(dataForEldOrder.get("currentDue").toString(), dataFleetId.get("fleetId").toString());
-
         loginPage.userValidLogIn(dataForFleetValidLogIn.get("login").toString(),dataForFleetValidLogIn.get("pass").toString());
+        utilsForDB.setCurrentDueForFleet(dataForEldOrder.get("currentDue").toString(), dataFleetId.get("fleetId").toString());
         dashboardPage.openMenuDash();
         dashboardPage.goToEldPage();
         userEldPage.clickOnOrderELD();
@@ -68,7 +67,7 @@ public class ParentFleetTest extends ParentTest {
         String orderStatus = utilsForDB.getOrderStatus(idLastOrderAfterTest);
         waitABit(2);
         checkAC("Order is not Paid", financesPage.comparePaidOrderStatus(orderStatus) , true);
-        checkAC("Eld status in Paid order is not correct", userEldPage.compareEldStatusInPaidOrder(idLastOrderAfterTest), true);
+        checkAC("Eld status in Paid order is not correct", userEldPage.compareEldStatusInPaidOrder(idLastOrderAfterTest, dataForEldOrder.get("quantityOfDevices").toString()), true);
 
 
         dashboardPage.goToFinancesPage();

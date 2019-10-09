@@ -52,7 +52,7 @@ public class ParentSoloOrderParamsTest extends ParentTest { String  quantityOfDe
     @Before
     @Test
     public void addNewOrder() throws SQLException, IOException, ClassNotFoundException {
-        userEldPage.checkAndDeleteNewOrderBeforeTestSolo(dataSoloId.get("soloId").toString());
+        userEldPage.checkAndCancelNewOrderBeforeTestSolo(dataSoloId.get("soloId").toString());
         String idLastOrderBeforeTest = utilsForDB.getLastOrderIdForFleet(dataSoloId.get("soloId").toString());
         utilsForDB.setCurrentDueForSolo(currentDue, dataSoloId.get("soloId").toString());
 
@@ -88,7 +88,7 @@ public class ParentSoloOrderParamsTest extends ParentTest { String  quantityOfDe
 
         String orderStatus = utilsForDB.getOrderStatus(idLastOrderAfterTest);
         checkAC("Order is not Paid", financesPage.comparePaidOrderStatus(orderStatus) , true);
-        checkAC("Eld status in Paid order is not correct", userEldPage.compareEldStatusInPaidOrder(idLastOrderAfterTest), true);
+        checkAC("Eld status in Paid order is not correct", userEldPage.compareEldStatusInPaidOrder(idLastOrderAfterTest, quantityOfDevices), true);
 
         dashboardPage.goToFinancesPage();
         String dueForLastOrder = utilsForDB.getLastDueForSolo(dataSoloId.get("soloId").toString());
