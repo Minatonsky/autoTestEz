@@ -53,7 +53,7 @@ public class ParentManagerOrderParamsTest  extends ParentTest {
     }
     @Before
     @Test
-    public void addNewOrder() throws IOException, InterruptedException, SQLException, ClassNotFoundException {
+    public void managerOpenEldOrder() throws IOException, InterruptedException, SQLException, ClassNotFoundException {
 
         loginPage.userValidLogIn(dataForManagerValidLogIn.get("login").toString(),dataForManagerValidLogIn.get("pass").toString());
         dashboardPage.openMenuDash();

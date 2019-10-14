@@ -15,7 +15,7 @@ public class FleetOrderParamsTest extends ParentFleetOrderParamsTest {
     }
 
     @Test
-    public void cancelDevicesByUser() throws SQLException, IOException, ClassNotFoundException {
+    public void cancelDevicesByFleet() throws SQLException, IOException, ClassNotFoundException {
 
         String idLastOrderAfterTest = utilsForDB.getLastOrderIdForFleet(dataForFleet.get("fleetId").toString());
         String dueForLastOrder = utilsForDB.getLastDueForFleet(dataForFleet.get("fleetId").toString());
@@ -61,7 +61,7 @@ USER CHECK IF BALANCE NOT CHANGED
     }
 
     @Test
-    public void orderCompletedByManager() throws SQLException, IOException, ClassNotFoundException {
+    public void managerCompletedOrder() throws SQLException, IOException, ClassNotFoundException {
         tearDown();
         setUp();
 

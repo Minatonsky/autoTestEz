@@ -51,7 +51,7 @@ public class ParentSoloOrderParamsTest extends ParentTest { String  quantityOfDe
     }
     @Before
     @Test
-    public void addNewOrder() throws SQLException, IOException, ClassNotFoundException {
+    public void soloDoNewOrder() throws SQLException, IOException, ClassNotFoundException {
         userEldPage.checkAndCancelNewOrderBeforeTestSolo(dataSoloId.get("soloId").toString());
         String idLastOrderBeforeTest = utilsForDB.getLastOrderIdForFleet(dataSoloId.get("soloId").toString());
         utilsForDB.setCurrentDueForSolo(currentDue, dataSoloId.get("soloId").toString());

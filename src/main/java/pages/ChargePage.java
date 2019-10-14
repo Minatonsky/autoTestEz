@@ -102,38 +102,33 @@ public class ChargePage {
     }
 
     @Step
-    public boolean compareDueChargeFleet(String fleetId, int countScannerMonthToMonthTariff, int countScannerOneYearTariff, int countScannerTwoYearsTariff) throws SQLException, IOException, ClassNotFoundException {
-        List<String> amountDue = utilsForDB.getAmountEzDueFleet(fleetId);
+    public boolean compareDueCharge(String soloOrFleetString, String userId, int countScannerMonthToMonthTariff, int countScannerOneYearTariff, int countScannerTwoYearsTariff, int countDeactivatedScannerMonthToMonthTariff) throws SQLException, IOException, ClassNotFoundException {
+        List<String> amountDue = utilsForDB.getAmountEzDue(soloOrFleetString, userId);
         double sum = 0;
+        logger.info(countScannerMonthToMonthTariff);
+        logger.info(countScannerOneYearTariff);
+        logger.info(countScannerTwoYearsTariff);
+        logger.info(countDeactivatedScannerMonthToMonthTariff);
         double tempMonthToMonth = Math.round((countScannerMonthToMonthTariff * 29.99) * 100.0) / 100.0;
+        double tempDeactivatedMonthToMonth = countDeactivatedScannerMonthToMonthTariff * 15;
+        double monthToMonth = tempMonthToMonth + tempDeactivatedMonthToMonth;
+        logger.info(monthToMonth);
         double tempOneYearTariff = Math.round((countScannerOneYearTariff * 329.89) * 100.0) / 100.0;
+        logger.info(tempOneYearTariff);
         double tempTwoYearsTariff = Math.round((countScannerTwoYearsTariff * 629.79) * 100.0) / 100.0;
-        double tempCountDueCharge = tempMonthToMonth + tempOneYearTariff + tempTwoYearsTariff;
+        logger.info(tempTwoYearsTariff);
+        double tempCountDueCharge = monthToMonth + tempOneYearTariff + tempTwoYearsTariff;
+        logger.info("tempCountDueCharge " + tempCountDueCharge);
 
         for (String element :
                 amountDue) {
             sum += Double.parseDouble(element);
         }
-        boolean tempCompareDue = tempCountDueCharge == sum;
+        logger.info("sum" + Math.round((sum) * 100.0) / 100.0);
+        boolean tempCompareDue = tempCountDueCharge == Math.round((sum) * 100.0) / 100.0;
         return tempCompareDue;
     }
 
-    @Step
-    public boolean compareDueChargeSolo(String soloId, int countScannerMonthToMonthTariff, int countScannerOneYearTariff, int countScannerTwoYearsTariff) throws SQLException, IOException, ClassNotFoundException {
-        List<String> amountDue = utilsForDB.getAmountEzDueSolo(soloId);
-        double sum = 0;
-        double tempMonthToMonth = Math.round((countScannerMonthToMonthTariff * 29.99) * 100.0) / 100.0;
-        double tempOneYearTariff = Math.round((countScannerOneYearTariff * 329.89) * 100.0) / 100.0;
-        double tempTwoYearsTariff = Math.round((countScannerTwoYearsTariff * 629.79) * 100.0) / 100.0;
-        double tempCountDueCharge = tempMonthToMonth + tempOneYearTariff + tempTwoYearsTariff;
-
-        for (String element :
-                amountDue) {
-            sum += Double.parseDouble(element);
-        }
-        boolean tempCompareDue = tempCountDueCharge == sum;
-        return tempCompareDue;
-    }
 
     @Step
     public boolean comparePaidTillMonthToMonthForFleet(String fleetId, String monthToMonthTariff) throws SQLException, IOException, ClassNotFoundException {

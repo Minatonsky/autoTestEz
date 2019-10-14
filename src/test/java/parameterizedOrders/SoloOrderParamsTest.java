@@ -15,7 +15,7 @@ public class SoloOrderParamsTest extends ParentSoloOrderParamsTest {
 
 
     @Test
-    public void cancelDevicesByUser() throws SQLException, IOException, ClassNotFoundException {
+    public void cancelDevicesBySolo() throws SQLException, IOException, ClassNotFoundException {
 
         String idLastOrderAfterTest = utilsForDB.getLastOrderIdForSolo(dataSoloId.get("soloId").toString());
         String dueForLastOrder = utilsForDB.getLastDueForSolo(dataSoloId.get("soloId").toString());
@@ -62,7 +62,7 @@ public class SoloOrderParamsTest extends ParentSoloOrderParamsTest {
     }
 
     @Test
-    public void orderCompletedByManager() throws SQLException, IOException, ClassNotFoundException {
+    public void managerCompletedOrder() throws SQLException, IOException, ClassNotFoundException {
 
         tearDown();
         setUp();
