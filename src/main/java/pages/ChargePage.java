@@ -105,6 +105,12 @@ public class ChargePage {
     @Step
     public boolean compareDueCharge(String soloOrFleetString, String userId, int countScannerMonthToMonthTariff, int countScannerOneYearTariff, int countScannerTwoYearsTariff, int countDeactivatedScannerMonthToMonthTariff) throws SQLException, IOException, ClassNotFoundException {
         List<String> amountDue = utilsForDB.getAmountEzDue(soloOrFleetString, userId);
+
+        if (countDeactivatedScannerMonthToMonthTariff > 0){
+            //       29.99 / 2 / (first day of next month - day of charge(today)) * ((first day of next month - day of charge(today)) - (deactivateDate - deactivateDays))
+        }
+
+
         logger.info("amountDue: " + amountDue);
         double sum = 0;
         logger.info("countScannerMonthToMonthTariff: " + countScannerMonthToMonthTariff);
@@ -119,6 +125,7 @@ public class ChargePage {
         logger.info("charge tempOneYearTariff: " + tempOneYearTariff);
         double tempTwoYearsTariff = Math.round((countScannerTwoYearsTariff * 629.79) * 100.0) / 100.0;
         logger.info("charge tempTwoYearsTariff: " + tempTwoYearsTariff);
+
         double tempCountDueCharge = ((monthToMonth + tempOneYearTariff + tempTwoYearsTariff) * 100.0) / 100.0;
         logger.info("tempCountDueCharge: " + tempCountDueCharge);
 

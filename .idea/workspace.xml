@@ -7,6 +7,7 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/libs/UtilsForDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/libs/UtilsForDB.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/ChargePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/ChargePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/chargeTest/ChargeFleetSoloTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/chargeTest/ChargeFleetSoloTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testDB/TestDataBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testDB/TestDataBase.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -94,7 +95,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ChargeFleetSoloTest.chargeSoloTest (1)">
+  <component name="RunManager" selected="JUnit.TestDataBase.testGetParams">
     <configuration name="ChargeFleetSoloTest.chargeFleetTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="WorkSpace" />
       <extension name="coverage">
@@ -143,22 +144,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginTest.validLogin (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="WorkSpace" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="loginTests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="loginTests" />
-      <option name="MAIN_CLASS_NAME" value="loginTests.LoginTest" />
-      <option name="METHOD_NAME" value="validLogin" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="SoloOrderParamsTest.cancelDevicesBySolo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="WorkSpace" />
       <extension name="coverage">
@@ -186,6 +171,22 @@
       <option name="PACKAGE_NAME" value="testDB" />
       <option name="MAIN_CLASS_NAME" value="testDB.TestDataBase" />
       <option name="METHOD_NAME" value="getEventNewOrder" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestDataBase.testGetParams" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="WorkSpace" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testDB.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="testDB" />
+      <option name="MAIN_CLASS_NAME" value="testDB.TestDataBase" />
+      <option name="METHOD_NAME" value="testGetParams" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -237,19 +238,19 @@
     <list>
       <item itemvalue="JUnit.TestDataBase.getEventNewOrder" />
       <item itemvalue="Maven.SoloOrders" />
-      <item itemvalue="JUnit.LoginTest.validLogin (1)" />
       <item itemvalue="JUnit.SoloOrderParamsTest.cancelDevicesBySolo" />
       <item itemvalue="JUnit.ChargeFleetSoloTest.chargeFleetTest (1)" />
       <item itemvalue="JUnit.ChargeFleetSoloTest.chargeSoloTest (1)" />
       <item itemvalue="JUnit.FleetOrderParamsTest.cancelDevicesByFleet" />
+      <item itemvalue="JUnit.TestDataBase.testGetParams" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestDataBase.testGetParams" />
         <item itemvalue="JUnit.ChargeFleetSoloTest.chargeSoloTest (1)" />
         <item itemvalue="JUnit.ChargeFleetSoloTest.chargeFleetTest (1)" />
         <item itemvalue="JUnit.FleetOrderParamsTest.cancelDevicesByFleet" />
         <item itemvalue="JUnit.SoloOrderParamsTest.cancelDevicesBySolo" />
-        <item itemvalue="JUnit.LoginTest.validLogin (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -600,7 +601,14 @@
       <option name="project" value="LOCAL" />
       <updated>1571046936696</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="new charge refactor test was add">
+      <created>1571140969029</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1571140969029</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -637,7 +645,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="cancel test was added" />
     <MESSAGE value="cancel 2 test was added" />
     <MESSAGE value="cancel with params test was added" />
     <MESSAGE value="manager do order with params test was added" />
@@ -662,7 +669,8 @@
     <MESSAGE value="refactor price was add" />
     <MESSAGE value="charge test was add" />
     <MESSAGE value="charge refactor test was add" />
-    <option name="LAST_COMMIT_MESSAGE" value="charge refactor test was add" />
+    <MESSAGE value="new charge refactor test was add" />
+    <option name="LAST_COMMIT_MESSAGE" value="new charge refactor test was add" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -5,7 +5,6 @@ import parentTest.ParentChargeTest;
 
 import java.io.IOException;
 import java.sql.SQLException;
-import java.text.ParseException;
 
 public class ChargeFleetSoloTest extends ParentChargeTest{
     String monthToMonthTariffId = "0";
@@ -23,7 +22,7 @@ public class ChargeFleetSoloTest extends ParentChargeTest{
     }
 
     @Test
-    public  void chargeFleetTest() throws SQLException, IOException, ClassNotFoundException, ParseException {
+    public  void chargeFleetTest() throws SQLException, IOException, ClassNotFoundException{
 
         int countScannerMonthToMonthTariff = utilsForDB.countChargeScannersWithTariff(fleetString, fleetId, monthToMonthTariffId);
         int countDeactivatedScannerMonthToMonthTariff = utilsForDB.countDeactivatedChargeScannersMonthToMonth(fleetString, fleetId);
@@ -60,7 +59,7 @@ public class ChargeFleetSoloTest extends ParentChargeTest{
     }
 
     @Test
-    public  void chargeSoloTest() throws SQLException, IOException, ClassNotFoundException, ParseException {
+    public  void chargeSoloTest() throws SQLException, IOException, ClassNotFoundException{
 
         int countScannerMonthToMonthTariff = utilsForDB.countChargeScannersWithTariff(userIdString, soloId, monthToMonthTariffId);
         int countDeactivatedScannerMonthToMonthTariff = utilsForDB.countDeactivatedChargeScannersMonthToMonth(userIdString, soloId);

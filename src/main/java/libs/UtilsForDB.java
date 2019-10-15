@@ -218,6 +218,13 @@ public class UtilsForDB {
         dBMySQL.quit();
         return tempDateTimeEzDue;
     }
+    @Step
+    public List<String> getParamsEldScanners() throws SQLException, IOException, ClassNotFoundException {
+        dBMySQL = new Database("MySQL_PADB_DB", "MySQL");
+        List<String> tempAmountList = dBMySQL.selectResultSet("SELECT params FROM eld_scanners WHERE id IN (SELECT id FROM eld_scanners WHERE fleet = 518 AND status = 5 AND tariffId = 0);");
+        dBMySQL.quit();
+        return tempAmountList;
+    }
 
 
 
