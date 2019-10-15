@@ -73,21 +73,22 @@ public class ChargePage {
         LocalDateTime startCronTime = LocalDateTime.parse(LocalDateTime.now(ZoneId.from(ZoneOffset.UTC)).toString());
         String startCronTimeLong = startCronTime.format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));
         webDriver.get(checkFleets);
-        logger.info("Cron check fleets was run");
+        logger.info("Cron check fleets was run: " + startCronTimeLong);
         return startCronTimeLong;
     }
     @Step
     public String runCronCheckDrivers(){
         LocalDateTime startCronTime = LocalDateTime.parse(LocalDateTime.now(ZoneId.from(ZoneOffset.UTC)).toString());
         String startCronTimeLong = startCronTime.format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));
+        logger.info("Cron check Drivers was run: " + startCronTimeLong);
         webDriver.get(checkDrivers);
-        logger.info("Cron check Drivers was run");
         return startCronTimeLong;
     }
     @Step
     public boolean checkDateTimeDue(String soloOrFleetString, String userId, String timeRunCron) throws SQLException, IOException, ClassNotFoundException {
         List<String> dateTimeList = utilsForDB.getDateTimeEzDue(soloOrFleetString, userId);
         DateTimeFormatter dTF = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+        logger.info("dateTime: " + dateTimeList);
         for (String element : dateTimeList) {
             if (LocalDateTime.parse(element, dTF).isAfter(LocalDateTime.parse(timeRunCron, dTF))) {
             } else return false;
@@ -104,27 +105,28 @@ public class ChargePage {
     @Step
     public boolean compareDueCharge(String soloOrFleetString, String userId, int countScannerMonthToMonthTariff, int countScannerOneYearTariff, int countScannerTwoYearsTariff, int countDeactivatedScannerMonthToMonthTariff) throws SQLException, IOException, ClassNotFoundException {
         List<String> amountDue = utilsForDB.getAmountEzDue(soloOrFleetString, userId);
+        logger.info("amountDue: " + amountDue);
         double sum = 0;
-        logger.info(countScannerMonthToMonthTariff);
-        logger.info(countScannerOneYearTariff);
-        logger.info(countScannerTwoYearsTariff);
-        logger.info(countDeactivatedScannerMonthToMonthTariff);
+        logger.info("countScannerMonthToMonthTariff: " + countScannerMonthToMonthTariff);
+        logger.info("countScannerOneYearTariff: " + countScannerOneYearTariff);
+        logger.info("countScannerTwoYearsTariff: " + countScannerTwoYearsTariff);
+        logger.info("countDeactivatedScannerMonthToMonthTariff: " + countDeactivatedScannerMonthToMonthTariff);
         double tempMonthToMonth = Math.round((countScannerMonthToMonthTariff * 29.99) * 100.0) / 100.0;
         double tempDeactivatedMonthToMonth = countDeactivatedScannerMonthToMonthTariff * 15;
         double monthToMonth = tempMonthToMonth + tempDeactivatedMonthToMonth;
-        logger.info(monthToMonth);
+        logger.info("charge monthToMonth: " + monthToMonth);
         double tempOneYearTariff = Math.round((countScannerOneYearTariff * 329.89) * 100.0) / 100.0;
-        logger.info(tempOneYearTariff);
+        logger.info("charge tempOneYearTariff: " + tempOneYearTariff);
         double tempTwoYearsTariff = Math.round((countScannerTwoYearsTariff * 629.79) * 100.0) / 100.0;
-        logger.info(tempTwoYearsTariff);
-        double tempCountDueCharge = monthToMonth + tempOneYearTariff + tempTwoYearsTariff;
-        logger.info("tempCountDueCharge " + tempCountDueCharge);
+        logger.info("charge tempTwoYearsTariff: " + tempTwoYearsTariff);
+        double tempCountDueCharge = ((monthToMonth + tempOneYearTariff + tempTwoYearsTariff) * 100.0) / 100.0;
+        logger.info("tempCountDueCharge: " + tempCountDueCharge);
 
         for (String element :
                 amountDue) {
             sum += Double.parseDouble(element);
         }
-        logger.info("sum" + Math.round((sum) * 100.0) / 100.0);
+        logger.info("sum: " + Math.round((sum) * 100.0) / 100.0);
         boolean tempCompareDue = tempCountDueCharge == Math.round((sum) * 100.0) / 100.0;
         return tempCompareDue;
     }
