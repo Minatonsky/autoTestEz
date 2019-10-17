@@ -49,12 +49,16 @@ public class ChargeFleetSoloTest extends ParentChargeTest{
         utilsForDB.setPaidTillEstimatedTillEzFinancesFleet(fleetId, paidTillForEzFinances, paidTillForEzFinances);
 
         checkAC("DateTime dues are not correct", chargePage.checkDateTimeDue(carrierIdString, fleetId, chargePage.runCronCheckFleet()), true);
+        double sumDeactivatedScannerMonthToMonthTariff = chargePage.sumDeactivatedScannerMonthToMonthTariff(fleetString, fleetId, countDeactivatedScannerMonthToMonthTariff);
+        checkAC("Charge due is not correct", chargePage.compareDueCharge(carrierIdString, fleetId, countScannerMonthToMonthTariff + countMonthToMonthChargeReturnedScanner, countScannerOneYearTariff + countOneYearChargeReturnedScanner, countScannerTwoYearsTariff + countTwoYearChargeReturnedScanner, sumDeactivatedScannerMonthToMonthTariff), true);
 
-        checkAC("Charge due is not correct", chargePage.compareDueCharge(carrierIdString, fleetId, countScannerMonthToMonthTariff + countMonthToMonthChargeReturnedScanner, countScannerOneYearTariff + countOneYearChargeReturnedScanner, countScannerTwoYearsTariff + countTwoYearChargeReturnedScanner, countDeactivatedScannerMonthToMonthTariff), true);
-
-        checkAC("PaidTill for month-to-month is not correct", chargePage.comparePaidTillMonthToMonthForFleet(fleetId, monthToMonthTariffId), true);
-        checkAC("PaidTill for one year is not correct", chargePage.comparePaidTillOneYearForFleet(fleetId, oneYearTariffId), true);
-        checkAC("PaidTill for two years is not correct", chargePage.comparePaidTillTwoYearsForFleet(fleetId, twoYearsTariffId), true);
+        checkAC("PaidTill for month-to-month is not correct", chargePage.comparePaidTillMonthToMonth(fleetString, fleetId, monthToMonthTariffId), true);
+        checkAC("PaidTill for one year is not correct", chargePage.comparePaidTillOneYear(fleetString, fleetId, oneYearTariffId), true);
+        checkAC("PaidTill for two years is not correct", chargePage.comparePaidTillTwoYears(fleetString, fleetId, twoYearsTariffId), true);
+        checkAC("EstimatedTill in ez_finance is not correct", chargePage.compareEstimatedTillFleet(fleetId), true);
+        checkAC("PaidTill in ez_finance is not correct", chargePage.comparePaidTillFleet(fleetId), true);
+        checkAC("Charge was after test", chargePage.checkDateTimeDue(carrierIdString, fleetId, chargePage.runCronCheckDrivers()), false);
+        checkAC("Charge was after test", chargePage.checkDateTimeDue(carrierIdString, fleetId, chargePage.runCronCheckFleet()), false);
 
     }
 
@@ -85,13 +89,17 @@ public class ChargeFleetSoloTest extends ParentChargeTest{
         utilsForDB.setPaidTillEstimatedTillEzFinancesSolo(soloId, paidTillForEzFinances, paidTillForEzFinances);
 
         checkAC("DateTime dues are not correct", chargePage.checkDateTimeDue(userIdString, soloId, chargePage.runCronCheckDrivers()), true);
-        checkAC("Charge due is not correct", chargePage.compareDueCharge(userIdString, soloId, countScannerMonthToMonthTariff + countMonthToMonthChargeReturnedScanner, countScannerOneYearTariff + countOneYearChargeReturnedScanner, countScannerTwoYearsTariff + countTwoYearChargeReturnedScanner, countDeactivatedScannerMonthToMonthTariff), true);
+        double sumDeactivatedScannerMonthToMonthTariff = chargePage.sumDeactivatedScannerMonthToMonthTariff(userIdString, soloId, countDeactivatedScannerMonthToMonthTariff);
+        checkAC("Charge due is not correct", chargePage.compareDueCharge(userIdString, soloId, countScannerMonthToMonthTariff + countMonthToMonthChargeReturnedScanner, countScannerOneYearTariff + countOneYearChargeReturnedScanner, countScannerTwoYearsTariff + countTwoYearChargeReturnedScanner, sumDeactivatedScannerMonthToMonthTariff), true);
 
-        checkAC("PaidTill for month-to-month is not correct", chargePage.comparePaidTillMonthToMonthForSolo(soloId, monthToMonthTariffId), true);
-        checkAC("PaidTill for one year is not correct", chargePage.comparePaidTillOneYearForSolo(soloId, oneYearTariffId), true);
-        checkAC("PaidTill for two years is not correct", chargePage.comparePaidTillTwoYearsForSolo(soloId, twoYearsTariffId), true);
+        checkAC("PaidTill for month-to-month is not correct", chargePage.comparePaidTillMonthToMonth(userIdString, soloId, monthToMonthTariffId), true);
+        checkAC("PaidTill for one year is not correct", chargePage.comparePaidTillOneYear(userIdString, soloId, oneYearTariffId), true);
+        checkAC("PaidTill for two years is not correct", chargePage.comparePaidTillTwoYears(userIdString, soloId, twoYearsTariffId), true);
+        checkAC("EstimatedTill in eld_personal_finances is not correct", chargePage.compareEstimatedTillSolo(soloId), true);
+        checkAC("PaidTill in eld_personal_finances is not correct", chargePage.comparePaidTillSolo(soloId), true);
+        checkAC("Charge was after test", chargePage.checkDateTimeDue(userIdString, soloId, chargePage.runCronCheckDrivers()), false);
+        checkAC("Charge was after test", chargePage.checkDateTimeDue(userIdString, soloId, chargePage.runCronCheckFleet()), false);
 
     }
-
 
 }

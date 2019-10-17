@@ -184,10 +184,53 @@ public class UtilsForDB {
         dBMySQL.quit();
     }
     @Step
+    public String getPaidTillEzFinancesFleet(String fleetId) throws SQLException, IOException, ClassNotFoundException {
+        dBMySQL = new Database("MySQL_PADB_DB", "MySQL");
+        String tempPaidTill = dBMySQL.selectValue("SELECT paidTill FROM ez_finances WHERE carrierId = " + fleetId + ";");
+        dBMySQL.quit();
+        return tempPaidTill;
+    }
+    @Step
+    public String getEstimatedTillEzFinancesFleet(String fleetId) throws SQLException, IOException, ClassNotFoundException {
+        dBMySQL = new Database("MySQL_PADB_DB", "MySQL");
+        String tempEstimatedTill = dBMySQL.selectValue("SELECT estimatedTill FROM ez_finances WHERE carrierId = " + fleetId + ";");
+        dBMySQL.quit();
+        return tempEstimatedTill;
+    }
+    @Step
+    public String getCurrentDueEzFinancesFleet(String fleetId) throws SQLException, IOException, ClassNotFoundException {
+        dBMySQL = new Database("MySQL_PADB_DB", "MySQL");
+        String tempCurrentDue = dBMySQL.selectValue("SELECT currentDue FROM ez_finances WHERE carrierId = " + fleetId + ";");
+        dBMySQL.quit();
+        return tempCurrentDue;
+    }
+
+    @Step
     public void setPaidTillEstimatedTillEzFinancesSolo(String soloId, String paidTill, String estimatedTill) throws SQLException, IOException, ClassNotFoundException {
         dBMySQL = new Database("MySQL_PADB_DB", "MySQL");
         dBMySQL.changeTable("UPDATE eld_personal_finances SET `paidTill` = '" + paidTill + "', `estimatedTill` = '" + estimatedTill + "' WHERE userId = " + soloId + ";");
         dBMySQL.quit();
+    }
+    @Step
+    public String getPaidTillEzFinancesSolo(String soloId) throws SQLException, IOException, ClassNotFoundException {
+        dBMySQL = new Database("MySQL_PADB_DB", "MySQL");
+        String tempPaidTill = dBMySQL.selectValue("SELECT paidTill FROM eld_personal_finances WHERE userId = " + soloId + ";");
+        dBMySQL.quit();
+        return tempPaidTill;
+    }
+    @Step
+    public String getEstimatedTillEzFinancesSolo(String soloId) throws SQLException, IOException, ClassNotFoundException {
+        dBMySQL = new Database("MySQL_PADB_DB", "MySQL");
+        String tempEstimatedTill = dBMySQL.selectValue("SELECT estimatedTill FROM eld_personal_finances WHERE userId = " + soloId + ";");
+        dBMySQL.quit();
+        return tempEstimatedTill;
+    }
+    @Step
+    public String getCurrentDueEzFinancesSolo(String soloId) throws SQLException, IOException, ClassNotFoundException {
+        dBMySQL = new Database("MySQL_PADB_DB", "MySQL");
+        String tempCurrentDue = dBMySQL.selectValue("SELECT currentDue FROM eld_personal_finances WHERE userId = " + soloId + ";");
+        dBMySQL.quit();
+        return tempCurrentDue;
     }
     @Step
     public List<String> getAmountEzDue(String soloOrFleetString, String userId) throws SQLException, IOException, ClassNotFoundException {
@@ -198,19 +241,13 @@ public class UtilsForDB {
     }
 
     @Step
-    public List<String> getPaidTillForFleet(String fleetId, String tariffId) throws SQLException, IOException, ClassNotFoundException {
+    public List<String> getPaidTillFromEldScanners(String soloOrFleetString, String userId, String tariffId) throws SQLException, IOException, ClassNotFoundException {
         dBMySQL = new Database("MySQL_PADB_DB", "MySQL");
-        List<String> tempPaidTillAndTariffStartList = dBMySQL.selectResultSet("SELECT paid_till FROM eld_scanners WHERE fleet = " + fleetId + " AND status = 4 AND tariffId = " + tariffId + "");
+        List<String> tempPaidTillAndTariffStartList = dBMySQL.selectResultSet("SELECT paid_till FROM eld_scanners WHERE " + soloOrFleetString + " = " + userId + " AND status = 4 AND tariffId = " + tariffId + "");
         dBMySQL.quit();
         return tempPaidTillAndTariffStartList;
     }
-    @Step
-    public List<String> getPaidTillForSolo(String soloId, String tariffId) throws SQLException, IOException, ClassNotFoundException {
-        dBMySQL = new Database("MySQL_PADB_DB", "MySQL");
-        List<String> tempPaidTillAndTariffStartList = dBMySQL.selectResultSet("SELECT paid_till FROM eld_scanners WHERE userId = " + soloId + " AND status = 4 AND tariffId = " + tariffId + "");
-        dBMySQL.quit();
-        return tempPaidTillAndTariffStartList;
-    }
+
     @Step
     public List<String> getDateTimeEzDue(String soloOrFleetString, String userId) throws SQLException, IOException, ClassNotFoundException {
         dBMySQL = new Database("MySQL_PADB_DB", "MySQL");
@@ -219,9 +256,9 @@ public class UtilsForDB {
         return tempDateTimeEzDue;
     }
     @Step
-    public List<String> getParamsEldScanners() throws SQLException, IOException, ClassNotFoundException {
+    public List<String> getParamsDeactivatedScanners(String soloOrFleetString, String userId) throws SQLException, IOException, ClassNotFoundException {
         dBMySQL = new Database("MySQL_PADB_DB", "MySQL");
-        List<String> tempAmountList = dBMySQL.selectResultSet("SELECT params FROM eld_scanners WHERE id IN (SELECT id FROM eld_scanners WHERE fleet = 518 AND status = 5 AND tariffId = 0);");
+        List<String> tempAmountList = dBMySQL.selectResultSet("SELECT params FROM eld_scanners WHERE id IN (SELECT id FROM eld_scanners WHERE " + soloOrFleetString + " = " + userId + " AND status = 5 AND tariffId = 0);");
         dBMySQL.quit();
         return tempAmountList;
     }

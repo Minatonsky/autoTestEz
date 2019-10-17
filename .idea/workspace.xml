@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="660eb711-957d-418e-9483-8b2931da6e6e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/log/qalight.log.1" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log/qalight.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/qalight.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/libs/UtilsForDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/libs/UtilsForDB.java" afterDir="false" />
@@ -95,7 +96,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TestDataBase.testGetParams">
+  <component name="RunManager" selected="JUnit.ChargeFleetSoloTest.chargeFleetTest (1)">
     <configuration name="ChargeFleetSoloTest.chargeFleetTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="WorkSpace" />
       <extension name="coverage">
@@ -246,9 +247,9 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TestDataBase.testGetParams" />
-        <item itemvalue="JUnit.ChargeFleetSoloTest.chargeSoloTest (1)" />
         <item itemvalue="JUnit.ChargeFleetSoloTest.chargeFleetTest (1)" />
+        <item itemvalue="JUnit.ChargeFleetSoloTest.chargeSoloTest (1)" />
+        <item itemvalue="JUnit.TestDataBase.testGetParams" />
         <item itemvalue="JUnit.FleetOrderParamsTest.cancelDevicesByFleet" />
         <item itemvalue="JUnit.SoloOrderParamsTest.cancelDevicesBySolo" />
       </list>
@@ -608,7 +609,14 @@
       <option name="project" value="LOCAL" />
       <updated>1571140969029</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="new charge2 refactor test was add">
+      <created>1571151912544</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1571151912544</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -645,7 +653,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="cancel 2 test was added" />
     <MESSAGE value="cancel with params test was added" />
     <MESSAGE value="manager do order with params test was added" />
     <MESSAGE value="manager do order cancel with params test was added" />
@@ -670,7 +677,8 @@
     <MESSAGE value="charge test was add" />
     <MESSAGE value="charge refactor test was add" />
     <MESSAGE value="new charge refactor test was add" />
-    <option name="LAST_COMMIT_MESSAGE" value="new charge refactor test was add" />
+    <MESSAGE value="new charge2 refactor test was add" />
+    <option name="LAST_COMMIT_MESSAGE" value="new charge2 refactor test was add" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
