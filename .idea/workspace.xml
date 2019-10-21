@@ -2,13 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="660eb711-957d-418e-9483-8b2931da6e6e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/log/qalight.log.1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/chargeTest/ChargeMonthToMonthTariff.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log/qalight.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/qalight.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/libs/UtilsForDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/libs/UtilsForDB.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/ChargePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/ChargePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/chargeTest/ChargeFleetSoloTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/chargeTest/ChargeFleetSoloTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testDB/TestDataBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testDB/TestDataBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/parameterizedOrders/ManagerOrderFleetParamsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/parameterizedOrders/ManagerOrderFleetParamsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/parameterizedOrders/ManagerOrderSoloParamsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/parameterizedOrders/ManagerOrderSoloParamsTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,7 +34,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="den-8-10" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -96,7 +97,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ChargeFleetSoloTest.chargeFleetTest (1)">
+  <component name="RunManager" selected="JUnit.ChargeMonthToMonthTariff.chargeMonthToMonthFleet">
     <configuration name="ChargeFleetSoloTest.chargeFleetTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="WorkSpace" />
       <extension name="coverage">
@@ -129,23 +130,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FleetOrderParamsTest.cancelDevicesByFleet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ChargeMonthToMonthTariff.chargeMonthToMonthFleet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="WorkSpace" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="parameterizedOrders.*" />
+          <option name="PATTERN" value="chargeTest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="parameterizedOrders" />
-      <option name="MAIN_CLASS_NAME" value="parameterizedOrders.FleetOrderParamsTest" />
-      <option name="METHOD_NAME" value="cancelDevicesByFleet" />
+      <option name="PACKAGE_NAME" value="chargeTest" />
+      <option name="MAIN_CLASS_NAME" value="chargeTest.ChargeMonthToMonthTariff" />
+      <option name="METHOD_NAME" value="chargeMonthToMonthFleet" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SoloOrderParamsTest.cancelDevicesBySolo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ManagerOrderFleetParamsTest.managerDoOrderFleetAgree" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="WorkSpace" />
       <extension name="coverage">
         <pattern>
@@ -154,8 +155,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="parameterizedOrders" />
-      <option name="MAIN_CLASS_NAME" value="parameterizedOrders.SoloOrderParamsTest" />
-      <option name="METHOD_NAME" value="cancelDevicesBySolo" />
+      <option name="MAIN_CLASS_NAME" value="parameterizedOrders.ManagerOrderFleetParamsTest" />
+      <option name="METHOD_NAME" value="managerDoOrderFleetAgree" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -239,19 +240,19 @@
     <list>
       <item itemvalue="JUnit.TestDataBase.getEventNewOrder" />
       <item itemvalue="Maven.SoloOrders" />
-      <item itemvalue="JUnit.SoloOrderParamsTest.cancelDevicesBySolo" />
       <item itemvalue="JUnit.ChargeFleetSoloTest.chargeFleetTest (1)" />
       <item itemvalue="JUnit.ChargeFleetSoloTest.chargeSoloTest (1)" />
-      <item itemvalue="JUnit.FleetOrderParamsTest.cancelDevicesByFleet" />
       <item itemvalue="JUnit.TestDataBase.testGetParams" />
+      <item itemvalue="JUnit.ManagerOrderFleetParamsTest.managerDoOrderFleetAgree" />
+      <item itemvalue="JUnit.ChargeMonthToMonthTariff.chargeMonthToMonthFleet" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ChargeMonthToMonthTariff.chargeMonthToMonthFleet" />
         <item itemvalue="JUnit.ChargeFleetSoloTest.chargeFleetTest (1)" />
         <item itemvalue="JUnit.ChargeFleetSoloTest.chargeSoloTest (1)" />
+        <item itemvalue="JUnit.ManagerOrderFleetParamsTest.managerDoOrderFleetAgree" />
         <item itemvalue="JUnit.TestDataBase.testGetParams" />
-        <item itemvalue="JUnit.FleetOrderParamsTest.cancelDevicesByFleet" />
-        <item itemvalue="JUnit.SoloOrderParamsTest.cancelDevicesBySolo" />
       </list>
     </recent_temporary>
   </component>
@@ -272,13 +273,6 @@
       <workItem from="1562665338918" duration="52834000" />
       <workItem from="1562782581468" duration="9021000" />
       <workItem from="1562822119836" duration="58303000" />
-    </task>
-    <task id="LOCAL-00001" summary="add xml">
-      <created>1562227932890</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1562227932890</updated>
     </task>
     <task id="LOCAL-00002" summary="loginTest was added">
       <created>1562240850539</created>
@@ -616,7 +610,14 @@
       <option name="project" value="LOCAL" />
       <updated>1571151912544</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="new charge2 refactor test was add">
+      <created>1571320376717</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1571320376719</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
