@@ -152,6 +152,12 @@ public class UtilsForDB {
         dBMySQL.quit();
     }
     @Step
+    public void setDateTimeEldHistoryForMonthToMonth(String soloOrFleetString, String userId, String tariffStart) throws SQLException, IOException, ClassNotFoundException {
+        dBMySQL = new Database("MySQL_PADB_DB", "MySQL");
+        dBMySQL.changeTable("UPDATE eld_history SET `dateTime` = '" + tariffStart + "' WHERE status = 4 AND scannerId IN (SELECT id FROM eld_scanners WHERE " + soloOrFleetString + " = " + userId + " AND tariffId = 0);");
+        dBMySQL.quit();
+    }
+    @Step
     public void setPaidTillAndTariffStartScannerForSolo(String soloId, String paidTill, String tariffStart, String tariffId) throws SQLException, IOException, ClassNotFoundException {
         dBMySQL = new Database("MySQL_PADB_DB", "MySQL");
         dBMySQL.changeTable("UPDATE eld_scanners SET `paid_till`='" + paidTill + "', `tariffStart` = '" + tariffStart + "' WHERE userId = " + soloId + " AND tariffId = " + tariffId + ";");
@@ -265,9 +271,9 @@ public class UtilsForDB {
 
 //////// CHARGE MONTH TO MONTH
     @Step
-    public void delete_102_Status(String soloOrFleetString, String userId, String tariffId) throws SQLException, IOException, ClassNotFoundException {
+    public void delete_102_Status(String userIdOrFleetString, String userId, String tariffId) throws SQLException, IOException, ClassNotFoundException {
         dBMySQL = new Database("MySQL_PADB_DB", "MySQL");
-        dBMySQL.changeTable("DELETE FROM eld_history WHERE status = 102 AND scannerId IN (SELECT id FROM eld_scanners WHERE " + soloOrFleetString + " = " + userId + " AND tariffId = " + tariffId + ");");
+        dBMySQL.changeTable("DELETE FROM eld_history WHERE status = 102 AND scannerId IN (SELECT id FROM eld_scanners WHERE " + userIdOrFleetString + " = " + userId + " AND tariffId = " + tariffId + ");");
         dBMySQL.quit();
     }
     @Step

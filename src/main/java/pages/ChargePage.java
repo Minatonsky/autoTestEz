@@ -38,9 +38,10 @@ public class ChargePage {
 
     @Step
     public String tariffStartForMonthToMonth(int countMonth){
-        LocalDateTime tariffStart = LocalDateTime.parse(LocalDateTime.now().minusMonths(countMonth).minusDays(1).toString());
+        LocalDateTime tariffStart = LocalDateTime.parse(LocalDateTime.now().minusMonths(countMonth).minusDays(2).toString());
         long previousMonthMinusDay = tariffStart.toEpochSecond(ZoneOffset.UTC);
         String tempTariffMonthStart = Long.toString(previousMonthMinusDay);
+        logger.info("tempTariffMonthStart" + tempTariffMonthStart);
         return tempTariffMonthStart;
     }
 
