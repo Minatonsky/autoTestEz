@@ -27,11 +27,12 @@ public class ChargeMonthToMonthTariff extends ParentChargeTest {
         System.out.println("countMonthToMonthChargeReturnedScanner " + countMonthToMonthChargeReturnedScanner);
 
         String setPaidTillForAllTariff = chargePage.paidTillForAllTariff();
-        String setTariffStartMonth = chargePage.tariffStartForMonthToMonth(12);
+        String setTariffStartMonth = chargePage.tariffStartForMonthToMonth(6);
+        String setDateTimeEldHistoryMonth = chargePage.dateTimeEldHistoryForMonthToMonth(10);
         utilsForDB.setPaidTillAndTariffStartScannerForFleet(fleetId, setPaidTillForAllTariff, setTariffStartMonth, monthToMonthTariffId);
         utilsForDB.delete_102_Status(fleetString, fleetId, monthToMonthTariffId);
         utilsForDB.setOrderDateForMonthToMonth(fleetString, fleetId, setTariffStartMonth);
-        utilsForDB.setDateTimeEldHistoryForMonthToMonth(fleetString, fleetId, setTariffStartMonth);
+        utilsForDB.setDateTimeEldHistoryForMonthToMonth(fleetString, fleetId, setDateTimeEldHistoryMonth);
         String paidTillForEzFinances = chargePage.paidTillForEzFinances();
         utilsForDB.setPaidTillEstimatedTillEzFinancesFleet(fleetId, paidTillForEzFinances, paidTillForEzFinances);
         checkAC("DateTime dues are not correct", chargePage.checkDateTimeDueMonthToMonth(carrierIdString, fleetId, chargePage.runCronCheckFleet()), true);
@@ -57,10 +58,11 @@ public class ChargeMonthToMonthTariff extends ParentChargeTest {
 
         String setPaidTillForAllTariff = chargePage.paidTillForAllTariff();
         String setTariffStartMonth = chargePage.tariffStartForMonthToMonth(12);
+        String setDateTimeEldHistoryMonth = chargePage.dateTimeEldHistoryForMonthToMonth(15);
         utilsForDB.setPaidTillAndTariffStartScannerForSolo(soloId, setPaidTillForAllTariff, setTariffStartMonth, monthToMonthTariffId);
         utilsForDB.delete_102_Status(userIdString, soloId, monthToMonthTariffId);
         utilsForDB.setOrderDateForMonthToMonth(userIdString, soloId, setTariffStartMonth);
-        utilsForDB.setDateTimeEldHistoryForMonthToMonth(userIdString, soloId, setTariffStartMonth);
+        utilsForDB.setDateTimeEldHistoryForMonthToMonth(userIdString, soloId, setDateTimeEldHistoryMonth);
         String paidTillForEzFinances = chargePage.paidTillForEzFinances();
         utilsForDB.setPaidTillEstimatedTillEzFinancesSolo(soloId, paidTillForEzFinances, paidTillForEzFinances);
         checkAC("DateTime dues are not correct", chargePage.checkDateTimeDueMonthToMonth(userIdString, soloId, chargePage.runCronCheckDrivers()), true);

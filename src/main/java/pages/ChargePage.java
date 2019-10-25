@@ -41,8 +41,16 @@ public class ChargePage {
         LocalDateTime tariffStart = LocalDateTime.parse(LocalDateTime.now().minusMonths(countMonth).minusDays(2).toString());
         long previousMonthMinusDay = tariffStart.toEpochSecond(ZoneOffset.UTC);
         String tempTariffMonthStart = Long.toString(previousMonthMinusDay);
-        logger.info("tempTariffMonthStart" + tempTariffMonthStart);
+        logger.info("tempTariffMonthStart " + tariffStart);
         return tempTariffMonthStart;
+    }
+    @Step
+    public String dateTimeEldHistoryForMonthToMonth(int countMonth){
+        LocalDateTime dateTimeEldHistory = LocalDateTime.parse(LocalDateTime.now().minusMonths(countMonth).minusDays(2).toString());
+        long previousMonthMinusDay = dateTimeEldHistory.toEpochSecond(ZoneOffset.UTC);
+        String tempDateTimeEldHistory = Long.toString(previousMonthMinusDay);
+        logger.info("tempDateTimeEldHistory " + dateTimeEldHistory);
+        return tempDateTimeEldHistory;
     }
 
     @Step

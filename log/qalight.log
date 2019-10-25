@@ -1196,3 +1196,273 @@
 2019-21-10 17:00:29   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
 2019-21-10 17:00:31   INFO [pages.ChargePage] : tempPaidTill: 2019-11-01
 2019-21-10 17:00:32   INFO [chargeTest.ChargeMonthToMonthTariff] : AC passed
+2019-22-10 13:13:35   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-22-10 13:13:38   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-22-10 13:13:40   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-22-10 13:13:42   INFO [pages.ChargePage] : tempTariffMonthStart1540041222
+2019-22-10 13:13:42   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-22-10 13:13:44   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-22-10 13:13:46   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-22-10 13:13:48   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-22-10 13:13:50   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-22-10 13:14:09   INFO [pages.ChargePage] : Cron check fleets was run: 2019-10-22 10:13:52
+2019-22-10 13:14:09   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-22-10 13:14:11   INFO [pages.ChargePage] : dateTime: [2019-10-22 10:14:02]
+2019-22-10 13:14:12   INFO [chargeTest.ChargeMonthToMonthTariff] : AC passed
+2019-22-10 13:14:12   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-22-10 13:14:14   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-22-10 13:14:16   INFO [pages.ChargePage] : amountDue from db: 1304.57
+2019-22-10 13:14:16   INFO [pages.ChargePage] : countScannerMonthToMonthTariff: 43
+2019-22-10 13:14:16   INFO [pages.ChargePage] : sumDeactivatedScannerMonthToMonthTariff: 15.0
+2019-22-10 13:14:16   INFO [pages.ChargePage] : charge MonthToMonth: 1304.57
+2019-22-10 13:14:17   INFO [chargeTest.ChargeMonthToMonthTariff] : AC passed
+2019-22-10 13:14:17   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-22-10 13:14:21   INFO [chargeTest.ChargeMonthToMonthTariff] : AC passed
+2019-22-10 13:14:21   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-22-10 13:14:23   INFO [pages.ChargePage] : tempEstimatedTill: 2019-11-01
+2019-22-10 13:14:24   INFO [chargeTest.ChargeMonthToMonthTariff] : AC passed
+2019-22-10 13:14:24   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-22-10 13:14:26   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-22-10 13:14:29   INFO [pages.ChargePage] : tempPaidTill: 2019-10-21
+2019-22-10 13:14:30   INFO [chargeTest.ChargeMonthToMonthTariff] : AC passed
+2019-22-10 13:44:31   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-22-10 13:44:34   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-22-10 13:44:36   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-22-10 13:44:38   INFO [pages.ChargePage] : tempTariffMonthStart1540043078
+2019-22-10 13:44:38   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-22-10 13:44:40   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-22-10 13:44:43   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-22-10 13:44:45   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-22-10 13:44:46   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-22-10 13:45:05   INFO [pages.ChargePage] : Cron check fleets was run: 2019-10-22 10:44:48
+2019-22-10 13:45:05   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-22-10 13:45:07   INFO [pages.ChargePage] : dateTime: [2019-10-22 10:44:57]
+2019-22-10 13:45:08   INFO [chargeTest.ChargeMonthToMonthTariff] : AC passed
+2019-22-10 13:45:08   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-22-10 13:45:11   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-22-10 13:45:13   INFO [pages.ChargePage] : amountDue from db: 1304.57
+2019-22-10 13:45:13   INFO [pages.ChargePage] : countScannerMonthToMonthTariff: 43
+2019-22-10 13:45:13   INFO [pages.ChargePage] : sumDeactivatedScannerMonthToMonthTariff: 15.0
+2019-22-10 13:45:13   INFO [pages.ChargePage] : charge MonthToMonth: 1304.57
+2019-22-10 13:45:14   INFO [chargeTest.ChargeMonthToMonthTariff] : AC passed
+2019-22-10 13:45:14   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-22-10 13:45:17   INFO [chargeTest.ChargeMonthToMonthTariff] : AC passed
+2019-22-10 13:45:17   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-22-10 13:45:21   INFO [pages.ChargePage] : tempEstimatedTill: 2019-11-01
+2019-22-10 13:45:22   INFO [chargeTest.ChargeMonthToMonthTariff] : AC passed
+2019-22-10 13:45:22   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-22-10 13:45:24   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-22-10 13:45:26   INFO [pages.ChargePage] : tempPaidTill: 2019-10-21
+2019-22-10 13:45:27   INFO [chargeTest.ChargeMonthToMonthTariff] : AC passed
+2019-22-10 15:46:48   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-22-10 15:46:50   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-22-10 15:46:52   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-22-10 15:46:54   INFO [pages.ChargePage] : tempTariffMonthStart1555775214
+2019-22-10 15:46:54   INFO [pages.ChargePage] : tempTariffMonthStart1532101614
+2019-22-10 15:46:54   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-22-10 15:46:56   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-22-10 15:46:58   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-22-10 15:47:00   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-22-10 15:47:03   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-22-10 15:47:27   INFO [pages.ChargePage] : Cron check fleets was run: 2019-10-22 12:47:05
+2019-22-10 15:47:27   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-22-10 15:47:29   INFO [pages.ChargePage] : dateTime: [2019-10-22 12:47:14]
+2019-22-10 15:47:30   INFO [chargeTest.ChargeMonthToMonthTariff] : AC passed
+2019-22-10 15:47:30   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-22-10 15:47:33   INFO [pages.ChargePage] : amountDue from db: 1589.47
+2019-22-10 15:47:33   INFO [pages.ChargePage] : countScannerMonthToMonthTariff: 53
+2019-22-10 15:47:33   INFO [pages.ChargePage] : sumDeactivatedScannerMonthToMonthTariff: 0.0
+2019-22-10 15:47:33   INFO [pages.ChargePage] : charge MonthToMonth: 1589.47
+2019-22-10 15:47:34   INFO [chargeTest.ChargeMonthToMonthTariff] : AC passed
+2019-22-10 15:47:34   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-22-10 15:47:37   INFO [chargeTest.ChargeMonthToMonthTariff] : AC passed
+2019-22-10 15:47:37   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-22-10 15:47:38   INFO [pages.ChargePage] : tempEstimatedTill: 2019-11-01
+2019-22-10 15:47:39   INFO [chargeTest.ChargeMonthToMonthTariff] : AC passed
+2019-22-10 15:47:39   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-22-10 15:47:42   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-22-10 15:47:44   INFO [pages.ChargePage] : tempPaidTill: 2019-11-01
+2019-22-10 15:47:45   INFO [chargeTest.ChargeMonthToMonthTariff] : AC passed
+2019-22-10 15:58:36   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-22-10 15:58:40   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-22-10 15:58:43   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-22-10 15:58:45   INFO [pages.ChargePage] : tempTariffMonthStart1555775925
+2019-22-10 15:58:45   INFO [pages.ChargePage] : tempDateTimeEldHistory2018-07-20T15:58:45.484
+2019-22-10 15:58:45   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-22-10 15:58:47   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-22-10 15:58:49   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-22-10 15:58:51   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-22-10 15:58:53   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-22-10 15:59:22   INFO [pages.ChargePage] : Cron check fleets was run: 2019-10-22 12:58:59
+2019-22-10 15:59:22   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-22-10 15:59:25   INFO [pages.ChargePage] : dateTime: [2019-10-22 12:59:08]
+2019-22-10 15:59:26   INFO [chargeTest.ChargeMonthToMonthTariff] : AC passed
+2019-22-10 15:59:26   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-22-10 15:59:29   INFO [pages.ChargePage] : amountDue from db: 1589.47
+2019-22-10 15:59:29   INFO [pages.ChargePage] : countScannerMonthToMonthTariff: 53
+2019-22-10 15:59:29   INFO [pages.ChargePage] : sumDeactivatedScannerMonthToMonthTariff: 0.0
+2019-22-10 15:59:29   INFO [pages.ChargePage] : charge MonthToMonth: 1589.47
+2019-22-10 15:59:30   INFO [chargeTest.ChargeMonthToMonthTariff] : AC passed
+2019-22-10 15:59:30   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-22-10 15:59:33   INFO [chargeTest.ChargeMonthToMonthTariff] : AC passed
+2019-22-10 15:59:33   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-22-10 15:59:35   INFO [pages.ChargePage] : tempEstimatedTill: 2019-11-01
+2019-22-10 15:59:36   INFO [chargeTest.ChargeMonthToMonthTariff] : AC passed
+2019-22-10 15:59:36   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-22-10 15:59:39   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-22-10 15:59:41   INFO [pages.ChargePage] : tempPaidTill: 2019-11-01
+2019-22-10 15:59:42   INFO [chargeTest.ChargeMonthToMonthTariff] : AC passed
+2019-23-10 11:47:55   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-23-10 11:47:57   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-23-10 11:48:00   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-23-10 11:48:02   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-23-10 11:48:04   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-23-10 11:48:06   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-23-10 11:48:09   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-23-10 11:48:12   INFO [pages.ChargePage] : tempTariffMonthStart 2019-08-21T11:48:12.749
+2019-23-10 11:48:13   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2019-23-10 11:48:13   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-23-10 11:48:16   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-23-10 11:48:18   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-23-10 11:48:20   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-23-10 11:48:22   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-23-10 11:49:05   INFO [pages.ChargePage] : Cron check fleets was run: 2019-10-23 08:48:25
+2019-23-10 11:49:05   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-23-10 11:49:09   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2019-23-10 11:49:09   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-23-10 11:49:12   INFO [pages.ChargePage] : amountDue from db: [26451.18, 1589.47, 13195.60]
+2019-23-10 11:49:12   INFO [pages.ChargePage] : countScannerMonthToMonthTariff: 53
+2019-23-10 11:49:12   INFO [pages.ChargePage] : countScannerOneYearTariff: 40
+2019-23-10 11:49:12   INFO [pages.ChargePage] : countScannerTwoYearsTariff: 42
+2019-23-10 11:49:12   INFO [pages.ChargePage] : charge MonthToMonth: 1589.47
+2019-23-10 11:49:12   INFO [pages.ChargePage] : charge tempOneYearTariff: 13195.6
+2019-23-10 11:49:12   INFO [pages.ChargePage] : charge tempTwoYearsTariff: 26451.18
+2019-23-10 11:49:12   INFO [pages.ChargePage] : tempCountDueCharge: 41236.25
+2019-23-10 11:49:12   INFO [pages.ChargePage] : sumCountDueChargeFront: 41236.25
+2019-23-10 11:49:13   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2019-23-10 11:49:13   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-23-10 11:49:15   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2019-23-10 11:49:15   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-23-10 11:49:18   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2019-23-10 11:49:18   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-23-10 11:49:22   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2019-23-10 11:49:22   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-23-10 11:49:24   INFO [pages.ChargePage] : tempEstimatedTill: 2019-11-01
+2019-23-10 11:49:25   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2019-23-10 11:49:25   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-23-10 11:49:27   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-23-10 11:49:29   INFO [pages.ChargePage] : tempPaidTill: 2019-11-01
+2019-23-10 11:49:30   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2019-23-10 11:49:30   INFO [pages.ChargePage] : Cron check Drivers was run: 2019-10-23 08:49:30
+2019-23-10 11:49:37   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-23-10 11:49:41   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2019-23-10 11:49:52   INFO [pages.ChargePage] : Cron check fleets was run: 2019-10-23 08:49:41
+2019-23-10 11:49:52   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-23-10 11:49:56   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2019-23-10 11:50:15   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-23-10 11:50:18   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-23-10 11:50:20   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-23-10 11:50:22   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-23-10 11:50:25   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-23-10 11:50:27   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-23-10 11:50:30   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-23-10 11:50:32   INFO [pages.ChargePage] : tempTariffMonthStart 2019-08-21T11:50:32.121
+2019-23-10 11:50:33   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2019-23-10 11:50:33   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-23-10 11:50:35   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-23-10 11:50:38   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-23-10 11:50:40   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-23-10 11:50:43   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-23-10 11:50:45   INFO [pages.ChargePage] : Cron check Drivers was run: 2019-10-23 08:50:45
+2019-23-10 11:51:06   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-23-10 11:51:10   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2019-23-10 11:51:10   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-23-10 11:51:12   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-23-10 11:51:14   INFO [pages.ChargePage] : amountDue from db: [23302.23, 2639.12, 839.73]
+2019-23-10 11:51:14   INFO [pages.ChargePage] : countScannerMonthToMonthTariff: 27
+2019-23-10 11:51:14   INFO [pages.ChargePage] : countScannerOneYearTariff: 8
+2019-23-10 11:51:14   INFO [pages.ChargePage] : countScannerTwoYearsTariff: 37
+2019-23-10 11:51:14   INFO [pages.ChargePage] : charge MonthToMonth: 839.73
+2019-23-10 11:51:14   INFO [pages.ChargePage] : charge tempOneYearTariff: 2639.12
+2019-23-10 11:51:14   INFO [pages.ChargePage] : charge tempTwoYearsTariff: 23302.23
+2019-23-10 11:51:14   INFO [pages.ChargePage] : tempCountDueCharge: 26781.08
+2019-23-10 11:51:14   INFO [pages.ChargePage] : sumCountDueChargeFront: 26781.08
+2019-23-10 11:51:15   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2019-23-10 11:51:15   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-23-10 11:51:19   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2019-23-10 11:51:19   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-23-10 11:51:22   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2019-23-10 11:51:22   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-23-10 11:51:25   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2019-23-10 11:51:25   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-23-10 11:51:27   INFO [pages.ChargePage] : tempEstimatedTill: 2019-11-01
+2019-23-10 11:51:28   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2019-23-10 11:51:28   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-23-10 11:51:32   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-23-10 11:51:33   INFO [pages.ChargePage] : tempPaidTill: 2019-11-01
+2019-23-10 11:51:34   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2019-23-10 11:51:34   INFO [pages.ChargePage] : Cron check Drivers was run: 2019-10-23 08:51:34
+2019-23-10 11:51:43   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-23-10 11:51:47   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2019-23-10 11:51:59   INFO [pages.ChargePage] : Cron check fleets was run: 2019-10-23 08:51:47
+2019-23-10 11:51:59   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-23-10 11:52:02   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2019-23-10 11:52:22   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-23-10 11:52:24   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-23-10 11:52:26   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-23-10 11:52:29   INFO [pages.ChargePage] : tempTariffMonthStart 2019-04-21T11:52:29.076
+2019-23-10 11:52:29   INFO [pages.ChargePage] : tempDateTimeEldHistory 2018-07-21T11:52:29.078
+2019-23-10 11:52:29   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-23-10 11:52:30   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-23-10 11:52:33   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-23-10 11:52:35   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-23-10 11:52:37   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-23-10 11:53:01   INFO [pages.ChargePage] : Cron check fleets was run: 2019-10-23 08:52:39
+2019-23-10 11:53:01   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-23-10 11:53:05   INFO [pages.ChargePage] : dateTime: [2019-10-23 08:52:48]
+2019-23-10 11:53:06   INFO [chargeTest.ChargeMonthToMonthTariff] : AC passed
+2019-23-10 11:53:06   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-23-10 11:53:08   INFO [pages.ChargePage] : amountDue from db: 1589.47
+2019-23-10 11:53:08   INFO [pages.ChargePage] : countScannerMonthToMonthTariff: 53
+2019-23-10 11:53:08   INFO [pages.ChargePage] : sumDeactivatedScannerMonthToMonthTariff: 0.0
+2019-23-10 11:53:08   INFO [pages.ChargePage] : charge MonthToMonth: 1589.47
+2019-23-10 11:53:09   INFO [chargeTest.ChargeMonthToMonthTariff] : AC passed
+2019-23-10 11:53:09   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-23-10 11:53:13   INFO [chargeTest.ChargeMonthToMonthTariff] : AC passed
+2019-23-10 11:53:13   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-23-10 11:53:15   INFO [pages.ChargePage] : tempEstimatedTill: 2019-11-01
+2019-23-10 11:53:16   INFO [chargeTest.ChargeMonthToMonthTariff] : AC passed
+2019-23-10 11:53:16   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-23-10 11:53:23   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-23-10 11:53:26   INFO [pages.ChargePage] : tempPaidTill: 2019-11-01
+2019-23-10 11:53:27   INFO [chargeTest.ChargeMonthToMonthTariff] : AC passed
+2019-23-10 11:53:44   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-23-10 11:53:46   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-23-10 11:53:49   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-23-10 11:53:51   INFO [pages.ChargePage] : tempTariffMonthStart 2018-10-21T11:53:51.444
+2019-23-10 11:53:51   INFO [pages.ChargePage] : tempDateTimeEldHistory 2018-07-21T11:53:51.447
+2019-23-10 11:53:51   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-23-10 11:53:53   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-23-10 11:53:56   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-23-10 11:53:58   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-23-10 11:54:00   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-23-10 11:54:03   INFO [pages.ChargePage] : Cron check Drivers was run: 2019-10-23 08:54:03
+2019-23-10 11:54:18   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-23-10 11:54:21   INFO [pages.ChargePage] : dateTime: [2019-10-23 08:54:13]
+2019-23-10 11:54:22   INFO [chargeTest.ChargeMonthToMonthTariff] : AC passed
+2019-23-10 11:54:22   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-23-10 11:54:23   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-23-10 11:54:25   INFO [pages.ChargePage] : amountDue from db: 839.73
+2019-23-10 11:54:25   INFO [pages.ChargePage] : countScannerMonthToMonthTariff: 27
+2019-23-10 11:54:25   INFO [pages.ChargePage] : sumDeactivatedScannerMonthToMonthTariff: 30.0
+2019-23-10 11:54:25   INFO [pages.ChargePage] : charge MonthToMonth: 839.73
+2019-23-10 11:54:26   INFO [chargeTest.ChargeMonthToMonthTariff] : AC passed
+2019-23-10 11:54:26   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-23-10 11:54:29   INFO [chargeTest.ChargeMonthToMonthTariff] : AC passed
+2019-23-10 11:54:29   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-23-10 11:54:32   INFO [pages.ChargePage] : tempEstimatedTill: 2019-11-01
+2019-23-10 11:54:33   INFO [chargeTest.ChargeMonthToMonthTariff] : AC passed
+2019-23-10 11:54:33   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-23-10 11:54:35   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2019-23-10 11:54:37   INFO [pages.ChargePage] : tempPaidTill: 2019-11-01
+2019-23-10 11:54:38   INFO [chargeTest.ChargeMonthToMonthTariff] : AC passed

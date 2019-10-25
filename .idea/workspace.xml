@@ -4,9 +4,9 @@
     <list default="true" id="660eb711-957d-418e-9483-8b2931da6e6e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log/qalight.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/qalight.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/libs/UtilsForDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/libs/UtilsForDB.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/ChargePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/ChargePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/chargeTest/ChargeMonthToMonthTariff.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/chargeTest/ChargeMonthToMonthTariff.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/loginTests/UnValidLoginWithParamsWithExcel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/loginTests/UnValidLoginWithParamsWithExcel.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -247,8 +247,8 @@
       <list>
         <item itemvalue="JUnit.ChargeMonthToMonthTariff.chargeMonthToMonthSolo" />
         <item itemvalue="JUnit.ChargeMonthToMonthTariff.chargeMonthToMonthFleet" />
-        <item itemvalue="JUnit.ChargeFleetSoloTest.chargeFleetTest (1)" />
         <item itemvalue="JUnit.ChargeFleetSoloTest.chargeSoloTest (1)" />
+        <item itemvalue="JUnit.ChargeFleetSoloTest.chargeFleetTest (1)" />
         <item itemvalue="JUnit.ManagerOrderFleetParamsTest.managerDoOrderFleetAgree" />
       </list>
     </recent_temporary>
@@ -270,13 +270,6 @@
       <workItem from="1562665338918" duration="52834000" />
       <workItem from="1562782581468" duration="9021000" />
       <workItem from="1562822119836" duration="58303000" />
-    </task>
-    <task id="LOCAL-00003" summary="new page\test was added">
-      <created>1562279091321</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1562279091321</updated>
     </task>
     <task id="LOCAL-00004" summary="eld page/test was add">
       <created>1562338480938</created>
@@ -614,7 +607,14 @@
       <option name="project" value="LOCAL" />
       <updated>1571643737307</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="month-to-month 12 test was add">
+      <created>1571666501270</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1571666501270</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -651,7 +651,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="cancel with params test was added" />
     <MESSAGE value="manager do order with params test was added" />
     <MESSAGE value="manager do order cancel with params test was added" />
     <MESSAGE value="refactor params test was do" />
@@ -676,7 +675,8 @@
     <MESSAGE value="charge refactor test was add" />
     <MESSAGE value="new charge refactor test was add" />
     <MESSAGE value="new charge2 refactor test was add" />
-    <option name="LAST_COMMIT_MESSAGE" value="new charge2 refactor test was add" />
+    <MESSAGE value="month-to-month 12 test was add" />
+    <option name="LAST_COMMIT_MESSAGE" value="month-to-month 12 test was add" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
