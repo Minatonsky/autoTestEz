@@ -45,6 +45,7 @@ public class ManagerOrderFleetParamsTest extends ParentManagerOrderParamsTest {
         checkAC("Total Order is not correct", modalEldPage.compareTotalOrder(quantityOfDevices, typeOfPaymentMethod, quantityPinCable, quantityOBDPinCable, quantitySticker, quantityCameraCP, quantityCameraSVA, valueSdCard), true);
 
         modalEldPage.clickButtonOrder();
+        waitABit(3);
         String idLastOrderAfterTest = utilsForDB.getLastOrderIdForFleet(dataFleetId.get("fleetId").toString());
         checkAC("New order was not created", idLastOrderBeforeTest.equals(idLastOrderAfterTest) , false);
 
@@ -114,6 +115,7 @@ public class ManagerOrderFleetParamsTest extends ParentManagerOrderParamsTest {
         checkAC("Total Order is not correct", modalEldPage.compareTotalOrder(quantityOfDevices, typeOfPaymentMethod, quantityPinCable, quantityOBDPinCable, quantitySticker, quantityCameraCP, quantityCameraSVA, valueSdCard), true);
 
         modalEldPage.clickButtonOrder();
+        waitABit(3);
         String idLastOrderAfterTest = utilsForDB.getLastOrderIdForFleet(dataFleetId.get("fleetId").toString());
         checkAC("New order was not created", idLastOrderBeforeTest.equals(idLastOrderAfterTest) , false);
 

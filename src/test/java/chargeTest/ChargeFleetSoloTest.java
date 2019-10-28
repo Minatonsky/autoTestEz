@@ -18,11 +18,10 @@ public class ChargeFleetSoloTest extends ParentChargeTest{
     String fleetId = "518";
     String fleetUserId = "3816";
 
-    public ChargeFleetSoloTest() throws IOException {
-    }
+    int countMonthTariffStartMonthToMonth = 2;
 
     @Test
-    public  void chargeFleetTest() throws SQLException, IOException, ClassNotFoundException{
+    public void chargeFleetTest() throws SQLException, IOException, ClassNotFoundException{
 
         int countScannerMonthToMonthTariff = utilsForDB.countChargeScannersWithTariff(fleetString, fleetId, monthToMonthTariffId);
         int countDeactivatedScannerMonthToMonthTariff = utilsForDB.countDeactivatedChargeScannersMonthToMonth(fleetString, fleetId);
@@ -34,7 +33,7 @@ public class ChargeFleetSoloTest extends ParentChargeTest{
         int countTwoYearChargeReturnedScanner = utilsForDB.countChargeReturnedScanner(userIdString, fleetUserId, twoYearsTariffId);
 
         String setPaidTillForAllTariff = chargePage.paidTillForAllTariff();
-        String setTariffStartMonth = chargePage.tariffStartForMonthToMonth();
+        String setTariffStartMonth = chargePage.tariffStartForMonthToMonth(countMonthTariffStartMonthToMonth);
         String setTariffStartOneYear = chargePage.tariffStartForOneYear();
         String setTariffStartTwoYears = chargePage.tariffStartForTwoYears();
 
@@ -75,7 +74,7 @@ public class ChargeFleetSoloTest extends ParentChargeTest{
         int countTwoYearChargeReturnedScanner = utilsForDB.countChargeReturnedScanner(userIdString, soloId, twoYearsTariffId);
 
         String setPaidTillForAllTariff = chargePage.paidTillForAllTariff();
-        String setTariffStartMonth = chargePage.tariffStartForMonthToMonth();
+        String setTariffStartMonth = chargePage.tariffStartForMonthToMonth(countMonthTariffStartMonthToMonth);
         String setTariffStartOneYear = chargePage.tariffStartForOneYear();
         String setTariffStartTwoYears = chargePage.tariffStartForTwoYears();
 
