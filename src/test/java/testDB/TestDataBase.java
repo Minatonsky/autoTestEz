@@ -113,5 +113,17 @@ public class TestDataBase {
         }
 
     }
+    @Test
+    public void compareCurrentDueFleetDefaulter() throws SQLException, IOException, ClassNotFoundException {
+        double sumCharge = 29.99;
+        UtilsForDB utilsForDB = new UtilsForDB();
+        String currentDueFleet = utilsForDB.getCurrentDueEzFinancesFleet("582");
+        boolean tempCompareDueFleet = - sumCharge== Double.parseDouble(currentDueFleet);
+
+        System.out.println(currentDueFleet);
+        System.out.println(tempCompareDueFleet);
+
+
+    }
 
 }

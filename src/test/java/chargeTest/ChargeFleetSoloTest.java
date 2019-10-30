@@ -18,7 +18,7 @@ public class ChargeFleetSoloTest extends ParentChargeTest{
     String fleetId = "518";
     String fleetUserId = "3816";
 
-    int countMonthTariffStartMonthToMonth = 2;
+    int countMonthForTariffStartMonthToMonth = 2;
 
     @Test
     public void chargeFleetTest() throws SQLException, IOException, ClassNotFoundException{
@@ -33,7 +33,7 @@ public class ChargeFleetSoloTest extends ParentChargeTest{
         int countTwoYearChargeReturnedScanner = utilsForDB.countChargeReturnedScanner(userIdString, fleetUserId, twoYearsTariffId);
 
         String setPaidTillForAllTariff = chargePage.paidTillForAllTariff();
-        String setTariffStartMonth = chargePage.tariffStartForMonthToMonth(countMonthTariffStartMonthToMonth);
+        String setTariffStartMonth = chargePage.tariffStartForMonthToMonth(countMonthForTariffStartMonthToMonth);
         String setTariffStartOneYear = chargePage.tariffStartForOneYear();
         String setTariffStartTwoYears = chargePage.tariffStartForTwoYears();
 
@@ -49,7 +49,8 @@ public class ChargeFleetSoloTest extends ParentChargeTest{
 
         checkAC("DateTime dues are not correct", chargePage.checkDateTimeDue(carrierIdString, fleetId, chargePage.runCronCheckFleet()), true);
         double sumDeactivatedScannerMonthToMonthTariff = chargePage.sumDeactivatedScannerMonthToMonthTariff(fleetString, fleetId, countDeactivatedScannerMonthToMonthTariff);
-        checkAC("Charge due is not correct", chargePage.compareDueCharge(carrierIdString, fleetId, countScannerMonthToMonthTariff + countMonthToMonthChargeReturnedScanner, countScannerOneYearTariff + countOneYearChargeReturnedScanner, countScannerTwoYearsTariff + countTwoYearChargeReturnedScanner, sumDeactivatedScannerMonthToMonthTariff), true);
+        double sumCharge = chargePage.sumCharge(countScannerMonthToMonthTariff + countMonthToMonthChargeReturnedScanner, countScannerOneYearTariff + countOneYearChargeReturnedScanner, countScannerTwoYearsTariff + countTwoYearChargeReturnedScanner, sumDeactivatedScannerMonthToMonthTariff);
+        checkAC("Charge due is not correct", chargePage.compareDueCharge(carrierIdString, fleetId, sumCharge), true);
 
         checkAC("PaidTill for month-to-month is not correct", chargePage.comparePaidTillMonthToMonth(fleetString, fleetId, monthToMonthTariffId), true);
         checkAC("PaidTill for one year is not correct", chargePage.comparePaidTillOneYear(fleetString, fleetId, oneYearTariffId), true);
@@ -74,7 +75,7 @@ public class ChargeFleetSoloTest extends ParentChargeTest{
         int countTwoYearChargeReturnedScanner = utilsForDB.countChargeReturnedScanner(userIdString, soloId, twoYearsTariffId);
 
         String setPaidTillForAllTariff = chargePage.paidTillForAllTariff();
-        String setTariffStartMonth = chargePage.tariffStartForMonthToMonth(countMonthTariffStartMonthToMonth);
+        String setTariffStartMonth = chargePage.tariffStartForMonthToMonth(countMonthForTariffStartMonthToMonth);
         String setTariffStartOneYear = chargePage.tariffStartForOneYear();
         String setTariffStartTwoYears = chargePage.tariffStartForTwoYears();
 
@@ -89,7 +90,8 @@ public class ChargeFleetSoloTest extends ParentChargeTest{
 
         checkAC("DateTime dues are not correct", chargePage.checkDateTimeDue(userIdString, soloId, chargePage.runCronCheckDrivers()), true);
         double sumDeactivatedScannerMonthToMonthTariff = chargePage.sumDeactivatedScannerMonthToMonthTariff(userIdString, soloId, countDeactivatedScannerMonthToMonthTariff);
-        checkAC("Charge due is not correct", chargePage.compareDueCharge(userIdString, soloId, countScannerMonthToMonthTariff + countMonthToMonthChargeReturnedScanner, countScannerOneYearTariff + countOneYearChargeReturnedScanner, countScannerTwoYearsTariff + countTwoYearChargeReturnedScanner, sumDeactivatedScannerMonthToMonthTariff), true);
+        double sumCharge = chargePage.sumCharge(countScannerMonthToMonthTariff + countMonthToMonthChargeReturnedScanner, countScannerOneYearTariff + countOneYearChargeReturnedScanner, countScannerTwoYearsTariff + countTwoYearChargeReturnedScanner, sumDeactivatedScannerMonthToMonthTariff);
+        checkAC("Charge due is not correct", chargePage.compareDueCharge(userIdString, soloId, sumCharge), true);
 
         checkAC("PaidTill for month-to-month is not correct", chargePage.comparePaidTillMonthToMonth(userIdString, soloId, monthToMonthTariffId), true);
         checkAC("PaidTill for one year is not correct", chargePage.comparePaidTillOneYear(userIdString, soloId, oneYearTariffId), true);

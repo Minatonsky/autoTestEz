@@ -291,7 +291,37 @@ public class UtilsForDB {
         return tempAmountList;
     }
 
-
-
+///////// DEFAULTERS
+    @Step
+    public void setCurrentCard_0_Fleet(String fleetId) throws SQLException, IOException, ClassNotFoundException {
+        dBMySQL = new Database("MySQL_PADB_DB", "MySQL");
+        dBMySQL.changeTable("UPDATE authorize_clients SET currentCard = 0 WHERE carrierId = " + fleetId + " AND currentCard = 1;");
+        dBMySQL.quit();
+    }
+    @Step
+    public void setCurrentCard_0_Solo(String soloId) throws SQLException, IOException, ClassNotFoundException {
+        dBMySQL = new Database("MySQL_PADB_DB", "MySQL");
+        dBMySQL.changeTable("UPDATE authorize_clients SET currentCard = 0 WHERE userId = " + soloId + " AND currentCard = 1;");
+        dBMySQL.quit();
+    }
+    @Step
+    public void setDateAndEmailFleetDefaulters(String dateTime, String lastEmailTime, String fleetId) throws SQLException, IOException, ClassNotFoundException {
+        dBMySQL = new Database("MySQL_PADB_DB", "MySQL");
+        dBMySQL.changeTable("UPDATE fleet_defaulters SET `dateTime` = '" + dateTime + "', `lastEmailTime` = '" + lastEmailTime + "' WHERE fleetId = " + fleetId + ";");
+        dBMySQL.quit();
+    }
+    @Step
+    public void setDateAndEmailSoloDefaulters(String dateTime, String lastEmailTime, String soloId) throws SQLException, IOException, ClassNotFoundException {
+        dBMySQL = new Database("MySQL_PADB_DB", "MySQL");
+        dBMySQL.changeTable("UPDATE driver_defaulters SET `dateTime` = '" + dateTime + "', `lastEmailTime` = '" + lastEmailTime + "' WHERE userId = " + soloId + ";");
+        dBMySQL.quit();
+    }
+    @Step
+    public boolean checkFleetInDefaulters(String fleetId) throws SQLException, IOException, ClassNotFoundException {
+        dBMySQL = new Database("MySQL_PADB_DB", "MySQL");
+        boolean tempResult = dBMySQL.isRowPresent("SELECT * FROM fleet_defaulters WHERE fleetId = " + fleetId + ";");
+        dBMySQL.quit();
+        return tempResult;
+    }
 
 }

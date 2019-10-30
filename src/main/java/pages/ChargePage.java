@@ -153,34 +153,32 @@ public class ChargePage {
         } else return 0;
 
     }
+    @Step
+    public double sumCharge(int countScannerMonthToMonthTariff, int countScannerOneYearTariff, int countScannerTwoYearsTariff, double sumDeactivatedScannerMonthToMonthTariff){
+        double tempMonthToMonth = Math.round(((countScannerMonthToMonthTariff * 29.99) + sumDeactivatedScannerMonthToMonthTariff) * 100.0) / 100.0;
+        double tempOneYearTariff = Math.round((countScannerOneYearTariff * 329.89) * 100.0) / 100.0;
+        double tempTwoYearsTariff = Math.round((countScannerTwoYearsTariff * 629.79) * 100.0) / 100.0;
+        double tempCountDueCharge = Math.round((tempMonthToMonth + tempOneYearTariff + tempTwoYearsTariff) * 100.0) / 100.0;
+        return tempCountDueCharge;
+    }
 
     @Step
-    public boolean compareDueCharge(String soloOrFleetString, String userId, int countScannerMonthToMonthTariff, int countScannerOneYearTariff, int countScannerTwoYearsTariff, double sumDeactivatedScannerMonthToMonthTariff) throws SQLException, IOException, ClassNotFoundException {
+    public boolean compareDueCharge(String soloOrFleetString, String userId, double sumCharge) throws SQLException, IOException, ClassNotFoundException {
         List<String> amountDue = utilsForDB.getAmountEzDue(soloOrFleetString, userId);
-
-        logger.info("amountDue from db: " + amountDue);
-        logger.info("countScannerMonthToMonthTariff: " + countScannerMonthToMonthTariff);
-        logger.info("countScannerOneYearTariff: " + countScannerOneYearTariff);
-        logger.info("countScannerTwoYearsTariff: " + countScannerTwoYearsTariff);
-
-        double tempMonthToMonth = Math.round(((countScannerMonthToMonthTariff * 29.99) + sumDeactivatedScannerMonthToMonthTariff) * 100.0) / 100.0;
-        logger.info("charge MonthToMonth: " + tempMonthToMonth);
-        double tempOneYearTariff = Math.round((countScannerOneYearTariff * 329.89) * 100.0) / 100.0;
-        logger.info("charge tempOneYearTariff: " + tempOneYearTariff);
-        double tempTwoYearsTariff = Math.round((countScannerTwoYearsTariff * 629.79) * 100.0) / 100.0;
-        logger.info("charge tempTwoYearsTariff: " + tempTwoYearsTariff);
-
-        double tempCountDueCharge = Math.round((tempMonthToMonth + tempOneYearTariff + tempTwoYearsTariff) * 100.0) / 100.0;
-        logger.info("tempCountDueCharge: " + tempCountDueCharge);
         double sum = 0;
 
         for (String element :
                 amountDue) {
             sum += Double.parseDouble(element);
         }
-        logger.info("sumCountDueChargeFront: " + Math.round((sum) * 100.0) / 100.0);
-        boolean tempCompareDue = tempCountDueCharge == Math.round((sum) * 100.0) / 100.0;
+        boolean tempCompareDue = sumCharge == Math.round((sum) * 100.0) / 100.0;
         return tempCompareDue;
+    }
+    @Step
+    public boolean compareCurrentDueFleetDefaulters(String fleetId, double sumCharge) throws SQLException, IOException, ClassNotFoundException {
+        String currentDueFleet = utilsForDB.getCurrentDueEzFinancesFleet(fleetId);
+        boolean tempCompareDueFleet = - sumCharge == Double.parseDouble(currentDueFleet);
+        return tempCompareDueFleet;
     }
 
     @Step
@@ -261,7 +259,7 @@ public class ChargePage {
         boolean result = tempEstimatedTill.equals(firstDayOfNextMonthString);
         return result;
     }
-
+    @Step
     public boolean compareDueChargeMonthToMonthTariff(String soloOrFleetString, String userId, int countScannerMonthToMonthTariff, double sumDeactivatedScannerMonthToMonthTariff) throws SQLException, IOException, ClassNotFoundException {
         String amountDue = utilsForDB.getAmountEzDueMonthToMonth(soloOrFleetString, userId);
         logger.info("amountDue from db: " + amountDue);
@@ -272,6 +270,74 @@ public class ChargePage {
         boolean tempCompareDue = tempMonthToMonth == Math.round((Double.parseDouble(amountDue)) * 100.0) / 100.0;
         return tempCompareDue;
     }
+//    @Step
+//    public boolean compareCurrentDueDefaulters(String fleetId) throws SQLException, IOException, ClassNotFoundException {
+//        String CurrentDue = utilsForDB.getCurrentDueEzFinancesFleet(fleetId);
+//        if (Integer.parseInt(CurrentDue) < 0){
+//            boolean result =
+//        }
+//    }
+    @Step
+    public void set_10_dayDefaulterFleet(String fleetId) throws SQLException, IOException, ClassNotFoundException {
+        LocalDate tempDay_10_Defaulter = LocalDate.parse(LocalDate.now().minusDays(10).toString());
+        long tenDays = tempDay_10_Defaulter.atStartOfDay().toEpochSecond(ZoneOffset.UTC);
+        String day_10_Defaulter = Long.toString(tenDays);
+        LocalDate yesterday = LocalDate.parse(LocalDate.now().minusDays(1).toString());
+        long tempYesterday = yesterday.atStartOfDay().toEpochSecond(ZoneOffset.UTC);
+        String lastEmailTime = Long.toString(tempYesterday);
+        utilsForDB.setDateAndEmailFleetDefaulters(day_10_Defaulter, lastEmailTime, fleetId);
+    }
+    @Step
+    public void set_10_dayDefaulterSolo(String soloId) throws SQLException, IOException, ClassNotFoundException {
+        LocalDate tempDay_10_Defaulter = LocalDate.parse(LocalDate.now().minusDays(10).toString());
+        long tenDays = tempDay_10_Defaulter.atStartOfDay().toEpochSecond(ZoneOffset.UTC);
+        String day_10_Defaulter = Long.toString(tenDays);
+        LocalDate yesterday = LocalDate.parse(LocalDate.now().minusDays(1).toString());
+        long tempYesterday = yesterday.atStartOfDay().toEpochSecond(ZoneOffset.UTC);
+        String lastEmailTime = Long.toString(tempYesterday);
+        utilsForDB.setDateAndEmailSoloDefaulters(day_10_Defaulter, lastEmailTime, soloId);
+    }
+    @Step
+    public void set_14_dayDefaulterFleet(String fleetId) throws SQLException, IOException, ClassNotFoundException {
+        LocalDate tempDay_14_Defaulter = LocalDate.parse(LocalDate.now().minusDays(15).toString());
+        long tenDays = tempDay_14_Defaulter.atStartOfDay().toEpochSecond(ZoneOffset.UTC);
+        String day_14_Defaulter = Long.toString(tenDays);
+        LocalDate yesterday = LocalDate.parse(LocalDate.now().minusDays(1).toString());
+        long tempYesterday = yesterday.atStartOfDay().toEpochSecond(ZoneOffset.UTC);
+        String lastEmailTime = Long.toString(tempYesterday);
+        utilsForDB.setDateAndEmailFleetDefaulters(day_14_Defaulter, lastEmailTime, fleetId);
+    }
+    @Step
+    public void set_14_dayDefaulterSolo(String soloId) throws SQLException, IOException, ClassNotFoundException {
+        LocalDate tempDay_14_Defaulter = LocalDate.parse(LocalDate.now().minusDays(15).toString());
+        long tenDays = tempDay_14_Defaulter.atStartOfDay().toEpochSecond(ZoneOffset.UTC);
+        String day_14_Defaulter = Long.toString(tenDays);
+        LocalDate yesterday = LocalDate.parse(LocalDate.now().minusDays(1).toString());
+        long tempYesterday = yesterday.atStartOfDay().toEpochSecond(ZoneOffset.UTC);
+        String lastEmailTime = Long.toString(tempYesterday);
+        utilsForDB.setDateAndEmailSoloDefaulters(day_14_Defaulter, lastEmailTime, soloId);
+    }
+    @Step
+    public void set_52_dayDefaulterFleet(String fleetId) throws SQLException, IOException, ClassNotFoundException {
+        LocalDate tempDay_52_Defaulter = LocalDate.parse(LocalDate.now().minusDays(52).toString());
+        long tenDays = tempDay_52_Defaulter.atStartOfDay().toEpochSecond(ZoneOffset.UTC);
+        String day_52_Defaulter = Long.toString(tenDays);
+        LocalDate yesterday = LocalDate.parse(LocalDate.now().minusDays(1).toString());
+        long tempYesterday = yesterday.atStartOfDay().toEpochSecond(ZoneOffset.UTC);
+        String lastEmailTime = Long.toString(tempYesterday);
+        utilsForDB.setDateAndEmailFleetDefaulters(day_52_Defaulter, lastEmailTime, fleetId);
+    }
+    @Step
+    public void set_52_dayDefaulterSolo(String soloId) throws SQLException, IOException, ClassNotFoundException {
+        LocalDate tempDay_52_Defaulter = LocalDate.parse(LocalDate.now().minusDays(52).toString());
+        long tenDays = tempDay_52_Defaulter.atStartOfDay().toEpochSecond(ZoneOffset.UTC);
+        String day_52_Defaulter = Long.toString(tenDays);
+        LocalDate yesterday = LocalDate.parse(LocalDate.now().minusDays(1).toString());
+        long tempYesterday = yesterday.atStartOfDay().toEpochSecond(ZoneOffset.UTC);
+        String lastEmailTime = Long.toString(tempYesterday);
+        utilsForDB.setDateAndEmailSoloDefaulters(day_52_Defaulter, lastEmailTime, soloId);
+    }
+
 }
 
 
