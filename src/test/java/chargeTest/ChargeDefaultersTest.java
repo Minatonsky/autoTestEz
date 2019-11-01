@@ -5,6 +5,7 @@ import parentTest.ParentChargeTest;
 
 import java.io.IOException;
 import java.sql.SQLException;
+import java.util.List;
 
 public class ChargeDefaultersTest extends ParentChargeTest {
     String monthToMonthTariffId = "0";
@@ -14,7 +15,7 @@ public class ChargeDefaultersTest extends ParentChargeTest {
     String fleetString = "fleet";
     String userIdString = "userId";
 
-    String soloId = "3824";
+    String soloId = "3854";
     String fleetId = "582";
     String fleetUserId = "3816";
 
@@ -26,19 +27,21 @@ public class ChargeDefaultersTest extends ParentChargeTest {
     public void chargeDefaultersFleetTest() throws SQLException, IOException, ClassNotFoundException {
         utilsForDB.setCurrentDueForFleet(currentDue, fleetId);
         utilsForDB.setCurrentCard_0_Fleet(fleetId);
-        int countScannerMonthToMonthTariff = utilsForDB.countChargeScannersWithTariff(fleetString, fleetId, monthToMonthTariffId);
+        int countScannerMonthToMonthTariff = utilsForDB.countChargeScannersByTariff(fleetString, fleetId, monthToMonthTariffId);
         int countDeactivatedScannerMonthToMonthTariff = utilsForDB.countDeactivatedChargeScannersMonthToMonth(fleetString, fleetId);
-        int countScannerOneYearTariff = utilsForDB.countChargeScannersWithTariff(fleetString, fleetId, oneYearTariffId);
-        int countScannerTwoYearsTariff = utilsForDB.countChargeScannersWithTariff(fleetString, fleetId, twoYearsTariffId);
+        int countScannerOneYearTariff = utilsForDB.countChargeScannersByTariff(fleetString, fleetId, oneYearTariffId);
+        int countScannerTwoYearsTariff = utilsForDB.countChargeScannersByTariff(fleetString, fleetId, twoYearsTariffId);
+        System.out.println("countScannerTwoYearsTariff = " + countScannerTwoYearsTariff);
 
-        int countMonthToMonthChargeReturnedScanner = utilsForDB.countChargeReturnedScanner(userIdString, fleetUserId, monthToMonthTariffId);
-        int countOneYearChargeReturnedScanner = utilsForDB.countChargeReturnedScanner(userIdString, fleetUserId, oneYearTariffId);
-        int countTwoYearChargeReturnedScanner = utilsForDB.countChargeReturnedScanner(userIdString, fleetUserId, twoYearsTariffId);
+        int countMonthToMonthChargeReturnedScanner = utilsForDB.countChargeReturnedScannerByTariff(fleetString, fleetId, monthToMonthTariffId);
+        int countOneYearChargeReturnedScanner = utilsForDB.countChargeReturnedScannerByTariff(fleetString, fleetId, oneYearTariffId);
+        int countTwoYearChargeReturnedScanner = utilsForDB.countChargeReturnedScannerByTariff(fleetString, fleetId, twoYearsTariffId);
+        System.out.println("countTwoYearChargeReturnedScanner = " + countTwoYearChargeReturnedScanner);
 
         String setPaidTillForAllTariff = chargePage.paidTillForAllTariff();
         String setTariffStartMonth = chargePage.tariffStartForMonthToMonth(countMonthForTariffStartMonthToMonth);
-        String setTariffStartOneYear = chargePage.tariffStartForOneYear();
-        String setTariffStartTwoYears = chargePage.tariffStartForTwoYears();
+        String setTariffStartOneYear = chargePage.tariffStartForOneYear(1);
+        String setTariffStartTwoYears = chargePage.tariffStartForTwoYears(2);
 
 
         checkAC("No all tariffs are presented in eld scanners", chargePage.checkIfTariffPresent(countScannerMonthToMonthTariff, countScannerOneYearTariff, countScannerTwoYearsTariff), true);
@@ -56,13 +59,21 @@ public class ChargeDefaultersTest extends ParentChargeTest {
 
         checkAC("Charge due is not correct", chargePage.compareCurrentDueFleetDefaulters(fleetId, sumCharge), true);
         checkAC("Fleet is not in defaulters", utilsForDB.checkFleetInDefaulters(fleetId), true);
-        chargePage.set_10_dayDefaulterFleet(fleetId);
-        chargePage.runCronCheckFleet();
 
-        chargePage.set_14_dayDefaulterFleet(fleetId);
+        chargePage.setDaysDefaulterFleet(fleetId, 10);
         chargePage.runCronCheckFleet();
-        chargePage.set_52_dayDefaulterFleet(fleetId);
+        List<String> listOfActiveDevices =  utilsForDB.getIdScannersByStatus(fleetString, fleetId, "4");
+        checkAC("Late Fee is not correct", chargePage.checkLateFeeFleet(fleetId, sumCharge, fleetString), true);
+
+        chargePage.setDaysDefaulterFleet(fleetId, 15);
         chargePage.runCronCheckFleet();
+        checkAC("Devices does not have status Not Paid", chargePage.checkStatusesActiveDevices(listOfActiveDevices, "8"), true);
+        checkAC("Fleet is not deactivated", utilsForDB.checkFleetIsDeactivated(fleetId), true);
+
+        chargePage.setDaysDefaulterFleet(fleetId, 52);
+        chargePage.runCronCheckFleet();
+        chargePage.checkProratedAndNotReturnedFee(listOfActiveDevices);
+//        chargePage.checkFleetIsBan();
 
     }
     @Test
@@ -71,8 +82,8 @@ public class ChargeDefaultersTest extends ParentChargeTest {
         utilsForDB.setCurrentCard_0_Fleet(fleetId);
         String setPaidTillForAllTariff = chargePage.paidTillForAllTariff();
         String setTariffStartMonth = chargePage.tariffStartForMonthToMonth(countMonthForTariffStartMonthToMonth);
-        String setTariffStartOneYear = chargePage.tariffStartForOneYear();
-        String setTariffStartTwoYears = chargePage.tariffStartForTwoYears();
+        String setTariffStartOneYear = chargePage.tariffStartForOneYear(1);
+        String setTariffStartTwoYears = chargePage.tariffStartForTwoYears(2);
         utilsForDB.setPaidTillAndTariffStartScannerForFleet(fleetId, setPaidTillForAllTariff, setTariffStartMonth, monthToMonthTariffId);
         utilsForDB.setOrderDateForMonthToMonth(fleetString, fleetId, setTariffStartMonth);
         utilsForDB.setPaidTillAndTariffStartScannerForFleet(fleetId, setPaidTillForAllTariff, setTariffStartOneYear, oneYearTariffId);
@@ -81,11 +92,11 @@ public class ChargeDefaultersTest extends ParentChargeTest {
         utilsForDB.setPaidTillEstimatedTillEzFinancesFleet(fleetId, paidTillForEzFinances, paidTillForEzFinances);
 
         chargePage.runCronCheckFleet();
-        chargePage.set_10_dayDefaulterFleet(fleetId);
+        chargePage.setDaysDefaulterFleet(fleetId, 10);
         chargePage.runCronCheckFleet();
-        chargePage.set_14_dayDefaulterFleet(fleetId);
+        chargePage.setDaysDefaulterFleet(fleetId, 15);
         chargePage.runCronCheckFleet();
-        chargePage.set_52_dayDefaulterFleet(fleetId);
+        chargePage.setDaysDefaulterFleet(fleetId, 52);
         chargePage.runCronCheckFleet();
     }
     @Test
@@ -94,8 +105,8 @@ public class ChargeDefaultersTest extends ParentChargeTest {
         utilsForDB.setCurrentCard_0_Solo(soloId);
         String setPaidTillForAllTariff = chargePage.paidTillForAllTariff();
         String setTariffStartMonth = chargePage.tariffStartForMonthToMonth(countMonthForTariffStartMonthToMonth);
-        String setTariffStartOneYear = chargePage.tariffStartForOneYear();
-        String setTariffStartTwoYears = chargePage.tariffStartForTwoYears();
+        String setTariffStartOneYear = chargePage.tariffStartForOneYear(1);
+        String setTariffStartTwoYears = chargePage.tariffStartForTwoYears(2);
         utilsForDB.setPaidTillAndTariffStartScannerForSolo(soloId, setPaidTillForAllTariff, setTariffStartMonth, monthToMonthTariffId);
         utilsForDB.setOrderDateForMonthToMonth(userIdString, soloId, setTariffStartMonth);
         utilsForDB.setPaidTillAndTariffStartScannerForSolo(soloId, setPaidTillForAllTariff, setTariffStartOneYear, oneYearTariffId);
@@ -104,11 +115,15 @@ public class ChargeDefaultersTest extends ParentChargeTest {
         utilsForDB.setPaidTillEstimatedTillEzFinancesSolo(soloId, paidTillForEzFinances, paidTillForEzFinances);
 
         chargePage.runCronCheckDrivers();
-        chargePage.set_10_dayDefaulterSolo(soloId);
+        chargePage.setDaysDefaulterSolo(soloId, 10);
         chargePage.runCronCheckDrivers();
-        chargePage.set_14_dayDefaulterSolo(soloId);
+        chargePage.setDaysDefaulterSolo(soloId, 14);
         chargePage.runCronCheckDrivers();
-        chargePage.set_52_dayDefaulterSolo(soloId);
+        chargePage.setDaysDefaulterSolo(soloId, 15);
         chargePage.runCronCheckDrivers();
+        chargePage.setDaysDefaulterSolo(soloId, 16);
+        chargePage.runCronCheckDrivers();
+//        chargePage.setDaysDefaulterSolo(soloId, 52);
+//        chargePage.runCronCheckDrivers();
     }
 }

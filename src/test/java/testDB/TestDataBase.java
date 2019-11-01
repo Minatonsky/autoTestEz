@@ -9,6 +9,7 @@ import java.sql.SQLException;
 import java.text.ParseException;
 import java.time.LocalDate;
 import java.time.Period;
+import java.time.ZoneOffset;
 import java.time.temporal.ChronoUnit;
 import java.time.temporal.TemporalAdjusters;
 import java.util.List;
@@ -124,6 +125,29 @@ public class TestDataBase {
         System.out.println(tempCompareDueFleet);
 
 
+    }
+    @Test
+    public void checkDevicesIsNotPaid() throws SQLException, IOException, ClassNotFoundException {
+        String fleetString = "fleet";
+        String fleetId = "518";
+        UtilsForDB utilsForDB = new UtilsForDB();
+        List<String> listOfActiveDevices = utilsForDB.getIdScannersByStatus(fleetString, fleetId, "4");
+        String stringOfActiveDevices = String.join(",", listOfActiveDevices);
+        List<String> listOfStatuses = utilsForDB.getScannersStatus(stringOfActiveDevices);
+        System.out.println("listOfStatuses " + listOfStatuses);
+        for (String element:listOfStatuses) {
+            if (element.equals("1")){
+                System.out.println("Ok ");
+            } else System.out.println("No Ok ");
+        }
+
+    }
+    @Test
+    public void compareEldStatusInCompletedOrder() throws SQLException, IOException, ClassNotFoundException {
+        LocalDate firstDayOfMonth = LocalDate.parse(LocalDate.now().toString()).with(TemporalAdjusters.firstDayOfNextMonth());
+        long firstDayOfNextMonth = firstDayOfMonth.atStartOfDay().toEpochSecond(ZoneOffset.UTC);
+        String firstDayOfNextMonth2 = Long.toString(firstDayOfNextMonth);
+        System.out.println("firstDayOfNextMonth = " + firstDayOfNextMonth2);
     }
 
 }

@@ -23,19 +23,19 @@ public class ChargeFleetSoloTest extends ParentChargeTest{
     @Test
     public void chargeFleetTest() throws SQLException, IOException, ClassNotFoundException{
 
-        int countScannerMonthToMonthTariff = utilsForDB.countChargeScannersWithTariff(fleetString, fleetId, monthToMonthTariffId);
+        int countScannerMonthToMonthTariff = utilsForDB.countChargeScannersByTariff(fleetString, fleetId, monthToMonthTariffId);
         int countDeactivatedScannerMonthToMonthTariff = utilsForDB.countDeactivatedChargeScannersMonthToMonth(fleetString, fleetId);
-        int countScannerOneYearTariff = utilsForDB.countChargeScannersWithTariff(fleetString, fleetId, oneYearTariffId);
-        int countScannerTwoYearsTariff = utilsForDB.countChargeScannersWithTariff(fleetString, fleetId, twoYearsTariffId);
+        int countScannerOneYearTariff = utilsForDB.countChargeScannersByTariff(fleetString, fleetId, oneYearTariffId);
+        int countScannerTwoYearsTariff = utilsForDB.countChargeScannersByTariff(fleetString, fleetId, twoYearsTariffId);
 
-        int countMonthToMonthChargeReturnedScanner = utilsForDB.countChargeReturnedScanner(userIdString, fleetUserId, monthToMonthTariffId);
-        int countOneYearChargeReturnedScanner = utilsForDB.countChargeReturnedScanner(userIdString, fleetUserId, oneYearTariffId);
-        int countTwoYearChargeReturnedScanner = utilsForDB.countChargeReturnedScanner(userIdString, fleetUserId, twoYearsTariffId);
+        int countMonthToMonthChargeReturnedScanner = utilsForDB.countChargeReturnedScannerByTariff(userIdString, fleetUserId, monthToMonthTariffId);
+        int countOneYearChargeReturnedScanner = utilsForDB.countChargeReturnedScannerByTariff(userIdString, fleetUserId, oneYearTariffId);
+        int countTwoYearChargeReturnedScanner = utilsForDB.countChargeReturnedScannerByTariff(userIdString, fleetUserId, twoYearsTariffId);
 
         String setPaidTillForAllTariff = chargePage.paidTillForAllTariff();
         String setTariffStartMonth = chargePage.tariffStartForMonthToMonth(countMonthForTariffStartMonthToMonth);
-        String setTariffStartOneYear = chargePage.tariffStartForOneYear();
-        String setTariffStartTwoYears = chargePage.tariffStartForTwoYears();
+        String setTariffStartOneYear = chargePage.tariffStartForOneYear(1);
+        String setTariffStartTwoYears = chargePage.tariffStartForTwoYears(2);
 
 
         checkAC("No all tariffs are presented in eld scanners", chargePage.checkIfTariffPresent(countScannerMonthToMonthTariff, countScannerOneYearTariff, countScannerTwoYearsTariff), true);
@@ -65,19 +65,19 @@ public class ChargeFleetSoloTest extends ParentChargeTest{
     @Test
     public  void chargeSoloTest() throws SQLException, IOException, ClassNotFoundException{
 
-        int countScannerMonthToMonthTariff = utilsForDB.countChargeScannersWithTariff(userIdString, soloId, monthToMonthTariffId);
+        int countScannerMonthToMonthTariff = utilsForDB.countChargeScannersByTariff(userIdString, soloId, monthToMonthTariffId);
         int countDeactivatedScannerMonthToMonthTariff = utilsForDB.countDeactivatedChargeScannersMonthToMonth(userIdString, soloId);
-        int countScannerOneYearTariff = utilsForDB.countChargeScannersWithTariff(userIdString, soloId, oneYearTariffId);
-        int countScannerTwoYearsTariff = utilsForDB.countChargeScannersWithTariff(userIdString, soloId, twoYearsTariffId);
+        int countScannerOneYearTariff = utilsForDB.countChargeScannersByTariff(userIdString, soloId, oneYearTariffId);
+        int countScannerTwoYearsTariff = utilsForDB.countChargeScannersByTariff(userIdString, soloId, twoYearsTariffId);
 
-        int countMonthToMonthChargeReturnedScanner = utilsForDB.countChargeReturnedScanner(userIdString, soloId, monthToMonthTariffId);
-        int countOneYearChargeReturnedScanner = utilsForDB.countChargeReturnedScanner(userIdString, soloId, oneYearTariffId);
-        int countTwoYearChargeReturnedScanner = utilsForDB.countChargeReturnedScanner(userIdString, soloId, twoYearsTariffId);
+        int countMonthToMonthChargeReturnedScanner = utilsForDB.countChargeReturnedScannerByTariff(userIdString, soloId, monthToMonthTariffId);
+        int countOneYearChargeReturnedScanner = utilsForDB.countChargeReturnedScannerByTariff(userIdString, soloId, oneYearTariffId);
+        int countTwoYearChargeReturnedScanner = utilsForDB.countChargeReturnedScannerByTariff(userIdString, soloId, twoYearsTariffId);
 
         String setPaidTillForAllTariff = chargePage.paidTillForAllTariff();
         String setTariffStartMonth = chargePage.tariffStartForMonthToMonth(countMonthForTariffStartMonthToMonth);
-        String setTariffStartOneYear = chargePage.tariffStartForOneYear();
-        String setTariffStartTwoYears = chargePage.tariffStartForTwoYears();
+        String setTariffStartOneYear = chargePage.tariffStartForOneYear(1);
+        String setTariffStartTwoYears = chargePage.tariffStartForTwoYears(2);
 
         checkAC("No all tariffs are presented in eld scanners", chargePage.checkIfTariffPresent(countScannerMonthToMonthTariff, countScannerOneYearTariff, countScannerTwoYearsTariff), true);
         utilsForDB.setPaidTillAndTariffStartScannerForSolo(soloId, setPaidTillForAllTariff, setTariffStartMonth, monthToMonthTariffId);

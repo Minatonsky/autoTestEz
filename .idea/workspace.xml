@@ -2,14 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="660eb711-957d-418e-9483-8b2931da6e6e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/chargeTest/ChargeDefaultersTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log/qalight.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/qalight.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/qalight.log.1" beforeDir="false" afterPath="$PROJECT_DIR$/log/qalight.log.1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/qalight.log.1" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/libs/UtilsForDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/libs/UtilsForDB.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/ChargePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/ChargePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/chargeTest/ChargeDefaultersTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/chargeTest/ChargeDefaultersTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/chargeTest/ChargeFleetSoloTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/chargeTest/ChargeFleetSoloTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/chargeTest/ChargeMonthToMonthTariff.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/chargeTest/ChargeMonthToMonthTariff.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/testDB/TestDataBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testDB/TestDataBase.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -98,7 +98,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ChargeFleetSoloTest.chargeFleetTest">
+  <component name="RunManager" selected="JUnit.ChargeDefaultersTest.chargeDefaultersFleetTest">
     <configuration name="ChargeDefaultersTest.chargeDefaultersFleetTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="WorkSpace" />
       <extension name="coverage">
@@ -147,23 +147,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ChargeFleetSoloTest.chargeFleetTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="WorkSpace" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="chargeTest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="chargeTest" />
-      <option name="MAIN_CLASS_NAME" value="chargeTest.ChargeFleetSoloTest" />
-      <option name="METHOD_NAME" value="chargeFleetTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestDataBase.compareCurrentDueFleetDefaulter" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestDataBase.checkDevicesIsNotPaid" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="WorkSpace" />
       <extension name="coverage">
         <pattern>
@@ -173,7 +157,23 @@
       </extension>
       <option name="PACKAGE_NAME" value="testDB" />
       <option name="MAIN_CLASS_NAME" value="testDB.TestDataBase" />
-      <option name="METHOD_NAME" value="compareCurrentDueFleetDefaulter" />
+      <option name="METHOD_NAME" value="checkDevicesIsNotPaid" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestDataBase.compareEldStatusInCompletedOrder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="WorkSpace" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testDB.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="testDB" />
+      <option name="MAIN_CLASS_NAME" value="testDB.TestDataBase" />
+      <option name="METHOD_NAME" value="compareEldStatusInCompletedOrder" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -242,18 +242,18 @@
       <item itemvalue="JUnit.TestDataBase.getEventNewOrder" />
       <item itemvalue="Maven.SoloOrders" />
       <item itemvalue="JUnit.ChargeDefaultersTest.makeFleetDefaulter" />
-      <item itemvalue="JUnit.TestDataBase.compareCurrentDueFleetDefaulter" />
-      <item itemvalue="JUnit.ChargeDefaultersTest.chargeDefaultersFleetTest" />
       <item itemvalue="JUnit.ChargeDefaultersTest.makeSoloDefaulter" />
-      <item itemvalue="JUnit.ChargeFleetSoloTest.chargeFleetTest" />
+      <item itemvalue="JUnit.TestDataBase.checkDevicesIsNotPaid" />
+      <item itemvalue="JUnit.TestDataBase.compareEldStatusInCompletedOrder" />
+      <item itemvalue="JUnit.ChargeDefaultersTest.chargeDefaultersFleetTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ChargeFleetSoloTest.chargeFleetTest" />
-        <item itemvalue="JUnit.ChargeDefaultersTest.makeFleetDefaulter" />
-        <item itemvalue="JUnit.ChargeDefaultersTest.makeSoloDefaulter" />
         <item itemvalue="JUnit.ChargeDefaultersTest.chargeDefaultersFleetTest" />
-        <item itemvalue="JUnit.TestDataBase.compareCurrentDueFleetDefaulter" />
+        <item itemvalue="JUnit.TestDataBase.compareEldStatusInCompletedOrder" />
+        <item itemvalue="JUnit.TestDataBase.checkDevicesIsNotPaid" />
+        <item itemvalue="JUnit.ChargeDefaultersTest.makeSoloDefaulter" />
+        <item itemvalue="JUnit.ChargeDefaultersTest.makeFleetDefaulter" />
       </list>
     </recent_temporary>
   </component>
@@ -274,13 +274,6 @@
       <workItem from="1562665338918" duration="52834000" />
       <workItem from="1562782581468" duration="9021000" />
       <workItem from="1562822119836" duration="58303000" />
-    </task>
-    <task id="LOCAL-00005" summary="invalid login\pass test was add">
-      <created>1562361594723</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1562361594723</updated>
     </task>
     <task id="LOCAL-00006" summary="invalid login\pass test was add">
       <created>1562409190222</created>
@@ -618,7 +611,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572015658636</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="new month-to-month 12 test was add">
+      <created>1572448355356</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1572448355356</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
