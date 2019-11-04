@@ -19,9 +19,9 @@ public class ChargeMonthToMonthTariff extends ParentChargeTest {
 
     @Test
     public void chargeMonthToMonthFleet() throws SQLException, IOException, ClassNotFoundException {
-        int countScannerMonthToMonthTariff = utilsForDB.countChargeScannersWithTariff(fleetString, fleetId, monthToMonthTariffId);
+        int countScannerMonthToMonthTariff = utilsForDB.countChargeScannersByTariff(fleetString, fleetId, monthToMonthTariffId);
         int countDeactivatedScannerMonthToMonthTariff = utilsForDB.countDeactivatedChargeScannersMonthToMonth(fleetString, fleetId);
-        int countMonthToMonthChargeReturnedScanner = utilsForDB.countChargeReturnedScanner(userIdString, fleetUserId, monthToMonthTariffId);
+        int countMonthToMonthChargeReturnedScanner = utilsForDB.countChargeReturnedScannerByTariff(userIdString, fleetUserId, monthToMonthTariffId);
         System.out.println("countScannerMonthToMonthTariff " + countScannerMonthToMonthTariff);
         System.out.println("countDeactivatedScannerMonthToMonthTariff " + countDeactivatedScannerMonthToMonthTariff);
         System.out.println("countMonthToMonthChargeReturnedScanner " + countMonthToMonthChargeReturnedScanner);
@@ -49,9 +49,9 @@ public class ChargeMonthToMonthTariff extends ParentChargeTest {
 
     @Test
     public void chargeMonthToMonthSolo() throws SQLException, IOException, ClassNotFoundException {
-        int countScannerMonthToMonthTariff = utilsForDB.countChargeScannersWithTariff(userIdString, soloId, monthToMonthTariffId);
+        int countScannerMonthToMonthTariff = utilsForDB.countChargeScannersByTariff(userIdString, soloId, monthToMonthTariffId);
         int countDeactivatedScannerMonthToMonthTariff = utilsForDB.countDeactivatedChargeScannersMonthToMonth(userIdString, soloId);
-        int countMonthToMonthChargeReturnedScanner = utilsForDB.countChargeReturnedScanner(userIdString, soloId, monthToMonthTariffId);
+        int countMonthToMonthChargeReturnedScanner = utilsForDB.countChargeReturnedScannerByTariff(userIdString, soloId, monthToMonthTariffId);
         System.out.println("countScannerMonthToMonthTariff " + countScannerMonthToMonthTariff);
         System.out.println("countDeactivatedScannerMonthToMonthTariff " + countDeactivatedScannerMonthToMonthTariff);
         System.out.println("countMonthToMonthChargeReturnedScanner " + countMonthToMonthChargeReturnedScanner);

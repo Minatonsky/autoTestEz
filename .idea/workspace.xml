@@ -4,9 +4,13 @@
     <list default="true" id="660eb711-957d-418e-9483-8b2931da6e6e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log/qalight.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/qalight.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/qalight.log.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/libs/UtilsForDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/libs/UtilsForDB.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/ChargePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/ChargePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/chargeTest/ChargeDefaultersTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/chargeTest/ChargeDefaultersTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/chargeTest/ChargeFleetSoloTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/chargeTest/ChargeFleetSoloTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/chargeTest/ChargeMonthToMonthTariff.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/chargeTest/ChargeMonthToMonthTariff.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/loginTests/UnValidLoginWithParamsWithExcel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/loginTests/UnValidLoginWithParamsWithExcel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testDB/TestDataBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testDB/TestDataBase.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,7 +35,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="work-17-10" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -94,8 +98,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ChargeMonthToMonthTariff.chargeMonthToMonthSolo">
-    <configuration name="ChargeFleetSoloTest.chargeFleetTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.ChargeDefaultersTest.chargeDefaultersFleetTest">
+    <configuration name="ChargeDefaultersTest.chargeDefaultersFleetTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="WorkSpace" />
       <extension name="coverage">
         <pattern>
@@ -104,14 +108,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="chargeTest" />
-      <option name="MAIN_CLASS_NAME" value="chargeTest.ChargeFleetSoloTest" />
-      <option name="METHOD_NAME" value="chargeFleetTest" />
+      <option name="MAIN_CLASS_NAME" value="chargeTest.ChargeDefaultersTest" />
+      <option name="METHOD_NAME" value="chargeDefaultersFleetTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ChargeFleetSoloTest.chargeSoloTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ChargeDefaultersTest.makeFleetDefaulter" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="WorkSpace" />
       <extension name="coverage">
         <pattern>
@@ -120,14 +124,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="chargeTest" />
-      <option name="MAIN_CLASS_NAME" value="chargeTest.ChargeFleetSoloTest" />
-      <option name="METHOD_NAME" value="chargeSoloTest" />
+      <option name="MAIN_CLASS_NAME" value="chargeTest.ChargeDefaultersTest" />
+      <option name="METHOD_NAME" value="makeFleetDefaulter" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ChargeMonthToMonthTariff.chargeMonthToMonthFleet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ChargeDefaultersTest.makeSoloDefaulter" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="WorkSpace" />
       <extension name="coverage">
         <pattern>
@@ -136,40 +140,40 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="chargeTest" />
-      <option name="MAIN_CLASS_NAME" value="chargeTest.ChargeMonthToMonthTariff" />
-      <option name="METHOD_NAME" value="chargeMonthToMonthFleet" />
+      <option name="MAIN_CLASS_NAME" value="chargeTest.ChargeDefaultersTest" />
+      <option name="METHOD_NAME" value="makeSoloDefaulter" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ChargeMonthToMonthTariff.chargeMonthToMonthSolo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestDataBase.checkDevicesIsNotPaid" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="WorkSpace" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="chargeTest.*" />
+          <option name="PATTERN" value="testDB.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="chargeTest" />
-      <option name="MAIN_CLASS_NAME" value="chargeTest.ChargeMonthToMonthTariff" />
-      <option name="METHOD_NAME" value="chargeMonthToMonthSolo" />
+      <option name="PACKAGE_NAME" value="testDB" />
+      <option name="MAIN_CLASS_NAME" value="testDB.TestDataBase" />
+      <option name="METHOD_NAME" value="checkDevicesIsNotPaid" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ManagerOrderFleetParamsTest.managerDoOrderFleetAgree" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestDataBase.compareEldStatusInCompletedOrder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="WorkSpace" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="parameterizedOrders.*" />
+          <option name="PATTERN" value="testDB.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="parameterizedOrders" />
-      <option name="MAIN_CLASS_NAME" value="parameterizedOrders.ManagerOrderFleetParamsTest" />
-      <option name="METHOD_NAME" value="managerDoOrderFleetAgree" />
+      <option name="PACKAGE_NAME" value="testDB" />
+      <option name="MAIN_CLASS_NAME" value="testDB.TestDataBase" />
+      <option name="METHOD_NAME" value="compareEldStatusInCompletedOrder" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -236,20 +240,20 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.TestDataBase.getEventNewOrder" />
-      <item itemvalue="JUnit.ChargeFleetSoloTest.chargeFleetTest (1)" />
-      <item itemvalue="JUnit.ChargeFleetSoloTest.chargeSoloTest (1)" />
-      <item itemvalue="JUnit.ManagerOrderFleetParamsTest.managerDoOrderFleetAgree" />
-      <item itemvalue="JUnit.ChargeMonthToMonthTariff.chargeMonthToMonthFleet" />
       <item itemvalue="Maven.SoloOrders" />
-      <item itemvalue="JUnit.ChargeMonthToMonthTariff.chargeMonthToMonthSolo" />
+      <item itemvalue="JUnit.ChargeDefaultersTest.makeFleetDefaulter" />
+      <item itemvalue="JUnit.ChargeDefaultersTest.makeSoloDefaulter" />
+      <item itemvalue="JUnit.TestDataBase.checkDevicesIsNotPaid" />
+      <item itemvalue="JUnit.TestDataBase.compareEldStatusInCompletedOrder" />
+      <item itemvalue="JUnit.ChargeDefaultersTest.chargeDefaultersFleetTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ChargeMonthToMonthTariff.chargeMonthToMonthSolo" />
-        <item itemvalue="JUnit.ChargeMonthToMonthTariff.chargeMonthToMonthFleet" />
-        <item itemvalue="JUnit.ChargeFleetSoloTest.chargeSoloTest (1)" />
-        <item itemvalue="JUnit.ChargeFleetSoloTest.chargeFleetTest (1)" />
-        <item itemvalue="JUnit.ManagerOrderFleetParamsTest.managerDoOrderFleetAgree" />
+        <item itemvalue="JUnit.ChargeDefaultersTest.chargeDefaultersFleetTest" />
+        <item itemvalue="JUnit.TestDataBase.compareEldStatusInCompletedOrder" />
+        <item itemvalue="JUnit.TestDataBase.checkDevicesIsNotPaid" />
+        <item itemvalue="JUnit.ChargeDefaultersTest.makeSoloDefaulter" />
+        <item itemvalue="JUnit.ChargeDefaultersTest.makeFleetDefaulter" />
       </list>
     </recent_temporary>
   </component>
@@ -270,20 +274,6 @@
       <workItem from="1562665338918" duration="52834000" />
       <workItem from="1562782581468" duration="9021000" />
       <workItem from="1562822119836" duration="58303000" />
-    </task>
-    <task id="LOCAL-00004" summary="eld page/test was add">
-      <created>1562338480938</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1562338480938</updated>
-    </task>
-    <task id="LOCAL-00005" summary="invalid login\pass test was add">
-      <created>1562361594723</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1562361594723</updated>
     </task>
     <task id="LOCAL-00006" summary="invalid login\pass test was add">
       <created>1562409190222</created>
@@ -614,7 +604,21 @@
       <option name="project" value="LOCAL" />
       <updated>1571666501270</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="new month-to-month 12 test was add">
+      <created>1572015658636</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1572015658636</updated>
+    </task>
+    <task id="LOCAL-00054" summary="new month-to-month 12 test was add">
+      <created>1572448355356</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1572448355356</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -651,7 +655,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="manager do order with params test was added" />
     <MESSAGE value="manager do order cancel with params test was added" />
     <MESSAGE value="refactor params test was do" />
     <MESSAGE value="new order test was do" />
@@ -676,7 +679,8 @@
     <MESSAGE value="new charge refactor test was add" />
     <MESSAGE value="new charge2 refactor test was add" />
     <MESSAGE value="month-to-month 12 test was add" />
-    <option name="LAST_COMMIT_MESSAGE" value="month-to-month 12 test was add" />
+    <MESSAGE value="new month-to-month 12 test was add" />
+    <option name="LAST_COMMIT_MESSAGE" value="new month-to-month 12 test was add" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

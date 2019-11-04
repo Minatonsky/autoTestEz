@@ -164,9 +164,16 @@ public class UtilsForDB {
         dBMySQL.quit();
     }
     @Step
-    public int countChargeScannersWithTariff(String soloOrFleetString, String userId, String tariffId) throws SQLException, IOException, ClassNotFoundException {
+    public int countChargeScannersByTariff(String soloOrFleetString, String userId, String tariffId) throws SQLException, IOException, ClassNotFoundException {
         dBMySQL = new Database("MySQL_PADB_DB", "MySQL");
         int tempCountScanner =dBMySQL.getRowNumber("SELECT count(*) FROM eld_scanners WHERE " + soloOrFleetString + " = " + userId + " AND status IN (4, 8, 103) AND tariffId = " + tariffId + ";");
+        dBMySQL.quit();
+        return tempCountScanner;
+    }
+    @Step
+    public int countChargeScanners(String soloOrFleetString, String userId, String firstDayNextMonth) throws SQLException, IOException, ClassNotFoundException {
+        dBMySQL = new Database("MySQL_PADB_DB", "MySQL");
+        int tempCountScanner =dBMySQL.getRowNumber("SELECT count(*) FROM eld_scanners WHERE " + soloOrFleetString + " = " + userId + " AND status IN (4, 5, 8, 103) AND paid_till < " + firstDayNextMonth + ";");
         dBMySQL.quit();
         return tempCountScanner;
     }
@@ -176,9 +183,15 @@ public class UtilsForDB {
         dBMySQL.quit();
         return tempCountScanner;
     }
-    public int countChargeReturnedScanner(String soloOrFleetString, String userId, String tariffId) throws SQLException, IOException, ClassNotFoundException {
+    public int countChargeReturnedScannerByTariff(String soloOrFleetString, String userId, String tariffId) throws SQLException, IOException, ClassNotFoundException {
         dBMySQL = new Database("MySQL_PADB_DB", "MySQL");
         int tempCountScanner =dBMySQL.getRowNumber("SELECT count(*) FROM eld_returns WHERE scannerId IN (SELECT id FROM eld_scanners WHERE " + soloOrFleetString + " = " + userId + " AND status = 11 AND tariffId = " + tariffId + ") AND returnReason IN (2, 1) AND status IN (0, 1, 3);");
+        dBMySQL.quit();
+        return tempCountScanner;
+    }
+    public int countChargeReturnedScanners(String soloOrFleetString, String userId, String firstDayNextMonth) throws SQLException, IOException, ClassNotFoundException {
+        dBMySQL = new Database("MySQL_PADB_DB", "MySQL");
+        int tempCountScanner =dBMySQL.getRowNumber("SELECT count(*) FROM eld_returns WHERE scannerId IN (SELECT id FROM eld_scanners WHERE " + soloOrFleetString + " = " + userId + " AND status = 11 AND paid_till < " + firstDayNextMonth + ") AND returnReason IN (2, 1) AND status IN (0, 1, 3);");
         dBMySQL.quit();
         return tempCountScanner;
     }
@@ -291,7 +304,58 @@ public class UtilsForDB {
         return tempAmountList;
     }
 
-
-
+///////// DEFAULTERS
+    @Step
+    public void setCurrentCard_0_Fleet(String fleetId) throws SQLException, IOException, ClassNotFoundException {
+        dBMySQL = new Database("MySQL_PADB_DB", "MySQL");
+        dBMySQL.changeTable("UPDATE authorize_clients SET currentCard = 0 WHERE carrierId = " + fleetId + " AND currentCard = 1;");
+        dBMySQL.quit();
+    }
+    @Step
+    public void setCurrentCard_0_Solo(String soloId) throws SQLException, IOException, ClassNotFoundException {
+        dBMySQL = new Database("MySQL_PADB_DB", "MySQL");
+        dBMySQL.changeTable("UPDATE authorize_clients SET currentCard = 0 WHERE userId = " + soloId + " AND currentCard = 1;");
+        dBMySQL.quit();
+    }
+    @Step
+    public void setDateAndEmailFleetDefaulters(String dateTime, String lastEmailTime, String fleetId) throws SQLException, IOException, ClassNotFoundException {
+        dBMySQL = new Database("MySQL_PADB_DB", "MySQL");
+        dBMySQL.changeTable("UPDATE fleet_defaulters SET `dateTime` = '" + dateTime + "', `lastEmailTime` = '" + lastEmailTime + "' WHERE fleetId = " + fleetId + ";");
+        dBMySQL.quit();
+    }
+    @Step
+    public void setDateAndEmailSoloDefaulters(String dateTime, String lastEmailTime, String soloId) throws SQLException, IOException, ClassNotFoundException {
+        dBMySQL = new Database("MySQL_PADB_DB", "MySQL");
+        dBMySQL.changeTable("UPDATE driver_defaulters SET `dateTime` = '" + dateTime + "', `lastEmailTime` = '" + lastEmailTime + "' WHERE userId = " + soloId + ";");
+        dBMySQL.quit();
+    }
+    @Step
+    public boolean checkFleetInDefaulters(String fleetId) throws SQLException, IOException, ClassNotFoundException {
+        dBMySQL = new Database("MySQL_PADB_DB", "MySQL");
+        boolean tempResult = dBMySQL.isRowPresent("SELECT * FROM fleet_defaulters WHERE fleetId = " + fleetId + ";");
+        dBMySQL.quit();
+        return tempResult;
+    }
+    @Step
+    public boolean checkFleetIsDeactivated(String fleetId) throws SQLException, IOException, ClassNotFoundException {
+        dBMySQL = new Database("MySQL_PADB_DB", "MySQL");
+        boolean tempResult = dBMySQL.isRowPresent("SELECT * FROM fleet_defaulters WHERE fleetId = " + fleetId + " AND deactivated = 1;");
+        dBMySQL.quit();
+        return tempResult;
+    }
+    @Step
+    public List<String> getIdScannersByStatus(String soloOrFleetString, String userId, String numberStatus) throws SQLException, IOException, ClassNotFoundException {
+        dBMySQL = new Database("MySQL_PADB_DB", "MySQL");
+        List<String> tempIdDevices = dBMySQL.selectResultSet("SELECT id FROM eld_scanners WHERE " + soloOrFleetString + " = " + userId + " AND status = " + numberStatus + ";");
+        dBMySQL.quit();
+        return tempIdDevices;
+    }
+    @Step
+    public List<String> getScannersStatus(String scannerId) throws SQLException, IOException, ClassNotFoundException {
+        dBMySQL = new Database("MySQL_PADB_DB", "MySQL");
+        List<String> tempScannersStatuses = dBMySQL.selectResultSet("SELECT status FROM eld_scanners WHERE id IN(" + scannerId + ");");
+        dBMySQL.quit();
+        return tempScannersStatuses;
+    }
 
 }
