@@ -317,7 +317,7 @@ public class ChargePage {
         return compareDues;
     }
     @Step
-    public boolean checkStatusesActiveDevices(List<String> listOfActiveDevices, String numberStatus) throws SQLException, IOException, ClassNotFoundException {
+    public boolean checkStatusesDevices(List<String> listOfActiveDevices, String numberStatus) throws SQLException, IOException, ClassNotFoundException {
         String stringOfActiveDevices = String.join(",", listOfActiveDevices);
         List<String> listOfStatuses = utilsForDB.getScannersStatus(stringOfActiveDevices);
         for (String element:
@@ -327,10 +327,31 @@ public class ChargePage {
         }
         return true;
     }
+    @Step
+    public boolean checkProratedAndNotReturnedFee(String fleetId, List<String> listOfActiveDevices, String currentDueWithLateFee) throws SQLException, IOException, ClassNotFoundException {
+        LocalDateTime tempDate = LocalDateTime.parse(LocalDateTime.now().minusMonths(12).toString());
+        long date_12MonthAgo = tempDate.toEpochSecond(ZoneOffset.UTC);
+        String tempDate_12MonthAgo = Long.toString(date_12MonthAgo);
+        String stringOfActiveDevices = String.join(",", listOfActiveDevices);
+        int countDevicesTariffStartLess_12Month = utilsForDB.countScannersTariffStartLess_12Month(stringOfActiveDevices, tempDate_12MonthAgo);
+        logger.info("countDevicesTariffStartLess_12Month = " + countDevicesTariffStartLess_12Month);
+        int countDevices = listOfActiveDevices.size();
+        int countDevicesAfter_12Month = countDevices - countDevicesTariffStartLess_12Month;
 
-    public boolean checkProratedAndNotReturnedFee(List<String> listOfActiveDevices) {
-        return false;
+        String currentDueWithLateReturnedProratedFee = utilsForDB.getCurrentDueEzFinancesFleet(fleetId);
+
+        logger.info("countDevices = " + countDevices);
+        double tempNotReturnedFee = Math.round((countDevices * 199.99) * 100.0) / 100.0;
+        logger.info("tempNotReturnedFee = " + tempNotReturnedFee);
+
+        double tempProratedFee = Math.round(((countDevicesTariffStartLess_12Month * 29.99) + (countDevicesAfter_12Month * 59.98)) * 100.0) / 100.0;
+        logger.info("tempProratedFee = " + tempProratedFee);
+        double tempDueWithReturnedProratedFee = Math.round((tempNotReturnedFee + tempProratedFee + Double.parseDouble(currentDueWithLateFee)) * 100.0) / 100.0;
+        logger.info("tempDueWithReturnedProratedFee = " + tempDueWithReturnedProratedFee);
+        boolean tempResult = tempDueWithReturnedProratedFee == Double.parseDouble(currentDueWithLateReturnedProratedFee);
+        return tempResult;
     }
+
 }
 
 

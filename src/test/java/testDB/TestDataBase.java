@@ -8,6 +8,7 @@ import java.io.IOException;
 import java.sql.SQLException;
 import java.text.ParseException;
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.time.Period;
 import java.time.ZoneOffset;
 import java.time.temporal.ChronoUnit;
@@ -131,15 +132,16 @@ public class TestDataBase {
         String fleetString = "fleet";
         String fleetId = "518";
         UtilsForDB utilsForDB = new UtilsForDB();
-        List<String> listOfActiveDevices = utilsForDB.getIdScannersByStatus(fleetString, fleetId, "4");
+        List<String> listOfActiveDevices = utilsForDB.getIdScannersByStatus(fleetString, fleetId, "11");
         String stringOfActiveDevices = String.join(",", listOfActiveDevices);
         List<String> listOfStatuses = utilsForDB.getScannersStatus(stringOfActiveDevices);
+        System.out.println("listOfStatuses count = " + listOfStatuses.size());
         System.out.println("listOfStatuses " + listOfStatuses);
         for (String element:listOfStatuses) {
             if (element.equals("1")){
                 System.out.println("Ok ");
             } else System.out.println("No Ok ");
-        }
+        } System.out.println("#");
 
     }
     @Test
@@ -149,5 +151,36 @@ public class TestDataBase {
         String firstDayOfNextMonth2 = Long.toString(firstDayOfNextMonth);
         System.out.println("firstDayOfNextMonth = " + firstDayOfNextMonth2);
     }
+    @Test
+    public void checkProratedAndNotReturnedFee() throws SQLException, IOException, ClassNotFoundException {
+        UtilsForDB utilsForDB = new UtilsForDB();
+        String fleetId = "581";
+        String fleetString = "fleet";
+        String currentDueWithLateFee = "10";
+        List<String> listOfActiveDevices =  utilsForDB.getIdScannersByStatus(fleetString, fleetId, "4");
+        LocalDateTime tempDate = LocalDateTime.parse(LocalDateTime.now().minusMonths(12).toString());
+        long date_12MonthAgo = tempDate.toEpochSecond(ZoneOffset.UTC);
+        String tempDate_12MonthAgo = Long.toString(date_12MonthAgo);
+        String stringOfActiveDevices = String.join(",", listOfActiveDevices);
+        int countDevicesTariffStartLess_12Month = utilsForDB.countScannersTariffStartLess_12Month(stringOfActiveDevices, tempDate_12MonthAgo);
+        logger.info("countDevices = " + countDevicesTariffStartLess_12Month);
+        int countDevices = listOfActiveDevices.size();
+        int countDevicesAfter_12Month = countDevices - countDevicesTariffStartLess_12Month;
 
+        String currentDueWithLateReturnedProratedFee = utilsForDB.getCurrentDueEzFinancesFleet(fleetId);
+
+        logger.info("countDevices = " + countDevices);
+        double tempNotReturnedFee = Math.round((countDevices * 199.99) * 100.0) / 100.0;
+        logger.info("tempNotReturnedFee = " + tempNotReturnedFee);
+        double tempProratedFeeLess = Math.round((countDevicesTariffStartLess_12Month * 29.99) * 100.0) / 100.0;
+        System.out.println("tempProratedFeeLess = " + tempProratedFeeLess);
+        double tempProratedFeeAfter = Math.round(((countDevicesAfter_12Month * 59.98)) * 100.0) / 100.0;
+        System.out.println("tempProratedFeeAfter = " + tempProratedFeeAfter);
+        double tempProratedFee = Math.round(((countDevicesTariffStartLess_12Month * 29.99) + (countDevicesAfter_12Month * 59.98)) * 100.0) / 100.0;
+        logger.info("tempProratedFee = " + tempProratedFee);
+        double tempDueWithReturnedProratedFee = Math.round((tempNotReturnedFee + tempProratedFee + Double.parseDouble(currentDueWithLateFee)) * 100.0) / 100.0;
+        logger.info("tempDueWithReturnedProratedFee = " + tempDueWithReturnedProratedFee);
+        boolean tempResult = tempDueWithReturnedProratedFee == Double.parseDouble(currentDueWithLateReturnedProratedFee);
+        System.out.println("tempResult = " + tempResult);
+    }
 }
