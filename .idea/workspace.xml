@@ -112,7 +112,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ChargeDefaultersTest.makeFleetDefaulter" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ChargeDefaultersTest.chargeDefaultersSoloTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="WorkSpace" />
       <extension name="coverage">
         <pattern>
@@ -122,23 +122,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="chargeTest" />
       <option name="MAIN_CLASS_NAME" value="chargeTest.ChargeDefaultersTest" />
-      <option name="METHOD_NAME" value="makeFleetDefaulter" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestDataBase.checkDevicesIsNotPaid" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="WorkSpace" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="testDB.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="testDB" />
-      <option name="MAIN_CLASS_NAME" value="testDB.TestDataBase" />
-      <option name="METHOD_NAME" value="checkDevicesIsNotPaid" />
+      <option name="METHOD_NAME" value="chargeDefaultersSoloTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -160,6 +144,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestDataBase.compareEldStatusInCompletedOrder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="WorkSpace" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testDB.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="testDB" />
+      <option name="MAIN_CLASS_NAME" value="testDB.TestDataBase" />
+      <option name="METHOD_NAME" value="compareEldStatusInCompletedOrder" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TestDataBase.getEventNewOrder" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
       <module name="testdevEzlogz" />
       <extension name="coverage">
@@ -176,7 +176,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestDataBase.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestDataBase.testGetEldId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="WorkSpace" />
       <extension name="coverage">
         <pattern>
@@ -186,7 +186,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="testDB" />
       <option name="MAIN_CLASS_NAME" value="testDB.TestDataBase" />
-      <option name="METHOD_NAME" value="test" />
+      <option name="METHOD_NAME" value="testGetEldId" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -237,20 +237,20 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.TestDataBase.getEventNewOrder" />
-      <item itemvalue="JUnit.ChargeDefaultersTest.makeFleetDefaulter" />
-      <item itemvalue="JUnit.TestDataBase.checkDevicesIsNotPaid" />
       <item itemvalue="JUnit.ChargeDefaultersTest.chargeDefaultersFleetTest" />
-      <item itemvalue="Maven.SoloOrders" />
-      <item itemvalue="JUnit.TestDataBase.test" />
       <item itemvalue="JUnit.TestDataBase.checkProratedAndNotReturnedFee" />
+      <item itemvalue="Maven.SoloOrders" />
+      <item itemvalue="JUnit.TestDataBase.testGetEldId" />
+      <item itemvalue="JUnit.ChargeDefaultersTest.chargeDefaultersSoloTest" />
+      <item itemvalue="JUnit.TestDataBase.compareEldStatusInCompletedOrder" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.ChargeDefaultersTest.chargeDefaultersFleetTest" />
+        <item itemvalue="JUnit.ChargeDefaultersTest.chargeDefaultersSoloTest" />
+        <item itemvalue="JUnit.TestDataBase.compareEldStatusInCompletedOrder" />
         <item itemvalue="JUnit.TestDataBase.checkProratedAndNotReturnedFee" />
-        <item itemvalue="JUnit.TestDataBase.test" />
-        <item itemvalue="JUnit.ChargeDefaultersTest.makeFleetDefaulter" />
-        <item itemvalue="JUnit.TestDataBase.checkDevicesIsNotPaid" />
+        <item itemvalue="JUnit.TestDataBase.testGetEldId" />
       </list>
     </recent_temporary>
   </component>
