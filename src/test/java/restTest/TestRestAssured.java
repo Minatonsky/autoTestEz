@@ -4,7 +4,6 @@ import io.restassured.response.Response;
 import io.restassured.response.ResponseBody;
 import io.restassured.specification.RequestSpecification;
 import libs.CurrencyValues;
-import libs.ResponseStructureForRestAssuredTest;
 import org.json.JSONObject;
 import org.junit.Assert;
 import org.junit.Ignore;
@@ -13,34 +12,30 @@ import restSteps.MainRestSteps;
 
 import static libs.Utils.getDateAndTimeFormated;
 
-
 public class TestRestAssured {
     MainRestSteps mainRestSteps = new MainRestSteps();
     @Test
-    //@Ignore
+    @Ignore
     public void getCursDetails() {
 
         Response response = mainRestSteps.getRequestToPrivatApiAndVerifyStatusCode();
 
         ResponseBody responseBody = mainRestSteps.getResponseBody(response);
 
-//        System.out.println("Privat Curse" +responseBody.toString());
-//        String testString = responseBody.asString();
-//        String [] testString1 = testString.split("\"");
-//
-//        for (int i = 0; i < testString1.length; i++) {
-//            System.out.println(i + " -> " + testString1 [i]);
-//        }
-//        System.out.println(" Kust " + testString1[3] + " = " + testString1[11] + " and " + testString1[15]);
+        System.out.println("Privat Curse" +responseBody.toString());
+        String testString = responseBody.asString();
+        String [] testString1 = testString.split("\"");
+
+        for (int i = 0; i < testString1.length; i++) {
+            System.out.println(i + " -> " + testString1 [i]);
+        }
+        System.out.println(" Kust " + testString1[3] + " = " + testString1[11] + " and " + testString1[15]);
 
         CurrencyValues[] responseStructure = responseBody.as(CurrencyValues[].class);
 
         for (CurrencyValues currencyElement : responseStructure ) {
             System.out.println("Cur " + currencyElement.ccy + " to " + currencyElement.base_ccy + " has for buy " + currencyElement.buy + " and for sale " + currencyElement.sale);
         }
-
-
-
     }
 
 
@@ -50,14 +45,12 @@ public class TestRestAssured {
     public void getWeatherDetails() {
 
         Response response = mainRestSteps.getRequestAndVerifyStatusCode("/London");
-
-        ResponseBody responseBody = mainRestSteps.getResponseBody(response);
-
+        mainRestSteps.getValueForKeyFromResponseAsJsonObject(response, "City");
         System.out.println("City received from Response " + mainRestSteps.getValueForKeyFromResponseAsJsonObject(response, "City"));
 
-        ResponseStructureForRestAssuredTest responseStructure = responseBody.as(ResponseStructureForRestAssuredTest.class);
-
-        System.out.println("City from json " + responseStructure.City);
+//        ResponseBody responseBody = mainRestSteps.getResponseBody(response);
+//        ResponseStructureForRestAssuredTest responseStructure = responseBody.as(ResponseStructureForRestAssuredTest.class);
+//        System.out.println("City from json " + responseStructure.City);
     }
 
     @Test
@@ -83,9 +76,9 @@ public class TestRestAssured {
 
 
         int statusCode = response.getStatusCode();
-        Assert.assertEquals(201, statusCode);
+        Assert.assertEquals(200, statusCode);
         ResponseBody responseBody = response.getBody();
-
+        System.out.println(responseBody);
         System.out.println(response.asString());
         if (response.jsonPath().get("SuccessCode") == null) {
             String failCode = response.jsonPath().get("FaultId");
