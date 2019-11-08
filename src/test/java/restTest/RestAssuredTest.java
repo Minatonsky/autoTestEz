@@ -29,34 +29,28 @@ public class RestAssuredTest {
         request.body(requestParams.toMap());
 
         Response response = request.post();
-        int statusCode = response.getStatusCode();
-
-        String responseBody = response.getBody().asString();
-//        System.out.println("Response Body is =>  " + responseBody);
-        Assert.assertEquals(statusCode, 200);
-
-        JSONObject obj2 = new JSONObject(responseBody);
-        String token = obj2.getString("token");
+        Assert.assertEquals(response.getStatusCode(), 200);
+        String token = mainRestSteps.getValueForKeyFromResponseAsJsonObject(response, "token");
+        System.out.println("token = " + token);
         mainRestSteps.createAndWriteStringToFile(file, token);
 
     }
 
+
     @Test
-    public void statesTest(){
-        RequestSpecification request = mainRestSteps.setBaseUrlForStates();
-        requestParams.put("token", stringToken);
-        request.header("Content-Type", "application/json");
-        request.body(requestParams.toMap());
+    public void stateTest(){
+        RequestSpecification request = mainRestSteps.setBaseUrlForDevEzlogzApi("/api/dictionaries/states/", stringToken);
         Response response = request.get();
-        int statusCode = response.getStatusCode();
-
-        String responseBody = response.getBody().asString();
-        System.out.println("Response Body is =>  " + responseBody);
-        Assert.assertEquals(statusCode, 200);
-
+        mainRestSteps.getResponseBody(response);
+        Assert.assertEquals(response.getStatusCode(), 200);
     }
-//    @Test
-//    public void
 
+    @Test
+    public void settingsTest(){
+        RequestSpecification request = mainRestSteps.setBaseUrlForDevEzlogzApi("/api/settings/", stringToken);
+        Response response = request.get();
+        mainRestSteps.getResponseBody(response);
+        Assert.assertEquals(response.getStatusCode(), 200);
+    }
 
 }

@@ -4,6 +4,7 @@ import io.restassured.response.Response;
 import io.restassured.response.ResponseBody;
 import io.restassured.specification.RequestSpecification;
 import libs.CurrencyValues;
+import libs.ResponseStructureForRestAssuredTest;
 import org.json.JSONObject;
 import org.junit.Assert;
 import org.junit.Ignore;
@@ -19,7 +20,6 @@ public class TestRestAssured {
     public void getCursDetails() {
 
         Response response = mainRestSteps.getRequestToPrivatApiAndVerifyStatusCode();
-
         ResponseBody responseBody = mainRestSteps.getResponseBody(response);
 
         System.out.println("Privat Curse" +responseBody.toString());
@@ -41,16 +41,14 @@ public class TestRestAssured {
 
 
     @Test
-    @Ignore
     public void getWeatherDetails() {
 
         Response response = mainRestSteps.getRequestAndVerifyStatusCode("/London");
-        mainRestSteps.getValueForKeyFromResponseAsJsonObject(response, "City");
-        System.out.println("City received from Response " + mainRestSteps.getValueForKeyFromResponseAsJsonObject(response, "City"));
+//        System.out.println("City received from Response " + mainRestSteps.getValueForKeyFromResponseAsJsonObject(response, "City"));
 
-//        ResponseBody responseBody = mainRestSteps.getResponseBody(response);
-//        ResponseStructureForRestAssuredTest responseStructure = responseBody.as(ResponseStructureForRestAssuredTest.class);
-//        System.out.println("City from json " + responseStructure.City);
+        ResponseBody responseBody = mainRestSteps.getResponseBody(response);
+        ResponseStructureForRestAssuredTest responseStructure = responseBody.as(ResponseStructureForRestAssuredTest.class);
+        System.out.println("City from json " + responseStructure.City);
     }
 
     @Test
@@ -68,12 +66,8 @@ public class TestRestAssured {
 
         // Add a header stating the Request body is a JSON
         request.header("Content-Type", "application/json");
-
         request.body(requestParams.toMap());
-
-
         Response response = request.post("/register");
-
 
         int statusCode = response.getStatusCode();
         Assert.assertEquals(200, statusCode);
@@ -87,6 +81,4 @@ public class TestRestAssured {
             Assert.assertEquals("Correct Success code was returned", response.jsonPath().get("SuccessCode"), "OPERATION_SUCCESS");
         }
     }
-
-
 }
