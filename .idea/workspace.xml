@@ -3,11 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="660eb711-957d-418e-9483-8b2931da6e6e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/qalight.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/qalight.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/libs/UtilsForDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/libs/UtilsForDB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/ChargePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/ChargePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/chargeTest/ChargeDefaultersTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/chargeTest/ChargeDefaultersTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testDB/TestDataBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testDB/TestDataBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/restSteps/MainRestSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/restSteps/MainRestSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/restTest/RestAssuredTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/restTest/RestAssuredTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/restTest/TestRestAssured.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/restTest/TestRestAssured.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,7 +30,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="work-17-10" />
+        <entry key="$PROJECT_DIR$" value="Den-Work-28-10" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -52,7 +50,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="extract.method.default.visibility" value="private" />
-    <property name="last_opened_file_path" value="$USER_HOME$/OneDrive/Рабочий стол/testlink-2.0.jar/TestLinkResult.class" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/java/restTest" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -61,11 +59,14 @@
     <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="orders" />
-      <recent name="parameterizedOrders" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\workspace\testdevEzlogz\src\main\java\data" />
+      <recent name="C:\workspace\testdevEzlogz\src\main\java\libs" />
+      <recent name="C:\workspace\testdevEzlogz\src\test\java\restTest" />
+      <recent name="C:\workspace\testdevEzlogz\src" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\WorkSpace\src\test\java\restTest" />
       <recent name="C:\workspace\testdevEzlogz\src\main\java\pages" />
       <recent name="C:\workspace\testdevEzlogz\src\main\java\data" />
       <recent name="C:\workspace\testdevEzlogz\src\drivers" />
@@ -76,11 +77,10 @@
       <recent name="loginTests" />
       <recent name="orders" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\workspace\testdevEzlogz\src\main\java\data" />
-      <recent name="C:\workspace\testdevEzlogz\src\main\java\libs" />
-      <recent name="C:\workspace\testdevEzlogz\src\test\java\restTest" />
-      <recent name="C:\workspace\testdevEzlogz\src" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="restTest" />
+      <recent name="orders" />
+      <recent name="parameterizedOrders" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -95,66 +95,50 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ChargeDefaultersTest.chargeDefaultersFleetTest">
-    <configuration name="ChargeDefaultersTest.chargeDefaultersFleetTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.RestAssuredTest.stateTest">
+    <configuration name="RestAssuredTest.authorizationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="WorkSpace" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="chargeTest.*" />
+          <option name="PATTERN" value="restTest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="chargeTest" />
-      <option name="MAIN_CLASS_NAME" value="chargeTest.ChargeDefaultersTest" />
-      <option name="METHOD_NAME" value="chargeDefaultersFleetTest" />
+      <option name="PACKAGE_NAME" value="restTest" />
+      <option name="MAIN_CLASS_NAME" value="restTest.RestAssuredTest" />
+      <option name="METHOD_NAME" value="authorizationTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ChargeDefaultersTest.chargeDefaultersSoloTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RestAssuredTest.settingsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="WorkSpace" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="chargeTest.*" />
+          <option name="PATTERN" value="restTest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="chargeTest" />
-      <option name="MAIN_CLASS_NAME" value="chargeTest.ChargeDefaultersTest" />
-      <option name="METHOD_NAME" value="chargeDefaultersSoloTest" />
+      <option name="PACKAGE_NAME" value="restTest" />
+      <option name="MAIN_CLASS_NAME" value="restTest.RestAssuredTest" />
+      <option name="METHOD_NAME" value="settingsTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestDataBase.checkProratedAndNotReturnedFee" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RestAssuredTest.stateTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="WorkSpace" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="testDB.*" />
+          <option name="PATTERN" value="restTest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="testDB" />
-      <option name="MAIN_CLASS_NAME" value="testDB.TestDataBase" />
-      <option name="METHOD_NAME" value="checkProratedAndNotReturnedFee" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestDataBase.compareEldStatusInCompletedOrder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="WorkSpace" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="testDB.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="testDB" />
-      <option name="MAIN_CLASS_NAME" value="testDB.TestDataBase" />
-      <option name="METHOD_NAME" value="compareEldStatusInCompletedOrder" />
+      <option name="PACKAGE_NAME" value="restTest" />
+      <option name="MAIN_CLASS_NAME" value="restTest.RestAssuredTest" />
+      <option name="METHOD_NAME" value="stateTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -176,17 +160,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestDataBase.testGetEldId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestRestAssured.getWeatherDetails" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="WorkSpace" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="testDB.*" />
+          <option name="PATTERN" value="restTest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="testDB" />
-      <option name="MAIN_CLASS_NAME" value="testDB.TestDataBase" />
-      <option name="METHOD_NAME" value="testGetEldId" />
+      <option name="PACKAGE_NAME" value="restTest" />
+      <option name="MAIN_CLASS_NAME" value="restTest.TestRestAssured" />
+      <option name="METHOD_NAME" value="getWeatherDetails" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestRestAssured.registrationSuccessful" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="WorkSpace" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="restTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="restTest" />
+      <option name="MAIN_CLASS_NAME" value="restTest.TestRestAssured" />
+      <option name="METHOD_NAME" value="registrationSuccessful" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -237,20 +237,20 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.TestDataBase.getEventNewOrder" />
-      <item itemvalue="JUnit.ChargeDefaultersTest.chargeDefaultersFleetTest" />
-      <item itemvalue="JUnit.TestDataBase.checkProratedAndNotReturnedFee" />
       <item itemvalue="Maven.SoloOrders" />
-      <item itemvalue="JUnit.TestDataBase.testGetEldId" />
-      <item itemvalue="JUnit.ChargeDefaultersTest.chargeDefaultersSoloTest" />
-      <item itemvalue="JUnit.TestDataBase.compareEldStatusInCompletedOrder" />
+      <item itemvalue="JUnit.RestAssuredTest.authorizationTest" />
+      <item itemvalue="JUnit.RestAssuredTest.settingsTest" />
+      <item itemvalue="JUnit.RestAssuredTest.stateTest" />
+      <item itemvalue="JUnit.TestRestAssured.registrationSuccessful" />
+      <item itemvalue="JUnit.TestRestAssured.getWeatherDetails" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ChargeDefaultersTest.chargeDefaultersFleetTest" />
-        <item itemvalue="JUnit.ChargeDefaultersTest.chargeDefaultersSoloTest" />
-        <item itemvalue="JUnit.TestDataBase.compareEldStatusInCompletedOrder" />
-        <item itemvalue="JUnit.TestDataBase.checkProratedAndNotReturnedFee" />
-        <item itemvalue="JUnit.TestDataBase.testGetEldId" />
+        <item itemvalue="JUnit.RestAssuredTest.stateTest" />
+        <item itemvalue="JUnit.RestAssuredTest.settingsTest" />
+        <item itemvalue="JUnit.TestRestAssured.getWeatherDetails" />
+        <item itemvalue="JUnit.TestRestAssured.registrationSuccessful" />
+        <item itemvalue="JUnit.RestAssuredTest.authorizationTest" />
       </list>
     </recent_temporary>
   </component>
@@ -271,20 +271,6 @@
       <workItem from="1562665338918" duration="52834000" />
       <workItem from="1562782581468" duration="9021000" />
       <workItem from="1562822119836" duration="58303000" />
-    </task>
-    <task id="LOCAL-00007" summary="config properties and utils was add">
-      <created>1562416938705</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1562416938705</updated>
-    </task>
-    <task id="LOCAL-00008" summary="work with DB was add">
-      <created>1562620911137</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1562620911137</updated>
     </task>
     <task id="LOCAL-00009" summary="rest was add">
       <created>1562675443610</created>
@@ -615,7 +601,21 @@
       <option name="project" value="LOCAL" />
       <updated>1572624320232</updated>
     </task>
-    <option name="localTasksCounter" value="56" />
+    <task id="LOCAL-00056" summary="ban unban was add">
+      <created>1573026934001</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1573026934002</updated>
+    </task>
+    <task id="LOCAL-00057" summary="test api login was add">
+      <created>1573137092271</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1573137092272</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -652,8 +652,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="refactor params test was do" />
-    <MESSAGE value="new order test was do" />
     <MESSAGE value="new modal window order test was add" />
     <MESSAGE value="camera order test was add" />
     <MESSAGE value="camera order with params test was add" />
@@ -677,14 +675,16 @@
     <MESSAGE value="month-to-month 12 test was add" />
     <MESSAGE value="new month-to-month 12 test was add" />
     <MESSAGE value="charge defaulters was add" />
-    <option name="LAST_COMMIT_MESSAGE" value="charge defaulters was add" />
+    <MESSAGE value="ban unban was add" />
+    <MESSAGE value="test api login was add" />
+    <option name="LAST_COMMIT_MESSAGE" value="test api login was add" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/libs/Utils.java</url>
-          <line>18</line>
+          <line>19</line>
           <properties class="libs.Utils" method="&lt;init&gt;">
             <option name="EMULATED" value="true" />
           </properties>

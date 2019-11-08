@@ -176,4 +176,8 @@ public class TestDataBase {
 
 
     }
+    @Test
+    public void testFor() throws SQLException, IOException, ClassNotFoundException {
+        System.out.println(utilsForDB.getLastOrderIdForFleet("518"));
+    }
 }
