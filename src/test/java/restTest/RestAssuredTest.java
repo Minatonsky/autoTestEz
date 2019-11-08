@@ -15,10 +15,6 @@ public class RestAssuredTest {
     MainRestSteps mainRestSteps = new MainRestSteps();
     JSONObject requestParams = new JSONObject();
     File file = new File("userToken.txt");
-    String stringToken = mainRestSteps.reedFile(file);
-
-    public RestAssuredTest() throws IOException {
-    }
 
     @Test
     public void authorizationTest() throws IOException {
@@ -38,16 +34,18 @@ public class RestAssuredTest {
 
 
     @Test
-    public void stateTest(){
-        RequestSpecification request = mainRestSteps.setBaseUrlForDevEzlogzApi("/api/dictionaries/states/", stringToken);
+    public void stateTest() throws IOException {
+        String bearerToken = mainRestSteps.reedFile("userToken.txt");
+        RequestSpecification request = mainRestSteps.setBaseUrlForDevEzlogzApi("/api/dictionaries/states", bearerToken);
         Response response = request.get();
         mainRestSteps.getResponseBody(response);
         Assert.assertEquals(response.getStatusCode(), 200);
     }
 
     @Test
-    public void settingsTest(){
-        RequestSpecification request = mainRestSteps.setBaseUrlForDevEzlogzApi("/api/settings/", stringToken);
+    public void settingsTest() throws IOException {
+        String bearerToken = mainRestSteps.reedFile("userToken.txt");
+        RequestSpecification request = mainRestSteps.setBaseUrlForDevEzlogzApi("/api/settings", bearerToken);
         Response response = request.get();
         mainRestSteps.getResponseBody(response);
         Assert.assertEquals(response.getStatusCode(), 200);

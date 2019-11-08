@@ -9,13 +9,17 @@ import io.restassured.specification.RequestSpecification;
 import org.json.JSONObject;
 import org.junit.Assert;
 
-import java.io.*;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 
 public class MainRestSteps {
 
     final private String baseTestUrl = "http://restapi.demoqa.com";
     final private String baseUrlPrivat = "http://api.privatbank.ua";
-    final private String baseUrl = "http://dev.api.ezlogz.com";
+    final private String baseUrl = "https://dev.api.ezlogz.com";
     JSONObject requestParams = new JSONObject();
 
     public void createAndWriteStringToFile(File file, String data) throws IOException {
@@ -25,11 +29,10 @@ public class MainRestSteps {
         writer.flush();
         writer.close();
     }
-    public String reedFile(File file) throws IOException {
-        BufferedReader br = new BufferedReader(new FileReader(file));
-        String stringFile;
-        while ((stringFile = br.readLine()) != null);
-        return stringFile;
+    public String reedFile(String bearerToken) throws IOException {
+        String content;
+        content = new String(Files.readAllBytes(Paths.get(bearerToken)));
+        return content;
     }
 
     public RequestSpecification setBaseUrlForAuthorization() {
