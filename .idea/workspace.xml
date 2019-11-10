@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="660eb711-957d-418e-9483-8b2931da6e6e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/userToken.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/libs/ResponseStructureForRestAssuredTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/libs/ResponseStructureForRestAssuredTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/restSteps/MainRestSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/restSteps/MainRestSteps.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/restTest/RestAssuredTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/restTest/RestAssuredTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/restTest/TestRestAssured.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/restTest/TestRestAssured.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -98,40 +99,8 @@
     </option>
   </component>
   <component name="RunManager" selected="JUnit.RestAssuredTest.settingsTest (1)">
-    <configuration name="RestAssuredTest.authorizationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="testdevEzlogz" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="restTest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="restTest" />
-      <option name="MAIN_CLASS_NAME" value="restTest.RestAssuredTest" />
-      <option name="METHOD_NAME" value="authorizationTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="RestAssuredTest.settingsTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="testdevEzlogz" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="restTest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="restTest" />
-      <option name="MAIN_CLASS_NAME" value="restTest.RestAssuredTest" />
-      <option name="METHOD_NAME" value="settingsTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RestAssuredTest.settingsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="WorkSpace" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="restTest.*" />
@@ -162,22 +131,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RestAssuredTest.stateTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="WorkSpace" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="restTest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="restTest" />
-      <option name="MAIN_CLASS_NAME" value="restTest.RestAssuredTest" />
-      <option name="METHOD_NAME" value="stateTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="TestDataBase.getEventNewOrder" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
       <module name="testdevEzlogz" />
       <extension name="coverage">
@@ -189,6 +142,54 @@
       <option name="PACKAGE_NAME" value="testDB" />
       <option name="MAIN_CLASS_NAME" value="testDB.TestDataBase" />
       <option name="METHOD_NAME" value="getEventNewOrder" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestRestAssured.getCursDetails" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="testdevEzlogz" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="restTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="restTest" />
+      <option name="MAIN_CLASS_NAME" value="restTest.TestRestAssured" />
+      <option name="METHOD_NAME" value="getCursDetails" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestRestAssured.getWeatherDetails" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="testdevEzlogz" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="restTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="restTest" />
+      <option name="MAIN_CLASS_NAME" value="restTest.TestRestAssured" />
+      <option name="METHOD_NAME" value="getWeatherDetails" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestRestAssured.registrationSuccessful" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="testdevEzlogz" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="restTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="restTest" />
+      <option name="MAIN_CLASS_NAME" value="restTest.TestRestAssured" />
+      <option name="METHOD_NAME" value="registrationSuccessful" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -239,20 +240,20 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.TestDataBase.getEventNewOrder" />
-      <item itemvalue="JUnit.RestAssuredTest.settingsTest" />
-      <item itemvalue="JUnit.RestAssuredTest.stateTest" />
       <item itemvalue="Maven.SoloOrders" />
       <item itemvalue="JUnit.RestAssuredTest.stateTest (1)" />
-      <item itemvalue="JUnit.RestAssuredTest.authorizationTest" />
       <item itemvalue="JUnit.RestAssuredTest.settingsTest (1)" />
+      <item itemvalue="JUnit.TestRestAssured.getCursDetails" />
+      <item itemvalue="JUnit.TestRestAssured.registrationSuccessful" />
+      <item itemvalue="JUnit.TestRestAssured.getWeatherDetails" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.RestAssuredTest.settingsTest (1)" />
+        <item itemvalue="JUnit.TestRestAssured.getWeatherDetails" />
+        <item itemvalue="JUnit.TestRestAssured.registrationSuccessful" />
+        <item itemvalue="JUnit.TestRestAssured.getCursDetails" />
         <item itemvalue="JUnit.RestAssuredTest.stateTest (1)" />
-        <item itemvalue="JUnit.RestAssuredTest.authorizationTest" />
-        <item itemvalue="JUnit.RestAssuredTest.stateTest" />
-        <item itemvalue="JUnit.RestAssuredTest.settingsTest" />
       </list>
     </recent_temporary>
   </component>
@@ -273,13 +274,6 @@
       <workItem from="1562665338918" duration="52834000" />
       <workItem from="1562782581468" duration="9021000" />
       <workItem from="1562822119836" duration="58303000" />
-    </task>
-    <task id="LOCAL-00009" summary="rest was add">
-      <created>1562675443610</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1562675443611</updated>
     </task>
     <task id="LOCAL-00010" summary="db test was add">
       <created>1562707915764</created>
@@ -617,7 +611,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573137092272</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="test api3 login was add">
+      <created>1573255672935</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1573255672937</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -654,7 +655,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="new modal window order test was add" />
     <MESSAGE value="camera order test was add" />
     <MESSAGE value="camera order with params test was add" />
     <MESSAGE value="refactor fleet test with excel was add" />
@@ -679,7 +679,8 @@
     <MESSAGE value="charge defaulters was add" />
     <MESSAGE value="ban unban was add" />
     <MESSAGE value="test api login was add" />
-    <option name="LAST_COMMIT_MESSAGE" value="test api login was add" />
+    <MESSAGE value="test api3 login was add" />
+    <option name="LAST_COMMIT_MESSAGE" value="test api3 login was add" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
