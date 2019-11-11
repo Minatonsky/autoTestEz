@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="660eb711-957d-418e-9483-8b2931da6e6e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/restSteps/MainRestSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/restSteps/MainRestSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/restTest/RestAssuredTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/restTest/RestAssuredTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/restTest/TestRestAssured.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/restTest/TestRestAssured.java" afterDir="false" />
-    </list>
+    <list default="true" id="660eb711-957d-418e-9483-8b2931da6e6e" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,7 +25,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Den-Work-28-10" />
+        <entry key="$PROJECT_DIR$" value="den-work-06-11" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -271,13 +266,6 @@
       <workItem from="1562665338918" duration="52834000" />
       <workItem from="1562782581468" duration="9021000" />
       <workItem from="1562822119836" duration="58303000" />
-    </task>
-    <task id="LOCAL-00009" summary="rest was add">
-      <created>1562675443610</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1562675443611</updated>
     </task>
     <task id="LOCAL-00010" summary="db test was add">
       <created>1562707915764</created>
@@ -615,7 +603,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573137092272</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="test api2 login was add">
+      <created>1573227958922</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1573227958922</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -652,7 +647,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="new modal window order test was add" />
     <MESSAGE value="camera order test was add" />
     <MESSAGE value="camera order with params test was add" />
     <MESSAGE value="refactor fleet test with excel was add" />
@@ -677,7 +671,8 @@
     <MESSAGE value="charge defaulters was add" />
     <MESSAGE value="ban unban was add" />
     <MESSAGE value="test api login was add" />
-    <option name="LAST_COMMIT_MESSAGE" value="test api login was add" />
+    <MESSAGE value="test api2 login was add" />
+    <option name="LAST_COMMIT_MESSAGE" value="test api2 login was add" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
