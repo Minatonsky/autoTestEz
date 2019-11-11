@@ -6,6 +6,7 @@ import io.restassured.specification.RequestSpecification;
 import libs.CurrencyValues;
 import libs.ResponseStructureForRestAssuredTest;
 import org.json.JSONObject;
+import org.json.simple.parser.ParseException;
 import org.junit.Assert;
 import org.junit.Ignore;
 import org.junit.Test;
@@ -17,19 +18,19 @@ public class TestRestAssured {
     MainRestSteps mainRestSteps = new MainRestSteps();
     @Test
     @Ignore
-    public void getCursDetails() {
+    public void getCursDetails() throws ParseException {
 
         Response response = mainRestSteps.getRequestToPrivatApiAndVerifyStatusCode();
         ResponseBody responseBody = mainRestSteps.getResponseBody(response);
 
-        System.out.println("Privat Curse" +responseBody.toString());
-        String testString = responseBody.asString();
-        String [] testString1 = testString.split("\"");
+//        System.out.println("Privat Curse = " +responseBody.toString());
+//        String testString = responseBody.asString();
+//        String [] testString1 = testString.split("\"");
 
-        for (int i = 0; i < testString1.length; i++) {
-            System.out.println(i + " -> " + testString1 [i]);
-        }
-        System.out.println(" Kust " + testString1[3] + " = " + testString1[11] + " and " + testString1[15]);
+//        for (int i = 0; i < testString1.length; i++) {
+//            System.out.println(i + " -> " + testString1 [i]);
+//        }
+//        System.out.println(" Kust " + testString1[3] + " = " + testString1[11] + " and " + testString1[15]);
 
         CurrencyValues[] responseStructure = responseBody.as(CurrencyValues[].class);
 
@@ -41,11 +42,9 @@ public class TestRestAssured {
 
 
     @Test
-    public void getWeatherDetails() {
-
+    public void getWeatherDetails() throws ParseException {
         Response response = mainRestSteps.getRequestAndVerifyStatusCode("/London");
-//        System.out.println("City received from Response " + mainRestSteps.getValueForKeyFromResponseAsJsonObject(response, "City"));
-
+        System.out.println("City received from Response " + mainRestSteps.getValueForKeyFromResponseAsJsonObject(response, "City"));
         ResponseBody responseBody = mainRestSteps.getResponseBody(response);
         ResponseStructureForRestAssuredTest responseStructure = responseBody.as(ResponseStructureForRestAssuredTest.class);
         System.out.println("City from json " + responseStructure.City);
