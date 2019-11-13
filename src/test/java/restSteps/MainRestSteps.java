@@ -39,6 +39,10 @@ public class MainRestSteps {
         RestAssured.baseURI = baseUrl + "/api/login";
         return RestAssured.given();
     }
+    public RequestSpecification setBaseUrlForRegistration() {
+        RestAssured.baseURI = baseUrl + "/api/registration";
+        return RestAssured.given();
+    }
     public Response getRequestAndVerifyStatusCode(String addToUrl) {
         Response response = getRequest(addToUrl);
         checkResponseCode(response, 200);

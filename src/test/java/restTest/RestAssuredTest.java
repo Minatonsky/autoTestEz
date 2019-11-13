@@ -11,6 +11,8 @@ import restSteps.MainRestSteps;
 import java.io.File;
 import java.io.IOException;
 
+import static libs.Utils.getDateAndTimeFormated;
+
 
 public class RestAssuredTest {
     MainRestSteps mainRestSteps = new MainRestSteps();
@@ -43,7 +45,6 @@ public class RestAssuredTest {
     }
     @Test
     public void settingsTest() throws ParseException, IOException {
-
         RequestSpecification request = mainRestSteps.setBaseUrlForDevEzlogzApi("/api/settings", bearerToken);
         Response response = request.get();
         mainRestSteps.getResponseBody(response);
@@ -51,4 +52,24 @@ public class RestAssuredTest {
 //        System.out.println("Received from Response: " + mainRestSteps.getValueForKeyFromResponseAsJsonObject(response, "user.phone"));
 //        mainRestSteps.printJson(response.asString());
     }
+    @Test
+    public void cardsTest() throws ParseException, IOException {
+        RequestSpecification request = mainRestSteps.setBaseUrlForDevEzlogzApi("/api/cards/", bearerToken);
+        Response response = request.get();
+        mainRestSteps.getResponseBody(response);
+        Assert.assertEquals(200, response.getStatusCode());
+    }
+    @Test
+    public void registrationTest() throws IOException, ParseException {
+        String dateTime = getDateAndTimeFormated();
+        RequestSpecification request = mainRestSteps.setBaseUrlForRegistration();
+        requestParams.put("type", 7).put("email", "test" + dateTime + "@gmail.com").put("first_name", "testregistration").put("last_name", "test").put("phone", "0676475006")
+                .put("password", "testtest").put("password_confirmation", "testtest").put("terms", 1);
+        request.header("Content-Type", "application/json").header("Accept", "application/json");
+        request.body(requestParams.toMap());
+        Response response = request.post();
+        mainRestSteps.getResponseBody(response);
+        Assert.assertEquals(201, response.getStatusCode());
+    }
+
 }
