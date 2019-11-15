@@ -14,13 +14,13 @@ import java.io.IOException;
 import static libs.Utils.getDateAndTimeFormated;
 
 
-public class RestAssuredTest {
+public class EzlogzAPITest {
     MainRestSteps mainRestSteps = new MainRestSteps();
     JSONObject requestParams = new JSONObject();
     File file = new File("userToken.txt");
     String bearerToken = mainRestSteps.reedFile("userToken.txt");
 
-    public RestAssuredTest() throws IOException {
+    public EzlogzAPITest() throws IOException {
     }
     @Test
     public void authorizationTest() throws IOException {
@@ -70,6 +70,18 @@ public class RestAssuredTest {
         Response response = request.post();
         mainRestSteps.getResponseBody(response);
         Assert.assertEquals(201, response.getStatusCode());
+    }
+    @Test
+    public void driverLicenseTest() throws IOException, ParseException {
+        RequestSpecification request = mainRestSteps.setBaseUrlForDevEzlogzApi("/api/validations/driver-license", bearerToken);
+        requestParams.put("country", "USA");
+        requestParams.put("state", "AL");
+        requestParams.put("value", "4555555");
+//        request.header("Content-Type", "application/json");
+        request.body(requestParams.toMap());
+        Response response = request.post();
+        mainRestSteps.getResponseBody(response);
+        Assert.assertEquals(200, response.getStatusCode());
     }
 
 }

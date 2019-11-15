@@ -2,22 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="660eb711-957d-418e-9483-8b2931da6e6e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log/qalight.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/qalight.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/libs/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/libs/Database.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/data/testParameterizedOrder.xls" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/data/testParameterizedOrder.xls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/FinancesPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/FinancesPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/ModalEldPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/ModalEldPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/orders/ParentFleetTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/orders/ParentFleetTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/orders/ParentSoloTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/orders/ParentSoloTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/parameterizedOrders/FleetOrderParamsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/parameterizedOrders/FleetOrderParamsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/parameterizedOrders/ManagerOrderFleetParamsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/parameterizedOrders/ManagerOrderFleetParamsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/parameterizedOrders/ManagerOrderSoloParamsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/parameterizedOrders/ManagerOrderSoloParamsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/parameterizedOrders/ParentFleetOrderParamsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/parameterizedOrders/ParentFleetOrderParamsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/parameterizedOrders/ParentManagerOrderParamsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/parameterizedOrders/ParentManagerOrderParamsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/parameterizedOrders/ParentSoloOrderParamsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/parameterizedOrders/ParentSoloOrderParamsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/parameterizedOrders/SoloOrderParamsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/parameterizedOrders/SoloOrderParamsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/restSteps/MainRestSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/restSteps/MainRestSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/restTest/RestAssuredTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/restTest/RestAssuredTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/restTest/RestAssuredTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/restTest/EzlogzAPITest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -108,18 +98,18 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.FleetOrderParamsTest.cancelDevicesByFleet">
-    <configuration name="ChargeMonthToMonthTariff.chargeMonthToMonthFleet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.EzlogzAPITest.driverLicenseTest">
+    <configuration name="EzlogzAPITest.driverLicenseTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="WorkSpace" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="chargeTest.*" />
+          <option name="PATTERN" value="restTest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="chargeTest" />
-      <option name="MAIN_CLASS_NAME" value="chargeTest.ChargeMonthToMonthTariff" />
-      <option name="METHOD_NAME" value="chargeMonthToMonthFleet" />
+      <option name="PACKAGE_NAME" value="restTest" />
+      <option name="MAIN_CLASS_NAME" value="restTest.EzlogzAPITest" />
+      <option name="METHOD_NAME" value="driverLicenseTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -141,33 +131,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RestAssuredTest.registrationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ManagerOrderFleetParamsTest.managerDoOrderFleetAgree" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="WorkSpace" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="restTest.*" />
+          <option name="PATTERN" value="parameterizedOrders.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="restTest" />
-      <option name="MAIN_CLASS_NAME" value="restTest.RestAssuredTest" />
-      <option name="METHOD_NAME" value="registrationTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RestAssuredTest.settingsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="WorkSpace" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="restTest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="restTest" />
-      <option name="MAIN_CLASS_NAME" value="restTest.RestAssuredTest" />
-      <option name="METHOD_NAME" value="settingsTest" />
+      <option name="PACKAGE_NAME" value="parameterizedOrders" />
+      <option name="MAIN_CLASS_NAME" value="parameterizedOrders.ManagerOrderFleetParamsTest" />
+      <option name="METHOD_NAME" value="managerDoOrderFleetAgree" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -184,6 +158,22 @@
       <option name="PACKAGE_NAME" value="orders" />
       <option name="MAIN_CLASS_NAME" value="orders.SoloEldOrderCompletedByManagerTest" />
       <option name="METHOD_NAME" value="orderCompletedByManager" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SoloOrderParamsTest.cancelDevicesBySolo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="WorkSpace" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="parameterizedOrders.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="parameterizedOrders" />
+      <option name="MAIN_CLASS_NAME" value="parameterizedOrders.SoloOrderParamsTest" />
+      <option name="METHOD_NAME" value="cancelDevicesBySolo" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -250,20 +240,20 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.TestDataBase.getEventNewOrder" />
-      <item itemvalue="Maven.SoloOrders" />
-      <item itemvalue="JUnit.RestAssuredTest.registrationTest" />
-      <item itemvalue="JUnit.RestAssuredTest.settingsTest" />
-      <item itemvalue="JUnit.ChargeMonthToMonthTariff.chargeMonthToMonthFleet" />
       <item itemvalue="JUnit.SoloEldOrderCompletedByManagerTest.orderCompletedByManager" />
       <item itemvalue="JUnit.FleetOrderParamsTest.cancelDevicesByFleet" />
+      <item itemvalue="Maven.SoloOrders" />
+      <item itemvalue="JUnit.SoloOrderParamsTest.cancelDevicesBySolo" />
+      <item itemvalue="JUnit.ManagerOrderFleetParamsTest.managerDoOrderFleetAgree" />
+      <item itemvalue="JUnit.EzlogzAPITest.driverLicenseTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.EzlogzAPITest.driverLicenseTest" />
+        <item itemvalue="JUnit.ManagerOrderFleetParamsTest.managerDoOrderFleetAgree" />
+        <item itemvalue="JUnit.SoloOrderParamsTest.cancelDevicesBySolo" />
         <item itemvalue="JUnit.FleetOrderParamsTest.cancelDevicesByFleet" />
         <item itemvalue="JUnit.SoloEldOrderCompletedByManagerTest.orderCompletedByManager" />
-        <item itemvalue="JUnit.ChargeMonthToMonthTariff.chargeMonthToMonthFleet" />
-        <item itemvalue="JUnit.RestAssuredTest.registrationTest" />
-        <item itemvalue="JUnit.RestAssuredTest.settingsTest" />
       </list>
     </recent_temporary>
   </component>
