@@ -38,13 +38,13 @@ public class ParentFleetTest extends ParentTest {
         dashboardPage.goToEldPage();
         userEldPage.clickOnOrderELD();
         modalEldPage.enterPersonalData(personalDataForEldOrder.get("deliveryState").toString(), personalDataForEldOrder.get("firstName").toString(), personalDataForEldOrder.get("lastName").toString(), personalDataForEldOrder.get("phone").toString(), personalDataForEldOrder.get("addressLine").toString(), personalDataForEldOrder.get("aptNumber").toString(), personalDataForEldOrder.get("deliveryCity").toString(), personalDataForEldOrder.get("zipCode").toString());
-        modalEldPage.enterOrderData(dataForEldOrder.get("quantityOfDevices").toString(), dataForEldOrder.get("quantityPinCable").toString(), dataForEldOrder.get("quantityOBDPinCable").toString(), dataForEldOrder.get("quantitySticker").toString(), dataForEldOrder.get("quantityCameraCP").toString(), dataForEldOrder.get("valueSdCard").toString(), dataForEldOrder.get("quantityCameraSVA").toString(), dataForEldOrder.get("neededStatePickUpFromOffice").toString(), dataForEldOrder.get("neededStateOvernightDelivery").toString());
+        modalEldPage.enterOrderData(dataForEldOrder.get("typeOfDevices").toString(), dataForEldOrder.get("quantityOfDevices").toString(), dataForEldOrder.get("quantityPinCable").toString(), dataForEldOrder.get("quantityOBDPinCable").toString(), dataForEldOrder.get("quantitySticker").toString(), dataForEldOrder.get("quantityCameraCP").toString(), dataForEldOrder.get("valueSdCard").toString(), dataForEldOrder.get("quantityCameraSVA").toString(), dataForEldOrder.get("neededStatePickUpFromOffice").toString(), dataForEldOrder.get("neededStateOvernightDelivery").toString());
         modalEldPage.clickPaymentMethods(dataForEldOrder.get("typeOfPaymentMethod").toString(), dataForEldOrder.get("quantityOfDevices").toString());
         modalEldPage.clickPaymentMethodsCamera(dataForEldOrder.get("typeOfPaymentMethodCamera").toString(), dataForEldOrder.get("quantityCameraCP").toString());
         waitABit(2);
 
         checkAC("Eld prices is not correct", modalEldPage.compareEldPrice(dataForEldOrder.get("quantityOfDevices").toString(), dataForEldOrder.get("typeOfPaymentMethod").toString(), dataForEldOrder.get("quantityCameraCP").toString()), true);
-        checkAC("DepositFee is not correct", modalEldPage.compareDepositFee(dataForEldOrder.get("quantityOfDevices").toString()), true);
+        checkAC("DepositFee is not correct", modalEldPage.compareDepositFee(dataForEldOrder.get("typeOfDevices").toString(), dataForEldOrder.get("quantityOfDevices").toString()), true);
         checkAC("DeliveryPrice is not correct", modalEldPage.compareDeliveryPrice(dataForEldOrder.get("neededStatePickUpFromOffice").toString()), true);
         checkAC("EldPinCable prices is not correct", modalEldPage.compareEldPinCable(dataForEldOrder.get("quantityPinCable").toString()), true);
         checkAC("EldOBDPinCable prices is not correct", modalEldPage.compareEldOBDPinCable(dataForEldOrder.get("quantityOBDPinCable").toString()), true);
@@ -55,7 +55,7 @@ public class ParentFleetTest extends ParentTest {
         checkAC("EzSmartCamCP2 prices is not correct", modalEldPage.compareEzSmartCamCP2(dataForEldOrder.get("quantityCameraCP").toString()), true);
         checkAC("EzSmartCamSVA prices is not correct", modalEldPage.compareEzSmartCamSVA(dataForEldOrder.get("quantityCameraSVA").toString()), true);
         checkAC("SdCard prices is not correct", modalEldPage.compareSdCard(dataForEldOrder.get("quantityCameraCP").toString(), dataForEldOrder.get("valueSdCard").toString()), true);
-        checkAC("Total Order is not correct", modalEldPage.compareTotalOrder(dataForEldOrder.get("quantityOfDevices").toString(), dataForEldOrder.get("typeOfPaymentMethod").toString(), dataForEldOrder.get("quantityPinCable").toString(), dataForEldOrder.get("quantityOBDPinCable").toString(), dataForEldOrder.get("quantitySticker").toString(), dataForEldOrder.get("quantityCameraCP").toString(), dataForEldOrder.get("quantityCameraSVA").toString(), dataForEldOrder.get("valueSdCard").toString()), true);
+        checkAC("Total Order is not correct", modalEldPage.compareTotalOrder(dataForEldOrder.get("typeOfDevices").toString(), dataForEldOrder.get("quantityOfDevices").toString(), dataForEldOrder.get("typeOfPaymentMethod").toString(), dataForEldOrder.get("quantityPinCable").toString(), dataForEldOrder.get("quantityOBDPinCable").toString(), dataForEldOrder.get("quantitySticker").toString(), dataForEldOrder.get("quantityCameraCP").toString(), dataForEldOrder.get("quantityCameraSVA").toString(), dataForEldOrder.get("valueSdCard").toString()), true);
 
         modalEldPage.doAgreeAgreement(dataForEldOrder.get("quantityOfDevices").toString());
         modalEldPage.doAgreementCamera(dataForEldOrder.get("quantityCameraCP").toString());

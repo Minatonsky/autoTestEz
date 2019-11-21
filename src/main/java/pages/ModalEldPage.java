@@ -9,6 +9,8 @@ import org.openqa.selenium.support.FindBy;
 import static libs.Utils.waitABit;
 
 public class ModalEldPage extends ParentPage {
+    @FindBy(name = "device_type_id")
+    private WebElement device_type_idInput;
 
     @FindBy(name ="amount")
     private WebElement quantityDeviseInput;
@@ -79,6 +81,9 @@ public class ModalEldPage extends ParentPage {
     @FindBy(name = "products[6]")
     private WebElement quantityCamera2Input;
 
+    @FindBy(xpath = ".//*[text()='ELD device price $169.99']/../td[@class='text-center price']")
+    private WebElement ELDDevicePriceText;
+
     @FindBy(xpath = ".//*[text()='TOTAL']/../../td[@class='text-center price']")
     private WebElement totalOrderText;
 
@@ -118,11 +123,20 @@ public class ModalEldPage extends ParentPage {
     @FindBy(xpath = ".//div[@data-id='0']")
     private WebElement monthToMonth;
 
+    @FindBy(xpath = ".//div[@data-id='9']")
+    private WebElement monthToMonth9;
+
     @FindBy(xpath = ".//*[@data-id='1']")
     private WebElement oneYearSubscription;
 
+    @FindBy(xpath = ".//*[@data-id='10']")
+    private WebElement oneYearSubscription10;
+
     @FindBy(xpath = ".//div[@data-id='2']")
     private WebElement twoYearSubscription;
+
+    @FindBy(xpath = ".//div[@data-id='11']")
+    private WebElement twoYearSubscription11;
 
     @FindBy(xpath = ".//div[@data-id='7']")
     private WebElement buyoutContract;
@@ -167,6 +181,7 @@ public class ModalEldPage extends ParentPage {
     @FindBy(xpath = ".//h1[text()='EZSMARTCAM PURCHASE AND DATA SERVICES AGREEMENT']")
     private WebElement cameraTitle;
 
+    double ELDDevicePrice = 169.99;
     double eldMonthToMonthPrice = 29.99;
     double eld1YearSubscriptionPrice = 329.89;
     double eld2YearsSubscriptionPrice = 629.79;
@@ -348,12 +363,36 @@ EQUIPMENT LEASE AND SOFTWARE SUBSCRIPTION SERVICE AGREEMENT
 /*
 ORDER LIST
  */
-
-    public void enterQuantityDevices(String quantityOfDevices) {actionsWithOurElements.enterTextToElement(quantityDeviseInput, quantityOfDevices);}
-    public void enterQuantityPinCable(String quantityPinCable){actionsWithOurElements.enterTextToElement(quantityPinCableInput, quantityPinCable);}
-    public void enterQuantityOBDPinCable(String quantityOBDPinCable){actionsWithOurElements.enterTextToElement(quantityOBDPinCableInput, quantityOBDPinCable);}
-    public void enterQuantitySticker(String quantitySticker){actionsWithOurElements.enterTextToElement(quantityStickerInput, quantitySticker);}
-    public void enterQuantityCameraCP(String quantityCameraCP){actionsWithOurElements.enterTextToElement(quantityCamera1Input, quantityCameraCP);}
+    public void selectDeviceTypeId(String valueDeviceTypeId, String quantityOfDevices){
+        if (Integer.parseInt(quantityOfDevices) > 0) {
+            actionsWithOurElements.selectValueInDropDown(device_type_idInput, valueDeviceTypeId);
+        } else logger.info("No devices in order");
+    }
+    public void enterQuantityDevices(String quantityOfDevices) {
+        if (Integer.parseInt(quantityOfDevices) > 0) {
+            actionsWithOurElements.enterTextToElement(quantityDeviseInput, quantityOfDevices);
+        } else logger.info("No devices in order");
+    }
+    public void enterQuantityPinCable(String quantityPinCable){
+        if (Integer.parseInt(quantityPinCable) > 0) {
+            actionsWithOurElements.enterTextToElement(quantityPinCableInput, quantityPinCable);
+        } else logger.info("No Pin Cable in order");
+    }
+    public void enterQuantityOBDPinCable(String quantityOBDPinCable){
+        if (Integer.parseInt(quantityOBDPinCable) > 0) {
+            actionsWithOurElements.enterTextToElement(quantityOBDPinCableInput, quantityOBDPinCable);
+        } else logger.info("No OBDP Cable in order");
+    }
+    public void enterQuantitySticker(String quantitySticker) {
+        if (Integer.parseInt(quantitySticker) > 0) {
+            actionsWithOurElements.enterTextToElement(quantityStickerInput, quantitySticker);
+        } else logger.info("No Sticker in order");
+    }
+    public void enterQuantityCameraCP(String quantityCameraCP){
+        if (Integer.parseInt(quantityCameraCP) > 0) {
+            actionsWithOurElements.enterTextToElement(quantityCamera1Input, quantityCameraCP);
+        } else logger.info("No Camera CP in order");
+    }
     public void selectSdCard(String valueSdCard, String quantityCameraCP) {
         if (Integer.parseInt(quantityCameraCP) > 0) {
             actionsWithOurElements.selectValueInDropDown(typeOfCdCard, valueSdCard);
@@ -368,7 +407,8 @@ ORDER LIST
     public void setOvernightDelivery(String neededStateOvernightDelivery){actionsWithOurElements.setNeededStateToCheckBox(checkBoxOvernightDelivery, neededStateOvernightDelivery);}
 
     @Step
-    public void enterOrderData(String  quantityOfDevices, String quantityPinCable, String quantityOBDPinCable, String quantitySticker, String quantityCameraCP, String valueSdCard, String quantityCameraSVA, String neededStatePickUpFromOffice, String neededStateOvernightDelivery){
+    public void enterOrderData(String valueDeviceTypeId, String  quantityOfDevices, String quantityPinCable, String quantityOBDPinCable, String quantitySticker, String quantityCameraCP, String valueSdCard, String quantityCameraSVA, String neededStatePickUpFromOffice, String neededStateOvernightDelivery){
+        selectDeviceTypeId(valueDeviceTypeId, quantityOfDevices);
         enterQuantityDevices(quantityOfDevices);
         enterQuantityPinCable(quantityPinCable);
         enterQuantityOBDPinCable(quantityOBDPinCable);
@@ -379,7 +419,6 @@ ORDER LIST
         waitABit(2);
         setPickUpFromOffice(neededStatePickUpFromOffice);
         setOvernightDelivery(neededStateOvernightDelivery);
-
     }
 
 
@@ -402,7 +441,18 @@ PAYMENT METHODS ELD, CAMERA AND BUTTON ORDER
                 actionsWithOurElements.clickOnElement(twoYearSubscription);
                 actionsWithOurElements.clickOnElement(twoYearSubscription);
                 logger.info("Payment Method twoYearSubscription was selected");
-
+            } else if (Integer.parseInt(typeOfPaymentMethod) == 9){
+                actionsWithOurElements.clickOnElement(monthToMonth9);
+                actionsWithOurElements.clickOnElement(monthToMonth9);
+                logger.info("Payment Method monthToMonth was selected");
+            } else if (Integer.parseInt(typeOfPaymentMethod) == 10){
+                actionsWithOurElements.clickOnElement(oneYearSubscription10);
+                actionsWithOurElements.clickOnElement(oneYearSubscription10);
+                logger.info("Payment Method oneYearSubscription was selected");
+            } else if (Integer.parseInt(typeOfPaymentMethod) == 11){
+                actionsWithOurElements.clickOnElement(twoYearSubscription11);
+                actionsWithOurElements.clickOnElement(twoYearSubscription11);
+                logger.info("Payment Method twoYearSubscription was selected");
             }
         } else {
             logger.info("Payment Method was not selected, no devices in order");
@@ -431,7 +481,9 @@ PAYMENT METHODS ELD, CAMERA AND BUTTON ORDER
 /*
 COMPARE METHODS
  */
-
+    public String getELDDevicePrice(){
+        return ELDDevicePriceText.getText();
+    }
     public String getTotalOrder(){
         return totalOrderText.getText();
     }
@@ -472,16 +524,16 @@ COMPARE METHODS
         int tempQuantityDevices2 = (Integer.parseInt(quantityOfDevices) - tempQuantityDevices1);
 
         if (Integer.parseInt(quantityOfDevices) > 0 && Integer.parseInt(quantityCameraCP) == 0) {
-            if (Integer.parseInt(typeOfPaymentMethod) == 0) {
+            if (Integer.parseInt(typeOfPaymentMethod) == 0 | Integer.parseInt(typeOfPaymentMethod) == 9) {
                 double tempPrice = Math.round((Integer.parseInt(quantityOfDevices) * eldMonthToMonthPrice) * 100.0) / 100.0;
                 if ((Double.parseDouble(getFirstMonthFee().substring(1)) == tempPrice)) {
                     return Double.parseDouble(getLastMonthFee().substring(1)) == tempPrice;
                 }
-            } else if (Integer.parseInt(typeOfPaymentMethod) == 1) {
+            } else if (Integer.parseInt(typeOfPaymentMethod) == 1 | Integer.parseInt(typeOfPaymentMethod) == 10) {
                 double tempPrice1 = Math.round((Integer.parseInt(quantityOfDevices) * eld1YearSubscriptionPrice) * 100.0) / 100.0;
                 return Double.parseDouble(getEldOneYearPrice().substring(1)) == tempPrice1;
 
-            } else if (Integer.parseInt(typeOfPaymentMethod) == 2) {
+            } else if (Integer.parseInt(typeOfPaymentMethod) == 2 | Integer.parseInt(typeOfPaymentMethod) == 11) {
                 double tempPrice2 = Math.round((Integer.parseInt(quantityOfDevices) * eld2YearsSubscriptionPrice) * 100.0) / 100.0;
                 return Double.parseDouble(getEldTwoYearPrice().substring(1)) == tempPrice2;
                 }
@@ -527,10 +579,13 @@ COMPARE METHODS
         } return false;
 
     }
-    public boolean compareDepositFee(String  quantityOfDevices){
-        double tempPrice = Math.round((Integer.parseInt(quantityOfDevices) * eldDepositFee) * 100.0) / 100.0;
-        if (Integer.parseInt(quantityOfDevices) > 0) {
-            return Double.parseDouble(getEldDepositFee().substring(1)) == tempPrice;
+    public boolean compareDepositFee(String typeOfDevices, String  quantityOfDevices){
+        double tempPriceDeposit = Math.round((Integer.parseInt(quantityOfDevices) * eldDepositFee) * 100.0) / 100.0;
+        double tempPriceEldPrice = Math.round((Integer.parseInt(quantityOfDevices) * ELDDevicePrice) * 100.0) / 100.0;
+        if (Integer.parseInt(quantityOfDevices) > 0 && Integer.parseInt(typeOfDevices) == 1) {
+            return Double.parseDouble(getEldDepositFee().substring(1)) == tempPriceDeposit;
+        } else if (Integer.parseInt(quantityOfDevices) > 0 && Integer.parseInt(typeOfDevices) == 2){
+            return Double.parseDouble(getELDDevicePrice().substring(1)) == tempPriceEldPrice;
         } else return true;
     }
     public boolean compareDeliveryPrice(String neededStatePickUpFromOffice){
@@ -634,16 +689,19 @@ COMPARE METHODS CAMERA
 /*
 COMPARE METHODS TOTAL PRICE
 */
-    public double totalOrderPrice(String  quantityOfDevices, String typeOfPaymentMethod, String quantityPinCable, String quantityOBDPinCable, String quantitySticker, String quantityCameraCP, String quantityCameraSVA, String valueSdCard) {
-        double totalPrice = Math.round((countEldPrice(quantityOfDevices, typeOfPaymentMethod, quantityCameraCP) + countDepositFeePrice(quantityOfDevices) + countDeliveryPrice() +
+    public double totalOrderPrice(String typeOfDevices, String  quantityOfDevices, String typeOfPaymentMethod, String quantityPinCable, String quantityOBDPinCable, String quantitySticker, String quantityCameraCP, String quantityCameraSVA, String valueSdCard) {
+        double totalPrice = Math.round((countEldPrice(quantityOfDevices, typeOfPaymentMethod, quantityCameraCP) + countDepositFeePrice(typeOfDevices, quantityOfDevices) + countDeliveryPrice() +
                 countEldPinCablePrice(quantityPinCable) + countOBDPinCablePrice(quantityOBDPinCable) + countStickerPrice(quantitySticker) +
                 countCP2MonthFeePrice(quantityCameraCP) + countCameraSetupFeePrice(quantityCameraCP) + countCameraInstallationFeePrice(quantityCameraCP) + countEzSmartCamCP2Price(quantityCameraCP) +
                 countCameraSVAPrice(quantityCameraSVA) + countSdCardPrice(quantityCameraCP, valueSdCard))*100.0) / 100.0;
         return totalPrice;
     }
 
-    public boolean compareTotalOrder(String  quantityOfDevices, String typeOfPaymentMethod, String quantityPinCable, String quantityOBDPinCable, String quantitySticker, String quantityCameraCP, String quantityCameraSVA, String valueSdCard){
-        double totalPrice =  Math.round((countEldPrice(quantityOfDevices, typeOfPaymentMethod, quantityCameraCP) + countDepositFeePrice(quantityOfDevices) + countDeliveryPrice() + countEldPinCablePrice(quantityPinCable) + countOBDPinCablePrice(quantityOBDPinCable) + countStickerPrice(quantitySticker) + countCP2MonthFeePrice(quantityCameraCP) + countCameraSetupFeePrice(quantityCameraCP) + countCameraInstallationFeePrice(quantityCameraCP) + countEzSmartCamCP2Price(quantityCameraCP) + countCameraSVAPrice(quantityCameraSVA) + countSdCardPrice(quantityCameraCP, valueSdCard))*100.0) / 100.0;
+    public boolean compareTotalOrder(String typeOfDevices, String  quantityOfDevices, String typeOfPaymentMethod, String quantityPinCable, String quantityOBDPinCable, String quantitySticker, String quantityCameraCP, String quantityCameraSVA, String valueSdCard){
+        double totalPrice =  Math.round((countEldPrice(quantityOfDevices, typeOfPaymentMethod, quantityCameraCP) + countDepositFeePrice(typeOfDevices, quantityOfDevices) + countDeliveryPrice() + countEldPinCablePrice(quantityPinCable) + countOBDPinCablePrice(quantityOBDPinCable) + countStickerPrice(quantitySticker) + countCP2MonthFeePrice(quantityCameraCP) + countCameraSetupFeePrice(quantityCameraCP) + countCameraInstallationFeePrice(quantityCameraCP) + countEzSmartCamCP2Price(quantityCameraCP) + countCameraSVAPrice(quantityCameraSVA) + countSdCardPrice(quantityCameraCP, valueSdCard))*100.0) / 100.0;
+        System.out.println("totalPrice" + totalPrice);
+        System.out.println("countEldPrice" + countEldPrice(quantityOfDevices, typeOfPaymentMethod, quantityCameraCP));
+        System.out.println("countDepositFeePrice" + countDepositFeePrice(typeOfDevices, quantityOfDevices));
         return Double.parseDouble(getTotalOrder().substring(1)) == totalPrice;
     }
     public double countEldPrice(String  quantityOfDevices, String typeOfPaymentMethod, String quantityCameraCP) {
@@ -659,6 +717,15 @@ COMPARE METHODS TOTAL PRICE
                 return tempPrice1;
 
             } else if (Integer.parseInt(typeOfPaymentMethod) == 2) {
+                double tempPrice2 = Math.round((Integer.parseInt(quantityOfDevices) * eld2YearsSubscriptionPrice) * 100.0) / 100.0;
+                return tempPrice2;
+            } else if (Integer.parseInt(typeOfPaymentMethod) == 9) {
+                double tempPrice2 = Math.round(((Integer.parseInt(quantityOfDevices) * eldMonthToMonthPrice)*2) * 100.0) / 100.0;
+                return tempPrice2;
+            } else if (Integer.parseInt(typeOfPaymentMethod) == 10) {
+                double tempPrice2 = Math.round((Integer.parseInt(quantityOfDevices) * eld1YearSubscriptionPrice) * 100.0) / 100.0;
+                return tempPrice2;
+            } else if (Integer.parseInt(typeOfPaymentMethod) == 11) {
                 double tempPrice2 = Math.round((Integer.parseInt(quantityOfDevices) * eld2YearsSubscriptionPrice) * 100.0) / 100.0;
                 return tempPrice2;
             }
@@ -694,10 +761,16 @@ COMPARE METHODS TOTAL PRICE
             return 0;
         } return 0;
     }
-    private double countDepositFeePrice(String  quantityOfDevices){
+    private double countDepositFeePrice(String typeOfDevices, String  quantityOfDevices){
         double tempDepositFee = Math.round((Integer.parseInt(quantityOfDevices) * eldDepositFee) * 100.0) / 100.0;
-        return tempDepositFee;
+        double tempPriceEldPrice = Math.round((Integer.parseInt(quantityOfDevices) * ELDDevicePrice) * 100.0) / 100.0;
+        if (Integer.parseInt(typeOfDevices) == 1) {
+            return tempDepositFee;
+        } else if (Integer.parseInt(typeOfDevices) == 2){
+            return tempPriceEldPrice;
+        } else return 0;
     }
+
     private double countDeliveryPrice(){
         if (actionsWithOurElements.isElementDisplay(eldDeliveryPriceText)) {
             double tempDeliveryPrice = Double.parseDouble(getEldDeliveryPrice().substring(1));

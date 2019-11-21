@@ -36,6 +36,8 @@ public class FinancesPage extends ParentPage {
         if (Integer.parseInt(currentDue) > 0) {
             return Double.parseDouble(getFinanceBalance().substring(1)) == tempBalance;
         } else if (Integer.parseInt(currentDue) == 0) {
+            System.out.println(getFinanceBalance().substring(1));
+            System.out.println(getFinanceBalance());
             return Double.parseDouble(getFinanceBalance().substring(1)) == 0;
         } else return false;
     }

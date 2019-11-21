@@ -11,14 +11,16 @@ import restSteps.MainRestSteps;
 import java.io.File;
 import java.io.IOException;
 
+import static libs.Utils.getDateAndTimeFormated;
 
-public class RestAssuredTest {
+
+public class EzlogzAPITest {
     MainRestSteps mainRestSteps = new MainRestSteps();
     JSONObject requestParams = new JSONObject();
     File file = new File("userToken.txt");
     String bearerToken = mainRestSteps.reedFile("userToken.txt");
 
-    public RestAssuredTest() throws IOException {
+    public EzlogzAPITest() throws IOException {
     }
     @Test
     public void authorizationTest() throws IOException {
@@ -43,7 +45,6 @@ public class RestAssuredTest {
     }
     @Test
     public void settingsTest() throws ParseException, IOException {
-
         RequestSpecification request = mainRestSteps.setBaseUrlForDevEzlogzApi("/api/settings", bearerToken);
         Response response = request.get();
         mainRestSteps.getResponseBody(response);
@@ -51,4 +52,36 @@ public class RestAssuredTest {
 //        System.out.println("Received from Response: " + mainRestSteps.getValueForKeyFromResponseAsJsonObject(response, "user.phone"));
 //        mainRestSteps.printJson(response.asString());
     }
+    @Test
+    public void cardsTest() throws ParseException, IOException {
+        RequestSpecification request = mainRestSteps.setBaseUrlForDevEzlogzApi("/api/cards/", bearerToken);
+        Response response = request.get();
+        mainRestSteps.getResponseBody(response);
+        Assert.assertEquals(200, response.getStatusCode());
+    }
+    @Test
+    public void registrationTest() throws IOException, ParseException {
+        String dateTime = getDateAndTimeFormated();
+        RequestSpecification request = mainRestSteps.setBaseUrlForRegistration();
+        requestParams.put("type", 7).put("email", "test" + dateTime + "@gmail.com").put("first_name", "testregistration").put("last_name", "test").put("phone", "0676475006")
+                .put("password", "testtest").put("password_confirmation", "testtest").put("terms", 1);
+        request.header("Content-Type", "application/json").header("Accept", "application/json");
+        request.body(requestParams.toMap());
+        Response response = request.post();
+        mainRestSteps.getResponseBody(response);
+        Assert.assertEquals(201, response.getStatusCode());
+    }
+    @Test
+    public void driverLicenseTest() throws IOException, ParseException {
+        RequestSpecification request = mainRestSteps.setBaseUrlForDevEzlogzApi("/api/validations/driver-license", bearerToken);
+        requestParams.put("country", "USA");
+        requestParams.put("state", "AL");
+        requestParams.put("value", "4555555");
+//        request.header("Content-Type", "application/json");
+        request.body(requestParams.toMap());
+        Response response = request.post();
+        mainRestSteps.getResponseBody(response);
+        Assert.assertEquals(200, response.getStatusCode());
+    }
+
 }

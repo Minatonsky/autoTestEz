@@ -17,6 +17,7 @@ public class Database {
    private Connection connection = null;
    private String url;
    static Logger log = Logger.getLogger(Database.class);
+
     /*
      *  Constructor opens connection to database using connection string from config.properties file.
      *  Note in config.properties, please, that username and password for access to the database should be named as
