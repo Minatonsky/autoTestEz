@@ -58,7 +58,7 @@ public class ManagerOrderSoloParamsTest extends ParentManagerOrderParamsTest {
 // user agree order
         loginPage.userValidLogIn(dataForSoloValidLogIn.get("login").toString(),dataForSoloValidLogIn.get("pass").toString());
         waitABit(10);
-        modalEldPage.doAgreeAgreementForManagerOrder(quantityOfDevices, quantityCameraCP);
+        modalEldPage.doAgreeAgreementForManagerOrder(typeOfDevices, quantityOfDevices, quantityCameraCP);
         waitABit(10);
 
         dashboardPage.openMenuDash();
@@ -134,7 +134,7 @@ public class ManagerOrderSoloParamsTest extends ParentManagerOrderParamsTest {
         loginPage.userValidLogIn(dataForSoloValidLogIn.get("login").toString(),dataForSoloValidLogIn.get("pass").toString());
 
         waitABit(10);
-        modalEldPage.doCancelAgreementForManagerOrder(quantityOfDevices, quantityCameraCP);
+        modalEldPage.doCancelAgreementForManagerOrder(typeOfDevices, quantityOfDevices, quantityCameraCP);
         waitABit(10);
         dashboardPage.openMenuDash();
         waitABit(10);

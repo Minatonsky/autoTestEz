@@ -4,10 +4,17 @@
     <list default="true" id="660eb711-957d-418e-9483-8b2931da6e6e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log/qalight.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/qalight.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/data/testLogin.xls" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/data/testLogin.xls" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/data/testParameterizedOrder.xls" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/data/testParameterizedOrder.xls" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/FinancesPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/FinancesPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/ModalEldPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/ModalEldPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/restTest/RestAssuredTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/restTest/EzlogzAPITest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/orders/ParentFleetTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/orders/ParentFleetTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/orders/ParentSoloTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/orders/ParentSoloTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/parameterizedOrders/ManagerOrderFleetParamsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/parameterizedOrders/ManagerOrderFleetParamsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/parameterizedOrders/ManagerOrderSoloParamsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/parameterizedOrders/ManagerOrderSoloParamsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/parameterizedOrders/ParentFleetOrderParamsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/parameterizedOrders/ParentFleetOrderParamsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/parameterizedOrders/ParentSoloOrderParamsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/parameterizedOrders/ParentSoloOrderParamsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/restTest/EzlogzAPITest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/restTest/EzlogzAPITest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -98,7 +105,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.EzlogzAPITest.driverLicenseTest">
+  <component name="RunManager" selected="JUnit.SoloOrderParamsTest.cancelDevicesBySolo">
     <configuration name="EzlogzAPITest.driverLicenseTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="WorkSpace" />
       <extension name="coverage">
@@ -249,9 +256,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SoloOrderParamsTest.cancelDevicesBySolo" />
         <item itemvalue="JUnit.EzlogzAPITest.driverLicenseTest" />
         <item itemvalue="JUnit.ManagerOrderFleetParamsTest.managerDoOrderFleetAgree" />
-        <item itemvalue="JUnit.SoloOrderParamsTest.cancelDevicesBySolo" />
         <item itemvalue="JUnit.FleetOrderParamsTest.cancelDevicesByFleet" />
         <item itemvalue="JUnit.SoloEldOrderCompletedByManagerTest.orderCompletedByManager" />
       </list>
@@ -274,13 +281,6 @@
       <workItem from="1562665338918" duration="52834000" />
       <workItem from="1562782581468" duration="9021000" />
       <workItem from="1562822119836" duration="58303000" />
-    </task>
-    <task id="LOCAL-00010" summary="db test was add">
-      <created>1562707915764</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1562707915764</updated>
     </task>
     <task id="LOCAL-00011" summary="finances test was added">
       <created>1562792643487</created>
@@ -618,7 +618,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573255672937</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="test new tariff was add">
+      <created>1573831704499</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1573831704500</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -655,7 +662,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="camera order test was add" />
     <MESSAGE value="camera order with params test was add" />
     <MESSAGE value="refactor fleet test with excel was add" />
     <MESSAGE value="count methods was add" />
@@ -680,7 +686,8 @@
     <MESSAGE value="ban unban was add" />
     <MESSAGE value="test api login was add" />
     <MESSAGE value="test api3 login was add" />
-    <option name="LAST_COMMIT_MESSAGE" value="test api3 login was add" />
+    <MESSAGE value="test new tariff was add" />
+    <option name="LAST_COMMIT_MESSAGE" value="test new tariff was add" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

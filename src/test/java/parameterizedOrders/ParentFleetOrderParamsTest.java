@@ -84,7 +84,7 @@ public class ParentFleetOrderParamsTest extends ParentTest {String  typeOfDevice
         checkAC("SdCard prices is not correct", modalEldPage.compareSdCard(quantityCameraCP, valueSdCard), true);
         checkAC("Total Order is not correct", modalEldPage.compareTotalOrder(typeOfDevices, quantityOfDevices, typeOfPaymentMethod, quantityPinCable, quantityOBDPinCable, quantitySticker, quantityCameraCP, quantityCameraSVA, valueSdCard), true);
 
-        modalEldPage.doAgreeAgreement(quantityOfDevices);
+        modalEldPage.doAgreeAgreement(typeOfDevices, quantityOfDevices);
         modalEldPage.doAgreementCamera(quantityCameraCP);
         modalEldPage.clickButtonOrder();
 

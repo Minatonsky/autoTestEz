@@ -57,7 +57,7 @@ public class ParentFleetTest extends ParentTest {
         checkAC("SdCard prices is not correct", modalEldPage.compareSdCard(dataForEldOrder.get("quantityCameraCP").toString(), dataForEldOrder.get("valueSdCard").toString()), true);
         checkAC("Total Order is not correct", modalEldPage.compareTotalOrder(dataForEldOrder.get("typeOfDevices").toString(), dataForEldOrder.get("quantityOfDevices").toString(), dataForEldOrder.get("typeOfPaymentMethod").toString(), dataForEldOrder.get("quantityPinCable").toString(), dataForEldOrder.get("quantityOBDPinCable").toString(), dataForEldOrder.get("quantitySticker").toString(), dataForEldOrder.get("quantityCameraCP").toString(), dataForEldOrder.get("quantityCameraSVA").toString(), dataForEldOrder.get("valueSdCard").toString()), true);
 
-        modalEldPage.doAgreeAgreement(dataForEldOrder.get("quantityOfDevices").toString());
+        modalEldPage.doAgreeAgreement(dataForEldOrder.get("typeOfDevices").toString(), dataForEldOrder.get("quantityOfDevices").toString());
         modalEldPage.doAgreementCamera(dataForEldOrder.get("quantityCameraCP").toString());
         modalEldPage.clickButtonOrder();
 
