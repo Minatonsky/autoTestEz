@@ -76,7 +76,7 @@ public class EzlogzAPITest {
         RequestSpecification request = mainRestSteps.setBaseUrlForDevEzlogzApi("/api/validations/driver-license", bearerToken);
         requestParams.put("country", "USA");
         requestParams.put("state", "AL");
-        requestParams.put("value", "4555555");
+        requestParams.put("license", "4555555");
 //        request.header("Content-Type", "application/json");
         request.body(requestParams.toMap());
         Response response = request.post();

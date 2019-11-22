@@ -79,9 +79,10 @@ public class ParentSoloOrderParamsTest extends ParentTest { String  typeOfDevice
         checkAC("SdCard prices is not correct", modalEldPage.compareSdCard(quantityCameraCP, valueSdCard), true);
         checkAC("Total Order is not correct", modalEldPage.compareTotalOrder(typeOfDevices, quantityOfDevices, typeOfPaymentMethod, quantityPinCable, quantityOBDPinCable, quantitySticker, quantityCameraCP, quantityCameraSVA, valueSdCard), true);
 
-        modalEldPage.doAgreeAgreement(quantityOfDevices);
+        modalEldPage.doAgreeAgreement(typeOfDevices, quantityOfDevices);
         modalEldPage.doAgreementCamera(quantityCameraCP);
         modalEldPage.clickButtonOrder();
+        waitABit(2);
 
         String idLastOrderAfterTest = utilsForDB.getLastOrderIdForSolo(dataSoloId.get("soloId").toString());
         checkAC("New order was not created", idLastOrderBeforeTest.equals(idLastOrderAfterTest) , false);

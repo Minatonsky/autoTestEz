@@ -178,6 +178,13 @@ public class ModalEldPage extends ParentPage {
     @FindBy(xpath = ".//h1[text()='SOFTWARE SUBSCRIPTION SERVICE (SaaS) AGREEMENT']")
     private WebElement saasTitle;
 
+    @FindBy(xpath = ".//h1[text()='SOFTWARE SUBSCRIPTION SERVICE (SaaS) AGREEMENT']")
+    private WebElement saasGeometricsTitle;
+
+    @FindBy(xpath = ".//h1[text()='EQUIPMENT PURCHASE']")
+    private WebElement equipmentPurchaseTitle;
+
+
     @FindBy(xpath = ".//h1[text()='EZSMARTCAM PURCHASE AND DATA SERVICES AGREEMENT']")
     private WebElement cameraTitle;
 
@@ -253,15 +260,36 @@ EQUIPMENT LEASE AND SOFTWARE SUBSCRIPTION SERVICE AGREEMENT
     public void checkForCameraTitleInAgreement(){
         actionsWithOurElements.isElementDisplay(cameraTitle);
     }
+    public void checkForSaasGeometricsTitleInAgreement(){
+        actionsWithOurElements.isElementDisplay(saasTitle);
+    }
+    public void checkEquipmentPurchaseTitleInAgreement(){
+        actionsWithOurElements.isElementDisplay(equipmentPurchaseTitle);
+    }
 
-    @Step
-    public void doCancelAgreementForManagerOrder(String quantityOfDevices, String quantityCameraCP){
-        if (Integer.parseInt(quantityOfDevices) > 0 & Integer.parseInt(quantityCameraCP) > 0 ){
+    public void checkTitlesInDevicesAgreement(String valueDeviceTypeId){
+        if (Integer.parseInt(valueDeviceTypeId) == 1){
             waitABit(3);
             checkForLeasTitleInAgreement();
             waitABit(2);
             checkForSaasLeasTitleInAgreement();
             waitABit(2);
+
+        } else if (Integer.parseInt(valueDeviceTypeId) == 2){
+            waitABit(3);
+            checkForSaasGeometricsTitleInAgreement();
+            waitABit(2);
+            checkEquipmentPurchaseTitleInAgreement();
+            waitABit(2);
+
+        }
+
+    }
+
+    @Step
+    public void doCancelAgreementForManagerOrder(String valueDeviceTypeId, String quantityOfDevices, String quantityCameraCP){
+        if (Integer.parseInt(quantityOfDevices) > 0 & Integer.parseInt(quantityCameraCP) > 0 ){
+            checkTitlesInDevicesAgreement(valueDeviceTypeId);
             checkForCameraTitleInAgreement();
             clickButtonFastMove();
             clickButtonCancel();
@@ -270,10 +298,7 @@ EQUIPMENT LEASE AND SOFTWARE SUBSCRIPTION SERVICE AGREEMENT
             waitABit(3);
             logger.info("Order was canceled");
         } else if (Integer.parseInt(quantityOfDevices) > 0 & Integer.parseInt(quantityCameraCP) == 0){
-            waitABit(3);
-            checkForLeasTitleInAgreement();
-            waitABit(2);
-            checkForSaasLeasTitleInAgreement();
+            checkTitlesInDevicesAgreement(valueDeviceTypeId);
             clickButtonFastMove();
             clickButtonCancel();
             waitABit(3);
@@ -294,7 +319,7 @@ EQUIPMENT LEASE AND SOFTWARE SUBSCRIPTION SERVICE AGREEMENT
     }
 
     @Step
-    public void doAgreeAgreementForManagerOrder(String quantityOfDevices, String quantityCameraCP){
+    public void doAgreeAgreementForManagerOrder(String valueDeviceTypeId, String quantityOfDevices, String quantityCameraCP){
         if (Integer.parseInt(quantityOfDevices) > 0 & Integer.parseInt(quantityCameraCP) > 0 ){
             waitABit(3);
             checkForLeasTitleInAgreement();
@@ -307,10 +332,7 @@ EQUIPMENT LEASE AND SOFTWARE SUBSCRIPTION SERVICE AGREEMENT
             waitABit(10);
             logger.info("Order was approve");
         } else if (Integer.parseInt(quantityOfDevices) > 0 & Integer.parseInt(quantityCameraCP) == 0){
-            waitABit(3);
-            checkForLeasTitleInAgreement();
-            waitABit(2);
-            checkForSaasLeasTitleInAgreement();
+            checkTitlesInDevicesAgreement(valueDeviceTypeId);
             clickButtonFastMove();
             clickButtonAgree();
             waitABit(10);
@@ -328,14 +350,11 @@ EQUIPMENT LEASE AND SOFTWARE SUBSCRIPTION SERVICE AGREEMENT
     }
 
     @Step
-    public void doAgreeAgreement(String quantityOfDevices){
-        int num = Integer.parseInt(quantityOfDevices);
-        if (num > 0){
+    public void doAgreeAgreement(String valueDeviceTypeId, String quantityOfDevices){
+
+        if (Integer.parseInt(quantityOfDevices) > 0){
             clickAgreement();
-            waitABit(2);
-            checkForLeasTitleInAgreement();
-            waitABit(2);
-            checkForSaasLeasTitleInAgreement();
+            checkTitlesInDevicesAgreement(valueDeviceTypeId);
             clickButtonFastMove();
             clickButtonAgree();
             logger.info("Agreement ELD was agreed");

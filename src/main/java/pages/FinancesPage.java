@@ -81,7 +81,7 @@ public class FinancesPage extends ParentPage {
             actionsWithOurElements.clickOnElement(currentCreditCard);
             waitABit(2);
             actionsWithOurElements.clickOnElement(payNowButton);
-            waitABit(15);
+            waitABit(5);
             actionsWithOurElements.clickOnElement(closeSuccessPopUp);
             waitABit(2);
             logger.info("Current Invoice was paid");

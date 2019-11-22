@@ -57,8 +57,8 @@ public class ManagerOrderFleetParamsTest extends ParentManagerOrderParamsTest {
         setUp();
 // user agree order
         loginPage.userValidLogIn(dataForFleetValidLogIn.get("login").toString(),dataForFleetValidLogIn.get("pass").toString());
-        modalEldPage.doAgreeAgreementForManagerOrder(quantityOfDevices, quantityCameraCP);
-        waitABit(10);
+        modalEldPage.doAgreeAgreementForManagerOrder(typeOfDevices, quantityOfDevices, quantityCameraCP);
+        waitABit(3);
 
         dashboardPage.openMenuDash();
         dashboardPage.goToFinancesPage();
@@ -130,11 +130,11 @@ public class ManagerOrderFleetParamsTest extends ParentManagerOrderParamsTest {
         String dueForLastOrder = utilsForDB.getLastDueForSolo(dataSoloId.get("soloId").toString());
         loginPage.userValidLogIn(dataForFleetValidLogIn.get("login").toString(),dataForFleetValidLogIn.get("pass").toString());
 
-        waitABit(10);
-        modalEldPage.doCancelAgreementForManagerOrder(quantityOfDevices, quantityCameraCP);
-        waitABit(10);
+        waitABit(3);
+        modalEldPage.doCancelAgreementForManagerOrder(typeOfDevices, quantityOfDevices, quantityCameraCP);
+        waitABit(3);
         dashboardPage.openMenuDash();
-        waitABit(10);
+        waitABit(3);
 
         String orderCancelStatus = utilsForDB.getOrderStatus(idLastOrderAfterTest);
         checkAC("Order with devices is not canceled", userEldPage.compareCancelStatusOrder(orderCancelStatus, quantityOfDevices), true);
