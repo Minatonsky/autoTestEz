@@ -7,9 +7,13 @@ import java.io.IOException;
 import java.sql.SQLException;
 
 public class ChargeFleetSoloTest extends ParentChargeTest{
-    String monthToMonthTariffId = "0";
-    String oneYearTariffId = "1";
-    String twoYearsTariffId = "2";
+    String monthIOSXTariffId = "0";
+    String oneYearIOSXTariffId = "1";
+    String twoYearsIOSXTariffId = "2";
+    String monthGeometricsTariffId = "9";
+    String oneYearGeometricsTariffId = "10";
+    String twoYearsGeometricsTariffId = "11";
+
     String carrierIdString = "carrierId";
     String fleetString = "fleet";
     String userIdString = "userId";
@@ -18,84 +22,162 @@ public class ChargeFleetSoloTest extends ParentChargeTest{
     String fleetId = "518";
     String fleetUserId = "3816";
 
-    int countMonthForTariffStartMonthToMonth = 2;
+    String unionMonthTariffId = monthIOSXTariffId + ", " + monthGeometricsTariffId;
+    String unionOneYearTariffId = oneYearIOSXTariffId + ", " + oneYearGeometricsTariffId;
+    String unionTwoYearsTariffId = twoYearsIOSXTariffId + ", " + twoYearsGeometricsTariffId;
+
+    int countMonthForTariffStartMonthIOSX = 2;
+    int countMonthForTariffStartMonthGeometrics = 1;
 
     @Test
     public void chargeFleetTest() throws SQLException, IOException, ClassNotFoundException{
 
-        int countScannerMonthToMonthTariff = utilsForDB.countChargeScannersByTariff(fleetString, fleetId, monthToMonthTariffId);
-        int countDeactivatedScannerMonthToMonthTariff = utilsForDB.countDeactivatedChargeScannersMonthToMonth(fleetString, fleetId);
-        int countScannerOneYearTariff = utilsForDB.countChargeScannersByTariff(fleetString, fleetId, oneYearTariffId);
-        int countScannerTwoYearsTariff = utilsForDB.countChargeScannersByTariff(fleetString, fleetId, twoYearsTariffId);
+//  COUNT IOSX TARIFF
+        int countScannerMonthIOSXTariff = utilsForDB.countChargeScannersByTariff(fleetString, fleetId, monthIOSXTariffId);
+        int countDeactivatedScannerMonthIOSXTariff = utilsForDB.countDeactivatedChargeScannersMonthToMonth(fleetString, fleetId);
+        int countScannerOneYearIOSXTariff = utilsForDB.countChargeScannersByTariff(fleetString, fleetId, oneYearIOSXTariffId);
+        int countScannerTwoYearsIOSXTariff = utilsForDB.countChargeScannersByTariff(fleetString, fleetId, twoYearsIOSXTariffId);
+        int countScannerMonthIOSXChargeReturned = utilsForDB.countChargeReturnedScannerByTariff(fleetString, fleetId, monthIOSXTariffId);
+        int countScannerOneYearIOSXChargeReturned = utilsForDB.countChargeReturnedScannerByTariff(fleetString, fleetId, oneYearIOSXTariffId);
+        int countScannerTwoYearIOSXChargeReturned = utilsForDB.countChargeReturnedScannerByTariff(fleetString, fleetId, twoYearsIOSXTariffId);
 
-        int countMonthToMonthChargeReturnedScanner = utilsForDB.countChargeReturnedScannerByTariff(userIdString, fleetUserId, monthToMonthTariffId);
-        int countOneYearChargeReturnedScanner = utilsForDB.countChargeReturnedScannerByTariff(userIdString, fleetUserId, oneYearTariffId);
-        int countTwoYearChargeReturnedScanner = utilsForDB.countChargeReturnedScannerByTariff(userIdString, fleetUserId, twoYearsTariffId);
+
+//   COUNT GEOMETRICS TARIFF
+        int countScannerMonthGeometricsTariff = utilsForDB.countChargeScannersByTariff(fleetString, fleetId, monthGeometricsTariffId);
+        int countScannerOneYearGeometricsTariff = utilsForDB.countChargeScannersByTariff(fleetString, fleetId, oneYearGeometricsTariffId);
+        int countScannerTwoYearsGeometricsTariff = utilsForDB.countChargeScannersByTariff(fleetString, fleetId, twoYearsGeometricsTariffId);
+        int countGeometricsMonthChargeReturnedScanner = utilsForDB.countChargeReturnedScannerByTariff(fleetString, fleetId, monthGeometricsTariffId);
+        int countGeometricsOneYearChargeReturnedScanner = utilsForDB.countChargeReturnedScannerByTariff(fleetString, fleetId, oneYearGeometricsTariffId);
+        int countGeometricsTwoYearChargeReturnedScanner = utilsForDB.countChargeReturnedScannerByTariff(fleetString, fleetId, twoYearsGeometricsTariffId);
+
 
         String setPaidTillForAllTariff = chargePage.paidTillForAllTariff();
-        String setTariffStartMonth = chargePage.tariffStartForMonthToMonth(countMonthForTariffStartMonthToMonth);
+        String setTariffStartMonthIOSX = chargePage.tariffStartForMonthToMonth(countMonthForTariffStartMonthIOSX);
+        String setTariffStartMonthGeometrics = chargePage.tariffStartForMonthToMonth(countMonthForTariffStartMonthGeometrics);
         String setTariffStartOneYear = chargePage.tariffStartForOneYear(1);
         String setTariffStartTwoYears = chargePage.tariffStartForTwoYears(2);
 
 
-        checkAC("No all tariffs are presented in eld scanners", chargePage.checkIfTariffPresent(countScannerMonthToMonthTariff, countScannerOneYearTariff, countScannerTwoYearsTariff), true);
-        utilsForDB.setPaidTillAndTariffStartScannerForFleet(fleetId, setPaidTillForAllTariff, setTariffStartMonth, monthToMonthTariffId);
-        utilsForDB.setOrderDateForMonthToMonth(fleetString, fleetId, setTariffStartMonth);
-        utilsForDB.setPaidTillAndTariffStartScannerForFleet(fleetId, setPaidTillForAllTariff, setTariffStartOneYear, oneYearTariffId);
-        utilsForDB.setPaidTillAndTariffStartScannerForFleet(fleetId, setPaidTillForAllTariff, setTariffStartTwoYears, twoYearsTariffId);
+        checkAC("* No all tariffs are presented on fleet", chargePage.checkIfTariffPresent(countScannerMonthIOSXTariff, countScannerOneYearIOSXTariff, countScannerTwoYearsIOSXTariff , countScannerMonthGeometricsTariff,
+                countScannerOneYearGeometricsTariff, countScannerTwoYearsGeometricsTariff), true);
+
+        chargePage.informationOfDeactivatedAndReturnedScanners(countDeactivatedScannerMonthIOSXTariff, countScannerMonthIOSXChargeReturned, countScannerOneYearIOSXChargeReturned, countScannerTwoYearIOSXChargeReturned,
+                countGeometricsMonthChargeReturnedScanner, countGeometricsOneYearChargeReturnedScanner, countGeometricsTwoYearChargeReturnedScanner);
+
+//  SET PAID TILL AND ORDER DATE FOR IOSX TARIFF
+
+        utilsForDB.setPaidTillAndTariffStartScannerForFleet(fleetId, setPaidTillForAllTariff, setTariffStartMonthIOSX, monthIOSXTariffId);
+        utilsForDB.setOrderDateByTariffId(fleetString, fleetId, setTariffStartMonthIOSX, monthIOSXTariffId);
+        utilsForDB.setPaidTillAndTariffStartScannerForFleet(fleetId, setPaidTillForAllTariff, setTariffStartOneYear, oneYearIOSXTariffId);
+        utilsForDB.setPaidTillAndTariffStartScannerForFleet(fleetId, setPaidTillForAllTariff, setTariffStartTwoYears, twoYearsIOSXTariffId);
+
+
+//  SET PAID TILL AND ORDER DATE FOR GEOMETRICS TARIFF
+
+        utilsForDB.setPaidTillAndTariffStartScannerForFleet(fleetId, setPaidTillForAllTariff, setTariffStartMonthGeometrics, monthGeometricsTariffId);
+        utilsForDB.setOrderDateByTariffId(fleetString, fleetId, setTariffStartMonthGeometrics, monthGeometricsTariffId);
+        utilsForDB.setPaidTillAndTariffStartScannerForFleet(fleetId, setPaidTillForAllTariff, setTariffStartOneYear, oneYearGeometricsTariffId);
+        utilsForDB.setPaidTillAndTariffStartScannerForFleet(fleetId, setPaidTillForAllTariff, setTariffStartTwoYears, twoYearsGeometricsTariffId);
+
+
+//  SET PAID TILL FOR USER FINANCES
 
         String paidTillForEzFinances = chargePage.paidTillForEzFinances();
         utilsForDB.setPaidTillEstimatedTillEzFinancesFleet(fleetId, paidTillForEzFinances, paidTillForEzFinances);
 
         checkAC("DateTime dues are not correct", chargePage.checkDateTimeDue(carrierIdString, fleetId, chargePage.runCronCheckFleet()), true);
-        double sumDeactivatedScannerMonthToMonthTariff = chargePage.sumDeactivatedScannerMonthToMonthTariff(fleetString, fleetId, countDeactivatedScannerMonthToMonthTariff);
-        double sumCharge = chargePage.sumCharge(countScannerMonthToMonthTariff + countMonthToMonthChargeReturnedScanner, countScannerOneYearTariff + countOneYearChargeReturnedScanner, countScannerTwoYearsTariff + countTwoYearChargeReturnedScanner, sumDeactivatedScannerMonthToMonthTariff);
-        checkAC("Charge due is not correct", chargePage.compareDueCharge(carrierIdString, fleetId, sumCharge), true);
 
-        checkAC("PaidTill for month-to-month is not correct", chargePage.comparePaidTillMonthToMonth(fleetString, fleetId, monthToMonthTariffId), true);
-        checkAC("PaidTill for one year is not correct", chargePage.comparePaidTillOneYear(fleetString, fleetId, oneYearTariffId), true);
-        checkAC("PaidTill for two years is not correct", chargePage.comparePaidTillTwoYears(fleetString, fleetId, twoYearsTariffId), true);
+        double sumDeactivatedScannerMonthIOSXTariff = chargePage.sumDeactivatedScannerMonthToMonthTariff(fleetString, fleetId, countDeactivatedScannerMonthIOSXTariff);
+        double sumIOSXCharge = chargePage.sumCharge(
+                countScannerMonthIOSXTariff + countScannerMonthIOSXChargeReturned ,
+                countScannerOneYearIOSXTariff + countScannerOneYearIOSXChargeReturned,
+                countScannerTwoYearsIOSXTariff + countScannerTwoYearIOSXChargeReturned, "IOSX");
+        double sumGeometricsCharge = chargePage.sumCharge(
+                countScannerMonthGeometricsTariff + countGeometricsMonthChargeReturnedScanner,
+                countScannerOneYearGeometricsTariff + countGeometricsOneYearChargeReturnedScanner,
+                countScannerTwoYearsGeometricsTariff + countGeometricsTwoYearChargeReturnedScanner, "Geometrics");
+
+        checkAC("Charge due is not correct", chargePage.compareDueCharge(carrierIdString, fleetId, sumIOSXCharge + sumDeactivatedScannerMonthIOSXTariff + sumGeometricsCharge), true);
+
+        checkAC("PaidTill for month-to-month is not correct", chargePage.comparePaidTillMonthToMonth(fleetString, fleetId, unionMonthTariffId), true);
+        checkAC("PaidTill for one year is not correct", chargePage.comparePaidTillOneYear(fleetString, fleetId, unionOneYearTariffId), true);
+        checkAC("PaidTill for two years is not correct", chargePage.comparePaidTillTwoYears(fleetString, fleetId, unionTwoYearsTariffId), true);
         checkAC("EstimatedTill in ez_finance is not correct", chargePage.compareEstimatedTillFleet(fleetId), true);
         checkAC("PaidTill in ez_finance is not correct", chargePage.comparePaidTillFleet(fleetId), true);
-        checkAC("Charge was after test", chargePage.checkDateTimeDue(carrierIdString, fleetId, chargePage.runCronCheckDrivers()), false);
-        checkAC("Charge was after test", chargePage.checkDateTimeDue(carrierIdString, fleetId, chargePage.runCronCheckFleet()), false);
-
     }
 
     @Test
     public  void chargeSoloTest() throws SQLException, IOException, ClassNotFoundException{
 
-        int countScannerMonthToMonthTariff = utilsForDB.countChargeScannersByTariff(userIdString, soloId, monthToMonthTariffId);
-        int countDeactivatedScannerMonthToMonthTariff = utilsForDB.countDeactivatedChargeScannersMonthToMonth(userIdString, soloId);
-        int countScannerOneYearTariff = utilsForDB.countChargeScannersByTariff(userIdString, soloId, oneYearTariffId);
-        int countScannerTwoYearsTariff = utilsForDB.countChargeScannersByTariff(userIdString, soloId, twoYearsTariffId);
+//  COUNT IOSX TARIFF
+        int countScannerMonthIOSXTariff = utilsForDB.countChargeScannersByTariff(userIdString, soloId, monthIOSXTariffId);
+        int countDeactivatedScannerMonthIOSXTariff = utilsForDB.countDeactivatedChargeScannersMonthToMonth(userIdString, soloId);
+        int countScannerOneYearIOSXTariff = utilsForDB.countChargeScannersByTariff(userIdString, soloId, oneYearIOSXTariffId);
+        int countScannerTwoYearsIOSXTariff = utilsForDB.countChargeScannersByTariff(userIdString, soloId, twoYearsIOSXTariffId);
 
-        int countMonthToMonthChargeReturnedScanner = utilsForDB.countChargeReturnedScannerByTariff(userIdString, soloId, monthToMonthTariffId);
-        int countOneYearChargeReturnedScanner = utilsForDB.countChargeReturnedScannerByTariff(userIdString, soloId, oneYearTariffId);
-        int countTwoYearChargeReturnedScanner = utilsForDB.countChargeReturnedScannerByTariff(userIdString, soloId, twoYearsTariffId);
+        int countScannerMonthIOSXChargeReturned = utilsForDB.countChargeReturnedScannerByTariff(userIdString, soloId, monthIOSXTariffId);
+        int countScannerOneYearIOSXChargeReturned = utilsForDB.countChargeReturnedScannerByTariff(userIdString, soloId, oneYearIOSXTariffId);
+        int countScannerTwoYearIOSXChargeReturned = utilsForDB.countChargeReturnedScannerByTariff(userIdString, soloId, twoYearsIOSXTariffId);
+
+//   COUNT GEOMETRICS TARIFF
+        int countScannerMonthGeometricsTariff = utilsForDB.countChargeScannersByTariff(userIdString, soloId, monthGeometricsTariffId);
+        int countScannerOneYearGeometricsTariff = utilsForDB.countChargeScannersByTariff(userIdString, soloId, oneYearGeometricsTariffId);
+        int countScannerTwoYearsGeometricsTariff = utilsForDB.countChargeScannersByTariff(userIdString, soloId, twoYearsGeometricsTariffId);
+        int countGeometricsMonthChargeReturnedScanner = utilsForDB.countChargeReturnedScannerByTariff(userIdString, soloId, monthGeometricsTariffId);
+        int countGeometricsOneYearChargeReturnedScanner = utilsForDB.countChargeReturnedScannerByTariff(userIdString, soloId, oneYearGeometricsTariffId);
+        int countGeometricsTwoYearChargeReturnedScanner = utilsForDB.countChargeReturnedScannerByTariff(userIdString, soloId, twoYearsGeometricsTariffId);
+
+
 
         String setPaidTillForAllTariff = chargePage.paidTillForAllTariff();
-        String setTariffStartMonth = chargePage.tariffStartForMonthToMonth(countMonthForTariffStartMonthToMonth);
+        String setTariffStartMonthIOSX = chargePage.tariffStartForMonthToMonth(countMonthForTariffStartMonthIOSX);
+        String setTariffStartMonthGeometrics = chargePage.tariffStartForMonthToMonth(countMonthForTariffStartMonthGeometrics);
         String setTariffStartOneYear = chargePage.tariffStartForOneYear(1);
         String setTariffStartTwoYears = chargePage.tariffStartForTwoYears(2);
 
-        checkAC("No all tariffs are presented in eld scanners", chargePage.checkIfTariffPresent(countScannerMonthToMonthTariff, countScannerOneYearTariff, countScannerTwoYearsTariff), true);
-        utilsForDB.setPaidTillAndTariffStartScannerForSolo(soloId, setPaidTillForAllTariff, setTariffStartMonth, monthToMonthTariffId);
-        utilsForDB.setOrderDateForMonthToMonth(userIdString, soloId, setTariffStartMonth);
-        utilsForDB.setPaidTillAndTariffStartScannerForSolo(soloId, setPaidTillForAllTariff, setTariffStartOneYear, oneYearTariffId);
-        utilsForDB.setPaidTillAndTariffStartScannerForSolo(soloId, setPaidTillForAllTariff, setTariffStartTwoYears, twoYearsTariffId);
+        checkAC("No all tariffs are presented in eld scanners", chargePage.checkIfTariffPresent(countScannerMonthIOSXTariff, countScannerOneYearIOSXTariff, countScannerTwoYearsIOSXTariff , countScannerMonthGeometricsTariff,
+                countScannerOneYearGeometricsTariff, countScannerTwoYearsGeometricsTariff), true);
+        chargePage.informationOfDeactivatedAndReturnedScanners(countDeactivatedScannerMonthIOSXTariff, countScannerMonthIOSXChargeReturned, countScannerOneYearIOSXChargeReturned, countScannerTwoYearIOSXChargeReturned,
+                countGeometricsMonthChargeReturnedScanner, countGeometricsOneYearChargeReturnedScanner, countGeometricsTwoYearChargeReturnedScanner);
 
+
+//  SET PAID TILL AND ORDER DATE FOR IOSX TARIFF
+
+        utilsForDB.setPaidTillAndTariffStartScannerForFleet(soloId, setPaidTillForAllTariff, setTariffStartMonthIOSX, monthIOSXTariffId);
+        utilsForDB.setOrderDateByTariffId(userIdString, soloId, setTariffStartMonthIOSX, monthIOSXTariffId);
+        utilsForDB.setPaidTillAndTariffStartScannerForFleet(soloId, setPaidTillForAllTariff, setTariffStartOneYear, oneYearIOSXTariffId);
+        utilsForDB.setPaidTillAndTariffStartScannerForFleet(soloId, setPaidTillForAllTariff, setTariffStartTwoYears, twoYearsIOSXTariffId);
+
+
+//  SET PAID TILL AND ORDER DATE FOR GEOMETRICS TARIFF
+
+        utilsForDB.setPaidTillAndTariffStartScannerForFleet(soloId, setPaidTillForAllTariff, setTariffStartMonthGeometrics, monthGeometricsTariffId);
+        utilsForDB.setOrderDateByTariffId(userIdString, soloId, setTariffStartMonthGeometrics, monthGeometricsTariffId);
+        utilsForDB.setPaidTillAndTariffStartScannerForFleet(soloId, setPaidTillForAllTariff, setTariffStartOneYear, oneYearGeometricsTariffId);
+        utilsForDB.setPaidTillAndTariffStartScannerForFleet(soloId, setPaidTillForAllTariff, setTariffStartTwoYears, twoYearsGeometricsTariffId);
+
+
+//  SET PAID TILL FOR USER FINANCES
         String paidTillForEzFinances = chargePage.paidTillForEzFinances();
         utilsForDB.setPaidTillEstimatedTillEzFinancesSolo(soloId, paidTillForEzFinances, paidTillForEzFinances);
 
         checkAC("DateTime dues are not correct", chargePage.checkDateTimeDue(userIdString, soloId, chargePage.runCronCheckDrivers()), true);
-        double sumDeactivatedScannerMonthToMonthTariff = chargePage.sumDeactivatedScannerMonthToMonthTariff(userIdString, soloId, countDeactivatedScannerMonthToMonthTariff);
-        double sumCharge = chargePage.sumCharge(countScannerMonthToMonthTariff + countMonthToMonthChargeReturnedScanner, countScannerOneYearTariff + countOneYearChargeReturnedScanner, countScannerTwoYearsTariff + countTwoYearChargeReturnedScanner, sumDeactivatedScannerMonthToMonthTariff);
-        checkAC("Charge due is not correct", chargePage.compareDueCharge(userIdString, soloId, sumCharge), true);
 
-        checkAC("PaidTill for month-to-month is not correct", chargePage.comparePaidTillMonthToMonth(userIdString, soloId, monthToMonthTariffId), true);
-        checkAC("PaidTill for one year is not correct", chargePage.comparePaidTillOneYear(userIdString, soloId, oneYearTariffId), true);
-        checkAC("PaidTill for two years is not correct", chargePage.comparePaidTillTwoYears(userIdString, soloId, twoYearsTariffId), true);
+        double sumDeactivatedScannerMonthIOSXTariff = chargePage.sumDeactivatedScannerMonthToMonthTariff(userIdString, soloId, countDeactivatedScannerMonthIOSXTariff);
+        double sumIOSXCharge = chargePage.sumCharge(
+                countScannerMonthIOSXTariff + countScannerMonthIOSXChargeReturned ,
+                countScannerOneYearIOSXTariff + countScannerOneYearIOSXChargeReturned,
+                countScannerTwoYearsIOSXTariff + countScannerTwoYearIOSXChargeReturned, "IOSX");
+        double sumGeometricsCharge = chargePage.sumCharge(
+                countScannerMonthGeometricsTariff + countGeometricsMonthChargeReturnedScanner,
+                countScannerOneYearGeometricsTariff + countGeometricsOneYearChargeReturnedScanner,
+                countScannerTwoYearsGeometricsTariff + countGeometricsTwoYearChargeReturnedScanner, "Geometrics");
+
+        checkAC("Charge due is not correct", chargePage.compareDueCharge(userIdString, soloId, sumIOSXCharge + sumDeactivatedScannerMonthIOSXTariff + sumGeometricsCharge), true);
+
+        checkAC("PaidTill for month-to-month is not correct", chargePage.comparePaidTillMonthToMonth(userIdString, soloId, unionMonthTariffId), true);
+        checkAC("PaidTill for one year is not correct", chargePage.comparePaidTillOneYear(userIdString, soloId, oneYearIOSXTariffId), true);
+        checkAC("PaidTill for two years is not correct", chargePage.comparePaidTillTwoYears(userIdString, soloId, twoYearsIOSXTariffId), true);
         checkAC("EstimatedTill in eld_personal_finances is not correct", chargePage.compareEstimatedTillSolo(soloId), true);
         checkAC("PaidTill in eld_personal_finances is not correct", chargePage.comparePaidTillSolo(soloId), true);
         checkAC("Charge was after test", chargePage.checkDateTimeDue(userIdString, soloId, chargePage.runCronCheckDrivers()), false);

@@ -50,9 +50,9 @@ public class UtilsForDB {
         return tempIdDevices;
     }
     @Step
-    public void setOrderDateForMonthToMonth(String soloOrFleetString, String userId, String tariffStart) throws SQLException, IOException, ClassNotFoundException {
+    public void setOrderDateByTariffId(String soloOrFleetString, String userId, String tariffStart, String tariffId) throws SQLException, IOException, ClassNotFoundException {
         dBMySQL = new Database("MySQL_PADB_DB", "MySQL");
-        dBMySQL.changeTable("UPDATE eld_orders SET `orderDate` = '" + tariffStart + "' WHERE id IN (SELECT orderId FROM eld_orders_ids WHERE scannerId IN (SELECT id FROM eld_scanners WHERE " + soloOrFleetString + " = " + userId + " AND tariffId = 0));");
+        dBMySQL.changeTable("UPDATE eld_orders SET `orderDate` = '" + tariffStart + "' WHERE id IN (SELECT orderId FROM eld_orders_ids WHERE scannerId IN (SELECT id FROM eld_scanners WHERE " + soloOrFleetString + " = " + userId + " AND tariffId = " + tariffId + "));");
         dBMySQL.quit();
     }
 
@@ -98,7 +98,7 @@ public class UtilsForDB {
     @Step
     public void setPaidTillAndTariffStartScannerForFleet(String fleetId, String paidTill, String tariffStart, String tariffId) throws SQLException, IOException, ClassNotFoundException {
         dBMySQL = new Database("MySQL_PADB_DB", "MySQL");
-        dBMySQL.changeTable("UPDATE eld_scanners SET `paid_till`='" + paidTill + "', `tariffStart` = '" + tariffStart + "' WHERE fleet = " + fleetId + " AND tariffId = " + tariffId + ";");
+        dBMySQL.changeTable("UPDATE eld_scanners SET `paid_till`='" + paidTill + "', `tariffStart` = '" + tariffStart + "' WHERE fleet = " + fleetId + " AND tariffId IN(" + tariffId + ");");
         dBMySQL.quit();
     }
     @Step
@@ -136,7 +136,7 @@ public class UtilsForDB {
     }
     public int countDeactivatedChargeScannersMonthToMonth(String soloOrFleetString, String userId) throws SQLException, IOException, ClassNotFoundException {
         dBMySQL = new Database("MySQL_PADB_DB", "MySQL");
-        int tempCountScanner =dBMySQL.getRowNumber("SELECT count(*) FROM eld_scanners WHERE " + soloOrFleetString + " = " + userId + " AND status = 5 AND tariffId = 0;");
+        int tempCountScanner =dBMySQL.getRowNumber("SELECT count(*) FROM eld_scanners WHERE " + soloOrFleetString + " = " + userId + " AND status = 5 AND tariffId IN (0, 9);");
         dBMySQL.quit();
         return tempCountScanner;
     }
@@ -151,7 +151,7 @@ public class UtilsForDB {
     @Step
     public List<String> getPaidTillFromEldScanners(String soloOrFleetString, String userId, String tariffId) throws SQLException, IOException, ClassNotFoundException {
         dBMySQL = new Database("MySQL_PADB_DB", "MySQL");
-        List<String> tempPaidTillAndTariffStartList = dBMySQL.selectResultSet("SELECT paid_till FROM eld_scanners WHERE " + soloOrFleetString + " = " + userId + " AND status = 4 AND tariffId = " + tariffId + "");
+        List<String> tempPaidTillAndTariffStartList = dBMySQL.selectResultSet("SELECT paid_till FROM eld_scanners WHERE " + soloOrFleetString + " = " + userId + " AND status = 4 AND tariffId IN (" + tariffId + ")");
         dBMySQL.quit();
         return tempPaidTillAndTariffStartList;
     }
@@ -267,7 +267,7 @@ public class UtilsForDB {
     @Step
     public List<String> getAmountEzDue(String soloOrFleetString, String userId) throws SQLException, IOException, ClassNotFoundException {
         dBMySQL = new Database("MySQL_PADB_DB", "MySQL");
-        List<String> tempAmountList = dBMySQL.selectResultSet("SELECT amount FROM ez_due WHERE " + soloOrFleetString + " = " + userId + " ORDER BY dateTime DESC LIMIT 3;");
+        List<String> tempAmountList = dBMySQL.selectResultSet("SELECT amount FROM ez_due WHERE " + soloOrFleetString + " = " + userId + " ORDER BY dateTime DESC LIMIT 6;");
         dBMySQL.quit();
         return tempAmountList;
     }
@@ -275,7 +275,7 @@ public class UtilsForDB {
     @Step
     public List<String> getDateTimeEzDue(String soloOrFleetString, String userId) throws SQLException, IOException, ClassNotFoundException {
         dBMySQL = new Database("MySQL_PADB_DB", "MySQL");
-        List<String> tempDateTimeEzDue = dBMySQL.selectResultSet("SELECT dateTime FROM ez_due  WHERE " + soloOrFleetString + " = " + userId + " ORDER BY dateTime desc LIMIT 3;");
+        List<String> tempDateTimeEzDue = dBMySQL.selectResultSet("SELECT dateTime FROM ez_due  WHERE " + soloOrFleetString + " = " + userId + " ORDER BY dateTime desc LIMIT 6;");
         dBMySQL.quit();
         return tempDateTimeEzDue;
     }
@@ -287,9 +287,9 @@ public class UtilsForDB {
         return tempDateTimeEzDue;
     }
     @Step
-    public String getAmountEzDueMonthToMonth(String soloOrFleetString, String userId) throws SQLException, IOException, ClassNotFoundException {
+    public List<String> getAmountEzDueMonthToMonth(String soloOrFleetString, String userId) throws SQLException, IOException, ClassNotFoundException {
         dBMySQL = new Database("MySQL_PADB_DB", "MySQL");
-        String tempAmountList = dBMySQL.selectValue("SELECT amount FROM ez_due WHERE " + soloOrFleetString + " = " + userId + " ORDER BY dateTime DESC LIMIT 1;");
+        List<String> tempAmountList = dBMySQL.selectResultSet("SELECT amount FROM ez_due WHERE " + soloOrFleetString + " = " + userId + " ORDER BY dateTime DESC LIMIT 2;");
         dBMySQL.quit();
         return tempAmountList;
     }
@@ -309,7 +309,7 @@ public class UtilsForDB {
     @Step
     public void setDateTimeEldHistoryForMonthToMonth(String soloOrFleetString, String userId, String tariffStart) throws SQLException, IOException, ClassNotFoundException {
         dBMySQL = new Database("MySQL_PADB_DB", "MySQL");
-        dBMySQL.changeTable("UPDATE eld_history SET `dateTime` = '" + tariffStart + "' WHERE status = 4 AND scannerId IN (SELECT id FROM eld_scanners WHERE " + soloOrFleetString + " = " + userId + " AND tariffId = 0);");
+        dBMySQL.changeTable("UPDATE eld_history SET `dateTime` = '" + tariffStart + "' WHERE status = 4 AND scannerId IN (SELECT id FROM eld_scanners WHERE " + soloOrFleetString + " = " + userId + " AND tariffId IN (0, 9));");
         dBMySQL.quit();
     }
     @Step
