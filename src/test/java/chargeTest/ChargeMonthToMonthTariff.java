@@ -14,7 +14,7 @@ public class ChargeMonthToMonthTariff extends ParentChargeTest {
     String userIdString = "userId";
 
     String soloId = "3455";
-    String fleetId = "518";
+    String fleetId = "531";
     String fleetUserId = "4379";
 
     String unionMonthTariffId = IOSXMonthTariffId + ", " + geometricsMonthTariffId;
@@ -30,10 +30,11 @@ public class ChargeMonthToMonthTariff extends ParentChargeTest {
         int countMonthGeometricsChargeReturnedScanner = utilsForDB.countChargeReturnedScannerByTariff(fleetString, fleetId, geometricsMonthTariffId);
 
         String setPaidTillForAllTariff = chargePage.paidTillForAllTariff();
-        String setTariffStartMonthIOSX = chargePage.tariffStartForMonthToMonth(6);
+        String setTariffStartMonthIOSX = chargePage.tariffStartForMonthToMonth(11);
+        String setDateTimeEldHistoryMonthIOSX = chargePage.dateTimeEldHistoryForMonthToMonth(11);
+
         String setTariffStartMonthGeometrics = chargePage.tariffStartForMonthToMonth(2);
-        String setDateTimeEldHistoryMonthIOSX = chargePage.dateTimeEldHistoryForMonthToMonth(10);
-        String setDateTimeEldHistoryMonthGeometrics = chargePage.dateTimeEldHistoryForMonthToMonth(0);
+        String setDateTimeEldHistoryMonthGeometrics = chargePage.dateTimeEldHistoryForMonthToMonth(2);
 
         chargePage.informationOfScannersMonth(countScannerMonthIOSXTariff, countScannerMonthGeometricsTariff, countDeactivatedScannerMonthIOSXTariff, countMonthIOSXChargeReturnedScanner, countMonthGeometricsChargeReturnedScanner);
 

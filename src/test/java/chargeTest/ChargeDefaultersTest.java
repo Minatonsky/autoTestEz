@@ -20,7 +20,7 @@ public class ChargeDefaultersTest extends ParentChargeTest {
     String userIdString = "userId";
 
     String soloId = "3854";
-    String fleetId = "581";
+    String fleetId = "531";
     String fleetUserId = "3816";
 
     int countMonthForTariffStartMonthIOSX = 3;
@@ -131,6 +131,9 @@ public class ChargeDefaultersTest extends ParentChargeTest {
     }
     @Test
     public void chargeDefaultersSoloTest() throws SQLException, IOException, ClassNotFoundException {
+        utilsForDB.setCurrentDueForSolo(currentDue, soloId);
+        utilsForDB.setCurrentCard_0_Solo(soloId);
+
 //   COUNT IOSX TARIFF
         int countScannerMonthIOSXTariff = utilsForDB.countChargeScannersByTariff(userIdString, soloId, monthIOSXTariffId);
         int countDeactivatedScannerMonthIOSXTariff = utilsForDB.countDeactivatedChargeScannersMonthToMonth(userIdString, soloId);
@@ -165,25 +168,25 @@ public class ChargeDefaultersTest extends ParentChargeTest {
 
 //  SET PAID TILL AND ORDER DATE FOR IOSX TARIFF
 
-        utilsForDB.setPaidTillAndTariffStartScannerForFleet(soloId, setPaidTillForAllTariff, setTariffStartMonthIOSX, monthIOSXTariffId);
+        utilsForDB.setPaidTillAndTariffStartScannerForSolo(soloId, setPaidTillForAllTariff, setTariffStartMonthIOSX, monthIOSXTariffId);
         utilsForDB.setOrderDateByTariffId(userIdString, soloId, setTariffStartMonthIOSX, monthIOSXTariffId);
-        utilsForDB.setPaidTillAndTariffStartScannerForFleet(soloId, setPaidTillForAllTariff, setTariffStartOneYear, oneYearIOSXTariffId);
-        utilsForDB.setPaidTillAndTariffStartScannerForFleet(soloId, setPaidTillForAllTariff, setTariffStartTwoYears, twoYearsIOSXTariffId);
+        utilsForDB.setPaidTillAndTariffStartScannerForSolo(soloId, setPaidTillForAllTariff, setTariffStartOneYear, oneYearIOSXTariffId);
+        utilsForDB.setPaidTillAndTariffStartScannerForSolo(soloId, setPaidTillForAllTariff, setTariffStartTwoYears, twoYearsIOSXTariffId);
 
 
 //  SET PAID TILL AND ORDER DATE FOR GEOMETRICS TARIFF
 
-        utilsForDB.setPaidTillAndTariffStartScannerForFleet(soloId, setPaidTillForAllTariff, setTariffStartMonthGeometrics, monthGeometricsTariffId);
+        utilsForDB.setPaidTillAndTariffStartScannerForSolo(soloId, setPaidTillForAllTariff, setTariffStartMonthGeometrics, monthGeometricsTariffId);
         utilsForDB.setOrderDateByTariffId(userIdString, soloId, setTariffStartMonthGeometrics, monthGeometricsTariffId);
-        utilsForDB.setPaidTillAndTariffStartScannerForFleet(soloId, setPaidTillForAllTariff, setTariffStartOneYear, oneYearGeometricsTariffId);
-        utilsForDB.setPaidTillAndTariffStartScannerForFleet(soloId, setPaidTillForAllTariff, setTariffStartTwoYears, twoYearsGeometricsTariffId);
+        utilsForDB.setPaidTillAndTariffStartScannerForSolo(soloId, setPaidTillForAllTariff, setTariffStartOneYear, oneYearGeometricsTariffId);
+        utilsForDB.setPaidTillAndTariffStartScannerForSolo(soloId, setPaidTillForAllTariff, setTariffStartTwoYears, twoYearsGeometricsTariffId);
 
 
 //  SET PAID TILL FOR USER FINANCES
         String paidTillForEzFinances = chargePage.paidTillForEzFinances();
         utilsForDB.setPaidTillEstimatedTillEzFinancesSolo(soloId, paidTillForEzFinances, paidTillForEzFinances);
-
-        checkAC("DateTime dues are not correct", chargePage.checkDateTimeDue(userIdString, soloId, chargePage.runCronCheckDrivers()), true);
+        String tempTimeRunCron = chargePage.runCronCheckDrivers();
+        checkAC("DateTime dues are not correct", chargePage.checkDateTimeDue(userIdString, soloId, tempTimeRunCron), true);
 
         double sumDeactivatedScannerMonthIOSXTariff = chargePage.sumDeactivatedScannerMonthToMonthTariff(userIdString, soloId, countDeactivatedScannerMonthIOSXTariff);
         double sumIOSXCharge = chargePage.sumCharge(
@@ -198,7 +201,7 @@ public class ChargeDefaultersTest extends ParentChargeTest {
         checkAC("Charge due is not correct", chargePage.compareDueCharge(userIdString, soloId, sumIOSXCharge + sumDeactivatedScannerMonthIOSXTariff + sumGeometricsCharge), true);
 
 
-        checkAC("Fleet is not in defaulters", utilsForDB.checkSoloInDefaulters(soloId), true);
+        checkAC("Solo is not in defaulters", utilsForDB.checkSoloInDefaulters(soloId), true);
 
         chargePage.setDaysDefaulterSolo(soloId, 10);
         chargePage.runCronCheckDrivers();
@@ -227,54 +230,55 @@ public class ChargeDefaultersTest extends ParentChargeTest {
         chargePage.runCronCheckDrivers();
 
     }
-//    @Test
-//    public void makeFleetDefaulter() throws SQLException, IOException, ClassNotFoundException {
-//        utilsForDB.setCurrentDueForFleet(currentDue, fleetId);
-//        utilsForDB.setCurrentCard_0_Fleet(fleetId);
-//        String setPaidTillForAllTariff = chargePage.paidTillForAllTariff();
-//        String setTariffStartMonth = chargePage.tariffStartForMonthToMonth(countMonthForTariffStartMonthIOSX);
-//        String setTariffStartOneYear = chargePage.tariffStartForOneYear(2);
-//        String setTariffStartTwoYears = chargePage.tariffStartForTwoYears(1);
-//        utilsForDB.setPaidTillAndTariffStartScannerForFleet(fleetId, setPaidTillForAllTariff, setTariffStartMonth, monthIOSXTariffId);
-//        utilsForDB.setOrderDateByTariffId(fleetString, fleetId, setTariffStartMonth);
-//        utilsForDB.setPaidTillAndTariffStartScannerForFleet(fleetId, setPaidTillForAllTariff, setTariffStartOneYear, oneYearIOSXTariffId);
-//        utilsForDB.setPaidTillAndTariffStartScannerForFleet(fleetId, setPaidTillForAllTariff, setTariffStartTwoYears, twoYearsIOSXTariffId);
-//        String paidTillForEzFinances = chargePage.paidTillForEzFinances();
-//        utilsForDB.setPaidTillEstimatedTillEzFinancesFleet(fleetId, paidTillForEzFinances, paidTillForEzFinances);
-//
-//        chargePage.runCronCheckFleet();
-//        chargePage.setDaysDefaulterFleet(fleetId, 10);
-//        chargePage.runCronCheckFleet();
-//        chargePage.setDaysDefaulterFleet(fleetId, 15);
-//        chargePage.runCronCheckFleet();
-//        chargePage.setDaysDefaulterFleet(fleetId, 52);
-//        chargePage.runCronCheckFleet();
-//    }
-//    @Test
-//    public void makeSoloDefaulter() throws SQLException, IOException, ClassNotFoundException {
-//        utilsForDB.setCurrentDueForSolo(currentDue, soloId);
-//        utilsForDB.setCurrentCard_0_Solo(soloId);
-//        String setPaidTillForAllTariff = chargePage.paidTillForAllTariff();
-//        String setTariffStartMonth = chargePage.tariffStartForMonthToMonth(countMonthForTariffStartMonthToMonth);
-//        String setTariffStartOneYear = chargePage.tariffStartForOneYear(1);
-//        String setTariffStartTwoYears = chargePage.tariffStartForTwoYears(2);
-//        utilsForDB.setPaidTillAndTariffStartScannerForSolo(soloId, setPaidTillForAllTariff, setTariffStartMonth, monthToMonthTariffId);
-////        utilsForDB.setOrderDateByTariffId(userIdString, soloId, setTariffStartMonth);
-//        utilsForDB.setPaidTillAndTariffStartScannerForSolo(soloId, setPaidTillForAllTariff, setTariffStartOneYear, oneYearTariffId);
-//        utilsForDB.setPaidTillAndTariffStartScannerForSolo(soloId, setPaidTillForAllTariff, setTariffStartTwoYears, twoYearsTariffId);
-//        String paidTillForEzFinances = chargePage.paidTillForEzFinances();
-//        utilsForDB.setPaidTillEstimatedTillEzFinancesSolo(soloId, paidTillForEzFinances, paidTillForEzFinances);
-//
-//        chargePage.runCronCheckDrivers();
-//        chargePage.setDaysDefaulterSolo(soloId, 10);
-//        chargePage.runCronCheckDrivers();
-//        chargePage.setDaysDefaulterSolo(soloId, 14);
-//        chargePage.runCronCheckDrivers();
-//        chargePage.setDaysDefaulterSolo(soloId, 15);
-//        chargePage.runCronCheckDrivers();
-//        chargePage.setDaysDefaulterSolo(soloId, 16);
-//        chargePage.runCronCheckDrivers();
-//        chargePage.setDaysDefaulterSolo(soloId, 52);
-//        chargePage.runCronCheckDrivers();
-//    }
+    @Test
+    public void makeFleetDefaulter() throws SQLException, IOException, ClassNotFoundException {
+        utilsForDB.setCurrentDueForFleet(currentDue, fleetId);
+        utilsForDB.setCurrentCard_0_Fleet(fleetId);
+        String setPaidTillForAllTariff = chargePage.paidTillForAllTariff();
+        String setTariffStartMonth = chargePage.tariffStartForMonthToMonth(countMonthForTariffStartMonthGeometrics);
+        String setTariffStartOneYear = chargePage.tariffStartForOneYear(2);
+        String setTariffStartTwoYears = chargePage.tariffStartForTwoYears(1);
+        utilsForDB.setPaidTillAndTariffStartScannerForFleet(fleetId, setPaidTillForAllTariff, setTariffStartMonth, monthGeometricsTariffId);
+        utilsForDB.setOrderDateByTariffId(fleetString, fleetId, setTariffStartMonth, monthGeometricsTariffId);
+        utilsForDB.setPaidTillAndTariffStartScannerForFleet(fleetId, setPaidTillForAllTariff, setTariffStartOneYear, oneYearGeometricsTariffId);
+        utilsForDB.setPaidTillAndTariffStartScannerForFleet(fleetId, setPaidTillForAllTariff, setTariffStartTwoYears, twoYearsGeometricsTariffId);
+        String paidTillForEzFinances = chargePage.paidTillForEzFinances();
+        utilsForDB.setPaidTillEstimatedTillEzFinancesFleet(fleetId, paidTillForEzFinances, paidTillForEzFinances);
+
+        chargePage.runCronCheckFleet();
+        chargePage.setDaysDefaulterFleet(fleetId, 10);
+        chargePage.runCronCheckFleet();
+        chargePage.setDaysDefaulterFleet(fleetId, 15);
+        chargePage.runCronCheckFleet();
+        chargePage.setDaysDefaulterFleet(fleetId, 52);
+        chargePage.runCronCheckFleet();
+    }
+    @Test
+    public void makeSoloDefaulter() throws SQLException, IOException, ClassNotFoundException {
+        utilsForDB.setCurrentDueForSolo(currentDue, soloId);
+        utilsForDB.setCurrentCard_0_Solo(soloId);
+
+        String setPaidTillForAllTariff = chargePage.paidTillForAllTariff();
+        String setTariffStartMonth = chargePage.tariffStartForMonthToMonth(countMonthForTariffStartMonthGeometrics);
+        String setTariffStartOneYear = chargePage.tariffStartForOneYear(1);
+        String setTariffStartTwoYears = chargePage.tariffStartForTwoYears(2);
+        utilsForDB.setPaidTillAndTariffStartScannerForSolo(soloId, setPaidTillForAllTariff, setTariffStartMonth, monthGeometricsTariffId);
+        utilsForDB.setOrderDateByTariffId(userIdString, soloId, setTariffStartMonth, monthGeometricsTariffId);
+        utilsForDB.setPaidTillAndTariffStartScannerForSolo(soloId, setPaidTillForAllTariff, setTariffStartOneYear, oneYearGeometricsTariffId);
+        utilsForDB.setPaidTillAndTariffStartScannerForSolo(soloId, setPaidTillForAllTariff, setTariffStartTwoYears, twoYearsGeometricsTariffId);
+        String paidTillForEzFinances = chargePage.paidTillForEzFinances();
+        utilsForDB.setPaidTillEstimatedTillEzFinancesSolo(soloId, paidTillForEzFinances, paidTillForEzFinances);
+
+        chargePage.runCronCheckDrivers();
+        chargePage.setDaysDefaulterSolo(soloId, 10);
+        chargePage.runCronCheckDrivers();
+        chargePage.setDaysDefaulterSolo(soloId, 14);
+        chargePage.runCronCheckDrivers();
+        chargePage.setDaysDefaulterSolo(soloId, 15);
+        chargePage.runCronCheckDrivers();
+        chargePage.setDaysDefaulterSolo(soloId, 16);
+        chargePage.runCronCheckDrivers();
+        chargePage.setDaysDefaulterSolo(soloId, 52);
+        chargePage.runCronCheckDrivers();
+    }
 }
