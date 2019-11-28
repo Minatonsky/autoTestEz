@@ -22,11 +22,15 @@ public class ChargePage {
     UtilsForDB utilsForDB = new UtilsForDB();
     String checkFleets = "https://dev.ezlogz.com/cron/check_fleets.php";
     String checkDrivers = "https://dev.ezlogz.com/cron/check_drivers.php";
+    double eldMonthToMonthPrice = 29.99;
+    double eld1YearSubscriptionPrice = 329.89;
+    double eld2YearsSubscriptionPrice = 629.79;
+
     protected static ConfigProperties configProperties = ConfigFactory.create(ConfigProperties.class);
     public ChargePage(WebDriver webDriver) {
         this.webDriver = webDriver;
-
     }
+
 
     @Step
     public String paidTillForAllTariff(){
@@ -98,7 +102,7 @@ public class ChargePage {
         DateTimeFormatter dTF = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
         logger.info("dateTime: " + dateTimeList);
         for (String element : dateTimeList) {
-            if (LocalDateTime.parse(element, dTF).plusMinutes(1).isAfter(LocalDateTime.parse(timeRunCron, dTF))) {
+            if (LocalDateTime.parse(element, dTF).plusSeconds(5).isAfter(LocalDateTime.parse(timeRunCron, dTF))) {
             } else return false;
         } return true;
     }
@@ -106,7 +110,7 @@ public class ChargePage {
     public boolean checkDateTimeDueMonthToMonth(String soloOrFleetString, String userId, String timeRunCron) throws SQLException, IOException, ClassNotFoundException {
         List<String> dateTimeList = utilsForDB.getDateTimeEzDueMonthToMonth(soloOrFleetString, userId);
         DateTimeFormatter dTF = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
-        logger.info("dateTime: " + dateTimeList);
+        logger.info("# date Time: " + dateTimeList);
         for (String element : dateTimeList) {
             if (LocalDateTime.parse(element, dTF).plusMinutes(1).isAfter(LocalDateTime.parse(timeRunCron, dTF))) {
             } else return false;
@@ -114,8 +118,14 @@ public class ChargePage {
     }
 
     @Step
-    public boolean checkIfTariffPresent(int monthToMonthTariff, int oneYearTariff, int twoYearsTariff){
-        if (monthToMonthTariff > 0 & oneYearTariff > 0 & twoYearsTariff > 0) {
+    public boolean checkIfTariffPresent(int monthIOSXTariff, int oneYearIOSXTariff, int twoYearsIOSXTariff, int monthGeometricsTariff, int oneYearGeometricsTariff, int twoYearsGeometricsTariff){
+        logger.info("# COUNT MONTH TO MONTH IOSX TARIFF = " + monthIOSXTariff);
+        logger.info("# COUNT ONE YEAR IOSX TARIFF = " + oneYearIOSXTariff);
+        logger.info("# COUNT TWO YEARS IOSX TARIFF = " + twoYearsIOSXTariff);
+        logger.info("# COUNT MONTH TO MONTH GEOMETRICS TARIFF = " + monthGeometricsTariff);
+        logger.info("# COUNT ONE YEAR GEOMETRICS TARIFF = " + oneYearGeometricsTariff);
+        logger.info("# COUNT TWO YEARS GEOMETRICS TARIFF = " + twoYearsGeometricsTariff);
+        if (monthIOSXTariff > 0 & oneYearIOSXTariff > 0 & twoYearsIOSXTariff > 0 & monthGeometricsTariff > 0 & oneYearGeometricsTariff > 0 & twoYearsGeometricsTariff > 0) {
             return true;
         } else return false;
     }
@@ -139,68 +149,69 @@ public class ChargePage {
 
                 if (activeChargeDays > 0){
                     int deactivatedDays = monthDays - activeChargeDays;
-                    double deactivatedCharge = 29.99 / 2 / monthDays * deactivatedDays;
-                    double activeCharge = 29.99 / monthDays * activeChargeDays;
+                    double deactivatedCharge = eldMonthToMonthPrice / 2 / monthDays * deactivatedDays;
+                    double activeCharge = eldMonthToMonthPrice / monthDays * activeChargeDays;
                     double charge_amount = Math.round((activeCharge + deactivatedCharge) * 100.0) / 100.0;
                     sum += charge_amount;
 
                 } else {
-                    double charge_amount = Math.round((29.99 / 2) * 100.0) / 100.0;
+                    double charge_amount = Math.round((eldMonthToMonthPrice / 2) * 100.0) / 100.0;
                     sum += charge_amount;
                 }
-            } return sum;
+            } logger.info("DEACTIVATED SUM CHARGE = " + sum); return sum;
 
         } else return 0;
 
     }
     @Step
-    public double sumCharge(int countScannerMonthToMonthTariff, int countScannerOneYearTariff, int countScannerTwoYearsTariff, double sumDeactivatedScannerMonthToMonthTariff){
-        logger.info("countScannerMonthToMonthTariff " + countScannerMonthToMonthTariff);
-        logger.info("countScannerOneYearTariff " + countScannerOneYearTariff);
-        logger.info("countScannerTwoYearsTariff " + countScannerTwoYearsTariff);
-        logger.info("sumDeactivatedScannerMonthToMonthTariff " + sumDeactivatedScannerMonthToMonthTariff);
-        double tempMonthToMonth = Math.round(((countScannerMonthToMonthTariff * 29.99) + sumDeactivatedScannerMonthToMonthTariff) * 100.0) / 100.0;
-        logger.info("tempMonthToMonth " + tempMonthToMonth);
-        double tempOneYearTariff = Math.round((countScannerOneYearTariff * 329.89) * 100.0) / 100.0;
-        logger.info("tempOneYearTariff " + tempOneYearTariff);
-        double tempTwoYearsTariff = Math.round((countScannerTwoYearsTariff * 629.79) * 100.0) / 100.0;
-        logger.info("tempTwoYearsTariff " + tempTwoYearsTariff);
+    public double sumCharge(int countScannerMonthToMonthTariff, int countScannerOneYearTariff, int countScannerTwoYearsTariff, String typeTariff){
+
+        double tempMonthToMonth = Math.round((countScannerMonthToMonthTariff * eldMonthToMonthPrice) * 100.0) / 100.0;
+        logger.info("# MONTH CHARGE " + typeTariff + " = " + tempMonthToMonth);
+        double tempOneYearTariff = Math.round((countScannerOneYearTariff * eld1YearSubscriptionPrice) * 100.0) / 100.0;
+        logger.info("# ONE YEAR CHARGE " + typeTariff + " = "  + tempOneYearTariff);
+        double tempTwoYearsTariff = Math.round((countScannerTwoYearsTariff * eld2YearsSubscriptionPrice) * 100.0) / 100.0;
+        logger.info("# TWO YEARS CHARGE " + typeTariff + " = "  + tempTwoYearsTariff);
         double tempCountDueCharge = Math.round((tempMonthToMonth + tempOneYearTariff + tempTwoYearsTariff) * 100.0) / 100.0;
+        logger.info("# SUM DUE CHARGE " + typeTariff + " = "  + tempCountDueCharge);
         return tempCountDueCharge;
     }
 
     @Step
     public boolean compareDueCharge(String soloOrFleetString, String userId, double sumCharge) throws SQLException, IOException, ClassNotFoundException {
         List<String> amountDue = utilsForDB.getAmountEzDue(soloOrFleetString, userId);
+        logger.info("# LIST AMOUNT DUE FROM DB = " + amountDue);
+        logger.info("# PROGRAM COUNT CHARGE  = " + Math.round((sumCharge) * 100.0) / 100.0);
         double sum = 0;
 
         for (String element :
                 amountDue) {
             sum += Double.parseDouble(element);
         }
+        logger.info("# SUM DB DUE (CHARGE) = " + Math.round((sum) * 100.0) / 100.0);
         boolean tempCompareDue = sumCharge == Math.round((sum) * 100.0) / 100.0;
         return tempCompareDue;
     }
     @Step
     public boolean compareCurrentDueFleetDefaulters(String fleetId, double sumCharge) throws SQLException, IOException, ClassNotFoundException {
         String currentDueFleet = utilsForDB.getCurrentDueEzFinancesFleet(fleetId);
-        logger.info("currentDueFleet " + currentDueFleet);
-        logger.info("sumCharge " + sumCharge);
+        logger.info("# CURRENT DUE FLEET " + currentDueFleet);
+        logger.info("# SUM CHARGE " + sumCharge);
         boolean tempCompareDueFleet = sumCharge == Double.parseDouble(currentDueFleet);
         return tempCompareDueFleet;
     }
     @Step
     public boolean compareCurrentDueSoloDefaulters(String soloId, double sumCharge) throws SQLException, IOException, ClassNotFoundException {
         String currentDueSolo = utilsForDB.getCurrentDueEzFinancesSolo(soloId);
-        logger.info("currentDueSolo " + currentDueSolo);
-        logger.info("sumCharge " + sumCharge);
+        logger.info("# CURRENT DUE SOLO " + currentDueSolo);
+        logger.info("# SUM CHARGE " + sumCharge);
         boolean tempCompareDueSolo = sumCharge == Double.parseDouble(currentDueSolo);
         return tempCompareDueSolo;
     }
 
     @Step
-    public boolean comparePaidTillMonthToMonth(String soloOrFleetString, String userId, String monthToMonthTariff) throws SQLException, IOException, ClassNotFoundException {
-        List<String> tempPaidTillMonthToMonth = utilsForDB.getPaidTillFromEldScanners(soloOrFleetString, userId, monthToMonthTariff);
+    public boolean comparePaidTillMonthToMonth(String soloOrFleetString, String userId, String tempTariffId) throws SQLException, IOException, ClassNotFoundException {
+        List<String> tempPaidTillMonthToMonth = utilsForDB.getPaidTillFromEldScanners(soloOrFleetString, userId, tempTariffId);
         LocalDate firstDayOfMonth = LocalDate.parse(LocalDate.now().toString()).with(TemporalAdjusters.firstDayOfNextMonth());
         long firstDayOfNextMonth = firstDayOfMonth.atStartOfDay().toEpochSecond(ZoneOffset.UTC);
 
@@ -261,7 +272,7 @@ public class ChargePage {
         String tempCurrentDue = utilsForDB.getCurrentDueEzFinancesSolo(soloId);
         LocalDate firstDayOfNextMonth = LocalDate.parse(LocalDate.now().toString()).with(TemporalAdjusters.firstDayOfNextMonth());
         String firstDayOfNextMonthString = firstDayOfNextMonth.toString();
-        logger.info("tempPaidTill: " + tempPaidTill);
+        logger.info("# tempPaidTill: " + tempPaidTill);
         if (Double.parseDouble(tempCurrentDue) == 0.00){
             boolean result = tempPaidTill.equals(firstDayOfNextMonthString);
             return result;
@@ -272,19 +283,25 @@ public class ChargePage {
         String tempEstimatedTill = utilsForDB.getEstimatedTillEzFinancesSolo(soloId);
         LocalDate firstDayOfNextMonth = LocalDate.parse(LocalDate.now().toString()).with(TemporalAdjusters.firstDayOfNextMonth());
         String firstDayOfNextMonthString = firstDayOfNextMonth.toString();
-        logger.info("tempEstimatedTill: " + tempEstimatedTill);
+        logger.info("# tempEstimatedTill: " + tempEstimatedTill);
         boolean result = tempEstimatedTill.equals(firstDayOfNextMonthString);
         return result;
     }
     @Step
     public boolean compareDueChargeMonthToMonthTariff(String soloOrFleetString, String userId, int countScannerMonthToMonthTariff, double sumDeactivatedScannerMonthToMonthTariff) throws SQLException, IOException, ClassNotFoundException {
-        String amountDue = utilsForDB.getAmountEzDueMonthToMonth(soloOrFleetString, userId);
-        logger.info("amountDue from db: " + amountDue);
-        logger.info("countScannerMonthToMonthTariff: " + countScannerMonthToMonthTariff);
-        logger.info("sumDeactivatedScannerMonthToMonthTariff: " + sumDeactivatedScannerMonthToMonthTariff);
-        double tempMonthToMonth = Math.round(((countScannerMonthToMonthTariff * 29.99) + sumDeactivatedScannerMonthToMonthTariff) * 100.0) / 100.0;
-        logger.info("charge MonthToMonth: " + tempMonthToMonth);
-        boolean tempCompareDue = tempMonthToMonth == Math.round((Double.parseDouble(amountDue)) * 100.0) / 100.0;
+        List<String> amountDue = utilsForDB.getAmountEzDueMonthToMonth(soloOrFleetString, userId);
+        logger.info("# AMOUNT DUE FROM DB = " + amountDue);
+        logger.info("# Sum Of Deactivated Scanner = " + sumDeactivatedScannerMonthToMonthTariff);
+        double sum = 0;
+
+        for (String element :
+                amountDue) {
+            sum += Double.parseDouble(element);
+        }
+        double tempMonthToMonth = Math.round(((countScannerMonthToMonthTariff * eldMonthToMonthPrice) + sumDeactivatedScannerMonthToMonthTariff) * 100.0) / 100.0;
+        logger.info("# Program Charge Month To Month = " + tempMonthToMonth);
+        logger.info("# SUM DB DUE (CHARGE) = " + Math.round((sum) * 100.0) / 100.0);
+        boolean tempCompareDue = tempMonthToMonth == Math.round((sum) * 100.0) / 100.0;
         return tempCompareDue;
     }
 
@@ -379,7 +396,7 @@ public class ChargePage {
         double tempNotReturnedFee = Math.round((countDevices * 199.99) * 100.0) / 100.0;
         logger.info("tempNotReturnedFee = " + tempNotReturnedFee);
 
-        double tempProratedFee = Math.round(((countDevicesBefore_12Month * 29.99) + (countDevicesAfter_12Month * 59.98)) * 100.0) / 100.0;
+        double tempProratedFee = Math.round(((countDevicesBefore_12Month * eldMonthToMonthPrice) + (countDevicesAfter_12Month * 59.98)) * 100.0) / 100.0;
         logger.info("tempProratedFee = " + tempProratedFee);
         double tempDueWithReturnedProratedFee = Math.round((tempNotReturnedFee + tempProratedFee + Double.parseDouble(currentDueWithLateFee)) * 100.0) / 100.0;
         logger.info("tempDueWithReturnedProratedFee = " + tempDueWithReturnedProratedFee);
@@ -387,6 +404,25 @@ public class ChargePage {
         return tempResult;
     }
 
+    public void informationOfDeactivatedAndReturnedScanners(int countDeactivatedScannerMonthIOSXTariff, int countScannerMonthIOSXChargeReturned, int countScannerOneYearIOSXChargeReturned, int countScannerTwoYearIOSXChargeReturned,
+                                                            int countGeometricsMonthChargeReturnedScanner, int countGeometricsOneYearChargeReturnedScanner, int countGeometricsTwoYearChargeReturnedScanner) {
+        logger.info("# Deactivated Month IOSX Tariff = " + countDeactivatedScannerMonthIOSXTariff);
+        logger.info("# Month IOSX Charge Returned = " + countScannerMonthIOSXChargeReturned);
+        logger.info("# One Year IOSX Charge Returned = " + countScannerOneYearIOSXChargeReturned);
+        logger.info("# Two Year IOSX Charge Returned = " + countScannerTwoYearIOSXChargeReturned);
+
+        logger.info("# Geometrics Month Charge Returned = " + countGeometricsMonthChargeReturnedScanner);
+        logger.info("# Geometrics One Year Charge Returned = " + countGeometricsOneYearChargeReturnedScanner);
+        logger.info("# Geometrics Two Year Charge Returned = " + countGeometricsTwoYearChargeReturnedScanner);
+    }
+
+    public void informationOfScannersMonth(int countScannerMonthIOSXTariff, int countScannerMonthGeometricsTariff, int countDeactivatedScannerMonthIOSXTariff, int countMonthIOSXChargeReturnedScanner, int countMonthGeometricsChargeReturnedScanner) {
+        logger.info("# COUNT Scanner Month IOSX Tariff = " + countScannerMonthIOSXTariff);
+        logger.info("# count Scanner Month Geometrics Tariff = " + countScannerMonthGeometricsTariff);
+        logger.info("# count Deactivated Scanner Month IOSX Tariff = " + countDeactivatedScannerMonthIOSXTariff);
+        logger.info("# count Month IOSX Charge Returned Scanner = " + countMonthIOSXChargeReturnedScanner);
+        logger.info("# count Month Geometric sCharge Returned Scanner = " + countMonthGeometricsChargeReturnedScanner);
+    }
 }
 
 

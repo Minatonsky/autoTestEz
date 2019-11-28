@@ -178,6 +178,9 @@ public class TestDataBase {
     }
     @Test
     public void testFor() throws SQLException, IOException, ClassNotFoundException {
-        System.out.println(utilsForDB.getLastOrderIdForFleet("518"));
+        String monthToMonthTariffId = "0";
+        String geometricsMonthlyTariffId = "9";
+        String tempTariffId = monthToMonthTariffId + ", " + geometricsMonthlyTariffId;
+        System.out.println(tempTariffId);
     }
 }
