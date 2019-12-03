@@ -37,23 +37,23 @@ public class UserEldPage extends ParentPage {
         List<String> localId = utilsForDB.getLocalIdDevices(idOrder);
         if (Integer.parseInt(quantityOfDevices) > 0 && Integer.parseInt(quantityCameraCP) == 0) {
             for (String element : localId) {
-                waitABit(2);
+                waitABit(3);
                 enterIdOrder(element);
-                waitABit(2);
+                waitABit(3);
                 clickOnOrderOnList(element);
-                waitABit(2);
+                waitABit(3);
                 clickOnButtonCancelOrderDevice();
-                waitABit(2);
+                waitABit(3);
                 clickOnOrderEldConfirm();
             }
         } else if (Integer.parseInt(quantityOfDevices) > 0 && Integer.parseInt(quantityCameraCP) > 0) {
-            waitABit(2);
+            waitABit(3);
             enterIdOrder(localId.get(0));
-            waitABit(2);
+            waitABit(3);
             clickOnOrderOnList(localId.get(0));
-            waitABit(2);
+            waitABit(3);
             clickOnButtonCancelOrderDevice();
-            waitABit(2);
+            waitABit(3);
             clickOnOrderEldConfirm();
         } else if (Integer.parseInt(quantityOfDevices) == 0) {
             logger.info("Can not canceled devices, no devices in order");

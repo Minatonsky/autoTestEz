@@ -183,4 +183,14 @@ public class TestDataBase {
         String tempTariffId = monthToMonthTariffId + ", " + geometricsMonthlyTariffId;
         System.out.println(tempTariffId);
     }
+    @Test
+    public void getAmountEzDueMonthToMonth() throws SQLException, IOException, ClassNotFoundException {
+        String soloOrFleetString = "531";
+        String carrierId = "carrierId";
+        String timeRunCron = "2019-12-03 10:23:19";
+
+        List<String> tempAmountList = utilsForDB.getAmountEzDueMonthToMonth( soloOrFleetString, carrierId, timeRunCron);
+        System.out.println(tempAmountList);
+
+    }
 }

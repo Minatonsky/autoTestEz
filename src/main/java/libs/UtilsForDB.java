@@ -98,7 +98,7 @@ public class UtilsForDB {
     @Step
     public void setPaidTillAndTariffStartScannerForFleet(String fleetId, String paidTill, String tariffStart, String tariffId) throws SQLException, IOException, ClassNotFoundException {
         dBMySQL = new Database("MySQL_PADB_DB", "MySQL");
-        dBMySQL.changeTable("UPDATE eld_scanners SET `paid_till`='" + paidTill + "', `tariffStart` = '" + tariffStart + "' WHERE fleet = " + fleetId + " AND tariffId IN(" + tariffId + ");");
+        dBMySQL.changeTable("UPDATE eld_scanners SET `paid_till`='" + paidTill + "', `tariffStart` = '" + tariffStart + "' WHERE fleet = " + fleetId + " AND tariffId IN(" + tariffId + ") AND status != 5;");
         dBMySQL.quit();
     }
     @Step
@@ -265,9 +265,9 @@ public class UtilsForDB {
         return tempLastDue;
     }
     @Step
-    public List<String> getAmountEzDue(String soloOrFleetString, String userId) throws SQLException, IOException, ClassNotFoundException {
+    public List<String> getAmountEzDue(String soloOrFleetString, String userId, String timeRunCron) throws SQLException, IOException, ClassNotFoundException {
         dBMySQL = new Database("MySQL_PADB_DB", "MySQL");
-        List<String> tempAmountList = dBMySQL.selectResultSet("SELECT amount FROM ez_due WHERE " + soloOrFleetString + " = " + userId + " ORDER BY dateTime DESC LIMIT 6;");
+        List<String> tempAmountList = dBMySQL.selectResultSet("SELECT amount FROM ez_due WHERE " + soloOrFleetString + " = " + userId + "  AND dateTime >= " + "'" +  timeRunCron + "'" + ";");
         dBMySQL.quit();
         return tempAmountList;
     }
@@ -275,7 +275,7 @@ public class UtilsForDB {
     @Step
     public List<String> getDateTimeEzDue(String soloOrFleetString, String userId) throws SQLException, IOException, ClassNotFoundException {
         dBMySQL = new Database("MySQL_PADB_DB", "MySQL");
-        List<String> tempDateTimeEzDue = dBMySQL.selectResultSet("SELECT dateTime FROM ez_due  WHERE " + soloOrFleetString + " = " + userId + " ORDER BY dateTime desc LIMIT 6;");
+        List<String> tempDateTimeEzDue = dBMySQL.selectResultSet("SELECT dateTime FROM ez_due  WHERE " + soloOrFleetString + " = " + userId + " ORDER BY dateTime desc LIMIT 1;");
         dBMySQL.quit();
         return tempDateTimeEzDue;
     }
@@ -287,9 +287,9 @@ public class UtilsForDB {
         return tempDateTimeEzDue;
     }
     @Step
-    public List<String> getAmountEzDueMonthToMonth(String soloOrFleetString, String userId) throws SQLException, IOException, ClassNotFoundException {
+    public List<String> getAmountEzDueMonthToMonth(String soloOrFleetString, String userId, String timeRunCron) throws SQLException, IOException, ClassNotFoundException {
         dBMySQL = new Database("MySQL_PADB_DB", "MySQL");
-        List<String> tempAmountList = dBMySQL.selectResultSet("SELECT amount FROM ez_due WHERE " + soloOrFleetString + " = " + userId + " ORDER BY dateTime DESC LIMIT 2;");
+        List<String> tempAmountList = dBMySQL.selectResultSet("SELECT amount FROM ez_due WHERE " + soloOrFleetString + " = " + userId + " AND dateTime >= " + "'" +  timeRunCron + "'" + ";");
         dBMySQL.quit();
         return tempAmountList;
     }

@@ -41,19 +41,19 @@ public class ChargePage {
     }
 
     @Step
-    public String tariffStartForMonthToMonth(int countMonth){
-        LocalDateTime tariffStart = LocalDateTime.parse(LocalDateTime.now().minusMonths(countMonth).minusDays(2).toString());
+    public String tariffStartForMonthToMonth(int countMonth, int countDays){
+        LocalDateTime tariffStart = LocalDateTime.parse(LocalDateTime.now().minusMonths(countMonth).minusDays(countDays).toString());
         long previousMonthMinusDay = tariffStart.toEpochSecond(ZoneOffset.UTC);
         String tempTariffMonthStart = Long.toString(previousMonthMinusDay);
-        logger.info("tempTariffMonthStart " + tariffStart);
+        logger.info("# Temp Tariff Month Start " + tariffStart);
         return tempTariffMonthStart;
     }
     @Step
-    public String dateTimeEldHistoryForMonthToMonth(int countMonth){
-        LocalDateTime dateTimeEldHistory = LocalDateTime.parse(LocalDateTime.now().minusMonths(countMonth).minusDays(2).toString());
+    public String dateTimeEldHistoryForMonthToMonth(int countMonth, int countDays){
+        LocalDateTime dateTimeEldHistory = LocalDateTime.parse(LocalDateTime.now().minusMonths(countMonth).minusDays(countDays).toString());
         long previousMonthMinusDay = dateTimeEldHistory.toEpochSecond(ZoneOffset.UTC);
         String tempDateTimeEldHistory = Long.toString(previousMonthMinusDay);
-        logger.info("tempDateTimeEldHistory " + dateTimeEldHistory);
+        logger.info("# Temp Date Time Eld History " + dateTimeEldHistory);
         return tempDateTimeEldHistory;
     }
 
@@ -102,7 +102,7 @@ public class ChargePage {
         DateTimeFormatter dTF = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
         logger.info("dateTime: " + dateTimeList);
         for (String element : dateTimeList) {
-            if (LocalDateTime.parse(element, dTF).plusSeconds(5).isAfter(LocalDateTime.parse(timeRunCron, dTF))) {
+            if (LocalDateTime.parse(element, dTF).plusMinutes(1).isAfter(LocalDateTime.parse(timeRunCron, dTF))) {
             } else return false;
         } return true;
     }
@@ -110,7 +110,7 @@ public class ChargePage {
     public boolean checkDateTimeDueMonthToMonth(String soloOrFleetString, String userId, String timeRunCron) throws SQLException, IOException, ClassNotFoundException {
         List<String> dateTimeList = utilsForDB.getDateTimeEzDueMonthToMonth(soloOrFleetString, userId);
         DateTimeFormatter dTF = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
-        logger.info("# date Time: " + dateTimeList);
+        logger.info("# Date Time Last Due = " + dateTimeList);
         for (String element : dateTimeList) {
             if (LocalDateTime.parse(element, dTF).plusMinutes(1).isAfter(LocalDateTime.parse(timeRunCron, dTF))) {
             } else return false;
@@ -158,7 +158,7 @@ public class ChargePage {
                     double charge_amount = Math.round((eldMonthToMonthPrice / 2) * 100.0) / 100.0;
                     sum += charge_amount;
                 }
-            } logger.info("DEACTIVATED SUM CHARGE = " + sum); return sum;
+            } logger.info("# DEACTIVATED SUM CHARGE = " + sum); return sum;
 
         } else return 0;
 
@@ -178,8 +178,8 @@ public class ChargePage {
     }
 
     @Step
-    public boolean compareDueCharge(String soloOrFleetString, String userId, double sumCharge) throws SQLException, IOException, ClassNotFoundException {
-        List<String> amountDue = utilsForDB.getAmountEzDue(soloOrFleetString, userId);
+    public boolean compareDueCharge(String soloOrFleetString, String userId, double sumCharge, String timeRunCron) throws SQLException, IOException, ClassNotFoundException {
+        List<String> amountDue = utilsForDB.getAmountEzDue(soloOrFleetString, userId, timeRunCron);
         logger.info("# LIST AMOUNT DUE FROM DB = " + amountDue);
         logger.info("# PROGRAM COUNT CHARGE  = " + Math.round((sumCharge) * 100.0) / 100.0);
         double sum = 0;
@@ -288,21 +288,47 @@ public class ChargePage {
         return result;
     }
     @Step
-    public boolean compareDueChargeMonthToMonthTariff(String soloOrFleetString, String userId, int countScannerMonthToMonthTariff, double sumDeactivatedScannerMonthToMonthTariff) throws SQLException, IOException, ClassNotFoundException {
-        List<String> amountDue = utilsForDB.getAmountEzDueMonthToMonth(soloOrFleetString, userId);
+    public boolean compareDueChargeMonthToMonthTariff(String activationDate, String soloOrFleetString, String userId, int countScannerMonthToMonthTariff,
+                                                      double sumDeactivatedScannerMonthToMonthTariff, String timeRunCron) throws SQLException, IOException, ClassNotFoundException {
+        List<String> amountDue = utilsForDB.getAmountEzDueMonthToMonth(soloOrFleetString, userId, timeRunCron);
         logger.info("# AMOUNT DUE FROM DB = " + amountDue);
         logger.info("# Sum Of Deactivated Scanner = " + sumDeactivatedScannerMonthToMonthTariff);
+
+
+        LocalDateTime currentTime = LocalDateTime.parse(LocalDateTime.now().toString());
+        LocalDateTime tempActivationDate = LocalDateTime.ofEpochSecond(Long.parseLong(activationDate), 0, ZoneOffset.UTC);
+        int monthDays =  currentTime.getMonth().length(true);
+        double priceOneDay = eldMonthToMonthPrice / monthDays;
+        int activeChargeDays = (int) ChronoUnit.DAYS.between(tempActivationDate, currentTime) - 1;
         double sum = 0;
 
-        for (String element :
-                amountDue) {
-            sum += Double.parseDouble(element);
+        if (activeChargeDays <= monthDays) {
+            double chargeByDevice = Math.round((activeChargeDays * priceOneDay) * 100.0) / 100.0;
+            double chargeByAllDevices = Math.round((countScannerMonthToMonthTariff * chargeByDevice) * 100.0) / 100.0;
+
+            logger.info("***** Month Days = " + monthDays);
+            logger.info("***** Price For One Day = " + priceOneDay);
+            logger.info("***** Active Charge Days = " + activeChargeDays);
+            logger.info("***** chargeByDevice = " + chargeByDevice);
+            logger.info("***** chargeByAllDevices = " + chargeByAllDevices);
+
+            for (String element :
+                    amountDue) {
+                sum += Double.parseDouble(element);
+            }
+            boolean tempCompareDue = chargeByAllDevices == Math.round((sum) * 100.0) / 100.0;
+            return tempCompareDue;
+        } else {
+            for (String element :
+                    amountDue) {
+                sum += Double.parseDouble(element);
+            }
+            double tempMonthToMonth = Math.round(((countScannerMonthToMonthTariff * eldMonthToMonthPrice) + sumDeactivatedScannerMonthToMonthTariff) * 100.0) / 100.0;
+            logger.info("# Program Charge Month To Month = " + tempMonthToMonth);
+            logger.info("# SUM DB DUE (CHARGE) = " + Math.round((sum) * 100.0) / 100.0);
+            boolean tempCompareDue = tempMonthToMonth == Math.round((sum) * 100.0) / 100.0;
+            return tempCompareDue;
         }
-        double tempMonthToMonth = Math.round(((countScannerMonthToMonthTariff * eldMonthToMonthPrice) + sumDeactivatedScannerMonthToMonthTariff) * 100.0) / 100.0;
-        logger.info("# Program Charge Month To Month = " + tempMonthToMonth);
-        logger.info("# SUM DB DUE (CHARGE) = " + Math.round((sum) * 100.0) / 100.0);
-        boolean tempCompareDue = tempMonthToMonth == Math.round((sum) * 100.0) / 100.0;
-        return tempCompareDue;
     }
 
     @Step

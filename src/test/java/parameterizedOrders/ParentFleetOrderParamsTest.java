@@ -87,7 +87,7 @@ public class ParentFleetOrderParamsTest extends ParentTest {String  typeOfDevice
         modalEldPage.doAgreeAgreement(typeOfDevices, quantityOfDevices);
         modalEldPage.doAgreementCamera(quantityCameraCP);
         modalEldPage.clickButtonOrder();
-
+        waitABit(5);
         String idLastOrderAfterTest = utilsForDB.getLastOrderIdForFleet(dataForFleet.get("fleetId").toString());
         checkAC("New order wasn`t created", idLastOrderBeforeTest.equals(idLastOrderAfterTest) , false);
 
