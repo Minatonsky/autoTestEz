@@ -86,8 +86,8 @@ public class ChargeDefaultersTest extends ParentChargeTest {
 
         String paidTillForEzFinances = chargePage.paidTillForEzFinances();
         utilsForDB.setPaidTillEstimatedTillEzFinancesFleet(fleetId, paidTillForEzFinances, paidTillForEzFinances);
-
-        checkAC("DateTime dues are not correct", chargePage.checkDateTimeDue(carrierIdString, fleetId, chargePage.runCronCheckFleet()), true);
+        String timeRunCron = chargePage.runCronCheckFleet();
+        checkAC("DateTime dues are not correct", chargePage.checkDateTimeDue(carrierIdString, fleetId, timeRunCron), true);
 
         double sumDeactivatedScannerMonthIOSXTariff = chargePage.sumDeactivatedScannerMonthToMonthTariff(fleetString, fleetId, countDeactivatedScannerMonthIOSXTariff);
         double sumIOSXCharge = chargePage.sumCharge(
@@ -99,7 +99,7 @@ public class ChargeDefaultersTest extends ParentChargeTest {
                 countScannerOneYearGeometricsTariff + countGeometricsOneYearChargeReturnedScanner,
                 countScannerTwoYearsGeometricsTariff + countGeometricsTwoYearChargeReturnedScanner, "Geometrics");
 
-        checkAC("Charge due is not correct", chargePage.compareDueCharge(carrierIdString, fleetId, sumIOSXCharge + sumDeactivatedScannerMonthIOSXTariff + sumGeometricsCharge), true);
+        checkAC("Charge due is not correct", chargePage.compareDueCharge(carrierIdString, fleetId, sumIOSXCharge + sumDeactivatedScannerMonthIOSXTariff + sumGeometricsCharge, timeRunCron), true);
 
         checkAC("Fleet is not in defaulters", utilsForDB.checkFleetInDefaulters(fleetId), true);
 
@@ -185,8 +185,8 @@ public class ChargeDefaultersTest extends ParentChargeTest {
 //  SET PAID TILL FOR USER FINANCES
         String paidTillForEzFinances = chargePage.paidTillForEzFinances();
         utilsForDB.setPaidTillEstimatedTillEzFinancesSolo(soloId, paidTillForEzFinances, paidTillForEzFinances);
-        String tempTimeRunCron = chargePage.runCronCheckDrivers();
-        checkAC("DateTime dues are not correct", chargePage.checkDateTimeDue(userIdString, soloId, tempTimeRunCron), true);
+        String timeRunCron = chargePage.runCronCheckDrivers();
+        checkAC("DateTime dues are not correct", chargePage.checkDateTimeDue(userIdString, soloId, timeRunCron), true);
 
         double sumDeactivatedScannerMonthIOSXTariff = chargePage.sumDeactivatedScannerMonthToMonthTariff(userIdString, soloId, countDeactivatedScannerMonthIOSXTariff);
         double sumIOSXCharge = chargePage.sumCharge(
@@ -198,7 +198,7 @@ public class ChargeDefaultersTest extends ParentChargeTest {
                 countScannerOneYearGeometricsTariff + countGeometricsOneYearChargeReturnedScanner,
                 countScannerTwoYearsGeometricsTariff + countGeometricsTwoYearChargeReturnedScanner, "Geometrics");
 
-        checkAC("Charge due is not correct", chargePage.compareDueCharge(userIdString, soloId, sumIOSXCharge + sumDeactivatedScannerMonthIOSXTariff + sumGeometricsCharge), true);
+        checkAC("Charge due is not correct", chargePage.compareDueCharge(userIdString, soloId, sumIOSXCharge + sumDeactivatedScannerMonthIOSXTariff + sumGeometricsCharge, timeRunCron), true);
 
 
         checkAC("Solo is not in defaulters", utilsForDB.checkSoloInDefaulters(soloId), true);
