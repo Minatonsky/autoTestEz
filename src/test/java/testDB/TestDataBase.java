@@ -18,7 +18,7 @@ import java.util.logging.Logger;
 // This test page is not using on test project, it just for check some methods
 
 public class TestDataBase {
-
+// testtesttesttest
     static Logger logger = Logger.getLogger(String.valueOf(TestDataBase.class));
     UtilsForDB utilsForDB = new UtilsForDB();
 
