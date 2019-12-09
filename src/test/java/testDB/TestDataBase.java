@@ -178,10 +178,11 @@ public class TestDataBase {
     }
     @Test
     public void testFor() throws SQLException, IOException, ClassNotFoundException {
-        String monthToMonthTariffId = "0";
+        int monthToMonthTariff = 3;
         String geometricsMonthlyTariffId = "9";
-        String tempTariffId = monthToMonthTariffId + ", " + geometricsMonthlyTariffId;
-        System.out.println(tempTariffId);
+        int tempTariffId = monthToMonthTariff % 2;
+        int tempTariffId2 = monthToMonthTariff - tempTariffId;
+        System.out.println(tempTariffId + " - " + tempTariffId2);
     }
     @Test
     public void getAmountEzDueMonthToMonth() throws SQLException, IOException, ClassNotFoundException {

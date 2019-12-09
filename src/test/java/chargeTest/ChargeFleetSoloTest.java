@@ -19,15 +19,15 @@ public class ChargeFleetSoloTest extends ParentChargeTest{
     String userIdString = "userId";
 
     String soloId = "3455";
-    String fleetId = "518";
+    String fleetId = "576";
     String fleetUserId = "3816";
 
     String unionMonthTariffId = monthIOSXTariffId + ", " + monthGeometricsTariffId;
     String unionOneYearTariffId = oneYearIOSXTariffId + ", " + oneYearGeometricsTariffId;
     String unionTwoYearsTariffId = twoYearsIOSXTariffId + ", " + twoYearsGeometricsTariffId;
 
-    int countMonthForTariffStartMonthIOSX = 5;
-    int countMonthForTariffStartMonthGeometrics = 1;
+    int countMonthForTariffStartMonthIOSX = 3;
+    int countMonthForTariffStartMonthGeometrics = 3;
 
     @Test
     public void chargeFleetTest() throws SQLException, IOException, ClassNotFoundException{
@@ -52,8 +52,11 @@ public class ChargeFleetSoloTest extends ParentChargeTest{
 
 
         String setPaidTillForAllTariff = chargePage.paidTillForAllTariff();
-        String setTariffStartMonthIOSX = chargePage.tariffStartForMonthToMonth(countMonthForTariffStartMonthIOSX, 5);
-        String setTariffStartMonthGeometrics = chargePage.tariffStartForMonthToMonth(countMonthForTariffStartMonthGeometrics, 5);
+
+        String setTariffStartMonthIOSX = chargePage.tariffStartForMonthToMonth(countMonthForTariffStartMonthIOSX, 0);
+        String setTariffStartMonthGeometrics = chargePage.tariffStartForMonthToMonth(countMonthForTariffStartMonthGeometrics, 0);
+
+
         String setTariffStartOneYear = chargePage.tariffStartForOneYear(1);
         String setTariffStartTwoYears = chargePage.tariffStartForTwoYears(2);
 
@@ -80,9 +83,30 @@ public class ChargeFleetSoloTest extends ParentChargeTest{
         utilsForDB.setPaidTillAndTariffStartScannerForFleet(fleetId, setPaidTillForAllTariff, setTariffStartOneYear, oneYearGeometricsTariffId);
         utilsForDB.setPaidTillAndTariffStartScannerForFleet(fleetId, setPaidTillForAllTariff, setTariffStartTwoYears, twoYearsGeometricsTariffId);
 
+// charge by days ***************************************************************************
+        String setTariffStartChargeByDaysMonthIOSX = chargePage.tariffStartForMonthToMonth(0, 6);
+        String setTariffStartChargeByDaysMonthGeometrics = chargePage.tariffStartForMonthToMonth(0, 6);
+
+        String idDeviceIOSXChargeByDays = utilsForDB.getIdChargeScannersByTariff(fleetString, fleetId, monthIOSXTariffId);
+        String idDeviceGeometricsChargeByDays = utilsForDB.getIdChargeScannersByTariff(fleetString, fleetId, monthGeometricsTariffId);
+
+        utilsForDB.setPaidTillAndTariffStartScannerById(setPaidTillForAllTariff, setTariffStartChargeByDaysMonthIOSX, idDeviceIOSXChargeByDays);
+        utilsForDB.setPaidTillAndTariffStartScannerById(setPaidTillForAllTariff, setTariffStartChargeByDaysMonthGeometrics, idDeviceGeometricsChargeByDays);
+
+        utilsForDB.delete_102_StatusByIdDevice(idDeviceIOSXChargeByDays);
+        utilsForDB.delete_102_StatusByIdDevice(idDeviceGeometricsChargeByDays);
+
+        utilsForDB.setOrderDateByDeviceId(setTariffStartChargeByDaysMonthIOSX, idDeviceIOSXChargeByDays);
+        utilsForDB.setOrderDateByDeviceId(setTariffStartChargeByDaysMonthGeometrics, idDeviceGeometricsChargeByDays);
+
+        utilsForDB.setDateTimeEldHistoryByIdDevice(setTariffStartChargeByDaysMonthIOSX, idDeviceIOSXChargeByDays);
+        utilsForDB.setDateTimeEldHistoryByIdDevice(setTariffStartChargeByDaysMonthGeometrics, idDeviceGeometricsChargeByDays);
 
 //  SET PAID TILL FOR USER FINANCES
 
+//      ***************************
+//        utilsForDB.setPaidTillAndTariffStartScannerForFleetByIdScanners(fleetId, "0", "1574251321", "19143, 19147");
+//      *******************************************
         String paidTillForEzFinances = chargePage.paidTillForEzFinances();
         utilsForDB.setPaidTillEstimatedTillEzFinancesFleet(fleetId, paidTillForEzFinances, paidTillForEzFinances);
 
@@ -107,6 +131,7 @@ public class ChargeFleetSoloTest extends ParentChargeTest{
         checkAC("PaidTill for two years is not correct", chargePage.comparePaidTillTwoYears(fleetString, fleetId, unionTwoYearsTariffId), true);
         checkAC("EstimatedTill in ez_finance is not correct", chargePage.compareEstimatedTillFleet(fleetId), true);
         checkAC("PaidTill in ez_finance is not correct", chargePage.comparePaidTillFleet(fleetId), true);
+
     }
 
     @Test
@@ -186,8 +211,8 @@ public class ChargeFleetSoloTest extends ParentChargeTest{
         checkAC("PaidTill for two years is not correct", chargePage.comparePaidTillTwoYears(userIdString, soloId, twoYearsIOSXTariffId), true);
         checkAC("EstimatedTill in eld_personal_finances is not correct", chargePage.compareEstimatedTillSolo(soloId), true);
         checkAC("PaidTill in eld_personal_finances is not correct", chargePage.comparePaidTillSolo(soloId), true);
-        checkAC("Charge was after test", chargePage.checkDateTimeDue(userIdString, soloId, chargePage.runCronCheckDrivers()), false);
-        checkAC("Charge was after test", chargePage.checkDateTimeDue(userIdString, soloId, chargePage.runCronCheckFleet()), false);
+//        checkAC("Charge was after test", chargePage.checkDateTimeDue(userIdString, soloId, chargePage.runCronCheckDrivers()), false);
+//        checkAC("Charge was after test", chargePage.checkDateTimeDue(userIdString, soloId, chargePage.runCronCheckFleet()), false);
 
     }
 

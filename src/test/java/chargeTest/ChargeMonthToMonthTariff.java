@@ -29,6 +29,10 @@ public class ChargeMonthToMonthTariff extends ParentChargeTest {
         int countMonthIOSXChargeReturnedScanner = utilsForDB.countChargeReturnedScannerByTariff(fleetString, fleetId, IOSXMonthTariffId);
         int countMonthGeometricsChargeReturnedScanner = utilsForDB.countChargeReturnedScannerByTariff(fleetString, fleetId, geometricsMonthTariffId);
 
+//
+//        List<String> idListScannerMonthIOSXTariff = utilsForDB.getIdChargeScannersByTariff(fleetString, fleetId, IOSXMonthTariffId);
+//
+
         String setPaidTillForAllTariff = chargePage.paidTillForAllTariff();
         String setTariffStartMonthIOSX = chargePage.tariffStartForMonthToMonth(0, 6);
         String setDateTimeEldHistoryMonthIOSX = chargePage.dateTimeEldHistoryForMonthToMonth(0, 6);
@@ -93,11 +97,12 @@ public class ChargeMonthToMonthTariff extends ParentChargeTest {
         utilsForDB.delete_102_Status(userIdString, soloId, IOSXMonthTariffId);
         utilsForDB.setOrderDateByTariffId(userIdString, soloId, setTariffStartMonthIOSX, IOSXMonthTariffId);
         utilsForDB.setDateTimeEldHistoryForMonthToMonth(userIdString, soloId, setDateTimeEldHistoryMonthIOSX);
-        utilsForDB.setOrderDateByTariffId(userIdString, soloId, setTariffStartMonthGeometrics, geometricsMonthTariffId);
+
 
 
         utilsForDB.setPaidTillAndTariffStartScannerForSolo(soloId, setPaidTillForAllTariff, setTariffStartMonthGeometrics, geometricsMonthTariffId);
         utilsForDB.delete_102_Status(userIdString, soloId, geometricsMonthTariffId);
+        utilsForDB.setOrderDateByTariffId(userIdString, soloId, setTariffStartMonthGeometrics, geometricsMonthTariffId);
         utilsForDB.setDateTimeEldHistoryForMonthToMonth(userIdString, soloId, setDateTimeEldHistoryMonthGeometrics);
 
         String paidTillForEzFinances = chargePage.paidTillForEzFinances();

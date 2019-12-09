@@ -180,8 +180,9 @@ public class ChargePage {
     @Step
     public boolean compareDueCharge(String soloOrFleetString, String userId, double sumCharge, String timeRunCron) throws SQLException, IOException, ClassNotFoundException {
         List<String> amountDue = utilsForDB.getAmountEzDue(soloOrFleetString, userId, timeRunCron);
+        double tempSumCharge = Math.round((sumCharge) * 100.0) / 100.0;
         logger.info("# LIST AMOUNT DUE FROM DB = " + amountDue);
-        logger.info("# PROGRAM COUNT CHARGE  = " + Math.round((sumCharge) * 100.0) / 100.0);
+        logger.info("# PROGRAM COUNT CHARGE  = " + tempSumCharge);
         double sum = 0;
 
         for (String element :
@@ -189,7 +190,7 @@ public class ChargePage {
             sum += Double.parseDouble(element);
         }
         logger.info("# SUM DB DUE (CHARGE) = " + Math.round((sum) * 100.0) / 100.0);
-        boolean tempCompareDue = sumCharge == Math.round((sum) * 100.0) / 100.0;
+        boolean tempCompareDue = tempSumCharge == Math.round((sum) * 100.0) / 100.0;
         return tempCompareDue;
     }
     @Step
