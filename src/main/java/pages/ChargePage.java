@@ -331,6 +331,34 @@ public class ChargePage {
             return tempCompareDue;
         }
     }
+    @Step
+    public double sumChargeMonthToMonthTariffByDays(String activationDate, int countScanner) throws SQLException, IOException, ClassNotFoundException {
+        logger.info("# activationDate = " + activationDate);
+        logger.info("# countScannerMonthToMonthTariffChargeByDays = " + countScanner);
+
+        LocalDateTime currentTime = LocalDateTime.parse(LocalDateTime.now().toString());
+        LocalDateTime tempActivationDate = LocalDateTime.ofEpochSecond(Long.parseLong(activationDate), 0, ZoneOffset.UTC);
+        int monthDays =  currentTime.getMonth().length(true);
+        double priceOneDay = eldMonthToMonthPrice / monthDays;
+        int activeChargeDays = (int) ChronoUnit.DAYS.between(tempActivationDate, currentTime) - 1;
+
+        if (activeChargeDays <= monthDays) {
+            double chargeByDevice = Math.round((activeChargeDays * priceOneDay) * 100.0) / 100.0;
+            double chargeByAllDevices = Math.round((countScanner * chargeByDevice) * 100.0) / 100.0;
+
+            logger.info("***** Month Days = " + monthDays);
+            logger.info("***** Price For One Day = " + priceOneDay);
+            logger.info("***** Active Charge Days = " + activeChargeDays);
+            logger.info("***** chargeByDevice = " + chargeByDevice);
+            logger.info("***** chargeByAllDevices = " + chargeByAllDevices);
+            return chargeByAllDevices;
+
+
+        } else {
+            logger.info("***** activeChargeDays > monthDays  " );
+            return 0;
+        }
+    }
 
     @Step
     public void setDaysDefaulterFleet(String fleetId, int contDays) throws SQLException, IOException, ClassNotFoundException {

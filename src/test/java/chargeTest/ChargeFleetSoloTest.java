@@ -5,6 +5,7 @@ import parentTest.ParentChargeTest;
 
 import java.io.IOException;
 import java.sql.SQLException;
+import java.util.List;
 
 public class ChargeFleetSoloTest extends ParentChargeTest{
     String monthIOSXTariffId = "0";
@@ -19,15 +20,17 @@ public class ChargeFleetSoloTest extends ParentChargeTest{
     String userIdString = "userId";
 
     String soloId = "3455";
-    String fleetId = "576";
+    String fleetId = "518";
     String fleetUserId = "3816";
 
     String unionMonthTariffId = monthIOSXTariffId + ", " + monthGeometricsTariffId;
     String unionOneYearTariffId = oneYearIOSXTariffId + ", " + oneYearGeometricsTariffId;
     String unionTwoYearsTariffId = twoYearsIOSXTariffId + ", " + twoYearsGeometricsTariffId;
 
-    int countMonthForTariffStartMonthIOSX = 3;
+    int countMonthForTariffStartMonthIOSX = 5;
     int countMonthForTariffStartMonthGeometrics = 3;
+    int countDevicesChargeByDaysIOSX = 5;
+    int countDevicesChargeByDaysGeometrics = 3;
 
     @Test
     public void chargeFleetTest() throws SQLException, IOException, ClassNotFoundException{
@@ -53,8 +56,8 @@ public class ChargeFleetSoloTest extends ParentChargeTest{
 
         String setPaidTillForAllTariff = chargePage.paidTillForAllTariff();
 
-        String setTariffStartMonthIOSX = chargePage.tariffStartForMonthToMonth(countMonthForTariffStartMonthIOSX, 0);
-        String setTariffStartMonthGeometrics = chargePage.tariffStartForMonthToMonth(countMonthForTariffStartMonthGeometrics, 0);
+        String setTariffStartMonthIOSX = chargePage.tariffStartForMonthToMonth(countMonthForTariffStartMonthIOSX, 2);
+        String setTariffStartMonthGeometrics = chargePage.tariffStartForMonthToMonth(countMonthForTariffStartMonthGeometrics, 22);
 
 
         String setTariffStartOneYear = chargePage.tariffStartForOneYear(1);
@@ -85,10 +88,12 @@ public class ChargeFleetSoloTest extends ParentChargeTest{
 
 // charge by days ***************************************************************************
         String setTariffStartChargeByDaysMonthIOSX = chargePage.tariffStartForMonthToMonth(0, 6);
-        String setTariffStartChargeByDaysMonthGeometrics = chargePage.tariffStartForMonthToMonth(0, 6);
+        String setTariffStartChargeByDaysMonthGeometrics = chargePage.tariffStartForMonthToMonth(0, 23);
 
-        String idDeviceIOSXChargeByDays = utilsForDB.getIdChargeScannersByTariff(fleetString, fleetId, monthIOSXTariffId);
-        String idDeviceGeometricsChargeByDays = utilsForDB.getIdChargeScannersByTariff(fleetString, fleetId, monthGeometricsTariffId);
+        List<String> tempIdDeviceIOSXChargeByDays = utilsForDB.getIdChargeScannersByTariff(fleetString, fleetId, monthIOSXTariffId, countDevicesChargeByDaysIOSX);
+        String idDeviceIOSXChargeByDays = String.join(", ", tempIdDeviceIOSXChargeByDays);
+        List<String> tempIdDeviceGeometricsChargeByDays = utilsForDB.getIdChargeScannersByTariff(fleetString, fleetId, monthGeometricsTariffId, countDevicesChargeByDaysGeometrics);
+        String idDeviceGeometricsChargeByDays = String.join(", ", tempIdDeviceGeometricsChargeByDays);
 
         utilsForDB.setPaidTillAndTariffStartScannerById(setPaidTillForAllTariff, setTariffStartChargeByDaysMonthIOSX, idDeviceIOSXChargeByDays);
         utilsForDB.setPaidTillAndTariffStartScannerById(setPaidTillForAllTariff, setTariffStartChargeByDaysMonthGeometrics, idDeviceGeometricsChargeByDays);
@@ -104,27 +109,27 @@ public class ChargeFleetSoloTest extends ParentChargeTest{
 
 //  SET PAID TILL FOR USER FINANCES
 
-//      ***************************
-//        utilsForDB.setPaidTillAndTariffStartScannerForFleetByIdScanners(fleetId, "0", "1574251321", "19143, 19147");
-//      *******************************************
         String paidTillForEzFinances = chargePage.paidTillForEzFinances();
         utilsForDB.setPaidTillEstimatedTillEzFinancesFleet(fleetId, paidTillForEzFinances, paidTillForEzFinances);
 
         String timeRunCron = chargePage.runCronCheckFleet();
         checkAC("DateTime dues are not correct", chargePage.checkDateTimeDue(carrierIdString, fleetId, timeRunCron), true);
 
+
         double sumDeactivatedScannerMonthIOSXTariff = chargePage.sumDeactivatedScannerMonthToMonthTariff(fleetString, fleetId, countDeactivatedScannerMonthIOSXTariff);
         double sumIOSXCharge = chargePage.sumCharge(
-                countScannerMonthIOSXTariff + countScannerMonthIOSXChargeReturned ,
+                (countScannerMonthIOSXTariff + countScannerMonthIOSXChargeReturned) - countDevicesChargeByDaysIOSX ,
                 countScannerOneYearIOSXTariff + countScannerOneYearIOSXChargeReturned,
                 countScannerTwoYearsIOSXTariff + countScannerTwoYearIOSXChargeReturned, "IOSX");
         double sumGeometricsCharge = chargePage.sumCharge(
-                countScannerMonthGeometricsTariff + countGeometricsMonthChargeReturnedScanner,
+                (countScannerMonthGeometricsTariff + countGeometricsMonthChargeReturnedScanner) - countDevicesChargeByDaysGeometrics,
                 countScannerOneYearGeometricsTariff + countGeometricsOneYearChargeReturnedScanner,
                 countScannerTwoYearsGeometricsTariff + countGeometricsTwoYearChargeReturnedScanner, "Geometrics");
-
+        double sumIOSXChargeByDays = chargePage.sumChargeMonthToMonthTariffByDays(setTariffStartChargeByDaysMonthIOSX, countDevicesChargeByDaysIOSX);
+        double sumGeometricsChargeByDays = chargePage.sumChargeMonthToMonthTariffByDays(setTariffStartChargeByDaysMonthGeometrics, countDevicesChargeByDaysGeometrics);
         checkAC("Charge due is not correct",
-                chargePage.compareDueCharge(carrierIdString, fleetId, sumIOSXCharge + sumDeactivatedScannerMonthIOSXTariff + sumGeometricsCharge, timeRunCron), true);
+                chargePage.compareDueCharge(carrierIdString, fleetId,
+                        sumIOSXCharge + sumDeactivatedScannerMonthIOSXTariff + sumGeometricsCharge + sumIOSXChargeByDays + sumGeometricsChargeByDays, timeRunCron), true);
 
         checkAC("PaidTill for month-to-month is not correct", chargePage.comparePaidTillMonthToMonth(fleetString, fleetId, unionMonthTariffId), true);
         checkAC("PaidTill for one year is not correct", chargePage.comparePaidTillOneYear(fleetString, fleetId, unionOneYearTariffId), true);
@@ -158,7 +163,7 @@ public class ChargeFleetSoloTest extends ParentChargeTest{
 
 
         String setPaidTillForAllTariff = chargePage.paidTillForAllTariff();
-        String setTariffStartMonthIOSX = chargePage.tariffStartForMonthToMonth(countMonthForTariffStartMonthIOSX, 5);
+        String setTariffStartMonthIOSX = chargePage.tariffStartForMonthToMonth(countMonthForTariffStartMonthIOSX, 3);
         String setTariffStartMonthGeometrics = chargePage.tariffStartForMonthToMonth(countMonthForTariffStartMonthGeometrics, 5);
         String setTariffStartOneYear = chargePage.tariffStartForOneYear(1);
         String setTariffStartTwoYears = chargePage.tariffStartForTwoYears(2);
@@ -187,6 +192,27 @@ public class ChargeFleetSoloTest extends ParentChargeTest{
         utilsForDB.setPaidTillAndTariffStartScannerForSolo(soloId, setPaidTillForAllTariff, setTariffStartTwoYears, twoYearsGeometricsTariffId);
 
 
+// charge by days ***************************************************************************
+        String setTariffStartChargeByDaysMonthIOSX = chargePage.tariffStartForMonthToMonth(0, 10);
+        String setTariffStartChargeByDaysMonthGeometrics = chargePage.tariffStartForMonthToMonth(0, 8);
+
+        List<String> tempIdDeviceIOSXChargeByDays = utilsForDB.getIdChargeScannersByTariff(userIdString, soloId, monthIOSXTariffId, countDevicesChargeByDaysIOSX);
+        String idDeviceIOSXChargeByDays = String.join(", ", tempIdDeviceIOSXChargeByDays);
+        List<String> tempIdDeviceGeometricsChargeByDays = utilsForDB.getIdChargeScannersByTariff(userIdString, soloId, monthGeometricsTariffId, countDevicesChargeByDaysGeometrics);
+        String idDeviceGeometricsChargeByDays = String.join(", ", tempIdDeviceGeometricsChargeByDays);
+
+        utilsForDB.setPaidTillAndTariffStartScannerById(setPaidTillForAllTariff, setTariffStartChargeByDaysMonthIOSX, idDeviceIOSXChargeByDays);
+        utilsForDB.setPaidTillAndTariffStartScannerById(setPaidTillForAllTariff, setTariffStartChargeByDaysMonthGeometrics, idDeviceGeometricsChargeByDays);
+
+        utilsForDB.delete_102_StatusByIdDevice(idDeviceIOSXChargeByDays);
+        utilsForDB.delete_102_StatusByIdDevice(idDeviceGeometricsChargeByDays);
+
+        utilsForDB.setOrderDateByDeviceId(setTariffStartChargeByDaysMonthIOSX, idDeviceIOSXChargeByDays);
+        utilsForDB.setOrderDateByDeviceId(setTariffStartChargeByDaysMonthGeometrics, idDeviceGeometricsChargeByDays);
+
+        utilsForDB.setDateTimeEldHistoryByIdDevice(setTariffStartChargeByDaysMonthIOSX, idDeviceIOSXChargeByDays);
+        utilsForDB.setDateTimeEldHistoryByIdDevice(setTariffStartChargeByDaysMonthGeometrics, idDeviceGeometricsChargeByDays);
+
 //  SET PAID TILL FOR USER FINANCES
         String paidTillForEzFinances = chargePage.paidTillForEzFinances();
         utilsForDB.setPaidTillEstimatedTillEzFinancesSolo(soloId, paidTillForEzFinances, paidTillForEzFinances);
@@ -195,16 +221,18 @@ public class ChargeFleetSoloTest extends ParentChargeTest{
 
         double sumDeactivatedScannerMonthIOSXTariff = chargePage.sumDeactivatedScannerMonthToMonthTariff(userIdString, soloId, countDeactivatedScannerMonthIOSXTariff);
         double sumIOSXCharge = chargePage.sumCharge(
-                countScannerMonthIOSXTariff + countScannerMonthIOSXChargeReturned ,
+                (countScannerMonthIOSXTariff + countScannerMonthIOSXChargeReturned) - countDevicesChargeByDaysIOSX,
                 countScannerOneYearIOSXTariff + countScannerOneYearIOSXChargeReturned,
                 countScannerTwoYearsIOSXTariff + countScannerTwoYearIOSXChargeReturned, "IOSX");
         double sumGeometricsCharge = chargePage.sumCharge(
-                countScannerMonthGeometricsTariff + countGeometricsMonthChargeReturnedScanner,
+                (countScannerMonthGeometricsTariff + countGeometricsMonthChargeReturnedScanner) - countDevicesChargeByDaysGeometrics,
                 countScannerOneYearGeometricsTariff + countGeometricsOneYearChargeReturnedScanner,
                 countScannerTwoYearsGeometricsTariff + countGeometricsTwoYearChargeReturnedScanner, "Geometrics");
+        double sumIOSXChargeByDays = chargePage.sumChargeMonthToMonthTariffByDays(setTariffStartChargeByDaysMonthIOSX, countDevicesChargeByDaysIOSX);
+        double sumGeometricsChargeByDays = chargePage.sumChargeMonthToMonthTariffByDays(setTariffStartChargeByDaysMonthGeometrics, countDevicesChargeByDaysGeometrics);
 
         checkAC("Charge due is not correct",
-                chargePage.compareDueCharge(userIdString, soloId, sumIOSXCharge + sumDeactivatedScannerMonthIOSXTariff + sumGeometricsCharge, timeRunCron), true);
+                chargePage.compareDueCharge(userIdString, soloId, sumIOSXCharge + sumDeactivatedScannerMonthIOSXTariff + sumGeometricsCharge + sumIOSXChargeByDays + sumGeometricsChargeByDays, timeRunCron), true);
 
         checkAC("PaidTill for month-to-month is not correct", chargePage.comparePaidTillMonthToMonth(userIdString, soloId, unionMonthTariffId), true);
         checkAC("PaidTill for one year is not correct", chargePage.comparePaidTillOneYear(userIdString, soloId, oneYearIOSXTariffId), true);

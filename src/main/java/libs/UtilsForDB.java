@@ -58,7 +58,7 @@ public class UtilsForDB {
     @Step
     public void setOrderDateByDeviceId(String tariffStart, String deviceId) throws SQLException, IOException, ClassNotFoundException {
         dBMySQL = new Database("MySQL_PADB_DB", "MySQL");
-        dBMySQL.changeTable("UPDATE eld_orders SET `orderDate` = '" + tariffStart + "' WHERE id IN (SELECT orderId FROM eld_orders_ids WHERE scannerId = " + deviceId + ");");
+        dBMySQL.changeTable("UPDATE eld_orders SET `orderDate` = '" + tariffStart + "' WHERE id IN (SELECT orderId FROM eld_orders_ids WHERE scannerId IN (" + deviceId + "));");
         dBMySQL.quit();
     }
 
@@ -110,7 +110,7 @@ public class UtilsForDB {
     @Step
     public void setPaidTillAndTariffStartScannerById(String paidTill, String tariffStart, String idDevice) throws SQLException, IOException, ClassNotFoundException {
         dBMySQL = new Database("MySQL_PADB_DB", "MySQL");
-        dBMySQL.changeTable("UPDATE eld_scanners SET `paid_till`='" + paidTill + "', `tariffStart` = '" + tariffStart + "' WHERE id = " + idDevice + ";");
+        dBMySQL.changeTable("UPDATE eld_scanners SET `paid_till`='" + paidTill + "', `tariffStart` = '" + tariffStart + "' WHERE id IN (" + idDevice + ");");
         dBMySQL.quit();
     }
     @Step
@@ -127,17 +127,11 @@ public class UtilsForDB {
         return tempIdDevices;
     }
     @Step
-    public String getIdChargeScannersByTariff(String soloOrFleetString, String userId, String tariffId) throws SQLException, IOException, ClassNotFoundException {
+    public List<String> getIdChargeScannersByTariff(String soloOrFleetString, String userId, String tariffId, int countDevices) throws SQLException, IOException, ClassNotFoundException {
         dBMySQL = new Database("MySQL_PADB_DB", "MySQL");
-        String tempDeviceStatus = dBMySQL.selectValue("SELECT id FROM eld_scanners WHERE " + soloOrFleetString + " = " + userId + " AND tariffId = " + tariffId + " AND status = 4 ORDER BY id DESC LIMIT 1;");
+        List<String> tempDeviceStatus = dBMySQL.selectResultSet("SELECT id FROM eld_scanners WHERE " + soloOrFleetString + " = " + userId + " AND tariffId = " + tariffId + " AND status = 4 ORDER BY id DESC LIMIT " + countDevices + ";");
         dBMySQL.quit();
         return tempDeviceStatus;
-    }
-    @Step
-    public void setPaidTillAndTariffStartScannerForFleetByIdScanners(String fleetId, String paidTill, String tariffStart, String scannerId) throws SQLException, IOException, ClassNotFoundException {
-        dBMySQL = new Database("MySQL_PADB_DB", "MySQL");
-        dBMySQL.changeTable("UPDATE eld_scanners SET `paid_till`='" + paidTill + "', `tariffStart` = '" + tariffStart + "' WHERE id IN (" + scannerId + ");");
-        dBMySQL.quit();
     }
 
     @Step
@@ -341,7 +335,7 @@ public class UtilsForDB {
     @Step
     public void setDateTimeEldHistoryByIdDevice(String tariffStart, String deviceId) throws SQLException, IOException, ClassNotFoundException {
         dBMySQL = new Database("MySQL_PADB_DB", "MySQL");
-        dBMySQL.changeTable("UPDATE eld_history SET `dateTime` = '" + tariffStart + "' WHERE status = 4 AND scannerId = " + deviceId + ";");
+        dBMySQL.changeTable("UPDATE eld_history SET `dateTime` = '" + tariffStart + "' WHERE status = 4 AND scannerId IN (" + deviceId + ");");
         dBMySQL.quit();
     }
     @Step
@@ -353,7 +347,7 @@ public class UtilsForDB {
     @Step
     public void delete_102_StatusByIdDevice(String deviceId) throws SQLException, IOException, ClassNotFoundException {
         dBMySQL = new Database("MySQL_PADB_DB", "MySQL");
-        dBMySQL.changeTable("DELETE FROM eld_history WHERE status = 102 AND scannerId = " + deviceId + ";");
+        dBMySQL.changeTable("DELETE FROM eld_history WHERE status = 102 AND scannerId IN (" + deviceId + ");");
         dBMySQL.quit();
     }
 
