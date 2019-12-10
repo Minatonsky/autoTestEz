@@ -3,10 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="660eb711-957d-418e-9483-8b2931da6e6e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/qalight.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/qalight.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/libs/UtilsForDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/libs/UtilsForDB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/ChargePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/ChargePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/chargeTest/ChargeFleetSoloTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/chargeTest/ChargeFleetSoloTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -47,6 +43,7 @@
   <component name="ProjectId" id="1P0rmWrMh0xA0QVXeBejzL9RUNH" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -162,32 +159,32 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestDataBase.getEventNewOrder" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
-      <module name="testdevEzlogz" />
+    <configuration name="TestUnitMethods.getEventNewOrder" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
+      <module name="WorkSpace" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="testDB.*" />
+          <option name="PATTERN" value="unitTest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="testDB" />
-      <option name="MAIN_CLASS_NAME" value="testDB.TestDataBase" />
+      <option name="PACKAGE_NAME" value="unitTest" />
+      <option name="MAIN_CLASS_NAME" value="unitTest.TestUnitMethods" />
       <option name="METHOD_NAME" value="getEventNewOrder" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestDataBase.testFor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestUnitMethods.testFor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="WorkSpace" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="testDB.*" />
+          <option name="PATTERN" value="unitTest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="testDB" />
-      <option name="MAIN_CLASS_NAME" value="testDB.TestDataBase" />
+      <option name="PACKAGE_NAME" value="unitTest" />
+      <option name="MAIN_CLASS_NAME" value="unitTest.TestUnitMethods" />
       <option name="METHOD_NAME" value="testFor" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -238,19 +235,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="JUnit.TestDataBase.getEventNewOrder" />
+      <item itemvalue="JUnit.TestUnitMethods.getEventNewOrder" />
       <item itemvalue="JUnit.ChargeFleetSoloTest.chargeFleetTest" />
       <item itemvalue="Maven.SoloOrders" />
       <item itemvalue="JUnit.ChargeDefaultersTest.chargeDefaultersFleetTest" />
       <item itemvalue="JUnit.ChargeDefaultersTest.chargeDefaultersSoloTest" />
-      <item itemvalue="JUnit.TestDataBase.testFor" />
+      <item itemvalue="JUnit.TestUnitMethods.testFor" />
       <item itemvalue="JUnit.ChargeFleetSoloTest.chargeSoloTest" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.ChargeFleetSoloTest.chargeFleetTest" />
         <item itemvalue="JUnit.ChargeFleetSoloTest.chargeSoloTest" />
-        <item itemvalue="JUnit.TestDataBase.testFor" />
+        <item itemvalue="JUnit.TestUnitMethods.testFor" />
         <item itemvalue="JUnit.ChargeDefaultersTest.chargeDefaultersSoloTest" />
         <item itemvalue="JUnit.ChargeDefaultersTest.chargeDefaultersFleetTest" />
       </list>
@@ -273,13 +270,6 @@
       <workItem from="1562665338918" duration="52834000" />
       <workItem from="1562782581468" duration="9021000" />
       <workItem from="1562822119836" duration="58303000" />
-    </task>
-    <task id="LOCAL-00016" summary="take window test was added">
-      <created>1563221570752</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1563221570752</updated>
     </task>
     <task id="LOCAL-00017" summary="union manager test was added">
       <created>1563278049423</created>
@@ -617,7 +607,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575906754783</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="test2 charge by days was add">
+      <created>1575984179943</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1575984179943</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -654,7 +651,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="params test refactor was add" />
     <MESSAGE value="params manager test refactor was add" />
     <MESSAGE value="checkAC ELD status was add" />
     <MESSAGE value="checkAC ELD status Paid\Completed was add" />
@@ -679,7 +675,8 @@
     <MESSAGE value="test charge new tariff was add" />
     <MESSAGE value="test charge default new tariff was add" />
     <MESSAGE value="test charge by days new tariff was add" />
-    <option name="LAST_COMMIT_MESSAGE" value="test charge by days new tariff was add" />
+    <MESSAGE value="test2 charge by days was add" />
+    <option name="LAST_COMMIT_MESSAGE" value="test2 charge by days was add" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

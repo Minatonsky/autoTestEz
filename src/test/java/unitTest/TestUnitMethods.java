@@ -1,4 +1,4 @@
-package testDB;
+package unitTest;
 
 import libs.UtilsForDB;
 import org.json.JSONObject;
@@ -17,9 +17,9 @@ import java.util.List;
 import java.util.logging.Logger;
 // This test page is not using on test project, it just for check some methods
 
-public class TestDataBase {
+public class TestUnitMethods {
 // testtesttesttest
-    static Logger logger = Logger.getLogger(String.valueOf(TestDataBase.class));
+    static Logger logger = Logger.getLogger(String.valueOf(TestUnitMethods.class));
     UtilsForDB utilsForDB = new UtilsForDB();
 
 
