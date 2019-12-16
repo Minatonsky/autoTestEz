@@ -180,8 +180,9 @@ public class ChargePage {
     @Step
     public boolean compareDueCharge(String soloOrFleetString, String userId, double sumCharge, String timeRunCron) throws SQLException, IOException, ClassNotFoundException {
         List<String> amountDue = utilsForDB.getAmountEzDue(soloOrFleetString, userId, timeRunCron);
+        double tempSumCharge = Math.round((sumCharge) * 100.0) / 100.0;
         logger.info("# LIST AMOUNT DUE FROM DB = " + amountDue);
-        logger.info("# PROGRAM COUNT CHARGE  = " + Math.round((sumCharge) * 100.0) / 100.0);
+        logger.info("# PROGRAM COUNT CHARGE  = " + tempSumCharge);
         double sum = 0;
 
         for (String element :
@@ -189,7 +190,7 @@ public class ChargePage {
             sum += Double.parseDouble(element);
         }
         logger.info("# SUM DB DUE (CHARGE) = " + Math.round((sum) * 100.0) / 100.0);
-        boolean tempCompareDue = sumCharge == Math.round((sum) * 100.0) / 100.0;
+        boolean tempCompareDue = tempSumCharge == Math.round((sum) * 100.0) / 100.0;
         return tempCompareDue;
     }
     @Step
@@ -328,6 +329,34 @@ public class ChargePage {
             logger.info("# SUM DB DUE (CHARGE) = " + Math.round((sum) * 100.0) / 100.0);
             boolean tempCompareDue = tempMonthToMonth == Math.round((sum) * 100.0) / 100.0;
             return tempCompareDue;
+        }
+    }
+    @Step
+    public double sumChargeMonthToMonthTariffByDays(String activationDate, int countScanner) throws SQLException, IOException, ClassNotFoundException {
+        logger.info("# activationDate = " + activationDate);
+        logger.info("# countScannerMonthToMonthTariffChargeByDays = " + countScanner);
+
+        LocalDateTime currentTime = LocalDateTime.parse(LocalDateTime.now().toString());
+        LocalDateTime tempActivationDate = LocalDateTime.ofEpochSecond(Long.parseLong(activationDate), 0, ZoneOffset.UTC);
+        int monthDays =  currentTime.getMonth().length(true);
+        double priceOneDay = eldMonthToMonthPrice / monthDays;
+        int activeChargeDays = (int) ChronoUnit.DAYS.between(tempActivationDate, currentTime) - 1;
+
+        if (activeChargeDays <= monthDays) {
+            double chargeByDevice = Math.round((activeChargeDays * priceOneDay) * 100.0) / 100.0;
+            double chargeByAllDevices = Math.round((countScanner * chargeByDevice) * 100.0) / 100.0;
+
+            logger.info("***** Month Days = " + monthDays);
+            logger.info("***** Price For One Day = " + priceOneDay);
+            logger.info("***** Active Charge Days = " + activeChargeDays);
+            logger.info("***** chargeByDevice = " + chargeByDevice);
+            logger.info("***** chargeByAllDevices = " + chargeByAllDevices);
+            return chargeByAllDevices;
+
+
+        } else {
+            logger.info("***** activeChargeDays > monthDays  " );
+            return 0;
         }
     }
 

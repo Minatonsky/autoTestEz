@@ -25,8 +25,10 @@ public class ParentChargeTest {
 
     Logger logger = Logger.getLogger(getClass());
 
+
     protected static ConfigProperties configProperties = ConfigFactory.create(ConfigProperties.class);
     WebDriver webDriver;
+
 
     @Before
     public void setUp(){
@@ -36,6 +38,7 @@ public class ParentChargeTest {
         excelDriver = new ExcelDriver();
         utilsForDB = new UtilsForDB();
         chargePage = new ChargePage(webDriver);
+
     }
     @After
     public void tearDown(){

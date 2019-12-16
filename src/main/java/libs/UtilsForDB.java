@@ -55,6 +55,12 @@ public class UtilsForDB {
         dBMySQL.changeTable("UPDATE eld_orders SET `orderDate` = '" + tariffStart + "' WHERE id IN (SELECT orderId FROM eld_orders_ids WHERE scannerId IN (SELECT id FROM eld_scanners WHERE " + soloOrFleetString + " = " + userId + " AND tariffId = " + tariffId + "));");
         dBMySQL.quit();
     }
+    @Step
+    public void setOrderDateByDeviceId(String tariffStart, String deviceId) throws SQLException, IOException, ClassNotFoundException {
+        dBMySQL = new Database("MySQL_PADB_DB", "MySQL");
+        dBMySQL.changeTable("UPDATE eld_orders SET `orderDate` = '" + tariffStart + "' WHERE id IN (SELECT orderId FROM eld_orders_ids WHERE scannerId IN (" + deviceId + "));");
+        dBMySQL.quit();
+    }
 
 
     @Step
@@ -98,7 +104,13 @@ public class UtilsForDB {
     @Step
     public void setPaidTillAndTariffStartScannerForFleet(String fleetId, String paidTill, String tariffStart, String tariffId) throws SQLException, IOException, ClassNotFoundException {
         dBMySQL = new Database("MySQL_PADB_DB", "MySQL");
-        dBMySQL.changeTable("UPDATE eld_scanners SET `paid_till`='" + paidTill + "', `tariffStart` = '" + tariffStart + "' WHERE fleet = " + fleetId + " AND tariffId IN(" + tariffId + ") AND status != 5;");
+        dBMySQL.changeTable("UPDATE eld_scanners SET `paid_till`='" + paidTill + "', `tariffStart` = '" + tariffStart + "' WHERE fleet = " + fleetId + " AND tariffId IN(" + tariffId + ");");
+        dBMySQL.quit();
+    }
+    @Step
+    public void setPaidTillAndTariffStartScannerById(String paidTill, String tariffStart, String idDevice) throws SQLException, IOException, ClassNotFoundException {
+        dBMySQL = new Database("MySQL_PADB_DB", "MySQL");
+        dBMySQL.changeTable("UPDATE eld_scanners SET `paid_till`='" + paidTill + "', `tariffStart` = '" + tariffStart + "' WHERE id IN (" + idDevice + ");");
         dBMySQL.quit();
     }
     @Step
@@ -114,6 +126,14 @@ public class UtilsForDB {
         dBMySQL.quit();
         return tempIdDevices;
     }
+    @Step
+    public List<String> getIdChargeScannersByTariff(String soloOrFleetString, String userId, String tariffId, int countDevices) throws SQLException, IOException, ClassNotFoundException {
+        dBMySQL = new Database("MySQL_PADB_DB", "MySQL");
+        List<String> tempDeviceStatus = dBMySQL.selectResultSet("SELECT id FROM eld_scanners WHERE " + soloOrFleetString + " = " + userId + " AND tariffId = " + tariffId + " AND status = 4 ORDER BY id DESC LIMIT " + countDevices + ";");
+        dBMySQL.quit();
+        return tempDeviceStatus;
+    }
+
     @Step
     public void setPaidTillAndTariffStartScannerForSolo(String soloId, String paidTill, String tariffStart, String tariffId) throws SQLException, IOException, ClassNotFoundException {
         dBMySQL = new Database("MySQL_PADB_DB", "MySQL");
@@ -313,9 +333,21 @@ public class UtilsForDB {
         dBMySQL.quit();
     }
     @Step
+    public void setDateTimeEldHistoryByIdDevice(String tariffStart, String deviceId) throws SQLException, IOException, ClassNotFoundException {
+        dBMySQL = new Database("MySQL_PADB_DB", "MySQL");
+        dBMySQL.changeTable("UPDATE eld_history SET `dateTime` = '" + tariffStart + "' WHERE status = 4 AND scannerId IN (" + deviceId + ");");
+        dBMySQL.quit();
+    }
+    @Step
     public void delete_102_Status(String userIdOrFleetString, String userId, String tariffId) throws SQLException, IOException, ClassNotFoundException {
         dBMySQL = new Database("MySQL_PADB_DB", "MySQL");
         dBMySQL.changeTable("DELETE FROM eld_history WHERE status = 102 AND scannerId IN (SELECT id FROM eld_scanners WHERE " + userIdOrFleetString + " = " + userId + " AND tariffId = " + tariffId + ");");
+        dBMySQL.quit();
+    }
+    @Step
+    public void delete_102_StatusByIdDevice(String deviceId) throws SQLException, IOException, ClassNotFoundException {
+        dBMySQL = new Database("MySQL_PADB_DB", "MySQL");
+        dBMySQL.changeTable("DELETE FROM eld_history WHERE status = 102 AND scannerId IN (" + deviceId + ");");
         dBMySQL.quit();
     }
 
@@ -464,6 +496,7 @@ public class UtilsForDB {
         dBMySQL.quit();
         return tempResult;
     }
+
 
 
 }
