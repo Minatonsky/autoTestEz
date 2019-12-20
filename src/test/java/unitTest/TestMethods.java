@@ -17,9 +17,9 @@ import java.util.List;
 import java.util.logging.Logger;
 // This test page is not using on test project, it just for check some methods
 
-public class TestUnitMethods {
+public class TestMethods {
 // testtesttesttest
-    static Logger logger = Logger.getLogger(String.valueOf(TestUnitMethods.class));
+    static Logger logger = Logger.getLogger(String.valueOf(TestMethods.class));
     UtilsForDB utilsForDB = new UtilsForDB();
 
 

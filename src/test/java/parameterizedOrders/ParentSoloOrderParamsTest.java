@@ -53,7 +53,7 @@ public class ParentSoloOrderParamsTest extends ParentTest { String  typeOfDevice
     @Test
     public void soloDoNewOrder() throws SQLException, IOException, ClassNotFoundException {
         userEldPage.checkAndCancelNewOrderBeforeTestSolo(dataSoloId.get("soloId").toString());
-        String idLastOrderBeforeTest = utilsForDB.getLastOrderIdForFleet(dataSoloId.get("soloId").toString());
+        String idLastOrderBeforeTest = utilsForDB.getLastOrderIdForSolo(dataSoloId.get("soloId").toString());
         utilsForDB.setCurrentDueForSolo(currentDue, dataSoloId.get("soloId").toString());
 
         loginPage.userValidLogIn(dataForSoloValidLogIn.get("login").toString(),dataForSoloValidLogIn.get("pass").toString());
