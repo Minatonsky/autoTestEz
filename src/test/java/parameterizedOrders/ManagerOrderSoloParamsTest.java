@@ -18,8 +18,8 @@ public class ManagerOrderSoloParamsTest extends ParentManagerOrderParamsTest {
 
     @Test
     public void managerDoOrderSoloAgree() throws IOException, SQLException, ClassNotFoundException {
-        userEldPage.checkAndCancelNewOrderBeforeTestSolo(dataSoloId.get("soloId").toString());
-        String idLastOrderBeforeTest = utilsForDB.getLastOrderIdForFleet(dataSoloId.get("soloId").toString());
+        userEldPage.checkAndCancelNewOrderBeforeTest(userIdString, dataSoloId.get("soloId").toString());
+        String idLastOrderBeforeTest = utilsForDB.getLastOrderId(userIdString, dataSoloId.get("soloId").toString());
         utilsForDB.setCurrentDueForSolo(currentDue, dataSoloId.get("soloId").toString());
 
         managerModalEldPage.selectSoloDriverInOrder(dataForSoloValidLogIn.get("login").toString());
@@ -45,7 +45,7 @@ public class ManagerOrderSoloParamsTest extends ParentManagerOrderParamsTest {
 
         modalEldPage.clickButtonOrder();
         waitABit(3);
-        String idLastOrderAfterTest = utilsForDB.getLastOrderIdForSolo(dataSoloId.get("soloId").toString());
+        String idLastOrderAfterTest = utilsForDB.getLastOrderId(userIdString, dataSoloId.get("soloId").toString());
         checkAC("New order was not created", idLastOrderBeforeTest.equals(idLastOrderAfterTest) , false);
 
         String orderStatus = utilsForDB.getOrderStatus(idLastOrderAfterTest);
@@ -92,8 +92,8 @@ public class ManagerOrderSoloParamsTest extends ParentManagerOrderParamsTest {
     }
     @Test
     public void managerDoOrderSoloCanceled() throws IOException, SQLException, ClassNotFoundException {
-        userEldPage.checkAndCancelNewOrderBeforeTestSolo(dataSoloId.get("soloId").toString());
-        String idLastOrderBeforeTest = utilsForDB.getLastOrderIdForFleet(dataSoloId.get("soloId").toString());
+        userEldPage.checkAndCancelNewOrderBeforeTest(userIdString, dataSoloId.get("soloId").toString());
+        String idLastOrderBeforeTest = utilsForDB.getLastOrderId(userIdString, dataSoloId.get("soloId").toString());
         utilsForDB.setCurrentDueForSolo(currentDue, dataSoloId.get("soloId").toString());
 
         managerModalEldPage.selectSoloDriverInOrder(dataForSoloValidLogIn.get("login").toString());
@@ -119,7 +119,7 @@ public class ManagerOrderSoloParamsTest extends ParentManagerOrderParamsTest {
 
         modalEldPage.clickButtonOrder();
         waitABit(3);
-        String idLastOrderAfterTest = utilsForDB.getLastOrderIdForSolo(dataSoloId.get("soloId").toString());
+        String idLastOrderAfterTest = utilsForDB.getLastOrderId(userIdString, dataSoloId.get("soloId").toString());
         checkAC("New order was not created", idLastOrderBeforeTest.equals(idLastOrderAfterTest) , false);
 
         String orderStatus = utilsForDB.getOrderStatus(idLastOrderAfterTest);

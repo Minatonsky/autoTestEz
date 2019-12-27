@@ -57,6 +57,7 @@ public class FinancesPage extends ParentPage {
 
 
     public boolean comparePaidOrderStatus(String orderStatus) {
+        logger.info("orderStatus = " + orderStatus);
         return orderStatus.equals("3");
     }
 
@@ -77,12 +78,13 @@ public class FinancesPage extends ParentPage {
     public void payCurrentInvoiceForOrderByManager(String currentDue, String quantityOfDevices, String quantityCameraCP){
         if (Integer.parseInt(currentDue) == 0 & Integer.parseInt(quantityOfDevices) == 0 & Integer.parseInt(quantityCameraCP) == 0) {
             actionsWithOurElements.clickOnElement(payCurrentInvoiceButton);
-            waitABit(2);
+            waitABit(3);
             actionsWithOurElements.clickOnElement(currentCreditCard);
-            waitABit(2);
+            waitABit(3);
             actionsWithOurElements.clickOnElement(payNowButton);
             waitABit(5);
             actionsWithOurElements.clickOnElement(closeSuccessPopUp);
+            logger.info("closeSuccessPopUp");
             waitABit(2);
             logger.info("Current Invoice was paid");
         } else logger.info("Do not need pay invoice");

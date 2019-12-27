@@ -44,7 +44,7 @@ public class ParentFleetOrderParamsTest extends ParentTest {String  typeOfDevice
     Map personalDataForEldOrder = excelDriver.getData(configProperties.DATA_FILE_PATH() + "testEldOrder.xls", "personalData");
     Map dataForFleet = excelDriver.getData(configProperties.DATA_FILE_PATH() + "testLogin.xls", "validFleetLogin");
     Map dataForManagerValidLogIn = excelDriver.getData(configProperties.DATA_FILE_PATH() + "testLogin.xls", "ManagerLogin");
-
+    String fleetString = "fleetId";
 
     @Parameterized.Parameters()
     public static Collection testData() throws IOException {
@@ -55,8 +55,8 @@ public class ParentFleetOrderParamsTest extends ParentTest {String  typeOfDevice
     @Before
     @Test
     public void fleetDoNewOrder() throws  SQLException, IOException, ClassNotFoundException {
-        userEldPage.checkAndCancelNewOrderBeforeTestFleet(dataForFleet.get("fleetId").toString());
-        String idLastOrderBeforeTest = utilsForDB.getLastOrderIdForFleet(dataForFleet.get("fleetId").toString());
+        userEldPage.checkAndCancelNewOrderBeforeTest(fleetString, dataForFleet.get("fleetId").toString());
+        String idLastOrderBeforeTest = utilsForDB.getLastOrderId(fleetString, dataForFleet.get("fleetId").toString());
         utilsForDB.setCurrentDueForFleet(currentDue, dataForFleet.get("fleetId").toString());
 
         loginPage.userValidLogIn(dataForFleet.get("login").toString(), dataForFleet.get("pass").toString());
@@ -88,7 +88,7 @@ public class ParentFleetOrderParamsTest extends ParentTest {String  typeOfDevice
         modalEldPage.doAgreementCamera(quantityCameraCP);
         modalEldPage.clickButtonOrder();
         waitABit(5);
-        String idLastOrderAfterTest = utilsForDB.getLastOrderIdForFleet(dataForFleet.get("fleetId").toString());
+        String idLastOrderAfterTest = utilsForDB.getLastOrderId(fleetString, dataForFleet.get("fleetId").toString());
         checkAC("New order wasn`t created", idLastOrderBeforeTest.equals(idLastOrderAfterTest) , false);
 
         String orderStatus = utilsForDB.getOrderStatus(idLastOrderAfterTest);

@@ -23,11 +23,6 @@ public class TestMethods {
     UtilsForDB utilsForDB = new UtilsForDB();
 
 
-    @Test
-    public void testDBGetLastOrderIdFromFleet() throws SQLException, IOException, ClassNotFoundException {
-        UtilsForDB utilsForDB = new UtilsForDB();
-        utilsForDB.getLastOrderIdForFleet("518");
-    }
 
     @Test
     public void testDBSetCurrentDueForFleet() throws SQLException, IOException, ClassNotFoundException {
@@ -53,13 +48,6 @@ public class TestMethods {
         }
     }
 
-    @Test
-    public void testGetRowNumberNewOrder() throws SQLException, IOException, ClassNotFoundException {
-        UtilsForDB utilsForDB = new UtilsForDB();
-        String userId = "518";
-        int tempCountOrder = utilsForDB.getCountNewOrderForFleet(userId);
-        System.out.println(tempCountOrder);
-    }
 
     @Test
     public void testIsEldBlinded() throws SQLException, IOException, ClassNotFoundException {

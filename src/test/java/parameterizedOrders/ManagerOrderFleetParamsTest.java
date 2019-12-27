@@ -19,8 +19,8 @@ public class ManagerOrderFleetParamsTest extends ParentManagerOrderParamsTest {
 
     @Test
     public void managerDoOrderFleetAgree() throws IOException, InterruptedException, SQLException, ClassNotFoundException {
-        userEldPage.checkAndCancelNewOrderBeforeTestFleet(dataFleetId.get("fleetId").toString());
-        String idLastOrderBeforeTest = utilsForDB.getLastOrderIdForFleet(dataFleetId.get("fleetId").toString());
+        userEldPage.checkAndCancelNewOrderBeforeTest(fleetString, dataFleetId.get("fleetId").toString());
+        String idLastOrderBeforeTest = utilsForDB.getLastOrderId(fleetString, dataFleetId.get("fleetId").toString());
         utilsForDB.setCurrentDueForFleet(currentDue, dataFleetId.get("fleetId").toString());
 
         managerModalEldPage.selectFleetInOrder(dataForFleetValidLogIn.get("usdot").toString());
@@ -46,7 +46,7 @@ public class ManagerOrderFleetParamsTest extends ParentManagerOrderParamsTest {
 
         modalEldPage.clickButtonOrder();
         waitABit(3);
-        String idLastOrderAfterTest = utilsForDB.getLastOrderIdForFleet(dataFleetId.get("fleetId").toString());
+        String idLastOrderAfterTest = utilsForDB.getLastOrderId(fleetString, dataFleetId.get("fleetId").toString());
         checkAC("New order was not created", idLastOrderBeforeTest.equals(idLastOrderAfterTest) , false);
 
         String orderStatus = utilsForDB.getOrderStatus(idLastOrderAfterTest);
@@ -63,6 +63,7 @@ public class ManagerOrderFleetParamsTest extends ParentManagerOrderParamsTest {
         dashboardPage.openMenuDash();
         dashboardPage.goToFinancesPage();
         financesPage.payCurrentInvoiceForOrderByManager(currentDue, quantityOfDevices, quantityCameraCP);
+        waitABit(5);
         String dueForLastOrder = utilsForDB.getLastDueForFleet(dataFleetId.get("fleetId").toString());
         checkAC("Balance is not correct", financesPage.compareBalance(currentDue, dueForLastOrder), true);
 
@@ -89,8 +90,8 @@ public class ManagerOrderFleetParamsTest extends ParentManagerOrderParamsTest {
     }
     @Test
     public void managerDoOrderFleetCanceled() throws IOException, InterruptedException, SQLException, ClassNotFoundException {
-        userEldPage.checkAndCancelNewOrderBeforeTestFleet(dataFleetId.get("fleetId").toString());
-        String idLastOrderBeforeTest = utilsForDB.getLastOrderIdForFleet(dataFleetId.get("fleetId").toString());
+        userEldPage.checkAndCancelNewOrderBeforeTest(fleetString, dataFleetId.get("fleetId").toString());
+        String idLastOrderBeforeTest = utilsForDB.getLastOrderId(fleetString, dataFleetId.get("fleetId").toString());
         utilsForDB.setCurrentDueForFleet(currentDue, dataFleetId.get("fleetId").toString());
 
         managerModalEldPage.selectFleetInOrder(dataForFleetValidLogIn.get("usdot").toString());
@@ -116,7 +117,7 @@ public class ManagerOrderFleetParamsTest extends ParentManagerOrderParamsTest {
 
         modalEldPage.clickButtonOrder();
         waitABit(3);
-        String idLastOrderAfterTest = utilsForDB.getLastOrderIdForFleet(dataFleetId.get("fleetId").toString());
+        String idLastOrderAfterTest = utilsForDB.getLastOrderId(fleetString, dataFleetId.get("fleetId").toString());
         checkAC("New order was not created", idLastOrderBeforeTest.equals(idLastOrderAfterTest) , false);
 
         String orderStatus = utilsForDB.getOrderStatus(idLastOrderAfterTest);

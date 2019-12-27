@@ -17,7 +17,7 @@ public class FleetOrderParamsTest extends ParentFleetOrderParamsTest {
     @Test
     public void cancelDevicesByFleet() throws SQLException, IOException, ClassNotFoundException {
 
-        String idLastOrderAfterTest = utilsForDB.getLastOrderIdForFleet(dataForFleet.get("fleetId").toString());
+        String idLastOrderAfterTest = utilsForDB.getLastOrderId(fleetString, dataForFleet.get("fleetId").toString());
         String dueForLastOrder = utilsForDB.getLastDueForFleet(dataForFleet.get("fleetId").toString());
         dashboardPage.goToEldPage();
         userEldPage.cancelEldDevices(idLastOrderAfterTest, quantityOfDevices, quantityCameraCP);
@@ -34,7 +34,7 @@ public class FleetOrderParamsTest extends ParentFleetOrderParamsTest {
         tearDown();
         setUp();
 
-        String idLastOrderAfterTest = utilsForDB.getLastOrderIdForFleet(dataForFleet.get("fleetId").toString());
+        String idLastOrderAfterTest = utilsForDB.getLastOrderId(fleetString, dataForFleet.get("fleetId").toString());
         String dueForLastOrder = utilsForDB.getLastDueForFleet(dataForFleet.get("fleetId").toString());
         loginPage.userValidLogIn(dataForManagerValidLogIn.get("login").toString(),dataForManagerValidLogIn.get("pass").toString());
         dashboardPage.openMenuDash();
@@ -65,7 +65,7 @@ USER CHECK IF BALANCE NOT CHANGED
         tearDown();
         setUp();
 
-        String idLastOrderAfterTest = utilsForDB.getLastOrderIdForFleet(dataForFleet.get("fleetId").toString());
+        String idLastOrderAfterTest = utilsForDB.getLastOrderId(fleetString, dataForFleet.get("fleetId").toString());
         String dueForLastOrder = utilsForDB.getLastDueForFleet(dataForFleet.get("fleetId").toString());
 
         loginPage.userValidLogIn(dataForManagerValidLogIn.get("login").toString(),dataForManagerValidLogIn.get("pass").toString());

@@ -25,6 +25,7 @@ import static libs.Utils.waitABit;
 public class ParentTest {
     WebDriver webDriver;
 
+
     Logger logger = Logger.getLogger(getClass());
     protected LoginPage loginPage;
     protected DashboardPage dashboardPage;
@@ -37,6 +38,7 @@ public class ParentTest {
     protected ChargePage chargePage;
 
     String browser = System.getProperty("browser");
+
     protected static ConfigProperties configProperties = ConfigFactory.create(ConfigProperties.class);
 
 
@@ -54,6 +56,7 @@ public class ParentTest {
         userEldPage = new UserEldPage(webDriver);
         managerModalEldPage = new ManagerModalEldPage(webDriver);
         chargePage = new ChargePage(webDriver);
+
     }
 
     private void initDriver(String browserName) {

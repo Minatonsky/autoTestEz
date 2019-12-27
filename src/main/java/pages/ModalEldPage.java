@@ -406,9 +406,9 @@ EQUIPMENT LEASE AND SOFTWARE SUBSCRIPTION SERVICE AGREEMENT
 ORDER LIST
  */
     public void selectDeviceTypeId(String valueDeviceTypeId, String quantityOfDevices){
-        if (Integer.parseInt(quantityOfDevices) > 0) {
+//        if (Integer.parseInt(quantityOfDevices) > 0) {
             actionsWithOurElements.selectValueInDropDown(device_type_idInput, valueDeviceTypeId);
-        } else logger.info("No devices in order");
+//        } else logger.info("No devices in order");
     }
     public void enterQuantityDevices(String quantityOfDevices) {
         if (Integer.parseInt(quantityOfDevices) > 0) {

@@ -46,6 +46,9 @@ public class ParentManagerOrderParamsTest  extends ParentTest {
     Map dataForFleetValidLogIn = excelDriver.getData(configProperties.DATA_FILE_PATH() + "testLogin.xls", "validFleetLogin");
     Map dataFleetId = excelDriver.getData(configProperties.DATA_FILE_PATH() + "testLogin.xls", "validFleetLogin");
 
+    String fleetString = "fleetId";
+    String userIdString = "userId";
+
     @Parameterized.Parameters()
     public static Collection testData() throws IOException {
         InputStream spreadsheet = new FileInputStream(configProperties.DATA_FILE_PATH() + "testParameterizedOrder.xls");

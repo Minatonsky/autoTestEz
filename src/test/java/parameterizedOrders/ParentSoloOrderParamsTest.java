@@ -20,6 +20,7 @@ import static libs.Utils.waitABit;
 
 @RunWith(Parameterized.class)
 
+
 public class ParentSoloOrderParamsTest extends ParentTest { String  typeOfDevices, quantityOfDevices, typeOfPaymentMethod, quantityPinCable, quantityOBDPinCable, quantitySticker, quantityCameraCP, valueSdCard, quantityCameraSVA, typeOfPaymentMethodCamera, neededStatePickUpFromOffice, neededStateOvernightDelivery, currentDue;
 
     public ParentSoloOrderParamsTest(String typeOfDevices, String quantityOfDevices, String typeOfPaymentMethod, String quantityPinCable, String quantityOBDPinCable, String quantitySticker, String quantityCameraCP, String valueSdCard, String quantityCameraSVA, String typeOfPaymentMethodCamera, String neededStatePickUpFromOffice, String neededStateOvernightDelivery, String currentDue) throws IOException {
@@ -44,6 +45,8 @@ public class ParentSoloOrderParamsTest extends ParentTest { String  typeOfDevice
     Map dataSoloId = ExcelDriver.getData(configProperties.DATA_FILE_PATH() + "testLogin.xls", "validSoloLogin");
     Map dataForManagerValidLogIn = excelDriver.getData(configProperties.DATA_FILE_PATH() + "testLogin.xls", "ManagerLogin");
 
+    String userIdString = "userId";
+
     @Parameterized.Parameters()
     public static Collection testData() throws IOException {
         InputStream spreadsheet = new FileInputStream(configProperties.DATA_FILE_PATH() + "testParameterizedOrder.xls");
@@ -52,8 +55,8 @@ public class ParentSoloOrderParamsTest extends ParentTest { String  typeOfDevice
     @Before
     @Test
     public void soloDoNewOrder() throws SQLException, IOException, ClassNotFoundException {
-        userEldPage.checkAndCancelNewOrderBeforeTestSolo(dataSoloId.get("soloId").toString());
-        String idLastOrderBeforeTest = utilsForDB.getLastOrderIdForSolo(dataSoloId.get("soloId").toString());
+        userEldPage.checkAndCancelNewOrderBeforeTest(userIdString, dataSoloId.get("soloId").toString());
+        String idLastOrderBeforeTest = utilsForDB.getLastOrderId(userIdString, dataSoloId.get("soloId").toString());
         utilsForDB.setCurrentDueForSolo(currentDue, dataSoloId.get("soloId").toString());
 
         loginPage.userValidLogIn(dataForSoloValidLogIn.get("login").toString(),dataForSoloValidLogIn.get("pass").toString());
@@ -84,7 +87,7 @@ public class ParentSoloOrderParamsTest extends ParentTest { String  typeOfDevice
         modalEldPage.clickButtonOrder();
         waitABit(2);
 
-        String idLastOrderAfterTest = utilsForDB.getLastOrderIdForSolo(dataSoloId.get("soloId").toString());
+        String idLastOrderAfterTest = utilsForDB.getLastOrderId(userIdString, dataSoloId.get("soloId").toString());
         checkAC("New order was not created", idLastOrderBeforeTest.equals(idLastOrderAfterTest) , false);
 
         String orderStatus = utilsForDB.getOrderStatus(idLastOrderAfterTest);
