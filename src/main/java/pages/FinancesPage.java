@@ -47,9 +47,11 @@ public class FinancesPage extends ParentPage {
         double moduleTempDueForLastOrder = Math.abs(tempDueForLastOrder);
         if (Integer.parseInt(quantityOfDevices) > 0) {
             if (Integer.parseInt(currentDue) > 0) {
+                logger.info("# FinanceBalance = " + getFinanceBalance().substring(1));
                 return Double.parseDouble(getFinanceBalance().substring(1)) == tempBalance1;
             } else if (Integer.parseInt(currentDue) == 0) {
-                return Double.parseDouble(getFinanceBalance().substring(1)) == moduleTempDueForLastOrder;
+                logger.info("# FinanceBalance = " + getFinanceBalance().substring(1));
+                return Double.parseDouble(getFinanceBalance().substring(1)) == 0;
             } else return false;
         } else return true;
 

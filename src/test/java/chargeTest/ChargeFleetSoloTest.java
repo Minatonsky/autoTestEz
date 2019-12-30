@@ -74,8 +74,8 @@ public class ChargeFleetSoloTest extends ParentChargeTest{
         String setPaidTillForAllTariff = chargePage.paidTillForAllTariff();
 
         String setTariffStartMonthIOSX = chargePage.tariffStartForMonthToMonth(countMonthForTariffStartMonthIOSX, 2);
-        String setTariffStartMonthGeometrics = chargePage.tariffStartForMonthToMonth(countMonthForTariffStartMonthGeometrics, 22);
-        String setTariffStartMonthEzHard = chargePage.tariffStartForMonthToMonth(countMonthForTariffStartMonthEzHard, 22);
+        String setTariffStartMonthGeometrics = chargePage.tariffStartForMonthToMonth(countMonthForTariffStartMonthGeometrics, 6);
+        String setTariffStartMonthEzHard = chargePage.tariffStartForMonthToMonth(countMonthForTariffStartMonthEzHard, 3);
 
         String setTariffStartOneYear = chargePage.tariffStartForOneYear(1);
         String setTariffStartTwoYears = chargePage.tariffStartForTwoYears(2);

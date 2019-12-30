@@ -142,10 +142,10 @@ public class ModalEldPage extends ParentPage {
     @FindBy(xpath = ".//*[@data-id='1']")
     private WebElement oneYearSubscription;
 
-    @FindBy(xpath = ".//*[@data-id='10']")
+    @FindBy(xpath = ".//div[@data-id='10']")
     private WebElement oneYearSubscription10;
 
-    @FindBy(xpath = ".//*[@data-id='13']")
+    @FindBy(xpath = ".//div[@data-id='13']")
     private WebElement oneYearSubscription13;
 
     @FindBy(xpath = ".//div[@data-id='2']")
@@ -416,7 +416,7 @@ ORDER LIST
         } else logger.info("No devices in order");
     }
     public void enterQuantityPinCable(String quantityPinCable, String valueDeviceTypeId){
-        if (Integer.parseInt(quantityPinCable) > 0 && valueDeviceTypeId.equals("1")) {
+        if (Integer.parseInt(quantityPinCable) > 0 && (valueDeviceTypeId.equals("1") || valueDeviceTypeId.equals("2"))) {
             actionsWithOurElements.enterTextToElement(quantityPinCableInput, quantityPinCable);
         } else if (Integer.parseInt(quantityPinCable) > 0 && valueDeviceTypeId.equals("3")){
             actionsWithOurElements.enterTextToElement(quantityEzHardWareCable, quantityPinCable);
@@ -490,15 +490,15 @@ PAYMENT METHODS ELD, CAMERA AND BUTTON ORDER
             } else if (Integer.parseInt(typeOfPaymentMethod) == 9){
                 actionsWithOurElements.clickOnElement(monthToMonth9);
                 actionsWithOurElements.clickOnElement(monthToMonth9);
-                logger.info("Payment Method monthToMonth was selected");
+                logger.info("Payment Method Smart monthToMonth was selected");
             } else if (Integer.parseInt(typeOfPaymentMethod) == 10){
                 actionsWithOurElements.clickOnElement(oneYearSubscription10);
                 actionsWithOurElements.clickOnElement(oneYearSubscription10);
-                logger.info("Payment Method oneYearSubscription was selected");
+                logger.info("Payment Method Smart oneYearSubscription was selected");
             } else if (Integer.parseInt(typeOfPaymentMethod) == 11){
                 actionsWithOurElements.clickOnElement(twoYearSubscription11);
                 actionsWithOurElements.clickOnElement(twoYearSubscription11);
-                logger.info("Payment Method twoYearSubscription was selected");
+                logger.info("Payment Method Smart twoYearSubscription was selected");
             } else if (Integer.parseInt(typeOfPaymentMethod) == 12){
                 actionsWithOurElements.clickOnElement(monthToMonth12);
                 actionsWithOurElements.clickOnElement(monthToMonth12);
@@ -518,8 +518,8 @@ PAYMENT METHODS ELD, CAMERA AND BUTTON ORDER
     }
 
     @Step
-    public void clickPaymentMethodsCamera(String typeOfPaymentMethodCamera, String quantityCameraCP){
-        if (Integer.parseInt(quantityCameraCP) > 0) {
+    public void clickPaymentMethodsCamera(String typeOfPaymentMethod, String typeOfPaymentMethodCamera, String quantityCameraCP){
+        if (Integer.parseInt(quantityCameraCP) > 0 && typeOfPaymentMethod.equals("1")) {
             if (Integer.parseInt(typeOfPaymentMethodCamera) == 7) {
                 actionsWithOurElements.clickOnElement(buyoutContract);
                 logger.info("Payment Method buyoutContract was selected");
@@ -666,21 +666,21 @@ COMPARE METHODS
     }
     public boolean compareEldPinCable(String quantityPinCable, String typeOfDevices){
         double tempPrice = Math.round((Integer.parseInt(quantityPinCable) * pinCablePrice) * 100.0) / 100.0;
-        if (Integer.parseInt(quantityPinCable) > 0 &&  typeOfDevices.equals("1")) {
+        if (Integer.parseInt(quantityPinCable) > 0 && (typeOfDevices.equals("1") || typeOfDevices.equals("2"))) {
             return Double.parseDouble(getEldPinCable().substring(1)) == tempPrice;
         } else if (Integer.parseInt(quantityPinCable) > 0 &&  typeOfDevices.equals("3")) {
             return Double.parseDouble(getEzHardPinCable().substring(1)) == tempPrice;
         }else return true;
     }
-    public boolean compareEldOBDPinCable(String quantityOBDPinCable){
+    public boolean compareEldOBDPinCable(String quantityOBDPinCable, String typeOfDevices){
         double tempPrice = Math.round((Integer.parseInt(quantityOBDPinCable) * pinCableOBDIIPrice) * 100.0) / 100.0;
-        if (Integer.parseInt(quantityOBDPinCable) > 0 ) {
+        if (Integer.parseInt(quantityOBDPinCable) > 0 && (typeOfDevices.equals("1") || typeOfDevices.equals("2"))) {
             return Double.parseDouble(getEldOBDPinCable().substring(1)) == tempPrice;
         } else return true;
     }
-    public boolean compareEldStickerLabel(String quantitySticker){
+    public boolean compareEldStickerLabel(String quantitySticker, String typeOfDevices){
         double tempPrice = Math.round((Integer.parseInt(quantitySticker) * stickerLabelPrice) * 100.0) / 100.0;
-        if (Integer.parseInt(quantitySticker) > 0 ) {
+        if (Integer.parseInt(quantitySticker) > 0 && (typeOfDevices.equals("1") || typeOfDevices.equals("2"))) {
             return Double.parseDouble(getEldStickerLabel().substring(1)) == tempPrice;
         } else return true;
     }
