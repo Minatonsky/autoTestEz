@@ -3226,3 +3226,1129 @@ Session ID: 4333c5bc3cb9330d4bf7968b7c5996d6
 2019-30-12 17:01:52   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
 2019-30-12 17:01:54   INFO [pages.ChargePage] : tempPaidTill: 2020-01-01
 2019-30-12 17:01:55   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-09-01 16:07:14   INFO [parameterizedOrders.FleetOrderParamsTest] : Chrome will be started
+2020-09-01 16:07:21   INFO [parameterizedOrders.FleetOrderParamsTest] : Chrome is started
+2020-09-01 16:07:26   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-09-01 16:07:29   INFO [pages.UserEldPage] : User have not Order with status New
+2020-09-01 16:07:29   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-09-01 16:07:30   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-09-01 16:07:37   INFO [pages.LoginPage] : Login Page was opened
+2020-09-01 16:07:37   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:07:38   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-09-01 16:07:38   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-09-01 16:07:38   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:07:46   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:07:49   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:07:55   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:07:58   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:07:59   INFO [libs.ActionsWithOurElements] : 1 was selected in Drop-down
+2020-09-01 16:07:59   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2020-09-01 16:08:00   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2020-09-01 16:08:00   INFO [libs.ActionsWithOurElements] : 1676475006 was inputted into element
+2020-09-01 16:08:00   INFO [libs.ActionsWithOurElements] : Street was inputted into element
+2020-09-01 16:08:00   INFO [libs.ActionsWithOurElements] : 2 was inputted into element
+2020-09-01 16:08:00   INFO [libs.ActionsWithOurElements] : Phoenix was inputted into element
+2020-09-01 16:08:01   INFO [libs.ActionsWithOurElements] : 30606 was inputted into element
+2020-09-01 16:08:01   INFO [libs.ActionsWithOurElements] : 2 was selected in Drop-down
+2020-09-01 16:08:03   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2020-09-01 16:08:08   INFO [pages.ModalEldPage] : No Pin Cable in order
+2020-09-01 16:08:08   INFO [pages.ModalEldPage] : No OBDP Cable in order
+2020-09-01 16:08:08   INFO [pages.ModalEldPage] : No Sticker in order
+2020-09-01 16:08:08   INFO [pages.ModalEldPage] : No Camera CP in order
+2020-09-01 16:08:08   INFO [pages.ModalEldPage] : No cd card in order
+2020-09-01 16:08:08   INFO [pages.ModalEldPage] : No camera sva in order
+2020-09-01 16:08:11   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:08:11   INFO [libs.ActionsWithOurElements] : checkbox was checked
+2020-09-01 16:08:11   INFO [libs.ActionsWithOurElements] : checkbox is already unchecked
+2020-09-01 16:08:11   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:08:11   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:08:11   INFO [pages.ModalEldPage] : Payment Method Smart oneYearSubscription was selected
+2020-09-01 16:08:11   INFO [pages.ModalEldPage] : Payment Method Camera was not selected, no camera in order
+2020-09-01 16:08:15   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:08:16   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:08:36   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2020-09-01 16:08:37   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:08:38   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:08:39   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:08:40   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:08:41   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:08:42   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:08:43   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:08:44   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:08:45   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:08:46   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:09:06   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2020-09-01 16:09:07   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:09:07   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:09:11   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-09-01 16:09:13   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-09-01 16:09:15   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:09:15   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:09:15   INFO [pages.ModalEldPage] : Agreement ELD was agreed
+2020-09-01 16:09:15   INFO [pages.ModalEldPage] : No agreement camera in order
+2020-09-01 16:09:15   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:09:20   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-09-01 16:09:23   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:09:23   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-09-01 16:09:24   INFO [pages.FinancesPage] : orderStatus = 3
+2020-09-01 16:09:25   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:09:25   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-09-01 16:09:28   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:09:31   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:09:34   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-09-01 16:09:37   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:09:38   INFO [parameterizedOrders.FleetOrderParamsTest] : Chrome will be started
+2020-09-01 16:09:43   INFO [parameterizedOrders.FleetOrderParamsTest] : Chrome is started
+2020-09-01 16:09:47   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-09-01 16:09:49   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-09-01 16:09:55   INFO [pages.LoginPage] : Login Page was opened
+2020-09-01 16:09:55   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:09:56   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2020-09-01 16:09:56   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-09-01 16:09:56   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:10:03   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:10:06   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:10:12   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:10:17   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:10:19   INFO [libs.ActionsWithOurElements] : 3947 was inputted into element
+2020-09-01 16:10:22   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:10:25   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:10:27   INFO [libs.ActionsWithOurElements] : 4 was selected in Drop-down
+2020-09-01 16:10:29   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:10:31   INFO [libs.ActionsWithOurElements] : 1 was selected in Drop-down
+2020-09-01 16:10:33   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:10:33   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-09-01 16:10:36   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:10:36   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-09-01 16:10:39   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:10:39   INFO [parameterizedOrders.FleetOrderParamsTest] : Chrome will be started
+2020-09-01 16:10:45   INFO [parameterizedOrders.FleetOrderParamsTest] : Chrome is started
+2020-09-01 16:10:54   INFO [pages.LoginPage] : Login Page was opened
+2020-09-01 16:10:54   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:10:54   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-09-01 16:10:54   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-09-01 16:10:55   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:11:01   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:11:04   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:11:11   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:11:15   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:11:15   INFO [parameterizedOrders.FleetOrderParamsTest] : Chrome will be started
+2020-09-01 16:11:20   INFO [parameterizedOrders.FleetOrderParamsTest] : Chrome is started
+2020-09-01 16:11:24   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-09-01 16:11:26   INFO [pages.UserEldPage] : User have not Order with status New
+2020-09-01 16:11:26   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-09-01 16:11:28   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-09-01 16:11:35   INFO [pages.LoginPage] : Login Page was opened
+2020-09-01 16:11:35   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:11:35   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-09-01 16:11:35   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-09-01 16:11:35   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:11:42   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:11:45   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:11:51   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:11:54   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:11:55   INFO [libs.ActionsWithOurElements] : 1 was selected in Drop-down
+2020-09-01 16:11:55   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2020-09-01 16:11:55   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2020-09-01 16:11:56   INFO [libs.ActionsWithOurElements] : 1676475006 was inputted into element
+2020-09-01 16:11:56   INFO [libs.ActionsWithOurElements] : Street was inputted into element
+2020-09-01 16:11:56   INFO [libs.ActionsWithOurElements] : 2 was inputted into element
+2020-09-01 16:11:56   INFO [libs.ActionsWithOurElements] : Phoenix was inputted into element
+2020-09-01 16:11:56   INFO [libs.ActionsWithOurElements] : 30606 was inputted into element
+2020-09-01 16:11:57   INFO [libs.ActionsWithOurElements] : 2 was selected in Drop-down
+2020-09-01 16:11:59   INFO [libs.ActionsWithOurElements] : 10 was inputted into element
+2020-09-01 16:12:04   INFO [libs.ActionsWithOurElements] : 2 was inputted into element
+2020-09-01 16:12:04   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2020-09-01 16:12:05   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2020-09-01 16:12:05   INFO [pages.ModalEldPage] : No Camera CP in order
+2020-09-01 16:12:05   INFO [pages.ModalEldPage] : No cd card in order
+2020-09-01 16:12:05   INFO [pages.ModalEldPage] : No camera sva in order
+2020-09-01 16:12:07   INFO [libs.ActionsWithOurElements] : checkbox is already unchecked
+2020-09-01 16:12:07   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:12:07   INFO [libs.ActionsWithOurElements] : checkbox was checked
+2020-09-01 16:12:07   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:12:07   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:12:07   INFO [pages.ModalEldPage] : Payment Method Smart monthToMonth was selected
+2020-09-01 16:12:07   INFO [pages.ModalEldPage] : Payment Method Camera was not selected, no camera in order
+2020-09-01 16:12:11   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:12:13   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:12:13   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-09-01 16:12:14   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:12:15   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:12:16   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:12:17   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:12:18   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:12:19   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:12:20   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:12:21   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:12:22   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:12:23   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:12:23   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-09-01 16:12:24   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:12:24   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:12:27   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-09-01 16:12:29   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-09-01 16:12:31   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:12:31   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:12:31   INFO [pages.ModalEldPage] : Agreement ELD was agreed
+2020-09-01 16:12:31   INFO [pages.ModalEldPage] : No agreement camera in order
+2020-09-01 16:12:32   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:12:37   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-09-01 16:12:39   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:12:39   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-09-01 16:12:41   INFO [pages.FinancesPage] : orderStatus = 3
+2020-09-01 16:12:42   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:12:42   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-09-01 16:12:45   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:12:48   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:12:51   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-09-01 16:12:53   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:12:54   INFO [parameterizedOrders.FleetOrderParamsTest] : Chrome will be started
+2020-09-01 16:12:59   INFO [parameterizedOrders.FleetOrderParamsTest] : Chrome is started
+2020-09-01 16:13:03   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-09-01 16:13:05   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-09-01 16:13:12   INFO [pages.LoginPage] : Login Page was opened
+2020-09-01 16:13:13   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:13:13   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2020-09-01 16:13:13   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-09-01 16:13:13   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:13:19   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:13:23   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:13:29   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:13:34   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:13:36   INFO [libs.ActionsWithOurElements] : 3948 was inputted into element
+2020-09-01 16:13:38   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:13:42   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:13:44   INFO [libs.ActionsWithOurElements] : 4 was selected in Drop-down
+2020-09-01 16:13:46   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:13:48   INFO [libs.ActionsWithOurElements] : 1 was selected in Drop-down
+2020-09-01 16:13:50   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:13:50   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-09-01 16:13:53   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:13:53   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-09-01 16:13:56   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:13:56   INFO [parameterizedOrders.FleetOrderParamsTest] : Chrome will be started
+2020-09-01 16:14:01   INFO [parameterizedOrders.FleetOrderParamsTest] : Chrome is started
+2020-09-01 16:14:11   INFO [pages.LoginPage] : Login Page was opened
+2020-09-01 16:14:11   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:14:11   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-09-01 16:14:11   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-09-01 16:14:11   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:14:18   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:14:21   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:14:27   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:14:31   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:14:32   INFO [parameterizedOrders.FleetOrderParamsTest] : Chrome will be started
+2020-09-01 16:14:37   INFO [parameterizedOrders.FleetOrderParamsTest] : Chrome is started
+2020-09-01 16:14:41   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-09-01 16:14:43   INFO [pages.UserEldPage] : User have not Order with status New
+2020-09-01 16:14:43   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-09-01 16:14:45   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-09-01 16:14:51   INFO [pages.LoginPage] : Login Page was opened
+2020-09-01 16:14:52   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:14:52   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-09-01 16:14:52   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-09-01 16:14:52   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:14:59   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:15:02   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:15:08   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:15:11   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:15:12   INFO [libs.ActionsWithOurElements] : 1 was selected in Drop-down
+2020-09-01 16:15:12   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2020-09-01 16:15:12   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2020-09-01 16:15:13   INFO [libs.ActionsWithOurElements] : 1676475006 was inputted into element
+2020-09-01 16:15:13   INFO [libs.ActionsWithOurElements] : Street was inputted into element
+2020-09-01 16:15:13   INFO [libs.ActionsWithOurElements] : 2 was inputted into element
+2020-09-01 16:15:13   INFO [libs.ActionsWithOurElements] : Phoenix was inputted into element
+2020-09-01 16:15:13   INFO [libs.ActionsWithOurElements] : 30606 was inputted into element
+2020-09-01 16:15:14   INFO [libs.ActionsWithOurElements] : 2 was selected in Drop-down
+2020-09-01 16:15:16   INFO [pages.ModalEldPage] : No devices in order
+2020-09-01 16:15:21   INFO [pages.ModalEldPage] : No Pin Cable in order
+2020-09-01 16:15:21   INFO [libs.ActionsWithOurElements] : 5 was inputted into element
+2020-09-01 16:15:21   INFO [pages.ModalEldPage] : No Sticker in order
+2020-09-01 16:15:21   INFO [pages.ModalEldPage] : No Camera CP in order
+2020-09-01 16:15:21   INFO [pages.ModalEldPage] : No cd card in order
+2020-09-01 16:15:21   INFO [pages.ModalEldPage] : No camera sva in order
+2020-09-01 16:15:23   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:15:23   INFO [libs.ActionsWithOurElements] : checkbox was checked
+2020-09-01 16:15:23   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:15:23   INFO [libs.ActionsWithOurElements] : checkbox was checked
+2020-09-01 16:15:23   INFO [pages.ModalEldPage] : Payment Method was not selected, no devices in order
+2020-09-01 16:15:23   INFO [pages.ModalEldPage] : Payment Method Camera was not selected, no camera in order
+2020-09-01 16:15:27   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:15:28   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:15:48   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2020-09-01 16:15:49   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:15:50   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:15:51   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:15:52   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:15:53   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:15:54   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:15:55   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:15:56   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:15:57   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:15:58   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:16:18   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2020-09-01 16:16:19   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:16:19   INFO [pages.ModalEldPage] : No agreement in order
+2020-09-01 16:16:19   INFO [pages.ModalEldPage] : No agreement camera in order
+2020-09-01 16:16:20   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:16:25   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-09-01 16:16:27   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:16:27   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-09-01 16:16:29   INFO [pages.FinancesPage] : orderStatus = 3
+2020-09-01 16:16:30   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:16:30   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-09-01 16:16:33   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:16:36   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:16:39   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-09-01 16:16:42   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:16:42   INFO [parameterizedOrders.FleetOrderParamsTest] : Chrome will be started
+2020-09-01 16:16:47   INFO [parameterizedOrders.FleetOrderParamsTest] : Chrome is started
+2020-09-01 16:16:52   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-09-01 16:16:53   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-09-01 16:17:00   INFO [pages.LoginPage] : Login Page was opened
+2020-09-01 16:17:00   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:17:00   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2020-09-01 16:17:01   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-09-01 16:17:01   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:17:07   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:17:10   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:17:17   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:17:22   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:17:24   INFO [libs.ActionsWithOurElements] : 3949 was inputted into element
+2020-09-01 16:17:26   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:17:29   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:17:31   INFO [libs.ActionsWithOurElements] : 4 was selected in Drop-down
+2020-09-01 16:17:34   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:17:36   INFO [libs.ActionsWithOurElements] : 1 was selected in Drop-down
+2020-09-01 16:17:38   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:17:38   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-09-01 16:17:41   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:17:41   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-09-01 16:17:43   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:17:44   INFO [parameterizedOrders.FleetOrderParamsTest] : Chrome will be started
+2020-09-01 16:17:49   INFO [parameterizedOrders.FleetOrderParamsTest] : Chrome is started
+2020-09-01 16:17:58   INFO [pages.LoginPage] : Login Page was opened
+2020-09-01 16:17:59   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:17:59   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-09-01 16:17:59   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-09-01 16:17:59   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:18:08   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:18:11   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:18:17   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:18:21   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:18:22   INFO [parameterizedOrders.FleetOrderParamsTest] : Chrome will be started
+2020-09-01 16:18:27   INFO [parameterizedOrders.FleetOrderParamsTest] : Chrome is started
+2020-09-01 16:18:31   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-09-01 16:18:33   INFO [pages.UserEldPage] : User have not Order with status New
+2020-09-01 16:18:33   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-09-01 16:18:34   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-09-01 16:18:42   INFO [pages.LoginPage] : Login Page was opened
+2020-09-01 16:18:42   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:18:42   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-09-01 16:18:42   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-09-01 16:18:42   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:18:49   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:18:52   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:18:58   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:19:01   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:19:02   INFO [libs.ActionsWithOurElements] : 1 was selected in Drop-down
+2020-09-01 16:19:02   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2020-09-01 16:19:03   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2020-09-01 16:19:03   INFO [libs.ActionsWithOurElements] : 1676475006 was inputted into element
+2020-09-01 16:19:03   INFO [libs.ActionsWithOurElements] : Street was inputted into element
+2020-09-01 16:19:03   INFO [libs.ActionsWithOurElements] : 2 was inputted into element
+2020-09-01 16:19:03   INFO [libs.ActionsWithOurElements] : Phoenix was inputted into element
+2020-09-01 16:19:03   INFO [libs.ActionsWithOurElements] : 30606 was inputted into element
+2020-09-01 16:19:04   INFO [libs.ActionsWithOurElements] : 2 was selected in Drop-down
+2020-09-01 16:19:06   INFO [libs.ActionsWithOurElements] : 5 was inputted into element
+2020-09-01 16:19:11   INFO [libs.ActionsWithOurElements] : 4 was inputted into element
+2020-09-01 16:19:12   INFO [libs.ActionsWithOurElements] : 5 was inputted into element
+2020-09-01 16:19:12   INFO [pages.ModalEldPage] : No Sticker in order
+2020-09-01 16:19:12   INFO [pages.ModalEldPage] : No Camera CP in order
+2020-09-01 16:19:12   INFO [pages.ModalEldPage] : No cd card in order
+2020-09-01 16:19:12   INFO [pages.ModalEldPage] : No camera sva in order
+2020-09-01 16:19:14   INFO [libs.ActionsWithOurElements] : checkbox is already unchecked
+2020-09-01 16:19:14   INFO [libs.ActionsWithOurElements] : checkbox is already unchecked
+2020-09-01 16:19:14   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:19:14   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:19:14   INFO [pages.ModalEldPage] : Payment Method Smart twoYearSubscription was selected
+2020-09-01 16:19:14   INFO [pages.ModalEldPage] : Payment Method Camera was not selected, no camera in order
+2020-09-01 16:19:18   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:19:19   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:19:19   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-09-01 16:19:20   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:19:21   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:19:22   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:19:23   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:19:24   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:19:25   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:19:26   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:19:27   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:19:28   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:19:29   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:19:29   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-09-01 16:19:31   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:19:31   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:19:34   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-09-01 16:19:36   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-09-01 16:19:38   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:19:38   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:19:38   INFO [pages.ModalEldPage] : Agreement ELD was agreed
+2020-09-01 16:19:38   INFO [pages.ModalEldPage] : No agreement camera in order
+2020-09-01 16:19:38   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:19:43   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-09-01 16:19:46   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:19:46   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-09-01 16:19:48   INFO [pages.FinancesPage] : orderStatus = 3
+2020-09-01 16:19:49   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:19:49   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-09-01 16:19:51   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:19:55   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:19:58   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-09-01 16:20:00   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:20:01   INFO [parameterizedOrders.FleetOrderParamsTest] : Chrome will be started
+2020-09-01 16:20:06   INFO [parameterizedOrders.FleetOrderParamsTest] : Chrome is started
+2020-09-01 16:20:10   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-09-01 16:20:12   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-09-01 16:20:19   INFO [pages.LoginPage] : Login Page was opened
+2020-09-01 16:20:19   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:20:19   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2020-09-01 16:20:19   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-09-01 16:20:19   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:20:26   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:20:29   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:20:35   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:20:40   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:20:42   INFO [libs.ActionsWithOurElements] : 3950 was inputted into element
+2020-09-01 16:20:44   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:20:48   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:20:50   INFO [libs.ActionsWithOurElements] : 4 was selected in Drop-down
+2020-09-01 16:20:52   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:20:54   INFO [libs.ActionsWithOurElements] : 1 was selected in Drop-down
+2020-09-01 16:20:56   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:20:56   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-09-01 16:20:59   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:20:59   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-09-01 16:21:02   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:21:02   INFO [parameterizedOrders.FleetOrderParamsTest] : Chrome will be started
+2020-09-01 16:21:07   INFO [parameterizedOrders.FleetOrderParamsTest] : Chrome is started
+2020-09-01 16:21:18   INFO [pages.LoginPage] : Login Page was opened
+2020-09-01 16:21:18   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:21:18   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-09-01 16:21:18   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-09-01 16:21:18   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:21:25   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:21:28   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:21:34   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:21:38   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:21:39   INFO [parameterizedOrders.FleetOrderParamsTest] : Chrome will be started
+2020-09-01 16:21:44   INFO [parameterizedOrders.FleetOrderParamsTest] : Chrome is started
+2020-09-01 16:21:48   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-09-01 16:21:50   INFO [pages.UserEldPage] : User have not Order with status New
+2020-09-01 16:21:50   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-09-01 16:21:52   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-09-01 16:21:58   INFO [pages.LoginPage] : Login Page was opened
+2020-09-01 16:21:59   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:21:59   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-09-01 16:21:59   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-09-01 16:21:59   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:22:07   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:22:10   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:22:16   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:22:19   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:22:20   INFO [libs.ActionsWithOurElements] : 1 was selected in Drop-down
+2020-09-01 16:22:20   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2020-09-01 16:22:20   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2020-09-01 16:22:21   INFO [libs.ActionsWithOurElements] : 1676475006 was inputted into element
+2020-09-01 16:22:21   INFO [libs.ActionsWithOurElements] : Street was inputted into element
+2020-09-01 16:22:21   INFO [libs.ActionsWithOurElements] : 2 was inputted into element
+2020-09-01 16:22:21   INFO [libs.ActionsWithOurElements] : Phoenix was inputted into element
+2020-09-01 16:22:21   INFO [libs.ActionsWithOurElements] : 30606 was inputted into element
+2020-09-01 16:22:22   INFO [libs.ActionsWithOurElements] : 2 was selected in Drop-down
+2020-09-01 16:22:24   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2020-09-01 16:22:29   INFO [pages.ModalEldPage] : No Pin Cable in order
+2020-09-01 16:22:29   INFO [pages.ModalEldPage] : No OBDP Cable in order
+2020-09-01 16:22:29   INFO [pages.ModalEldPage] : No Sticker in order
+2020-09-01 16:22:29   INFO [pages.ModalEldPage] : No Camera CP in order
+2020-09-01 16:22:29   INFO [pages.ModalEldPage] : No cd card in order
+2020-09-01 16:22:29   INFO [pages.ModalEldPage] : No camera sva in order
+2020-09-01 16:22:31   INFO [libs.ActionsWithOurElements] : checkbox is already unchecked
+2020-09-01 16:22:31   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:22:31   INFO [libs.ActionsWithOurElements] : checkbox was checked
+2020-09-01 16:22:31   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:22:32   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:22:32   INFO [pages.ModalEldPage] : Payment Method Smart monthToMonth was selected
+2020-09-01 16:22:32   INFO [pages.ModalEldPage] : Payment Method Camera was not selected, no camera in order
+2020-09-01 16:22:36   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:22:37   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:22:37   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-09-01 16:22:38   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:22:39   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:22:40   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:22:41   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:22:42   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:22:43   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:22:44   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:22:45   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:22:46   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:22:47   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:22:47   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-09-01 16:22:48   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:22:48   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:22:51   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-09-01 16:22:53   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-09-01 16:22:55   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:22:55   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:22:55   INFO [pages.ModalEldPage] : Agreement ELD was agreed
+2020-09-01 16:22:55   INFO [pages.ModalEldPage] : No agreement camera in order
+2020-09-01 16:22:56   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:23:01   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-09-01 16:23:03   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:23:03   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-09-01 16:23:05   INFO [pages.FinancesPage] : orderStatus = 3
+2020-09-01 16:23:06   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:23:06   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-09-01 16:23:09   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:23:12   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:23:15   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-09-01 16:23:17   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:23:18   INFO [parameterizedOrders.FleetOrderParamsTest] : Chrome will be started
+2020-09-01 16:23:23   INFO [parameterizedOrders.FleetOrderParamsTest] : Chrome is started
+2020-09-01 16:23:27   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-09-01 16:23:29   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-09-01 16:23:36   INFO [pages.LoginPage] : Login Page was opened
+2020-09-01 16:23:36   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:23:36   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2020-09-01 16:23:37   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-09-01 16:23:37   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:23:43   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:23:46   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:23:53   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:23:58   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:24:00   INFO [libs.ActionsWithOurElements] : 3951 was inputted into element
+2020-09-01 16:24:02   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:24:05   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:24:07   INFO [libs.ActionsWithOurElements] : 4 was selected in Drop-down
+2020-09-01 16:24:10   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:24:12   INFO [libs.ActionsWithOurElements] : 1 was selected in Drop-down
+2020-09-01 16:24:14   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:24:14   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-09-01 16:24:17   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:24:17   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-09-01 16:24:19   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:24:20   INFO [parameterizedOrders.FleetOrderParamsTest] : Chrome will be started
+2020-09-01 16:24:25   INFO [parameterizedOrders.FleetOrderParamsTest] : Chrome is started
+2020-09-01 16:24:35   INFO [pages.LoginPage] : Login Page was opened
+2020-09-01 16:24:35   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:24:35   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-09-01 16:24:35   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-09-01 16:24:36   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:24:42   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:24:45   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:24:52   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:24:56   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:24:56   INFO [parameterizedOrders.FleetOrderParamsTest] : Chrome will be started
+2020-09-01 16:25:01   INFO [parameterizedOrders.FleetOrderParamsTest] : Chrome is started
+2020-09-01 16:25:06   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-09-01 16:25:07   INFO [pages.UserEldPage] : User have not Order with status New
+2020-09-01 16:25:07   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-09-01 16:25:09   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-09-01 16:25:16   INFO [pages.LoginPage] : Login Page was opened
+2020-09-01 16:25:16   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:25:16   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-09-01 16:25:16   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-09-01 16:25:16   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:25:23   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:25:26   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:25:33   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:25:36   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:25:36   INFO [libs.ActionsWithOurElements] : 1 was selected in Drop-down
+2020-09-01 16:25:37   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2020-09-01 16:25:37   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2020-09-01 16:25:37   INFO [libs.ActionsWithOurElements] : 1676475006 was inputted into element
+2020-09-01 16:25:37   INFO [libs.ActionsWithOurElements] : Street was inputted into element
+2020-09-01 16:25:37   INFO [libs.ActionsWithOurElements] : 2 was inputted into element
+2020-09-01 16:25:38   INFO [libs.ActionsWithOurElements] : Phoenix was inputted into element
+2020-09-01 16:25:38   INFO [libs.ActionsWithOurElements] : 30606 was inputted into element
+2020-09-01 16:25:38   INFO [libs.ActionsWithOurElements] : 2 was selected in Drop-down
+2020-09-01 16:25:40   INFO [libs.ActionsWithOurElements] : 3 was inputted into element
+2020-09-01 16:25:46   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2020-09-01 16:25:46   INFO [libs.ActionsWithOurElements] : 3 was inputted into element
+2020-09-01 16:25:46   INFO [libs.ActionsWithOurElements] : 5 was inputted into element
+2020-09-01 16:25:46   INFO [pages.ModalEldPage] : No Camera CP in order
+2020-09-01 16:25:46   INFO [pages.ModalEldPage] : No cd card in order
+2020-09-01 16:25:46   INFO [pages.ModalEldPage] : No camera sva in order
+2020-09-01 16:25:49   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:25:49   INFO [libs.ActionsWithOurElements] : checkbox was checked
+2020-09-01 16:25:49   INFO [libs.ActionsWithOurElements] : checkbox is already unchecked
+2020-09-01 16:25:49   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:25:49   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:25:49   INFO [pages.ModalEldPage] : Payment Method Smart twoYearSubscription was selected
+2020-09-01 16:25:49   INFO [pages.ModalEldPage] : Payment Method Camera was not selected, no camera in order
+2020-09-01 16:25:53   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:25:54   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:26:14   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2020-09-01 16:26:15   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:26:16   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:26:17   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:26:18   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:26:19   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:26:20   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:26:21   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:26:22   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:26:23   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:26:24   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:26:44   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2020-09-01 16:26:45   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:26:46   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:26:49   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-09-01 16:26:51   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-09-01 16:26:53   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:26:53   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:26:53   INFO [pages.ModalEldPage] : Agreement ELD was agreed
+2020-09-01 16:26:53   INFO [pages.ModalEldPage] : No agreement camera in order
+2020-09-01 16:26:53   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:26:58   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-09-01 16:27:01   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:27:01   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-09-01 16:27:03   INFO [pages.FinancesPage] : orderStatus = 3
+2020-09-01 16:27:04   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:27:04   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-09-01 16:27:06   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:27:09   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:27:12   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-09-01 16:27:15   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:27:16   INFO [parameterizedOrders.FleetOrderParamsTest] : Chrome will be started
+2020-09-01 16:27:21   INFO [parameterizedOrders.FleetOrderParamsTest] : Chrome is started
+2020-09-01 16:27:25   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-09-01 16:27:27   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-09-01 16:27:33   INFO [pages.LoginPage] : Login Page was opened
+2020-09-01 16:27:34   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:27:34   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2020-09-01 16:27:34   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-09-01 16:27:34   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:27:41   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:27:44   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:27:50   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:27:55   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:27:57   INFO [libs.ActionsWithOurElements] : 3952 was inputted into element
+2020-09-01 16:28:00   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:28:03   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:28:05   INFO [libs.ActionsWithOurElements] : 4 was selected in Drop-down
+2020-09-01 16:28:07   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:28:09   INFO [libs.ActionsWithOurElements] : 1 was selected in Drop-down
+2020-09-01 16:28:12   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:28:12   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-09-01 16:28:14   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:28:14   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-09-01 16:28:17   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:28:17   INFO [parameterizedOrders.FleetOrderParamsTest] : Chrome will be started
+2020-09-01 16:28:23   INFO [parameterizedOrders.FleetOrderParamsTest] : Chrome is started
+2020-09-01 16:28:32   INFO [pages.LoginPage] : Login Page was opened
+2020-09-01 16:28:32   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:28:33   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-09-01 16:28:33   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-09-01 16:28:33   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:28:40   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:28:43   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:28:49   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:28:53   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:28:54   INFO [parameterizedOrders.FleetOrderParamsTest] : Chrome will be started
+2020-09-01 16:28:59   INFO [parameterizedOrders.FleetOrderParamsTest] : Chrome is started
+2020-09-01 16:29:03   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-09-01 16:29:05   INFO [pages.UserEldPage] : User have not Order with status New
+2020-09-01 16:29:05   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-09-01 16:29:06   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-09-01 16:29:13   INFO [pages.LoginPage] : Login Page was opened
+2020-09-01 16:29:13   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:29:13   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-09-01 16:29:13   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-09-01 16:29:14   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:29:20   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:29:23   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:29:29   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:29:33   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:29:33   INFO [libs.ActionsWithOurElements] : 1 was selected in Drop-down
+2020-09-01 16:29:34   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2020-09-01 16:29:34   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2020-09-01 16:29:34   INFO [libs.ActionsWithOurElements] : 1676475006 was inputted into element
+2020-09-01 16:29:34   INFO [libs.ActionsWithOurElements] : Street was inputted into element
+2020-09-01 16:29:34   INFO [libs.ActionsWithOurElements] : 2 was inputted into element
+2020-09-01 16:29:35   INFO [libs.ActionsWithOurElements] : Phoenix was inputted into element
+2020-09-01 16:29:35   INFO [libs.ActionsWithOurElements] : 30606 was inputted into element
+2020-09-01 16:29:35   INFO [libs.ActionsWithOurElements] : 2 was selected in Drop-down
+2020-09-01 16:29:37   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2020-09-01 16:29:42   INFO [pages.ModalEldPage] : No Pin Cable in order
+2020-09-01 16:29:42   INFO [pages.ModalEldPage] : No OBDP Cable in order
+2020-09-01 16:29:42   INFO [pages.ModalEldPage] : No Sticker in order
+2020-09-01 16:29:42   INFO [pages.ModalEldPage] : No Camera CP in order
+2020-09-01 16:29:42   INFO [pages.ModalEldPage] : No cd card in order
+2020-09-01 16:29:42   INFO [pages.ModalEldPage] : No camera sva in order
+2020-09-01 16:29:45   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:29:45   INFO [libs.ActionsWithOurElements] : checkbox was checked
+2020-09-01 16:29:45   INFO [libs.ActionsWithOurElements] : checkbox is already unchecked
+2020-09-01 16:30:25  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: .//*[@data-id='1']' (tried for 20 second(s) with 500 milliseconds interval)
+2020-09-01 16:30:25   INFO [parameterizedOrders.FleetOrderParamsTest] : Chrome will be started
+2020-09-01 16:30:31   INFO [parameterizedOrders.FleetOrderParamsTest] : Chrome is started
+2020-09-01 16:30:35   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-09-01 16:30:36   INFO [pages.UserEldPage] : User have not Order with status New
+2020-09-01 16:30:36   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-09-01 16:30:38   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-09-01 16:30:44   INFO [pages.LoginPage] : Login Page was opened
+2020-09-01 16:30:45   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:30:45   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-09-01 16:30:45   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-09-01 16:30:45   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:30:52   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:30:55   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:31:01   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:31:04   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:31:05   INFO [libs.ActionsWithOurElements] : 1 was selected in Drop-down
+2020-09-01 16:31:05   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2020-09-01 16:31:05   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2020-09-01 16:31:06   INFO [libs.ActionsWithOurElements] : 1676475006 was inputted into element
+2020-09-01 16:31:06   INFO [libs.ActionsWithOurElements] : Street was inputted into element
+2020-09-01 16:31:06   INFO [libs.ActionsWithOurElements] : 2 was inputted into element
+2020-09-01 16:31:06   INFO [libs.ActionsWithOurElements] : Phoenix was inputted into element
+2020-09-01 16:31:06   INFO [libs.ActionsWithOurElements] : 30606 was inputted into element
+2020-09-01 16:31:07   INFO [libs.ActionsWithOurElements] : 1 was selected in Drop-down
+2020-09-01 16:31:09   INFO [libs.ActionsWithOurElements] : 2 was inputted into element
+2020-09-01 16:31:14   INFO [libs.ActionsWithOurElements] : 2 was inputted into element
+2020-09-01 16:31:14   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2020-09-01 16:31:15   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2020-09-01 16:31:15   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2020-09-01 16:31:15   INFO [libs.ActionsWithOurElements] : 8 was selected in Drop-down
+2020-09-01 16:31:15   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2020-09-01 16:31:18   INFO [libs.ActionsWithOurElements] : checkbox is already unchecked
+2020-09-01 16:31:18   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:31:18   INFO [libs.ActionsWithOurElements] : checkbox was checked
+2020-09-01 16:31:18   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:31:18   INFO [pages.ModalEldPage] : Payment Method monthToMonth was selected
+2020-09-01 16:31:18   INFO [pages.ModalEldPage] : Payment Method Camera was not selected, no camera in order
+2020-09-01 16:31:22   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:31:23   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:31:23   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-09-01 16:31:24   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:31:25   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:31:26   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:31:27   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:31:28   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:31:29   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:31:31   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:31:32   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:31:33   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:31:34   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:31:34   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-09-01 16:31:35   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:31:35   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:31:38   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-09-01 16:31:40   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-09-01 16:31:42   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:31:42   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:31:42   INFO [pages.ModalEldPage] : Agreement ELD was agreed
+2020-09-01 16:31:43   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:31:43   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-09-01 16:31:43   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:31:44   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:31:44   INFO [pages.ModalEldPage] : Agreement camera was agreed
+2020-09-01 16:31:44   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:31:49   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-09-01 16:31:52   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:31:52   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-09-01 16:31:54   INFO [pages.FinancesPage] : orderStatus = 3
+2020-09-01 16:31:55   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:31:55   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-09-01 16:31:57   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:32:01   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:32:04   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-09-01 16:32:06   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:32:07   INFO [parameterizedOrders.FleetOrderParamsTest] : Chrome will be started
+2020-09-01 16:32:12   INFO [parameterizedOrders.FleetOrderParamsTest] : Chrome is started
+2020-09-01 16:32:16   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-09-01 16:32:18   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-09-01 16:32:25   INFO [pages.LoginPage] : Login Page was opened
+2020-09-01 16:32:25   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:32:25   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2020-09-01 16:32:26   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-09-01 16:32:26   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:32:32   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:32:35   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:32:42   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:32:47   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:32:49   INFO [libs.ActionsWithOurElements] : 3953 was inputted into element
+2020-09-01 16:32:51   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:32:54   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:32:56   INFO [libs.ActionsWithOurElements] : 4 was selected in Drop-down
+2020-09-01 16:32:58   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:33:01   INFO [libs.ActionsWithOurElements] : 1 was selected in Drop-down
+2020-09-01 16:33:03   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:33:03   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-09-01 16:33:06   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:33:06   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-09-01 16:33:08   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:33:09   INFO [parameterizedOrders.FleetOrderParamsTest] : Chrome will be started
+2020-09-01 16:33:14   INFO [parameterizedOrders.FleetOrderParamsTest] : Chrome is started
+2020-09-01 16:33:23   INFO [pages.LoginPage] : Login Page was opened
+2020-09-01 16:33:23   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:33:24   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-09-01 16:33:24   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-09-01 16:33:24   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:33:30   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:33:34   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:33:40   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:33:44   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:33:44   INFO [parameterizedOrders.FleetOrderParamsTest] : Chrome will be started
+2020-09-01 16:33:50   INFO [parameterizedOrders.FleetOrderParamsTest] : Chrome is started
+2020-09-01 16:33:54   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-09-01 16:33:55   INFO [pages.UserEldPage] : User have not Order with status New
+2020-09-01 16:33:55   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-09-01 16:33:57   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-09-01 16:34:03   INFO [pages.LoginPage] : Login Page was opened
+2020-09-01 16:34:04   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:34:04   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-09-01 16:34:04   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-09-01 16:34:04   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:34:12   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:34:15   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:34:21   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:34:24   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:34:25   INFO [libs.ActionsWithOurElements] : 1 was selected in Drop-down
+2020-09-01 16:34:25   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2020-09-01 16:34:26   INFO [libs.ActionsWithOurElements] : Autotest was inputted into element
+2020-09-01 16:34:26   INFO [libs.ActionsWithOurElements] : 1676475006 was inputted into element
+2020-09-01 16:34:26   INFO [libs.ActionsWithOurElements] : Street was inputted into element
+2020-09-01 16:34:26   INFO [libs.ActionsWithOurElements] : 2 was inputted into element
+2020-09-01 16:34:26   INFO [libs.ActionsWithOurElements] : Phoenix was inputted into element
+2020-09-01 16:34:27   INFO [libs.ActionsWithOurElements] : 30606 was inputted into element
+2020-09-01 16:34:27   INFO [libs.ActionsWithOurElements] : 1 was selected in Drop-down
+2020-09-01 16:34:29   INFO [pages.ModalEldPage] : No devices in order
+2020-09-01 16:34:34   INFO [pages.ModalEldPage] : No Pin Cable in order
+2020-09-01 16:34:34   INFO [pages.ModalEldPage] : No OBDP Cable in order
+2020-09-01 16:34:34   INFO [pages.ModalEldPage] : No Sticker in order
+2020-09-01 16:34:34   INFO [libs.ActionsWithOurElements] : 5 was inputted into element
+2020-09-01 16:34:34   INFO [libs.ActionsWithOurElements] : 7 was selected in Drop-down
+2020-09-01 16:34:34   INFO [libs.ActionsWithOurElements] : 3 was inputted into element
+2020-09-01 16:34:37   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:34:37   INFO [libs.ActionsWithOurElements] : checkbox was checked
+2020-09-01 16:34:37   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:34:37   INFO [libs.ActionsWithOurElements] : checkbox was checked
+2020-09-01 16:34:37   INFO [pages.ModalEldPage] : Payment Method was not selected, no devices in order
+2020-09-01 16:34:37   INFO [pages.ModalEldPage] : Payment Method Camera was not selected, no camera in order
+2020-09-01 16:34:41   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:34:42   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:35:02   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2020-09-01 16:35:03   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:35:04   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:35:05   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:35:06   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:35:07   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:35:08   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:35:09   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:35:10   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:35:11   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:35:12   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:35:32   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2020-09-01 16:35:33   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:35:33   INFO [pages.ModalEldPage] : No agreement in order
+2020-09-01 16:35:33   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:35:35   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-09-01 16:35:35   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:35:35   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:35:35   INFO [pages.ModalEldPage] : Agreement camera was agreed
+2020-09-01 16:35:35   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:35:40   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-09-01 16:35:43   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:35:43   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-09-01 16:35:44   INFO [pages.FinancesPage] : orderStatus = 3
+2020-09-01 16:35:45   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:35:45   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-09-01 16:35:48   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:35:51   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:35:54   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-09-01 16:35:57   INFO [parameterizedOrders.FleetOrderParamsTest] : AC passed
+2020-09-01 16:35:58   INFO [parameterizedOrders.FleetOrderParamsTest] : Chrome will be started
+2020-09-01 16:36:03   INFO [parameterizedOrders.FleetOrderParamsTest] : Chrome is started
+2020-09-01 16:36:07   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-09-01 16:36:09   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-09-01 16:36:15   INFO [pages.LoginPage] : Login Page was opened
+2020-09-01 16:36:15   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:36:16   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2020-09-01 16:36:16   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-09-01 16:36:16   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:36:22   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:36:25   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:36:32   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:36:37   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-09-01 16:36:39   INFO [libs.ActionsWithOurElements] : 3954 was inputted into element
+2020-10-01 14:52:11   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-10-01 14:52:13   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-10-01 14:52:15   INFO [pages.ChargePage] : # Temp Tariff Month Start 2019-11-05T14:52:15.596
+2020-10-01 14:52:15   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-10-01 14:52:17   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-10-01 14:52:19   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-10-01 14:52:20   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-10-01 14:52:22   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-10-01 14:52:40   INFO [pages.ChargePage] : Cron check fleets was run: 2020-01-10 12:52:24
+2020-10-01 14:52:40   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-10-01 14:52:58   INFO [pages.ChargePage] : Cron check fleets was run: 2020-01-10 12:52:42
+2020-10-01 14:52:58   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-10-01 14:53:14   INFO [pages.ChargePage] : Cron check fleets was run: 2020-01-10 12:52:59
+2020-10-01 14:53:14   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-10-01 14:53:30   INFO [pages.ChargePage] : Cron check fleets was run: 2020-01-10 12:53:16
+2020-10-01 14:59:02   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-10-01 14:59:04   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-10-01 14:59:06   INFO [pages.ChargePage] : # Temp Tariff Month Start 2019-11-05T14:59:06.199
+2020-10-01 14:59:06   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-10-01 14:59:07   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-10-01 14:59:09   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-10-01 14:59:11   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-10-01 14:59:12   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-10-01 14:59:28   INFO [pages.ChargePage] : Cron check fleets was run: 2020-01-10 12:59:14
+2020-10-01 14:59:28   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-10-01 14:59:43   INFO [pages.ChargePage] : Cron check fleets was run: 2020-01-10 12:59:30
+2020-10-01 14:59:43   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-10-01 15:00:00   INFO [pages.ChargePage] : Cron check fleets was run: 2020-01-10 12:59:45
+2020-10-01 15:00:00   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-10-01 15:00:15   INFO [pages.ChargePage] : Cron check fleets was run: 2020-01-10 13:00:01
+2020-10-01 15:42:48   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-10-01 15:42:50   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-10-01 15:42:51   INFO [pages.ChargePage] : # Temp Tariff Month Start 2019-11-05T15:42:51.906
+2020-10-01 15:42:51   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-10-01 15:42:53   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-10-01 15:42:55   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-10-01 15:42:56   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-10-01 15:42:58   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-10-01 15:43:14   INFO [pages.ChargePage] : Cron check fleets was run: 2020-01-10 13:43:00
+2020-10-01 15:43:14   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-10-01 15:43:29   INFO [pages.ChargePage] : Cron check fleets was run: 2020-01-10 13:43:16
+2020-10-01 15:43:29   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-10-01 15:43:46   INFO [pages.ChargePage] : Cron check fleets was run: 2020-01-10 13:43:31
+2020-10-01 15:43:46   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-10-01 15:44:01   INFO [pages.ChargePage] : Cron check fleets was run: 2020-01-10 13:43:48
+2020-13-01 13:56:23   INFO [settingsTest.SoloDriverSettingsTest] : Chrome will be started
+2020-13-01 13:56:30   INFO [settingsTest.SoloDriverSettingsTest] : Chrome is started
+2020-13-01 13:56:43   INFO [pages.LoginPage] : Login Page was opened
+2020-13-01 13:56:44   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-01 13:56:44   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-13-01 13:56:44   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-13-01 13:56:44   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-01 13:56:51   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-01 13:57:14  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (c3689e6dc94b7d2c7e6c0844f4d26634)] -> xpath: .//i[@class='fa fa-angle-double-left minimize-arrow']] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'DESKTOP-0PTGLHV', ip: '192.168.88.57', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.117, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\1\AppData\Local\Te...}, goog:chromeOptions: {debuggerAddress: localhost:57369}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c3689e6dc94b7d2c7e6c0844f4d26634
+2020-13-01 14:09:52   INFO [settingsTest.SoloDriverSettingsTest] : Chrome will be started
+2020-13-01 14:09:59   INFO [settingsTest.SoloDriverSettingsTest] : Chrome is started
+2020-13-01 14:10:11   INFO [pages.LoginPage] : Login Page was opened
+2020-13-01 14:10:11   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-01 14:10:12   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-13-01 14:10:12   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-13-01 14:10:12   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-01 14:10:19   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-01 14:10:42  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (1b0b042accb8662f5e2d5217e6ce9f3c)] -> xpath: .//i[@class='fa fa-angle-double-left minimize-arrow']] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'DESKTOP-0PTGLHV', ip: '192.168.88.57', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.117, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\1\AppData\Local\Te...}, goog:chromeOptions: {debuggerAddress: localhost:58433}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 1b0b042accb8662f5e2d5217e6ce9f3c
+2020-13-01 14:11:19   INFO [settingsTest.SoloDriverSettingsTest] : Chrome will be started
+2020-13-01 14:11:26   INFO [settingsTest.SoloDriverSettingsTest] : Chrome is started
+2020-13-01 14:11:38   INFO [pages.LoginPage] : Login Page was opened
+2020-13-01 14:11:39   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-01 14:11:39   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-13-01 14:11:39   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-13-01 14:11:39   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-01 14:11:46   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-01 14:12:09  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (b752bebc416eb1d74f42d306b65e5a8f)] -> xpath: .//i[@class='fa fa-angle-double-left minimize-arrow']] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'DESKTOP-0PTGLHV', ip: '192.168.88.57', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.117, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\1\AppData\Local\Te...}, goog:chromeOptions: {debuggerAddress: localhost:58590}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: b752bebc416eb1d74f42d306b65e5a8f
+2020-13-01 14:31:55   INFO [settingsTest.SoloDriverSettingsTest] : Chrome will be started
+2020-13-01 14:32:01   INFO [settingsTest.SoloDriverSettingsTest] : Chrome is started
+2020-13-01 14:32:14   INFO [pages.LoginPage] : Login Page was opened
+2020-13-01 14:32:14   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-01 14:32:14   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-13-01 14:32:15   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-13-01 14:32:15   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-01 14:32:25   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-01 14:32:28   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-01 14:33:14  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: .//a[@href='/dash/settings']' (tried for 20 second(s) with 500 milliseconds interval)
+2020-13-01 14:35:26   INFO [settingsTest.SoloDriverSettingsTest] : Chrome will be started
+2020-13-01 14:35:33   INFO [settingsTest.SoloDriverSettingsTest] : Chrome is started
+2020-13-01 14:35:50   INFO [pages.LoginPage] : Login Page was opened
+2020-13-01 14:35:50   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-01 14:35:50   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-13-01 14:35:50   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-13-01 14:35:50   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-01 14:35:58   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-01 14:36:01   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-01 14:36:27  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: .//a[@href='/dash/settings/account/]' (tried for 20 second(s) with 500 milliseconds interval)
+2020-13-01 14:36:56   INFO [settingsTest.SoloDriverSettingsTest] : Chrome will be started
+2020-13-01 14:37:03   INFO [settingsTest.SoloDriverSettingsTest] : Chrome is started
+2020-13-01 14:37:16   INFO [pages.LoginPage] : Login Page was opened
+2020-13-01 14:37:16   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-01 14:37:16   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-13-01 14:37:17   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-13-01 14:37:17   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-01 14:37:23   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-01 14:37:26   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-01 14:37:33   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-01 14:47:14   INFO [settingsTest.SoloDriverSettingsTest] : Chrome will be started
+2020-13-01 14:47:21   INFO [settingsTest.SoloDriverSettingsTest] : Chrome is started
+2020-13-01 14:47:37   INFO [pages.LoginPage] : Login Page was opened
+2020-13-01 14:47:37   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-01 14:47:37   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-13-01 14:47:37   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-13-01 14:47:38   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-01 14:47:44   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-01 14:47:47   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-01 14:47:54   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-01 14:48:37  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: .//a[@href='dash/settings/driver_settings/']' (tried for 20 second(s) with 500 milliseconds interval)
+2020-13-01 14:49:24   INFO [settingsTest.SoloDriverSettingsTest] : Chrome will be started
+2020-13-01 14:49:31   INFO [settingsTest.SoloDriverSettingsTest] : Chrome is started
+2020-13-01 14:49:44   INFO [pages.LoginPage] : Login Page was opened
+2020-13-01 14:49:44   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-01 14:49:44   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-13-01 14:49:44   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-13-01 14:49:44   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-01 14:49:51   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-01 14:49:54   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-01 14:50:00   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-01 14:50:06   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-01 15:28:16   INFO [settingsTest.SoloDriverSettingsTest] : Chrome will be started
+2020-13-01 15:28:23   INFO [settingsTest.SoloDriverSettingsTest] : Chrome is started
+2020-13-01 15:28:36   INFO [pages.LoginPage] : Login Page was opened
+2020-13-01 15:28:36   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-01 15:28:37   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-13-01 15:28:37   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-13-01 15:28:37   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-01 15:28:44   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-01 15:28:48   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-01 15:28:54   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-01 15:28:59   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-01 15:29:19  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (907745b598c1260a6ebd9547706f0ea9)] -> id: smsCheck] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'DESKTOP-0PTGLHV', ip: '192.168.88.57', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.117, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\1\AppData\Local\Te...}, goog:chromeOptions: {debuggerAddress: localhost:64449}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 907745b598c1260a6ebd9547706f0ea9
+2020-13-01 15:31:19   INFO [settingsTest.SoloDriverSettingsTest] : Chrome will be started
+2020-13-01 15:31:26   INFO [settingsTest.SoloDriverSettingsTest] : Chrome is started
+2020-13-01 15:31:38   INFO [pages.LoginPage] : Login Page was opened
+2020-13-01 15:31:38   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-01 15:31:38   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-13-01 15:31:39   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-13-01 15:31:39   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-01 15:31:45   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-01 15:31:48   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-01 15:31:54   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-01 15:31:59   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-01 15:32:01  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <label for="smsCheck">...</label> is not clickable at point (764, 912). Other element would receive the click: <div class="footer-container">...</div>
+  (Session info: chrome=79.0.3945.117)
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'DESKTOP-0PTGLHV', ip: '192.168.88.57', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.117, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\1\AppData\Local\Te...}, goog:chromeOptions: {debuggerAddress: localhost:64729}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 5ba4ebd63cb8e6e0edf2adc43b9b915e
+2020-13-01 15:32:35   INFO [settingsTest.SoloDriverSettingsTest] : Chrome will be started
+2020-13-01 15:32:41   INFO [settingsTest.SoloDriverSettingsTest] : Chrome is started
+2020-13-01 15:32:54   INFO [pages.LoginPage] : Login Page was opened
+2020-13-01 15:32:54   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-01 15:32:54   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-13-01 15:32:55   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-13-01 15:32:55   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-01 15:33:01   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-01 15:33:05   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-01 15:33:11   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-01 15:33:16   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-01 15:33:20  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <label for="smsCheck">...</label> is not clickable at point (764, 912). Other element would receive the click: <div class="footer-container">...</div>
+  (Session info: chrome=79.0.3945.117)
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'DESKTOP-0PTGLHV', ip: '192.168.88.57', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.117, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\1\AppData\Local\Te...}, goog:chromeOptions: {debuggerAddress: localhost:64875}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c5e6c96a599ff94826b59f6f39663d79
+2020-13-01 15:38:18   INFO [settingsTest.SoloDriverSettingsTest] : Chrome will be started
+2020-13-01 15:38:25   INFO [settingsTest.SoloDriverSettingsTest] : Chrome is started
+2020-13-01 15:38:37   INFO [pages.LoginPage] : Login Page was opened
+2020-13-01 15:38:37   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-01 15:38:37   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-13-01 15:38:37   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-13-01 15:38:38   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-01 15:38:44   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-01 15:38:47   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-01 15:38:53   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-01 15:38:58   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-01 15:39:02  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <i></i> is not clickable at point (631, 913). Other element would receive the click: <div class="footer-container">...</div>
+  (Session info: chrome=79.0.3945.117)
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'DESKTOP-0PTGLHV', ip: '192.168.88.57', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.117, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\1\AppData\Local\Te...}, goog:chromeOptions: {debuggerAddress: localhost:65329}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 627a04ca7189432aa33385c4af1d5866
+2020-13-01 15:41:28   INFO [settingsTest.SoloDriverSettingsTest] : Chrome will be started
+2020-13-01 15:41:34   INFO [settingsTest.SoloDriverSettingsTest] : Chrome is started
+2020-13-01 15:41:47   INFO [pages.LoginPage] : Login Page was opened
+2020-13-01 15:41:47   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-01 15:41:47   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-13-01 15:41:47   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-13-01 15:41:47   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-01 15:41:54   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-01 15:41:57   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-01 15:42:03   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-01 15:42:08   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-01 15:42:42  ERROR [libs.ActionsWithOurElements] : Cannot work with element java.lang.NullPointerException
+2020-13-01 15:48:36   INFO [settingsTest.SoloDriverSettingsTest] : Chrome will be started
+2020-13-01 15:48:42   INFO [settingsTest.SoloDriverSettingsTest] : Chrome is started
+2020-13-01 15:48:55   INFO [pages.LoginPage] : Login Page was opened
+2020-13-01 15:48:55   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-01 15:48:55   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-13-01 15:48:55   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-13-01 15:48:56   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-01 15:49:02   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-01 15:49:05   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-01 15:49:11   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-01 15:49:16   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-01 15:49:20  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <i></i> is not clickable at point (631, 728). Other element would receive the click: <label for="smsCheck">...</label>
+  (Session info: chrome=79.0.3945.117)
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'DESKTOP-0PTGLHV', ip: '192.168.88.57', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.117, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\1\AppData\Local\Te...}, goog:chromeOptions: {debuggerAddress: localhost:49804}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 958a129c09454700247e36ba0c863216
+2020-13-01 15:49:57   INFO [settingsTest.SoloDriverSettingsTest] : Chrome will be started
+2020-13-01 15:50:04   INFO [settingsTest.SoloDriverSettingsTest] : Chrome is started
+2020-13-01 15:50:16   INFO [pages.LoginPage] : Login Page was opened
+2020-13-01 15:50:16   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-01 15:50:16   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-13-01 15:50:16   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-13-01 15:50:16   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-01 15:50:23   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-01 15:50:26   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-01 15:50:33   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-01 15:50:38   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-01 15:51:21  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //label[@for='smsCheck']/div[3]/div[6]/div/label/i' (tried for 20 second(s) with 500 milliseconds interval)
+2020-13-01 16:34:48   INFO [settingsTest.SoloDriverSettingsTest] : Chrome will be started
+2020-13-01 16:34:55   INFO [settingsTest.SoloDriverSettingsTest] : Chrome is started
+2020-13-01 16:35:08   INFO [pages.LoginPage] : Login Page was opened
+2020-13-01 16:35:08   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-01 16:35:08   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-13-01 16:35:08   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-13-01 16:35:08   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-01 16:35:15   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-01 16:35:18   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-01 16:35:25   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-01 16:35:30   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-01 16:35:34  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <i></i> is not clickable at point (631, 728). Other element would receive the click: <label for="smsCheck">...</label>
+  (Session info: chrome=79.0.3945.117)
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'DESKTOP-0PTGLHV', ip: '192.168.88.57', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.117, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\1\AppData\Local\Te...}, goog:chromeOptions: {debuggerAddress: localhost:53180}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 520d5760e1883bfb0a37d57a1f74bc69

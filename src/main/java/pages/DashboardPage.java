@@ -20,6 +20,9 @@ public class DashboardPage extends ParentPage {
     @FindBy(xpath = ".//a[@href='/dash/finances/']")
     private WebElement menuPageFinances;
 
+    @FindBy(xpath = ".//a[@href='/dash/settings/account/']")
+    private WebElement menuPageSettings;
+
     @FindBy(xpath = ".//i[@class='fa fa-angle-double-left minimize-arrow']")
     private WebElement menuSizeButton;
 
@@ -42,6 +45,9 @@ public class DashboardPage extends ParentPage {
 
     public void clickOnMenuPageFinances(){
         actionsWithOurElements.clickOnElement(menuPageFinances);
+    }
+    public void clickOnMenuPageSettings(){
+        actionsWithOurElements.clickOnElement(menuPageSettings);
     }
 
     public void clickMenuSizeButton(){
@@ -68,6 +74,12 @@ public class DashboardPage extends ParentPage {
     public void goToFinancesPage(){
         waitABit(3);
         clickOnMenuPageFinances();
+        waitABit(3);
+    }
+    @Step
+    public void goToSettingPage(){
+        waitABit(3);
+        clickOnMenuPageSettings();
         waitABit(3);
     }
 }

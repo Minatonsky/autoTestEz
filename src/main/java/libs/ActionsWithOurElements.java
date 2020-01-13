@@ -3,6 +3,7 @@ package libs;
 import org.apache.log4j.Logger;
 import org.junit.Assert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -117,20 +118,6 @@ public class ActionsWithOurElements {
         }
     }
 
-    public boolean isElementInOrder(String xPathLocator) {
-        try {
-            WebElement webElementInOrder =  webDriver.findElement(By.xpath(xPathLocator));
-            webDriverWait20.until(ExpectedConditions.visibilityOf(webElementInOrder));
-            if (webElementInOrder.isDisplayed()){
-                logger.info("Element is displayed");
-                return true;
-            }else {
-                return false;
-            }
-        } catch (Exception e){
-            return false;
-        }
-    }
 
     public void clickOnElement(String xPathLocator) {
         try {
@@ -164,6 +151,28 @@ public class ActionsWithOurElements {
             logger.info("Can not move to element");
         }
     }
+
+    public void clickOnPseudoElement(String xPathLocator) {
+        try {
+            WebElement webElement = webDriver.findElement(By.xpath(xPathLocator));
+            webDriverWait20.until(ExpectedConditions.elementToBeClickable(webElement));
+            clickOnElement(webElement);
+        } catch (Exception e){
+            printErrorAndStopTest(e);
+        }
+    }
+    public void pseudoElement() throws InterruptedException {
+        String script = "return window.getComputedStyle(document.querySelector('Enter root class name here '),':after').getPropertyValue('content')";
+        Thread.sleep(3000);
+        JavascriptExecutor js = (JavascriptExecutor) webDriver;
+        String content = (String) js.executeScript(script);
+
+
+//        WebElement switchLabel = driver.findElement(By.cssSelector(".className"));
+//        String colorRGB = ((JavascriptExecutor)webDriver).executeScript("return window.getComputedStyle(arguments[0], ':before').getPropertyValue('background-color');",switchLabel).toString();
+
+    }
+
 
 
 }

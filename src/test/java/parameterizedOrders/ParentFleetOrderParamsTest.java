@@ -41,7 +41,7 @@ public class ParentFleetOrderParamsTest extends ParentTest {String  typeOfDevice
     }
     UtilsForDB utilsForDB = new UtilsForDB();
     ExcelDriver excelDriver = new ExcelDriver();
-    Map personalDataForEldOrder = excelDriver.getData(configProperties.DATA_FILE_PATH() + "testEldOrder.xls", "personalData");
+    Map personalDataForEldOrder = excelDriver.getData(configProperties.DATA_FILE_PATH() + "testSettings.xls", "personalData");
     Map dataForFleet = excelDriver.getData(configProperties.DATA_FILE_PATH() + "testLogin.xls", "validFleetLogin");
     Map dataForManagerValidLogIn = excelDriver.getData(configProperties.DATA_FILE_PATH() + "testLogin.xls", "ManagerLogin");
     String fleetString = "fleetId";

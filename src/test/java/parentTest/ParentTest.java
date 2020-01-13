@@ -36,6 +36,7 @@ public class ParentTest {
     protected UserEldPage userEldPage;
     protected ManagerModalEldPage managerModalEldPage;
     protected ChargePage chargePage;
+    protected SettingsPage settingsPage;
 
     String browser = System.getProperty("browser");
 
@@ -56,6 +57,7 @@ public class ParentTest {
         userEldPage = new UserEldPage(webDriver);
         managerModalEldPage = new ManagerModalEldPage(webDriver);
         chargePage = new ChargePage(webDriver);
+        settingsPage = new SettingsPage(webDriver);
 
     }
 

@@ -2,16 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="660eb711-957d-418e-9483-8b2931da6e6e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/SettingsPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/settingsTest/SoloDriverSettingsTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log/qalight.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/qalight.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/data/testEldOrder.xls" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/data/testSettings.xls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/data/testLogin.xls" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/data/testLogin.xls" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/data/testParameterizedOrder.xls" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/data/testParameterizedOrder.xls" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/FinancesPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/FinancesPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/ModalEldPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/ModalEldPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/chargeTest/ChargeFleetSoloTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/chargeTest/ChargeFleetSoloTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/parameterizedOrders/ManagerOrderFleetParamsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/parameterizedOrders/ManagerOrderFleetParamsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/parameterizedOrders/ManagerOrderSoloParamsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/parameterizedOrders/ManagerOrderSoloParamsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/libs/ActionsWithOurElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/libs/ActionsWithOurElements.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/DashboardPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/DashboardPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/chargeTest/ChargeDefaultersTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/chargeTest/ChargeDefaultersTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/parameterizedOrders/ParentFleetOrderParamsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/parameterizedOrders/ParentFleetOrderParamsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/parameterizedOrders/ParentManagerOrderParamsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/parameterizedOrders/ParentManagerOrderParamsTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/parameterizedOrders/ParentSoloOrderParamsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/parameterizedOrders/ParentSoloOrderParamsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/parentTest/ParentChargeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/parentTest/ParentChargeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/parentTest/ParentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/parentTest/ParentTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +100,23 @@
       <recent name="parameterizedOrders" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ChargeFleetSoloTest.chargeFleetTest">
+  <component name="RunManager" selected="JUnit.SoloDriverSettingsTest.setNewDataSettings">
+    <configuration name="ChargeDefaultersTest.makeFleetDefaulter" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="WorkSpace" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="chargeTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="chargeTest" />
+      <option name="MAIN_CLASS_NAME" value="chargeTest.ChargeDefaultersTest" />
+      <option name="METHOD_NAME" value="makeFleetDefaulter" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ChargeFleetSoloTest.chargeFleetTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="WorkSpace" />
       <extension name="coverage">
@@ -144,33 +165,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ManagerOrderFleetParamsTest.managerDoOrderFleetAgree" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SoloDriverSettingsTest.setNewDataSettings" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="WorkSpace" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="parameterizedOrders.*" />
+          <option name="PATTERN" value="settingsTest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="parameterizedOrders" />
-      <option name="MAIN_CLASS_NAME" value="parameterizedOrders.ManagerOrderFleetParamsTest" />
-      <option name="METHOD_NAME" value="managerDoOrderFleetAgree" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ManagerOrderFleetParamsTest.managerDoOrderFleetCanceled" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="WorkSpace" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="parameterizedOrders.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="parameterizedOrders" />
-      <option name="MAIN_CLASS_NAME" value="parameterizedOrders.ManagerOrderFleetParamsTest" />
-      <option name="METHOD_NAME" value="managerDoOrderFleetCanceled" />
+      <option name="PACKAGE_NAME" value="settingsTest" />
+      <option name="MAIN_CLASS_NAME" value="settingsTest.SoloDriverSettingsTest" />
+      <option name="METHOD_NAME" value="setNewDataSettings" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -238,19 +243,19 @@
     <list>
       <item itemvalue="JUnit.TestMethods.getEventNewOrder" />
       <item itemvalue="JUnit.FleetOrderParamsTest.managerCompletedOrder" />
-      <item itemvalue="JUnit.ManagerOrderFleetParamsTest.managerDoOrderFleetAgree" />
-      <item itemvalue="Maven.SoloOrders" />
-      <item itemvalue="JUnit.ManagerOrderFleetParamsTest.managerDoOrderFleetCanceled" />
       <item itemvalue="JUnit.ChargeFleetSoloTest.chargeFleetTest" />
       <item itemvalue="JUnit.ChargeMonthToMonthTariff.chargeMonthToMonthFleet" />
+      <item itemvalue="JUnit.ChargeDefaultersTest.makeFleetDefaulter" />
+      <item itemvalue="Maven.SoloOrders" />
+      <item itemvalue="JUnit.SoloDriverSettingsTest.setNewDataSettings" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SoloDriverSettingsTest.setNewDataSettings" />
+        <item itemvalue="JUnit.ChargeDefaultersTest.makeFleetDefaulter" />
+        <item itemvalue="JUnit.FleetOrderParamsTest.managerCompletedOrder" />
         <item itemvalue="JUnit.ChargeFleetSoloTest.chargeFleetTest" />
         <item itemvalue="JUnit.ChargeMonthToMonthTariff.chargeMonthToMonthFleet" />
-        <item itemvalue="JUnit.ManagerOrderFleetParamsTest.managerDoOrderFleetCanceled" />
-        <item itemvalue="JUnit.ManagerOrderFleetParamsTest.managerDoOrderFleetAgree" />
-        <item itemvalue="JUnit.FleetOrderParamsTest.managerCompletedOrder" />
       </list>
     </recent_temporary>
   </component>
@@ -283,13 +288,6 @@
       <workItem from="1562665338918" duration="52834000" />
       <workItem from="1562782581468" duration="9021000" />
       <workItem from="1562822119836" duration="58303000" />
-    </task>
-    <task id="LOCAL-00022" summary="cancel with params test was added">
-      <created>1563645302856</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1563645302856</updated>
     </task>
     <task id="LOCAL-00023" summary="manager do order with params test was added">
       <created>1563825094650</created>
@@ -627,7 +625,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577464119585</updated>
     </task>
-    <option name="localTasksCounter" value="71" />
+    <task id="LOCAL-00071" summary="refactoring 2 was add">
+      <created>1577721069875</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1577721069875</updated>
+    </task>
+    <option name="localTasksCounter" value="72" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -664,7 +669,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="new method if user has order with status New before test was add" />
     <MESSAGE value="refactor was add" />
     <MESSAGE value="refactor count was add" />
     <MESSAGE value="refactor price was add" />
@@ -689,33 +693,38 @@
     <MESSAGE value="new tariff was add" />
     <MESSAGE value="new tariff defaulters was add" />
     <MESSAGE value="refactoring was add" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactoring was add" />
+    <MESSAGE value="refactoring 2 was add" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactoring 2 was add" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="614" y="115" key="CommitChangelistDialog2" timestamp="1577464118562">
+    <state x="614" y="115" key="CommitChangelistDialog2" timestamp="1577721069202">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="614" y="115" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1577464118562" />
-    <state width="1877" height="206" key="GridCell.Tab.0.bottom" timestamp="1577721043592">
+    <state x="614" y="115" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1577721069202" />
+    <state width="1877" height="289" key="GridCell.Tab.0.bottom" timestamp="1578930316325">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="206" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1577721043592" />
-    <state width="1877" height="206" key="GridCell.Tab.0.center" timestamp="1577721043592">
+    <state width="1877" height="289" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1578930316325" />
+    <state width="1877" height="289" key="GridCell.Tab.0.center" timestamp="1578930316325">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="206" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1577721043592" />
-    <state width="1877" height="206" key="GridCell.Tab.0.left" timestamp="1577721043592">
+    <state width="1877" height="289" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1578930316325" />
+    <state width="1877" height="289" key="GridCell.Tab.0.left" timestamp="1578930316325">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="206" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1577721043592" />
-    <state width="1877" height="206" key="GridCell.Tab.0.right" timestamp="1577721043592">
+    <state width="1877" height="289" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1578930316325" />
+    <state width="1877" height="289" key="GridCell.Tab.0.right" timestamp="1578930316325">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="206" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1577721043592" />
-    <state x="552" y="254" key="Vcs.Push.Dialog.v2" timestamp="1577464133571">
+    <state width="1877" height="289" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1578930316325" />
+    <state x="540" y="256" key="IDE.errors.dialog" timestamp="1578584274068">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="254" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1577464133571" />
+    <state x="540" y="256" key="IDE.errors.dialog/0.0.1920.1040@0.0.1920.1040" timestamp="1578584274068" />
+    <state x="552" y="254" key="Vcs.Push.Dialog.v2" timestamp="1577721078625">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="254" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1577721078625" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

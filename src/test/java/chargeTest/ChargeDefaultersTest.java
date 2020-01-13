@@ -23,7 +23,7 @@ public class ChargeDefaultersTest extends ParentChargeTest {
     String userIdString = "userId";
 
     String soloId = "3455";
-    String fleetId = "518";
+    String fleetId = "578";
 
     int countMonthForTariffStartMonthIOSX = 3;
     int countMonthForTariffStartMonthGeometrics = 2;
