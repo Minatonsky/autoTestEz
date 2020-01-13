@@ -112,10 +112,10 @@ public class UserEldPage extends ParentPage {
 
     }
     @Step
-    public void checkAndCancelNewOrderBeforeTestFleet(String fleetId) throws SQLException, IOException, ClassNotFoundException {
-        int tempCountOrder = utilsForDB.getCountNewOrderForFleet(fleetId);
+    public void checkAndCancelNewOrderBeforeTest(String fleetUser, String fleetId) throws SQLException, IOException, ClassNotFoundException {
+        int tempCountOrder = utilsForDB.getCountNewOrder(fleetUser, fleetId);
         if (tempCountOrder > 0){
-            List<String> tempListWithOrderId = utilsForDB.getIdOrderWithStatusNewForFleet(fleetId);
+            List<String> tempListWithOrderId = utilsForDB.getIdOrderWithStatusNew(fleetUser, fleetId);
             for (String element :
                     tempListWithOrderId) {
                 utilsForDB.deleteEventNewOrder(element);
@@ -124,19 +124,7 @@ public class UserEldPage extends ParentPage {
             }
         } else logger.info("User have not Order with status New");
     }
-    @Step
-    public void checkAndCancelNewOrderBeforeTestSolo(String soloId) throws SQLException, IOException, ClassNotFoundException {
-        int tempCountOrder = utilsForDB.getCountNewOrderForSolo(soloId);
-        if (tempCountOrder > 0){
-            List<String> tempListWithOrderId = utilsForDB.getIdOrderWithStatusNewForSolo(soloId);
-            for (String element :
-                    tempListWithOrderId) {
-                utilsForDB.deleteEventNewOrder(element);
-                utilsForDB.changeStatusOrderToCancel(element);
-                logger.info("Order with status New was delete");
-            }
-        } else logger.info("User have not Order with status New");
-    }
+
 
 
 }

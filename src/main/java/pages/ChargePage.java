@@ -118,14 +118,19 @@ public class ChargePage {
     }
 
     @Step
-    public boolean checkIfTariffPresent(int monthIOSXTariff, int oneYearIOSXTariff, int twoYearsIOSXTariff, int monthGeometricsTariff, int oneYearGeometricsTariff, int twoYearsGeometricsTariff){
+    public boolean checkIfTariffPresent(int monthIOSXTariff, int oneYearIOSXTariff, int twoYearsIOSXTariff, int monthGeometricsTariff, int oneYearGeometricsTariff, int twoYearsGeometricsTariff, int countScannerMonthEzHardTariff,
+                                        int countScannerOneYearEzHardTariff, int countScannerTwoYearsEzHardTariff){
         logger.info("# COUNT MONTH TO MONTH IOSX TARIFF = " + monthIOSXTariff);
         logger.info("# COUNT ONE YEAR IOSX TARIFF = " + oneYearIOSXTariff);
         logger.info("# COUNT TWO YEARS IOSX TARIFF = " + twoYearsIOSXTariff);
         logger.info("# COUNT MONTH TO MONTH GEOMETRICS TARIFF = " + monthGeometricsTariff);
         logger.info("# COUNT ONE YEAR GEOMETRICS TARIFF = " + oneYearGeometricsTariff);
         logger.info("# COUNT TWO YEARS GEOMETRICS TARIFF = " + twoYearsGeometricsTariff);
-        if (monthIOSXTariff > 0 & oneYearIOSXTariff > 0 & twoYearsIOSXTariff > 0 & monthGeometricsTariff > 0 & oneYearGeometricsTariff > 0 & twoYearsGeometricsTariff > 0) {
+        logger.info("# COUNT MONTH TO MONTH EZ HARD TARIFF = " + countScannerMonthEzHardTariff);
+        logger.info("# COUNT ONE YEAR EZ HARD TARIFF = " + countScannerOneYearEzHardTariff);
+        logger.info("# COUNT TWO YEARS EZ HARD TARIFF = " + countScannerTwoYearsEzHardTariff);
+        if (monthIOSXTariff > 0 & oneYearIOSXTariff > 0 & twoYearsIOSXTariff > 0 & monthGeometricsTariff > 0 & oneYearGeometricsTariff > 0 & twoYearsGeometricsTariff > 0 & countScannerMonthEzHardTariff > 0
+        & countScannerOneYearEzHardTariff > 0 & countScannerTwoYearsEzHardTariff > 0) {
             return true;
         } else return false;
     }
@@ -317,6 +322,7 @@ public class ChargePage {
                     amountDue) {
                 sum += Double.parseDouble(element);
             }
+            logger.info("***** charge from db = " + Math.round((sum) * 100.0) / 100.0);
             boolean tempCompareDue = chargeByAllDevices == Math.round((sum) * 100.0) / 100.0;
             return tempCompareDue;
         } else {
@@ -460,7 +466,8 @@ public class ChargePage {
     }
 
     public void informationOfDeactivatedAndReturnedScanners(int countDeactivatedScannerMonthIOSXTariff, int countScannerMonthIOSXChargeReturned, int countScannerOneYearIOSXChargeReturned, int countScannerTwoYearIOSXChargeReturned,
-                                                            int countGeometricsMonthChargeReturnedScanner, int countGeometricsOneYearChargeReturnedScanner, int countGeometricsTwoYearChargeReturnedScanner) {
+                                                            int countGeometricsMonthChargeReturnedScanner, int countGeometricsOneYearChargeReturnedScanner, int countGeometricsTwoYearChargeReturnedScanner,
+                                                            int countEzHardMonthChargeReturnedScanner, int countEzHardOneYearChargeReturnedScanner, int countEzHardTwoYearChargeReturnedScanner) {
         logger.info("# Deactivated Month IOSX Tariff = " + countDeactivatedScannerMonthIOSXTariff);
         logger.info("# Month IOSX Charge Returned = " + countScannerMonthIOSXChargeReturned);
         logger.info("# One Year IOSX Charge Returned = " + countScannerOneYearIOSXChargeReturned);
@@ -469,14 +476,24 @@ public class ChargePage {
         logger.info("# Geometrics Month Charge Returned = " + countGeometricsMonthChargeReturnedScanner);
         logger.info("# Geometrics One Year Charge Returned = " + countGeometricsOneYearChargeReturnedScanner);
         logger.info("# Geometrics Two Year Charge Returned = " + countGeometricsTwoYearChargeReturnedScanner);
+
+        logger.info("# EZ HARD Month Charge Returned = " + countEzHardMonthChargeReturnedScanner);
+        logger.info("# EZ HARD One Year Charge Returned = " + countEzHardOneYearChargeReturnedScanner);
+        logger.info("# EZ HARD Two Year Charge Returned = " + countEzHardTwoYearChargeReturnedScanner);
     }
 
-    public void informationOfScannersMonth(int countScannerMonthIOSXTariff, int countScannerMonthGeometricsTariff, int countDeactivatedScannerMonthIOSXTariff, int countMonthIOSXChargeReturnedScanner, int countMonthGeometricsChargeReturnedScanner) {
+    public void informationOfScannersMonth(
+            int countScannerMonthIOSXTariff, int countDeactivatedScannerMonthIOSXTariff, int countMonthIOSXChargeReturnedScanner,
+            int countScannerMonthGeometricsTariff, int countMonthGeometricsChargeReturnedScanner,
+            int countScannerMonthEzHardTariff, int countMonthEzHardChargeReturnedScanner
+    ) {
         logger.info("# COUNT Scanner Month IOSX Tariff = " + countScannerMonthIOSXTariff);
-        logger.info("# count Scanner Month Geometrics Tariff = " + countScannerMonthGeometricsTariff);
         logger.info("# count Deactivated Scanner Month IOSX Tariff = " + countDeactivatedScannerMonthIOSXTariff);
         logger.info("# count Month IOSX Charge Returned Scanner = " + countMonthIOSXChargeReturnedScanner);
+        logger.info("# count Scanner Month Geometrics Tariff = " + countScannerMonthGeometricsTariff);
         logger.info("# count Month Geometric sCharge Returned Scanner = " + countMonthGeometricsChargeReturnedScanner);
+        logger.info("# count Scanner Month Ez hard Tariff = " + countScannerMonthEzHardTariff);
+        logger.info("# count Month Ez Hard sCharge Returned Scanner = " + countMonthEzHardChargeReturnedScanner);
     }
 }
 
