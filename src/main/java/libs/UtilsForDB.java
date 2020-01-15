@@ -476,6 +476,18 @@ public class UtilsForDB {
         dBMySQL.quit();
         return tempResult;
     }
+    @Step
+    public void setOffCheckBoxDriverSetting(String userId) throws SQLException, IOException, ClassNotFoundException {
+        dBMySQL = new Database("MySQL_PADB_DB", "MySQL");
+        dBMySQL.changeTable("UPDATE driversData dd SET dd.HazMat = 0, dd.Insurance = 0, dd.TankerEndorsment = 0, dd.yard = 0, dd.conv = 0, dd.hideEngineStatuses = 0, dd.Sms = 0 WHERE dd.userId = " + userId + " AND dd.companyId = 0;");
+        dBMySQL.quit();
+    }
+    @Step
+    public void set_0_AobrdMPHDriverSettings(String userId) throws SQLException, IOException, ClassNotFoundException {
+        dBMySQL = new Database("MySQL_PADB_DB", "MySQL");
+        dBMySQL.changeTable("UPDATE driversRules dr SET dr.aobrdMPH = 0 WHERE userId = " + userId + ";");
+        dBMySQL.quit();
+    }
 
 
 
