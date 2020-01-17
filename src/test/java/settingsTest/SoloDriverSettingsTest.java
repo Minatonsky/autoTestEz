@@ -1,6 +1,5 @@
 package settingsTest;
 
-import libs.ExcelDriver;
 import libs.UtilsForDB;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.junit.Test;
@@ -8,26 +7,21 @@ import parentTest.ParentTest;
 
 import java.io.IOException;
 import java.sql.SQLException;
-import java.util.Map;
 
 import static libs.Utils.getDateFormat;
 import static libs.Utils.waitABit;
 
 public class SoloDriverSettingsTest extends ParentTest {
     UtilsForDB utilsForDB = new UtilsForDB();
-    ExcelDriver excelDriver = new ExcelDriver();
-
-
-    Map dataForDriver = excelDriver.getData(configProperties.DATA_FILE_PATH() + "testLogin.xls", "driverLogin");
-
-    public SoloDriverSettingsTest() throws IOException {
-    }
+    String login = "den36@gmail.com";
+    String pass = "testtest";
+    String userId = "4401";
 
     @Test
     public void setNewDataSettings() throws SQLException, IOException, ClassNotFoundException {
-        utilsForDB.setOffCheckBoxDriverSetting(dataForDriver.get("userId").toString());
-        utilsForDB.set_0_AobrdMPHDriverSettings(dataForDriver.get("userId").toString());
-        loginPage.userValidLogIn(dataForDriver.get("login").toString(), dataForDriver.get("pass").toString());
+        utilsForDB.setOffCheckBoxDriverSetting(userId, "0");
+        utilsForDB.set_0_AobrdMPHDriverSettings(userId);
+        loginPage.userValidLogIn(login, pass);
         dashboardPage.openMenuDash();
         dashboardPage.goToSettingPage();
         settingsPage.clickOnDriverSettings();
@@ -78,6 +72,25 @@ public class SoloDriverSettingsTest extends ParentTest {
         waitABit(5);
         settingsPage.clickOnSave();
         waitABit(5);
+
+        checkAC("HazMat failed", utilsForDB.getValueFromSettings(userId, "HazMat").equals("1"), true);
+        checkAC("Insurance failed", utilsForDB.getValueFromSettings(userId, "Insurance").equals("1"), true);
+        checkAC("Tanker Endorsement failed", utilsForDB.getValueFromSettings(userId, "TankerEndorsment").equals("1"), true);
+        checkAC("Yard Mode failed", utilsForDB.getValueFromSettings(userId, "yard").equals("1"), true);
+        checkAC("Conveyance Mode failed", utilsForDB.getValueFromSettings(userId, "conv").equals("1"), true);
+//        checkAC("Hide Engine and Scanner statuses failed", utilsForDB.getValueFromSettings(userId, "hideEngineStatuses").equals("1"), true);
+        checkAC("Sms failed", utilsForDB.getValueFromSettings(userId, "Sms").equals("1"), true);
+
+        checkAC("AOBRD MPH failed", utilsForDB.checkAobrdMPHDriverSettings(userId), true);
+
+        checkAC("City failed", utilsForDB.getValueFromSettings(userId, "City").equals(city), true);
+        checkAC("Address failed", utilsForDB.getValueFromSettings(userId, "Address").equals(address), true);
+        checkAC("Notes failed", utilsForDB.getValueFromSettings(userId, "notes").equals(note), true);
+
+        checkAC("Phone failed", utilsForDB.getValueFromSettings(userId, "Phone").replaceAll("\\s+","").equals(phone), true);
+        checkAC("SSN failed", utilsForDB.getValueFromSettings(userId, "SSN").replaceAll("\\D+","").equals(ssn), true);
+        System.out.println(utilsForDB.getValueFromSettings(userId, "SSN").replaceAll("\\D+",""));
+        checkAC("EIN failed", utilsForDB.getValueFromSettings(userId, "EIN").replaceAll("\\D+","").equals(ein), true);
 
     }
 

@@ -476,17 +476,33 @@ public class UtilsForDB {
         dBMySQL.quit();
         return tempResult;
     }
+//    SETTINGS
     @Step
-    public void setOffCheckBoxDriverSetting(String userId) throws SQLException, IOException, ClassNotFoundException {
+    public void setOffCheckBoxDriverSetting(String userId, String checkBoxValue) throws SQLException, IOException, ClassNotFoundException {
         dBMySQL = new Database("MySQL_PADB_DB", "MySQL");
-        dBMySQL.changeTable("UPDATE driversData dd SET dd.HazMat = 0, dd.Insurance = 0, dd.TankerEndorsment = 0, dd.yard = 0, dd.conv = 0, dd.hideEngineStatuses = 0, dd.Sms = 0 WHERE dd.userId = " + userId + " AND dd.companyId = 0;");
+        dBMySQL.changeTable("UPDATE driversData dd SET dd.HazMat = " + checkBoxValue + ", dd.Insurance = " + checkBoxValue + ", dd.TankerEndorsment = " + checkBoxValue + ", dd.yard = " + checkBoxValue + ", dd.conv = " + checkBoxValue + ", dd.hideEngineStatuses = " + checkBoxValue + ", dd.Sms = " + checkBoxValue + " WHERE dd.userId = " + userId + " AND dd.companyId = 0;");
         dBMySQL.quit();
+    }
+
+    @Step
+    public String getValueFromSettings(String userId, String columnName) throws SQLException, IOException, ClassNotFoundException {
+        dBMySQL = new Database("MySQL_PADB_DB", "MySQL");
+        String tempValue = dBMySQL.selectValue("SELECT " + columnName + " FROM driversData WHERE userId = " + userId + " AND companyId = 0 ;");
+        dBMySQL.quit();
+        return tempValue;
     }
     @Step
     public void set_0_AobrdMPHDriverSettings(String userId) throws SQLException, IOException, ClassNotFoundException {
         dBMySQL = new Database("MySQL_PADB_DB", "MySQL");
         dBMySQL.changeTable("UPDATE driversRules dr SET dr.aobrdMPH = 0 WHERE userId = " + userId + ";");
         dBMySQL.quit();
+    }
+    @Step
+    public boolean checkAobrdMPHDriverSettings(String userId) throws SQLException, IOException, ClassNotFoundException {
+        dBMySQL = new Database("MySQL_PADB_DB", "MySQL");
+        boolean tempResult = dBMySQL.isRowPresent("SELECT * FROM driversRules WHERE userId = " + userId + " AND aobrdMPH > 0;");
+        dBMySQL.quit();
+        return tempResult;
     }
 
 

@@ -182,4 +182,9 @@ public class TestMethods {
         System.out.println(tempAmountList);
 
     }
+    @Test
+    public void test2(){
+        String output = "2-5-88";
+        System.out.printf(output.replaceAll("\\D+",""));
+    }
 }

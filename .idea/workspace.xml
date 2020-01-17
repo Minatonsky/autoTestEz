@@ -4,12 +4,9 @@
     <list default="true" id="660eb711-957d-418e-9483-8b2931da6e6e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log/qalight.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/qalight.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/data/testLogin.xls" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/data/testLogin.xls" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/data/testSettings.xls" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/data/testSettings.xls" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/libs/ActionsWithOurElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/libs/ActionsWithOurElements.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/libs/UtilsForDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/libs/UtilsForDB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/SettingsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/SettingsPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/settingsTest/SoloDriverSettingsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/settingsTest/SoloDriverSettingsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/unitTest/TestMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/unitTest/TestMethods.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,22 +123,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ChargeMonthToMonthTariff.chargeMonthToMonthFleet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="WorkSpace" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="chargeTest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="chargeTest" />
-      <option name="MAIN_CLASS_NAME" value="chargeTest.ChargeMonthToMonthTariff" />
-      <option name="METHOD_NAME" value="chargeMonthToMonthFleet" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="FleetOrderParamsTest.managerCompletedOrder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="WorkSpace" />
       <extension name="coverage">
@@ -185,6 +166,22 @@
       <option name="PACKAGE_NAME" value="unitTest" />
       <option name="MAIN_CLASS_NAME" value="unitTest.TestMethods" />
       <option name="METHOD_NAME" value="getEventNewOrder" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestMethods.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="WorkSpace" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="unitTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="unitTest" />
+      <option name="MAIN_CLASS_NAME" value="unitTest.TestMethods" />
+      <option name="METHOD_NAME" value="test2" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -237,18 +234,18 @@
       <item itemvalue="JUnit.TestMethods.getEventNewOrder" />
       <item itemvalue="JUnit.FleetOrderParamsTest.managerCompletedOrder" />
       <item itemvalue="JUnit.ChargeFleetSoloTest.chargeFleetTest" />
-      <item itemvalue="JUnit.ChargeMonthToMonthTariff.chargeMonthToMonthFleet" />
       <item itemvalue="JUnit.ChargeDefaultersTest.makeFleetDefaulter" />
-      <item itemvalue="Maven.SoloOrders" />
       <item itemvalue="JUnit.SoloDriverSettingsTest.setNewDataSettings" />
+      <item itemvalue="Maven.SoloOrders" />
+      <item itemvalue="JUnit.TestMethods.test2" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.SoloDriverSettingsTest.setNewDataSettings" />
+        <item itemvalue="JUnit.TestMethods.test2" />
         <item itemvalue="JUnit.ChargeDefaultersTest.makeFleetDefaulter" />
         <item itemvalue="JUnit.FleetOrderParamsTest.managerCompletedOrder" />
         <item itemvalue="JUnit.ChargeFleetSoloTest.chargeFleetTest" />
-        <item itemvalue="JUnit.ChargeMonthToMonthTariff.chargeMonthToMonthFleet" />
       </list>
     </recent_temporary>
   </component>
@@ -690,34 +687,34 @@
     <option name="LAST_COMMIT_MESSAGE" value="settingTest was add" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="614" y="115" key="CommitChangelistDialog2" timestamp="1578930348722">
+    <state x="614" y="115" key="CommitChangelistDialog2" timestamp="1579104051085">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="614" y="115" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1578930348722" />
-    <state width="1877" height="145" key="GridCell.Tab.0.bottom" timestamp="1579104023870">
+    <state x="614" y="115" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1579104051085" />
+    <state width="1877" height="277" key="GridCell.Tab.0.bottom" timestamp="1579276596242">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="145" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1579104023870" />
-    <state width="1877" height="145" key="GridCell.Tab.0.center" timestamp="1579104023870">
+    <state width="1877" height="277" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1579276596242" />
+    <state width="1877" height="277" key="GridCell.Tab.0.center" timestamp="1579276596242">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="145" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1579104023870" />
-    <state width="1877" height="145" key="GridCell.Tab.0.left" timestamp="1579104023870">
+    <state width="1877" height="277" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1579276596242" />
+    <state width="1877" height="277" key="GridCell.Tab.0.left" timestamp="1579276596242">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="145" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1579104023870" />
-    <state width="1877" height="145" key="GridCell.Tab.0.right" timestamp="1579104023870">
+    <state width="1877" height="277" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1579276596242" />
+    <state width="1877" height="277" key="GridCell.Tab.0.right" timestamp="1579276596242">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="145" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1579104023870" />
-    <state x="540" y="256" key="IDE.errors.dialog" timestamp="1578930394607">
+    <state width="1877" height="277" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1579276596242" />
+    <state x="540" y="256" key="IDE.errors.dialog" timestamp="1579273400829">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="540" y="256" key="IDE.errors.dialog/0.0.1920.1040@0.0.1920.1040" timestamp="1578930394607" />
-    <state x="552" y="254" key="Vcs.Push.Dialog.v2" timestamp="1578930370471">
+    <state x="540" y="256" key="IDE.errors.dialog/0.0.1920.1040@0.0.1920.1040" timestamp="1579273400829" />
+    <state x="552" y="254" key="Vcs.Push.Dialog.v2" timestamp="1579104064399">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="254" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1578930370471" />
+    <state x="552" y="254" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1579104064399" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
