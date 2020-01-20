@@ -183,8 +183,12 @@ public class TestMethods {
 
     }
     @Test
-    public void test2(){
-        String output = "2-5-88";
-        System.out.printf(output.replaceAll("\\D+",""));
+    public void test2() throws SQLException, IOException, ClassNotFoundException {
+        List<String> tempAmountList = utilsForDB.getDataDriverSettings("4401");
+//        logger.info(" = " + tempAmountList.get("City"));
+        logger.info(" = " + tempAmountList);
+//        Map<String, String> nvpMap = tempAmountList.stream().collect(Collectors.toMap(NameValuePair::getName, NameValuePair::getValue));
+//        String value = nvpMap.get(key);
+
     }
 }

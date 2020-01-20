@@ -504,6 +504,14 @@ public class UtilsForDB {
         dBMySQL.quit();
         return tempResult;
     }
+    @Step
+    public List<String> getDataDriverSettings(String userId) throws SQLException, IOException, ClassNotFoundException {
+        dBMySQL = new Database("MySQL_PADB_DB", "MySQL");
+        List<String> tempData = dBMySQL.selectTable("SELECT HazMat, Insurance, TankerEndorsment, yard, conv, hideEngineStatuses, Sms, City, Address, notes, Phone, SSN, EIN, MedCard, DateOfBirth, HireDate, TermitaneDate, PullNotice, DLExpiration  FROM driversData WHERE userId = " + userId + " AND companyId = 0 ;");
+        dBMySQL.quit();
+        return tempData;
+    }
+
 
 
 

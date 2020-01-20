@@ -20,6 +20,9 @@ public class DashboardPage extends ParentPage {
     @FindBy(xpath = ".//a[@href='/dash/finances/']")
     private WebElement menuPageFinances;
 
+    @FindBy(xpath = ".//a[@href='/dash/equipment/']")
+    private WebElement menuPageEquipment;
+
     @FindBy(xpath = ".//a[@href='/dash/settings/account/']")
     private WebElement menuPageSettings;
 
@@ -34,25 +37,22 @@ public class DashboardPage extends ParentPage {
     public boolean isDashboardPresent(){
         return actionsWithOurElements.isElementEnable(dashboard);
     }
-
     public void clickOnMenuDash() {
         actionsWithOurElements.clickOnElement(menuDash);
     }
-
     public void clickOnMenuPageELD(){
         actionsWithOurElements.clickOnElement(menuPageELD);
     }
-
     public void clickOnMenuPageFinances(){
         actionsWithOurElements.clickOnElement(menuPageFinances);
     }
     public void clickOnMenuPageSettings(){
         actionsWithOurElements.clickOnElement(menuPageSettings);
     }
-
     public void clickMenuSizeButton(){
         actionsWithOurElements.clickOnElement(menuSizeButton);
     }
+    public void clickOnMenuPageEquipment(){actionsWithOurElements.clickOnElement(menuPageEquipment);}
 
     @Step
     public void openMenuDash(){
@@ -80,6 +80,12 @@ public class DashboardPage extends ParentPage {
     public void goToSettingPage(){
         waitABit(3);
         clickOnMenuPageSettings();
+        waitABit(3);
+    }
+    @Step
+    public void goToEquipmentPage(){
+        waitABit(3);
+        clickOnMenuPageEquipment();
         waitABit(3);
     }
 }

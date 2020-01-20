@@ -18,7 +18,7 @@ public class SoloDriverSettingsTest extends ParentTest {
     String userId = "4401";
 
     @Test
-    public void setNewDataSettings() throws SQLException, IOException, ClassNotFoundException {
+    public void updateDataSettings() throws SQLException, IOException, ClassNotFoundException {
         utilsForDB.setOffCheckBoxDriverSetting(userId, "0");
         utilsForDB.set_0_AobrdMPHDriverSettings(userId);
         loginPage.userValidLogIn(login, pass);
@@ -78,7 +78,7 @@ public class SoloDriverSettingsTest extends ParentTest {
         checkAC("Tanker Endorsement failed", utilsForDB.getValueFromSettings(userId, "TankerEndorsment").equals("1"), true);
         checkAC("Yard Mode failed", utilsForDB.getValueFromSettings(userId, "yard").equals("1"), true);
         checkAC("Conveyance Mode failed", utilsForDB.getValueFromSettings(userId, "conv").equals("1"), true);
-//        checkAC("Hide Engine and Scanner statuses failed", utilsForDB.getValueFromSettings(userId, "hideEngineStatuses").equals("1"), true);
+        checkAC("Hide Engine and Scanner statuses failed", utilsForDB.getValueFromSettings(userId, "hideEngineStatuses").equals("1"), true);
         checkAC("Sms failed", utilsForDB.getValueFromSettings(userId, "Sms").equals("1"), true);
 
         checkAC("AOBRD MPH failed", utilsForDB.checkAobrdMPHDriverSettings(userId), true);
@@ -89,10 +89,18 @@ public class SoloDriverSettingsTest extends ParentTest {
 
         checkAC("Phone failed", utilsForDB.getValueFromSettings(userId, "Phone").replaceAll("\\s+","").equals(phone), true);
         checkAC("SSN failed", utilsForDB.getValueFromSettings(userId, "SSN").replaceAll("\\D+","").equals(ssn), true);
-        System.out.println(utilsForDB.getValueFromSettings(userId, "SSN").replaceAll("\\D+",""));
         checkAC("EIN failed", utilsForDB.getValueFromSettings(userId, "EIN").replaceAll("\\D+","").equals(ein), true);
 
-    }
+        checkAC("Med. Card Expiration failed", utilsForDB.getValueFromSettings(userId, "MedCard").equals(date), true);
+        checkAC("Date of Birth failed", utilsForDB.getValueFromSettings(userId, "DateOfBirth").equals(date), true);
+        checkAC("Hire Date failed", utilsForDB.getValueFromSettings(userId, "HireDate").equals(date), true);
+        checkAC("Terminate day failed", utilsForDB.getValueFromSettings(userId, "TermitaneDate").equals(date), true);
+        checkAC("Pull Notice failed", utilsForDB.getValueFromSettings(userId, "PullNotice").equals(date), true);
+        checkAC("Expiration driver licence failed", utilsForDB.getValueFromSettings(userId, "DLExpiration").equals(date), true);
 
+        checkAC("Driver licence number failed", utilsForDB.getValueFromSettings(userId, "DLNumber").equals(dlNumber), true);
+        checkAC("Driver licence state failed", utilsForDB.getValueFromSettings(userId, "DLState").equals("51"), true);
+
+    }
 
 }
