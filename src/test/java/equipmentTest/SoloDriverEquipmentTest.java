@@ -15,7 +15,8 @@ public class SoloDriverEquipmentTest extends ParentTest {
     String userId = "4401";
 
     @Test
-    public void createNewTruck(){
+    public void addTruck(){
+
         loginPage.userValidLogIn(login, pass);
         dashboardPage.openMenuDash();
         dashboardPage.goToEquipmentPage();

@@ -7,9 +7,11 @@ import parentTest.ParentTest;
 
 import java.io.IOException;
 import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
 
-import static libs.Utils.getDateFormat;
-import static libs.Utils.waitABit;
+import static libs.Utils.*;
 
 public class SoloDriverSettingsTest extends ParentTest {
     UtilsForDB utilsForDB = new UtilsForDB();
@@ -32,9 +34,15 @@ public class SoloDriverSettingsTest extends ParentTest {
         String city = RandomStringUtils.randomAlphabetic(5);
         String address = RandomStringUtils.randomAlphabetic(10);
         String phone = RandomStringUtils.randomNumeric(10);
-        String date = getDateFormat();
-        String note = RandomStringUtils.randomAlphabetic(20);
+        String note = RandomStringUtils.randomAlphanumeric(20);
         String dlNumber = RandomStringUtils.randomNumeric(7);
+        String dateBirth = getDateRandom();
+        String dateHire = getDateRandom();
+        String dateMedCard = getDateRandom();
+        String dateTerminate = getDateRandom();
+        String datePullNotice = getDateRandom();
+        String dateDLExpiration = getDateRandom();
+
 
  //    GENERAL
         settingsPage.enterSsn(ssn);
@@ -51,11 +59,11 @@ public class SoloDriverSettingsTest extends ParentTest {
         settingsPage.checkOnSmsCheck();
 
 //  ADMINISTRATIVE
-        settingsPage.enterDateMedCard(date);
-        settingsPage.enterDateBirth(date);
-        settingsPage.enterDateHire(date);
-        settingsPage.enterDateTerminate(date);
-        settingsPage.enterDateNotice(date);
+        settingsPage.enterDateMedCard(dateMedCard);
+        settingsPage.enterDateBirth(dateBirth);
+        settingsPage.enterDateHire(dateHire);
+        settingsPage.enterDateTerminate(dateTerminate);
+        settingsPage.enterDateNotice(datePullNotice);
         settingsPage.checkOnHazMat();
         settingsPage.checkOnInsurance();
         settingsPage.checkOnTanker();
@@ -65,41 +73,43 @@ public class SoloDriverSettingsTest extends ParentTest {
         settingsPage.enterNumberDl(dlNumber);
         settingsPage.selectCountry("Canada");
         settingsPage.selectStateDl("AB");
-        settingsPage.enterExpirationDl(date);
+        settingsPage.enterExpirationDl(dateDLExpiration);
         settingsPage.enterNote(note);
         settingsPage.clickOnBlankArea();
 
         waitABit(5);
         settingsPage.clickOnSave();
         waitABit(5);
+        List<ArrayList> tempDataSettingsList = utilsForDB.getDataDriverSettings(userId);
+        Map<String, Object> tempDataSettingsMap = listArrayToMap(tempDataSettingsList);
 
-        checkAC("HazMat failed", utilsForDB.getValueFromSettings(userId, "HazMat").equals("1"), true);
-        checkAC("Insurance failed", utilsForDB.getValueFromSettings(userId, "Insurance").equals("1"), true);
-        checkAC("Tanker Endorsement failed", utilsForDB.getValueFromSettings(userId, "TankerEndorsment").equals("1"), true);
-        checkAC("Yard Mode failed", utilsForDB.getValueFromSettings(userId, "yard").equals("1"), true);
-        checkAC("Conveyance Mode failed", utilsForDB.getValueFromSettings(userId, "conv").equals("1"), true);
-        checkAC("Hide Engine and Scanner statuses failed", utilsForDB.getValueFromSettings(userId, "hideEngineStatuses").equals("1"), true);
-        checkAC("Sms failed", utilsForDB.getValueFromSettings(userId, "Sms").equals("1"), true);
+        checkAC("HazMat failed", tempDataSettingsMap.get("HazMat").equals("1"), true);
+        checkAC("Insurance failed", tempDataSettingsMap.get("Insurance").equals("1"), true);
+        checkAC("Tanker Endorsement failed", tempDataSettingsMap.get( "TankerEndorsment").equals("1"), true);
+        checkAC("Yard Mode failed", tempDataSettingsMap.get("yard").equals("1"), true);
+        checkAC("Conveyance Mode failed", tempDataSettingsMap.get("conv").equals("1"), true);
+//        checkAC("Hide Engine and Scanner statuses failed", tempDataSettingsMap.get("hideEngineStatuses").equals("1"), true);
+        checkAC("Sms failed", tempDataSettingsMap.get("Sms").equals("1"), true);
 
         checkAC("AOBRD MPH failed", utilsForDB.checkAobrdMPHDriverSettings(userId), true);
 
-        checkAC("City failed", utilsForDB.getValueFromSettings(userId, "City").equals(city), true);
-        checkAC("Address failed", utilsForDB.getValueFromSettings(userId, "Address").equals(address), true);
-        checkAC("Notes failed", utilsForDB.getValueFromSettings(userId, "notes").equals(note), true);
+        checkAC("City failed", tempDataSettingsMap.get("City").equals(city), true);
+        checkAC("Address failed", tempDataSettingsMap.get( "Address").equals(address), true);
+        checkAC("Notes failed", tempDataSettingsMap.get("notes").equals(note), true);
 
-        checkAC("Phone failed", utilsForDB.getValueFromSettings(userId, "Phone").replaceAll("\\s+","").equals(phone), true);
-        checkAC("SSN failed", utilsForDB.getValueFromSettings(userId, "SSN").replaceAll("\\D+","").equals(ssn), true);
-        checkAC("EIN failed", utilsForDB.getValueFromSettings(userId, "EIN").replaceAll("\\D+","").equals(ein), true);
+        checkAC("Phone failed", tempDataSettingsMap.get("Phone").toString().replaceAll("\\s+","").equals(phone), true);
+        checkAC("SSN failed", tempDataSettingsMap.get("SSN").toString().replaceAll("\\D+","").equals(ssn), true);
+        checkAC("EIN failed", tempDataSettingsMap.get("EIN").toString().replaceAll("\\D+","").equals(ein), true);
 
-        checkAC("Med. Card Expiration failed", utilsForDB.getValueFromSettings(userId, "MedCard").equals(date), true);
-        checkAC("Date of Birth failed", utilsForDB.getValueFromSettings(userId, "DateOfBirth").equals(date), true);
-        checkAC("Hire Date failed", utilsForDB.getValueFromSettings(userId, "HireDate").equals(date), true);
-        checkAC("Terminate day failed", utilsForDB.getValueFromSettings(userId, "TermitaneDate").equals(date), true);
-        checkAC("Pull Notice failed", utilsForDB.getValueFromSettings(userId, "PullNotice").equals(date), true);
-        checkAC("Expiration driver licence failed", utilsForDB.getValueFromSettings(userId, "DLExpiration").equals(date), true);
+        checkAC("Med. Card Expiration failed", tempDataSettingsMap.get("MedCard").equals(dateMedCard), true);
+        checkAC("Date of Birth failed", tempDataSettingsMap.get("DateOfBirth").equals(dateBirth), true);
+        checkAC("Hire Date failed", tempDataSettingsMap.get("HireDate").equals(dateHire), true);
+        checkAC("Terminate day failed", tempDataSettingsMap.get("TermitaneDate").equals(dateTerminate), true);
+        checkAC("Pull Notice failed", tempDataSettingsMap.get("PullNotice").equals(datePullNotice), true);
+        checkAC("Expiration driver licence failed", tempDataSettingsMap.get("DLExpiration").equals(dateDLExpiration), true);
 
-        checkAC("Driver licence number failed", utilsForDB.getValueFromSettings(userId, "DLNumber").equals(dlNumber), true);
-        checkAC("Driver licence state failed", utilsForDB.getValueFromSettings(userId, "DLState").equals("51"), true);
+        checkAC("Driver licence number failed", tempDataSettingsMap.get("DLNumber").equals(dlNumber), true);
+        checkAC("Driver licence state failed", tempDataSettingsMap.get("DLState").equals("51"), true);
 
     }
 

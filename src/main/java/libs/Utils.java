@@ -7,11 +7,18 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 
 import java.io.File;
-import java.io.FileWriter;
 import java.io.IOException;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
+import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
+import java.util.Map;
+import java.util.concurrent.ThreadLocalRandom;
+import java.util.stream.IntStream;
+
+import static java.util.stream.Collectors.toMap;
 
 
 public class Utils {
@@ -74,6 +81,29 @@ public class Utils {
         System.out.println(dateFormated);
         return dateFormated;
     }
+
+    /**
+     * Method get List<ArrayList> and returned Map by key=value
+     * @param tempAmountList
+     * @return
+     */
+    public static Map<String, Object> listArrayToMap(List<ArrayList> tempAmountList) {
+        List<String> placeHolderList = tempAmountList.get(0);
+        List<Object> valueList = tempAmountList.get(1);
+
+        Map<String, Object> result = IntStream.range(0, placeHolderList.size())
+                .boxed()
+                .collect(toMap(placeHolderList::get, valueList::get));
+
+        return result;
+
+    }
+    public static String getDateRandom() {
+        int hundredYears = 100 * 365;
+        return LocalDate.ofEpochDay(ThreadLocalRandom
+                .current().nextInt(-hundredYears, hundredYears)).toString();
+    }
+
 
 
 }

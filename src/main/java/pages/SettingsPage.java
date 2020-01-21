@@ -94,9 +94,6 @@ public class SettingsPage extends ParentPage {
     @FindBy(xpath = "//span[text()='Expiration']/..//input")
     private WebElement expirationInput;
 
-//SAVE BUTTON
-//    @FindBy(xpath = "//button[@class='btn btn-transparent']")
-//    private WebElement buttonSave;
     @FindBy(css = ".btn")
     private WebElement buttonSave;
 
@@ -161,6 +158,7 @@ public class SettingsPage extends ParentPage {
         actionsWithOurElements.scrollByVisibleElement(buttonSave);
         actionsWithOurElements.clickOnElement(buttonSave);
     }
+
 }
 
 

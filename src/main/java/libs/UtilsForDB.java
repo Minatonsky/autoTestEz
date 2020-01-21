@@ -5,6 +5,7 @@ import io.qameta.allure.Step;
 
 import java.io.IOException;
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.List;
 
 public class UtilsForDB {
@@ -485,13 +486,6 @@ public class UtilsForDB {
     }
 
     @Step
-    public String getValueFromSettings(String userId, String columnName) throws SQLException, IOException, ClassNotFoundException {
-        dBMySQL = new Database("MySQL_PADB_DB", "MySQL");
-        String tempValue = dBMySQL.selectValue("SELECT " + columnName + " FROM driversData WHERE userId = " + userId + " AND companyId = 0 ;");
-        dBMySQL.quit();
-        return tempValue;
-    }
-    @Step
     public void set_0_AobrdMPHDriverSettings(String userId) throws SQLException, IOException, ClassNotFoundException {
         dBMySQL = new Database("MySQL_PADB_DB", "MySQL");
         dBMySQL.changeTable("UPDATE driversRules dr SET dr.aobrdMPH = 0 WHERE userId = " + userId + ";");
@@ -504,10 +498,11 @@ public class UtilsForDB {
         dBMySQL.quit();
         return tempResult;
     }
+
     @Step
-    public List<String> getDataDriverSettings(String userId) throws SQLException, IOException, ClassNotFoundException {
+    public List<ArrayList> getDataDriverSettings(String userId) throws SQLException, IOException, ClassNotFoundException {
         dBMySQL = new Database("MySQL_PADB_DB", "MySQL");
-        List<String> tempData = dBMySQL.selectTable("SELECT HazMat, Insurance, TankerEndorsment, yard, conv, hideEngineStatuses, Sms, City, Address, notes, Phone, SSN, EIN, MedCard, DateOfBirth, HireDate, TermitaneDate, PullNotice, DLExpiration  FROM driversData WHERE userId = " + userId + " AND companyId = 0 ;");
+        List<ArrayList> tempData = dBMySQL.selectTable("SELECT HazMat, Insurance, TankerEndorsment, yard, conv, hideEngineStatuses, Sms, City, Address, notes, Phone, SSN, EIN, MedCard, DateOfBirth, HireDate, TermitaneDate, PullNotice, DLExpiration, DLNumber, DLState  FROM driversData WHERE userId = " + userId + " AND companyId = 0 ;");
         dBMySQL.quit();
         return tempData;
     }
