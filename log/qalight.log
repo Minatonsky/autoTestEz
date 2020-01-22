@@ -963,3 +963,354 @@
 2020-21-01 17:39:47   INFO [libs.ActionsWithOurElements] : Element was clicked
 2020-21-01 17:39:50   INFO [libs.ActionsWithOurElements] : Element was clicked
 2020-21-01 17:40:35  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.name: name' (tried for 20 second(s) with 500 milliseconds interval)
+2020-22-01 11:28:49   INFO [equipmentTest.SoloDriverEquipmentTest] : Chrome will be started
+2020-22-01 11:28:56   INFO [equipmentTest.SoloDriverEquipmentTest] : Chrome is started
+2020-22-01 11:29:04  ERROR [pages.LoginPage] : Cannot work with Url
+2020-22-01 11:40:51   INFO [equipmentTest.SoloDriverEquipmentTest] : Chrome will be started
+2020-22-01 11:40:58   INFO [equipmentTest.SoloDriverEquipmentTest] : Chrome is started
+2020-22-01 11:41:03   INFO [pages.LoginPage] : Login Page was opened
+2020-22-01 11:41:43  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: .//*[@class='log_in btn-login']' (tried for 20 second(s) with 500 milliseconds interval)
+2020-22-01 11:42:25   INFO [equipmentTest.SoloDriverEquipmentTest] : Chrome will be started
+2020-22-01 11:42:31   INFO [equipmentTest.SoloDriverEquipmentTest] : Chrome is started
+2020-22-01 11:42:36   INFO [pages.LoginPage] : Login Page was opened
+2020-22-01 11:43:28  ERROR [libs.ActionsWithOurElements] : Cannot work with element java.lang.NullPointerException
+2020-22-01 13:14:14   INFO [equipmentTest.SoloDriverEquipmentTest] : Chrome will be started
+2020-22-01 13:14:20   INFO [equipmentTest.SoloDriverEquipmentTest] : Chrome is started
+2020-22-01 13:14:28   INFO [pagesLocal.LoginPageLocal] : Login Page was opened
+2020-22-01 13:14:38  ERROR [libs.ActionsWithOurElements] : Cannot work with element java.lang.NullPointerException
+2020-22-01 13:22:29   INFO [equipmentTest.SoloDriverEquipmentTest] : Chrome will be started
+2020-22-01 13:22:36   INFO [equipmentTest.SoloDriverEquipmentTest] : Chrome is started
+2020-22-01 13:22:47   INFO [pagesLocal.LoginPageLocal] : Login Page was opened
+2020-22-01 13:22:53  ERROR [libs.ActionsWithOurElements] : Cannot work with element java.lang.NullPointerException
+2020-22-01 14:02:16   INFO [localTest.SoloDriverEquipmentTestLocal] : Chrome will be started
+2020-22-01 14:02:23   INFO [localTest.SoloDriverEquipmentTestLocal] : Chrome is started
+2020-22-01 14:02:38   INFO [pagesLocal.LoginPageLocal] : Login Page was opened
+2020-22-01 14:02:38   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-22-01 14:02:38   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-22-01 14:02:38   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-22-01 14:02:38   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-22-01 14:11:29   INFO [localTest.SoloDriverEquipmentTestLocal] : Chrome will be started
+2020-22-01 14:11:36   INFO [localTest.SoloDriverEquipmentTestLocal] : Chrome is started
+2020-22-01 14:11:50   INFO [pagesLocal.LoginPageLocal] : Login Page was opened
+2020-22-01 14:11:50   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-22-01 14:11:51   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-22-01 14:11:51   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-22-01 14:11:51   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-22-01 14:11:54   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-22-01 14:11:57   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-22-01 14:12:03   INFO [libs.ActionsWithOurElements] : 1M9lWRO8X was inputted into element
+2020-22-01 14:12:03   INFO [libs.ActionsWithOurElements] : DbCAq8Aaic was inputted into element
+2020-22-01 14:12:03   INFO [libs.ActionsWithOurElements] : 6359 was inputted into element
+2020-22-01 14:12:03   INFO [libs.ActionsWithOurElements] : 0 was selected in Drop-down
+2020-22-01 14:12:04   INFO [libs.ActionsWithOurElements] : 1WbS7N5Qx5zYLQBW9 was inputted into element
+2020-22-01 14:12:04   INFO [libs.ActionsWithOurElements] : 5KDWGi was inputted into element
+2020-22-01 14:12:04   INFO [libs.ActionsWithOurElements] : AR was selected in Drop-down
+2020-22-01 14:12:04   INFO [libs.ActionsWithOurElements] : DAbof8 was inputted into element
+2020-22-01 14:12:04   INFO [libs.ActionsWithOurElements] : C5d5ZO was inputted into element
+2020-22-01 14:12:04   INFO [libs.ActionsWithOurElements] : Diesel was selected in Drop-down
+2020-22-01 14:12:05   INFO [libs.ActionsWithOurElements] : e4AP7C was inputted into element
+2020-22-01 14:12:05   INFO [libs.ActionsWithOurElements] : CeA0fz was inputted into element
+2020-22-01 14:12:05   INFO [libs.ActionsWithOurElements] : tgMDrW was inputted into element
+2020-22-01 14:12:05   INFO [libs.ActionsWithOurElements] : CfTp3m was inputted into element
+2020-22-01 14:12:05   INFO [libs.ActionsWithOurElements] : 1lpAF6 was inputted into element
+2020-22-01 14:12:05   INFO [libs.ActionsWithOurElements] : 6IqkFN was inputted into element
+2020-22-01 14:12:06   INFO [libs.ActionsWithOurElements] : JBRyQf was inputted into element
+2020-22-01 14:12:06  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.InvalidElementStateException: invalid element state
+  (Session info: chrome=79.0.3945.117)
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'DESKTOP-0PTGLHV', ip: '192.168.88.57', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.117, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\1\AppData\Local\Te...}, goog:chromeOptions: {debuggerAddress: localhost:51986}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 903e1e94620105d6df3ff56eebe93a41
+2020-22-01 14:18:15   INFO [localTest.SoloDriverEquipmentTestLocal] : Chrome will be started
+2020-22-01 14:18:22   INFO [localTest.SoloDriverEquipmentTestLocal] : Chrome is started
+2020-22-01 14:18:38   INFO [pagesLocal.LoginPageLocal] : Login Page was opened
+2020-22-01 14:18:38   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-22-01 14:18:38   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-22-01 14:18:39   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-22-01 14:18:39   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-22-01 14:18:42   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-22-01 14:18:45   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-22-01 14:18:50   INFO [libs.ActionsWithOurElements] : pyjU6 was inputted into element
+2020-22-01 14:18:50   INFO [libs.ActionsWithOurElements] : JsNEZmUh8E was inputted into element
+2020-22-01 14:18:51   INFO [libs.ActionsWithOurElements] : 2955 was inputted into element
+2020-22-01 14:18:51   INFO [libs.ActionsWithOurElements] : 0 was selected in Drop-down
+2020-22-01 14:18:51   INFO [libs.ActionsWithOurElements] : 0nTe4dF0IOQpMrwjf was inputted into element
+2020-22-01 14:18:51   INFO [libs.ActionsWithOurElements] : UY3vvY was inputted into element
+2020-22-01 14:18:51   INFO [libs.ActionsWithOurElements] : AR was selected in Drop-down
+2020-22-01 14:18:52   INFO [libs.ActionsWithOurElements] : cfexdg was inputted into element
+2020-22-01 14:18:52   INFO [libs.ActionsWithOurElements] : WMKqWl was inputted into element
+2020-22-01 14:18:52   INFO [libs.ActionsWithOurElements] : Diesel was selected in Drop-down
+2020-22-01 14:18:52   INFO [libs.ActionsWithOurElements] : A9BRzD was inputted into element
+2020-22-01 14:18:52   INFO [libs.ActionsWithOurElements] : ZgXJRd was inputted into element
+2020-22-01 14:18:52   INFO [libs.ActionsWithOurElements] : cPIbYe was inputted into element
+2020-22-01 14:18:53   INFO [libs.ActionsWithOurElements] : XaYqGv was inputted into element
+2020-22-01 14:18:53   INFO [libs.ActionsWithOurElements] : mQoUb5 was inputted into element
+2020-22-01 14:18:53   INFO [libs.ActionsWithOurElements] : pDcSGc was inputted into element
+2020-22-01 14:18:53   INFO [libs.ActionsWithOurElements] : uItrGx was inputted into element
+2020-22-01 14:18:53  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.InvalidElementStateException: invalid element state
+  (Session info: chrome=79.0.3945.117)
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'DESKTOP-0PTGLHV', ip: '192.168.88.57', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.117, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\1\AppData\Local\Te...}, goog:chromeOptions: {debuggerAddress: localhost:52463}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 8a77b1bb70fa59f32d4f681717ce612d
+2020-22-01 14:28:58   INFO [localTest.SoloDriverEquipmentTestLocal] : Chrome will be started
+2020-22-01 14:29:05   INFO [localTest.SoloDriverEquipmentTestLocal] : Chrome is started
+2020-22-01 14:29:17   INFO [pagesLocal.LoginPageLocal] : Login Page was opened
+2020-22-01 14:29:17   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-22-01 14:29:18   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-22-01 14:29:18   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-22-01 14:29:18   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-22-01 14:29:21   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-22-01 14:29:24   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-22-01 14:29:30   INFO [libs.ActionsWithOurElements] : 3 was inputted into element
+2020-22-01 14:29:30   INFO [libs.ActionsWithOurElements] : Rvo6HDxudE was inputted into element
+2020-22-01 14:29:30   INFO [libs.ActionsWithOurElements] : 2781 was inputted into element
+2020-22-01 14:29:30   INFO [libs.ActionsWithOurElements] : 0 was selected in Drop-down
+2020-22-01 14:29:30   INFO [libs.ActionsWithOurElements] : ylW2lWQY8DcJYvzNB was inputted into element
+2020-22-01 14:29:31   INFO [libs.ActionsWithOurElements] : ImPDyv was inputted into element
+2020-22-01 14:29:31   INFO [libs.ActionsWithOurElements] : AR was selected in Drop-down
+2020-22-01 14:29:31   INFO [libs.ActionsWithOurElements] : dyLTyD was inputted into element
+2020-22-01 14:29:31   INFO [libs.ActionsWithOurElements] : PZFlaD was inputted into element
+2020-22-01 14:29:31   INFO [libs.ActionsWithOurElements] : Diesel was selected in Drop-down
+2020-22-01 14:29:31   INFO [libs.ActionsWithOurElements] : yvB6j8 was inputted into element
+2020-22-01 14:29:32   INFO [libs.ActionsWithOurElements] : Y9EF6A was inputted into element
+2020-22-01 14:29:32   INFO [libs.ActionsWithOurElements] : s2vPmO was inputted into element
+2020-22-01 14:29:32   INFO [libs.ActionsWithOurElements] : MeJ850 was inputted into element
+2020-22-01 14:29:32   INFO [libs.ActionsWithOurElements] : Vcplxm was inputted into element
+2020-22-01 14:29:32   INFO [libs.ActionsWithOurElements] : jtSqOy was inputted into element
+2020-22-01 14:29:32   INFO [libs.ActionsWithOurElements] : gshuvV was inputted into element
+2020-22-01 14:29:33   INFO [libs.ActionsWithOurElements] : 2058-03-20 was inputted into element
+2020-22-01 14:29:33   INFO [libs.ActionsWithOurElements] : 2066-08-05 was inputted into element
+2020-22-01 14:29:33   INFO [libs.ActionsWithOurElements] : 1893-09-03 was inputted into element
+2020-22-01 14:29:33   INFO [libs.ActionsWithOurElements] : 1964-12-01 was inputted into element
+2020-22-01 14:29:33   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-22-01 14:33:14   INFO [localTest.SoloDriverEquipmentTestLocal] : Chrome will be started
+2020-22-01 14:33:21   INFO [localTest.SoloDriverEquipmentTestLocal] : Chrome is started
+2020-22-01 14:33:34   INFO [pagesLocal.LoginPageLocal] : Login Page was opened
+2020-22-01 14:33:34   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-22-01 14:33:34   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-22-01 14:33:34   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-22-01 14:33:35   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-22-01 14:33:38   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-22-01 14:33:41   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-22-01 14:33:46   INFO [libs.ActionsWithOurElements] : AY2 was inputted into element
+2020-22-01 14:33:46   INFO [libs.ActionsWithOurElements] : tPzXE6SwI0 was inputted into element
+2020-22-01 14:33:47   INFO [libs.ActionsWithOurElements] : 0795 was inputted into element
+2020-22-01 14:33:47   INFO [libs.ActionsWithOurElements] : 0 was selected in Drop-down
+2020-22-01 14:33:47   INFO [libs.ActionsWithOurElements] : D13sG28iU4K5Qo0FI was inputted into element
+2020-22-01 14:33:47   INFO [libs.ActionsWithOurElements] : sTSaQS was inputted into element
+2020-22-01 14:33:47   INFO [libs.ActionsWithOurElements] : AR was selected in Drop-down
+2020-22-01 14:33:48   INFO [libs.ActionsWithOurElements] : 1srTpA was inputted into element
+2020-22-01 14:33:48   INFO [libs.ActionsWithOurElements] : iYggR0 was inputted into element
+2020-22-01 14:33:48   INFO [libs.ActionsWithOurElements] : Diesel was selected in Drop-down
+2020-22-01 14:33:48   INFO [libs.ActionsWithOurElements] : VW0i7T was inputted into element
+2020-22-01 14:33:48   INFO [libs.ActionsWithOurElements] : Gec4s7 was inputted into element
+2020-22-01 14:33:48   INFO [libs.ActionsWithOurElements] : gybp4I was inputted into element
+2020-22-01 14:33:49   INFO [libs.ActionsWithOurElements] : yUa4vc was inputted into element
+2020-22-01 14:33:49   INFO [libs.ActionsWithOurElements] : eWfqAO was inputted into element
+2020-22-01 14:33:49   INFO [libs.ActionsWithOurElements] : Cjzo71 was inputted into element
+2020-22-01 14:33:49   INFO [libs.ActionsWithOurElements] : GDx1il was inputted into element
+2020-22-01 14:33:49   INFO [libs.ActionsWithOurElements] : 1902-07-19 was inputted into element
+2020-22-01 14:33:49   INFO [libs.ActionsWithOurElements] : 1989-01-06 was inputted into element
+2020-22-01 14:33:50   INFO [libs.ActionsWithOurElements] : 1913-03-21 was inputted into element
+2020-22-01 14:33:50   INFO [libs.ActionsWithOurElements] : 2059-01-09 was inputted into element
+2020-22-01 14:33:50   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-22-01 14:35:16   INFO [localTest.SoloDriverEquipmentTestLocal] : Chrome will be started
+2020-22-01 14:35:22   INFO [localTest.SoloDriverEquipmentTestLocal] : Chrome is started
+2020-22-01 14:35:37   INFO [pagesLocal.LoginPageLocal] : Login Page was opened
+2020-22-01 14:35:37   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-22-01 14:35:37   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-22-01 14:35:37   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-22-01 14:35:37   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-22-01 14:35:40   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-22-01 14:35:44   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-22-01 14:35:49   INFO [libs.ActionsWithOurElements] : sVIE was inputted into element
+2020-22-01 14:35:49   INFO [libs.ActionsWithOurElements] : Wq8jVm4M9w was inputted into element
+2020-22-01 14:35:49   INFO [libs.ActionsWithOurElements] : 7730 was inputted into element
+2020-22-01 14:35:49   INFO [libs.ActionsWithOurElements] : 0 was selected in Drop-down
+2020-22-01 14:35:50   INFO [libs.ActionsWithOurElements] : S8mHrldE0DztNsICj was inputted into element
+2020-22-01 14:35:50   INFO [libs.ActionsWithOurElements] : KcKIwY was inputted into element
+2020-22-01 14:35:50   INFO [libs.ActionsWithOurElements] : AR was selected in Drop-down
+2020-22-01 14:35:50   INFO [libs.ActionsWithOurElements] : C8by5j was inputted into element
+2020-22-01 14:35:50   INFO [libs.ActionsWithOurElements] : WoNCRo was inputted into element
+2020-22-01 14:35:51   INFO [libs.ActionsWithOurElements] : Diesel was selected in Drop-down
+2020-22-01 14:35:51   INFO [libs.ActionsWithOurElements] : JsmsEm was inputted into element
+2020-22-01 14:35:51   INFO [libs.ActionsWithOurElements] : Qbks3N was inputted into element
+2020-22-01 14:35:51   INFO [libs.ActionsWithOurElements] : zfXYdE was inputted into element
+2020-22-01 14:35:51   INFO [libs.ActionsWithOurElements] : UrD3E3 was inputted into element
+2020-22-01 14:35:51   INFO [libs.ActionsWithOurElements] : szNVCq was inputted into element
+2020-22-01 14:35:52   INFO [libs.ActionsWithOurElements] : HpMcNI was inputted into element
+2020-22-01 14:35:52   INFO [libs.ActionsWithOurElements] : Fy3Is1 was inputted into element
+2020-22-01 14:35:52   INFO [libs.ActionsWithOurElements] : 1929-11-01 was inputted into element
+2020-22-01 14:35:52   INFO [libs.ActionsWithOurElements] : 1879-01-25 was inputted into element
+2020-22-01 14:35:52   INFO [libs.ActionsWithOurElements] : 1932-07-20 was inputted into element
+2020-22-01 14:35:52   INFO [libs.ActionsWithOurElements] : 1999-12-15 was inputted into element
+2020-22-01 14:35:53   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-22-01 14:36:28   INFO [localTest.SoloDriverEquipmentTestLocal] : Chrome will be started
+2020-22-01 14:36:35   INFO [localTest.SoloDriverEquipmentTestLocal] : Chrome is started
+2020-22-01 14:36:50   INFO [pagesLocal.LoginPageLocal] : Login Page was opened
+2020-22-01 14:36:50   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-22-01 14:36:51   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-22-01 14:36:51   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-22-01 14:36:51   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-22-01 14:36:54   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-22-01 14:36:57   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-22-01 14:37:03   INFO [libs.ActionsWithOurElements] : 4ZV was inputted into element
+2020-22-01 14:37:03   INFO [libs.ActionsWithOurElements] : SZRvQOwAZF was inputted into element
+2020-22-01 14:37:03   INFO [libs.ActionsWithOurElements] : 4721 was inputted into element
+2020-22-01 14:37:03   INFO [libs.ActionsWithOurElements] : 0 was selected in Drop-down
+2020-22-01 14:37:03   INFO [libs.ActionsWithOurElements] : zp59PEz6WsKlSFuXZ was inputted into element
+2020-22-01 14:37:04   INFO [libs.ActionsWithOurElements] : D35zn5 was inputted into element
+2020-22-01 14:37:04   INFO [libs.ActionsWithOurElements] : AR was selected in Drop-down
+2020-22-01 14:37:04   INFO [libs.ActionsWithOurElements] : NsI8yb was inputted into element
+2020-22-01 14:37:04   INFO [libs.ActionsWithOurElements] : SVMRjy was inputted into element
+2020-22-01 14:37:04   INFO [libs.ActionsWithOurElements] : Diesel was selected in Drop-down
+2020-22-01 14:37:04   INFO [libs.ActionsWithOurElements] : LPTp7H was inputted into element
+2020-22-01 14:37:05   INFO [libs.ActionsWithOurElements] : iOqoKw was inputted into element
+2020-22-01 14:37:05   INFO [libs.ActionsWithOurElements] : lrQGsM was inputted into element
+2020-22-01 14:37:05   INFO [libs.ActionsWithOurElements] : sPoMcL was inputted into element
+2020-22-01 14:37:05   INFO [libs.ActionsWithOurElements] : N9ZVFB was inputted into element
+2020-22-01 14:37:05   INFO [libs.ActionsWithOurElements] : DyYjyN was inputted into element
+2020-22-01 14:37:05   INFO [libs.ActionsWithOurElements] : HBd1Bz was inputted into element
+2020-22-01 14:37:06   INFO [libs.ActionsWithOurElements] : 1898-07-17 was inputted into element
+2020-22-01 14:37:06   INFO [libs.ActionsWithOurElements] : 1895-03-10 was inputted into element
+2020-22-01 14:37:06   INFO [libs.ActionsWithOurElements] : 1878-01-03 was inputted into element
+2020-22-01 14:37:06   INFO [libs.ActionsWithOurElements] : 1872-12-18 was inputted into element
+2020-22-01 14:37:06   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-22-01 15:44:48   INFO [localTest.SoloDriverEquipmentTestLocal] : Chrome will be started
+2020-22-01 15:44:55   INFO [localTest.SoloDriverEquipmentTestLocal] : Chrome is started
+2020-22-01 15:45:22   INFO [pagesLocal.LoginPageLocal] : Login Page was opened
+2020-22-01 15:45:23   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-22-01 15:45:23   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-22-01 15:45:23   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-22-01 15:45:23   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-22-01 15:45:26   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-22-01 15:45:29   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-22-01 15:45:35   INFO [libs.ActionsWithOurElements] : HIDS02 was inputted into element
+2020-22-01 15:45:35   INFO [libs.ActionsWithOurElements] : jxgPZkvpzj was inputted into element
+2020-22-01 15:45:35   INFO [libs.ActionsWithOurElements] : 5224 was inputted into element
+2020-22-01 15:45:35   INFO [libs.ActionsWithOurElements] : 0 was selected in Drop-down
+2020-22-01 15:45:36   INFO [libs.ActionsWithOurElements] : CKF77M59F4vI967pq was inputted into element
+2020-22-01 15:45:36   INFO [libs.ActionsWithOurElements] : auvHTn was inputted into element
+2020-22-01 15:45:36   INFO [libs.ActionsWithOurElements] : AR was selected in Drop-down
+2020-22-01 15:45:36   INFO [libs.ActionsWithOurElements] : Wy8gIa was inputted into element
+2020-22-01 15:45:36   INFO [libs.ActionsWithOurElements] : QWFGWQ was inputted into element
+2020-22-01 15:45:36   INFO [libs.ActionsWithOurElements] : Diesel was selected in Drop-down
+2020-22-01 15:45:37   INFO [libs.ActionsWithOurElements] : z486r9 was inputted into element
+2020-22-01 15:45:37   INFO [libs.ActionsWithOurElements] : oc6pXq was inputted into element
+2020-22-01 15:45:37   INFO [libs.ActionsWithOurElements] : jB0EI5 was inputted into element
+2020-22-01 15:45:37   INFO [libs.ActionsWithOurElements] : dJGNww was inputted into element
+2020-22-01 15:45:37   INFO [libs.ActionsWithOurElements] : lcfYif was inputted into element
+2020-22-01 15:45:37   INFO [libs.ActionsWithOurElements] : DXEzpf was inputted into element
+2020-22-01 15:45:38   INFO [libs.ActionsWithOurElements] : HgxdAz was inputted into element
+2020-22-01 15:45:38   INFO [libs.ActionsWithOurElements] : 2021-09-24 was inputted into element
+2020-22-01 15:45:38   INFO [libs.ActionsWithOurElements] : 2055-08-27 was inputted into element
+2020-22-01 15:45:38   INFO [libs.ActionsWithOurElements] : 1954-09-30 was inputted into element
+2020-22-01 15:45:38   INFO [libs.ActionsWithOurElements] : 2054-10-04 was inputted into element
+2020-22-01 15:45:38   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-22-01 15:45:43   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-22-01 15:45:47   INFO [localTest.SoloDriverEquipmentTestLocal] : AC passed
+2020-22-01 15:45:48   INFO [localTest.SoloDriverEquipmentTestLocal] : AC passed
+2020-22-01 15:45:49   INFO [localTest.SoloDriverEquipmentTestLocal] : AC passed
+2020-22-01 15:45:50   INFO [localTest.SoloDriverEquipmentTestLocal] : AC passed
+2020-22-01 15:45:51   INFO [localTest.SoloDriverEquipmentTestLocal] : AC passed
+2020-22-01 15:45:52   INFO [localTest.SoloDriverEquipmentTestLocal] : AC passed
+2020-22-01 15:45:53   INFO [localTest.SoloDriverEquipmentTestLocal] : AC passed
+2020-22-01 15:45:54   INFO [localTest.SoloDriverEquipmentTestLocal] : AC passed
+2020-22-01 15:45:55  ERROR [localTest.SoloDriverEquipmentTestLocal] : AC failed:  failed
+2020-22-01 15:52:50   INFO [localTest.SoloDriverEquipmentTestLocal] : Chrome will be started
+2020-22-01 15:52:57   INFO [localTest.SoloDriverEquipmentTestLocal] : Chrome is started
+2020-22-01 15:53:12   INFO [pagesLocal.LoginPageLocal] : Login Page was opened
+2020-22-01 15:53:12   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-22-01 15:53:12   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-22-01 15:53:12   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-22-01 15:53:12   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-22-01 15:53:15   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-22-01 15:53:19   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-22-01 15:53:24   INFO [libs.ActionsWithOurElements] : aYG was inputted into element
+2020-22-01 15:53:24   INFO [libs.ActionsWithOurElements] : iUjaVkSoUJ was inputted into element
+2020-22-01 15:53:24   INFO [libs.ActionsWithOurElements] : 3887 was inputted into element
+2020-22-01 15:53:24   INFO [libs.ActionsWithOurElements] : 0 was selected in Drop-down
+2020-22-01 15:53:25   INFO [libs.ActionsWithOurElements] : 1YYUXqWVDRMzzWlLk was inputted into element
+2020-22-01 15:53:25   INFO [libs.ActionsWithOurElements] : AI4ZTx was inputted into element
+2020-22-01 15:53:25   INFO [libs.ActionsWithOurElements] : AR was selected in Drop-down
+2020-22-01 15:53:25   INFO [libs.ActionsWithOurElements] : EY2fHe was inputted into element
+2020-22-01 15:53:25   INFO [libs.ActionsWithOurElements] : 9UVapm was inputted into element
+2020-22-01 15:53:25   INFO [libs.ActionsWithOurElements] : Diesel was selected in Drop-down
+2020-22-01 15:53:26   INFO [libs.ActionsWithOurElements] : vQjxUQ was inputted into element
+2020-22-01 15:53:26   INFO [libs.ActionsWithOurElements] : yIVLiH was inputted into element
+2020-22-01 15:53:26   INFO [libs.ActionsWithOurElements] : CIcXhL was inputted into element
+2020-22-01 15:53:26   INFO [libs.ActionsWithOurElements] : 3Cm6N1 was inputted into element
+2020-22-01 15:53:26   INFO [libs.ActionsWithOurElements] : 2BFXdU was inputted into element
+2020-22-01 15:53:27   INFO [libs.ActionsWithOurElements] : PSKNft was inputted into element
+2020-22-01 15:53:27   INFO [libs.ActionsWithOurElements] : 4iilZf was inputted into element
+2020-22-01 15:53:27   INFO [libs.ActionsWithOurElements] : 2039-03-25 was inputted into element
+2020-22-01 15:53:27   INFO [libs.ActionsWithOurElements] : 2021-04-29 was inputted into element
+2020-22-01 15:53:27   INFO [libs.ActionsWithOurElements] : 2056-09-09 was inputted into element
+2020-22-01 15:53:27   INFO [libs.ActionsWithOurElements] : 2062-07-09 was inputted into element
+2020-22-01 15:53:28   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-22-01 15:53:33   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-22-01 15:53:36   INFO [localTest.SoloDriverEquipmentTestLocal] : AC passed
+2020-22-01 15:53:37   INFO [localTest.SoloDriverEquipmentTestLocal] : AC passed
+2020-22-01 15:53:38   INFO [localTest.SoloDriverEquipmentTestLocal] : AC passed
+2020-22-01 15:53:39   INFO [localTest.SoloDriverEquipmentTestLocal] : AC passed
+2020-22-01 15:53:40   INFO [localTest.SoloDriverEquipmentTestLocal] : AC passed
+2020-22-01 15:53:41   INFO [localTest.SoloDriverEquipmentTestLocal] : AC passed
+2020-22-01 15:53:42   INFO [localTest.SoloDriverEquipmentTestLocal] : AC passed
+2020-22-01 15:53:43   INFO [localTest.SoloDriverEquipmentTestLocal] : AC passed
+2020-22-01 15:56:47   INFO [localTest.SoloDriverEquipmentTestLocal] : Chrome will be started
+2020-22-01 15:56:54   INFO [localTest.SoloDriverEquipmentTestLocal] : Chrome is started
+2020-22-01 15:57:10   INFO [pagesLocal.LoginPageLocal] : Login Page was opened
+2020-22-01 15:57:10   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-22-01 15:57:10   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-22-01 15:57:10   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-22-01 15:57:10   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-22-01 15:57:13   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-22-01 15:57:17   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-22-01 15:57:22   INFO [libs.ActionsWithOurElements] : m7BuFnoKf was inputted into element
+2020-22-01 15:57:22   INFO [libs.ActionsWithOurElements] : LKICSPQGvk was inputted into element
+2020-22-01 15:57:22   INFO [libs.ActionsWithOurElements] : 5669 was inputted into element
+2020-22-01 15:57:22   INFO [libs.ActionsWithOurElements] : 0 was selected in Drop-down
+2020-22-01 15:57:23   INFO [libs.ActionsWithOurElements] : czWH9kjmJyRwCJIXK was inputted into element
+2020-22-01 15:57:23   INFO [libs.ActionsWithOurElements] : 5HH6tw was inputted into element
+2020-22-01 15:57:23   INFO [libs.ActionsWithOurElements] : AR was selected in Drop-down
+2020-22-01 15:57:23   INFO [libs.ActionsWithOurElements] : PXBaM7 was inputted into element
+2020-22-01 15:57:24   INFO [libs.ActionsWithOurElements] : F7lgwf was inputted into element
+2020-22-01 15:57:24   INFO [libs.ActionsWithOurElements] : Diesel was selected in Drop-down
+2020-22-01 15:57:24   INFO [libs.ActionsWithOurElements] : 6y6Bxb was inputted into element
+2020-22-01 15:57:24   INFO [libs.ActionsWithOurElements] : UDuIta was inputted into element
+2020-22-01 15:57:24   INFO [libs.ActionsWithOurElements] : pgpndJ was inputted into element
+2020-22-01 15:57:24   INFO [libs.ActionsWithOurElements] : VZPsgA was inputted into element
+2020-22-01 15:57:25   INFO [libs.ActionsWithOurElements] : uXLd0n was inputted into element
+2020-22-01 15:57:25   INFO [libs.ActionsWithOurElements] : mRemxU was inputted into element
+2020-22-01 15:57:25   INFO [libs.ActionsWithOurElements] : 4voYa2 was inputted into element
+2020-22-01 15:57:25   INFO [libs.ActionsWithOurElements] : 2055-05-01 was inputted into element
+2020-22-01 15:57:25   INFO [libs.ActionsWithOurElements] : 2055-01-28 was inputted into element
+2020-22-01 15:57:25   INFO [libs.ActionsWithOurElements] : 2038-08-11 was inputted into element
+2020-22-01 15:57:26   INFO [libs.ActionsWithOurElements] : 1902-08-01 was inputted into element
+2020-22-01 15:57:26   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-22-01 15:57:31   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-22-01 15:57:34   INFO [localTest.SoloDriverEquipmentTestLocal] : AC passed
+2020-22-01 15:57:35   INFO [localTest.SoloDriverEquipmentTestLocal] : AC passed
+2020-22-01 15:57:36   INFO [localTest.SoloDriverEquipmentTestLocal] : AC passed
+2020-22-01 15:57:37   INFO [localTest.SoloDriverEquipmentTestLocal] : AC passed
+2020-22-01 15:57:38   INFO [localTest.SoloDriverEquipmentTestLocal] : AC passed
+2020-22-01 15:57:39   INFO [localTest.SoloDriverEquipmentTestLocal] : AC passed
+2020-22-01 15:57:40   INFO [localTest.SoloDriverEquipmentTestLocal] : AC passed
+2020-22-01 15:57:41   INFO [localTest.SoloDriverEquipmentTestLocal] : AC passed
+2020-22-01 15:57:42   INFO [localTest.SoloDriverEquipmentTestLocal] : AC passed
+2020-22-01 15:57:43   INFO [localTest.SoloDriverEquipmentTestLocal] : AC passed
+2020-22-01 15:57:44   INFO [localTest.SoloDriverEquipmentTestLocal] : AC passed
+2020-22-01 15:57:45   INFO [localTest.SoloDriverEquipmentTestLocal] : AC passed
+2020-22-01 15:57:46   INFO [localTest.SoloDriverEquipmentTestLocal] : AC passed
+2020-22-01 15:57:47   INFO [localTest.SoloDriverEquipmentTestLocal] : AC passed
+2020-22-01 15:57:48   INFO [localTest.SoloDriverEquipmentTestLocal] : AC passed
+2020-22-01 15:57:49   INFO [localTest.SoloDriverEquipmentTestLocal] : AC passed
+2020-22-01 15:57:50   INFO [localTest.SoloDriverEquipmentTestLocal] : AC passed
+2020-22-01 15:57:51   INFO [localTest.SoloDriverEquipmentTestLocal] : AC passed
+2020-22-01 15:57:52   INFO [localTest.SoloDriverEquipmentTestLocal] : AC passed
+2020-22-01 15:57:53   INFO [localTest.SoloDriverEquipmentTestLocal] : AC passed
+2020-22-01 15:57:54   INFO [localTest.SoloDriverEquipmentTestLocal] : AC passed
+2020-22-01 15:57:55   INFO [localTest.SoloDriverEquipmentTestLocal] : AC passed

@@ -506,6 +506,19 @@ public class UtilsForDB {
         dBMySQL.quit();
         return tempData;
     }
+    @Step
+    public void setOffCheckBoxInAddTruckToEquipment(String userId, String equipmentId, String checkBoxValue) throws SQLException, IOException, ClassNotFoundException {
+        dBMySQL = new Database("MySQL_PADB_DB", "MySQL");
+        dBMySQL.changeTable("UPDATE equipment e SET e.isActive = " + checkBoxValue + " WHERE e.userId = " + userId + " AND e.id = " + equipmentId + ";");
+        dBMySQL.quit();
+    }
+    @Step
+    public List<ArrayList> getDataTruckEquipment(String userId) throws SQLException, IOException, ClassNotFoundException {
+        dBMySQL = new Database("MySQL_PADB_DB", "MySQL");
+        List<ArrayList> tempData = dBMySQL.selectTable("SELECT e.Name, e.Owner, e.Year, e.`Type`, e.TireSize, e.Fuel, e.Axel, e.Color, e.Make, e.Model, e.VIN, e.GrossWeight, e.UnlandWeight, e.Plate, e.State, e.NYCert, e.InspectionDue, e.`90DayExp`, e.ProRateExp, e.ExpDate, e.isActive, e.Length FROM equipment e WHERE e.userId = " + userId + " ORDER BY id DESC LIMIT 1;");
+        dBMySQL.quit();
+        return tempData;
+    }
 
 
 

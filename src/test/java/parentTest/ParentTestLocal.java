@@ -11,7 +11,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
-import pages.*;
+import pagesLocal.DashboardPageLocal;
+import pagesLocal.EquipmentPageLocal;
+import pagesLocal.LoginPageLocal;
 
 import java.io.File;
 import java.io.IOException;
@@ -22,22 +24,14 @@ import java.util.concurrent.TimeUnit;
 
 import static libs.Utils.waitABit;
 
-public class ParentLocalSite {
+public class ParentTestLocal {
     WebDriver webDriver;
 
 
     Logger logger = Logger.getLogger(getClass());
-    protected LoginPage loginPage;
-    protected DashboardPage dashboardPage;
-    protected ModalEldPage modalEldPage;
-    protected FinancesPage financesPage;
-    protected ManagerEldPage managerEldPage;
-    protected OrderInfoPage orderInfoPage;
-    protected UserEldPage userEldPage;
-    protected ManagerModalEldPage managerModalEldPage;
-    protected ChargePage chargePage;
-    protected SettingsPage settingsPage;
-    protected EquipmentPage equipmentPage;
+    protected LoginPageLocal loginPageLocal;
+    protected DashboardPageLocal dashboardPageLocal;
+    protected EquipmentPageLocal equipmentPageLocal;
 
     String browser = System.getProperty("browser");
 
@@ -49,17 +43,9 @@ public class ParentLocalSite {
         initDriver(browser);
         webDriver.manage().window().maximize();
         webDriver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-        loginPage = new LoginPage(webDriver);
-        dashboardPage = new DashboardPage(webDriver);
-        modalEldPage = new ModalEldPage(webDriver);
-        financesPage = new FinancesPage(webDriver);
-        managerEldPage = new ManagerEldPage(webDriver);
-        orderInfoPage = new OrderInfoPage(webDriver);
-        userEldPage = new UserEldPage(webDriver);
-        managerModalEldPage = new ManagerModalEldPage(webDriver);
-        chargePage = new ChargePage(webDriver);
-        settingsPage = new SettingsPage(webDriver);
-        equipmentPage = new EquipmentPage(webDriver);
+        loginPageLocal = new LoginPageLocal(webDriver);
+        dashboardPageLocal = new DashboardPageLocal(webDriver);
+        equipmentPageLocal = new EquipmentPageLocal(webDriver);
 
     }
 
