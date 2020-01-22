@@ -2,17 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="660eb711-957d-418e-9483-8b2931da6e6e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/pagesLocal/DashboardPageLocal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pagesLocal/EquipmentPageLocal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pagesLocal/LoginPageLocal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/localTest/SoloDriverEquipmentTestLocal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/parameterizedUI/SoloDriverSettingsParameterizedTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log/qalight.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/qalight.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/libs/ConfigProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/libs/ConfigProperties.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/libs/ConfigProperties.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/libs/ConfigProperties.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/data/testLogin.xls" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/data/testLogin.xls" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/libs/UtilsForDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/libs/UtilsForDB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/ParentLocalPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pagesLocal/ParentPageLocal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/parentTest/ParentLocalSite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/parentTest/ParentTestLocal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/DashboardPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/DashboardPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pagesLocal/EquipmentPageLocal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pagesLocal/EquipmentPageLocal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/localTest/SoloDriverEquipmentTestLocal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/localTest/SoloDriverEquipmentTestLocal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/unitTest/TestMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/unitTest/TestMethods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userToken.txt" beforeDir="false" afterPath="$PROJECT_DIR$/userToken.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,11 +83,11 @@
       <recent name="C:\workspace\testdevEzlogz\src\drivers" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="parameterizedUI" />
       <recent name="localTest" />
       <recent name="pagesLocal" />
       <recent name="parameterizedOrders" />
       <recent name="pages" />
-      <recent name="loginTests" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\workspace\testdevEzlogz\src\main\java\data" />
@@ -97,34 +96,50 @@
       <recent name="C:\workspace\testdevEzlogz\src" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SoloDriverEquipmentTestLocal.addTruck">
-    <configuration name="SoloDriverEquipmentTestLocal.addTruck" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.SoloDriverSettingsParameterizedTest.updateDataSettings">
+    <configuration name="EzlogzAPITest.driverLicenseTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="WorkSpace" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="localTest.*" />
+          <option name="PATTERN" value="restTest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="localTest" />
-      <option name="MAIN_CLASS_NAME" value="localTest.SoloDriverEquipmentTestLocal" />
-      <option name="METHOD_NAME" value="addTruck" />
+      <option name="PACKAGE_NAME" value="restTest" />
+      <option name="MAIN_CLASS_NAME" value="restTest.EzlogzAPITest" />
+      <option name="METHOD_NAME" value="driverLicenseTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SoloDriverEquipmentTest.addTruck" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ParentSoloOrderParamsTest.soloDoNewOrder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="WorkSpace" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="equipmentTest.*" />
+          <option name="PATTERN" value="parameterizedOrders.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="equipmentTest" />
-      <option name="MAIN_CLASS_NAME" value="equipmentTest.SoloDriverEquipmentTest" />
-      <option name="METHOD_NAME" value="addTruck" />
+      <option name="PACKAGE_NAME" value="parameterizedOrders" />
+      <option name="MAIN_CLASS_NAME" value="parameterizedOrders.ParentSoloOrderParamsTest" />
+      <option name="METHOD_NAME" value="soloDoNewOrder" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SoloDriverSettingsParameterizedTest.updateDataSettings" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="WorkSpace" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="parameterizedUI.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="parameterizedUI" />
+      <option name="MAIN_CLASS_NAME" value="parameterizedUI.SoloDriverSettingsParameterizedTest" />
+      <option name="METHOD_NAME" value="updateDataSettings" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -146,22 +161,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestMethods.date" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="WorkSpace" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="unitTest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="unitTest" />
-      <option name="MAIN_CLASS_NAME" value="unitTest.TestMethods" />
-      <option name="METHOD_NAME" value="date" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="TestMethods.getEventNewOrder" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
       <module name="WorkSpace" />
       <extension name="coverage">
@@ -178,17 +177,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestMethods.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestRestAssured.getCursDetails" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="WorkSpace" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="unitTest.*" />
+          <option name="PATTERN" value="restTest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="unitTest" />
-      <option name="MAIN_CLASS_NAME" value="unitTest.TestMethods" />
-      <option name="METHOD_NAME" value="test2" />
+      <option name="PACKAGE_NAME" value="restTest" />
+      <option name="MAIN_CLASS_NAME" value="restTest.TestRestAssured" />
+      <option name="METHOD_NAME" value="getCursDetails" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -239,20 +238,20 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.TestMethods.getEventNewOrder" />
-      <item itemvalue="JUnit.TestMethods.test2" />
       <item itemvalue="Maven.SoloOrders" />
+      <item itemvalue="JUnit.TestRestAssured.getCursDetails" />
+      <item itemvalue="JUnit.EzlogzAPITest.driverLicenseTest" />
       <item itemvalue="JUnit.SoloDriverSettingsTest.updateDataSettings" />
-      <item itemvalue="JUnit.TestMethods.date" />
-      <item itemvalue="JUnit.SoloDriverEquipmentTest.addTruck" />
-      <item itemvalue="JUnit.SoloDriverEquipmentTestLocal.addTruck" />
+      <item itemvalue="JUnit.SoloDriverSettingsParameterizedTest.updateDataSettings" />
+      <item itemvalue="JUnit.ParentSoloOrderParamsTest.soloDoNewOrder" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.SoloDriverEquipmentTestLocal.addTruck" />
-        <item itemvalue="JUnit.SoloDriverEquipmentTest.addTruck" />
+        <item itemvalue="JUnit.SoloDriverSettingsParameterizedTest.updateDataSettings" />
+        <item itemvalue="JUnit.ParentSoloOrderParamsTest.soloDoNewOrder" />
         <item itemvalue="JUnit.SoloDriverSettingsTest.updateDataSettings" />
-        <item itemvalue="JUnit.TestMethods.test2" />
-        <item itemvalue="JUnit.TestMethods.date" />
+        <item itemvalue="JUnit.EzlogzAPITest.driverLicenseTest" />
+        <item itemvalue="JUnit.TestRestAssured.getCursDetails" />
       </list>
     </recent_temporary>
   </component>
@@ -285,13 +284,6 @@
       <workItem from="1562665338918" duration="52834000" />
       <workItem from="1562782581468" duration="9021000" />
       <workItem from="1562822119836" duration="58303000" />
-    </task>
-    <task id="LOCAL-00027" summary="new modal window order test was add">
-      <created>1565387191874</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1565387191874</updated>
     </task>
     <task id="LOCAL-00028" summary="camera order test was add">
       <created>1565638737622</created>
@@ -629,7 +621,14 @@
       <option name="project" value="LOCAL" />
       <updated>1579622261594</updated>
     </task>
-    <option name="localTasksCounter" value="76" />
+    <task id="LOCAL-00076" summary="local addTruck test was add">
+      <created>1579701708377</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1579701708377</updated>
+    </task>
+    <option name="localTasksCounter" value="77" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -666,7 +665,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="charge refactor test was add" />
     <MESSAGE value="new charge refactor test was add" />
     <MESSAGE value="new charge2 refactor test was add" />
     <MESSAGE value="month-to-month 12 test was add" />
@@ -691,7 +689,8 @@
     <MESSAGE value="accept criteria settingTest was add" />
     <MESSAGE value="equipment test was add" />
     <MESSAGE value="new method test was add" />
-    <option name="LAST_COMMIT_MESSAGE" value="new method test was add" />
+    <MESSAGE value="local addTruck test was add" />
+    <option name="LAST_COMMIT_MESSAGE" value="local addTruck test was add" />
   </component>
   <component name="WindowStateProjectService">
     <state x="487" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1579691243512">
@@ -702,26 +701,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="268" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1579696800416" />
-    <state x="614" y="115" key="CommitChangelistDialog2" timestamp="1579622260565">
+    <state x="614" y="115" key="CommitChangelistDialog2" timestamp="1579701707602">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="614" y="115" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1579622260565" />
-    <state width="1877" height="158" key="GridCell.Tab.0.bottom" timestamp="1579701683363">
+    <state x="614" y="115" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1579701707602" />
+    <state width="1877" height="261" key="GridCell.Tab.0.bottom" timestamp="1579712419277">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="158" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1579701683363" />
-    <state width="1877" height="158" key="GridCell.Tab.0.center" timestamp="1579701683363">
+    <state width="1877" height="261" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1579712419277" />
+    <state width="1877" height="261" key="GridCell.Tab.0.center" timestamp="1579712419277">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="158" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1579701683363" />
-    <state width="1877" height="158" key="GridCell.Tab.0.left" timestamp="1579701683363">
+    <state width="1877" height="261" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1579712419277" />
+    <state width="1877" height="261" key="GridCell.Tab.0.left" timestamp="1579712419277">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="158" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1579701683363" />
-    <state width="1877" height="158" key="GridCell.Tab.0.right" timestamp="1579701683363">
+    <state width="1877" height="261" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1579712419277" />
+    <state width="1877" height="261" key="GridCell.Tab.0.right" timestamp="1579712419277">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="158" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1579701683363" />
+    <state width="1877" height="261" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1579712419277" />
     <state x="540" y="256" key="IDE.errors.dialog" timestamp="1579526806082">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -730,10 +729,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="490" y="176" key="Maven.ArtifactSearchDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1579518965036" />
-    <state x="552" y="254" key="Vcs.Push.Dialog.v2" timestamp="1579622273275">
+    <state x="552" y="254" key="Vcs.Push.Dialog.v2" timestamp="1579701717140">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="254" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1579622273275" />
+    <state x="552" y="254" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1579701717140" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

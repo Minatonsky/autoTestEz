@@ -477,6 +477,7 @@ public class UtilsForDB {
         dBMySQL.quit();
         return tempResult;
     }
+
 //    SETTINGS
     @Step
     public void setOffCheckBoxDriverSetting(String userId, String checkBoxValue) throws SQLException, IOException, ClassNotFoundException {
@@ -506,6 +507,8 @@ public class UtilsForDB {
         dBMySQL.quit();
         return tempData;
     }
+
+//    EQUIPMENT
     @Step
     public void setOffCheckBoxInAddTruckToEquipment(String userId, String equipmentId, String checkBoxValue) throws SQLException, IOException, ClassNotFoundException {
         dBMySQL = new Database("MySQL_PADB_DB", "MySQL");
@@ -519,8 +522,19 @@ public class UtilsForDB {
         dBMySQL.quit();
         return tempData;
     }
-
-
-
+    @Step
+    public String getRandomEquipment(String soloId, String truckTrailer) throws SQLException, IOException, ClassNotFoundException {
+        dBMySQL = new Database("MySQL_PADB_DB", "MySQL");
+        String tempCurrentDue = dBMySQL.selectValue("SELECT e.Name FROM equipment e WHERE e.userId = " + soloId + " AND e.truckTrailer = " + truckTrailer + "  ORDER BY RAND()LIMIT 1;");
+        dBMySQL.quit();
+        return tempCurrentDue;
+    }
+    @Step
+    public String getUserIdByEmail(String email) throws SQLException, IOException, ClassNotFoundException {
+        dBMySQL = new Database("MySQL_PADB_DB", "MySQL");
+        String tempCurrentDue = dBMySQL.selectValue("SELECT id FROM users WHERE email = '" + email + "';");
+        dBMySQL.quit();
+        return tempCurrentDue;
+    }
 
 }

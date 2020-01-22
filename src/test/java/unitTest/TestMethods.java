@@ -15,8 +15,6 @@ import java.time.temporal.ChronoUnit;
 import java.time.temporal.TemporalAdjusters;
 import java.util.List;
 import java.util.logging.Logger;
-
-import static libs.Utils.getDateRandom;
 // This test page is not using on test project, it just for check some methods
 
 public class TestMethods {
@@ -195,10 +193,10 @@ public class TestMethods {
     }
 
     @Test
-    public void test2() {
-        String getDateRandom = getDateRandom();
+    public void test2() throws SQLException, IOException, ClassNotFoundException {
+//       String temp = utilsForDB.randDbValue();
 
-        System.out.println(getDateRandom);
+//        System.out.println(temp);
     }
 
 }

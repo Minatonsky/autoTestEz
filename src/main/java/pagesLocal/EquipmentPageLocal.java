@@ -83,6 +83,15 @@ public class EquipmentPageLocal extends ParentPageLocal {
     @FindBy(xpath = ".//button[@type='submit']")
     private WebElement submitButton;
 
+    @FindBy(xpath = ".//*[@placeholder='UNIT']")
+    private WebElement truckNameHolder;
+
+    @FindBy(xpath = ".//*[@class='btn-link__text']")
+    private WebElement equipmentInRow;
+
+    @FindBy(xpath = ".//*[text()='Edit ']")
+    private WebElement editButton;
+
     public void clickOnAddTruckButton(){actionsWithOurElements.clickOnElement(addTruckButton);}
 //    General
     public void enterUnitName(String unitName){actionsWithOurElements.enterTextToElement(unitInput, unitName);}
@@ -110,4 +119,8 @@ public class EquipmentPageLocal extends ParentPageLocal {
     public void enterExpDate(String expDate){actionsWithOurElements.enterTextToElement(exp_dateInput, expDate);}
     public void clickOnActive(){actionsWithOurElements.jsClickOnElement(checkboxTruckState);}
     public void clickOnSubmit(){actionsWithOurElements.clickOnElement(submitButton);}
+
+    public void enterOnEquipmentPlaceHolder(String equipmentName){actionsWithOurElements.enterTextToElement(truckNameHolder, equipmentName);}
+    public void clickOnEquipmentOnRow(){actionsWithOurElements.clickOnElement(equipmentInRow);}
+    public void clickOnEditButton(){actionsWithOurElements.clickOnElement(editButton);}
 }

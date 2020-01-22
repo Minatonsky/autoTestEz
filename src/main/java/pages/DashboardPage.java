@@ -29,6 +29,9 @@ public class DashboardPage extends ParentPage {
     @FindBy(xpath = ".//i[@class='fa fa-angle-double-left minimize-arrow']")
     private WebElement menuSizeButton;
 
+    @FindBy(xpath = ".//*[text()='Phone Verification']")
+    private WebElement phoneVerificationModal;
+
     public DashboardPage(WebDriver webDriver) {
 
         super(webDriver, "/dash");
@@ -53,9 +56,12 @@ public class DashboardPage extends ParentPage {
         actionsWithOurElements.clickOnElement(menuSizeButton);
     }
     public void clickOnMenuPageEquipment(){actionsWithOurElements.clickOnElement(menuPageEquipment);}
+    public void clickOnBlankArea(){actionsWithOurElements.clickOnBlankArea();}
 
     @Step
     public void openMenuDash(){
+        waitABit(3);
+        clickOnBlankArea();
         waitABit(3);
         clickOnMenuDash();
         waitABit(3);
