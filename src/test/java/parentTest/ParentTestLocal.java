@@ -1,5 +1,6 @@
 package parentTest;
 
+
 import io.qameta.allure.Step;
 import libs.ConfigProperties;
 import org.aeonbits.owner.ConfigFactory;
@@ -18,15 +19,12 @@ import pagesLocal.LoginPageLocal;
 import java.io.File;
 import java.io.IOException;
 import java.sql.SQLException;
-import java.util.Iterator;
-import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
 import static libs.Utils.waitABit;
 
 public class ParentTestLocal {
     WebDriver webDriver;
-
 
     Logger logger = Logger.getLogger(getClass());
     protected LoginPageLocal loginPageLocal;
@@ -86,13 +84,6 @@ public class ParentTestLocal {
         }
         Assert.assertEquals(message,expected,actual);
         logger.info("AC passed");
-    }
-
-    public void selectBrowserWindow(String window){
-        Set<String> windowIds = webDriver.getWindowHandles();
-        Iterator<String> iter = windowIds.iterator();
-        String mainWindow = iter.next();
-        String childWindow = iter.next();
     }
 
 }

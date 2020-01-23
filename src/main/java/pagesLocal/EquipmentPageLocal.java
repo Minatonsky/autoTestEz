@@ -65,16 +65,16 @@ public class EquipmentPageLocal extends ParentPageLocal {
     @FindBy(name = "ny_cert")
     private WebElement ny_certInput;
 
-    @FindBy(xpath = ".//*[@name='inspection_due']//..//*[@name='date']")
+    @FindBy(xpath = ".//*[@name='inspection_due']//..//*[@type='text']")
     private WebElement inspection_dueInput;
 
-    @FindBy(xpath = ".//*[@name='ninety_day_exp']//..//*[@name='date']")
+    @FindBy(xpath = ".//*[@name='ninety_day_exp']//..//*[@type='text']")
     private WebElement ninety_day_expInput;
 
-    @FindBy(xpath = ".//*[@name='pro_rate_exp']//..//*[@name='date']")
+    @FindBy(xpath = ".//*[@name='pro_rate_exp']//..//*[@type='text']")
     private WebElement pro_rate_expInput;
 
-    @FindBy(xpath = ".//*[@name='exp_date']//..//*[@name='date']")
+    @FindBy(xpath = ".//*[@name='exp_date']//..//*[@type='text']")
     private WebElement exp_dateInput;
 
     @FindBy(id = "checkboxTruckState")
@@ -91,6 +91,9 @@ public class EquipmentPageLocal extends ParentPageLocal {
 
     @FindBy(xpath = ".//*[text()='Edit ']")
     private WebElement editButton;
+
+    @FindBy(xpath = ".//button[text()='Save']")
+    private WebElement saveButton;
 
     public void clickOnAddTruckButton(){actionsWithOurElements.clickOnElement(addTruckButton);}
 //    General
@@ -123,4 +126,5 @@ public class EquipmentPageLocal extends ParentPageLocal {
     public void enterOnEquipmentPlaceHolder(String equipmentName){actionsWithOurElements.enterTextToElement(truckNameHolder, equipmentName);}
     public void clickOnEquipmentOnRow(){actionsWithOurElements.clickOnElement(equipmentInRow);}
     public void clickOnEditButton(){actionsWithOurElements.clickOnElement(editButton);}
+    public void clickOnSave(){actionsWithOurElements.clickOnElement(saveButton);}
 }

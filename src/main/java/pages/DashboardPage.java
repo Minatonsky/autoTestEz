@@ -1,5 +1,6 @@
 package pages;
 
+import com.gargoylesoftware.htmlunit.ElementNotFoundException;
 import io.qameta.allure.Step;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -29,8 +30,8 @@ public class DashboardPage extends ParentPage {
     @FindBy(xpath = ".//i[@class='fa fa-angle-double-left minimize-arrow']")
     private WebElement menuSizeButton;
 
-    @FindBy(xpath = ".//*[text()='Phone Verification']")
-    private WebElement phoneVerificationModal;
+    @FindBy(xpath = ".//*[@id='validatePhone']//../*[@aria-label=\"Close\"]")
+    private WebElement phoneVerificationClose;
 
     public DashboardPage(WebDriver webDriver) {
 
@@ -57,11 +58,22 @@ public class DashboardPage extends ParentPage {
     }
     public void clickOnMenuPageEquipment(){actionsWithOurElements.clickOnElement(menuPageEquipment);}
     public void clickOnBlankArea(){actionsWithOurElements.clickOnBlankArea();}
+    public void closePhoneVerification(WebElement phoneVerificationClose)
+    {
+        try{
+            actionsWithOurElements.clickOnElement(phoneVerificationClose);
+        }
+        catch (ElementNotFoundException e){
+            logger.info("Element not found");
+        }
+        catch (Exception e){
+        }
+    }
 
     @Step
     public void openMenuDash(){
         waitABit(3);
-        clickOnBlankArea();
+        closePhoneVerification(phoneVerificationClose);
         waitABit(3);
         clickOnMenuDash();
         waitABit(3);

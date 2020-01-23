@@ -3,7 +3,6 @@ package localTest;
 import libs.UtilsForDB;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.junit.Test;
-import parentTest.ParentTestLocal;
 
 import java.io.IOException;
 import java.sql.SQLException;
@@ -18,6 +17,8 @@ public class SoloDriverEquipmentTestLocal extends ParentTestLocal {
     String login = "den36@gmail.com";
     String pass = "testtest";
     String userId = "4401";
+
+
 
     @Test
     public void addTruck() throws SQLException, IOException, ClassNotFoundException {
@@ -163,37 +164,40 @@ public class SoloDriverEquipmentTestLocal extends ParentTestLocal {
         equipmentPageLocal.enterNinetyDayExp(ninetyDayExpDate);
         equipmentPageLocal.enterProRate(proRateDueDate);
         equipmentPageLocal.enterExpDate(expDateDate);
-//        equipmentPageLocal.clickOnActive();
-        equipmentPageLocal.clickOnSubmit();
+        equipmentPageLocal.clickOnActive();
+//        loginPageLocal.clickOnBlankArea();
+
+        waitABit(5);
+        equipmentPageLocal.clickOnSave();
         waitABit(5);
 
         List<ArrayList> tempDataSettingsList = utilsForDB.getDataTruckEquipment(userId);
         Map<String, Object> tempDataSettingsMap = listArrayToMap(tempDataSettingsList);
 
-        checkAC("Name failed", tempDataSettingsMap.get("Name").equals(unitName), true);
-        checkAC("Owner failed", tempDataSettingsMap.get("Owner").equals(owner), true);
-        checkAC("Year failed", tempDataSettingsMap.get("Year").equals(year), true);
-        checkAC("Type failed", tempDataSettingsMap.get("Type").equals(type), true);
-        checkAC("VIN failed", tempDataSettingsMap.get("VIN").equals(vin), true);
-        checkAC("Plate failed", tempDataSettingsMap.get("Plate").equals(plate), true);
-        checkAC("State failed", tempDataSettingsMap.get("State").equals(state), true);
+        checkACWithLogger("Name failed", tempDataSettingsMap.get("Name").equals(unitName), true);
+        checkACWithLogger("Owner failed", tempDataSettingsMap.get("Owner").equals(owner), true);
+        checkACWithLogger("Year failed", tempDataSettingsMap.get("Year").equals(year), true);
+        checkACWithLogger("Type failed", tempDataSettingsMap.get("Type").equals(type), true);
+        checkACWithLogger("VIN failed", tempDataSettingsMap.get("VIN").equals(vin), true);
+        checkACWithLogger("Plate failed", tempDataSettingsMap.get("Plate").equals(plate), true);
+        checkACWithLogger("State failed", tempDataSettingsMap.get("State").equals(state), true);
 
-        checkAC("TireSize failed", tempDataSettingsMap.get("TireSize").equals(tireSize), true);
-        checkAC("Length failed", tempDataSettingsMap.get("Length").equals(length), true);
-        checkAC("Fuel failed", tempDataSettingsMap.get("Fuel").equals(fuel), true);
-        checkAC("Axel failed", tempDataSettingsMap.get("Axel").equals(axel), true);
-        checkAC("Make failed", tempDataSettingsMap.get("Make").equals(make), true);
-        checkAC("Model failed", tempDataSettingsMap.get("Model").equals(model), true);
-        checkAC("GrossWeight failed", tempDataSettingsMap.get("GrossWeight").equals(grossWeight), true);
-        checkAC("UnlandWeight failed", tempDataSettingsMap.get("UnlandWeight").equals(unlandWeight), true);
+        checkACWithLogger("TireSize failed", tempDataSettingsMap.get("TireSize").equals(tireSize), true);
+        checkACWithLogger("Length failed", tempDataSettingsMap.get("Length").equals(length), true);
+        checkACWithLogger("Fuel failed", tempDataSettingsMap.get("Fuel").equals(fuel), true);
+        checkACWithLogger("Axel failed", tempDataSettingsMap.get("Axel").equals(axel), true);
+        checkACWithLogger("Make failed", tempDataSettingsMap.get("Make").equals(make), true);
+        checkACWithLogger("Model failed", tempDataSettingsMap.get("Model").equals(model), true);
+        checkACWithLogger("GrossWeight failed", tempDataSettingsMap.get("GrossWeight").equals(grossWeight), true);
+        checkACWithLogger("UnlandWeight failed", tempDataSettingsMap.get("UnlandWeight").equals(unlandWeight), true);
 
-        checkAC("Color failed", tempDataSettingsMap.get("Color").equals(color), true);
-        checkAC("NYCert failed", tempDataSettingsMap.get("NYCert").equals(nyCert), true);
-        checkAC("InspectionDue failed", tempDataSettingsMap.get("InspectionDue").equals(inspectionDueDate), true);
-        checkAC("90DayExp failed", tempDataSettingsMap.get("90DayExp").equals(ninetyDayExpDate), true);
-        checkAC("ProRateExp failed", tempDataSettingsMap.get("ProRateExp").equals(proRateDueDate), true);
-        checkAC("ExpDate failed", tempDataSettingsMap.get("ExpDate").equals(expDateDate), true);
-        checkAC("isActive failed", tempDataSettingsMap.get("isActive").equals("1"), true);
+        checkACWithLogger("Color failed", tempDataSettingsMap.get("Color").equals(color), true);
+        checkACWithLogger("NYCert failed", tempDataSettingsMap.get("NYCert").equals(nyCert), true);
+        checkACWithLogger("InspectionDue failed", tempDataSettingsMap.get("InspectionDue").equals(inspectionDueDate), true);
+        checkACWithLogger("90DayExp failed", tempDataSettingsMap.get("90DayExp").equals(ninetyDayExpDate), true);
+        checkACWithLogger("ProRateExp failed", tempDataSettingsMap.get("ProRateExp").equals(proRateDueDate), true);
+        checkACWithLogger("ExpDate failed", tempDataSettingsMap.get("ExpDate").equals(expDateDate), true);
+        checkACWithLogger("isActive failed", tempDataSettingsMap.get("isActive").equals("0"), true);
 
 
     }

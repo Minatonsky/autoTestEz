@@ -30,6 +30,7 @@ public class ParentPage {
     public String getCurrentUrl() {
         return webDriver.getCurrentUrl();
     }
+    public void clickOnBlankArea(){actionsWithOurElements.clickOnBlankArea();}
 
     public void checkCurrentUrl() {
         try {
