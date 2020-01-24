@@ -1,24 +1,39 @@
-package localTest;
+package parameterizedUI;
 
+import libs.SpreadsheetData;
 import libs.UtilsForDB;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.junit.runners.Parameterized;
 import parentTest.ParentLocalTest;
 
+import java.io.FileInputStream;
 import java.io.IOException;
+import java.io.InputStream;
 import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
 import java.util.Map;
 
 import static libs.Utils.*;
+@RunWith(Parameterized.class)
+public class SoloDriverEquipmentParameterizedLocalSiteTest extends ParentLocalTest {
+    String login;
 
-public class SoloDriverEquipmentTestLocal extends ParentLocalTest {
+    public SoloDriverEquipmentParameterizedLocalSiteTest(String login) throws IOException {
+        this.login = login;
+    }
     UtilsForDB utilsForDB = new UtilsForDB();
-    String login = "den36@gmail.com";
-    String pass = "testtest";
-    String userId = "4401";
 
+    @Parameterized.Parameters()
+    public static Collection testData() throws IOException {
+        InputStream spreadsheet = new FileInputStream(configProperties.DATA_FILE_PATH() + "testLogin.xls");
+        return new SpreadsheetData(spreadsheet, "loginPassParamsTest").getData();
+    }
+
+    String pass = "testtest";
 
 
     @Test
@@ -44,6 +59,7 @@ public class SoloDriverEquipmentTestLocal extends ParentLocalTest {
         String ninetyDayExpDate = getDateRandom();
         String proRateDueDate = getDateRandom();
         String expDateDate = getDateRandom();
+        String userId = utilsForDB.getUserIdByEmail(login);
 
         loginPageLocal.userValidLogIn(login, pass);
         dashboardPageLocal.goToEquipmentPage();
@@ -131,6 +147,7 @@ public class SoloDriverEquipmentTestLocal extends ParentLocalTest {
         String ninetyDayExpDate = getDateRandom();
         String proRateDueDate = getDateRandom();
         String expDateDate = getDateRandom();
+        String userId = utilsForDB.getUserIdByEmail(login);
         String nameTruck = utilsForDB.getRandomEquipment(userId, "1");
 
         loginPageLocal.userValidLogIn(login, pass);

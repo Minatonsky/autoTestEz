@@ -151,7 +151,7 @@ public class SettingsPage extends ParentPage {
     public void selectCountry(String driverCountry) {actionsWithOurElements.selectValueInDropDown(countryDlValue, driverCountry);}
     public void selectStateDl(String driverStateDl) {actionsWithOurElements.selectValueInDropDown(stateDlValue, driverStateDl);}
     public void enterExpirationDl(String driverExpirationL) {actionsWithOurElements.clearAndEnterTextToElement(expirationInput, driverExpirationL); }
-
+    public void clickOnBlankArea(){actionsWithOurElements.clickOnBlankArea();}
 
 
     public void clickOnSave(){

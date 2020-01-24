@@ -523,6 +523,13 @@ public class UtilsForDB {
         return tempData;
     }
     @Step
+    public List<ArrayList> getDataTruckEquipmentByName(String trackName) throws SQLException, IOException, ClassNotFoundException {
+        dBMySQL = new Database("MySQL_PADB_DB", "MySQL");
+        List<ArrayList> tempData = dBMySQL.selectTable("SELECT e.Name, e.Owner, e.Year, e.`Type`, e.TireSize, e.Fuel, e.Axel, e.Color, e.Make, e.Model, e.VIN, e.GrossWeight, e.UnlandWeight, e.Plate, e.State, e.NYCert, e.InspectionDue, e.`90DayExp`, e.ProRateExp, e.ExpDate, e.isActive, e.Length FROM equipment e WHERE e.Name = '" + trackName + "';");
+        dBMySQL.quit();
+        return tempData;
+    }
+    @Step
     public String getRandomEquipment(String soloId, String truckTrailer) throws SQLException, IOException, ClassNotFoundException {
         dBMySQL = new Database("MySQL_PADB_DB", "MySQL");
         String tempCurrentDue = dBMySQL.selectValue("SELECT e.Name FROM equipment e WHERE e.userId = " + soloId + " AND e.truckTrailer = " + truckTrailer + "  ORDER BY RAND()LIMIT 1;");

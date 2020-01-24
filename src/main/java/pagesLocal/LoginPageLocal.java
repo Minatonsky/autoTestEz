@@ -45,6 +45,8 @@ public class LoginPageLocal extends ParentPageLocal {
        actionsWithOurElements.enterTextToElement(userLoginInput, login);
     }
 
+    public void clickOnBlankArea(){actionsWithOurElements.clickOnBlankArea();}
+
     @Step
     public void enterPass(String pass) {
         actionsWithOurElements.enterTextToElement(userPasswordInput, pass);

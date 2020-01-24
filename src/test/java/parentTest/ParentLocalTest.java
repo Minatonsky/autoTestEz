@@ -23,7 +23,7 @@ import java.util.concurrent.TimeUnit;
 
 import static libs.Utils.waitABit;
 
-public class ParentTestLocal {
+public class ParentLocalTest {
     WebDriver webDriver;
 
     Logger logger = Logger.getLogger(getClass());
@@ -81,6 +81,15 @@ public class ParentTestLocal {
         waitABit(1);
         if (actual != expected){
             logger.error("AC failed: " + message);
+        }
+        Assert.assertEquals(message,expected,actual);
+        logger.info("AC passed");
+    }
+    @Step
+    protected void checkACWithLogger(String message, boolean actual, boolean expected, String valueFromDb, String valueFront){
+        waitABit(1);
+        if (actual != expected){
+            logger.error("AC failed: " + message + "expected value: " + valueFront + " actual value: " + valueFromDb);
         }
         Assert.assertEquals(message,expected,actual);
         logger.info("AC passed");

@@ -116,10 +116,10 @@ public class EquipmentPageLocal extends ParentPageLocal {
 //    Others
     public void enterColor(String color){actionsWithOurElements.enterTextToElement(colorInput, color);}
     public void enterNYCert(String nyCert){actionsWithOurElements.enterTextToElement(ny_certInput, nyCert);}
-    public void enterInspectionDue(String inspectionDue){actionsWithOurElements.enterTextToElement(inspection_dueInput, inspectionDue);}
-    public void enterNinetyDayExp(String ninetyDayExp){actionsWithOurElements.enterTextToElement(ninety_day_expInput, ninetyDayExp);}
-    public void enterProRate(String proRateExp){actionsWithOurElements.enterTextToElement(pro_rate_expInput, proRateExp);}
-    public void enterExpDate(String expDate){actionsWithOurElements.enterTextToElement(exp_dateInput, expDate);}
+    public void enterInspectionDue(String inspectionDue){actionsWithOurElements.clearAndEnterTextToElement(inspection_dueInput, inspectionDue);}
+    public void enterNinetyDayExp(String ninetyDayExp){actionsWithOurElements.clearAndEnterTextToElement(ninety_day_expInput, ninetyDayExp);}
+    public void enterProRate(String proRateExp){actionsWithOurElements.clearAndEnterTextToElement(pro_rate_expInput, proRateExp);}
+    public void enterExpDate(String expDate){actionsWithOurElements.clearAndEnterTextToElement(exp_dateInput, expDate);}
     public void clickOnActive(){actionsWithOurElements.jsClickOnElement(checkboxTruckState);}
     public void clickOnSubmit(){actionsWithOurElements.clickOnElement(submitButton);}
 
