@@ -1,6 +1,6 @@
 package parentTest;
 
-import io.qameta.allure.Attachment;
+
 import io.qameta.allure.Step;
 import libs.ConfigProperties;
 import org.aeonbits.owner.ConfigFactory;
@@ -8,42 +8,28 @@ import org.apache.log4j.Logger;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
-import org.junit.Rule;
-import org.junit.rules.TestWatcher;
-import org.junit.runner.Description;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
-import pages.*;
+import pagesLocal.DashboardPageLocal;
+import pagesLocal.EquipmentPageLocal;
+import pagesLocal.LoginPageLocal;
 
 import java.io.File;
 import java.io.IOException;
 import java.sql.SQLException;
-import java.util.Iterator;
-import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
 import static libs.Utils.waitABit;
 
-public class ParentTest {
+public class ParentLocalTest {
     WebDriver webDriver;
 
-
     Logger logger = Logger.getLogger(getClass());
-    protected LoginPage loginPage;
-    protected DashboardPage dashboardPage;
-    protected ModalEldPage modalEldPage;
-    protected FinancesPage financesPage;
-    protected ManagerEldPage managerEldPage;
-    protected OrderInfoPage orderInfoPage;
-    protected UserEldPage userEldPage;
-    protected ManagerModalEldPage managerModalEldPage;
-    protected ChargePage chargePage;
-    protected SettingsPage settingsPage;
-    protected EquipmentPage equipmentPage;
+    protected LoginPageLocal loginPageLocal;
+    protected DashboardPageLocal dashboardPageLocal;
+    protected EquipmentPageLocal equipmentPageLocal;
 
     String browser = System.getProperty("browser");
 
@@ -55,17 +41,9 @@ public class ParentTest {
         initDriver(browser);
         webDriver.manage().window().maximize();
         webDriver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-        loginPage = new LoginPage(webDriver);
-        dashboardPage = new DashboardPage(webDriver);
-        modalEldPage = new ModalEldPage(webDriver);
-        financesPage = new FinancesPage(webDriver);
-        managerEldPage = new ManagerEldPage(webDriver);
-        orderInfoPage = new OrderInfoPage(webDriver);
-        userEldPage = new UserEldPage(webDriver);
-        managerModalEldPage = new ManagerModalEldPage(webDriver);
-        chargePage = new ChargePage(webDriver);
-        settingsPage = new SettingsPage(webDriver);
-        equipmentPage = new EquipmentPage(webDriver);
+        loginPageLocal = new LoginPageLocal(webDriver);
+        dashboardPageLocal = new DashboardPageLocal(webDriver);
+        equipmentPageLocal = new EquipmentPageLocal(webDriver);
 
     }
 
@@ -108,7 +86,7 @@ public class ParentTest {
         logger.info("AC passed");
     }
     @Step
-    protected void checkACWithLogger(String message, boolean actual, boolean expected, String valueFront, String valueFromDb){
+    protected void checkACWithLogger(String message, boolean actual, boolean expected, String valueFromDb, String valueFront){
         waitABit(1);
         if (actual != expected){
             logger.error("AC failed: " + message + "expected value: " + valueFront + " actual value: " + valueFromDb);
@@ -116,47 +94,5 @@ public class ParentTest {
         Assert.assertEquals(message,expected,actual);
         logger.info("AC passed");
     }
-
-    public void selectBrowserWindow(String window){
-        Set<String> windowIds = webDriver.getWindowHandles();
-        Iterator<String> iter = windowIds.iterator();
-        String mainWindow = iter.next();
-        String childWindow = iter.next();
-    }
-
-//       This is for do screenshot on failed test
-    @Rule
-    public TestWatcher watchman = new TestWatcher() {
-        String fileName;
-
-        @Override
-        protected void failed(Throwable e, Description description) {
-            screenshot();
-        }
-
-        @Attachment(value = "Page screenshot", type = "image/png")
-        public byte[] saveScreenshot(byte[] screenShot) {
-            return screenShot;
-        }
-
-        public void screenshot() {
-            if (webDriver == null) {
-                logger.info("Driver for screenshot not found");
-                return;
-            }
-
-            saveScreenshot(((TakesScreenshot) webDriver).getScreenshotAs(OutputType.BYTES));
-
-        }
-        @Override
-        protected void finished(Description description) {
-            logger.info(String.format("Finished test: %s::%s", description.getClassName(), description.getMethodName()));
-            try {
-                webDriver.quit();
-            } catch (Exception e) {
-                logger.error(e);
-            }
-        }
-    };
 
 }

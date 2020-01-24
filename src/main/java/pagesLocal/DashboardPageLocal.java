@@ -1,6 +1,5 @@
-package pages;
+package pagesLocal;
 
-import com.gargoylesoftware.htmlunit.ElementNotFoundException;
 import io.qameta.allure.Step;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -8,7 +7,7 @@ import org.openqa.selenium.support.FindBy;
 
 import static libs.Utils.waitABit;
 
-public class DashboardPage extends ParentPage {
+public class DashboardPageLocal extends ParentPageLocal {
     @FindBy(xpath = "//*[@id='dash_head']")
     private WebElement dashboard;
 
@@ -21,7 +20,7 @@ public class DashboardPage extends ParentPage {
     @FindBy(xpath = ".//a[@href='/dash/finances/']")
     private WebElement menuPageFinances;
 
-    @FindBy(xpath = ".//a[@href='/dash/equipment/']")
+    @FindBy(xpath = ".//a[@href='/dash/equipment']")
     private WebElement menuPageEquipment;
 
     @FindBy(xpath = ".//a[@href='/dash/settings/account/']")
@@ -30,10 +29,7 @@ public class DashboardPage extends ParentPage {
     @FindBy(xpath = ".//i[@class='fa fa-angle-double-left minimize-arrow']")
     private WebElement menuSizeButton;
 
-    @FindBy(xpath = ".//*[@id='validatePhone']//../*[@aria-label=\"Close\"]")
-    private WebElement phoneVerificationClose;
-
-    public DashboardPage(WebDriver webDriver) {
+    public DashboardPageLocal(WebDriver webDriver) {
 
         super(webDriver, "/dash");
     }
@@ -57,23 +53,9 @@ public class DashboardPage extends ParentPage {
         actionsWithOurElements.clickOnElement(menuSizeButton);
     }
     public void clickOnMenuPageEquipment(){actionsWithOurElements.clickOnElement(menuPageEquipment);}
-    public void clickOnBlankArea(){actionsWithOurElements.clickOnBlankArea();}
-    public void closePhoneVerification(WebElement phoneVerificationClose)
-    {
-        try{
-            actionsWithOurElements.clickOnElement(phoneVerificationClose);
-        }
-        catch (ElementNotFoundException e){
-            logger.info("Element not found");
-        }
-        catch (Exception e){
-        }
-    }
 
     @Step
     public void openMenuDash(){
-        waitABit(3);
-        closePhoneVerification(phoneVerificationClose);
         waitABit(3);
         clickOnMenuDash();
         waitABit(3);

@@ -5,6 +5,7 @@ import io.qameta.allure.Step;
 
 import java.io.IOException;
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.List;
 
 public class UtilsForDB {
@@ -477,6 +478,70 @@ public class UtilsForDB {
         return tempResult;
     }
 
+//    SETTINGS
+    @Step
+    public void setOffCheckBoxDriverSetting(String userId, String checkBoxValue) throws SQLException, IOException, ClassNotFoundException {
+        dBMySQL = new Database("MySQL_PADB_DB", "MySQL");
+        dBMySQL.changeTable("UPDATE driversData dd SET dd.HazMat = " + checkBoxValue + ", dd.Insurance = " + checkBoxValue + ", dd.TankerEndorsment = " + checkBoxValue + ", dd.yard = " + checkBoxValue + ", dd.conv = " + checkBoxValue + ", dd.hideEngineStatuses = " + checkBoxValue + ", dd.Sms = " + checkBoxValue + " WHERE dd.userId = " + userId + " AND dd.companyId = 0;");
+        dBMySQL.quit();
+    }
 
+    @Step
+    public void set_0_AobrdMPHDriverSettings(String userId) throws SQLException, IOException, ClassNotFoundException {
+        dBMySQL = new Database("MySQL_PADB_DB", "MySQL");
+        dBMySQL.changeTable("UPDATE driversRules dr SET dr.aobrdMPH = 0 WHERE userId = " + userId + ";");
+        dBMySQL.quit();
+    }
+    @Step
+    public boolean checkAobrdMPHDriverSettings(String userId) throws SQLException, IOException, ClassNotFoundException {
+        dBMySQL = new Database("MySQL_PADB_DB", "MySQL");
+        boolean tempResult = dBMySQL.isRowPresent("SELECT * FROM driversRules WHERE userId = " + userId + " AND aobrdMPH > 0;");
+        dBMySQL.quit();
+        return tempResult;
+    }
+
+    @Step
+    public List<ArrayList> getDataDriverSettings(String userId) throws SQLException, IOException, ClassNotFoundException {
+        dBMySQL = new Database("MySQL_PADB_DB", "MySQL");
+        List<ArrayList> tempData = dBMySQL.selectTable("SELECT HazMat, Insurance, TankerEndorsment, yard, conv, hideEngineStatuses, Sms, City, Address, notes, Phone, SSN, EIN, MedCard, DateOfBirth, HireDate, TermitaneDate, PullNotice, DLExpiration, DLNumber, DLState  FROM driversData WHERE userId = " + userId + " AND companyId = 0 ;");
+        dBMySQL.quit();
+        return tempData;
+    }
+
+//    EQUIPMENT
+    @Step
+    public void setOffCheckBoxInAddTruckToEquipment(String userId, String equipmentId, String checkBoxValue) throws SQLException, IOException, ClassNotFoundException {
+        dBMySQL = new Database("MySQL_PADB_DB", "MySQL");
+        dBMySQL.changeTable("UPDATE equipment e SET e.isActive = " + checkBoxValue + " WHERE e.userId = " + userId + " AND e.id = " + equipmentId + ";");
+        dBMySQL.quit();
+    }
+    @Step
+    public List<ArrayList> getDataTruckEquipment(String userId) throws SQLException, IOException, ClassNotFoundException {
+        dBMySQL = new Database("MySQL_PADB_DB", "MySQL");
+        List<ArrayList> tempData = dBMySQL.selectTable("SELECT e.Name, e.Owner, e.Year, e.`Type`, e.TireSize, e.Fuel, e.Axel, e.Color, e.Make, e.Model, e.VIN, e.GrossWeight, e.UnlandWeight, e.Plate, e.State, e.NYCert, e.InspectionDue, e.`90DayExp`, e.ProRateExp, e.ExpDate, e.isActive, e.Length FROM equipment e WHERE e.userId = " + userId + " ORDER BY id DESC LIMIT 1;");
+        dBMySQL.quit();
+        return tempData;
+    }
+    @Step
+    public List<ArrayList> getDataTruckEquipmentByName(String trackName) throws SQLException, IOException, ClassNotFoundException {
+        dBMySQL = new Database("MySQL_PADB_DB", "MySQL");
+        List<ArrayList> tempData = dBMySQL.selectTable("SELECT e.Name, e.Owner, e.Year, e.`Type`, e.TireSize, e.Fuel, e.Axel, e.Color, e.Make, e.Model, e.VIN, e.GrossWeight, e.UnlandWeight, e.Plate, e.State, e.NYCert, e.InspectionDue, e.`90DayExp`, e.ProRateExp, e.ExpDate, e.isActive, e.Length FROM equipment e WHERE e.Name = '" + trackName + "';");
+        dBMySQL.quit();
+        return tempData;
+    }
+    @Step
+    public String getRandomEquipment(String soloId, String truckTrailer) throws SQLException, IOException, ClassNotFoundException {
+        dBMySQL = new Database("MySQL_PADB_DB", "MySQL");
+        String tempCurrentDue = dBMySQL.selectValue("SELECT e.Name FROM equipment e WHERE e.userId = " + soloId + " AND e.truckTrailer = " + truckTrailer + "  ORDER BY RAND()LIMIT 1;");
+        dBMySQL.quit();
+        return tempCurrentDue;
+    }
+    @Step
+    public String getUserIdByEmail(String email) throws SQLException, IOException, ClassNotFoundException {
+        dBMySQL = new Database("MySQL_PADB_DB", "MySQL");
+        String tempCurrentDue = dBMySQL.selectValue("SELECT id FROM users WHERE email = '" + email + "';");
+        dBMySQL.quit();
+        return tempCurrentDue;
+    }
 
 }

@@ -1,27 +1,25 @@
-package pages;
+package pagesLocal;
 
 import libs.ActionsWithOurElements;
 import libs.ConfigProperties;
 import org.aeonbits.owner.ConfigFactory;
 import org.apache.log4j.Logger;
 import org.junit.Assert;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 
-public class ParentPage {
+public class ParentPageLocal {
     Logger logger = Logger.getLogger(getClass());
 
     WebDriver webDriver;
-    JavascriptExecutor js = (JavascriptExecutor) webDriver;
     String expectedUrl;
     protected static ConfigProperties configProperties = ConfigFactory.create(ConfigProperties.class);
     String baseUrl;
     ActionsWithOurElements actionsWithOurElements;
 
-    public ParentPage(WebDriver webDriver, String expectedUrl) {
+    public ParentPageLocal(WebDriver webDriver, String expectedUrl) {
         this.webDriver = webDriver;
-        baseUrl = configProperties.base_url();
+        baseUrl = configProperties.base_url_local();
         this.expectedUrl = baseUrl + expectedUrl;
         PageFactory.initElements(webDriver, this);
         actionsWithOurElements = new ActionsWithOurElements(webDriver);
@@ -30,7 +28,6 @@ public class ParentPage {
     public String getCurrentUrl() {
         return webDriver.getCurrentUrl();
     }
-
 
     public void checkCurrentUrl() {
         try {
@@ -42,5 +39,5 @@ public class ParentPage {
 
         }
     }
-}
 
+}
