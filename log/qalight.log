@@ -1380,3 +1380,134 @@ Session ID: 784bf4b2ffede0426188954cf38563aa
 2020-27-01 14:45:06   INFO [localTest.SoloDriverEquipmentTestLocal] : AC passed
 2020-27-01 14:45:07   INFO [localTest.SoloDriverEquipmentTestLocal] : AC passed
 2020-27-01 14:45:08   INFO [localTest.SoloDriverEquipmentTestLocal] : AC passed
+2020-27-01 16:07:29   INFO [localTest.SoloDriverDocumentsLocalSiteTest] : Chrome will be started
+2020-27-01 16:07:36   INFO [localTest.SoloDriverDocumentsLocalSiteTest] : Chrome is started
+2020-27-01 16:07:46   INFO [pagesLocal.LoginLocalSitePage] : Login Page was opened
+2020-27-01 16:07:46   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-27-01 16:07:46   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-27-01 16:07:46   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-27-01 16:07:46   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-27-01 16:07:50   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-27-01 16:08:33  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.name: type' (tried for 20 second(s) with 500 milliseconds interval)
+2020-27-01 16:09:20   INFO [localTest.SoloDriverDocumentsLocalSiteTest] : Chrome will be started
+2020-27-01 16:09:26   INFO [localTest.SoloDriverDocumentsLocalSiteTest] : Chrome is started
+2020-27-01 16:09:37   INFO [pagesLocal.LoginLocalSitePage] : Login Page was opened
+2020-27-01 16:09:37   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-27-01 16:09:37   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-27-01 16:09:37   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-27-01 16:09:37   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-27-01 16:09:41   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-27-01 16:10:24  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.name: type' (tried for 20 second(s) with 500 milliseconds interval)
+2020-27-01 16:11:27   INFO [localTest.SoloDriverDocumentsLocalSiteTest] : Chrome will be started
+2020-27-01 16:11:34   INFO [localTest.SoloDriverDocumentsLocalSiteTest] : Chrome is started
+2020-27-01 16:11:44   INFO [pagesLocal.LoginLocalSitePage] : Login Page was opened
+2020-27-01 16:11:44   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-27-01 16:11:44   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-27-01 16:11:45   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-27-01 16:11:45   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-27-01 16:11:48   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-27-01 16:13:14   INFO [localTest.SoloDriverDocumentsLocalSiteTest] : Chrome will be started
+2020-27-01 16:13:21   INFO [localTest.SoloDriverDocumentsLocalSiteTest] : Chrome is started
+2020-27-01 16:13:31   INFO [pagesLocal.LoginLocalSitePage] : Login Page was opened
+2020-27-01 16:13:31   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-27-01 16:13:32   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-27-01 16:13:32   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-27-01 16:13:32   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-27-01 16:13:35   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-27-01 16:13:38   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-27-01 16:13:38   INFO [libs.ActionsWithOurElements] : 5 was selected in Drop-down
+2020-27-01 16:14:35   INFO [localTest.SoloDriverDocumentsLocalSiteTest] : Chrome will be started
+2020-27-01 16:14:41   INFO [localTest.SoloDriverDocumentsLocalSiteTest] : Chrome is started
+2020-27-01 16:14:51   INFO [pagesLocal.LoginLocalSitePage] : Login Page was opened
+2020-27-01 16:14:52   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-27-01 16:14:52   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-27-01 16:14:52   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-27-01 16:14:52   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-27-01 16:14:55   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-27-01 16:14:58   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-27-01 16:14:59   INFO [libs.ActionsWithOurElements] : 5 was selected in Drop-down
+2020-27-01 16:49:23   INFO [localTest.SoloDriverSettingsLocalSiteTest] : Chrome will be started
+2020-27-01 16:49:30   INFO [localTest.SoloDriverSettingsLocalSiteTest] : Chrome is started
+2020-27-01 16:49:35   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-27-01 16:49:37   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-27-01 16:49:46   INFO [pagesLocal.LoginLocalSitePage] : Login Page was opened
+2020-27-01 16:49:46   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-27-01 16:49:47   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-27-01 16:49:47   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-27-01 16:49:47   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-27-01 16:50:30  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: .//a[@href='/dash/settings/account/']' (tried for 20 second(s) with 500 milliseconds interval)
+2020-27-01 16:52:00   INFO [localTest.SoloDriverSettingsLocalSiteTest] : Chrome will be started
+2020-27-01 16:52:06   INFO [localTest.SoloDriverSettingsLocalSiteTest] : Chrome is started
+2020-27-01 16:52:11   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-27-01 16:52:13   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-27-01 16:52:21   INFO [pagesLocal.LoginLocalSitePage] : Login Page was opened
+2020-27-01 16:52:21   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-27-01 16:52:22   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-27-01 16:52:22   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-27-01 16:52:22   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-27-01 16:52:25   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-27-01 16:52:29   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-27-01 16:52:29   INFO [libs.ActionsWithOurElements] : 539809920 was inputted into element
+2020-27-01 16:52:29   INFO [libs.ActionsWithOurElements] : 266863748 was inputted into element
+2020-27-01 16:52:29   INFO [libs.ActionsWithOurElements] : 2 was selected in Drop-down
+2020-27-01 16:52:30   INFO [libs.ActionsWithOurElements] : KQczu was inputted into element
+2020-27-01 16:52:30   INFO [libs.ActionsWithOurElements] : glcGTZawLI was inputted into element
+2020-27-01 16:52:30   INFO [libs.ActionsWithOurElements] : 5466307704 was inputted into element
+2020-27-01 16:52:30   INFO [libs.ActionsWithOurElements] : 2035-10-28 was inputted into element
+2020-27-01 16:52:31   INFO [libs.ActionsWithOurElements] : 1935-08-08 was inputted into element
+2020-27-01 16:52:31   INFO [libs.ActionsWithOurElements] : 1881-10-06 was inputted into element
+2020-27-01 16:52:31   INFO [libs.ActionsWithOurElements] : 1910-06-03 was inputted into element
+2020-27-01 16:52:31   INFO [libs.ActionsWithOurElements] : 1870-08-23 was inputted into element
+2020-27-01 16:52:31   INFO [libs.ActionsWithOurElements] : 8963572 was inputted into element
+2020-27-01 16:52:31   INFO [libs.ActionsWithOurElements] : Canada was selected in Drop-down
+2020-27-01 16:52:32   INFO [libs.ActionsWithOurElements] : AB was selected in Drop-down
+2020-27-01 16:52:32   INFO [libs.ActionsWithOurElements] : 1890-09-03 was inputted into element
+2020-27-01 16:52:32   INFO [libs.ActionsWithOurElements] : pId9mElzehVBTMthEmpd was inputted into element
+2020-27-01 16:52:32   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-27-01 16:52:37   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-27-01 16:52:42   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-27-01 16:52:45   INFO [localTest.SoloDriverSettingsLocalSiteTest] : AC passed
+2020-27-01 16:52:46   INFO [localTest.SoloDriverSettingsLocalSiteTest] : AC passed
+2020-27-01 16:52:47  ERROR [localTest.SoloDriverSettingsLocalSiteTest] : AC failed: Tanker Endorsement failed
+2020-27-01 18:35:44   INFO [localTest.SoloDriverDocumentsLocalSiteTest] : Chrome will be started
+2020-27-01 18:35:51   INFO [localTest.SoloDriverDocumentsLocalSiteTest] : Chrome is started
+2020-27-01 18:36:01   INFO [pagesLocal.LoginLocalSitePage] : Login Page was opened
+2020-27-01 18:36:02   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-27-01 18:36:02   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-27-01 18:36:02   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-27-01 18:36:02   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-27-01 18:36:05   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-27-01 18:36:08   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-27-01 18:36:09   INFO [libs.ActionsWithOurElements] : 0 was selected in Drop-down
+2020-27-01 18:36:29  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (aa54e8a6e7f57a57c319711a42b4d6f3)] -> name: image] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'DESKTOP-0PTGLHV', ip: '192.168.88.57', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\1\AppData\Local\Te...}, goog:chromeOptions: {debuggerAddress: localhost:61382}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: aa54e8a6e7f57a57c319711a42b4d6f3
+2020-27-01 18:38:57   INFO [localTest.SoloDriverDocumentsLocalSiteTest] : Chrome will be started
+2020-27-01 18:39:04   INFO [localTest.SoloDriverDocumentsLocalSiteTest] : Chrome is started
+2020-27-01 18:39:14   INFO [pagesLocal.LoginLocalSitePage] : Login Page was opened
+2020-27-01 18:39:14   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-27-01 18:39:14   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-27-01 18:39:14   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-27-01 18:39:14   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-27-01 18:39:18   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-27-01 18:39:21   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-27-01 18:39:21   INFO [libs.ActionsWithOurElements] : 0 was selected in Drop-down
+2020-27-01 18:47:56   INFO [localTest.SoloDriverDocumentsLocalSiteTest] : Chrome will be started
+2020-27-01 18:48:03   INFO [localTest.SoloDriverDocumentsLocalSiteTest] : Chrome is started
+2020-27-01 18:48:17   INFO [pagesLocal.LoginLocalSitePage] : Login Page was opened
+2020-27-01 18:48:18   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-27-01 18:48:18   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-27-01 18:48:18   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-27-01 18:48:18   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-27-01 18:48:21   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-27-01 18:48:24   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-27-01 18:48:25   INFO [libs.ActionsWithOurElements] : 0 was selected in Drop-down
+2020-27-01 18:48:45  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on WINDOWS (fbf18dd18b7215b44f9d5df11b697d3c)] -> xpath: //input[@type='file']] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'DESKTOP-0PTGLHV', ip: '192.168.88.57', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\1\AppData\Local\Te...}, goog:chromeOptions: {debuggerAddress: localhost:62273}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: fbf18dd18b7215b44f9d5df11b697d3c

@@ -2,16 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="660eb711-957d-418e-9483-8b2931da6e6e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/pagesLocal/DashboardLocalSitePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pagesLocal/DocumentsLocalSitePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pagesLocal/EquipmentLocalSitePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pagesLocal/LoginLocalSitePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pagesLocal/ParentLocalSitePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pagesLocal/SettingsLocalSitePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/localTest/SoloDriverDocumentsLocalSiteTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/localTest/SoloDriverEquipmentTestLocal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/localTest/SoloDriverSettingsLocalSiteTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/qalight.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/qalight.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pagesLocal/DashboardLocalSitePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pagesLocal/DashboardLocalSitePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pagesLocal/DocumentsLocalSitePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pagesLocal/DocumentsLocalSitePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/localTest/SoloDriverDocumentsLocalSiteTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/localTest/SoloDriverDocumentsLocalSiteTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,18 +92,34 @@
       <recent name="parameterizedOrders" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SoloDriverEquipmentTestLocal.addTruck">
-    <configuration name="Login3Test.validLogin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.SoloDriverDocumentsLocalSiteTest.createFuelReceipts">
+    <configuration name="SoloDriverDocumentsLocalSiteTest.addDocument" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="WorkSpace" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="loginTests.*" />
+          <option name="PATTERN" value="localTest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="loginTests" />
-      <option name="MAIN_CLASS_NAME" value="loginTests.Login3Test" />
-      <option name="METHOD_NAME" value="validLogin" />
+      <option name="PACKAGE_NAME" value="localTest" />
+      <option name="MAIN_CLASS_NAME" value="localTest.SoloDriverDocumentsLocalSiteTest" />
+      <option name="METHOD_NAME" value="addDocument" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SoloDriverDocumentsLocalSiteTest.createFuelReceipts" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="WorkSpace" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="localTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="localTest" />
+      <option name="MAIN_CLASS_NAME" value="localTest.SoloDriverDocumentsLocalSiteTest" />
+      <option name="METHOD_NAME" value="createFuelReceipts" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -146,32 +157,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SoloDriverSettings3Test.updateDataSettings" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SoloDriverSettingsLocalSiteTest.updateDataSettings" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="WorkSpace" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="settingsTest.*" />
+          <option name="PATTERN" value="localTest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="settingsTest" />
-      <option name="MAIN_CLASS_NAME" value="settingsTest.SoloDriverSettings3Test" />
-      <option name="METHOD_NAME" value="updateDataSettings" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SoloDriverSettingsParameterizedTest.updateDataSettings" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="WorkSpace" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="parameterizedUI.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="parameterizedUI" />
-      <option name="MAIN_CLASS_NAME" value="parameterizedUI.SoloDriverSettingsParameterizedTest" />
+      <option name="PACKAGE_NAME" value="localTest" />
+      <option name="MAIN_CLASS_NAME" value="localTest.SoloDriverSettingsLocalSiteTest" />
       <option name="METHOD_NAME" value="updateDataSettings" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -297,22 +292,22 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.TestMethods.getEventNewOrder" />
-      <item itemvalue="JUnit.SoloDriverSettingsParameterizedTest.updateDataSettings" />
       <item itemvalue="Maven.SoloDriverEquipment" />
       <item itemvalue="Maven.DriverSettingsParameterizedTest" />
       <item itemvalue="Maven.SoloOrders" />
-      <item itemvalue="JUnit.Login3Test.validLogin" />
-      <item itemvalue="JUnit.SoloDriverSettings3Test.updateDataSettings" />
       <item itemvalue="JUnit.SoloDriverEquipmentTest.addTruck" />
       <item itemvalue="JUnit.SoloDriverEquipmentTestLocal.addTruck" />
+      <item itemvalue="JUnit.SoloDriverDocumentsLocalSiteTest.addDocument" />
+      <item itemvalue="JUnit.SoloDriverSettingsLocalSiteTest.updateDataSettings" />
+      <item itemvalue="JUnit.SoloDriverDocumentsLocalSiteTest.createFuelReceipts" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SoloDriverDocumentsLocalSiteTest.createFuelReceipts" />
+        <item itemvalue="JUnit.SoloDriverSettingsLocalSiteTest.updateDataSettings" />
+        <item itemvalue="JUnit.SoloDriverDocumentsLocalSiteTest.addDocument" />
         <item itemvalue="JUnit.SoloDriverEquipmentTestLocal.addTruck" />
         <item itemvalue="JUnit.SoloDriverEquipmentTest.addTruck" />
-        <item itemvalue="JUnit.SoloDriverSettings3Test.updateDataSettings" />
-        <item itemvalue="JUnit.Login3Test.validLogin" />
-        <item itemvalue="JUnit.SoloDriverSettingsParameterizedTest.updateDataSettings" />
       </list>
     </recent_temporary>
   </component>
@@ -345,13 +340,6 @@
       <workItem from="1562665338918" duration="52834000" />
       <workItem from="1562782581468" duration="9021000" />
       <workItem from="1562822119836" duration="58303000" />
-    </task>
-    <task id="LOCAL-00031" summary="count methods was add">
-      <created>1565979870989</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1565979870989</updated>
     </task>
     <task id="LOCAL-00032" summary="solo test refactor was add">
       <created>1566330570175</created>
@@ -689,7 +677,14 @@
       <option name="project" value="LOCAL" />
       <updated>1580132375387</updated>
     </task>
-    <option name="localTasksCounter" value="80" />
+    <task id="LOCAL-00080" summary="local2 test was add">
+      <created>1580132811456</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1580132811456</updated>
+    </task>
+    <option name="localTasksCounter" value="81" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -726,7 +721,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="new month-to-month 12 test was add" />
     <MESSAGE value="charge defaulters was add" />
     <MESSAGE value="ban unban was add" />
     <MESSAGE value="test api login was add" />
@@ -751,7 +745,8 @@
     <MESSAGE value="paramsUI test was add" />
     <MESSAGE value="paramsUI2 test was add" />
     <MESSAGE value="local test was add" />
-    <option name="LAST_COMMIT_MESSAGE" value="local test was add" />
+    <MESSAGE value="local2 test was add" />
+    <option name="LAST_COMMIT_MESSAGE" value="local2 test was add" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="179" key="#Notifications" timestamp="1579788757833">
@@ -774,26 +769,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="268" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580118351514" />
-    <state x="614" y="115" key="CommitChangelistDialog2" timestamp="1580132374607">
+    <state x="614" y="115" key="CommitChangelistDialog2" timestamp="1580132810907">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="614" y="115" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1580132374607" />
-    <state width="1877" height="239" key="GridCell.Tab.0.bottom" timestamp="1580132349449">
+    <state x="614" y="115" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1580132810907" />
+    <state width="1877" height="109" key="GridCell.Tab.0.bottom" timestamp="1580144180867">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="239" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1580132349449" />
-    <state width="1877" height="239" key="GridCell.Tab.0.center" timestamp="1580132349448">
+    <state width="1877" height="109" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1580144180867" />
+    <state width="1877" height="109" key="GridCell.Tab.0.center" timestamp="1580144180866">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="239" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1580132349448" />
-    <state width="1877" height="239" key="GridCell.Tab.0.left" timestamp="1580132349448">
+    <state width="1877" height="109" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1580144180866" />
+    <state width="1877" height="109" key="GridCell.Tab.0.left" timestamp="1580144180866">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="239" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1580132349448" />
-    <state width="1877" height="239" key="GridCell.Tab.0.right" timestamp="1580132349448">
+    <state width="1877" height="109" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1580144180866" />
+    <state width="1877" height="109" key="GridCell.Tab.0.right" timestamp="1580144180866">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="239" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1580132349448" />
+    <state width="1877" height="109" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1580144180866" />
     <state x="540" y="256" key="IDE.errors.dialog" timestamp="1579526806082">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

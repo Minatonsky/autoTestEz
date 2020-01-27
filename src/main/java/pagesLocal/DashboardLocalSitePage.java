@@ -23,7 +23,10 @@ public class DashboardLocalSitePage extends ParentLocalSitePage {
     @FindBy(xpath = ".//a[@href='/dash/equipment']")
     private WebElement menuPageEquipment;
 
-    @FindBy(xpath = ".//a[@href='/dash/settings/account/']")
+    @FindBy(xpath = ".//a[@href='/dash/documents']")
+    private WebElement menuPageDocument;
+
+    @FindBy(xpath = ".//a[@href='/dash/settings']")
     private WebElement menuPageSettings;
 
     @FindBy(xpath = ".//i[@class='fa fa-angle-double-left minimize-arrow']")
@@ -53,6 +56,7 @@ public class DashboardLocalSitePage extends ParentLocalSitePage {
         actionsWithOurElements.clickOnElement(menuSizeButton);
     }
     public void clickOnMenuPageEquipment(){actionsWithOurElements.clickOnElement(menuPageEquipment);}
+    public void clickOnMenuPageDocuments(){actionsWithOurElements.clickOnElement(menuPageDocument);}
 
     @Step
     public void openMenuDash(){
@@ -86,6 +90,12 @@ public class DashboardLocalSitePage extends ParentLocalSitePage {
     public void goToEquipmentPage(){
         waitABit(3);
         clickOnMenuPageEquipment();
+        waitABit(3);
+    }
+    @Step
+    public void goToDocumentPage(){
+        waitABit(3);
+        clickOnMenuPageDocuments();
         waitABit(3);
     }
 }
