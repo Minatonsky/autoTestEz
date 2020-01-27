@@ -6,7 +6,7 @@ import org.apache.commons.lang3.RandomStringUtils;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
-import parentTest.ParentTest;
+import parentTest.Parent2Test;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -20,7 +20,7 @@ import java.util.Map;
 import static libs.Utils.*;
 
 @RunWith(Parameterized.class)
-public class SoloDriverSettingsParameterizedTest extends ParentTest {
+public class SoloDriverSettingsParameterizedTest extends Parent2Test {
 
     String login;
 

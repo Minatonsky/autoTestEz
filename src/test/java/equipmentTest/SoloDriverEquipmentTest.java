@@ -3,12 +3,12 @@ package equipmentTest;
 import libs.UtilsForDB;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.junit.Test;
-import parentTest.ParentTest;
+import parentTest.Parent3Test;
 
 import static libs.Utils.getDateFormat;
 import static libs.Utils.waitABit;
 
-public class SoloDriverEquipmentTest extends ParentTest {
+public class SoloDriverEquipmentTest extends Parent3Test {
     UtilsForDB utilsForDB = new UtilsForDB();
     String login = "den36@gmail.com";
     String pass = "testtest";

@@ -3,7 +3,7 @@ package settingsTest;
 import libs.UtilsForDB;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.junit.Test;
-import parentTest.ParentTest;
+import parentTest.Parent3Test;
 
 import java.io.IOException;
 import java.sql.SQLException;
@@ -13,7 +13,7 @@ import java.util.Map;
 
 import static libs.Utils.*;
 
-public class SoloDriverSettingsTest extends ParentTest {
+public class SoloDriverSettings3Test extends Parent3Test {
     UtilsForDB utilsForDB = new UtilsForDB();
     String login = "den36@gmail.com";
     String pass = "testtest";
@@ -88,7 +88,7 @@ public class SoloDriverSettingsTest extends ParentTest {
         checkAC("Tanker Endorsement failed", tempDataSettingsMap.get( "TankerEndorsment").equals("1"), true);
         checkAC("Yard Mode failed", tempDataSettingsMap.get("yard").equals("1"), true);
         checkAC("Conveyance Mode failed", tempDataSettingsMap.get("conv").equals("1"), true);
-//        checkAC("Hide Engine and Scanner statuses failed", tempDataSettingsMap.get("hideEngineStatuses").equals("1"), true);
+        checkAC("Hide Engine and Scanner statuses failed", tempDataSettingsMap.get("hideEngineStatuses").equals("1"), true);
         checkAC("Sms failed", tempDataSettingsMap.get("Sms").equals("1"), true);
 
         checkAC("AOBRD MPH failed", utilsForDB.checkAobrdMPHDriverSettings(userId), true);

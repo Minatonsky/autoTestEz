@@ -72,8 +72,7 @@ public class DashboardPage extends ParentPage {
 
     @Step
     public void openMenuDash(){
-        waitABit(3);
-        closePhoneVerification(phoneVerificationClose);
+
         waitABit(3);
         clickOnMenuDash();
         waitABit(3);

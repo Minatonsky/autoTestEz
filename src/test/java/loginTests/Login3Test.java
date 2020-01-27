@@ -1,9 +1,9 @@
 package loginTests;
 
 import org.junit.Test;
-import parentTest.ParentTest;
+import parentTest.Parent3Test;
 
-public class LoginTest extends ParentTest {
+public class Login3Test extends Parent3Test {
     @Test
     public void validLogin() throws InterruptedException {
         loginPage.openPage();
