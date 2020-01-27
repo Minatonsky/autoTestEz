@@ -2,28 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="660eb711-957d-418e-9483-8b2931da6e6e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/parentTest/Parent2Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pagesLocal/DashboardLocalSitePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pagesLocal/DocumentsLocalSitePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pagesLocal/EquipmentLocalSitePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pagesLocal/LoginLocalSitePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pagesLocal/ParentLocalSitePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pagesLocal/SettingsLocalSitePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/localTest/SoloDriverDocumentsLocalSiteTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/localTest/SoloDriverEquipmentTestLocal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/localTest/SoloDriverSettingsLocalSiteTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/qalight.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/qalight.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/DashboardPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/DashboardPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pagesLocal/DashboardPageLocal.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pagesLocal/EquipmentPageLocal.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pagesLocal/LoginPageLocal.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pagesLocal/ParentPageLocal.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/equipmentTest/SoloDriverEquipmentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/equipmentTest/SoloDriverEquipmentTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/localTest/SoloDriverEquipmentTestLocal.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/loginTests/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/loginTests/Login3Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/loginTests/LoginTestWithExcel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/loginTests/LoginTestWithExcel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/loginTests/UnValidLoginWithParams.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/loginTests/UnValidLoginWithParams.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/loginTests/UnValidLoginWithParamsWithExcel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/loginTests/UnValidLoginWithParamsWithExcel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/parameterizedOrders/ParentFleetOrderParamsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/parameterizedOrders/ParentFleetOrderParamsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/parameterizedOrders/ParentManagerOrderParamsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/parameterizedOrders/ParentManagerOrderParamsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/parameterizedOrders/ParentSoloOrderParamsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/parameterizedOrders/ParentSoloOrderParamsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/parameterizedUI/SoloDriverEquipmentParameterizedLocalSiteTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/parameterizedUI/SoloDriverSettingsParameterizedTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/parameterizedUI/SoloDriverSettingsParameterizedTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/parentTest/ParentLocalTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/parentTest/ParentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/parentTest/Parent3Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/settingsTest/SoloDriverSettingsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/settingsTest/SoloDriverSettings3Test.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,11 +71,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\WorkSpace\src\test\java\localTest" />
       <recent name="C:\WorkSpace\src\test\java" />
       <recent name="C:\WorkSpace\src\main\java" />
       <recent name="C:\workspace\testdevEzlogz\src\main\java\data" />
       <recent name="C:\workspace\testdevEzlogz\src\main\java\libs" />
-      <recent name="C:\workspace\testdevEzlogz\src\test\java\restTest" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\workspace\testdevEzlogz" />
@@ -357,13 +345,6 @@
       <workItem from="1562665338918" duration="52834000" />
       <workItem from="1562782581468" duration="9021000" />
       <workItem from="1562822119836" duration="58303000" />
-    </task>
-    <task id="LOCAL-00030" summary="refactor fleet test with excel was add">
-      <created>1565814593112</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1565814593112</updated>
     </task>
     <task id="LOCAL-00031" summary="count methods was add">
       <created>1565979870989</created>
@@ -701,7 +682,14 @@
       <option name="project" value="LOCAL" />
       <updated>1579790416792</updated>
     </task>
-    <option name="localTasksCounter" value="79" />
+    <task id="LOCAL-00079" summary="local test was add">
+      <created>1580132375386</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1580132375387</updated>
+    </task>
+    <option name="localTasksCounter" value="80" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -738,7 +726,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="month-to-month 12 test was add" />
     <MESSAGE value="new month-to-month 12 test was add" />
     <MESSAGE value="charge defaulters was add" />
     <MESSAGE value="ban unban was add" />
@@ -763,7 +750,8 @@
     <MESSAGE value="local addTruck test was add" />
     <MESSAGE value="paramsUI test was add" />
     <MESSAGE value="paramsUI2 test was add" />
-    <option name="LAST_COMMIT_MESSAGE" value="paramsUI2 test was add" />
+    <MESSAGE value="local test was add" />
+    <option name="LAST_COMMIT_MESSAGE" value="local test was add" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="179" key="#Notifications" timestamp="1579788757833">
@@ -786,10 +774,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="268" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580118351514" />
-    <state x="614" y="115" key="CommitChangelistDialog2" timestamp="1579790415979">
+    <state x="614" y="115" key="CommitChangelistDialog2" timestamp="1580132374607">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="614" y="115" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1579790415979" />
+    <state x="614" y="115" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1580132374607" />
     <state width="1877" height="239" key="GridCell.Tab.0.bottom" timestamp="1580132349449">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
