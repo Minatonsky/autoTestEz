@@ -530,9 +530,16 @@ public class UtilsForDB {
         return tempData;
     }
     @Step
-    public String getRandomEquipment(String soloId, String truckTrailer) throws SQLException, IOException, ClassNotFoundException {
+    public String getRandomEquipmentName(String soloId, String truckTrailer) throws SQLException, IOException, ClassNotFoundException {
         dBMySQL = new Database("MySQL_PADB_DB", "MySQL");
         String tempCurrentDue = dBMySQL.selectValue("SELECT e.Name FROM equipment e WHERE e.userId = " + soloId + " AND e.truckTrailer = " + truckTrailer + "  ORDER BY RAND()LIMIT 1;");
+        dBMySQL.quit();
+        return tempCurrentDue;
+    }
+    @Step
+    public String getRandomEquipmentId(String soloId, String truckTrailer) throws SQLException, IOException, ClassNotFoundException {
+        dBMySQL = new Database("MySQL_PADB_DB", "MySQL");
+        String tempCurrentDue = dBMySQL.selectValue("SELECT e.id FROM equipment e WHERE e.userId = " + soloId + " AND e.truckTrailer = " + truckTrailer + "  ORDER BY RAND()LIMIT 1;");
         dBMySQL.quit();
         return tempCurrentDue;
     }
@@ -540,6 +547,27 @@ public class UtilsForDB {
     public String getUserIdByEmail(String email) throws SQLException, IOException, ClassNotFoundException {
         dBMySQL = new Database("MySQL_PADB_DB", "MySQL");
         String tempCurrentDue = dBMySQL.selectValue("SELECT id FROM users WHERE email = '" + email + "';");
+        dBMySQL.quit();
+        return tempCurrentDue;
+    }
+    @Step
+    public String getDocInfoData(String docId, String infoName) throws SQLException, IOException, ClassNotFoundException {
+        dBMySQL = new Database("MySQL_PADB_DB", "MySQL");
+        String tempData = dBMySQL.selectValue("SELECT infoData from docsInfo di WHERE di.docId = " + docId + " AND infoName = '" + infoName + "';");
+        dBMySQL.quit();
+        return tempData;
+    }
+    @Step
+    public List<ArrayList> getDocData(String userId, String reference) throws SQLException, IOException, ClassNotFoundException {
+        dBMySQL = new Database("MySQL_PADB_DB", "MySQL");
+        List<ArrayList> tempData = dBMySQL.selectTable("SELECT d.id, d.awsName, d.`type`, d.date, d.carrierId, d.initiatorId, d.truckId, d.note FROM documents d WHERE d.userId = " + userId + " and d.reference = '" + reference + "';");
+        dBMySQL.quit();
+        return tempData;
+    }
+    @Step
+    public String getRandomDocumentReference(String userId, String typeDoc) throws SQLException, IOException, ClassNotFoundException {
+        dBMySQL = new Database("MySQL_PADB_DB", "MySQL");
+        String tempCurrentDue = dBMySQL.selectValue("SELECT reference FROM documents d WHERE d.`type` = " + typeDoc + " AND d.userId = " + userId + " ORDER BY RAND()LIMIT 1;");
         dBMySQL.quit();
         return tempCurrentDue;
     }

@@ -131,7 +131,7 @@ public class SoloDriverEquipmentTestLocal extends Parent3Test {
         String ninetyDayExpDate = getDateRandom();
         String proRateDueDate = getDateRandom();
         String expDateDate = getDateRandom();
-        String nameTruck = utilsForDB.getRandomEquipment(userId, "1");
+        String nameTruck = utilsForDB.getRandomEquipmentName(userId, "1");
 
         loginLocalSitePage.userValidLogIn(login, pass);
         dashboardLocalSitePage.goToEquipmentPage();

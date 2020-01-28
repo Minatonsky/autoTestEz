@@ -2,11 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="660eb711-957d-418e-9483-8b2931da6e6e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/localTest/SoloDriverCreateDocumentsLocalSiteTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/localTest/SoloDriverUpdateDocumentsLocalSiteTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log/qalight.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/qalight.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pagesLocal/DashboardLocalSitePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pagesLocal/DashboardLocalSitePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/libs/ActionsWithOurElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/libs/ActionsWithOurElements.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/libs/UtilsForDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/libs/UtilsForDB.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pagesLocal/DocumentsLocalSitePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pagesLocal/DocumentsLocalSitePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/localTest/SoloDriverDocumentsLocalSiteTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/localTest/SoloDriverDocumentsLocalSiteTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/equipmentTest/SoloDriverEquipmentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/equipmentTest/SoloDriverEquipmentTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/localTest/SoloDriverDocumentsLocalSiteTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/localTest/SoloDriverEquipmentTestLocal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/localTest/SoloDriverEquipmentTestLocal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/unitTest/TestMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/unitTest/TestMethods.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,8 +98,8 @@
       <recent name="parameterizedOrders" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SoloDriverDocumentsLocalSiteTest.createFuelReceipts">
-    <configuration name="SoloDriverDocumentsLocalSiteTest.addDocument" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.SoloDriverSettingsLocalSiteTest.updateDataSettings">
+    <configuration name="SoloDriverCreateDocumentsLocalSiteTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="WorkSpace" />
       <extension name="coverage">
         <pattern>
@@ -102,14 +108,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="localTest" />
-      <option name="MAIN_CLASS_NAME" value="localTest.SoloDriverDocumentsLocalSiteTest" />
-      <option name="METHOD_NAME" value="addDocument" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="localTest.SoloDriverCreateDocumentsLocalSiteTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SoloDriverDocumentsLocalSiteTest.createFuelReceipts" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SoloDriverCreateDocumentsLocalSiteTest.createBOL" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="WorkSpace" />
       <extension name="coverage">
         <pattern>
@@ -118,14 +123,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="localTest" />
-      <option name="MAIN_CLASS_NAME" value="localTest.SoloDriverDocumentsLocalSiteTest" />
-      <option name="METHOD_NAME" value="createFuelReceipts" />
+      <option name="MAIN_CLASS_NAME" value="localTest.SoloDriverCreateDocumentsLocalSiteTest" />
+      <option name="METHOD_NAME" value="createBOL" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SoloDriverEquipmentTestLocal.addTruck" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SoloDriverCreateDocumentsLocalSiteTest.createInsurance" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="WorkSpace" />
       <extension name="coverage">
         <pattern>
@@ -134,24 +139,24 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="localTest" />
-      <option name="MAIN_CLASS_NAME" value="localTest.SoloDriverEquipmentTestLocal" />
-      <option name="METHOD_NAME" value="addTruck" />
+      <option name="MAIN_CLASS_NAME" value="localTest.SoloDriverCreateDocumentsLocalSiteTest" />
+      <option name="METHOD_NAME" value="createInsurance" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SoloDriverEquipmentTest.addTruck" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SoloDriverCreateDocumentsLocalSiteTest.createLumper" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="WorkSpace" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="equipmentTest.*" />
+          <option name="PATTERN" value="localTest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="equipmentTest" />
-      <option name="MAIN_CLASS_NAME" value="equipmentTest.SoloDriverEquipmentTest" />
-      <option name="METHOD_NAME" value="addTruck" />
+      <option name="PACKAGE_NAME" value="localTest" />
+      <option name="MAIN_CLASS_NAME" value="localTest.SoloDriverCreateDocumentsLocalSiteTest" />
+      <option name="METHOD_NAME" value="createLumper" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -295,19 +300,19 @@
       <item itemvalue="Maven.SoloDriverEquipment" />
       <item itemvalue="Maven.DriverSettingsParameterizedTest" />
       <item itemvalue="Maven.SoloOrders" />
-      <item itemvalue="JUnit.SoloDriverEquipmentTest.addTruck" />
-      <item itemvalue="JUnit.SoloDriverEquipmentTestLocal.addTruck" />
-      <item itemvalue="JUnit.SoloDriverDocumentsLocalSiteTest.addDocument" />
       <item itemvalue="JUnit.SoloDriverSettingsLocalSiteTest.updateDataSettings" />
-      <item itemvalue="JUnit.SoloDriverDocumentsLocalSiteTest.createFuelReceipts" />
+      <item itemvalue="JUnit.SoloDriverCreateDocumentsLocalSiteTest.createInsurance" />
+      <item itemvalue="JUnit.SoloDriverCreateDocumentsLocalSiteTest.createBOL" />
+      <item itemvalue="JUnit.SoloDriverCreateDocumentsLocalSiteTest" />
+      <item itemvalue="JUnit.SoloDriverCreateDocumentsLocalSiteTest.createLumper" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.SoloDriverDocumentsLocalSiteTest.createFuelReceipts" />
         <item itemvalue="JUnit.SoloDriverSettingsLocalSiteTest.updateDataSettings" />
-        <item itemvalue="JUnit.SoloDriverDocumentsLocalSiteTest.addDocument" />
-        <item itemvalue="JUnit.SoloDriverEquipmentTestLocal.addTruck" />
-        <item itemvalue="JUnit.SoloDriverEquipmentTest.addTruck" />
+        <item itemvalue="JUnit.SoloDriverCreateDocumentsLocalSiteTest" />
+        <item itemvalue="JUnit.SoloDriverCreateDocumentsLocalSiteTest.createLumper" />
+        <item itemvalue="JUnit.SoloDriverCreateDocumentsLocalSiteTest.createBOL" />
+        <item itemvalue="JUnit.SoloDriverCreateDocumentsLocalSiteTest.createInsurance" />
       </list>
     </recent_temporary>
   </component>
@@ -340,13 +345,6 @@
       <workItem from="1562665338918" duration="52834000" />
       <workItem from="1562782581468" duration="9021000" />
       <workItem from="1562822119836" duration="58303000" />
-    </task>
-    <task id="LOCAL-00032" summary="solo test refactor was add">
-      <created>1566330570175</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1566330570175</updated>
     </task>
     <task id="LOCAL-00033" summary="params test refactor was add">
       <created>1566504452167</created>
@@ -684,7 +682,14 @@
       <option name="project" value="LOCAL" />
       <updated>1580132811456</updated>
     </task>
-    <option name="localTasksCounter" value="81" />
+    <task id="LOCAL-00081" summary="local2 test was add">
+      <created>1580144197639</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1580144197639</updated>
+    </task>
+    <option name="localTasksCounter" value="82" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -769,26 +774,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="268" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580118351514" />
-    <state x="614" y="115" key="CommitChangelistDialog2" timestamp="1580132810907">
+    <state x="614" y="115" key="CommitChangelistDialog2" timestamp="1580144197136">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="614" y="115" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1580132810907" />
-    <state width="1877" height="109" key="GridCell.Tab.0.bottom" timestamp="1580144180867">
+    <state x="614" y="115" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1580144197136" />
+    <state width="1877" height="315" key="GridCell.Tab.0.bottom" timestamp="1580230793676">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="109" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1580144180867" />
-    <state width="1877" height="109" key="GridCell.Tab.0.center" timestamp="1580144180866">
+    <state width="1877" height="315" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1580230793676" />
+    <state width="1877" height="315" key="GridCell.Tab.0.center" timestamp="1580230793676">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="109" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1580144180866" />
-    <state width="1877" height="109" key="GridCell.Tab.0.left" timestamp="1580144180866">
+    <state width="1877" height="315" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1580230793676" />
+    <state width="1877" height="315" key="GridCell.Tab.0.left" timestamp="1580230793676">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="109" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1580144180866" />
-    <state width="1877" height="109" key="GridCell.Tab.0.right" timestamp="1580144180866">
+    <state width="1877" height="315" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1580230793676" />
+    <state width="1877" height="315" key="GridCell.Tab.0.right" timestamp="1580230793676">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="109" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1580144180866" />
+    <state width="1877" height="315" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1580230793676" />
     <state x="540" y="256" key="IDE.errors.dialog" timestamp="1579526806082">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -797,10 +802,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="490" y="176" key="Maven.ArtifactSearchDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1579518965036" />
-    <state x="552" y="254" key="Vcs.Push.Dialog.v2" timestamp="1579712461543">
+    <state x="552" y="254" key="Vcs.Push.Dialog.v2" timestamp="1580144208349">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="254" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1579712461543" />
+    <state x="552" y="254" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1580144208349" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

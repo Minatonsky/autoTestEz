@@ -22,7 +22,7 @@ public class DocumentsLocalSitePage extends ParentLocalSitePage {
     @FindBy(name = "date")
     private WebElement dateInput;
 
-    @FindBy(id = "edit_truck")
+    @FindBy(xpath = ".//select[@id='edit_truck']")
     private WebElement selectTruckValue;
 
     @FindBy(id = "edit_trailer")
@@ -98,5 +98,6 @@ public class DocumentsLocalSitePage extends ParentLocalSitePage {
     public void documentDate(String date){actionsWithOurElements.clearAndEnterTextToElement(dateInput, date);}
     public void reference(String reference){actionsWithOurElements.enterTextToElement(referenceInput, reference);}
     public void sendImages(String imagesPath){actionsWithOurElements.enterTextToElement(fileInput, imagesPath);}
+    public void addPictureByJs(String path){actionsWithOurElements.addPictureByJs(path);}
 
 }

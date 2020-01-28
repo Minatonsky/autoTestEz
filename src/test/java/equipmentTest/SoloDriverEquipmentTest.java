@@ -12,7 +12,6 @@ public class SoloDriverEquipmentTest extends Parent3Test {
     UtilsForDB utilsForDB = new UtilsForDB();
     String login = "den36@gmail.com";
     String pass = "testtest";
-    String userId = "4401";
 
     @Test
     public void addTruck(){
