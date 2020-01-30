@@ -1,9 +1,10 @@
 package settingsTest;
 
+import libs.ExcelDriver;
 import libs.UtilsForDB;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.junit.Test;
-import parentTest.Parent3Test;
+import parentTest.ParentTest;
 
 import java.io.IOException;
 import java.sql.SQLException;
@@ -13,15 +14,25 @@ import java.util.Map;
 
 import static libs.Utils.*;
 
-public class SoloDriverSettings3Test extends Parent3Test {
+public class SoloDriverSettingsTest extends ParentTest {
     UtilsForDB utilsForDB = new UtilsForDB();
-    String login = "den36@gmail.com";
-    String pass = "testtest";
-    String userId = "4401";
+    ExcelDriver excelDriver = new ExcelDriver();
+
+    Map dataForValidLogIn = excelDriver.getData(configProperties.DATA_FILE_PATH() + "testLogin.xls", "driverLogin");
+
+    String login = dataForValidLogIn.get("login").toString();
+    String pass = dataForValidLogIn.get("pass").toString();
+    String userId = dataForValidLogIn.get("userId").toString();
+    String scannerType = "1";
+
+    public SoloDriverSettingsTest() throws IOException {
+    }
 
     @Test
     public void updateDataSettings() throws SQLException, IOException, ClassNotFoundException {
-        utilsForDB.setOffCheckBoxDriverSetting(userId, "0");
+        List<ArrayList> tempDataList = utilsForDB.getDataDriverSettings(userId);
+        Map<String, Object> tempBeforeTestDataSettingsMap = listArrayToMap(tempDataList);
+
         utilsForDB.set_0_AobrdMPHDriverSettings(userId);
         loginPage.userValidLogIn(login, pass);
         dashboardPage.openMenuDash();
@@ -43,20 +54,29 @@ public class SoloDriverSettings3Test extends Parent3Test {
         String datePullNotice = getDateRandom();
         String dateDLExpiration = getDateRandom();
 
+        String hideEngineStatuses = tempBeforeTestDataSettingsMap.get("hideEngineStatuses").toString();
+        String yard = tempBeforeTestDataSettingsMap.get("yard").toString();
+        String conveyance = tempBeforeTestDataSettingsMap.get("conv").toString();
+        String sms = tempBeforeTestDataSettingsMap.get("Sms").toString();
+        String hazMat= tempBeforeTestDataSettingsMap.get("HazMat").toString();
+        String insurance = tempBeforeTestDataSettingsMap.get("Insurance").toString();
+        String tankerEndorsment = tempBeforeTestDataSettingsMap.get("TankerEndorsment").toString();
 
  //    GENERAL
+        waitABit(5);
         settingsPage.enterSsn(ssn);
         settingsPage.enterEin(ein);
-        settingsPage.checkOnEngineScoreStatus();
-        settingsPage.checkOnYardMode();
-        settingsPage.checkOnConveyance();
+        settingsPage.checkEngineScoreStatus(hideEngineStatuses);
+        settingsPage.checkYardMode(yard);
+        settingsPage.checkConveyance(conveyance);
         settingsPage.moveSliderAobrd(10);
+        settingsPage.clickOnScannerType(scannerType);
 //    CONTACT INFO
         settingsPage.selectState(state);
         settingsPage.enterDriverCity(city);
         settingsPage.enterDriverAddress(address);
         settingsPage.enterPhone(phone);
-        settingsPage.checkOnSmsCheck();
+        settingsPage.checkSmsCheck(sms);
 
 //  ADMINISTRATIVE
         settingsPage.enterDateMedCard(dateMedCard);
@@ -64,9 +84,9 @@ public class SoloDriverSettings3Test extends Parent3Test {
         settingsPage.enterDateHire(dateHire);
         settingsPage.enterDateTerminate(dateTerminate);
         settingsPage.enterDateNotice(datePullNotice);
-        settingsPage.checkOnHazMat();
-        settingsPage.checkOnInsurance();
-        settingsPage.checkOnTanker();
+        settingsPage.checkHazMat(hazMat);
+        settingsPage.checkInsurance(insurance);
+        settingsPage.checkTanker(tankerEndorsment);
 
 
 //    DRIVER'S LICENSE
@@ -83,13 +103,15 @@ public class SoloDriverSettings3Test extends Parent3Test {
         List<ArrayList> tempDataSettingsList = utilsForDB.getDataDriverSettings(userId);
         Map<String, Object> tempDataSettingsMap = listArrayToMap(tempDataSettingsList);
 
-        checkAC("HazMat failed", tempDataSettingsMap.get("HazMat").equals("1"), true);
-        checkAC("Insurance failed", tempDataSettingsMap.get("Insurance").equals("1"), true);
-        checkAC("Tanker Endorsement failed", tempDataSettingsMap.get( "TankerEndorsment").equals("1"), true);
-        checkAC("Yard Mode failed", tempDataSettingsMap.get("yard").equals("1"), true);
-        checkAC("Conveyance Mode failed", tempDataSettingsMap.get("conv").equals("1"), true);
-        checkAC("Hide Engine and Scanner statuses failed", tempDataSettingsMap.get("hideEngineStatuses").equals("1"), true);
-        checkAC("Sms failed", tempDataSettingsMap.get("Sms").equals("1"), true);
+        checkAC("HazMat failed", tempDataSettingsMap.get("HazMat").equals(hazMat), false);
+        checkAC("Insurance failed", tempDataSettingsMap.get("Insurance").equals(insurance), false);
+        checkAC("Tanker Endorsement failed", tempDataSettingsMap.get( "TankerEndorsment").equals(tankerEndorsment), false);
+        checkAC("Yard Mode failed", tempDataSettingsMap.get("yard").equals(yard), false);
+        checkAC("Conveyance Mode failed", tempDataSettingsMap.get("conv").equals(conveyance), false);
+        checkAC("Hide Engine and Scanner statuses failed", tempDataSettingsMap.get("hideEngineStatuses").equals(hideEngineStatuses), false);
+        checkAC("Sms failed", tempDataSettingsMap.get("Sms").equals(sms), false);
+
+        checkAC("Scanner type failed", tempDataSettingsMap.get("scanner_type").equals(scannerType), true);
 
         checkAC("AOBRD MPH failed", utilsForDB.checkAobrdMPHDriverSettings(userId), true);
 

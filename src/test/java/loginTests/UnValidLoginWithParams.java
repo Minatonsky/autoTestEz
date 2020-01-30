@@ -3,14 +3,14 @@ package loginTests;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
-import parentTest.Parent2Test;
+import parentTest.ParentTest;
 
 import java.util.Arrays;
 import java.util.Collection;
 
 
 @RunWith(Parameterized.class)
-public class UnValidLoginWithParams extends Parent2Test {
+public class UnValidLoginWithParams extends ParentTest {
     String login, pass;
 
     public UnValidLoginWithParams(String login, String pass) {

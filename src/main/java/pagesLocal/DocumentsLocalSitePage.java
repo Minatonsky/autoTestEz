@@ -76,9 +76,17 @@ public class DocumentsLocalSitePage extends ParentLocalSitePage {
     @FindBy(xpath = ".//button[@type='submit']")
     private WebElement saveButton;
 
+    @FindBy(xpath = "//*[@placeholder='Reference #']")
+    private WebElement referencePlaceHolder;
+
+    @FindBy(xpath = "//div[@class='table-container__table-item' and text()='TruckRepair 01/28/2020 18:33:31']")
+    private WebElement documentInRow;
+
+    @FindBy(xpath = ".//input[@type='file']")
+    private WebElement addFile;
+
     public void clickOnCreateButton(){actionsWithOurElements.clickOnElement(addDocumentButton);}
     public void clickOnSaveButton(){actionsWithOurElements.clickOnElement(saveButton);}
-    public void clickOnImageButton(){actionsWithOurElements.jsClickOnElement(imageButton);}
     public void selectTypeDocument(String documentTypeValue){actionsWithOurElements.selectValueInDropDown(dropDawnTypeDocument, documentTypeValue);}
     public void notesText(String tempText){actionsWithOurElements.enterTextToElement(textArea, tempText);}
     public void selectState(String value){actionsWithOurElements.selectValueInDropDown(selectStateValue, value);}
@@ -97,7 +105,8 @@ public class DocumentsLocalSitePage extends ParentLocalSitePage {
     public void truckValue(String truckValue){actionsWithOurElements.selectValueInDropDown(selectTruckValue, truckValue);}
     public void documentDate(String date){actionsWithOurElements.clearAndEnterTextToElement(dateInput, date);}
     public void reference(String reference){actionsWithOurElements.enterTextToElement(referenceInput, reference);}
-    public void sendImages(String imagesPath){actionsWithOurElements.enterTextToElement(fileInput, imagesPath);}
-    public void addPictureByJs(String path){actionsWithOurElements.addPictureByJs(path);}
+    public void enterReferenceInPlaceHolder(String referenceName){actionsWithOurElements.enterTextToElement(referencePlaceHolder, referenceName);}
+    public void addPictureByJs(String path){actionsWithOurElements.addFileByJs(addFile, path);}
+    public void clickOnDocumentInRow(String referenceName){actionsWithOurElements.clickOnElement("//div[@class='table-container__table-item' and text()='" + referenceName +"");}
 
 }

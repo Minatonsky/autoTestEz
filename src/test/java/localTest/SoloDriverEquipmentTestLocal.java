@@ -1,9 +1,10 @@
 package localTest;
 
+import libs.ExcelDriver;
 import libs.UtilsForDB;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.junit.Test;
-import parentTest.Parent3Test;
+import parentTest.ParentTest;
 
 import java.io.IOException;
 import java.sql.SQLException;
@@ -13,12 +14,20 @@ import java.util.Map;
 
 import static libs.Utils.*;
 
-public class SoloDriverEquipmentTestLocal extends Parent3Test {
+public class SoloDriverEquipmentTestLocal extends ParentTest {
     UtilsForDB utilsForDB = new UtilsForDB();
-    String login = "den36@gmail.com";
-    String pass = "testtest";
-    String userId = "4401";
+    ExcelDriver excelDriver = new ExcelDriver();
 
+    Map dataForValidLogIn = excelDriver.getData(configProperties.DATA_FILE_PATH() + "testLogin.xls", "driverLogin");
+
+    String login = dataForValidLogIn.get("login").toString();
+    String pass = dataForValidLogIn.get("pass").toString();
+    String userId = dataForValidLogIn.get("userId").toString();
+    String type = "1";
+    String path = "C:\\Users\\1\\Documents\\10129_invoice_reportdddddddddddddddddddddddA.pdf";
+
+    public SoloDriverEquipmentTestLocal() throws IOException {
+    }
 
 
     @Test
@@ -26,7 +35,6 @@ public class SoloDriverEquipmentTestLocal extends Parent3Test {
         String unitName = RandomStringUtils.randomAlphanumeric(1, 10);
         String owner = RandomStringUtils.randomAlphabetic( 10);
         String year = RandomStringUtils.randomNumeric(4);
-        String type = "0";
         String vin = RandomStringUtils.randomAlphanumeric(17);
         String plate = RandomStringUtils.randomAlphanumeric(6);
         String state = "AR";
@@ -113,7 +121,6 @@ public class SoloDriverEquipmentTestLocal extends Parent3Test {
         String unitName = RandomStringUtils.randomAlphanumeric(1, 10);
         String owner = RandomStringUtils.randomAlphabetic( 10);
         String year = RandomStringUtils.randomNumeric(4);
-        String type = "0";
         String vin = RandomStringUtils.randomAlphanumeric(17);
         String plate = RandomStringUtils.randomAlphanumeric(6);
         String state = "AR";
@@ -132,6 +139,16 @@ public class SoloDriverEquipmentTestLocal extends Parent3Test {
         String proRateDueDate = getDateRandom();
         String expDateDate = getDateRandom();
         String nameTruck = utilsForDB.getRandomEquipmentName(userId, "1");
+        String notes = RandomStringUtils.randomAlphanumeric(15);
+
+        List<ArrayList> tempDataList = utilsForDB.getDataTruckEquipmentByName(nameTruck);
+        Map<String, Object> tempDataEquipmentBeforeTestMap = listArrayToMap(tempDataList);
+        String equipmentId = tempDataEquipmentBeforeTestMap.get("id").toString();
+        String isActive = tempDataEquipmentBeforeTestMap.get("isActive").toString();
+
+        String permitDocRegistration = utilsForDB.getUrlPermitDoc( equipmentId, "equipmentRegistration");
+        String permitDocReport = utilsForDB.getUrlPermitDoc( equipmentId, "equipmentAnnualReport");
+
 
         loginLocalSitePage.userValidLogIn(login, pass);
         dashboardLocalSitePage.goToEquipmentPage();
@@ -160,46 +177,51 @@ public class SoloDriverEquipmentTestLocal extends Parent3Test {
         equipmentLocalSitePage.enterUnlandWeight(unlandWeight);
 //    Others
         equipmentLocalSitePage.enterColor(color);
+        equipmentLocalSitePage.clickOnActive();
+        equipmentLocalSitePage.enterNote(notes);
         equipmentLocalSitePage.enterNYCert(nyCert);
         equipmentLocalSitePage.enterInspectionDue(inspectionDueDate);
         equipmentLocalSitePage.enterNinetyDayExp(ninetyDayExpDate);
         equipmentLocalSitePage.enterProRate(proRateDueDate);
         equipmentLocalSitePage.enterExpDate(expDateDate);
-        equipmentLocalSitePage.clickOnActive();
 
+        equipmentLocalSitePage.addFileInspection(path);
+        equipmentLocalSitePage.addFileRegistration(path);
 
         waitABit(5);
         equipmentLocalSitePage.clickOnSave();
         waitABit(5);
 
         List<ArrayList> tempDataListUpdatedTruck = utilsForDB.getDataTruckEquipmentByName(unitName);
-        Map<String, Object> tempDataSettingsMap = listArrayToMap(tempDataListUpdatedTruck);
+        Map<String, Object> tempDataEquipmentMap = listArrayToMap(tempDataListUpdatedTruck);
 
-        checkACWithLogger("Name failed", tempDataSettingsMap.get("Name").equals(unitName), true, tempDataSettingsMap.get("Name").toString(), unitName);
-        checkACWithLogger("Owner failed", tempDataSettingsMap.get("Owner").equals(owner), true, tempDataSettingsMap.get("Owner").toString(), owner);
-        checkACWithLogger("Year failed", tempDataSettingsMap.get("Year").equals(year), true, tempDataSettingsMap.get("Year").toString(), year);
-        checkACWithLogger("Type failed", tempDataSettingsMap.get("Type").equals(type), true, tempDataSettingsMap.get("Type").toString(), type);
-        checkACWithLogger("VIN failed", tempDataSettingsMap.get("VIN").equals(vin), true, tempDataSettingsMap.get("VIN").toString(), vin);
-        checkACWithLogger("Plate failed", tempDataSettingsMap.get("Plate").equals(plate), true, tempDataSettingsMap.get("Plate").toString(), plate);
-        checkACWithLogger("State failed", tempDataSettingsMap.get("State").equals(state), true, tempDataSettingsMap.get("State").toString(), state);
+        checkACWithLogger("Name failed", tempDataEquipmentMap.get("Name").equals(unitName), true, tempDataEquipmentMap.get("Name").toString(), unitName);
+        checkACWithLogger("Owner failed", tempDataEquipmentMap.get("Owner").equals(owner), true, tempDataEquipmentMap.get("Owner").toString(), owner);
+        checkACWithLogger("Year failed", tempDataEquipmentMap.get("Year").equals(year), true, tempDataEquipmentMap.get("Year").toString(), year);
+        checkACWithLogger("Type failed", tempDataEquipmentMap.get("Type").equals(type), true, tempDataEquipmentMap.get("Type").toString(), type);
+        checkACWithLogger("VIN failed", tempDataEquipmentMap.get("VIN").equals(vin), true, tempDataEquipmentMap.get("VIN").toString(), vin);
+        checkACWithLogger("Plate failed", tempDataEquipmentMap.get("Plate").equals(plate), true, tempDataEquipmentMap.get("Plate").toString(), plate);
+        checkACWithLogger("State failed", tempDataEquipmentMap.get("State").equals(state), true, tempDataEquipmentMap.get("State").toString(), state);
 
-        checkACWithLogger("TireSize failed", tempDataSettingsMap.get("TireSize").equals(tireSize), true, tempDataSettingsMap.get("TireSize").toString(), tireSize);
-        checkACWithLogger("Length failed", tempDataSettingsMap.get("Length").equals(length), true, tempDataSettingsMap.get("Length").toString(), length);
-        checkACWithLogger("Fuel failed", tempDataSettingsMap.get("Fuel").equals(fuel), true, tempDataSettingsMap.get("Fuel").toString(), fuel);
-        checkACWithLogger("Axel failed", tempDataSettingsMap.get("Axel").equals(axel), true, tempDataSettingsMap.get("Axel").toString(), axel);
-        checkACWithLogger("Make failed", tempDataSettingsMap.get("Make").equals(make), true, tempDataSettingsMap.get("Make").toString(), make);
-        checkACWithLogger("Model failed", tempDataSettingsMap.get("Model").equals(model), true, tempDataSettingsMap.get("Model").toString(), model);
-        checkACWithLogger("GrossWeight failed", tempDataSettingsMap.get("GrossWeight").equals(grossWeight), true, tempDataSettingsMap.get("GrossWeight").toString(), grossWeight);
-        checkACWithLogger("UnlandWeight failed", tempDataSettingsMap.get("UnlandWeight").equals(unlandWeight), true, tempDataSettingsMap.get("UnlandWeight").toString(), unlandWeight);
+        checkACWithLogger("TireSize failed", tempDataEquipmentMap.get("TireSize").equals(tireSize), true, tempDataEquipmentMap.get("TireSize").toString(), tireSize);
+        checkACWithLogger("Length failed", tempDataEquipmentMap.get("Length").equals(length), true, tempDataEquipmentMap.get("Length").toString(), length);
+        checkACWithLogger("Fuel failed", tempDataEquipmentMap.get("Fuel").equals(fuel), true, tempDataEquipmentMap.get("Fuel").toString(), fuel);
+        checkACWithLogger("Axel failed", tempDataEquipmentMap.get("Axel").equals(axel), true, tempDataEquipmentMap.get("Axel").toString(), axel);
+        checkACWithLogger("Make failed", tempDataEquipmentMap.get("Make").equals(make), true, tempDataEquipmentMap.get("Make").toString(), make);
+        checkACWithLogger("Model failed", tempDataEquipmentMap.get("Model").equals(model), true, tempDataEquipmentMap.get("Model").toString(), model);
+        checkACWithLogger("GrossWeight failed", tempDataEquipmentMap.get("GrossWeight").equals(grossWeight), true, tempDataEquipmentMap.get("GrossWeight").toString(), grossWeight);
+        checkACWithLogger("UnlandWeight failed", tempDataEquipmentMap.get("UnlandWeight").equals(unlandWeight), true, tempDataEquipmentMap.get("UnlandWeight").toString(), unlandWeight);
 
-        checkACWithLogger("Color failed", tempDataSettingsMap.get("Color").equals(color), true, tempDataSettingsMap.get("Color").toString(), color);
-        checkACWithLogger("NYCert failed", tempDataSettingsMap.get("NYCert").equals(nyCert), true, tempDataSettingsMap.get("NYCert").toString(), nyCert);
-        checkACWithLogger("InspectionDue failed", tempDataSettingsMap.get("InspectionDue").equals(inspectionDueDate), true, tempDataSettingsMap.get("InspectionDue").toString(), inspectionDueDate);
-        checkACWithLogger("90DayExp failed", tempDataSettingsMap.get("90DayExp").equals(ninetyDayExpDate), true, tempDataSettingsMap.get("90DayExp").toString(), ninetyDayExpDate);
-        checkACWithLogger("ProRateExp failed", tempDataSettingsMap.get("ProRateExp").equals(proRateDueDate), true, tempDataSettingsMap.get("ProRateExp").toString(), proRateDueDate);
-        checkACWithLogger("ExpDate failed", tempDataSettingsMap.get("ExpDate").equals(expDateDate), true, tempDataSettingsMap.get("ExpDate").toString(), expDateDate);
-        checkACWithLogger("isActive failed", tempDataSettingsMap.get("isActive").equals("0"), true, tempDataSettingsMap.get("isActive").toString(), "0");
-
+        checkACWithLogger("Color failed", tempDataEquipmentMap.get("Color").equals(color), true, tempDataEquipmentMap.get("Color").toString(), color);
+        checkACWithLogger("NYCert failed", tempDataEquipmentMap.get("NYCert").equals(nyCert), true, tempDataEquipmentMap.get("NYCert").toString(), nyCert);
+        checkACWithLogger("InspectionDue failed", tempDataEquipmentMap.get("InspectionDue").equals(inspectionDueDate), true, tempDataEquipmentMap.get("InspectionDue").toString(), inspectionDueDate);
+        checkACWithLogger("90DayExp failed", tempDataEquipmentMap.get("90DayExp").equals(ninetyDayExpDate), true, tempDataEquipmentMap.get("90DayExp").toString(), ninetyDayExpDate);
+        checkACWithLogger("ProRateExp failed", tempDataEquipmentMap.get("ProRateExp").equals(proRateDueDate), true, tempDataEquipmentMap.get("ProRateExp").toString(), proRateDueDate);
+        checkACWithLogger("ExpDate failed", tempDataEquipmentMap.get("ExpDate").equals(expDateDate), true, tempDataEquipmentMap.get("ExpDate").toString(), expDateDate);
+        checkACWithLogger("isActive failed", tempDataEquipmentMap.get("isActive").equals(isActive), false, tempDataEquipmentMap.get("isActive").toString(), isActive);
+        checkACWithLogger("Notes failed", tempDataEquipmentMap.get("Notes").equals(notes), true, tempDataEquipmentMap.get("Notes").toString(), notes);
+        checkACWithLogger("File failed", utilsForDB.getUrlPermitDoc(equipmentId, "equipmentRegistration").equals(permitDocRegistration), false, utilsForDB.getUrlPermitDoc(equipmentId, "equipmentRegistration"), permitDocRegistration);
+        checkAC("File failed", utilsForDB.getUrlPermitDoc(equipmentId, "equipmentAnnualReport").equals(permitDocReport), false);
 
     }
 }

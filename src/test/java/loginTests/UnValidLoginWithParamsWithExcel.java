@@ -4,7 +4,7 @@ import libs.SpreadsheetData;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
-import parentTest.Parent2Test;
+import parentTest.ParentTest;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -13,7 +13,7 @@ import java.util.Collection;
 
 
 @RunWith(Parameterized.class)
-public class UnValidLoginWithParamsWithExcel extends Parent2Test {
+public class UnValidLoginWithParamsWithExcel extends ParentTest {
     String login, pass;
 
     public UnValidLoginWithParamsWithExcel(String login, String pass) {

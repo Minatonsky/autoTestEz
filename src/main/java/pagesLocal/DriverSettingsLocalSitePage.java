@@ -1,21 +1,21 @@
-package pages;
+package pagesLocal;
 
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class SettingsPage extends ParentPage {
+public class DriverSettingsLocalSitePage extends ParentLocalSitePage {
 
-    public SettingsPage(WebDriver webDriver) {
+    public DriverSettingsLocalSitePage(WebDriver webDriver) {
         super(webDriver, "/dash/settings/account/");
     }
 
 
-    @FindBy(xpath = ".//a[@href='/dash/settings/driver_settings/']")
+    @FindBy(xpath = ".//a[@href='/dash/settings/driver_settings']")
     private WebElement driverSettings;
 
-//    GENERAL
+    //    GENERAL
     @FindBy(name = "ssn")
     private WebElement ssnInput;
 
@@ -52,7 +52,7 @@ public class SettingsPage extends ParentPage {
     @FindBy(id = "ezHard")
     private WebElement ezHardType;
 
-//    CONTACT INFO
+    //    CONTACT INFO
     @FindBy(name = "state_id")
     private WebElement state_id;
 
@@ -133,7 +133,7 @@ public class SettingsPage extends ParentPage {
         actionsWithOurElements.clickOnElement(driverSettings);
     }
 
-//    GENERAL
+    //    GENERAL
     public void enterSsn(String ssn) {actionsWithOurElements.clearAndEnterTextToElement(ssnInput, ssn); }
     public void enterEin(String ein) {actionsWithOurElements.clearAndEnterTextToElement(einInput, ein); }
     public void checkOnEngineScoreStatus(){
@@ -213,7 +213,7 @@ public class SettingsPage extends ParentPage {
     }
     public void enterNote(String driverNote) {actionsWithOurElements.clearAndEnterTextToElement(notes, driverNote); }
 
-//    DRIVER'S LICENSE
+    //    DRIVER'S LICENSE
     public void enterNumberDl(String driverNumberL) {actionsWithOurElements.clearAndEnterTextToElement(numberDlInput, driverNumberL); }
     public void selectCountry(String driverCountry) {actionsWithOurElements.selectValueInDropDown(countryDlValue, driverCountry);}
     public void selectStateDl(String driverStateDl) {actionsWithOurElements.selectValueInDropDown(stateDlValue, driverStateDl);}
@@ -297,7 +297,6 @@ public class SettingsPage extends ParentPage {
         }
     }
 
+
+
 }
-
-
-

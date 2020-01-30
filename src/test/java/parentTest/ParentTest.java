@@ -23,7 +23,7 @@ import java.util.concurrent.TimeUnit;
 
 import static libs.Utils.waitABit;
 
-public class Parent3Test {
+public class ParentTest {
     WebDriver webDriver;
 
 
@@ -43,7 +43,8 @@ public class Parent3Test {
     protected DocumentsLocalSitePage documentsLocalSitePage;
     protected EquipmentLocalSitePage equipmentLocalSitePage;
     protected LoginLocalSitePage loginLocalSitePage;
-    protected SettingsLocalSitePage settingsLocalSitePage;
+    protected DriverSettingsLocalSitePage driverSettingsLocalSitePage;
+    protected AccountSettingsLocalSitePage accountSettingsLocalSitePage;
 
     String browser = System.getProperty("browser");
 
@@ -70,7 +71,8 @@ public class Parent3Test {
         documentsLocalSitePage = new DocumentsLocalSitePage(webDriver);
         equipmentLocalSitePage = new EquipmentLocalSitePage(webDriver);
         loginLocalSitePage = new LoginLocalSitePage(webDriver);
-        settingsLocalSitePage = new SettingsLocalSitePage(webDriver);
+        driverSettingsLocalSitePage = new DriverSettingsLocalSitePage(webDriver);
+        accountSettingsLocalSitePage = new AccountSettingsLocalSitePage(webDriver);
 
 
     }
@@ -117,7 +119,7 @@ public class Parent3Test {
     protected void checkACWithLogger(String message, boolean actual, boolean expected, String valueFront, String valueFromDb){
         waitABit(1);
         if (actual != expected){
-            logger.error("AC failed: " + message + "expected value: " + valueFront + " actual value: " + valueFromDb);
+            logger.error("AC failed: " + message + " Expected value: " + valueFront + " Actual value: " + valueFromDb);
         }
         Assert.assertEquals(message,expected,actual);
         logger.info("AC passed");

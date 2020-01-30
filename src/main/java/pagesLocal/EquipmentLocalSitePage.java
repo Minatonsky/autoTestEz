@@ -95,6 +95,16 @@ public class EquipmentLocalSitePage extends ParentLocalSitePage {
     @FindBy(xpath = ".//button[text()='Save']")
     private WebElement saveButton;
 
+    @FindBy(xpath = ".//textarea")
+    private WebElement textArea;
+
+    @FindBy(id = "file_permit")
+    private WebElement addFileReg;
+
+    @FindBy(id = "file_permit_anual")
+    private WebElement addFileInsp;
+
+
     public void clickOnAddTruckButton(){actionsWithOurElements.clickOnElement(addTruckButton);}
 //    General
     public void enterUnitName(String unitName){actionsWithOurElements.enterTextToElement(unitInput, unitName);}
@@ -127,4 +137,9 @@ public class EquipmentLocalSitePage extends ParentLocalSitePage {
     public void clickOnEquipmentOnRow(){actionsWithOurElements.clickOnElement(equipmentInRow);}
     public void clickOnEditButton(){actionsWithOurElements.clickOnElement(editButton);}
     public void clickOnSave(){actionsWithOurElements.clickOnElement(saveButton);}
+    public void enterNote(String note){actionsWithOurElements.clearAndEnterTextToElement(textArea, note);}
+    public void addFileRegistration(String path){actionsWithOurElements.addFileByJs(addFileReg, path);}
+
+    public void addFileInspection(String path){actionsWithOurElements.addFileByJs(addFileInsp, path);}
+
 }

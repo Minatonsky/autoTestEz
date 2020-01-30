@@ -1,6 +1,5 @@
 package pages;
 
-import com.gargoylesoftware.htmlunit.ElementNotFoundException;
 import io.qameta.allure.Step;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -58,21 +57,14 @@ public class DashboardPage extends ParentPage {
     }
     public void clickOnMenuPageEquipment(){actionsWithOurElements.clickOnElement(menuPageEquipment);}
     public void clickOnBlankArea(){actionsWithOurElements.clickOnBlankArea();}
-    public void closePhoneVerification(WebElement phoneVerificationClose)
-    {
-        try{
-            actionsWithOurElements.clickOnElement(phoneVerificationClose);
-        }
-        catch (ElementNotFoundException e){
-            logger.info("Element not found");
-        }
-        catch (Exception e){
-        }
-    }
+    public boolean ifPhoneVerificationPopUpExist(){return actionsWithOurElements.isElementDisplay(phoneVerificationClose);}
+    public void clickOnCloseButton(){actionsWithOurElements.clickOnElement(phoneVerificationClose);}
 
     @Step
     public void openMenuDash(){
 
+        waitABit(3);
+        closePhoneVerificationPopUp();
         waitABit(3);
         clickOnMenuDash();
         waitABit(3);
@@ -104,5 +96,14 @@ public class DashboardPage extends ParentPage {
         waitABit(3);
         clickOnMenuPageEquipment();
         waitABit(3);
+    }
+
+    public void closePhoneVerificationPopUp(){
+        if (ifPhoneVerificationPopUpExist() == true){
+            clickOnCloseButton();
+        } else {
+            logger.info("There is not phone verification pop up");
+        }
+
     }
 }

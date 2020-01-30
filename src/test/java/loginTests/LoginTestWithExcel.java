@@ -2,12 +2,12 @@ package loginTests;
 
 import libs.ExcelDriver;
 import org.junit.Test;
-import parentTest.Parent3Test;
+import parentTest.ParentTest;
 
 import java.io.IOException;
 import java.util.Map;
 
-public class LoginTestWithExcel extends Parent3Test {
+public class LoginTestWithExcel extends ParentTest {
 
 
     @Test

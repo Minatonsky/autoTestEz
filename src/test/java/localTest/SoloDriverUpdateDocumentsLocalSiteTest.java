@@ -1,15 +1,24 @@
 package localTest;
 
+import libs.ExcelDriver;
 import libs.UtilsForDB;
 import org.junit.Test;
+import parentTest.ParentTest;
 
 import java.io.IOException;
 import java.sql.SQLException;
+import java.util.Map;
 
-public class SoloDriverUpdateDocumentsLocalSiteTest {
+import static libs.Utils.waitABit;
+
+public class SoloDriverUpdateDocumentsLocalSiteTest extends ParentTest {
     UtilsForDB utilsForDB = new UtilsForDB();
-    String login = "den36@gmail.com";
-    String pass = "testtest";
+    ExcelDriver excelDriver = new ExcelDriver();
+
+    Map dataForValidLogIn = excelDriver.getData(configProperties.DATA_FILE_PATH() + "testLogin.xls", "driverLogin");
+
+    String login = dataForValidLogIn.get("login").toString();
+    String pass = dataForValidLogIn.get("pass").toString();
     String fuelReceipts = "0";
     String lumper = "1";
     String scale = "2";
@@ -24,9 +33,21 @@ public class SoloDriverUpdateDocumentsLocalSiteTest {
     String trailerRegistration = "13";
     String others = "9";
     String BOL = "6";
+
+    public SoloDriverUpdateDocumentsLocalSiteTest() throws IOException {
+    }
+
     @Test
     public void updateFuelReceipts() throws SQLException, IOException, ClassNotFoundException {
         String userId = utilsForDB.getUserIdByEmail(login);
         String referenceRandom = utilsForDB.getRandomDocumentReference(userId, fuelReceipts);
+
+        loginLocalSitePage.userValidLogIn(login, pass);
+        dashboardLocalSitePage.goToDocumentPage();
+        documentsLocalSitePage.enterReferenceInPlaceHolder(referenceRandom);
+        waitABit(5);
+        documentsLocalSitePage.clickOnDocumentInRow(referenceRandom);
+        waitABit(5);
+
     }
 }

@@ -198,11 +198,11 @@ public class ActionsWithOurElements {
         }
 
     }
-    public void addPictureByJs(String path){
+    public void addFileByJs(WebElement webElement, String path){
         try{
             JavascriptExecutor js = (JavascriptExecutor) webDriver;
-            js.executeScript("arguments[0].setAttribute('style', arguments[1])", webDriver.findElement(By.xpath("//input[@type='file']")), "0");
-            webDriver.findElement(By.xpath("//input[@type='file']")).sendKeys(path);
+            js.executeScript("arguments[0].setAttribute('style', arguments[1])", webElement, "0");
+            webElement.sendKeys(path);
         } catch (Exception e){
             printErrorAndStopTest(e);
         }

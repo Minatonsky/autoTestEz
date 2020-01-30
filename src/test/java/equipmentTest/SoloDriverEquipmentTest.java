@@ -1,17 +1,28 @@
 package equipmentTest;
 
+import libs.ExcelDriver;
 import libs.UtilsForDB;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.junit.Test;
-import parentTest.Parent3Test;
+import parentTest.ParentTest;
+
+import java.io.IOException;
+import java.util.Map;
 
 import static libs.Utils.getDateFormat;
 import static libs.Utils.waitABit;
 
-public class SoloDriverEquipmentTest extends Parent3Test {
+public class SoloDriverEquipmentTest extends ParentTest {
     UtilsForDB utilsForDB = new UtilsForDB();
-    String login = "den36@gmail.com";
-    String pass = "testtest";
+    ExcelDriver excelDriver = new ExcelDriver();
+
+    Map dataForValidLogIn = excelDriver.getData(configProperties.DATA_FILE_PATH() + "testLogin.xls", "driverLogin");
+
+    String login = dataForValidLogIn.get("login").toString();
+    String pass = dataForValidLogIn.get("pass").toString();
+
+    public SoloDriverEquipmentTest() throws IOException {
+    }
 
     @Test
     public void addTruck(){

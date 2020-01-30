@@ -503,7 +503,7 @@ public class UtilsForDB {
     @Step
     public List<ArrayList> getDataDriverSettings(String userId) throws SQLException, IOException, ClassNotFoundException {
         dBMySQL = new Database("MySQL_PADB_DB", "MySQL");
-        List<ArrayList> tempData = dBMySQL.selectTable("SELECT HazMat, Insurance, TankerEndorsment, yard, conv, hideEngineStatuses, Sms, City, Address, notes, Phone, SSN, EIN, MedCard, DateOfBirth, HireDate, TermitaneDate, PullNotice, DLExpiration, DLNumber, DLState  FROM driversData WHERE userId = " + userId + " AND companyId = 0 ;");
+        List<ArrayList> tempData = dBMySQL.selectTable("SELECT HazMat, Insurance, TankerEndorsment, yard, conv, hideEngineStatuses, Sms, City, Address, notes, Phone, SSN, EIN, MedCard, DateOfBirth, HireDate, TermitaneDate, PullNotice, DLExpiration, DLNumber, DLState, scanner_type  FROM driversData WHERE userId = " + userId + " AND companyId = 0 ;");
         dBMySQL.quit();
         return tempData;
     }
@@ -525,7 +525,7 @@ public class UtilsForDB {
     @Step
     public List<ArrayList> getDataTruckEquipmentByName(String trackName) throws SQLException, IOException, ClassNotFoundException {
         dBMySQL = new Database("MySQL_PADB_DB", "MySQL");
-        List<ArrayList> tempData = dBMySQL.selectTable("SELECT e.Name, e.Owner, e.Year, e.`Type`, e.TireSize, e.Fuel, e.Axel, e.Color, e.Make, e.Model, e.VIN, e.GrossWeight, e.UnlandWeight, e.Plate, e.State, e.NYCert, e.InspectionDue, e.`90DayExp`, e.ProRateExp, e.ExpDate, e.isActive, e.Length FROM equipment e WHERE e.Name = '" + trackName + "';");
+        List<ArrayList> tempData = dBMySQL.selectTable("SELECT e.id, e.Notes, e.Name, e.Owner, e.Year, e.`Type`, e.TireSize, e.Fuel, e.Axel, e.Color, e.Make, e.Model, e.VIN, e.GrossWeight, e.UnlandWeight, e.Plate, e.State, e.NYCert, e.InspectionDue, e.`90DayExp`, e.ProRateExp, e.ExpDate, e.isActive, e.Length FROM equipment e WHERE e.Name = '" + trackName + "';");
         dBMySQL.quit();
         return tempData;
     }
@@ -570,6 +570,20 @@ public class UtilsForDB {
         String tempCurrentDue = dBMySQL.selectValue("SELECT reference FROM documents d WHERE d.`type` = " + typeDoc + " AND d.userId = " + userId + " ORDER BY RAND()LIMIT 1;");
         dBMySQL.quit();
         return tempCurrentDue;
+    }
+    @Step
+    public String getUrlPermitDoc(String equipmentId, String shortName) throws SQLException, IOException, ClassNotFoundException {
+        dBMySQL = new Database("MySQL_PADB_DB", "MySQL");
+        String tempUrl = dBMySQL.selectValue("SELECT url FROM permitDocs pd WHERE pd.equipmentId = " + equipmentId + " AND pd.shortName = '" + shortName + "';");
+        dBMySQL.quit();
+        return tempUrl;
+    }
+    @Step
+    public List<ArrayList> getDashBoardSettingsData(String userId, String reference) throws SQLException, IOException, ClassNotFoundException {
+        dBMySQL = new Database("MySQL_PADB_DB", "MySQL");
+        List<ArrayList> tempData = dBMySQL.selectTable("SELECT d.id, d.awsName, d.`type`, d.date, d.carrierId, d.initiatorId, d.truckId, d.note FROM documents d WHERE d.userId = " + userId + " and d.reference = '" + reference + "';");
+        dBMySQL.quit();
+        return tempData;
     }
 
 }

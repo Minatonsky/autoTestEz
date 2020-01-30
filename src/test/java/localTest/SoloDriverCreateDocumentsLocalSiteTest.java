@@ -1,10 +1,11 @@
 package localTest;
 
+import libs.ExcelDriver;
 import libs.UtilsForDB;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.junit.Test;
-import parentTest.Parent3Test;
+import parentTest.ParentTest;
 
 import java.io.IOException;
 import java.sql.SQLException;
@@ -15,10 +16,14 @@ import java.util.Map;
 import static libs.Utils.*;
 
 
-public class SoloDriverCreateDocumentsLocalSiteTest extends Parent3Test {
+public class SoloDriverCreateDocumentsLocalSiteTest extends ParentTest {
     UtilsForDB utilsForDB = new UtilsForDB();
-    String login = "den36@gmail.com";
-    String pass = "testtest";
+    ExcelDriver excelDriver = new ExcelDriver();
+
+    Map dataForValidLogIn = excelDriver.getData(configProperties.DATA_FILE_PATH() + "testLogin.xls", "driverLogin");
+
+    String login = dataForValidLogIn.get("login").toString();
+    String pass = dataForValidLogIn.get("pass").toString();
     String fuelReceipts = "0";
     String lumper = "1";
     String scale = "2";
@@ -34,6 +39,10 @@ public class SoloDriverCreateDocumentsLocalSiteTest extends Parent3Test {
     String others = "9";
     String BOL = "6";
     String picturePath = "C:\\Users\\1\\Pictures\\Saved Pictures\\274px-Nick_Cannon_by_David_Shankbone.jpg";
+
+    public SoloDriverCreateDocumentsLocalSiteTest() throws IOException {
+    }
+
     @Test
     public void createFuelReceipts() throws SQLException, IOException, ClassNotFoundException {
         String dateTime = getDateAndTimeFormated();

@@ -1,9 +1,10 @@
 package localTest;
 
+import libs.ExcelDriver;
 import libs.UtilsForDB;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.junit.Test;
-import parentTest.Parent3Test;
+import parentTest.ParentTest;
 
 import java.io.IOException;
 import java.sql.SQLException;
@@ -13,13 +14,25 @@ import java.util.Map;
 
 import static libs.Utils.*;
 
-public class SoloDriverSettingsLocalSiteTest extends Parent3Test {
+public class SoloDriverSettingsLocalSiteTest extends ParentTest {
     UtilsForDB utilsForDB = new UtilsForDB();
-    String login = "den36@gmail.com";
-    String pass = "testtest";
+     ExcelDriver excelDriver = new ExcelDriver();
+
+     Map dataForValidLogIn = excelDriver.getData(configProperties.DATA_FILE_PATH() + "testLogin.xls", "driverLogin");
+
+     String login = dataForValidLogIn.get("login").toString();
+     String pass = dataForValidLogIn.get("pass").toString();
     String userId = "4401";
-   @Test
+     String scannerType = "1";
+
+     public SoloDriverSettingsLocalSiteTest() throws IOException {
+     }
+
+     @Test
    public void updateDataSettings() throws SQLException, IOException, ClassNotFoundException{
+        List<ArrayList> tempDataList = utilsForDB.getDataDriverSettings(userId);
+        Map<String, Object> tempBeforeTestDataSettingsMap = listArrayToMap(tempDataList);
+
         String ssn = RandomStringUtils.randomNumeric(9);
         String ein = RandomStringUtils.randomNumeric(9);
         String state = "2";
@@ -35,60 +48,71 @@ public class SoloDriverSettingsLocalSiteTest extends Parent3Test {
         String datePullNotice = getDateRandom();
         String dateDLExpiration = getDateRandom();
 
-        utilsForDB.setOffCheckBoxDriverSetting(userId, "0");
+        String hideEngineStatuses = tempBeforeTestDataSettingsMap.get("hideEngineStatuses").toString();
+        String yard = tempBeforeTestDataSettingsMap.get("yard").toString();
+        String conveyance = tempBeforeTestDataSettingsMap.get("conv").toString();
+        String sms = tempBeforeTestDataSettingsMap.get("Sms").toString();
+        String hazMat= tempBeforeTestDataSettingsMap.get("HazMat").toString();
+        String insurance = tempBeforeTestDataSettingsMap.get("Insurance").toString();
+        String tankerEndorsment = tempBeforeTestDataSettingsMap.get("TankerEndorsment").toString();
+
+
         utilsForDB.set_0_AobrdMPHDriverSettings(userId);
         loginLocalSitePage.userValidLogIn(login, pass);
         dashboardLocalSitePage.goToSettingPage();
-        settingsLocalSitePage.clickOnDriverSettings();
+        driverSettingsLocalSitePage.clickOnDriverSettings();
 
         //    GENERAL
-        settingsLocalSitePage.enterSsn(ssn);
-        settingsLocalSitePage.enterEin(ein);
-        settingsLocalSitePage.checkOnEngineScoreStatus();
-        settingsLocalSitePage.checkOnYardMode();
-        settingsLocalSitePage.checkOnConveyance();
-        settingsLocalSitePage.moveSliderAobrd(10);
+        driverSettingsLocalSitePage.enterSsn(ssn);
+        driverSettingsLocalSitePage.enterEin(ein);
+        driverSettingsLocalSitePage.checkOnEngineScoreStatus();
+        driverSettingsLocalSitePage.checkOnYardMode();
+        driverSettingsLocalSitePage.checkOnConveyance();
+        driverSettingsLocalSitePage.moveSliderAobrd(10);
+        driverSettingsLocalSitePage.clickOnScannerType(scannerType);
+
 //    CONTACT INFO
-        settingsLocalSitePage.selectState(state);
-        settingsLocalSitePage.enterDriverCity(city);
-        settingsLocalSitePage.enterDriverAddress(address);
-        settingsLocalSitePage.enterPhone(phone);
-        settingsLocalSitePage.checkOnSmsCheck();
+        driverSettingsLocalSitePage.selectState(state);
+        driverSettingsLocalSitePage.enterDriverCity(city);
+        driverSettingsLocalSitePage.enterDriverAddress(address);
+        driverSettingsLocalSitePage.enterPhone(phone);
+        driverSettingsLocalSitePage.checkOnSmsCheck();
 
 //  ADMINISTRATIVE
-        settingsLocalSitePage.enterDateMedCard(dateMedCard);
-        settingsLocalSitePage.enterDateBirth(dateBirth);
-        settingsLocalSitePage.enterDateHire(dateHire);
-        settingsLocalSitePage.enterDateTerminate(dateTerminate);
-        settingsLocalSitePage.enterDateNotice(datePullNotice);
-        settingsLocalSitePage.checkOnHazMat();
-        settingsLocalSitePage.checkOnInsurance();
-        settingsLocalSitePage.checkOnTanker();
+        driverSettingsLocalSitePage.enterDateMedCard(dateMedCard);
+        driverSettingsLocalSitePage.enterDateBirth(dateBirth);
+        driverSettingsLocalSitePage.enterDateHire(dateHire);
+        driverSettingsLocalSitePage.enterDateTerminate(dateTerminate);
+        driverSettingsLocalSitePage.enterDateNotice(datePullNotice);
+        driverSettingsLocalSitePage.checkOnHazMat();
+        driverSettingsLocalSitePage.checkOnInsurance();
+        driverSettingsLocalSitePage.checkOnTanker();
 
 
 //    DRIVER'S LICENSE
-        settingsLocalSitePage.enterNumberDl(dlNumber);
-        settingsLocalSitePage.selectCountry("Canada");
-        settingsLocalSitePage.selectStateDl("AB");
-        settingsLocalSitePage.enterExpirationDl(dateDLExpiration);
-        settingsLocalSitePage.enterNote(note);
-        settingsLocalSitePage.clickOnBlankArea();
+        driverSettingsLocalSitePage.enterNumberDl(dlNumber);
+        driverSettingsLocalSitePage.selectCountry("Canada");
+        driverSettingsLocalSitePage.selectStateDl("AB");
+        driverSettingsLocalSitePage.enterExpirationDl(dateDLExpiration);
+        driverSettingsLocalSitePage.enterNote(note);
+        driverSettingsLocalSitePage.clickOnBlankArea();
 
         waitABit(5);
-        settingsLocalSitePage.clickOnSave();
+        driverSettingsLocalSitePage.clickOnSave();
         waitABit(5);
         List<ArrayList> tempDataSettingsList = utilsForDB.getDataDriverSettings(userId);
         Map<String, Object> tempDataSettingsMap = listArrayToMap(tempDataSettingsList);
 
-        checkAC("HazMat failed", tempDataSettingsMap.get("HazMat").equals("1"), true);
-        checkAC("Insurance failed", tempDataSettingsMap.get("Insurance").equals("1"), true);
-        checkAC("Tanker Endorsement failed", tempDataSettingsMap.get( "TankerEndorsment").equals("1"), true);
-        checkAC("Yard Mode failed", tempDataSettingsMap.get("yard").equals("1"), true);
-        checkAC("Conveyance Mode failed", tempDataSettingsMap.get("conv").equals("1"), true);
-        checkAC("Hide Engine and Scanner statuses failed", tempDataSettingsMap.get("hideEngineStatuses").equals("1"), true);
-        checkAC("Sms failed", tempDataSettingsMap.get("Sms").equals("1"), true);
+        checkAC("HazMat failed", tempDataSettingsMap.get("HazMat").equals(hazMat), false);
+        checkAC("Insurance failed", tempDataSettingsMap.get("Insurance").equals(insurance), false);
+        checkAC("Tanker Endorsement failed", tempDataSettingsMap.get( "TankerEndorsment").equals(tankerEndorsment), false);
+        checkAC("Yard Mode failed", tempDataSettingsMap.get("yard").equals(yard), false);
+        checkAC("Conveyance Mode failed", tempDataSettingsMap.get("conv").equals(conveyance), false);
+        checkAC("Hide Engine and Scanner statuses failed", tempDataSettingsMap.get("hideEngineStatuses").equals(hideEngineStatuses), false);
+        checkAC("Sms failed", tempDataSettingsMap.get("Sms").equals(sms), false);
 
         checkAC("AOBRD MPH failed", utilsForDB.checkAobrdMPHDriverSettings(userId), true);
+        checkAC("Scanner type failed", tempDataSettingsMap.get("scanner_type").equals(scannerType), true);
 
         checkAC("City failed", tempDataSettingsMap.get("City").equals(city), true);
         checkAC("Address failed", tempDataSettingsMap.get( "Address").equals(address), true);

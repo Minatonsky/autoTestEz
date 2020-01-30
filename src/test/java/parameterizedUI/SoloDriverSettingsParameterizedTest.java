@@ -6,7 +6,7 @@ import org.apache.commons.lang3.RandomStringUtils;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
-import parentTest.Parent2Test;
+import parentTest.ParentTest;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -20,7 +20,7 @@ import java.util.Map;
 import static libs.Utils.*;
 
 @RunWith(Parameterized.class)
-public class SoloDriverSettingsParameterizedTest extends Parent2Test {
+public class SoloDriverSettingsParameterizedTest extends ParentTest {
 
     String login;
 
@@ -28,6 +28,7 @@ public class SoloDriverSettingsParameterizedTest extends Parent2Test {
         this.login = login;
     }
     UtilsForDB utilsForDB = new UtilsForDB();
+    String scannerType = "1";
 
     @Parameterized.Parameters()
     public static Collection testData() throws IOException {
@@ -69,6 +70,7 @@ public class SoloDriverSettingsParameterizedTest extends Parent2Test {
         settingsPage.checkOnYardMode();
         settingsPage.checkOnConveyance();
         settingsPage.moveSliderAobrd(10);
+        settingsPage.clickOnScannerType(scannerType);
 //    CONTACT INFO
         settingsPage.selectState(state);
         settingsPage.enterDriverCity(city);
@@ -106,10 +108,11 @@ public class SoloDriverSettingsParameterizedTest extends Parent2Test {
         checkAC("Tanker Endorsement failed", tempDataSettingsMap.get( "TankerEndorsment").equals("1"), true);
         checkAC("Yard Mode failed", tempDataSettingsMap.get("yard").equals("1"), true);
         checkAC("Conveyance Mode failed", tempDataSettingsMap.get("conv").equals("1"), true);
-//        checkAC("Hide Engine and Scanner statuses failed", tempDataSettingsMap.get("hideEngineStatuses").equals("1"), true);
+        checkAC("Hide Engine and Scanner statuses failed", tempDataSettingsMap.get("hideEngineStatuses").equals("1"), true);
         checkAC("Sms failed", tempDataSettingsMap.get("Sms").equals("1"), true);
 
         checkAC("AOBRD MPH failed", utilsForDB.checkAobrdMPHDriverSettings(userId), true);
+        checkAC("Scanner type failed", tempDataSettingsMap.get("scanner_type").equals(scannerType), true);
 
         checkACWithLogger("City failed", tempDataSettingsMap.get("City").equals(city), true, tempDataSettingsMap.get("City").toString(), city);
         checkACWithLogger("Address failed", tempDataSettingsMap.get( "Address").equals(address), true, tempDataSettingsMap.get( "Address").toString(), address);
