@@ -137,29 +137,29 @@ public class SettingsPage extends ParentPage {
     public void enterSsn(String ssn) {actionsWithOurElements.clearAndEnterTextToElement(ssnInput, ssn); }
     public void enterEin(String ein) {actionsWithOurElements.clearAndEnterTextToElement(einInput, ein); }
     public void checkOnEngineScoreStatus(){
-        actionsWithOurElements.jsClickOnElement(hideEngineScoreStatusOn);
+        actionsWithOurElements.clickJsOnElement(hideEngineScoreStatusOn);
     }
     public void checkOffEngineScoreStatus(){
-        actionsWithOurElements.jsClickOnElement(hideEngineScoreStatusOff);
+        actionsWithOurElements.clickJsOnElement(hideEngineScoreStatusOff);
     }
     public void checkOnYardMode(){
-        actionsWithOurElements.jsClickOnElement(yardModeCheckOn);
+        actionsWithOurElements.clickJsOnElement(yardModeCheckOn);
     }
     public void checkOffYardMode(){
-        actionsWithOurElements.jsClickOnElement(yardModeCheckOff);
+        actionsWithOurElements.clickJsOnElement(yardModeCheckOff);
     }
     public void checkOnConveyance(){
-        actionsWithOurElements.jsClickOnElement(conveyanceCheckOn);
+        actionsWithOurElements.clickJsOnElement(conveyanceCheckOn);
     }
     public void checkOffConveyance(){
-        actionsWithOurElements.jsClickOnElement(conveyanceCheckOff);
+        actionsWithOurElements.clickJsOnElement(conveyanceCheckOff);
     }
     public void moveSliderAobrd(int value){
         actionsWithOurElements.sliderMove("//*[@class='vue-slider-rail']", value);
     }
-    public void clickOnSmartScannerType(){actionsWithOurElements.jsClickOnElement(ezSmartType);}
-    public void clickOnSimpleScannerType(){actionsWithOurElements.jsClickOnElement(ezSimpleType);}
-    public void clickOnHardScannerType(){actionsWithOurElements.jsClickOnElement(ezHardType);}
+    public void clickOnSmartScannerType(){actionsWithOurElements.clickJsOnElement(ezSmartType);}
+    public void clickOnSimpleScannerType(){actionsWithOurElements.clickJsOnElement(ezSimpleType);}
+    public void clickOnHardScannerType(){actionsWithOurElements.clickJsOnElement(ezHardType);}
     public void clickOnScannerType(String scannerType){
         if (scannerType.equals("0")){
             clickOnSimpleScannerType();
@@ -179,10 +179,10 @@ public class SettingsPage extends ParentPage {
     public void enterDriverAddress(String driverAddress) {actionsWithOurElements.clearAndEnterTextToElement(driver_address, driverAddress); }
     public void enterPhone(String driverPhone) {actionsWithOurElements.clearAndEnterTextToElement(phone, driverPhone); }
     public void checkOnSmsCheck(){
-        actionsWithOurElements.jsClickOnElement(smsCheckOn);
+        actionsWithOurElements.clickJsOnElement(smsCheckOn);
     }
     public void checkOffSmsCheck(){
-        actionsWithOurElements.jsClickOnElement(smsCheckOff);
+        actionsWithOurElements.clickJsOnElement(smsCheckOff);
     }
 
 
@@ -194,22 +194,22 @@ public class SettingsPage extends ParentPage {
     public void enterDateTerminate(String terminateDate) {actionsWithOurElements.clearAndEnterTextToElement(terminateDateInput, terminateDate); }
     public void enterDateNotice(String pullNotice) {actionsWithOurElements.clearAndEnterTextToElement(pullNoticeInput, pullNotice); }
     public void checkOnHazMat(){
-        actionsWithOurElements.jsClickOnElement(hazMatCheckOn);
+        actionsWithOurElements.clickJsOnElement(hazMatCheckOn);
     }
     public void checkOffHazMat(){
-        actionsWithOurElements.jsClickOnElement(hazMatCheckOff);
+        actionsWithOurElements.clickJsOnElement(hazMatCheckOff);
     }
     public void checkOnInsurance(){
-        actionsWithOurElements.jsClickOnElement(InsuranceCheckOn);
+        actionsWithOurElements.clickJsOnElement(InsuranceCheckOn);
     }
     public void checkOffInsurance(){
-        actionsWithOurElements.jsClickOnElement(InsuranceCheckOff);
+        actionsWithOurElements.clickJsOnElement(InsuranceCheckOff);
     }
     public void checkOnTanker(){
-        actionsWithOurElements.jsClickOnElement(TankerCheckOn);
+        actionsWithOurElements.clickJsOnElement(TankerCheckOn);
     }
     public void checkOffTanker(){
-        actionsWithOurElements.jsClickOnElement(TankerCheckOff);
+        actionsWithOurElements.clickJsOnElement(TankerCheckOff);
     }
     public void enterNote(String driverNote) {actionsWithOurElements.clearAndEnterTextToElement(notes, driverNote); }
 

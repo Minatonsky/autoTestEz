@@ -8,13 +8,11 @@ import org.openqa.selenium.WebDriver;
 
 import java.io.File;
 import java.io.IOException;
+import java.sql.SQLException;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.time.LocalDate;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.concurrent.ThreadLocalRandom;
 import java.util.stream.IntStream;
 
@@ -103,6 +101,12 @@ public class Utils {
         return LocalDate.ofEpochDay(ThreadLocalRandom
                 .current().nextInt(-hundredYears, hundredYears)).toString();
     }
+    public int generateRandomNumberBetweenTwoValues(int low, int high) throws SQLException, IOException, ClassNotFoundException {
+        Random r = new Random();
+        int result = r.nextInt(high-low) + low;
+        return result;
+    }
+
 
 
 

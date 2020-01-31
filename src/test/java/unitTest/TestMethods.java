@@ -13,12 +13,9 @@ import java.time.Period;
 import java.time.ZoneOffset;
 import java.time.temporal.ChronoUnit;
 import java.time.temporal.TemporalAdjusters;
-import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
+import java.util.Random;
 import java.util.logging.Logger;
-
-import static libs.Utils.listArrayToMap;
 // This test page is not using on test project, it just for check some methods
 
 public class TestMethods {
@@ -198,11 +195,11 @@ public class TestMethods {
 
     @Test
     public void test2() throws SQLException, IOException, ClassNotFoundException {
-        List<ArrayList> tempDataDocList = utilsForDB.getDocData("4401", "46B");
-        Map<String, Object> tempDataDocMap = listArrayToMap(tempDataDocList);
-        logger.info(tempDataDocMap.get("awsName").toString());
-
-        System.out.println(tempDataDocMap);
+        Random r = new Random();
+        int low = 0;
+        int high = 8;
+        int result = r.nextInt(high-low) + low;
+        System.out.println(result);
     }
 
 }

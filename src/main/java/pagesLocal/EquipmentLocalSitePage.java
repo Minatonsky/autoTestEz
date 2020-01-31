@@ -130,7 +130,7 @@ public class EquipmentLocalSitePage extends ParentLocalSitePage {
     public void enterNinetyDayExp(String ninetyDayExp){actionsWithOurElements.clearAndEnterTextToElement(ninety_day_expInput, ninetyDayExp);}
     public void enterProRate(String proRateExp){actionsWithOurElements.clearAndEnterTextToElement(pro_rate_expInput, proRateExp);}
     public void enterExpDate(String expDate){actionsWithOurElements.clearAndEnterTextToElement(exp_dateInput, expDate);}
-    public void clickOnActive(){actionsWithOurElements.jsClickOnElement(checkboxTruckState);}
+    public void clickOnActive(){actionsWithOurElements.clickJsOnElement(checkboxTruckState);}
     public void clickOnSubmit(){actionsWithOurElements.clickOnElement(submitButton);}
 
     public void enterOnEquipmentPlaceHolder(String equipmentName){actionsWithOurElements.enterTextToElement(truckNameHolder, equipmentName);}

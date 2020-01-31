@@ -39,13 +39,11 @@ public class SoloDriverSettingsParameterizedTest extends ParentTest {
     @Test
     public void updateDataSettings() throws SQLException, IOException, ClassNotFoundException {
         String userId = utilsForDB.getUserIdByEmail(login);
-        utilsForDB.setOffCheckBoxDriverSetting(userId, "0");
+        String pass = "testtest";
         utilsForDB.set_0_AobrdMPHDriverSettings(userId);
-        loginPage.userValidLogIn(login, "testtest");
 
-        dashboardPage.openMenuDash();
-        dashboardPage.goToSettingPage();
-        settingsPage.clickOnDriverSettings();
+        List<ArrayList> tempDataList = utilsForDB.getDataDriverSettings(userId);
+        Map<String, Object> tempBeforeTestDataSettingsMap = listArrayToMap(tempDataList);
 
         String ssn = RandomStringUtils.randomNumeric(9);
         String ein = RandomStringUtils.randomNumeric(9);
@@ -62,13 +60,26 @@ public class SoloDriverSettingsParameterizedTest extends ParentTest {
         String datePullNotice = getDateRandom();
         String dateDLExpiration = getDateRandom();
 
+        String hideEngineStatuses = tempBeforeTestDataSettingsMap.get("hideEngineStatuses").toString();
+        String yard = tempBeforeTestDataSettingsMap.get("yard").toString();
+        String conveyance = tempBeforeTestDataSettingsMap.get("conv").toString();
+        String sms = tempBeforeTestDataSettingsMap.get("Sms").toString();
+        String hazMat= tempBeforeTestDataSettingsMap.get("HazMat").toString();
+        String insurance = tempBeforeTestDataSettingsMap.get("Insurance").toString();
+        String tankerEndorsment = tempBeforeTestDataSettingsMap.get("TankerEndorsment").toString();
 
- //    GENERAL
+
+        loginPage.userValidLogIn(login, pass);
+        dashboardPage.openMenuDash();
+        dashboardPage.goToSettingPage();
+        settingsPage.clickOnDriverSettings();
+        //    GENERAL
+        waitABit(5);
         settingsPage.enterSsn(ssn);
         settingsPage.enterEin(ein);
-        settingsPage.checkOnEngineScoreStatus();
-        settingsPage.checkOnYardMode();
-        settingsPage.checkOnConveyance();
+        settingsPage.checkEngineScoreStatus(hideEngineStatuses);
+        settingsPage.checkYardMode(yard);
+        settingsPage.checkConveyance(conveyance);
         settingsPage.moveSliderAobrd(10);
         settingsPage.clickOnScannerType(scannerType);
 //    CONTACT INFO
@@ -76,7 +87,7 @@ public class SoloDriverSettingsParameterizedTest extends ParentTest {
         settingsPage.enterDriverCity(city);
         settingsPage.enterDriverAddress(address);
         settingsPage.enterPhone(phone);
-        settingsPage.checkOnSmsCheck();
+        settingsPage.checkSmsCheck(sms);
 
 //  ADMINISTRATIVE
         settingsPage.enterDateMedCard(dateMedCard);
@@ -84,9 +95,9 @@ public class SoloDriverSettingsParameterizedTest extends ParentTest {
         settingsPage.enterDateHire(dateHire);
         settingsPage.enterDateTerminate(dateTerminate);
         settingsPage.enterDateNotice(datePullNotice);
-        settingsPage.checkOnHazMat();
-        settingsPage.checkOnInsurance();
-        settingsPage.checkOnTanker();
+        settingsPage.checkHazMat(hazMat);
+        settingsPage.checkInsurance(insurance);
+        settingsPage.checkTanker(tankerEndorsment);
 
 
 //    DRIVER'S LICENSE
@@ -103,35 +114,34 @@ public class SoloDriverSettingsParameterizedTest extends ParentTest {
         List<ArrayList> tempDataSettingsList = utilsForDB.getDataDriverSettings(userId);
         Map<String, Object> tempDataSettingsMap = listArrayToMap(tempDataSettingsList);
 
-        checkAC("HazMat failed", tempDataSettingsMap.get("HazMat").equals("1"), true);
-        checkAC("Insurance failed", tempDataSettingsMap.get("Insurance").equals("1"), true);
-        checkAC("Tanker Endorsement failed", tempDataSettingsMap.get( "TankerEndorsment").equals("1"), true);
-        checkAC("Yard Mode failed", tempDataSettingsMap.get("yard").equals("1"), true);
-        checkAC("Conveyance Mode failed", tempDataSettingsMap.get("conv").equals("1"), true);
-        checkAC("Hide Engine and Scanner statuses failed", tempDataSettingsMap.get("hideEngineStatuses").equals("1"), true);
-        checkAC("Sms failed", tempDataSettingsMap.get("Sms").equals("1"), true);
+        checkAC("HazMat failed", tempDataSettingsMap.get("HazMat").equals(hazMat), false);
+        checkAC("Insurance failed", tempDataSettingsMap.get("Insurance").equals(insurance), false);
+        checkAC("Tanker Endorsement failed", tempDataSettingsMap.get( "TankerEndorsment").equals(tankerEndorsment), false);
+        checkAC("Yard Mode failed", tempDataSettingsMap.get("yard").equals(yard), false);
+        checkAC("Conveyance Mode failed", tempDataSettingsMap.get("conv").equals(conveyance), false);
+        checkAC("Hide Engine and Scanner statuses failed", tempDataSettingsMap.get("hideEngineStatuses").equals(hideEngineStatuses), false);
+        checkAC("Sms failed", tempDataSettingsMap.get("Sms").equals(sms), false);
 
         checkAC("AOBRD MPH failed", utilsForDB.checkAobrdMPHDriverSettings(userId), true);
         checkAC("Scanner type failed", tempDataSettingsMap.get("scanner_type").equals(scannerType), true);
 
-        checkACWithLogger("City failed", tempDataSettingsMap.get("City").equals(city), true, tempDataSettingsMap.get("City").toString(), city);
-        checkACWithLogger("Address failed", tempDataSettingsMap.get( "Address").equals(address), true, tempDataSettingsMap.get( "Address").toString(), address);
-        checkACWithLogger("Notes failed", tempDataSettingsMap.get("notes").equals(note), true, tempDataSettingsMap.get("notes").toString(), note);
+        checkAC("City failed", tempDataSettingsMap.get("City").equals(city), true);
+        checkAC("Address failed", tempDataSettingsMap.get( "Address").equals(address), true);
+        checkAC("Notes failed", tempDataSettingsMap.get("notes").equals(note), true);
 
-        checkACWithLogger("Phone failed", tempDataSettingsMap.get("Phone").toString().replaceAll("\\s+","").equals(phone), true, tempDataSettingsMap.get("Phone").toString().replaceAll("\\s+",""), phone);
-        checkACWithLogger("SSN failed", tempDataSettingsMap.get("SSN").toString().replaceAll("\\D+","").equals(ssn), true, tempDataSettingsMap.get("SSN").toString().replaceAll("\\D+",""), ssn);
-        checkACWithLogger("EIN failed", tempDataSettingsMap.get("EIN").toString().replaceAll("\\D+","").equals(ein), true, tempDataSettingsMap.get("EIN").toString().replaceAll("\\D+",""), ein);
+        checkAC("Phone failed", tempDataSettingsMap.get("Phone").toString().replaceAll("\\s+","").equals(phone), true);
+        checkAC("SSN failed", tempDataSettingsMap.get("SSN").toString().replaceAll("\\D+","").equals(ssn), true);
+        checkAC("EIN failed", tempDataSettingsMap.get("EIN").toString().replaceAll("\\D+","").equals(ein), true);
 
-        checkACWithLogger("Med. Card Expiration failed", tempDataSettingsMap.get("MedCard").equals(dateMedCard), true, tempDataSettingsMap.get("MedCard").toString(), dateMedCard);
-        checkACWithLogger("Date of Birth failed", tempDataSettingsMap.get("DateOfBirth").equals(dateBirth), true, tempDataSettingsMap.get("DateOfBirth").toString(), dateBirth);
-        checkACWithLogger("Hire Date failed", tempDataSettingsMap.get("HireDate").equals(dateHire), true, tempDataSettingsMap.get("HireDate").toString(), dateHire);
-        checkACWithLogger("Terminate day failed", tempDataSettingsMap.get("TermitaneDate").equals(dateTerminate), true, tempDataSettingsMap.get("TermitaneDate").toString(), dateTerminate);
-        checkACWithLogger("Pull Notice failed", tempDataSettingsMap.get("PullNotice").equals(datePullNotice), true, tempDataSettingsMap.get("PullNotice").toString(), datePullNotice);
-        checkACWithLogger("Expiration driver licence failed", tempDataSettingsMap.get("DLExpiration").equals(dateDLExpiration), true, tempDataSettingsMap.get("DLExpiration").toString(), dateDLExpiration);
+        checkAC("Med. Card Expiration failed", tempDataSettingsMap.get("MedCard").equals(dateMedCard), true);
+        checkAC("Date of Birth failed", tempDataSettingsMap.get("DateOfBirth").equals(dateBirth), true);
+        checkAC("Hire Date failed", tempDataSettingsMap.get("HireDate").equals(dateHire), true);
+        checkAC("Terminate day failed", tempDataSettingsMap.get("TermitaneDate").equals(dateTerminate), true);
+        checkAC("Pull Notice failed", tempDataSettingsMap.get("PullNotice").equals(datePullNotice), true);
+        checkAC("Expiration driver licence failed", tempDataSettingsMap.get("DLExpiration").equals(dateDLExpiration), true);
 
-        checkACWithLogger("Driver licence number failed", tempDataSettingsMap.get("DLNumber").equals(dlNumber), true, tempDataSettingsMap.get("DLNumber").toString(), dlNumber);
-        checkACWithLogger("Driver licence state failed", tempDataSettingsMap.get("DLState").equals("51"), true, tempDataSettingsMap.get("DLState").toString(), "51");
-
+        checkAC("Driver licence number failed", tempDataSettingsMap.get("DLNumber").equals(dlNumber), true);
+        checkAC("Driver licence state failed", tempDataSettingsMap.get("DLState").equals("51"), true);
     }
 
 }

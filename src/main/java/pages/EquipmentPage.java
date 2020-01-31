@@ -108,6 +108,6 @@ public class EquipmentPage extends ParentPage {
     public void enterNinetyDayExp(String ninetyDayExp){actionsWithOurElements.enterTextToElement(ninety_day_expInput, ninetyDayExp);}
     public void enterProRate(String proRateExp){actionsWithOurElements.enterTextToElement(pro_rate_expInput, proRateExp);}
     public void enterExpDate(String expDate){actionsWithOurElements.enterTextToElement(exp_dateInput, expDate);}
-    public void clickOnActive(){actionsWithOurElements.jsClickOnElement(checkboxTruckState);}
+    public void clickOnActive(){actionsWithOurElements.clickJsOnElement(checkboxTruckState);}
     public void clickOnSubmit(){actionsWithOurElements.clickOnElement(submitButton);}
 }

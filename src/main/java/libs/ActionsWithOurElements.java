@@ -159,7 +159,7 @@ public class ActionsWithOurElements {
         }
     }
 
-    public void jsClickOnElement(WebElement webElement) {
+    public void clickJsOnElement(WebElement webElement) {
         try {
             JavascriptExecutor executor = (JavascriptExecutor) webDriver;
             executor.executeScript("arguments[0].click();", webElement);
@@ -198,6 +198,7 @@ public class ActionsWithOurElements {
         }
 
     }
+
     public void addFileByJs(WebElement webElement, String path){
         try{
             JavascriptExecutor js = (JavascriptExecutor) webDriver;

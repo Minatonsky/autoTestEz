@@ -7,6 +7,7 @@ import org.apache.log4j.Logger;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
+import org.openqa.selenium.Cookie;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -14,7 +15,9 @@ import org.openqa.selenium.firefox.FirefoxOptions;
 import pages.*;
 import pagesLocal.*;
 
+import java.io.BufferedWriter;
 import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.sql.SQLException;
 import java.util.Iterator;
@@ -130,6 +133,58 @@ public class ParentTest {
         Iterator<String> iter = windowIds.iterator();
         String mainWindow = iter.next();
         String childWindow = iter.next();
+    }
+    public String[] getCookieValues(){
+        Set<Cookie> cks = webDriver.manage().getCookies();
+        String[] cookieValues = new String[cks.size()];
+
+        int i = 0;
+        for (Cookie ck : cks) {
+            cookieValues[i] = ck.getValue();
+            i++;
+        }
+        i = 0;
+        return cookieValues;
+    }
+
+    public String getValueCookieNamed(String cookieName){
+        try{
+        String value = webDriver.manage().getCookieNamed(cookieName).getValue();
+        logger.info(" Value from cookies = " + value);
+            return value;
+        }catch (Exception e){
+            Assert.fail();
+            return "Some trouble with cookies get value";
+        }
+
+
+    }
+
+    public void writeCookiesInFile(){
+        File file = new File("Cookies.data");
+        try
+        {
+            // Delete old file if exists
+            file.delete();
+            file.createNewFile();
+            FileWriter fileWrite = new FileWriter(file);
+            BufferedWriter Bwrite = new BufferedWriter(fileWrite);
+            // loop for getting the cookie information
+
+            // loop for getting the cookie information
+            for(Cookie ck : webDriver.manage().getCookies())
+            {
+                Bwrite.write((ck.getName()+";"+ck.getValue()+";"+ck.getDomain()+";"+ck.getPath()+";"+ck.getExpiry()+";"+ck.isSecure()));
+                Bwrite.newLine();
+            }
+            Bwrite.close();
+            fileWrite.close();
+
+        }
+        catch(Exception ex)
+        {
+            ex.printStackTrace();
+        }
     }
 
 //       This is for do screenshot on failed test

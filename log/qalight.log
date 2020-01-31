@@ -1388,3 +1388,266 @@ Session ID: 4bff158728b003cdf6e269ab7bd70e3f
 2020-30-01 17:33:23   INFO [localTest.SoloDriverSettingsLocalSiteTest] : AC passed
 2020-30-01 17:33:24   INFO [localTest.SoloDriverSettingsLocalSiteTest] : AC passed
 2020-30-01 17:33:25   INFO [localTest.SoloDriverSettingsLocalSiteTest] : AC passed
+2020-30-01 19:26:43   INFO [parameterizedUI.SoloDriverSettingsParameterizedTest] : Chrome will be started
+2020-30-01 19:26:49   INFO [parameterizedUI.SoloDriverSettingsParameterizedTest] : Chrome is started
+2020-30-01 19:26:53   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-30-01 19:26:55   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-30-01 19:26:57   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-30-01 19:27:09   INFO [pagesLocal.LoginLocalSitePage] : Login Page was opened
+2020-30-01 19:27:09   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-30-01 19:27:10   INFO [libs.ActionsWithOurElements] : test121@test.test was inputted into element
+2020-30-01 19:27:10   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-30-01 19:27:10   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-30-01 19:27:13   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-30-01 19:27:16   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-30-01 19:27:16   INFO [libs.ActionsWithOurElements] : 858273239 was inputted into element
+2020-30-01 19:27:17   INFO [libs.ActionsWithOurElements] : 205216802 was inputted into element
+2020-30-01 19:27:17   INFO [libs.ActionsWithOurElements] : 2 was selected in Drop-down
+2020-30-01 19:27:17   INFO [libs.ActionsWithOurElements] : ANYBq was inputted into element
+2020-30-01 19:27:18   INFO [libs.ActionsWithOurElements] : XDHAzFPkXu was inputted into element
+2020-30-01 19:27:18   INFO [libs.ActionsWithOurElements] : 3367936162 was inputted into element
+2020-30-01 19:27:18   INFO [libs.ActionsWithOurElements] : 2023-09-21 was inputted into element
+2020-30-01 19:27:18   INFO [libs.ActionsWithOurElements] : 1980-09-11 was inputted into element
+2020-30-01 19:27:18   INFO [libs.ActionsWithOurElements] : 1882-08-08 was inputted into element
+2020-30-01 19:27:19   INFO [libs.ActionsWithOurElements] : 1972-06-13 was inputted into element
+2020-30-01 19:27:19   INFO [libs.ActionsWithOurElements] : 2022-04-03 was inputted into element
+2020-30-01 19:27:19   INFO [libs.ActionsWithOurElements] : 0732639 was inputted into element
+2020-30-01 19:27:19   INFO [libs.ActionsWithOurElements] : Canada was selected in Drop-down
+2020-30-01 19:27:19   INFO [libs.ActionsWithOurElements] : AB was selected in Drop-down
+2020-30-01 19:27:19   INFO [libs.ActionsWithOurElements] : 2059-04-26 was inputted into element
+2020-30-01 19:27:20   INFO [libs.ActionsWithOurElements] : YfjEtLTyzOzc26OqWmXe was inputted into element
+2020-30-01 19:27:20   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-30-01 19:27:25   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-30-01 19:27:30   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-30-01 19:27:33   INFO [parameterizedUI.SoloDriverSettingsParameterizedTest] : AC passed
+2020-30-01 19:27:34   INFO [parameterizedUI.SoloDriverSettingsParameterizedTest] : AC passed
+2020-30-01 19:27:35   INFO [parameterizedUI.SoloDriverSettingsParameterizedTest] : AC passed
+2020-30-01 19:27:36   INFO [parameterizedUI.SoloDriverSettingsParameterizedTest] : AC passed
+2020-30-01 19:27:37   INFO [parameterizedUI.SoloDriverSettingsParameterizedTest] : AC passed
+2020-30-01 19:27:38   INFO [parameterizedUI.SoloDriverSettingsParameterizedTest] : AC passed
+2020-30-01 19:27:39   INFO [parameterizedUI.SoloDriverSettingsParameterizedTest] : AC passed
+2020-30-01 19:27:39   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-30-01 19:27:42   INFO [parameterizedUI.SoloDriverSettingsParameterizedTest] : AC passed
+2020-30-01 19:30:19   INFO [parameterizedUI.SoloDriverSettingsParameterizedTest] : Chrome will be started
+2020-30-01 19:30:25   INFO [parameterizedUI.SoloDriverSettingsParameterizedTest] : Chrome is started
+2020-30-01 19:30:29   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-30-01 19:30:31   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-30-01 19:30:33   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-30-01 19:30:35   INFO [pages.LoginPage] : Login Page was opened
+2020-31-01 11:59:55   INFO [localTest.SoloDriverAccountSettingTest] : Chrome will be started
+2020-31-01 12:00:02   INFO [localTest.SoloDriverAccountSettingTest] : Chrome is started
+2020-31-01 12:00:07   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-31-01 12:00:09   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-31-01 12:00:18   INFO [pagesLocal.LoginLocalSitePage] : Login Page was opened
+2020-31-01 12:00:18   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-31-01 12:00:18   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-31-01 12:00:18   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-31-01 12:00:19   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-31-01 12:00:22   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-31-01 12:00:26  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href="/dash/settings/account/" class="router-link-exact-active router-link-active">...</a> is not clickable at point (279, 11). Other element would receive the click: <div class="dash-header">...</div>
+  (Session info: chrome=79.0.3945.130)
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'DESKTOP-0PTGLHV', ip: '192.168.88.57', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\1\AppData\Local\Te...}, goog:chromeOptions: {debuggerAddress: localhost:64860}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 0742f7cc545d2bfe712505f1aee00545
+2020-31-01 12:02:14   INFO [localTest.SoloDriverAccountSettingTest] : Chrome will be started
+2020-31-01 12:02:21   INFO [localTest.SoloDriverAccountSettingTest] : Chrome is started
+2020-31-01 12:02:26   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-31-01 12:02:28   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-31-01 12:02:37   INFO [pagesLocal.LoginLocalSitePage] : Login Page was opened
+2020-31-01 12:02:38   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-31-01 12:02:38   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-31-01 12:02:38   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-31-01 12:02:38   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-31-01 12:02:41   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-31-01 12:02:49   INFO [pagesLocal.AccountSettingsLocalSitePage] : [soundNotificaiton=true; path=/; domain=devfrontend.ezlogz.com, locationIconWarning=false; path=/; domain=devfrontend.ezlogz.com, showScoreCard=false; path=/; domain=devfrontend.ezlogz.com, newNotificaitonsBox=false; path=/; domain=devfrontend.ezlogz.com]
+2020-31-01 13:33:57   INFO [localTest.SoloDriverAccountSettingTest] : Chrome will be started
+2020-31-01 13:34:04   INFO [localTest.SoloDriverAccountSettingTest] : Chrome is started
+2020-31-01 13:34:09   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-31-01 13:34:11   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-31-01 13:34:19   INFO [pagesLocal.LoginLocalSitePage] : Login Page was opened
+2020-31-01 13:34:20   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-31-01 13:34:20   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-31-01 13:34:20   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-31-01 13:34:20   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-31-01 13:34:23   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-31-01 13:34:31   INFO [pagesLocal.AccountSettingsLocalSitePage] :  ### soundNotificaiton=true; path=/; domain=devfrontend.ezlogz.com
+2020-31-01 13:35:57   INFO [localTest.SoloDriverAccountSettingTest] : Chrome will be started
+2020-31-01 13:36:03   INFO [localTest.SoloDriverAccountSettingTest] : Chrome is started
+2020-31-01 13:36:08   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-31-01 13:36:10   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-31-01 13:36:17   INFO [pagesLocal.LoginLocalSitePage] : Login Page was opened
+2020-31-01 13:36:18   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-31-01 13:36:18   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-31-01 13:36:18   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-31-01 13:36:18   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-31-01 13:36:21   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-31-01 13:36:29   INFO [pagesLocal.AccountSettingsLocalSitePage] :  ### showScoreCard=false; path=/; domain=devfrontend.ezlogz.com
+2020-31-01 13:47:36   INFO [localTest.SoloDriverAccountSettingTest] : Chrome will be started
+2020-31-01 13:47:43   INFO [localTest.SoloDriverAccountSettingTest] : Chrome is started
+2020-31-01 13:47:48   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-31-01 13:47:50   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-31-01 13:48:02   INFO [pagesLocal.LoginLocalSitePage] : Login Page was opened
+2020-31-01 13:48:02   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-31-01 13:48:03   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-31-01 13:48:03   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-31-01 13:48:03   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-31-01 13:48:06   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-31-01 13:48:14   INFO [pagesLocal.AccountSettingsLocalSitePage] :  ### showScoreCard=false; path=/; domain=devfrontend.ezlogz.com
+2020-31-01 14:13:34   INFO [localTest.SoloDriverAccountSettingTest] : Chrome will be started
+2020-31-01 14:13:40   INFO [localTest.SoloDriverAccountSettingTest] : Chrome is started
+2020-31-01 14:13:45   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-31-01 14:13:47   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-31-01 14:13:57   INFO [pagesLocal.LoginLocalSitePage] : Login Page was opened
+2020-31-01 14:13:57   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-31-01 14:13:57   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-31-01 14:13:58   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-31-01 14:13:58   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-31-01 14:14:01   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-31-01 14:14:09   INFO [pagesLocal.AccountSettingsLocalSitePage] :  ### false
+2020-31-01 14:54:27   INFO [localTest.SoloDriverAccountSettingTest] : Chrome will be started
+2020-31-01 14:54:33   INFO [localTest.SoloDriverAccountSettingTest] : Chrome is started
+2020-31-01 14:54:38   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-31-01 14:54:40   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-31-01 14:54:48   INFO [pagesLocal.LoginLocalSitePage] : Login Page was opened
+2020-31-01 14:54:48   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-31-01 14:54:48   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-31-01 14:54:48   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-31-01 14:54:49   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-31-01 14:54:52   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-31-01 14:56:44   INFO [localTest.SoloDriverAccountSettingTest] : Chrome will be started
+2020-31-01 14:56:51   INFO [localTest.SoloDriverAccountSettingTest] : Chrome is started
+2020-31-01 14:56:56   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-31-01 14:56:58   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-31-01 14:57:05   INFO [pagesLocal.LoginLocalSitePage] : Login Page was opened
+2020-31-01 14:57:06   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-31-01 14:57:06   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-31-01 14:57:06   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-31-01 14:57:06   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-31-01 14:57:09   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-31-01 14:59:32   INFO [localTest.SoloDriverAccountSettingTest] : Chrome will be started
+2020-31-01 14:59:39   INFO [localTest.SoloDriverAccountSettingTest] : Chrome is started
+2020-31-01 14:59:43   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-31-01 14:59:45   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-31-01 14:59:54   INFO [pagesLocal.LoginLocalSitePage] : Login Page was opened
+2020-31-01 14:59:54   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-31-01 14:59:54   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-31-01 14:59:54   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-31-01 14:59:55   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-31-01 14:59:58   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-31-01 15:00:06  ERROR [localTest.SoloDriverAccountSettingTest] : Some trouble
+2020-31-01 15:00:06   INFO [localTest.SoloDriverAccountSettingTest] :  Value from cookies = 
+2020-31-01 15:00:06   INFO [localTest.SoloDriverAccountSettingTest] :  Value from cookies = 
+2020-31-01 15:00:06   INFO [localTest.SoloDriverAccountSettingTest] :  Value from cookies = 
+2020-31-01 15:00:06   INFO [localTest.SoloDriverAccountSettingTest] :  Value from cookies = 
+2020-31-01 15:00:11   INFO [localTest.SoloDriverAccountSettingTest] :  Value from cookies = 
+2020-31-01 15:00:11   INFO [localTest.SoloDriverAccountSettingTest] :  Value from cookies = 
+2020-31-01 15:00:11   INFO [localTest.SoloDriverAccountSettingTest] :  Value from cookies = 
+2020-31-01 15:00:11   INFO [localTest.SoloDriverAccountSettingTest] :  Value from cookies = 
+2020-31-01 15:07:49   INFO [localTest.SoloDriverAccountSettingTest] : Chrome will be started
+2020-31-01 15:07:55   INFO [localTest.SoloDriverAccountSettingTest] : Chrome is started
+2020-31-01 15:08:00   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-31-01 15:08:02   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-31-01 15:08:10   INFO [pagesLocal.LoginLocalSitePage] : Login Page was opened
+2020-31-01 15:08:10   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-31-01 15:08:10   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-31-01 15:08:10   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-31-01 15:08:10   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-31-01 15:08:13   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-31-01 15:08:21  ERROR [localTest.SoloDriverAccountSettingTest] : Some trouble with cookies value
+2020-31-01 15:08:54   INFO [localTest.SoloDriverAccountSettingTest] : Chrome will be started
+2020-31-01 15:09:01   INFO [localTest.SoloDriverAccountSettingTest] : Chrome is started
+2020-31-01 15:09:06   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-31-01 15:09:08   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-31-01 15:09:17   INFO [pagesLocal.LoginLocalSitePage] : Login Page was opened
+2020-31-01 15:09:17   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-31-01 15:09:17   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-31-01 15:09:17   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-31-01 15:09:17   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-31-01 15:09:20   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-31-01 15:09:28   INFO [localTest.SoloDriverAccountSettingTest] :  Value from cookies = 
+2020-31-01 15:09:28   INFO [localTest.SoloDriverAccountSettingTest] :  Value from cookies = 
+2020-31-01 15:09:28   INFO [localTest.SoloDriverAccountSettingTest] :  Value from cookies = 
+2020-31-01 15:09:28   INFO [localTest.SoloDriverAccountSettingTest] :  Value from cookies = 
+2020-31-01 15:09:34   INFO [localTest.SoloDriverAccountSettingTest] :  Value from cookies = 
+2020-31-01 15:09:34   INFO [localTest.SoloDriverAccountSettingTest] :  Value from cookies = 
+2020-31-01 15:09:34   INFO [localTest.SoloDriverAccountSettingTest] :  Value from cookies = 
+2020-31-01 15:09:34   INFO [localTest.SoloDriverAccountSettingTest] :  Value from cookies = 
+2020-31-01 15:13:34   INFO [localTest.SoloDriverAccountSettingTest] : Chrome will be started
+2020-31-01 15:13:41   INFO [localTest.SoloDriverAccountSettingTest] : Chrome is started
+2020-31-01 15:13:46   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-31-01 15:13:48   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-31-01 15:13:55   INFO [pagesLocal.LoginLocalSitePage] : Login Page was opened
+2020-31-01 15:13:56   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-31-01 15:13:56   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-31-01 15:13:56   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-31-01 15:13:56   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-31-01 15:13:59   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-31-01 15:14:07   INFO [localTest.SoloDriverAccountSettingTest] :  Value from cookies = 
+2020-31-01 15:14:07   INFO [localTest.SoloDriverAccountSettingTest] :  Value from cookies = 
+2020-31-01 15:14:07   INFO [localTest.SoloDriverAccountSettingTest] :  Value from cookies = 
+2020-31-01 15:14:07   INFO [localTest.SoloDriverAccountSettingTest] :  Value from cookies = 
+2020-31-01 15:14:12   INFO [localTest.SoloDriverAccountSettingTest] :  Value from cookies = 
+2020-31-01 15:14:12   INFO [localTest.SoloDriverAccountSettingTest] :  Value from cookies = 
+2020-31-01 15:14:12   INFO [localTest.SoloDriverAccountSettingTest] :  Value from cookies = 
+2020-31-01 15:14:12   INFO [localTest.SoloDriverAccountSettingTest] :  Value from cookies = 
+2020-31-01 15:15:52   INFO [localTest.SoloDriverAccountSettingTest] : Chrome will be started
+2020-31-01 15:15:59   INFO [localTest.SoloDriverAccountSettingTest] : Chrome is started
+2020-31-01 15:16:03   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-31-01 15:16:05   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-31-01 15:16:13   INFO [pagesLocal.LoginLocalSitePage] : Login Page was opened
+2020-31-01 15:16:13   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-31-01 15:16:13   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-31-01 15:16:13   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-31-01 15:16:14   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-31-01 15:16:17   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-31-01 15:16:25   INFO [localTest.SoloDriverAccountSettingTest] :  Value from cookies = 
+2020-31-01 15:16:25   INFO [localTest.SoloDriverAccountSettingTest] :  Value from cookies = 
+2020-31-01 15:16:25   INFO [localTest.SoloDriverAccountSettingTest] :  Value from cookies = 
+2020-31-01 15:16:25   INFO [localTest.SoloDriverAccountSettingTest] :  Value from cookies = 
+2020-31-01 15:16:30   INFO [localTest.SoloDriverAccountSettingTest] :  Value from cookies = 
+2020-31-01 15:16:30   INFO [localTest.SoloDriverAccountSettingTest] :  Value from cookies = 
+2020-31-01 15:16:30   INFO [localTest.SoloDriverAccountSettingTest] :  Value from cookies = 
+2020-31-01 15:16:30   INFO [localTest.SoloDriverAccountSettingTest] :  Value from cookies = 
+2020-31-01 15:18:46   INFO [localTest.SoloDriverAccountSettingTest] : Chrome will be started
+2020-31-01 15:18:53   INFO [localTest.SoloDriverAccountSettingTest] : Chrome is started
+2020-31-01 15:18:58   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-31-01 15:19:00   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-31-01 15:19:07   INFO [pagesLocal.LoginLocalSitePage] : Login Page was opened
+2020-31-01 15:19:08   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-31-01 15:19:08   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-31-01 15:19:08   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-31-01 15:19:08   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-31-01 15:19:11   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-31-01 15:19:19   INFO [localTest.SoloDriverAccountSettingTest] :  Value from cookies = false
+2020-31-01 15:19:19   INFO [localTest.SoloDriverAccountSettingTest] :  Value from cookies = false
+2020-31-01 15:19:19   INFO [localTest.SoloDriverAccountSettingTest] :  Value from cookies = false
+2020-31-01 15:19:19   INFO [localTest.SoloDriverAccountSettingTest] :  Value from cookies = false
+2020-31-01 15:19:24   INFO [localTest.SoloDriverAccountSettingTest] :  Value from cookies = true
+2020-31-01 15:19:24   INFO [localTest.SoloDriverAccountSettingTest] :  Value from cookies = true
+2020-31-01 15:19:24   INFO [localTest.SoloDriverAccountSettingTest] :  Value from cookies = true
+2020-31-01 15:19:24   INFO [localTest.SoloDriverAccountSettingTest] :  Value from cookies = true
+2020-31-01 15:22:08   INFO [localTest.SoloDriverAccountSettingTest] : Chrome will be started
+2020-31-01 15:22:15   INFO [localTest.SoloDriverAccountSettingTest] : Chrome is started
+2020-31-01 15:22:20   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-31-01 15:22:22   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-31-01 15:22:29   INFO [pagesLocal.LoginLocalSitePage] : Login Page was opened
+2020-31-01 15:22:29   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-31-01 15:22:30   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-31-01 15:22:30   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-31-01 15:22:30   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-31-01 15:22:33   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-31-01 15:22:41   INFO [localTest.SoloDriverAccountSettingTest] :  Value from cookies = false
+2020-31-01 15:22:41   INFO [localTest.SoloDriverAccountSettingTest] :  Value from cookies = false
+2020-31-01 15:22:41   INFO [localTest.SoloDriverAccountSettingTest] :  Value from cookies = false
+2020-31-01 15:22:41   INFO [localTest.SoloDriverAccountSettingTest] :  Value from cookies = false
+2020-31-01 15:22:46   INFO [localTest.SoloDriverAccountSettingTest] :  Value from cookies = true
+2020-31-01 15:22:46   INFO [localTest.SoloDriverAccountSettingTest] :  Value from cookies = true
+2020-31-01 15:22:46   INFO [localTest.SoloDriverAccountSettingTest] :  Value from cookies = true
+2020-31-01 15:22:46   INFO [localTest.SoloDriverAccountSettingTest] :  Value from cookies = true
+2020-31-01 15:22:47   INFO [localTest.SoloDriverAccountSettingTest] : AC passed
+2020-31-01 15:22:48   INFO [localTest.SoloDriverAccountSettingTest] : AC passed
+2020-31-01 15:22:49   INFO [localTest.SoloDriverAccountSettingTest] : AC passed
+2020-31-01 15:22:50   INFO [localTest.SoloDriverAccountSettingTest] : AC passed
+2020-31-01 17:38:59   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api

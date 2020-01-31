@@ -479,12 +479,6 @@ public class UtilsForDB {
     }
 
 //    SETTINGS
-    @Step
-    public void setOffCheckBoxDriverSetting(String userId, String checkBoxValue) throws SQLException, IOException, ClassNotFoundException {
-        dBMySQL = new Database("MySQL_PADB_DB", "MySQL");
-        dBMySQL.changeTable("UPDATE driversData dd SET dd.HazMat = " + checkBoxValue + ", dd.Insurance = " + checkBoxValue + ", dd.TankerEndorsment = " + checkBoxValue + ", dd.yard = " + checkBoxValue + ", dd.conv = " + checkBoxValue + ", dd.hideEngineStatuses = " + checkBoxValue + ", dd.Sms = " + checkBoxValue + " WHERE dd.userId = " + userId + " AND dd.companyId = 0;");
-        dBMySQL.quit();
-    }
 
     @Step
     public void set_0_AobrdMPHDriverSettings(String userId) throws SQLException, IOException, ClassNotFoundException {
@@ -509,12 +503,7 @@ public class UtilsForDB {
     }
 
 //    EQUIPMENT
-    @Step
-    public void setOffCheckBoxInAddTruckToEquipment(String userId, String equipmentId, String checkBoxValue) throws SQLException, IOException, ClassNotFoundException {
-        dBMySQL = new Database("MySQL_PADB_DB", "MySQL");
-        dBMySQL.changeTable("UPDATE equipment e SET e.isActive = " + checkBoxValue + " WHERE e.userId = " + userId + " AND e.id = " + equipmentId + ";");
-        dBMySQL.quit();
-    }
+
     @Step
     public List<ArrayList> getDataTruckEquipment(String userId) throws SQLException, IOException, ClassNotFoundException {
         dBMySQL = new Database("MySQL_PADB_DB", "MySQL");
@@ -578,10 +567,13 @@ public class UtilsForDB {
         dBMySQL.quit();
         return tempUrl;
     }
+
     @Step
-    public List<ArrayList> getDashBoardSettingsData(String userId, String reference) throws SQLException, IOException, ClassNotFoundException {
+    public List<ArrayList> getUsersAndDriversRulesData(String userEmail) throws SQLException, IOException, ClassNotFoundException {
         dBMySQL = new Database("MySQL_PADB_DB", "MySQL");
-        List<ArrayList> tempData = dBMySQL.selectTable("SELECT d.id, d.awsName, d.`type`, d.date, d.carrierId, d.initiatorId, d.truckId, d.note FROM documents d WHERE d.userId = " + userId + " and d.reference = '" + reference + "';");
+        List<ArrayList> tempData = dBMySQL.selectTable("SELECT dr.carrierName, dr.carrierAddress, dr.carrierCity, dr.carrierState, dr.carrierZip, dr.homeTerminal, dr.coDrivers, dr.cycleId, dr.timeZoneId, dr.usdot, dr.odometerId,dr.restBreakId, \n" +
+                "dr.logIncrementId, dr.cargoTypeId, dr.wellSiteId, dr.restartId, dr.iftaDistances, dr.old_allow_edit, dr.aobrdMPH, dr.teamDriver, dr.teamDriverPassword, u.id, u.name, u.`last`, u.phone, \n" +
+                "u.password, u.googleId, u.fbId, u.carrierId, u.companyPosition, u.banned FROM driversRules dr LEFT JOIN users u ON u.id = dr.userId WHERE u.email = '" + userEmail + "';");
         dBMySQL.quit();
         return tempData;
     }

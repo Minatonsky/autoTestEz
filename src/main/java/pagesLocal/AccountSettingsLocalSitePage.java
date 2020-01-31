@@ -93,27 +93,37 @@ public class AccountSettingsLocalSitePage extends ParentLocalSitePage {
 //    DRIVER INFO
     public void setCycle(String cycleValue){actionsWithOurElements.selectValueInDropDown(cycleSelect, cycleValue);}
     public void setTimeZone(String timeZoneValue){actionsWithOurElements.selectValueInDropDown(timeZoneSelect, timeZoneValue);}
-    public void setOdometer(String odometerValue){actionsWithOurElements.selectValueInDropDown(odometerSelect, odometerValue);}
+    public void setOdometer(String odometerValue){
+        if (odometerValue.equals("0")){
+            String tempValue = "1";
+        actionsWithOurElements.selectValueInDropDown(odometerSelect, tempValue);
+        logger.info("Odometer set '1' ");
+        } else if (odometerValue.equals("1")){
+            String tempValue = "0";
+            actionsWithOurElements.selectValueInDropDown(odometerSelect, tempValue);
+            logger.info("Odometer set '0' ");
+        } else Assert.fail("Odometer value incorrect");
+    }
     public void setRestBreak(String restBreakValue){actionsWithOurElements.selectValueInDropDown(restBreakSelect, restBreakValue);}
     public void setAppLog(String appLogValue){actionsWithOurElements.selectValueInDropDown(logIncrementSelect, appLogValue);}
     public void setCargoType(String cargoType){actionsWithOurElements.selectValueInDropDown(cargoTypeSelect, cargoType);}
     public void clickSaveDriverInfo(){actionsWithOurElements.clickOnElement(buttonSaveDriverInfo);}
 
 //    DASHBOARD SETTINGS
-    public void clickOnSoundNotification(){actionsWithOurElements.jsClickOnElement(soundCheckOn);}
-    public void clickOffSoundNotification(){actionsWithOurElements.jsClickOnElement(soundCheckOff);}
-    public void clickOnNotificationBox(){actionsWithOurElements.jsClickOnElement(notificationCheckOn);}
-    public void clickOffNotificationBox(){actionsWithOurElements.jsClickOnElement(notificationCheckOff);}
-    public void clickOnScoreCard(){actionsWithOurElements.jsClickOnElement(scoreCheckOn);}
-    public void clickOffScoreCard(){actionsWithOurElements.jsClickOnElement(scoreCheckOff);}
-    public void clickOnCoordinates(){actionsWithOurElements.jsClickOnElement(iconCheckOn);}
-    public void clickOffCoordinates(){actionsWithOurElements.jsClickOnElement(iconCheckOff);}
+    public void clickOnSoundNotification(){actionsWithOurElements.clickJsOnElement(soundCheckOn);}
+    public void clickOffSoundNotification(){actionsWithOurElements.clickJsOnElement(soundCheckOff);}
+    public void clickOnNotificationBox(){actionsWithOurElements.clickJsOnElement(notificationCheckOn);}
+    public void clickOffNotificationBox(){actionsWithOurElements.clickJsOnElement(notificationCheckOff);}
+    public void clickOnScoreCard(){actionsWithOurElements.clickJsOnElement(scoreCheckOn);}
+    public void clickOffScoreCard(){actionsWithOurElements.clickJsOnElement(scoreCheckOff);}
+    public void clickOnCoordinates(){actionsWithOurElements.clickJsOnElement(iconCheckOn);}
+    public void clickOffCoordinates(){actionsWithOurElements.clickJsOnElement(iconCheckOff);}
 
 
     public void setSoundNotification(String checkBoxValue){
-        if (checkBoxValue.equals("0") || checkBoxValue.equals("")){
+        if (checkBoxValue.equals("false") || checkBoxValue.equals("")){
             clickOnSoundNotification();
-        } else if(checkBoxValue.equals("1")){
+        } else if(checkBoxValue.equals("true")){
             clickOffSoundNotification();
         } else {
             logger.error("Sound notification failed");
@@ -121,9 +131,9 @@ public class AccountSettingsLocalSitePage extends ParentLocalSitePage {
         }
     }
     public void setNotificationBox(String checkBoxValue){
-        if (checkBoxValue.equals("0") || checkBoxValue.equals("")){
+        if (checkBoxValue.equals("false") || checkBoxValue.equals("")){
             clickOnNotificationBox();
-        } else if(checkBoxValue.equals("1")){
+        } else if(checkBoxValue.equals("true")){
             clickOffNotificationBox();
         } else {
             logger.error("Notification box failed");
@@ -131,9 +141,9 @@ public class AccountSettingsLocalSitePage extends ParentLocalSitePage {
         }
     }
     public void setScoreCard(String checkBoxValue){
-        if (checkBoxValue.equals("0") || checkBoxValue.equals("")){
+        if (checkBoxValue.equals("false") || checkBoxValue.equals("")){
             clickOnScoreCard();
-        } else if(checkBoxValue.equals("1")){
+        } else if(checkBoxValue.equals("true")){
             clickOffScoreCard();
         } else {
             logger.error("Score Card failed");
@@ -141,13 +151,15 @@ public class AccountSettingsLocalSitePage extends ParentLocalSitePage {
         }
     }
     public void setCoordinatesIcon(String checkBoxValue){
-        if (checkBoxValue.equals("0") || checkBoxValue.equals("")){
+        if (checkBoxValue.equals("false") || checkBoxValue.equals("")){
             clickOnCoordinates();
-        } else if(checkBoxValue.equals("1")){
+        } else if(checkBoxValue.equals("true")){
             clickOffCoordinates();
         } else {
-            logger.error("Score Card failed");
+            logger.error("Coordinate Icon failed");
             Assert.fail("Cannot work with element");
         }
     }
+
+
 }
