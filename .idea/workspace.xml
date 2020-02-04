@@ -331,15 +331,15 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.TestMethods.getEventNewOrder" />
-      <item itemvalue="Maven.SoloDriverEquipment" />
-      <item itemvalue="Maven.SoloDriverCreateDocumentsLocalSiteParamsTest" />
-      <item itemvalue="Maven.DriverSettingsParameterizedTest" />
-      <item itemvalue="Maven.SoloOrders" />
       <item itemvalue="JUnit.SoloDriverEquipmentTestLocal.addTrailer" />
       <item itemvalue="JUnit.SoloDriverCreateEquipmentParameterizedLocalSiteTest.addTruck" />
       <item itemvalue="JUnit.SoloDriverRemindersLocalSiteTest.addReminderByDate" />
       <item itemvalue="JUnit.SoloDriverRemindersLocalSiteTest.addReminderByMileForTruck" />
       <item itemvalue="JUnit.SoloDriverRemindersLocalSiteTest.addReminderByDateForTrailer" />
+      <item itemvalue="Maven.SoloDriverEquipment" />
+      <item itemvalue="Maven.SoloDriverCreateDocumentsLocalSiteParamsTest" />
+      <item itemvalue="Maven.DriverSettingsParameterizedTest" />
+      <item itemvalue="Maven.SoloOrders" />
     </list>
     <recent_temporary>
       <list>
@@ -380,13 +380,6 @@
       <workItem from="1562665338918" duration="52834000" />
       <workItem from="1562782581468" duration="9021000" />
       <workItem from="1562822119836" duration="58303000" />
-    </task>
-    <task id="LOCAL-00036" summary="params manager test refactor was add">
-      <created>1567089394708</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1567089394708</updated>
     </task>
     <task id="LOCAL-00037" summary="params manager test refactor was add">
       <created>1567096209799</created>
@@ -724,7 +717,14 @@
       <option name="project" value="LOCAL" />
       <updated>1580486230367</updated>
     </task>
-    <option name="localTasksCounter" value="85" />
+    <task id="LOCAL-00085" summary="reminder test was add">
+      <created>1580831851383</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1580831851384</updated>
+    </task>
+    <option name="localTasksCounter" value="86" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -761,7 +761,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="test api3 login was add" />
     <MESSAGE value="test new tariff was add" />
     <MESSAGE value="test agreement new tariff was add" />
     <MESSAGE value="test charge new tariff was add" />
@@ -786,7 +785,8 @@
     <MESSAGE value="documents test was add" />
     <MESSAGE value="account settings test was add" />
     <MESSAGE value="account settings2 test was add" />
-    <option name="LAST_COMMIT_MESSAGE" value="account settings2 test was add" />
+    <MESSAGE value="reminder test was add" />
+    <option name="LAST_COMMIT_MESSAGE" value="reminder test was add" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="179" key="#Notifications" timestamp="1579788757833">
@@ -813,10 +813,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="268" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580118351514" />
-    <state x="614" y="115" key="CommitChangelistDialog2" timestamp="1580486229795">
+    <state x="614" y="115" key="CommitChangelistDialog2" timestamp="1580831850420">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="614" y="115" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1580486229795" />
+    <state x="614" y="115" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1580831850420" />
     <state width="1877" height="218" key="GridCell.Tab.0.bottom" timestamp="1580831672572">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -841,9 +841,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="490" y="176" key="Maven.ArtifactSearchDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1579518965036" />
-    <state x="552" y="254" key="Vcs.Push.Dialog.v2" timestamp="1580486239554">
+    <state x="552" y="254" key="Vcs.Push.Dialog.v2" timestamp="1580831881523">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="254" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1580486239554" />
+    <state x="552" y="254" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1580831881523" />
   </component>
 </project>
