@@ -101,10 +101,18 @@ public class Utils {
         return LocalDate.ofEpochDay(ThreadLocalRandom
                 .current().nextInt(-hundredYears, hundredYears)).toString();
     }
-    public int generateRandomNumberBetweenTwoValues(int low, int high) throws SQLException, IOException, ClassNotFoundException {
+    public static int genRandomNumberBetweenTwoValues(int low, int high) throws SQLException, IOException, ClassNotFoundException {
         Random r = new Random();
         int result = r.nextInt(high-low) + low;
         return result;
+    }
+    public static String genRandomState(){
+        String[] arr={"AL", "AK", "AZ", "AR", "CA", "CO", "CT", "DE", "FL", "GA", "HI", "ID", "IL", "IN", "IA", "KS", "KY", "LA", "ME", "MD", "MA", "MI", "MN", "MS", "MO", "MT", "NE", "NV",
+                "NH", "NJ", "NM", "NY", "NC", "ND", "OH", "OK", "OR", "PA", "RI", "SC", "SD", "TN", "TX", "UT", "VT", "VA", "WA", "WV", "WI", "WY", "AB", "BC", "MB", "NB", "NL", "NS", "NT", "NU",
+                "ON", "PE", "QC", "SK", "YT"};
+        Random r=new Random();
+        int randomNumber=r.nextInt(arr.length);
+        return arr[randomNumber];
     }
 
 

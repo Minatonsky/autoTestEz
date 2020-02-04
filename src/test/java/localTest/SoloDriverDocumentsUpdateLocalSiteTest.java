@@ -11,7 +11,7 @@ import java.util.Map;
 
 import static libs.Utils.waitABit;
 
-public class SoloDriverUpdateDocumentsLocalSiteTest extends ParentTest {
+public class SoloDriverDocumentsUpdateLocalSiteTest extends ParentTest {
     UtilsForDB utilsForDB = new UtilsForDB();
     ExcelDriver excelDriver = new ExcelDriver();
 
@@ -34,7 +34,7 @@ public class SoloDriverUpdateDocumentsLocalSiteTest extends ParentTest {
     String others = "9";
     String BOL = "6";
 
-    public SoloDriverUpdateDocumentsLocalSiteTest() throws IOException {
+    public SoloDriverDocumentsUpdateLocalSiteTest() throws IOException {
     }
 
     @Test

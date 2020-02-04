@@ -12,10 +12,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-import static libs.Utils.listArrayToMap;
-import static libs.Utils.waitABit;
+import static libs.Utils.*;
 
-public class SoloDriverAccountSettingTest extends ParentTest {
+public class SoloDriverSettingAccountTest extends ParentTest {
     UtilsForDB utilsForDB = new UtilsForDB();
     ExcelDriver excelDriver = new ExcelDriver();
 
@@ -25,7 +24,7 @@ public class SoloDriverAccountSettingTest extends ParentTest {
     String pass = dataForValidLogIn.get("pass").toString();
     String userId = dataForValidLogIn.get("userId").toString();
 
-    public SoloDriverAccountSettingTest() throws IOException {
+    public SoloDriverSettingAccountTest() throws IOException {
     }
 
     @Test
@@ -42,6 +41,10 @@ public class SoloDriverAccountSettingTest extends ParentTest {
         String restBreak = userDataBeforeTestMap.get("restBreakId").toString();
         String appLog = userDataBeforeTestMap.get("logIncrementId").toString();
         String cargoType = userDataBeforeTestMap.get("cargoTypeId").toString();
+
+        String cargoTypeRandomValue = Integer.toString(genRandomNumberBetweenTwoValues(0 , 4));
+        String cycleTypeRandomValue = Integer.toString(genRandomNumberBetweenTwoValues(0 , 8));
+        String timeZoneTypeRandomValue = Integer.toString(genRandomNumberBetweenTwoValues(0 , 8));
 
 
         loginLocalSitePage.userValidLogIn(login, pass);
@@ -67,12 +70,12 @@ public class SoloDriverAccountSettingTest extends ParentTest {
         checkAC("Phone failed", phone.equals(userDataAfterTestMap.get("phone")), true);
 
  // DRIVER INFO
-        accountSettingsLocalSitePage.setCycle(cycle);
-        accountSettingsLocalSitePage.setTimeZone(timeZone);
+        accountSettingsLocalSitePage.setCycle(cycle, cycleTypeRandomValue);
+        accountSettingsLocalSitePage.setTimeZone(timeZone, timeZoneTypeRandomValue);
         accountSettingsLocalSitePage.setOdometer(odometer);
         accountSettingsLocalSitePage.setRestBreak(restBreak);
         accountSettingsLocalSitePage.setAppLog(appLog);
-        accountSettingsLocalSitePage.setCargoType(cargoType);
+        accountSettingsLocalSitePage.setCargoType(cargoType, cargoTypeRandomValue);
         accountSettingsLocalSitePage.clickSaveDriverInfo();
         checkAC("Cycle failed", userDataAfterTestMap.get("cycleId").equals(cycle), false);
         checkAC("Time zone failed", userDataAfterTestMap.get("timeZoneId").equals(timeZone), false);
@@ -97,8 +100,6 @@ public class SoloDriverAccountSettingTest extends ParentTest {
         checkAC("Location icon failed", locationIconWarningBT.equals(locationIconWarning), false);
         checkAC("Show scorecard failed", showScoreCardBT.equals(showScoreCard), false);
         checkAC("notification box failed", newNotificaitonsBoxBT.equals(newNotificaitonsBox), false);
-
-
 
 
 

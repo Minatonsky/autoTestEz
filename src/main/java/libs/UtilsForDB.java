@@ -497,24 +497,18 @@ public class UtilsForDB {
     @Step
     public List<ArrayList> getDataDriverSettings(String userId) throws SQLException, IOException, ClassNotFoundException {
         dBMySQL = new Database("MySQL_PADB_DB", "MySQL");
-        List<ArrayList> tempData = dBMySQL.selectTable("SELECT HazMat, Insurance, TankerEndorsment, yard, conv, hideEngineStatuses, Sms, City, Address, notes, Phone, SSN, EIN, MedCard, DateOfBirth, HireDate, TermitaneDate, PullNotice, DLExpiration, DLNumber, DLState, scanner_type  FROM driversData WHERE userId = " + userId + " AND companyId = 0 ;");
+        List<ArrayList> tempData = dBMySQL.selectTable("SELECT HazMat, Insurance, TankerEndorsment, yard, conv, hideEngineStatuses, Sms, City, Address, notes, Phone, SSN, EIN, MedCard, DateOfBirth, HireDate, TermitaneDate, PullNotice, DLExpiration, DLNumber, DLState, scanner_type  FROM driversData WHERE userId = " + userId + " AND companyId = 0;");
         dBMySQL.quit();
         return tempData;
     }
 
 //    EQUIPMENT
 
+
     @Step
-    public List<ArrayList> getDataTruckEquipment(String userId) throws SQLException, IOException, ClassNotFoundException {
+    public List<ArrayList> getDataTruckEquipment(String trackId) throws SQLException, IOException, ClassNotFoundException {
         dBMySQL = new Database("MySQL_PADB_DB", "MySQL");
-        List<ArrayList> tempData = dBMySQL.selectTable("SELECT e.Name, e.Owner, e.Year, e.`Type`, e.TireSize, e.Fuel, e.Axel, e.Color, e.Make, e.Model, e.VIN, e.GrossWeight, e.UnlandWeight, e.Plate, e.State, e.NYCert, e.InspectionDue, e.`90DayExp`, e.ProRateExp, e.ExpDate, e.isActive, e.Length FROM equipment e WHERE e.userId = " + userId + " ORDER BY id DESC LIMIT 1;");
-        dBMySQL.quit();
-        return tempData;
-    }
-    @Step
-    public List<ArrayList> getDataTruckEquipmentByName(String trackName) throws SQLException, IOException, ClassNotFoundException {
-        dBMySQL = new Database("MySQL_PADB_DB", "MySQL");
-        List<ArrayList> tempData = dBMySQL.selectTable("SELECT e.id, e.Notes, e.Name, e.Owner, e.Year, e.`Type`, e.TireSize, e.Fuel, e.Axel, e.Color, e.Make, e.Model, e.VIN, e.GrossWeight, e.UnlandWeight, e.Plate, e.State, e.NYCert, e.InspectionDue, e.`90DayExp`, e.ProRateExp, e.ExpDate, e.isActive, e.Length FROM equipment e WHERE e.Name = '" + trackName + "';");
+        List<ArrayList> tempData = dBMySQL.selectTable("SELECT e.id, e.truckTrailer, e.Notes, e.Name, e.Owner, e.Year, e.`Type`, e.TireSize, e.Fuel, e.Axel, e.Color, e.Make, e.Model, e.VIN, e.GrossWeight, e.UnlandWeight, e.Plate, e.State, e.NYCert, e.InspectionDue, e.`90DayExp`, e.ProRateExp, e.ExpDate, e.isActive, e.Length FROM equipment e WHERE e.id = '" + trackId + "';");
         dBMySQL.quit();
         return tempData;
     }
@@ -574,6 +568,13 @@ public class UtilsForDB {
         List<ArrayList> tempData = dBMySQL.selectTable("SELECT dr.carrierName, dr.carrierAddress, dr.carrierCity, dr.carrierState, dr.carrierZip, dr.homeTerminal, dr.coDrivers, dr.cycleId, dr.timeZoneId, dr.usdot, dr.odometerId,dr.restBreakId, \n" +
                 "dr.logIncrementId, dr.cargoTypeId, dr.wellSiteId, dr.restartId, dr.iftaDistances, dr.old_allow_edit, dr.aobrdMPH, dr.teamDriver, dr.teamDriverPassword, u.id, u.name, u.`last`, u.phone, \n" +
                 "u.password, u.googleId, u.fbId, u.carrierId, u.companyPosition, u.banned FROM driversRules dr LEFT JOIN users u ON u.id = dr.userId WHERE u.email = '" + userEmail + "';");
+        dBMySQL.quit();
+        return tempData;
+    }
+    @Step
+    public List<ArrayList> getReminderData(String id, String name) throws SQLException, IOException, ClassNotFoundException {
+        dBMySQL = new Database("MySQL_PADB_DB", "MySQL");
+        List<ArrayList> tempData = dBMySQL.selectTable("SELECT e.name, e.`type`, e.`status`, case when e.remindDateTime = 0 then '0' ELSE e.remindDateTime end as remindDateTime, e.term, e.odometerStart, e.currentOdometer, e.whatSend FROM equipment_reminder e WHERE e.equipId = " + id + " AND e.name = '" + name + "';");
         dBMySQL.quit();
         return tempData;
     }

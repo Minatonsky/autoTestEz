@@ -38,6 +38,7 @@ public class ParentChargeTest {
         webDriver = new ChromeDriver();
         excelDriver = new ExcelDriver();
         utilsForDB = new UtilsForDB();
+        chargePage = new ChargePage(webDriver);
 
 
 

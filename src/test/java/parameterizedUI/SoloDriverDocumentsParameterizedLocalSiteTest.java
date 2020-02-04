@@ -1,29 +1,40 @@
-package localTest;
+package parameterizedUI;
 
-import libs.ExcelDriver;
+import libs.SpreadsheetData;
 import libs.UtilsForDB;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.junit.runners.Parameterized;
 import parentTest.ParentTest;
 
+import java.io.FileInputStream;
 import java.io.IOException;
+import java.io.InputStream;
 import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
 import java.util.Map;
 
 import static libs.Utils.*;
 
+@RunWith(Parameterized.class)
+public class SoloDriverDocumentsParameterizedLocalSiteTest extends ParentTest {
+    String login;
 
-public class SoloDriverCreateDocumentsLocalSiteTest extends ParentTest {
+    public SoloDriverDocumentsParameterizedLocalSiteTest(String login) throws IOException {
+        this.login = login;
+    }
+    @Parameterized.Parameters()
+    public static Collection testData() throws IOException {
+        InputStream spreadsheet = new FileInputStream(configProperties.DATA_FILE_PATH() + "testLogin.xls");
+        return new SpreadsheetData(spreadsheet, "loginPassParamsTest").getData();
+    }
     UtilsForDB utilsForDB = new UtilsForDB();
-    ExcelDriver excelDriver = new ExcelDriver();
 
-    Map dataForValidLogIn = excelDriver.getData(configProperties.DATA_FILE_PATH() + "testLogin.xls", "driverLogin");
-
-    String login = dataForValidLogIn.get("login").toString();
-    String pass = dataForValidLogIn.get("pass").toString();
+    String pass = "testtest";
     String fuelReceipts = "0";
     String lumper = "1";
     String scale = "2";
@@ -40,8 +51,6 @@ public class SoloDriverCreateDocumentsLocalSiteTest extends ParentTest {
     String BOL = "6";
     String picturePath = "C:\\Users\\1\\Pictures\\Saved Pictures\\274px-Nick_Cannon_by_David_Shankbone.jpg";
 
-    public SoloDriverCreateDocumentsLocalSiteTest() throws IOException {
-    }
 
     @Test
     public void createFuelReceipts() throws SQLException, IOException, ClassNotFoundException {
@@ -176,7 +185,7 @@ public class SoloDriverCreateDocumentsLocalSiteTest extends ParentTest {
 
     }
     @Test
-        public void createToll() throws SQLException, IOException, ClassNotFoundException {
+    public void createToll() throws SQLException, IOException, ClassNotFoundException {
         String dateTime = getDateAndTimeFormated();
         String referenceRV = "Toll " + dateTime + "";
         String amountRV = RandomStringUtils.randomAlphanumeric(1, 10);

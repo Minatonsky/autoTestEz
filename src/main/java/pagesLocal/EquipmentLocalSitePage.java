@@ -4,6 +4,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+import java.util.Random;
+
 public class EquipmentLocalSitePage extends ParentLocalSitePage {
     public EquipmentLocalSitePage(WebDriver webDriver) {
         super(webDriver, "/dash/equipment/");
@@ -11,6 +13,10 @@ public class EquipmentLocalSitePage extends ParentLocalSitePage {
 
     @FindBy(xpath = "//button[text() = 'Add Truck']")
     private WebElement addTruckButton;
+
+    @FindBy(xpath = "//button[text() = 'Add Trailer']")
+    private WebElement addTrailerButton;
+
 //GENERAL
     @FindBy(name = "name")
     private WebElement unitInput;
@@ -103,10 +109,38 @@ public class EquipmentLocalSitePage extends ParentLocalSitePage {
 
     @FindBy(id = "file_permit_anual")
     private WebElement addFileInsp;
+//reminders
+    @FindBy(xpath = "//*[text()='Reminders']")
+    private WebElement remindersButton;
+
+    @FindBy(xpath = "//button[text()='Reminder by date']")
+    private WebElement remindByDateButton;
+
+    @FindBy(xpath = "//button[text()='Mile reminder']")
+    private WebElement remindByMileButton;
+
+    @FindBy(name = "name")
+    private WebElement nameReminderInput;
+
+    @FindBy(name = "reminder_date")
+    private WebElement dateReminderInput;
+
+    @FindBy(xpath = "//*[@class='add-box__chosen-by-date']//button[text()='Save']")
+    private WebElement saveReminderButton;
+
+    @FindBy(xpath = "//*[@class='trailer-popup-info__title' and text()='VEHICLE ID']/../*[@class='trailer-popup-info__desc']")
+    private WebElement vehicleId;
+
+    @FindBy(name = "term")
+    private WebElement milesInput;
+
 
 
     public void clickOnAddTruckButton(){actionsWithOurElements.clickOnElement(addTruckButton);}
-//    General
+    public void clickOnAddTrailerButton(){actionsWithOurElements.clickOnElement(addTrailerButton);}
+    public String getVehicleIdText(){return vehicleId.getText();}
+
+    //    General
     public void enterUnitName(String unitName){actionsWithOurElements.enterTextToElement(unitInput, unitName);}
     public void enterOwner(String owner){actionsWithOurElements.enterTextToElement(ownerInput, owner);}
     public void enterYear(String year){actionsWithOurElements.enterTextToElement(yearInput, year);}
@@ -139,7 +173,23 @@ public class EquipmentLocalSitePage extends ParentLocalSitePage {
     public void clickOnSave(){actionsWithOurElements.clickOnElement(saveButton);}
     public void enterNote(String note){actionsWithOurElements.clearAndEnterTextToElement(textArea, note);}
     public void addFileRegistration(String path){actionsWithOurElements.addFileByJs(addFileReg, path);}
-
     public void addFileInspection(String path){actionsWithOurElements.addFileByJs(addFileInsp, path);}
+
+    // REMINDERS
+    public void clickOnRemindersButton(){actionsWithOurElements.clickOnElement(remindersButton);}
+    public void clickOnRemindByDateButton(){actionsWithOurElements.clickOnElement(remindByDateButton);}
+    public void clickOnRemindByMileButton(){actionsWithOurElements.clickOnElement(remindByMileButton);}
+    public void enterNameReminder(String nameReminder){actionsWithOurElements.enterTextToElement(nameReminderInput, nameReminder);}
+    public void enterDateReminder(String dateReminder){actionsWithOurElements.enterTextToElement(dateReminderInput, dateReminder);}
+    public void moveSlider(int value){actionsWithOurElements.sliderMove("//*[@class='add-box__chosen-by-date']//div[@class='vue-slider-rail']", value);}
+    public void clickSaveButton(){actionsWithOurElements.clickOnElement(saveReminderButton);}
+    public void enterMiles(String countMiles){actionsWithOurElements.enterTextToElement(milesInput, countMiles);}
+
+    public String genRandomFuelType(){
+        String[] arr={"Gasoline", "Diesel", "Gasohol", "Propane", "LNG", "CNG", "Ethanol", "Methanol", "E-85", "M-85", "A55", "Biodiesel"};
+        Random r=new Random();
+        int randomNumber=r.nextInt(arr.length);
+        return arr[randomNumber];
+    }
 
 }

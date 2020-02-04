@@ -91,22 +91,63 @@ public class AccountSettingsLocalSitePage extends ParentLocalSitePage {
     public void enterPhone(String phoneInput){actionsWithOurElements.clearAndEnterTextToElement(phoneNumber, phoneInput);}
     public void clickSaveAccountInfo(){actionsWithOurElements.clickOnElement(buttonSaveAccountInfo);}
 //    DRIVER INFO
-    public void setCycle(String cycleValue){actionsWithOurElements.selectValueInDropDown(cycleSelect, cycleValue);}
-    public void setTimeZone(String timeZoneValue){actionsWithOurElements.selectValueInDropDown(timeZoneSelect, timeZoneValue);}
+    public void setCycle(String cycleValue, String cycleTypeValue){
+        if (cycleValue.equals(cycleTypeValue)){
+            String tempValue = Integer.toString(Math.abs(Integer.parseInt(cycleTypeValue) - 1));
+            actionsWithOurElements.selectValueInDropDown(cycleSelect, tempValue);
+            logger.info("Cycle set " + tempValue);
+        } else actionsWithOurElements.selectValueInDropDown(cycleSelect, cycleTypeValue);
+        logger.info("Cycle set " + cycleTypeValue);
+    }
+    public void setTimeZone(String timeZoneValue, String timeZoneRandomValue) {
+        if (timeZoneValue.equals(timeZoneRandomValue)) {
+            String tempValue = Integer.toString(Math.abs(Integer.parseInt(timeZoneRandomValue) - 1));
+            actionsWithOurElements.selectValueInDropDown(timeZoneSelect, tempValue);
+            logger.info("Time zone set " + tempValue);
+        } else actionsWithOurElements.selectValueInDropDown(timeZoneSelect, timeZoneRandomValue);
+        logger.info("Time zone set " + timeZoneRandomValue);
+    }
     public void setOdometer(String odometerValue){
         if (odometerValue.equals("0")){
             String tempValue = "1";
         actionsWithOurElements.selectValueInDropDown(odometerSelect, tempValue);
-        logger.info("Odometer set '1' ");
+        logger.info("Odometer set '1 = km' ");
         } else if (odometerValue.equals("1")){
             String tempValue = "0";
             actionsWithOurElements.selectValueInDropDown(odometerSelect, tempValue);
-            logger.info("Odometer set '0' ");
+            logger.info("Odometer set '0 = miles' ");
         } else Assert.fail("Odometer value incorrect");
     }
-    public void setRestBreak(String restBreakValue){actionsWithOurElements.selectValueInDropDown(restBreakSelect, restBreakValue);}
-    public void setAppLog(String appLogValue){actionsWithOurElements.selectValueInDropDown(logIncrementSelect, appLogValue);}
-    public void setCargoType(String cargoType){actionsWithOurElements.selectValueInDropDown(cargoTypeSelect, cargoType);}
+    public void setRestBreak(String restBreakValue){
+        if (restBreakValue.equals("0")){
+            String tempValue = "1";
+            actionsWithOurElements.selectValueInDropDown(restBreakSelect, tempValue);
+            logger.info("Rest Break set '1 = 30 minute rest break required' ");
+        } else if (restBreakValue.equals("1")){
+            String tempValue = "0";
+            actionsWithOurElements.selectValueInDropDown(restBreakSelect, tempValue);
+            logger.info("Rest Break set '0 = No Rest Break Required' ");
+        } else Assert.fail("Rest Break value incorrect");
+    }
+    public void setAppLog(String appLogValue){
+        if (appLogValue.equals("0")){
+            String tempValue = "1";
+            actionsWithOurElements.selectValueInDropDown(logIncrementSelect, tempValue);
+            logger.info("AppLog set '1 = 1m' ");
+        } else if (appLogValue.equals("1")){
+            String tempValue = "0";
+            actionsWithOurElements.selectValueInDropDown(logIncrementSelect, tempValue);
+            logger.info("AppLog set '0 = 15m' ");
+        } else Assert.fail("AppLog value incorrect");
+    }
+    public void setCargoType(String cargoType, String cargoTypeValue){
+        if (cargoType.equals(cargoTypeValue)){
+            String tempValue = Integer.toString(Math.abs(Integer.parseInt(cargoTypeValue) - 1));
+            actionsWithOurElements.selectValueInDropDown(cargoTypeSelect, tempValue);
+            logger.info("CargoType set " + tempValue);
+        } else actionsWithOurElements.selectValueInDropDown(cargoTypeSelect, cargoTypeValue);
+        logger.info("CargoType set " + cargoTypeValue);
+    }
     public void clickSaveDriverInfo(){actionsWithOurElements.clickOnElement(buttonSaveDriverInfo);}
 
 //    DASHBOARD SETTINGS
