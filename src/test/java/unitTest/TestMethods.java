@@ -1,5 +1,6 @@
 package unitTest;
 
+import com.mifmif.common.regex.Generex;
 import libs.UtilsForDB;
 import org.json.JSONObject;
 import org.junit.Test;
@@ -15,8 +16,6 @@ import java.time.temporal.ChronoUnit;
 import java.time.temporal.TemporalAdjusters;
 import java.util.List;
 import java.util.logging.Logger;
-
-import static libs.Utils.genRandomNumberBetweenTwoValues;
 // This test page is not using on test project, it just for check some methods
 
 public class TestMethods {
@@ -196,8 +195,25 @@ public class TestMethods {
 
     @Test
     public void test2() throws SQLException, IOException, ClassNotFoundException {
-        int year = genRandomNumberBetweenTwoValues(1000, 2020);
-            System.out.println(year);
+        Generex generex = new Generex("[A-Z]{1}[0-9]{13}");
+
+// generate the second String in lexicographical order that matches the given Regex.
+//        String secondString = generex.getMatchedString(2);
+//        System.out.println(secondString);// it print '0b'
+
+// Generate all String that matches the given Regex.
+//        List<String> matchedStrs = generex.getAllMatchedStrings();
+//        System.out.println(matchedStrs);
+// Using Generex iterator
+//        Iterator iterator = generex.iterator();
+//        while (iterator.hasNext()) {
+//            System.out.print(iterator.next() + " ");
+//        }
+
+
+// Generate random String
+        String randomStr = generex.random();
+        System.out.println(randomStr);// a random value from the previous String list
 
     }
 

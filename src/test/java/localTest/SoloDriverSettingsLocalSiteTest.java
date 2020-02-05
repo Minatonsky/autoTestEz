@@ -65,9 +65,9 @@ public class SoloDriverSettingsLocalSiteTest extends ParentTest {
         //    GENERAL
         driverSettingsLocalSitePage.enterSsn(ssn);
         driverSettingsLocalSitePage.enterEin(ein);
-        driverSettingsLocalSitePage.checkOnEngineScoreStatus();
-        driverSettingsLocalSitePage.checkOnYardMode();
-        driverSettingsLocalSitePage.checkOnConveyance();
+        driverSettingsLocalSitePage.checkEngineScoreStatus(hideEngineStatuses);
+        driverSettingsLocalSitePage.checkYardMode(yard);
+        driverSettingsLocalSitePage.checkConveyance(conveyance);
         driverSettingsLocalSitePage.moveSliderAobrd(10);
         driverSettingsLocalSitePage.clickOnScannerType(scannerType);
 
@@ -76,7 +76,7 @@ public class SoloDriverSettingsLocalSiteTest extends ParentTest {
         driverSettingsLocalSitePage.enterDriverCity(city);
         driverSettingsLocalSitePage.enterDriverAddress(address);
         driverSettingsLocalSitePage.enterPhone(phone);
-        driverSettingsLocalSitePage.checkOnSmsCheck();
+        driverSettingsLocalSitePage.checkSmsCheck(sms);
 
 //  ADMINISTRATIVE
         driverSettingsLocalSitePage.enterDateMedCard(dateMedCard);
@@ -84,9 +84,9 @@ public class SoloDriverSettingsLocalSiteTest extends ParentTest {
         driverSettingsLocalSitePage.enterDateHire(dateHire);
         driverSettingsLocalSitePage.enterDateTerminate(dateTerminate);
         driverSettingsLocalSitePage.enterDateNotice(datePullNotice);
-        driverSettingsLocalSitePage.checkOnHazMat();
-        driverSettingsLocalSitePage.checkOnInsurance();
-        driverSettingsLocalSitePage.checkOnTanker();
+        driverSettingsLocalSitePage.checkHazMat(hazMat);
+        driverSettingsLocalSitePage.checkInsurance(insurance);
+        driverSettingsLocalSitePage.checkTanker(tankerEndorsment);
 
 
 //    DRIVER'S LICENSE

@@ -1,5 +1,6 @@
 package libs;
 
+import com.mifmif.common.regex.Generex;
 import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.OutputType;
@@ -114,8 +115,22 @@ public class Utils {
         int randomNumber=r.nextInt(arr.length);
         return arr[randomNumber];
     }
+    public static String genRandomDataByRegex(String regEx) throws SQLException, IOException, ClassNotFoundException {
+        Generex generex = new Generex(regEx);
+        String randomStr = generex.random();
+        return randomStr;
 
+// generate the second String in lexicographical order that matches the given Regex.
+//        String secondString = generex.getMatchedString(2);
+//        System.out.println(secondString);
 
+// Generate all String that matches the given Regex.
+//        List<String> matchedStrs = generex.getAllMatchedStrings();
 
-
+// Using Generex iterator
+//        Iterator iterator = generex.iterator();
+//        while (iterator.hasNext()) {
+//            System.out.print(iterator.next() + " ");
+//        }
+    }
 }

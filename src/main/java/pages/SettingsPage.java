@@ -11,7 +11,6 @@ public class SettingsPage extends ParentPage {
         super(webDriver, "/dash/settings/account/");
     }
 
-
     @FindBy(xpath = ".//a[@href='/dash/settings/driver_settings/']")
     private WebElement driverSettings;
 
@@ -71,9 +70,7 @@ public class SettingsPage extends ParentPage {
     @FindBy(xpath = "//label[@for='smsCheck']/..//*[text()='off']")
     private WebElement smsCheckOff;
 
-
 //  ADMINISTRATIVE
-
     @FindBy(xpath = "//label[@for='medCard']/..//input")
     private WebElement medCardInput;
 
@@ -110,9 +107,7 @@ public class SettingsPage extends ParentPage {
     @FindBy(id = "Notes")
     private WebElement notes;
 
-
 //  DRIVER'S LICENSE
-
     @FindBy(xpath = "//span[text()='Number']/../input")
     private WebElement numberDlInput;
 
@@ -127,7 +122,6 @@ public class SettingsPage extends ParentPage {
 
     @FindBy(css = ".btn")
     private WebElement buttonSave;
-
 
     public void clickOnDriverSettings() {
         actionsWithOurElements.clickOnElement(driverSettings);
@@ -172,8 +166,7 @@ public class SettingsPage extends ParentPage {
         }
     }
 
-
-    //    CONTACT INFO
+//    CONTACT INFO
     public void selectState(String driverState) {actionsWithOurElements.selectValueInDropDown(state_id, driverState);}
     public void enterDriverCity(String driverCity) {actionsWithOurElements.clearAndEnterTextToElement(driver_city, driverCity); }
     public void enterDriverAddress(String driverAddress) {actionsWithOurElements.clearAndEnterTextToElement(driver_address, driverAddress); }
@@ -185,9 +178,7 @@ public class SettingsPage extends ParentPage {
         actionsWithOurElements.clickJsOnElement(smsCheckOff);
     }
 
-
 //  ADMINISTRATIVE
-
     public void enterDateMedCard(String medCard) {actionsWithOurElements.clearAndEnterTextToElement(medCardInput, medCard); }
     public void enterDateBirth(String dateBirth) {actionsWithOurElements.clearAndEnterTextToElement(dateBirthInput, dateBirth); }
     public void enterDateHire(String hireDate) {actionsWithOurElements.clearAndEnterTextToElement(hireDateInput, hireDate); }
@@ -220,12 +211,12 @@ public class SettingsPage extends ParentPage {
     public void enterExpirationDl(String driverExpirationL) {actionsWithOurElements.clearAndEnterTextToElement(expirationInput, driverExpirationL); }
     public void clickOnBlankArea(){actionsWithOurElements.clickOnBlankArea();}
 
-
     public void clickOnSave(){
         actionsWithOurElements.scrollByVisibleElement(buttonSave);
         actionsWithOurElements.clickOnElement(buttonSave);
     }
 
+//     METHODS FOR CHECK BOXES
     public void checkEngineScoreStatus(String checkBoxValue){
         if (checkBoxValue.equals("0") || checkBoxValue.equals("")){
             checkOnEngineScoreStatus();
