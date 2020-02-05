@@ -29,7 +29,12 @@ public class SoloDriverRemindersLocalSiteTest extends ParentTest {
     @Test
     public void addReminderByDateForTruck() throws SQLException, IOException, ClassNotFoundException {
         String userId = utilsForDB.getUserIdByEmail(login);
-        String nameTruck = utilsForDB.getRandomEquipmentName(userId, "0");
+        String equipId = utilsForDB.getRandomEquipmentId(userId, "0");
+
+        List<ArrayList> tempDataEquipmentList = utilsForDB.getDataEquipment(userId, equipId);
+        Map<String, Object> tempDataEquipmentMap = listArrayToMap(tempDataEquipmentList);
+
+        String nameTruck = tempDataEquipmentMap.get("Name").toString();
         String nameReminder = RandomStringUtils.randomAlphanumeric(1, 10);
         String dateReminder = getDateFormat();
 
@@ -53,20 +58,22 @@ public class SoloDriverRemindersLocalSiteTest extends ParentTest {
         List<ArrayList> tempDataReminderList = utilsForDB.getReminderData(idTruck, nameReminder);
         Map<String, Object> tempDataReminderMap = listArrayToMap(tempDataReminderList);
 
-        checkAC("Name failed", tempDataReminderMap.get("name").equals(nameReminder), true);
         checkAC("Date failed", tempDataReminderMap.get("remindDateTime").equals(dateReminder + " 00:00:00"), true);
         checkAC("First reminder failed", Integer.parseInt(tempDataReminderMap.get("term").toString()) > 0, true);
     }
     @Test
     public void addReminderByDateForTrailer() throws SQLException, IOException, ClassNotFoundException {
         String userId = utilsForDB.getUserIdByEmail(login);
-        String nameTruck = utilsForDB.getRandomEquipmentName(userId, "1");
+        String equipId = utilsForDB.getRandomEquipmentId(userId, "0");
+        List<ArrayList> tempDataSettingsList = utilsForDB.getDataEquipment(userId, equipId);
+        Map<String, Object> tempDataSettingsMap = listArrayToMap(tempDataSettingsList);
+        String nameTrailer = tempDataSettingsMap.get("Name").toString();
         String nameReminder = RandomStringUtils.randomAlphanumeric(1, 10);
         String dateReminder = getDateFormat();
 
         loginLocalSitePage.userValidLogIn(login, pass);
         dashboardLocalSitePage.goToEquipmentPage();
-        equipmentLocalSitePage.enterOnEquipmentPlaceHolder(nameTruck);
+        equipmentLocalSitePage.enterOnEquipmentPlaceHolder(nameTrailer);
         waitABit(3);
         equipmentLocalSitePage.clickOnEquipmentOnRow();
         waitABit(3);
@@ -84,7 +91,6 @@ public class SoloDriverRemindersLocalSiteTest extends ParentTest {
         List<ArrayList> tempDataReminderList = utilsForDB.getReminderData(idTruck, nameReminder);
         Map<String, Object> tempDataReminderMap = listArrayToMap(tempDataReminderList);
 
-        checkAC("Name failed", tempDataReminderMap.get("name").equals(nameReminder), true);
         checkAC("Date failed", tempDataReminderMap.get("remindDateTime").equals(dateReminder + " 00:00:00"), true);
         checkAC("First reminder failed", Integer.parseInt(tempDataReminderMap.get("term").toString()) > 0, true);
     }
@@ -92,7 +98,10 @@ public class SoloDriverRemindersLocalSiteTest extends ParentTest {
     @Test
     public void addReminderByMileForTruck() throws SQLException, IOException, ClassNotFoundException {
         String userId = utilsForDB.getUserIdByEmail(login);
-        String nameTruck = utilsForDB.getRandomEquipmentName(userId, "0");
+        String equipId = utilsForDB.getRandomEquipmentId(userId, "0");
+        List<ArrayList> tempDataSettingsList = utilsForDB.getDataEquipment(userId, equipId);
+        Map<String, Object> tempDataSettingsMap = listArrayToMap(tempDataSettingsList);
+        String nameTruck = tempDataSettingsMap.get("Name").toString();
         String nameReminder = RandomStringUtils.randomAlphanumeric(3, 10);
         String countMiles = RandomStringUtils.randomNumeric(4);
 
@@ -114,7 +123,7 @@ public class SoloDriverRemindersLocalSiteTest extends ParentTest {
         List<ArrayList> tempDataReminderList = utilsForDB.getReminderData(idTruck, nameReminder);
         System.out.println(tempDataReminderList);
         Map<String, Object> tempDataReminderMap = listArrayToMap(tempDataReminderList);
-        checkAC("Name failed", tempDataReminderMap.get("name").equals(nameReminder), true);
+
         checkAC("Date failed", tempDataReminderMap.get("remindDateTime").equals("0"), true);
         checkAC("First reminder failed", tempDataReminderMap.get("term").equals(countMiles), true);
 

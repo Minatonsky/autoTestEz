@@ -506,19 +506,21 @@ public class UtilsForDB {
 
 
     @Step
-    public List<ArrayList> getDataTruckEquipment(String trackId) throws SQLException, IOException, ClassNotFoundException {
+    public List<ArrayList> getDataEquipment(String userId, String idEquipment) throws SQLException, IOException, ClassNotFoundException {
         dBMySQL = new Database("MySQL_PADB_DB", "MySQL");
-        List<ArrayList> tempData = dBMySQL.selectTable("SELECT e.id, e.truckTrailer, e.Notes, e.Name, e.Owner, e.Year, e.`Type`, e.TireSize, e.Fuel, e.Axel, e.Color, e.Make, e.Model, e.VIN, e.GrossWeight, e.UnlandWeight, e.Plate, e.State, e.NYCert, e.InspectionDue, e.`90DayExp`, e.ProRateExp, e.ExpDate, e.isActive, e.Length FROM equipment e WHERE e.id = '" + trackId + "';");
+        List<ArrayList> tempData = dBMySQL.selectTable("SELECT e.id, e.truckTrailer, e.Notes, e.Name, e.Owner, e.Year, e.`Type`, e.TireSize, e.Fuel, e.Axel, e.Color, e.Make, e.Model, e.VIN, e.GrossWeight, " +
+                "e.UnlandWeight, e.Plate, e.State, e.NYCert, e.InspectionDue, e.`90DayExp`, e.ProRateExp, e.ExpDate, e.isActive, e.Length FROM equipment e WHERE e.userId = " + userId + " and e.id = '" + idEquipment + "' ORDER BY e.id DESC LIMIT 1;");
         dBMySQL.quit();
         return tempData;
     }
     @Step
-    public String getRandomEquipmentName(String soloId, String truckTrailer) throws SQLException, IOException, ClassNotFoundException {
+    public String getEquipmentId(String soloId, String equipName) throws SQLException, IOException, ClassNotFoundException {
         dBMySQL = new Database("MySQL_PADB_DB", "MySQL");
-        String tempCurrentDue = dBMySQL.selectValue("SELECT e.Name FROM equipment e WHERE e.userId = " + soloId + " AND e.truckTrailer = " + truckTrailer + "  ORDER BY RAND()LIMIT 1;");
+        String tempData = dBMySQL.selectValue("SELECT e.id FROM equipment e WHERE e.userId = " + soloId + " AND e.Name = '" + equipName + "' ORDER BY e.id DESC LIMIT 1;");
         dBMySQL.quit();
-        return tempCurrentDue;
+        return tempData;
     }
+
     @Step
     public String getRandomEquipmentId(String soloId, String truckTrailer) throws SQLException, IOException, ClassNotFoundException {
         dBMySQL = new Database("MySQL_PADB_DB", "MySQL");
@@ -574,7 +576,7 @@ public class UtilsForDB {
     @Step
     public List<ArrayList> getReminderData(String id, String name) throws SQLException, IOException, ClassNotFoundException {
         dBMySQL = new Database("MySQL_PADB_DB", "MySQL");
-        List<ArrayList> tempData = dBMySQL.selectTable("SELECT e.name, e.`type`, e.`status`, case when e.remindDateTime = 0 then '0' ELSE e.remindDateTime end as remindDateTime, e.term, e.odometerStart, e.currentOdometer, e.whatSend FROM equipment_reminder e WHERE e.equipId = " + id + " AND e.name = '" + name + "';");
+        List<ArrayList> tempData = dBMySQL.selectTable("SELECT e.`type`, e.`status`, case when e.remindDateTime = 0 then '0' ELSE e.remindDateTime end as remindDateTime, e.term, e.odometerStart, e.currentOdometer, e.whatSend FROM equipment_reminder e WHERE e.equipId = " + id + " AND e.name = '" + name + "';");
         dBMySQL.quit();
         return tempData;
     }

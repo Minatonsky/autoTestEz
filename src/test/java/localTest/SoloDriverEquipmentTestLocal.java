@@ -85,7 +85,9 @@ public class SoloDriverEquipmentTestLocal extends ParentTest {
         equipmentLocalSitePage.clickOnSubmit();
         waitABit(5);
 
-        List<ArrayList> tempDataSettingsList = utilsForDB.getDataTruckEquipment(unitName);
+        String equipId = utilsForDB.getEquipmentId(userId, unitName);
+
+        List<ArrayList> tempDataSettingsList = utilsForDB.getDataEquipment(userId, equipId);
         Map<String, Object> tempDataSettingsMap = listArrayToMap(tempDataSettingsList);
 
         checkAC("TruckTrailer failed", tempDataSettingsMap.get("truckTrailer").equals("0"), true);
@@ -172,8 +174,9 @@ public class SoloDriverEquipmentTestLocal extends ParentTest {
 //        equipmentPageLocal.clickOnActive();
         equipmentLocalSitePage.clickOnSubmit();
         waitABit(5);
+        String equipId = utilsForDB.getEquipmentId(userId, unitName);
 
-        List<ArrayList> tempDataSettingsList = utilsForDB.getDataTruckEquipment(unitName);
+        List<ArrayList> tempDataSettingsList = utilsForDB.getDataEquipment(userId, equipId);
         Map<String, Object> tempDataSettingsMap = listArrayToMap(tempDataSettingsList);
 
         checkAC("TruckTrailer failed", tempDataSettingsMap.get("truckTrailer").equals("1"), true);
@@ -227,26 +230,27 @@ public class SoloDriverEquipmentTestLocal extends ParentTest {
         String ninetyDayExpDate = getDateRandom();
         String proRateDueDate = getDateRandom();
         String expDateDate = getDateRandom();
-        String nameTruck = utilsForDB.getRandomEquipmentName(userId, "0");
+
+        String idTruckRandom = utilsForDB.getRandomEquipmentId(userId, "0");
         String notes = RandomStringUtils.randomAlphanumeric(15);
 
-        List<ArrayList> tempDataList = utilsForDB.getDataTruckEquipment(nameTruck);
+        List<ArrayList> tempDataList = utilsForDB.getDataEquipment(userId, idTruckRandom);
         Map<String, Object> tempDataEquipmentBeforeTestMap = listArrayToMap(tempDataList);
-        String equipmentId = tempDataEquipmentBeforeTestMap.get("id").toString();
-        String isActive = tempDataEquipmentBeforeTestMap.get("isActive").toString();
 
-        String permitDocRegistration = utilsForDB.getUrlPermitDoc( equipmentId, "equipmentRegistration");
-        String permitDocReport = utilsForDB.getUrlPermitDoc( equipmentId, "equipmentAnnualReport");
+        String isActive = tempDataEquipmentBeforeTestMap.get("isActive").toString();
 
 
         loginLocalSitePage.userValidLogIn(login, pass);
         dashboardLocalSitePage.goToEquipmentPage();
-        equipmentLocalSitePage.enterOnEquipmentPlaceHolder(nameTruck);
+        equipmentLocalSitePage.enterOnEquipmentPlaceHolder(tempDataEquipmentBeforeTestMap.get("Name").toString());
         waitABit(3);
         equipmentLocalSitePage.clickOnEquipmentOnRow();
         waitABit(2);
         equipmentLocalSitePage.clickOnEditButton();
         waitABit(2);
+        String idTruck = equipmentLocalSitePage.getVehicleIdText();
+        String permitDocRegistration = utilsForDB.getUrlPermitDoc( idTruck, "equipmentRegistration");
+        String permitDocReport = utilsForDB.getUrlPermitDoc( idTruck, "equipmentAnnualReport");
 //    General
         equipmentLocalSitePage.enterUnitName(unitName);
         equipmentLocalSitePage.enterOwner(owner);
@@ -281,7 +285,7 @@ public class SoloDriverEquipmentTestLocal extends ParentTest {
         equipmentLocalSitePage.clickOnSave();
         waitABit(5);
 
-        List<ArrayList> tempDataListUpdatedTruck = utilsForDB.getDataTruckEquipment(unitName);
+        List<ArrayList> tempDataListUpdatedTruck = utilsForDB.getDataEquipment(userId, idTruck);
         Map<String, Object> tempDataEquipmentMap = listArrayToMap(tempDataListUpdatedTruck);
 
         checkAC("TruckTrailer failed", tempDataEquipmentMap.get("truckTrailer").equals("0"), true);
@@ -310,8 +314,8 @@ public class SoloDriverEquipmentTestLocal extends ParentTest {
         checkACWithLogger("ExpDate failed", tempDataEquipmentMap.get("ExpDate").equals(expDateDate), true, tempDataEquipmentMap.get("ExpDate").toString(), expDateDate);
         checkACWithLogger("isActive failed", tempDataEquipmentMap.get("isActive").equals(isActive), false, tempDataEquipmentMap.get("isActive").toString(), isActive);
         checkACWithLogger("Notes failed", tempDataEquipmentMap.get("Notes").equals(notes), true, tempDataEquipmentMap.get("Notes").toString(), notes);
-        checkACWithLogger("File failed", utilsForDB.getUrlPermitDoc(equipmentId, "equipmentRegistration").equals(permitDocRegistration), false, utilsForDB.getUrlPermitDoc(equipmentId, "equipmentRegistration"), permitDocRegistration);
-        checkAC("File failed", utilsForDB.getUrlPermitDoc(equipmentId, "equipmentAnnualReport").equals(permitDocReport), false);
+        checkACWithLogger("File failed", utilsForDB.getUrlPermitDoc(idTruck, "equipmentRegistration").equals(permitDocRegistration), false, utilsForDB.getUrlPermitDoc(idTruck, "equipmentRegistration"), permitDocRegistration);
+        checkAC("File failed", utilsForDB.getUrlPermitDoc(idTruck, "equipmentAnnualReport").equals(permitDocReport), false);
 
     }
     @Test
@@ -338,26 +342,25 @@ public class SoloDriverEquipmentTestLocal extends ParentTest {
         String ninetyDayExpDate = getDateRandom();
         String proRateDueDate = getDateRandom();
         String expDateDate = getDateRandom();
-        String nameTruck = utilsForDB.getRandomEquipmentName(userId, "1");
+
+        String idTrailerRandom = utilsForDB.getRandomEquipmentId(userId, "1");
         String notes = RandomStringUtils.randomAlphanumeric(15);
 
-        List<ArrayList> tempDataList = utilsForDB.getDataTruckEquipment(nameTruck);
+        List<ArrayList> tempDataList = utilsForDB.getDataEquipment(userId, idTrailerRandom);
         Map<String, Object> tempDataEquipmentBeforeTestMap = listArrayToMap(tempDataList);
-        String equipmentId = tempDataEquipmentBeforeTestMap.get("id").toString();
         String isActive = tempDataEquipmentBeforeTestMap.get("isActive").toString();
-
-        String permitDocRegistration = utilsForDB.getUrlPermitDoc( equipmentId, "equipmentRegistration");
-        String permitDocReport = utilsForDB.getUrlPermitDoc( equipmentId, "equipmentAnnualReport");
-
 
         loginLocalSitePage.userValidLogIn(login, pass);
         dashboardLocalSitePage.goToEquipmentPage();
-        equipmentLocalSitePage.enterOnEquipmentPlaceHolder(nameTruck);
+        equipmentLocalSitePage.enterOnEquipmentPlaceHolder(tempDataEquipmentBeforeTestMap.get("Name").toString());
         waitABit(3);
         equipmentLocalSitePage.clickOnEquipmentOnRow();
         waitABit(2);
         equipmentLocalSitePage.clickOnEditButton();
         waitABit(2);
+        String idTrailer = equipmentLocalSitePage.getVehicleIdText();
+        String permitDocRegistration = utilsForDB.getUrlPermitDoc(idTrailer, "equipmentRegistration");
+        String permitDocReport = utilsForDB.getUrlPermitDoc(idTrailer, "equipmentAnnualReport");
 //    General
         equipmentLocalSitePage.enterUnitName(unitName);
         equipmentLocalSitePage.enterOwner(owner);
@@ -392,7 +395,7 @@ public class SoloDriverEquipmentTestLocal extends ParentTest {
         equipmentLocalSitePage.clickOnSave();
         waitABit(5);
 
-        List<ArrayList> tempDataListUpdatedTruck = utilsForDB.getDataTruckEquipment(unitName);
+        List<ArrayList> tempDataListUpdatedTruck = utilsForDB.getDataEquipment(userId, idTrailer);
         Map<String, Object> tempDataEquipmentMap = listArrayToMap(tempDataListUpdatedTruck);
 
         checkAC("TruckTrailer failed", tempDataEquipmentMap.get("truckTrailer").equals("1"), true);
@@ -421,8 +424,8 @@ public class SoloDriverEquipmentTestLocal extends ParentTest {
         checkACWithLogger("ExpDate failed", tempDataEquipmentMap.get("ExpDate").equals(expDateDate), true, tempDataEquipmentMap.get("ExpDate").toString(), expDateDate);
         checkACWithLogger("isActive failed", tempDataEquipmentMap.get("isActive").equals(isActive), false, tempDataEquipmentMap.get("isActive").toString(), isActive);
         checkACWithLogger("Notes failed", tempDataEquipmentMap.get("Notes").equals(notes), true, tempDataEquipmentMap.get("Notes").toString(), notes);
-        checkACWithLogger("File failed", utilsForDB.getUrlPermitDoc(equipmentId, "equipmentRegistration").equals(permitDocRegistration), false, utilsForDB.getUrlPermitDoc(equipmentId, "equipmentRegistration"), permitDocRegistration);
-        checkAC("File failed", utilsForDB.getUrlPermitDoc(equipmentId, "equipmentAnnualReport").equals(permitDocReport), false);
+        checkACWithLogger("File failed", utilsForDB.getUrlPermitDoc(idTrailer, "equipmentRegistration").equals(permitDocRegistration), false, utilsForDB.getUrlPermitDoc(idTrailer, "equipmentRegistration"), permitDocRegistration);
+        checkAC("File failed", utilsForDB.getUrlPermitDoc(idTrailer, "equipmentAnnualReport").equals(permitDocReport), false);
 
     }
 

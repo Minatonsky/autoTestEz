@@ -1,6 +1,5 @@
 package parameterizedUI;
 
-import libs.ExcelDriver;
 import libs.SpreadsheetData;
 import libs.UtilsForDB;
 import org.apache.commons.lang3.RandomStringUtils;
@@ -33,12 +32,12 @@ public class SoloDriverCreateEquipmentParameterizedLocalSiteTest extends ParentT
         return new SpreadsheetData(spreadsheet, "loginPassParamsTest").getData();
     }
     UtilsForDB utilsForDB = new UtilsForDB();
-    ExcelDriver excelDriver = new ExcelDriver();
     String pass = "testtest";
 
     @Test
     public void addTruck() throws SQLException, IOException, ClassNotFoundException {
-        String unitName = RandomStringUtils.randomAlphanumeric(1, 10);
+        String userId = utilsForDB.getUserIdByEmail(login);
+        String unitName = RandomStringUtils.randomAlphanumeric(5, 10);
         String type = Integer.toString(genRandomNumberBetweenTwoValues(0, 4));
         String owner = RandomStringUtils.randomAlphabetic( 10);
         String year = Integer.toString(genRandomNumberBetweenTwoValues(1950, 2020));
@@ -91,8 +90,9 @@ public class SoloDriverCreateEquipmentParameterizedLocalSiteTest extends ParentT
 //        equipmentPageLocal.clickOnActive();
         equipmentLocalSitePage.clickOnSubmit();
         waitABit(5);
+        String equipId = utilsForDB.getEquipmentId(userId, unitName);
 
-        List<ArrayList> tempDataSettingsList = utilsForDB.getDataTruckEquipment(unitName);
+        List<ArrayList> tempDataSettingsList = utilsForDB.getDataEquipment(userId, equipId);
         Map<String, Object> tempDataSettingsMap = listArrayToMap(tempDataSettingsList);
 
         checkAC("TruckTrailer failed", tempDataSettingsMap.get("truckTrailer").equals("0"), true);
@@ -125,6 +125,7 @@ public class SoloDriverCreateEquipmentParameterizedLocalSiteTest extends ParentT
     }
     @Test
     public void addTrailer() throws SQLException, IOException, ClassNotFoundException {
+        String userId = utilsForDB.getUserIdByEmail(login);
         String unitName = RandomStringUtils.randomAlphanumeric(1, 10);
         String type = Integer.toString(genRandomNumberBetweenTwoValues(0, 4));
         String owner = RandomStringUtils.randomAlphabetic( 10);
@@ -178,8 +179,9 @@ public class SoloDriverCreateEquipmentParameterizedLocalSiteTest extends ParentT
 //        equipmentPageLocal.clickOnActive();
         equipmentLocalSitePage.clickOnSubmit();
         waitABit(5);
+        String equipId = utilsForDB.getEquipmentId(userId, unitName);
 
-        List<ArrayList> tempDataSettingsList = utilsForDB.getDataTruckEquipment(unitName);
+        List<ArrayList> tempDataSettingsList = utilsForDB.getDataEquipment(userId, equipId);
         Map<String, Object> tempDataSettingsMap = listArrayToMap(tempDataSettingsList);
 
         checkAC("TruckTrailer failed", tempDataSettingsMap.get("truckTrailer").equals("1"), true);
