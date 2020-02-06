@@ -119,7 +119,7 @@ public class DriverSettingsLocalSitePage extends ParentLocalSitePage {
     @FindBy(xpath = "//span[text()='Country']/../select")
     private WebElement countryDlValue;
 
-    @FindBy(xpath = "//*[@class='form-input form-group form-group__input-full']//span[text()='State']/../select[@name]")
+    @FindBy(xpath = "//*[@class='form-input form-group form-group__input-full']//span[text()='State']/../select")
     private WebElement stateDlValue;
 
     @FindBy(xpath = "//span[text()='Expiration']/..//input")

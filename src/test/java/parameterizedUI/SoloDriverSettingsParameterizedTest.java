@@ -1,5 +1,6 @@
 package parameterizedUI;
 
+import libs.ExcelDriver;
 import libs.SpreadsheetData;
 import libs.UtilsForDB;
 import org.apache.commons.lang3.RandomStringUtils;
@@ -28,7 +29,13 @@ public class SoloDriverSettingsParameterizedTest extends ParentTest {
         this.login = login;
     }
     UtilsForDB utilsForDB = new UtilsForDB();
+    ExcelDriver excelDriver = new ExcelDriver();
+
+    Map dataForDLRegexState = excelDriver.getData(configProperties.DATA_FILE_PATH() + "testSettings.xls", "USDLRegex");
+    Map dataForDLNumberState = excelDriver.getData(configProperties.DATA_FILE_PATH() + "testSettings.xls", "USDLNumber");
+
     String scannerType = "1";
+    String pass = "testtest";
 
     @Parameterized.Parameters()
     public static Collection testData() throws IOException {
@@ -38,8 +45,8 @@ public class SoloDriverSettingsParameterizedTest extends ParentTest {
 
     @Test
     public void updateDataSettings() throws SQLException, IOException, ClassNotFoundException {
+
         String userId = utilsForDB.getUserIdByEmail(login);
-        String pass = "testtest";
         utilsForDB.set_0_AobrdMPHDriverSettings(userId);
 
         List<ArrayList> tempDataList = utilsForDB.getDataDriverSettings(userId);
@@ -47,12 +54,11 @@ public class SoloDriverSettingsParameterizedTest extends ParentTest {
 
         String ssn = RandomStringUtils.randomNumeric(9);
         String ein = RandomStringUtils.randomNumeric(9);
-        String state = "2";
+        String state = Integer.toString(genRandomNumberBetweenTwoValues(1, 63));
         String city = RandomStringUtils.randomAlphabetic(5);
         String address = RandomStringUtils.randomAlphabetic(10);
         String phone = RandomStringUtils.randomNumeric(10);
         String note = RandomStringUtils.randomAlphanumeric(20);
-        String dlNumber = RandomStringUtils.randomNumeric(7);
         String dateBirth = getDateRandom();
         String dateHire = getDateRandom();
         String dateMedCard = getDateRandom();
@@ -67,6 +73,11 @@ public class SoloDriverSettingsParameterizedTest extends ParentTest {
         String hazMat= tempBeforeTestDataSettingsMap.get("HazMat").toString();
         String insurance = tempBeforeTestDataSettingsMap.get("Insurance").toString();
         String tankerEndorsment = tempBeforeTestDataSettingsMap.get("TankerEndorsment").toString();
+
+        String randomState = genRandomState();
+        String regexState = dataForDLRegexState.get(randomState).toString();
+        String dlNumber = genRandomDataByRegex(regexState);
+        String stateNumber = dataForDLNumberState.get(randomState).toString();
 
 
         loginPage.userValidLogIn(login, pass);
@@ -102,8 +113,8 @@ public class SoloDriverSettingsParameterizedTest extends ParentTest {
 
 //    DRIVER'S LICENSE
         settingsPage.enterNumberDl(dlNumber);
-        settingsPage.selectCountry("Canada");
-        settingsPage.selectStateDl("AB");
+        settingsPage.selectCountry("USA");
+        settingsPage.selectStateDl(randomState);
         settingsPage.enterExpirationDl(dateDLExpiration);
         settingsPage.enterNote(note);
         settingsPage.clickOnBlankArea();
@@ -141,7 +152,7 @@ public class SoloDriverSettingsParameterizedTest extends ParentTest {
         checkAC("Expiration driver licence failed", tempDataSettingsMap.get("DLExpiration").equals(dateDLExpiration), true);
 
         checkAC("Driver licence number failed", tempDataSettingsMap.get("DLNumber").equals(dlNumber), true);
-        checkAC("Driver licence state failed", tempDataSettingsMap.get("DLState").equals("51"), true);
+        checkAC("Driver licence state failed", tempDataSettingsMap.get("DLState").equals(stateNumber), true);
     }
 
 }

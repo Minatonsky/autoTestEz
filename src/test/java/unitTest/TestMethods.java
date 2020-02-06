@@ -195,7 +195,8 @@ public class TestMethods {
 
     @Test
     public void test2() throws SQLException, IOException, ClassNotFoundException {
-        Generex generex = new Generex("[A-Z]{1}[0-9]{13}");
+        Generex generex = new Generex("[A-Z]{1}[A-Z0-9]{11}|[A-Z]{7}[A-Z0-9]{5}");
+//  "1-7 Alpha + any combination of Alpha, Numeric, and * for a total of 12 characters"
 
 // generate the second String in lexicographical order that matches the given Regex.
 //        String secondString = generex.getMatchedString(2);
@@ -210,10 +211,8 @@ public class TestMethods {
 //            System.out.print(iterator.next() + " ");
 //        }
 
-
-// Generate random String
         String randomStr = generex.random();
-        System.out.println(randomStr);// a random value from the previous String list
+        System.out.println(randomStr);
 
     }
 

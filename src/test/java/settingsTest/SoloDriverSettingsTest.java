@@ -41,7 +41,7 @@ public class SoloDriverSettingsTest extends ParentTest {
 
         String ssn = RandomStringUtils.randomNumeric(9);
         String ein = RandomStringUtils.randomNumeric(9);
-        String state = "2";
+        String state = genRandomState();
         String city = RandomStringUtils.randomAlphabetic(5);
         String address = RandomStringUtils.randomAlphabetic(10);
         String phone = RandomStringUtils.randomNumeric(10);

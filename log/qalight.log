@@ -533,3 +533,281 @@ Session ID: 3c09f7e499a9894c22574c9c3855ac3b
 2020-05-02 13:42:17   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
 2020-05-02 13:42:19   INFO [localTest.SoloDriverRemindersLocalSiteTest] : AC passed
 2020-05-02 13:42:20  ERROR [localTest.SoloDriverRemindersLocalSiteTest] : AC failed: First reminder failed
+2020-06-02 13:05:56   INFO [settingsTest.DriverLicenseParameterizedTest] : Chrome will be started
+2020-06-02 13:06:03   INFO [settingsTest.DriverLicenseParameterizedTest] : Chrome is started
+2020-06-02 18:03:47   INFO [parameterizedUI.SoloDriverSettingsParameterizedTest] : Chrome will be started
+2020-06-02 18:03:54   INFO [parameterizedUI.SoloDriverSettingsParameterizedTest] : Chrome is started
+2020-06-02 18:03:58   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-06-02 18:04:01   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-06-02 18:04:02   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-06-02 18:04:10   INFO [pages.LoginPage] : Login Page was opened
+2020-06-02 18:04:10   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-02 18:04:10   INFO [libs.ActionsWithOurElements] : test121@test.test was inputted into element
+2020-06-02 18:04:10   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-06-02 18:04:10   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-02 18:04:22   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-06-02 18:04:22   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-02 18:04:25   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-02 18:04:29   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-02 18:04:35   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-02 18:04:39   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-02 18:41:15   INFO [localTest.DriverLicenseParameterizedLocalSiteTest] : Chrome will be started
+2020-06-02 18:41:21   INFO [localTest.DriverLicenseParameterizedLocalSiteTest] : Chrome is started
+2020-06-02 18:41:32   INFO [pagesLocal.LoginLocalSitePage] : Login Page was opened
+2020-06-02 18:41:32   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-02 18:41:33   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-06-02 18:41:33   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-06-02 18:41:33   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-02 18:43:12   INFO [localTest.DriverLicenseParameterizedLocalSiteTest] : Chrome will be started
+2020-06-02 18:43:18   INFO [localTest.DriverLicenseParameterizedLocalSiteTest] : Chrome is started
+2020-06-02 18:43:29   INFO [pagesLocal.LoginLocalSitePage] : Login Page was opened
+2020-06-02 18:43:30   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-02 18:43:30   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-06-02 18:43:30   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-06-02 18:43:30   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-02 18:43:33   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-02 18:43:37   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-02 18:43:37   INFO [libs.ActionsWithOurElements] : 881 was inputted into element
+2020-06-02 18:43:37   INFO [libs.ActionsWithOurElements] : USA was selected in Drop-down
+2020-06-02 18:43:57  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.NoSuchElementException: Cannot locate option with value: 1
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'DESKTOP-0PTGLHV', ip: '192.168.88.57', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: driver.version: unknown
+2020-06-02 18:43:58   INFO [localTest.DriverLicenseParameterizedLocalSiteTest] : Chrome will be started
+2020-06-02 18:44:03   INFO [localTest.DriverLicenseParameterizedLocalSiteTest] : Chrome is started
+2020-06-02 18:44:13   INFO [pagesLocal.LoginLocalSitePage] : Login Page was opened
+2020-06-02 18:44:13   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-02 18:44:13   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-06-02 18:44:13   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-06-02 18:44:13   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-02 18:44:16   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-02 18:44:20   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-02 18:44:20   INFO [libs.ActionsWithOurElements] : 8 was inputted into element
+2020-06-02 18:44:20   INFO [libs.ActionsWithOurElements] : USA was selected in Drop-down
+2020-06-02 18:46:12   INFO [localTest.DriverLicenseParameterizedLocalSiteTest] : Chrome will be started
+2020-06-02 18:46:18   INFO [localTest.DriverLicenseParameterizedLocalSiteTest] : Chrome is started
+2020-06-02 18:46:29   INFO [pagesLocal.LoginLocalSitePage] : Login Page was opened
+2020-06-02 18:46:29   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-02 18:46:29   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-06-02 18:46:30   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-06-02 18:46:30   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-02 18:46:33   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-02 18:46:36   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-02 18:46:36   INFO [libs.ActionsWithOurElements] : 4 was inputted into element
+2020-06-02 18:46:36   INFO [libs.ActionsWithOurElements] : USA was selected in Drop-down
+2020-06-02 18:46:56  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.NoSuchElementException: Cannot locate option with value: 1
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'DESKTOP-0PTGLHV', ip: '192.168.88.57', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: driver.version: unknown
+2020-06-02 18:46:57   INFO [localTest.DriverLicenseParameterizedLocalSiteTest] : Chrome will be started
+2020-06-02 18:47:02   INFO [localTest.DriverLicenseParameterizedLocalSiteTest] : Chrome is started
+2020-06-02 18:47:13   INFO [pagesLocal.LoginLocalSitePage] : Login Page was opened
+2020-06-02 18:47:13   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-02 18:47:13   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-06-02 18:47:13   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-06-02 18:47:14   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-02 18:47:17   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-02 18:47:20   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-02 18:47:20   INFO [libs.ActionsWithOurElements] : 8 was inputted into element
+2020-06-02 18:47:20   INFO [libs.ActionsWithOurElements] : USA was selected in Drop-down
+2020-06-02 18:47:40  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.NoSuchElementException: Cannot locate option with value: 2
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'DESKTOP-0PTGLHV', ip: '192.168.88.57', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: driver.version: unknown
+2020-06-02 18:47:41   INFO [localTest.DriverLicenseParameterizedLocalSiteTest] : Chrome will be started
+2020-06-02 18:47:46   INFO [localTest.DriverLicenseParameterizedLocalSiteTest] : Chrome is started
+2020-06-02 18:47:56   INFO [pagesLocal.LoginLocalSitePage] : Login Page was opened
+2020-06-02 18:47:56   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-02 18:47:56   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-06-02 18:47:57   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-06-02 18:47:57   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-02 18:48:00   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-02 18:48:03   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-02 18:48:03   INFO [libs.ActionsWithOurElements] : 784100425 was inputted into element
+2020-06-02 18:48:03   INFO [libs.ActionsWithOurElements] : USA was selected in Drop-down
+2020-06-02 18:50:12   INFO [localTest.DriverLicenseParameterizedLocalSiteTest] : Chrome will be started
+2020-06-02 18:50:18   INFO [localTest.DriverLicenseParameterizedLocalSiteTest] : Chrome is started
+2020-06-02 18:50:29   INFO [pagesLocal.LoginLocalSitePage] : Login Page was opened
+2020-06-02 18:50:29   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-02 18:50:29   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-06-02 18:50:30   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-06-02 18:50:30   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-02 18:50:33   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-02 18:50:36   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-02 18:50:36   INFO [libs.ActionsWithOurElements] : 6571 was inputted into element
+2020-06-02 18:50:36   INFO [libs.ActionsWithOurElements] : USA was selected in Drop-down
+2020-06-02 18:50:37   INFO [libs.ActionsWithOurElements] : AL was selected in Drop-down
+2020-06-02 18:50:37   INFO [libs.ActionsWithOurElements] : 1975-04-09 was inputted into element
+2020-06-02 18:50:37   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-02 18:50:42   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-02 18:50:47   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-06-02 18:50:50   INFO [localTest.DriverLicenseParameterizedLocalSiteTest] : AC passed
+2020-06-02 18:50:51   INFO [localTest.DriverLicenseParameterizedLocalSiteTest] : AC passed
+2020-06-02 18:50:52   INFO [localTest.DriverLicenseParameterizedLocalSiteTest] : AC passed
+2020-06-02 18:50:53   INFO [localTest.DriverLicenseParameterizedLocalSiteTest] : Chrome will be started
+2020-06-02 18:50:58   INFO [localTest.DriverLicenseParameterizedLocalSiteTest] : Chrome is started
+2020-06-02 18:51:08   INFO [pagesLocal.LoginLocalSitePage] : Login Page was opened
+2020-06-02 18:51:08   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-02 18:51:08   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-06-02 18:51:08   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-06-02 18:51:08   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-02 18:51:12   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-02 18:51:15   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-02 18:51:15   INFO [libs.ActionsWithOurElements] : 62 was inputted into element
+2020-06-02 18:51:15   INFO [libs.ActionsWithOurElements] : USA was selected in Drop-down
+2020-06-02 18:51:15   INFO [libs.ActionsWithOurElements] : AK was selected in Drop-down
+2020-06-02 18:51:15   INFO [libs.ActionsWithOurElements] : 1873-03-03 was inputted into element
+2020-06-02 18:51:16   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-02 18:51:21   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-02 18:51:26   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-06-02 18:51:28   INFO [localTest.DriverLicenseParameterizedLocalSiteTest] : AC passed
+2020-06-02 18:51:29   INFO [localTest.DriverLicenseParameterizedLocalSiteTest] : AC passed
+2020-06-02 18:51:30   INFO [localTest.DriverLicenseParameterizedLocalSiteTest] : AC passed
+2020-06-02 18:51:31   INFO [localTest.DriverLicenseParameterizedLocalSiteTest] : Chrome will be started
+2020-06-02 18:51:36   INFO [localTest.DriverLicenseParameterizedLocalSiteTest] : Chrome is started
+2020-06-02 18:51:46   INFO [pagesLocal.LoginLocalSitePage] : Login Page was opened
+2020-06-02 18:51:47   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-02 18:51:47   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-06-02 18:51:47   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-06-02 18:51:47   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-02 18:51:50   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-02 18:51:53   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-02 18:51:54   INFO [libs.ActionsWithOurElements] : C2 was inputted into element
+2020-06-02 18:51:54   INFO [libs.ActionsWithOurElements] : USA was selected in Drop-down
+2020-06-02 18:51:54   INFO [libs.ActionsWithOurElements] : AZ was selected in Drop-down
+2020-06-02 18:51:54   INFO [libs.ActionsWithOurElements] : 1872-03-02 was inputted into element
+2020-06-02 18:51:54   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-02 18:51:59   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-02 18:52:04   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-06-02 18:52:07   INFO [localTest.DriverLicenseParameterizedLocalSiteTest] : AC passed
+2020-06-02 18:52:08   INFO [localTest.DriverLicenseParameterizedLocalSiteTest] : AC passed
+2020-06-02 18:52:09   INFO [localTest.DriverLicenseParameterizedLocalSiteTest] : AC passed
+2020-06-02 18:52:10   INFO [localTest.DriverLicenseParameterizedLocalSiteTest] : Chrome will be started
+2020-06-02 18:52:15   INFO [localTest.DriverLicenseParameterizedLocalSiteTest] : Chrome is started
+2020-06-02 18:52:25   INFO [pagesLocal.LoginLocalSitePage] : Login Page was opened
+2020-06-02 18:52:25   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-02 18:52:25   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-06-02 18:52:25   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-06-02 18:52:25   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-02 18:52:28   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-02 18:52:32   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-02 18:52:32   INFO [libs.ActionsWithOurElements] : 8995 was inputted into element
+2020-06-02 18:52:32   INFO [libs.ActionsWithOurElements] : USA was selected in Drop-down
+2020-06-02 18:52:32   INFO [libs.ActionsWithOurElements] : AR was selected in Drop-down
+2020-06-02 18:52:32   INFO [libs.ActionsWithOurElements] : 1887-09-30 was inputted into element
+2020-06-02 18:52:32   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-02 18:52:37   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-02 18:52:42   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-06-02 18:52:45   INFO [localTest.DriverLicenseParameterizedLocalSiteTest] : AC passed
+2020-06-02 18:52:46   INFO [localTest.DriverLicenseParameterizedLocalSiteTest] : AC passed
+2020-06-02 18:52:47   INFO [localTest.DriverLicenseParameterizedLocalSiteTest] : AC passed
+2020-06-02 18:52:48   INFO [localTest.DriverLicenseParameterizedLocalSiteTest] : Chrome will be started
+2020-06-02 18:52:53   INFO [localTest.DriverLicenseParameterizedLocalSiteTest] : Chrome is started
+2020-06-02 18:53:03   INFO [pagesLocal.LoginLocalSitePage] : Login Page was opened
+2020-06-02 18:53:03   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-02 18:53:03   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-06-02 18:53:03   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-06-02 18:53:04   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-02 18:53:07   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-02 18:53:10   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-02 18:53:10   INFO [libs.ActionsWithOurElements] : G0738367 was inputted into element
+2020-06-02 18:53:10   INFO [libs.ActionsWithOurElements] : USA was selected in Drop-down
+2020-06-02 18:53:10   INFO [libs.ActionsWithOurElements] : CA was selected in Drop-down
+2020-06-02 18:53:11   INFO [libs.ActionsWithOurElements] : 1899-02-09 was inputted into element
+2020-06-02 18:53:11   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-02 18:53:16   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-02 18:53:21   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-06-02 18:53:24   INFO [localTest.DriverLicenseParameterizedLocalSiteTest] : AC passed
+2020-06-02 18:53:25   INFO [localTest.DriverLicenseParameterizedLocalSiteTest] : AC passed
+2020-06-02 18:53:26   INFO [localTest.DriverLicenseParameterizedLocalSiteTest] : AC passed
+2020-06-02 18:53:26   INFO [localTest.DriverLicenseParameterizedLocalSiteTest] : Chrome will be started
+2020-06-02 18:53:31   INFO [localTest.DriverLicenseParameterizedLocalSiteTest] : Chrome is started
+2020-06-02 18:53:41   INFO [pagesLocal.LoginLocalSitePage] : Login Page was opened
+2020-06-02 18:53:41   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-02 18:53:42   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-06-02 18:53:42   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-06-02 18:53:42   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-02 18:53:45   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-02 18:53:48   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-02 18:53:48   INFO [libs.ActionsWithOurElements] : G260488 was inputted into element
+2020-06-02 18:53:48   INFO [libs.ActionsWithOurElements] : USA was selected in Drop-down
+2020-06-02 18:53:49   INFO [libs.ActionsWithOurElements] : CO was selected in Drop-down
+2020-06-02 18:53:49   INFO [libs.ActionsWithOurElements] : 1870-04-12 was inputted into element
+2020-06-02 18:53:49   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-02 18:53:54   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-02 18:53:59   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-06-02 18:54:02   INFO [localTest.DriverLicenseParameterizedLocalSiteTest] : AC passed
+2020-06-02 18:54:03   INFO [localTest.DriverLicenseParameterizedLocalSiteTest] : AC passed
+2020-06-02 18:54:04   INFO [localTest.DriverLicenseParameterizedLocalSiteTest] : AC passed
+2020-06-02 18:54:04   INFO [localTest.DriverLicenseParameterizedLocalSiteTest] : Chrome will be started
+2020-06-02 18:54:09   INFO [localTest.DriverLicenseParameterizedLocalSiteTest] : Chrome is started
+2020-06-02 18:54:20   INFO [pagesLocal.LoginLocalSitePage] : Login Page was opened
+2020-06-02 18:54:20   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-02 18:54:20   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-06-02 18:54:20   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-06-02 18:54:20   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-02 18:54:23   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-02 18:54:27   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-02 18:54:27   INFO [libs.ActionsWithOurElements] : 607826715 was inputted into element
+2020-06-02 18:54:27   INFO [libs.ActionsWithOurElements] : USA was selected in Drop-down
+2020-06-02 18:54:27   INFO [libs.ActionsWithOurElements] : CT was selected in Drop-down
+2020-06-02 18:54:27   INFO [libs.ActionsWithOurElements] : 1880-07-27 was inputted into element
+2020-06-02 18:54:27   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-02 18:54:33   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-02 18:54:38   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-06-02 19:00:01   INFO [localTest.DriverLicenseParameterizedLocalSiteTest] : Chrome will be started
+2020-06-02 19:00:08   INFO [localTest.DriverLicenseParameterizedLocalSiteTest] : Chrome is started
+2020-06-02 19:00:19   INFO [pagesLocal.LoginLocalSitePage] : Login Page was opened
+2020-06-02 19:00:19   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-02 19:00:19   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-06-02 19:00:19   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-06-02 19:00:19   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-02 19:00:22   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-02 19:00:26   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-02 19:00:26   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2020-06-02 19:00:26   INFO [libs.ActionsWithOurElements] : USA was selected in Drop-down
+2020-06-02 19:00:26   INFO [libs.ActionsWithOurElements] : AL was selected in Drop-down
+2020-06-02 19:00:26   INFO [libs.ActionsWithOurElements] : 1899-06-26 was inputted into element
+2020-06-02 19:00:26   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-02 19:00:31   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-02 19:00:36   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-06-02 19:00:53   INFO [localTest.DriverLicenseParameterizedLocalSiteTest] : Chrome will be started
+2020-06-02 19:01:00   INFO [localTest.DriverLicenseParameterizedLocalSiteTest] : Chrome is started
+2020-06-02 19:01:10   INFO [pagesLocal.LoginLocalSitePage] : Login Page was opened
+2020-06-02 19:01:11   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-02 19:01:11   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-06-02 19:01:11   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-06-02 19:01:11   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-02 19:01:14   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-02 19:01:17   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-02 19:01:18   INFO [libs.ActionsWithOurElements] : 99 was inputted into element
+2020-06-02 19:01:18   INFO [libs.ActionsWithOurElements] : USA was selected in Drop-down
+2020-06-02 19:01:18   INFO [libs.ActionsWithOurElements] : AL was selected in Drop-down
+2020-06-02 19:01:18   INFO [libs.ActionsWithOurElements] : 2001-02-08 was inputted into element
+2020-06-02 19:01:23   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-02 19:01:28   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-06-02 19:01:31   INFO [localTest.DriverLicenseParameterizedLocalSiteTest] : AC passed
+2020-06-02 19:01:32   INFO [localTest.DriverLicenseParameterizedLocalSiteTest] : AC passed
+2020-06-02 19:01:33   INFO [localTest.DriverLicenseParameterizedLocalSiteTest] : AC passed
+2020-06-02 19:01:34   INFO [localTest.DriverLicenseParameterizedLocalSiteTest] : Chrome will be started
+2020-06-02 19:01:39   INFO [localTest.DriverLicenseParameterizedLocalSiteTest] : Chrome is started
+2020-06-02 19:01:49   INFO [pagesLocal.LoginLocalSitePage] : Login Page was opened
+2020-06-02 19:01:49   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-02 19:01:49   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-06-02 19:01:49   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-06-02 19:01:49   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-02 19:01:53   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-02 19:01:56   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-02 19:01:56   INFO [libs.ActionsWithOurElements] : 2104 was inputted into element
+2020-06-02 19:01:56   INFO [libs.ActionsWithOurElements] : USA was selected in Drop-down
+2020-06-02 19:01:56   INFO [libs.ActionsWithOurElements] : AK was selected in Drop-down
+2020-06-02 19:01:56   INFO [libs.ActionsWithOurElements] : 1987-07-16 was inputted into element
+2020-06-02 19:02:02   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-02 19:02:07   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-06-02 19:02:09   INFO [localTest.DriverLicenseParameterizedLocalSiteTest] : AC passed
+2020-06-02 19:02:10   INFO [localTest.DriverLicenseParameterizedLocalSiteTest] : AC passed
+2020-06-02 19:02:11   INFO [localTest.DriverLicenseParameterizedLocalSiteTest] : AC passed
+2020-06-02 19:02:12   INFO [localTest.DriverLicenseParameterizedLocalSiteTest] : Chrome will be started

@@ -156,8 +156,6 @@ public class ParentTest {
             Assert.fail();
             return "Some trouble with cookies get value";
         }
-
-
     }
 
     public void writeCookiesInFile(){
@@ -186,6 +184,17 @@ public class ParentTest {
             ex.printStackTrace();
         }
     }
+
+//    public void putCookiesIntoBrowser(){
+//
+//        Cookie name = new Cookie();
+//        try {
+//            webDriver.manage().addCookie(name);
+//        } catch (Exception e){
+//            logger.error("Cookies failed");
+//        }
+//    }
+
 
 //       This is for do screenshot on failed test
 //    @Rule
