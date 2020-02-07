@@ -1,8 +1,6 @@
 package parameterizedOrders;
 
-import libs.ExcelDriver;
 import libs.SpreadsheetData;
-import libs.UtilsForDB;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -40,8 +38,7 @@ public class ParentFleetOrderParamsTest extends ParentTest {
         this.currentDue = currentDue;
 
     }
-    UtilsForDB utilsForDB = new UtilsForDB();
-    ExcelDriver excelDriver = new ExcelDriver();
+
     Map personalDataForEldOrder = excelDriver.getData(configProperties.DATA_FILE_PATH() + "testSettings.xls", "personalData");
     Map dataForFleet = excelDriver.getData(configProperties.DATA_FILE_PATH() + "testLogin.xls", "validFleetLogin");
     Map dataForManagerValidLogIn = excelDriver.getData(configProperties.DATA_FILE_PATH() + "testLogin.xls", "ManagerLogin");

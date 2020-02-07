@@ -1,8 +1,6 @@
 package localTest;
 
-import libs.ExcelDriver;
 import libs.SpreadsheetData;
-import libs.UtilsForDB;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
@@ -23,9 +21,6 @@ import static libs.Utils.*;
 public class DriverLicenseParameterizedLocalSiteTest extends ParentTest {
     String state;
 
-
-    UtilsForDB utilsForDB = new UtilsForDB();
-    ExcelDriver excelDriver = new ExcelDriver();
     Map dataForValidLogIn = excelDriver.getData(configProperties.DATA_FILE_PATH() + "testLogin.xls", "driverLogin");
     Map dataForDLRegexState = excelDriver.getData(configProperties.DATA_FILE_PATH() + "testSettings.xls", "USDLRegex");
     Map dataForDLNumberState = excelDriver.getData(configProperties.DATA_FILE_PATH() + "testSettings.xls", "USDLNumber");
@@ -45,7 +40,6 @@ public class DriverLicenseParameterizedLocalSiteTest extends ParentTest {
 
     }
 
-
     @Test
     public void validDriverLicenseUSA() throws SQLException, IOException, ClassNotFoundException {
 
@@ -63,7 +57,7 @@ public class DriverLicenseParameterizedLocalSiteTest extends ParentTest {
         driverSettingsLocalSitePage.selectStateDl(state);
         driverSettingsLocalSitePage.enterExpirationDl(dateDLExpiration);
 
-        waitABit(5);
+        waitABit(3);
         driverSettingsLocalSitePage.clickOnSave();
         waitABit(5);
         List<ArrayList> tempDataSettingsList = utilsForDB.getDataDriverSettings(userId);
@@ -71,8 +65,6 @@ public class DriverLicenseParameterizedLocalSiteTest extends ParentTest {
         checkAC("Driver licence number failed", tempDataSettingsMap.get("DLNumber").equals(dlNumber), true);
         checkAC("Driver licence state failed", tempDataSettingsMap.get("DLState").equals(stateNumber), true);
         checkAC("Expiration driver licence failed", tempDataSettingsMap.get("DLExpiration").equals(dateDLExpiration), true);
-
-
 
     }
 }

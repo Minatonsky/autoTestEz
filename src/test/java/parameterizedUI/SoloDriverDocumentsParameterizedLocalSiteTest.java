@@ -1,7 +1,6 @@
 package parameterizedUI;
 
 import libs.SpreadsheetData;
-import libs.UtilsForDB;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.junit.Test;
@@ -32,7 +31,6 @@ public class SoloDriverDocumentsParameterizedLocalSiteTest extends ParentTest {
         InputStream spreadsheet = new FileInputStream(configProperties.DATA_FILE_PATH() + "testLogin.xls");
         return new SpreadsheetData(spreadsheet, "loginPassParamsTest").getData();
     }
-    UtilsForDB utilsForDB = new UtilsForDB();
 
     String pass = "testtest";
     String fuelReceipts = "0";

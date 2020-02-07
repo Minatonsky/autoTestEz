@@ -1,7 +1,5 @@
 package settingsTest;
 
-import libs.ExcelDriver;
-import libs.UtilsForDB;
 import org.junit.Test;
 import parentTest.ParentTest;
 
@@ -14,15 +12,14 @@ import java.util.Map;
 import static libs.Utils.*;
 
 public class DriverLicenseParameterizedTest extends ParentTest {
-    UtilsForDB utilsForDB = new UtilsForDB();
-    ExcelDriver excelDriver = new ExcelDriver();
+
     Map dataForValidLogIn = excelDriver.getData(configProperties.DATA_FILE_PATH() + "testSettings.xls", "USDLRegex");
 
     String login = dataForValidLogIn.get("login").toString();
     String pass = dataForValidLogIn.get("pass").toString();
-    String userId = dataForValidLogIn.get("userId").toString();
+    String userId = utilsForDB.getUserIdByEmail(login);
 
-    public DriverLicenseParameterizedTest() throws IOException {
+    public DriverLicenseParameterizedTest() throws IOException, SQLException, ClassNotFoundException {
     }
 
     @Test

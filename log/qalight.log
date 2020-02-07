@@ -811,3 +811,67 @@ Driver info: driver.version: unknown
 2020-06-02 19:02:10   INFO [localTest.DriverLicenseParameterizedLocalSiteTest] : AC passed
 2020-06-02 19:02:11   INFO [localTest.DriverLicenseParameterizedLocalSiteTest] : AC passed
 2020-06-02 19:02:12   INFO [localTest.DriverLicenseParameterizedLocalSiteTest] : Chrome will be started
+2020-07-02 17:04:17   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-07-02 17:04:20   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-07-02 17:04:21   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-07-02 17:04:23   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-07-02 17:04:25   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-07-02 17:04:26   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-07-02 17:04:28   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-07-02 17:04:30   INFO [pages.ChargePage] : # Temp Tariff Month Start 2020-01-17T17:04:30.600
+2020-07-02 17:04:30   INFO [pages.ChargePage] : # Temp Date Time Eld History 2020-01-17T17:04:30.624
+2020-07-02 17:04:30   INFO [pages.ChargePage] : # Temp Tariff Month Start 2020-01-17T17:04:30.625
+2020-07-02 17:04:30   INFO [pages.ChargePage] : # Temp Date Time Eld History 2020-01-17T17:04:30.626
+2020-07-02 17:04:30   INFO [pages.ChargePage] : # Temp Tariff Month Start 2020-01-17T17:04:30.627
+2020-07-02 17:04:30   INFO [pages.ChargePage] : # Temp Date Time Eld History 2020-01-17T17:04:30.627
+2020-07-02 17:04:30   INFO [pages.ChargePage] : # COUNT Scanner Month IOSX Tariff = 68
+2020-07-02 17:04:30   INFO [pages.ChargePage] : # count Deactivated Scanner Month IOSX Tariff = 0
+2020-07-02 17:04:30   INFO [pages.ChargePage] : # count Month IOSX Charge Returned Scanner = 1
+2020-07-02 17:04:30   INFO [pages.ChargePage] : # count Scanner Month Geometrics Tariff = 48
+2020-07-02 17:04:30   INFO [pages.ChargePage] : # count Month Geometric sCharge Returned Scanner = 2
+2020-07-02 17:04:30   INFO [pages.ChargePage] : # count Scanner Month Ez hard Tariff = 7
+2020-07-02 17:04:30   INFO [pages.ChargePage] : # count Month Ez Hard sCharge Returned Scanner = 2
+2020-07-02 17:04:30   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-07-02 17:04:32   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-07-02 17:04:33   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-07-02 17:04:35   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-07-02 17:04:37   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-07-02 17:04:39   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-07-02 17:04:40   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-07-02 17:04:42   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-07-02 17:04:44   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-07-02 17:04:46   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-07-02 17:04:47   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-07-02 17:04:49   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-07-02 17:04:51   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-07-02 17:05:45   INFO [pages.ChargePage] : Cron check fleets was run: 2020-02-07 15:04:52
+2020-07-02 17:05:45   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-07-02 17:05:46   INFO [pages.ChargePage] : # Date Time Last Due = [2020-02-07 15:05:53]
+2020-07-02 17:05:47   INFO [chargeTest.ChargeMonthToMonthTariff] : AC passed
+2020-07-02 17:05:47   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-07-02 17:05:49   INFO [pages.ChargePage] : # AMOUNT DUE FROM DB = [1426.92, 1034.00, 186.12]
+2020-07-02 17:05:49   INFO [pages.ChargePage] : # Sum Of Deactivated Scanner = 0.0
+2020-07-02 17:05:49   INFO [pages.ChargePage] : ***** Month Days = 29
+2020-07-02 17:05:49   INFO [pages.ChargePage] : ***** Price For One Day = 1.0341379310344827
+2020-07-02 17:05:49   INFO [pages.ChargePage] : ***** Active Charge Days = 20
+2020-07-02 17:05:49   INFO [pages.ChargePage] : ***** chargeByDevice = 20.68
+2020-07-02 17:05:49   INFO [pages.ChargePage] : ***** chargeByAllDevices = 2647.04
+2020-07-02 17:05:49   INFO [pages.ChargePage] : ***** charge from db = 2647.04
+2020-07-02 17:05:50   INFO [chargeTest.ChargeMonthToMonthTariff] : AC passed
+2020-07-02 17:05:50   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-07-02 17:05:53   INFO [chargeTest.ChargeMonthToMonthTariff] : AC passed
+2020-07-02 17:05:53   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-07-02 17:05:54   INFO [pages.ChargePage] : tempEstimatedTill: 2020-03-01
+2020-07-02 17:05:55   INFO [chargeTest.ChargeMonthToMonthTariff] : AC passed
+2020-07-02 17:05:55   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-07-02 17:05:57   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-07-02 17:05:59   INFO [pages.ChargePage] : tempPaidTill: 2020-03-01
+2020-07-02 17:06:00   INFO [chargeTest.ChargeMonthToMonthTariff] : AC passed
+2020-07-02 18:21:14   INFO [loginTests.UnValidLoginWithParams] : Chrome will be started
+2020-07-02 18:21:21   INFO [loginTests.UnValidLoginWithParams] : Chrome is started
+2020-07-02 18:21:32   INFO [pages.LoginPage] : Login Page was opened
+2020-07-02 18:21:32   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-07-02 18:21:32   INFO [libs.ActionsWithOurElements] : notrose@emailate.com was inputted into element
+2020-07-02 18:21:32   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-07-02 18:21:32   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-07-02 18:22:12   INFO [libs.ActionsWithOurElements] : Element is enabled - > false

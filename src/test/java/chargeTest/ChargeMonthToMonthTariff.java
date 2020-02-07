@@ -1,12 +1,12 @@
 package chargeTest;
 
 import org.junit.Test;
-import parentTest.ParentChargeTest;
+import parentTest.ParentTest;
 
 import java.io.IOException;
 import java.sql.SQLException;
 
-public class ChargeMonthToMonthTariff extends ParentChargeTest {
+public class ChargeMonthToMonthTariff extends ParentTest {
     String IOSXMonthTariffId = "0";
     String geometricsMonthTariffId = "9";
     String ezHardMonthTariffId = "12";

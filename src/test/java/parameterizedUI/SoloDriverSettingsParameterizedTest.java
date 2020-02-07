@@ -1,8 +1,6 @@
 package parameterizedUI;
 
-import libs.ExcelDriver;
 import libs.SpreadsheetData;
-import libs.UtilsForDB;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -28,8 +26,6 @@ public class SoloDriverSettingsParameterizedTest extends ParentTest {
     public SoloDriverSettingsParameterizedTest(String login) throws IOException {
         this.login = login;
     }
-    UtilsForDB utilsForDB = new UtilsForDB();
-    ExcelDriver excelDriver = new ExcelDriver();
 
     Map dataForDLRegexState = excelDriver.getData(configProperties.DATA_FILE_PATH() + "testSettings.xls", "USDLRegex");
     Map dataForDLNumberState = excelDriver.getData(configProperties.DATA_FILE_PATH() + "testSettings.xls", "USDLNumber");

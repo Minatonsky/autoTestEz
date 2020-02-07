@@ -2,7 +2,6 @@ package parameterizedOrders;
 
 import libs.ExcelDriver;
 import libs.SpreadsheetData;
-import libs.UtilsForDB;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -37,8 +36,7 @@ public class ParentManagerOrderParamsTest  extends ParentTest {
         this.currentDue = currentDue;
     }
 
-    UtilsForDB utilsForDB = new UtilsForDB();
-    ExcelDriver excelDriver = new ExcelDriver();
+
     Map personalDataForEldOrder = ExcelDriver.getData(configProperties.DATA_FILE_PATH() + "testSettings.xls", "personalData");
     Map dataForSoloValidLogIn = ExcelDriver.getData(configProperties.DATA_FILE_PATH() + "testLogin.xls", "validSoloLogin");
     Map dataSoloId = ExcelDriver.getData(configProperties.DATA_FILE_PATH() + "testLogin.xls", "validSoloLogin");

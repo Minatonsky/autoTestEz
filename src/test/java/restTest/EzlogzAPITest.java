@@ -11,14 +11,14 @@ import restSteps.MainRestSteps;
 import java.io.File;
 import java.io.IOException;
 
-import static libs.Utils.getDateAndTimeFormated;
+import static libs.Utils.*;
 
 
 public class EzlogzAPITest {
     MainRestSteps mainRestSteps = new MainRestSteps();
     JSONObject requestParams = new JSONObject();
     File file = new File("userToken.txt");
-    String bearerToken = mainRestSteps.reedFile("userToken.txt");
+    String bearerToken = reedFile("userToken.txt");
 
     public EzlogzAPITest() throws IOException {
     }
@@ -34,7 +34,7 @@ public class EzlogzAPITest {
         Assert.assertEquals(200, response.getStatusCode());
         String token = mainRestSteps.getValueForKeyFromResponseAsJsonObject(response, "token");
         System.out.println("token = " + token);
-        mainRestSteps.createAndWriteStringToFile(file, token);
+        createAndWriteStringToFile(file, token);
     }
     @Test
     public void stateTest() throws ParseException {

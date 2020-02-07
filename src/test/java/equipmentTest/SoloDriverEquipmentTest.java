@@ -1,7 +1,5 @@
 package equipmentTest;
 
-import libs.ExcelDriver;
-import libs.UtilsForDB;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.junit.Test;
 import parentTest.ParentTest;
@@ -13,8 +11,6 @@ import static libs.Utils.getDateFormat;
 import static libs.Utils.waitABit;
 
 public class SoloDriverEquipmentTest extends ParentTest {
-    UtilsForDB utilsForDB = new UtilsForDB();
-    ExcelDriver excelDriver = new ExcelDriver();
 
     Map dataForValidLogIn = excelDriver.getData(configProperties.DATA_FILE_PATH() + "testLogin.xls", "driverLogin");
 

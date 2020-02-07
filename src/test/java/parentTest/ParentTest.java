@@ -2,6 +2,8 @@ package parentTest;
 
 import io.qameta.allure.Step;
 import libs.ConfigProperties;
+import libs.ExcelDriver;
+import libs.UtilsForDB;
 import org.aeonbits.owner.ConfigFactory;
 import org.apache.log4j.Logger;
 import org.junit.After;
@@ -29,8 +31,9 @@ import static libs.Utils.waitABit;
 public class ParentTest {
     WebDriver webDriver;
 
-
     Logger logger = Logger.getLogger(getClass());
+    protected UtilsForDB utilsForDB;
+    protected ExcelDriver excelDriver;
     protected LoginPage loginPage;
     protected DashboardPage dashboardPage;
     protected ModalEldPage modalEldPage;
@@ -56,6 +59,8 @@ public class ParentTest {
 
     @Before
     public void setUp() throws SQLException, IOException, ClassNotFoundException {
+        utilsForDB = new UtilsForDB();
+        excelDriver = new ExcelDriver();
         initDriver(browser);
         webDriver.manage().window().maximize();
         webDriver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
@@ -76,7 +81,6 @@ public class ParentTest {
         loginLocalSitePage = new LoginLocalSitePage(webDriver);
         driverSettingsLocalSitePage = new DriverSettingsLocalSitePage(webDriver);
         accountSettingsLocalSitePage = new AccountSettingsLocalSitePage(webDriver);
-
 
     }
 

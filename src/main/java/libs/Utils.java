@@ -8,7 +8,10 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 
 import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.sql.SQLException;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
@@ -135,6 +138,18 @@ public class Utils {
 //        while (iterator.hasNext()) {
 //            System.out.print(iterator.next() + " ");
 //        }
+    }
+    public static void createAndWriteStringToFile(File file, String data) throws IOException {
+        file.createNewFile();
+        FileWriter writer = new FileWriter(file);
+        writer.write(data);
+        writer.flush();
+        writer.close();
+    }
+    public static String reedFile(String bearerToken) throws IOException {
+        String content;
+        content = new String(Files.readAllBytes(Paths.get(bearerToken)));
+        return content;
     }
 
 

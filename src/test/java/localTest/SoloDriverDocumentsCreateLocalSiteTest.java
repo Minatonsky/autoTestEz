@@ -1,7 +1,5 @@
 package localTest;
 
-import libs.ExcelDriver;
-import libs.UtilsForDB;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.junit.Test;
@@ -17,8 +15,6 @@ import static libs.Utils.*;
 
 
 public class SoloDriverDocumentsCreateLocalSiteTest extends ParentTest {
-    UtilsForDB utilsForDB = new UtilsForDB();
-    ExcelDriver excelDriver = new ExcelDriver();
 
     Map dataForValidLogIn = excelDriver.getData(configProperties.DATA_FILE_PATH() + "testLogin.xls", "driverLogin");
 

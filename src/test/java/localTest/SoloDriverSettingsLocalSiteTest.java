@@ -1,7 +1,5 @@
 package localTest;
 
-import libs.ExcelDriver;
-import libs.UtilsForDB;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.junit.Test;
 import parentTest.ParentTest;
@@ -15,17 +13,15 @@ import java.util.Map;
 import static libs.Utils.*;
 
 public class SoloDriverSettingsLocalSiteTest extends ParentTest {
-    UtilsForDB utilsForDB = new UtilsForDB();
-     ExcelDriver excelDriver = new ExcelDriver();
 
      Map dataForValidLogIn = excelDriver.getData(configProperties.DATA_FILE_PATH() + "testLogin.xls", "driverLogin");
 
      String login = dataForValidLogIn.get("login").toString();
      String pass = dataForValidLogIn.get("pass").toString();
-    String userId = "4401";
+     String userId = utilsForDB.getUserIdByEmail(login);
      String scannerType = "1";
 
-     public SoloDriverSettingsLocalSiteTest() throws IOException {
+     public SoloDriverSettingsLocalSiteTest() throws IOException, SQLException, ClassNotFoundException {
      }
 
      @Test
