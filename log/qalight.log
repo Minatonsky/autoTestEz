@@ -875,3 +875,909 @@ Driver info: driver.version: unknown
 2020-07-02 18:21:32   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
 2020-07-02 18:21:32   INFO [libs.ActionsWithOurElements] : Element was clicked
 2020-07-02 18:22:12   INFO [libs.ActionsWithOurElements] : Element is enabled - > false
+2020-10-02 12:47:51   INFO [localTest.SoloDriverEquipmentTestLocal] : Chrome will be started
+2020-10-02 12:47:58   INFO [localTest.SoloDriverEquipmentTestLocal] : Chrome is started
+2020-10-02 12:48:04   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-10-02 12:48:06   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-10-02 12:48:15   INFO [pagesLocal.LoginLocalSitePage] : Login Page was opened
+2020-10-02 12:48:15   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 12:48:15   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-10-02 12:48:16   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-10-02 12:48:16   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 12:48:19   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 12:48:22   INFO [libs.ActionsWithOurElements] : pm9Oi6v was inputted into element
+2020-10-02 12:48:25   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 12:48:27   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 12:48:30   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-10-02 12:48:31   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-10-02 12:48:33   INFO [libs.ActionsWithOurElements] : Xe0fa7KO was inputted into element
+2020-10-02 12:48:33   INFO [libs.ActionsWithOurElements] : HRoevpQaMH was inputted into element
+2020-10-02 12:48:34   INFO [libs.ActionsWithOurElements] : 1953 was inputted into element
+2020-10-02 12:48:34   INFO [libs.ActionsWithOurElements] : 2 was selected in Drop-down
+2020-10-02 12:48:34   INFO [libs.ActionsWithOurElements] : bjPoQshW3rBjJ4vBG was inputted into element
+2020-10-02 12:48:34   INFO [libs.ActionsWithOurElements] : qyUKr4 was inputted into element
+2020-10-02 12:48:34   INFO [libs.ActionsWithOurElements] : KS was selected in Drop-down
+2020-10-02 12:48:35   INFO [libs.ActionsWithOurElements] : 248582 was inputted into element
+2020-10-02 12:48:35   INFO [libs.ActionsWithOurElements] : 914013 was inputted into element
+2020-10-02 12:48:35   INFO [libs.ActionsWithOurElements] : Gasohol was selected in Drop-down
+2020-10-02 12:48:35   INFO [libs.ActionsWithOurElements] : fDCreG was inputted into element
+2020-10-02 12:48:35   INFO [libs.ActionsWithOurElements] : C16ZYf was inputted into element
+2020-10-02 12:48:36   INFO [libs.ActionsWithOurElements] : 56hxp3 was inputted into element
+2020-10-02 12:48:36   INFO [libs.ActionsWithOurElements] : 423166 was inputted into element
+2020-10-02 12:48:36   INFO [libs.ActionsWithOurElements] : 156153 was inputted into element
+2020-10-02 12:48:36   INFO [libs.ActionsWithOurElements] : DVUrSk was inputted into element
+2020-10-02 12:48:36   INFO [libs.ActionsWithOurElements] : 2wT7FNBWxHf1TTC was inputted into element
+2020-10-02 12:48:37   INFO [libs.ActionsWithOurElements] : V5Lird was inputted into element
+2020-10-02 12:48:37   INFO [libs.ActionsWithOurElements] : 1988-11-29 was inputted into element
+2020-10-02 12:48:37   INFO [libs.ActionsWithOurElements] : 1980-06-24 was inputted into element
+2020-10-02 12:48:37   INFO [libs.ActionsWithOurElements] : 1910-10-09 was inputted into element
+2020-10-02 12:48:37   INFO [libs.ActionsWithOurElements] : 2020-10-02 was inputted into element
+2020-10-02 12:48:43   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 12:48:48   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-10-02 12:48:50   INFO [localTest.SoloDriverEquipmentTestLocal] : AC passed
+2020-10-02 12:48:51   INFO [localTest.SoloDriverEquipmentTestLocal] : AC passed
+2020-10-02 12:48:52   INFO [localTest.SoloDriverEquipmentTestLocal] : AC passed
+2020-10-02 12:48:53   INFO [localTest.SoloDriverEquipmentTestLocal] : AC passed
+2020-10-02 12:48:54   INFO [localTest.SoloDriverEquipmentTestLocal] : AC passed
+2020-10-02 12:48:55   INFO [localTest.SoloDriverEquipmentTestLocal] : AC passed
+2020-10-02 12:48:56   INFO [localTest.SoloDriverEquipmentTestLocal] : AC passed
+2020-10-02 12:48:57   INFO [localTest.SoloDriverEquipmentTestLocal] : AC passed
+2020-10-02 12:48:58   INFO [localTest.SoloDriverEquipmentTestLocal] : AC passed
+2020-10-02 12:48:59   INFO [localTest.SoloDriverEquipmentTestLocal] : AC passed
+2020-10-02 12:49:00   INFO [localTest.SoloDriverEquipmentTestLocal] : AC passed
+2020-10-02 12:49:01   INFO [localTest.SoloDriverEquipmentTestLocal] : AC passed
+2020-10-02 12:49:02   INFO [localTest.SoloDriverEquipmentTestLocal] : AC passed
+2020-10-02 12:49:03   INFO [localTest.SoloDriverEquipmentTestLocal] : AC passed
+2020-10-02 12:49:04   INFO [localTest.SoloDriverEquipmentTestLocal] : AC passed
+2020-10-02 12:49:05   INFO [localTest.SoloDriverEquipmentTestLocal] : AC passed
+2020-10-02 12:49:06   INFO [localTest.SoloDriverEquipmentTestLocal] : AC passed
+2020-10-02 12:49:07   INFO [localTest.SoloDriverEquipmentTestLocal] : AC passed
+2020-10-02 12:49:08   INFO [localTest.SoloDriverEquipmentTestLocal] : AC passed
+2020-10-02 12:49:09   INFO [localTest.SoloDriverEquipmentTestLocal] : AC passed
+2020-10-02 12:49:10   INFO [localTest.SoloDriverEquipmentTestLocal] : AC passed
+2020-10-02 12:49:11   INFO [localTest.SoloDriverEquipmentTestLocal] : AC passed
+2020-10-02 12:49:12   INFO [localTest.SoloDriverEquipmentTestLocal] : AC passed
+2020-10-02 12:49:13   INFO [localTest.SoloDriverEquipmentTestLocal] : AC passed
+2020-10-02 12:49:13   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-10-02 12:49:15   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-10-02 12:49:18   INFO [localTest.SoloDriverEquipmentTestLocal] : AC passed
+2020-10-02 12:49:18   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-10-02 12:49:20   INFO [localTest.SoloDriverEquipmentTestLocal] : AC passed
+2020-10-02 13:06:55   INFO [localTest.SoloDriverEquipmentTestLocal] : Chrome will be started
+2020-10-02 13:07:01   INFO [localTest.SoloDriverEquipmentTestLocal] : Chrome is started
+2020-10-02 13:07:06   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-10-02 13:07:08   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-10-02 13:07:16   INFO [pagesLocal.LoginLocalSitePage] : Login Page was opened
+2020-10-02 13:07:16   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 13:07:16   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-10-02 13:07:16   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-10-02 13:07:16   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 13:07:20   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 13:07:23   INFO [libs.ActionsWithOurElements] : ytXc was inputted into element
+2020-10-02 13:07:26   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 13:07:28   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 13:07:30   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-10-02 13:07:32   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-10-02 13:07:34   INFO [libs.ActionsWithOurElements] : txslc was inputted into element
+2020-10-02 13:07:34   INFO [libs.ActionsWithOurElements] : YoHsifyMtC FqlqWsOyha was inputted into element
+2020-10-02 13:07:34   INFO [libs.ActionsWithOurElements] : 1984 was inputted into element
+2020-10-02 13:07:35   INFO [libs.ActionsWithOurElements] : 2 was selected in Drop-down
+2020-10-02 13:07:35   INFO [libs.ActionsWithOurElements] : KmjAFFQTtTYLbm26x was inputted into element
+2020-10-02 13:07:35   INFO [libs.ActionsWithOurElements] : c06JKF was inputted into element
+2020-10-02 13:07:35   INFO [libs.ActionsWithOurElements] : SC was selected in Drop-down
+2020-10-02 13:07:35   INFO [libs.ActionsWithOurElements] : 928047 was inputted into element
+2020-10-02 13:07:36   INFO [libs.ActionsWithOurElements] : 945358 was inputted into element
+2020-10-02 13:07:36   INFO [libs.ActionsWithOurElements] : LNG was selected in Drop-down
+2020-10-02 13:07:36   INFO [libs.ActionsWithOurElements] : 5oKCyD was inputted into element
+2020-10-02 13:07:36   INFO [libs.ActionsWithOurElements] : Mp3dAr was inputted into element
+2020-10-02 13:07:36   INFO [libs.ActionsWithOurElements] : g4W8tS was inputted into element
+2020-10-02 13:07:36   INFO [libs.ActionsWithOurElements] : 784963 was inputted into element
+2020-10-02 13:07:37   INFO [libs.ActionsWithOurElements] : 898366 was inputted into element
+2020-10-02 13:07:37   INFO [libs.ActionsWithOurElements] : snUGWe was inputted into element
+2020-10-02 13:07:37   INFO [libs.ActionsWithOurElements] : SDu27JlZ1xafrAu FNWfbznNbtozzH4 was inputted into element
+2020-10-02 13:07:37   INFO [libs.ActionsWithOurElements] : fWHBy5 was inputted into element
+2020-10-02 13:07:38   INFO [libs.ActionsWithOurElements] : 2008-10-05 was inputted into element
+2020-10-02 13:07:38   INFO [libs.ActionsWithOurElements] : 2049-10-18 was inputted into element
+2020-10-02 13:07:38   INFO [libs.ActionsWithOurElements] : 1906-04-22 was inputted into element
+2020-10-02 13:07:38   INFO [libs.ActionsWithOurElements] : 2037-05-19 was inputted into element
+2020-10-02 13:07:44   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 13:07:49   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-10-02 13:07:51   INFO [localTest.SoloDriverEquipmentTestLocal] : AC passed
+2020-10-02 13:07:52   INFO [localTest.SoloDriverEquipmentTestLocal] : AC passed
+2020-10-02 13:07:53   INFO [localTest.SoloDriverEquipmentTestLocal] : AC passed
+2020-10-02 13:07:54   INFO [localTest.SoloDriverEquipmentTestLocal] : AC passed
+2020-10-02 13:07:55   INFO [localTest.SoloDriverEquipmentTestLocal] : AC passed
+2020-10-02 13:07:56   INFO [localTest.SoloDriverEquipmentTestLocal] : AC passed
+2020-10-02 13:07:57   INFO [localTest.SoloDriverEquipmentTestLocal] : AC passed
+2020-10-02 13:07:58   INFO [localTest.SoloDriverEquipmentTestLocal] : AC passed
+2020-10-02 13:07:59   INFO [localTest.SoloDriverEquipmentTestLocal] : AC passed
+2020-10-02 13:08:00   INFO [localTest.SoloDriverEquipmentTestLocal] : AC passed
+2020-10-02 13:08:01   INFO [localTest.SoloDriverEquipmentTestLocal] : AC passed
+2020-10-02 13:08:02   INFO [localTest.SoloDriverEquipmentTestLocal] : AC passed
+2020-10-02 13:08:03   INFO [localTest.SoloDriverEquipmentTestLocal] : AC passed
+2020-10-02 13:08:04   INFO [localTest.SoloDriverEquipmentTestLocal] : AC passed
+2020-10-02 13:08:05   INFO [localTest.SoloDriverEquipmentTestLocal] : AC passed
+2020-10-02 13:08:06   INFO [localTest.SoloDriverEquipmentTestLocal] : AC passed
+2020-10-02 13:08:07   INFO [localTest.SoloDriverEquipmentTestLocal] : AC passed
+2020-10-02 13:08:08   INFO [localTest.SoloDriverEquipmentTestLocal] : AC passed
+2020-10-02 13:08:09   INFO [localTest.SoloDriverEquipmentTestLocal] : AC passed
+2020-10-02 13:08:10   INFO [localTest.SoloDriverEquipmentTestLocal] : AC passed
+2020-10-02 13:08:11   INFO [localTest.SoloDriverEquipmentTestLocal] : AC passed
+2020-10-02 13:08:12   INFO [localTest.SoloDriverEquipmentTestLocal] : AC passed
+2020-10-02 13:08:13   INFO [localTest.SoloDriverEquipmentTestLocal] : AC passed
+2020-10-02 13:08:14   INFO [localTest.SoloDriverEquipmentTestLocal] : AC passed
+2020-10-02 13:08:14   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-10-02 13:08:16   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-10-02 13:08:19   INFO [localTest.SoloDriverEquipmentTestLocal] : AC passed
+2020-10-02 13:08:19   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-10-02 13:08:21   INFO [localTest.SoloDriverEquipmentTestLocal] : AC passed
+2020-10-02 15:35:39   INFO [localTest.SoloDriverRemindersLocalSiteTest] : Chrome will be started
+2020-10-02 15:35:45   INFO [localTest.SoloDriverRemindersLocalSiteTest] : Chrome is started
+2020-10-02 15:35:50   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-10-02 15:35:52   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-10-02 15:35:54   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-10-02 15:36:01   INFO [pagesLocal.LoginLocalSitePage] : Login Page was opened
+2020-10-02 15:36:01   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 15:36:02   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-10-02 15:36:02   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-10-02 15:36:02   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 15:36:05   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 15:36:08   INFO [libs.ActionsWithOurElements] : r3IoyGb8 was inputted into element
+2020-10-02 15:36:12   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 15:36:15   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 15:36:18   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 15:36:18   INFO [libs.ActionsWithOurElements] : h0Ftxf8 was inputted into element
+2020-10-02 15:36:19   INFO [libs.ActionsWithOurElements] : 2020-02-10 was inputted into element
+2020-10-02 15:36:24   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 15:36:29   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-10-02 15:36:32   INFO [localTest.SoloDriverRemindersLocalSiteTest] : AC passed
+2020-10-02 15:36:33   INFO [localTest.SoloDriverRemindersLocalSiteTest] : AC passed
+2020-10-02 15:36:46   INFO [localTest.SoloDriverRemindersLocalSiteTest] : Chrome will be started
+2020-10-02 15:36:52   INFO [localTest.SoloDriverRemindersLocalSiteTest] : Chrome is started
+2020-10-02 15:36:57   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-10-02 15:36:59   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-10-02 15:37:00   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-10-02 15:37:08   INFO [pagesLocal.LoginLocalSitePage] : Login Page was opened
+2020-10-02 15:37:08   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 15:37:08   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-10-02 15:37:08   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-10-02 15:37:08   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 15:37:12   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 15:37:15   INFO [libs.ActionsWithOurElements] : 1111111111 was inputted into element
+2020-10-02 15:37:18   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 15:37:21   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 15:37:24   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 15:37:25   INFO [libs.ActionsWithOurElements] : f was inputted into element
+2020-10-02 15:37:25   INFO [libs.ActionsWithOurElements] : 2020-02-10 was inputted into element
+2020-10-02 15:37:30   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 15:37:35   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-10-02 15:37:38   INFO [localTest.SoloDriverRemindersLocalSiteTest] : AC passed
+2020-10-02 15:37:39   INFO [localTest.SoloDriverRemindersLocalSiteTest] : AC passed
+2020-10-02 15:39:27   INFO [localTest.SoloDriverRemindersLocalSiteTest] : Chrome will be started
+2020-10-02 15:39:34   INFO [localTest.SoloDriverRemindersLocalSiteTest] : Chrome is started
+2020-10-02 15:39:39   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-10-02 15:39:41   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-10-02 15:39:42   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-10-02 15:39:49   INFO [pagesLocal.LoginLocalSitePage] : Login Page was opened
+2020-10-02 15:39:49   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 15:39:49   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-10-02 15:39:50   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-10-02 15:39:50   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 15:39:53   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 15:39:56   INFO [libs.ActionsWithOurElements] : dfghdgh was inputted into element
+2020-10-02 15:39:59   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 15:40:02   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 15:40:06   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 15:40:06   INFO [libs.ActionsWithOurElements] : WiP ePdt4k. was inputted into element
+2020-10-02 15:40:06   INFO [libs.ActionsWithOurElements] : 2020-02-10 was inputted into element
+2020-10-02 15:40:11   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 15:40:16   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-10-02 15:40:19   INFO [localTest.SoloDriverRemindersLocalSiteTest] : AC passed
+2020-10-02 15:40:20   INFO [localTest.SoloDriverRemindersLocalSiteTest] : AC passed
+2020-10-02 15:40:48   INFO [localTest.SoloDriverRemindersLocalSiteTest] : Chrome will be started
+2020-10-02 15:40:54   INFO [localTest.SoloDriverRemindersLocalSiteTest] : Chrome is started
+2020-10-02 15:40:59   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-10-02 15:41:01   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-10-02 15:41:03   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-10-02 15:41:10   INFO [pagesLocal.LoginLocalSitePage] : Login Page was opened
+2020-10-02 15:41:10   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 15:41:11   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-10-02 15:41:11   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-10-02 15:41:11   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 15:41:14   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 15:41:17   INFO [libs.ActionsWithOurElements] : 1111111111 was inputted into element
+2020-10-02 15:41:20   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 15:41:24   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 15:41:27   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 15:41:27   INFO [libs.ActionsWithOurElements] : Dr17 0iB. was inputted into element
+2020-10-02 15:41:27   INFO [libs.ActionsWithOurElements] : 3161 was inputted into element
+2020-10-02 15:41:27   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 15:41:32   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-10-02 15:41:35   INFO [localTest.SoloDriverRemindersLocalSiteTest] : AC passed
+2020-10-02 15:41:36   INFO [localTest.SoloDriverRemindersLocalSiteTest] : AC passed
+2020-10-02 16:30:35   INFO [logbookTest.FourteenHourDrivingWindow] : Chrome will be started
+2020-10-02 16:30:41   INFO [logbookTest.FourteenHourDrivingWindow] : Chrome is started
+2020-10-02 16:30:51   INFO [pages.LoginPage] : Login Page was opened
+2020-10-02 16:30:52   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 16:30:52   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-10-02 16:30:52   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-10-02 16:30:52   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 16:30:59   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-10-02 16:30:59   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 16:31:02   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 16:31:05   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 16:31:11   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 16:54:19   INFO [logbookTest.FourteenHourDrivingWindow] : Chrome will be started
+2020-10-02 16:54:26   INFO [logbookTest.FourteenHourDrivingWindow] : Chrome is started
+2020-10-02 16:54:37   INFO [pages.LoginPage] : Login Page was opened
+2020-10-02 16:54:37   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 16:54:37   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-10-02 16:54:37   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-10-02 16:54:37   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 16:54:44   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-10-02 16:54:45   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 16:54:48   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 16:54:51   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 16:54:57   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 16:55:00   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 16:55:01   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 16:55:01   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 16:55:02   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 16:55:42   INFO [logbookTest.FourteenHourDrivingWindow] : Chrome will be started
+2020-10-02 16:55:49   INFO [logbookTest.FourteenHourDrivingWindow] : Chrome is started
+2020-10-02 16:56:00   INFO [pages.LoginPage] : Login Page was opened
+2020-10-02 16:56:00   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 16:56:01   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-10-02 16:56:01   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-10-02 16:56:01   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 16:56:08   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-10-02 16:56:08   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 16:56:11   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 16:56:14   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 16:56:20   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 16:56:23   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 16:56:25   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 16:56:25   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 16:56:25   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 16:58:42   INFO [logbookTest.FourteenHourDrivingWindow] : Chrome will be started
+2020-10-02 16:58:49   INFO [logbookTest.FourteenHourDrivingWindow] : Chrome is started
+2020-10-02 16:58:59   INFO [pages.LoginPage] : Login Page was opened
+2020-10-02 16:58:59   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 16:58:59   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-10-02 16:58:59   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-10-02 16:58:59   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 16:59:06   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-10-02 16:59:06   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 16:59:09   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 16:59:13   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 16:59:19   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 16:59:22   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 16:59:24   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 16:59:24   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 16:59:24  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.InvalidElementStateException: invalid element state
+  (Session info: chrome=79.0.3945.130)
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'DESKTOP-0PTGLHV', ip: '192.168.88.57', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\1\AppData\Local\Te...}, goog:chromeOptions: {debuggerAddress: localhost:58623}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 15644f785218114a0bf07d88b769fae2
+2020-10-02 17:01:37   INFO [logbookTest.FourteenHourDrivingWindow] : Chrome will be started
+2020-10-02 17:01:44   INFO [logbookTest.FourteenHourDrivingWindow] : Chrome is started
+2020-10-02 17:01:57   INFO [pages.LoginPage] : Login Page was opened
+2020-10-02 17:01:57   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 17:01:57   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-10-02 17:01:57   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-10-02 17:01:57   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 17:02:04   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-10-02 17:02:05   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 17:02:08   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 17:02:11   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 17:02:17   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 17:02:20   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 17:02:21   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 17:02:21   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 17:02:22   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 17:06:17   INFO [logbookTest.FourteenHourDrivingWindow] : Chrome will be started
+2020-10-02 17:06:23   INFO [logbookTest.FourteenHourDrivingWindow] : Chrome is started
+2020-10-02 17:06:33   INFO [pages.LoginPage] : Login Page was opened
+2020-10-02 17:06:33   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 17:06:34   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-10-02 17:06:34   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-10-02 17:06:34   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 17:06:41   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-10-02 17:06:41   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 17:06:44   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 17:06:47   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 17:06:53   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 17:06:57   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 17:06:58   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 17:06:58   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 17:06:58   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 17:06:58  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.InvalidElementStateException: invalid element state
+  (Session info: chrome=79.0.3945.130)
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'DESKTOP-0PTGLHV', ip: '192.168.88.57', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\1\AppData\Local\Te...}, goog:chromeOptions: {debuggerAddress: localhost:59764}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: afe446bf6c311bb9aa11a833a47a8f05
+2020-10-02 17:10:11   INFO [logbookTest.FourteenHourDrivingWindow] : Chrome will be started
+2020-10-02 17:10:17   INFO [logbookTest.FourteenHourDrivingWindow] : Chrome is started
+2020-10-02 17:10:30   INFO [pages.LoginPage] : Login Page was opened
+2020-10-02 17:10:30   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 17:10:30   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-10-02 17:10:30   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-10-02 17:10:31   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 17:10:37   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-10-02 17:10:38   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 17:10:41   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 17:10:44   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 17:10:50   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 17:10:53   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 17:10:54   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 17:10:55   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 17:10:55   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 17:10:55  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=79.0.3945.130)
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'DESKTOP-0PTGLHV', ip: '192.168.88.57', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\1\AppData\Local\Te...}, goog:chromeOptions: {debuggerAddress: localhost:60325}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 255549e92ee7fb4bc3d3afe35ef5cea5
+2020-10-02 17:28:30   INFO [logbookTest.FourteenHourDrivingWindow] : Chrome will be started
+2020-10-02 17:28:36   INFO [logbookTest.FourteenHourDrivingWindow] : Chrome is started
+2020-10-02 17:28:46   INFO [pages.LoginPage] : Login Page was opened
+2020-10-02 17:28:46   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 17:28:47   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-10-02 17:28:47   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-10-02 17:28:47   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 17:28:54   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-10-02 17:28:54   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 17:28:57   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 17:29:00   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 17:29:06   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 17:29:10   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 17:29:11   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 17:29:11   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 17:29:11   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 17:29:16  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=79.0.3945.130)
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'DESKTOP-0PTGLHV', ip: '192.168.88.57', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\1\AppData\Local\Te...}, goog:chromeOptions: {debuggerAddress: localhost:62973}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 61afef5543957c9cd421673f637a84a6
+2020-10-02 17:34:36   INFO [logbookTest.FourteenHourDrivingWindow] : Chrome will be started
+2020-10-02 17:34:42   INFO [logbookTest.FourteenHourDrivingWindow] : Chrome is started
+2020-10-02 17:34:52   INFO [pages.LoginPage] : Login Page was opened
+2020-10-02 17:34:52   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 17:34:52   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-10-02 17:34:53   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-10-02 17:34:53   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 17:34:59   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-10-02 17:34:59   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 17:35:02   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 17:35:05   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 17:35:12   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 17:35:15   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 17:35:16   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 17:35:16   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 17:35:16   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 17:35:21  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=79.0.3945.130)
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'DESKTOP-0PTGLHV', ip: '192.168.88.57', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\1\AppData\Local\Te...}, goog:chromeOptions: {debuggerAddress: localhost:63892}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: f593e534832a5a4302e6ef5c1f0249c1
+2020-10-02 17:38:13   INFO [logbookTest.FourteenHourDrivingWindow] : Chrome will be started
+2020-10-02 17:38:20   INFO [logbookTest.FourteenHourDrivingWindow] : Chrome is started
+2020-10-02 17:38:30   INFO [pages.LoginPage] : Login Page was opened
+2020-10-02 17:38:30   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 17:38:30   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-10-02 17:38:31   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-10-02 17:38:31   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 17:38:37   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-10-02 17:38:37   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 17:38:41   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 17:38:44   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 17:38:50   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 17:38:53   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 17:38:54   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 17:38:54   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 17:38:55   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 17:39:00   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 17:39:29   INFO [logbookTest.FourteenHourDrivingWindow] : Chrome will be started
+2020-10-02 17:39:36   INFO [logbookTest.FourteenHourDrivingWindow] : Chrome is started
+2020-10-02 17:39:46   INFO [pages.LoginPage] : Login Page was opened
+2020-10-02 17:39:46   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 17:39:46   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-10-02 17:39:47   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-10-02 17:39:47   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 17:39:53   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-10-02 17:39:53   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 17:39:56   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 17:39:59   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 17:40:06   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 17:40:09   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 17:40:10   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 17:40:10   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 17:40:10   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 17:40:16   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 17:42:08   INFO [logbookTest.FourteenHourDrivingWindow] : Chrome will be started
+2020-10-02 17:42:15   INFO [logbookTest.FourteenHourDrivingWindow] : Chrome is started
+2020-10-02 17:42:28   INFO [pages.LoginPage] : Login Page was opened
+2020-10-02 17:42:28   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 17:42:28   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-10-02 17:42:28   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-10-02 17:42:28   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 17:42:35   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-10-02 17:42:35   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 17:42:38   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 17:42:41   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 17:42:47   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 17:42:50   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 17:42:52   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 17:42:52   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 17:42:52   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 17:42:57  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.InvalidElementStateException: invalid element state
+  (Session info: chrome=79.0.3945.130)
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'DESKTOP-0PTGLHV', ip: '192.168.88.57', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\1\AppData\Local\Te...}, goog:chromeOptions: {debuggerAddress: localhost:65153}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 07ced28728dc6c6d996a26efb1974256
+2020-10-02 17:43:18   INFO [logbookTest.FourteenHourDrivingWindow] : Chrome will be started
+2020-10-02 17:43:24   INFO [logbookTest.FourteenHourDrivingWindow] : Chrome is started
+2020-10-02 17:43:34   INFO [pages.LoginPage] : Login Page was opened
+2020-10-02 17:43:34   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 17:43:35   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-10-02 17:43:35   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-10-02 17:43:35   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 17:43:41   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-10-02 17:43:41   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 17:43:44   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 17:43:48   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 17:43:54   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 17:43:57   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 17:43:58   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 17:43:58   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 17:43:59   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 17:44:04  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.InvalidElementStateException: invalid element state
+  (Session info: chrome=79.0.3945.130)
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'DESKTOP-0PTGLHV', ip: '192.168.88.57', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\1\AppData\Local\Te...}, goog:chromeOptions: {debuggerAddress: localhost:65374}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: e4584f87d4a7ef7dde39b1997a546e6b
+2020-10-02 17:49:14   INFO [logbookTest.FourteenHourDrivingWindow] : Chrome will be started
+2020-10-02 17:49:20   INFO [logbookTest.FourteenHourDrivingWindow] : Chrome is started
+2020-10-02 17:49:31   INFO [pages.LoginPage] : Login Page was opened
+2020-10-02 17:49:31   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 17:49:31   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-10-02 17:49:31   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-10-02 17:49:31   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 17:49:38   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-10-02 17:49:38   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 17:49:41   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 17:49:44   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 17:49:51   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 17:49:54   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 17:49:55   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 17:49:55   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 17:49:55   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 17:50:00  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.InvalidElementStateException: invalid element state
+  (Session info: chrome=79.0.3945.130)
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'DESKTOP-0PTGLHV', ip: '192.168.88.57', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\1\AppData\Local\Te...}, goog:chromeOptions: {debuggerAddress: localhost:49917}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 63031088f1e865e247e20b8d23301c4f
+2020-10-02 17:54:47   INFO [logbookTest.FourteenHourDrivingWindow] : Chrome will be started
+2020-10-02 17:54:54   INFO [logbookTest.FourteenHourDrivingWindow] : Chrome is started
+2020-10-02 17:55:03   INFO [pages.LoginPage] : Login Page was opened
+2020-10-02 17:55:03   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 17:55:04   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-10-02 17:55:04   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-10-02 17:55:04   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 17:55:11   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-10-02 17:55:11   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 17:55:14   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 17:55:17   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 17:55:23   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 17:55:27   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 17:55:28   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 17:55:28   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 17:55:28   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 17:55:33  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.InvalidElementStateException: invalid element state
+  (Session info: chrome=79.0.3945.130)
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'DESKTOP-0PTGLHV', ip: '192.168.88.57', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\1\AppData\Local\Te...}, goog:chromeOptions: {debuggerAddress: localhost:50750}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: ea928b850212374a357b627739bc1e56
+2020-10-02 17:57:44   INFO [logbookTest.FourteenHourDrivingWindow] : Chrome will be started
+2020-10-02 17:57:50   INFO [logbookTest.FourteenHourDrivingWindow] : Chrome is started
+2020-10-02 17:58:00   INFO [pages.LoginPage] : Login Page was opened
+2020-10-02 17:58:00   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 17:58:00   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-10-02 17:58:01   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-10-02 17:58:01   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 17:58:08   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-10-02 17:58:08   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 17:58:11   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 17:58:14   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 17:58:21   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 17:58:24   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 17:58:25   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 17:58:25   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 17:58:25   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 17:58:32  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <input id="time_to" value="00:00:00" data-toggle="modal" data-target="#time_modal" class="form-control" readonly="readonly" data-time="00:01:56"> is not clickable at point (1453, 866). Other element would receive the click: <div class="modal-backdrop in" data-dismiss="modal"></div>
+  (Session info: chrome=79.0.3945.130)
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'DESKTOP-0PTGLHV', ip: '192.168.88.57', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\1\AppData\Local\Te...}, goog:chromeOptions: {debuggerAddress: localhost:51215}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 71875b77b136d790edfa60a86d3e34d4
+2020-10-02 17:59:07   INFO [logbookTest.FourteenHourDrivingWindow] : Chrome will be started
+2020-10-02 17:59:13   INFO [logbookTest.FourteenHourDrivingWindow] : Chrome is started
+2020-10-02 17:59:23   INFO [pages.LoginPage] : Login Page was opened
+2020-10-02 17:59:23   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 17:59:24   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-10-02 17:59:24   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-10-02 17:59:24   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 17:59:31   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-10-02 17:59:31   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 17:59:34   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 17:59:38   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 17:59:44   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 17:59:47   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 17:59:48   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 17:59:49   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 17:59:49   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:00:14  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (51af3792202a79430416717a82c3f2d6)] -> xpath: .//button[@id='time_save']] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'DESKTOP-0PTGLHV', ip: '192.168.88.57', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\1\AppData\Local\Te...}, goog:chromeOptions: {debuggerAddress: localhost:51467}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 51af3792202a79430416717a82c3f2d6
+2020-10-02 18:04:43   INFO [logbookTest.FourteenHourDrivingWindow] : Chrome will be started
+2020-10-02 18:04:49   INFO [logbookTest.FourteenHourDrivingWindow] : Chrome is started
+2020-10-02 18:04:59   INFO [pages.LoginPage] : Login Page was opened
+2020-10-02 18:05:00   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:05:00   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-10-02 18:05:00   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-10-02 18:05:00   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:05:07   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-10-02 18:05:07   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:05:10   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:05:13   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:05:20   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:05:23   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:05:24   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:05:24   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:05:24   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:05:50  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on WINDOWS (d76e16227c83d04058f51fb5e3085112)] -> xpath: .//input[@id='time_control']] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'DESKTOP-0PTGLHV', ip: '192.168.88.57', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\1\AppData\Local\Te...}, goog:chromeOptions: {debuggerAddress: localhost:52314}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: d76e16227c83d04058f51fb5e3085112
+2020-10-02 18:06:38   INFO [logbookTest.FourteenHourDrivingWindow] : Chrome will be started
+2020-10-02 18:06:45   INFO [logbookTest.FourteenHourDrivingWindow] : Chrome is started
+2020-10-02 18:06:56   INFO [pages.LoginPage] : Login Page was opened
+2020-10-02 18:06:56   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:06:56   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-10-02 18:06:56   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-10-02 18:06:56   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:07:03   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-10-02 18:07:03   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:07:06   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:07:09   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:07:15   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:07:18   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:07:20   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:07:20   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:07:20   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:07:25   INFO [libs.ActionsWithOurElements] : 000000 was inputted into element
+2020-10-02 18:07:25   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:10:00   INFO [logbookTest.FourteenHourDrivingWindow] : Chrome will be started
+2020-10-02 18:10:06   INFO [logbookTest.FourteenHourDrivingWindow] : Chrome is started
+2020-10-02 18:10:16   INFO [pages.LoginPage] : Login Page was opened
+2020-10-02 18:10:16   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:10:17   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-10-02 18:10:17   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-10-02 18:10:17   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:10:23   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-10-02 18:10:24   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:10:27   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:10:30   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:10:36   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:10:39   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:10:40   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:10:41   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:10:41   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:10:46   INFO [libs.ActionsWithOurElements] : 050000 was inputted into element
+2020-10-02 18:10:46   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:16:51   INFO [logbookTest.FourteenHourDrivingWindow] : Chrome will be started
+2020-10-02 18:16:58   INFO [logbookTest.FourteenHourDrivingWindow] : Chrome is started
+2020-10-02 18:17:08   INFO [pages.LoginPage] : Login Page was opened
+2020-10-02 18:17:08   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:17:08   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-10-02 18:17:08   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-10-02 18:17:09   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:17:15   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-10-02 18:17:15   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:17:18   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:17:22   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:17:28   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:17:31   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:17:32   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:17:32   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:17:32   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:17:38   INFO [libs.ActionsWithOurElements] : 050000 was inputted into element
+2020-10-02 18:17:38   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:17:38   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:17:38   INFO [libs.ActionsWithOurElements] : 010000 was inputted into element
+2020-10-02 18:17:38   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:17:39   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:17:49   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:19:23   INFO [logbookTest.FourteenHourDrivingWindow] : Chrome will be started
+2020-10-02 18:19:29   INFO [logbookTest.FourteenHourDrivingWindow] : Chrome is started
+2020-10-02 18:19:40   INFO [pages.LoginPage] : Login Page was opened
+2020-10-02 18:19:40   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:19:41   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-10-02 18:19:41   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-10-02 18:19:41   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:19:48   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-10-02 18:19:48   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:19:51   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:19:54   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:20:00   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:20:04   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:20:05   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:20:05   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:20:05   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:20:10   INFO [libs.ActionsWithOurElements] : 050000PM was inputted into element
+2020-10-02 18:20:11   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:20:11   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:20:11   INFO [libs.ActionsWithOurElements] : 010000AM was inputted into element
+2020-10-02 18:20:11   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:20:11   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:20:12   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:26:45   INFO [logbookTest.FourteenHourDrivingWindow] : Chrome will be started
+2020-10-02 18:26:52   INFO [logbookTest.FourteenHourDrivingWindow] : Chrome is started
+2020-10-02 18:27:03   INFO [pages.LoginPage] : Login Page was opened
+2020-10-02 18:27:03   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:27:03   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-10-02 18:27:03   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-10-02 18:27:04   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:27:10   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-10-02 18:27:10   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:27:13   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:27:17   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:27:23   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:27:26   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:27:27   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:27:27   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:27:27   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:27:28   INFO [libs.ActionsWithOurElements] : 050000AM was inputted into element
+2020-10-02 18:27:28   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:27:28   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:27:28   INFO [libs.ActionsWithOurElements] : 010000AM was inputted into element
+2020-10-02 18:27:28   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:27:29   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:27:49  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (35d9fea19aa1e86783750d3d920d3503)] -> id: save_info] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'DESKTOP-0PTGLHV', ip: '192.168.88.57', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\1\AppData\Local\Te...}, goog:chromeOptions: {debuggerAddress: localhost:55735}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 35d9fea19aa1e86783750d3d920d3503
+2020-10-02 18:29:23   INFO [logbookTest.FourteenHourDrivingWindow] : Chrome will be started
+2020-10-02 18:29:30   INFO [logbookTest.FourteenHourDrivingWindow] : Chrome is started
+2020-10-02 18:29:41   INFO [pages.LoginPage] : Login Page was opened
+2020-10-02 18:29:41   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:29:41   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-10-02 18:29:41   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-10-02 18:29:41   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:29:48   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-10-02 18:29:48   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:29:51   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:29:54   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:30:01   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:30:04   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:30:06   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:30:06   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:30:06   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:30:07   INFO [libs.ActionsWithOurElements] : 050000AM was inputted into element
+2020-10-02 18:30:07   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:30:07   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:30:07   INFO [libs.ActionsWithOurElements] : 010000AM was inputted into element
+2020-10-02 18:30:07   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:30:08   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:30:14   INFO [libs.ActionsWithOurElements] : Mouse over the element
+2020-10-02 18:30:14   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:30:34  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (dfdd2c94029797ea17da25a2369d42c4)] -> xpath: .//input[@id='time_to']] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'DESKTOP-0PTGLHV', ip: '192.168.88.57', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\1\AppData\Local\Te...}, goog:chromeOptions: {debuggerAddress: localhost:56178}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: dfdd2c94029797ea17da25a2369d42c4
+2020-10-02 18:32:14   INFO [logbookTest.FourteenHourDrivingWindow] : Chrome will be started
+2020-10-02 18:32:21   INFO [logbookTest.FourteenHourDrivingWindow] : Chrome is started
+2020-10-02 18:32:31   INFO [pages.LoginPage] : Login Page was opened
+2020-10-02 18:32:31   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:32:31   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-10-02 18:32:31   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-10-02 18:32:31   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:32:38   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-10-02 18:32:38   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:32:41   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:32:45   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:32:51   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:32:54   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:32:55   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:32:55   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:32:56   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:32:56   INFO [libs.ActionsWithOurElements] : 050000AM was inputted into element
+2020-10-02 18:32:56   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:32:56   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:32:56   INFO [libs.ActionsWithOurElements] : 010000AM was inputted into element
+2020-10-02 18:32:57   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:32:57   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:32:57   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:32:57   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:32:57   INFO [libs.ActionsWithOurElements] : 050000PM was inputted into element
+2020-10-02 18:32:57   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:32:57   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:32:58   INFO [libs.ActionsWithOurElements] : 060000PM was inputted into element
+2020-10-02 18:32:58   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:32:58   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:32:58   INFO [libs.ActionsWithOurElements] : Mouse over the element
+2020-10-02 18:32:58   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:35:01   INFO [logbookTest.FourteenHourDrivingWindow] : Chrome will be started
+2020-10-02 18:35:07   INFO [logbookTest.FourteenHourDrivingWindow] : Chrome is started
+2020-10-02 18:35:17   INFO [pages.LoginPage] : Login Page was opened
+2020-10-02 18:35:17   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:35:17   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-10-02 18:35:17   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-10-02 18:35:18   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:35:25   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-10-02 18:35:25   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:35:28   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:35:31   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:35:37   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:35:40   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:35:42   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:35:42   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:35:42   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:35:42   INFO [libs.ActionsWithOurElements] : 030000AM was inputted into element
+2020-10-02 18:35:42   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:35:46   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:35:46   INFO [libs.ActionsWithOurElements] : 010000AM was inputted into element
+2020-10-02 18:35:46   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:35:49   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:35:49   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:35:52   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:35:53   INFO [libs.ActionsWithOurElements] : 030000AM was inputted into element
+2020-10-02 18:35:53   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:35:56   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:35:56   INFO [libs.ActionsWithOurElements] : 060000PM was inputted into element
+2020-10-02 18:35:56   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:35:59   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:36:00   INFO [libs.ActionsWithOurElements] : Mouse over the element
+2020-10-02 18:36:00   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:37:06   INFO [logbookTest.FourteenHourDrivingWindow] : Chrome will be started
+2020-10-02 18:37:12   INFO [logbookTest.FourteenHourDrivingWindow] : Chrome is started
+2020-10-02 18:37:23   INFO [pages.LoginPage] : Login Page was opened
+2020-10-02 18:37:23   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:37:23   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-10-02 18:37:23   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-10-02 18:37:23   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:37:30   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-10-02 18:37:30   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:37:33   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:37:37   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:37:43   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:37:46   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:37:47   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:37:47   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:37:48   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:38:08  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on WINDOWS (d92f1b041c6f2742267e7f3785190008)] -> xpath: .//input[@id='time_control']] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'DESKTOP-0PTGLHV', ip: '192.168.88.57', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\1\AppData\Local\Te...}, goog:chromeOptions: {debuggerAddress: localhost:57451}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: d92f1b041c6f2742267e7f3785190008
+2020-10-02 18:41:35   INFO [logbookTest.FourteenHourDrivingWindow] : Chrome will be started
+2020-10-02 18:41:42   INFO [logbookTest.FourteenHourDrivingWindow] : Chrome is started
+2020-10-02 18:41:51   INFO [pages.LoginPage] : Login Page was opened
+2020-10-02 18:41:51   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:41:52   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-10-02 18:41:52   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-10-02 18:41:52   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:41:59   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-10-02 18:41:59   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:42:02   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:42:05   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:42:11   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:42:15   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:42:16   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:42:16   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:42:16   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:42:16   INFO [libs.ActionsWithOurElements] : 030000AM was inputted into element
+2020-10-02 18:42:16   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:42:20   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:42:20   INFO [libs.ActionsWithOurElements] : 010000AM was inputted into element
+2020-10-02 18:42:20   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:42:23   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:42:32   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:42:35   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:42:35   INFO [libs.ActionsWithOurElements] : 030000AM was inputted into element
+2020-10-02 18:42:35   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:42:38   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:42:38   INFO [libs.ActionsWithOurElements] : 060000PM was inputted into element
+2020-10-02 18:42:38   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:42:42   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:42:42   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:44:04   INFO [logbookTest.FourteenHourDrivingWindow] : Chrome will be started
+2020-10-02 18:44:11   INFO [logbookTest.FourteenHourDrivingWindow] : Chrome is started
+2020-10-02 18:44:22   INFO [pages.LoginPage] : Login Page was opened
+2020-10-02 18:44:22   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:44:22   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-10-02 18:44:22   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-10-02 18:44:22   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:44:29   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-10-02 18:44:30   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:44:33   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:44:36   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:44:42   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:44:45   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:44:46   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:44:47   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:44:47   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:44:47   INFO [libs.ActionsWithOurElements] : 030000AM was inputted into element
+2020-10-02 18:44:47   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:44:50   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:44:50   INFO [libs.ActionsWithOurElements] : 010000AM was inputted into element
+2020-10-02 18:44:51   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:44:54   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:44:54   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:44:57   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:44:57   INFO [libs.ActionsWithOurElements] : 030000AM was inputted into element
+2020-10-02 18:44:57   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:45:01   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:45:01   INFO [libs.ActionsWithOurElements] : 060000PM was inputted into element
+2020-10-02 18:45:01   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:45:04   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:45:04   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:46:28   INFO [logbookTest.FourteenHourDrivingWindow] : Chrome will be started
+2020-10-02 18:46:35   INFO [logbookTest.FourteenHourDrivingWindow] : Chrome is started
+2020-10-02 18:46:45   INFO [pages.LoginPage] : Login Page was opened
+2020-10-02 18:46:45   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:46:45   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-10-02 18:46:46   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-10-02 18:46:46   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:46:52   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-10-02 18:46:52   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:46:56   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:46:59   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:47:05   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:47:08   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:47:09   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:47:10   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:47:10   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:47:10   INFO [libs.ActionsWithOurElements] : 030000AM was inputted into element
+2020-10-02 18:47:13   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:47:16   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:47:17   INFO [libs.ActionsWithOurElements] : 010000AM was inputted into element
+2020-10-02 18:47:20   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:47:23   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:47:23   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:47:26   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:47:27   INFO [libs.ActionsWithOurElements] : 060000PM was inputted into element
+2020-10-02 18:47:30   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:47:33   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:47:33   INFO [libs.ActionsWithOurElements] : 030000AM was inputted into element
+2020-10-02 18:47:36   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:47:39   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-10-02 18:47:40   INFO [libs.ActionsWithOurElements] : Element was clicked

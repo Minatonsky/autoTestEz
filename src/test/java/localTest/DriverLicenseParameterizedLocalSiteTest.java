@@ -37,7 +37,6 @@ public class DriverLicenseParameterizedLocalSiteTest extends ParentTest {
     public static Collection testData() throws IOException {
         InputStream spreadsheet = new FileInputStream(configProperties.DATA_FILE_PATH() + "testSettings.xls");
         return new SpreadsheetData(spreadsheet,"parametrizedNumberState").getData();
-
     }
 
     @Test

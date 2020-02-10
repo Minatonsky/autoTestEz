@@ -65,7 +65,7 @@ public class SoloDriverRemindersLocalSiteTest extends ParentTest {
         List<ArrayList> tempDataSettingsList = utilsForDB.getDataEquipment(userId, equipId);
         Map<String, Object> tempDataSettingsMap = listArrayToMap(tempDataSettingsList);
         String nameTrailer = tempDataSettingsMap.get("Name").toString();
-        String nameReminder = RandomStringUtils.randomAlphanumeric(1, 10);
+        String nameReminder = RandomStringUtils.randomAlphanumeric(1, 10) + " " + RandomStringUtils.randomAlphanumeric(1, 10) + ".";
         String dateReminder = getDateFormat();
 
         loginLocalSitePage.userValidLogIn(login, pass);
@@ -99,7 +99,7 @@ public class SoloDriverRemindersLocalSiteTest extends ParentTest {
         List<ArrayList> tempDataSettingsList = utilsForDB.getDataEquipment(userId, equipId);
         Map<String, Object> tempDataSettingsMap = listArrayToMap(tempDataSettingsList);
         String nameTruck = tempDataSettingsMap.get("Name").toString();
-        String nameReminder = RandomStringUtils.randomAlphanumeric(3, 10);
+        String nameReminder = RandomStringUtils.randomAlphanumeric(1, 10) + " " + RandomStringUtils.randomAlphanumeric(1, 10) + ".";
         String countMiles = RandomStringUtils.randomNumeric(4);
 
         loginLocalSitePage.userValidLogIn(login, pass);

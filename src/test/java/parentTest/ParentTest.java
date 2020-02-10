@@ -51,6 +51,7 @@ public class ParentTest {
     protected LoginLocalSitePage loginLocalSitePage;
     protected DriverSettingsLocalSitePage driverSettingsLocalSitePage;
     protected AccountSettingsLocalSitePage accountSettingsLocalSitePage;
+    protected LogsPage logsPage;
 
     String browser = System.getProperty("browser");
 
@@ -81,6 +82,7 @@ public class ParentTest {
         loginLocalSitePage = new LoginLocalSitePage(webDriver);
         driverSettingsLocalSitePage = new DriverSettingsLocalSitePage(webDriver);
         accountSettingsLocalSitePage = new AccountSettingsLocalSitePage(webDriver);
+        logsPage = new LogsPage(webDriver);
 
     }
 
@@ -137,6 +139,9 @@ public class ParentTest {
         Iterator<String> iter = windowIds.iterator();
         String mainWindow = iter.next();
         String childWindow = iter.next();
+    }
+    public void switchToModalWindow(){
+        webDriver.switchTo().activeElement();
     }
     public String[] getCookieValues(){
         Set<Cookie> cks = webDriver.manage().getCookies();

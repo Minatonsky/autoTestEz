@@ -26,6 +26,9 @@ public class DashboardPage extends ParentPage {
     @FindBy(xpath = ".//a[@href='/dash/settings/account/']")
     private WebElement menuPageSettings;
 
+    @FindBy(xpath = ".//a[@href='/dash/drivers/']")
+    private WebElement menuPageLogs;
+
     @FindBy(xpath = ".//i[@class='fa fa-angle-double-left minimize-arrow']")
     private WebElement menuSizeButton;
 
@@ -51,6 +54,9 @@ public class DashboardPage extends ParentPage {
     }
     public void clickOnMenuPageSettings(){
         actionsWithOurElements.clickOnElement(menuPageSettings);
+    }
+    public void clickOnMenuPageLogs(){
+        actionsWithOurElements.clickOnElement(menuPageLogs);
     }
     public void clickMenuSizeButton(){
         actionsWithOurElements.clickOnElement(menuSizeButton);
@@ -95,6 +101,12 @@ public class DashboardPage extends ParentPage {
     public void goToEquipmentPage(){
         waitABit(3);
         clickOnMenuPageEquipment();
+        waitABit(3);
+    }
+    @Step
+    public void goToLogsPage(){
+        waitABit(3);
+        clickOnMenuPageLogs();
         waitABit(3);
     }
 

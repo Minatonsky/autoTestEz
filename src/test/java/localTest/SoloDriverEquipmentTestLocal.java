@@ -29,7 +29,7 @@ public class SoloDriverEquipmentTestLocal extends ParentTest {
     public void addTruck() throws SQLException, IOException, ClassNotFoundException {
         String unitName = RandomStringUtils.randomAlphanumeric(1, 10);
         String type = Integer.toString(genRandomNumberBetweenTwoValues(0, 4));
-        String owner = RandomStringUtils.randomAlphabetic( 10);
+        String owner = RandomStringUtils.randomAlphabetic( 5) + " " + RandomStringUtils.randomAlphabetic( 10);
         String year = Integer.toString(genRandomNumberBetweenTwoValues(1950, 2020));
         String vin = RandomStringUtils.randomAlphanumeric(17);
         String plate = RandomStringUtils.randomAlphanumeric(6);
@@ -119,7 +119,7 @@ public class SoloDriverEquipmentTestLocal extends ParentTest {
     public void addTrailer() throws SQLException, IOException, ClassNotFoundException {
         String unitName = RandomStringUtils.randomAlphanumeric(1, 10);
         String type = Integer.toString(genRandomNumberBetweenTwoValues(0, 4));
-        String owner = RandomStringUtils.randomAlphabetic( 10);
+        String owner = RandomStringUtils.randomAlphabetic( 5) + " " + RandomStringUtils.randomAlphabetic( 10);
         String year = Integer.toString(genRandomNumberBetweenTwoValues(1950, 2020));
         String vin = RandomStringUtils.randomAlphanumeric(17);
         String plate = RandomStringUtils.randomAlphanumeric(6);
@@ -206,7 +206,7 @@ public class SoloDriverEquipmentTestLocal extends ParentTest {
     public void upDateTruck() throws SQLException, IOException, ClassNotFoundException {
 
         String unitName = RandomStringUtils.randomAlphanumeric(1, 10);
-        String owner = RandomStringUtils.randomAlphabetic( 10);
+        String owner = RandomStringUtils.randomAlphabetic( 5) + " " + RandomStringUtils.randomAlphabetic( 10);
         String type = Integer.toString(genRandomNumberBetweenTwoValues(0, 4));
         String year = Integer.toString(genRandomNumberBetweenTwoValues(1950, 2020));
         String vin = RandomStringUtils.randomAlphanumeric(17);
@@ -228,7 +228,7 @@ public class SoloDriverEquipmentTestLocal extends ParentTest {
         String expDateDate = getDateRandom();
 
         String idTruckRandom = utilsForDB.getRandomEquipmentId(userId, "0");
-        String notes = RandomStringUtils.randomAlphanumeric(15);
+        String notes = RandomStringUtils.randomAlphanumeric(15) + " " + RandomStringUtils.randomAlphanumeric(15) + " " + RandomStringUtils.randomAlphanumeric(10) + ".";
 
         List<ArrayList> tempDataList = utilsForDB.getDataEquipment(userId, idTruckRandom);
         Map<String, Object> tempDataEquipmentBeforeTestMap = listArrayToMap(tempDataList);
@@ -318,7 +318,7 @@ public class SoloDriverEquipmentTestLocal extends ParentTest {
     public void upDateTrailer() throws SQLException, IOException, ClassNotFoundException {
 
         String unitName = RandomStringUtils.randomAlphanumeric(1, 10);
-        String owner = RandomStringUtils.randomAlphabetic( 10);
+        String owner = RandomStringUtils.randomAlphabetic( 5) + " " + RandomStringUtils.randomAlphabetic( 10);
         String type = Integer.toString(genRandomNumberBetweenTwoValues(0, 4));
         String year = Integer.toString(genRandomNumberBetweenTwoValues(1950, 2020));
         String vin = RandomStringUtils.randomAlphanumeric(17);
@@ -340,7 +340,7 @@ public class SoloDriverEquipmentTestLocal extends ParentTest {
         String expDateDate = getDateRandom();
 
         String idTrailerRandom = utilsForDB.getRandomEquipmentId(userId, "1");
-        String notes = RandomStringUtils.randomAlphanumeric(15);
+        String notes = RandomStringUtils.randomAlphanumeric(15) + " " + RandomStringUtils.randomAlphanumeric(15) + " " + RandomStringUtils.randomAlphanumeric(10) + ".";
 
         List<ArrayList> tempDataList = utilsForDB.getDataEquipment(userId, idTrailerRandom);
         Map<String, Object> tempDataEquipmentBeforeTestMap = listArrayToMap(tempDataList);
