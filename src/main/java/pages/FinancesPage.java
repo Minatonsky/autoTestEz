@@ -27,10 +27,18 @@ public class FinancesPage extends ParentPage {
     @FindBy(xpath = ".//button[@aria-label='Close']")
     private WebElement closeSuccessPopUp;
 
+    @FindBy(xpath = "//a[@href='/dash/finances/finances_refunds/']")
+    private WebElement refundsPage;
+
+    @FindBy(xpath = "//a[@href='/dash/finances/finances_orders/']")
+    private WebElement ordersPage;
+
+    @FindBy(xpath = "//a[@href='/dash/finances/finances_cards/']")
+    private WebElement cardsPage;
+
     public String getFinanceBalance(){
         return financeBalanceText.getText();
     }
-
     public boolean compareBalance(String currentDue, String dueForLastOrder) {
         double tempBalance = Double.parseDouble(currentDue) - Double.parseDouble(dueForLastOrder);
         if (Integer.parseInt(currentDue) > 0) {
@@ -56,27 +64,21 @@ public class FinancesPage extends ParentPage {
         } else return true;
 
     }
-
-
     public boolean comparePaidOrderStatus(String orderStatus) {
         logger.info("orderStatus = " + orderStatus);
         return orderStatus.equals("3");
     }
-
     public boolean compareCancelOrderStatus(String orderStatus) {
         return orderStatus.equals("2");
     }
-
     public boolean compareCompletedOrderStatus(String orderStatus) {
         return orderStatus.equals("1");
     }
-
     public boolean compareNewOrderStatus(String orderStatus, String currentDue, String quantityOfDevices, String quantityCameraCP) {
         if (Integer.parseInt(currentDue) > 0 & Integer.parseInt(quantityOfDevices) == 0 & Integer.parseInt(quantityCameraCP) == 0){
             return orderStatus.equals("3");
         } else return orderStatus.equals("0");
     }
-
     public void payCurrentInvoiceForOrderByManager(String currentDue, String quantityOfDevices, String quantityCameraCP){
         if (Integer.parseInt(currentDue) == 0 & Integer.parseInt(quantityOfDevices) == 0 & Integer.parseInt(quantityCameraCP) == 0) {
             actionsWithOurElements.clickOnElement(payCurrentInvoiceButton);
@@ -91,5 +93,9 @@ public class FinancesPage extends ParentPage {
             logger.info("Current Invoice was paid");
         } else logger.info("Do not need pay invoice");
     }
+    public void goToRefunds(){ waitABit(2);actionsWithOurElements.clickOnElement(refundsPage);}
+    public void goToOrders(){waitABit(2);actionsWithOurElements.clickOnElement(ordersPage);}
+    public void goToCards(){waitABit(2);actionsWithOurElements.clickOnElement(cardsPage);}
+
 
 }

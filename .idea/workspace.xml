@@ -2,20 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="660eb711-957d-418e-9483-8b2931da6e6e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/parameterizedUI/SoloDriverCreateEquipmentParamTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/parameterizedUI/SoloDriverUIOldSiteParamsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/EldPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/HelpAndTrainingPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log/qalight.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/qalight.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/data/testSettings.xls" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/data/testSettings.xls" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/libs/ConfigProperties.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/libs/ConfigProperties.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/libs/UtilsForDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/libs/UtilsForDB.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/DashboardPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/DashboardPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/LogsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/LogsPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/ModalEldPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/ModalEldPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/logbookTest/FourteenHourDrivingWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/logbookTest/FourteenHourDrivingWindow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/loginTests/UnValidLoginWithParamsWithExcel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/loginTests/ValidLoginWithParams.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/FinancesPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/FinancesPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/SettingsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/SettingsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/parameterizedUI/SoloDriverSettingsParameterizedTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/parameterizedUI/SoloDriverSettingsParameterizedTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/parameterizedUI/SoloDriverUIOldSiteParamsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/parameterizedUI/SoloDriverUIOldSiteParamsTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/parentTest/ParentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/parentTest/ParentTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/unitTest/TestMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/unitTest/TestMethods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/settingsTest/DriverLicenseParameterizedTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/settingsTest/DriverLicenseParameterizedTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/settingsTest/SoloDriverSettingsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/settingsTest/SoloDriverSettingsTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,18 +100,66 @@
       <recent name="parameterizedOrders" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SoloDriverUIOldSiteParamsTest.validLogIn">
-    <configuration name="FleetOrderParamsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.SoloDriverUIOldSiteParamsTest.uiTest">
+    <configuration name="SoloDriverSettingsParameterizedTest.updateDataSettings" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="WorkSpace" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="parameterizedOrders.*" />
+          <option name="PATTERN" value="parameterizedUI.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="parameterizedOrders" />
-      <option name="MAIN_CLASS_NAME" value="parameterizedOrders.FleetOrderParamsTest" />
+      <option name="PACKAGE_NAME" value="parameterizedUI" />
+      <option name="MAIN_CLASS_NAME" value="parameterizedUI.SoloDriverSettingsParameterizedTest" />
+      <option name="METHOD_NAME" value="updateDataSettings" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SoloDriverUIOldSiteParamsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="WorkSpace" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="parameterizedUI.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="parameterizedUI" />
+      <option name="MAIN_CLASS_NAME" value="parameterizedUI.SoloDriverUIOldSiteParamsTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SoloDriverUIOldSiteParamsTest.soloDriverUI" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="WorkSpace" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="parameterizedUI.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="parameterizedUI" />
+      <option name="MAIN_CLASS_NAME" value="parameterizedUI.SoloDriverUIOldSiteParamsTest" />
+      <option name="METHOD_NAME" value="soloDriverUI" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SoloDriverUIOldSiteParamsTest.uiTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="WorkSpace" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="parameterizedUI.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="parameterizedUI" />
+      <option name="MAIN_CLASS_NAME" value="parameterizedUI.SoloDriverUIOldSiteParamsTest" />
+      <option name="METHOD_NAME" value="uiTest" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -145,53 +191,6 @@
       <option name="PACKAGE_NAME" value="unitTest" />
       <option name="MAIN_CLASS_NAME" value="unitTest.TestMethods" />
       <option name="METHOD_NAME" value="getEventNewOrder" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ValidLoginWithParams" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="WorkSpace" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="loginTests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="loginTests" />
-      <option name="MAIN_CLASS_NAME" value="loginTests.ValidLoginWithParams" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ValidLoginWithParams.inValidLogIn" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="WorkSpace" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="loginTests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="loginTests" />
-      <option name="MAIN_CLASS_NAME" value="loginTests.ValidLoginWithParams" />
-      <option name="METHOD_NAME" value="inValidLogIn" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ValidLoginWithParams.validLogIn" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="WorkSpace" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="loginTests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="loginTests" />
-      <option name="MAIN_CLASS_NAME" value="loginTests.ValidLoginWithParams" />
-      <option name="METHOD_NAME" value="validLogIn" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -329,23 +328,23 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.TestMethods.getEventNewOrder" />
-      <item itemvalue="JUnit.FleetOrderParamsTest" />
       <item itemvalue="Maven.SoloDriverEquipment" />
       <item itemvalue="Maven.SoloDriverCreateDocumentsLocalSiteParamsTest" />
       <item itemvalue="Maven.DriverSettingsParameterizedTest" />
       <item itemvalue="Maven.SoloOrders" />
-      <item itemvalue="JUnit.UnValidLoginWithParamsWithExcel" />
-      <item itemvalue="JUnit.ValidLoginWithParams.inValidLogIn" />
-      <item itemvalue="JUnit.ValidLoginWithParams.validLogIn" />
       <item itemvalue="JUnit.SoloDriverUIOldSiteParamsTest.validLogIn" />
+      <item itemvalue="JUnit.SoloDriverSettingsParameterizedTest.updateDataSettings" />
+      <item itemvalue="JUnit.SoloDriverUIOldSiteParamsTest" />
+      <item itemvalue="JUnit.SoloDriverUIOldSiteParamsTest.soloDriverUI" />
+      <item itemvalue="JUnit.SoloDriverUIOldSiteParamsTest.uiTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SoloDriverUIOldSiteParamsTest.uiTest" />
         <item itemvalue="JUnit.SoloDriverUIOldSiteParamsTest.validLogIn" />
-        <item itemvalue="JUnit.ValidLoginWithParams.validLogIn" />
-        <item itemvalue="JUnit.UnValidLoginWithParamsWithExcel" />
-        <item itemvalue="JUnit.ValidLoginWithParams.inValidLogIn" />
-        <item itemvalue="JUnit.FleetOrderParamsTest" />
+        <item itemvalue="JUnit.SoloDriverUIOldSiteParamsTest.soloDriverUI" />
+        <item itemvalue="JUnit.SoloDriverUIOldSiteParamsTest" />
+        <item itemvalue="JUnit.SoloDriverSettingsParameterizedTest.updateDataSettings" />
       </list>
     </recent_temporary>
   </component>
@@ -378,13 +377,6 @@
       <workItem from="1562665338918" duration="52834000" />
       <workItem from="1562782581468" duration="9021000" />
       <workItem from="1562822119836" duration="58303000" />
-    </task>
-    <task id="LOCAL-00043" summary="refactor was add">
-      <created>1568833345015</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1568833345015</updated>
     </task>
     <task id="LOCAL-00044" summary="refactor count was add">
       <created>1569329907994</created>
@@ -722,7 +714,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581353615042</updated>
     </task>
-    <option name="localTasksCounter" value="92" />
+    <task id="LOCAL-00092" summary="ui test was add">
+      <created>1581507347595</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1581507347595</updated>
+    </task>
+    <option name="localTasksCounter" value="93" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -759,7 +758,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="test2 charge by days was add" />
     <MESSAGE value="deleted old order test was add" />
     <MESSAGE value="some changes was add" />
     <MESSAGE value="new tariff was add" />
@@ -784,7 +782,8 @@
     <MESSAGE value="usdl params test was add" />
     <MESSAGE value="refactoring was add" />
     <MESSAGE value="logbook1 was add" />
-    <option name="LAST_COMMIT_MESSAGE" value="logbook1 was add" />
+    <MESSAGE value="ui test was add" />
+    <option name="LAST_COMMIT_MESSAGE" value="ui test was add" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="179" key="#Notifications" timestamp="1579788757833">
@@ -811,26 +810,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="268" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581087997343" />
-    <state x="614" y="115" key="CommitChangelistDialog2" timestamp="1581353614267">
+    <state x="614" y="115" key="CommitChangelistDialog2" timestamp="1581507346967">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="614" y="115" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1581353614267" />
-    <state width="1877" height="259" key="GridCell.Tab.0.bottom" timestamp="1581507325024">
+    <state x="614" y="115" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1581507346967" />
+    <state width="1877" height="259" key="GridCell.Tab.0.bottom" timestamp="1581511341465">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="259" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1581507325024" />
-    <state width="1877" height="259" key="GridCell.Tab.0.center" timestamp="1581507325024">
+    <state width="1877" height="259" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1581511341465" />
+    <state width="1877" height="259" key="GridCell.Tab.0.center" timestamp="1581511341465">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="259" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1581507325024" />
-    <state width="1877" height="259" key="GridCell.Tab.0.left" timestamp="1581507325024">
+    <state width="1877" height="259" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1581511341465" />
+    <state width="1877" height="259" key="GridCell.Tab.0.left" timestamp="1581511341465">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="259" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1581507325024" />
-    <state width="1877" height="259" key="GridCell.Tab.0.right" timestamp="1581507325024">
+    <state width="1877" height="259" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1581511341465" />
+    <state width="1877" height="259" key="GridCell.Tab.0.right" timestamp="1581511341465">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="259" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1581507325024" />
+    <state width="1877" height="259" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1581511341465" />
     <state x="540" y="256" key="IDE.errors.dialog" timestamp="1579526806082">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

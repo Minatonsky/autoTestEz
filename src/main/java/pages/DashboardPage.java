@@ -20,16 +20,16 @@ public class DashboardPage extends ParentPage {
     @FindBy(xpath = ".//a[@href='/dash/']")
     private WebElement menuPageStatus;
 
-    @FindBy(xpath = ".//a[@href='dash/reports/ifta/']")
+    @FindBy(xpath = ".//a[@href='/dash/reports/ifta/']")
     private WebElement menuPageReports;
 
-    @FindBy(xpath = ".//a[@href='dash/trucks/']")
+    @FindBy(xpath = ".//a[@href='/dash/trucks/']")
     private WebElement menuPageDvir;
 
-    @FindBy(xpath = ".//a[@href='dash/live_scan/']")
+    @FindBy(xpath = ".//a[@href='/dash/live_scan/']")
     private WebElement menuPageDocuments;
 
-    @FindBy(xpath = ".//a[@href='dash/equipment/']")
+    @FindBy(xpath = ".//a[@href='/dash/equipment/']")
     private WebElement menuPageEquipment;
 
     @FindBy(xpath = ".//a[@href='/dash/finances/']")
@@ -113,79 +113,66 @@ public class DashboardPage extends ParentPage {
         clickOnMenuDash();
         waitABit(3);
         clickMenuSizeButton();
-        waitABit(3);
     }
     @Step
     public void goToStatusPage(){
         waitABit(2);
         clickOnMenuPageStatus();
-        waitABit(2);
     }
     @Step
     public void goToReportsPage(){
         waitABit(2);
         clickOnMenuPageReports();
-        waitABit(2);
     }
     @Step
     public void goToDVIRPage(){
         waitABit(2);
         clickOnMenuPageDVIR();
-        waitABit(2);
     }
     @Step
     public void goToDocumentsPage(){
         waitABit(2);
         clickOnMenuPageDocuments();
-        waitABit(2);
     }
     @Step
     public void goToEzChatPage(){
         waitABit(2);
         clickOnMenuPageEzChat();
-        waitABit(2);
     }
     @Step
     public void goToCalendarPage(){
         waitABit(2);
         clickOnMenuPageCalendar();
-        waitABit(2);
     }
     @Step
     public void goToHelpAndTrainingPage(){
         waitABit(2);
         clickOnMenuPageHelpAndTraining();
-        waitABit(2);
     }
     @Step
     public void goToEldPage(){
-        waitABit(3);
+        waitABit(2);
         clickOnMenuPageELD();
-        waitABit(3);
     }
     @Step
     public void goToFinancesPage(){
-        waitABit(3);
+        waitABit(2);
         clickOnMenuPageFinances();
-        waitABit(3);
     }
     @Step
     public void goToSettingPage(){
-        waitABit(3);
+        waitABit(2);
         clickOnMenuPageSettings();
-        waitABit(3);
     }
     @Step
     public void goToEquipmentPage(){
-        waitABit(3);
+        waitABit(2);
         clickOnMenuPageEquipment();
-        waitABit(3);
     }
     @Step
     public void goToLogsPage(){
-        waitABit(3);
+        waitABit(2);
         clickOnMenuPageLogs();
-        waitABit(3);
     }
     @Step
     public void closePhoneVerificationPopUp(){

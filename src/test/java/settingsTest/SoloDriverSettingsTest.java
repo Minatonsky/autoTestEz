@@ -33,7 +33,7 @@ public class SoloDriverSettingsTest extends ParentTest {
         loginPage.userValidLogIn(login, pass);
         dashboardPage.openMenuDash();
         dashboardPage.goToSettingPage();
-        settingsPage.clickOnDriverSettings();
+        settingsPage.goToDriverSettings();
 
         String ssn = RandomStringUtils.randomNumeric(9);
         String ein = RandomStringUtils.randomNumeric(9);

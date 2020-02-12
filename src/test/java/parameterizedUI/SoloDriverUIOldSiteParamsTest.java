@@ -2,6 +2,7 @@ package parameterizedUI;
 
 import libs.SpreadsheetData;
 import org.junit.Test;
+import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import parentTest.ParentTest;
 
@@ -9,9 +10,7 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Collection;
-
-import static libs.Utils.waitABit;
-
+@RunWith(Parameterized.class)
 public class SoloDriverUIOldSiteParamsTest extends ParentTest {
     String login;
 
@@ -27,14 +26,9 @@ public class SoloDriverUIOldSiteParamsTest extends ParentTest {
     String pass = "testtest";
 
     @Test
-    public void validLogIn(){
-        loginPage.openPage();
-        loginPage.openLoginForm();
-        loginPage.enterLogin(login);
-        loginPage.enterPass(pass);
-        loginPage.clickOnSubmitButton();
-        dashboardPage.closePhoneVerificationPopUp();
-        waitABit(3);
+    public void uiTest(){
+        loginPage.userValidLogIn(login, pass);
+        dashboardPage.openMenuDash();
         checkAC("User wasn`t logined", dashboardPage.isDashboardPresent(), true);
         dashboardPage.goToReportsPage();
         dashboardPage.goToLogsPage();
@@ -42,10 +36,23 @@ public class SoloDriverUIOldSiteParamsTest extends ParentTest {
         dashboardPage.goToDocumentsPage();
         dashboardPage.goToEquipmentPage();
         dashboardPage.goToEzChatPage();
+
         dashboardPage.goToEldPage();
+        eldPage.goToPaperLogPermissions();
+
         dashboardPage.goToFinancesPage();
+        financesPage.goToRefunds();
+        financesPage.goToOrders();
+        financesPage.goToCards();
+
         dashboardPage.goToCalendarPage();
+
         dashboardPage.goToHelpAndTrainingPage();
+        helpAndTrainingPage.goToSupportTicketsPage();
+        helpAndTrainingPage.goToUserReviewsOffersPage();
+        helpAndTrainingPage.goToFaqPage();
+
         dashboardPage.goToSettingPage();
+        settingsPage.goToDriverSettings();
     }
 }

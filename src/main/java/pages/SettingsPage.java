@@ -5,6 +5,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+import static libs.Utils.waitABit;
+
 public class SettingsPage extends ParentPage {
 
     public SettingsPage(WebDriver webDriver) {
@@ -123,9 +125,7 @@ public class SettingsPage extends ParentPage {
     @FindBy(css = ".btn")
     private WebElement buttonSave;
 
-    public void clickOnDriverSettings() {
-        actionsWithOurElements.clickOnElement(driverSettings);
-    }
+    public void goToDriverSettings() {waitABit(2);actionsWithOurElements.clickOnElement(driverSettings); }
 
 //    GENERAL
     public void enterSsn(String ssn) {actionsWithOurElements.clearAndEnterTextToElement(ssnInput, ssn); }

@@ -52,6 +52,8 @@ public class ParentTest {
     protected DriverSettingsLocalSitePage driverSettingsLocalSitePage;
     protected AccountSettingsLocalSitePage accountSettingsLocalSitePage;
     protected LogsPage logsPage;
+    protected EldPage eldPage;
+    protected HelpAndTrainingPage helpAndTrainingPage;
 
     String browser = System.getProperty("browser");
 
@@ -83,6 +85,8 @@ public class ParentTest {
         driverSettingsLocalSitePage = new DriverSettingsLocalSitePage(webDriver);
         accountSettingsLocalSitePage = new AccountSettingsLocalSitePage(webDriver);
         logsPage = new LogsPage(webDriver);
+        eldPage = new EldPage(webDriver);
+        helpAndTrainingPage = new HelpAndTrainingPage(webDriver);
 
     }
 

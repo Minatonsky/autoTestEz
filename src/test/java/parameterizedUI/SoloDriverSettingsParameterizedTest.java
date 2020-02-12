@@ -79,7 +79,7 @@ public class SoloDriverSettingsParameterizedTest extends ParentTest {
         loginPage.userValidLogIn(login, pass);
         dashboardPage.openMenuDash();
         dashboardPage.goToSettingPage();
-        settingsPage.clickOnDriverSettings();
+        settingsPage.goToDriverSettings();
         //    GENERAL
         waitABit(5);
         settingsPage.enterSsn(ssn);

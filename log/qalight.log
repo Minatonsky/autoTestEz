@@ -3389,3 +3389,202 @@ Driver info: driver.version: unknown
 2020-12-02 12:31:25   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
 2020-12-02 12:31:26   INFO [loginTests.ValidLoginWithParams] : AC passed
 2020-12-02 12:31:27   INFO [loginTests.ValidLoginWithParams] : Chrome will be started
+2020-12-02 13:37:15   INFO [parameterizedUI.SoloDriverSettingsParameterizedTest] : Chrome will be started
+2020-12-02 13:42:14   INFO [parameterizedUI.SoloDriverUIOldSiteParamsTest] : Chrome will be started
+2020-12-02 13:42:20   INFO [parameterizedUI.SoloDriverUIOldSiteParamsTest] : Chrome is started
+2020-12-02 13:42:31   INFO [pages.LoginPage] : Login Page was opened
+2020-12-02 13:42:31   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-12-02 13:42:31   INFO [libs.ActionsWithOurElements] : test121@test.test was inputted into element
+2020-12-02 13:42:31   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-12-02 13:42:31   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-12-02 13:42:39   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-12-02 13:42:40   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-12-02 13:42:43   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2020-12-02 13:42:44   INFO [parameterizedUI.SoloDriverUIOldSiteParamsTest] : AC passed
+2020-12-02 13:44:34   INFO [parameterizedUI.SoloDriverUIOldSiteParamsTest] : Chrome will be started
+2020-12-02 13:44:40   INFO [parameterizedUI.SoloDriverUIOldSiteParamsTest] : Chrome is started
+2020-12-02 13:44:51   INFO [pages.LoginPage] : Login Page was opened
+2020-12-02 13:44:51   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-12-02 13:44:51   INFO [libs.ActionsWithOurElements] : test121@test.test was inputted into element
+2020-12-02 13:44:51   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-12-02 13:44:52   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-12-02 13:44:58   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-12-02 13:44:59   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-12-02 13:45:02   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-12-02 13:45:05   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-12-02 13:45:11   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2020-12-02 13:45:12   INFO [parameterizedUI.SoloDriverUIOldSiteParamsTest] : AC passed
+2020-12-02 13:45:54  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: .//a[@href='dash/reports/ifta/']' (tried for 20 second(s) with 500 milliseconds interval)
+2020-12-02 13:45:55   INFO [parameterizedUI.SoloDriverUIOldSiteParamsTest] : Chrome will be started
+2020-12-02 13:46:00   INFO [parameterizedUI.SoloDriverUIOldSiteParamsTest] : Chrome is started
+2020-12-02 13:46:09   INFO [pages.LoginPage] : Login Page was opened
+2020-12-02 13:46:09   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-12-02 13:46:09   INFO [libs.ActionsWithOurElements] : eld2@test.test was inputted into element
+2020-12-02 13:46:09   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-12-02 13:46:10   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-12-02 13:46:16   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-12-02 13:46:17   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-12-02 13:46:20   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-12-02 13:46:23   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-12-02 13:46:29   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2020-12-02 13:46:30   INFO [parameterizedUI.SoloDriverUIOldSiteParamsTest] : AC passed
+2020-12-02 13:48:39   INFO [parameterizedUI.SoloDriverUIOldSiteParamsTest] : Chrome will be started
+2020-12-02 13:48:45   INFO [parameterizedUI.SoloDriverUIOldSiteParamsTest] : Chrome is started
+2020-12-02 13:48:55   INFO [pages.LoginPage] : Login Page was opened
+2020-12-02 13:48:56   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-12-02 13:48:56   INFO [libs.ActionsWithOurElements] : test121@test.test was inputted into element
+2020-12-02 13:48:56   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-12-02 13:48:56   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-12-02 13:49:04   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-12-02 13:49:04   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-12-02 13:49:07   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-12-02 13:49:10   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-12-02 13:49:16   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2020-12-02 13:49:17   INFO [parameterizedUI.SoloDriverUIOldSiteParamsTest] : AC passed
+2020-12-02 13:49:19   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-12-02 13:49:25   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-12-02 13:49:30   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-12-02 13:49:34   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-12-02 13:49:39   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-12-02 13:49:44   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-12-02 13:49:50   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-12-02 13:49:56   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-12-02 13:50:01   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-12-02 13:50:05   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-12-02 13:50:10   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-12-02 13:50:14   INFO [parameterizedUI.SoloDriverUIOldSiteParamsTest] : Chrome will be started
+2020-12-02 13:50:19   INFO [parameterizedUI.SoloDriverUIOldSiteParamsTest] : Chrome is started
+2020-12-02 13:50:28   INFO [pages.LoginPage] : Login Page was opened
+2020-12-02 13:50:28   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-12-02 13:50:28   INFO [libs.ActionsWithOurElements] : eld2@test.test was inputted into element
+2020-12-02 13:50:29   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-12-02 13:50:29   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-12-02 13:50:35   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-12-02 13:50:35   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-12-02 13:50:38   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-12-02 13:50:42   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-12-02 13:50:48   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2020-12-02 13:50:49   INFO [parameterizedUI.SoloDriverUIOldSiteParamsTest] : AC passed
+2020-12-02 13:50:51   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-12-02 13:50:56   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-12-02 13:51:01   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-12-02 13:51:06   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-12-02 13:51:11   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-12-02 13:51:16   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-12-02 13:51:21   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-12-02 13:51:27   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-12-02 13:51:32   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-12-02 13:51:37   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-12-02 13:51:42   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-12-02 13:51:46   INFO [parameterizedUI.SoloDriverUIOldSiteParamsTest] : Chrome will be started
+2020-12-02 14:20:21   INFO [parameterizedUI.SoloDriverUIOldSiteParamsTest] : Chrome will be started
+2020-12-02 14:20:28   INFO [parameterizedUI.SoloDriverUIOldSiteParamsTest] : Chrome is started
+2020-12-02 14:20:38   INFO [pages.LoginPage] : Login Page was opened
+2020-12-02 14:20:38   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-12-02 14:20:38   INFO [libs.ActionsWithOurElements] : test121@test.test was inputted into element
+2020-12-02 14:20:38   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-12-02 14:20:39   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-12-02 14:20:45   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-12-02 14:20:45   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-12-02 14:20:49   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-12-02 14:20:52   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-12-02 14:20:58   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2020-12-02 14:20:59   INFO [parameterizedUI.SoloDriverUIOldSiteParamsTest] : AC passed
+2020-12-02 14:21:01   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-12-02 14:21:06   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-12-02 14:21:11   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-12-02 14:21:16   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-12-02 14:21:21   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-12-02 14:21:26   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-12-02 14:21:31   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-12-02 14:21:34   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-12-02 14:21:37   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-12-02 14:21:41   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-12-02 14:21:41  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=79.0.3945.130)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'DESKTOP-0PTGLHV', ip: '192.168.88.57', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\1\AppData\Local\Te...}, goog:chromeOptions: {debuggerAddress: localhost:63563}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 60c9e2d6b477e86e925a4559a8045207
+2020-12-02 14:21:42   INFO [parameterizedUI.SoloDriverUIOldSiteParamsTest] : Chrome will be started
+2020-12-02 14:26:02   INFO [parameterizedUI.SoloDriverUIOldSiteParamsTest] : Chrome will be started
+2020-12-02 14:26:09   INFO [parameterizedUI.SoloDriverUIOldSiteParamsTest] : Chrome is started
+2020-12-02 14:26:19   INFO [pages.LoginPage] : Login Page was opened
+2020-12-02 14:26:19   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-12-02 14:26:19   INFO [libs.ActionsWithOurElements] : test121@test.test was inputted into element
+2020-12-02 14:26:19   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-12-02 14:26:20   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-12-02 14:26:27   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-12-02 14:26:27   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-12-02 14:26:30   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-12-02 14:26:33   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-12-02 14:26:33   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2020-12-02 14:26:34   INFO [parameterizedUI.SoloDriverUIOldSiteParamsTest] : AC passed
+2020-12-02 14:26:36   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-12-02 14:26:39   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-12-02 14:26:41   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-12-02 14:26:43   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-12-02 14:26:45   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-12-02 14:26:47   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-12-02 14:26:49   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-12-02 14:26:50   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-12-02 14:26:52   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-12-02 14:26:55   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-12-02 14:26:57   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-12-02 14:26:59   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-12-02 14:27:01   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-12-02 14:27:03   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-12-02 14:27:06   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-12-02 14:27:08   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-12-02 14:27:10   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-12-02 14:27:12   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-12-02 14:27:14   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-12-02 14:27:15   INFO [parameterizedUI.SoloDriverUIOldSiteParamsTest] : Chrome will be started
+2020-12-02 14:27:20   INFO [parameterizedUI.SoloDriverUIOldSiteParamsTest] : Chrome is started
+2020-12-02 14:27:30   INFO [pages.LoginPage] : Login Page was opened
+2020-12-02 14:27:30   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-12-02 14:27:30   INFO [libs.ActionsWithOurElements] : eld2@test.test was inputted into element
+2020-12-02 14:27:30   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-12-02 14:27:30   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-12-02 14:27:39   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-12-02 14:27:39   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-12-02 14:27:42   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-12-02 14:27:45   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-12-02 14:27:45   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2020-12-02 14:27:46   INFO [parameterizedUI.SoloDriverUIOldSiteParamsTest] : AC passed
+2020-12-02 14:27:49   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-12-02 14:27:51   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-12-02 14:27:53   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-12-02 14:27:55   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-12-02 14:27:57   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-12-02 14:27:59   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-12-02 14:28:02   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-12-02 14:28:02   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-12-02 14:28:05   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-12-02 14:28:07   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-12-02 14:28:09   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-12-02 14:28:11   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-12-02 14:28:13   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-12-02 14:28:16   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-12-02 14:28:18   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-12-02 14:28:20   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-12-02 14:28:22   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-12-02 14:28:24   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-12-02 14:28:26   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-12-02 14:28:27   INFO [parameterizedUI.SoloDriverUIOldSiteParamsTest] : Chrome will be started
+2020-12-02 14:28:32   INFO [parameterizedUI.SoloDriverUIOldSiteParamsTest] : Chrome is started
+2020-12-02 14:28:42   INFO [pages.LoginPage] : Login Page was opened
+2020-12-02 14:28:42   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-12-02 14:28:42   INFO [libs.ActionsWithOurElements] : new_test@test.test was inputted into element
+2020-12-02 14:28:43   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-12-02 14:28:43   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-12-02 14:28:50   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-12-02 14:28:50   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-12-02 14:28:53   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-12-02 14:28:56   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-12-02 14:28:56   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2020-12-02 14:28:57   INFO [parameterizedUI.SoloDriverUIOldSiteParamsTest] : AC passed
+2020-12-02 14:28:59   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-12-02 14:29:02   INFO [libs.ActionsWithOurElements] : Element was clicked
