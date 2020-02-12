@@ -270,20 +270,20 @@ EQUIPMENT LEASE AND SOFTWARE SUBSCRIPTION SERVICE AGREEMENT
     public void clickButtonConfirm(){
         actionsWithOurElements.clickOnElement(buttonConfirm);
     }
-    public void checkForSaasLeasTitleInAgreement(){
+    public boolean checkForSaasLeasTitleInAgreement(){ return
         actionsWithOurElements.isElementDisplay(saasTitle);
     }
-    public void checkForLeasTitleInAgreement(){
+    public boolean checkForLeasTitleInAgreement(){return
         actionsWithOurElements.isElementDisplay(leasTitle);
     }
-    public void checkForCameraTitleInAgreement(){
-        actionsWithOurElements.isElementDisplay(cameraTitle);
+    public boolean checkForCameraTitleInAgreement(){
+        return actionsWithOurElements.isElementDisplay(cameraTitle);
     }
-    public void checkForSaasGeometricsTitleInAgreement(){
-        actionsWithOurElements.isElementDisplay(saasTitle);
+    public boolean checkForSaasGeometricsTitleInAgreement(){
+        return actionsWithOurElements.isElementDisplay(saasTitle);
     }
-    public void checkEquipmentPurchaseTitleInAgreement(){
-        actionsWithOurElements.isElementDisplay(equipmentPurchaseTitle);
+    public boolean checkEquipmentPurchaseTitleInAgreement(){
+        return actionsWithOurElements.isElementDisplay(equipmentPurchaseTitle);
     }
 
     public void checkTitlesInDevicesAgreement(String valueDeviceTypeId){

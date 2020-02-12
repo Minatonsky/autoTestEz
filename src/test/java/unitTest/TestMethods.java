@@ -12,6 +12,7 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.Period;
 import java.time.ZoneOffset;
+import java.time.format.DateTimeFormatter;
 import java.time.temporal.ChronoUnit;
 import java.time.temporal.TemporalAdjusters;
 import java.util.List;
@@ -26,8 +27,9 @@ public class TestMethods {
 
     @Test
     public void testDBSetCurrentDueForFleet() throws SQLException, IOException, ClassNotFoundException {
-        UtilsForDB utilsForDB = new UtilsForDB();
-        utilsForDB.setCurrentDueForFleet("-1000", "518");
+        LocalDateTime yesterday = LocalDateTime.parse(LocalDateTime.now().minusDays(1).toString());
+        String startYesterday = yesterday.format(DateTimeFormatter.ofPattern("yyyy-MM-dd"));
+        System.out.println(startYesterday);
     }
 
     @Test

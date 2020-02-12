@@ -4,6 +4,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+import static libs.Utils.waitABit;
+
 public class LogsPage extends ParentPage {
     public LogsPage(WebDriver webDriver) {
         super(webDriver, "/dash/drivers/");
@@ -41,11 +43,25 @@ public class LogsPage extends ParentPage {
     @FindBy(id="save_info")
     private WebElement saveInfoButton;
 
+    @FindBy(xpath = "//*[@data-11='11' and text()='dr']")
+    private WebElement driveHoursViolation;
+
+    @FindBy(xpath = "//*[@data-8='8' and text()='b']")
+    private WebElement breakViolation;
+
+    @FindBy(xpath = "//*[@data-14='14' and text()='sh']")
+    private WebElement shiftHoursViolation;
+
+    @FindBy(xpath = "//*[text()='Correction Saved']/../button[@type='button']")
+    private WebElement correctionSavedPopUpClose;
+
     public void clickOnRowDay(String dataDay){actionsWithOurElements.clickOnElement(".//*[@data-date='" + dataDay + "']");}
     public void clickOnCorrectionButton(){actionsWithOurElements.clickOnElement(buttonCorrection);}
     public void clickOnInsertStatusButton(){
         actionsWithOurElements.scrollByVisibleElement(buttonInsertStatus);
-        actionsWithOurElements.clickOnElement(buttonInsertStatus);}
+        actionsWithOurElements.clickOnElement(buttonInsertStatus);
+        waitABit(3);
+    }
 
     public void clickOnTimeTo(){
         actionsWithOurElements.scrollByVisibleElement(timeTo);
@@ -63,5 +79,9 @@ public class LogsPage extends ParentPage {
         actionsWithOurElements.scrollByVisibleElement(saveInfoButton);
         actionsWithOurElements.clickOnElement(saveInfoButton);}
     public void timeToInput(String time){actionsWithOurElements.enterTextToElement(timeInput, time);}
-    public void clickOnSaveButton(){actionsWithOurElements.clickOnElement(saveButton);}
+    public void clickOnSaveButton(){ actionsWithOurElements.clickOnElement(saveButton); }
+    public boolean isDriveHoursViolationPresent(){return actionsWithOurElements.isElementDisplay(driveHoursViolation);}
+    public boolean isBreakViolationPresent(){return actionsWithOurElements.isElementDisplay(breakViolation);}
+    public boolean isShiftHoursViolationPresent(){return actionsWithOurElements.isElementDisplay(shiftHoursViolation);}
+    public void closeCorrectionSavePopUp(){actionsWithOurElements.clickOnElement(correctionSavedPopUpClose);}
 }

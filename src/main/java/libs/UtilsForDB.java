@@ -580,5 +580,17 @@ public class UtilsForDB {
         dBMySQL.quit();
         return tempData;
     }
+    @Step
+    public void deleteStatuses(String userId) throws SQLException, IOException, ClassNotFoundException {
+        dBMySQL = new Database("MySQL_PADB_DB", "MySQL");
+        dBMySQL.changeTable("DELETE FROM status WHERE userId = " + userId + " AND DATETIME != '2019-11-14 00:00:00';");
+        dBMySQL.quit();
+    }
+    @Step
+    public void updateLastStatus(String userId) throws SQLException, IOException, ClassNotFoundException {
+        dBMySQL = new Database("MySQL_PADB_DB", "MySQL");
+        dBMySQL.changeTable("UPDATE driver_last_status d SET d.dateTime = '2019-11-14 00:00:00', d.dateTimeUtc = '2019-11-14 05:00:00', d.drive = 39600, d.shift = 50400, d.cycle = 216000, d.eight = 28800, d.shiftWork = 9999999, d.restart34 = 0 WHERE d.userId = " + userId + ";");
+        dBMySQL.quit();
+    }
 
 }
