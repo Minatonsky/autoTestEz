@@ -91,7 +91,9 @@ public class ManagerOrderParamsTest extends ParentTest {
         checkAC("EzSmartCamCP2 prices is not correct", modalEldPage.compareEzSmartCamCP2(quantityCameraCP), true);
         checkAC("EzSmartCamSVA prices is not correct", modalEldPage.compareEzSmartCamSVA(quantityCameraSVA), true);
         checkAC("SdCard prices is not correct", modalEldPage.compareSdCard(quantityCameraCP, valueSdCard), true);
-        checkAC("Total Order is not correct", modalEldPage.compareTotalOrder(typeOfDevices, quantityOfDevices, typeOfPaymentMethod, quantityPinCable, quantityOBDPinCable, quantitySticker, quantityCameraCP, quantityCameraSVA, valueSdCard), true);
+        String totalOrderFromFront = modalEldPage.getTotalOrder();
+        double sumTotalOrder = modalEldPage.totalOrderPrice(typeOfDevices, quantityOfDevices, typeOfPaymentMethod, quantityPinCable, quantityOBDPinCable, quantitySticker, quantityCameraCP, quantityCameraSVA, valueSdCard);
+        checkAC("Total Order is not correct", modalEldPage.compareTotalOrder(sumTotalOrder, totalOrderFromFront), true);
 
         modalEldPage.clickButtonOrder();
         waitABit(3);
@@ -115,7 +117,8 @@ public class ManagerOrderParamsTest extends ParentTest {
         dashboardPage.goToFinancesPage();
         financesPage.payCurrentInvoiceForOrderByManager(currentDue, quantityOfDevices, quantityCameraCP);
         String dueForLastOrder = utilsForDB.getLastDueForSolo(dataSoloId.get("soloId").toString());
-        checkAC("Balance is not correct", financesPage.compareBalance(currentDue, dueForLastOrder), true);
+        String userBalance = utilsForDB.getCurrentDueEzFinancesSolo(dataSoloId.get("soloId").toString());
+        checkAC("Balance is not correct", financesPage.compareBalance(currentDue, dueForLastOrder, userBalance), true);
 
         String orderStatusPaid = utilsForDB.getOrderStatus(idLastOrderAfterTest);
         checkAC("Order is not Paid", financesPage.comparePaidOrderStatus(orderStatusPaid) , true);
@@ -137,6 +140,9 @@ public class ManagerOrderParamsTest extends ParentTest {
         String orderStatusCompleted = utilsForDB.getOrderStatus(idLastOrderAfterTest);
         checkAC("Order is not completed", financesPage.compareCompletedOrderStatus(orderStatusCompleted), true);
         checkAC("Eld status in Completed order is not correct", eldPage.compareEldStatusInCompletedOrder(idLastOrderAfterTest, quantityOfDevices), true);
+
+        String userBalance2 = utilsForDB.getCurrentDueEzFinancesSolo(dataSoloId.get("soloId").toString());
+        checkAC("Balance is not correct", financesPage.compareBalance(currentDue, dueForLastOrder, userBalance2), true);
 
 
     }
@@ -166,7 +172,9 @@ public class ManagerOrderParamsTest extends ParentTest {
         checkAC("EzSmartCamCP2 prices is not correct", modalEldPage.compareEzSmartCamCP2(quantityCameraCP), true);
         checkAC("EzSmartCamSVA prices is not correct", modalEldPage.compareEzSmartCamSVA(quantityCameraSVA), true);
         checkAC("SdCard prices is not correct", modalEldPage.compareSdCard(quantityCameraCP, valueSdCard), true);
-        checkAC("Total Order is not correct", modalEldPage.compareTotalOrder(typeOfDevices, quantityOfDevices, typeOfPaymentMethod, quantityPinCable, quantityOBDPinCable, quantitySticker, quantityCameraCP, quantityCameraSVA, valueSdCard), true);
+        String totalOrderFromFront = modalEldPage.getTotalOrder();
+        double sumTotalOrder = modalEldPage.totalOrderPrice(typeOfDevices, quantityOfDevices, typeOfPaymentMethod, quantityPinCable, quantityOBDPinCable, quantitySticker, quantityCameraCP, quantityCameraSVA, valueSdCard);
+        checkAC("Total Order is not correct", modalEldPage.compareTotalOrder(sumTotalOrder, totalOrderFromFront), true);
 
         modalEldPage.clickButtonOrder();
         waitABit(3);
@@ -193,9 +201,9 @@ public class ManagerOrderParamsTest extends ParentTest {
         String orderCancelStatus = utilsForDB.getOrderStatus(idLastOrderAfterTest);
         checkAC("Order with devices is not canceled", eldPage.compareCancelStatusOrder(orderCancelStatus, quantityOfDevices), true);
         checkAC("ELD is present in canceled order", utilsForDB.isEldBlinded(idLastOrderAfterTest), false);
-        dashboardPage.goToFinancesPage();
 
-        checkAC("Balance is not correct", financesPage.compareBalanceIfCanceled(currentDue, dueForLastOrder, quantityOfDevices), true);
+        String userBalance = utilsForDB.getCurrentDueEzFinancesSolo(dataSoloId.get("soloId").toString());
+        checkAC("Balance is not correct", financesPage.compareBalanceIfCanceled(currentDue, dueForLastOrder, quantityOfDevices, userBalance), true);
 
     }
     @Test
@@ -224,7 +232,9 @@ public class ManagerOrderParamsTest extends ParentTest {
         checkAC("EzSmartCamCP2 prices is not correct", modalEldPage.compareEzSmartCamCP2(quantityCameraCP), true);
         checkAC("EzSmartCamSVA prices is not correct", modalEldPage.compareEzSmartCamSVA(quantityCameraSVA), true);
         checkAC("SdCard prices is not correct", modalEldPage.compareSdCard(quantityCameraCP, valueSdCard), true);
-        checkAC("Total Order is not correct", modalEldPage.compareTotalOrder(typeOfDevices, quantityOfDevices, typeOfPaymentMethod, quantityPinCable, quantityOBDPinCable, quantitySticker, quantityCameraCP, quantityCameraSVA, valueSdCard), true);
+        String totalOrderFromFront = modalEldPage.getTotalOrder();
+        double sumTotalOrder = modalEldPage.totalOrderPrice(typeOfDevices, quantityOfDevices, typeOfPaymentMethod, quantityPinCable, quantityOBDPinCable, quantitySticker, quantityCameraCP, quantityCameraSVA, valueSdCard);
+        checkAC("Total Order is not correct", modalEldPage.compareTotalOrder(sumTotalOrder, totalOrderFromFront), true);
 
         modalEldPage.clickButtonOrder();
         waitABit(3);
@@ -247,7 +257,8 @@ public class ManagerOrderParamsTest extends ParentTest {
         financesPage.payCurrentInvoiceForOrderByManager(currentDue, quantityOfDevices, quantityCameraCP);
         waitABit(5);
         String dueForLastOrder = utilsForDB.getLastDueForFleet(dataFleetId.get("fleetId").toString());
-        checkAC("Balance is not correct", financesPage.compareBalance(currentDue, dueForLastOrder), true);
+        String userBalance = utilsForDB.getCurrentDueEzFinancesFleet(dataFleetId.get("fleetId").toString());
+        checkAC("Balance is not correct", financesPage.compareBalance(currentDue, dueForLastOrder, userBalance), true);
 
         String orderStatusPaid = utilsForDB.getOrderStatus(idLastOrderAfterTest);
         checkAC("Order is not Paid", financesPage.comparePaidOrderStatus(orderStatusPaid) , true);
@@ -267,6 +278,9 @@ public class ManagerOrderParamsTest extends ParentTest {
         String orderStatusCompleted = utilsForDB.getOrderStatus(idLastOrderAfterTest);
         checkAC("Order is not completed", financesPage.compareCompletedOrderStatus(orderStatusCompleted), true);
         checkAC("Eld status in Completed order is not correct", eldPage.compareEldStatusInCompletedOrder(idLastOrderAfterTest, quantityOfDevices), true);
+
+        String userBalance2 = utilsForDB.getCurrentDueEzFinancesFleet(dataFleetId.get("fleetId").toString());
+        checkAC("Balance is not correct", financesPage.compareBalance(currentDue, dueForLastOrder, userBalance2), true);
 
 
     }
@@ -296,7 +310,9 @@ public class ManagerOrderParamsTest extends ParentTest {
         checkAC("EzSmartCamCP2 prices is not correct", modalEldPage.compareEzSmartCamCP2(quantityCameraCP), true);
         checkAC("EzSmartCamSVA prices is not correct", modalEldPage.compareEzSmartCamSVA(quantityCameraSVA), true);
         checkAC("SdCard prices is not correct", modalEldPage.compareSdCard(quantityCameraCP, valueSdCard), true);
-        checkAC("Total Order is not correct", modalEldPage.compareTotalOrder(typeOfDevices, quantityOfDevices, typeOfPaymentMethod, quantityPinCable, quantityOBDPinCable, quantitySticker, quantityCameraCP, quantityCameraSVA, valueSdCard), true);
+        String totalOrderFromFront = modalEldPage.getTotalOrder();
+        double sumTotalOrder = modalEldPage.totalOrderPrice(typeOfDevices, quantityOfDevices, typeOfPaymentMethod, quantityPinCable, quantityOBDPinCable, quantitySticker, quantityCameraCP, quantityCameraSVA, valueSdCard);
+        checkAC("Total Order is not correct", modalEldPage.compareTotalOrder(sumTotalOrder, totalOrderFromFront), true);
 
         modalEldPage.clickButtonOrder();
         waitABit(3);
@@ -311,7 +327,7 @@ public class ManagerOrderParamsTest extends ParentTest {
         setUp();
 
 // fleet canceled order
-        String dueForLastOrder = utilsForDB.getLastDueForSolo(dataSoloId.get("soloId").toString());
+        String dueForLastOrder = utilsForDB.getLastDueForFleet(dataFleetId.get("fleetId").toString());
         loginPage.userValidLogIn(dataForFleetValidLogIn.get("login").toString(),dataForFleetValidLogIn.get("pass").toString());
 
         waitABit(3);
@@ -323,9 +339,9 @@ public class ManagerOrderParamsTest extends ParentTest {
         String orderCancelStatus = utilsForDB.getOrderStatus(idLastOrderAfterTest);
         checkAC("Order with devices is not canceled", eldPage.compareCancelStatusOrder(orderCancelStatus, quantityOfDevices), true);
         checkAC("ELD is present in canceled order", utilsForDB.isEldBlinded(idLastOrderAfterTest), false);
-        dashboardPage.goToFinancesPage();
 
-        checkAC("Balance is not correct", financesPage.compareBalanceIfCanceled(currentDue, dueForLastOrder, quantityOfDevices), true);
+        String userBalance = utilsForDB.getCurrentDueEzFinancesFleet(dataFleetId.get("fleetId").toString());
+        checkAC("Balance is not correct", financesPage.compareBalanceIfCanceled(currentDue, dueForLastOrder, quantityOfDevices, userBalance), true);
 
     }
 

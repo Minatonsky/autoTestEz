@@ -78,7 +78,10 @@ public class SoloOrderParamsTest extends ParentTest { String  typeOfDevices, qua
         checkAC("EzSmartCamCP2 prices is not correct", modalEldPage.compareEzSmartCamCP2(quantityCameraCP), true);
         checkAC("EzSmartCamSVA prices is not correct", modalEldPage.compareEzSmartCamSVA(quantityCameraSVA), true);
         checkAC("SdCard prices is not correct", modalEldPage.compareSdCard(quantityCameraCP, valueSdCard), true);
-        checkAC("Total Order is not correct", modalEldPage.compareTotalOrder(typeOfDevices, quantityOfDevices, typeOfPaymentMethod, quantityPinCable, quantityOBDPinCable, quantitySticker, quantityCameraCP, quantityCameraSVA, valueSdCard), true);
+        String totalOrderFromFront = modalEldPage.getTotalOrder();
+        double sumTotalOrder = modalEldPage.totalOrderPrice(typeOfDevices, quantityOfDevices, typeOfPaymentMethod, quantityPinCable, quantityOBDPinCable, quantitySticker, quantityCameraCP, quantityCameraSVA, valueSdCard);
+        checkAC("Total Order is not correct", modalEldPage.compareTotalOrder(sumTotalOrder, totalOrderFromFront), true);
+
 
         modalEldPage.doAgreeAgreement(typeOfDevices, quantityOfDevices);
         modalEldPage.doAgreementCamera(quantityCameraCP);
@@ -94,8 +97,8 @@ public class SoloOrderParamsTest extends ParentTest { String  typeOfDevices, qua
 
         dashboardPage.goToFinancesPage();
         String dueForLastOrder = utilsForDB.getLastDueForSolo(dataSoloId.get("soloId").toString());
-        checkAC("Balance is not correct", financesPage.compareBalance(currentDue, dueForLastOrder), true);
-
+        String userBalance = utilsForDB.getCurrentDueEzFinancesSolo(dataSoloId.get("soloId").toString());
+        checkAC("Balance is not correct", financesPage.compareBalance(currentDue, dueForLastOrder, userBalance), true);
     }
     @Test
     @Ignore
@@ -108,8 +111,9 @@ public class SoloOrderParamsTest extends ParentTest { String  typeOfDevices, qua
         String orderStatus = utilsForDB.getOrderStatus(idLastOrderAfterTest);
         checkAC("Order with devices is not canceled", eldPage.compareCancelStatusOrder(orderStatus, quantityOfDevices), true);
         checkAC("ELD is present in canceled order", utilsForDB.isEldBlinded(idLastOrderAfterTest), false);
-        dashboardPage.goToFinancesPage();
-        checkAC("Balance is not correct", financesPage.compareBalanceIfCanceled(currentDue, dueForLastOrder, quantityOfDevices), true);
+
+        String userBalance = utilsForDB.getCurrentDueEzFinancesSolo(dataSoloId.get("soloId").toString());
+        checkAC("Balance is not correct", financesPage.compareBalanceIfCanceled(currentDue, dueForLastOrder, quantityOfDevices, userBalance), true);
 
     }
     @Test
@@ -132,16 +136,8 @@ public class SoloOrderParamsTest extends ParentTest { String  typeOfDevices, qua
         checkAC("Order with devices is not canceled", financesPage.compareCancelOrderStatus(orderCancelStatus), true);
         checkAC("ELD is present in canceled order", utilsForDB.isEldBlinded(idLastOrderAfterTest), false);
 
-        tearDown();
-        setUp();
-
-
-//USER CHECKED BALANCE
-
-        loginPage.userValidLogIn(dataForSoloValidLogIn.get("login").toString(),dataForSoloValidLogIn.get("pass").toString());
-        dashboardPage.openMenuDash();
-        dashboardPage.goToFinancesPage();
-        checkAC("Balance is not correct", financesPage.compareBalanceIfCanceled(currentDue, dueForLastOrder, quantityOfDevices), true);
+        String userBalance = utilsForDB.getCurrentDueEzFinancesSolo(dataSoloId.get("soloId").toString());
+        checkAC("Balance is not correct", financesPage.compareBalanceIfCanceled(currentDue, dueForLastOrder, quantityOfDevices, userBalance), true);
 
     }
 
@@ -164,6 +160,9 @@ public class SoloOrderParamsTest extends ParentTest { String  typeOfDevices, qua
         String orderStatus = utilsForDB.getOrderStatus(idLastOrderAfterTest);
         checkAC("Order is not completed", financesPage.compareCompletedOrderStatus(orderStatus), true);
         checkAC("Eld status in Completed order is not correct", eldPage.compareEldStatusInCompletedOrder(idLastOrderAfterTest, quantityOfDevices), true);
+
+        String userBalance = utilsForDB.getCurrentDueEzFinancesSolo(dataSoloId.get("soloId").toString());
+        checkAC("Balance is not correct", financesPage.compareBalance(currentDue, dueForLastOrder, userBalance), true);
 
 
     }

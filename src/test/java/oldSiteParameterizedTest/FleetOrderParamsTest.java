@@ -80,7 +80,10 @@ public class FleetOrderParamsTest extends ParentTest {
         checkAC("EzSmartCamCP2 prices is not correct", modalEldPage.compareEzSmartCamCP2(quantityCameraCP), true);
         checkAC("EzSmartCamSVA prices is not correct", modalEldPage.compareEzSmartCamSVA(quantityCameraSVA), true);
         checkAC("SdCard prices is not correct", modalEldPage.compareSdCard(quantityCameraCP, valueSdCard), true);
-        checkAC("Total Order is not correct", modalEldPage.compareTotalOrder(typeOfDevices, quantityOfDevices, typeOfPaymentMethod, quantityPinCable, quantityOBDPinCable, quantitySticker, quantityCameraCP, quantityCameraSVA, valueSdCard), true);
+
+        String totalOrderFromFront = modalEldPage.getTotalOrder();
+        double sumTotalOrder = modalEldPage.totalOrderPrice(typeOfDevices, quantityOfDevices, typeOfPaymentMethod, quantityPinCable, quantityOBDPinCable, quantitySticker, quantityCameraCP, quantityCameraSVA, valueSdCard);
+        checkAC("Total Order is not correct", modalEldPage.compareTotalOrder(sumTotalOrder, totalOrderFromFront), true);
 
         modalEldPage.doAgreeAgreement(typeOfDevices, quantityOfDevices);
         modalEldPage.doAgreementCamera(quantityCameraCP);
@@ -93,13 +96,15 @@ public class FleetOrderParamsTest extends ParentTest {
         checkAC("Order is not Paid", financesPage.comparePaidOrderStatus(orderStatus) , true);
         checkAC("Eld status in Paid order is not correct", eldPage.compareEldStatusInPaidOrder(idLastOrderAfterTest, quantityOfDevices), true);
 
-        dashboardPage.goToFinancesPage();
         String dueForLastOrder = utilsForDB.getLastDueForFleet(dataForFleet.get("fleetId").toString());
-        checkAC("Balance is not correct", financesPage.compareBalance(currentDue, dueForLastOrder), true);
+        checkAC("Sum total order is different with due on DB", Double.toString(sumTotalOrder).equals(dueForLastOrder), true);
+
+        String userBalance = utilsForDB.getCurrentDueEzFinancesFleet(dataForFleet.get("fleetId").toString());
+        checkAC("Balance is not correct", financesPage.compareBalance(currentDue, dueForLastOrder, userBalance), true);
+
 
     }
     @Test
-    @Ignore
     public void cancelDevicesByFleet() throws SQLException, IOException, ClassNotFoundException {
 
         String idLastOrderAfterTest = utilsForDB.getLastOrderId(fleetString, dataForFleet.get("fleetId").toString());
@@ -109,8 +114,9 @@ public class FleetOrderParamsTest extends ParentTest {
         String orderStatus = utilsForDB.getOrderStatus(idLastOrderAfterTest);
         checkAC("Order with devices is not canceled", eldPage.compareCancelStatusOrder(orderStatus, quantityOfDevices), true);
         checkAC("ELD is present in canceled order", utilsForDB.isEldBlinded(idLastOrderAfterTest), false);
-        dashboardPage.goToFinancesPage();
-        checkAC("Balance is not correct", financesPage.compareBalanceIfCanceled(currentDue, dueForLastOrder, quantityOfDevices), true);
+
+        String userBalance = utilsForDB.getCurrentDueEzFinancesFleet(dataForFleet.get("fleetId").toString());
+        checkAC("Balance is not correct", financesPage.compareBalanceIfCanceled(currentDue, dueForLastOrder, quantityOfDevices, userBalance), true);
 
     }
     @Test
@@ -132,11 +138,9 @@ public class FleetOrderParamsTest extends ParentTest {
         String orderCancelStatus = utilsForDB.getOrderStatus(idLastOrderAfterTest);
         checkAC("Order with devices is not canceled", financesPage.compareCancelOrderStatus(orderCancelStatus), true);
         checkAC("ELD is present in canceled order", utilsForDB.isEldBlinded(idLastOrderAfterTest), false);
-        int intDueFromDB = Integer.parseInt(utilsForDB.getCurrentDueEzFinancesFleet(dataForFleet.get("fleetId").toString()));
-        String currentDueFromDB = utilsForDB.getCurrentDueEzFinancesFleet(dataForFleet.get("fleetId").toString().replaceAll("\\D+", ""));
-        System.out.println("currentDueFromDB " + currentDueFromDB);
-        System.out.println("currentDue " + currentDue);
-        checkAC("Balance is not correct", currentDue.equals(currentDueFromDB), true);
+
+        String userBalance = utilsForDB.getCurrentDueEzFinancesFleet(dataForFleet.get("fleetId").toString());
+        checkAC("Balance is not correct", financesPage.compareBalanceIfCanceled(currentDue, dueForLastOrder, quantityOfDevices, userBalance), true);
     }
 
     @Test
@@ -158,6 +162,9 @@ public class FleetOrderParamsTest extends ParentTest {
         String orderStatus = utilsForDB.getOrderStatus(idLastOrderAfterTest);
         checkAC("Order is not completed", financesPage.compareCompletedOrderStatus(orderStatus), true);
         checkAC("Eld status in Completed order is not correct", eldPage.compareEldStatusInCompletedOrder(idLastOrderAfterTest, quantityOfDevices), true);
+
+        String userBalance = utilsForDB.getCurrentDueEzFinancesFleet(dataForFleet.get("fleetId").toString());
+        checkAC("Balance is not correct", financesPage.compareBalance(currentDue, dueForLastOrder, userBalance), true);
 
     }
 }

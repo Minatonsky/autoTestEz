@@ -768,15 +768,8 @@ COMPARE METHODS TOTAL PRICE
         return totalPrice;
     }
 
-    public boolean compareTotalOrder(String typeOfDevices, String  quantityOfDevices, String typeOfPaymentMethod, String quantityPinCable, String quantityOBDPinCable, String quantitySticker, String quantityCameraCP, String quantityCameraSVA, String valueSdCard){
-        double totalPrice =  Math.round((countEldPrice(quantityOfDevices, typeOfPaymentMethod, quantityCameraCP) +
-                countDepositFeePrice(typeOfDevices, quantityOfDevices) +
-                countDeliveryPrice() + countEldPinCablePrice(quantityPinCable) + countOBDPinCablePrice(quantityOBDPinCable) + countStickerPrice(quantitySticker) +
-                countCP2MonthFeePrice(quantityCameraCP) + countCameraSetupFeePrice(quantityCameraCP) + countCameraInstallationFeePrice(quantityCameraCP) + countEzSmartCamCP2Price(quantityCameraCP) + countCameraSVAPrice(quantityCameraSVA) + countSdCardPrice(quantityCameraCP, valueSdCard))*100.0) / 100.0;
-        System.out.println("totalPrice " + totalPrice);
-        System.out.println("countEldPrice " + countEldPrice(quantityOfDevices, typeOfPaymentMethod, quantityCameraCP));
-        System.out.println("countDepositFeePrice " + countDepositFeePrice(typeOfDevices, quantityOfDevices));
-        return Double.parseDouble(getTotalOrder().substring(1)) == totalPrice;
+    public boolean compareTotalOrder(double totalPrice, String totalOrderFront){
+        return Double.parseDouble(totalOrderFront.substring(1)) == totalPrice;
     }
     public double countEldPrice(String  quantityOfDevices, String typeOfPaymentMethod, String quantityCameraCP) {
         int tempQuantityDevices1 = (Integer.parseInt(quantityOfDevices) - Integer.parseInt(quantityCameraCP));

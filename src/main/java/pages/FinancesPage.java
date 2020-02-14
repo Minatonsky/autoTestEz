@@ -63,27 +63,33 @@ public class FinancesPage extends ParentPage {
     public String getFinanceBalance(){
         return financeBalanceText.getText();
     }
-    public boolean compareBalance(String currentDue, String dueForLastOrder) {
-        double tempBalance = Double.parseDouble(currentDue) - Double.parseDouble(dueForLastOrder);
+    public boolean compareBalance(String currentDue, String priceOrder, String usersBalance) {
+        double tempBalance = Double.parseDouble(currentDue) - Double.parseDouble(priceOrder);
         if (Integer.parseInt(currentDue) > 0) {
-            return Double.parseDouble(getFinanceBalance().substring(1)) == tempBalance;
+            System.out.println("currentDue " + currentDue);
+            System.out.println("priceOrder " + priceOrder);
+            System.out.println("tempBalance " + tempBalance);
+            System.out.println("usersBalance " + Double.parseDouble(usersBalance));
+            return Double.parseDouble(usersBalance)*(-1) == tempBalance;
         } else if (Integer.parseInt(currentDue) == 0) {
-            System.out.println(getFinanceBalance().substring(1));
-            System.out.println(getFinanceBalance());
-            return Double.parseDouble(getFinanceBalance().substring(1)) == 0;
+            System.out.println("currentDue " + currentDue);
+            System.out.println("priceOrder " + priceOrder);
+            System.out.println("tempBalance " + tempBalance);
+            System.out.println("usersBalance " + Double.parseDouble(usersBalance));
+            return Double.parseDouble(usersBalance) == 0;
         } else return false;
     }
-    public boolean compareBalanceIfCanceled(String currentDue, String dueForLastOrder, String quantityOfDevices) {
-        double tempBalance1 = Integer.parseInt(currentDue);
-        double tempDueForLastOrder = Double.parseDouble(dueForLastOrder);
-        double moduleTempDueForLastOrder = Math.abs(tempDueForLastOrder);
+    public boolean compareBalanceIfCanceled(String currentDue, String priceOrder, String quantityOfDevices, String usersBalance) {
+        double tempCurrentDue = Integer.parseInt(currentDue);
+        double tempPriceOrder = Double.parseDouble(priceOrder);
+
         if (Integer.parseInt(quantityOfDevices) > 0) {
             if (Integer.parseInt(currentDue) > 0) {
-                logger.info("# FinanceBalance = " + getFinanceBalance().substring(1));
-                return Double.parseDouble(getFinanceBalance().substring(1)) == tempBalance1;
+                logger.info("usersBalance " + Double.parseDouble(usersBalance));
+                return Double.parseDouble(usersBalance)*(-1) == tempCurrentDue;
             } else if (Integer.parseInt(currentDue) == 0) {
                 logger.info("# FinanceBalance = " + getFinanceBalance().substring(1));
-                return Double.parseDouble(getFinanceBalance().substring(1)) == 0;
+                return Double.parseDouble(usersBalance) == tempPriceOrder;
             } else return false;
         } else return true;
 

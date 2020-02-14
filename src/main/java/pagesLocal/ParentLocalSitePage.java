@@ -19,7 +19,7 @@ public class ParentLocalSitePage {
 
     public ParentLocalSitePage(WebDriver webDriver, String expectedUrl) {
         this.webDriver = webDriver;
-        baseUrl = configProperties.base_url_local();
+        baseUrl = configProperties.url_local_site();
         this.expectedUrl = baseUrl + expectedUrl;
         PageFactory.initElements(webDriver, this);
         actionsWithOurElements = new ActionsWithOurElements(webDriver);
