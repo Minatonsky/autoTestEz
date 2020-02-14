@@ -17,31 +17,31 @@ public class SettingsPage extends ParentPage {
     private WebElement driverSettings;
 
 //    GENERAL
-    @FindBy(name = "ssn")
+    @FindBy(id = "dr_ssn")
     private WebElement ssnInput;
 
-    @FindBy(name = "ein")
+    @FindBy(id = "dr_ein")
     private WebElement einInput;
 
-    @FindBy(xpath = "//label[@for='hideEngineScoreStatus']/..//*[text()='on']")
+    @FindBy(xpath = "//*[@id='hideEngineStatuses']//*[text()='On']")
     private WebElement hideEngineScoreStatusOn;
 
-    @FindBy(xpath = "//label[@for='hideEngineScoreStatus']/..//*[text()='off']")
+    @FindBy(xpath = "//*[@id='hideEngineStatuses']//*[text()='Off']")
     private WebElement hideEngineScoreStatusOff;
 
-    @FindBy(xpath = "//label[@for='yardModeCheck']/..//*[text()='on']")
+    @FindBy(xpath = "//*[@id='dr_yardMode']//*[text()='On']")
     private WebElement yardModeCheckOn;
 
-    @FindBy(xpath = "//label[@for='yardModeCheck']/..//*[text()='off']")
+    @FindBy(xpath = "//*[@id='dr_yardMode']//*[text()='Off']")
     private WebElement yardModeCheckOff;
 
-    @FindBy(xpath = "//label[@for='ConveyanceCheck']/..//*[text()='on']")
+    @FindBy(xpath = "//*[@id='dr_conveyanceMode']//*[text()='On']")
     private WebElement conveyanceCheckOn;
 
-    @FindBy(xpath = "//label[@for='ConveyanceCheck']/..//*[text()='off']")
+    @FindBy(xpath = "//*[@id='dr_conveyanceMode']//*[text()='Off']")
     private WebElement conveyanceCheckOff;
 
-    @FindBy(xpath = "//*[@class='vue-slider-rail']")
+    @FindBy(id = "soloAobrdMPH")
     private WebElement sliderAobrd;
 
     @FindBy(id = "ezSimple")
@@ -54,82 +54,82 @@ public class SettingsPage extends ParentPage {
     private WebElement ezHardType;
 
 //    CONTACT INFO
-    @FindBy(name = "state_id")
+    @FindBy(id = "dr_cont_st")
     private WebElement state_id;
 
-    @FindBy(name = "driver_city")
+    @FindBy(id = "dr_cont_city")
     private WebElement driver_city;
 
-    @FindBy(name = "driver_address")
+    @FindBy(id = "dr_cont_addr")
     private WebElement driver_address;
 
-    @FindBy(name = "phone")
+    @FindBy(id = "dr_cont_phone")
     private WebElement phone;
 
-    @FindBy(xpath = "//label[@for='smsCheck']/..//*[text()='on']")
+    @FindBy(xpath = "//*[@id='dr_cont_sms']//*[text()='On']")
     private WebElement smsCheckOn;
 
-    @FindBy(xpath = "//label[@for='smsCheck']/..//*[text()='off']")
+    @FindBy(xpath = "//*[@id='dr_cont_sms']//*[text()='Off']")
     private WebElement smsCheckOff;
 
 //  ADMINISTRATIVE
-    @FindBy(xpath = "//label[@for='medCard']/..//input")
+    @FindBy(id = "dr_med")
     private WebElement medCardInput;
 
-    @FindBy(xpath = "//label[@for='dateBirth']/..//input")
+    @FindBy(id = "dr_birth")
     private WebElement dateBirthInput;
 
-    @FindBy(xpath = "//label[@for='HireDate']/..//input")
+    @FindBy(id = "dr_hire")
     private WebElement hireDateInput;
 
-    @FindBy(xpath = "//label[@for='TerminateDate']/..//input")
+    @FindBy(id = "dr_term_date")
     private WebElement terminateDateInput;
 
-    @FindBy(xpath = "//label[@for='PullNotice']/..//input")
+    @FindBy(id = "dr_pull")
     private WebElement pullNoticeInput;
 
-    @FindBy(xpath = "//label[@for='HazMatCheck']/..//*[text()='on']")
+    @FindBy(xpath = "//*[@id='dr_hazmat']//*[text()='On']")
     private WebElement hazMatCheckOn;
 
-    @FindBy(xpath = "//label[@for='HazMatCheck']/..//*[text()='off']")
+    @FindBy(xpath = "//*[@id='dr_hazmat']//*[text()='Off']")
     private WebElement hazMatCheckOff;
 
-    @FindBy(xpath = "//label[@for='InsuranceCheck']/..//*[text()='on']")
+    @FindBy(xpath = "//*[@id='dr_insur']//*[text()='On']")
     private WebElement InsuranceCheckOn;
 
-    @FindBy(xpath = "//label[@for='InsuranceCheck']/..//*[text()='off']")
+    @FindBy(xpath = "//*[@id='dr_insur']//*[text()='Off']")
     private WebElement InsuranceCheckOff;
 
-    @FindBy(xpath = "//label[@for='TankerCheck']/..//*[text()='on']")
+    @FindBy(xpath = "//*[@id='dr_tank']//*[text()='On']")
     private WebElement TankerCheckOn;
 
-    @FindBy(xpath = "//label[@for='TankerCheck']/..//*[text()='off']")
+    @FindBy(xpath = "//*[@id='dr_tank']//*[text()='Off']")
     private WebElement TankerCheckOff;
 
-    @FindBy(id = "Notes")
+    @FindBy(id = "dr_notes")
     private WebElement notes;
 
 //  DRIVER'S LICENSE
-    @FindBy(xpath = "//span[text()='Number']/../input")
+    @FindBy(id = "dr_lic_num")
     private WebElement numberDlInput;
 
-    @FindBy(xpath = "//span[text()='Country']/../select")
-    private WebElement countryDlValue;
-
-    @FindBy(xpath = "//*[@class='form-input form-group form-group__input-full']//span[text()='State']/../select[@name]")
+    @FindBy(id = "dr_lic_st")
     private WebElement stateDlValue;
 
-    @FindBy(xpath = "//span[text()='Expiration']/..//input")
+    @FindBy(id = "dr_lic_exp")
     private WebElement expirationInput;
 
-    @FindBy(css = ".btn")
+    @FindBy(id = "dr_lic_exp")
+    private WebElement countryDlValue;
+
+    @FindBy(xpath = "//*[text()='Save']")
     private WebElement buttonSave;
 
     public void goToDriverSettings() {waitABit(2);actionsWithOurElements.clickOnElement(driverSettings); }
 
 //    GENERAL
-    public void enterSsn(String ssn) {actionsWithOurElements.clearAndEnterTextToElement(ssnInput, ssn); }
-    public void enterEin(String ein) {actionsWithOurElements.clearAndEnterTextToElement(einInput, ein); }
+    public void enterSsn(String ssn) {actionsWithOurElements.enterTextToElement(ssnInput, ssn); }
+    public void enterEin(String ein) {actionsWithOurElements.enterTextToElement(einInput, ein); }
     public void checkOnEngineScoreStatus(){
         actionsWithOurElements.clickJsOnElement(hideEngineScoreStatusOn);
     }
@@ -149,7 +149,7 @@ public class SettingsPage extends ParentPage {
         actionsWithOurElements.clickJsOnElement(conveyanceCheckOff);
     }
     public void moveSliderAobrd(int value){
-        actionsWithOurElements.sliderMove("//*[@class='vue-slider-rail']", value);
+        actionsWithOurElements.sliderMove("//*[@id='soloAobrdMPH']", value);
     }
     public void clickOnSmartScannerType(){actionsWithOurElements.clickJsOnElement(ezSmartType);}
     public void clickOnSimpleScannerType(){actionsWithOurElements.clickJsOnElement(ezSimpleType);}

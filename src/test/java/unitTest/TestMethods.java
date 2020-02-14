@@ -177,14 +177,15 @@ public class TestMethods {
 
     @Test
     public void testFor() throws SQLException, IOException, ClassNotFoundException {
-        int monthToMonthTariff = 3;
-        String geometricsMonthlyTariffId = "9";
-        int tempTariffId = monthToMonthTariff % 2;
-        int tempTariffId2 = monthToMonthTariff - tempTariffId;
-        System.out.println(tempTariffId + " - " + tempTariffId2);
+        int currentDueFromDB = Integer.parseInt("-10000.00");
+        System.out.println(currentDueFromDB);
+
+        String test = Integer.toString(currentDueFromDB).replaceAll("\\D+","");
+        System.out.println(test);
     }
 
     @Test
+
     public void getAmountEzDueMonthToMonth() throws SQLException, IOException, ClassNotFoundException {
         String soloOrFleetString = "531";
         String carrierId = "carrierId";

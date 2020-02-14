@@ -15,40 +15,43 @@ public class DashboardPage extends ParentPage {
     private WebElement menuDash;
 
     @FindBy(xpath = ".//a[@href='/dash/eld/']")
-    private WebElement menuPageELD;
+    private WebElement pageELD;
 
     @FindBy(xpath = ".//a[@href='/dash/']")
-    private WebElement menuPageStatus;
+    private WebElement pageStatus;
 
     @FindBy(xpath = ".//a[@href='/dash/reports/ifta/']")
-    private WebElement menuPageReports;
+    private WebElement pageReports;
 
     @FindBy(xpath = ".//a[@href='/dash/trucks/']")
-    private WebElement menuPageDvir;
+    private WebElement pageDvir;
 
     @FindBy(xpath = ".//a[@href='/dash/live_scan/']")
-    private WebElement menuPageDocuments;
+    private WebElement pageDocuments;
 
     @FindBy(xpath = ".//a[@href='/dash/equipment/']")
-    private WebElement menuPageEquipment;
+    private WebElement pageEquipment;
 
     @FindBy(xpath = ".//a[@href='/dash/finances/']")
-    private WebElement menuPageFinances;
+    private WebElement pageFinances;
 
     @FindBy(xpath = ".//a[@href='/dash/ezchat/']")
-    private WebElement menuPageEzChat;
+    private WebElement pageEzChat;
 
     @FindBy(xpath = ".//a[@href='/dash/calendar/']")
-    private WebElement menuPageCalendar;
+    private WebElement pageCalendar;
 
     @FindBy(xpath = ".//a[@href='/dash/video_tutorial/']")
-    private WebElement menuPageHelp;
+    private WebElement pageHelp;
 
     @FindBy(xpath = ".//a[@href='/dash/settings/account/']")
-    private WebElement menuPageSettings;
+    private WebElement pageSettings;
 
     @FindBy(xpath = ".//a[@href='/dash/drivers/']")
-    private WebElement menuPageLogs;
+    private WebElement pageLogs;
+
+    @FindBy(xpath = ".//a[@href='/dash/fleet/equipment/']")
+    private WebElement pageFleet;
 
     @FindBy(xpath = ".//i[@class='fa fa-angle-double-left minimize-arrow']")
     private WebElement menuSizeButton;
@@ -68,33 +71,53 @@ public class DashboardPage extends ParentPage {
         actionsWithOurElements.clickOnElement(menuDash);
     }
 
-    public void clickOnMenuPageStatus(){
-        actionsWithOurElements.clickOnElement(menuPageStatus);
+    public void goToStatusPage(){
+        waitABit(2);
+        actionsWithOurElements.clickOnElement(pageStatus);
     }
-    public void clickOnMenuPageReports(){
-        actionsWithOurElements.clickOnElement(menuPageReports);
+    public void goToFleetPage(){
+        waitABit(2);
+        actionsWithOurElements.clickOnElement(pageFleet);
     }
-    public void clickOnMenuPageLogs(){
-        actionsWithOurElements.clickOnElement(menuPageLogs);
+    public void goToReportsPage(){
+        waitABit(2);
+        actionsWithOurElements.clickOnElement(pageReports);
     }
-    public void clickOnMenuPageDVIR(){
-        actionsWithOurElements.clickOnElement(menuPageDvir);
+    public void goToLogsPage(){
+        waitABit(2);
+        actionsWithOurElements.clickOnElement(pageLogs);
     }
-    public void clickOnMenuPageDocuments(){
-        actionsWithOurElements.clickOnElement(menuPageDocuments);
+    public void goToDVIRPage(){
+        waitABit(2);
+        actionsWithOurElements.clickOnElement(pageDvir);
     }
-    public void clickOnMenuPageEquipment(){actionsWithOurElements.clickOnElement(menuPageEquipment);}
-    public void clickOnMenuPageEzChat(){actionsWithOurElements.clickOnElement(menuPageEzChat);}
-    public void clickOnMenuPageELD(){
-        actionsWithOurElements.clickOnElement(menuPageELD);
+    public void goToDocumentsPage(){
+        waitABit(2);
+        actionsWithOurElements.clickOnElement(pageDocuments);
     }
-    public void clickOnMenuPageFinances(){
-        actionsWithOurElements.clickOnElement(menuPageFinances);
+    public void goToEquipmentPage(){
+        waitABit(2);
+        actionsWithOurElements.clickOnElement(pageEquipment);}
+    public void goToEzChatPage(){
+        waitABit(2);
+        actionsWithOurElements.clickOnElement(pageEzChat);}
+    public void goToEldPage(){
+        waitABit(2);
+        actionsWithOurElements.clickOnElement(pageELD);
     }
-    public void clickOnMenuPageCalendar(){actionsWithOurElements.clickOnElement(menuPageCalendar);}
-    public void clickOnMenuPageHelpAndTraining(){actionsWithOurElements.clickOnElement(menuPageHelp);}
-    public void clickOnMenuPageSettings(){
-        actionsWithOurElements.clickOnElement(menuPageSettings);
+    public void goToFinancesPage(){
+        waitABit(2);
+        actionsWithOurElements.clickOnElement(pageFinances);
+    }
+    public void goToCalendarPage(){
+        waitABit(2);
+        actionsWithOurElements.clickOnElement(pageCalendar);}
+    public void goToHelpAndTrainingPage(){
+        waitABit(2);
+        actionsWithOurElements.clickOnElement(pageHelp);}
+    public void goToSettingPage(){
+        waitABit(2);
+        actionsWithOurElements.clickOnElement(pageSettings);
     }
 
     public void clickMenuSizeButton(){
@@ -114,66 +137,7 @@ public class DashboardPage extends ParentPage {
         waitABit(3);
         clickMenuSizeButton();
     }
-    @Step
-    public void goToStatusPage(){
-        waitABit(2);
-        clickOnMenuPageStatus();
-    }
-    @Step
-    public void goToReportsPage(){
-        waitABit(2);
-        clickOnMenuPageReports();
-    }
-    @Step
-    public void goToDVIRPage(){
-        waitABit(2);
-        clickOnMenuPageDVIR();
-    }
-    @Step
-    public void goToDocumentsPage(){
-        waitABit(2);
-        clickOnMenuPageDocuments();
-    }
-    @Step
-    public void goToEzChatPage(){
-        waitABit(2);
-        clickOnMenuPageEzChat();
-    }
-    @Step
-    public void goToCalendarPage(){
-        waitABit(2);
-        clickOnMenuPageCalendar();
-    }
-    @Step
-    public void goToHelpAndTrainingPage(){
-        waitABit(2);
-        clickOnMenuPageHelpAndTraining();
-    }
-    @Step
-    public void goToEldPage(){
-        waitABit(2);
-        clickOnMenuPageELD();
-    }
-    @Step
-    public void goToFinancesPage(){
-        waitABit(2);
-        clickOnMenuPageFinances();
-    }
-    @Step
-    public void goToSettingPage(){
-        waitABit(2);
-        clickOnMenuPageSettings();
-    }
-    @Step
-    public void goToEquipmentPage(){
-        waitABit(2);
-        clickOnMenuPageEquipment();
-    }
-    @Step
-    public void goToLogsPage(){
-        waitABit(2);
-        clickOnMenuPageLogs();
-    }
+
     @Step
     public void closePhoneVerificationPopUp(){
         if (ifPhoneVerificationPopUpExist() == true){

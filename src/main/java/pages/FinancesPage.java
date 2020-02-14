@@ -36,6 +36,30 @@ public class FinancesPage extends ParentPage {
     @FindBy(xpath = "//a[@href='/dash/finances/finances_cards/']")
     private WebElement cardsPage;
 
+    @FindBy(xpath = "//button[@data-tutorial='addCreditCard']")
+    private WebElement addCard;
+
+    @FindBy(id = "creditCardNumber")
+    private WebElement cardInput;
+
+    @FindBy(id="cvv")
+    private WebElement cvvInput;
+
+    @FindBy(id="expiryDateYY")
+    private WebElement expiryDateYYInput;
+
+    @FindBy(id="expiryDateMM")
+    private WebElement expiryDateMMInput;
+
+    @FindBy(xpath = ".//button[@type='submit']")
+    private WebElement createButton;
+
+    @FindBy(xpath = ".//*[@id='authorizeAddCardConfirmModal']//button[@type='submit']")
+    private WebElement createButtonConfirm;
+
+    @FindBy(xpath = "//button[@data-val='1']")
+    private WebElement primaryCard;
+
     public String getFinanceBalance(){
         return financeBalanceText.getText();
     }
@@ -96,6 +120,14 @@ public class FinancesPage extends ParentPage {
     public void goToRefunds(){ waitABit(2);actionsWithOurElements.clickOnElement(refundsPage);}
     public void goToOrders(){waitABit(2);actionsWithOurElements.clickOnElement(ordersPage);}
     public void goToCards(){waitABit(2);actionsWithOurElements.clickOnElement(cardsPage);}
+    public void clickOnAddCard(){actionsWithOurElements.clickOnElement(addCard);}
+    public void enterNumberCard(String number){actionsWithOurElements.enterTextToElement(cardInput, number);}
+    public void enterCvv(String cvv){actionsWithOurElements.enterTextToElement(cvvInput, cvv);}
+    public void enterExpiryDateYY(String expiryDateYY){actionsWithOurElements.enterTextToElement(expiryDateYYInput, expiryDateYY);}
+    public void enterExpiryDateMM(String expiryDateMM){actionsWithOurElements.enterTextToElement(expiryDateMMInput, expiryDateMM);}
+    public void clickOnCreateButton(){actionsWithOurElements.clickOnElement(createButton);}
+    public void clickOnCreateButtonConfirm(){actionsWithOurElements.clickOnElement(createButtonConfirm);}
+    public void clickOnPrimaryCard(){actionsWithOurElements.clickOnElement(primaryCard);}
 
 
 }
