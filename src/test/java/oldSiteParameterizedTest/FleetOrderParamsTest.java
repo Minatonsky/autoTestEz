@@ -2,7 +2,6 @@ package oldSiteParameterizedTest;
 
 import libs.SpreadsheetData;
 import org.junit.Before;
-import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
@@ -120,7 +119,6 @@ public class FleetOrderParamsTest extends ParentTest {
 
     }
     @Test
-    @Ignore
     public void managerCanceledOrder() throws SQLException, IOException, ClassNotFoundException {
 
         tearDown();
@@ -144,7 +142,6 @@ public class FleetOrderParamsTest extends ParentTest {
     }
 
     @Test
-    @Ignore
     public void managerCompletedOrder() throws SQLException, IOException, ClassNotFoundException {
         tearDown();
         setUp();

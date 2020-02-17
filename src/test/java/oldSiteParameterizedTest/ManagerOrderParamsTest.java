@@ -3,7 +3,6 @@ package oldSiteParameterizedTest;
 import libs.ExcelDriver;
 import libs.SpreadsheetData;
 import org.junit.Before;
-import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
@@ -66,7 +65,6 @@ public class ManagerOrderParamsTest extends ParentTest {
 
     }
     @Test
-    @Ignore
     public void managerDoOrderSoloAgree() throws IOException, SQLException, ClassNotFoundException {
         eldPage.checkAndCancelNewOrderBeforeTest(userIdString, dataSoloId.get("soloId").toString());
         String idLastOrderBeforeTest = utilsForDB.getLastOrderId(userIdString, dataSoloId.get("soloId").toString());
@@ -147,7 +145,6 @@ public class ManagerOrderParamsTest extends ParentTest {
 
     }
     @Test
-    @Ignore
     public void managerDoOrderSoloCanceled() throws IOException, SQLException, ClassNotFoundException {
         eldPage.checkAndCancelNewOrderBeforeTest(userIdString, dataSoloId.get("soloId").toString());
         String idLastOrderBeforeTest = utilsForDB.getLastOrderId(userIdString, dataSoloId.get("soloId").toString());
@@ -207,7 +204,6 @@ public class ManagerOrderParamsTest extends ParentTest {
 
     }
     @Test
-    @Ignore
     public void managerDoOrderFleetAgree() throws IOException, InterruptedException, SQLException, ClassNotFoundException {
         eldPage.checkAndCancelNewOrderBeforeTest(fleetString, dataFleetId.get("fleetId").toString());
         String idLastOrderBeforeTest = utilsForDB.getLastOrderId(fleetString, dataFleetId.get("fleetId").toString());
@@ -285,7 +281,6 @@ public class ManagerOrderParamsTest extends ParentTest {
 
     }
     @Test
-    @Ignore
     public void managerDoOrderFleetCanceled() throws IOException, InterruptedException, SQLException, ClassNotFoundException {
         eldPage.checkAndCancelNewOrderBeforeTest(fleetString, dataFleetId.get("fleetId").toString());
         String idLastOrderBeforeTest = utilsForDB.getLastOrderId(fleetString, dataFleetId.get("fleetId").toString());

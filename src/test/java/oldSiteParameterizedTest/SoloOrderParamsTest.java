@@ -3,7 +3,6 @@ package oldSiteParameterizedTest;
 import libs.ExcelDriver;
 import libs.SpreadsheetData;
 import org.junit.Before;
-import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
@@ -101,7 +100,6 @@ public class SoloOrderParamsTest extends ParentTest { String  typeOfDevices, qua
         checkAC("Balance is not correct", financesPage.compareBalance(currentDue, dueForLastOrder, userBalance), true);
     }
     @Test
-    @Ignore
     public void cancelDevicesBySolo() throws SQLException, IOException, ClassNotFoundException {
 
         String idLastOrderAfterTest = utilsForDB.getLastOrderId(userIdString, dataSoloId.get("soloId").toString());
@@ -117,7 +115,6 @@ public class SoloOrderParamsTest extends ParentTest { String  typeOfDevices, qua
 
     }
     @Test
-    @Ignore
     public void managerCanceledOrder() throws SQLException, IOException, ClassNotFoundException {
 
         tearDown();
@@ -142,7 +139,6 @@ public class SoloOrderParamsTest extends ParentTest { String  typeOfDevices, qua
     }
 
     @Test
-    @Ignore
     public void managerCompletedOrder() throws SQLException, IOException, ClassNotFoundException {
 
         tearDown();
