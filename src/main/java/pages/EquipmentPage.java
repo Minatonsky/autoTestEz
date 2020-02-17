@@ -4,6 +4,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+import static libs.Utils.waitABit;
+
 public class EquipmentPage extends ParentPage {
     public EquipmentPage(WebDriver webDriver) {
         super(webDriver, "/dash/equipment/");
@@ -11,79 +13,91 @@ public class EquipmentPage extends ParentPage {
 
     @FindBy(xpath = "//button[text() = 'Add Truck']")
     private WebElement addTruckButton;
+
+    @FindBy(xpath = "//button[text() = 'Add Trailer']")
+    private WebElement addTrailerButton;
+
+    @FindBy(xpath = "//*[@class='ui-state-default ui-state-highlight']")
+    private WebElement dateCalendar;
+
+    @FindBy(xpath = "//button[text() = 'Add Unit']")
+    private WebElement addUnit;
+
 //GENERAL
-    @FindBy(name = "name")
+    @FindBy(id = "edit_tr_Name")
     private WebElement unitInput;
 
-    @FindBy(name = "owner")
+    @FindBy(id = "edit_tr_Owner")
     private WebElement ownerInput;
 
-    @FindBy(name = "year")
+    @FindBy(id = "edit_tr_Year")
     private WebElement yearInput;
 
-    @FindBy(name = "type")
+    @FindBy(id = "edit_tr_Type")
     private WebElement typeValue;
 
-    @FindBy(name = "vin")
+    @FindBy(id = "edit_tr_VIN")
     private WebElement vinInput;
 
-    @FindBy(name = "plate")
+    @FindBy(id = "edit_tr_Plate")
     private WebElement plateInput;
 
-    @FindBy(name = "state")
+    @FindBy(id = "edit_tr_State")
     private WebElement stateValue;
 
 //Parameters
-    @FindBy(name = "tire_size")
+    @FindBy(id = "edit_tr_TireSize")
     private WebElement tire_sizeInput;
 
-    @FindBy(name = "length")
+    @FindBy(id = "edit_tr_Length")
     private WebElement lengthInput;
 
-    @FindBy(name = "fuel")
+    @FindBy(id = "edit_tr_Fuel")
     private WebElement fuelInput;
 
-    @FindBy(name = "axel")
+    @FindBy(id = "edit_tr_Axel")
     private WebElement axelInput;
 
-    @FindBy(name = "make")
+    @FindBy(id = "edit_tr_Make")
     private WebElement makeInput;
 
-    @FindBy(name = "model")
+    @FindBy(id = "edit_tr_Model")
     private WebElement modelInput;
 
-    @FindBy(name = "gross_weight")
+    @FindBy(id = "edit_tr_GrossWeight")
     private WebElement gross_weightInput;
 
-    @FindBy(name = "unland_weight")
+    @FindBy(id = "edit_tr_UnlandWeight")
     private WebElement unland_weightInput;
 
 //Others
-    @FindBy(name = "color")
+    @FindBy(id = "edit_tr_Color")
     private WebElement colorInput;
 
-    @FindBy(name = "ny_cert")
+    @FindBy(id = "edit_tr_NYCert")
     private WebElement ny_certInput;
 
-    @FindBy(name = "inspection_due")
+    @FindBy(id = "edit_tr_InspectionDue")
     private WebElement inspection_dueInput;
 
-    @FindBy(name = "ninety_day_exp")
+    @FindBy(id = "edit_tr_90DayExp")
     private WebElement ninety_day_expInput;
 
-    @FindBy(name = "pro_rate_exp")
+    @FindBy(id = "edit_tr_ProRateExp")
     private WebElement pro_rate_expInput;
 
-    @FindBy(name = "exp_date")
+    @FindBy(id = "edit_tr_ExpDate")
     private WebElement exp_dateInput;
 
     @FindBy(id = "checkboxTruckState")
     private WebElement checkboxTruckState;
 
-    @FindBy(xpath = "//button[@type= 'submit']")
+    @FindBy(xpath = "//button[text() = 'Add']")
     private WebElement submitButton;
 
     public void clickOnAddTruckButton(){actionsWithOurElements.clickOnElement(addTruckButton);}
+    public void clickOnAddTrailerButton(){actionsWithOurElements.clickOnElement(addTrailerButton);}
+    public void clickOnAddUnit(){actionsWithOurElements.clickOnElement(addUnit);}
 //    General
     public void enterUnitName(String unitName){actionsWithOurElements.enterTextToElement(unitInput, unitName);}
     public void enterOwner(String owner){actionsWithOurElements.enterTextToElement(ownerInput, owner);}
@@ -109,5 +123,8 @@ public class EquipmentPage extends ParentPage {
     public void enterProRate(String proRateExp){actionsWithOurElements.enterTextToElement(pro_rate_expInput, proRateExp);}
     public void enterExpDate(String expDate){actionsWithOurElements.enterTextToElement(exp_dateInput, expDate);}
     public void clickOnActive(){actionsWithOurElements.clickJsOnElement(checkboxTruckState);}
-    public void clickOnSubmit(){actionsWithOurElements.clickOnElement(submitButton);}
+    public void clickOnSubmit(){waitABit(3);actionsWithOurElements.clickOnElement(submitButton);waitABit(3);}
+    public void clickOnBlankArea(){actionsWithOurElements.clickOnBlankArea();}
+
+
 }

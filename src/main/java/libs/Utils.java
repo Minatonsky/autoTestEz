@@ -1,5 +1,6 @@
 package libs;
 
+import com.mifmif.common.regex.Generex;
 import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.OutputType;
@@ -7,7 +8,10 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 
 import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.sql.SQLException;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
@@ -53,7 +57,6 @@ public class Utils {
         }
     }
 
-
     /**
      * Method returned SystemDateAndTime In Format yyyy-MM-dd_HH-mm-ss
      * @return
@@ -96,16 +99,19 @@ public class Utils {
         return result;
 
     }
+
     public static String getDateRandom() {
         int hundredYears = 100 * 365;
         return LocalDate.ofEpochDay(ThreadLocalRandom
                 .current().nextInt(-hundredYears, hundredYears)).toString();
     }
+
     public static int genRandomNumberBetweenTwoValues(int low, int high) throws SQLException, IOException, ClassNotFoundException {
         Random r = new Random();
         int result = r.nextInt(high-low) + low;
         return result;
     }
+
     public static String genRandomState(){
         String[] arr={"AL", "AK", "AZ", "AR", "CA", "CO", "CT", "DE", "FL", "GA", "HI", "ID", "IL", "IN", "IA", "KS", "KY", "LA", "ME", "MD", "MA", "MI", "MN", "MS", "MO", "MT", "NE", "NV",
                 "NH", "NJ", "NM", "NY", "NC", "ND", "OH", "OK", "OR", "PA", "RI", "SC", "SD", "TN", "TX", "UT", "VT", "VA", "WA", "WV", "WI", "WY", "AB", "BC", "MB", "NB", "NL", "NS", "NT", "NU",
@@ -115,7 +121,36 @@ public class Utils {
         return arr[randomNumber];
     }
 
+    public static String genRandomDataByRegex(String regEx) throws SQLException, IOException, ClassNotFoundException {
+        Generex generex = new Generex(regEx);
+        String randomStr = generex.random();
+        return randomStr;
 
+// generate the second String in lexicographical order that matches the given Regex.
+//        String secondString = generex.getMatchedString(2);
+//        System.out.println(secondString);
+
+// Generate all String that matches the given Regex.
+//        List<String> matchedStrs = generex.getAllMatchedStrings();
+
+// Using Generex iterator
+//        Iterator iterator = generex.iterator();
+//        while (iterator.hasNext()) {
+//            System.out.print(iterator.next() + " ");
+//        }
+    }
+    public static void createAndWriteStringToFile(File file, String data) throws IOException {
+        file.createNewFile();
+        FileWriter writer = new FileWriter(file);
+        writer.write(data);
+        writer.flush();
+        writer.close();
+    }
+    public static String reedFile(String bearerToken) throws IOException {
+        String content;
+        content = new String(Files.readAllBytes(Paths.get(bearerToken)));
+        return content;
+    }
 
 
 }

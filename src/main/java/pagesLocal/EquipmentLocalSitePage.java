@@ -4,8 +4,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-import java.util.Random;
-
 public class EquipmentLocalSitePage extends ParentLocalSitePage {
     public EquipmentLocalSitePage(WebDriver webDriver) {
         super(webDriver, "/dash/equipment/");
@@ -185,11 +183,5 @@ public class EquipmentLocalSitePage extends ParentLocalSitePage {
     public void clickSaveButton(){actionsWithOurElements.clickOnElement(saveReminderButton);}
     public void enterMiles(String countMiles){actionsWithOurElements.enterTextToElement(milesInput, countMiles);}
 
-    public String genRandomFuelType(){
-        String[] arr={"Gasoline", "Diesel", "Gasohol", "Propane", "LNG", "CNG", "Ethanol", "Methanol", "E-85", "M-85", "A55", "Biodiesel"};
-        Random r=new Random();
-        int randomNumber=r.nextInt(arr.length);
-        return arr[randomNumber];
-    }
 
 }

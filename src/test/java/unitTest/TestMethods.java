@@ -1,5 +1,6 @@
 package unitTest;
 
+import com.mifmif.common.regex.Generex;
 import libs.UtilsForDB;
 import org.json.JSONObject;
 import org.junit.Test;
@@ -11,12 +12,11 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.Period;
 import java.time.ZoneOffset;
+import java.time.format.DateTimeFormatter;
 import java.time.temporal.ChronoUnit;
 import java.time.temporal.TemporalAdjusters;
 import java.util.List;
 import java.util.logging.Logger;
-
-import static libs.Utils.genRandomNumberBetweenTwoValues;
 // This test page is not using on test project, it just for check some methods
 
 public class TestMethods {
@@ -27,8 +27,9 @@ public class TestMethods {
 
     @Test
     public void testDBSetCurrentDueForFleet() throws SQLException, IOException, ClassNotFoundException {
-        UtilsForDB utilsForDB = new UtilsForDB();
-        utilsForDB.setCurrentDueForFleet("-1000", "518");
+        LocalDateTime yesterday = LocalDateTime.parse(LocalDateTime.now().minusDays(1).toString());
+        String startYesterday = yesterday.format(DateTimeFormatter.ofPattern("yyyy-MM-dd"));
+        System.out.println(startYesterday);
     }
 
     @Test
@@ -176,14 +177,15 @@ public class TestMethods {
 
     @Test
     public void testFor() throws SQLException, IOException, ClassNotFoundException {
-        int monthToMonthTariff = 3;
-        String geometricsMonthlyTariffId = "9";
-        int tempTariffId = monthToMonthTariff % 2;
-        int tempTariffId2 = monthToMonthTariff - tempTariffId;
-        System.out.println(tempTariffId + " - " + tempTariffId2);
+        int currentDueFromDB = Integer.parseInt("-10000.00");
+        System.out.println(currentDueFromDB);
+
+        String test = Integer.toString(currentDueFromDB).replaceAll("\\D+","");
+        System.out.println(test);
     }
 
     @Test
+
     public void getAmountEzDueMonthToMonth() throws SQLException, IOException, ClassNotFoundException {
         String soloOrFleetString = "531";
         String carrierId = "carrierId";
@@ -196,8 +198,24 @@ public class TestMethods {
 
     @Test
     public void test2() throws SQLException, IOException, ClassNotFoundException {
-        int year = genRandomNumberBetweenTwoValues(1000, 2020);
-            System.out.println(year);
+        Generex generex = new Generex("[A-Z]{1}[A-Z0-9]{11}|[A-Z]{7}[A-Z0-9]{5}");
+//  "1-7 Alpha + any combination of Alpha, Numeric, and * for a total of 12 characters"
+
+// generate the second String in lexicographical order that matches the given Regex.
+//        String secondString = generex.getMatchedString(2);
+//        System.out.println(secondString);// it print '0b'
+
+// Generate all String that matches the given Regex.
+//        List<String> matchedStrs = generex.getAllMatchedStrings();
+//        System.out.println(matchedStrs);
+// Using Generex iterator
+//        Iterator iterator = generex.iterator();
+//        while (iterator.hasNext()) {
+//            System.out.print(iterator.next() + " ");
+//        }
+
+        String randomStr = generex.random();
+        System.out.println(randomStr);
 
     }
 

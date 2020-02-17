@@ -1,13 +1,13 @@
 package chargeTest;
 
 import org.junit.Test;
-import parentTest.ParentChargeTest;
+import parentTest.ParentTest;
 
 import java.io.IOException;
 import java.sql.SQLException;
 import java.util.List;
 
-public class ChargeFleetSoloTest extends ParentChargeTest{
+public class ChargeFleetSoloTest extends ParentTest {
     String monthIOSXTariffId = "0";
     String oneYearIOSXTariffId = "1";
     String twoYearsIOSXTariffId = "2";

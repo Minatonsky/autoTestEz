@@ -7,8 +7,9 @@ public interface ConfigProperties extends Config {
 	long TIME_FOR_EXPLICIT_WAIT_LOW();
 	long TIME_FOR_EXPLICIT_WAIT_HIGHT();
 
-	String base_url();
-	String base_url_local();
+	String url_dev_ezlogz();
+	String url_local_site();
+	String url_app_ezlogz();
 	String DATA_FILE();
 	String DATA_FILE_PATH();
 	String Oracle();

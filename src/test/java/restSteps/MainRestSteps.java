@@ -10,12 +10,8 @@ import org.json.simple.parser.ParseException;
 import org.junit.Assert;
 
 import javax.json.*;
-import java.io.File;
-import java.io.FileWriter;
 import java.io.IOException;
 import java.io.StringReader;
-import java.nio.file.Files;
-import java.nio.file.Paths;
 
 public class MainRestSteps {
 
@@ -23,18 +19,7 @@ public class MainRestSteps {
     final private String baseUrlPrivat = "http://api.privatbank.ua";
     final private String baseUrl = "https://dev.api.ezlogz.com";
 
-    public void createAndWriteStringToFile(File file, String data) throws IOException {
-        file.createNewFile();
-        FileWriter writer = new FileWriter(file);
-        writer.write(data);
-        writer.flush();
-        writer.close();
-    }
-    public String reedFile(String bearerToken) throws IOException {
-        String content;
-        content = new String(Files.readAllBytes(Paths.get(bearerToken)));
-        return content;
-    }
+
     public RequestSpecification setBaseUrlForAuthorization() {
         RestAssured.baseURI = baseUrl + "/api/login";
         return RestAssured.given();

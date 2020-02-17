@@ -448,6 +448,20 @@ public class UtilsForDB {
         dBMySQL.changeTable("UPDATE users SET `banned` = 0 WHERE id = " + soloId + ";");
         dBMySQL.quit();
     }
+    @Step
+    public String getUserIdByEmail(String email) throws SQLException, IOException, ClassNotFoundException {
+        dBMySQL = new Database("MySQL_PADB_DB", "MySQL");
+        String tempCurrentDue = dBMySQL.selectValue("SELECT id FROM users WHERE email = '" + email + "';");
+        dBMySQL.quit();
+        return tempCurrentDue;
+    }
+    @Step
+    public String getFleetIdByEmail(String email) throws SQLException, IOException, ClassNotFoundException {
+        dBMySQL = new Database("MySQL_PADB_DB", "MySQL");
+        String tempCurrentDue = dBMySQL.selectValue("SELECT carrierId FROM users WHERE email = '" + email + "';");
+        dBMySQL.quit();
+        return tempCurrentDue;
+    }
 
 //    driver_defaulters
 
@@ -506,17 +520,17 @@ public class UtilsForDB {
 
 
     @Step
-    public List<ArrayList> getDataEquipment(String userId, String idEquipment) throws SQLException, IOException, ClassNotFoundException {
+    public List<ArrayList> getDataEquipment(String carrierUser, String userId, String idEquipment) throws SQLException, IOException, ClassNotFoundException {
         dBMySQL = new Database("MySQL_PADB_DB", "MySQL");
         List<ArrayList> tempData = dBMySQL.selectTable("SELECT e.id, e.truckTrailer, e.Notes, e.Name, e.Owner, e.Year, e.`Type`, e.TireSize, e.Fuel, e.Axel, e.Color, e.Make, e.Model, e.VIN, e.GrossWeight, " +
-                "e.UnlandWeight, e.Plate, e.State, e.NYCert, e.InspectionDue, e.`90DayExp`, e.ProRateExp, e.ExpDate, e.isActive, e.Length FROM equipment e WHERE e.userId = " + userId + " and e.id = '" + idEquipment + "' ORDER BY e.id DESC LIMIT 1;");
+                "e.UnlandWeight, e.Plate, e.State, e.NYCert, e.InspectionDue, e.`90DayExp`, e.ProRateExp, e.ExpDate, e.isActive, e.Length FROM equipment e WHERE " + carrierUser + " = " + userId + " and e.id = '" + idEquipment + "' ORDER BY e.id DESC LIMIT 1;");
         dBMySQL.quit();
         return tempData;
     }
     @Step
-    public String getEquipmentId(String soloId, String equipName) throws SQLException, IOException, ClassNotFoundException {
+    public String getEquipmentId(String carrierUser, String soloId, String equipName) throws SQLException, IOException, ClassNotFoundException {
         dBMySQL = new Database("MySQL_PADB_DB", "MySQL");
-        String tempData = dBMySQL.selectValue("SELECT e.id FROM equipment e WHERE e.userId = " + soloId + " AND e.Name = '" + equipName + "' ORDER BY e.id DESC LIMIT 1;");
+        String tempData = dBMySQL.selectValue("SELECT e.id FROM equipment e WHERE " + carrierUser + " = " + soloId + " AND e.Name = '" + equipName + "' ORDER BY e.id DESC LIMIT 1;");
         dBMySQL.quit();
         return tempData;
     }
@@ -528,13 +542,7 @@ public class UtilsForDB {
         dBMySQL.quit();
         return tempCurrentDue;
     }
-    @Step
-    public String getUserIdByEmail(String email) throws SQLException, IOException, ClassNotFoundException {
-        dBMySQL = new Database("MySQL_PADB_DB", "MySQL");
-        String tempCurrentDue = dBMySQL.selectValue("SELECT id FROM users WHERE email = '" + email + "';");
-        dBMySQL.quit();
-        return tempCurrentDue;
-    }
+
     @Step
     public String getDocInfoData(String docId, String infoName) throws SQLException, IOException, ClassNotFoundException {
         dBMySQL = new Database("MySQL_PADB_DB", "MySQL");
@@ -579,6 +587,25 @@ public class UtilsForDB {
         List<ArrayList> tempData = dBMySQL.selectTable("SELECT e.`type`, e.`status`, case when e.remindDateTime = 0 then '0' ELSE e.remindDateTime end as remindDateTime, e.term, e.odometerStart, e.currentOdometer, e.whatSend FROM equipment_reminder e WHERE e.equipId = " + id + " AND e.name = '" + name + "';");
         dBMySQL.quit();
         return tempData;
+    }
+    @Step
+    public void deleteStatuses(String userId) throws SQLException, IOException, ClassNotFoundException {
+        dBMySQL = new Database("MySQL_PADB_DB", "MySQL");
+        dBMySQL.changeTable("DELETE FROM status WHERE userId = " + userId + " AND DATETIME != '2019-11-14 00:00:00';");
+        dBMySQL.quit();
+    }
+    @Step
+    public void updateLastStatus(String userId) throws SQLException, IOException, ClassNotFoundException {
+        dBMySQL = new Database("MySQL_PADB_DB", "MySQL");
+        dBMySQL.changeTable("UPDATE driver_last_status d SET d.dateTime = '2019-11-14 00:00:00', d.dateTimeUtc = '2019-11-14 05:00:00', d.drive = 39600, d.shift = 50400, d.cycle = 216000, d.eight = 28800, d.shiftWork = 9999999, d.restart34 = 0 WHERE d.userId = " + userId + ";");
+        dBMySQL.quit();
+    }
+    @Step
+    public boolean isCurrentCardSame(String userId, String cardNumber) throws SQLException, IOException, ClassNotFoundException {
+        dBMySQL = new Database("MySQL_PADB_DB", "MySQL");
+        boolean tempResult = dBMySQL.isRowPresent("SELECT * FROM authorize_clients a WHERE a.userId = " + userId + " AND a.currentCard = 1 AND a.creditCard = '" + cardNumber + "';");
+        dBMySQL.quit();
+        return tempResult;
     }
 
 }
