@@ -2,9 +2,12 @@ package pages;
 
 import io.qameta.allure.Step;
 import org.junit.Assert;
+import org.openqa.selenium.Cookie;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+
+import java.util.Date;
 
 public class LoginPage extends ParentPage {
 
@@ -65,6 +68,16 @@ public class LoginPage extends ParentPage {
         enterLogin(login);
         enterPass(passWord);
         clickOnSubmitButton();
-
+        openDashBoardMenuByCookies();
+    }
+    public void openDashBoardMenuByCookies(){
+        Cookie cookie = new Cookie.Builder("minimize-menu", "1")
+                .domain("dev.ezlogz.com")
+                .expiresOn(new Date(2021, 10, 28))
+                .isHttpOnly(true)
+                .isSecure(false)
+                .path("/")
+                .build();
+        webDriver.manage().addCookie(cookie);
     }
 }

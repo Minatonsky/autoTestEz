@@ -57,7 +57,6 @@ public class SoloOrderParamsTest extends ParentTest { String  typeOfDevices, qua
         utilsForDB.setCurrentDueForSolo(currentDue, dataSoloId.get("soloId").toString());
 
         loginPage.userValidLogIn(dataForSoloValidLogIn.get("login").toString(),dataForSoloValidLogIn.get("pass").toString());
-        dashboardPage.openMenuDash();
         dashboardPage.goToEldPage();
         eldPage.clickOnOrderELD();
         modalEldPage.enterPersonalData(personalDataForEldOrder.get("deliveryState").toString(), personalDataForEldOrder.get("firstName").toString(), personalDataForEldOrder.get("lastName").toString(), personalDataForEldOrder.get("phone").toString(), personalDataForEldOrder.get("addressLine").toString(), personalDataForEldOrder.get("aptNumber").toString(), personalDataForEldOrder.get("deliveryCity").toString(), personalDataForEldOrder.get("zipCode").toString());
@@ -123,7 +122,6 @@ public class SoloOrderParamsTest extends ParentTest { String  typeOfDevices, qua
         String idLastOrderAfterTest = utilsForDB.getLastOrderId(userIdString, dataSoloId.get("soloId").toString());
         String dueForLastOrder = utilsForDB.getLastDueForSolo(dataSoloId.get("soloId").toString());
         loginPage.userValidLogIn(dataForManagerValidLogIn.get("login").toString(),dataForManagerValidLogIn.get("pass").toString());
-        dashboardPage.openMenuDash();
         dashboardPage.goToEldPage();
         managerEldPage.openOrderInfo(idLastOrderAfterTest);
         checkAC("Full Order Price is not correct", orderInfoPage.compareFullOrderPrice(dueForLastOrder), true);
@@ -134,7 +132,7 @@ public class SoloOrderParamsTest extends ParentTest { String  typeOfDevices, qua
         checkAC("ELD is present in canceled order", utilsForDB.isEldBlinded(idLastOrderAfterTest), false);
 
         String userBalance = utilsForDB.getCurrentDueEzFinancesSolo(dataSoloId.get("soloId").toString());
-        checkAC("Balance is not correct", financesPage.compareBalanceIfCanceled(currentDue, dueForLastOrder, quantityOfDevices, userBalance), true);
+        checkAC("Balance is not correct", financesPage.compareBalanceIfCanceledManager(currentDue, dueForLastOrder, userBalance), true);
 
     }
 
@@ -147,7 +145,6 @@ public class SoloOrderParamsTest extends ParentTest { String  typeOfDevices, qua
         String idLastOrderAfterTest = utilsForDB.getLastOrderId(userIdString, dataSoloId.get("soloId").toString());
         String dueForLastOrder = utilsForDB.getLastDueForSolo(dataSoloId.get("soloId").toString());
         loginPage.userValidLogIn(dataForManagerValidLogIn.get("login").toString(), dataForManagerValidLogIn.get("pass").toString());
-        dashboardPage.openMenuDash();
         dashboardPage.goToEldPage();
         managerEldPage.openOrderInfo(idLastOrderAfterTest);
         checkAC("Full Order Price is not correct", orderInfoPage.compareFullOrderPrice(dueForLastOrder), true);

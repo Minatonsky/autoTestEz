@@ -57,7 +57,6 @@ public class FleetOrderParamsTest extends ParentTest {
         utilsForDB.setCurrentDueForFleet(currentDue, dataForFleet.get("fleetId").toString());
 
         loginPage.userValidLogIn(dataForFleet.get("login").toString(), dataForFleet.get("pass").toString());
-        dashboardPage.openMenuDash();
         dashboardPage.goToEldPage();
         eldPage.clickOnOrderELD();
 
@@ -127,7 +126,6 @@ public class FleetOrderParamsTest extends ParentTest {
         String idLastOrderAfterTest = utilsForDB.getLastOrderId(fleetString, dataForFleet.get("fleetId").toString());
         String dueForLastOrder = utilsForDB.getLastDueForFleet(dataForFleet.get("fleetId").toString());
         loginPage.userValidLogIn(dataForManagerValidLogIn.get("login").toString(),dataForManagerValidLogIn.get("pass").toString());
-        dashboardPage.openMenuDash();
         dashboardPage.goToEldPage();
         managerEldPage.openOrderInfo(idLastOrderAfterTest);
         checkAC("Full Order Price is not correct", orderInfoPage.compareFullOrderPrice(dueForLastOrder), true);
@@ -138,7 +136,8 @@ public class FleetOrderParamsTest extends ParentTest {
         checkAC("ELD is present in canceled order", utilsForDB.isEldBlinded(idLastOrderAfterTest), false);
 
         String userBalance = utilsForDB.getCurrentDueEzFinancesFleet(dataForFleet.get("fleetId").toString());
-        checkAC("Balance is not correct", financesPage.compareBalanceIfCanceled(currentDue, dueForLastOrder, quantityOfDevices, userBalance), true);
+        checkAC("Balance is not correct", financesPage.compareBalanceIfCanceledManager(currentDue, dueForLastOrder, userBalance), true);
+
     }
 
     @Test
@@ -150,7 +149,6 @@ public class FleetOrderParamsTest extends ParentTest {
         String dueForLastOrder = utilsForDB.getLastDueForFleet(dataForFleet.get("fleetId").toString());
 
         loginPage.userValidLogIn(dataForManagerValidLogIn.get("login").toString(), dataForManagerValidLogIn.get("pass").toString());
-        dashboardPage.openMenuDash();
         dashboardPage.goToEldPage();
         managerEldPage.openOrderInfo(idLastOrderAfterTest);
         checkAC("Full Order Price is not correct", orderInfoPage.compareFullOrderPrice(dueForLastOrder), true);

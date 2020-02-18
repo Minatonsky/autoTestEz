@@ -80,7 +80,7 @@ public class FinancesPage extends ParentPage {
         } else return false;
     }
     public boolean compareBalanceIfCanceled(String currentDue, String priceOrder, String quantityOfDevices, String usersBalance) {
-        double tempCurrentDue = Integer.parseInt(currentDue);
+        double tempCurrentDue = Double.parseDouble(currentDue);
         double tempPriceOrder = Double.parseDouble(priceOrder);
 
         if (Integer.parseInt(quantityOfDevices) > 0) {
@@ -88,8 +88,8 @@ public class FinancesPage extends ParentPage {
                 logger.info("usersBalance " + Double.parseDouble(usersBalance));
                 return Double.parseDouble(usersBalance)*(-1) == tempCurrentDue;
             } else if (Integer.parseInt(currentDue) == 0) {
-                logger.info("# FinanceBalance = " + getFinanceBalance().substring(1));
-                return Double.parseDouble(usersBalance) == tempPriceOrder;
+                logger.info("# FinanceBalance = " + Double.parseDouble(usersBalance));
+                return Double.parseDouble(usersBalance)*(-1) == tempPriceOrder;
             } else return false;
         } else return true;
 
@@ -134,6 +134,18 @@ public class FinancesPage extends ParentPage {
     public void clickOnCreateButton(){actionsWithOurElements.clickOnElement(createButton);}
     public void clickOnCreateButtonConfirm(){actionsWithOurElements.clickOnElement(createButtonConfirm);}
     public void clickOnPrimaryCard(){actionsWithOurElements.clickOnElement(primaryCard);}
+    public boolean compareBalanceIfCanceledManager(String currentDue, String priceOrder, String userBalance) {
+        double tempCurrentDue = Double.parseDouble(currentDue);
+        double tempPriceOrder = Double.parseDouble(priceOrder);
 
-
+            if (Integer.parseInt(currentDue) > 0) {
+                logger.info("usersBalance " + Double.parseDouble(userBalance));
+                logger.info("CurrentDue " + tempCurrentDue);
+                return Double.parseDouble(userBalance)*(-1) == tempCurrentDue;
+            } else if (Integer.parseInt(currentDue) == 0) {
+                logger.info("# FinanceBalance = " + Double.parseDouble(userBalance));
+                logger.info("# tempPriceOrder = " + tempPriceOrder);
+                return Double.parseDouble(userBalance)*(-1) == tempPriceOrder;
+        } else return false;
+    }
 }

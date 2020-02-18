@@ -23,7 +23,6 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.sql.SQLException;
 import java.util.Iterator;
-import java.util.Random;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
@@ -201,28 +200,6 @@ public class ParentTest {
             ex.printStackTrace();
         }
     }
-    public String genRandomFuelType(){
-        String[] arr={"Gasoline", "Diesel", "Gasohol", "Propane", "LNG", "CNG", "Ethanol", "Methanol", "E-85", "M-85", "A55", "Biodiesel"};
-        Random r=new Random();
-        int randomNumber=r.nextInt(arr.length);
-        return arr[randomNumber];
-    }
-    public String genRandomCreditCard(){
-        String[] arr={"4007000000027", "4111111111111111", "5424000000000015", "4012888818888", "370000000000002", "2223000010309711", "6011000000000012"};
-        Random r=new Random();
-        int randomNumber=r.nextInt(arr.length);
-        return arr[randomNumber];
-    }
-
-//    public void putCookiesIntoBrowser(){
-//
-//        Cookie name = new Cookie();
-//        try {
-//            webDriver.manage().addCookie(name);
-//        } catch (Exception e){
-//            logger.error("Cookies failed");
-//        }
-//    }
 
 
 //       This is for do screenshot on failed test

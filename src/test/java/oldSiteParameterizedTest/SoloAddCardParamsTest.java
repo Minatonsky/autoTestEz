@@ -12,6 +12,7 @@ import java.io.InputStream;
 import java.sql.SQLException;
 import java.util.Collection;
 
+import static libs.Utils.genRandomCreditCard;
 import static libs.Utils.waitABit;
 
 @RunWith(Parameterized.class)
@@ -36,7 +37,6 @@ public class SoloAddCardParamsTest extends ParentTest {
         String cardNumber = genRandomCreditCard();
         String userId = utilsForDB.getUserIdByEmail(login);
         loginPage.userValidLogIn(login, pass);
-        dashboardPage.openMenuDash();
         checkAC("User wasn`t logined", dashboardPage.isDashboardPresent(), true);
         dashboardPage.goToReportsPage();
         dashboardPage.goToLogsPage();

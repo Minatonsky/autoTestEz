@@ -28,8 +28,8 @@ public class SoloDriverSettingAccountTest extends ParentTest {
         Map<String, Object> userDataBeforeTestMap = listArrayToMap(tempDataListBeforeTest);
 
         String odometer = userDataBeforeTestMap.get("odometerId").toString();
-        String firstName = RandomStringUtils.randomAlphabetic(5, 10);
-        String LastName = RandomStringUtils.randomAlphabetic(5, 10);
+        String firstName = genRandomDataByRegex("[A-Z]{1}[a-z]{11}");
+        String LastName = genRandomDataByRegex("[A-Z]{1}[a-z]{11}");
         String phone = RandomStringUtils.randomNumeric(10);
         String cycle = userDataBeforeTestMap.get("cycleId").toString();
         String timeZone = userDataBeforeTestMap.get("timeZoneId").toString();
@@ -42,7 +42,6 @@ public class SoloDriverSettingAccountTest extends ParentTest {
         String timeZoneTypeRandomValue = Integer.toString(genRandomNumberBetweenTwoValues(0 , 8));
 
         loginPage.userValidLogIn(login, pass);
-        dashboardPage.openMenuDash();
         dashboardPage.goToSettingPage();
 
         waitABit(5);

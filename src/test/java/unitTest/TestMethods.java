@@ -17,6 +17,8 @@ import java.time.temporal.ChronoUnit;
 import java.time.temporal.TemporalAdjusters;
 import java.util.List;
 import java.util.logging.Logger;
+
+import static libs.Utils.genRandomDataByRegex;
 // This test page is not using on test project, it just for check some methods
 
 public class TestMethods {
@@ -187,12 +189,8 @@ public class TestMethods {
     @Test
 
     public void getAmountEzDueMonthToMonth() throws SQLException, IOException, ClassNotFoundException {
-        String soloOrFleetString = "531";
-        String carrierId = "carrierId";
-        String timeRunCron = "2019-12-03 10:23:19";
-
-        List<String> tempAmountList = utilsForDB.getAmountEzDueMonthToMonth(soloOrFleetString, carrierId, timeRunCron);
-        System.out.println(tempAmountList);
+        String data = genRandomDataByRegex("[A-Z]{1}[a-z]{11}");
+        System.out.println(data);
 
     }
 

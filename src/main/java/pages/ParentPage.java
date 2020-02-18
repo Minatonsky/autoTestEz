@@ -21,7 +21,7 @@ public class ParentPage {
 
     public ParentPage(WebDriver webDriver, String expectedUrl) {
         this.webDriver = webDriver;
-        baseUrl = configProperties.url_app_ezlogz();
+        baseUrl = configProperties.url_dev_ezlogz();
         this.expectedUrl = baseUrl + expectedUrl;
         PageFactory.initElements(webDriver, this);
         actionsWithOurElements = new ActionsWithOurElements(webDriver);

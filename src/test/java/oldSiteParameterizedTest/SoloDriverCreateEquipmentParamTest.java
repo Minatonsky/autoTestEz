@@ -58,7 +58,6 @@ public class SoloDriverCreateEquipmentParamTest extends ParentTest {
         String dateDb = "1111-11-11";
 
         loginPage.userValidLogIn(login, pass);
-        dashboardPage.openMenuDash();
         checkAC("User wasn`t logined", dashboardPage.isDashboardPresent(), true);
         dashboardPage.goToReportsPage();
         dashboardPage.goToLogsPage();
@@ -154,7 +153,6 @@ public class SoloDriverCreateEquipmentParamTest extends ParentTest {
 
 
         loginPage.userValidLogIn(login, pass);
-        dashboardPage.openMenuDash();
         dashboardPage.goToEquipmentPage();
         waitABit(3);
 // ADD TRAILER

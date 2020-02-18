@@ -72,7 +72,6 @@ public class SoloDriverSettingsParameterizedTest extends ParentTest {
 
 
         loginPage.userValidLogIn(login, pass);
-        dashboardPage.openMenuDash();
         dashboardPage.goToSettingPage();
         settingsPage.goToDriverSettings();
         //    GENERAL
@@ -164,7 +163,6 @@ public class SoloDriverSettingsParameterizedTest extends ParentTest {
         String timeZoneTypeRandomValue = Integer.toString(genRandomNumberBetweenTwoValues(0 , 8));
 
         loginPage.userValidLogIn(login, pass);
-        dashboardPage.openMenuDash();
         dashboardPage.goToSettingPage();
 
         waitABit(5);

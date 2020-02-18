@@ -59,7 +59,6 @@ public class ManagerOrderParamsTest extends ParentTest {
     public void managerOpenEldOrder() throws IOException, InterruptedException, SQLException, ClassNotFoundException {
 
         loginPage.userValidLogIn(dataForManagerValidLogIn.get("login").toString(),dataForManagerValidLogIn.get("pass").toString());
-        dashboardPage.openMenuDash();
         dashboardPage.goToEldPage();
         managerEldPage.clickOnNewOrderButton();
 
@@ -111,7 +110,6 @@ public class ManagerOrderParamsTest extends ParentTest {
         modalEldPage.doAgreeAgreementForManagerOrder(typeOfDevices, quantityOfDevices, quantityCameraCP);
         waitABit(10);
 
-        dashboardPage.openMenuDash();
         dashboardPage.goToFinancesPage();
         financesPage.payCurrentInvoiceForOrderByManager(currentDue, quantityOfDevices, quantityCameraCP);
         String dueForLastOrder = utilsForDB.getLastDueForSolo(dataSoloId.get("soloId").toString());
@@ -128,7 +126,6 @@ public class ManagerOrderParamsTest extends ParentTest {
 // Manager completed order
 
         loginPage.userValidLogIn(dataForManagerValidLogIn.get("login").toString(),dataForManagerValidLogIn.get("pass").toString());
-        dashboardPage.openMenuDash();
         dashboardPage.goToEldPage();
 
         managerEldPage.openOrderInfo(idLastOrderAfterTest);
@@ -192,8 +189,6 @@ public class ManagerOrderParamsTest extends ParentTest {
         waitABit(10);
         modalEldPage.doCancelAgreementForManagerOrder(typeOfDevices, quantityOfDevices, quantityCameraCP);
         waitABit(10);
-        dashboardPage.openMenuDash();
-        waitABit(10);
 
         String orderCancelStatus = utilsForDB.getOrderStatus(idLastOrderAfterTest);
         checkAC("Order with devices is not canceled", eldPage.compareCancelStatusOrder(orderCancelStatus, quantityOfDevices), true);
@@ -248,7 +243,6 @@ public class ManagerOrderParamsTest extends ParentTest {
         modalEldPage.doAgreeAgreementForManagerOrder(typeOfDevices, quantityOfDevices, quantityCameraCP);
         waitABit(3);
 
-        dashboardPage.openMenuDash();
         dashboardPage.goToFinancesPage();
         financesPage.payCurrentInvoiceForOrderByManager(currentDue, quantityOfDevices, quantityCameraCP);
         waitABit(5);
@@ -264,7 +258,6 @@ public class ManagerOrderParamsTest extends ParentTest {
         setUp();
 // Manager completed order
         loginPage.userValidLogIn(dataForManagerValidLogIn.get("login").toString(),dataForManagerValidLogIn.get("pass").toString());
-        dashboardPage.openMenuDash();
         dashboardPage.goToEldPage();
 
         managerEldPage.openOrderInfo(idLastOrderAfterTest);
@@ -327,8 +320,6 @@ public class ManagerOrderParamsTest extends ParentTest {
 
         waitABit(3);
         modalEldPage.doCancelAgreementForManagerOrder(typeOfDevices, quantityOfDevices, quantityCameraCP);
-        waitABit(3);
-        dashboardPage.openMenuDash();
         waitABit(3);
 
         String orderCancelStatus = utilsForDB.getOrderStatus(idLastOrderAfterTest);

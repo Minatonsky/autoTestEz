@@ -30,7 +30,6 @@ public class FourteenHourDrivingWindow extends ParentTest {
         utilsForDB.updateLastStatus(userId);
 
         loginPage.userValidLogIn(login, pass);
-        dashboardPage.openMenuDash();
         dashboardPage.goToLogsPage();
         logsPage.clickOnRowDay(date);
         logsPage.clickOnCorrectionButton();
@@ -100,7 +99,7 @@ public class FourteenHourDrivingWindow extends ParentTest {
         utilsForDB.updateLastStatus(userId);
 
         loginPage.userValidLogIn(login, pass);
-        dashboardPage.openMenuDash();
+
         dashboardPage.goToLogsPage();
         logsPage.clickOnRowDay(date);
         logsPage.clickOnCorrectionButton();

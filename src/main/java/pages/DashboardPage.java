@@ -76,46 +76,58 @@ public class DashboardPage extends ParentPage {
         actionsWithOurElements.clickOnElement(pageStatus);
     }
     public void goToFleetPage(){
+        closePhoneVerificationPopUp();
         waitABit(2);
         actionsWithOurElements.clickOnElement(pageFleet);
     }
     public void goToReportsPage(){
+        closePhoneVerificationPopUp();
         waitABit(2);
         actionsWithOurElements.clickOnElement(pageReports);
     }
     public void goToLogsPage(){
+        closePhoneVerificationPopUp();
         waitABit(2);
         actionsWithOurElements.clickOnElement(pageLogs);
     }
     public void goToDVIRPage(){
+        closePhoneVerificationPopUp();
         waitABit(2);
         actionsWithOurElements.clickOnElement(pageDvir);
     }
     public void goToDocumentsPage(){
+        closePhoneVerificationPopUp();
         waitABit(2);
         actionsWithOurElements.clickOnElement(pageDocuments);
     }
     public void goToEquipmentPage(){
+        closePhoneVerificationPopUp();
         waitABit(2);
         actionsWithOurElements.clickOnElement(pageEquipment);}
     public void goToEzChatPage(){
+        closePhoneVerificationPopUp();
         waitABit(2);
         actionsWithOurElements.clickOnElement(pageEzChat);}
     public void goToEldPage(){
+        closePhoneVerificationPopUp();
         waitABit(2);
         actionsWithOurElements.clickOnElement(pageELD);
     }
     public void goToFinancesPage(){
+        closePhoneVerificationPopUp();
         waitABit(2);
         actionsWithOurElements.clickOnElement(pageFinances);
     }
     public void goToCalendarPage(){
+        closePhoneVerificationPopUp();
         waitABit(2);
         actionsWithOurElements.clickOnElement(pageCalendar);}
     public void goToHelpAndTrainingPage(){
+        closePhoneVerificationPopUp();
         waitABit(2);
         actionsWithOurElements.clickOnElement(pageHelp);}
     public void goToSettingPage(){
+        closePhoneVerificationPopUp();
         waitABit(2);
         actionsWithOurElements.clickOnElement(pageSettings);
     }
@@ -127,16 +139,16 @@ public class DashboardPage extends ParentPage {
     public boolean ifPhoneVerificationPopUpExist(){return actionsWithOurElements.isElementDisplay(phoneVerificationClose);}
     public void clickOnCloseButton(){actionsWithOurElements.clickOnElement(phoneVerificationClose);}
 
-    @Step
-    public void openMenuDash(){
-
-        waitABit(3);
-        closePhoneVerificationPopUp();
-        waitABit(3);
-        clickOnMenuDash();
-        waitABit(3);
-        clickMenuSizeButton();
-    }
+//    @Step
+//    public void openMenuDash(){
+//
+//        waitABit(3);
+//        closePhoneVerificationPopUp();
+//        waitABit(3);
+//        clickOnMenuDash();
+//        waitABit(3);
+//        clickMenuSizeButton();
+//    }
 
     @Step
     public void closePhoneVerificationPopUp(){

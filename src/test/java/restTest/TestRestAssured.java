@@ -48,6 +48,7 @@ public class TestRestAssured {
         ResponseBody responseBody = mainRestSteps.getResponseBody(response);
         ResponseStructureForRestAssuredTest responseStructure = responseBody.as(ResponseStructureForRestAssuredTest.class);
         System.out.println("City from json " + responseStructure.City);
+        System.out.println("City from json " + responseStructure.Humidity);
     }
 
     @Test
