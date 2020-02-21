@@ -7,20 +7,12 @@ import java.io.IOException;
 import java.sql.SQLException;
 
 public class ChargeMonthToMonthTariff extends ParentTest {
-    String IOSXMonthTariffId = "0";
-    String geometricsMonthTariffId = "9";
-    String ezHardMonthTariffId = "12";
-    String carrierIdString = "carrierId";
-    String fleetString = "fleet";
-    String userIdString = "userId";
 
     String soloId = "3455";
     String fleetId = "518";
     int countDays = 21;
 
     String unionMonthTariffId = IOSXMonthTariffId + ", " + geometricsMonthTariffId;
-
-
 
     @Test
     public void chargeMonthToMonthFleet() throws SQLException, IOException, ClassNotFoundException {
@@ -38,18 +30,18 @@ public class ChargeMonthToMonthTariff extends ParentTest {
 //        List<String> idListScannerMonthIOSXTariff = utilsForDB.getIdChargeScannersByTariff(fleetString, fleetId, IOSXMonthTariffId);
 //
 
-        String setPaidTillForAllTariff = chargePage.paidTillForAllTariff();
+        String setPaidTillForAllTariff = chargeMethods.paidTillForAllTariff();
 
-        String setTariffStartMonthIOSX = chargePage.tariffStartForMonthToMonth(0, countDays);
-        String setDateTimeEldHistoryMonthIOSX = chargePage.dateTimeEldHistoryForMonthToMonth(0, countDays);
+        String setTariffStartMonthIOSX = chargeMethods.tariffStartForMonthToMonth(0, countDays);
+        String setDateTimeEldHistoryMonthIOSX = chargeMethods.dateTimeEldHistoryForMonthToMonth(0, countDays);
 
-        String setTariffStartMonthGeometrics = chargePage.tariffStartForMonthToMonth(0, countDays);
-        String setDateTimeEldHistoryMonthGeometrics = chargePage.dateTimeEldHistoryForMonthToMonth(0, countDays);
+        String setTariffStartMonthGeometrics = chargeMethods.tariffStartForMonthToMonth(0, countDays);
+        String setDateTimeEldHistoryMonthGeometrics = chargeMethods.dateTimeEldHistoryForMonthToMonth(0, countDays);
 
-        String setTariffStartMonthEzHard = chargePage.tariffStartForMonthToMonth(0, countDays);
-        String setDateTimeEldHistoryMonthEzHard = chargePage.dateTimeEldHistoryForMonthToMonth(0, countDays);
+        String setTariffStartMonthEzHard = chargeMethods.tariffStartForMonthToMonth(0, countDays);
+        String setDateTimeEldHistoryMonthEzHard = chargeMethods.dateTimeEldHistoryForMonthToMonth(0, countDays);
 
-        chargePage.informationOfScannersMonth(
+        chargeMethods.informationOfScannersMonth(
                 countScannerMonthIOSXTariff, countDeactivatedScannerMonthIOSXTariff, countMonthIOSXChargeReturnedScanner,
                 countScannerMonthGeometricsTariff, countMonthGeometricsChargeReturnedScanner,
                 countScannerMonthEzHardTariff, countMonthEzHardChargeReturnedScanner
@@ -71,23 +63,23 @@ public class ChargeMonthToMonthTariff extends ParentTest {
         utilsForDB.setDateTimeEldHistoryForMonthToMonth(fleetString, fleetId, setDateTimeEldHistoryMonthGeometrics);
         utilsForDB.setDateTimeEldHistoryForMonthToMonth(fleetString, fleetId, setDateTimeEldHistoryMonthEzHard);
 
-        String paidTillForEzFinances = chargePage.paidTillForEzFinances();
+        String paidTillForEzFinances = chargeMethods.paidTillForEzFinances();
 
         utilsForDB.setPaidTillEstimatedTillEzFinancesFleet(fleetId, paidTillForEzFinances, paidTillForEzFinances);
 
-        String timeRunCron = chargePage.runCronCheckFleet();
-        checkAC("* DateTime dues are not correct", chargePage.checkDateTimeDueMonthToMonth(carrierIdString, fleetId, timeRunCron), true);
+        String timeRunCron = chargeMethods.runCronCheckFleet();
+        checkAC("* DateTime dues are not correct", chargeMethods.checkDateTimeDueMonthToMonth(carrierIdString, fleetId, timeRunCron), true);
 
-        double sumDeactivatedScannerMonthToMonthTariff = chargePage.sumDeactivatedScannerMonthToMonthTariff(fleetString, fleetId, countDeactivatedScannerMonthIOSXTariff);
+        double sumDeactivatedScannerMonthToMonthTariff = chargeMethods.sumDeactivatedScannerMonthToMonthTariff(fleetString, fleetId, countDeactivatedScannerMonthIOSXTariff);
 
-        checkAC("* Charge due is not correct", chargePage.compareDueChargeMonthToMonthTariff(setTariffStartMonthIOSX, carrierIdString, fleetId,
+        checkAC("* Charge due is not correct", chargeMethods.compareDueChargeMonthToMonthTariff(setTariffStartMonthIOSX, carrierIdString, fleetId,
                 countScannerMonthIOSXTariff + countMonthIOSXChargeReturnedScanner + countScannerMonthGeometricsTariff + countMonthGeometricsChargeReturnedScanner +
                         countScannerMonthEzHardTariff + countMonthEzHardChargeReturnedScanner,
                 sumDeactivatedScannerMonthToMonthTariff, timeRunCron), true);
 
-        checkAC("* PaidTill for month-to-month is not correct", chargePage.comparePaidTillMonthToMonth(fleetString, fleetId, unionMonthTariffId), true);
-        checkAC("* EstimatedTill in ez_finance is not correct", chargePage.compareEstimatedTillFleet(fleetId), true);
-        checkAC("* PaidTill in ez_finance is not correct", chargePage.comparePaidTillFleet(fleetId), true);
+        checkAC("* PaidTill for month-to-month is not correct", chargeMethods.comparePaidTillMonthToMonth(fleetString, fleetId, unionMonthTariffId), true);
+        checkAC("* EstimatedTill in ez_finance is not correct", chargeMethods.compareEstimatedTillFleet(fleetId), true);
+        checkAC("* PaidTill in ez_finance is not correct", chargeMethods.comparePaidTillFleet(fleetId), true);
 
     }
 
@@ -104,18 +96,18 @@ public class ChargeMonthToMonthTariff extends ParentTest {
         int countScannerMonthEzHardTariff = utilsForDB.countChargeScannersByTariff(userIdString, soloId, ezHardMonthTariffId);
         int countMonthEzHardChargeReturnedScanner = utilsForDB.countChargeReturnedScannerByTariff(userIdString, soloId, ezHardMonthTariffId);
 
-        String setPaidTillForAllTariff = chargePage.paidTillForAllTariff();
+        String setPaidTillForAllTariff = chargeMethods.paidTillForAllTariff();
 
-        String setTariffStartMonthIOSX = chargePage.tariffStartForMonthToMonth(0, countDays);
-        String setDateTimeEldHistoryMonthIOSX = chargePage.dateTimeEldHistoryForMonthToMonth(0, countDays);
+        String setTariffStartMonthIOSX = chargeMethods.tariffStartForMonthToMonth(0, countDays);
+        String setDateTimeEldHistoryMonthIOSX = chargeMethods.dateTimeEldHistoryForMonthToMonth(0, countDays);
 
-        String setTariffStartMonthGeometrics = chargePage.tariffStartForMonthToMonth(0, countDays);
-        String setDateTimeEldHistoryMonthGeometrics = chargePage.dateTimeEldHistoryForMonthToMonth(0, countDays);
+        String setTariffStartMonthGeometrics = chargeMethods.tariffStartForMonthToMonth(0, countDays);
+        String setDateTimeEldHistoryMonthGeometrics = chargeMethods.dateTimeEldHistoryForMonthToMonth(0, countDays);
 
-        String setTariffStartMonthEzHard = chargePage.tariffStartForMonthToMonth(0, countDays);
-        String setDateTimeEldHistoryMonthEzHard = chargePage.dateTimeEldHistoryForMonthToMonth(0, countDays);
+        String setTariffStartMonthEzHard = chargeMethods.tariffStartForMonthToMonth(0, countDays);
+        String setDateTimeEldHistoryMonthEzHard = chargeMethods.dateTimeEldHistoryForMonthToMonth(0, countDays);
 
-        chargePage.informationOfScannersMonth(
+        chargeMethods.informationOfScannersMonth(
                 countScannerMonthIOSXTariff, countDeactivatedScannerMonthIOSXTariff, countMonthIOSXChargeReturnedScanner,
                 countScannerMonthGeometricsTariff, countMonthGeometricsChargeReturnedScanner,
                 countScannerMonthEzHardTariff, countMonthEzHardChargeReturnedScanner
@@ -136,23 +128,23 @@ public class ChargeMonthToMonthTariff extends ParentTest {
         utilsForDB.setOrderDateByTariffId(userIdString, soloId, setTariffStartMonthEzHard, ezHardMonthTariffId);
         utilsForDB.setDateTimeEldHistoryForMonthToMonth(userIdString, soloId, setDateTimeEldHistoryMonthEzHard);
 
-        String paidTillForEzFinances = chargePage.paidTillForEzFinances();
+        String paidTillForEzFinances = chargeMethods.paidTillForEzFinances();
 
         utilsForDB.setPaidTillEstimatedTillEzFinancesSolo(soloId, paidTillForEzFinances, paidTillForEzFinances);
 
-        String timeRunCron = chargePage.runCronCheckDrivers();
-        checkAC("* DateTime dues are not correct", chargePage.checkDateTimeDueMonthToMonth(userIdString, soloId, timeRunCron), true);
+        String timeRunCron = chargeMethods.runCronCheckDrivers();
+        checkAC("* DateTime dues are not correct", chargeMethods.checkDateTimeDueMonthToMonth(userIdString, soloId, timeRunCron), true);
 
-        double sumDeactivatedScannerMonthToMonthTariff = chargePage.sumDeactivatedScannerMonthToMonthTariff(userIdString, soloId, countDeactivatedScannerMonthIOSXTariff);
+        double sumDeactivatedScannerMonthToMonthTariff = chargeMethods.sumDeactivatedScannerMonthToMonthTariff(userIdString, soloId, countDeactivatedScannerMonthIOSXTariff);
 
-        checkAC("* Charge due is not correct", chargePage.compareDueChargeMonthToMonthTariff(setTariffStartMonthIOSX, userIdString, soloId,
+        checkAC("* Charge due is not correct", chargeMethods.compareDueChargeMonthToMonthTariff(setTariffStartMonthIOSX, userIdString, soloId,
                 countScannerMonthIOSXTariff + countMonthIOSXChargeReturnedScanner + countScannerMonthGeometricsTariff + countMonthGeometricsChargeReturnedScanner +
                         countScannerMonthEzHardTariff + countMonthEzHardChargeReturnedScanner,
                 sumDeactivatedScannerMonthToMonthTariff, timeRunCron), true);
 
-        checkAC("* PaidTill for month-to-month is not correct", chargePage.comparePaidTillMonthToMonth(userIdString, soloId, unionMonthTariffId), true);
-        checkAC("* EstimatedTill in ez_finance is not correct", chargePage.compareEstimatedTillSolo(soloId), true);
-        checkAC("* PaidTill in ez_finance is not correct", chargePage.comparePaidTillSolo(soloId), true);
+        checkAC("* PaidTill for month-to-month is not correct", chargeMethods.comparePaidTillMonthToMonth(userIdString, soloId, unionMonthTariffId), true);
+        checkAC("* EstimatedTill in ez_finance is not correct", chargeMethods.compareEstimatedTillSolo(soloId), true);
+        checkAC("* PaidTill in ez_finance is not correct", chargeMethods.comparePaidTillSolo(soloId), true);
 
     }
 }

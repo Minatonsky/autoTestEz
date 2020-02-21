@@ -8,7 +8,7 @@ import org.openqa.selenium.support.FindBy;
 
 import static libs.Utils.waitABit;
 
-public class ModalEldPage extends ParentPage {
+public class ModalOrderPage extends ParentPage {
 
     @FindBy(name = "device_type_id")
     private WebElement device_type_idInput;
@@ -206,57 +206,25 @@ public class ModalEldPage extends ParentPage {
     @FindBy(xpath = ".//h1[text()='EZSMARTCAM PURCHASE AND DATA SERVICES AGREEMENT']")
     private WebElement cameraTitle;
 
-    double ELDDevicePriceSmart = 169.99;
-    double ELDDevicePriceHard = 149.99;
-    double eldMonthToMonthPrice = 29.99;
-    double eld1YearSubscriptionPrice = 329.89;
-    double eld2YearsSubscriptionPrice = 629.79;
-    double eld1YearSubscriptionDiscountPrice = 299.88;
-    double eld2YearsSubscriptionDiscountPrice = 599.76;
-    double pinCablePrice = 34.99;
-    double pinCableOBDIIPrice = 34.99;
-    double stickerLabelPrice = 3.00;
-    double ezSmartCamCP2Price = 564.99;
-    double ezSmartCamSVAPrice = 399.99;
-    double sD32GbPrice = 39.99;
-    double sD64GbPrice = 59.99;
-    double sD128GbPrice = 109.99;
-    double cameraInstallationFee = 100.00;
-    double cameraSetupFee = 29.99;
-    double cP2MonthFee = 29.99;
-    double eldDepositFee = 49.99;
 
-    public ModalEldPage(WebDriver webDriver) {
+    public ModalOrderPage(WebDriver webDriver) {
         super(webDriver, "/dash/eld/");
     }
 
 /*
  PERSONAL DATA
 */
-    public void selectState(String deliveryState) {actionsWithOurElements.selectValueInDropDown(typeOfState, deliveryState);}
-    public void enterFirstName(String firstName) {actionsWithOurElements.enterTextToElement(firstNameInput, firstName);}
-    public void enterLastName(String lastName) {actionsWithOurElements.enterTextToElement(lastNameInput, lastName); }
-    public void enterPhone(String phone)
-    {
-        actionsWithOurElements.enterTextToElement(phoneInput, phone);
-    }
-    public void enterPrimaryAddressLine(String addressLine) {actionsWithOurElements.enterTextToElement(addressLineInput, addressLine);}
-    public void enterAptNumber(String aptNumber) { actionsWithOurElements.enterTextToElement(aptNumberInput, aptNumber);}
-    public void enterDeliveryCity(String deliveryCity) {actionsWithOurElements.enterTextToElement(deliveryCityInput, deliveryCity);}
-    public void enterZipCode(String zipCode) {actionsWithOurElements.enterTextToElement(zipCodeInput, zipCode);}
-
     @Step
     public void enterPersonalData(String deliveryState, String firstName, String lastName, String phone, String addressLine, String aptNumber, String deliveryCity, String zipCode) {
-        selectState(deliveryState);
-        enterFirstName(firstName);
-        enterLastName(lastName);
-        enterPhone(phone);
-        enterPrimaryAddressLine(addressLine);
-        enterAptNumber(aptNumber);
-        enterDeliveryCity(deliveryCity);
-        enterZipCode(zipCode);
+        actionsWithOurElements.selectValueInDropDown(typeOfState, deliveryState);
+        actionsWithOurElements.enterTextToElement(firstNameInput, firstName);
+        actionsWithOurElements.enterTextToElement(lastNameInput, lastName);
+        actionsWithOurElements.enterTextToElement(phoneInput, phone);
+        actionsWithOurElements.enterTextToElement(addressLineInput, addressLine);
+        actionsWithOurElements.enterTextToElement(aptNumberInput, aptNumber);
+        actionsWithOurElements.enterTextToElement(deliveryCityInput, deliveryCity);
+        actionsWithOurElements.enterTextToElement(zipCodeInput, zipCode);
     }
-
 
 /*
 EQUIPMENT LEASE AND SOFTWARE SUBSCRIPTION SERVICE AGREEMENT
@@ -546,7 +514,6 @@ COMPARE METHODS
             return ELDDevicePriceTextHard.getText();
         } else return "0";
     }
-
     public String getTotalOrder(){
         return totalOrderText.getText();
     }

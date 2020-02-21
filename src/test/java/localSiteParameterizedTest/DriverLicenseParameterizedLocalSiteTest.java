@@ -1,4 +1,4 @@
-package localSiteTest;
+package localSiteParameterizedTest;
 
 import libs.SpreadsheetData;
 import org.junit.Test;
@@ -33,7 +33,7 @@ public class DriverLicenseParameterizedLocalSiteTest extends ParentTest {
         this.state = state;
 
     }
-    @Parameterized.Parameters()
+    @Parameterized.Parameters(name = "Parameters are: {0}")
     public static Collection testData() throws IOException {
         InputStream spreadsheet = new FileInputStream(configProperties.DATA_FILE_PATH() + "testSettings.xls");
         return new SpreadsheetData(spreadsheet,"parametrizedNumberState").getData();

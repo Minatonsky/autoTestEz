@@ -3633,19 +3633,19 @@ Session ID: ded28994aab7a988ea7fb251515a77b9
 2020-18-02 15:38:24   INFO [libs.ActionsWithOurElements] : 36206 was inputted into element
 2020-18-02 15:38:24   INFO [libs.ActionsWithOurElements] : 2 was selected in Drop-down
 2020-18-02 15:38:27   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
-2020-18-02 15:38:32   INFO [pages.ModalEldPage] : No Pin Cable in order
-2020-18-02 15:38:32   INFO [pages.ModalEldPage] : No OBDP Cable in order
-2020-18-02 15:38:32   INFO [pages.ModalEldPage] : No Sticker in order
-2020-18-02 15:38:32   INFO [pages.ModalEldPage] : No Camera CP in order
-2020-18-02 15:38:32   INFO [pages.ModalEldPage] : No cd card in order
-2020-18-02 15:38:32   INFO [pages.ModalEldPage] : No camera sva in order
+2020-18-02 15:38:32   INFO [pages.ModalOrderPage] : No Pin Cable in order
+2020-18-02 15:38:32   INFO [pages.ModalOrderPage] : No OBDP Cable in order
+2020-18-02 15:38:32   INFO [pages.ModalOrderPage] : No Sticker in order
+2020-18-02 15:38:32   INFO [pages.ModalOrderPage] : No Camera CP in order
+2020-18-02 15:38:32   INFO [pages.ModalOrderPage] : No cd card in order
+2020-18-02 15:38:32   INFO [pages.ModalOrderPage] : No camera sva in order
 2020-18-02 15:38:34   INFO [libs.ActionsWithOurElements] : Element was clicked
 2020-18-02 15:38:34   INFO [libs.ActionsWithOurElements] : checkbox was checked
 2020-18-02 15:38:34   INFO [libs.ActionsWithOurElements] : checkbox is already unchecked
 2020-18-02 15:38:34   INFO [libs.ActionsWithOurElements] : Element was clicked
 2020-18-02 15:38:34   INFO [libs.ActionsWithOurElements] : Element was clicked
-2020-18-02 15:38:34   INFO [pages.ModalEldPage] : Payment Method Smart oneYearSubscription was selected
-2020-18-02 15:38:34   INFO [pages.ModalEldPage] : Payment Method Camera was not selected, no camera in order
+2020-18-02 15:38:34   INFO [pages.ModalOrderPage] : Payment Method Smart oneYearSubscription was selected
+2020-18-02 15:38:34   INFO [pages.ModalOrderPage] : Payment Method Camera was not selected, no camera in order
 2020-18-02 15:38:36   INFO [oldSiteParameterizedTest.ManagerOrderParamsTest] : AC passed
 2020-18-02 15:38:37   INFO [oldSiteParameterizedTest.ManagerOrderParamsTest] : AC passed
 2020-18-02 15:38:57   INFO [libs.ActionsWithOurElements] : Element is display - > false
@@ -3681,7 +3681,7 @@ Session ID: ded28994aab7a988ea7fb251515a77b9
 2020-18-02 15:40:12   INFO [libs.ActionsWithOurElements] : Element was clicked
 2020-18-02 15:40:12   INFO [libs.ActionsWithOurElements] : Element was clicked
 2020-18-02 15:40:16   INFO [libs.ActionsWithOurElements] : Element was clicked
-2020-18-02 15:40:19   INFO [pages.ModalEldPage] : Order was canceled
+2020-18-02 15:40:19   INFO [pages.ModalOrderPage] : Order was canceled
 2020-18-02 15:40:22   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
 2020-18-02 15:40:24   INFO [oldSiteParameterizedTest.ManagerOrderParamsTest] : AC passed
 2020-18-02 15:40:24   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
@@ -3716,19 +3716,19 @@ Session ID: ded28994aab7a988ea7fb251515a77b9
 2020-18-02 16:21:58   INFO [libs.ActionsWithOurElements] : 36206 was inputted into element
 2020-18-02 16:21:59   INFO [libs.ActionsWithOurElements] : 2 was selected in Drop-down
 2020-18-02 16:22:01   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
-2020-18-02 16:22:06   INFO [pages.ModalEldPage] : No Pin Cable in order
-2020-18-02 16:22:06   INFO [pages.ModalEldPage] : No OBDP Cable in order
-2020-18-02 16:22:06   INFO [pages.ModalEldPage] : No Sticker in order
-2020-18-02 16:22:06   INFO [pages.ModalEldPage] : No Camera CP in order
-2020-18-02 16:22:06   INFO [pages.ModalEldPage] : No cd card in order
-2020-18-02 16:22:06   INFO [pages.ModalEldPage] : No camera sva in order
+2020-18-02 16:22:06   INFO [pages.ModalOrderPage] : No Pin Cable in order
+2020-18-02 16:22:06   INFO [pages.ModalOrderPage] : No OBDP Cable in order
+2020-18-02 16:22:06   INFO [pages.ModalOrderPage] : No Sticker in order
+2020-18-02 16:22:06   INFO [pages.ModalOrderPage] : No Camera CP in order
+2020-18-02 16:22:06   INFO [pages.ModalOrderPage] : No cd card in order
+2020-18-02 16:22:06   INFO [pages.ModalOrderPage] : No camera sva in order
 2020-18-02 16:22:08   INFO [libs.ActionsWithOurElements] : Element was clicked
 2020-18-02 16:22:08   INFO [libs.ActionsWithOurElements] : checkbox was checked
 2020-18-02 16:22:08   INFO [libs.ActionsWithOurElements] : checkbox is already unchecked
 2020-18-02 16:22:08   INFO [libs.ActionsWithOurElements] : Element was clicked
 2020-18-02 16:22:09   INFO [libs.ActionsWithOurElements] : Element was clicked
-2020-18-02 16:22:09   INFO [pages.ModalEldPage] : Payment Method Smart oneYearSubscription was selected
-2020-18-02 16:22:09   INFO [pages.ModalEldPage] : Payment Method Camera was not selected, no camera in order
+2020-18-02 16:22:09   INFO [pages.ModalOrderPage] : Payment Method Smart oneYearSubscription was selected
+2020-18-02 16:22:09   INFO [pages.ModalOrderPage] : Payment Method Camera was not selected, no camera in order
 2020-18-02 16:22:13   INFO [oldSiteParameterizedTest.FleetOrderParamsTest] : AC passed
 2020-18-02 16:22:14   INFO [oldSiteParameterizedTest.FleetOrderParamsTest] : AC passed
 2020-18-02 16:22:34   INFO [libs.ActionsWithOurElements] : Element is display - > false
@@ -3749,8 +3749,8 @@ Session ID: ded28994aab7a988ea7fb251515a77b9
 2020-18-02 16:23:10   INFO [libs.ActionsWithOurElements] : Element is display - > true
 2020-18-02 16:23:12   INFO [libs.ActionsWithOurElements] : Element was clicked
 2020-18-02 16:23:12   INFO [libs.ActionsWithOurElements] : Element was clicked
-2020-18-02 16:23:12   INFO [pages.ModalEldPage] : Agreement ELD was agreed
-2020-18-02 16:23:12   INFO [pages.ModalEldPage] : No agreement camera in order
+2020-18-02 16:23:12   INFO [pages.ModalOrderPage] : Agreement ELD was agreed
+2020-18-02 16:23:12   INFO [pages.ModalOrderPage] : No agreement camera in order
 2020-18-02 16:23:12   INFO [libs.ActionsWithOurElements] : Element was clicked
 2020-18-02 16:23:17   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
 2020-18-02 16:23:20   INFO [oldSiteParameterizedTest.FleetOrderParamsTest] : AC passed
@@ -3817,16 +3817,16 @@ Session ID: ded28994aab7a988ea7fb251515a77b9
 2020-18-02 16:25:26   INFO [libs.ActionsWithOurElements] : 2 was inputted into element
 2020-18-02 16:25:26   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
 2020-18-02 16:25:26   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
-2020-18-02 16:25:26   INFO [pages.ModalEldPage] : No Camera CP in order
-2020-18-02 16:25:26   INFO [pages.ModalEldPage] : No cd card in order
-2020-18-02 16:25:26   INFO [pages.ModalEldPage] : No camera sva in order
+2020-18-02 16:25:26   INFO [pages.ModalOrderPage] : No Camera CP in order
+2020-18-02 16:25:26   INFO [pages.ModalOrderPage] : No cd card in order
+2020-18-02 16:25:26   INFO [pages.ModalOrderPage] : No camera sva in order
 2020-18-02 16:25:28   INFO [libs.ActionsWithOurElements] : checkbox is already unchecked
 2020-18-02 16:25:29   INFO [libs.ActionsWithOurElements] : Element was clicked
 2020-18-02 16:25:29   INFO [libs.ActionsWithOurElements] : checkbox was checked
 2020-18-02 16:25:29   INFO [libs.ActionsWithOurElements] : Element was clicked
 2020-18-02 16:25:29   INFO [libs.ActionsWithOurElements] : Element was clicked
-2020-18-02 16:25:29   INFO [pages.ModalEldPage] : Payment Method Smart monthToMonth was selected
-2020-18-02 16:25:29   INFO [pages.ModalEldPage] : Payment Method Camera was not selected, no camera in order
+2020-18-02 16:25:29   INFO [pages.ModalOrderPage] : Payment Method Smart monthToMonth was selected
+2020-18-02 16:25:29   INFO [pages.ModalOrderPage] : Payment Method Camera was not selected, no camera in order
 2020-18-02 16:25:33   INFO [oldSiteParameterizedTest.FleetOrderParamsTest] : AC passed
 2020-18-02 16:25:34   INFO [oldSiteParameterizedTest.FleetOrderParamsTest] : AC passed
 2020-18-02 16:25:34   INFO [libs.ActionsWithOurElements] : Element is display - > true
@@ -3847,8 +3847,8 @@ Session ID: ded28994aab7a988ea7fb251515a77b9
 2020-18-02 16:25:51   INFO [libs.ActionsWithOurElements] : Element is display - > true
 2020-18-02 16:25:53   INFO [libs.ActionsWithOurElements] : Element was clicked
 2020-18-02 16:25:53   INFO [libs.ActionsWithOurElements] : Element was clicked
-2020-18-02 16:25:53   INFO [pages.ModalEldPage] : Agreement ELD was agreed
-2020-18-02 16:25:53   INFO [pages.ModalEldPage] : No agreement camera in order
+2020-18-02 16:25:53   INFO [pages.ModalOrderPage] : Agreement ELD was agreed
+2020-18-02 16:25:53   INFO [pages.ModalOrderPage] : No agreement camera in order
 2020-18-02 16:25:53   INFO [libs.ActionsWithOurElements] : Element was clicked
 2020-18-02 16:25:58   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
 2020-18-02 16:26:01   INFO [oldSiteParameterizedTest.FleetOrderParamsTest] : AC passed
@@ -3919,19 +3919,19 @@ Session ID: ded28994aab7a988ea7fb251515a77b9
 2020-18-02 16:40:24   INFO [libs.ActionsWithOurElements] : 36206 was inputted into element
 2020-18-02 16:40:24   INFO [libs.ActionsWithOurElements] : 2 was selected in Drop-down
 2020-18-02 16:40:26   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
-2020-18-02 16:40:31   INFO [pages.ModalEldPage] : No Pin Cable in order
-2020-18-02 16:40:31   INFO [pages.ModalEldPage] : No OBDP Cable in order
-2020-18-02 16:40:31   INFO [pages.ModalEldPage] : No Sticker in order
-2020-18-02 16:40:31   INFO [pages.ModalEldPage] : No Camera CP in order
-2020-18-02 16:40:31   INFO [pages.ModalEldPage] : No cd card in order
-2020-18-02 16:40:31   INFO [pages.ModalEldPage] : No camera sva in order
+2020-18-02 16:40:31   INFO [pages.ModalOrderPage] : No Pin Cable in order
+2020-18-02 16:40:31   INFO [pages.ModalOrderPage] : No OBDP Cable in order
+2020-18-02 16:40:31   INFO [pages.ModalOrderPage] : No Sticker in order
+2020-18-02 16:40:31   INFO [pages.ModalOrderPage] : No Camera CP in order
+2020-18-02 16:40:31   INFO [pages.ModalOrderPage] : No cd card in order
+2020-18-02 16:40:31   INFO [pages.ModalOrderPage] : No camera sva in order
 2020-18-02 16:40:33   INFO [libs.ActionsWithOurElements] : Element was clicked
 2020-18-02 16:40:33   INFO [libs.ActionsWithOurElements] : checkbox was checked
 2020-18-02 16:40:34   INFO [libs.ActionsWithOurElements] : checkbox is already unchecked
 2020-18-02 16:40:34   INFO [libs.ActionsWithOurElements] : Element was clicked
 2020-18-02 16:40:34   INFO [libs.ActionsWithOurElements] : Element was clicked
-2020-18-02 16:40:34   INFO [pages.ModalEldPage] : Payment Method Smart oneYearSubscription was selected
-2020-18-02 16:40:34   INFO [pages.ModalEldPage] : Payment Method Camera was not selected, no camera in order
+2020-18-02 16:40:34   INFO [pages.ModalOrderPage] : Payment Method Smart oneYearSubscription was selected
+2020-18-02 16:40:34   INFO [pages.ModalOrderPage] : Payment Method Camera was not selected, no camera in order
 2020-18-02 16:40:38   INFO [oldSiteParameterizedTest.FleetOrderParamsTest] : AC passed
 2020-18-02 16:40:39   INFO [oldSiteParameterizedTest.FleetOrderParamsTest] : AC passed
 2020-18-02 16:40:59   INFO [libs.ActionsWithOurElements] : Element is display - > false
@@ -3952,8 +3952,8 @@ Session ID: ded28994aab7a988ea7fb251515a77b9
 2020-18-02 16:41:35   INFO [libs.ActionsWithOurElements] : Element is display - > true
 2020-18-02 16:41:37   INFO [libs.ActionsWithOurElements] : Element was clicked
 2020-18-02 16:41:38   INFO [libs.ActionsWithOurElements] : Element was clicked
-2020-18-02 16:41:38   INFO [pages.ModalEldPage] : Agreement ELD was agreed
-2020-18-02 16:41:38   INFO [pages.ModalEldPage] : No agreement camera in order
+2020-18-02 16:41:38   INFO [pages.ModalOrderPage] : Agreement ELD was agreed
+2020-18-02 16:41:38   INFO [pages.ModalOrderPage] : No agreement camera in order
 2020-18-02 16:41:38   INFO [libs.ActionsWithOurElements] : Element was clicked
 2020-18-02 16:41:43   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
 2020-18-02 16:41:45   INFO [oldSiteParameterizedTest.FleetOrderParamsTest] : AC passed
@@ -4022,16 +4022,16 @@ Session ID: ded28994aab7a988ea7fb251515a77b9
 2020-18-02 16:44:00   INFO [libs.ActionsWithOurElements] : 2 was inputted into element
 2020-18-02 16:44:01   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
 2020-18-02 16:44:01   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
-2020-18-02 16:44:01   INFO [pages.ModalEldPage] : No Camera CP in order
-2020-18-02 16:44:01   INFO [pages.ModalEldPage] : No cd card in order
-2020-18-02 16:44:01   INFO [pages.ModalEldPage] : No camera sva in order
+2020-18-02 16:44:01   INFO [pages.ModalOrderPage] : No Camera CP in order
+2020-18-02 16:44:01   INFO [pages.ModalOrderPage] : No cd card in order
+2020-18-02 16:44:01   INFO [pages.ModalOrderPage] : No camera sva in order
 2020-18-02 16:44:03   INFO [libs.ActionsWithOurElements] : checkbox is already unchecked
 2020-18-02 16:44:03   INFO [libs.ActionsWithOurElements] : Element was clicked
 2020-18-02 16:44:03   INFO [libs.ActionsWithOurElements] : checkbox was checked
 2020-18-02 16:44:04   INFO [libs.ActionsWithOurElements] : Element was clicked
 2020-18-02 16:44:04   INFO [libs.ActionsWithOurElements] : Element was clicked
-2020-18-02 16:44:04   INFO [pages.ModalEldPage] : Payment Method Smart monthToMonth was selected
-2020-18-02 16:44:04   INFO [pages.ModalEldPage] : Payment Method Camera was not selected, no camera in order
+2020-18-02 16:44:04   INFO [pages.ModalOrderPage] : Payment Method Smart monthToMonth was selected
+2020-18-02 16:44:04   INFO [pages.ModalOrderPage] : Payment Method Camera was not selected, no camera in order
 2020-18-02 16:44:08   INFO [oldSiteParameterizedTest.FleetOrderParamsTest] : AC passed
 2020-18-02 16:44:09   INFO [oldSiteParameterizedTest.FleetOrderParamsTest] : AC passed
 2020-18-02 16:44:09   INFO [libs.ActionsWithOurElements] : Element is display - > true
@@ -4052,8 +4052,8 @@ Session ID: ded28994aab7a988ea7fb251515a77b9
 2020-18-02 16:44:25   INFO [libs.ActionsWithOurElements] : Element is display - > true
 2020-18-02 16:44:27   INFO [libs.ActionsWithOurElements] : Element was clicked
 2020-18-02 16:44:28   INFO [libs.ActionsWithOurElements] : Element was clicked
-2020-18-02 16:44:28   INFO [pages.ModalEldPage] : Agreement ELD was agreed
-2020-18-02 16:44:28   INFO [pages.ModalEldPage] : No agreement camera in order
+2020-18-02 16:44:28   INFO [pages.ModalOrderPage] : Agreement ELD was agreed
+2020-18-02 16:44:28   INFO [pages.ModalOrderPage] : No agreement camera in order
 2020-18-02 16:44:28   INFO [libs.ActionsWithOurElements] : Element was clicked
 2020-18-02 16:44:33   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
 2020-18-02 16:44:35   INFO [oldSiteParameterizedTest.FleetOrderParamsTest] : AC passed
@@ -4118,19 +4118,19 @@ Session ID: ded28994aab7a988ea7fb251515a77b9
 2020-18-02 16:46:33   INFO [libs.ActionsWithOurElements] : Kyiv was inputted into element
 2020-18-02 16:46:33   INFO [libs.ActionsWithOurElements] : 36206 was inputted into element
 2020-18-02 16:46:34   INFO [libs.ActionsWithOurElements] : 2 was selected in Drop-down
-2020-18-02 16:46:36   INFO [pages.ModalEldPage] : No devices in order
-2020-18-02 16:46:41   INFO [pages.ModalEldPage] : No Pin Cable in order
+2020-18-02 16:46:36   INFO [pages.ModalOrderPage] : No devices in order
+2020-18-02 16:46:41   INFO [pages.ModalOrderPage] : No Pin Cable in order
 2020-18-02 16:46:41   INFO [libs.ActionsWithOurElements] : 5 was inputted into element
-2020-18-02 16:46:41   INFO [pages.ModalEldPage] : No Sticker in order
-2020-18-02 16:46:41   INFO [pages.ModalEldPage] : No Camera CP in order
-2020-18-02 16:46:41   INFO [pages.ModalEldPage] : No cd card in order
-2020-18-02 16:46:41   INFO [pages.ModalEldPage] : No camera sva in order
+2020-18-02 16:46:41   INFO [pages.ModalOrderPage] : No Sticker in order
+2020-18-02 16:46:41   INFO [pages.ModalOrderPage] : No Camera CP in order
+2020-18-02 16:46:41   INFO [pages.ModalOrderPage] : No cd card in order
+2020-18-02 16:46:41   INFO [pages.ModalOrderPage] : No camera sva in order
 2020-18-02 16:46:43   INFO [libs.ActionsWithOurElements] : Element was clicked
 2020-18-02 16:46:43   INFO [libs.ActionsWithOurElements] : checkbox was checked
 2020-18-02 16:46:44   INFO [libs.ActionsWithOurElements] : Element was clicked
 2020-18-02 16:46:44   INFO [libs.ActionsWithOurElements] : checkbox was checked
-2020-18-02 16:46:44   INFO [pages.ModalEldPage] : Payment Method was not selected, no devices in order
-2020-18-02 16:46:44   INFO [pages.ModalEldPage] : Payment Method Camera was not selected, no camera in order
+2020-18-02 16:46:44   INFO [pages.ModalOrderPage] : Payment Method was not selected, no devices in order
+2020-18-02 16:46:44   INFO [pages.ModalOrderPage] : Payment Method Camera was not selected, no camera in order
 2020-18-02 16:46:48   INFO [oldSiteParameterizedTest.FleetOrderParamsTest] : AC passed
 2020-18-02 16:46:49   INFO [oldSiteParameterizedTest.FleetOrderParamsTest] : AC passed
 2020-18-02 16:47:09   INFO [libs.ActionsWithOurElements] : Element is display - > false
@@ -4146,8 +4146,8 @@ Session ID: ded28994aab7a988ea7fb251515a77b9
 2020-18-02 16:47:19   INFO [oldSiteParameterizedTest.FleetOrderParamsTest] : AC passed
 2020-18-02 16:47:39   INFO [libs.ActionsWithOurElements] : Element is display - > false
 2020-18-02 16:47:40   INFO [oldSiteParameterizedTest.FleetOrderParamsTest] : AC passed
-2020-18-02 16:47:40   INFO [pages.ModalEldPage] : No agreement in order
-2020-18-02 16:47:40   INFO [pages.ModalEldPage] : No agreement camera in order
+2020-18-02 16:47:40   INFO [pages.ModalOrderPage] : No agreement in order
+2020-18-02 16:47:40   INFO [pages.ModalOrderPage] : No agreement camera in order
 2020-18-02 16:47:40   INFO [libs.ActionsWithOurElements] : Element was clicked
 2020-18-02 16:47:45   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
 2020-18-02 16:47:47   INFO [oldSiteParameterizedTest.FleetOrderParamsTest] : AC passed
@@ -4214,19 +4214,19 @@ Session ID: ded28994aab7a988ea7fb251515a77b9
 2020-18-02 16:53:08   INFO [libs.ActionsWithOurElements] : 36206 was inputted into element
 2020-18-02 16:53:08   INFO [libs.ActionsWithOurElements] : 2 was selected in Drop-down
 2020-18-02 16:53:11   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
-2020-18-02 16:53:16   INFO [pages.ModalEldPage] : No Pin Cable in order
-2020-18-02 16:53:16   INFO [pages.ModalEldPage] : No OBDP Cable in order
-2020-18-02 16:53:16   INFO [pages.ModalEldPage] : No Sticker in order
-2020-18-02 16:53:16   INFO [pages.ModalEldPage] : No Camera CP in order
-2020-18-02 16:53:16   INFO [pages.ModalEldPage] : No cd card in order
-2020-18-02 16:53:16   INFO [pages.ModalEldPage] : No camera sva in order
+2020-18-02 16:53:16   INFO [pages.ModalOrderPage] : No Pin Cable in order
+2020-18-02 16:53:16   INFO [pages.ModalOrderPage] : No OBDP Cable in order
+2020-18-02 16:53:16   INFO [pages.ModalOrderPage] : No Sticker in order
+2020-18-02 16:53:16   INFO [pages.ModalOrderPage] : No Camera CP in order
+2020-18-02 16:53:16   INFO [pages.ModalOrderPage] : No cd card in order
+2020-18-02 16:53:16   INFO [pages.ModalOrderPage] : No camera sva in order
 2020-18-02 16:53:18   INFO [libs.ActionsWithOurElements] : Element was clicked
 2020-18-02 16:53:18   INFO [libs.ActionsWithOurElements] : checkbox was checked
 2020-18-02 16:53:18   INFO [libs.ActionsWithOurElements] : checkbox is already unchecked
 2020-18-02 16:53:18   INFO [libs.ActionsWithOurElements] : Element was clicked
 2020-18-02 16:53:18   INFO [libs.ActionsWithOurElements] : Element was clicked
-2020-18-02 16:53:18   INFO [pages.ModalEldPage] : Payment Method Smart oneYearSubscription was selected
-2020-18-02 16:53:18   INFO [pages.ModalEldPage] : Payment Method Camera was not selected, no camera in order
+2020-18-02 16:53:18   INFO [pages.ModalOrderPage] : Payment Method Smart oneYearSubscription was selected
+2020-18-02 16:53:18   INFO [pages.ModalOrderPage] : Payment Method Camera was not selected, no camera in order
 2020-18-02 16:53:22   INFO [oldSiteParameterizedTest.SoloOrderParamsTest] : AC passed
 2020-18-02 16:53:23   INFO [oldSiteParameterizedTest.SoloOrderParamsTest] : AC passed
 2020-18-02 16:53:44   INFO [libs.ActionsWithOurElements] : Element is display - > false
@@ -4247,8 +4247,8 @@ Session ID: ded28994aab7a988ea7fb251515a77b9
 2020-18-02 16:54:20   INFO [libs.ActionsWithOurElements] : Element is display - > true
 2020-18-02 16:54:22   INFO [libs.ActionsWithOurElements] : Element was clicked
 2020-18-02 16:54:22   INFO [libs.ActionsWithOurElements] : Element was clicked
-2020-18-02 16:54:22   INFO [pages.ModalEldPage] : Agreement ELD was agreed
-2020-18-02 16:54:22   INFO [pages.ModalEldPage] : No agreement camera in order
+2020-18-02 16:54:22   INFO [pages.ModalOrderPage] : Agreement ELD was agreed
+2020-18-02 16:54:22   INFO [pages.ModalOrderPage] : No agreement camera in order
 2020-18-02 16:54:22   INFO [libs.ActionsWithOurElements] : Element was clicked
 2020-18-02 16:54:24   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
 2020-18-02 16:54:27   INFO [oldSiteParameterizedTest.SoloOrderParamsTest] : AC passed
@@ -4336,19 +4336,19 @@ Session ID: ded28994aab7a988ea7fb251515a77b9
 2020-18-02 16:57:24   INFO [libs.ActionsWithOurElements] : 36206 was inputted into element
 2020-18-02 16:57:25   INFO [libs.ActionsWithOurElements] : 2 was selected in Drop-down
 2020-18-02 16:57:27   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
-2020-18-02 16:57:32   INFO [pages.ModalEldPage] : No Pin Cable in order
-2020-18-02 16:57:32   INFO [pages.ModalEldPage] : No OBDP Cable in order
-2020-18-02 16:57:32   INFO [pages.ModalEldPage] : No Sticker in order
-2020-18-02 16:57:32   INFO [pages.ModalEldPage] : No Camera CP in order
-2020-18-02 16:57:32   INFO [pages.ModalEldPage] : No cd card in order
-2020-18-02 16:57:32   INFO [pages.ModalEldPage] : No camera sva in order
+2020-18-02 16:57:32   INFO [pages.ModalOrderPage] : No Pin Cable in order
+2020-18-02 16:57:32   INFO [pages.ModalOrderPage] : No OBDP Cable in order
+2020-18-02 16:57:32   INFO [pages.ModalOrderPage] : No Sticker in order
+2020-18-02 16:57:32   INFO [pages.ModalOrderPage] : No Camera CP in order
+2020-18-02 16:57:32   INFO [pages.ModalOrderPage] : No cd card in order
+2020-18-02 16:57:32   INFO [pages.ModalOrderPage] : No camera sva in order
 2020-18-02 16:57:34   INFO [libs.ActionsWithOurElements] : Element was clicked
 2020-18-02 16:57:34   INFO [libs.ActionsWithOurElements] : checkbox was checked
 2020-18-02 16:57:34   INFO [libs.ActionsWithOurElements] : checkbox is already unchecked
 2020-18-02 16:57:34   INFO [libs.ActionsWithOurElements] : Element was clicked
 2020-18-02 16:57:34   INFO [libs.ActionsWithOurElements] : Element was clicked
-2020-18-02 16:57:34   INFO [pages.ModalEldPage] : Payment Method Smart oneYearSubscription was selected
-2020-18-02 16:57:34   INFO [pages.ModalEldPage] : Payment Method Camera was not selected, no camera in order
+2020-18-02 16:57:34   INFO [pages.ModalOrderPage] : Payment Method Smart oneYearSubscription was selected
+2020-18-02 16:57:34   INFO [pages.ModalOrderPage] : Payment Method Camera was not selected, no camera in order
 2020-18-02 16:57:39   INFO [oldSiteParameterizedTest.SoloOrderParamsTest] : AC passed
 2020-18-02 16:57:40   INFO [oldSiteParameterizedTest.SoloOrderParamsTest] : AC passed
 2020-18-02 16:58:00   INFO [libs.ActionsWithOurElements] : Element is display - > false
@@ -4369,8 +4369,8 @@ Session ID: ded28994aab7a988ea7fb251515a77b9
 2020-18-02 16:58:36   INFO [libs.ActionsWithOurElements] : Element is display - > true
 2020-18-02 16:58:38   INFO [libs.ActionsWithOurElements] : Element was clicked
 2020-18-02 16:58:38   INFO [libs.ActionsWithOurElements] : Element was clicked
-2020-18-02 16:58:38   INFO [pages.ModalEldPage] : Agreement ELD was agreed
-2020-18-02 16:58:38   INFO [pages.ModalEldPage] : No agreement camera in order
+2020-18-02 16:58:38   INFO [pages.ModalOrderPage] : Agreement ELD was agreed
+2020-18-02 16:58:38   INFO [pages.ModalOrderPage] : No agreement camera in order
 2020-18-02 16:58:38   INFO [libs.ActionsWithOurElements] : Element was clicked
 2020-18-02 16:58:40   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
 2020-18-02 16:58:43   INFO [oldSiteParameterizedTest.SoloOrderParamsTest] : AC passed
@@ -4428,19 +4428,19 @@ Session ID: ded28994aab7a988ea7fb251515a77b9
 2020-18-02 17:03:31   INFO [libs.ActionsWithOurElements] : 36206 was inputted into element
 2020-18-02 17:03:31   INFO [libs.ActionsWithOurElements] : 2 was selected in Drop-down
 2020-18-02 17:03:33   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
-2020-18-02 17:03:38   INFO [pages.ModalEldPage] : No Pin Cable in order
-2020-18-02 17:03:38   INFO [pages.ModalEldPage] : No OBDP Cable in order
-2020-18-02 17:03:38   INFO [pages.ModalEldPage] : No Sticker in order
-2020-18-02 17:03:38   INFO [pages.ModalEldPage] : No Camera CP in order
-2020-18-02 17:03:38   INFO [pages.ModalEldPage] : No cd card in order
-2020-18-02 17:03:38   INFO [pages.ModalEldPage] : No camera sva in order
+2020-18-02 17:03:38   INFO [pages.ModalOrderPage] : No Pin Cable in order
+2020-18-02 17:03:38   INFO [pages.ModalOrderPage] : No OBDP Cable in order
+2020-18-02 17:03:38   INFO [pages.ModalOrderPage] : No Sticker in order
+2020-18-02 17:03:38   INFO [pages.ModalOrderPage] : No Camera CP in order
+2020-18-02 17:03:38   INFO [pages.ModalOrderPage] : No cd card in order
+2020-18-02 17:03:38   INFO [pages.ModalOrderPage] : No camera sva in order
 2020-18-02 17:03:41   INFO [libs.ActionsWithOurElements] : Element was clicked
 2020-18-02 17:03:41   INFO [libs.ActionsWithOurElements] : checkbox was checked
 2020-18-02 17:03:41   INFO [libs.ActionsWithOurElements] : checkbox is already unchecked
 2020-18-02 17:03:41   INFO [libs.ActionsWithOurElements] : Element was clicked
 2020-18-02 17:03:41   INFO [libs.ActionsWithOurElements] : Element was clicked
-2020-18-02 17:03:41   INFO [pages.ModalEldPage] : Payment Method Smart oneYearSubscription was selected
-2020-18-02 17:03:41   INFO [pages.ModalEldPage] : Payment Method Camera was not selected, no camera in order
+2020-18-02 17:03:41   INFO [pages.ModalOrderPage] : Payment Method Smart oneYearSubscription was selected
+2020-18-02 17:03:41   INFO [pages.ModalOrderPage] : Payment Method Camera was not selected, no camera in order
 2020-18-02 17:03:45   INFO [oldSiteParameterizedTest.SoloOrderParamsTest] : AC passed
 2020-18-02 17:03:46   INFO [oldSiteParameterizedTest.SoloOrderParamsTest] : AC passed
 2020-18-02 17:04:06   INFO [libs.ActionsWithOurElements] : Element is display - > false
@@ -4461,8 +4461,8 @@ Session ID: ded28994aab7a988ea7fb251515a77b9
 2020-18-02 17:04:43   INFO [libs.ActionsWithOurElements] : Element is display - > true
 2020-18-02 17:04:45   INFO [libs.ActionsWithOurElements] : Element was clicked
 2020-18-02 17:04:45   INFO [libs.ActionsWithOurElements] : Element was clicked
-2020-18-02 17:04:45   INFO [pages.ModalEldPage] : Agreement ELD was agreed
-2020-18-02 17:04:45   INFO [pages.ModalEldPage] : No agreement camera in order
+2020-18-02 17:04:45   INFO [pages.ModalOrderPage] : Agreement ELD was agreed
+2020-18-02 17:04:45   INFO [pages.ModalOrderPage] : No agreement camera in order
 2020-18-02 17:04:45   INFO [libs.ActionsWithOurElements] : Element was clicked
 2020-18-02 17:04:47   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
 2020-18-02 17:04:50   INFO [oldSiteParameterizedTest.SoloOrderParamsTest] : AC passed
@@ -4526,3 +4526,455 @@ Session ID: ded28994aab7a988ea7fb251515a77b9
 2020-18-02 17:32:43   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
 2020-18-02 17:32:43   INFO [libs.ActionsWithOurElements] : Element was clicked
 2020-18-02 17:32:46   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-18-02 18:04:16   INFO [oldSiteTest.loginTests.LoginTest] : FireFox will be started
+2020-18-02 18:04:29   INFO [oldSiteTest.loginTests.LoginTest] : FireFox is started
+2020-18-02 18:04:36   INFO [pages.LoginPage] : Login Page was opened
+2020-18-02 18:04:36   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-18-02 18:04:36   INFO [libs.ActionsWithOurElements] : rose@emailate.com was inputted into element
+2020-18-02 18:04:37   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-18-02 18:04:37   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-19-02 16:13:12   INFO [oldSiteTest.loginTests.LoginTest] : Chrome will be started
+2020-19-02 16:13:20   INFO [oldSiteTest.loginTests.LoginTest] : Chrome is started
+2020-19-02 16:13:32   INFO [pages.LoginPage] : Login Page was opened
+2020-19-02 16:13:32   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-19-02 16:13:32   INFO [libs.ActionsWithOurElements] : rose@emailate.com was inputted into element
+2020-19-02 16:13:32   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-19-02 16:13:33   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-19-02 16:14:13   INFO [libs.ActionsWithOurElements] : Element is enabled - > false
+2020-19-02 16:14:14  ERROR [oldSiteTest.loginTests.LoginTest] : AC failed: Dashbord is opened
+2020-19-02 16:15:22   INFO [oldSiteTest.loginTests.LoginTest] : Chrome will be started
+2020-19-02 16:15:28   INFO [oldSiteTest.loginTests.LoginTest] : Chrome is started
+2020-19-02 16:15:40   INFO [pages.LoginPage] : Login Page was opened
+2020-19-02 16:15:40   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-19-02 16:15:40   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-19-02 16:15:40   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-19-02 16:15:40   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-19-02 16:15:47   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2020-19-02 16:15:48   INFO [oldSiteTest.loginTests.LoginTest] : AC passed
+2020-19-02 16:15:49  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <div class="dash_nav">...</div> is not clickable at point (28, 440). Other element would receive the click: <div class="modal-backdrop in" data-dismiss="modal"></div>
+  (Session info: chrome=79.0.3945.130)
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'DESKTOP-0PTGLHV', ip: '192.168.88.57', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\1\AppData\Local\Te...}, goog:chromeOptions: {debuggerAddress: localhost:61793}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 8e229c224789353cbd20d1d9ae587411
+2020-19-02 16:16:44   INFO [oldSiteTest.loginTests.LoginTest] : Chrome will be started
+2020-19-02 16:16:51   INFO [oldSiteTest.loginTests.LoginTest] : Chrome is started
+2020-19-02 16:17:02   INFO [pages.LoginPage] : Login Page was opened
+2020-19-02 16:17:02   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-19-02 16:17:02   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-19-02 16:17:02   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-19-02 16:17:02   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-19-02 16:17:09   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2020-19-02 16:17:10   INFO [oldSiteTest.loginTests.LoginTest] : AC passed
+2020-19-02 16:17:10   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-19-02 16:17:10   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-19-02 16:17:13  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href="/dash/eld/" class="dash_url_button">...</a> is not clickable at point (29, 366). Other element would receive the click: <div class="stub"></div>
+  (Session info: chrome=79.0.3945.130)
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'DESKTOP-0PTGLHV', ip: '192.168.88.57', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\1\AppData\Local\Te...}, goog:chromeOptions: {debuggerAddress: localhost:61904}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 3066172581461d25b56af403f5c2947b
+2020-19-02 16:18:48   INFO [oldSiteTest.loginTests.LoginTest] : Chrome will be started
+2020-19-02 16:18:55   INFO [oldSiteTest.loginTests.LoginTest] : Chrome is started
+2020-19-02 16:19:06   INFO [pages.LoginPage] : Login Page was opened
+2020-19-02 16:19:06   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-19-02 16:19:06   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-19-02 16:19:06   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-19-02 16:19:06   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-19-02 16:19:13   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2020-19-02 16:19:14   INFO [oldSiteTest.loginTests.LoginTest] : AC passed
+2020-19-02 16:19:14   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-19-02 16:19:14   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-19-02 16:19:16   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-19-02 16:19:36   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2020-19-02 16:19:36   INFO [pages.DashboardPage] : There is not phone verification pop up
+2020-19-02 16:19:38   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-19-02 16:19:58   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2020-19-02 16:19:58   INFO [pages.DashboardPage] : There is not phone verification pop up
+2020-19-02 16:20:01   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-19-02 16:20:21   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2020-19-02 16:20:21   INFO [pages.DashboardPage] : There is not phone verification pop up
+2020-19-02 16:20:23   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-19-02 16:20:33   INFO [oldSiteTest.loginTests.LoginTest] : Chrome will be started
+2020-19-02 16:20:40   INFO [oldSiteTest.loginTests.LoginTest] : Chrome is started
+2020-19-02 16:20:52   INFO [pages.LoginPage] : Login Page was opened
+2020-19-02 16:20:52   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-19-02 16:20:52   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-19-02 16:20:52   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-19-02 16:20:52   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-19-02 16:20:59   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2020-19-02 16:21:00  ERROR [oldSiteTest.loginTests.LoginTest] : AC failed: Dashbord is opened
+2020-19-02 16:21:33   INFO [oldSiteTest.loginTests.LoginTest] : Chrome will be started
+2020-19-02 16:21:40   INFO [oldSiteTest.loginTests.LoginTest] : Chrome is started
+2020-19-02 16:21:51   INFO [pages.LoginPage] : Login Page was opened
+2020-19-02 16:21:51   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-19-02 16:21:51   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-19-02 16:21:51   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-19-02 16:21:52   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-19-02 16:21:58   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2020-19-02 16:21:59  ERROR [oldSiteTest.loginTests.LoginTest] : AC failed: Dashbord is opened
+2020-19-02 16:27:32   INFO [oldSiteTest.loginTests.LoginTest] : Chrome will be started
+2020-19-02 16:27:39   INFO [oldSiteTest.loginTests.LoginTest] : Chrome is started
+2020-19-02 16:27:50   INFO [pages.LoginPage] : Login Page was opened
+2020-19-02 16:27:50   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-19-02 16:27:50   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-19-02 16:27:50   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-19-02 16:27:50   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-19-02 16:27:57   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-19-02 16:27:57   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-19-02 16:27:57   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2020-19-02 16:27:58   INFO [oldSiteTest.loginTests.LoginTest] : AC passed
+2020-19-02 16:28:00   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-19-02 16:28:02   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-19-02 16:28:04   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-19-02 16:28:07   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-19-02 16:34:38   INFO [oldSiteTest.loginTests.LoginTest] : Chrome will be started
+2020-19-02 16:34:44   INFO [oldSiteTest.loginTests.LoginTest] : Chrome is started
+2020-19-02 16:34:55   INFO [pages.LoginPage] : Login Page was opened
+2020-19-02 16:34:56   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-19-02 16:34:56   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-19-02 16:34:56   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-19-02 16:34:56   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-19-02 16:35:03   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-19-02 16:35:03   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-19-02 16:35:03   INFO [pages.LoginPage] : Phone verification pop up Closed
+2020-19-02 16:35:03   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2020-19-02 16:35:04   INFO [oldSiteTest.loginTests.LoginTest] : AC passed
+2020-19-02 16:35:06   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-19-02 16:35:08   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-19-02 16:35:11   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-19-02 16:35:13   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-19-02 17:09:05   INFO [localSiteTest.SoloDriverSettingAccountTest] : Chrome will be started
+2020-19-02 17:09:11   INFO [localSiteTest.SoloDriverSettingAccountTest] : Chrome is started
+2020-19-02 17:09:16   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-19-02 17:09:26   INFO [pagesLocal.LoginLocalSitePage] : Login Page was opened
+2020-19-02 17:09:26   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-19-02 17:09:27   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-19-02 17:09:27   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-19-02 17:09:27   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-19-02 17:09:30   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-19-02 17:10:46   INFO [localSiteTest.SoloDriverSettingAccountTest] : Chrome will be started
+2020-19-02 17:10:53   INFO [localSiteTest.SoloDriverSettingAccountTest] : Chrome is started
+2020-19-02 17:10:58   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-19-02 17:11:10   INFO [pagesLocal.LoginLocalSitePage] : Login Page was opened
+2020-19-02 17:11:10   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-19-02 17:11:10   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-19-02 17:11:10   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-19-02 17:11:10   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-19-02 17:11:13   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-19-02 17:12:02  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.id: firstName' (tried for 20 second(s) with 500 milliseconds interval)
+2020-20-02 11:49:03   INFO [localSiteParameterizedTest.DriverLicenseParameterizedLocalSiteTest] : Chrome will be started
+2020-20-02 11:49:10   INFO [localSiteParameterizedTest.DriverLicenseParameterizedLocalSiteTest] : Chrome is started
+2020-20-02 11:49:21   INFO [pagesLocal.LoginLocalSitePage] : Login Page was opened
+2020-20-02 11:49:21   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-20-02 11:49:21   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-20-02 11:49:21   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-20-02 11:49:21   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-20-02 11:49:24   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-20-02 11:49:28   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-20-02 11:49:28   INFO [libs.ActionsWithOurElements] : 0 was inputted into element
+2020-20-02 11:49:28   INFO [libs.ActionsWithOurElements] : USA was selected in Drop-down
+2020-20-02 11:49:28   INFO [libs.ActionsWithOurElements] : AL was selected in Drop-down
+2020-20-02 11:49:28   INFO [libs.ActionsWithOurElements] : 2064-05-13 was inputted into element
+2020-20-02 11:49:31   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-20-02 11:49:36   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-20-02 11:49:40   INFO [localSiteParameterizedTest.DriverLicenseParameterizedLocalSiteTest] : AC passed
+2020-20-02 11:49:41   INFO [localSiteParameterizedTest.DriverLicenseParameterizedLocalSiteTest] : AC passed
+2020-20-02 11:49:42   INFO [localSiteParameterizedTest.DriverLicenseParameterizedLocalSiteTest] : AC passed
+2020-20-02 11:49:42   INFO [localSiteParameterizedTest.DriverLicenseParameterizedLocalSiteTest] : Chrome will be started
+2020-20-02 11:49:47   INFO [localSiteParameterizedTest.DriverLicenseParameterizedLocalSiteTest] : Chrome is started
+2020-20-02 11:49:57   INFO [pagesLocal.LoginLocalSitePage] : Login Page was opened
+2020-20-02 11:49:57   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-20-02 11:49:58   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-20-02 11:49:58   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-20-02 11:49:58   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-20-02 11:50:01   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-20-02 11:50:04   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-20-02 11:50:04   INFO [libs.ActionsWithOurElements] : 754 was inputted into element
+2020-20-02 11:50:04   INFO [libs.ActionsWithOurElements] : USA was selected in Drop-down
+2020-20-02 11:50:05   INFO [libs.ActionsWithOurElements] : AK was selected in Drop-down
+2020-20-02 11:50:05   INFO [libs.ActionsWithOurElements] : 1943-12-13 was inputted into element
+2020-20-02 11:50:08   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-20-02 11:50:13   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-20-02 11:50:16   INFO [localSiteParameterizedTest.DriverLicenseParameterizedLocalSiteTest] : AC passed
+2020-20-02 11:50:17   INFO [localSiteParameterizedTest.DriverLicenseParameterizedLocalSiteTest] : AC passed
+2020-20-02 11:50:18   INFO [localSiteParameterizedTest.DriverLicenseParameterizedLocalSiteTest] : AC passed
+2020-20-02 11:50:18   INFO [localSiteParameterizedTest.DriverLicenseParameterizedLocalSiteTest] : Chrome will be started
+2020-20-02 11:50:24   INFO [localSiteParameterizedTest.DriverLicenseParameterizedLocalSiteTest] : Chrome is started
+2020-20-02 11:50:34   INFO [pagesLocal.LoginLocalSitePage] : Login Page was opened
+2020-20-02 11:50:34   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-20-02 11:50:34   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-20-02 11:50:34   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-20-02 11:50:34   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-20-02 11:50:37   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-20-02 11:50:41   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-20-02 11:50:41   INFO [libs.ActionsWithOurElements] : N8 was inputted into element
+2020-20-02 11:50:41   INFO [libs.ActionsWithOurElements] : USA was selected in Drop-down
+2020-20-02 11:50:41   INFO [libs.ActionsWithOurElements] : AZ was selected in Drop-down
+2020-20-02 11:50:41   INFO [libs.ActionsWithOurElements] : 1919-12-04 was inputted into element
+2020-20-02 11:50:44   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-20-02 11:50:49   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-20-02 11:50:52   INFO [localSiteParameterizedTest.DriverLicenseParameterizedLocalSiteTest] : AC passed
+2020-20-02 11:50:53   INFO [localSiteParameterizedTest.DriverLicenseParameterizedLocalSiteTest] : AC passed
+2020-20-02 11:50:54   INFO [localSiteParameterizedTest.DriverLicenseParameterizedLocalSiteTest] : AC passed
+2020-20-02 11:50:55   INFO [localSiteParameterizedTest.DriverLicenseParameterizedLocalSiteTest] : Chrome will be started
+2020-20-02 11:51:00   INFO [localSiteParameterizedTest.DriverLicenseParameterizedLocalSiteTest] : Chrome is started
+2020-20-02 11:51:10   INFO [pagesLocal.LoginLocalSitePage] : Login Page was opened
+2020-20-02 11:51:10   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-20-02 11:51:11   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-20-02 11:51:11   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-20-02 11:51:11   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-20-02 11:51:14   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-20-02 11:51:18   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-20-02 11:51:18   INFO [libs.ActionsWithOurElements] : 724777 was inputted into element
+2020-20-02 11:51:18   INFO [libs.ActionsWithOurElements] : USA was selected in Drop-down
+2020-20-02 11:51:18   INFO [libs.ActionsWithOurElements] : AR was selected in Drop-down
+2020-20-02 11:51:18   INFO [libs.ActionsWithOurElements] : 1921-12-11 was inputted into element
+2020-20-02 11:51:21   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-20-02 11:51:26   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-20-02 11:51:29   INFO [localSiteParameterizedTest.DriverLicenseParameterizedLocalSiteTest] : AC passed
+2020-20-02 11:51:30   INFO [localSiteParameterizedTest.DriverLicenseParameterizedLocalSiteTest] : AC passed
+2020-20-02 11:51:31   INFO [localSiteParameterizedTest.DriverLicenseParameterizedLocalSiteTest] : AC passed
+2020-20-02 11:51:32   INFO [localSiteParameterizedTest.DriverLicenseParameterizedLocalSiteTest] : Chrome will be started
+2020-20-02 11:51:37   INFO [localSiteParameterizedTest.DriverLicenseParameterizedLocalSiteTest] : Chrome is started
+2020-20-02 11:51:47   INFO [pagesLocal.LoginLocalSitePage] : Login Page was opened
+2020-20-02 11:51:47   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-20-02 11:51:47   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-20-02 11:51:47   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-20-02 11:51:47   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-20-02 11:51:51   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-20-02 11:51:54   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-20-02 11:51:54   INFO [libs.ActionsWithOurElements] : P2321510 was inputted into element
+2020-20-02 11:51:54   INFO [libs.ActionsWithOurElements] : USA was selected in Drop-down
+2020-20-02 11:51:54   INFO [libs.ActionsWithOurElements] : CA was selected in Drop-down
+2020-20-02 11:51:55   INFO [libs.ActionsWithOurElements] : 1891-12-19 was inputted into element
+2020-20-02 11:51:58   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-20-02 11:52:03   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-20-02 11:52:05   INFO [localSiteParameterizedTest.DriverLicenseParameterizedLocalSiteTest] : AC passed
+2020-20-02 11:52:07   INFO [localSiteParameterizedTest.DriverLicenseParameterizedLocalSiteTest] : AC passed
+2020-20-02 11:52:08   INFO [localSiteParameterizedTest.DriverLicenseParameterizedLocalSiteTest] : AC passed
+2020-20-02 11:52:08   INFO [localSiteParameterizedTest.DriverLicenseParameterizedLocalSiteTest] : Chrome will be started
+2020-20-02 11:52:13   INFO [localSiteParameterizedTest.DriverLicenseParameterizedLocalSiteTest] : Chrome is started
+2020-20-02 11:52:23   INFO [pagesLocal.LoginLocalSitePage] : Login Page was opened
+2020-20-02 11:52:24   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-20-02 11:52:24   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-20-02 11:52:24   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-20-02 11:52:24   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-20-02 11:52:27   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-20-02 11:53:20   INFO [localSiteParameterizedTest.SoloDriverCreateEquipmentParameterizedLocalSiteTest] : Chrome will be started
+2020-20-02 14:02:10   INFO [oldSiteParameterizedTest.FleetOrderParamsTest] : Chrome will be started
+2020-20-02 14:02:17   INFO [oldSiteParameterizedTest.FleetOrderParamsTest] : Chrome is started
+2020-20-02 14:02:22   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-20-02 14:02:24   INFO [pages.EldPage] : User have not Order with status New
+2020-20-02 14:02:24   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-20-02 14:02:26   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-20-02 14:02:33   INFO [pages.LoginPage] : Login Page was opened
+2020-20-02 14:02:33   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-20-02 14:02:33   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-20-02 14:02:34   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-20-02 14:02:34   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-20-02 15:34:46   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-20-02 17:13:43   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-21-02 16:52:25   INFO [chargeTest.ChargeMonthToMonthTariff] : Chrome will be started
+2020-21-02 16:52:31   INFO [chargeTest.ChargeMonthToMonthTariff] : Chrome is started
+2020-21-02 16:52:36   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-21-02 16:52:38   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-21-02 16:52:40   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-21-02 16:52:41   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-21-02 16:52:43   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-21-02 16:52:45   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-21-02 16:52:46   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-21-02 16:52:48   INFO [libs.ChargeMethods] : # Temp Tariff Month Start 2020-01-31T16:52:48.513
+2020-21-02 16:52:48   INFO [libs.ChargeMethods] : # Temp Date Time Eld History 2020-01-31T16:52:48.515
+2020-21-02 16:52:48   INFO [libs.ChargeMethods] : # Temp Tariff Month Start 2020-01-31T16:52:48.516
+2020-21-02 16:52:48   INFO [libs.ChargeMethods] : # Temp Date Time Eld History 2020-01-31T16:52:48.516
+2020-21-02 16:52:48   INFO [libs.ChargeMethods] : # Temp Tariff Month Start 2020-01-31T16:52:48.517
+2020-21-02 16:52:48   INFO [libs.ChargeMethods] : # Temp Date Time Eld History 2020-01-31T16:52:48.517
+2020-21-02 16:52:48   INFO [libs.ChargeMethods] : # COUNT Scanner Month IOSX Tariff = 73
+2020-21-02 16:52:48   INFO [libs.ChargeMethods] : # count Deactivated Scanner Month IOSX Tariff = 0
+2020-21-02 16:52:48   INFO [libs.ChargeMethods] : # count Month IOSX Charge Returned Scanner = 2
+2020-21-02 16:52:48   INFO [libs.ChargeMethods] : # count Scanner Month Geometrics Tariff = 52
+2020-21-02 16:52:48   INFO [libs.ChargeMethods] : # count Month Geometric sCharge Returned Scanner = 2
+2020-21-02 16:52:48   INFO [libs.ChargeMethods] : # count Scanner Month Ez hard Tariff = 7
+2020-21-02 16:52:48   INFO [libs.ChargeMethods] : # count Month Ez Hard sCharge Returned Scanner = 2
+2020-21-02 16:52:48   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-21-02 16:52:50   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-21-02 16:52:51   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-21-02 16:52:53   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-21-02 16:52:55   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-21-02 16:52:57   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-21-02 16:52:58   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-21-02 16:53:00   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-21-02 16:53:02   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-21-02 16:53:04   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-21-02 16:53:05   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-21-02 16:53:07   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-21-02 16:53:09   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-21-02 16:54:07   INFO [libs.ChargeMethods] : Cron check fleets was run: 2020-02-21 14:53:10
+2020-21-02 16:54:07   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-21-02 16:54:09   INFO [libs.ChargeMethods] : # Date Time Last Due = [2020-02-21 14:54:29]
+2020-21-02 16:54:10   INFO [chargeTest.ChargeMonthToMonthTariff] : AC passed
+2020-21-02 16:54:10   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-21-02 16:54:12   INFO [libs.ChargeMethods] : # AMOUNT DUE FROM DB = [1551.00, 1116.72, 186.12]
+2020-21-02 16:54:12   INFO [libs.ChargeMethods] : # Sum Of Deactivated Scanner = 0.0
+2020-21-02 16:54:12   INFO [libs.ChargeMethods] : ***** Month Days = 29
+2020-21-02 16:54:12   INFO [libs.ChargeMethods] : ***** Price For One Day = 1.0341379310344827
+2020-21-02 16:54:12   INFO [libs.ChargeMethods] : ***** Active Charge Days = 20
+2020-21-02 16:54:12   INFO [libs.ChargeMethods] : ***** chargeByDevice = 20.68
+2020-21-02 16:54:12   INFO [libs.ChargeMethods] : ***** chargeByAllDevices = 2853.84
+2020-21-02 16:54:12   INFO [libs.ChargeMethods] : ***** charge from db = 2853.84
+2020-21-02 16:54:13   INFO [chargeTest.ChargeMonthToMonthTariff] : AC passed
+2020-21-02 16:54:13   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-21-02 16:54:15   INFO [chargeTest.ChargeMonthToMonthTariff] : AC passed
+2020-21-02 16:54:15   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-21-02 16:54:17   INFO [libs.ChargeMethods] : tempEstimatedTill: 2020-03-01
+2020-21-02 16:54:18   INFO [chargeTest.ChargeMonthToMonthTariff] : AC passed
+2020-21-02 16:54:18   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-21-02 16:54:20   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-21-02 16:54:21   INFO [libs.ChargeMethods] : tempPaidTill: 2020-03-01
+2020-21-02 16:54:22   INFO [chargeTest.ChargeMonthToMonthTariff] : AC passed
+2020-21-02 16:55:12   INFO [chargeTest.ChargeFleetSoloTest] : Chrome will be started
+2020-21-02 16:55:19   INFO [chargeTest.ChargeFleetSoloTest] : Chrome is started
+2020-21-02 16:55:24   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-21-02 16:55:26   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-21-02 16:55:27   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-21-02 16:55:29   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-21-02 16:55:31   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-21-02 16:55:32   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-21-02 16:55:34   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-21-02 16:55:36   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-21-02 16:55:37   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-21-02 16:55:39   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-21-02 16:55:41   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-21-02 16:55:42   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-21-02 16:55:44   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-21-02 16:55:46   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-21-02 16:55:47   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-21-02 16:55:49   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-21-02 16:55:51   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-21-02 16:55:52   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-21-02 16:55:54   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-21-02 16:55:56   INFO [libs.ChargeMethods] : # Temp Tariff Month Start 2019-09-19T16:55:56.030
+2020-21-02 16:55:56   INFO [libs.ChargeMethods] : # Temp Tariff Month Start 2019-11-15T16:55:56.032
+2020-21-02 16:55:56   INFO [libs.ChargeMethods] : # Temp Tariff Month Start 2019-11-18T16:55:56.033
+2020-21-02 16:55:56   INFO [libs.ChargeMethods] : # COUNT MONTH TO MONTH IOSX TARIFF = 73
+2020-21-02 16:55:56   INFO [libs.ChargeMethods] : # COUNT ONE YEAR IOSX TARIFF = 39
+2020-21-02 16:55:56   INFO [libs.ChargeMethods] : # COUNT TWO YEARS IOSX TARIFF = 102
+2020-21-02 16:55:56   INFO [libs.ChargeMethods] : # COUNT MONTH TO MONTH GEOMETRICS TARIFF = 52
+2020-21-02 16:55:56   INFO [libs.ChargeMethods] : # COUNT ONE YEAR GEOMETRICS TARIFF = 28
+2020-21-02 16:55:56   INFO [libs.ChargeMethods] : # COUNT TWO YEARS GEOMETRICS TARIFF = 39
+2020-21-02 16:55:56   INFO [libs.ChargeMethods] : # COUNT MONTH TO MONTH EZ HARD TARIFF = 7
+2020-21-02 16:55:56   INFO [libs.ChargeMethods] : # COUNT ONE YEAR EZ HARD TARIFF = 5
+2020-21-02 16:55:56   INFO [libs.ChargeMethods] : # COUNT TWO YEARS EZ HARD TARIFF = 1
+2020-21-02 16:55:57   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-21-02 16:55:57   INFO [libs.ChargeMethods] : # Deactivated Month IOSX Tariff = 0
+2020-21-02 16:55:57   INFO [libs.ChargeMethods] : # Month IOSX Charge Returned = 2
+2020-21-02 16:55:57   INFO [libs.ChargeMethods] : # One Year IOSX Charge Returned = 1
+2020-21-02 16:55:57   INFO [libs.ChargeMethods] : # Two Year IOSX Charge Returned = 5
+2020-21-02 16:55:57   INFO [libs.ChargeMethods] : # Geometrics Month Charge Returned = 2
+2020-21-02 16:55:57   INFO [libs.ChargeMethods] : # Geometrics One Year Charge Returned = 2
+2020-21-02 16:55:57   INFO [libs.ChargeMethods] : # Geometrics Two Year Charge Returned = 0
+2020-21-02 16:55:57   INFO [libs.ChargeMethods] : # EZ HARD Month Charge Returned = 2
+2020-21-02 16:55:57   INFO [libs.ChargeMethods] : # EZ HARD One Year Charge Returned = 0
+2020-21-02 16:55:57   INFO [libs.ChargeMethods] : # EZ HARD Two Year Charge Returned = 3
+2020-21-02 16:55:57   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-21-02 16:55:58   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-21-02 16:56:00   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-21-02 16:56:02   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-21-02 16:56:03   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-21-02 16:56:05   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-21-02 16:56:07   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-21-02 16:56:08   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-21-02 16:56:10   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-21-02 16:56:12   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-21-02 16:56:14   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-21-02 16:56:15   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-21-02 16:56:17   INFO [libs.ChargeMethods] : # Temp Tariff Month Start 2020-02-15T16:56:17.326
+2020-21-02 16:56:17   INFO [libs.ChargeMethods] : # Temp Tariff Month Start 2020-01-29T16:56:17.327
+2020-21-02 16:56:17   INFO [libs.ChargeMethods] : # Temp Tariff Month Start 2020-01-29T16:56:17.327
+2020-21-02 16:56:17   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-21-02 16:56:18   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-21-02 16:56:20   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-21-02 16:56:22   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-21-02 16:56:23   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-21-02 16:56:25   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-21-02 16:56:27   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-21-02 16:56:28   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-21-02 16:56:30   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-21-02 16:56:32   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-21-02 16:56:33   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-21-02 16:56:35   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-21-02 16:56:37   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-21-02 16:56:38   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-21-02 16:56:40   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-21-02 16:56:42   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-21-02 16:58:42   INFO [libs.ChargeMethods] : Cron check fleets was run: 2020-02-21 14:56:43
+2020-21-02 16:58:42   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-21-02 16:58:44   INFO [libs.ChargeMethods] : dateTime: [2020-02-21 14:59:04]
+2020-21-02 16:58:45   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-21-02 16:58:45   INFO [libs.ChargeMethods] : # MONTH CHARGE IOSX = 2099.3
+2020-21-02 16:58:45   INFO [libs.ChargeMethods] : # ONE YEAR CHARGE IOSX = 13195.6
+2020-21-02 16:58:45   INFO [libs.ChargeMethods] : # TWO YEARS CHARGE IOSX = 67387.53
+2020-21-02 16:58:45   INFO [libs.ChargeMethods] : # SUM DUE CHARGE IOSX = 82682.43
+2020-21-02 16:58:45   INFO [libs.ChargeMethods] : # MONTH CHARGE Geometrics = 1529.49
+2020-21-02 16:58:45   INFO [libs.ChargeMethods] : # ONE YEAR CHARGE Geometrics = 9896.7
+2020-21-02 16:58:45   INFO [libs.ChargeMethods] : # TWO YEARS CHARGE Geometrics = 24561.81
+2020-21-02 16:58:45   INFO [libs.ChargeMethods] : # SUM DUE CHARGE Geometrics = 35988.0
+2020-21-02 16:58:45   INFO [libs.ChargeMethods] : # MONTH CHARGE EzHard = 179.94
+2020-21-02 16:58:45   INFO [libs.ChargeMethods] : # ONE YEAR CHARGE EzHard = 1649.45
+2020-21-02 16:58:45   INFO [libs.ChargeMethods] : # TWO YEARS CHARGE EzHard = 2519.16
+2020-21-02 16:58:45   INFO [libs.ChargeMethods] : # SUM DUE CHARGE EzHard = 4348.55
+2020-21-02 16:58:45   INFO [libs.ChargeMethods] : # activationDate = 1581785777
+2020-21-02 16:58:45   INFO [libs.ChargeMethods] : # countScannerMonthToMonthTariffChargeByDays = 5
+2020-21-02 16:58:45   INFO [libs.ChargeMethods] : ***** Month Days = 29
+2020-21-02 16:58:45   INFO [libs.ChargeMethods] : ***** Price For One Day = 1.0341379310344827
+2020-21-02 16:58:45   INFO [libs.ChargeMethods] : ***** Active Charge Days = 5
+2020-21-02 16:58:45   INFO [libs.ChargeMethods] : ***** chargeByDevice = 5.17
+2020-21-02 16:58:45   INFO [libs.ChargeMethods] : ***** chargeByAllDevices = 25.85
+2020-21-02 16:58:45   INFO [libs.ChargeMethods] : # activationDate = 1580316977
+2020-21-02 16:58:45   INFO [libs.ChargeMethods] : # countScannerMonthToMonthTariffChargeByDays = 3
+2020-21-02 16:58:45   INFO [libs.ChargeMethods] : ***** Month Days = 29
+2020-21-02 16:58:45   INFO [libs.ChargeMethods] : ***** Price For One Day = 1.0341379310344827
+2020-21-02 16:58:45   INFO [libs.ChargeMethods] : ***** Active Charge Days = 22
+2020-21-02 16:58:45   INFO [libs.ChargeMethods] : ***** chargeByDevice = 22.75
+2020-21-02 16:58:45   INFO [libs.ChargeMethods] : ***** chargeByAllDevices = 68.25
+2020-21-02 16:58:45   INFO [libs.ChargeMethods] : # activationDate = 1580316977
+2020-21-02 16:58:45   INFO [libs.ChargeMethods] : # countScannerMonthToMonthTariffChargeByDays = 3
+2020-21-02 16:58:45   INFO [libs.ChargeMethods] : ***** Month Days = 29
+2020-21-02 16:58:45   INFO [libs.ChargeMethods] : ***** Price For One Day = 1.0341379310344827
+2020-21-02 16:58:45   INFO [libs.ChargeMethods] : ***** Active Charge Days = 22
+2020-21-02 16:58:45   INFO [libs.ChargeMethods] : ***** chargeByDevice = 22.75
+2020-21-02 16:58:45   INFO [libs.ChargeMethods] : ***** chargeByAllDevices = 68.25
+2020-21-02 16:58:45   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-21-02 16:58:47   INFO [libs.ChargeMethods] : # LIST AMOUNT DUE FROM DB = [13195.60, 2125.15, 67387.53, 9896.70, 1597.74, 24561.81, 248.19, 2519.16, 1649.45]
+2020-21-02 16:58:47   INFO [libs.ChargeMethods] : # PROGRAM COUNT CHARGE  = 123181.33
+2020-21-02 16:58:47   INFO [libs.ChargeMethods] : # SUM DB DUE (CHARGE) = 123181.33
+2020-21-02 16:58:48   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-21-02 16:58:48   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-21-02 16:58:50   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-21-02 16:58:50   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-21-02 16:58:53   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-21-02 16:58:53   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-21-02 16:58:56   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-21-02 16:58:56   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-21-02 16:58:57   INFO [libs.ChargeMethods] : tempEstimatedTill: 2020-03-01
+2020-21-02 16:58:58   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-21-02 16:58:58   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-21-02 16:59:00   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-21-02 16:59:02   INFO [libs.ChargeMethods] : tempPaidTill: 2020-03-01
+2020-21-02 16:59:03   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-21-02 17:36:54   INFO [oldSiteParameterizedTest.FleetOrderParamsTest] : Chrome will be started
+2020-21-02 17:37:01   INFO [oldSiteParameterizedTest.FleetOrderParamsTest] : Chrome is started
+2020-21-02 17:37:06   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-21-02 17:37:08   INFO [pages.EldPage] : User have not Order with status New
+2020-21-02 17:37:08   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-21-02 17:37:10   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-21-02 17:37:19   INFO [pages.LoginPage] : Login Page was opened
+2020-21-02 17:37:19   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-21-02 17:37:19   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-21-02 17:37:20   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-21-02 17:37:20   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-21-02 17:37:47   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2020-21-02 17:37:47   INFO [pages.LoginPage] : There is not phone verification pop up

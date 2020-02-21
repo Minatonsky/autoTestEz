@@ -9,6 +9,8 @@ import org.openqa.selenium.support.FindBy;
 
 import java.util.Date;
 
+import static libs.Utils.waitABit;
+
 public class LoginPage extends ParentPage {
 
     @FindBy(xpath = ".//*[@class='log_in btn-login']")
@@ -22,6 +24,9 @@ public class LoginPage extends ParentPage {
 
     @FindBy(xpath = ".//*[@id='btnLogin']")
     private WebElement submitButton;
+
+    @FindBy(xpath = ".//*[@id='validatePhone']//../*[@aria-label=\"Close\"]")
+    private WebElement phoneVerificationClose;
 
     public LoginPage(WebDriver webDriver) {
         super(webDriver, "/");
@@ -56,20 +61,7 @@ public class LoginPage extends ParentPage {
     @Step
     public void clickOnSubmitButton() { actionsWithOurElements.clickOnElement(submitButton); }
 
-    /**
-     * Method valid Login
-     * @param login (ONLY Valid Login)
-     * @param passWord (ONLY Valid Pass)
-     */
-
-    public void userValidLogIn(String login, String passWord) {
-        openPage();
-        openLoginForm();
-        enterLogin(login);
-        enterPass(passWord);
-        clickOnSubmitButton();
-        openDashBoardMenuByCookies();
-    }
+    @Step
     public void openDashBoardMenuByCookies(){
         Cookie cookie = new Cookie.Builder("minimize-menu", "1")
                 .domain("dev.ezlogz.com")
@@ -79,5 +71,27 @@ public class LoginPage extends ParentPage {
                 .path("/")
                 .build();
         webDriver.manage().addCookie(cookie);
+    }
+
+    @Step
+    public void closePhoneVerificationPopUp(){
+        if (actionsWithOurElements.isElementDisplay(phoneVerificationClose)){
+            actionsWithOurElements.clickOnElement(phoneVerificationClose);
+            logger.info("Phone verification pop up Closed");
+        } else {
+            logger.info("There is not phone verification pop up");
+        }
+
+    }
+
+    public void userValidLogIn(String login, String passWord) {
+        openPage();
+        openLoginForm();
+        enterLogin(login);
+        enterPass(passWord);
+        clickOnSubmitButton();
+        openDashBoardMenuByCookies();
+        waitABit(3);
+        closePhoneVerificationPopUp();
     }
 }

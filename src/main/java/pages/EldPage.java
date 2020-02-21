@@ -38,6 +38,7 @@ public class EldPage extends ParentPage {
     }
 
     public void goToPaperLogPermissions(){waitABit(2);actionsWithOurElements.clickOnElement(paperLogPermissionsPage);}
+
     public void goToManageELDPage(){waitABit(2);actionsWithOurElements.clickOnElement(manageELDPage);}
 
     @Step
@@ -80,12 +81,15 @@ public class EldPage extends ParentPage {
     private void clickOnOrderEldConfirm() {
         actionsWithOurElements.clickOnElement("//*[@class='btn btn-primary changeStatus' and text()='Confirm']");
     }
+
     private void clickOnButtonCancelOrderDevice() {
         actionsWithOurElements.clickOnElement("//*[@class='btn btn-default' and text()='Cancel Order Device']");
     }
+
     private void clickOnOrderOnList(String idLocalDevice) {
         actionsWithOurElements.clickOnElement(".//*[@id='eld_table']//td[text()='" + idLocalDevice + "']");
     }
+
     public void enterIdOrder(String idLocalDevice){
         actionsWithOurElements.enterTextToElement(idHolder, idLocalDevice);
     }

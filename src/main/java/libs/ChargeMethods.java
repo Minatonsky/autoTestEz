@@ -1,8 +1,6 @@
-package pages;
+package libs;
 
 import io.qameta.allure.Step;
-import libs.ConfigProperties;
-import libs.UtilsForDB;
 import org.aeonbits.owner.ConfigFactory;
 import org.apache.log4j.Logger;
 import org.json.JSONObject;
@@ -16,7 +14,7 @@ import java.time.temporal.ChronoUnit;
 import java.time.temporal.TemporalAdjusters;
 import java.util.List;
 
-public class ChargePage {
+public class ChargeMethods {
     Logger logger = Logger.getLogger(getClass());
     WebDriver webDriver;
     UtilsForDB utilsForDB = new UtilsForDB();
@@ -27,7 +25,7 @@ public class ChargePage {
     double eld2YearsSubscriptionPrice = 629.79;
 
     protected static ConfigProperties configProperties = ConfigFactory.create(ConfigProperties.class);
-    public ChargePage(WebDriver webDriver) {
+    public ChargeMethods(WebDriver webDriver) {
         this.webDriver = webDriver;
     }
 
@@ -294,8 +292,7 @@ public class ChargePage {
         return result;
     }
     @Step
-    public boolean compareDueChargeMonthToMonthTariff(String activationDate, String soloOrFleetString, String userId, int countScannerMonthToMonthTariff,
-                                                      double sumDeactivatedScannerMonthToMonthTariff, String timeRunCron) throws SQLException, IOException, ClassNotFoundException {
+    public boolean compareDueChargeMonthToMonthTariff(String activationDate, String soloOrFleetString, String userId, int countScannerMonthToMonthTariff, double sumDeactivatedScannerMonthToMonthTariff, String timeRunCron) throws SQLException, IOException, ClassNotFoundException {
         List<String> amountDue = utilsForDB.getAmountEzDueMonthToMonth(soloOrFleetString, userId, timeRunCron);
         logger.info("# AMOUNT DUE FROM DB = " + amountDue);
         logger.info("# Sum Of Deactivated Scanner = " + sumDeactivatedScannerMonthToMonthTariff);
@@ -465,9 +462,7 @@ public class ChargePage {
         return tempResult;
     }
 
-    public void informationOfDeactivatedAndReturnedScanners(int countDeactivatedScannerMonthIOSXTariff, int countScannerMonthIOSXChargeReturned, int countScannerOneYearIOSXChargeReturned, int countScannerTwoYearIOSXChargeReturned,
-                                                            int countGeometricsMonthChargeReturnedScanner, int countGeometricsOneYearChargeReturnedScanner, int countGeometricsTwoYearChargeReturnedScanner,
-                                                            int countEzHardMonthChargeReturnedScanner, int countEzHardOneYearChargeReturnedScanner, int countEzHardTwoYearChargeReturnedScanner) {
+    public void informationOfDeactivatedAndReturnedScanners(int countDeactivatedScannerMonthIOSXTariff, int countScannerMonthIOSXChargeReturned, int countScannerOneYearIOSXChargeReturned, int countScannerTwoYearIOSXChargeReturned, int countGeometricsMonthChargeReturnedScanner, int countGeometricsOneYearChargeReturnedScanner, int countGeometricsTwoYearChargeReturnedScanner, int countEzHardMonthChargeReturnedScanner, int countEzHardOneYearChargeReturnedScanner, int countEzHardTwoYearChargeReturnedScanner) {
         logger.info("# Deactivated Month IOSX Tariff = " + countDeactivatedScannerMonthIOSXTariff);
         logger.info("# Month IOSX Charge Returned = " + countScannerMonthIOSXChargeReturned);
         logger.info("# One Year IOSX Charge Returned = " + countScannerOneYearIOSXChargeReturned);
@@ -482,11 +477,7 @@ public class ChargePage {
         logger.info("# EZ HARD Two Year Charge Returned = " + countEzHardTwoYearChargeReturnedScanner);
     }
 
-    public void informationOfScannersMonth(
-            int countScannerMonthIOSXTariff, int countDeactivatedScannerMonthIOSXTariff, int countMonthIOSXChargeReturnedScanner,
-            int countScannerMonthGeometricsTariff, int countMonthGeometricsChargeReturnedScanner,
-            int countScannerMonthEzHardTariff, int countMonthEzHardChargeReturnedScanner
-    ) {
+    public void informationOfScannersMonth(int countScannerMonthIOSXTariff, int countDeactivatedScannerMonthIOSXTariff, int countMonthIOSXChargeReturnedScanner, int countScannerMonthGeometricsTariff, int countMonthGeometricsChargeReturnedScanner, int countScannerMonthEzHardTariff, int countMonthEzHardChargeReturnedScanner) {
         logger.info("# COUNT Scanner Month IOSX Tariff = " + countScannerMonthIOSXTariff);
         logger.info("# count Deactivated Scanner Month IOSX Tariff = " + countDeactivatedScannerMonthIOSXTariff);
         logger.info("# count Month IOSX Charge Returned Scanner = " + countMonthIOSXChargeReturnedScanner);

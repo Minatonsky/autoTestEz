@@ -90,6 +90,7 @@ public class AccountSettingsPage extends ParentPage {
     public void enterLastName(String lastNameInput){actionsWithOurElements.clearAndEnterTextToElement(lastName, lastNameInput);}
     public void enterPhone(String phoneInput){actionsWithOurElements.clearAndEnterTextToElement(phoneNumber, phoneInput);}
     public void clickSaveAccountInfo(){actionsWithOurElements.clickOnElement(buttonSaveAccountInfo);}
+
 //    DRIVER INFO
     public void setCycle(String cycleValue, String cycleTypeValue){
         if (cycleValue.equals(cycleTypeValue)){
@@ -151,21 +152,11 @@ public class AccountSettingsPage extends ParentPage {
     public void clickSaveDriverInfo(){actionsWithOurElements.clickOnElement(buttonSaveDriverInfo);}
 
 //    DASHBOARD SETTINGS
-    public void clickOnSoundNotification(){actionsWithOurElements.clickJsOnElement(soundCheckOn);}
-    public void clickOffSoundNotification(){actionsWithOurElements.clickJsOnElement(soundCheckOff);}
-    public void clickOnNotificationBox(){actionsWithOurElements.clickJsOnElement(notificationCheckOn);}
-    public void clickOffNotificationBox(){actionsWithOurElements.clickJsOnElement(notificationCheckOff);}
-    public void clickOnScoreCard(){actionsWithOurElements.clickJsOnElement(scoreCheckOn);}
-    public void clickOffScoreCard(){actionsWithOurElements.clickJsOnElement(scoreCheckOff);}
-    public void clickOnCoordinates(){actionsWithOurElements.clickJsOnElement(iconCheckOn);}
-    public void clickOffCoordinates(){actionsWithOurElements.clickJsOnElement(iconCheckOff);}
-
-
     public void setSoundNotification(String checkBoxValue){
         if (checkBoxValue.equals("0") || checkBoxValue.equals("")){
-            clickOnSoundNotification();
+            actionsWithOurElements.clickJsOnElement(soundCheckOn);
         } else if(checkBoxValue.equals("1")){
-            clickOffSoundNotification();
+            actionsWithOurElements.clickJsOnElement(soundCheckOff);
         } else {
             logger.error("Sound notification failed");
             Assert.fail("Cannot work with element");
@@ -173,9 +164,9 @@ public class AccountSettingsPage extends ParentPage {
     }
     public void setNotificationBox(String checkBoxValue){
         if (checkBoxValue.equals("0") || checkBoxValue.equals("")){
-            clickOnNotificationBox();
+            actionsWithOurElements.clickJsOnElement(notificationCheckOn);
         } else if(checkBoxValue.equals("1")){
-            clickOffNotificationBox();
+            actionsWithOurElements.clickJsOnElement(notificationCheckOff);
         } else {
             logger.error("Notification box failed");
             Assert.fail("Cannot work with element");
@@ -183,9 +174,9 @@ public class AccountSettingsPage extends ParentPage {
     }
     public void setScoreCard(String checkBoxValue){
         if (checkBoxValue.equals("0") || checkBoxValue.equals("")){
-            clickOnScoreCard();
+            actionsWithOurElements.clickJsOnElement(scoreCheckOn);
         } else if(checkBoxValue.equals("1")){
-            clickOffScoreCard();
+            actionsWithOurElements.clickJsOnElement(scoreCheckOff);
         } else {
             logger.error("Score Card failed");
             Assert.fail("Cannot work with element");
@@ -193,9 +184,9 @@ public class AccountSettingsPage extends ParentPage {
     }
     public void setCoordinatesIcon(String checkBoxValue){
         if (checkBoxValue.equals("0") || checkBoxValue.equals("")){
-            clickOnCoordinates();
+            actionsWithOurElements.clickJsOnElement(iconCheckOn);
         } else if(checkBoxValue.equals("1")){
-            clickOffCoordinates();
+            actionsWithOurElements.clickJsOnElement(iconCheckOff);
         } else {
             logger.error("Coordinate Icon failed");
             Assert.fail("Cannot work with element");
