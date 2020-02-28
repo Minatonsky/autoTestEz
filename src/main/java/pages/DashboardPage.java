@@ -1,6 +1,5 @@
 package pages;
 
-import io.qameta.allure.Step;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -56,9 +55,6 @@ public class DashboardPage extends ParentPage {
     @FindBy(xpath = ".//i[@class='fa fa-angle-double-left minimize-arrow']")
     private WebElement menuSizeButton;
 
-    @FindBy(xpath = ".//*[@id='validatePhone']//../*[@aria-label=\"Close\"]")
-    private WebElement phoneVerificationClose;
-
     public DashboardPage(WebDriver webDriver) {
 
         super(webDriver, "/dash");
@@ -66,9 +62,6 @@ public class DashboardPage extends ParentPage {
 
     public boolean isDashboardPresent(){
         return actionsWithOurElements.isElementEnable(dashboard);
-    }
-    public void clickOnMenuDash() {
-        actionsWithOurElements.clickOnElement(menuDash);
     }
 
     public void goToStatusPage(){
@@ -120,31 +113,4 @@ public class DashboardPage extends ParentPage {
         actionsWithOurElements.clickOnElement(pageSettings);
     }
 
-    public void clickMenuSizeButton(){
-        actionsWithOurElements.clickOnElement(menuSizeButton);
-    }
-
-    public boolean ifPhoneVerificationPopUpExist(){return actionsWithOurElements.isElementDisplay(phoneVerificationClose);}
-    public void clickOnCloseButton(){actionsWithOurElements.clickOnElement(phoneVerificationClose);}
-
-    @Step
-    public void openMenuDash(){
-
-        waitABit(3);
-        closePhoneVerificationPopUp();
-        waitABit(3);
-        clickOnMenuDash();
-        waitABit(3);
-        clickMenuSizeButton();
-    }
-
-    @Step
-    public void closePhoneVerificationPopUp(){
-        if (ifPhoneVerificationPopUpExist() == true){
-            clickOnCloseButton();
-        } else {
-            logger.info("There is not phone verification pop up");
-        }
-
-    }
 }

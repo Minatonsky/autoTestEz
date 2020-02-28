@@ -3,7 +3,6 @@ package restTest;
 import io.restassured.response.Response;
 import io.restassured.response.ResponseBody;
 import io.restassured.specification.RequestSpecification;
-import libs.CurrencyValues;
 import libs.ResponseStructureForRestAssuredTest;
 import org.json.JSONObject;
 import org.json.simple.parser.ParseException;
@@ -32,11 +31,11 @@ public class TestRestAssured {
 //        }
 //        System.out.println(" Kust " + testString1[3] + " = " + testString1[11] + " and " + testString1[15]);
 
-        CurrencyValues[] responseStructure = responseBody.as(CurrencyValues[].class);
-
-        for (CurrencyValues currencyElement : responseStructure ) {
-            System.out.println("Cur " + currencyElement.ccy + " to " + currencyElement.base_ccy + " has for buy " + currencyElement.buy + " and for sale " + currencyElement.sale);
-        }
+//        CurrencyValues[] responseStructure = responseBody.as(CurrencyValues[].class);
+//
+//        for (CurrencyValues currencyElement : responseStructure ) {
+//            System.out.println("Cur " + currencyElement.monthIOSXTariffId + " to " + currencyElement.base_ccy + " has for buy " + currencyElement.buy + " and for sale " + currencyElement.sale);
+//        }
     }
 
 
@@ -48,6 +47,7 @@ public class TestRestAssured {
         ResponseBody responseBody = mainRestSteps.getResponseBody(response);
         ResponseStructureForRestAssuredTest responseStructure = responseBody.as(ResponseStructureForRestAssuredTest.class);
         System.out.println("City from json " + responseStructure.City);
+        System.out.println("City from json " + responseStructure.Humidity);
     }
 
     @Test

@@ -32,7 +32,6 @@ public class SoloDriverSettingsTest extends ParentTest {
 
         utilsForDB.set_0_AobrdMPHDriverSettings(userId);
         loginPage.userValidLogIn(login, pass);
-        dashboardPage.openMenuDash();
         dashboardPage.goToSettingPage();
         settingsPage.goToDriverSettings();
 

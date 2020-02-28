@@ -1,6 +1,7 @@
 package parentTest;
 
 import io.qameta.allure.Step;
+import libs.ChargeMethods;
 import libs.ConfigProperties;
 import libs.ExcelDriver;
 import libs.UtilsForDB;
@@ -23,7 +24,6 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.sql.SQLException;
 import java.util.Iterator;
-import java.util.Random;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
@@ -37,12 +37,12 @@ public class ParentTest {
     protected ExcelDriver excelDriver;
     protected LoginPage loginPage;
     protected DashboardPage dashboardPage;
-    protected ModalEldPage modalEldPage;
+    protected ModalOrderPage modalOrderPage;
     protected FinancesPage financesPage;
     protected ManagerEldPage managerEldPage;
     protected OrderInfoPage orderInfoPage;
     protected ManagerModalEldPage managerModalEldPage;
-    protected ChargePage chargePage;
+    protected ChargeMethods chargeMethods;
     protected SettingsPage settingsPage;
     protected EquipmentPage equipmentPage;
     protected DashboardLocalSitePage dashboardLocalSitePage;
@@ -54,11 +54,27 @@ public class ParentTest {
     protected LogsPage logsPage;
     protected EldPage eldPage;
     protected HelpAndTrainingPage helpAndTrainingPage;
+    protected AccountSettingsPage accountSettingsPage;
+    protected LogsLocalSitePage logsLocalSitePage;
 
     String browser = System.getProperty("browser");
 
-    protected static ConfigProperties configProperties = ConfigFactory.create(ConfigProperties.class);
+    public String IOSXMonthTariffId = "0";
+    public String geometricsMonthTariffId = "9";
+    public String ezHardMonthTariffId = "12";
+    public String oneYearIOSXTariffId = "1";
+    public String twoYearsIOSXTariffId = "2";
+    public String oneYearGeometricsTariffId = "10";
+    public String twoYearsGeometricsTariffId = "11";
+    public String monthEzHardTariffId = "12";
+    public String oneYearEzHardTariffId = "13";
+    public String twoYearsEzHardTariffId = "14";
 
+    public String carrierIdString = "carrierId";
+    public String fleetString = "fleet";
+    public String userIdString = "userId";
+
+    protected static ConfigProperties configProperties = ConfigFactory.create(ConfigProperties.class);
 
     @Before
     public void setUp() throws SQLException, IOException, ClassNotFoundException {
@@ -69,12 +85,12 @@ public class ParentTest {
         webDriver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         loginPage = new LoginPage(webDriver);
         dashboardPage = new DashboardPage(webDriver);
-        modalEldPage = new ModalEldPage(webDriver);
+        modalOrderPage = new ModalOrderPage(webDriver);
         financesPage = new FinancesPage(webDriver);
         managerEldPage = new ManagerEldPage(webDriver);
         orderInfoPage = new OrderInfoPage(webDriver);
         managerModalEldPage = new ManagerModalEldPage(webDriver);
-        chargePage = new ChargePage(webDriver);
+        chargeMethods = new ChargeMethods(webDriver);
         settingsPage = new SettingsPage(webDriver);
         equipmentPage = new EquipmentPage(webDriver);
         dashboardLocalSitePage = new DashboardLocalSitePage(webDriver);
@@ -86,6 +102,8 @@ public class ParentTest {
         logsPage = new LogsPage(webDriver);
         eldPage = new EldPage(webDriver);
         helpAndTrainingPage = new HelpAndTrainingPage(webDriver);
+        accountSettingsPage = new AccountSettingsPage(webDriver);
+        logsLocalSitePage = new LogsLocalSitePage(webDriver);
 
     }
 
@@ -113,7 +131,6 @@ public class ParentTest {
         }
     }
 
-
     @After
     public void tearDown() throws SQLException {
         webDriver.quit();
@@ -128,6 +145,7 @@ public class ParentTest {
         Assert.assertEquals(message,expected,actual);
         logger.info("AC passed");
     }
+
     @Step
     protected void checkACWithLogger(String message, boolean actual, boolean expected, String valueFront, String valueFromDb){
         waitABit(1);
@@ -144,9 +162,11 @@ public class ParentTest {
         String mainWindow = iter.next();
         String childWindow = iter.next();
     }
+
     public void switchToModalWindow(){
         webDriver.switchTo().activeElement();
     }
+
     public String[] getCookieValues(){
         Set<Cookie> cks = webDriver.manage().getCookies();
         String[] cookieValues = new String[cks.size()];
@@ -197,28 +217,6 @@ public class ParentTest {
             ex.printStackTrace();
         }
     }
-    public String genRandomFuelType(){
-        String[] arr={"Gasoline", "Diesel", "Gasohol", "Propane", "LNG", "CNG", "Ethanol", "Methanol", "E-85", "M-85", "A55", "Biodiesel"};
-        Random r=new Random();
-        int randomNumber=r.nextInt(arr.length);
-        return arr[randomNumber];
-    }
-    public String genRandomCreditCard(){
-        String[] arr={"4007000000027", "4111111111111111", "5424000000000015", "4012888818888", "370000000000002", "2223000010309711", "6011000000000012"};
-        Random r=new Random();
-        int randomNumber=r.nextInt(arr.length);
-        return arr[randomNumber];
-    }
-
-//    public void putCookiesIntoBrowser(){
-//
-//        Cookie name = new Cookie();
-//        try {
-//            webDriver.manage().addCookie(name);
-//        } catch (Exception e){
-//            logger.error("Cookies failed");
-//        }
-//    }
 
 
 //       This is for do screenshot on failed test

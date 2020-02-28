@@ -26,7 +26,7 @@ public class SoloDriverDocumentsParameterizedLocalSiteTest extends ParentTest {
     public SoloDriverDocumentsParameterizedLocalSiteTest(String login) throws IOException {
         this.login = login;
     }
-    @Parameterized.Parameters()
+    @Parameterized.Parameters(name = "{0}")
     public static Collection testData() throws IOException {
         InputStream spreadsheet = new FileInputStream(configProperties.DATA_FILE_PATH() + "testLogin.xls");
         return new SpreadsheetData(spreadsheet, "loginPassParamsTest").getData();

@@ -58,7 +58,6 @@ public class SafetyCreateEquipmentParamTest extends ParentTest {
         String dateDb = "1111-11-11";
 
         loginPage.userValidLogIn(login, pass);
-        dashboardPage.openMenuDash();
         checkAC("User wasn`t logined", dashboardPage.isDashboardPresent(), true);
 
 //        ADD TRUCK
@@ -150,7 +149,6 @@ public class SafetyCreateEquipmentParamTest extends ParentTest {
 
 
         loginPage.userValidLogIn(login, pass);
-        dashboardPage.openMenuDash();
         dashboardPage.goToFleetPage();
         waitABit(3);
 // ADD TRAILER

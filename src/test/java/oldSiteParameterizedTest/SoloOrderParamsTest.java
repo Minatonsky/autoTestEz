@@ -3,7 +3,6 @@ package oldSiteParameterizedTest;
 import libs.ExcelDriver;
 import libs.SpreadsheetData;
 import org.junit.Before;
-import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
@@ -46,7 +45,7 @@ public class SoloOrderParamsTest extends ParentTest { String  typeOfDevices, qua
 
     String userIdString = "userId";
 
-    @Parameterized.Parameters()
+    @Parameterized.Parameters(name = "Type devices: {0}, quantity devices: {1}, payment method: {2}, Pin cable: {3}, OBD cable: {4}, sticker: {5}, cameraCP: {6}, cd card: {7}, cameraCVA: {8}, payment method cam: {9}, PickUpFromOffice: {10}, OvernightDelivery: {11}, current due: {12}")
     public static Collection testData() throws IOException {
         InputStream spreadsheet = new FileInputStream(configProperties.DATA_FILE_PATH() + "testParameterizedOrder.xls");
         return new SpreadsheetData(spreadsheet,"suitOrderListData").getData();
@@ -58,34 +57,33 @@ public class SoloOrderParamsTest extends ParentTest { String  typeOfDevices, qua
         utilsForDB.setCurrentDueForSolo(currentDue, dataSoloId.get("soloId").toString());
 
         loginPage.userValidLogIn(dataForSoloValidLogIn.get("login").toString(),dataForSoloValidLogIn.get("pass").toString());
-        dashboardPage.openMenuDash();
         dashboardPage.goToEldPage();
         eldPage.clickOnOrderELD();
-        modalEldPage.enterPersonalData(personalDataForEldOrder.get("deliveryState").toString(), personalDataForEldOrder.get("firstName").toString(), personalDataForEldOrder.get("lastName").toString(), personalDataForEldOrder.get("phone").toString(), personalDataForEldOrder.get("addressLine").toString(), personalDataForEldOrder.get("aptNumber").toString(), personalDataForEldOrder.get("deliveryCity").toString(), personalDataForEldOrder.get("zipCode").toString());
-        modalEldPage.enterOrderData(typeOfDevices, quantityOfDevices, quantityPinCable, quantityOBDPinCable, quantitySticker, quantityCameraCP, valueSdCard, quantityCameraSVA, neededStatePickUpFromOffice, neededStateOvernightDelivery);
-        modalEldPage.clickPaymentMethods(typeOfPaymentMethod, quantityOfDevices);
-        modalEldPage.clickPaymentMethodsCamera(typeOfPaymentMethod, typeOfPaymentMethodCamera, quantityCameraCP);
+        modalOrderPage.enterPersonalData(personalDataForEldOrder.get("deliveryState").toString(), personalDataForEldOrder.get("firstName").toString(), personalDataForEldOrder.get("lastName").toString(), personalDataForEldOrder.get("phone").toString(), personalDataForEldOrder.get("addressLine").toString(), personalDataForEldOrder.get("aptNumber").toString(), personalDataForEldOrder.get("deliveryCity").toString(), personalDataForEldOrder.get("zipCode").toString());
+        modalOrderPage.enterOrderData(typeOfDevices, quantityOfDevices, quantityPinCable, quantityOBDPinCable, quantitySticker, quantityCameraCP, valueSdCard, quantityCameraSVA, neededStatePickUpFromOffice, neededStateOvernightDelivery);
+        modalOrderPage.clickPaymentMethods(typeOfPaymentMethod, quantityOfDevices);
+        modalOrderPage.clickPaymentMethodsCamera(typeOfPaymentMethod, typeOfPaymentMethodCamera, quantityCameraCP);
         waitABit(3);
-        checkAC("Eld prices is not correct", modalEldPage.compareEldPrice(quantityOfDevices, typeOfPaymentMethod, quantityCameraCP), true);
-        checkAC("DepositFee is not correct", modalEldPage.compareDepositFee(typeOfDevices, quantityOfDevices), true);
-        checkAC("DeliveryPrice is not correct", modalEldPage.compareDeliveryPrice(neededStatePickUpFromOffice), true);
-        checkAC("EldPinCable prices is not correct", modalEldPage.compareEldPinCable(quantityPinCable, typeOfDevices), true);
-        checkAC("EldOBDPinCable prices is not correct", modalEldPage.compareEldOBDPinCable(quantityOBDPinCable, typeOfDevices), true);
-        checkAC("EldStickerLabel prices is not correct", modalEldPage.compareEldStickerLabel(quantitySticker, typeOfDevices), true);
-        checkAC("CP2MonthFee is not correct", modalEldPage.compareCP2MonthFee(quantityCameraCP), true);
-        checkAC("CameraSetupFee is not correct", modalEldPage.compareCameraSetupFee(quantityCameraCP), true);
-        checkAC("CameraInstallationFee is not correct", modalEldPage.compareCameraInstallationFee(quantityCameraCP), true);
-        checkAC("EzSmartCamCP2 prices is not correct", modalEldPage.compareEzSmartCamCP2(quantityCameraCP), true);
-        checkAC("EzSmartCamSVA prices is not correct", modalEldPage.compareEzSmartCamSVA(quantityCameraSVA), true);
-        checkAC("SdCard prices is not correct", modalEldPage.compareSdCard(quantityCameraCP, valueSdCard), true);
-        String totalOrderFromFront = modalEldPage.getTotalOrder();
-        double sumTotalOrder = modalEldPage.totalOrderPrice(typeOfDevices, quantityOfDevices, typeOfPaymentMethod, quantityPinCable, quantityOBDPinCable, quantitySticker, quantityCameraCP, quantityCameraSVA, valueSdCard);
-        checkAC("Total Order is not correct", modalEldPage.compareTotalOrder(sumTotalOrder, totalOrderFromFront), true);
+        checkAC("Eld prices is not correct", modalOrderPage.compareEldPrice(quantityOfDevices, typeOfPaymentMethod, quantityCameraCP), true);
+        checkAC("DepositFee is not correct", modalOrderPage.compareDepositFee(typeOfDevices, quantityOfDevices), true);
+        checkAC("DeliveryPrice is not correct", modalOrderPage.compareDeliveryPrice(neededStatePickUpFromOffice), true);
+        checkAC("EldPinCable prices is not correct", modalOrderPage.compareEldPinCable(quantityPinCable, typeOfDevices), true);
+        checkAC("EldOBDPinCable prices is not correct", modalOrderPage.compareEldOBDPinCable(quantityOBDPinCable, typeOfDevices), true);
+        checkAC("EldStickerLabel prices is not correct", modalOrderPage.compareEldStickerLabel(quantitySticker, typeOfDevices), true);
+        checkAC("CP2MonthFee is not correct", modalOrderPage.compareCP2MonthFee(quantityCameraCP), true);
+        checkAC("CameraSetupFee is not correct", modalOrderPage.compareCameraSetupFee(quantityCameraCP), true);
+        checkAC("CameraInstallationFee is not correct", modalOrderPage.compareCameraInstallationFee(quantityCameraCP), true);
+        checkAC("EzSmartCamCP2 prices is not correct", modalOrderPage.compareEzSmartCamCP2(quantityCameraCP), true);
+        checkAC("EzSmartCamSVA prices is not correct", modalOrderPage.compareEzSmartCamSVA(quantityCameraSVA), true);
+        checkAC("SdCard prices is not correct", modalOrderPage.compareSdCard(quantityCameraCP, valueSdCard), true);
+        String totalOrderFromFront = modalOrderPage.getTotalOrder();
+        double sumTotalOrder = modalOrderPage.totalOrderPrice(typeOfDevices, quantityOfDevices, typeOfPaymentMethod, quantityPinCable, quantityOBDPinCable, quantitySticker, quantityCameraCP, quantityCameraSVA, valueSdCard);
+        checkAC("Total Order is not correct", modalOrderPage.compareTotalOrder(sumTotalOrder, totalOrderFromFront), true);
 
 
-        modalEldPage.doAgreeAgreement(typeOfDevices, quantityOfDevices);
-        modalEldPage.doAgreementCamera(quantityCameraCP);
-        modalEldPage.clickButtonOrder();
+        modalOrderPage.doAgreeAgreement(typeOfDevices, quantityOfDevices);
+        modalOrderPage.doAgreementCamera(quantityCameraCP);
+        modalOrderPage.clickButtonOrder();
         waitABit(2);
 
         String idLastOrderAfterTest = utilsForDB.getLastOrderId(userIdString, dataSoloId.get("soloId").toString());
@@ -101,7 +99,6 @@ public class SoloOrderParamsTest extends ParentTest { String  typeOfDevices, qua
         checkAC("Balance is not correct", financesPage.compareBalance(currentDue, dueForLastOrder, userBalance), true);
     }
     @Test
-    @Ignore
     public void cancelDevicesBySolo() throws SQLException, IOException, ClassNotFoundException {
 
         String idLastOrderAfterTest = utilsForDB.getLastOrderId(userIdString, dataSoloId.get("soloId").toString());
@@ -117,7 +114,6 @@ public class SoloOrderParamsTest extends ParentTest { String  typeOfDevices, qua
 
     }
     @Test
-    @Ignore
     public void managerCanceledOrder() throws SQLException, IOException, ClassNotFoundException {
 
         tearDown();
@@ -126,7 +122,6 @@ public class SoloOrderParamsTest extends ParentTest { String  typeOfDevices, qua
         String idLastOrderAfterTest = utilsForDB.getLastOrderId(userIdString, dataSoloId.get("soloId").toString());
         String dueForLastOrder = utilsForDB.getLastDueForSolo(dataSoloId.get("soloId").toString());
         loginPage.userValidLogIn(dataForManagerValidLogIn.get("login").toString(),dataForManagerValidLogIn.get("pass").toString());
-        dashboardPage.openMenuDash();
         dashboardPage.goToEldPage();
         managerEldPage.openOrderInfo(idLastOrderAfterTest);
         checkAC("Full Order Price is not correct", orderInfoPage.compareFullOrderPrice(dueForLastOrder), true);
@@ -137,12 +132,11 @@ public class SoloOrderParamsTest extends ParentTest { String  typeOfDevices, qua
         checkAC("ELD is present in canceled order", utilsForDB.isEldBlinded(idLastOrderAfterTest), false);
 
         String userBalance = utilsForDB.getCurrentDueEzFinancesSolo(dataSoloId.get("soloId").toString());
-        checkAC("Balance is not correct", financesPage.compareBalanceIfCanceled(currentDue, dueForLastOrder, quantityOfDevices, userBalance), true);
+        checkAC("Balance is not correct", financesPage.compareBalanceIfCanceledManager(currentDue, dueForLastOrder, userBalance), true);
 
     }
 
     @Test
-    @Ignore
     public void managerCompletedOrder() throws SQLException, IOException, ClassNotFoundException {
 
         tearDown();
@@ -151,7 +145,6 @@ public class SoloOrderParamsTest extends ParentTest { String  typeOfDevices, qua
         String idLastOrderAfterTest = utilsForDB.getLastOrderId(userIdString, dataSoloId.get("soloId").toString());
         String dueForLastOrder = utilsForDB.getLastDueForSolo(dataSoloId.get("soloId").toString());
         loginPage.userValidLogIn(dataForManagerValidLogIn.get("login").toString(), dataForManagerValidLogIn.get("pass").toString());
-        dashboardPage.openMenuDash();
         dashboardPage.goToEldPage();
         managerEldPage.openOrderInfo(idLastOrderAfterTest);
         checkAC("Full Order Price is not correct", orderInfoPage.compareFullOrderPrice(dueForLastOrder), true);

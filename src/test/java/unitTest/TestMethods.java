@@ -1,7 +1,8 @@
 package unitTest;
 
-import com.mifmif.common.regex.Generex;
+import libs.ConfigProperties;
 import libs.UtilsForDB;
+import org.aeonbits.owner.ConfigFactory;
 import org.json.JSONObject;
 import org.junit.Test;
 
@@ -17,11 +18,15 @@ import java.time.temporal.ChronoUnit;
 import java.time.temporal.TemporalAdjusters;
 import java.util.List;
 import java.util.logging.Logger;
+
+import static libs.Utils.genRandomDataByRegex;
 // This test page is not using on test project, it just for check some methods
+
 
 public class TestMethods {
     // testtesttesttest
     static Logger logger = Logger.getLogger(String.valueOf(TestMethods.class));
+    protected static ConfigProperties configProperties = ConfigFactory.create(ConfigProperties.class);
     UtilsForDB utilsForDB = new UtilsForDB();
 
 
@@ -187,35 +192,18 @@ public class TestMethods {
     @Test
 
     public void getAmountEzDueMonthToMonth() throws SQLException, IOException, ClassNotFoundException {
-        String soloOrFleetString = "531";
-        String carrierId = "carrierId";
-        String timeRunCron = "2019-12-03 10:23:19";
+        String data = genRandomDataByRegex("[A-Z]{1}[a-z]{11}");
+        String data2 = utilsForDB.getOrderStatus("4223");
+        configProperties.url_dev_ezlogz();
 
-        List<String> tempAmountList = utilsForDB.getAmountEzDueMonthToMonth(soloOrFleetString, carrierId, timeRunCron);
-        System.out.println(tempAmountList);
+        System.out.println(configProperties.url_dev_ezlogz());
 
     }
 
     @Test
     public void test2() throws SQLException, IOException, ClassNotFoundException {
-        Generex generex = new Generex("[A-Z]{1}[A-Z0-9]{11}|[A-Z]{7}[A-Z0-9]{5}");
-//  "1-7 Alpha + any combination of Alpha, Numeric, and * for a total of 12 characters"
 
-// generate the second String in lexicographical order that matches the given Regex.
-//        String secondString = generex.getMatchedString(2);
-//        System.out.println(secondString);// it print '0b'
-
-// Generate all String that matches the given Regex.
-//        List<String> matchedStrs = generex.getAllMatchedStrings();
-//        System.out.println(matchedStrs);
-// Using Generex iterator
-//        Iterator iterator = generex.iterator();
-//        while (iterator.hasNext()) {
-//            System.out.print(iterator.next() + " ");
-//        }
-
-        String randomStr = generex.random();
-        System.out.println(randomStr);
+        System.out.println();
 
     }
 

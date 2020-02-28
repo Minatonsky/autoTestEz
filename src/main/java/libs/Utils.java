@@ -22,14 +22,12 @@ import java.util.stream.IntStream;
 
 import static java.util.stream.Collectors.toMap;
 
-
 public class Utils {
     private Logger log;
 
     public Utils(){
         log = Logger.getLogger(getClass());
     }
-
     /**
      * Taking screenshot into .//target// + pathToScreenShot
      * @param pathToScreenShot
@@ -44,7 +42,6 @@ public class Utils {
             e.printStackTrace();
         }
     }
-    
     /**
      * Hard wait
      * @param second
@@ -56,7 +53,6 @@ public class Utils {
             e.printStackTrace();
         }
     }
-
     /**
      * Method returned SystemDateAndTime In Format yyyy-MM-dd_HH-mm-ss
      * @return
@@ -65,12 +61,10 @@ public class Utils {
 
         return getDateAndTime("MM/dd/yyyy HH:mm:ss");
     }
-
     public static String getDateFormat(){
 
         return getDateAndTime("yyyy-MM-dd");
     }
-
     /**
      * Method returned SystemDateAndTime
      * @return
@@ -82,7 +76,6 @@ public class Utils {
         System.out.println(dateFormated);
         return dateFormated;
     }
-
     /**
      * Method get List<ArrayList> and returned Map by key=value
      * @param tempAmountList
@@ -99,19 +92,16 @@ public class Utils {
         return result;
 
     }
-
     public static String getDateRandom() {
         int hundredYears = 100 * 365;
         return LocalDate.ofEpochDay(ThreadLocalRandom
                 .current().nextInt(-hundredYears, hundredYears)).toString();
     }
-
     public static int genRandomNumberBetweenTwoValues(int low, int high) throws SQLException, IOException, ClassNotFoundException {
         Random r = new Random();
         int result = r.nextInt(high-low) + low;
         return result;
     }
-
     public static String genRandomState(){
         String[] arr={"AL", "AK", "AZ", "AR", "CA", "CO", "CT", "DE", "FL", "GA", "HI", "ID", "IL", "IN", "IA", "KS", "KY", "LA", "ME", "MD", "MA", "MI", "MN", "MS", "MO", "MT", "NE", "NV",
                 "NH", "NJ", "NM", "NY", "NC", "ND", "OH", "OK", "OR", "PA", "RI", "SC", "SD", "TN", "TX", "UT", "VT", "VA", "WA", "WV", "WI", "WY", "AB", "BC", "MB", "NB", "NL", "NS", "NT", "NU",
@@ -120,7 +110,6 @@ public class Utils {
         int randomNumber=r.nextInt(arr.length);
         return arr[randomNumber];
     }
-
     public static String genRandomDataByRegex(String regEx) throws SQLException, IOException, ClassNotFoundException {
         Generex generex = new Generex(regEx);
         String randomStr = generex.random();
@@ -150,6 +139,18 @@ public class Utils {
         String content;
         content = new String(Files.readAllBytes(Paths.get(bearerToken)));
         return content;
+    }
+    public static String genRandomFuelType(){
+        String[] arr={"Gasoline", "Diesel", "Gasohol", "Propane", "LNG", "CNG", "Ethanol", "Methanol", "E-85", "M-85", "A55", "Biodiesel"};
+        Random r=new Random();
+        int randomNumber=r.nextInt(arr.length);
+        return arr[randomNumber];
+    }
+    public static String genRandomCreditCard(){
+        String[] arr={"4007000000027", "4111111111111111", "5424000000000015", "4012888818888", "370000000000002", "2223000010309711", "6011000000000012"};
+        Random r=new Random();
+        int randomNumber=r.nextInt(arr.length);
+        return arr[randomNumber];
     }
 
 

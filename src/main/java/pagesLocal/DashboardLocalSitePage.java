@@ -32,6 +32,10 @@ public class DashboardLocalSitePage extends ParentLocalSitePage {
     @FindBy(xpath = ".//i[@class='fa fa-angle-double-left minimize-arrow']")
     private WebElement menuSizeButton;
 
+    @FindBy(xpath = ".//a[@href='/dash/logbook']")
+    private WebElement pageLogs;
+
+
     public DashboardLocalSitePage(WebDriver webDriver) {
 
         super(webDriver, "/dash");
@@ -97,5 +101,9 @@ public class DashboardLocalSitePage extends ParentLocalSitePage {
         waitABit(3);
         clickOnMenuPageDocuments();
         waitABit(3);
+    }
+    public void goToLogsPage(){
+        waitABit(2);
+        actionsWithOurElements.clickOnElement(pageLogs);
     }
 }

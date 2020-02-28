@@ -36,7 +36,7 @@ public class ValidLoginWithParams extends ParentTest {
         loginPage.enterLogin(login);
         loginPage.enterPass(pass);
         loginPage.clickOnSubmitButton();
-        dashboardPage.closePhoneVerificationPopUp();
+        loginPage.closePhoneVerificationPopUp();
         waitABit(3);
         checkAC("User wasn`t logined", dashboardPage.isDashboardPresent(), true);
     }

@@ -130,24 +130,6 @@ public class SettingsPage extends ParentPage {
 //    GENERAL
     public void enterSsn(String ssn) {actionsWithOurElements.enterTextToElement(ssnInput, ssn); }
     public void enterEin(String ein) {actionsWithOurElements.enterTextToElement(einInput, ein); }
-    public void checkOnEngineScoreStatus(){
-        actionsWithOurElements.clickJsOnElement(hideEngineScoreStatusOn);
-    }
-    public void checkOffEngineScoreStatus(){
-        actionsWithOurElements.clickJsOnElement(hideEngineScoreStatusOff);
-    }
-    public void checkOnYardMode(){
-        actionsWithOurElements.clickJsOnElement(yardModeCheckOn);
-    }
-    public void checkOffYardMode(){
-        actionsWithOurElements.clickJsOnElement(yardModeCheckOff);
-    }
-    public void checkOnConveyance(){
-        actionsWithOurElements.clickJsOnElement(conveyanceCheckOn);
-    }
-    public void checkOffConveyance(){
-        actionsWithOurElements.clickJsOnElement(conveyanceCheckOff);
-    }
     public void moveSliderAobrd(int value){
         actionsWithOurElements.sliderMove("//*[@id='soloAobrdMPH']", value);
     }
@@ -171,12 +153,6 @@ public class SettingsPage extends ParentPage {
     public void enterDriverCity(String driverCity) {actionsWithOurElements.clearAndEnterTextToElement(driver_city, driverCity); }
     public void enterDriverAddress(String driverAddress) {actionsWithOurElements.clearAndEnterTextToElement(driver_address, driverAddress); }
     public void enterPhone(String driverPhone) {actionsWithOurElements.clearAndEnterTextToElement(phone, driverPhone); }
-    public void checkOnSmsCheck(){
-        actionsWithOurElements.clickJsOnElement(smsCheckOn);
-    }
-    public void checkOffSmsCheck(){
-        actionsWithOurElements.clickJsOnElement(smsCheckOff);
-    }
 
 //  ADMINISTRATIVE
     public void enterDateMedCard(String medCard) {actionsWithOurElements.clearAndEnterTextToElement(medCardInput, medCard); }
@@ -184,24 +160,6 @@ public class SettingsPage extends ParentPage {
     public void enterDateHire(String hireDate) {actionsWithOurElements.clearAndEnterTextToElement(hireDateInput, hireDate); }
     public void enterDateTerminate(String terminateDate) {actionsWithOurElements.clearAndEnterTextToElement(terminateDateInput, terminateDate); }
     public void enterDateNotice(String pullNotice) {actionsWithOurElements.clearAndEnterTextToElement(pullNoticeInput, pullNotice); }
-    public void checkOnHazMat(){
-        actionsWithOurElements.clickJsOnElement(hazMatCheckOn);
-    }
-    public void checkOffHazMat(){
-        actionsWithOurElements.clickJsOnElement(hazMatCheckOff);
-    }
-    public void checkOnInsurance(){
-        actionsWithOurElements.clickJsOnElement(InsuranceCheckOn);
-    }
-    public void checkOffInsurance(){
-        actionsWithOurElements.clickJsOnElement(InsuranceCheckOff);
-    }
-    public void checkOnTanker(){
-        actionsWithOurElements.clickJsOnElement(TankerCheckOn);
-    }
-    public void checkOffTanker(){
-        actionsWithOurElements.clickJsOnElement(TankerCheckOff);
-    }
     public void enterNote(String driverNote) {actionsWithOurElements.clearAndEnterTextToElement(notes, driverNote); }
 
 //    DRIVER'S LICENSE
@@ -219,9 +177,9 @@ public class SettingsPage extends ParentPage {
 //     METHODS FOR CHECK BOXES
     public void checkEngineScoreStatus(String checkBoxValue){
         if (checkBoxValue.equals("0") || checkBoxValue.equals("")){
-            checkOnEngineScoreStatus();
+            actionsWithOurElements.clickJsOnElement(hideEngineScoreStatusOn);
         } else if(checkBoxValue.equals("1")){
-            checkOffEngineScoreStatus();
+            actionsWithOurElements.clickJsOnElement(hideEngineScoreStatusOff);
         } else {
             logger.error("Engine Score status failed");
             Assert.fail("Cannot work with element");
@@ -229,9 +187,9 @@ public class SettingsPage extends ParentPage {
     }
     public void checkYardMode(String checkBoxValue){
         if (checkBoxValue.equals("0") || checkBoxValue.equals("")){
-            checkOnYardMode();
+            actionsWithOurElements.clickJsOnElement(yardModeCheckOn);
         } else if(checkBoxValue.equals("1")){
-            checkOffYardMode();
+            actionsWithOurElements.clickJsOnElement(yardModeCheckOff);
         } else {
             logger.error("Yard Mode failed");
             Assert.fail("Cannot work with element");
@@ -239,9 +197,9 @@ public class SettingsPage extends ParentPage {
     }
     public void checkConveyance(String checkBoxValue){
         if (checkBoxValue.equals("0") || checkBoxValue.equals("")){
-            checkOnConveyance();
+            actionsWithOurElements.clickJsOnElement(conveyanceCheckOn);
         } else if(checkBoxValue.equals("1")){
-            checkOffConveyance();
+            actionsWithOurElements.clickJsOnElement(conveyanceCheckOff);
         } else {
             logger.error("Conveyance Mode failed");
             Assert.fail("Cannot work with element");
@@ -249,9 +207,9 @@ public class SettingsPage extends ParentPage {
     }
     public void checkSmsCheck(String checkBoxValue){
         if (checkBoxValue.equals("0") || checkBoxValue.equals("")){
-            checkOnSmsCheck();
+            actionsWithOurElements.clickJsOnElement(smsCheckOn);
         } else if(checkBoxValue.equals("1")){
-            checkOffSmsCheck();
+            actionsWithOurElements.clickJsOnElement(smsCheckOff);
         } else {
             logger.error("SMS failed");
             Assert.fail("Cannot work with element");
@@ -259,9 +217,9 @@ public class SettingsPage extends ParentPage {
     }
     public void checkHazMat(String checkBoxValue){
         if (checkBoxValue.equals("0") || checkBoxValue.equals("")){
-            checkOnHazMat();
+            actionsWithOurElements.clickJsOnElement(hazMatCheckOn);
         } else if(checkBoxValue.equals("1")){
-            checkOffHazMat();
+            actionsWithOurElements.clickJsOnElement(hazMatCheckOff);
         } else {
             logger.error("HazMat failed");
             Assert.fail("Cannot work with element");
@@ -269,9 +227,9 @@ public class SettingsPage extends ParentPage {
     }
     public void checkInsurance(String checkBoxValue){
         if (checkBoxValue.equals("0") || checkBoxValue.equals("")){
-            checkOnInsurance();
+            actionsWithOurElements.clickJsOnElement(InsuranceCheckOn);
         } else if(checkBoxValue.equals("1")){
-            checkOffInsurance();
+            actionsWithOurElements.clickJsOnElement(InsuranceCheckOff);
         } else {
             logger.error("Insurance failed");
             Assert.fail("Cannot work with element");
@@ -279,9 +237,9 @@ public class SettingsPage extends ParentPage {
     }
     public void checkTanker(String checkBoxValue){
         if (checkBoxValue.equals("0") || checkBoxValue.equals("")){
-            checkOnTanker();
+            actionsWithOurElements.clickJsOnElement(TankerCheckOn);
         } else if(checkBoxValue.equals("1")){
-            checkOffTanker();
+            actionsWithOurElements.clickJsOnElement(TankerCheckOff);
         } else {
             logger.error("Tanker failed");
             Assert.fail("Cannot work with element");

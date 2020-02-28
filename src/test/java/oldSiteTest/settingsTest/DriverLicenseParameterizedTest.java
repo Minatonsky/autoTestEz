@@ -28,7 +28,6 @@ public class DriverLicenseParameterizedTest extends ParentTest {
         String dateDLExpiration = getDateRandom();
 
         loginPage.userValidLogIn(login, pass);
-        dashboardPage.openMenuDash();
         dashboardPage.goToSettingPage();
         settingsPage.goToDriverSettings();
 

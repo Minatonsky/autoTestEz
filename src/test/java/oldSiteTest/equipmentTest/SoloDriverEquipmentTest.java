@@ -44,7 +44,6 @@ public class SoloDriverEquipmentTest extends ParentTest {
         String date = getDateAndTime("dd-MM-yyyy");
 
         loginPage.userValidLogIn(login, pass);
-        dashboardPage.openMenuDash();
         checkAC("User wasn`t logined", dashboardPage.isDashboardPresent(), true);
         dashboardPage.goToReportsPage();
         dashboardPage.goToLogsPage();

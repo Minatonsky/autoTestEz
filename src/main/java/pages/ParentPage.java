@@ -19,9 +19,30 @@ public class ParentPage {
     String baseUrl;
     ActionsWithOurElements actionsWithOurElements;
 
+    double ELDDevicePriceSmart = 169.99;
+    double ELDDevicePriceHard = 149.99;
+    double eldMonthToMonthPrice = 29.99;
+    double eld1YearSubscriptionPrice = 329.89;
+    double eld2YearsSubscriptionPrice = 629.79;
+    double eld1YearSubscriptionDiscountPrice = 299.88;
+    double eld2YearsSubscriptionDiscountPrice = 599.76;
+    double pinCablePrice = 34.99;
+    double pinCableOBDIIPrice = 34.99;
+    double stickerLabelPrice = 3.00;
+    double ezSmartCamCP2Price = 564.99;
+    double ezSmartCamSVAPrice = 399.99;
+    double sD32GbPrice = 39.99;
+    double sD64GbPrice = 59.99;
+    double sD128GbPrice = 109.99;
+    double cameraInstallationFee = 100.00;
+    double cameraSetupFee = 29.99;
+    double cP2MonthFee = 29.99;
+    double eldDepositFee = 49.99;
+
+
     public ParentPage(WebDriver webDriver, String expectedUrl) {
         this.webDriver = webDriver;
-        baseUrl = configProperties.url_app_ezlogz();
+        baseUrl = configProperties.url_dev_ezlogz();
         this.expectedUrl = baseUrl + expectedUrl;
         PageFactory.initElements(webDriver, this);
         actionsWithOurElements = new ActionsWithOurElements(webDriver);

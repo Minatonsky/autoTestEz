@@ -1,4 +1,4 @@
-package localSiteTest;
+package oldSiteTest;
 
 import org.apache.commons.lang3.RandomStringUtils;
 import org.junit.Test;
@@ -28,8 +28,8 @@ public class SoloDriverSettingAccountTest extends ParentTest {
         Map<String, Object> userDataBeforeTestMap = listArrayToMap(tempDataListBeforeTest);
 
         String odometer = userDataBeforeTestMap.get("odometerId").toString();
-        String firstName = RandomStringUtils.randomAlphabetic(5, 10);
-        String LastName = RandomStringUtils.randomAlphabetic(5, 10);
+        String firstName = genRandomDataByRegex("[A-Z]{1}[a-z]{11}");
+        String LastName = genRandomDataByRegex("[A-Z]{1}[a-z]{11}");
         String phone = RandomStringUtils.randomNumeric(10);
         String cycle = userDataBeforeTestMap.get("cycleId").toString();
         String timeZone = userDataBeforeTestMap.get("timeZoneId").toString();
@@ -41,37 +41,36 @@ public class SoloDriverSettingAccountTest extends ParentTest {
         String cycleTypeRandomValue = Integer.toString(genRandomNumberBetweenTwoValues(0 , 8));
         String timeZoneTypeRandomValue = Integer.toString(genRandomNumberBetweenTwoValues(0 , 8));
 
-
-        loginLocalSitePage.userValidLogIn(login, pass);
-        dashboardLocalSitePage.goToSettingPage();
+        loginPage.userValidLogIn(login, pass);
+        dashboardPage.goToSettingPage();
 
         waitABit(5);
-//        String soundNotificaitonBT = getValueCookieNamed("soundNotificaiton");
-//        String locationIconWarningBT = getValueCookieNamed("locationIconWarning");
-//        String showScoreCardBT = getValueCookieNamed("showScoreCard");
-//        String newNotificaitonsBoxBT = getValueCookieNamed("newNotificaitonsBox");
+        String soundNotificaitonBT = "1";
+        String locationIconWarningBT = "1";
+        String showScoreCardBT = "1";
+        String newNotificaitonsBoxBT = "1";
 
 //ACCOUNT INFO
-        accountSettingsLocalSitePage.enterFirstName(firstName);
-        accountSettingsLocalSitePage.enterLastName(LastName);
-        accountSettingsLocalSitePage.enterPhone(phone);
-        accountSettingsLocalSitePage.clickSaveAccountInfo();
+        accountSettingsPage.enterFirstName(firstName);
+        accountSettingsPage.enterLastName(LastName);
+//        accountSettingsPage.enterPhone(phone);
+        accountSettingsPage.clickSaveAccountInfo();
+
+ // DRIVER INFO
+        accountSettingsPage.setCycle(cycle, cycleTypeRandomValue);
+        accountSettingsPage.setTimeZone(timeZone, timeZoneTypeRandomValue);
+        accountSettingsPage.setOdometer(odometer);
+        accountSettingsPage.setRestBreak(restBreak);
+        accountSettingsPage.setAppLog(appLog);
+        accountSettingsPage.setCargoType(cargoType, cargoTypeRandomValue);
+        accountSettingsPage.clickSaveDriverInfo();
 
         List<ArrayList> tempDataList = utilsForDB.getUsersAndDriversRulesData(login);
         Map<String, Object> userDataAfterTestMap = listArrayToMap(tempDataList);
 
         checkAC("First name failed", firstName.equals(userDataAfterTestMap.get("name")), true);
         checkAC("Last name failed", LastName.equals(userDataAfterTestMap.get("last")), true);
-        checkAC("Phone failed", phone.equals(userDataAfterTestMap.get("phone")), true);
-
- // DRIVER INFO
-        accountSettingsLocalSitePage.setCycle(cycle, cycleTypeRandomValue);
-        accountSettingsLocalSitePage.setTimeZone(timeZone, timeZoneTypeRandomValue);
-        accountSettingsLocalSitePage.setOdometer(odometer);
-        accountSettingsLocalSitePage.setRestBreak(restBreak);
-        accountSettingsLocalSitePage.setAppLog(appLog);
-        accountSettingsLocalSitePage.setCargoType(cargoType, cargoTypeRandomValue);
-        accountSettingsLocalSitePage.clickSaveDriverInfo();
+//        checkAC("Phone failed", phone.equals(userDataAfterTestMap.get("phone")), true);
         checkAC("Cycle failed", userDataAfterTestMap.get("cycleId").equals(cycle), false);
         checkAC("Time zone failed", userDataAfterTestMap.get("timeZoneId").equals(timeZone), false);
         checkAC("Odometer failed", userDataAfterTestMap.get("odometerId").equals(odometer), false);
@@ -79,24 +78,20 @@ public class SoloDriverSettingAccountTest extends ParentTest {
         checkAC("App log failed", userDataAfterTestMap.get("logIncrementId").equals(appLog), false);
         checkAC("Cargo type failed", userDataAfterTestMap.get("cargoTypeId").equals(cargoType), false);
 
-
-
-//        accountSettingsLocalSitePage.setSoundNotification(soundNotificaitonBT);
-//        accountSettingsLocalSitePage.setCoordinatesIcon(locationIconWarningBT);
-//        accountSettingsLocalSitePage.setScoreCard(showScoreCardBT);
-//        accountSettingsLocalSitePage.setNotificationBox(newNotificaitonsBoxBT);
+        accountSettingsPage.setSoundNotification(soundNotificaitonBT);
+        accountSettingsPage.setCoordinatesIcon(locationIconWarningBT);
+        accountSettingsPage.setScoreCard(showScoreCardBT);
+        accountSettingsPage.setNotificationBox(newNotificaitonsBoxBT);
 
         waitABit(5);
         String soundNotificaiton = getValueCookieNamed("soundNotificaiton");
         String locationIconWarning = getValueCookieNamed("locationIconWarning");
         String showScoreCard = getValueCookieNamed("showScoreCard");
         String newNotificaitonsBox = getValueCookieNamed("newNotificaitonsBox");
-//        checkAC("Sound notification failed", soundNotificaitonBT.equals(soundNotificaiton), false);
-//        checkAC("Location icon failed", locationIconWarningBT.equals(locationIconWarning), false);
-//        checkAC("Show scorecard failed", showScoreCardBT.equals(showScoreCard), false);
-//        checkAC("notification box failed", newNotificaitonsBoxBT.equals(newNotificaitonsBox), false);
-
-
+        checkAC("Sound notification failed", soundNotificaitonBT.equals(soundNotificaiton), false);
+        checkAC("Location icon failed", locationIconWarningBT.equals(locationIconWarning), false);
+        checkAC("Show scorecard failed", showScoreCardBT.equals(showScoreCard), false);
+        checkAC("notification box failed", newNotificaitonsBoxBT.equals(newNotificaitonsBox), false);
 
     }
 }

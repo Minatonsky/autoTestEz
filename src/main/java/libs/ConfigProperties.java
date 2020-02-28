@@ -9,6 +9,7 @@ public interface ConfigProperties extends Config {
 
 	String url_dev_ezlogz();
 	String url_local_site();
+	String url_ezlogz_osnova();
 	String url_app_ezlogz();
 	String DATA_FILE();
 	String DATA_FILE_PATH();
@@ -19,4 +20,5 @@ public interface ConfigProperties extends Config {
 	String MySQL_DB();
 	String MySQL_DB_USER();
 	String MySQL_DB_PASSWORD();
+
 }

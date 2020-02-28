@@ -42,8 +42,10 @@ public class OrderInfoPage extends ParentPage {
     }
 
     public boolean compareFullOrderPrice(String dueForLastOrder){
-        if (Double.parseDouble(getFullOrderPrice()) == Double.parseDouble(dueForLastOrder))
-            return true;
+        if (Double.parseDouble(getFullOrderPrice()) == Double.parseDouble(dueForLastOrder)){
+            logger.info("getFullOrderPrice " + getFullOrderPrice());
+            logger.info("dueForLastOrder " + dueForLastOrder);
+            return true;}
         else return false;
 
     }
