@@ -1,7 +1,6 @@
 package restSteps;
 
 import io.restassured.RestAssured;
-import io.restassured.http.Method;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import io.restassured.response.ResponseBody;
@@ -15,8 +14,6 @@ import java.io.StringReader;
 
 public class MainRestSteps {
 
-    final private String baseTestUrl = "http://restapi.demoqa.com";
-    final private String baseUrlPrivat = "http://api.privatbank.ua";
     final private String baseUrl = "https://dev.api.ezlogz.com";
 
 
@@ -28,11 +25,7 @@ public class MainRestSteps {
         RestAssured.baseURI = baseUrl + "/api/registration";
         return RestAssured.given();
     }
-    public Response getRequestAndVerifyStatusCode(String addToUrl) {
-        Response response = getRequest(addToUrl);
-        checkResponseCode(response, 200);
-        return response;
-    }
+
     public void checkResponseCode(Response response, int expectedStatusCode) {
         // Get the status code from the Response. In case of
         // a successfull interaction with the web service, we
@@ -106,49 +99,6 @@ public class MainRestSteps {
         JsonObject jsonObject = reader.readObject();
         System.out.println(prettyPrintJson(jsonObject, 0));
     }
-
-
-
-
-
-
-
-
-
-///////////////////////////////////////////////////////////////////////////////
-    public RequestSpecification setBaseUrlForDemoQaWetherCity() {
-       // Specify the base URL to the RESTful web service
-        RestAssured.baseURI = baseTestUrl + "/utilities/weather/city";
-
-        // Get the RequestSpecification of the request that you want to sent
-        // to the server. The server is specified by the BaseURI that we have
-        // specified in the above step.
-        return RestAssured.given();
-    }
-    public RequestSpecification setBaseUrlForPrivatApi() {
-         RestAssured.baseURI = baseUrlPrivat + "/p24api/pubinfo";
-        return RestAssured.given().queryParam("json").queryParam("exchange").queryParam("coursid", 5);
-    }
-    public RequestSpecification setBaseUrlForCustomer() {
-        RestAssured.baseURI = baseTestUrl + "/api/customer";
-        return RestAssured.given();
-    }
-    public Response getRequest(String addToUrl) {
-        // Make a request to the server by specifying the method Type and the method URL.
-        // This will return the Response from the server. Store the response in a variable.
-        return setBaseUrlForDemoQaWetherCity().request(Method.GET, addToUrl);
-    }
-    public Response getRequestToPrivatApi() {
-        return setBaseUrlForPrivatApi().request(Method.GET);
-    }
-    public Response getRequestToPrivatApiAndVerifyStatusCode() {
-        Response response = getRequestToPrivatApi();
-        checkResponseCode(response, 200);
-        return response;
-    }
-
-
-
 
 
 }

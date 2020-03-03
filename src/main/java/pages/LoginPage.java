@@ -64,7 +64,7 @@ public class LoginPage extends ParentPage {
     @Step
     public void openDashBoardMenuByCookies(){
         Cookie cookie = new Cookie.Builder("minimize-menu", "1")
-                .domain("dev.ezlogz.com")
+                .domain(baseUrl.substring(8))
                 .expiresOn(new Date(2021, 10, 28))
                 .isHttpOnly(true)
                 .isSecure(false)

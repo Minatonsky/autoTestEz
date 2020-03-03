@@ -19,7 +19,7 @@ import java.time.temporal.TemporalAdjusters;
 import java.util.List;
 import java.util.logging.Logger;
 
-import static libs.Utils.genRandomDataByRegex;
+import static libs.Utils.*;
 // This test page is not using on test project, it just for check some methods
 
 
@@ -202,8 +202,10 @@ public class TestMethods {
 
     @Test
     public void test2() throws SQLException, IOException, ClassNotFoundException {
-
-        System.out.println();
+//        String test = getDateAndTime("yyyy-MM-dd HH:mm:ss");
+        LocalDateTime tariffStart = LocalDateTime.parse(LocalDateTime.now().minusMinutes(10).toString());
+        String startYesterday = tariffStart.format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));
+        System.out.println(startYesterday);
 
     }
 

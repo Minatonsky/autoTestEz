@@ -1,10 +1,7 @@
 package parentTest;
 
 import io.qameta.allure.Step;
-import libs.ChargeMethods;
-import libs.ConfigProperties;
-import libs.ExcelDriver;
-import libs.UtilsForDB;
+import libs.*;
 import org.aeonbits.owner.ConfigFactory;
 import org.apache.log4j.Logger;
 import org.junit.After;
@@ -15,6 +12,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import pages.*;
 import pagesLocal.*;
 
@@ -22,6 +21,8 @@ import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.sql.SQLException;
 import java.util.Iterator;
 import java.util.Set;
@@ -56,9 +57,11 @@ public class ParentTest {
     protected HelpAndTrainingPage helpAndTrainingPage;
     protected AccountSettingsPage accountSettingsPage;
     protected LogsLocalSitePage logsLocalSitePage;
+    protected ChargeSmartSafetyMethods chargeSmartSafetyMethods;
 
     String browser = System.getProperty("browser");
 
+// type of devices
     public String IOSXMonthTariffId = "0";
     public String geometricsMonthTariffId = "9";
     public String ezHardMonthTariffId = "12";
@@ -104,6 +107,7 @@ public class ParentTest {
         helpAndTrainingPage = new HelpAndTrainingPage(webDriver);
         accountSettingsPage = new AccountSettingsPage(webDriver);
         logsLocalSitePage = new LogsLocalSitePage(webDriver);
+        chargeSmartSafetyMethods = new ChargeSmartSafetyMethods();
 
     }
 
@@ -124,7 +128,17 @@ public class ParentTest {
             webDriver = new FirefoxDriver();
             logger.info("FireFox is started");
 
+        } else if ("remote".equals(browser)){
+            logger.info("Remote Driver will be started");
+            try {
+                webDriver = new RemoteWebDriver(
+                        new URL("http://localhost:4444/wd/hub"),
+                        DesiredCapabilities.chrome());
+            } catch (MalformedURLException e) {
+                e.printStackTrace();
+            }
         }
+
         else {
             logger.error("Can`t init driver");
             Assert.fail("Can`t init driver");

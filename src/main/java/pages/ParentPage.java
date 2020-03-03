@@ -19,6 +19,7 @@ public class ParentPage {
     String baseUrl;
     ActionsWithOurElements actionsWithOurElements;
 
+//    PRICES
     double ELDDevicePriceSmart = 169.99;
     double ELDDevicePriceHard = 149.99;
     double eldMonthToMonthPrice = 29.99;
@@ -42,7 +43,7 @@ public class ParentPage {
 
     public ParentPage(WebDriver webDriver, String expectedUrl) {
         this.webDriver = webDriver;
-        baseUrl = configProperties.url_dev_ezlogz();
+        baseUrl = configProperties.url_ezlogz_testing();
         this.expectedUrl = baseUrl + expectedUrl;
         PageFactory.initElements(webDriver, this);
         actionsWithOurElements = new ActionsWithOurElements(webDriver);

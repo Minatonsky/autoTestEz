@@ -610,4 +610,19 @@ public class UtilsForDB {
         return tempResult;
     }
 
+//    SMART SAFETY
+
+    @Step
+    public String getSmartSafetyUserId(String fleetId) throws SQLException, IOException, ClassNotFoundException {
+        dBMySQL = new Database(nameDB, driverDB);
+        String tempId = dBMySQL.selectValue("SELECT u.id FROM user_app_info uai LEFT JOIN users u ON uai.userId = u.id WHERE u.carrierId = " + fleetId + " AND uai.field = 'smart_safety' LIMIT 1;");
+        dBMySQL.quit();
+        return tempId;
+    }
+    @Step
+    public void updateServicesConnections(String fleetId, String userId, String dateTimeAt, String dateTimeTill) throws SQLException, IOException, ClassNotFoundException {
+        dBMySQL = new Database(nameDB, driverDB);
+        dBMySQL.changeTable("UPDATE services_connections SET created_at = '" + dateTimeAt + "', subscribed_till = '" + dateTimeTill + "' WHERE user_id = " + userId + " AND carrier_id = " + fleetId + ";");
+        dBMySQL.quit();
+    }
 }
