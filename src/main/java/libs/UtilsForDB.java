@@ -625,4 +625,11 @@ public class UtilsForDB {
         dBMySQL.changeTable("UPDATE services_connections SET created_at = '" + dateTimeAt + "', subscribed_till = '" + dateTimeTill + "' WHERE user_id = " + userId + " AND carrier_id = " + fleetId + ";");
         dBMySQL.quit();
     }
+    @Step
+    public boolean checkForTransactions(String fleetId, String dateTime) throws SQLException, IOException, ClassNotFoundException {
+        dBMySQL = new Database(nameDB, driverDB);
+        boolean tempResult = dBMySQL.isRowPresent("SELECT * FROM services_transactions s WHERE s.carrier_id = " + fleetId + " AND s.created_at > '" + dateTime + "';");
+        dBMySQL.quit();
+        return tempResult;
+    }
 }

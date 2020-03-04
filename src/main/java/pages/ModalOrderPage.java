@@ -6,6 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+import static libs.Prices.*;
 import static libs.Utils.waitABit;
 
 public class ModalOrderPage extends ParentPage {

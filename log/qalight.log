@@ -1256,3 +1256,28 @@
 2020-03-03 16:01:00   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
 2020-03-03 16:01:03   INFO [chargeTest.ChargeSmartSafety] : AC passed
 2020-03-03 16:01:04   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-03-03 18:05:48   INFO [chargeTest.ChargeSmartSafety] : Chrome will be started
+2020-03-03 18:05:55   INFO [chargeTest.ChargeSmartSafety] : Chrome is started
+2020-03-03 18:06:00   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-03-03 18:06:03  ERROR [chargeTest.ChargeSmartSafety] : AC failed: Fleet has not smart safety services
+2020-03-03 18:15:14   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-03-03 18:16:22   INFO [chargeTest.ChargeSmartSafety] : Chrome will be started
+2020-03-03 18:16:29   INFO [chargeTest.ChargeSmartSafety] : Chrome is started
+2020-03-03 18:16:34   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-03-03 18:16:37  ERROR [chargeTest.ChargeSmartSafety] : AC failed: Fleet has not smart safety services
+2020-04-03 16:46:41   INFO [chargeTest.ChargeSmartSafety] : Chrome will be started
+2020-04-03 16:46:49   INFO [chargeTest.ChargeSmartSafety] : Chrome is started
+2020-04-03 16:46:53   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-04-03 16:46:56   INFO [chargeTest.ChargeSmartSafety] : AC passed
+2020-04-03 16:46:56   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-04-03 16:46:58   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-04-03 16:48:10   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-04-03 16:48:13  ERROR [chargeTest.ChargeSmartSafety] : AC failed: Fleet has not smart safety services
+2020-04-03 18:14:34   INFO [chargeTest.ChargeSmartSafety] : Chrome will be started
+2020-04-03 18:14:40   INFO [chargeTest.ChargeSmartSafety] : Chrome is started
+2020-04-03 18:14:45   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-04-03 18:14:48   INFO [chargeTest.ChargeSmartSafety] : AC passed
+2020-04-03 18:14:48   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-04-03 18:14:50   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-04-03 18:16:01   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-04-03 18:16:04  ERROR [chargeTest.ChargeSmartSafety] : AC failed: No transactions after test
