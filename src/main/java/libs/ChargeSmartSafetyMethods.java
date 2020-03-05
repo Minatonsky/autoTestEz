@@ -4,6 +4,7 @@ import io.qameta.allure.Step;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import java.time.temporal.ChronoUnit;
 
 import static libs.Prices.smartSafetyPrice;
 
@@ -23,10 +24,10 @@ public class ChargeSmartSafetyMethods {
         return tempDateTime;
     }
     @Step
-    public String currentDateTime(){
-        LocalDateTime tariffStart = LocalDateTime.parse(LocalDateTime.now().toString());
-        String tempDateTime = tariffStart.format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));
-        return tempDateTime;
+    public boolean compareSubscribedTill(LocalDateTime subscribedTill){
+        LocalDateTime tariffStart = LocalDateTime.parse(LocalDateTime.now().plusMonths(1).toString());
+        long diffHours = ChronoUnit.HOURS.between(tariffStart, subscribedTill);
+        return diffHours < 2 && diffHours > (-2);
     }
 
     @Step

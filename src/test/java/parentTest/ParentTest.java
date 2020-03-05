@@ -1,9 +1,8 @@
 package parentTest;
 
-import io.qameta.allure.Step;
-import libs.*;
+import libs.ChargeMethods;
+import libs.ConfigProperties;
 import org.aeonbits.owner.ConfigFactory;
-import org.apache.log4j.Logger;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
@@ -28,14 +27,9 @@ import java.util.Iterator;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
-import static libs.Utils.waitABit;
-
-public class ParentTest {
+public class ParentTest extends ParentTestWithoutWebDriver{
     WebDriver webDriver;
 
-    Logger logger = Logger.getLogger(getClass());
-    protected UtilsForDB utilsForDB;
-    protected ExcelDriver excelDriver;
     protected LoginPage loginPage;
     protected DashboardPage dashboardPage;
     protected ModalOrderPage modalOrderPage;
@@ -57,7 +51,6 @@ public class ParentTest {
     protected HelpAndTrainingPage helpAndTrainingPage;
     protected AccountSettingsPage accountSettingsPage;
     protected LogsLocalSitePage logsLocalSitePage;
-    protected ChargeSmartSafetyMethods chargeSmartSafetyMethods;
 
     String browser = System.getProperty("browser");
 
@@ -81,33 +74,32 @@ public class ParentTest {
 
     @Before
     public void setUp() throws SQLException, IOException, ClassNotFoundException {
-        utilsForDB = new UtilsForDB();
-        excelDriver = new ExcelDriver();
+
         initDriver(browser);
         webDriver.manage().window().maximize();
         webDriver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-        loginPage = new LoginPage(webDriver);
-        dashboardPage = new DashboardPage(webDriver);
-        modalOrderPage = new ModalOrderPage(webDriver);
-        financesPage = new FinancesPage(webDriver);
-        managerEldPage = new ManagerEldPage(webDriver);
-        orderInfoPage = new OrderInfoPage(webDriver);
-        managerModalEldPage = new ManagerModalEldPage(webDriver);
-        chargeMethods = new ChargeMethods(webDriver);
-        settingsPage = new SettingsPage(webDriver);
-        equipmentPage = new EquipmentPage(webDriver);
-        dashboardLocalSitePage = new DashboardLocalSitePage(webDriver);
-        documentsLocalSitePage = new DocumentsLocalSitePage(webDriver);
-        equipmentLocalSitePage = new EquipmentLocalSitePage(webDriver);
-        loginLocalSitePage = new LoginLocalSitePage(webDriver);
-        driverSettingsLocalSitePage = new DriverSettingsLocalSitePage(webDriver);
-        accountSettingsLocalSitePage = new AccountSettingsLocalSitePage(webDriver);
-        logsPage = new LogsPage(webDriver);
-        eldPage = new EldPage(webDriver);
-        helpAndTrainingPage = new HelpAndTrainingPage(webDriver);
-        accountSettingsPage = new AccountSettingsPage(webDriver);
-        logsLocalSitePage = new LogsLocalSitePage(webDriver);
-        chargeSmartSafetyMethods = new ChargeSmartSafetyMethods();
+        loginPage = new LoginPage(webDriver, dBMySQL);
+        dashboardPage = new DashboardPage(webDriver, dBMySQL);
+        modalOrderPage = new ModalOrderPage(webDriver, dBMySQL);
+        financesPage = new FinancesPage(webDriver, dBMySQL);
+        managerEldPage = new ManagerEldPage(webDriver, dBMySQL);
+        orderInfoPage = new OrderInfoPage(webDriver, dBMySQL);
+        managerModalEldPage = new ManagerModalEldPage(webDriver, dBMySQL);
+        chargeMethods = new ChargeMethods(webDriver, dBMySQL);
+        settingsPage = new SettingsPage(webDriver, dBMySQL);
+        equipmentPage = new EquipmentPage(webDriver, dBMySQL);
+        dashboardLocalSitePage = new DashboardLocalSitePage(webDriver, dBMySQL);
+        documentsLocalSitePage = new DocumentsLocalSitePage(webDriver, dBMySQL);
+        equipmentLocalSitePage = new EquipmentLocalSitePage(webDriver, dBMySQL);
+        loginLocalSitePage = new LoginLocalSitePage(webDriver, dBMySQL);
+        driverSettingsLocalSitePage = new DriverSettingsLocalSitePage(webDriver, dBMySQL);
+        accountSettingsLocalSitePage = new AccountSettingsLocalSitePage(webDriver, dBMySQL);
+        logsPage = new LogsPage(webDriver, dBMySQL);
+        eldPage = new EldPage(webDriver, dBMySQL);
+        helpAndTrainingPage = new HelpAndTrainingPage(webDriver, dBMySQL);
+        accountSettingsPage = new AccountSettingsPage(webDriver, dBMySQL);
+        logsLocalSitePage = new LogsLocalSitePage(webDriver, dBMySQL);
+
 
     }
 
@@ -150,25 +142,6 @@ public class ParentTest {
         webDriver.quit();
     }
 
-    @Step
-    protected void checkAC(String message, boolean actual, boolean expected){
-        waitABit(1);
-        if (actual != expected){
-            logger.error("AC failed: " + message);
-        }
-        Assert.assertEquals(message,expected,actual);
-        logger.info("AC passed");
-    }
-
-    @Step
-    protected void checkACWithLogger(String message, boolean actual, boolean expected, String valueFront, String valueFromDb){
-        waitABit(1);
-        if (actual != expected){
-            logger.error("AC failed: " + message + " Expected value: " + valueFront + " Actual value: " + valueFromDb);
-        }
-        Assert.assertEquals(message,expected,actual);
-        logger.info("AC passed");
-    }
 
     public void selectBrowserWindow(String window){
         Set<String> windowIds = webDriver.getWindowHandles();

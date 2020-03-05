@@ -1,6 +1,7 @@
 package pagesLocal;
 
 import io.qameta.allure.Step;
+import libs.Database;
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -20,7 +21,7 @@ public class LoginLocalSitePage extends ParentLocalSitePage {
     @FindBy(xpath = ".//button[@class='btn btn-transparent' and @type='submit']")
     private WebElement submitButton;
 
-    public LoginLocalSitePage(WebDriver webDriver) {
+    public LoginLocalSitePage(WebDriver webDriver, Database dBMySQL) {
         super(webDriver, "/");
     }
 

@@ -1,5 +1,6 @@
 package pagesLocal;
 
+import libs.Database;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -7,7 +8,7 @@ import org.openqa.selenium.support.FindBy;
 import static libs.Utils.waitABit;
 
 public class LogsLocalSitePage extends ParentLocalSitePage {
-    public LogsLocalSitePage(WebDriver webDriver) {
+    public LogsLocalSitePage(WebDriver webDriver, Database dBMySQL) {
         super(webDriver, "/dash/drivers/");
     }
     @FindBy(xpath = ".//button[text()='Colection & Annotation']")

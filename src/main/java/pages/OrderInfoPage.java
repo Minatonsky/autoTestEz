@@ -1,5 +1,6 @@
 package pages;
 
+import libs.Database;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -17,8 +18,8 @@ public class OrderInfoPage extends ParentPage {
     @FindBy(xpath = "//*[text()='Full order Price']//..//span[@class='form-group-content']")
     private WebElement fullOrderPrice;
 
-    public OrderInfoPage(WebDriver webDriver) {
-        super(webDriver, "dash/eld_orders/");
+    public OrderInfoPage(WebDriver webDriver, Database dBMySQL) {
+        super(webDriver, "dash/eld_orders/", dBMySQL);
     }
 
     public void selectOrderStatus(String value) {actionsWithOurElements.selectValueInDropDown(orderStatus, value);}

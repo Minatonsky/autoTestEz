@@ -1,5 +1,6 @@
 package pages;
 
+import libs.Database;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -55,9 +56,9 @@ public class DashboardPage extends ParentPage {
     @FindBy(xpath = ".//i[@class='fa fa-angle-double-left minimize-arrow']")
     private WebElement menuSizeButton;
 
-    public DashboardPage(WebDriver webDriver) {
+    public DashboardPage(WebDriver webDriver, Database dBMySQL) {
 
-        super(webDriver, "/dash");
+        super(webDriver, "/dash", dBMySQL);
     }
 
     public boolean isDashboardPresent(){

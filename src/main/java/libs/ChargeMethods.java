@@ -19,14 +19,18 @@ import static libs.Prices.*;
 public class ChargeMethods {
     Logger logger = Logger.getLogger(getClass());
     WebDriver webDriver;
-    UtilsForDB utilsForDB = new UtilsForDB();
+    Database dBMySQL;
+
     String checkFleets = "https://dev.ezlogz.com/cron/check_fleets.php";
     String checkDrivers = "https://dev.ezlogz.com/cron/check_drivers.php";
 
     protected static ConfigProperties configProperties = ConfigFactory.create(ConfigProperties.class);
-    public ChargeMethods(WebDriver webDriver) {
+
+    public ChargeMethods(WebDriver webDriver, Database dBMySQL) {
         this.webDriver = webDriver;
+        this.dBMySQL = dBMySQL;
     }
+    UtilsForDB utilsForDB = new UtilsForDB(dBMySQL);
 
 
     @Step

@@ -1281,3 +1281,25 @@
 2020-04-03 18:14:50   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
 2020-04-03 18:16:01   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
 2020-04-03 18:16:04  ERROR [chargeTest.ChargeSmartSafety] : AC failed: No transactions after test
+2020-05-03 12:51:38   INFO [chargeTest.ChargeSmartSafety] : Chrome will be started
+2020-05-03 12:51:46   INFO [chargeTest.ChargeSmartSafety] : Chrome is started
+2020-05-03 12:51:50   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-05-03 12:51:53   INFO [chargeTest.ChargeSmartSafety] : AC passed
+2020-05-03 12:51:53   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-05-03 12:51:55   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-05-03 12:53:07   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-05-03 12:53:09  ERROR [chargeTest.ChargeSmartSafety] : AC failed: Balance is not correct
+2020-05-03 13:02:40   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-05-03 13:06:12   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-05-03 13:06:15   INFO [chargeTest.ChargeSmartSafety] : AC passed
+2020-05-03 13:06:15   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-05-03 13:06:17   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-05-03 13:07:28   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-05-03 13:07:31  ERROR [chargeTest.ChargeSmartSafety] : AC failed: Balance is not correct
+2020-05-03 13:17:49   INFO [oldSiteParameterizedTest.ManagerOrderParamsTest] : Chrome will be started
+2020-05-03 13:17:55   INFO [oldSiteParameterizedTest.ManagerOrderParamsTest] : Chrome is started
+2020-05-03 13:18:03  ERROR [pages.LoginPage] : Cannot work with Url
+2020-05-03 13:18:04   INFO [oldSiteParameterizedTest.ManagerOrderParamsTest] : Chrome will be started
+2020-05-03 16:45:44   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-05-03 16:45:48   INFO [chargeTest.ChargeSmartSafety] : AC passed
+2020-05-03 16:47:00  ERROR [chargeTest.ChargeSmartSafety] : AC failed: No transactions after test

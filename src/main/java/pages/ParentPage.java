@@ -2,6 +2,7 @@ package pages;
 
 import libs.ActionsWithOurElements;
 import libs.ConfigProperties;
+import libs.Database;
 import org.aeonbits.owner.ConfigFactory;
 import org.apache.log4j.Logger;
 import org.junit.Assert;
@@ -13,6 +14,7 @@ public class ParentPage {
     Logger logger = Logger.getLogger(getClass());
 
     WebDriver webDriver;
+    Database dBMySQL;
     JavascriptExecutor js = (JavascriptExecutor) webDriver;
     String expectedUrl;
     protected static ConfigProperties configProperties = ConfigFactory.create(ConfigProperties.class);
@@ -20,12 +22,14 @@ public class ParentPage {
     ActionsWithOurElements actionsWithOurElements;
 
 
-    public ParentPage(WebDriver webDriver, String expectedUrl) {
+    public ParentPage(WebDriver webDriver, String expectedUrl, Database dBMySQL) {
         this.webDriver = webDriver;
         baseUrl = configProperties.url_ezlogz_testing();
         this.expectedUrl = baseUrl + expectedUrl;
         PageFactory.initElements(webDriver, this);
         actionsWithOurElements = new ActionsWithOurElements(webDriver);
+        this.dBMySQL = dBMySQL;
+
     }
 
     public String getCurrentUrl() {

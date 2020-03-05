@@ -1,6 +1,7 @@
 package pagesLocal;
 
 import io.qameta.allure.Step;
+import libs.Database;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -8,6 +9,10 @@ import org.openqa.selenium.support.FindBy;
 import static libs.Utils.waitABit;
 
 public class DashboardLocalSitePage extends ParentLocalSitePage {
+    public DashboardLocalSitePage(WebDriver webDriver, Database dBMySQL) {
+
+        super(webDriver, "/dash");
+    }
     @FindBy(xpath = "//*[@id='dash_head']")
     private WebElement dashboard;
 
@@ -36,10 +41,7 @@ public class DashboardLocalSitePage extends ParentLocalSitePage {
     private WebElement pageLogs;
 
 
-    public DashboardLocalSitePage(WebDriver webDriver) {
 
-        super(webDriver, "/dash");
-    }
 
     public boolean isDashboardPresent(){
         return actionsWithOurElements.isElementEnable(dashboard);

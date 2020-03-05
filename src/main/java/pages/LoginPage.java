@@ -1,6 +1,7 @@
 package pages;
 
 import io.qameta.allure.Step;
+import libs.Database;
 import org.junit.Assert;
 import org.openqa.selenium.Cookie;
 import org.openqa.selenium.WebDriver;
@@ -28,8 +29,8 @@ public class LoginPage extends ParentPage {
     @FindBy(xpath = ".//*[@id='validatePhone']//../*[@aria-label=\"Close\"]")
     private WebElement phoneVerificationClose;
 
-    public LoginPage(WebDriver webDriver) {
-        super(webDriver, "/");
+    public LoginPage(WebDriver webDriver, Database dBMySQL) {
+        super(webDriver, "/", dBMySQL);
     }
 
     @Step
