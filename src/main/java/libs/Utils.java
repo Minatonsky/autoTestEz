@@ -16,8 +16,10 @@ import java.sql.SQLException;
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.time.Instant;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.time.ZoneOffset;
 import java.time.format.DateTimeFormatter;
 import java.util.*;
 import java.util.concurrent.ThreadLocalRandom;
@@ -165,6 +167,12 @@ public class Utils {
         DateTimeFormatter format = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
         LocalDateTime dateTime = LocalDateTime.parse(dateTimeString, format);
         return dateTime;
+    }
+    public static String getDateTimeUTC(String format){
+        Instant instant = Instant.now();
+        LocalDateTime datetime = LocalDateTime.ofInstant(instant, ZoneOffset.UTC);
+        String formatted = DateTimeFormatter.ofPattern(format).format(datetime);
+        return formatted;
     }
 
 

@@ -2,7 +2,9 @@ package libs;
 
 import io.qameta.allure.Step;
 
+import java.time.Instant;
 import java.time.LocalDateTime;
+import java.time.ZoneOffset;
 import java.time.format.DateTimeFormatter;
 import java.time.temporal.ChronoUnit;
 
@@ -13,15 +15,17 @@ public class ChargeSmartSafetyMethods {
 
     @Step
     public String buyServicesDateTime(){
-        LocalDateTime tariffStart = LocalDateTime.parse(LocalDateTime.now().minusMonths(1).minusMinutes(10).toString());
-        String tempDateTime = tariffStart.format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));
-        return tempDateTime;
+        Instant instant = Instant.now();
+        LocalDateTime datetime = LocalDateTime.ofInstant(instant, ZoneOffset.UTC).minusMonths(1).minusMinutes(5);
+        String formatted = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss").format(datetime);
+        return formatted;
     }
     @Step
     public String paidTillServicesDateTime(){
-        LocalDateTime tariffStart = LocalDateTime.parse(LocalDateTime.now().minusMinutes(10).toString());
-        String tempDateTime = tariffStart.format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));
-        return tempDateTime;
+        Instant instant = Instant.now();
+        LocalDateTime datetime = LocalDateTime.ofInstant(instant, ZoneOffset.UTC).minusMinutes(5);
+        String formatted = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss").format(datetime);
+        return formatted;
     }
     @Step
     public boolean compareSubscribedTill(LocalDateTime subscribedTill){
@@ -32,7 +36,7 @@ public class ChargeSmartSafetyMethods {
 
     @Step
     public boolean compareBalance(double balanceBeforeTest, double balanceAfterTest){
-        boolean temp = (balanceBeforeTest + balanceAfterTest) == smartSafetyPrice;
+        boolean temp = Math.round((balanceBeforeTest + balanceAfterTest) * 100.0) / 100.0 == smartSafetyPrice;
         return temp;
     }
 }

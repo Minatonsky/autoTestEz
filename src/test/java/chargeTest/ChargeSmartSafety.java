@@ -5,7 +5,6 @@ import parentTest.ParentTestWithoutWebDriver;
 
 import java.io.IOException;
 import java.sql.SQLException;
-import java.text.ParseException;
 import java.time.LocalDateTime;
 import java.util.Map;
 
@@ -21,7 +20,7 @@ public class ChargeSmartSafety extends ParentTestWithoutWebDriver {
     }
 
     @Test
-    public void chargeSmartSafetyByBalance() throws SQLException, IOException, ClassNotFoundException, ParseException {
+    public void chargeSmartSafetyByBalance() throws SQLException {
 
         double balanceBeforeTest = 100.00;
         String buyServicesDateTime = chargeSmartSafetyMethods.buyServicesDateTime();
@@ -31,12 +30,14 @@ public class ChargeSmartSafety extends ParentTestWithoutWebDriver {
         checkAC("Fleet has not smart safety services", smartSafetyUserId.isEmpty(), false);
 
         utilsForDB.setCurrentDueForFleet(Double.toString(balanceBeforeTest), fleetId);
-        String dateTime = getDateAndTime("yyyy-MM-dd HH:mm:ss");
+        String dateTime = getDateTimeUTC("yyyy-MM-dd HH:mm:ss");
         utilsForDB.updateServicesConnections(fleetId, smartSafetyUserId, buyServicesDateTime, paidTillServicesDateTime);
 
         waitABit(70);
         String balanceAfterTest = utilsForDB.getCurrentDueEzFinancesFleet(fleetId);
-        checkAC("Balance is not correct", chargeSmartSafetyMethods.compareBalance(balanceBeforeTest, Double.valueOf(balanceAfterTest)), true);
+        System.out.println(" balanceBeforeTest = " + balanceBeforeTest);
+        System.out.println(" balanceAfterTest = " + Double.parseDouble(balanceAfterTest));
+        checkAC("Balance is not correct", chargeSmartSafetyMethods.compareBalance(balanceBeforeTest, Double.parseDouble(balanceAfterTest)), true);
         checkAC("No service transactions after test", utilsForDB.checkForTransactions(fleetId, dateTime), true);
 
         LocalDateTime dateTimeSubscribedTill = getLocalDateTimeFromString(utilsForDB.getSubscribedTillDateTime(fleetId, smartSafetyUserId));
@@ -45,7 +46,7 @@ public class ChargeSmartSafety extends ParentTestWithoutWebDriver {
 
     }
     @Test
-    public void chargeSmartSafetyByCard() throws SQLException, IOException, ClassNotFoundException {
+    public void chargeSmartSafetyByCard() throws SQLException {
         double balanceBeforeTest = 0;
         String buyServicesDateTime = chargeSmartSafetyMethods.buyServicesDateTime();
         String paidTillServicesDateTime = chargeSmartSafetyMethods.paidTillServicesDateTime();
@@ -55,7 +56,7 @@ public class ChargeSmartSafety extends ParentTestWithoutWebDriver {
 
 
         utilsForDB.setCurrentDueForFleet(Double.toString(balanceBeforeTest), fleetId);
-        String dateTime = getDateAndTime("yyyy-MM-dd HH:mm:ss");
+        String dateTime = getDateTimeUTC("yyyy-MM-dd HH:mm:ss");
         utilsForDB.updateServicesConnections(fleetId, smartSafetyUserId, buyServicesDateTime, paidTillServicesDateTime);
 
 

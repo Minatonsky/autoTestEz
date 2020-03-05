@@ -8,10 +8,7 @@ import parentTest.ParentTestWithoutWebDriver;
 import java.io.IOException;
 import java.sql.SQLException;
 import java.text.ParseException;
-import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.time.Period;
-import java.time.ZoneOffset;
+import java.time.*;
 import java.time.format.DateTimeFormatter;
 import java.time.temporal.ChronoUnit;
 import java.time.temporal.TemporalAdjusters;
@@ -195,28 +192,8 @@ public class TestMethods extends ParentTestWithoutWebDriver {
 
     @Test
     public void test2() throws SQLException, IOException, ClassNotFoundException, ParseException {
-
-
-        LocalDateTime tariffStart = LocalDateTime.parse(LocalDateTime.now().plusMonths(1).toString());
-        long tempDateTime = tariffStart.toEpochSecond(ZoneOffset.UTC);
-        System.out.println(tempDateTime);
-
-
-        String date7 = "2020-04-05 17:30:54";
-        DateTimeFormatter format = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
-        LocalDateTime dateTime = LocalDateTime.parse(date7, format);
-        System.out.println("origional date as string: " + date7);
-        System.out.println("generated LocalDateTime: " + dateTime);
-
-        long five = ChronoUnit.HOURS.between(tariffStart, dateTime);
-        System.out.println(" five " + five*(1));
-
-        if (five < 2 && five > (-2)){
-            System.out.println(" true");
-        } else System.out.println("false");
-
-
-
+        double temp = Math.round((100.0 + (-65.01)) * 100.0) / 100.0;
+        System.out.println(temp);
 
     }
 
