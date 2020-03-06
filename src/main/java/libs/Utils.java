@@ -168,11 +168,16 @@ public class Utils {
         LocalDateTime dateTime = LocalDateTime.parse(dateTimeString, format);
         return dateTime;
     }
-    public static String getDateTimeUTC(String format){
+    public static String getStringDateTimeUTC(String format){
         Instant instant = Instant.now();
         LocalDateTime datetime = LocalDateTime.ofInstant(instant, ZoneOffset.UTC);
         String formatted = DateTimeFormatter.ofPattern(format).format(datetime);
         return formatted;
+    }
+    public static LocalDateTime getLocalDateTimeUTC(){
+        Instant instant = Instant.now();
+        LocalDateTime tempDateTimeUTC = LocalDateTime.ofInstant(instant, ZoneOffset.UTC);
+        return tempDateTimeUTC;
     }
 
 

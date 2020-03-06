@@ -192,7 +192,7 @@ public class TestMethods extends ParentTestWithoutWebDriver {
 
     @Test
     public void test2() throws SQLException, IOException, ClassNotFoundException, ParseException {
-        double temp = Math.round((100.0 + (-65.01)) * 100.0) / 100.0;
+        double temp = Math.round((34.99 - 10) * 100.0) / 100.0;
         System.out.println(temp);
 
     }

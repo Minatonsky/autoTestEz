@@ -2,6 +2,8 @@ package parentTest;
 
 import libs.ChargeMethods;
 import libs.ConfigProperties;
+import libs.Database;
+import libs.UtilsForDB;
 import org.aeonbits.owner.ConfigFactory;
 import org.junit.After;
 import org.junit.Assert;
@@ -30,6 +32,7 @@ import java.util.concurrent.TimeUnit;
 public class ParentTest extends ParentTestWithoutWebDriver{
     WebDriver webDriver;
 
+    protected UtilsForDB utilsForDB;
     protected LoginPage loginPage;
     protected DashboardPage dashboardPage;
     protected ModalOrderPage modalOrderPage;
@@ -51,30 +54,20 @@ public class ParentTest extends ParentTestWithoutWebDriver{
     protected HelpAndTrainingPage helpAndTrainingPage;
     protected AccountSettingsPage accountSettingsPage;
     protected LogsLocalSitePage logsLocalSitePage;
+    protected FleetDriversPage fleetDriversPage;
 
     String browser = System.getProperty("browser");
 
-// type of devices
-    public String IOSXMonthTariffId = "0";
-    public String geometricsMonthTariffId = "9";
-    public String ezHardMonthTariffId = "12";
-    public String oneYearIOSXTariffId = "1";
-    public String twoYearsIOSXTariffId = "2";
-    public String oneYearGeometricsTariffId = "10";
-    public String twoYearsGeometricsTariffId = "11";
-    public String monthEzHardTariffId = "12";
-    public String oneYearEzHardTariffId = "13";
-    public String twoYearsEzHardTariffId = "14";
 
-    public String carrierIdString = "carrierId";
-    public String fleetString = "fleet";
-    public String userIdString = "userId";
+
+
 
     protected static ConfigProperties configProperties = ConfigFactory.create(ConfigProperties.class);
 
     @Before
     public void setUp() throws SQLException, IOException, ClassNotFoundException {
-
+        dBMySQL = new Database(nameDB, driverDB);
+        utilsForDB = new UtilsForDB(dBMySQL);
         initDriver(browser);
         webDriver.manage().window().maximize();
         webDriver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
@@ -99,6 +92,7 @@ public class ParentTest extends ParentTestWithoutWebDriver{
         helpAndTrainingPage = new HelpAndTrainingPage(webDriver, dBMySQL);
         accountSettingsPage = new AccountSettingsPage(webDriver, dBMySQL);
         logsLocalSitePage = new LogsLocalSitePage(webDriver, dBMySQL);
+        fleetDriversPage = new FleetDriversPage(webDriver, dBMySQL);
 
 
     }
@@ -139,6 +133,8 @@ public class ParentTest extends ParentTestWithoutWebDriver{
 
     @After
     public void tearDown() throws SQLException {
+        logger.info(" DB connection closed ");
+        dBMySQL.quit();
         webDriver.quit();
     }
 

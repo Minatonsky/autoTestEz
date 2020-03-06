@@ -8,6 +8,11 @@ import org.openqa.selenium.support.FindBy;
 import static libs.Utils.waitABit;
 
 public class DashboardPage extends ParentPage {
+
+    public DashboardPage(WebDriver webDriver, Database dBMySQL) {
+        super(webDriver, "/dash", dBMySQL);
+    }
+
     @FindBy(xpath = "//*[@id='dash_head']")
     private WebElement dashboard;
 
@@ -56,10 +61,6 @@ public class DashboardPage extends ParentPage {
     @FindBy(xpath = ".//i[@class='fa fa-angle-double-left minimize-arrow']")
     private WebElement menuSizeButton;
 
-    public DashboardPage(WebDriver webDriver, Database dBMySQL) {
-
-        super(webDriver, "/dash", dBMySQL);
-    }
 
     public boolean isDashboardPresent(){
         return actionsWithOurElements.isElementEnable(dashboard);
@@ -70,7 +71,7 @@ public class DashboardPage extends ParentPage {
         actionsWithOurElements.clickOnElement(pageStatus);
     }
     public void goToFleetPage(){
-        waitABit(2);
+        waitABit(1);
         actionsWithOurElements.clickOnElement(pageFleet);
     }
     public void goToReportsPage(){

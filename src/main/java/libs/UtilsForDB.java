@@ -345,6 +345,12 @@ public class UtilsForDB {
         return tempCurrentDue;
     }
 
+    @Step
+    public String getRandomDriverEmail(String fleetId) throws SQLException {
+        String tempCurrentDue = dBMySQL.selectValue("SELECT u.email FROM users u WHERE u.carrierId = " + fleetId + " AND companyPosition = 7 ORDER BY RAND()LIMIT 1;");
+        return tempCurrentDue;
+    }
+
 //    driver_defaulters
 
     @Step
@@ -452,11 +458,11 @@ public class UtilsForDB {
         return tempResult;
     }
 
-//    SMART SAFETY
+//    SERVICES
 
     @Step
     public String getSmartSafetyUserId(String fleetId) throws SQLException{
-        String tempId = dBMySQL.selectValue("SELECT u.id FROM user_app_info uai LEFT JOIN users u ON uai.userId = u.id WHERE u.carrierId = " + fleetId + " AND uai.field = 'smart_safety' LIMIT 1;");
+        String tempId = dBMySQL.selectValue("SELECT u.id FROM user_app_info uai LEFT JOIN users u ON uai.userId = u.id WHERE u.carrierId = " + fleetId + " AND uai.field = 'smart_safety' ORDER BY RAND() LIMIT 1;");
         return tempId;
     }
     @Step
@@ -472,5 +478,21 @@ public class UtilsForDB {
     public String getSubscribedTillDateTime(String fleetId, String userId) throws SQLException {
         String tempDateTime = dBMySQL.selectValue("SELECT s.subscribed_till FROM services_connections s WHERE s.carrier_id = " + fleetId + " AND s.user_id = " + userId + " AND s.service_id = 1;");
         return tempDateTime;
+    }
+    @Step
+    public List<ArrayList> getAtTillDateTimeServices(String fleetId, String userId) throws SQLException {
+        List<ArrayList> tempData = dBMySQL.selectTable("SELECT s.created_at, s.subscribed_till FROM services_connections s WHERE s.carrier_id = " + fleetId + " AND s.user_id = " + userId + " AND s.service_id = 1;");
+        return tempData;
+    }
+    @Step
+    public void deleteSmartSafetyFoDriver(String driverId) throws SQLException {
+        dBMySQL.changeTable("DELETE FROM user_app_info WHERE userId = " + driverId + ";");
+        dBMySQL.changeTable("DELETE FROM services_history WHERE user_id = " + driverId + ";");
+        dBMySQL.changeTable("DELETE FROM services_connections WHERE user_id = " + driverId + ";");
+    }
+    @Step
+    public boolean isSmartSafetyInUserApp(String driverId) throws SQLException {
+        boolean tempResult = dBMySQL.isRowPresent("SELECT * FROM user_app_info u WHERE u.field = 'smart_safety' AND u.userId = " + driverId + " AND u.value = 1;");
+        return tempResult;
     }
 }

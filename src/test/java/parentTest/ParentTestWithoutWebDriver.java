@@ -22,6 +22,22 @@ public class ParentTestWithoutWebDriver {
     protected UtilsForDB utilsForDB;
     protected ChargeSmartSafetyMethods chargeSmartSafetyMethods;
 
+    // type of devices
+    public String IOSXMonthTariffId = "0";
+    public String geometricsMonthTariffId = "9";
+    public String ezHardMonthTariffId = "12";
+    public String oneYearIOSXTariffId = "1";
+    public String twoYearsIOSXTariffId = "2";
+    public String oneYearGeometricsTariffId = "10";
+    public String twoYearsGeometricsTariffId = "11";
+    public String monthEzHardTariffId = "12";
+    public String oneYearEzHardTariffId = "13";
+    public String twoYearsEzHardTariffId = "14";
+
+    public String carrierIdString = "carrierId";
+    public String fleetString = "fleet";
+    public String userIdString = "userId";
+
     protected static ConfigProperties configProperties = ConfigFactory.create(ConfigProperties.class);
     Logger logger = Logger.getLogger(getClass());
 
@@ -35,6 +51,7 @@ public class ParentTestWithoutWebDriver {
 
     @After
     public void tearDown() throws SQLException {
+        logger.info(" DB connection closed ");
         dBMySQL.quit();
     }
 
