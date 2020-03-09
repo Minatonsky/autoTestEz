@@ -8,12 +8,16 @@ import parentTest.ParentTestWithoutWebDriver;
 import java.io.IOException;
 import java.sql.SQLException;
 import java.text.ParseException;
-import java.time.*;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.Period;
+import java.time.ZoneOffset;
 import java.time.format.DateTimeFormatter;
 import java.time.temporal.ChronoUnit;
 import java.time.temporal.TemporalAdjusters;
 import java.util.List;
 
+import static libs.Prices.smartSafetyPrice;
 import static libs.Utils.genRandomDataByRegex;
 // This test page is not using on test project, it just for check some methods
 
@@ -180,7 +184,6 @@ public class TestMethods extends ParentTestWithoutWebDriver {
     }
 
     @Test
-
     public void getAmountEzDueMonthToMonth() throws SQLException, IOException, ClassNotFoundException {
         String data = genRandomDataByRegex("[A-Z]{1}[a-z]{11}");
         String data2 = utilsForDB.getOrderStatus("4223");
@@ -191,9 +194,15 @@ public class TestMethods extends ParentTestWithoutWebDriver {
     }
 
     @Test
-    public void test2() throws SQLException, IOException, ClassNotFoundException, ParseException {
-        double temp = Math.round((34.99 - 10) * 100.0) / 100.0;
-        System.out.println(temp);
+    public void test2(){
+
+        LocalDateTime currentTime = LocalDateTime.parse(LocalDateTime.now().toString());
+        double monthDays =  currentTime.getMonth().length(true);
+
+        double tempFee = Math.round(((monthDays-12)/monthDays*smartSafetyPrice)*100.0)/100.0;
+
+        System.out.println(tempFee);
+
 
     }
 

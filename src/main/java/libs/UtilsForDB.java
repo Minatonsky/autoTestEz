@@ -350,6 +350,11 @@ public class UtilsForDB {
         String tempCurrentDue = dBMySQL.selectValue("SELECT u.email FROM users u WHERE u.carrierId = " + fleetId + " AND companyPosition = 7 ORDER BY RAND()LIMIT 1;");
         return tempCurrentDue;
     }
+    @Step
+    public String getUserEmailById(String id) throws SQLException{
+        String tempCurrentDue = dBMySQL.selectValue("SELECT email FROM users WHERE id = '" + id + "';");
+        return tempCurrentDue;
+    }
 
 //    driver_defaulters
 
@@ -481,7 +486,7 @@ public class UtilsForDB {
     }
     @Step
     public List<ArrayList> getAtTillDateTimeServices(String fleetId, String userId) throws SQLException {
-        List<ArrayList> tempData = dBMySQL.selectTable("SELECT s.created_at, s.subscribed_till FROM services_connections s WHERE s.carrier_id = " + fleetId + " AND s.user_id = " + userId + " AND s.service_id = 1;");
+        List<ArrayList> tempData = dBMySQL.selectTable("SELECT s.created_at, s.updated_at, s.subscribed_till,  s.noticed_at FROM services_connections s WHERE s.carrier_id = " + fleetId + " AND s.user_id = " + userId + " AND s.service_id = 1;");
         return tempData;
     }
     @Step
