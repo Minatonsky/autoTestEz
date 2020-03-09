@@ -21,6 +21,7 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.ZoneOffset;
 import java.time.format.DateTimeFormatter;
+import java.time.temporal.ChronoUnit;
 import java.util.*;
 import java.util.concurrent.ThreadLocalRandom;
 import java.util.stream.IntStream;
@@ -178,6 +179,10 @@ public class Utils {
         Instant instant = Instant.now();
         LocalDateTime tempDateTimeUTC = LocalDateTime.ofInstant(instant, ZoneOffset.UTC);
         return tempDateTimeUTC;
+    }
+    public static boolean compareDiffDateTime(LocalDateTime firstDateTime, LocalDateTime secondTimeFromDB){
+        long diffMinutes = ChronoUnit.MINUTES.between(firstDateTime, secondTimeFromDB);
+        return diffMinutes < 2 && diffMinutes > (-2);
     }
 
 

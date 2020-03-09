@@ -2,18 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="660eb711-957d-418e-9483-8b2931da6e6e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/FleetDriversPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/oldSiteTest/SmartSafetyOrderTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log/qalight.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/qalight.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/libs/ChargeSmartSafetyMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/libs/ChargeSmartSafetyMethods.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/libs/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/libs/Utils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/libs/UtilsForDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/libs/UtilsForDB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/DashboardPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/DashboardPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/chargeTest/ChargeSmartSafety.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/chargeTest/ChargeSmartSafety.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/parentTest/ParentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/parentTest/ParentTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/parentTest/ParentTestWithoutWebDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/parentTest/ParentTestWithoutWebDriver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/unitTest/TestMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/unitTest/TestMethods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/oldSiteTest/SmartSafetyOrderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/oldSiteTest/SmartSafetyOrderTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,8 +94,8 @@
       <recent name="C:\workspace\testdevEzlogz\src\main\java\libs" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SmartSafetyOrderTest.orderSmartSafetyByCard">
-    <configuration name="ChargeSmartSafety" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.SmartSafetyOrderTest.orderSmartSafetyByBalance">
+    <configuration name="ChargeSmartSafety.chargeSmartSafetyByBalanceAndCardDefaulters" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="WorkSpace" />
       <extension name="coverage">
         <pattern>
@@ -111,7 +105,8 @@
       </extension>
       <option name="PACKAGE_NAME" value="chargeTest" />
       <option name="MAIN_CLASS_NAME" value="chargeTest.ChargeSmartSafety" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="METHOD_NAME" value="chargeSmartSafetyByBalanceAndCardDefaulters" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -132,17 +127,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SafetyAddCardParamsTest.addCard" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ChargeSmartSafety.chargeSmartSafetyByCard" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="WorkSpace" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="oldSiteParameterizedTest.*" />
+          <option name="PATTERN" value="chargeTest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="oldSiteParameterizedTest" />
-      <option name="MAIN_CLASS_NAME" value="oldSiteParameterizedTest.SafetyAddCardParamsTest" />
-      <option name="METHOD_NAME" value="addCard" />
+      <option name="PACKAGE_NAME" value="chargeTest" />
+      <option name="MAIN_CLASS_NAME" value="chargeTest.ChargeSmartSafety" />
+      <option name="METHOD_NAME" value="chargeSmartSafetyByCard" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SmartSafetyOrderTest.orderSmartSafetyByBalance" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="WorkSpace" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="oldSiteTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="oldSiteTest" />
+      <option name="MAIN_CLASS_NAME" value="oldSiteTest.SmartSafetyOrderTest" />
+      <option name="METHOD_NAME" value="orderSmartSafetyByBalance" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -159,22 +170,6 @@
       <option name="PACKAGE_NAME" value="oldSiteTest" />
       <option name="MAIN_CLASS_NAME" value="oldSiteTest.SmartSafetyOrderTest" />
       <option name="METHOD_NAME" value="orderSmartSafetyByCard" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SoloAddCardParamsTest.addCard" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="WorkSpace" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="oldSiteParameterizedTest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="oldSiteParameterizedTest" />
-      <option name="MAIN_CLASS_NAME" value="oldSiteParameterizedTest.SoloAddCardParamsTest" />
-      <option name="METHOD_NAME" value="addCard" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -332,19 +327,19 @@
       <item itemvalue="Maven.SoloDriverCreateDocumentsLocalSiteParamsTest" />
       <item itemvalue="Maven.DriverSettingsParameterizedTest" />
       <item itemvalue="Maven.SoloOrders" />
+      <item itemvalue="JUnit.ChargeSmartSafety.chargeSmartSafetyByCard" />
+      <item itemvalue="JUnit.ChargeSmartSafety.chargeSmartSafetyByBalanceAndCardDefaulters" />
       <item itemvalue="JUnit.ChargeSmartSafety.chargeSmartSafetyByBalanceDefaulters" />
-      <item itemvalue="JUnit.ChargeSmartSafety" />
       <item itemvalue="JUnit.SmartSafetyOrderTest.orderSmartSafetyByCard" />
-      <item itemvalue="JUnit.SafetyAddCardParamsTest.addCard" />
-      <item itemvalue="JUnit.SoloAddCardParamsTest.addCard" />
+      <item itemvalue="JUnit.SmartSafetyOrderTest.orderSmartSafetyByBalance" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SmartSafetyOrderTest.orderSmartSafetyByBalance" />
         <item itemvalue="JUnit.SmartSafetyOrderTest.orderSmartSafetyByCard" />
-        <item itemvalue="JUnit.SoloAddCardParamsTest.addCard" />
-        <item itemvalue="JUnit.SafetyAddCardParamsTest.addCard" />
-        <item itemvalue="JUnit.ChargeSmartSafety" />
         <item itemvalue="JUnit.ChargeSmartSafety.chargeSmartSafetyByBalanceDefaulters" />
+        <item itemvalue="JUnit.ChargeSmartSafety.chargeSmartSafetyByBalanceAndCardDefaulters" />
+        <item itemvalue="JUnit.ChargeSmartSafety.chargeSmartSafetyByCard" />
       </list>
     </recent_temporary>
   </component>
@@ -377,13 +372,6 @@
       <workItem from="1562665338918" duration="52834000" />
       <workItem from="1562782581468" duration="9021000" />
       <workItem from="1562822119836" duration="58303000" />
-    </task>
-    <task id="LOCAL-00053" summary="new month-to-month 12 test was add">
-      <created>1572015658636</created>
-      <option name="number" value="00053" />
-      <option name="presentableId" value="LOCAL-00053" />
-      <option name="project" value="LOCAL" />
-      <updated>1572015658636</updated>
     </task>
     <task id="LOCAL-00054" summary="new month-to-month 12 test was add">
       <created>1572448355356</created>
@@ -721,7 +709,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583424828495</updated>
     </task>
-    <option name="localTasksCounter" value="102" />
+    <task id="LOCAL-00102" summary="order smart safety test was add">
+      <created>1583511093462</created>
+      <option name="number" value="00102" />
+      <option name="presentableId" value="LOCAL-00102" />
+      <option name="project" value="LOCAL" />
+      <updated>1583511093463</updated>
+    </task>
+    <option name="localTasksCounter" value="103" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -758,7 +753,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="local addTruck test was add" />
     <MESSAGE value="paramsUI test was add" />
     <MESSAGE value="paramsUI2 test was add" />
     <MESSAGE value="local test was add" />
@@ -783,7 +777,8 @@
     <MESSAGE value="smart safety test2 was add" />
     <MESSAGE value="refactoring db was add" />
     <MESSAGE value="refactoring smart safety test was add" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactoring smart safety test was add" />
+    <MESSAGE value="order smart safety test was add" />
+    <option name="LAST_COMMIT_MESSAGE" value="order smart safety test was add" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="179" key="#Inspections" timestamp="1583495376835">
@@ -822,10 +817,10 @@
     </state>
     <state x="690" y="268" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1581513752931" />
     <state x="690" y="268" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581087997343" />
-    <state x="614" y="115" key="CommitChangelistDialog2" timestamp="1583424827937">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="-1306" y="115" key="CommitChangelistDialog2" timestamp="1583511092857">
+      <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="-1306" y="115" key="CommitChangelistDialog2/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1582041508095" />
+    <state x="-1306" y="115" key="CommitChangelistDialog2/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1583511092857" />
     <state x="614" y="115" key="CommitChangelistDialog2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1583424827937" />
     <state x="614" y="115" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1581511360130" />
     <state x="2534" y="115" key="CommitChangelistDialog2/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1581695389020" />
@@ -833,32 +828,32 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1582882168961" />
-    <state width="1877" height="198" key="GridCell.Tab.0.bottom" timestamp="1583511068059">
-      <screen x="-1920" y="0" width="1920" height="1040" />
+    <state width="1877" height="146" key="GridCell.Tab.0.bottom" timestamp="1583756171848">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="198" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1583511068059" />
-    <state width="1877" height="2" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1583510980370" />
+    <state width="1877" height="198" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1583744386331" />
+    <state width="1877" height="146" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1583756171848" />
     <state width="1877" height="259" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1581511455382" />
     <state width="1877" height="339" key="GridCell.Tab.0.bottom/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1581696189438" />
-    <state width="1877" height="198" key="GridCell.Tab.0.center" timestamp="1583511068059">
-      <screen x="-1920" y="0" width="1920" height="1040" />
+    <state width="1877" height="146" key="GridCell.Tab.0.center" timestamp="1583756171848">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="198" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1583511068059" />
-    <state width="1877" height="2" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1583510980370" />
+    <state width="1877" height="198" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1583744386331" />
+    <state width="1877" height="146" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1583756171848" />
     <state width="1877" height="259" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1581511455381" />
     <state width="1877" height="339" key="GridCell.Tab.0.center/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1581696189438" />
-    <state width="1877" height="198" key="GridCell.Tab.0.left" timestamp="1583511068059">
-      <screen x="-1920" y="0" width="1920" height="1040" />
+    <state width="1877" height="146" key="GridCell.Tab.0.left" timestamp="1583756171848">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="198" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1583511068059" />
-    <state width="1877" height="2" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1583510980370" />
+    <state width="1877" height="198" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1583744386331" />
+    <state width="1877" height="146" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1583756171848" />
     <state width="1877" height="259" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1581511455381" />
     <state width="1877" height="339" key="GridCell.Tab.0.left/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1581696189438" />
-    <state width="1877" height="198" key="GridCell.Tab.0.right" timestamp="1583511068059">
-      <screen x="-1920" y="0" width="1920" height="1040" />
+    <state width="1877" height="146" key="GridCell.Tab.0.right" timestamp="1583756171848">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="198" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1583511068059" />
-    <state width="1877" height="2" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1583510980370" />
+    <state width="1877" height="198" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1583744386331" />
+    <state width="1877" height="146" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1583756171848" />
     <state width="1877" height="259" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1581511455381" />
     <state width="1877" height="339" key="GridCell.Tab.0.right/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1581696189438" />
     <state width="1877" height="146" key="GridCell.Tab.1.bottom" timestamp="1582041911109">
@@ -885,10 +880,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="490" y="176" key="Maven.ArtifactSearchDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580905216165" />
-    <state x="552" y="254" key="Vcs.Push.Dialog.v2" timestamp="1583424837150">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="-1368" y="254" key="Vcs.Push.Dialog.v2" timestamp="1583511102308">
+      <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="-1368" y="254" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1582041523884" />
+    <state x="-1368" y="254" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1583511102308" />
     <state x="552" y="254" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1583424837150" />
     <state x="552" y="254" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1581511446887" />
     <state x="2472" y="254" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1581695405119" />

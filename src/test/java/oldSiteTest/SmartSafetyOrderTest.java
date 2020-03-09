@@ -5,12 +5,13 @@ import parentTest.ParentTest;
 
 import java.io.IOException;
 import java.sql.SQLException;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-import static libs.Utils.listArrayToMap;
-import static libs.Utils.waitABit;
+import static libs.Prices.smartSafetyPrice;
+import static libs.Utils.*;
 
 public class SmartSafetyOrderTest extends ParentTest {
     Map dataForFleet = excelDriver.getData(configProperties.DATA_FILE_PATH() + "testLogin.xls", "validFleetLogin");
@@ -42,14 +43,139 @@ public class SmartSafetyOrderTest extends ParentTest {
 
         fleetDriversPage.clickOnButtonIAgree();
         fleetDriversPage.clickOnSaveButton();
+        LocalDateTime currentDateTime = getLocalDateTimeUTC();
         waitABit(5);
         checkAC("Smart safety does not exist in User App table", utilsForDB.isSmartSafetyInUserApp(driverId), true);
 
         List<ArrayList> tempListAtTillDateTimeServices = utilsForDB.getAtTillDateTimeServices(fleetId, driverId);
         Map<String, Object> tempDataReminderMap = listArrayToMap(tempListAtTillDateTimeServices);
-        tempDataReminderMap.get("created_at");
-        System.out.println(tempDataReminderMap.get("created_at"));
-        waitABit(5);
+        LocalDateTime timeDateCreatedAt = getLocalDateTimeFromString(tempDataReminderMap.get("created_at").toString());
+        LocalDateTime timeDateSubscribedTill = getLocalDateTimeFromString(tempDataReminderMap.get("subscribed_till").toString());
+        checkAC("Created At dateTime is not correct", compareDiffDateTime(currentDateTime, timeDateCreatedAt), true);
+        checkAC("Subscribed Till dateTime is not correct", compareDiffDateTime(currentDateTime.plusMonths(1), timeDateSubscribedTill), true);
+
 
     }
+    @Test
+    public void orderSmartSafetyByBalance() throws SQLException {
+        double balanceBeforeTest = 100.00;
+        String randomDriverEmail = utilsForDB.getRandomDriverEmail(fleetId);
+        System.out.println(randomDriverEmail);
+
+        String driverId = utilsForDB.getUserIdByEmail(randomDriverEmail);
+        utilsForDB.deleteSmartSafetyFoDriver(driverId);
+        utilsForDB.setCurrentDueForFleet(Double.toString(balanceBeforeTest), fleetId);
+        utilsForDB.setCurrentCard_0_Fleet(fleetId);
+
+        loginPage.userValidLogIn(login, pass);
+        checkAC("User wasn`t logined", dashboardPage.isDashboardPresent(), true);
+        dashboardPage.goToFleetPage();
+        fleetDriversPage.goToDriverPage();
+
+        fleetDriversPage.enterDriverEmail(randomDriverEmail);
+        fleetDriversPage.clickOnDriverInList(driverId);
+        fleetDriversPage.clickOnDriverSettings();
+        fleetDriversPage.clickOnSmartSafety();
+        checkAC("Agreement is not present", fleetDriversPage.isAgreementPresent(), true);
+
+        fleetDriversPage.clickOnButtonIAgree();
+        fleetDriversPage.clickOnSaveButton();
+        LocalDateTime currentDateTime = getLocalDateTimeUTC();
+        waitABit(5);
+        checkAC("Smart safety does not exist in User App table", utilsForDB.isSmartSafetyInUserApp(driverId), true);
+
+        List<ArrayList> tempListAtTillDateTimeServices = utilsForDB.getAtTillDateTimeServices(fleetId, driverId);
+        Map<String, Object> tempDataReminderMap = listArrayToMap(tempListAtTillDateTimeServices);
+        LocalDateTime timeDateCreatedAt = getLocalDateTimeFromString(tempDataReminderMap.get("created_at").toString());
+        LocalDateTime timeDateSubscribedTill = getLocalDateTimeFromString(tempDataReminderMap.get("subscribed_till").toString());
+        checkAC("Created At dateTime is not correct", compareDiffDateTime(currentDateTime, timeDateCreatedAt), true);
+        checkAC("Subscribed Till dateTime is not correct", compareDiffDateTime(currentDateTime.plusMonths(1), timeDateSubscribedTill), true);
+        String balanceAfterTest = utilsForDB.getCurrentDueEzFinancesFleet(fleetId);
+        checkAC("Balance is not correct",Double.parseDouble(balanceAfterTest) == Math.round(((smartSafetyPrice*2) - balanceBeforeTest)*100.0)/100.0, true);
+
+        utilsForDB.setCurrentCard(carrierIdString, fleetId);
+
+
+    }
+    @Test
+    public void orderSmartSafetyByBalanceAndCard() throws SQLException {
+        double balanceBeforeTest = 10.00;
+        String randomDriverEmail = utilsForDB.getRandomDriverEmail(fleetId);
+        System.out.println(randomDriverEmail);
+
+        String driverId = utilsForDB.getUserIdByEmail(randomDriverEmail);
+        utilsForDB.deleteSmartSafetyFoDriver(driverId);
+        utilsForDB.setCurrentDueForFleet(Double.toString(balanceBeforeTest), fleetId);
+
+        loginPage.userValidLogIn(login, pass);
+        checkAC("User wasn`t logined", dashboardPage.isDashboardPresent(), true);
+        dashboardPage.goToFleetPage();
+        fleetDriversPage.goToDriverPage();
+
+        fleetDriversPage.enterDriverEmail(randomDriverEmail);
+        fleetDriversPage.clickOnDriverInList(driverId);
+        fleetDriversPage.clickOnDriverSettings();
+        fleetDriversPage.clickOnSmartSafety();
+        checkAC("Agreement is not present", fleetDriversPage.isAgreementPresent(), true);
+
+        fleetDriversPage.clickOnButtonIAgree();
+        fleetDriversPage.clickOnSaveButton();
+        LocalDateTime currentDateTime = getLocalDateTimeUTC();
+        waitABit(5);
+        checkAC("Smart safety does not exist in User App table", utilsForDB.isSmartSafetyInUserApp(driverId), true);
+
+        List<ArrayList> tempListAtTillDateTimeServices = utilsForDB.getAtTillDateTimeServices(fleetId, driverId);
+        Map<String, Object> tempDataReminderMap = listArrayToMap(tempListAtTillDateTimeServices);
+        LocalDateTime timeDateCreatedAt = getLocalDateTimeFromString(tempDataReminderMap.get("created_at").toString());
+        LocalDateTime timeDateSubscribedTill = getLocalDateTimeFromString(tempDataReminderMap.get("subscribed_till").toString());
+        checkAC("Created At dateTime is not correct", compareDiffDateTime(currentDateTime, timeDateCreatedAt), true);
+        checkAC("Subscribed Till dateTime is not correct", compareDiffDateTime(currentDateTime.plusMonths(1), timeDateSubscribedTill), true);
+        String balanceAfterTest = utilsForDB.getCurrentDueEzFinancesFleet(fleetId);
+        checkAC("Balance is not correct",Double.parseDouble(balanceAfterTest) == 0, true);
+
+        utilsForDB.setCurrentCard(carrierIdString, fleetId);
+
+    }
+
+    @Test
+    public void orderSmartSafetyDefaulters() throws SQLException {
+        double balanceBeforeTest = 10.00;
+        String randomDriverEmail = utilsForDB.getRandomDriverEmail(fleetId);
+        System.out.println(randomDriverEmail);
+
+        String driverId = utilsForDB.getUserIdByEmail(randomDriverEmail);
+        utilsForDB.deleteSmartSafetyFoDriver(driverId);
+        utilsForDB.setCurrentDueForFleet(Double.toString(balanceBeforeTest), fleetId);
+        utilsForDB.setCurrentCard_0_Fleet(fleetId);
+
+        loginPage.userValidLogIn(login, pass);
+        checkAC("User wasn`t logined", dashboardPage.isDashboardPresent(), true);
+        dashboardPage.goToFleetPage();
+        fleetDriversPage.goToDriverPage();
+
+        fleetDriversPage.enterDriverEmail(randomDriverEmail);
+        fleetDriversPage.clickOnDriverInList(driverId);
+        fleetDriversPage.clickOnDriverSettings();
+        fleetDriversPage.clickOnSmartSafety();
+        checkAC("Agreement is not present", fleetDriversPage.isAgreementPresent(), true);
+
+        fleetDriversPage.clickOnButtonIAgree();
+        fleetDriversPage.clickOnSaveButton();
+        LocalDateTime currentDateTime = getLocalDateTimeUTC();
+        waitABit(5);
+        checkAC("Smart safety does not exist in User App table", utilsForDB.isSmartSafetyInUserApp(driverId), true);
+
+        List<ArrayList> tempListAtTillDateTimeServices = utilsForDB.getAtTillDateTimeServices(fleetId, driverId);
+        Map<String, Object> tempDataReminderMap = listArrayToMap(tempListAtTillDateTimeServices);
+        LocalDateTime timeDateCreatedAt = getLocalDateTimeFromString(tempDataReminderMap.get("created_at").toString());
+        LocalDateTime timeDateSubscribedTill = getLocalDateTimeFromString(tempDataReminderMap.get("subscribed_till").toString());
+        checkAC("Created At dateTime is not correct", compareDiffDateTime(currentDateTime, timeDateCreatedAt), true);
+        checkAC("Subscribed Till dateTime is not correct", compareDiffDateTime(currentDateTime.plusMonths(1), timeDateSubscribedTill), true);
+        String balanceAfterTest = utilsForDB.getCurrentDueEzFinancesFleet(fleetId);
+        checkAC("Balance is not correct",Double.parseDouble(balanceAfterTest) == Math.round(((smartSafetyPrice*2) - balanceBeforeTest)*100.0)/100.0, true);
+
+        utilsForDB.setCurrentCard(carrierIdString, fleetId);
+
+    }
+
 }
