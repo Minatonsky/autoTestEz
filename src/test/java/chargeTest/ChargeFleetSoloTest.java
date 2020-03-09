@@ -9,7 +9,7 @@ import java.util.List;
 
 public class ChargeFleetSoloTest extends ParentTest {
 
-    String soloId = "3455";
+    String soloId = "4401";
     String fleetId = "518";
 
     String unionMonthTariffId = IOSXMonthTariffId + ", " + geometricsMonthTariffId;
@@ -17,13 +17,13 @@ public class ChargeFleetSoloTest extends ParentTest {
     String unionTwoYearsTariffId = twoYearsIOSXTariffId + ", " + twoYearsGeometricsTariffId;
 
     int countMonthForTariffStartMonthIOSX = 5;
-    int countDevicesChargeByDaysIOSX = 5;
+    int countDevicesChargeByDaysIOSX = 1;
 
     int countMonthForTariffStartMonthGeometrics = 3;
-    int countDevicesChargeByDaysGeometrics = 3;
+    int countDevicesChargeByDaysGeometrics = 1;
 
     int countMonthForTariffStartMonthEzHard = 3;
-    int countDevicesChargeByDaysEzHard = 3;
+    int countDevicesChargeByDaysEzHard = 1;
 
     @Test
     public void chargeFleetTest() throws SQLException, IOException, ClassNotFoundException{

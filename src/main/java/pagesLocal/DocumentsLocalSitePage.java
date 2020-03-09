@@ -1,12 +1,13 @@
 package pagesLocal;
 
+import libs.Database;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 public class DocumentsLocalSitePage extends ParentLocalSitePage {
 
-    public DocumentsLocalSitePage(WebDriver webDriver) {
+    public DocumentsLocalSitePage(WebDriver webDriver, Database dBMySQL) {
         super(webDriver, "/dash/settings/account/");
     }
 

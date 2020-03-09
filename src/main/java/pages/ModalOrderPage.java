@@ -1,11 +1,13 @@
 package pages;
 
 import io.qameta.allure.Step;
+import libs.Database;
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+import static libs.Prices.*;
 import static libs.Utils.waitABit;
 
 public class ModalOrderPage extends ParentPage {
@@ -207,8 +209,8 @@ public class ModalOrderPage extends ParentPage {
     private WebElement cameraTitle;
 
 
-    public ModalOrderPage(WebDriver webDriver) {
-        super(webDriver, "/dash/eld/");
+    public ModalOrderPage(WebDriver webDriver, Database dBMySQL) {
+        super(webDriver, "/dash/eld/", dBMySQL);
     }
 
 /*

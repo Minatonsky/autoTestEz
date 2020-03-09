@@ -1,6 +1,7 @@
 package pages;
 
 import io.qameta.allure.Step;
+import libs.Database;
 import libs.UtilsForDB;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -13,7 +14,7 @@ import java.util.List;
 import static libs.Utils.waitABit;
 
 public class EldPage extends ParentPage {
-    UtilsForDB utilsForDB = new UtilsForDB();
+    UtilsForDB utilsForDB = new UtilsForDB(dBMySQL);
 
     @FindBy(xpath = ".//button[@data-tutorial='addELD']")
     private WebElement orderELD;
@@ -28,8 +29,9 @@ public class EldPage extends ParentPage {
     private WebElement manageELDPage;
 
 
-    public EldPage(WebDriver webDriver) {
-        super(webDriver, "dash/eld/");
+
+    public EldPage(WebDriver webDriver, Database dBMySQL) {
+        super(webDriver, "dash/eld/",  dBMySQL);
     }
 
     public void clickOnOrderELD(){
@@ -43,7 +45,6 @@ public class EldPage extends ParentPage {
 
     @Step
     public void cancelEldDevices(String idOrder, String quantityOfDevices, String quantityCameraCP) throws SQLException, IOException, ClassNotFoundException {
-        UtilsForDB utilsForDB = new UtilsForDB();
         List<String> localId = utilsForDB.getLocalIdDevices(idOrder);
         if (Integer.parseInt(quantityOfDevices) > 0 && Integer.parseInt(quantityCameraCP) == 0) {
             for (String element : localId) {

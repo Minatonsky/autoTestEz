@@ -14,20 +14,23 @@ import java.time.temporal.ChronoUnit;
 import java.time.temporal.TemporalAdjusters;
 import java.util.List;
 
+import static libs.Prices.*;
+
 public class ChargeMethods {
     Logger logger = Logger.getLogger(getClass());
     WebDriver webDriver;
-    UtilsForDB utilsForDB = new UtilsForDB();
+    Database dBMySQL;
+
     String checkFleets = "https://dev.ezlogz.com/cron/check_fleets.php";
     String checkDrivers = "https://dev.ezlogz.com/cron/check_drivers.php";
-    double eldMonthToMonthPrice = 29.99;
-    double eld1YearSubscriptionPrice = 329.89;
-    double eld2YearsSubscriptionPrice = 629.79;
 
     protected static ConfigProperties configProperties = ConfigFactory.create(ConfigProperties.class);
-    public ChargeMethods(WebDriver webDriver) {
+
+    public ChargeMethods(WebDriver webDriver, Database dBMySQL) {
         this.webDriver = webDriver;
+        this.dBMySQL = dBMySQL;
     }
+    UtilsForDB utilsForDB = new UtilsForDB(dBMySQL);
 
 
     @Step

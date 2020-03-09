@@ -1,12 +1,10 @@
 package parentTest;
 
-import io.qameta.allure.Step;
 import libs.ChargeMethods;
 import libs.ConfigProperties;
-import libs.ExcelDriver;
+import libs.Database;
 import libs.UtilsForDB;
 import org.aeonbits.owner.ConfigFactory;
-import org.apache.log4j.Logger;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
@@ -15,6 +13,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import pages.*;
 import pagesLocal.*;
 
@@ -22,19 +22,17 @@ import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.sql.SQLException;
 import java.util.Iterator;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
-import static libs.Utils.waitABit;
-
-public class ParentTest {
+public class ParentTest extends ParentTestWithoutWebDriver{
     WebDriver webDriver;
 
-    Logger logger = Logger.getLogger(getClass());
     protected UtilsForDB utilsForDB;
-    protected ExcelDriver excelDriver;
     protected LoginPage loginPage;
     protected DashboardPage dashboardPage;
     protected ModalOrderPage modalOrderPage;
@@ -56,54 +54,46 @@ public class ParentTest {
     protected HelpAndTrainingPage helpAndTrainingPage;
     protected AccountSettingsPage accountSettingsPage;
     protected LogsLocalSitePage logsLocalSitePage;
+    protected FleetDriversPage fleetDriversPage;
 
     String browser = System.getProperty("browser");
 
-    public String IOSXMonthTariffId = "0";
-    public String geometricsMonthTariffId = "9";
-    public String ezHardMonthTariffId = "12";
-    public String oneYearIOSXTariffId = "1";
-    public String twoYearsIOSXTariffId = "2";
-    public String oneYearGeometricsTariffId = "10";
-    public String twoYearsGeometricsTariffId = "11";
-    public String monthEzHardTariffId = "12";
-    public String oneYearEzHardTariffId = "13";
-    public String twoYearsEzHardTariffId = "14";
 
-    public String carrierIdString = "carrierId";
-    public String fleetString = "fleet";
-    public String userIdString = "userId";
+
+
 
     protected static ConfigProperties configProperties = ConfigFactory.create(ConfigProperties.class);
 
     @Before
     public void setUp() throws SQLException, IOException, ClassNotFoundException {
-        utilsForDB = new UtilsForDB();
-        excelDriver = new ExcelDriver();
+        dBMySQL = new Database(nameDB, driverDB);
+        utilsForDB = new UtilsForDB(dBMySQL);
         initDriver(browser);
         webDriver.manage().window().maximize();
         webDriver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-        loginPage = new LoginPage(webDriver);
-        dashboardPage = new DashboardPage(webDriver);
-        modalOrderPage = new ModalOrderPage(webDriver);
-        financesPage = new FinancesPage(webDriver);
-        managerEldPage = new ManagerEldPage(webDriver);
-        orderInfoPage = new OrderInfoPage(webDriver);
-        managerModalEldPage = new ManagerModalEldPage(webDriver);
-        chargeMethods = new ChargeMethods(webDriver);
-        settingsPage = new SettingsPage(webDriver);
-        equipmentPage = new EquipmentPage(webDriver);
-        dashboardLocalSitePage = new DashboardLocalSitePage(webDriver);
-        documentsLocalSitePage = new DocumentsLocalSitePage(webDriver);
-        equipmentLocalSitePage = new EquipmentLocalSitePage(webDriver);
-        loginLocalSitePage = new LoginLocalSitePage(webDriver);
-        driverSettingsLocalSitePage = new DriverSettingsLocalSitePage(webDriver);
-        accountSettingsLocalSitePage = new AccountSettingsLocalSitePage(webDriver);
-        logsPage = new LogsPage(webDriver);
-        eldPage = new EldPage(webDriver);
-        helpAndTrainingPage = new HelpAndTrainingPage(webDriver);
-        accountSettingsPage = new AccountSettingsPage(webDriver);
-        logsLocalSitePage = new LogsLocalSitePage(webDriver);
+        loginPage = new LoginPage(webDriver, dBMySQL);
+        dashboardPage = new DashboardPage(webDriver, dBMySQL);
+        modalOrderPage = new ModalOrderPage(webDriver, dBMySQL);
+        financesPage = new FinancesPage(webDriver, dBMySQL);
+        managerEldPage = new ManagerEldPage(webDriver, dBMySQL);
+        orderInfoPage = new OrderInfoPage(webDriver, dBMySQL);
+        managerModalEldPage = new ManagerModalEldPage(webDriver, dBMySQL);
+        chargeMethods = new ChargeMethods(webDriver, dBMySQL);
+        settingsPage = new SettingsPage(webDriver, dBMySQL);
+        equipmentPage = new EquipmentPage(webDriver, dBMySQL);
+        dashboardLocalSitePage = new DashboardLocalSitePage(webDriver, dBMySQL);
+        documentsLocalSitePage = new DocumentsLocalSitePage(webDriver, dBMySQL);
+        equipmentLocalSitePage = new EquipmentLocalSitePage(webDriver, dBMySQL);
+        loginLocalSitePage = new LoginLocalSitePage(webDriver, dBMySQL);
+        driverSettingsLocalSitePage = new DriverSettingsLocalSitePage(webDriver, dBMySQL);
+        accountSettingsLocalSitePage = new AccountSettingsLocalSitePage(webDriver, dBMySQL);
+        logsPage = new LogsPage(webDriver, dBMySQL);
+        eldPage = new EldPage(webDriver, dBMySQL);
+        helpAndTrainingPage = new HelpAndTrainingPage(webDriver, dBMySQL);
+        accountSettingsPage = new AccountSettingsPage(webDriver, dBMySQL);
+        logsLocalSitePage = new LogsLocalSitePage(webDriver, dBMySQL);
+        fleetDriversPage = new FleetDriversPage(webDriver, dBMySQL);
+
 
     }
 
@@ -124,7 +114,17 @@ public class ParentTest {
             webDriver = new FirefoxDriver();
             logger.info("FireFox is started");
 
+        } else if ("remote".equals(browser)){
+            logger.info("Remote Driver will be started");
+            try {
+                webDriver = new RemoteWebDriver(
+                        new URL("http://localhost:4444/wd/hub"),
+                        DesiredCapabilities.chrome());
+            } catch (MalformedURLException e) {
+                e.printStackTrace();
+            }
         }
+
         else {
             logger.error("Can`t init driver");
             Assert.fail("Can`t init driver");
@@ -133,28 +133,11 @@ public class ParentTest {
 
     @After
     public void tearDown() throws SQLException {
+        logger.info(" DB connection closed ");
+        dBMySQL.quit();
         webDriver.quit();
     }
 
-    @Step
-    protected void checkAC(String message, boolean actual, boolean expected){
-        waitABit(1);
-        if (actual != expected){
-            logger.error("AC failed: " + message);
-        }
-        Assert.assertEquals(message,expected,actual);
-        logger.info("AC passed");
-    }
-
-    @Step
-    protected void checkACWithLogger(String message, boolean actual, boolean expected, String valueFront, String valueFromDb){
-        waitABit(1);
-        if (actual != expected){
-            logger.error("AC failed: " + message + " Expected value: " + valueFront + " Actual value: " + valueFromDb);
-        }
-        Assert.assertEquals(message,expected,actual);
-        logger.info("AC passed");
-    }
 
     public void selectBrowserWindow(String window){
         Set<String> windowIds = webDriver.getWindowHandles();

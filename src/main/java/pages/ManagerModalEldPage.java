@@ -1,6 +1,7 @@
 package pages;
 
 import io.qameta.allure.Step;
+import libs.Database;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -31,8 +32,8 @@ public class ManagerModalEldPage extends ParentPage {
     private WebElement userList;
 
 
-    public ManagerModalEldPage(WebDriver webDriver) {
-        super(webDriver, "/dash/eld/");
+    public ManagerModalEldPage(WebDriver webDriver, Database dBMySQL) {
+        super(webDriver, "/dash/eld/", dBMySQL);
     }
 
 /*

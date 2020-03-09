@@ -14,8 +14,14 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.sql.SQLException;
 import java.text.DateFormat;
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.time.Instant;
 import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.ZoneOffset;
+import java.time.format.DateTimeFormatter;
+import java.time.temporal.ChronoUnit;
 import java.util.*;
 import java.util.concurrent.ThreadLocalRandom;
 import java.util.stream.IntStream;
@@ -151,6 +157,32 @@ public class Utils {
         Random r=new Random();
         int randomNumber=r.nextInt(arr.length);
         return arr[randomNumber];
+    }
+    public static long getUnitDateTimeFromString(String dateTime) throws ParseException {
+        SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        Date date = format.parse(dateTime);
+        long timestamp = date.getTime();
+        return timestamp;
+    }
+    public static LocalDateTime getLocalDateTimeFromString(String dateTimeString){
+        DateTimeFormatter format = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+        LocalDateTime dateTime = LocalDateTime.parse(dateTimeString, format);
+        return dateTime;
+    }
+    public static String getStringDateTimeUTC(String format){
+        Instant instant = Instant.now();
+        LocalDateTime datetime = LocalDateTime.ofInstant(instant, ZoneOffset.UTC);
+        String formatted = DateTimeFormatter.ofPattern(format).format(datetime);
+        return formatted;
+    }
+    public static LocalDateTime getLocalDateTimeUTC(){
+        Instant instant = Instant.now();
+        LocalDateTime tempDateTimeUTC = LocalDateTime.ofInstant(instant, ZoneOffset.UTC);
+        return tempDateTimeUTC;
+    }
+    public static boolean compareDiffDateTime(LocalDateTime firstDateTime, LocalDateTime secondTimeFromDB){
+        long diffMinutes = ChronoUnit.MINUTES.between(firstDateTime, secondTimeFromDB);
+        return diffMinutes < 2 && diffMinutes > (-2);
     }
 
 

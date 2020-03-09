@@ -1,34 +1,25 @@
 package unitTest;
 
-import libs.ConfigProperties;
-import libs.UtilsForDB;
-import org.aeonbits.owner.ConfigFactory;
+import org.apache.log4j.Logger;
 import org.json.JSONObject;
 import org.junit.Test;
+import parentTest.ParentTestWithoutWebDriver;
 
 import java.io.IOException;
 import java.sql.SQLException;
 import java.text.ParseException;
-import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.time.Period;
-import java.time.ZoneOffset;
+import java.time.*;
 import java.time.format.DateTimeFormatter;
 import java.time.temporal.ChronoUnit;
 import java.time.temporal.TemporalAdjusters;
 import java.util.List;
-import java.util.logging.Logger;
 
 import static libs.Utils.genRandomDataByRegex;
 // This test page is not using on test project, it just for check some methods
 
 
-public class TestMethods {
-    // testtesttesttest
-    static Logger logger = Logger.getLogger(String.valueOf(TestMethods.class));
-    protected static ConfigProperties configProperties = ConfigFactory.create(ConfigProperties.class);
-    UtilsForDB utilsForDB = new UtilsForDB();
-
+public class TestMethods extends ParentTestWithoutWebDriver {
+    org.apache.log4j.Logger logger = Logger.getLogger(getClass());
 
     @Test
     public void testDBSetCurrentDueForFleet() throws SQLException, IOException, ClassNotFoundException {
@@ -39,7 +30,6 @@ public class TestMethods {
 
     @Test
     public void testCancelEldDevices() throws SQLException, IOException, ClassNotFoundException {
-        UtilsForDB utilsForDB = new UtilsForDB();
         String idLastOrderAfterTest = "2460";
         List<String> localId = utilsForDB.getLocalIdDevices(idLastOrderAfterTest);
         logger.info(" result = " + localId.get(1));
@@ -58,7 +48,7 @@ public class TestMethods {
 
     @Test
     public void testIsEldBlinded() throws SQLException, IOException, ClassNotFoundException {
-        UtilsForDB utilsForDB = new UtilsForDB();
+
         String orderId = "3066";
         System.out.println(utilsForDB.isEldBlinded(orderId));
     }
@@ -201,9 +191,9 @@ public class TestMethods {
     }
 
     @Test
-    public void test2() throws SQLException, IOException, ClassNotFoundException {
-
-        System.out.println();
+    public void test2() throws SQLException, IOException, ClassNotFoundException, ParseException {
+        double temp = Math.round((34.99 - 10) * 100.0) / 100.0;
+        System.out.println(temp);
 
     }
 

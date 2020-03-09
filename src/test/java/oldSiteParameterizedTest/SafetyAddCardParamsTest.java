@@ -51,6 +51,7 @@ public class SafetyAddCardParamsTest extends ParentTest {
         financesPage.enterCvv("1234");
         financesPage.enterExpiryDateYY("2025");
         financesPage.enterExpiryDateMM("10");
+        waitABit(3);
         financesPage.clickOnPrimaryCard();
         waitABit(3);
         financesPage.clickOnCreateButton();

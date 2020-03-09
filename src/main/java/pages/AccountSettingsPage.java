@@ -1,13 +1,14 @@
 package pages;
 
+import libs.Database;
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 public class AccountSettingsPage extends ParentPage {
-    public AccountSettingsPage(WebDriver webDriver) {
-        super(webDriver, "/dash/settings/account/");
+    public AccountSettingsPage(WebDriver webDriver, Database dBMySQL) {
+        super(webDriver, "/dash/settings/account/", dBMySQL);
     }
     @FindBy(xpath = ".//a[@href='/dash/settings/account/']")
     private WebElement accountSetting;

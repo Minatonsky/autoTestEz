@@ -18,7 +18,7 @@ import java.util.Map;
 import static libs.Utils.*;
 
 @RunWith(Parameterized.class)
-public class DriverLicenseParameterizedLocalSiteTest extends ParentTest {
+public class SoloDriverLicenseParameterizedLocalSiteTest extends ParentTest {
     String state;
 
     Map dataForValidLogIn = excelDriver.getData(configProperties.DATA_FILE_PATH() + "testLogin.xls", "driverLogin");
@@ -29,7 +29,7 @@ public class DriverLicenseParameterizedLocalSiteTest extends ParentTest {
     String pass = dataForValidLogIn.get("pass").toString();
     String userId = dataForValidLogIn.get("userId").toString();
 
-    public DriverLicenseParameterizedLocalSiteTest(String state) throws IOException {
+    public SoloDriverLicenseParameterizedLocalSiteTest(String state) throws IOException {
         this.state = state;
 
     }
