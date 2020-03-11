@@ -1,6 +1,6 @@
 package pages;
 
-import libs.Database;
+import libs.UtilsForDB;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -8,8 +8,8 @@ import org.openqa.selenium.support.FindBy;
 import static libs.Utils.waitABit;
 
 public class EquipmentPage extends ParentPage {
-    public EquipmentPage(WebDriver webDriver,  Database dBMySQL) {
-        super(webDriver, "/dash/equipment/", dBMySQL);
+    public EquipmentPage(WebDriver webDriver, UtilsForDB utilsForDB) {
+        super(webDriver, "/dash/equipment/", utilsForDB);
     }
 
     @FindBy(xpath = "//button[text() = 'Add Truck']")

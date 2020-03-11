@@ -1,7 +1,6 @@
 package pages;
 
 import io.qameta.allure.Step;
-import libs.Database;
 import libs.UtilsForDB;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -14,7 +13,10 @@ import java.util.List;
 import static libs.Utils.waitABit;
 
 public class EldPage extends ParentPage {
-    UtilsForDB utilsForDB = new UtilsForDB(dBMySQL);
+    public EldPage(WebDriver webDriver, UtilsForDB utilsForDB) {
+        super(webDriver, "dash/eld/",  utilsForDB);
+    }
+
 
     @FindBy(xpath = ".//button[@data-tutorial='addELD']")
     private WebElement orderELD;
@@ -30,9 +32,6 @@ public class EldPage extends ParentPage {
 
 
 
-    public EldPage(WebDriver webDriver, Database dBMySQL) {
-        super(webDriver, "dash/eld/",  dBMySQL);
-    }
 
     public void clickOnOrderELD(){
 

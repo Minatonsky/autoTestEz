@@ -1,6 +1,6 @@
 package pages;
 
-import libs.Database;
+import libs.UtilsForDB;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -19,9 +19,9 @@ public class ManagerEldPage extends ParentPage {
     @FindBy(xpath = ".//button[text()='New Order']")
     private WebElement newOrderButton;
 
-    public ManagerEldPage(WebDriver webDriver, Database dBMySQL) {
+    public ManagerEldPage(WebDriver webDriver, UtilsForDB utilsForDB) {
 
-        super(webDriver, "dash/eld/", dBMySQL);
+        super(webDriver, "dash/eld/", utilsForDB);
     }
 
     public void clickOnEldOrders(){actionsWithOurElements.clickOnElement(eldOrders);}

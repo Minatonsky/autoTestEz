@@ -1,14 +1,14 @@
 package pagesLocal;
 
-import libs.Database;
+import libs.UtilsForDB;
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 public class AccountSettingsLocalSitePage extends ParentLocalSitePage {
-    public AccountSettingsLocalSitePage(WebDriver webDriver, Database dBMySQL) {
-        super(webDriver, "/dash/settings/account/");
+    public AccountSettingsLocalSitePage(WebDriver webDriver, UtilsForDB utilsForDB) {
+        super(webDriver, "/dash/settings/account/", utilsForDB);
     }
 
     @FindBy(xpath = ".//a[@href='/dash/settings/account/']")

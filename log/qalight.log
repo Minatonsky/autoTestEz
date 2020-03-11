@@ -2393,3 +2393,303 @@
 2020-11-03 14:11:24   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
 2020-11-03 14:11:28  ERROR [oldSiteTest.smartSafety.ChargeSmartSafety] : AC failed: Fleet has not smart safety services
 2020-11-03 14:11:28   INFO [oldSiteTest.smartSafety.ChargeSmartSafety] :  DB connection closed 
+2020-11-03 15:07:51   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-11-03 15:07:53   INFO [oldSiteParameterizedTest.FleetOrderParamsTest] : Chrome will be started
+2020-11-03 15:08:00   INFO [oldSiteParameterizedTest.FleetOrderParamsTest] : Chrome is started
+2020-11-03 15:08:05   INFO [oldSiteParameterizedTest.FleetOrderParamsTest] :  DB connection closed 
+2020-11-03 15:08:05   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-11-03 15:08:07   INFO [oldSiteParameterizedTest.FleetOrderParamsTest] : Chrome will be started
+2020-11-03 15:08:12   INFO [oldSiteParameterizedTest.FleetOrderParamsTest] : Chrome is started
+2020-11-03 15:08:16   INFO [oldSiteParameterizedTest.FleetOrderParamsTest] :  DB connection closed 
+2020-11-03 15:08:17   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-11-03 15:08:18   INFO [oldSiteParameterizedTest.FleetOrderParamsTest] : Chrome will be started
+2020-11-03 15:22:52   INFO [oldSiteParameterizedTest.FleetOrderParamsTest] : Chrome will be started
+2020-11-03 15:22:59   INFO [oldSiteParameterizedTest.FleetOrderParamsTest] : Chrome is started
+2020-11-03 15:23:04   INFO [oldSiteParameterizedTest.FleetOrderParamsTest] :  DB connection closed 
+2020-11-03 15:23:04   INFO [oldSiteParameterizedTest.FleetOrderParamsTest] : Chrome will be started
+2020-11-03 15:23:09   INFO [oldSiteParameterizedTest.FleetOrderParamsTest] : Chrome is started
+2020-11-03 15:24:03   INFO [oldSiteParameterizedTest.FleetOrderParamsTest] : Chrome will be started
+2020-11-03 15:24:10   INFO [oldSiteParameterizedTest.FleetOrderParamsTest] : Chrome is started
+2020-11-03 15:24:15   INFO [oldSiteParameterizedTest.FleetOrderParamsTest] :  DB connection closed 
+2020-11-03 15:24:15   INFO [oldSiteParameterizedTest.FleetOrderParamsTest] : Chrome will be started
+2020-11-03 15:26:40   INFO [oldSiteParameterizedTest.FleetOrderParamsTest] : Chrome will be started
+2020-11-03 15:26:47   INFO [oldSiteParameterizedTest.FleetOrderParamsTest] : Chrome is started
+2020-11-03 15:26:51   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-11-03 15:26:53   INFO [oldSiteParameterizedTest.FleetOrderParamsTest] :  DB connection closed 
+2020-11-03 15:26:54   INFO [oldSiteParameterizedTest.FleetOrderParamsTest] : Chrome will be started
+2020-11-03 15:26:59   INFO [oldSiteParameterizedTest.FleetOrderParamsTest] : Chrome is started
+2020-11-03 15:27:37   INFO [oldSiteParameterizedTest.FleetOrderParamsTest] : Chrome will be started
+2020-11-03 15:27:44   INFO [oldSiteParameterizedTest.FleetOrderParamsTest] : Chrome is started
+2020-11-03 15:27:48   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-11-03 15:27:50   INFO [oldSiteParameterizedTest.FleetOrderParamsTest] :  DB connection closed 
+2020-11-03 15:27:51   INFO [oldSiteParameterizedTest.FleetOrderParamsTest] : Chrome will be started
+2020-11-03 15:27:56   INFO [oldSiteParameterizedTest.FleetOrderParamsTest] : Chrome is started
+2020-11-03 15:33:05   INFO [oldSiteParameterizedTest.FleetOrderParamsTest] : Chrome will be started
+2020-11-03 15:33:12   INFO [oldSiteParameterizedTest.FleetOrderParamsTest] : Chrome is started
+2020-11-03 15:33:16   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-11-03 15:33:18   INFO [pages.EldPage] : User have not Order with status New
+2020-11-03 15:33:26   INFO [pages.LoginPage] : Login Page was opened
+2020-11-03 15:33:26   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-11-03 15:33:26   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-11-03 15:33:27   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-11-03 15:33:27   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-11-03 15:33:57   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2020-11-03 15:33:57   INFO [pages.LoginPage] : There is not phone verification pop up
+2020-11-03 15:33:59   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-11-03 15:34:00   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-11-03 15:34:01   INFO [libs.ActionsWithOurElements] : 1 was selected in Drop-down
+2020-11-03 15:34:01   INFO [libs.ActionsWithOurElements] : Nick was inputted into element
+2020-11-03 15:34:02   INFO [libs.ActionsWithOurElements] : Caved was inputted into element
+2020-11-03 15:34:02   INFO [libs.ActionsWithOurElements] : 0676475006 was inputted into element
+2020-11-03 15:34:02   INFO [libs.ActionsWithOurElements] : Kyiv was inputted into element
+2020-11-03 15:34:02   INFO [libs.ActionsWithOurElements] : 5 was inputted into element
+2020-11-03 15:34:02   INFO [libs.ActionsWithOurElements] : Kyiv was inputted into element
+2020-11-03 15:34:03   INFO [libs.ActionsWithOurElements] : 36206 was inputted into element
+2020-11-03 15:34:03   INFO [libs.ActionsWithOurElements] : 2 was selected in Drop-down
+2020-11-03 15:34:05   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2020-11-03 15:34:10   INFO [pages.ModalOrderPage] : No Pin Cable in order
+2020-11-03 15:34:10   INFO [pages.ModalOrderPage] : No OBDP Cable in order
+2020-11-03 15:34:10   INFO [pages.ModalOrderPage] : No Sticker in order
+2020-11-03 15:34:10   INFO [pages.ModalOrderPage] : No Camera CP in order
+2020-11-03 15:34:10   INFO [pages.ModalOrderPage] : No cd card in order
+2020-11-03 15:34:10   INFO [pages.ModalOrderPage] : No camera sva in order
+2020-11-03 15:34:12   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-11-03 15:34:12   INFO [libs.ActionsWithOurElements] : checkbox was checked
+2020-11-03 15:34:12   INFO [libs.ActionsWithOurElements] : checkbox is already unchecked
+2020-11-03 15:34:13   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-11-03 15:34:13   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-11-03 15:34:13   INFO [pages.ModalOrderPage] : Payment Method Smart oneYearSubscription was selected
+2020-11-03 15:34:13   INFO [pages.ModalOrderPage] : Payment Method Camera was not selected, no camera in order
+2020-11-03 15:34:17   INFO [oldSiteParameterizedTest.FleetOrderParamsTest] : AC passed
+2020-11-03 15:34:18   INFO [oldSiteParameterizedTest.FleetOrderParamsTest] : AC passed
+2020-11-03 15:34:38   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2020-11-03 15:34:39   INFO [oldSiteParameterizedTest.FleetOrderParamsTest] : AC passed
+2020-11-03 15:34:40   INFO [oldSiteParameterizedTest.FleetOrderParamsTest] : AC passed
+2020-11-03 15:34:41   INFO [oldSiteParameterizedTest.FleetOrderParamsTest] : AC passed
+2020-11-03 15:34:42   INFO [oldSiteParameterizedTest.FleetOrderParamsTest] : AC passed
+2020-11-03 15:34:43   INFO [oldSiteParameterizedTest.FleetOrderParamsTest] : AC passed
+2020-11-03 15:34:44   INFO [oldSiteParameterizedTest.FleetOrderParamsTest] : AC passed
+2020-11-03 15:34:45   INFO [oldSiteParameterizedTest.FleetOrderParamsTest] : AC passed
+2020-11-03 15:34:46   INFO [oldSiteParameterizedTest.FleetOrderParamsTest] : AC passed
+2020-11-03 15:34:47   INFO [oldSiteParameterizedTest.FleetOrderParamsTest] : AC passed
+2020-11-03 15:34:48   INFO [oldSiteParameterizedTest.FleetOrderParamsTest] : AC passed
+2020-11-03 15:35:08   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2020-11-03 15:35:09   INFO [oldSiteParameterizedTest.FleetOrderParamsTest] : AC passed
+2020-11-03 15:35:09   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-11-03 15:35:12   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-11-03 15:35:14   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-11-03 15:35:17   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-11-03 15:35:17   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-11-03 15:35:17   INFO [pages.ModalOrderPage] : Agreement ELD was agreed
+2020-11-03 15:35:17   INFO [pages.ModalOrderPage] : No agreement camera in order
+2020-11-03 15:35:17   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-11-03 15:35:23   INFO [oldSiteParameterizedTest.FleetOrderParamsTest] : AC passed
+2020-11-03 15:35:23   INFO [pages.FinancesPage] : orderStatus = 3
+2020-11-03 15:35:24   INFO [oldSiteParameterizedTest.FleetOrderParamsTest] : AC passed
+2020-11-03 15:35:25   INFO [oldSiteParameterizedTest.FleetOrderParamsTest] : AC passed
+2020-11-03 15:35:26   INFO [oldSiteParameterizedTest.FleetOrderParamsTest] : AC passed
+2020-11-03 15:35:28   INFO [oldSiteParameterizedTest.FleetOrderParamsTest] : AC passed
+2020-11-03 15:35:28   INFO [oldSiteParameterizedTest.FleetOrderParamsTest] :  DB connection closed 
+2020-11-03 15:35:28   INFO [oldSiteParameterizedTest.FleetOrderParamsTest] : Chrome will be started
+2020-11-03 15:35:33   INFO [oldSiteParameterizedTest.FleetOrderParamsTest] : Chrome is started
+2020-11-03 15:35:38   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-11-03 15:35:47   INFO [pages.LoginPage] : Login Page was opened
+2020-11-03 15:35:47   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-11-03 15:35:47   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2020-11-03 15:35:47   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-11-03 15:35:47   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-11-03 15:36:15   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2020-11-03 15:36:15   INFO [pages.LoginPage] : There is not phone verification pop up
+2020-11-03 15:36:17   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-11-03 15:36:19   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-11-03 15:36:21   INFO [libs.ActionsWithOurElements] : 4236 was inputted into element
+2020-11-03 15:36:24   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-11-03 15:36:26   INFO [pages.OrderInfoPage] : getFullOrderPrice 499.88
+2020-11-03 15:36:26   INFO [pages.OrderInfoPage] : dueForLastOrder 499.88
+2020-11-03 15:36:27   INFO [oldSiteParameterizedTest.FleetOrderParamsTest] : AC passed
+2020-11-03 15:36:29   INFO [libs.ActionsWithOurElements] : 4 was selected in Drop-down
+2020-11-03 15:36:31   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-11-03 15:36:33   INFO [libs.ActionsWithOurElements] : 1 was selected in Drop-down
+2020-11-03 15:36:35   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-11-03 15:36:36  ERROR [oldSiteParameterizedTest.FleetOrderParamsTest] : AC failed: Order is not completed
+2020-11-03 15:36:36   INFO [oldSiteParameterizedTest.FleetOrderParamsTest] :  DB connection closed 
+2020-11-03 15:36:37   INFO [oldSiteParameterizedTest.FleetOrderParamsTest] : Chrome will be started
+2020-11-03 15:36:42   INFO [oldSiteParameterizedTest.FleetOrderParamsTest] : Chrome is started
+2020-11-03 15:36:46   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-11-03 15:36:48   INFO [pages.EldPage] : User have not Order with status New
+2020-11-03 15:36:56   INFO [pages.LoginPage] : Login Page was opened
+2020-11-03 15:36:56   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-11-03 15:36:56   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-11-03 15:36:56   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-11-03 15:36:56   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-11-03 15:39:18   INFO [oldSiteParameterizedTest.FleetOrderParamsTest] : Chrome will be started
+2020-11-03 15:39:25   INFO [oldSiteParameterizedTest.FleetOrderParamsTest] : Chrome is started
+2020-11-03 15:39:29   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-11-03 15:39:31   INFO [pages.EldPage] : User have not Order with status New
+2020-11-03 15:39:39   INFO [pages.LoginPage] : Login Page was opened
+2020-11-03 15:39:40   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-11-03 15:39:40   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-11-03 15:39:40   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-11-03 15:39:40   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-11-03 15:40:08   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2020-11-03 15:40:08   INFO [pages.LoginPage] : There is not phone verification pop up
+2020-11-03 15:40:10   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-11-03 15:40:11   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-11-03 15:40:12   INFO [libs.ActionsWithOurElements] : 1 was selected in Drop-down
+2020-11-03 15:40:13   INFO [libs.ActionsWithOurElements] : Nick was inputted into element
+2020-11-03 15:40:13   INFO [libs.ActionsWithOurElements] : Caved was inputted into element
+2020-11-03 15:40:13   INFO [libs.ActionsWithOurElements] : 0676475006 was inputted into element
+2020-11-03 15:40:13   INFO [libs.ActionsWithOurElements] : Kyiv was inputted into element
+2020-11-03 15:40:13   INFO [libs.ActionsWithOurElements] : 5 was inputted into element
+2020-11-03 15:40:13   INFO [libs.ActionsWithOurElements] : Kyiv was inputted into element
+2020-11-03 15:40:14   INFO [libs.ActionsWithOurElements] : 36206 was inputted into element
+2020-11-03 15:40:14   INFO [libs.ActionsWithOurElements] : 2 was selected in Drop-down
+2020-11-03 15:40:16   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2020-11-03 15:40:21   INFO [pages.ModalOrderPage] : No Pin Cable in order
+2020-11-03 15:40:21   INFO [pages.ModalOrderPage] : No OBDP Cable in order
+2020-11-03 15:40:21   INFO [pages.ModalOrderPage] : No Sticker in order
+2020-11-03 15:40:21   INFO [pages.ModalOrderPage] : No Camera CP in order
+2020-11-03 15:40:21   INFO [pages.ModalOrderPage] : No cd card in order
+2020-11-03 15:40:21   INFO [pages.ModalOrderPage] : No camera sva in order
+2020-11-03 15:40:23   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-11-03 15:40:23   INFO [libs.ActionsWithOurElements] : checkbox was checked
+2020-11-03 15:40:24   INFO [libs.ActionsWithOurElements] : checkbox is already unchecked
+2020-11-03 15:40:24   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-11-03 15:40:24   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-11-03 15:40:24   INFO [pages.ModalOrderPage] : Payment Method Smart oneYearSubscription was selected
+2020-11-03 15:40:24   INFO [pages.ModalOrderPage] : Payment Method Camera was not selected, no camera in order
+2020-11-03 15:40:28   INFO [oldSiteParameterizedTest.FleetOrderParamsTest] : AC passed
+2020-11-03 15:40:29   INFO [oldSiteParameterizedTest.FleetOrderParamsTest] : AC passed
+2020-11-03 15:40:49   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2020-11-03 15:40:50   INFO [oldSiteParameterizedTest.FleetOrderParamsTest] : AC passed
+2020-11-03 15:40:51   INFO [oldSiteParameterizedTest.FleetOrderParamsTest] : AC passed
+2020-11-03 15:40:52   INFO [oldSiteParameterizedTest.FleetOrderParamsTest] : AC passed
+2020-11-03 15:40:53   INFO [oldSiteParameterizedTest.FleetOrderParamsTest] : AC passed
+2020-11-03 15:40:54   INFO [oldSiteParameterizedTest.FleetOrderParamsTest] : AC passed
+2020-11-03 15:40:55   INFO [oldSiteParameterizedTest.FleetOrderParamsTest] : AC passed
+2020-11-03 15:40:56   INFO [oldSiteParameterizedTest.FleetOrderParamsTest] : AC passed
+2020-11-03 15:40:57   INFO [oldSiteParameterizedTest.FleetOrderParamsTest] : AC passed
+2020-11-03 15:40:58   INFO [oldSiteParameterizedTest.FleetOrderParamsTest] : AC passed
+2020-11-03 15:40:59   INFO [oldSiteParameterizedTest.FleetOrderParamsTest] : AC passed
+2020-11-03 15:41:19   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2020-11-03 15:41:20   INFO [oldSiteParameterizedTest.FleetOrderParamsTest] : AC passed
+2020-11-03 15:41:20   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-11-03 15:41:23   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-11-03 15:41:25   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-11-03 15:41:28   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-11-03 15:41:28   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-11-03 15:41:28   INFO [pages.ModalOrderPage] : Agreement ELD was agreed
+2020-11-03 15:41:28   INFO [pages.ModalOrderPage] : No agreement camera in order
+2020-11-03 15:41:28   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-11-03 15:41:34   INFO [oldSiteParameterizedTest.FleetOrderParamsTest] : AC passed
+2020-11-03 15:41:34   INFO [pages.FinancesPage] : orderStatus = 3
+2020-11-03 15:41:35   INFO [oldSiteParameterizedTest.FleetOrderParamsTest] : AC passed
+2020-11-03 15:41:36   INFO [oldSiteParameterizedTest.FleetOrderParamsTest] : AC passed
+2020-11-03 15:41:37   INFO [oldSiteParameterizedTest.FleetOrderParamsTest] : AC passed
+2020-11-03 15:41:39   INFO [oldSiteParameterizedTest.FleetOrderParamsTest] : AC passed
+2020-11-03 15:41:39   INFO [oldSiteParameterizedTest.FleetOrderParamsTest] :  DB connection closed 
+2020-11-03 15:41:39   INFO [oldSiteParameterizedTest.FleetOrderParamsTest] : Chrome will be started
+2020-11-03 15:41:44   INFO [oldSiteParameterizedTest.FleetOrderParamsTest] : Chrome is started
+2020-11-03 15:41:49   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-11-03 15:41:58   INFO [pages.LoginPage] : Login Page was opened
+2020-11-03 15:41:58   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-11-03 15:41:58   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2020-11-03 15:41:58   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-11-03 15:41:58   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-11-03 15:42:25   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2020-11-03 15:42:25   INFO [pages.LoginPage] : There is not phone verification pop up
+2020-11-03 15:42:27   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-11-03 15:42:30   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-11-03 15:42:32   INFO [libs.ActionsWithOurElements] : 4237 was inputted into element
+2020-11-03 15:42:34   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-11-03 15:42:36   INFO [pages.OrderInfoPage] : getFullOrderPrice 499.88
+2020-11-03 15:42:36   INFO [pages.OrderInfoPage] : dueForLastOrder 499.88
+2020-11-03 15:42:37   INFO [oldSiteParameterizedTest.FleetOrderParamsTest] : AC passed
+2020-11-03 15:42:39   INFO [libs.ActionsWithOurElements] : 4 was selected in Drop-down
+2020-11-03 15:42:41   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-11-03 15:42:44   INFO [libs.ActionsWithOurElements] : 1 was selected in Drop-down
+2020-11-03 15:42:46   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-11-03 15:42:57   INFO [oldSiteParameterizedTest.FleetOrderParamsTest] : AC passed
+2020-11-03 15:42:58   INFO [oldSiteParameterizedTest.FleetOrderParamsTest] : AC passed
+2020-11-03 15:42:59   INFO [oldSiteParameterizedTest.FleetOrderParamsTest] : AC passed
+2020-11-03 15:42:59   INFO [oldSiteParameterizedTest.FleetOrderParamsTest] :  DB connection closed 
+2020-11-03 15:43:00   INFO [oldSiteParameterizedTest.FleetOrderParamsTest] : Chrome will be started
+2020-11-03 15:43:05   INFO [oldSiteParameterizedTest.FleetOrderParamsTest] : Chrome is started
+2020-11-03 15:43:09   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-11-03 15:43:11   INFO [pages.EldPage] : User have not Order with status New
+2020-11-03 15:43:32   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-11-03 15:43:38   INFO [libs.ChargeMethods] : # Temp Tariff Month Start 2019-10-09T15:43:38.154
+2020-11-03 15:43:38   INFO [libs.ChargeMethods] : # Temp Tariff Month Start 2019-12-05T15:43:38.155
+2020-11-03 15:43:38   INFO [libs.ChargeMethods] : # Temp Tariff Month Start 2019-12-08T15:43:38.156
+2020-11-03 15:43:38   INFO [libs.ChargeMethods] : # COUNT MONTH TO MONTH IOSX TARIFF = 83
+2020-11-03 15:43:38   INFO [libs.ChargeMethods] : # COUNT ONE YEAR IOSX TARIFF = 39
+2020-11-03 15:43:38   INFO [libs.ChargeMethods] : # COUNT TWO YEARS IOSX TARIFF = 101
+2020-11-03 15:43:38   INFO [libs.ChargeMethods] : # COUNT MONTH TO MONTH GEOMETRICS TARIFF = 53
+2020-11-03 15:43:38   INFO [libs.ChargeMethods] : # COUNT ONE YEAR GEOMETRICS TARIFF = 30
+2020-11-03 15:43:38   INFO [libs.ChargeMethods] : # COUNT TWO YEARS GEOMETRICS TARIFF = 38
+2020-11-03 15:43:38   INFO [libs.ChargeMethods] : # COUNT MONTH TO MONTH EZ HARD TARIFF = 7
+2020-11-03 15:43:38   INFO [libs.ChargeMethods] : # COUNT ONE YEAR EZ HARD TARIFF = 5
+2020-11-03 15:43:38   INFO [libs.ChargeMethods] : # COUNT TWO YEARS EZ HARD TARIFF = 1
+2020-11-03 15:43:39   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-11-03 15:43:39   INFO [libs.ChargeMethods] : # Deactivated Month IOSX Tariff = 0
+2020-11-03 15:43:39   INFO [libs.ChargeMethods] : # Month IOSX Charge Returned = 2
+2020-11-03 15:43:39   INFO [libs.ChargeMethods] : # One Year IOSX Charge Returned = 1
+2020-11-03 15:43:39   INFO [libs.ChargeMethods] : # Two Year IOSX Charge Returned = 5
+2020-11-03 15:43:39   INFO [libs.ChargeMethods] : # Geometrics Month Charge Returned = 2
+2020-11-03 15:43:39   INFO [libs.ChargeMethods] : # Geometrics One Year Charge Returned = 2
+2020-11-03 15:43:39   INFO [libs.ChargeMethods] : # Geometrics Two Year Charge Returned = 0
+2020-11-03 15:43:39   INFO [libs.ChargeMethods] : # EZ HARD Month Charge Returned = 2
+2020-11-03 15:43:39   INFO [libs.ChargeMethods] : # EZ HARD One Year Charge Returned = 0
+2020-11-03 15:43:39   INFO [libs.ChargeMethods] : # EZ HARD Two Year Charge Returned = 3
+2020-11-03 15:43:41   INFO [libs.ChargeMethods] : # Temp Tariff Month Start 2020-03-05T15:43:41.061
+2020-11-03 15:43:41   INFO [libs.ChargeMethods] : # Temp Tariff Month Start 2020-02-17T15:43:41.061
+2020-11-03 15:43:41   INFO [libs.ChargeMethods] : # Temp Tariff Month Start 2020-02-17T15:43:41.062
+2020-11-03 15:43:49   INFO [libs.ChargeMethods] : Chrome is started
+2020-11-03 15:44:13   INFO [libs.ChargeMethods] : Cron check fleets was run: 2020-03-11 13:43:43
+2020-11-03 15:44:14   INFO [libs.ChargeMethods] : dateTime: [2020-03-11 13:45:10]
+2020-11-03 15:44:15   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-11-03 15:44:15   INFO [libs.ChargeMethods] : # MONTH CHARGE IOSX = 2519.16
+2020-11-03 15:44:15   INFO [libs.ChargeMethods] : # ONE YEAR CHARGE IOSX = 13195.6
+2020-11-03 15:44:15   INFO [libs.ChargeMethods] : # TWO YEARS CHARGE IOSX = 66757.74
+2020-11-03 15:44:15   INFO [libs.ChargeMethods] : # SUM DUE CHARGE IOSX = 82472.5
+2020-11-03 15:44:15   INFO [libs.ChargeMethods] : # MONTH CHARGE Geometrics = 1619.46
+2020-11-03 15:44:15   INFO [libs.ChargeMethods] : # ONE YEAR CHARGE Geometrics = 10556.48
+2020-11-03 15:44:15   INFO [libs.ChargeMethods] : # TWO YEARS CHARGE Geometrics = 23932.02
+2020-11-03 15:44:15   INFO [libs.ChargeMethods] : # SUM DUE CHARGE Geometrics = 36107.96
+2020-11-03 15:44:15   INFO [libs.ChargeMethods] : # MONTH CHARGE EzHard = 239.92
+2020-11-03 15:44:15   INFO [libs.ChargeMethods] : # ONE YEAR CHARGE EzHard = 1649.45
+2020-11-03 15:44:15   INFO [libs.ChargeMethods] : # TWO YEARS CHARGE EzHard = 2519.16
+2020-11-03 15:44:15   INFO [libs.ChargeMethods] : # SUM DUE CHARGE EzHard = 4408.53
+2020-11-03 15:44:15   INFO [libs.ChargeMethods] : # activationDate = 1583423021
+2020-11-03 15:44:15   INFO [libs.ChargeMethods] : # countScannerMonthToMonthTariffChargeByDays = 1
+2020-11-03 15:44:15   INFO [libs.ChargeMethods] : ***** Month Days = 31
+2020-11-03 15:44:15   INFO [libs.ChargeMethods] : ***** Price For One Day = 0.9674193548387097
+2020-11-03 15:44:15   INFO [libs.ChargeMethods] : ***** Active Charge Days = 5
+2020-11-03 15:44:15   INFO [libs.ChargeMethods] : ***** chargeByDevice = 4.84
+2020-11-03 15:44:15   INFO [libs.ChargeMethods] : ***** chargeByAllDevices = 4.84
+2020-11-03 15:44:15   INFO [libs.ChargeMethods] : # activationDate = 1581954221
+2020-11-03 15:44:15   INFO [libs.ChargeMethods] : # countScannerMonthToMonthTariffChargeByDays = 1
+2020-11-03 15:44:15   INFO [libs.ChargeMethods] : ***** Month Days = 31
+2020-11-03 15:44:15   INFO [libs.ChargeMethods] : ***** Price For One Day = 0.9674193548387097
+2020-11-03 15:44:15   INFO [libs.ChargeMethods] : ***** Active Charge Days = 22
+2020-11-03 15:44:15   INFO [libs.ChargeMethods] : ***** chargeByDevice = 21.28
+2020-11-03 15:44:15   INFO [libs.ChargeMethods] : ***** chargeByAllDevices = 21.28
+2020-11-03 15:44:15   INFO [libs.ChargeMethods] : # activationDate = 1581954221
+2020-11-03 15:44:15   INFO [libs.ChargeMethods] : # countScannerMonthToMonthTariffChargeByDays = 1
+2020-11-03 15:44:15   INFO [libs.ChargeMethods] : ***** Month Days = 31
+2020-11-03 15:44:15   INFO [libs.ChargeMethods] : ***** Price For One Day = 0.9674193548387097
+2020-11-03 15:44:15   INFO [libs.ChargeMethods] : ***** Active Charge Days = 22
+2020-11-03 15:44:15   INFO [libs.ChargeMethods] : ***** chargeByDevice = 21.28
+2020-11-03 15:44:15   INFO [libs.ChargeMethods] : ***** chargeByAllDevices = 21.28
+2020-11-03 15:44:15   INFO [libs.ChargeMethods] : # LIST AMOUNT DUE FROM DB = [13195.60, 2524.00, 66757.74, 10556.48, 1640.74, 23932.02, 261.20, 2519.16, 1649.45]
+2020-11-03 15:44:15   INFO [libs.ChargeMethods] : # PROGRAM COUNT CHARGE  = 123036.39
+2020-11-03 15:44:15   INFO [libs.ChargeMethods] : # SUM DB DUE (CHARGE) = 123036.39
+2020-11-03 15:44:16   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-11-03 15:44:18   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-11-03 15:44:19   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-11-03 15:44:20   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-11-03 15:44:20   INFO [libs.ChargeMethods] : tempEstimatedTill: 2020-04-01
+2020-11-03 15:44:21   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-11-03 15:44:21   INFO [libs.ChargeMethods] : tempPaidTill: 2020-03-10
+2020-11-03 15:44:22   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-11-03 15:44:22   INFO [chargeTest.ChargeFleetSoloTest] :  DB connection closed 

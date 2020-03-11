@@ -1,6 +1,6 @@
 package pages;
 
-import libs.Database;
+import libs.UtilsForDB;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -9,8 +9,8 @@ import static libs.Utils.waitABit;
 
 public class FinancesPage extends ParentPage {
 
-    public FinancesPage(WebDriver webDriver, Database dBMySQL) {
-        super(webDriver, "/dash/finances/", dBMySQL);
+    public FinancesPage(WebDriver webDriver, UtilsForDB utilsForDB) {
+        super(webDriver, "/dash/finances/", utilsForDB);
     }
 
     @FindBy(xpath = ".//*[@id='current_due']")

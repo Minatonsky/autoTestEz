@@ -30,6 +30,9 @@ import java.util.concurrent.TimeUnit;
 
 public class ParentTest extends ParentTestWithoutWebDriver{
     WebDriver webDriver;
+    Database dBMySQL;
+    String nameDB = "MySQL_PADB_DB";
+    String driverDB = "MySQL";
 
     protected UtilsForDB utilsForDB;
     protected LoginPage loginPage;
@@ -61,33 +64,32 @@ public class ParentTest extends ParentTestWithoutWebDriver{
 
     @Before
     public void setUp() throws SQLException, IOException, ClassNotFoundException {
-        dBMySQL = new Database(nameDB, driverDB);
-        utilsForDB = new UtilsForDB(dBMySQL);
         initDriver(browser);
         webDriver.manage().window().maximize();
         webDriver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-        loginPage = new LoginPage(webDriver, dBMySQL);
-        dashboardPage = new DashboardPage(webDriver, dBMySQL);
-        modalOrderPage = new ModalOrderPage(webDriver, dBMySQL);
-        financesPage = new FinancesPage(webDriver, dBMySQL);
-        managerEldPage = new ManagerEldPage(webDriver, dBMySQL);
-        orderInfoPage = new OrderInfoPage(webDriver, dBMySQL);
-        managerModalEldPage = new ManagerModalEldPage(webDriver, dBMySQL);
-        settingsPage = new SettingsPage(webDriver, dBMySQL);
-        equipmentPage = new EquipmentPage(webDriver, dBMySQL);
-        dashboardLocalSitePage = new DashboardLocalSitePage(webDriver, dBMySQL);
-        documentsLocalSitePage = new DocumentsLocalSitePage(webDriver, dBMySQL);
-        equipmentLocalSitePage = new EquipmentLocalSitePage(webDriver, dBMySQL);
-        loginLocalSitePage = new LoginLocalSitePage(webDriver, dBMySQL);
-        driverSettingsLocalSitePage = new DriverSettingsLocalSitePage(webDriver, dBMySQL);
-        accountSettingsLocalSitePage = new AccountSettingsLocalSitePage(webDriver, dBMySQL);
-        logsPage = new LogsPage(webDriver, dBMySQL);
-        eldPage = new EldPage(webDriver, dBMySQL);
-        helpAndTrainingPage = new HelpAndTrainingPage(webDriver, dBMySQL);
-        accountSettingsPage = new AccountSettingsPage(webDriver, dBMySQL);
-        logsLocalSitePage = new LogsLocalSitePage(webDriver, dBMySQL);
-        fleetDriversPage = new FleetDriversPage(webDriver, dBMySQL);
-
+        dBMySQL = new Database(nameDB, driverDB);
+        utilsForDB = new UtilsForDB(dBMySQL);
+        loginPage = new LoginPage(webDriver, utilsForDB);
+        dashboardPage = new DashboardPage(webDriver, utilsForDB);
+        modalOrderPage = new ModalOrderPage(webDriver, utilsForDB);
+        financesPage = new FinancesPage(webDriver, utilsForDB);
+        managerEldPage = new ManagerEldPage(webDriver, utilsForDB);
+        orderInfoPage = new OrderInfoPage(webDriver, utilsForDB);
+        managerModalEldPage = new ManagerModalEldPage(webDriver, utilsForDB);
+        settingsPage = new SettingsPage(webDriver, utilsForDB);
+        equipmentPage = new EquipmentPage(webDriver, utilsForDB);
+        dashboardLocalSitePage = new DashboardLocalSitePage(webDriver, utilsForDB);
+        documentsLocalSitePage = new DocumentsLocalSitePage(webDriver, utilsForDB);
+        equipmentLocalSitePage = new EquipmentLocalSitePage(webDriver, utilsForDB);
+        loginLocalSitePage = new LoginLocalSitePage(webDriver, utilsForDB);
+        driverSettingsLocalSitePage = new DriverSettingsLocalSitePage(webDriver, utilsForDB);
+        accountSettingsLocalSitePage = new AccountSettingsLocalSitePage(webDriver, utilsForDB);
+        logsPage = new LogsPage(webDriver, utilsForDB);
+        eldPage = new EldPage(webDriver, utilsForDB);
+        helpAndTrainingPage = new HelpAndTrainingPage(webDriver, utilsForDB);
+        accountSettingsPage = new AccountSettingsPage(webDriver, utilsForDB);
+        logsLocalSitePage = new LogsLocalSitePage(webDriver, utilsForDB);
+        fleetDriversPage = new FleetDriversPage(webDriver, utilsForDB);
 
     }
 

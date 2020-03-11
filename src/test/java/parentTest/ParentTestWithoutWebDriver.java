@@ -37,7 +37,7 @@ public class ParentTestWithoutWebDriver {
 
     @After
     public void tearDown() throws SQLException {
-        logger.info(" DB connection closed ");
+        logger.info(" DB Connection Closed ");
         dBMySQL.quit();
     }
 

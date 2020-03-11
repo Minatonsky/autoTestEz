@@ -1,6 +1,6 @@
 package pages;
 
-import libs.Database;
+import libs.UtilsForDB;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -9,8 +9,8 @@ import static libs.Utils.waitABit;
 
 public class DashboardPage extends ParentPage {
 
-    public DashboardPage(WebDriver webDriver, Database dBMySQL) {
-        super(webDriver, "/dash", dBMySQL);
+    public DashboardPage(WebDriver webDriver, UtilsForDB utilsForDB) {
+        super(webDriver, "/dash", utilsForDB);
     }
 
     @FindBy(xpath = "//*[@id='dash_head']")

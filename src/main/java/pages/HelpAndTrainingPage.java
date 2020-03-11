@@ -1,6 +1,6 @@
 package pages;
 
-import libs.Database;
+import libs.UtilsForDB;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -8,8 +8,8 @@ import org.openqa.selenium.support.FindBy;
 import static libs.Utils.waitABit;
 
 public class HelpAndTrainingPage extends ParentPage {
-    public HelpAndTrainingPage(WebDriver webDriver, Database dBMySQL) {
-        super(webDriver, "/dash/video_tutorial/", dBMySQL);
+    public HelpAndTrainingPage(WebDriver webDriver, UtilsForDB utilsForDB) {
+        super(webDriver, "/dash/video_tutorial/", utilsForDB);
     }
     @FindBy(xpath = "//a[@href='/dash/user_reviews_offers/']")
     private WebElement userReviewsOffersPage;

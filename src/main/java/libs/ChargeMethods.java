@@ -27,11 +27,12 @@ public class ChargeMethods {
     String checkDrivers = "https://dev.ezlogz.com/cron/check_drivers.php";
 
     protected static ConfigProperties configProperties = ConfigFactory.create(ConfigProperties.class);
+    UtilsForDB utilsForDB;
 
     public ChargeMethods(UtilsForDB utilsForDB) {
         this.utilsForDB = utilsForDB;
     }
-    UtilsForDB utilsForDB;
+
 
     public void initDriver(){
         File file = new File("./src/drivers/chromedriver.exe");
