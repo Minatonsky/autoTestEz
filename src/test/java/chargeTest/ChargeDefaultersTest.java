@@ -7,6 +7,8 @@ import java.io.IOException;
 import java.sql.SQLException;
 import java.util.List;
 
+import static libs.DataForTests.*;
+
 public class ChargeDefaultersTest extends ParentTest {
 
     String soloId = "4401";

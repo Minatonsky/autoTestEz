@@ -1,13 +1,15 @@
 package chargeTest;
 
 import org.junit.Test;
-import parentTest.ParentTest;
+import parentTest.ParentTestWithoutWebDriver;
 
 import java.io.IOException;
 import java.sql.SQLException;
 import java.util.List;
 
-public class ChargeFleetSoloTest extends ParentTest {
+import static libs.DataForTests.*;
+
+public class ChargeFleetSoloTest extends ParentTestWithoutWebDriver {
 
     String soloId = "4401";
     String fleetId = "518";

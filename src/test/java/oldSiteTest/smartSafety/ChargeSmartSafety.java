@@ -8,6 +8,7 @@ import java.sql.SQLException;
 import java.time.LocalDateTime;
 import java.util.Map;
 
+import static libs.DataForTests.carrierIdString;
 import static libs.Prices.smartSafetyPrice;
 import static libs.Utils.*;
 

@@ -2254,3 +2254,142 @@
 2020-11-03 11:28:42   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
 2020-11-03 11:28:45  ERROR [oldSiteTest.smartSafety.ChargeSmartSafety] : AC failed: Fleet has not smart safety services
 2020-11-03 11:28:45   INFO [oldSiteTest.smartSafety.ChargeSmartSafety] :  DB connection closed 
+2020-11-03 11:50:02   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-11-03 11:50:04   INFO [chargeTest.ChargeFleetSoloTest] : Chrome will be started
+2020-11-03 11:50:11   INFO [chargeTest.ChargeFleetSoloTest] : Chrome is started
+2020-11-03 11:50:18   INFO [chargeTest.ChargeFleetSoloTest] :  DB connection closed 
+2020-11-03 11:50:48   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-11-03 11:50:53   INFO [libs.ChargeMethods] : # Temp Tariff Month Start 2019-10-09T11:50:53.992
+2020-11-03 11:50:53   INFO [libs.ChargeMethods] : # Temp Tariff Month Start 2019-12-05T11:50:53.993
+2020-11-03 11:50:53   INFO [libs.ChargeMethods] : # Temp Tariff Month Start 2019-12-08T11:50:53.994
+2020-11-03 11:50:53   INFO [libs.ChargeMethods] : # COUNT MONTH TO MONTH IOSX TARIFF = 83
+2020-11-03 11:50:53   INFO [libs.ChargeMethods] : # COUNT ONE YEAR IOSX TARIFF = 39
+2020-11-03 11:50:53   INFO [libs.ChargeMethods] : # COUNT TWO YEARS IOSX TARIFF = 101
+2020-11-03 11:50:53   INFO [libs.ChargeMethods] : # COUNT MONTH TO MONTH GEOMETRICS TARIFF = 53
+2020-11-03 11:50:53   INFO [libs.ChargeMethods] : # COUNT ONE YEAR GEOMETRICS TARIFF = 28
+2020-11-03 11:50:53   INFO [libs.ChargeMethods] : # COUNT TWO YEARS GEOMETRICS TARIFF = 38
+2020-11-03 11:50:53   INFO [libs.ChargeMethods] : # COUNT MONTH TO MONTH EZ HARD TARIFF = 7
+2020-11-03 11:50:53   INFO [libs.ChargeMethods] : # COUNT ONE YEAR EZ HARD TARIFF = 5
+2020-11-03 11:50:53   INFO [libs.ChargeMethods] : # COUNT TWO YEARS EZ HARD TARIFF = 1
+2020-11-03 11:50:54   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-11-03 11:50:54   INFO [libs.ChargeMethods] : # Deactivated Month IOSX Tariff = 0
+2020-11-03 11:50:55   INFO [libs.ChargeMethods] : # Month IOSX Charge Returned = 2
+2020-11-03 11:50:55   INFO [libs.ChargeMethods] : # One Year IOSX Charge Returned = 1
+2020-11-03 11:50:55   INFO [libs.ChargeMethods] : # Two Year IOSX Charge Returned = 5
+2020-11-03 11:50:55   INFO [libs.ChargeMethods] : # Geometrics Month Charge Returned = 2
+2020-11-03 11:50:55   INFO [libs.ChargeMethods] : # Geometrics One Year Charge Returned = 2
+2020-11-03 11:50:55   INFO [libs.ChargeMethods] : # Geometrics Two Year Charge Returned = 0
+2020-11-03 11:50:55   INFO [libs.ChargeMethods] : # EZ HARD Month Charge Returned = 2
+2020-11-03 11:50:55   INFO [libs.ChargeMethods] : # EZ HARD One Year Charge Returned = 0
+2020-11-03 11:50:55   INFO [libs.ChargeMethods] : # EZ HARD Two Year Charge Returned = 3
+2020-11-03 11:50:56   INFO [libs.ChargeMethods] : # Temp Tariff Month Start 2020-03-05T11:50:56.939
+2020-11-03 11:50:56   INFO [libs.ChargeMethods] : # Temp Tariff Month Start 2020-02-17T11:50:56.940
+2020-11-03 11:50:56   INFO [libs.ChargeMethods] : # Temp Tariff Month Start 2020-02-17T11:50:56.940
+2020-11-03 11:51:05   INFO [libs.ChargeMethods] : Chrome is started
+2020-11-03 11:51:28   INFO [libs.ChargeMethods] : Cron check fleets was run: 2020-03-11 09:50:59
+2020-11-03 11:51:29   INFO [chargeTest.ChargeFleetSoloTest] :  DB connection closed 
+2020-11-03 12:52:34   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-11-03 12:52:36   INFO [chargeTest.ChargeFleetSoloTest] :  DB connection closed 
+2020-11-03 12:52:52   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-11-03 12:52:57   INFO [libs.ChargeMethods] : # Temp Tariff Month Start 2019-10-09T12:52:57.422
+2020-11-03 12:52:57   INFO [libs.ChargeMethods] : # Temp Tariff Month Start 2019-12-05T12:52:57.424
+2020-11-03 12:52:57   INFO [libs.ChargeMethods] : # Temp Tariff Month Start 2019-12-08T12:52:57.424
+2020-11-03 12:52:57   INFO [libs.ChargeMethods] : # COUNT MONTH TO MONTH IOSX TARIFF = 83
+2020-11-03 12:52:57   INFO [libs.ChargeMethods] : # COUNT ONE YEAR IOSX TARIFF = 39
+2020-11-03 12:52:57   INFO [libs.ChargeMethods] : # COUNT TWO YEARS IOSX TARIFF = 101
+2020-11-03 12:52:57   INFO [libs.ChargeMethods] : # COUNT MONTH TO MONTH GEOMETRICS TARIFF = 53
+2020-11-03 12:52:57   INFO [libs.ChargeMethods] : # COUNT ONE YEAR GEOMETRICS TARIFF = 28
+2020-11-03 12:52:57   INFO [libs.ChargeMethods] : # COUNT TWO YEARS GEOMETRICS TARIFF = 38
+2020-11-03 12:52:57   INFO [libs.ChargeMethods] : # COUNT MONTH TO MONTH EZ HARD TARIFF = 7
+2020-11-03 12:52:57   INFO [libs.ChargeMethods] : # COUNT ONE YEAR EZ HARD TARIFF = 5
+2020-11-03 12:52:57   INFO [libs.ChargeMethods] : # COUNT TWO YEARS EZ HARD TARIFF = 1
+2020-11-03 12:52:58   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-11-03 12:52:58   INFO [libs.ChargeMethods] : # Deactivated Month IOSX Tariff = 0
+2020-11-03 12:52:58   INFO [libs.ChargeMethods] : # Month IOSX Charge Returned = 2
+2020-11-03 12:52:58   INFO [libs.ChargeMethods] : # One Year IOSX Charge Returned = 1
+2020-11-03 12:52:58   INFO [libs.ChargeMethods] : # Two Year IOSX Charge Returned = 5
+2020-11-03 12:52:58   INFO [libs.ChargeMethods] : # Geometrics Month Charge Returned = 2
+2020-11-03 12:52:58   INFO [libs.ChargeMethods] : # Geometrics One Year Charge Returned = 2
+2020-11-03 12:52:58   INFO [libs.ChargeMethods] : # Geometrics Two Year Charge Returned = 0
+2020-11-03 12:52:58   INFO [libs.ChargeMethods] : # EZ HARD Month Charge Returned = 2
+2020-11-03 12:52:58   INFO [libs.ChargeMethods] : # EZ HARD One Year Charge Returned = 0
+2020-11-03 12:52:58   INFO [libs.ChargeMethods] : # EZ HARD Two Year Charge Returned = 3
+2020-11-03 14:04:19   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-11-03 14:04:24   INFO [libs.ChargeMethods] : # Temp Tariff Month Start 2019-10-09T14:04:24.631
+2020-11-03 14:04:24   INFO [libs.ChargeMethods] : # Temp Tariff Month Start 2019-12-05T14:04:24.633
+2020-11-03 14:04:24   INFO [libs.ChargeMethods] : # Temp Tariff Month Start 2019-12-08T14:04:24.633
+2020-11-03 14:04:24   INFO [libs.ChargeMethods] : # COUNT MONTH TO MONTH IOSX TARIFF = 83
+2020-11-03 14:04:24   INFO [libs.ChargeMethods] : # COUNT ONE YEAR IOSX TARIFF = 39
+2020-11-03 14:04:24   INFO [libs.ChargeMethods] : # COUNT TWO YEARS IOSX TARIFF = 101
+2020-11-03 14:04:24   INFO [libs.ChargeMethods] : # COUNT MONTH TO MONTH GEOMETRICS TARIFF = 53
+2020-11-03 14:04:24   INFO [libs.ChargeMethods] : # COUNT ONE YEAR GEOMETRICS TARIFF = 28
+2020-11-03 14:04:24   INFO [libs.ChargeMethods] : # COUNT TWO YEARS GEOMETRICS TARIFF = 38
+2020-11-03 14:04:24   INFO [libs.ChargeMethods] : # COUNT MONTH TO MONTH EZ HARD TARIFF = 7
+2020-11-03 14:04:24   INFO [libs.ChargeMethods] : # COUNT ONE YEAR EZ HARD TARIFF = 5
+2020-11-03 14:04:24   INFO [libs.ChargeMethods] : # COUNT TWO YEARS EZ HARD TARIFF = 1
+2020-11-03 14:04:25   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-11-03 14:04:25   INFO [libs.ChargeMethods] : # Deactivated Month IOSX Tariff = 0
+2020-11-03 14:04:25   INFO [libs.ChargeMethods] : # Month IOSX Charge Returned = 2
+2020-11-03 14:04:25   INFO [libs.ChargeMethods] : # One Year IOSX Charge Returned = 1
+2020-11-03 14:04:25   INFO [libs.ChargeMethods] : # Two Year IOSX Charge Returned = 5
+2020-11-03 14:04:25   INFO [libs.ChargeMethods] : # Geometrics Month Charge Returned = 2
+2020-11-03 14:04:25   INFO [libs.ChargeMethods] : # Geometrics One Year Charge Returned = 2
+2020-11-03 14:04:25   INFO [libs.ChargeMethods] : # Geometrics Two Year Charge Returned = 0
+2020-11-03 14:04:25   INFO [libs.ChargeMethods] : # EZ HARD Month Charge Returned = 2
+2020-11-03 14:04:25   INFO [libs.ChargeMethods] : # EZ HARD One Year Charge Returned = 0
+2020-11-03 14:04:25   INFO [libs.ChargeMethods] : # EZ HARD Two Year Charge Returned = 3
+2020-11-03 14:04:27   INFO [libs.ChargeMethods] : # Temp Tariff Month Start 2020-03-05T14:04:27.564
+2020-11-03 14:04:27   INFO [libs.ChargeMethods] : # Temp Tariff Month Start 2020-02-17T14:04:27.565
+2020-11-03 14:04:27   INFO [libs.ChargeMethods] : # Temp Tariff Month Start 2020-02-17T14:04:27.566
+2020-11-03 14:04:36   INFO [libs.ChargeMethods] : Chrome is started
+2020-11-03 14:05:00   INFO [libs.ChargeMethods] : Cron check fleets was run: 2020-03-11 12:04:29
+2020-11-03 14:05:01   INFO [libs.ChargeMethods] : dateTime: [2020-03-11 12:05:56]
+2020-11-03 14:05:02   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-11-03 14:05:02   INFO [libs.ChargeMethods] : # MONTH CHARGE IOSX = 2519.16
+2020-11-03 14:05:02   INFO [libs.ChargeMethods] : # ONE YEAR CHARGE IOSX = 13195.6
+2020-11-03 14:05:02   INFO [libs.ChargeMethods] : # TWO YEARS CHARGE IOSX = 66757.74
+2020-11-03 14:05:02   INFO [libs.ChargeMethods] : # SUM DUE CHARGE IOSX = 82472.5
+2020-11-03 14:05:02   INFO [libs.ChargeMethods] : # MONTH CHARGE Geometrics = 1619.46
+2020-11-03 14:05:02   INFO [libs.ChargeMethods] : # ONE YEAR CHARGE Geometrics = 9896.7
+2020-11-03 14:05:02   INFO [libs.ChargeMethods] : # TWO YEARS CHARGE Geometrics = 23932.02
+2020-11-03 14:05:02   INFO [libs.ChargeMethods] : # SUM DUE CHARGE Geometrics = 35448.18
+2020-11-03 14:05:02   INFO [libs.ChargeMethods] : # MONTH CHARGE EzHard = 239.92
+2020-11-03 14:05:02   INFO [libs.ChargeMethods] : # ONE YEAR CHARGE EzHard = 1649.45
+2020-11-03 14:05:02   INFO [libs.ChargeMethods] : # TWO YEARS CHARGE EzHard = 2519.16
+2020-11-03 14:05:02   INFO [libs.ChargeMethods] : # SUM DUE CHARGE EzHard = 4408.53
+2020-11-03 14:05:02   INFO [libs.ChargeMethods] : # activationDate = 1583417067
+2020-11-03 14:05:02   INFO [libs.ChargeMethods] : # countScannerMonthToMonthTariffChargeByDays = 1
+2020-11-03 14:05:02   INFO [libs.ChargeMethods] : ***** Month Days = 31
+2020-11-03 14:05:02   INFO [libs.ChargeMethods] : ***** Price For One Day = 0.9674193548387097
+2020-11-03 14:05:02   INFO [libs.ChargeMethods] : ***** Active Charge Days = 5
+2020-11-03 14:05:02   INFO [libs.ChargeMethods] : ***** chargeByDevice = 4.84
+2020-11-03 14:05:02   INFO [libs.ChargeMethods] : ***** chargeByAllDevices = 4.84
+2020-11-03 14:05:02   INFO [libs.ChargeMethods] : # activationDate = 1581948267
+2020-11-03 14:05:02   INFO [libs.ChargeMethods] : # countScannerMonthToMonthTariffChargeByDays = 1
+2020-11-03 14:05:02   INFO [libs.ChargeMethods] : ***** Month Days = 31
+2020-11-03 14:05:02   INFO [libs.ChargeMethods] : ***** Price For One Day = 0.9674193548387097
+2020-11-03 14:05:02   INFO [libs.ChargeMethods] : ***** Active Charge Days = 22
+2020-11-03 14:05:02   INFO [libs.ChargeMethods] : ***** chargeByDevice = 21.28
+2020-11-03 14:05:02   INFO [libs.ChargeMethods] : ***** chargeByAllDevices = 21.28
+2020-11-03 14:05:02   INFO [libs.ChargeMethods] : # activationDate = 1581948267
+2020-11-03 14:05:02   INFO [libs.ChargeMethods] : # countScannerMonthToMonthTariffChargeByDays = 1
+2020-11-03 14:05:02   INFO [libs.ChargeMethods] : ***** Month Days = 31
+2020-11-03 14:05:02   INFO [libs.ChargeMethods] : ***** Price For One Day = 0.9674193548387097
+2020-11-03 14:05:02   INFO [libs.ChargeMethods] : ***** Active Charge Days = 22
+2020-11-03 14:05:02   INFO [libs.ChargeMethods] : ***** chargeByDevice = 21.28
+2020-11-03 14:05:02   INFO [libs.ChargeMethods] : ***** chargeByAllDevices = 21.28
+2020-11-03 14:05:02   INFO [libs.ChargeMethods] : # LIST AMOUNT DUE FROM DB = [13195.60, 2524.00, 66757.74, 9896.70, 1640.74, 23932.02, 261.20, 2519.16, 1649.45]
+2020-11-03 14:05:02   INFO [libs.ChargeMethods] : # PROGRAM COUNT CHARGE  = 122376.61
+2020-11-03 14:05:02   INFO [libs.ChargeMethods] : # SUM DB DUE (CHARGE) = 122376.61
+2020-11-03 14:05:03   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-11-03 14:05:04   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-11-03 14:05:05   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-11-03 14:05:06   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-11-03 14:05:06   INFO [libs.ChargeMethods] : tempEstimatedTill: 2020-04-01
+2020-11-03 14:05:07   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-11-03 14:05:08   INFO [libs.ChargeMethods] : tempPaidTill: 2020-03-10
+2020-11-03 14:05:09   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-11-03 14:05:09   INFO [chargeTest.ChargeFleetSoloTest] :  DB connection closed 
+2020-11-03 14:11:24   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-11-03 14:11:28  ERROR [oldSiteTest.smartSafety.ChargeSmartSafety] : AC failed: Fleet has not smart safety services
+2020-11-03 14:11:28   INFO [oldSiteTest.smartSafety.ChargeSmartSafety] :  DB connection closed 

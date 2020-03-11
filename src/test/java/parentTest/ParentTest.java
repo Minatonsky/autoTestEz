@@ -1,6 +1,5 @@
 package parentTest;
 
-import libs.ChargeMethods;
 import libs.ConfigProperties;
 import libs.Database;
 import libs.UtilsForDB;
@@ -40,7 +39,6 @@ public class ParentTest extends ParentTestWithoutWebDriver{
     protected ManagerEldPage managerEldPage;
     protected OrderInfoPage orderInfoPage;
     protected ManagerModalEldPage managerModalEldPage;
-    protected ChargeMethods chargeMethods;
     protected SettingsPage settingsPage;
     protected EquipmentPage equipmentPage;
     protected DashboardLocalSitePage dashboardLocalSitePage;
@@ -59,9 +57,6 @@ public class ParentTest extends ParentTestWithoutWebDriver{
     String browser = System.getProperty("browser");
 
 
-
-
-
     protected static ConfigProperties configProperties = ConfigFactory.create(ConfigProperties.class);
 
     @Before
@@ -78,7 +73,6 @@ public class ParentTest extends ParentTestWithoutWebDriver{
         managerEldPage = new ManagerEldPage(webDriver, dBMySQL);
         orderInfoPage = new OrderInfoPage(webDriver, dBMySQL);
         managerModalEldPage = new ManagerModalEldPage(webDriver, dBMySQL);
-        chargeMethods = new ChargeMethods(webDriver, dBMySQL);
         settingsPage = new SettingsPage(webDriver, dBMySQL);
         equipmentPage = new EquipmentPage(webDriver, dBMySQL);
         dashboardLocalSitePage = new DashboardLocalSitePage(webDriver, dBMySQL);
