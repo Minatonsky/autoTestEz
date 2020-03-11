@@ -21,13 +21,19 @@ public class FleetDriversPage extends ParentPage {
     private WebElement DriverSettingsButton;
 
     @FindBy(xpath = ".//*[@id='dr_smart_safety']//*[text()='On']")
-    private WebElement SmartSafetyButton;
+    private WebElement SmartSafetyButtonOn;
+
+    @FindBy(xpath = ".//*[@id='dr_smart_safety']//*[text()='Off']")
+    private WebElement SmartSafetyButtonOff;
 
     @FindBy(xpath = ".//h4[text()='Smart Safety Software Subscription Service Agreement']")
     private WebElement SmartSafetyAgreement;
 
     @FindBy(xpath = ".//button[text()='I Agree']")
     private WebElement iAgreeButton;
+
+    @FindBy(xpath = ".//button[@aria-label='Close']")
+    private WebElement closeUserInfoButton;
 
     @FindBy(xpath = ".//button[@class='btn btn-default oneDr save_edit' and text()='Save']")
     private WebElement saveButton;
@@ -36,13 +42,15 @@ public class FleetDriversPage extends ParentPage {
     public void enterDriverEmail(String driverEmail){actionsWithOurElements.enterTextToElement(EmailInput, driverEmail);}
     public void clickOnDriverInList(String driverId){actionsWithOurElements.clickOnElement(".//tr[@data-id='" + driverId + "']");}
     public void clickOnDriverSettings(){actionsWithOurElements.clickOnElement(DriverSettingsButton);}
-    public void clickOnSmartSafety(){actionsWithOurElements.clickOnElement(SmartSafetyButton);}
+    public void clickOnSmartSafety(){actionsWithOurElements.clickOnElement(SmartSafetyButtonOn);}
+    public void clickOffSmartSafety(){actionsWithOurElements.clickOnElement(SmartSafetyButtonOff);}
     public boolean isAgreementPresent(){return actionsWithOurElements.isElementDisplay(SmartSafetyAgreement);}
     public void clickOnButtonIAgree(){
         actionsWithOurElements.moveToElement(iAgreeButton);
         actionsWithOurElements.clickOnElement(iAgreeButton);
     }
     public void clickOnSaveButton(){actionsWithOurElements.clickOnElement(saveButton);}
+    public void closeUserInfo(){actionsWithOurElements.clickOnElement(closeUserInfoButton);}
 
 
 

@@ -300,7 +300,6 @@ public class ChargeMethods {
         logger.info("# AMOUNT DUE FROM DB = " + amountDue);
         logger.info("# Sum Of Deactivated Scanner = " + sumDeactivatedScannerMonthToMonthTariff);
 
-
         LocalDateTime currentTime = LocalDateTime.parse(LocalDateTime.now().toString());
         LocalDateTime tempActivationDate = LocalDateTime.ofEpochSecond(Long.parseLong(activationDate), 0, ZoneOffset.UTC);
         int monthDays =  currentTime.getMonth().length(true);
