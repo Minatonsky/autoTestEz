@@ -140,42 +140,50 @@ public class SmartSafetyOrderTest extends ParentTest {
 
     @Test
     public void orderSmartSafetyDefaulters() throws SQLException {
-        double balanceBeforeTest = 10.00;
-        String randomDriverEmail = utilsForDB.getRandomDriverEmail(fleetId);
-        System.out.println(randomDriverEmail);
+        try {
+            double balanceBeforeTest = 10.00;
+            String randomDriverEmail = utilsForDB.getRandomDriverEmail(fleetId);
+            System.out.println(randomDriverEmail);
 
-        String driverId = utilsForDB.getUserIdByEmail(randomDriverEmail);
-        utilsForDB.deleteSmartSafetyFoDriver(driverId);
-        utilsForDB.setCurrentDueForFleet(Double.toString(balanceBeforeTest), fleetId);
-        utilsForDB.setCurrentCard_0_Fleet(fleetId);
+            String driverId = utilsForDB.getUserIdByEmail(randomDriverEmail);
+            utilsForDB.deleteSmartSafetyFoDriver(driverId);
+            utilsForDB.setCurrentDueForFleet(Double.toString(balanceBeforeTest), fleetId);
+            utilsForDB.setCurrentCard_0_Fleet(fleetId);
 
-        loginPage.userValidLogIn(login, pass);
-        checkAC("User wasn`t logined", dashboardPage.isDashboardPresent(), true);
-        dashboardPage.goToFleetPage();
-        fleetDriversPage.goToDriverPage();
+            loginPage.userValidLogIn(login, pass);
+            checkAC("User wasn`t logined", dashboardPage.isDashboardPresent(), true);
+            dashboardPage.goToFleetPage();
+            fleetDriversPage.goToDriverPage();
 
-        fleetDriversPage.enterDriverEmail(randomDriverEmail);
-        fleetDriversPage.clickOnDriverInList(driverId);
-        fleetDriversPage.clickOnDriverSettings();
-        fleetDriversPage.clickOnSmartSafety();
-        checkAC("Agreement is not present", fleetDriversPage.isAgreementPresent(), true);
+            fleetDriversPage.enterDriverEmail(randomDriverEmail);
+            fleetDriversPage.clickOnDriverInList(driverId);
+            fleetDriversPage.clickOnDriverSettings();
+            fleetDriversPage.clickOnSmartSafety();
+            checkAC("Agreement is not present", fleetDriversPage.isAgreementPresent(), true);
 
-        fleetDriversPage.clickOnButtonIAgree();
-        fleetDriversPage.clickOnSaveButton();
-        LocalDateTime currentDateTime = getLocalDateTimeUTC();
-        waitABit(5);
-        checkAC("Smart safety does not exist in User App table", utilsForDB.isSmartSafetyInUserApp(driverId), true);
+            fleetDriversPage.clickOnButtonIAgree();
+            fleetDriversPage.clickOnSaveButton();
+            LocalDateTime currentDateTime = getLocalDateTimeUTC();
+            waitABit(5);
+            checkAC("Smart safety does not exist in User App table", utilsForDB.isSmartSafetyInUserApp(driverId), true);
 
-        List<ArrayList> tempListAtTillDateTimeServices = utilsForDB.getAtTillDateTimeServices(fleetId, driverId);
-        Map<String, Object> tempDataReminderMap = listArrayToMap(tempListAtTillDateTimeServices);
-        LocalDateTime timeDateCreatedAt = getLocalDateTimeFromString(tempDataReminderMap.get("created_at").toString());
-        LocalDateTime timeDateSubscribedTill = getLocalDateTimeFromString(tempDataReminderMap.get("subscribed_till").toString());
-        checkAC("Created At dateTime is not correct", compareDiffDateTime(currentDateTime, timeDateCreatedAt), true);
-        checkAC("Subscribed Till dateTime is not correct", compareDiffDateTime(currentDateTime.plusMonths(1), timeDateSubscribedTill), true);
-        String balanceAfterTest = utilsForDB.getCurrentDueEzFinancesFleet(fleetId);
-        checkAC("Balance is not correct",Double.parseDouble(balanceAfterTest) == Math.round(((smartSafetyPrice*2) - balanceBeforeTest)*100.0)/100.0, true);
+            List<ArrayList> tempListAtTillDateTimeServices = utilsForDB.getAtTillDateTimeServices(fleetId, driverId);
+            Map<String, Object> tempDataReminderMap = listArrayToMap(tempListAtTillDateTimeServices);
+            LocalDateTime timeDateCreatedAt = getLocalDateTimeFromString(tempDataReminderMap.get("created_at").toString());
+            LocalDateTime timeDateSubscribedTill = getLocalDateTimeFromString(tempDataReminderMap.get("subscribed_till").toString());
+            checkAC("Created At dateTime is not correct", compareDiffDateTime(currentDateTime, timeDateCreatedAt), true);
+            checkAC("Subscribed Till dateTime is not correct", compareDiffDateTime(currentDateTime.plusMonths(1), timeDateSubscribedTill), true);
+            String balanceAfterTest = utilsForDB.getCurrentDueEzFinancesFleet(fleetId);
+            checkAC("Balance is not correct", Double.parseDouble(balanceAfterTest) == Math.round(((smartSafetyPrice * 2) - balanceBeforeTest) * 100.0) / 100.0, true);
+        } finally {
+            utilsForDB.setCurrentCard(carrierIdString, fleetId);
+            utilsForDB.setCurrentDueForFleet( "0", fleetId);
+        }
 
-        utilsForDB.setCurrentCard(carrierIdString, fleetId);
+
+
+
+
 
     }
 

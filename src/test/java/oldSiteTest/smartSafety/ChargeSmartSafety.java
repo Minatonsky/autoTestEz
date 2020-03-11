@@ -89,29 +89,34 @@ public class ChargeSmartSafety extends ParentTestWithoutWebDriver {
     }
     @Test
     public void chargeSmartSafetyDefaulters() throws SQLException {
+        try {
+            double balanceBeforeTest = 10.00;
+            String buyServicesDateTime = chargeSmartSafetyMethods.buyServicesDateTime();
+            String paidTillServicesDateTime = chargeSmartSafetyMethods.paidTillServicesDateTime();
 
-        double balanceBeforeTest = 10.00;
-        String buyServicesDateTime = chargeSmartSafetyMethods.buyServicesDateTime();
-        String paidTillServicesDateTime = chargeSmartSafetyMethods.paidTillServicesDateTime();
+            String smartSafetyUserId = utilsForDB.getSmartSafetyUserId(fleetId);
+            checkAC("Fleet has not smart safety services", smartSafetyUserId.isEmpty(), false);
 
-        String smartSafetyUserId = utilsForDB.getSmartSafetyUserId(fleetId);
-        checkAC("Fleet has not smart safety services", smartSafetyUserId.isEmpty(), false);
+            utilsForDB.setCurrentDueForFleet(Double.toString(balanceBeforeTest), fleetId);
+            utilsForDB.setCurrentCard_0_Fleet(fleetId);
+            String dateTime = getStringDateTimeUTC("yyyy-MM-dd HH:mm:ss");
+            utilsForDB.updateServicesConnections(fleetId, smartSafetyUserId, buyServicesDateTime, paidTillServicesDateTime);
 
-        utilsForDB.setCurrentDueForFleet(Double.toString(balanceBeforeTest), fleetId);
-        utilsForDB.setCurrentCard_0_Fleet(fleetId);
-        String dateTime = getStringDateTimeUTC("yyyy-MM-dd HH:mm:ss");
-        utilsForDB.updateServicesConnections(fleetId, smartSafetyUserId, buyServicesDateTime, paidTillServicesDateTime);
+            waitABit(70);
+            LocalDateTime currentDateTime = getLocalDateTimeUTC();
+            String balanceAfterTest = utilsForDB.getCurrentDueEzFinancesFleet(fleetId);
 
-        waitABit(70);
-        LocalDateTime currentDateTime = getLocalDateTimeUTC();
-        String balanceAfterTest = utilsForDB.getCurrentDueEzFinancesFleet(fleetId);
+            checkAC("Balance is not correct",Double.parseDouble(balanceAfterTest) == Math.round((smartSafetyPrice - balanceBeforeTest)*100.0)/100.0, true);
+            checkAC("No service transactions after test", utilsForDB.checkForTransactions(fleetId, dateTime), true);
 
-        checkAC("Balance is not correct",Double.parseDouble(balanceAfterTest) == Math.round((smartSafetyPrice - balanceBeforeTest)*100.0)/100.0, true);
-        checkAC("No service transactions after test", utilsForDB.checkForTransactions(fleetId, dateTime), true);
+            LocalDateTime dateTimeSubscribedTill = getLocalDateTimeFromString(utilsForDB.getSubscribedTillDateTime(fleetId, smartSafetyUserId));
+            checkAC("Subscribed Till dateTime is not correct", compareDiffDateTime(currentDateTime.plusMonths(1), dateTimeSubscribedTill), true);
 
-        LocalDateTime dateTimeSubscribedTill = getLocalDateTimeFromString(utilsForDB.getSubscribedTillDateTime(fleetId, smartSafetyUserId));
-        checkAC("Subscribed Till dateTime is not correct", compareDiffDateTime(currentDateTime.plusMonths(1), dateTimeSubscribedTill), true);
-        utilsForDB.setCurrentCard(carrierIdString, fleetId);
+        } finally {
+            utilsForDB.setCurrentCard(carrierIdString, fleetId);
+        }
+
+
 
     }
 

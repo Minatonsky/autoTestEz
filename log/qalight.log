@@ -2693,3 +2693,135 @@
 2020-11-03 15:44:21   INFO [libs.ChargeMethods] : tempPaidTill: 2020-03-10
 2020-11-03 15:44:22   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
 2020-11-03 15:44:22   INFO [chargeTest.ChargeFleetSoloTest] :  DB connection closed 
+2020-11-03 16:17:29   INFO [oldSiteTest.smartSafety.SmartSafetyOrderTest] : Chrome will be started
+2020-11-03 16:17:35   INFO [oldSiteTest.smartSafety.SmartSafetyOrderTest] : Chrome is started
+2020-11-03 16:17:39   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-11-03 16:17:48   INFO [pages.LoginPage] : Login Page was opened
+2020-11-03 16:17:49   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-11-03 16:17:49   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-11-03 16:17:49   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-11-03 16:17:49   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-11-03 16:18:17   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2020-11-03 16:18:17   INFO [pages.LoginPage] : There is not phone verification pop up
+2020-11-03 16:18:17   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2020-11-03 16:18:18   INFO [oldSiteTest.smartSafety.SmartSafetyOrderTest] : AC passed
+2020-11-03 16:18:19   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-11-03 16:18:21   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-11-03 16:18:21   INFO [libs.ActionsWithOurElements] : den41@gmail.com was inputted into element
+2020-11-03 16:18:22   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-11-03 16:18:23   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-11-03 16:18:24   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-11-03 16:18:24   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-11-03 16:18:25   INFO [oldSiteTest.smartSafety.SmartSafetyOrderTest] : AC passed
+2020-11-03 16:18:25   INFO [libs.ActionsWithOurElements] : Mouse over the element
+2020-11-03 16:18:25   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-11-03 16:18:25   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-11-03 16:18:31  ERROR [oldSiteTest.smartSafety.SmartSafetyOrderTest] : AC failed: Smart safety does not exist in User App table
+2020-11-03 16:18:31   INFO [oldSiteTest.smartSafety.SmartSafetyOrderTest] :  DB connection closed 
+2020-11-03 16:18:32   INFO [oldSiteTest.smartSafety.SmartSafetyOrderTest] : Chrome will be started
+2020-11-03 16:18:37   INFO [oldSiteTest.smartSafety.SmartSafetyOrderTest] : Chrome is started
+2020-11-03 16:18:41   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-11-03 16:18:54   INFO [pages.LoginPage] : Login Page was opened
+2020-11-03 16:18:55   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-11-03 16:18:55   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-11-03 16:18:55   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-11-03 16:18:55   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-11-03 16:19:23   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2020-11-03 16:19:23   INFO [pages.LoginPage] : There is not phone verification pop up
+2020-11-03 16:19:23   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2020-11-03 16:19:24   INFO [oldSiteTest.smartSafety.SmartSafetyOrderTest] : AC passed
+2020-11-03 16:19:25   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-11-03 16:19:26   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-11-03 16:19:27   INFO [libs.ActionsWithOurElements] : den37@gmail.com was inputted into element
+2020-11-03 16:19:28   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-11-03 16:19:28   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-11-03 16:19:29   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-11-03 16:19:29   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-11-03 16:19:30   INFO [oldSiteTest.smartSafety.SmartSafetyOrderTest] : AC passed
+2020-11-03 16:19:30   INFO [libs.ActionsWithOurElements] : Mouse over the element
+2020-11-03 16:19:31   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-11-03 16:19:31   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-11-03 16:19:37  ERROR [oldSiteTest.smartSafety.SmartSafetyOrderTest] : AC failed: Smart safety does not exist in User App table
+2020-11-03 16:19:37   INFO [oldSiteTest.smartSafety.SmartSafetyOrderTest] :  DB connection closed 
+2020-11-03 16:19:38   INFO [oldSiteTest.smartSafety.SmartSafetyOrderTest] : Chrome will be started
+2020-11-03 16:19:43   INFO [oldSiteTest.smartSafety.SmartSafetyOrderTest] : Chrome is started
+2020-11-03 16:19:47   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-11-03 16:21:36   INFO [oldSiteTest.smartSafety.SmartSafetyOrderTest] : Chrome will be started
+2020-11-03 16:21:42   INFO [oldSiteTest.smartSafety.SmartSafetyOrderTest] : Chrome is started
+2020-11-03 16:21:46   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-11-03 16:21:56   INFO [pages.LoginPage] : Login Page was opened
+2020-11-03 16:21:56   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-11-03 16:21:56   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-11-03 16:21:57   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-11-03 16:21:57   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-11-03 16:22:24   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2020-11-03 16:22:24   INFO [pages.LoginPage] : There is not phone verification pop up
+2020-11-03 16:22:24   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2020-11-03 16:22:25   INFO [oldSiteTest.smartSafety.SmartSafetyOrderTest] : AC passed
+2020-11-03 16:22:27   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-11-03 16:22:28   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-11-03 16:22:28   INFO [libs.ActionsWithOurElements] : den41@gmail.com was inputted into element
+2020-11-03 16:22:29   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-11-03 16:22:30   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-11-03 16:22:31   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-11-03 16:22:31   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-11-03 16:22:32   INFO [oldSiteTest.smartSafety.SmartSafetyOrderTest] : AC passed
+2020-11-03 16:22:32   INFO [libs.ActionsWithOurElements] : Mouse over the element
+2020-11-03 16:22:32   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-11-03 16:22:32   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-11-03 16:22:38  ERROR [oldSiteTest.smartSafety.SmartSafetyOrderTest] : AC failed: Smart safety does not exist in User App table
+2020-11-03 16:22:38   INFO [oldSiteTest.smartSafety.SmartSafetyOrderTest] :  DB connection closed 
+2020-11-03 16:22:39   INFO [oldSiteTest.smartSafety.SmartSafetyOrderTest] : Chrome will be started
+2020-11-03 16:22:44   INFO [oldSiteTest.smartSafety.SmartSafetyOrderTest] : Chrome is started
+2020-11-03 16:25:35   INFO [oldSiteTest.smartSafety.SmartSafetyOrderTest] : Chrome will be started
+2020-11-03 16:25:42   INFO [oldSiteTest.smartSafety.SmartSafetyOrderTest] : Chrome is started
+2020-11-03 16:25:46   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-11-03 16:25:59   INFO [pages.LoginPage] : Login Page was opened
+2020-11-03 16:25:59   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-11-03 16:25:59   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-11-03 16:25:59   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-11-03 16:25:59   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-11-03 16:26:27   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2020-11-03 16:26:27   INFO [pages.LoginPage] : There is not phone verification pop up
+2020-11-03 16:26:27   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2020-11-03 16:26:28   INFO [oldSiteTest.smartSafety.SmartSafetyOrderTest] : AC passed
+2020-11-03 16:26:29   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-11-03 16:26:31   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-11-03 16:26:31   INFO [libs.ActionsWithOurElements] : den41@gmail.com was inputted into element
+2020-11-03 16:26:32   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-11-03 16:26:33   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-11-03 16:26:34   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-11-03 16:26:34   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-11-03 16:26:35   INFO [oldSiteTest.smartSafety.SmartSafetyOrderTest] : AC passed
+2020-11-03 16:26:35   INFO [libs.ActionsWithOurElements] : Mouse over the element
+2020-11-03 16:26:35   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-11-03 16:26:35   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-11-03 16:26:41   INFO [oldSiteTest.smartSafety.SmartSafetyOrderTest] : AC passed
+2020-11-03 16:26:42   INFO [oldSiteTest.smartSafety.SmartSafetyOrderTest] : AC passed
+2020-11-03 16:26:43   INFO [oldSiteTest.smartSafety.SmartSafetyOrderTest] : AC passed
+2020-11-03 16:26:43   INFO [oldSiteTest.smartSafety.SmartSafetyOrderTest] :  DB connection closed 
+2020-11-03 16:41:57   INFO [oldSiteTest.smartSafety.SmartSafetyOrderTest] : Chrome will be started
+2020-11-03 16:42:04   INFO [oldSiteTest.smartSafety.SmartSafetyOrderTest] : Chrome is started
+2020-11-03 16:42:08   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-11-03 16:42:17   INFO [pages.LoginPage] : Login Page was opened
+2020-11-03 16:42:18   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-11-03 16:42:18   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-11-03 16:42:18   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-11-03 16:42:18   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-11-03 16:42:46   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2020-11-03 16:42:46   INFO [pages.LoginPage] : There is not phone verification pop up
+2020-11-03 16:42:46   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2020-11-03 16:42:47   INFO [oldSiteTest.smartSafety.SmartSafetyOrderTest] : AC passed
+2020-11-03 16:42:48   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-11-03 16:42:49   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-11-03 16:42:50   INFO [libs.ActionsWithOurElements] : gcc32dfg403@zoqqa.com was inputted into element
+2020-11-03 16:42:50   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-11-03 16:42:51   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-11-03 16:42:52   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-11-03 16:42:52   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-11-03 16:42:53   INFO [oldSiteTest.smartSafety.SmartSafetyOrderTest] : AC passed
+2020-11-03 16:42:53   INFO [libs.ActionsWithOurElements] : Mouse over the element
+2020-11-03 16:42:53   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-11-03 16:42:53   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-11-03 16:43:00  ERROR [oldSiteTest.smartSafety.SmartSafetyOrderTest] : AC failed: Smart safety does not exist in User App table
+2020-11-03 16:43:00   INFO [oldSiteTest.smartSafety.SmartSafetyOrderTest] :  DB connection closed 
