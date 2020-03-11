@@ -2,19 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="660eb711-957d-418e-9483-8b2931da6e6e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/oldSiteTest/CancelSmartSafety.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log/qalight.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/qalight.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/libs/ChargeMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/libs/ChargeMethods.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/libs/ChargeSmartSafetyMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/libs/ChargeSmartSafetyMethods.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/libs/UtilsForDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/libs/UtilsForDB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/FleetDriversPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/FleetDriversPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/oldSiteTest/loginTests/LoginTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/oldSiteTest/loginTests/LoginTestWithExcel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/oldSiteTest/loginTests/LoginTestWithOutPageObject.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/oldSiteTest/loginTests/UnValidLoginWithParams.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/oldSiteTest/loginTests/ValidLoginWithParams.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/unitTest/TestMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/unitTest/TestMethods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/chargeTest/ChargeSmartSafety.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/oldSiteTest/smartSafety/ChargeSmartSafety.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/oldSiteTest/CancelSmartSafety.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/oldSiteTest/smartSafety/CancelSmartSafetyTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/oldSiteTest/SmartSafetyOrderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/oldSiteTest/smartSafety/SmartSafetyOrderTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +30,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="Den-Work-28-10" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -53,14 +45,7 @@
   </component>
   <component name="ProjectId" id="1P0rmWrMh0xA0QVXeBejzL9RUNH" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
-    <option name="showLibraryContents" value="true" />
-  </component>
   <component name="PropertiesComponent">
-    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -87,203 +72,112 @@
       <recent name="C:\workspace\testdevEzlogz\src\drivers" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="localSiteTest.logbookTest" />
-      <recent name="pagesLocal" />
+      <recent name="parameterizedOrders" />
       <recent name="pages" />
-      <recent name="oldSiteTest" />
-      <recent name="oldSiteParameterizedTest" />
+      <recent name="loginTests" />
+      <recent name="orders" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\WorkSpace\src\test\java\localTest" />
-      <recent name="C:\WorkSpace\src\test\java" />
-      <recent name="C:\WorkSpace\src\main\java" />
       <recent name="C:\workspace\testdevEzlogz\src\main\java\data" />
       <recent name="C:\workspace\testdevEzlogz\src\main\java\libs" />
+      <recent name="C:\workspace\testdevEzlogz\src\test\java\restTest" />
+      <recent name="C:\workspace\testdevEzlogz\src" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CancelSmartSafety.cancelSmartSafety">
-    <configuration name="CancelSmartSafety.cancelSmartSafety" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.ChargeSmartSafety">
+    <configuration name="ChargeFleetSoloTest.chargeFleetTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="WorkSpace" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="oldSiteTest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="oldSiteTest" />
-      <option name="MAIN_CLASS_NAME" value="oldSiteTest.CancelSmartSafety" />
-      <option name="METHOD_NAME" value="cancelSmartSafety" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ChargeSmartSafety.chargeSmartSafetyByBalanceDefaulters" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="WorkSpace" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="chargeTest.*" />
+          <option name="PATTERN" value="oldSiteTest.smartSafety.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="chargeTest" />
-      <option name="MAIN_CLASS_NAME" value="chargeTest.ChargeSmartSafety" />
-      <option name="METHOD_NAME" value="chargeSmartSafetyByBalanceDefaulters" />
+      <option name="MAIN_CLASS_NAME" value="chargeTest.ChargeFleetSoloTest" />
+      <option name="METHOD_NAME" value="chargeFleetTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SmartSafetyOrderTest.orderSmartSafetyByBalance" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ChargeSmartSafety" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="WorkSpace" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="oldSiteTest.*" />
+          <option name="PATTERN" value="oldSiteTest.smartSafety.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="oldSiteTest" />
-      <option name="MAIN_CLASS_NAME" value="oldSiteTest.SmartSafetyOrderTest" />
-      <option name="METHOD_NAME" value="orderSmartSafetyByBalance" />
+      <option name="PACKAGE_NAME" value="oldSiteTest.smartSafety" />
+      <option name="MAIN_CLASS_NAME" value="oldSiteTest.smartSafety.ChargeSmartSafety" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ManagerOrderFleetParamsTest.managerDoOrderFleetAgree" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="testdevEzlogz" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="parameterizedOrders.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="parameterizedOrders" />
+      <option name="MAIN_CLASS_NAME" value="parameterizedOrders.ManagerOrderFleetParamsTest" />
+      <option name="METHOD_NAME" value="managerDoOrderFleetAgree" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SmartSafetyOrderTest.orderSmartSafetyByCard" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SmartSafetyOrderTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="WorkSpace" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="oldSiteTest.*" />
+          <option name="PATTERN" value="oldSiteTest.smartSafety.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="oldSiteTest" />
-      <option name="MAIN_CLASS_NAME" value="oldSiteTest.SmartSafetyOrderTest" />
-      <option name="METHOD_NAME" value="orderSmartSafetyByCard" />
+      <option name="PACKAGE_NAME" value="oldSiteTest.smartSafety" />
+      <option name="MAIN_CLASS_NAME" value="oldSiteTest.smartSafety.SmartSafetyOrderTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SoloOrderParamsTest.managerCompletedOrder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="testdevEzlogz" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="parameterizedOrders.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="parameterizedOrders" />
+      <option name="MAIN_CLASS_NAME" value="parameterizedOrders.SoloOrderParamsTest" />
+      <option name="METHOD_NAME" value="managerCompletedOrder" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestMethods.getEventNewOrder" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
-      <module name="WorkSpace" />
+    <configuration name="TestDataBase.getEventNewOrder" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
+      <module name="testdevEzlogz" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="unitTest.*" />
+          <option name="PATTERN" value="testDB.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="unitTest" />
-      <option name="MAIN_CLASS_NAME" value="unitTest.TestMethods" />
+      <option name="PACKAGE_NAME" value="testDB" />
+      <option name="MAIN_CLASS_NAME" value="testDB.TestDataBase" />
       <option name="METHOD_NAME" value="getEventNewOrder" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
-    </configuration>
-    <configuration name="TestMethods.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="WorkSpace" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="unitTest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="unitTest" />
-      <option name="MAIN_CLASS_NAME" value="unitTest.TestMethods" />
-      <option name="METHOD_NAME" value="test2" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DriverSettingsParameterizedTest" type="MavenRunConfiguration" factoryName="Maven">
-      <MavenSettings>
-        <option name="myGeneralSettings" />
-        <option name="myRunnerSettings" />
-        <option name="myRunnerParameters">
-          <MavenRunnerParameters>
-            <option name="profiles">
-              <set />
-            </option>
-            <option name="goals">
-              <list>
-                <option value="clean" />
-                <option value="test" />
-                <option value="-Dtest=SoloDriverSettingsParameterizedTest#updateDataSettings[*]" />
-                <option value="-Dmaven.test.failure.ignore=true" />
-                <option value="allure:report" />
-              </list>
-            </option>
-            <option name="pomFileName" />
-            <option name="profilesMap">
-              <map />
-            </option>
-            <option name="resolveToWorkspace" value="false" />
-            <option name="workingDirPath" value="$PROJECT_DIR$" />
-          </MavenRunnerParameters>
-        </option>
-      </MavenSettings>
-      <method v="2" />
-    </configuration>
-    <configuration name="SoloDriverCreateDocumentsLocalSiteParamsTest" type="MavenRunConfiguration" factoryName="Maven">
-      <MavenSettings>
-        <option name="myGeneralSettings" />
-        <option name="myRunnerSettings" />
-        <option name="myRunnerParameters">
-          <MavenRunnerParameters>
-            <option name="profiles">
-              <set />
-            </option>
-            <option name="goals">
-              <list>
-                <option value="clean" />
-                <option value="test" />
-                <option value="-Dtest=SoloDriverDocumentsParameterizedLocalSiteTest[*]" />
-                <option value="-Dmaven.test.failure.ignore=true" />
-                <option value="allure:report" />
-              </list>
-            </option>
-            <option name="pomFileName" />
-            <option name="profilesMap">
-              <map />
-            </option>
-            <option name="resolveToWorkspace" value="false" />
-            <option name="workingDirPath" value="$PROJECT_DIR$" />
-          </MavenRunnerParameters>
-        </option>
-      </MavenSettings>
-      <method v="2" />
-    </configuration>
-    <configuration name="SoloDriverEquipment" type="MavenRunConfiguration" factoryName="Maven">
-      <MavenSettings>
-        <option name="myGeneralSettings" />
-        <option name="myRunnerSettings" />
-        <option name="myRunnerParameters">
-          <MavenRunnerParameters>
-            <option name="profiles">
-              <set />
-            </option>
-            <option name="goals">
-              <list>
-                <option value="clean" />
-                <option value="test" />
-                <option value="-Dtest=oldSiteParameterizedTest.*Test" />
-                <option value="-Dmaven.test.failure.ignore=true" />
-                <option value="allure:report" />
-              </list>
-            </option>
-            <option name="pomFileName" />
-            <option name="profilesMap">
-              <map />
-            </option>
-            <option name="resolveToWorkspace" value="false" />
-            <option name="workingDirPath" value="$PROJECT_DIR$" />
-          </MavenRunnerParameters>
-        </option>
-      </MavenSettings>
-      <method v="2" />
     </configuration>
     <configuration name="SoloOrders" type="MavenRunConfiguration" factoryName="Maven">
       <MavenSettings>
@@ -329,38 +223,23 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="JUnit.TestMethods.getEventNewOrder" />
-      <item itemvalue="Maven.SoloDriverEquipment" />
-      <item itemvalue="Maven.SoloDriverCreateDocumentsLocalSiteParamsTest" />
-      <item itemvalue="Maven.DriverSettingsParameterizedTest" />
+      <item itemvalue="JUnit.TestDataBase.getEventNewOrder" />
+      <item itemvalue="JUnit.SoloOrderParamsTest.managerCompletedOrder" />
+      <item itemvalue="JUnit.ManagerOrderFleetParamsTest.managerDoOrderFleetAgree" />
       <item itemvalue="Maven.SoloOrders" />
-      <item itemvalue="JUnit.ChargeSmartSafety.chargeSmartSafetyByBalanceDefaulters" />
-      <item itemvalue="JUnit.SmartSafetyOrderTest.orderSmartSafetyByCard" />
-      <item itemvalue="JUnit.SmartSafetyOrderTest.orderSmartSafetyByBalance" />
-      <item itemvalue="JUnit.TestMethods.test2" />
-      <item itemvalue="JUnit.CancelSmartSafety.cancelSmartSafety" />
+      <item itemvalue="JUnit.ChargeFleetSoloTest.chargeFleetTest" />
+      <item itemvalue="JUnit.SmartSafetyOrderTest" />
+      <item itemvalue="JUnit.ChargeSmartSafety" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CancelSmartSafety.cancelSmartSafety" />
-        <item itemvalue="JUnit.TestMethods.test2" />
-        <item itemvalue="JUnit.SmartSafetyOrderTest.orderSmartSafetyByCard" />
-        <item itemvalue="JUnit.SmartSafetyOrderTest.orderSmartSafetyByBalance" />
-        <item itemvalue="JUnit.ChargeSmartSafety.chargeSmartSafetyByBalanceDefaulters" />
+        <item itemvalue="JUnit.ChargeSmartSafety" />
+        <item itemvalue="JUnit.SmartSafetyOrderTest" />
+        <item itemvalue="JUnit.ChargeFleetSoloTest.chargeFleetTest" />
+        <item itemvalue="JUnit.ManagerOrderFleetParamsTest.managerDoOrderFleetAgree" />
+        <item itemvalue="JUnit.SoloOrderParamsTest.managerCompletedOrder" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -379,6 +258,300 @@
       <workItem from="1562665338918" duration="52834000" />
       <workItem from="1562782581468" duration="9021000" />
       <workItem from="1562822119836" duration="58303000" />
+    </task>
+    <task id="LOCAL-00013" summary="excel test was added">
+      <created>1562874780044</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1562874780045</updated>
+    </task>
+    <task id="LOCAL-00014" summary="payment method test was added">
+      <created>1562958207356</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1562958207356</updated>
+    </task>
+    <task id="LOCAL-00015" summary="manager test was added">
+      <created>1563200958054</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1563200958054</updated>
+    </task>
+    <task id="LOCAL-00016" summary="take window test was added">
+      <created>1563221570752</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1563221570752</updated>
+    </task>
+    <task id="LOCAL-00017" summary="union manager test was added">
+      <created>1563278049423</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1563278049423</updated>
+    </task>
+    <task id="LOCAL-00018" summary="solo and manager different test was added">
+      <created>1563380638361</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1563380638361</updated>
+    </task>
+    <task id="LOCAL-00019" summary="parameters test was added">
+      <created>1563486110737</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1563486110737</updated>
+    </task>
+    <task id="LOCAL-00020" summary="cancel test was added">
+      <created>1563572336121</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1563572336121</updated>
+    </task>
+    <task id="LOCAL-00021" summary="cancel 2 test was added">
+      <created>1563606652999</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1563606653000</updated>
+    </task>
+    <task id="LOCAL-00022" summary="cancel with params test was added">
+      <created>1563645302856</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1563645302856</updated>
+    </task>
+    <task id="LOCAL-00023" summary="manager do order with params test was added">
+      <created>1563825094650</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1563825094650</updated>
+    </task>
+    <task id="LOCAL-00024" summary="manager do order cancel with params test was added">
+      <created>1563906087771</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1563906087771</updated>
+    </task>
+    <task id="LOCAL-00025" summary="refactor params test was do">
+      <created>1563986070168</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1563986070169</updated>
+    </task>
+    <task id="LOCAL-00026" summary="new order test was do">
+      <created>1565122737496</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1565122737496</updated>
+    </task>
+    <task id="LOCAL-00027" summary="new modal window order test was add">
+      <created>1565387191874</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1565387191874</updated>
+    </task>
+    <task id="LOCAL-00028" summary="camera order test was add">
+      <created>1565638737622</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1565638737622</updated>
+    </task>
+    <task id="LOCAL-00029" summary="camera order with params test was add">
+      <created>1565729354732</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1565729354733</updated>
+    </task>
+    <task id="LOCAL-00030" summary="refactor fleet test with excel was add">
+      <created>1565814593112</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1565814593112</updated>
+    </task>
+    <task id="LOCAL-00031" summary="count methods was add">
+      <created>1565979870989</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1565979870989</updated>
+    </task>
+    <task id="LOCAL-00032" summary="solo test refactor was add">
+      <created>1566330570175</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1566330570175</updated>
+    </task>
+    <task id="LOCAL-00033" summary="params test refactor was add">
+      <created>1566504452167</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1566504452167</updated>
+    </task>
+    <task id="LOCAL-00034" summary="params manager test refactor was add">
+      <created>1566814083030</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1566814083030</updated>
+    </task>
+    <task id="LOCAL-00035" summary="params manager test refactor was add">
+      <created>1567088890342</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1567088890342</updated>
+    </task>
+    <task id="LOCAL-00036" summary="params manager test refactor was add">
+      <created>1567089394708</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1567089394708</updated>
+    </task>
+    <task id="LOCAL-00037" summary="params manager test refactor was add">
+      <created>1567096209799</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1567096209799</updated>
+    </task>
+    <task id="LOCAL-00038" summary="checkAC ELD status was add">
+      <created>1567186321706</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1567186321707</updated>
+    </task>
+    <task id="LOCAL-00039" summary="checkAC ELD status Paid\Completed was add">
+      <created>1567429493484</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1567429493484</updated>
+    </task>
+    <task id="LOCAL-00040" summary="checkAC ELD status2 Paid\Completed was add">
+      <created>1567449479891</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1567449479891</updated>
+    </task>
+    <task id="LOCAL-00041" summary="checkAC if user has order with status New before test was add">
+      <created>1567523127669</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1567523127669</updated>
+    </task>
+    <task id="LOCAL-00042" summary="new method if user has order with status New before test was add">
+      <created>1567705707560</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1567705707560</updated>
+    </task>
+    <task id="LOCAL-00043" summary="refactor was add">
+      <created>1568833345015</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1568833345015</updated>
+    </task>
+    <task id="LOCAL-00044" summary="refactor count was add">
+      <created>1569329907994</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1569329907994</updated>
+    </task>
+    <task id="LOCAL-00045" summary="refactor price was add">
+      <created>1569441596715</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1569441596716</updated>
+    </task>
+    <task id="LOCAL-00046" summary="charge test was add">
+      <created>1569571389995</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1569571389995</updated>
+    </task>
+    <task id="LOCAL-00047" summary="charge refactor test was add">
+      <created>1571046936696</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1571046936696</updated>
+    </task>
+    <task id="LOCAL-00048" summary="new charge refactor test was add">
+      <created>1571140969029</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1571140969029</updated>
+    </task>
+    <task id="LOCAL-00049" summary="new charge2 refactor test was add">
+      <created>1571151912544</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1571151912544</updated>
+    </task>
+    <task id="LOCAL-00050" summary="new charge2 refactor test was add">
+      <created>1571320376717</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1571320376719</updated>
+    </task>
+    <task id="LOCAL-00051" summary="new charge2 refactor test was add">
+      <created>1571643737306</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1571643737307</updated>
+    </task>
+    <task id="LOCAL-00052" summary="month-to-month 12 test was add">
+      <created>1571666501270</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1571666501270</updated>
+    </task>
+    <task id="LOCAL-00053" summary="new month-to-month 12 test was add">
+      <created>1572015658636</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1572015658636</updated>
+    </task>
+    <task id="LOCAL-00054" summary="new month-to-month 12 test was add">
+      <created>1572448355356</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1572448355356</updated>
     </task>
     <task id="LOCAL-00055" summary="charge defaulters was add">
       <created>1572624320232</created>
@@ -429,301 +602,7 @@
       <option name="project" value="LOCAL" />
       <updated>1574784047810</updated>
     </task>
-    <task id="LOCAL-00062" summary="test charge default new tariff was add">
-      <created>1574861560485</created>
-      <option name="number" value="00062" />
-      <option name="presentableId" value="LOCAL-00062" />
-      <option name="project" value="LOCAL" />
-      <updated>1574861560485</updated>
-    </task>
-    <task id="LOCAL-00063" summary="test charge default new tariff was add">
-      <created>1575388985395</created>
-      <option name="number" value="00063" />
-      <option name="presentableId" value="LOCAL-00063" />
-      <option name="project" value="LOCAL" />
-      <updated>1575388985396</updated>
-    </task>
-    <task id="LOCAL-00064" summary="test charge by days new tariff was add">
-      <created>1575906754782</created>
-      <option name="number" value="00064" />
-      <option name="presentableId" value="LOCAL-00064" />
-      <option name="project" value="LOCAL" />
-      <updated>1575906754783</updated>
-    </task>
-    <task id="LOCAL-00065" summary="test2 charge by days was add">
-      <created>1575984179943</created>
-      <option name="number" value="00065" />
-      <option name="presentableId" value="LOCAL-00065" />
-      <option name="project" value="LOCAL" />
-      <updated>1575984179943</updated>
-    </task>
-    <task id="LOCAL-00066" summary="deleted old order test was add">
-      <created>1575987606036</created>
-      <option name="number" value="00066" />
-      <option name="presentableId" value="LOCAL-00066" />
-      <option name="project" value="LOCAL" />
-      <updated>1575987606036</updated>
-    </task>
-    <task id="LOCAL-00067" summary="some changes was add">
-      <created>1576857900697</created>
-      <option name="number" value="00067" />
-      <option name="presentableId" value="LOCAL-00067" />
-      <option name="project" value="LOCAL" />
-      <updated>1576857900698</updated>
-    </task>
-    <task id="LOCAL-00068" summary="new tariff was add">
-      <created>1577116765784</created>
-      <option name="number" value="00068" />
-      <option name="presentableId" value="LOCAL-00068" />
-      <option name="project" value="LOCAL" />
-      <updated>1577116765785</updated>
-    </task>
-    <task id="LOCAL-00069" summary="new tariff defaulters was add">
-      <created>1577195348294</created>
-      <option name="number" value="00069" />
-      <option name="presentableId" value="LOCAL-00069" />
-      <option name="project" value="LOCAL" />
-      <updated>1577195348294</updated>
-    </task>
-    <task id="LOCAL-00070" summary="refactoring was add">
-      <created>1577464119585</created>
-      <option name="number" value="00070" />
-      <option name="presentableId" value="LOCAL-00070" />
-      <option name="project" value="LOCAL" />
-      <updated>1577464119585</updated>
-    </task>
-    <task id="LOCAL-00071" summary="refactoring 2 was add">
-      <created>1577721069875</created>
-      <option name="number" value="00071" />
-      <option name="presentableId" value="LOCAL-00071" />
-      <option name="project" value="LOCAL" />
-      <updated>1577721069875</updated>
-    </task>
-    <task id="LOCAL-00072" summary="settingTest was add">
-      <created>1578930349660</created>
-      <option name="number" value="00072" />
-      <option name="presentableId" value="LOCAL-00072" />
-      <option name="project" value="LOCAL" />
-      <updated>1578930349660</updated>
-    </task>
-    <task id="LOCAL-00073" summary="accept criteria settingTest was add">
-      <created>1579276662749</created>
-      <option name="number" value="00073" />
-      <option name="presentableId" value="LOCAL-00073" />
-      <option name="project" value="LOCAL" />
-      <updated>1579276662750</updated>
-    </task>
-    <task id="LOCAL-00074" summary="equipment test was add">
-      <created>1579539850202</created>
-      <option name="number" value="00074" />
-      <option name="presentableId" value="LOCAL-00074" />
-      <option name="project" value="LOCAL" />
-      <updated>1579539850203</updated>
-    </task>
-    <task id="LOCAL-00075" summary="new method test was add">
-      <created>1579622261594</created>
-      <option name="number" value="00075" />
-      <option name="presentableId" value="LOCAL-00075" />
-      <option name="project" value="LOCAL" />
-      <updated>1579622261594</updated>
-    </task>
-    <task id="LOCAL-00076" summary="local addTruck test was add">
-      <created>1579701708377</created>
-      <option name="number" value="00076" />
-      <option name="presentableId" value="LOCAL-00076" />
-      <option name="project" value="LOCAL" />
-      <updated>1579701708377</updated>
-    </task>
-    <task id="LOCAL-00077" summary="paramsUI test was add">
-      <created>1579712451451</created>
-      <option name="number" value="00077" />
-      <option name="presentableId" value="LOCAL-00077" />
-      <option name="project" value="LOCAL" />
-      <updated>1579712451451</updated>
-    </task>
-    <task id="LOCAL-00078" summary="paramsUI2 test was add">
-      <created>1579790416792</created>
-      <option name="number" value="00078" />
-      <option name="presentableId" value="LOCAL-00078" />
-      <option name="project" value="LOCAL" />
-      <updated>1579790416792</updated>
-    </task>
-    <task id="LOCAL-00079" summary="local test was add">
-      <created>1580132375386</created>
-      <option name="number" value="00079" />
-      <option name="presentableId" value="LOCAL-00079" />
-      <option name="project" value="LOCAL" />
-      <updated>1580132375387</updated>
-    </task>
-    <task id="LOCAL-00080" summary="local2 test was add">
-      <created>1580132811456</created>
-      <option name="number" value="00080" />
-      <option name="presentableId" value="LOCAL-00080" />
-      <option name="project" value="LOCAL" />
-      <updated>1580132811456</updated>
-    </task>
-    <task id="LOCAL-00081" summary="local2 test was add">
-      <created>1580144197639</created>
-      <option name="number" value="00081" />
-      <option name="presentableId" value="LOCAL-00081" />
-      <option name="project" value="LOCAL" />
-      <updated>1580144197639</updated>
-    </task>
-    <task id="LOCAL-00082" summary="documents test was add">
-      <created>1580231822118</created>
-      <option name="number" value="00082" />
-      <option name="presentableId" value="LOCAL-00082" />
-      <option name="project" value="LOCAL" />
-      <updated>1580231822118</updated>
-    </task>
-    <task id="LOCAL-00083" summary="account settings test was add">
-      <created>1580404515619</created>
-      <option name="number" value="00083" />
-      <option name="presentableId" value="LOCAL-00083" />
-      <option name="project" value="LOCAL" />
-      <updated>1580404515619</updated>
-    </task>
-    <task id="LOCAL-00084" summary="account settings2 test was add">
-      <created>1580486230366</created>
-      <option name="number" value="00084" />
-      <option name="presentableId" value="LOCAL-00084" />
-      <option name="project" value="LOCAL" />
-      <updated>1580486230367</updated>
-    </task>
-    <task id="LOCAL-00085" summary="reminder test was add">
-      <created>1580831851383</created>
-      <option name="number" value="00085" />
-      <option name="presentableId" value="LOCAL-00085" />
-      <option name="project" value="LOCAL" />
-      <updated>1580831851384</updated>
-    </task>
-    <task id="LOCAL-00086" summary="reminder2 test was add">
-      <created>1580836889963</created>
-      <option name="number" value="00086" />
-      <option name="presentableId" value="LOCAL-00086" />
-      <option name="project" value="LOCAL" />
-      <updated>1580836889963</updated>
-    </task>
-    <task id="LOCAL-00087" summary="equipment refactoring test was add">
-      <created>1580903705140</created>
-      <option name="number" value="00087" />
-      <option name="presentableId" value="LOCAL-00087" />
-      <option name="project" value="LOCAL" />
-      <updated>1580903705140</updated>
-    </task>
-    <task id="LOCAL-00088" summary="usdl file test was add">
-      <created>1580915309524</created>
-      <option name="number" value="00088" />
-      <option name="presentableId" value="LOCAL-00088" />
-      <option name="project" value="LOCAL" />
-      <updated>1580915309524</updated>
-    </task>
-    <task id="LOCAL-00089" summary="usdl params test was add">
-      <created>1581011566497</created>
-      <option name="number" value="00089" />
-      <option name="presentableId" value="LOCAL-00089" />
-      <option name="project" value="LOCAL" />
-      <updated>1581011566497</updated>
-    </task>
-    <task id="LOCAL-00090" summary="refactoring was add">
-      <created>1581092791282</created>
-      <option name="number" value="00090" />
-      <option name="presentableId" value="LOCAL-00090" />
-      <option name="project" value="LOCAL" />
-      <updated>1581092791282</updated>
-    </task>
-    <task id="LOCAL-00091" summary="logbook1 was add">
-      <created>1581353615042</created>
-      <option name="number" value="00091" />
-      <option name="presentableId" value="LOCAL-00091" />
-      <option name="project" value="LOCAL" />
-      <updated>1581353615042</updated>
-    </task>
-    <task id="LOCAL-00092" summary="ui test was add">
-      <created>1581507347595</created>
-      <option name="number" value="00092" />
-      <option name="presentableId" value="LOCAL-00092" />
-      <option name="project" value="LOCAL" />
-      <updated>1581507347595</updated>
-    </task>
-    <task id="LOCAL-00093" summary="ui2 test was add">
-      <created>1581511360825</created>
-      <option name="number" value="00093" />
-      <option name="presentableId" value="LOCAL-00093" />
-      <option name="project" value="LOCAL" />
-      <updated>1581511360825</updated>
-    </task>
-    <task id="LOCAL-00094" summary="old site test was add">
-      <created>1581668307017</created>
-      <option name="number" value="00094" />
-      <option name="presentableId" value="LOCAL-00094" />
-      <option name="project" value="LOCAL" />
-      <updated>1581668307018</updated>
-    </task>
-    <task id="LOCAL-00095" summary="order test was add">
-      <created>1581695389665</created>
-      <option name="number" value="00095" />
-      <option name="presentableId" value="LOCAL-00095" />
-      <option name="project" value="LOCAL" />
-      <updated>1581695389665</updated>
-    </task>
-    <task id="LOCAL-00096" summary="logbook test was add">
-      <created>1581951890742</created>
-      <option name="number" value="00096" />
-      <option name="presentableId" value="LOCAL-00096" />
-      <option name="project" value="LOCAL" />
-      <updated>1581951890742</updated>
-    </task>
-    <task id="LOCAL-00097" summary="refactoring orders test was add">
-      <created>1582041509955</created>
-      <option name="number" value="00097" />
-      <option name="presentableId" value="LOCAL-00097" />
-      <option name="project" value="LOCAL" />
-      <updated>1582041509956</updated>
-    </task>
-    <task id="LOCAL-00098" summary="smart safety test was add">
-      <created>1583250463823</created>
-      <option name="number" value="00098" />
-      <option name="presentableId" value="LOCAL-00098" />
-      <option name="project" value="LOCAL" />
-      <updated>1583250463824</updated>
-    </task>
-    <task id="LOCAL-00099" summary="smart safety test2 was add">
-      <created>1583338608931</created>
-      <option name="number" value="00099" />
-      <option name="presentableId" value="LOCAL-00099" />
-      <option name="project" value="LOCAL" />
-      <updated>1583338608931</updated>
-    </task>
-    <task id="LOCAL-00100" summary="refactoring db was add">
-      <created>1583419744447</created>
-      <option name="number" value="00100" />
-      <option name="presentableId" value="LOCAL-00100" />
-      <option name="project" value="LOCAL" />
-      <updated>1583419744447</updated>
-    </task>
-    <task id="LOCAL-00101" summary="refactoring smart safety test was add">
-      <created>1583424828495</created>
-      <option name="number" value="00101" />
-      <option name="presentableId" value="LOCAL-00101" />
-      <option name="project" value="LOCAL" />
-      <updated>1583424828495</updated>
-    </task>
-    <task id="LOCAL-00102" summary="order smart safety test was add">
-      <created>1583511093462</created>
-      <option name="number" value="00102" />
-      <option name="presentableId" value="LOCAL-00102" />
-      <option name="project" value="LOCAL" />
-      <updated>1583511093463</updated>
-    </task>
-    <task id="LOCAL-00103" summary="order smart safety2 test was add">
-      <created>1583756247701</created>
-      <option name="number" value="00103" />
-      <option name="presentableId" value="LOCAL-00103" />
-      <option name="project" value="LOCAL" />
-      <updated>1583756247702</updated>
-    </task>
-    <option name="localTasksCounter" value="104" />
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -732,19 +611,34 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="Vcs.Log.History.Properties">
-    <option name="COLUMN_ORDER">
-      <list>
-        <option value="0" />
-        <option value="2" />
-        <option value="3" />
-        <option value="1" />
-      </list>
-    </option>
-  </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
+        <entry key="1">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
         <entry key="MAIN">
           <value>
             <State>
@@ -753,6 +647,11 @@
           </value>
         </entry>
       </map>
+    </option>
+    <option name="OPEN_TABS">
+      <set>
+        <option value="1" />
+      </set>
     </option>
     <option name="RECENT_FILTERS">
       <map>
@@ -770,147 +669,76 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="paramsUI2 test was add" />
-    <MESSAGE value="local test was add" />
-    <MESSAGE value="local2 test was add" />
-    <MESSAGE value="documents test was add" />
-    <MESSAGE value="account settings test was add" />
-    <MESSAGE value="account settings2 test was add" />
-    <MESSAGE value="reminder test was add" />
-    <MESSAGE value="reminder2 test was add" />
-    <MESSAGE value="equipment refactoring test was add" />
-    <MESSAGE value="usdl file test was add" />
-    <MESSAGE value="usdl params test was add" />
-    <MESSAGE value="refactoring was add" />
-    <MESSAGE value="logbook1 was add" />
-    <MESSAGE value="ui test was add" />
-    <MESSAGE value="ui2 test was add" />
-    <MESSAGE value="old site test was add" />
-    <MESSAGE value="order test was add" />
-    <MESSAGE value="logbook test was add" />
-    <MESSAGE value="refactoring orders test was add" />
-    <MESSAGE value="smart safety test was add" />
-    <MESSAGE value="smart safety test2 was add" />
-    <MESSAGE value="refactoring db was add" />
-    <MESSAGE value="refactoring smart safety test was add" />
-    <MESSAGE value="order smart safety test was add" />
-    <MESSAGE value="order smart safety2 test was add" />
-    <option name="LAST_COMMIT_MESSAGE" value="order smart safety2 test was add" />
+    <MESSAGE value="count methods was add" />
+    <MESSAGE value="solo test refactor was add" />
+    <MESSAGE value="params test refactor was add" />
+    <MESSAGE value="params manager test refactor was add" />
+    <MESSAGE value="checkAC ELD status was add" />
+    <MESSAGE value="checkAC ELD status Paid\Completed was add" />
+    <MESSAGE value="checkAC ELD status2 Paid\Completed was add" />
+    <MESSAGE value="checkAC if user has order with status New before test was add" />
+    <MESSAGE value="new method if user has order with status New before test was add" />
+    <MESSAGE value="refactor was add" />
+    <MESSAGE value="refactor count was add" />
+    <MESSAGE value="refactor price was add" />
+    <MESSAGE value="charge test was add" />
+    <MESSAGE value="charge refactor test was add" />
+    <MESSAGE value="new charge refactor test was add" />
+    <MESSAGE value="new charge2 refactor test was add" />
+    <MESSAGE value="month-to-month 12 test was add" />
+    <MESSAGE value="new month-to-month 12 test was add" />
+    <MESSAGE value="charge defaulters was add" />
+    <MESSAGE value="ban unban was add" />
+    <MESSAGE value="test api login was add" />
+    <MESSAGE value="test api3 login was add" />
+    <MESSAGE value="test new tariff was add" />
+    <MESSAGE value="test agreement new tariff was add" />
+    <MESSAGE value="test charge new tariff was add" />
+    <option name="LAST_COMMIT_MESSAGE" value="test charge new tariff was add" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="552" y="179" key="#Inspections" timestamp="1583495376835">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="552" y="179" key="#Inspections/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1583495376835" />
-    <state x="552" y="179" key="#Notifications" timestamp="1579788757833">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="552" y="179" key="#Notifications/0.0.1920.1040@0.0.1920.1040" timestamp="1579788757833" />
-    <state x="1982" y="204" width="1765" height="688" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1581696187530">
-      <screen x="1920" y="0" width="1920" height="1040" />
-    </state>
-    <state x="62" y="204" width="1765" height="688" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581440377276" />
-    <state x="1982" y="204" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1581696187530" />
-    <state x="765" y="237" key="#com.intellij.ide.util.MemberChooser" timestamp="1583417839094">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="765" y="237" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1583417839094" />
-    <state x="765" y="237" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1581006245460" />
-    <state x="640" y="257" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1579788765444">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="640" y="257" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1579788765444" />
-    <state x="699" y="446" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1581584645273">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="699" y="446" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1581584645273" />
-    <state x="487" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1583242829612">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="487" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1583242829612" />
-    <state x="487" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580311693266" />
-    <state x="690" y="268" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1581513752931">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="690" y="268" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1581513752931" />
-    <state x="690" y="268" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581087997343" />
-    <state x="614" y="115" key="CommitChangelistDialog2" timestamp="1583756246850">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="-1306" y="115" key="CommitChangelistDialog2/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1583511092857" />
-    <state x="614" y="115" key="CommitChangelistDialog2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1583756246850" />
-    <state x="614" y="115" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1581511360130" />
-    <state x="2534" y="115" key="CommitChangelistDialog2/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1581695389020" />
-    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1582882168961">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1582882168961" />
-    <state width="1877" height="337" key="GridCell.Tab.0.bottom" timestamp="1583771249698">
+    <state width="1877" height="372" key="GridCell.Tab.0.bottom" timestamp="1583918963013">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="337" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1583771249698" />
-    <state width="1877" height="337" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1583770879137" />
-    <state width="1877" height="259" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1581511455382" />
-    <state width="1877" height="339" key="GridCell.Tab.0.bottom/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1581696189438" />
-    <state width="1877" height="337" key="GridCell.Tab.0.center" timestamp="1583771249698">
+    <state width="1877" height="372" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1583918963013" />
+    <state width="1877" height="372" key="GridCell.Tab.0.center" timestamp="1583918963013">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="337" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1583771249698" />
-    <state width="1877" height="337" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1583770879137" />
-    <state width="1877" height="259" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1581511455381" />
-    <state width="1877" height="339" key="GridCell.Tab.0.center/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1581696189438" />
-    <state width="1877" height="337" key="GridCell.Tab.0.left" timestamp="1583771249697">
+    <state width="1877" height="372" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1583918963013" />
+    <state width="1877" height="372" key="GridCell.Tab.0.left" timestamp="1583918963013">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="337" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1583771249697" />
-    <state width="1877" height="337" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1583770879137" />
-    <state width="1877" height="259" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1581511455381" />
-    <state width="1877" height="339" key="GridCell.Tab.0.left/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1581696189438" />
-    <state width="1877" height="337" key="GridCell.Tab.0.right" timestamp="1583771249698">
+    <state width="1877" height="372" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1583918963013" />
+    <state width="1877" height="372" key="GridCell.Tab.0.right" timestamp="1583918963013">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="337" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1583771249698" />
-    <state width="1877" height="337" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1583770879137" />
-    <state width="1877" height="259" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1581511455381" />
-    <state width="1877" height="339" key="GridCell.Tab.0.right/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1581696189438" />
-    <state width="1877" height="337" key="GridCell.Tab.1.bottom" timestamp="1583771249698">
-      <screen x="-1920" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="337" key="GridCell.Tab.1.bottom/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1583771249698" />
-    <state width="1877" height="337" key="GridCell.Tab.1.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1583770878995" />
-    <state width="1877" height="337" key="GridCell.Tab.1.center" timestamp="1583771249698">
-      <screen x="-1920" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="337" key="GridCell.Tab.1.center/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1583771249698" />
-    <state width="1877" height="337" key="GridCell.Tab.1.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1583770878995" />
-    <state width="1877" height="337" key="GridCell.Tab.1.left" timestamp="1583771249698">
-      <screen x="-1920" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="337" key="GridCell.Tab.1.left/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1583771249698" />
-    <state width="1877" height="337" key="GridCell.Tab.1.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1583770878995" />
-    <state width="1877" height="337" key="GridCell.Tab.1.right" timestamp="1583771249698">
-      <screen x="-1920" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="337" key="GridCell.Tab.1.right/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1583771249698" />
-    <state width="1877" height="337" key="GridCell.Tab.1.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1583770878995" />
-    <state x="540" y="256" key="IDE.errors.dialog" timestamp="1579526806082">
+    <state width="1877" height="372" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1583918963013" />
+    <state x="812" y="243" key="RollbackChangesDialog" timestamp="1583915856240">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="540" y="256" key="IDE.errors.dialog/0.0.1920.1040@0.0.1920.1040" timestamp="1579526806082" />
-    <state x="490" y="176" key="Maven.ArtifactSearchDialog" timestamp="1580905216165">
+    <state x="812" y="243" key="RollbackChangesDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1583915856240" />
+    <state x="741" y="234" key="git4idea.branch.GitSmartOperationDialog" timestamp="1583915888400">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="490" y="176" key="Maven.ArtifactSearchDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580905216165" />
-    <state x="552" y="254" key="Vcs.Push.Dialog.v2" timestamp="1583756257717">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="-1368" y="254" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1583511102308" />
-    <state x="552" y="254" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1583756257717" />
-    <state x="552" y="254" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1581511446887" />
-    <state x="2472" y="254" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1581695405119" />
-    <state x="536" y="257" width="847" height="735" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1583766199439">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="536" y="257" width="847" height="735" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1583766199439" />
+    <state x="741" y="234" key="git4idea.branch.GitSmartOperationDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1583915888400" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/libs/Utils.java</url>
+          <line>34</line>
+          <properties class="libs.Utils">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/pages/ManagerModalEldPage.java</url>
+          <line>94</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

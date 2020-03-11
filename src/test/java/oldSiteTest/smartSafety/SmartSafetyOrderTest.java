@@ -1,4 +1,4 @@
-package oldSiteTest;
+package oldSiteTest.smartSafety;
 
 import org.junit.Test;
 import parentTest.ParentTest;

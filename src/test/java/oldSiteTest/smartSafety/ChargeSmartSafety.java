@@ -1,4 +1,4 @@
-package chargeTest;
+package oldSiteTest.smartSafety;
 
 import org.junit.Test;
 import parentTest.ParentTestWithoutWebDriver;

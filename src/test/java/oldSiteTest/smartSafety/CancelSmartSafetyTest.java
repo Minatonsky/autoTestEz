@@ -1,4 +1,4 @@
-package oldSiteTest;
+package oldSiteTest.smartSafety;
 
 import org.junit.Test;
 import parentTest.ParentTest;
@@ -12,14 +12,14 @@ import java.util.Map;
 
 import static libs.Utils.*;
 
-public class CancelSmartSafety extends ParentTest {
+public class CancelSmartSafetyTest extends ParentTest {
     Map dataForFleet = excelDriver.getData(configProperties.DATA_FILE_PATH() + "testLogin.xls", "validFleetLogin");
 
     String login = dataForFleet.get("login").toString();
     String fleetId = dataForFleet.get("fleetId").toString();
     String pass = "testtest";
 
-    public CancelSmartSafety() throws IOException {
+    public CancelSmartSafetyTest() throws IOException {
     }
 
     @Test
@@ -59,6 +59,7 @@ public class CancelSmartSafety extends ParentTest {
         double noticeFee = chargeSmartSafetyMethods.countSixtyDaysNoticeFeeSmartSafety(chargeDays);
 
         checkAC("Balance is not correct",Double.parseDouble(balanceAfterTest) == noticeFee-balanceBeforeTest, true);
+        checkAC("Smart safety exist in User App table", utilsForDB.isSmartSafetyInUserApp(smartSafetyUserId), false);
 
     }
 }
