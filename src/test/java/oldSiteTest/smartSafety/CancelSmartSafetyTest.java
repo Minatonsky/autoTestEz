@@ -28,7 +28,7 @@ public class CancelSmartSafetyTest extends ParentTest {
         int chargeDays = 12;
 
         String smartSafetyUserId = utilsForDB.getSmartSafetyUserId(fleetId);
-        checkAC("Fleet has not smart safety services", smartSafetyUserId.isEmpty(), false);
+        checkAC("Fleet does not have smart safety services", smartSafetyUserId.isEmpty(), false);
 
         String buyServicesDateTime = getLocalDateTimeUTC().minusMonths(2).minusDays(12).toString();
         LocalDateTime paidTillServicesDateTime = getLocalDateTimeUTC().plusDays(chargeDays);
@@ -36,7 +36,7 @@ public class CancelSmartSafetyTest extends ParentTest {
         utilsForDB.setCurrentDueForFleet(Double.toString(balanceBeforeTest), fleetId);
 
         loginPage.userValidLogIn(login, pass);
-        checkAC("User wasn`t logined", dashboardPage.isDashboardPresent(), true);
+        checkAC("User isn`t logined", dashboardPage.isDashboardPresent(), true);
         dashboardPage.goToFleetPage();
         fleetDriversPage.goToDriverPage();
 
@@ -52,14 +52,14 @@ public class CancelSmartSafetyTest extends ParentTest {
         Map<String, Object> tempDataReminderMap = listArrayToMap(tempListAtTillDateTimeServices);
         LocalDateTime timeDateCreatedAt = getLocalDateTimeFromString(tempDataReminderMap.get("noticed_at").toString());
         LocalDateTime timeDateSubscribedTill = getLocalDateTimeFromString(tempDataReminderMap.get("updated_at").toString());
-        checkAC("noticed_at dateTime is not correct", compareDiffDateTime(currentDateTime, timeDateCreatedAt), true);
-        checkAC("updated_at dateTime is not correct", compareDiffDateTime(currentDateTime, timeDateSubscribedTill), true);
+        checkAC("noticed_at dateTime is not correct", compareDiffDateTime(currentDateTime, timeDateCreatedAt, 2), true);
+        checkAC("updated_at dateTime is not correct", compareDiffDateTime(currentDateTime, timeDateSubscribedTill, 2), true);
 
         String balanceAfterTest = utilsForDB.getCurrentDueEzFinancesFleet(fleetId);
         double noticeFee = chargeSmartSafetyMethods.countSixtyDaysNoticeFeeSmartSafety(chargeDays);
 
         checkAC("Balance is not correct",Double.parseDouble(balanceAfterTest) == noticeFee-balanceBeforeTest, true);
-        checkAC("Smart safety exist in User App table", utilsForDB.isSmartSafetyInUserApp(smartSafetyUserId), false);
+        checkAC("Smart safety exist in User App table after deleted", utilsForDB.isSmartSafetyInUserApp(smartSafetyUserId), false);
 
     }
 }

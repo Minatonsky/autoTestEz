@@ -58,6 +58,9 @@ public class DashboardPage extends ParentPage {
     @FindBy(xpath = ".//a[@href='/dash/fleet/equipment/']")
     private WebElement pageFleet;
 
+    @FindBy(xpath = ".//a[@href='/dash/returns/']")
+    private WebElement pageReturns;
+
     @FindBy(xpath = ".//i[@class='fa fa-angle-double-left minimize-arrow']")
     private WebElement menuSizeButton;
 
@@ -113,6 +116,10 @@ public class DashboardPage extends ParentPage {
     public void goToSettingPage(){
         waitABit(2);
         actionsWithOurElements.clickOnElement(pageSettings);
+    }
+    public void goToReturnsPage() {
+        waitABit(2);
+        actionsWithOurElements.clickOnElement(pageReturns);
     }
 
 }

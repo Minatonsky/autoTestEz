@@ -17,7 +17,6 @@ import java.time.temporal.ChronoUnit;
 import java.time.temporal.TemporalAdjusters;
 import java.util.List;
 
-import static libs.Prices.smartSafetyPrice;
 import static libs.Utils.genRandomDataByRegex;
 // This test page is not using on test project, it just for check some methods
 
@@ -185,23 +184,17 @@ public class TestMethods extends ParentTestWithoutWebDriver {
 
     @Test
     public void getAmountEzDueMonthToMonth() throws SQLException, IOException, ClassNotFoundException {
-        String data = genRandomDataByRegex("[A-Z]{1}[a-z]{11}");
-        String data2 = utilsForDB.getOrderStatus("4223");
-        configProperties.url_dev_ezlogz();
+        String data = genRandomDataByRegex("[A-Z]{1}[a-z]{11}")+genRandomDataByRegex("[A-Z]{1}[a-z]{11}");
 
-        System.out.println(configProperties.url_dev_ezlogz());
+        System.out.println(data);
 
     }
 
     @Test
-    public void test2(){
+    public void test2() throws ParseException, SQLException {
 
-        LocalDateTime currentTime = LocalDateTime.parse(LocalDateTime.now().toString());
-        double monthDays =  currentTime.getMonth().length(true);
-
-        double tempFee = Math.round(((monthDays-12)/monthDays*smartSafetyPrice)*100.0)/100.0;
-
-        System.out.println(tempFee);
+        boolean dateTime = utilsForDB.getScannersStatusById("20234").equals("4");
+        System.out.println(dateTime);
 
 
     }

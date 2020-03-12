@@ -56,6 +56,7 @@ public class ParentTest extends ParentTestWithoutWebDriver{
     protected AccountSettingsPage accountSettingsPage;
     protected LogsLocalSitePage logsLocalSitePage;
     protected FleetDriversPage fleetDriversPage;
+    protected ReturnsPage returnsPage;
 
     String browser = System.getProperty("browser");
 
@@ -90,6 +91,7 @@ public class ParentTest extends ParentTestWithoutWebDriver{
         accountSettingsPage = new AccountSettingsPage(webDriver, utilsForDB);
         logsLocalSitePage = new LogsLocalSitePage(webDriver, utilsForDB);
         fleetDriversPage = new FleetDriversPage(webDriver, utilsForDB);
+        returnsPage = new ReturnsPage(webDriver, utilsForDB);
 
     }
 

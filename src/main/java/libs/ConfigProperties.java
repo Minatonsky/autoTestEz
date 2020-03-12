@@ -10,7 +10,7 @@ public interface ConfigProperties extends Config {
 	String url_dev_ezlogz();
 	String url_local_site();
 	String url_ezlogz_osnova();
-	String url_app_ezlogz();
+	String url_staging();
 	String url_ezlogz_testing();
 	String DATA_FILE();
 	String DATA_FILE_PATH();

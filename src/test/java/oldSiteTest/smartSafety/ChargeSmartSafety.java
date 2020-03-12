@@ -40,7 +40,7 @@ public class ChargeSmartSafety extends ParentTestWithoutWebDriver {
         checkAC("No service transactions after test", utilsForDB.checkForTransactions(fleetId, dateTime), true);
 
         LocalDateTime dateTimeSubscribedTill = getLocalDateTimeFromString(utilsForDB.getSubscribedTillDateTime(fleetId, smartSafetyUserId));
-        checkAC("Subscribed Till dateTime is not correct", compareDiffDateTime(currentDateTime.plusMonths(1), dateTimeSubscribedTill), true);
+        checkAC("Subscribed Till dateTime is not correct", compareDiffDateTime(currentDateTime.plusMonths(1), dateTimeSubscribedTill, 2), true);
 
     }
     @Test
@@ -64,7 +64,7 @@ public class ChargeSmartSafety extends ParentTestWithoutWebDriver {
         checkAC("No service transactions after test", utilsForDB.checkForTransactions(fleetId, dateTime), true);
 
         LocalDateTime dateTimeSubscribedTill = getLocalDateTimeFromString(utilsForDB.getSubscribedTillDateTime(fleetId, smartSafetyUserId));
-        checkAC("Subscribed Till dateTime is not correct", compareDiffDateTime(currentDateTime.plusMonths(1), dateTimeSubscribedTill), true);
+        checkAC("Subscribed Till dateTime is not correct", compareDiffDateTime(currentDateTime.plusMonths(1), dateTimeSubscribedTill, 2), true);
 
     }
     @Test
@@ -84,7 +84,7 @@ public class ChargeSmartSafety extends ParentTestWithoutWebDriver {
         LocalDateTime currentDateTime = getLocalDateTimeUTC();
         checkAC("No transactions after test", utilsForDB.checkForTransactions(fleetId, dateTime), true);
         LocalDateTime dateTimeSubscribedTill = getLocalDateTimeFromString(utilsForDB.getSubscribedTillDateTime(fleetId, smartSafetyUserId));
-        checkAC("Subscribed Till dateTime is not correct", compareDiffDateTime(currentDateTime.plusMonths(1), dateTimeSubscribedTill), true);
+        checkAC("Subscribed Till dateTime is not correct", compareDiffDateTime(currentDateTime.plusMonths(1), dateTimeSubscribedTill, 2), true);
 
     }
     @Test
@@ -110,7 +110,7 @@ public class ChargeSmartSafety extends ParentTestWithoutWebDriver {
             checkAC("No service transactions after test", utilsForDB.checkForTransactions(fleetId, dateTime), true);
 
             LocalDateTime dateTimeSubscribedTill = getLocalDateTimeFromString(utilsForDB.getSubscribedTillDateTime(fleetId, smartSafetyUserId));
-            checkAC("Subscribed Till dateTime is not correct", compareDiffDateTime(currentDateTime.plusMonths(1), dateTimeSubscribedTill), true);
+            checkAC("Subscribed Till dateTime is not correct", compareDiffDateTime(currentDateTime.plusMonths(1), dateTimeSubscribedTill, 2), true);
 
         } finally {
             utilsForDB.setCurrentCard(carrierIdString, fleetId);

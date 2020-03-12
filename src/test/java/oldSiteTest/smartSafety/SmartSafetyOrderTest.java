@@ -52,8 +52,8 @@ public class SmartSafetyOrderTest extends ParentTest {
         Map<String, Object> tempDataReminderMap = listArrayToMap(tempListAtTillDateTimeServices);
         LocalDateTime timeDateCreatedAt = getLocalDateTimeFromString(tempDataReminderMap.get("created_at").toString());
         LocalDateTime timeDateSubscribedTill = getLocalDateTimeFromString(tempDataReminderMap.get("subscribed_till").toString());
-        checkAC("Created At dateTime is not correct", compareDiffDateTime(currentDateTime, timeDateCreatedAt), true);
-        checkAC("Subscribed Till dateTime is not correct", compareDiffDateTime(currentDateTime.plusMonths(1), timeDateSubscribedTill), true);
+        checkAC("Created At dateTime is not correct", compareDiffDateTime(currentDateTime, timeDateCreatedAt, 2), true);
+        checkAC("Subscribed Till dateTime is not correct", compareDiffDateTime(currentDateTime.plusMonths(1), timeDateSubscribedTill, 2), true);
 
 
     }
@@ -89,8 +89,8 @@ public class SmartSafetyOrderTest extends ParentTest {
         Map<String, Object> tempDataReminderMap = listArrayToMap(tempListAtTillDateTimeServices);
         LocalDateTime timeDateCreatedAt = getLocalDateTimeFromString(tempDataReminderMap.get("created_at").toString());
         LocalDateTime timeDateSubscribedTill = getLocalDateTimeFromString(tempDataReminderMap.get("subscribed_till").toString());
-        checkAC("Created At dateTime is not correct", compareDiffDateTime(currentDateTime, timeDateCreatedAt), true);
-        checkAC("Subscribed Till dateTime is not correct", compareDiffDateTime(currentDateTime.plusMonths(1), timeDateSubscribedTill), true);
+        checkAC("Created At dateTime is not correct", compareDiffDateTime(currentDateTime, timeDateCreatedAt, 2), true);
+        checkAC("Subscribed Till dateTime is not correct", compareDiffDateTime(currentDateTime.plusMonths(1), timeDateSubscribedTill, 2), true);
         String balanceAfterTest = utilsForDB.getCurrentDueEzFinancesFleet(fleetId);
         checkAC("Balance is not correct",Double.parseDouble(balanceAfterTest) == Math.round(((smartSafetyPrice*2) - balanceBeforeTest)*100.0)/100.0, true);
 
@@ -129,8 +129,8 @@ public class SmartSafetyOrderTest extends ParentTest {
         Map<String, Object> tempDataReminderMap = listArrayToMap(tempListAtTillDateTimeServices);
         LocalDateTime timeDateCreatedAt = getLocalDateTimeFromString(tempDataReminderMap.get("created_at").toString());
         LocalDateTime timeDateSubscribedTill = getLocalDateTimeFromString(tempDataReminderMap.get("subscribed_till").toString());
-        checkAC("Created At dateTime is not correct", compareDiffDateTime(currentDateTime, timeDateCreatedAt), true);
-        checkAC("Subscribed Till dateTime is not correct", compareDiffDateTime(currentDateTime.plusMonths(1), timeDateSubscribedTill), true);
+        checkAC("Created At dateTime is not correct", compareDiffDateTime(currentDateTime, timeDateCreatedAt, 2), true);
+        checkAC("Subscribed Till dateTime is not correct", compareDiffDateTime(currentDateTime.plusMonths(1), timeDateSubscribedTill, 2), true);
         String balanceAfterTest = utilsForDB.getCurrentDueEzFinancesFleet(fleetId);
         checkAC("Balance is not correct",Double.parseDouble(balanceAfterTest) == 0, true);
 
@@ -171,8 +171,8 @@ public class SmartSafetyOrderTest extends ParentTest {
             Map<String, Object> tempDataReminderMap = listArrayToMap(tempListAtTillDateTimeServices);
             LocalDateTime timeDateCreatedAt = getLocalDateTimeFromString(tempDataReminderMap.get("created_at").toString());
             LocalDateTime timeDateSubscribedTill = getLocalDateTimeFromString(tempDataReminderMap.get("subscribed_till").toString());
-            checkAC("Created At dateTime is not correct", compareDiffDateTime(currentDateTime, timeDateCreatedAt), true);
-            checkAC("Subscribed Till dateTime is not correct", compareDiffDateTime(currentDateTime.plusMonths(1), timeDateSubscribedTill), true);
+            checkAC("Created At dateTime is not correct", compareDiffDateTime(currentDateTime, timeDateCreatedAt, 2), true);
+            checkAC("Subscribed Till dateTime is not correct", compareDiffDateTime(currentDateTime.plusMonths(1), timeDateSubscribedTill, 2), true);
             String balanceAfterTest = utilsForDB.getCurrentDueEzFinancesFleet(fleetId);
             checkAC("Balance is not correct", Double.parseDouble(balanceAfterTest) == Math.round(((smartSafetyPrice * 2) - balanceBeforeTest) * 100.0) / 100.0, true);
         } finally {

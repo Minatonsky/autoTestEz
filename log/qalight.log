@@ -2825,3 +2825,45 @@
 2020-11-03 16:42:53   INFO [libs.ActionsWithOurElements] : Element was clicked
 2020-11-03 16:43:00  ERROR [oldSiteTest.smartSafety.SmartSafetyOrderTest] : AC failed: Smart safety does not exist in User App table
 2020-11-03 16:43:00   INFO [oldSiteTest.smartSafety.SmartSafetyOrderTest] :  DB connection closed 
+2020-11-03 17:39:48   INFO [oldSiteTest.ReturnDevicesTest] : Chrome will be started
+2020-11-03 17:39:55   INFO [oldSiteTest.ReturnDevicesTest] : Chrome is started
+2020-11-03 17:39:59   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-11-03 17:40:07   INFO [pages.LoginPage] : Login Page was opened
+2020-11-03 17:40:07   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-11-03 17:40:07   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-11-03 17:40:08   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-11-03 17:40:08   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-11-03 17:40:36   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2020-11-03 17:40:36   INFO [pages.LoginPage] : There is not phone verification pop up
+2020-11-03 17:40:36   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2020-11-03 17:40:37   INFO [oldSiteTest.ReturnDevicesTest] : AC passed
+2020-11-03 17:40:39   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-11-03 17:40:40   INFO [libs.ActionsWithOurElements] : 605 was inputted into element
+2020-11-03 17:40:43   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-11-03 17:40:43   INFO [oldSiteTest.ReturnDevicesTest] :  DB connection closed 
+2020-12-03 12:50:36   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-12-03 12:50:39   INFO [unitTest.TestMethods] :  DB Connection Closed 
+2020-12-03 12:51:18   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-12-03 12:51:21   INFO [unitTest.TestMethods] :  DB Connection Closed 
+2020-12-03 12:51:53   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-12-03 12:51:55   INFO [unitTest.TestMethods] :  DB Connection Closed 
+2020-12-03 13:22:06   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-12-03 13:22:08   INFO [unitTest.TestMethods] :  DB Connection Closed 
+2020-12-03 13:24:38   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-12-03 13:24:40   INFO [unitTest.TestMethods] :  DB Connection Closed 
+2020-12-03 13:27:22   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-12-03 13:27:24   INFO [unitTest.TestMethods] :  DB Connection Closed 
+2020-12-03 13:36:51   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-12-03 13:36:53   INFO [unitTest.TestMethods] :  DB Connection Closed 
+2020-12-03 13:37:30   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-12-03 13:37:32   INFO [unitTest.TestMethods] :  DB Connection Closed 
+2020-12-03 13:37:50   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-12-03 13:37:52   INFO [unitTest.TestMethods] :  DB Connection Closed 
+2020-12-03 14:04:28   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-12-03 14:04:30   INFO [unitTest.TestMethods] :  DB Connection Closed 
+2020-12-03 14:31:05   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-12-03 14:31:07   INFO [unitTest.TestMethods] :  DB Connection Closed 
+2020-12-03 14:31:23   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-12-03 14:31:26   INFO [unitTest.TestMethods] :  DB Connection Closed 
+2020-12-03 14:31:40   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-12-03 14:31:43   INFO [unitTest.TestMethods] :  DB Connection Closed 
