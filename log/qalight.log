@@ -2867,3 +2867,573 @@
 2020-12-03 14:31:26   INFO [unitTest.TestMethods] :  DB Connection Closed 
 2020-12-03 14:31:40   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
 2020-12-03 14:31:43   INFO [unitTest.TestMethods] :  DB Connection Closed 
+2020-12-03 16:19:45   INFO [oldSiteParameterizedTest.SafetyCreateEquipmentParamTest] : Chrome will be started
+2020-12-03 16:19:52   INFO [oldSiteParameterizedTest.SafetyCreateEquipmentParamTest] : Chrome is started
+2020-12-03 16:19:56   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-12-03 16:20:14   INFO [pages.LoginPage] : Login Page was opened
+2020-12-03 16:20:15   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-12-03 16:20:15   INFO [libs.ActionsWithOurElements] : fltTst@test.test was inputted into element
+2020-12-03 16:20:15   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-12-03 16:20:16   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-12-03 16:20:16   INFO [oldSiteParameterizedTest.SafetyCreateEquipmentParamTest] :  DB connection closed 
+2020-12-03 16:20:16   INFO [oldSiteParameterizedTest.SafetyCreateEquipmentParamTest] : Chrome will be started
+2020-12-03 16:20:21   INFO [oldSiteParameterizedTest.SafetyCreateEquipmentParamTest] : Chrome is started
+2020-12-03 16:20:26   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-12-03 16:20:35   INFO [pages.LoginPage] : Login Page was opened
+2020-12-03 16:20:35   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-12-03 16:20:36   INFO [libs.ActionsWithOurElements] : lk@lk.lk was inputted into element
+2020-12-03 16:20:36   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-12-03 16:20:36   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-12-03 16:20:36   INFO [oldSiteParameterizedTest.SafetyCreateEquipmentParamTest] :  DB connection closed 
+2020-12-03 16:20:37   INFO [oldSiteParameterizedTest.SafetyCreateEquipmentParamTest] : Chrome will be started
+2020-12-03 16:20:42   INFO [oldSiteParameterizedTest.SafetyCreateEquipmentParamTest] : Chrome is started
+2020-12-03 16:20:46   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-12-03 16:20:54   INFO [pages.LoginPage] : Login Page was opened
+2020-12-03 16:20:55   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-12-03 16:20:55   INFO [libs.ActionsWithOurElements] : fleet_test!!@test.test was inputted into element
+2020-12-03 16:20:55   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-12-03 16:20:55   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-12-03 16:20:55   INFO [oldSiteParameterizedTest.SafetyCreateEquipmentParamTest] :  DB connection closed 
+2020-12-03 16:20:56   INFO [oldSiteParameterizedTest.SafetyCreateEquipmentParamTest] : Chrome will be started
+2020-13-03 13:15:19   INFO [frankesteinTest.smartSafety.SmartSafetyOrderTest] : Chrome will be started
+2020-13-03 13:15:26   INFO [frankesteinTest.smartSafety.SmartSafetyOrderTest] : Chrome is started
+2020-13-03 13:15:30   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-13-03 13:15:41   INFO [pages.LoginPage] : Login Page was opened
+2020-13-03 13:15:41   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-03 13:15:42   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-13-03 13:15:42   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-13-03 13:15:42   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-03 13:16:10   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2020-13-03 13:16:10   INFO [pages.LoginPage] : There is not phone verification pop up
+2020-13-03 13:16:10   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2020-13-03 13:16:11   INFO [frankesteinTest.smartSafety.SmartSafetyOrderTest] : AC passed
+2020-13-03 13:16:12   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-03 13:16:13   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-03 13:16:14   INFO [libs.ActionsWithOurElements] : den351@gmail.com was inputted into element
+2020-13-03 13:16:14   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-03 13:16:15   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-03 13:16:16   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-03 13:16:16   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-13-03 13:16:17   INFO [frankesteinTest.smartSafety.SmartSafetyOrderTest] : AC passed
+2020-13-03 13:16:17   INFO [libs.ActionsWithOurElements] : Mouse over the element
+2020-13-03 13:16:17   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-03 13:16:17   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-03 13:16:23   INFO [frankesteinTest.smartSafety.SmartSafetyOrderTest] : AC passed
+2020-13-03 13:16:25   INFO [frankesteinTest.smartSafety.SmartSafetyOrderTest] : AC passed
+2020-13-03 13:16:26   INFO [frankesteinTest.smartSafety.SmartSafetyOrderTest] : AC passed
+2020-13-03 13:16:26   INFO [frankesteinTest.smartSafety.SmartSafetyOrderTest] :  DB connection closed 
+2020-13-03 13:18:41   INFO [frankesteinTest.smartSafety.SmartSafetyOrderTest] : Chrome will be started
+2020-13-03 13:18:49   INFO [frankesteinTest.smartSafety.SmartSafetyOrderTest] : Chrome is started
+2020-13-03 13:18:53   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-13-03 13:19:07   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-13-03 13:19:07   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-03 13:19:27  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on WINDOWS (11f41784ebcf6f92cd5cfcbd1961060b)] -> name: email] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'DESKTOP-0PTGLHV', ip: '192.168.88.57', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.132, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\1\AppData\Local\Te...}, goog:chromeOptions: {debuggerAddress: localhost:64844}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 11f41784ebcf6f92cd5cfcbd1961060b
+2020-13-03 13:19:27   INFO [frankesteinTest.smartSafety.SmartSafetyOrderTest] :  DB connection closed 
+2020-13-03 13:20:19   INFO [frankesteinTest.smartSafety.SmartSafetyOrderTest] : Chrome will be started
+2020-13-03 13:20:26   INFO [frankesteinTest.smartSafety.SmartSafetyOrderTest] : Chrome is started
+2020-13-03 13:20:30   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-13-03 13:20:43   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-13-03 13:20:43   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-03 13:21:04  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on WINDOWS (d8244dd2b6983b993c66a6ceceb27d21)] -> name: email] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'DESKTOP-0PTGLHV', ip: '192.168.88.57', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.132, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\1\AppData\Local\Te...}, goog:chromeOptions: {debuggerAddress: localhost:64986}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: d8244dd2b6983b993c66a6ceceb27d21
+2020-13-03 13:21:04   INFO [frankesteinTest.smartSafety.SmartSafetyOrderTest] :  DB connection closed 
+2020-13-03 13:26:09   INFO [frankesteinTest.smartSafety.SmartSafetyOrderTest] : Chrome will be started
+2020-13-03 13:26:15   INFO [frankesteinTest.smartSafety.SmartSafetyOrderTest] : Chrome is started
+2020-13-03 13:26:19   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-13-03 13:26:31   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-13-03 13:26:31   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-03 13:26:31   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-13-03 13:26:31   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-13-03 13:26:31   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-03 13:26:58   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2020-13-03 13:26:58   INFO [pagesFrankestein.LoginFPage] : There is not phone verification pop up
+2020-13-03 13:27:38   INFO [libs.ActionsWithOurElements] : Element is enabled - > false
+2020-13-03 13:27:39  ERROR [frankesteinTest.smartSafety.SmartSafetyOrderTest] : AC failed: User wasn`t logined
+2020-13-03 13:27:39   INFO [frankesteinTest.smartSafety.SmartSafetyOrderTest] :  DB connection closed 
+2020-13-03 13:28:59   INFO [frankesteinTest.smartSafety.SmartSafetyOrderTest] : Chrome will be started
+2020-13-03 13:29:05   INFO [frankesteinTest.smartSafety.SmartSafetyOrderTest] : Chrome is started
+2020-13-03 13:29:10   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-13-03 13:29:19   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-13-03 13:29:19   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-03 13:29:19   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-13-03 13:29:19   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-13-03 13:29:19   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-03 13:29:47   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2020-13-03 13:29:47   INFO [pagesFrankestein.LoginFPage] : There is not phone verification pop up
+2020-13-03 13:29:48   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-03 13:29:48   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-03 13:29:49   INFO [libs.ActionsWithOurElements] : den47@gmail.com was inputted into element
+2020-13-03 13:29:49   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-03 13:29:50   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-03 13:30:30  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: .//*[@id='dr_smart_safety']//*[text()='On']' (tried for 20 second(s) with 500 milliseconds interval)
+2020-13-03 13:30:30   INFO [frankesteinTest.smartSafety.SmartSafetyOrderTest] :  DB connection closed 
+2020-13-03 13:36:28   INFO [frankesteinTest.smartSafety.SmartSafetyOrderTest] : Chrome will be started
+2020-13-03 13:36:35   INFO [frankesteinTest.smartSafety.SmartSafetyOrderTest] : Chrome is started
+2020-13-03 13:36:39   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-13-03 13:36:50   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-13-03 13:36:50   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-03 13:36:50   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-13-03 13:36:50   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-13-03 13:36:50   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-03 13:37:18   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2020-13-03 13:37:18   INFO [pagesFrankestein.LoginFPage] : There is not phone verification pop up
+2020-13-03 13:37:19   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-03 13:37:20   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-03 13:37:20   INFO [libs.ActionsWithOurElements] : den40@gmail.com was inputted into element
+2020-13-03 13:37:20   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-03 13:37:21   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-03 14:15:54   INFO [frankesteinParamsTest.FleetOrderParamsTest] : Chrome will be started
+2020-13-03 14:16:00   INFO [frankesteinParamsTest.FleetOrderParamsTest] : Chrome is started
+2020-13-03 14:16:05   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-13-03 14:16:07   INFO [pages.EldPage] : User have not Order with status New
+2020-13-03 14:16:15   INFO [pages.LoginPage] : Login Page was opened
+2020-13-03 14:16:15   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-03 14:16:15   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-13-03 14:16:15   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-13-03 14:16:16   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-03 14:16:43   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2020-13-03 14:16:43   INFO [pages.LoginPage] : There is not phone verification pop up
+2020-13-03 14:16:46   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-03 14:16:47   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-03 14:16:48   INFO [libs.ActionsWithOurElements] : 1 was selected in Drop-down
+2020-13-03 14:16:48   INFO [libs.ActionsWithOurElements] : Nick was inputted into element
+2020-13-03 14:16:48   INFO [libs.ActionsWithOurElements] : Caved was inputted into element
+2020-13-03 14:16:48   INFO [libs.ActionsWithOurElements] : 0676475006 was inputted into element
+2020-13-03 14:16:48   INFO [libs.ActionsWithOurElements] : Kyiv was inputted into element
+2020-13-03 14:16:49   INFO [libs.ActionsWithOurElements] : 5 was inputted into element
+2020-13-03 14:16:49   INFO [libs.ActionsWithOurElements] : Kyiv was inputted into element
+2020-13-03 14:16:49   INFO [libs.ActionsWithOurElements] : 36206 was inputted into element
+2020-13-03 14:16:49   INFO [libs.ActionsWithOurElements] : 2 was selected in Drop-down
+2020-13-03 14:16:51   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2020-13-03 14:16:56   INFO [pages.ModalOrderPage] : No Pin Cable in order
+2020-13-03 14:16:56   INFO [pages.ModalOrderPage] : No OBDP Cable in order
+2020-13-03 14:16:56   INFO [pages.ModalOrderPage] : No Sticker in order
+2020-13-03 14:16:56   INFO [pages.ModalOrderPage] : No Camera CP in order
+2020-13-03 14:16:56   INFO [pages.ModalOrderPage] : No cd card in order
+2020-13-03 14:16:56   INFO [pages.ModalOrderPage] : No camera sva in order
+2020-13-03 14:16:59   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-03 14:16:59   INFO [libs.ActionsWithOurElements] : checkbox was checked
+2020-13-03 14:16:59   INFO [libs.ActionsWithOurElements] : checkbox is already unchecked
+2020-13-03 14:16:59   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-03 14:16:59   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-03 14:16:59   INFO [pages.ModalOrderPage] : Payment Method Smart oneYearSubscription was selected
+2020-13-03 14:16:59   INFO [pages.ModalOrderPage] : Payment Method Camera was not selected, no camera in order
+2020-13-03 14:17:03   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-13-03 14:17:04   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-13-03 14:17:24   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2020-13-03 14:17:25   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-13-03 14:17:26   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-13-03 14:17:27   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-13-03 14:17:28   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-13-03 14:17:29   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-13-03 14:17:30   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-13-03 14:17:31   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-13-03 14:17:32   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-13-03 14:17:33   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-13-03 14:17:34   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-13-03 14:17:54   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2020-13-03 14:17:55   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-13-03 14:17:56   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-03 14:17:59   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-13-03 14:18:01   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-13-03 14:18:03   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-03 14:18:03   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-03 14:18:03   INFO [pages.ModalOrderPage] : Agreement ELD was agreed
+2020-13-03 14:18:03   INFO [pages.ModalOrderPage] : No agreement camera in order
+2020-13-03 14:18:03   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-03 14:18:09   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-13-03 14:18:10   INFO [pages.FinancesPage] : orderStatus = 3
+2020-13-03 14:18:11   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-13-03 14:18:12   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-13-03 14:18:13   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-13-03 14:18:14   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-13-03 14:18:14   INFO [frankesteinParamsTest.FleetOrderParamsTest] :  DB connection closed 
+2020-13-03 14:18:15   INFO [frankesteinParamsTest.FleetOrderParamsTest] : Chrome will be started
+2020-13-03 14:18:20   INFO [frankesteinParamsTest.FleetOrderParamsTest] : Chrome is started
+2020-13-03 14:18:24   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-13-03 14:18:33   INFO [pages.LoginPage] : Login Page was opened
+2020-13-03 14:18:33   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-03 14:18:34   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2020-13-03 14:18:34   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-13-03 14:18:34   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-03 14:21:53   INFO [frankesteinParamsTest.FleetOrderParamsTest] : Chrome will be started
+2020-13-03 14:22:00   INFO [frankesteinParamsTest.FleetOrderParamsTest] : Chrome is started
+2020-13-03 14:22:04   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-13-03 14:22:06   INFO [pagesFrankestein.EldFPage] : User have not Order with status New
+2020-13-03 14:22:11   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-13-03 14:22:12   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-03 14:22:12   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-13-03 14:22:12   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-13-03 14:22:12   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-03 14:22:39   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2020-13-03 14:22:39   INFO [pagesFrankestein.LoginFPage] : There is not phone verification pop up
+2020-13-03 14:23:01  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (77aecde434006d75b4fcd45ffbf15954)] -> xpath: .//a[@href='/dash/eld/']] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'DESKTOP-0PTGLHV', ip: '192.168.88.57', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.132, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\1\AppData\Local\Te...}, goog:chromeOptions: {debuggerAddress: localhost:52975}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 77aecde434006d75b4fcd45ffbf15954
+2020-13-03 14:23:01   INFO [frankesteinParamsTest.FleetOrderParamsTest] :  DB connection closed 
+2020-13-03 14:23:02   INFO [frankesteinParamsTest.FleetOrderParamsTest] : Chrome will be started
+2020-13-03 14:23:07   INFO [frankesteinParamsTest.FleetOrderParamsTest] : Chrome is started
+2020-13-03 14:24:57   INFO [frankesteinParamsTest.FleetOrderParamsTest] : Chrome will be started
+2020-13-03 14:25:03   INFO [frankesteinParamsTest.FleetOrderParamsTest] : Chrome is started
+2020-13-03 14:25:07   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-13-03 14:25:10   INFO [pagesFrankestein.EldFPage] : User have not Order with status New
+2020-13-03 14:25:15   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-13-03 14:25:16   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-03 14:25:16   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-13-03 14:25:16   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-13-03 14:25:16   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-03 14:25:43   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2020-13-03 14:25:43   INFO [pagesFrankestein.LoginFPage] : There is not phone verification pop up
+2020-13-03 14:25:45   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-03 14:25:47   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-03 14:25:48   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-03 14:25:49   INFO [libs.ActionsWithOurElements] : 1 was selected in Drop-down
+2020-13-03 14:25:49   INFO [libs.ActionsWithOurElements] : Nick was inputted into element
+2020-13-03 14:25:49   INFO [libs.ActionsWithOurElements] : Caved was inputted into element
+2020-13-03 14:25:49   INFO [libs.ActionsWithOurElements] : 0676475006 was inputted into element
+2020-13-03 14:25:49   INFO [libs.ActionsWithOurElements] : Kyiv was inputted into element
+2020-13-03 14:25:50   INFO [libs.ActionsWithOurElements] : 5 was inputted into element
+2020-13-03 14:25:50   INFO [libs.ActionsWithOurElements] : Kyiv was inputted into element
+2020-13-03 14:25:50   INFO [libs.ActionsWithOurElements] : 36206 was inputted into element
+2020-13-03 14:25:50   INFO [libs.ActionsWithOurElements] : 2 was selected in Drop-down
+2020-13-03 14:25:52   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2020-13-03 14:25:57   INFO [pagesFrankestein.ModalOrderFPage] : No Pin Cable in order
+2020-13-03 14:25:57   INFO [pagesFrankestein.ModalOrderFPage] : No OBDP Cable in order
+2020-13-03 14:25:57   INFO [pagesFrankestein.ModalOrderFPage] : No Sticker in order
+2020-13-03 14:25:57   INFO [pagesFrankestein.ModalOrderFPage] : No Camera CP in order
+2020-13-03 14:25:57   INFO [pagesFrankestein.ModalOrderFPage] : No cd card in order
+2020-13-03 14:25:57   INFO [pagesFrankestein.ModalOrderFPage] : No camera sva in order
+2020-13-03 14:26:00   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-03 14:26:00   INFO [libs.ActionsWithOurElements] : checkbox was checked
+2020-13-03 14:26:00   INFO [libs.ActionsWithOurElements] : checkbox is already unchecked
+2020-13-03 14:26:00   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-03 14:26:00   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-03 14:26:00   INFO [pagesFrankestein.ModalOrderFPage] : Payment Method Smart oneYearSubscription was selected
+2020-13-03 14:26:00   INFO [pagesFrankestein.ModalOrderFPage] : Payment Method Camera was not selected, no camera in order
+2020-13-03 14:26:04   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-13-03 14:26:05   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-13-03 14:26:25   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2020-13-03 14:26:26   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-13-03 14:26:27   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-13-03 14:26:28   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-13-03 14:26:29   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-13-03 14:26:30   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-13-03 14:26:31   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-13-03 14:26:32   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-13-03 14:26:33   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-13-03 14:26:34   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-13-03 14:26:35   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-13-03 14:26:55   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2020-13-03 14:26:56   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-13-03 14:26:57   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-03 14:27:00   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-13-03 14:27:02   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-13-03 14:27:04   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-03 14:27:04   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-03 14:27:04   INFO [pagesFrankestein.ModalOrderFPage] : Agreement ELD was agreed
+2020-13-03 14:27:04   INFO [pagesFrankestein.ModalOrderFPage] : No agreement camera in order
+2020-13-03 14:27:04   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-03 14:27:10   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-13-03 14:27:10   INFO [pagesFrankestein.FinancesFPage] : orderStatus = 3
+2020-13-03 14:27:11   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-13-03 14:27:13   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-13-03 14:27:14   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-13-03 14:27:15   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-13-03 14:27:15   INFO [frankesteinParamsTest.FleetOrderParamsTest] :  DB connection closed 
+2020-13-03 14:27:16   INFO [frankesteinParamsTest.FleetOrderParamsTest] : Chrome will be started
+2020-13-03 14:27:21   INFO [frankesteinParamsTest.FleetOrderParamsTest] : Chrome is started
+2020-13-03 14:27:25   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-13-03 14:27:32   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-13-03 14:27:32   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-03 14:27:33   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2020-13-03 14:27:33   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-13-03 14:27:33   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-03 14:28:19   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2020-13-03 14:28:19   INFO [pagesFrankestein.LoginFPage] : There is not phone verification pop up
+2020-13-03 14:28:21   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-03 14:28:23   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-03 14:28:25   INFO [libs.ActionsWithOurElements] : 4240 was inputted into element
+2020-13-03 14:28:27   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-03 14:28:29   INFO [pagesFrankestein.OrderInfoFPage] : getFullOrderPrice 499.88
+2020-13-03 14:28:29   INFO [pagesFrankestein.OrderInfoFPage] : dueForLastOrder 499.88
+2020-13-03 14:28:30   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-13-03 14:28:33   INFO [libs.ActionsWithOurElements] : 4 was selected in Drop-down
+2020-13-03 14:28:35   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-03 14:28:37   INFO [libs.ActionsWithOurElements] : 1 was selected in Drop-down
+2020-13-03 14:28:39   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-03 14:28:50   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-13-03 14:28:51   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-13-03 14:28:53   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-13-03 14:28:53   INFO [frankesteinParamsTest.FleetOrderParamsTest] :  DB connection closed 
+2020-13-03 14:28:53   INFO [frankesteinParamsTest.FleetOrderParamsTest] : Chrome will be started
+2020-13-03 14:28:58   INFO [frankesteinParamsTest.FleetOrderParamsTest] : Chrome is started
+2020-13-03 14:29:03   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-13-03 14:29:04   INFO [pagesFrankestein.EldFPage] : User have not Order with status New
+2020-13-03 14:29:10   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-13-03 14:29:10   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-03 14:29:10   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-13-03 14:29:10   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-13-03 14:29:11   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-03 14:31:09   INFO [frankesteinParamsTest.FleetOrderParamsTest] : Chrome will be started
+2020-13-03 14:31:16   INFO [frankesteinParamsTest.FleetOrderParamsTest] : Chrome is started
+2020-13-03 14:31:20   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-13-03 14:31:23   INFO [pagesFrankestein.EldFPage] : User have not Order with status New
+2020-13-03 14:31:28   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-13-03 14:31:29   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-03 14:31:29   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-13-03 14:31:29   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-13-03 14:31:29   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-03 14:31:49   INFO [frankesteinParamsTest.FleetOrderParamsTest] : Chrome will be started
+2020-13-03 14:31:56   INFO [frankesteinParamsTest.FleetOrderParamsTest] : Chrome is started
+2020-13-03 14:32:00   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-13-03 14:32:02   INFO [frankesteinParamsTest.FleetOrderParamsTest] :  DB connection closed 
+2020-13-03 14:32:03   INFO [frankesteinParamsTest.FleetOrderParamsTest] : Chrome will be started
+2020-13-03 14:32:08   INFO [frankesteinParamsTest.FleetOrderParamsTest] : Chrome is started
+2020-13-03 14:32:12   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-13-03 14:32:20   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-13-03 14:32:20   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-03 14:32:21   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2020-13-03 14:32:21   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-13-03 14:32:21   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-03 14:33:14   INFO [frankesteinParamsTest.FleetOrderParamsTest] : Chrome will be started
+2020-13-03 14:33:21   INFO [frankesteinParamsTest.FleetOrderParamsTest] : Chrome is started
+2020-13-03 14:33:25   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-13-03 14:33:27   INFO [frankesteinParamsTest.FleetOrderParamsTest] :  DB connection closed 
+2020-13-03 14:33:28   INFO [frankesteinParamsTest.FleetOrderParamsTest] : Chrome will be started
+2020-13-03 14:33:33   INFO [frankesteinParamsTest.FleetOrderParamsTest] : Chrome is started
+2020-13-03 14:33:37   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-13-03 14:33:40   INFO [frankesteinParamsTest.FleetOrderParamsTest] :  DB connection closed 
+2020-13-03 14:33:40   INFO [frankesteinParamsTest.FleetOrderParamsTest] : Chrome will be started
+2020-13-03 14:40:48   INFO [frankesteinParamsTest.FleetOrderParamsTest] : Chrome will be started
+2020-13-03 14:40:55   INFO [frankesteinParamsTest.FleetOrderParamsTest] : Chrome is started
+2020-13-03 14:40:59   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-13-03 14:41:01   INFO [frankesteinParamsTest.FleetOrderParamsTest] :  DB connection closed 
+2020-13-03 14:41:02   INFO [frankesteinParamsTest.FleetOrderParamsTest] : Chrome will be started
+2020-13-03 14:41:07   INFO [frankesteinParamsTest.FleetOrderParamsTest] : Chrome is started
+2020-13-03 14:41:11   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-13-03 14:41:19   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-13-03 14:41:19   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-03 14:41:19   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2020-13-03 14:41:19   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-13-03 14:41:19   INFO [frankesteinParamsTest.FleetOrderParamsTest] :  DB connection closed 
+2020-13-03 14:41:20   INFO [frankesteinParamsTest.FleetOrderParamsTest] : Chrome will be started
+2020-13-03 14:41:25   INFO [frankesteinParamsTest.FleetOrderParamsTest] : Chrome is started
+2020-13-03 14:41:29   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-13-03 14:41:31   INFO [frankesteinParamsTest.FleetOrderParamsTest] :  DB connection closed 
+2020-13-03 14:41:32   INFO [frankesteinParamsTest.FleetOrderParamsTest] : Chrome will be started
+2020-13-03 14:42:06   INFO [frankesteinParamsTest.FleetOrderParamsTest] : Chrome will be started
+2020-13-03 14:42:13   INFO [frankesteinParamsTest.FleetOrderParamsTest] : Chrome is started
+2020-13-03 14:42:17   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-13-03 14:42:19   INFO [frankesteinParamsTest.FleetOrderParamsTest] : Chrome will be started
+2020-13-03 14:42:24   INFO [frankesteinParamsTest.FleetOrderParamsTest] : Chrome is started
+2020-13-03 14:42:29   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-13-03 14:42:36   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-13-03 14:42:36   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-03 14:42:36   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2020-13-03 14:42:36   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-13-03 14:42:36   INFO [frankesteinParamsTest.FleetOrderParamsTest] :  DB connection closed 
+2020-13-03 14:42:37   INFO [frankesteinParamsTest.FleetOrderParamsTest] : Chrome will be started
+2020-13-03 14:42:42   INFO [frankesteinParamsTest.FleetOrderParamsTest] : Chrome is started
+2020-13-03 14:42:54   INFO [frankesteinParamsTest.FleetOrderParamsTest] : Chrome will be started
+2020-13-03 14:43:01   INFO [frankesteinParamsTest.FleetOrderParamsTest] : Chrome is started
+2020-13-03 14:43:05   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-13-03 14:43:13   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-13-03 14:43:14   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-03 14:43:14   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2020-13-03 14:43:14   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-13-03 14:43:14   INFO [frankesteinParamsTest.FleetOrderParamsTest] :  DB connection closed 
+2020-13-03 14:43:15   INFO [frankesteinParamsTest.FleetOrderParamsTest] : Chrome will be started
+2020-13-03 14:43:20   INFO [frankesteinParamsTest.FleetOrderParamsTest] : Chrome is started
+2020-13-03 14:44:13   INFO [frankesteinParamsTest.FleetOrderParamsTest] : Chrome will be started
+2020-13-03 14:44:20   INFO [frankesteinParamsTest.FleetOrderParamsTest] : Chrome is started
+2020-13-03 14:44:24   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-13-03 14:44:32   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-13-03 14:44:32   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-03 14:44:32   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2020-13-03 14:44:33   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-13-03 14:44:33   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-03 14:44:33   INFO [frankesteinParamsTest.FleetOrderParamsTest] :  DB connection closed 
+2020-13-03 14:44:33   INFO [frankesteinParamsTest.FleetOrderParamsTest] : Chrome will be started
+2020-13-03 14:44:58   INFO [frankesteinParamsTest.FleetOrderParamsTest] : Chrome will be started
+2020-13-03 14:45:04   INFO [frankesteinParamsTest.FleetOrderParamsTest] : Chrome is started
+2020-13-03 14:45:09   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-13-03 14:45:17   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-13-03 14:45:17   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-03 14:45:17   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2020-13-03 14:45:17   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-13-03 14:45:17   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-03 14:45:43   INFO [frankesteinParamsTest.FleetOrderParamsTest] :  DB connection closed 
+2020-13-03 14:45:44   INFO [frankesteinParamsTest.FleetOrderParamsTest] : Chrome will be started
+2020-13-03 14:54:22   INFO [frankesteinParamsTest.FleetOrderParamsTest] : Chrome will be started
+2020-13-03 14:54:28   INFO [frankesteinParamsTest.FleetOrderParamsTest] : Chrome is started
+2020-13-03 14:54:32   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-13-03 14:54:40   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-13-03 14:54:40   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-03 14:54:41   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2020-13-03 14:54:41   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-13-03 14:54:41   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-03 14:55:30   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2020-13-03 14:55:30   INFO [pagesFrankestein.LoginFPage] : There is not phone verification pop up
+2020-13-03 14:55:33  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href="/dash/eld/" class="dash_url_button">...</a> is not clickable at point (29, 206). Other element would receive the click: <div class="stub"></div>
+  (Session info: chrome=80.0.3987.132)
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'DESKTOP-0PTGLHV', ip: '192.168.88.57', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.132, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\1\AppData\Local\Te...}, goog:chromeOptions: {debuggerAddress: localhost:55752}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 186ebc728131a8091a61d4a04e0dd4c8
+2020-13-03 14:55:33   INFO [frankesteinParamsTest.FleetOrderParamsTest] :  DB connection closed 
+2020-13-03 14:55:33   INFO [frankesteinParamsTest.FleetOrderParamsTest] : Chrome will be started
+2020-13-03 14:55:38   INFO [frankesteinParamsTest.FleetOrderParamsTest] : Chrome is started
+2020-13-03 14:55:42   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-13-03 14:55:49   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-13-03 14:55:49   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-03 14:55:50   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2020-13-03 14:55:50   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-13-03 14:55:50   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-03 14:56:39   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2020-13-03 14:56:39   INFO [pagesFrankestein.LoginFPage] : There is not phone verification pop up
+2020-13-03 15:17:42   INFO [frankesteinParamsTest.FleetOrderParamsTest] : Chrome will be started
+2020-13-03 15:17:48   INFO [frankesteinParamsTest.FleetOrderParamsTest] : Chrome is started
+2020-13-03 15:17:53   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-13-03 15:18:00   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-13-03 15:18:01   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-03 15:18:01   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2020-13-03 15:18:01   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-13-03 15:18:01   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-03 15:18:47   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2020-13-03 15:18:47   INFO [pagesFrankestein.LoginFPage] : There is not phone verification pop up
+2020-13-03 15:18:49   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-03 15:18:51   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-03 15:18:53   INFO [libs.ActionsWithOurElements] : 4240 was inputted into element
+2020-13-03 15:18:56   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-03 15:18:58   INFO [pagesFrankestein.OrderInfoFPage] : getFullOrderPrice 499.88
+2020-13-03 15:18:58   INFO [pagesFrankestein.OrderInfoFPage] : dueForLastOrder 499.88
+2020-13-03 15:18:59   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-13-03 15:18:59   INFO [libs.ActionsWithOurElements] : 2 was selected in Drop-down
+2020-13-03 15:18:59   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-03 15:19:10  ERROR [frankesteinParamsTest.FleetOrderParamsTest] : AC failed: Order with devices is not canceled
+2020-13-03 15:19:10   INFO [frankesteinParamsTest.FleetOrderParamsTest] :  DB connection closed 
+2020-13-03 15:19:11   INFO [frankesteinParamsTest.FleetOrderParamsTest] : Chrome will be started
+2020-13-03 15:19:16   INFO [frankesteinParamsTest.FleetOrderParamsTest] : Chrome is started
+2020-13-03 15:19:20   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-13-03 15:19:27   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-13-03 15:19:27   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-03 15:19:27   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2020-13-03 15:19:28   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-13-03 15:19:28   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-03 15:20:14   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2020-13-03 15:20:14   INFO [pagesFrankestein.LoginFPage] : There is not phone verification pop up
+2020-13-03 15:20:16   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-03 15:20:18   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-03 15:20:20   INFO [libs.ActionsWithOurElements] : 4240 was inputted into element
+2020-13-03 15:20:23   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-03 15:20:25   INFO [pagesFrankestein.OrderInfoFPage] : getFullOrderPrice 499.88
+2020-13-03 15:20:25   INFO [pagesFrankestein.OrderInfoFPage] : dueForLastOrder 499.88
+2020-13-03 15:20:26   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-13-03 15:20:26   INFO [libs.ActionsWithOurElements] : 2 was selected in Drop-down
+2020-13-03 15:20:26   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-03 15:20:37  ERROR [frankesteinParamsTest.FleetOrderParamsTest] : AC failed: Order with devices is not canceled
+2020-13-03 15:20:37   INFO [frankesteinParamsTest.FleetOrderParamsTest] :  DB connection closed 
+2020-13-03 15:20:38   INFO [frankesteinParamsTest.FleetOrderParamsTest] : Chrome will be started
+2020-13-03 15:20:43   INFO [frankesteinParamsTest.FleetOrderParamsTest] : Chrome is started
+2020-13-03 15:20:47   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-13-03 15:20:56   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-13-03 15:20:56   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-03 15:20:56   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2020-13-03 15:20:57   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-13-03 15:20:57   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-03 15:21:42   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2020-13-03 15:21:42   INFO [pagesFrankestein.LoginFPage] : There is not phone verification pop up
+2020-13-03 15:21:44   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-03 15:21:47   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-03 15:21:49   INFO [libs.ActionsWithOurElements] : 4240 was inputted into element
+2020-13-03 15:21:51   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-03 15:21:53   INFO [pagesFrankestein.OrderInfoFPage] : getFullOrderPrice 499.88
+2020-13-03 15:21:53   INFO [pagesFrankestein.OrderInfoFPage] : dueForLastOrder 499.88
+2020-13-03 15:21:54   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-13-03 15:21:54   INFO [libs.ActionsWithOurElements] : 2 was selected in Drop-down
+2020-13-03 15:21:54   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-03 15:22:06  ERROR [frankesteinParamsTest.FleetOrderParamsTest] : AC failed: Order with devices is not canceled
+2020-13-03 15:22:06   INFO [frankesteinParamsTest.FleetOrderParamsTest] :  DB connection closed 
+2020-13-03 15:22:06   INFO [frankesteinParamsTest.FleetOrderParamsTest] : Chrome will be started
+2020-13-03 15:22:11   INFO [frankesteinParamsTest.FleetOrderParamsTest] : Chrome is started
+2020-13-03 15:22:16   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-13-03 15:22:26   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-13-03 15:22:26   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-03 15:22:26   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2020-13-03 15:22:26   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-13-03 15:22:26   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-03 15:23:12   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2020-13-03 15:23:12   INFO [pagesFrankestein.LoginFPage] : There is not phone verification pop up
+2020-13-03 15:23:14   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-03 15:23:16   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-03 15:23:19   INFO [libs.ActionsWithOurElements] : 4240 was inputted into element
+2020-13-03 15:23:21   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-03 15:23:23   INFO [pagesFrankestein.OrderInfoFPage] : getFullOrderPrice 499.88
+2020-13-03 15:23:23   INFO [pagesFrankestein.OrderInfoFPage] : dueForLastOrder 499.88
+2020-13-03 15:23:24   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-13-03 15:23:24   INFO [libs.ActionsWithOurElements] : 2 was selected in Drop-down
+2020-13-03 15:23:24   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-03 15:23:35  ERROR [frankesteinParamsTest.FleetOrderParamsTest] : AC failed: Order with devices is not canceled
+2020-13-03 15:23:35   INFO [frankesteinParamsTest.FleetOrderParamsTest] :  DB connection closed 
+2020-13-03 15:23:36   INFO [frankesteinParamsTest.FleetOrderParamsTest] : Chrome will be started
+2020-13-03 15:23:41   INFO [frankesteinParamsTest.FleetOrderParamsTest] : Chrome is started
+2020-13-03 15:23:45   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-13-03 15:23:52   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-13-03 15:23:52   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-03 15:23:53   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2020-13-03 15:23:53   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-13-03 15:23:53   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-03 15:24:38   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2020-13-03 15:24:38   INFO [pagesFrankestein.LoginFPage] : There is not phone verification pop up
+2020-13-03 15:24:41   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-03 15:24:43   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-03 15:24:45   INFO [libs.ActionsWithOurElements] : 4240 was inputted into element
+2020-13-03 15:24:47   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-03 15:24:49   INFO [pagesFrankestein.OrderInfoFPage] : getFullOrderPrice 499.88
+2020-13-03 15:24:49   INFO [pagesFrankestein.OrderInfoFPage] : dueForLastOrder 499.88
+2020-13-03 15:24:50   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-13-03 15:24:50   INFO [libs.ActionsWithOurElements] : 2 was selected in Drop-down
+2020-13-03 15:24:51   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-03 15:25:02  ERROR [frankesteinParamsTest.FleetOrderParamsTest] : AC failed: Order with devices is not canceled
+2020-13-03 15:25:02   INFO [frankesteinParamsTest.FleetOrderParamsTest] :  DB connection closed 
+2020-13-03 15:25:02   INFO [frankesteinParamsTest.FleetOrderParamsTest] : Chrome will be started
+2020-13-03 15:25:07   INFO [frankesteinParamsTest.FleetOrderParamsTest] : Chrome is started
+2020-13-03 15:25:12   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-13-03 15:25:19   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-13-03 15:25:19   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-03 15:25:19   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2020-13-03 15:25:19   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-13-03 15:25:19   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-03 15:26:05   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2020-13-03 15:26:05   INFO [pagesFrankestein.LoginFPage] : There is not phone verification pop up
+2020-13-03 15:26:07   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-03 15:26:09   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-03 15:29:25   INFO [frankesteinParamsTest.FleetOrderParamsTest] : Chrome will be started
+2020-13-03 15:29:32   INFO [frankesteinParamsTest.FleetOrderParamsTest] : Chrome is started
+2020-13-03 15:29:36   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-13-03 15:29:44   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-13-03 15:29:45   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-03 15:29:45   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2020-13-03 15:29:45   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-13-03 15:29:45   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-03 15:31:46   INFO [frankesteinParamsTest.FleetOrderParamsTest] : Chrome will be started
+2020-13-03 15:31:52   INFO [frankesteinParamsTest.FleetOrderParamsTest] : Chrome is started
+2020-13-03 15:31:56   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-13-03 15:32:06   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-13-03 15:32:06   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-03 15:32:07   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2020-13-03 15:32:07   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-13-03 15:32:07   INFO [libs.ActionsWithOurElements] : Element was clicked

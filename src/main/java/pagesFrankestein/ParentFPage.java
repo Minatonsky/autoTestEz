@@ -1,4 +1,4 @@
-package pages;
+package pagesFrankestein;
 
 import libs.ActionsWithOurElements;
 import libs.ConfigProperties;
@@ -10,7 +10,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 
-public class ParentPage {
+public class ParentFPage {
     Logger logger = Logger.getLogger(getClass());
 
     WebDriver webDriver;
@@ -22,9 +22,9 @@ public class ParentPage {
     ActionsWithOurElements actionsWithOurElements;
 
 
-    public ParentPage(WebDriver webDriver, String expectedUrl, UtilsForDB utilsForDB) {
+    public ParentFPage(WebDriver webDriver, String expectedUrl, UtilsForDB utilsForDB) {
         this.webDriver = webDriver;
-        baseUrl = configProperties.url_ezlogz_testing();
+        baseUrl = configProperties.url_staging();
         this.expectedUrl = baseUrl + expectedUrl;
         PageFactory.initElements(webDriver, this);
         actionsWithOurElements = new ActionsWithOurElements(webDriver);
