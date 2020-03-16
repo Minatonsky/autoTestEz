@@ -88,7 +88,7 @@ public class LoginFPage extends ParentFPage {
 
     }
 
-    public void userValidLogIn(String login, String passWord) {
+    public void logInWithOutOpenMenu(String login, String passWord) {
         openPage();
         openLoginForm();
         enterLogin(login);
@@ -97,7 +97,7 @@ public class LoginFPage extends ParentFPage {
         waitABit(3);
         closePhoneVerificationPopUp();
     }
-    public void managerValidLogIn(String login, String passWord) {
+    public void logInAndOpenMenu(String login, String passWord) {
         openPage();
         openLoginForm();
         enterLogin(login);

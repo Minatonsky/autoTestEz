@@ -18,6 +18,7 @@ import java.time.temporal.TemporalAdjusters;
 import java.util.List;
 
 import static libs.Utils.genRandomDataByRegex;
+import static libs.Utils.isValidEmailAddress;
 // This test page is not using on test project, it just for check some methods
 
 
@@ -178,25 +179,23 @@ public class TestMethods extends ParentTestWithoutWebDriver {
         int currentDueFromDB = Integer.parseInt("-10000.00");
         System.out.println(currentDueFromDB);
 
-        String test = Integer.toString(currentDueFromDB).replaceAll("\\D+","");
+        String test = Integer.toString(currentDueFromDB).replaceAll("\\D+", "");
         System.out.println(test);
     }
 
     @Test
     public void getAmountEzDueMonthToMonth() throws SQLException, IOException, ClassNotFoundException {
-        String data = genRandomDataByRegex("[A-Z]{1}[a-z]{11}")+genRandomDataByRegex("[A-Z]{1}[a-z]{11}");
+        String data = genRandomDataByRegex("[A-Z]{1}[a-z]{11}") + genRandomDataByRegex("[A-Z]{1}[a-z]{11}");
 
         System.out.println(data);
 
     }
-
     @Test
-    public void test2() throws ParseException, SQLException {
-
-        boolean dateTime = utilsForDB.getScannersStatusById("20234").equals("4");
-        System.out.println(dateTime);
-
-
+    public void test(){
+        System.out.println(isValidEmailAddress("qqq.qq@r"));
     }
 
+
+
 }
+
