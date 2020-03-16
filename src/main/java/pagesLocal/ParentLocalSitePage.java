@@ -2,6 +2,7 @@ package pagesLocal;
 
 import libs.ActionsWithOurElements;
 import libs.ConfigProperties;
+import libs.UtilsForDB;
 import org.aeonbits.owner.ConfigFactory;
 import org.apache.log4j.Logger;
 import org.junit.Assert;
@@ -13,16 +14,18 @@ public class ParentLocalSitePage {
 
     WebDriver webDriver;
     String expectedUrl;
+    UtilsForDB utilsForDB;
     protected static ConfigProperties configProperties = ConfigFactory.create(ConfigProperties.class);
     String baseUrl;
     ActionsWithOurElements actionsWithOurElements;
 
-    public ParentLocalSitePage(WebDriver webDriver, String expectedUrl) {
+    public ParentLocalSitePage(WebDriver webDriver, String expectedUrl, UtilsForDB utilsForDB) {
         this.webDriver = webDriver;
         baseUrl = configProperties.url_local_site();
         this.expectedUrl = baseUrl + expectedUrl;
         PageFactory.initElements(webDriver, this);
         actionsWithOurElements = new ActionsWithOurElements(webDriver);
+        this.utilsForDB = utilsForDB;
     }
 
     public String getCurrentUrl() {

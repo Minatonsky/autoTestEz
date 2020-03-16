@@ -1,13 +1,13 @@
 package pagesLocal;
 
-import libs.Database;
+import libs.UtilsForDB;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 public class EquipmentLocalSitePage extends ParentLocalSitePage {
-    public EquipmentLocalSitePage(WebDriver webDriver, Database dBMySQL) {
-        super(webDriver, "/dash/equipment/");
+    public EquipmentLocalSitePage(WebDriver webDriver, UtilsForDB utilsForDB) {
+        super(webDriver, "/dash/equipment/", utilsForDB);
     }
 
     @FindBy(xpath = "//button[text() = 'Add Truck']")

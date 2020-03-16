@@ -6,6 +6,8 @@ import parentTest.ParentTest;
 import java.io.IOException;
 import java.sql.SQLException;
 
+import static libs.DataForTests.*;
+
 public class ChargeMonthToMonthTariff extends ParentTest {
 
     String soloId = "3455";

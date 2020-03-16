@@ -5,7 +5,9 @@ import org.aeonbits.owner.ConfigFactory;
 import org.apache.log4j.Logger;
 import org.json.JSONObject;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 
+import java.io.File;
 import java.io.IOException;
 import java.sql.SQLException;
 import java.time.*;
@@ -17,20 +19,27 @@ import java.util.List;
 import static libs.Prices.*;
 
 public class ChargeMethods {
+
     Logger logger = Logger.getLogger(getClass());
     WebDriver webDriver;
-    Database dBMySQL;
 
     String checkFleets = "https://dev.ezlogz.com/cron/check_fleets.php";
     String checkDrivers = "https://dev.ezlogz.com/cron/check_drivers.php";
 
     protected static ConfigProperties configProperties = ConfigFactory.create(ConfigProperties.class);
+    UtilsForDB utilsForDB;
 
-    public ChargeMethods(WebDriver webDriver, Database dBMySQL) {
-        this.webDriver = webDriver;
-        this.dBMySQL = dBMySQL;
+    public ChargeMethods(UtilsForDB utilsForDB) {
+        this.utilsForDB = utilsForDB;
     }
-    UtilsForDB utilsForDB = new UtilsForDB(dBMySQL);
+
+
+    public void initDriver(){
+        File file = new File("./src/drivers/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", file.getAbsolutePath());
+        webDriver = new ChromeDriver();
+        logger.info("Chrome is started");
+    }
 
 
     @Step
@@ -39,6 +48,7 @@ public class ChargeMethods {
         long startYesterday = yesterday.atStartOfDay().toEpochSecond(ZoneOffset.UTC);
         String tempPaidTill = Long.toString(startYesterday);
         return tempPaidTill;
+
     }
 
     @Step
@@ -85,8 +95,10 @@ public class ChargeMethods {
     public String runCronCheckFleet(){
         LocalDateTime startCronTime = LocalDateTime.parse(LocalDateTime.now(ZoneId.from(ZoneOffset.UTC)).toString());
         String startCronTimeLong = startCronTime.format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));
+        initDriver();
         webDriver.get(checkFleets);
         logger.info("Cron check fleets was run: " + startCronTimeLong);
+        webDriver.quit();
         return startCronTimeLong;
     }
     @Step
@@ -94,7 +106,9 @@ public class ChargeMethods {
         LocalDateTime startCronTime = LocalDateTime.parse(LocalDateTime.now(ZoneId.from(ZoneOffset.UTC)).toString());
         String startCronTimeLong = startCronTime.format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));
         logger.info("Cron check Drivers was run: " + startCronTimeLong);
+        initDriver();
         webDriver.get(checkDrivers);
+        webDriver.quit();
         return startCronTimeLong;
     }
     @Step

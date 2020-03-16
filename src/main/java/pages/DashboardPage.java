@@ -1,6 +1,6 @@
 package pages;
 
-import libs.Database;
+import libs.UtilsForDB;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -9,8 +9,8 @@ import static libs.Utils.waitABit;
 
 public class DashboardPage extends ParentPage {
 
-    public DashboardPage(WebDriver webDriver, Database dBMySQL) {
-        super(webDriver, "/dash", dBMySQL);
+    public DashboardPage(WebDriver webDriver, UtilsForDB utilsForDB) {
+        super(webDriver, "/dash", utilsForDB);
     }
 
     @FindBy(xpath = "//*[@id='dash_head']")
@@ -57,6 +57,9 @@ public class DashboardPage extends ParentPage {
 
     @FindBy(xpath = ".//a[@href='/dash/fleet/equipment/']")
     private WebElement pageFleet;
+
+    @FindBy(xpath = ".//a[@href='/dash/returns/']")
+    private WebElement pageReturns;
 
     @FindBy(xpath = ".//i[@class='fa fa-angle-double-left minimize-arrow']")
     private WebElement menuSizeButton;
@@ -113,6 +116,10 @@ public class DashboardPage extends ParentPage {
     public void goToSettingPage(){
         waitABit(2);
         actionsWithOurElements.clickOnElement(pageSettings);
+    }
+    public void goToReturnsPage() {
+        waitABit(2);
+        actionsWithOurElements.clickOnElement(pageReturns);
     }
 
 }

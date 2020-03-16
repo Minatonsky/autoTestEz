@@ -162,7 +162,8 @@ public class Utils {
         SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         Date date = format.parse(dateTime);
         long timestamp = date.getTime();
-        return timestamp;
+        long droppedMillis = timestamp/1000;
+        return droppedMillis;
     }
     public static LocalDateTime getLocalDateTimeFromString(String dateTimeString){
         DateTimeFormatter format = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
@@ -180,9 +181,9 @@ public class Utils {
         LocalDateTime tempDateTimeUTC = LocalDateTime.ofInstant(instant, ZoneOffset.UTC);
         return tempDateTimeUTC;
     }
-    public static boolean compareDiffDateTime(LocalDateTime firstDateTime, LocalDateTime secondTimeFromDB){
-        long diffMinutes = ChronoUnit.MINUTES.between(firstDateTime, secondTimeFromDB);
-        return diffMinutes < 2 && diffMinutes > (-2);
+    public static boolean compareDiffDateTime(LocalDateTime firstDateTime, LocalDateTime secondTime, int countMinutes){
+        long diffMinutes = ChronoUnit.MINUTES.between(firstDateTime, secondTime);
+        return diffMinutes < countMinutes && diffMinutes > (-countMinutes);
     }
 
 

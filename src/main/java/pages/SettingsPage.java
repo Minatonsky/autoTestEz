@@ -1,6 +1,6 @@
 package pages;
 
-import libs.Database;
+import libs.UtilsForDB;
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -10,8 +10,8 @@ import static libs.Utils.waitABit;
 
 public class SettingsPage extends ParentPage {
 
-    public SettingsPage(WebDriver webDriver, Database dBMySQL) {
-        super(webDriver, "/dash/settings/account/", dBMySQL);
+    public SettingsPage(WebDriver webDriver, UtilsForDB utilsForDB) {
+        super(webDriver, "/dash/settings/account/", utilsForDB);
     }
 
     @FindBy(xpath = ".//a[@href='/dash/settings/driver_settings/']")

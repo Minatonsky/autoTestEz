@@ -60,6 +60,11 @@ public class UtilsForDB {
         List<String> tempStatusEld = dBMySQL.selectResultSet("SELECT status FROM eld_scanners WHERE id IN (SELECT scannerId FROM eld_orders_ids WHERE orderId = " + idOrder + ");");
         return tempStatusEld;
     }
+    @Step
+    public String getRandomDevicesRandomLocalId(String fleetId) throws SQLException {
+        String randomLocalId = dBMySQL.selectValue("SELECT e.localId FROM eld_scanners e WHERE e.fleet = " + fleetId + " AND e.`status` = 4 ORDER BY RAND()LIMIT 1;");
+        return randomLocalId;
+    }
 
     @Step
     public List<String> getLocalIdDevices(String idOrder) throws SQLException {
@@ -132,6 +137,16 @@ public class UtilsForDB {
         List<String> tempScannersStatuses = dBMySQL.selectResultSet("SELECT status FROM eld_scanners WHERE id IN(" + scannerId + ");");
         return tempScannersStatuses;
     }
+    @Step
+    public String getScannersStatusById(String scannerId) throws SQLException {
+        String tempScannersStatuses = dBMySQL.selectValue("SELECT status FROM eld_scanners WHERE id = " + scannerId + ";");
+        return tempScannersStatuses;
+    }
+    @Step
+    public String getIdDeviceByLocalId(String fleetId, String localId) throws SQLException {
+        String idDevice = dBMySQL.selectValue("SELECT e.id FROM eld_scanners e WHERE e.localId = " + localId + " AND e.fleet = " + fleetId + ";");
+        return idDevice;
+    }
 
 //    eld_orders_ids
 
@@ -188,6 +203,12 @@ public class UtilsForDB {
     }
 
 // ez_due
+
+    @Step
+    public List<ArrayList> getLastDueDataList(String soloOrFleetString, String userId) throws SQLException {
+        List<ArrayList> tempLastDue = dBMySQL.selectTable("SELECT e.amount, e.dateTime, e.description, e.userId, e.balance, e.`type` FROM ez_due e WHERE " + soloOrFleetString + " = " + userId + " ORDER BY e.dateTime DESC LIMIT 1;");
+        return tempLastDue;
+    }
 
     @Step
     public String getLastDueForFleet(String idCarrier) throws SQLException {
@@ -499,5 +520,10 @@ public class UtilsForDB {
     public boolean isSmartSafetyInUserApp(String driverId) throws SQLException {
         boolean tempResult = dBMySQL.isRowPresent("SELECT * FROM user_app_info u WHERE u.field = 'smart_safety' AND u.userId = " + driverId + " AND u.value = 1;");
         return tempResult;
+    }
+    @Step
+    public List<ArrayList> getEldReturnsData(String deviceId) throws SQLException {
+        List<ArrayList> tempEldReturnData = dBMySQL.selectTable("SELECT e.userId, e.`status`, e.description, e.returnReason FROM eld_returns e WHERE e.id = 20234;");
+        return tempEldReturnData;
     }
 }

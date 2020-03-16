@@ -1,7 +1,7 @@
 package pages;
 
 import io.qameta.allure.Step;
-import libs.Database;
+import libs.UtilsForDB;
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -11,6 +11,9 @@ import static libs.Prices.*;
 import static libs.Utils.waitABit;
 
 public class ModalOrderPage extends ParentPage {
+    public ModalOrderPage(WebDriver webDriver, UtilsForDB utilsForDB) {
+        super(webDriver, "/dash/eld/", utilsForDB);
+    }
 
     @FindBy(name = "device_type_id")
     private WebElement device_type_idInput;
@@ -209,9 +212,7 @@ public class ModalOrderPage extends ParentPage {
     private WebElement cameraTitle;
 
 
-    public ModalOrderPage(WebDriver webDriver, Database dBMySQL) {
-        super(webDriver, "/dash/eld/", dBMySQL);
-    }
+
 
 /*
  PERSONAL DATA

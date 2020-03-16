@@ -1,6 +1,6 @@
 package pages;
 
-import libs.Database;
+import libs.UtilsForDB;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -8,8 +8,8 @@ import org.openqa.selenium.support.FindBy;
 import static libs.Utils.waitABit;
 
 public class LogsPage extends ParentPage {
-    public LogsPage(WebDriver webDriver, Database dBMySQL) {
-        super(webDriver, "/dash/drivers/", dBMySQL);
+    public LogsPage(WebDriver webDriver, UtilsForDB utilsForDB) {
+        super(webDriver, "/dash/drivers/", utilsForDB);
     }
     @FindBy(xpath = ".//button[text()='Correction & Annotation']")
     private WebElement buttonCorrection;

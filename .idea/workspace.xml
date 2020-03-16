@@ -2,11 +2,43 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="660eb711-957d-418e-9483-8b2931da6e6e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/pagesFrankestein/AccountSettingsFPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pagesFrankestein/DashboardFPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pagesFrankestein/EldFPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pagesFrankestein/EquipmentFPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pagesFrankestein/FinancesFPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pagesFrankestein/FleetDriversFPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pagesFrankestein/HelpAndTrainingFPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pagesFrankestein/LoginFPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pagesFrankestein/LogsFPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pagesFrankestein/ManagerEldFPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pagesFrankestein/ManagerModalEldFPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pagesFrankestein/ModalOrderFPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pagesFrankestein/OrderInfoFPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pagesFrankestein/ParentFPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pagesFrankestein/ReturnsFPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pagesFrankestein/SettingsFPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/frankesteinParamsTest/FleetOrderParamsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/frankesteinParamsTest/ManagerOrderParamsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/frankesteinParamsTest/SafetyAddCardParamsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/frankesteinParamsTest/SafetyCreateEquipmentParamTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/frankesteinParamsTest/SoloAddCardParamsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/frankesteinParamsTest/SoloDriverCreateEquipmentParamTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/frankesteinParamsTest/SoloDriverSettingsParameterizedTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/frankesteinParamsTest/SoloOrderParamsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/frankesteinTest/ReturnDevicesTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/frankesteinTest/equipmentTest/SoloDriverEquipmentTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/frankesteinTest/logbookTest/FourteenHourDrivingWindow.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/frankesteinTest/settingsTest/DriverLicenseParameterizedTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/frankesteinTest/settingsTest/SoloDriverSettingAccountTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/frankesteinTest/settingsTest/SoloDriverSettingsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/frankesteinTest/smartSafety/CancelSmartSafetyTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/frankesteinTest/smartSafety/ChargeSmartSafety.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/frankesteinTest/smartSafety/SmartSafetyOrderTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log/qalight.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/qalight.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/chargeTest/ChargeSmartSafety.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/oldSiteTest/smartSafety/ChargeSmartSafety.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/oldSiteTest/CancelSmartSafety.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/oldSiteTest/smartSafety/CancelSmartSafetyTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/oldSiteTest/SmartSafetyOrderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/oldSiteTest/smartSafety/SmartSafetyOrderTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/ParentPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/ParentPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/parentTest/ParentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/parentTest/ParentTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,7 +62,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Den-Work-28-10" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -45,12 +77,17 @@
   </component>
   <component name="ProjectId" id="1P0rmWrMh0xA0QVXeBejzL9RUNH" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="extract.method.default.visibility" value="private" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/java/frankesteinTest" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -65,17 +102,18 @@
       <recent name="parameterizedOrders" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\WorkSpace\src\test\java\frankesteinTest" />
+      <recent name="C:\WorkSpace\src\main\java\pagesFrankestein" />
+      <recent name="C:\WorkSpace\src\main\java" />
       <recent name="C:\workspace\testdevEzlogz" />
       <recent name="C:\WorkSpace\src\test\java\restTest" />
-      <recent name="C:\workspace\testdevEzlogz\src\main\java\pages" />
-      <recent name="C:\workspace\testdevEzlogz\src\main\java\data" />
-      <recent name="C:\workspace\testdevEzlogz\src\drivers" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="frankesteinParamsTest" />
+      <recent name="frankesteinTest.equipmentTest" />
+      <recent name="frankesteinTest.logbookTest" />
+      <recent name="frankesteinTest" />
       <recent name="parameterizedOrders" />
-      <recent name="pages" />
-      <recent name="loginTests" />
-      <recent name="orders" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\workspace\testdevEzlogz\src\main\java\data" />
@@ -84,80 +122,65 @@
       <recent name="C:\workspace\testdevEzlogz\src" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ChargeSmartSafety">
-    <configuration name="ChargeFleetSoloTest.chargeFleetTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.FleetOrderParamsTest.managerCanceledOrder">
+    <configuration name="FleetOrderParamsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="WorkSpace" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="oldSiteTest.smartSafety.*" />
+          <option name="PATTERN" value="frankesteinParamsTest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="chargeTest" />
-      <option name="MAIN_CLASS_NAME" value="chargeTest.ChargeFleetSoloTest" />
-      <option name="METHOD_NAME" value="chargeFleetTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ChargeSmartSafety" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="WorkSpace" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="oldSiteTest.smartSafety.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="oldSiteTest.smartSafety" />
-      <option name="MAIN_CLASS_NAME" value="oldSiteTest.smartSafety.ChargeSmartSafety" />
+      <option name="PACKAGE_NAME" value="frankesteinParamsTest" />
+      <option name="MAIN_CLASS_NAME" value="frankesteinParamsTest.FleetOrderParamsTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ManagerOrderFleetParamsTest.managerDoOrderFleetAgree" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="testdevEzlogz" />
+    <configuration name="FleetOrderParamsTest.managerCanceledOrder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="WorkSpace" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="parameterizedOrders.*" />
+          <option name="PATTERN" value="frankesteinParamsTest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="parameterizedOrders" />
-      <option name="MAIN_CLASS_NAME" value="parameterizedOrders.ManagerOrderFleetParamsTest" />
-      <option name="METHOD_NAME" value="managerDoOrderFleetAgree" />
+      <option name="PACKAGE_NAME" value="frankesteinParamsTest" />
+      <option name="MAIN_CLASS_NAME" value="frankesteinParamsTest.FleetOrderParamsTest" />
+      <option name="METHOD_NAME" value="managerCanceledOrder" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SmartSafetyOrderTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SafetyCreateEquipmentParamTest.addTruck" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="WorkSpace" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="oldSiteTest.smartSafety.*" />
+          <option name="PATTERN" value="oldSiteParameterizedTest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="oldSiteTest.smartSafety" />
-      <option name="MAIN_CLASS_NAME" value="oldSiteTest.smartSafety.SmartSafetyOrderTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="oldSiteParameterizedTest" />
+      <option name="MAIN_CLASS_NAME" value="oldSiteParameterizedTest.SafetyCreateEquipmentParamTest" />
+      <option name="METHOD_NAME" value="addTruck" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SoloOrderParamsTest.managerCompletedOrder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="testdevEzlogz" />
+    <configuration name="SmartSafetyOrderTest.orderSmartSafetyByCard" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="WorkSpace" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="parameterizedOrders.*" />
+          <option name="PATTERN" value="frankesteinTest.smartSafety.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="parameterizedOrders" />
-      <option name="MAIN_CLASS_NAME" value="parameterizedOrders.SoloOrderParamsTest" />
-      <option name="METHOD_NAME" value="managerCompletedOrder" />
+      <option name="PACKAGE_NAME" value="frankesteinTest.smartSafety" />
+      <option name="MAIN_CLASS_NAME" value="frankesteinTest.smartSafety.SmartSafetyOrderTest" />
+      <option name="METHOD_NAME" value="orderSmartSafetyByCard" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -174,6 +197,22 @@
       <option name="PACKAGE_NAME" value="testDB" />
       <option name="MAIN_CLASS_NAME" value="testDB.TestDataBase" />
       <option name="METHOD_NAME" value="getEventNewOrder" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestMethods.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="WorkSpace" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="unitTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="unitTest" />
+      <option name="MAIN_CLASS_NAME" value="unitTest.TestMethods" />
+      <option name="METHOD_NAME" value="test2" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -224,20 +263,20 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.TestDataBase.getEventNewOrder" />
-      <item itemvalue="JUnit.SoloOrderParamsTest.managerCompletedOrder" />
-      <item itemvalue="JUnit.ManagerOrderFleetParamsTest.managerDoOrderFleetAgree" />
       <item itemvalue="Maven.SoloOrders" />
-      <item itemvalue="JUnit.ChargeFleetSoloTest.chargeFleetTest" />
-      <item itemvalue="JUnit.SmartSafetyOrderTest" />
-      <item itemvalue="JUnit.ChargeSmartSafety" />
+      <item itemvalue="JUnit.TestMethods.test2" />
+      <item itemvalue="JUnit.SafetyCreateEquipmentParamTest.addTruck" />
+      <item itemvalue="JUnit.SmartSafetyOrderTest.orderSmartSafetyByCard" />
+      <item itemvalue="JUnit.FleetOrderParamsTest" />
+      <item itemvalue="JUnit.FleetOrderParamsTest.managerCanceledOrder" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ChargeSmartSafety" />
-        <item itemvalue="JUnit.SmartSafetyOrderTest" />
-        <item itemvalue="JUnit.ChargeFleetSoloTest.chargeFleetTest" />
-        <item itemvalue="JUnit.ManagerOrderFleetParamsTest.managerDoOrderFleetAgree" />
-        <item itemvalue="JUnit.SoloOrderParamsTest.managerCompletedOrder" />
+        <item itemvalue="JUnit.FleetOrderParamsTest.managerCanceledOrder" />
+        <item itemvalue="JUnit.FleetOrderParamsTest" />
+        <item itemvalue="JUnit.SmartSafetyOrderTest.orderSmartSafetyByCard" />
+        <item itemvalue="JUnit.SafetyCreateEquipmentParamTest.addTruck" />
+        <item itemvalue="JUnit.TestMethods.test2" />
       </list>
     </recent_temporary>
   </component>
@@ -258,34 +297,6 @@
       <workItem from="1562665338918" duration="52834000" />
       <workItem from="1562782581468" duration="9021000" />
       <workItem from="1562822119836" duration="58303000" />
-    </task>
-    <task id="LOCAL-00013" summary="excel test was added">
-      <created>1562874780044</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1562874780045</updated>
-    </task>
-    <task id="LOCAL-00014" summary="payment method test was added">
-      <created>1562958207356</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1562958207356</updated>
-    </task>
-    <task id="LOCAL-00015" summary="manager test was added">
-      <created>1563200958054</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1563200958054</updated>
-    </task>
-    <task id="LOCAL-00016" summary="take window test was added">
-      <created>1563221570752</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1563221570752</updated>
     </task>
     <task id="LOCAL-00017" summary="union manager test was added">
       <created>1563278049423</created>
@@ -602,7 +613,35 @@
       <option name="project" value="LOCAL" />
       <updated>1574784047810</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="refactoring db and charge methods was add">
+      <created>1583928736602</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1583928736602</updated>
+    </task>
+    <task id="LOCAL-00063" summary="refactoring db and charge methods was add">
+      <created>1583934410959</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1583934410959</updated>
+    </task>
+    <task id="LOCAL-00064" summary="try finally was add">
+      <created>1583938727494</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1583938727494</updated>
+    </task>
+    <task id="LOCAL-00065" summary="return test1 was add">
+      <created>1584022716995</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1584022716995</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -669,9 +708,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="count methods was add" />
-    <MESSAGE value="solo test refactor was add" />
-    <MESSAGE value="params test refactor was add" />
     <MESSAGE value="params manager test refactor was add" />
     <MESSAGE value="checkAC ELD status was add" />
     <MESSAGE value="checkAC ELD status Paid\Completed was add" />
@@ -694,29 +730,69 @@
     <MESSAGE value="test new tariff was add" />
     <MESSAGE value="test agreement new tariff was add" />
     <MESSAGE value="test charge new tariff was add" />
-    <option name="LAST_COMMIT_MESSAGE" value="test charge new tariff was add" />
+    <MESSAGE value="refactoring db and charge methods was add" />
+    <MESSAGE value="try finally was add" />
+    <MESSAGE value="return test1 was add" />
+    <option name="LAST_COMMIT_MESSAGE" value="return test1 was add" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1877" height="372" key="GridCell.Tab.0.bottom" timestamp="1583918963013">
+    <state x="-1230" y="276" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1583933178209">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="372" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1583918963013" />
-    <state width="1877" height="372" key="GridCell.Tab.0.center" timestamp="1583918963013">
-      <screen x="-1920" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="372" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1583918963013" />
-    <state width="1877" height="372" key="GridCell.Tab.0.left" timestamp="1583918963013">
-      <screen x="-1920" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="372" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1583918963013" />
-    <state width="1877" height="372" key="GridCell.Tab.0.right" timestamp="1583918963013">
-      <screen x="-1920" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="372" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1583918963013" />
-    <state x="812" y="243" key="RollbackChangesDialog" timestamp="1583915856240">
+    <state x="-1230" y="276" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1583933178209" />
+    <state x="463" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1584092575536">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="463" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1584092575536" />
+    <state x="-1306" y="115" key="CommitChangelistDialog2" timestamp="1584022716125">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1306" y="115" key="CommitChangelistDialog2/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1584022716125" />
+    <state width="1877" height="234" key="GridCell.Tab.0.bottom" timestamp="1584111276450">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="234" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1584111276450" />
+    <state width="1877" height="132" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1584101750853" />
+    <state width="1877" height="234" key="GridCell.Tab.0.center" timestamp="1584111276450">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="234" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1584111276450" />
+    <state width="1877" height="132" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1584101750853" />
+    <state width="1877" height="234" key="GridCell.Tab.0.left" timestamp="1584111276449">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="234" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1584111276449" />
+    <state width="1877" height="132" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1584101750853" />
+    <state width="1877" height="234" key="GridCell.Tab.0.right" timestamp="1584111276450">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="234" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1584111276450" />
+    <state width="1877" height="132" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1584101750853" />
+    <state width="1877" height="10" key="GridCell.Tab.1.bottom" timestamp="1583999520972">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="10" key="GridCell.Tab.1.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1583999520972" />
+    <state width="1877" height="10" key="GridCell.Tab.1.center" timestamp="1583999520971">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="10" key="GridCell.Tab.1.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1583999520971" />
+    <state width="1877" height="10" key="GridCell.Tab.1.left" timestamp="1583999520971">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="10" key="GridCell.Tab.1.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1583999520971" />
+    <state width="1877" height="10" key="GridCell.Tab.1.right" timestamp="1583999520972">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="10" key="GridCell.Tab.1.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1583999520972" />
+    <state x="-1108" y="243" key="RollbackChangesDialog" timestamp="1583932007354">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1108" y="243" key="RollbackChangesDialog/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1583932007354" />
     <state x="812" y="243" key="RollbackChangesDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1583915856240" />
+    <state x="-1368" y="254" key="Vcs.Push.Dialog.v2" timestamp="1584022726636">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1368" y="254" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1584022726636" />
     <state x="741" y="234" key="git4idea.branch.GitSmartOperationDialog" timestamp="1583915888400">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

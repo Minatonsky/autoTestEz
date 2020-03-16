@@ -1,7 +1,7 @@
 package pages;
 
 import io.qameta.allure.Step;
-import libs.Database;
+import libs.UtilsForDB;
 import org.junit.Assert;
 import org.openqa.selenium.Cookie;
 import org.openqa.selenium.WebDriver;
@@ -13,6 +13,10 @@ import java.util.Date;
 import static libs.Utils.waitABit;
 
 public class LoginPage extends ParentPage {
+    public LoginPage(WebDriver webDriver, UtilsForDB utilsForDB) {
+        super(webDriver, "/", utilsForDB);
+    }
+
 
     @FindBy(xpath = ".//*[@class='log_in btn-login']")
     private WebElement loginButton;
@@ -29,9 +33,8 @@ public class LoginPage extends ParentPage {
     @FindBy(xpath = ".//*[@id='validatePhone']//../*[@aria-label=\"Close\"]")
     private WebElement phoneVerificationClose;
 
-    public LoginPage(WebDriver webDriver, Database dBMySQL) {
-        super(webDriver, "/", dBMySQL);
-    }
+
+
 
     @Step
     public void openPage() {

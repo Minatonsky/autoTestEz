@@ -1,14 +1,14 @@
 package pages;
 
-import libs.Database;
+import libs.UtilsForDB;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 public class FleetDriversPage extends ParentPage {
 
-    public FleetDriversPage(WebDriver webDriver, Database dBMySQL) {
-        super(webDriver, "dash/fleet/fleetDrivers/", dBMySQL);
+    public FleetDriversPage(WebDriver webDriver, UtilsForDB utilsForDB) {
+        super(webDriver, "dash/fleet/fleetDrivers/", utilsForDB);
     }
 
     @FindBy(xpath = ".//a[@href='/dash/fleet/fleetDrivers/']")

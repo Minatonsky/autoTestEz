@@ -109,6 +109,7 @@ public class FleetOrderParamsTest extends ParentTest {
         String dueForLastOrder = utilsForDB.getLastDueForFleet(dataForFleet.get("fleetId").toString());
         dashboardPage.goToEldPage();
         eldPage.cancelEldDevices(idLastOrderAfterTest, quantityOfDevices, quantityCameraCP);
+        waitABit(10);
         String orderStatus = utilsForDB.getOrderStatus(idLastOrderAfterTest);
         checkAC("Order with devices is not canceled", eldPage.compareCancelStatusOrder(orderStatus, quantityOfDevices), true);
         checkAC("ELD is present in canceled order", utilsForDB.isEldBlinded(idLastOrderAfterTest), false);
@@ -131,6 +132,7 @@ public class FleetOrderParamsTest extends ParentTest {
         checkAC("Full Order Price is not correct", orderInfoPage.compareFullOrderPrice(dueForLastOrder), true);
         orderInfoPage.selectOrderStatus("2");
         orderInfoPage.clickButtonSave();
+        waitABit(10);
         String orderCancelStatus = utilsForDB.getOrderStatus(idLastOrderAfterTest);
         checkAC("Order with devices is not canceled", financesPage.compareCancelOrderStatus(orderCancelStatus), true);
         checkAC("ELD is present in canceled order", utilsForDB.isEldBlinded(idLastOrderAfterTest), false);
@@ -153,6 +155,7 @@ public class FleetOrderParamsTest extends ParentTest {
         managerEldPage.openOrderInfo(idLastOrderAfterTest);
         checkAC("Full Order Price is not correct", orderInfoPage.compareFullOrderPrice(dueForLastOrder), true);
         orderInfoPage.completedOrder();
+        waitABit(10);
 
         String orderStatus = utilsForDB.getOrderStatus(idLastOrderAfterTest);
         checkAC("Order is not completed", financesPage.compareCompletedOrderStatus(orderStatus), true);

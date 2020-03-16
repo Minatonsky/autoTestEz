@@ -1,16 +1,22 @@
 package pages;
 
-import libs.Database;
+import libs.UtilsForDB;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-import static libs.Utils.waitABit;
+import java.sql.SQLException;
+import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+
+import static libs.Utils.*;
 
 public class FinancesPage extends ParentPage {
 
-    public FinancesPage(WebDriver webDriver, Database dBMySQL) {
-        super(webDriver, "/dash/finances/", dBMySQL);
+    public FinancesPage(WebDriver webDriver, UtilsForDB utilsForDB) {
+        super(webDriver, "/dash/finances/", utilsForDB);
     }
 
     @FindBy(xpath = ".//*[@id='current_due']")
@@ -148,5 +154,12 @@ public class FinancesPage extends ParentPage {
                 logger.info("# tempPriceOrder = " + tempPriceOrder);
                 return Double.parseDouble(userBalance)*(-1) == tempPriceOrder;
         } else return false;
+    }
+
+    public LocalDateTime getDateTimeLastDue(String fleetSolo, String fleetId) throws SQLException {
+        List<ArrayList> ezDueList = utilsForDB.getLastDueDataList(fleetSolo, fleetId);
+        Map<String, Object> ezDueMap = listArrayToMap(ezDueList);
+        String dateTimeLD = ezDueMap.get("dateTime").toString();
+        return getLocalDateTimeFromString(dateTimeLD);
     }
 }
