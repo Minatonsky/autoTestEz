@@ -1,6 +1,6 @@
 package pages;
 
-import io.qameta.allure.Step;
+import libs.UtilsForDB;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -8,6 +8,11 @@ import org.openqa.selenium.support.FindBy;
 import static libs.Utils.waitABit;
 
 public class DashboardPage extends ParentPage {
+
+    public DashboardPage(WebDriver webDriver, UtilsForDB utilsForDB) {
+        super(webDriver, "/dash", utilsForDB);
+    }
+
     @FindBy(xpath = "//*[@id='dash_head']")
     private WebElement dashboard;
 
@@ -15,71 +20,106 @@ public class DashboardPage extends ParentPage {
     private WebElement menuDash;
 
     @FindBy(xpath = ".//a[@href='/dash/eld/']")
-    private WebElement menuPageELD;
+    private WebElement pageELD;
+
+    @FindBy(xpath = ".//a[@href='/dash/']")
+    private WebElement pageStatus;
+
+    @FindBy(xpath = ".//a[@href='/dash/reports/ifta/']")
+    private WebElement pageReports;
+
+    @FindBy(xpath = ".//a[@href='/dash/trucks/']")
+    private WebElement pageDvir;
+
+    @FindBy(xpath = ".//a[@href='/dash/live_scan/']")
+    private WebElement pageDocuments;
+
+    @FindBy(xpath = ".//a[@href='/dash/equipment/']")
+    private WebElement pageEquipment;
 
     @FindBy(xpath = ".//a[@href='/dash/finances/']")
-    private WebElement menuPageFinances;
+    private WebElement pageFinances;
+
+    @FindBy(xpath = ".//a[@href='/dash/ezchat/']")
+    private WebElement pageEzChat;
+
+    @FindBy(xpath = ".//a[@href='/dash/calendar/']")
+    private WebElement pageCalendar;
+
+    @FindBy(xpath = ".//a[@href='/dash/video_tutorial/']")
+    private WebElement pageHelp;
 
     @FindBy(xpath = ".//a[@href='/dash/settings/account/']")
-    private WebElement menuPageSettings;
+    private WebElement pageSettings;
+
+    @FindBy(xpath = ".//a[@href='/dash/drivers/']")
+    private WebElement pageLogs;
+
+    @FindBy(xpath = ".//a[@href='/dash/fleet/equipment/']")
+    private WebElement pageFleet;
+
+    @FindBy(xpath = ".//a[@href='/dash/returns/']")
+    private WebElement pageReturns;
 
     @FindBy(xpath = ".//i[@class='fa fa-angle-double-left minimize-arrow']")
     private WebElement menuSizeButton;
 
-    public DashboardPage(WebDriver webDriver) {
-
-        super(webDriver, "/dash");
-    }
 
     public boolean isDashboardPresent(){
         return actionsWithOurElements.isElementEnable(dashboard);
     }
 
-    public void clickOnMenuDash() {
-        actionsWithOurElements.clickOnElement(menuDash);
+    public void goToStatusPage(){
+        waitABit(2);
+        actionsWithOurElements.clickOnElement(pageStatus);
     }
-
-    public void clickOnMenuPageELD(){
-        actionsWithOurElements.clickOnElement(menuPageELD);
+    public void goToFleetPage(){
+        waitABit(1);
+        actionsWithOurElements.clickOnElement(pageFleet);
     }
-
-    public void clickOnMenuPageFinances(){
-        actionsWithOurElements.clickOnElement(menuPageFinances);
+    public void goToReportsPage(){
+        waitABit(2);
+        actionsWithOurElements.clickOnElement(pageReports);
     }
-    public void clickOnMenuPageSettings(){
-        actionsWithOurElements.clickOnElement(menuPageSettings);
+    public void goToLogsPage(){
+        waitABit(2);
+        actionsWithOurElements.clickOnElement(pageLogs);
     }
-
-    public void clickMenuSizeButton(){
-        actionsWithOurElements.clickOnElement(menuSizeButton);
+    public void goToDVIRPage(){
+        waitABit(2);
+        actionsWithOurElements.clickOnElement(pageDvir);
     }
-
-    @Step
-    public void openMenuDash(){
-        waitABit(3);
-        clickOnMenuDash();
-        waitABit(3);
-        clickMenuSizeButton();
-        waitABit(3);
+    public void goToDocumentsPage(){
+        waitABit(2);
+        actionsWithOurElements.clickOnElement(pageDocuments);
     }
-
-    @Step
+    public void goToEquipmentPage(){
+        waitABit(2);
+        actionsWithOurElements.clickOnElement(pageEquipment);}
+    public void goToEzChatPage(){
+        waitABit(2);
+        actionsWithOurElements.clickOnElement(pageEzChat);}
     public void goToEldPage(){
-        waitABit(3);
-        clickOnMenuPageELD();
-        waitABit(3);
+        waitABit(2);
+        actionsWithOurElements.clickOnElement(pageELD);
+    }
+    public void goToFinancesPage(){
+        waitABit(2);
+        actionsWithOurElements.clickOnElement(pageFinances);
+    }
+    public void goToCalendarPage(){
+        waitABit(2);
+        actionsWithOurElements.clickOnElement(pageCalendar);}
+    public void goToHelpAndTrainingPage(){
+        waitABit(2);
+        actionsWithOurElements.clickOnElement(pageHelp);}
+    public void goToSettingPage(){
+        waitABit(2);
+        actionsWithOurElements.clickOnElement(pageSettings);
+    }
+    public void goToReturnsPage() {
+        waitABit(2);
+        actionsWithOurElements.clickOnElement(pageReturns);
     }
 
-    @Step
-    public void goToFinancesPage(){
-        waitABit(3);
-        clickOnMenuPageFinances();
-        waitABit(3);
-    }
-    @Step
-    public void goToSettingPage(){
-        waitABit(3);
-        clickOnMenuPageSettings();
-        waitABit(3);
-    }
 }

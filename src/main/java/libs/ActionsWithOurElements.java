@@ -2,10 +2,7 @@ package libs;
 
 import org.apache.log4j.Logger;
 import org.junit.Assert;
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
@@ -30,6 +27,16 @@ public class ActionsWithOurElements {
         try{
             webDriverWait20.until(ExpectedConditions.visibilityOf(webElement));
             webElement.clear();
+            webElement.sendKeys(text);
+            logger.info(text + " was inputted into element");
+        } catch (Exception e){
+            printErrorAndStopTest(e);
+        }
+    }
+    public void clearAndEnterTextToElement(WebElement webElement, String text){
+        try{
+            webDriverWait20.until(ExpectedConditions.visibilityOf(webElement));
+            webElement.sendKeys(Keys.chord(Keys.CONTROL,"a", Keys.DELETE));;
             webElement.sendKeys(text);
             logger.info(text + " was inputted into element");
         } catch (Exception e){
@@ -152,28 +159,56 @@ public class ActionsWithOurElements {
         }
     }
 
-    public void clickOnPseudoElement(String xPathLocator) {
+    public void clickJsOnElement(WebElement webElement) {
         try {
-            WebElement webElement = webDriver.findElement(By.xpath(xPathLocator));
-            webDriverWait20.until(ExpectedConditions.elementToBeClickable(webElement));
-            clickOnElement(webElement);
+            JavascriptExecutor executor = (JavascriptExecutor) webDriver;
+            executor.executeScript("arguments[0].click();", webElement);
         } catch (Exception e){
             printErrorAndStopTest(e);
         }
     }
-    public void pseudoElement() throws InterruptedException {
-        String script = "return window.getComputedStyle(document.querySelector('Enter root class name here '),':after').getPropertyValue('content')";
-        Thread.sleep(3000);
-        JavascriptExecutor js = (JavascriptExecutor) webDriver;
-        String content = (String) js.executeScript(script);
 
+    public void sliderMove(String xPathLocator, int value){
+        try {
+            WebElement slider = webDriver.findElement(By.xpath(xPathLocator));
+            int width = slider.getSize().getWidth();
+            Actions act = new Actions(webDriver);
+            act.moveToElement(slider, ((width * value) / 100), 0).click();
+            act.build().perform();
+        } catch (Exception e){
+            printErrorAndStopTest(e);
+        }
+    }
 
-//        WebElement switchLabel = driver.findElement(By.cssSelector(".className"));
-//        String colorRGB = ((JavascriptExecutor)webDriver).executeScript("return window.getComputedStyle(arguments[0], ':before').getPropertyValue('background-color');",switchLabel).toString();
+    public void scrollByVisibleElement(WebElement webElement){
+        try {
+            JavascriptExecutor executor = (JavascriptExecutor) webDriver;
+            executor.executeScript("arguments[0].scrollIntoView();", webElement);
+        } catch (Exception e){
+            printErrorAndStopTest(e);
+        }
+    }
+
+    public void clickOnBlankArea(){
+        try{
+            webDriver.findElement(By.xpath("//body")).click();
+            logger.info("Element was clicked");
+        } catch (Exception e){
+            printErrorAndStopTest(e);
+        }
 
     }
 
+    public void addFileByJs(WebElement webElement, String path){
+        try{
+            JavascriptExecutor js = (JavascriptExecutor) webDriver;
+            js.executeScript("arguments[0].setAttribute('style', arguments[1])", webElement, "0");
+            webElement.sendKeys(path);
+        } catch (Exception e){
+            printErrorAndStopTest(e);
+        }
 
+    }
 
 }
 

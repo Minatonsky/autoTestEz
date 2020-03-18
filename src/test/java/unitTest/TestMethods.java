@@ -1,8 +1,9 @@
 package unitTest;
 
-import libs.UtilsForDB;
+import org.apache.log4j.Logger;
 import org.json.JSONObject;
 import org.junit.Test;
+import parentTest.ParentTestWithoutWebDriver;
 
 import java.io.IOException;
 import java.sql.SQLException;
@@ -11,34 +12,34 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.Period;
 import java.time.ZoneOffset;
+import java.time.format.DateTimeFormatter;
 import java.time.temporal.ChronoUnit;
 import java.time.temporal.TemporalAdjusters;
 import java.util.List;
-import java.util.logging.Logger;
+
+import static libs.Utils.genRandomDataByRegex;
+import static libs.Utils.isValidEmailAddress;
 // This test page is not using on test project, it just for check some methods
 
-public class TestMethods {
-// testtesttesttest
-    static Logger logger = Logger.getLogger(String.valueOf(TestMethods.class));
-    UtilsForDB utilsForDB = new UtilsForDB();
 
-
+public class TestMethods extends ParentTestWithoutWebDriver {
+    org.apache.log4j.Logger logger = Logger.getLogger(getClass());
 
     @Test
     public void testDBSetCurrentDueForFleet() throws SQLException, IOException, ClassNotFoundException {
-        UtilsForDB utilsForDB = new UtilsForDB();
-        utilsForDB.setCurrentDueForFleet("-1000", "518");
+        LocalDateTime yesterday = LocalDateTime.parse(LocalDateTime.now().minusDays(1).toString());
+        String startYesterday = yesterday.format(DateTimeFormatter.ofPattern("yyyy-MM-dd"));
+        System.out.println(startYesterday);
     }
 
     @Test
     public void testCancelEldDevices() throws SQLException, IOException, ClassNotFoundException {
-        UtilsForDB utilsForDB = new UtilsForDB();
         String idLastOrderAfterTest = "2460";
         List<String> localId = utilsForDB.getLocalIdDevices(idLastOrderAfterTest);
         logger.info(" result = " + localId.get(1));
-        for (String element:
+        for (String element :
                 localId
-             ) {
+        ) {
             System.out.println(element);
 
         }
@@ -51,24 +52,27 @@ public class TestMethods {
 
     @Test
     public void testIsEldBlinded() throws SQLException, IOException, ClassNotFoundException {
-        UtilsForDB utilsForDB = new UtilsForDB();
+
         String orderId = "3066";
         System.out.println(utilsForDB.isEldBlinded(orderId));
     }
+
     @Test
     public void testGetEldId() throws SQLException, IOException, ClassNotFoundException {
         String idOrder = "3064";
         List<String> tempIdEld = utilsForDB.getIdEldFromOrder(idOrder);
-        for (String element: tempIdEld
+        for (String element : tempIdEld
         ) {
             System.out.println(element);
         }
     }
+
     @Test
     public void testActionNewOrder() throws SQLException, IOException, ClassNotFoundException {
         String idOrder = "3075";
         utilsForDB.deleteEventNewOrder(idOrder);
     }
+
     @Test
     public void testGetParams() throws SQLException, IOException, ClassNotFoundException, ParseException {
         String soloOrFleetString = "fleet";
@@ -87,7 +91,7 @@ public class TestMethods {
             LocalDate deactivatedTill = LocalDate.parse(deactivateDate).plus(Period.ofDays(deactivateDays));
             int activeChargeDays = (int) ChronoUnit.DAYS.between(deactivatedTill, firstDayOfNextMonth);
 
-            if (activeChargeDays > 0){
+            if (activeChargeDays > 0) {
                 int deactivatedDays = monthDays - activeChargeDays;
                 double deactivatedCharge = 29.99 / 2 / monthDays * deactivatedDays;
                 double activeCharge = 29.99 / monthDays * activeChargeDays;
@@ -101,17 +105,19 @@ public class TestMethods {
         }
 
     }
+
     @Test
     public void compareCurrentDueFleetDefaulter() throws SQLException, IOException, ClassNotFoundException {
         double sumCharge = 29.99;
         String currentDueFleet = utilsForDB.getCurrentDueEzFinancesFleet("582");
-        boolean tempCompareDueFleet = - sumCharge== Double.parseDouble(currentDueFleet);
+        boolean tempCompareDueFleet = -sumCharge == Double.parseDouble(currentDueFleet);
 
         System.out.println(currentDueFleet);
         System.out.println(tempCompareDueFleet);
 
 
     }
+
     @Test
     public void checkDevicesIsNotPaid() throws SQLException, IOException, ClassNotFoundException {
         String fleetString = "fleet";
@@ -121,13 +127,15 @@ public class TestMethods {
         List<String> listOfStatuses = utilsForDB.getScannersStatus(stringOfActiveDevices);
         System.out.println("listOfStatuses count = " + listOfStatuses.size());
         System.out.println("listOfStatuses " + listOfStatuses);
-        for (String element:listOfStatuses) {
-            if (element.equals("1")){
+        for (String element : listOfStatuses) {
+            if (element.equals("1")) {
                 System.out.println("Ok ");
             } else System.out.println("No Ok ");
-        } System.out.println("#");
+        }
+        System.out.println("#");
 
     }
+
     @Test
     public void compareEldStatusInCompletedOrder() throws SQLException, IOException, ClassNotFoundException {
         LocalDateTime oneYear = LocalDateTime.parse(LocalDateTime.now().minusMonths(12).toString()).with(TemporalAdjusters.firstDayOfNextMonth());
@@ -135,13 +143,14 @@ public class TestMethods {
         String tempOneYear = Long.toString(firstDayOfNextMonth);
         System.out.println("firstDayOfNextMonth = " + tempOneYear);
     }
+
     @Test
     public void checkProratedAndNotReturnedFee() throws SQLException, IOException, ClassNotFoundException {
         String fleetId = "581";
         String fleetString = "fleet";
         String currentDueWithLateFee = "10";
 
-        List<String> listOfActiveDevices =  utilsForDB.getIdScannersByStatus(fleetString, fleetId, "4");
+        List<String> listOfActiveDevices = utilsForDB.getIdScannersByStatus(fleetString, fleetId, "4");
 
         LocalDateTime tempDate = LocalDateTime.parse(LocalDateTime.now().toString());
         long date = tempDate.toEpochSecond(ZoneOffset.UTC);
@@ -164,22 +173,29 @@ public class TestMethods {
 
 
     }
+
     @Test
     public void testFor() throws SQLException, IOException, ClassNotFoundException {
-        int monthToMonthTariff = 3;
-        String geometricsMonthlyTariffId = "9";
-        int tempTariffId = monthToMonthTariff % 2;
-        int tempTariffId2 = monthToMonthTariff - tempTariffId;
-        System.out.println(tempTariffId + " - " + tempTariffId2);
+        int currentDueFromDB = Integer.parseInt("-10000.00");
+        System.out.println(currentDueFromDB);
+
+        String test = Integer.toString(currentDueFromDB).replaceAll("\\D+", "");
+        System.out.println(test);
     }
+
     @Test
     public void getAmountEzDueMonthToMonth() throws SQLException, IOException, ClassNotFoundException {
-        String soloOrFleetString = "531";
-        String carrierId = "carrierId";
-        String timeRunCron = "2019-12-03 10:23:19";
+        String data = genRandomDataByRegex("[A-Z]{1}[a-z]{11}") + genRandomDataByRegex("[A-Z]{1}[a-z]{11}");
 
-        List<String> tempAmountList = utilsForDB.getAmountEzDueMonthToMonth( soloOrFleetString, carrierId, timeRunCron);
-        System.out.println(tempAmountList);
+        System.out.println(data);
 
     }
+    @Test
+    public void test(){
+        System.out.println(isValidEmailAddress("qqq.qq@r"));
+    }
+
+
+
 }
+
