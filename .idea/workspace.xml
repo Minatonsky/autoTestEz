@@ -246,8 +246,8 @@
       <item itemvalue="JUnit.ChargeFleetSoloTest.chargeFleetTest" />
       <item itemvalue="JUnit.ChargeMonthToMonthTariff.chargeMonthToMonthFleet" />
       <item itemvalue="JUnit.ChargeDefaultersTest.makeFleetDefaulter" />
-      <item itemvalue="Maven.SoloOrders" />
       <item itemvalue="JUnit.SoloDriverSettingsTest.setNewDataSettings" />
+      <item itemvalue="Maven.SoloOrders" />
     </list>
     <recent_temporary>
       <list>
