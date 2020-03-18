@@ -36,45 +36,34 @@ public class SoloAddCardParamsTest extends ParentTest {
 
         String cardNumber = genRandomCreditCard();
         String userId = utilsForDB.getUserIdByEmail(login);
-        loginPage.userValidLogIn(login, pass);
-        checkAC("User wasn`t logined", dashboardPage.isDashboardPresent(), true);
-        dashboardPage.goToReportsPage();
-        dashboardPage.goToLogsPage();
-        dashboardPage.goToDVIRPage();
-        dashboardPage.goToDocumentsPage();
+        loginFPage.logInAndOpenMenu(login, pass);
+        checkAC("User wasn`t logined", dashboardFPage.isDashboardPresent(), true);
+        dashboardFPage.goToReportsPage();
+        dashboardFPage.goToLogsPage();
+        dashboardFPage.goToDVIRPage();
+        dashboardFPage.goToDocumentsPage();
 
-        dashboardPage.goToEzChatPage();
-        dashboardPage.goToFinancesPage();
-        financesPage.goToRefunds();
-        financesPage.goToOrders();
-        financesPage.goToCards();
+        dashboardFPage.goToEzChatPage();
+        dashboardFPage.goToFinancesPage();
+        financesFPage.goToRefunds();
+        financesFPage.goToOrders();
+        financesFPage.goToCards();
 //        add card
         waitABit(3);
-        financesPage.clickOnAddCard();
+        financesFPage.clickOnAddCard();
         waitABit(3);
-        financesPage.enterNumberCard(cardNumber);
-        financesPage.enterCvv("1234");
-        financesPage.enterExpiryDateYY("2025");
-        financesPage.enterExpiryDateMM("10");
-        financesPage.clickOnPrimaryCard();
+        financesFPage.enterNumberCard(cardNumber);
+        financesFPage.enterCvv("1234");
+        financesFPage.enterExpiryDateYY("2025");
+        financesFPage.enterExpiryDateMM("10");
+        financesFPage.clickOnPrimaryCard();
         waitABit(3);
-        financesPage.clickOnCreateButton();
+        financesFPage.clickOnCreateButton();
         waitABit(3);
-        financesPage.clickOnCreateButtonConfirm();
+        financesFPage.clickOnCreateButtonConfirm();
         waitABit(5);
 
         checkAC("Card failed", utilsForDB.isCurrentCardSame(userId, cardNumber), true);
-        dashboardPage.goToEldPage();
-        eldPage.goToPaperLogPermissions();
-
-        dashboardPage.goToCalendarPage();
-        dashboardPage.goToHelpAndTrainingPage();
-        helpAndTrainingPage.goToSupportTicketsPage();
-        helpAndTrainingPage.goToUserReviewsOffersPage();
-        helpAndTrainingPage.goToFaqPage();
-
-        dashboardPage.goToSettingPage();
-        settingsPage.goToDriverSettings();
 
     }
 }

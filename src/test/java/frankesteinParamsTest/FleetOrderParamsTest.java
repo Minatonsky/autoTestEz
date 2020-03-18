@@ -56,7 +56,7 @@ public class FleetOrderParamsTest extends ParentTest {
         String idLastOrderBeforeTest = utilsForDB.getLastOrderId(fleetString, dataForFleet.get("fleetId").toString());
         utilsForDB.setCurrentDueForFleet(currentDue, dataForFleet.get("fleetId").toString());
 
-        loginFPage.userValidLogIn(dataForFleet.get("login").toString(), dataForFleet.get("pass").toString());
+        loginFPage.logInWithOutOpenMenu(dataForFleet.get("login").toString(), dataForFleet.get("pass").toString());
         dashboardFPage.goToSafetyPage();
         dashboardFPage.goToEldPage();
         eldFPage.clickOnOrderELD();
@@ -122,13 +122,13 @@ public class FleetOrderParamsTest extends ParentTest {
     @Test
     public void managerCanceledOrder() throws SQLException, IOException, ClassNotFoundException {
 
-//        tearDown();
-//        setUp();
+        tearDown();
+        setUp();
 
         String idLastOrderAfterTest = utilsForDB.getLastOrderId(fleetString, dataForFleet.get("fleetId").toString());
         String dueForLastOrder = utilsForDB.getLastDueForFleet(dataForFleet.get("fleetId").toString());
 
-        loginFPage.managerValidLogIn(dataForManagerValidLogIn.get("login").toString(), dataForManagerValidLogIn.get("pass").toString());
+        loginFPage.logInAndOpenMenu(dataForManagerValidLogIn.get("login").toString(), dataForManagerValidLogIn.get("pass").toString());
         dashboardFPage.goToEldPage();
         managerEldFPage.openOrderInfo(idLastOrderAfterTest);
         checkAC("Full Order Price is not correct", orderInfoFPage.compareFullOrderPrice(dueForLastOrder), true);
@@ -152,7 +152,7 @@ public class FleetOrderParamsTest extends ParentTest {
         String idLastOrderAfterTest = utilsForDB.getLastOrderId(fleetString, dataForFleet.get("fleetId").toString());
         String dueForLastOrder = utilsForDB.getLastDueForFleet(dataForFleet.get("fleetId").toString());
 
-        loginFPage.managerValidLogIn(dataForManagerValidLogIn.get("login").toString(), dataForManagerValidLogIn.get("pass").toString());
+        loginFPage.logInAndOpenMenu(dataForManagerValidLogIn.get("login").toString(), dataForManagerValidLogIn.get("pass").toString());
         dashboardFPage.goToEldPage();
         managerEldFPage.openOrderInfo(idLastOrderAfterTest);
         checkAC("Full Order Price is not correct", orderInfoFPage.compareFullOrderPrice(dueForLastOrder), true);

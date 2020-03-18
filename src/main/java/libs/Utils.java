@@ -7,6 +7,8 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 
+import javax.mail.internet.AddressException;
+import javax.mail.internet.InternetAddress;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -184,6 +186,16 @@ public class Utils {
     public static boolean compareDiffDateTime(LocalDateTime firstDateTime, LocalDateTime secondTime, int countMinutes){
         long diffMinutes = ChronoUnit.MINUTES.between(firstDateTime, secondTime);
         return diffMinutes < countMinutes && diffMinutes > (-countMinutes);
+    }
+    public static boolean isValidEmailAddress(String email) {
+        boolean result = true;
+        try {
+            InternetAddress emailAddr = new InternetAddress(email);
+            emailAddr.validate();
+        } catch (AddressException ex) {
+            result = false;
+        }
+        return result;
     }
 
 

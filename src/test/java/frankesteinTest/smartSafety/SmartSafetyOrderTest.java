@@ -31,7 +31,7 @@ public class SmartSafetyOrderTest extends ParentTest {
         String driverId = utilsForDB.getUserIdByEmail(randomDriverEmail);
         utilsForDB.deleteSmartSafetyFoDriver(driverId);
 
-        loginFPage.userValidLogIn(login, pass);
+        loginFPage.logInWithOutOpenMenu(login, pass);
         dashboardFPage.goToFleetPage();
         fleetDriversPage.goToDriverPage();
 
@@ -67,7 +67,7 @@ public class SmartSafetyOrderTest extends ParentTest {
         utilsForDB.setCurrentDueForFleet(Double.toString(balanceBeforeTest), fleetId);
         utilsForDB.setCurrentCard_0_Fleet(fleetId);
 
-        loginFPage.userValidLogIn(login, pass);
+        loginFPage.logInWithOutOpenMenu(login, pass);
         checkAC("User wasn`t logined", dashboardFPage.isDashboardPresent(), true);
         dashboardFPage.goToFleetPage();
         fleetDriversFPage.goToDriverPage();
@@ -107,7 +107,7 @@ public class SmartSafetyOrderTest extends ParentTest {
         utilsForDB.deleteSmartSafetyFoDriver(driverId);
         utilsForDB.setCurrentDueForFleet(Double.toString(balanceBeforeTest), fleetId);
 
-        loginFPage.userValidLogIn(login, pass);
+        loginFPage.logInWithOutOpenMenu(login, pass);
         checkAC("User wasn`t logined", dashboardFPage.isDashboardPresent(), true);
         dashboardFPage.goToFleetPage();
         fleetDriversFPage.goToDriverPage();
@@ -149,7 +149,7 @@ public class SmartSafetyOrderTest extends ParentTest {
             utilsForDB.setCurrentDueForFleet(Double.toString(balanceBeforeTest), fleetId);
             utilsForDB.setCurrentCard_0_Fleet(fleetId);
 
-            loginFPage.userValidLogIn(login, pass);
+            loginFPage.logInWithOutOpenMenu(login, pass);
             checkAC("User wasn`t logined", dashboardFPage.isDashboardPresent(), true);
             dashboardFPage.goToFleetPage();
             fleetDriversFPage.goToDriverPage();

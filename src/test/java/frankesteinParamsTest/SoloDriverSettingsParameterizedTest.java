@@ -71,45 +71,45 @@ public class SoloDriverSettingsParameterizedTest extends ParentTest {
         String stateNumber = dataForDLNumberState.get(randomState).toString();
 
 
-        loginPage.userValidLogIn(login, pass);
-        dashboardPage.goToSettingPage();
-        settingsPage.goToDriverSettings();
+        loginFPage.logInAndOpenMenu(login, pass);
+        dashboardFPage.goToSettingPage();
+        settingsFPage.goToDriverSettings();
         //    GENERAL
         waitABit(5);
-        settingsPage.enterSsn(ssn);
-        settingsPage.enterEin(ein);
-        settingsPage.checkEngineScoreStatus(hideEngineStatuses);
-        settingsPage.checkYardMode(yard);
-        settingsPage.checkConveyance(conveyance);
-        settingsPage.moveSliderAobrd(10);
+        settingsFPage.enterSsn(ssn);
+        settingsFPage.enterEin(ein);
+        settingsFPage.checkEngineScoreStatus(hideEngineStatuses);
+        settingsFPage.checkYardMode(yard);
+        settingsFPage.checkConveyance(conveyance);
+        settingsFPage.moveSliderAobrd(10);
 
 //    CONTACT INFO
-        settingsPage.selectState(state);
-        settingsPage.enterDriverCity(city);
-        settingsPage.enterDriverAddress(address);
-        settingsPage.enterPhone(phone);
-        settingsPage.checkSmsCheck(sms);
+        settingsFPage.selectState(state);
+        settingsFPage.enterDriverCity(city);
+        settingsFPage.enterDriverAddress(address);
+        settingsFPage.enterPhone(phone);
+        settingsFPage.checkSmsCheck(sms);
 
 //  ADMINISTRATIVE
-        settingsPage.enterDateMedCard(date);
-        settingsPage.enterDateBirth(date);
-        settingsPage.enterDateHire(date);
-        settingsPage.enterDateTerminate(date);
-        settingsPage.enterDateNotice(date);
-        settingsPage.checkHazMat(hazMat);
-        settingsPage.checkInsurance(insurance);
-        settingsPage.checkTanker(tankerEndorsment);
+        settingsFPage.enterDateMedCard(date);
+        settingsFPage.enterDateBirth(date);
+        settingsFPage.enterDateHire(date);
+        settingsFPage.enterDateTerminate(date);
+        settingsFPage.enterDateNotice(date);
+        settingsFPage.checkHazMat(hazMat);
+        settingsFPage.checkInsurance(insurance);
+        settingsFPage.checkTanker(tankerEndorsment);
 
 
 //    DRIVER'S LICENSE
-        settingsPage.enterNumberDl(dlNumber);
-        settingsPage.selectStateDl(stateNumber);
-        settingsPage.enterExpirationDl(date);
-        settingsPage.enterNote(note);
-        settingsPage.clickOnBlankArea();
+        settingsFPage.enterNumberDl(dlNumber);
+        settingsFPage.selectStateDl(stateNumber);
+        settingsFPage.enterExpirationDl(date);
+        settingsFPage.enterNote(note);
+        settingsFPage.clickOnBlankArea();
 
         waitABit(3);
-        settingsPage.clickOnSave();
+        settingsFPage.clickOnSave();
         waitABit(5);
         List<ArrayList> tempDataSettingsList = utilsForDB.getDataDriverSettings(userId);
         Map<String, Object> tempDataSettingsMap = listArrayToMap(tempDataSettingsList);
@@ -162,8 +162,8 @@ public class SoloDriverSettingsParameterizedTest extends ParentTest {
         String cycleTypeRandomValue = Integer.toString(genRandomNumberBetweenTwoValues(0 , 8));
         String timeZoneTypeRandomValue = Integer.toString(genRandomNumberBetweenTwoValues(0 , 8));
 
-        loginPage.userValidLogIn(login, pass);
-        dashboardPage.goToSettingPage();
+        loginFPage.logInAndOpenMenu(login, pass);
+        dashboardFPage.goToSettingPage();
 
         waitABit(5);
         String soundNotificaitonBT = "1";
@@ -172,19 +172,19 @@ public class SoloDriverSettingsParameterizedTest extends ParentTest {
         String newNotificaitonsBoxBT = "1";
 
 //ACCOUNT INFO
-        accountSettingsPage.enterFirstName(firstName);
-        accountSettingsPage.enterLastName(LastName);
+        accountSettingsFPage.enterFirstName(firstName);
+        accountSettingsFPage.enterLastName(LastName);
 //        accountSettingsPage.enterPhone(phone);
-        accountSettingsPage.clickSaveAccountInfo();
+        accountSettingsFPage.clickSaveAccountInfo();
 
         // DRIVER INFO
-        accountSettingsPage.setCycle(cycle, cycleTypeRandomValue);
-        accountSettingsPage.setTimeZone(timeZone, timeZoneTypeRandomValue);
-        accountSettingsPage.setOdometer(odometer);
-        accountSettingsPage.setRestBreak(restBreak);
-        accountSettingsPage.setAppLog(appLog);
-        accountSettingsPage.setCargoType(cargoType, cargoTypeRandomValue);
-        accountSettingsPage.clickSaveDriverInfo();
+        accountSettingsFPage.setCycle(cycle, cycleTypeRandomValue);
+        accountSettingsFPage.setTimeZone(timeZone, timeZoneTypeRandomValue);
+        accountSettingsFPage.setOdometer(odometer);
+        accountSettingsFPage.setRestBreak(restBreak);
+        accountSettingsFPage.setAppLog(appLog);
+        accountSettingsFPage.setCargoType(cargoType, cargoTypeRandomValue);
+        accountSettingsFPage.clickSaveDriverInfo();
 
         List<ArrayList> tempDataList = utilsForDB.getUsersAndDriversRulesData(login);
         Map<String, Object> userDataAfterTestMap = listArrayToMap(tempDataList);
@@ -199,10 +199,10 @@ public class SoloDriverSettingsParameterizedTest extends ParentTest {
         checkAC("App log failed", userDataAfterTestMap.get("logIncrementId").equals(appLog), false);
         checkAC("Cargo type failed", userDataAfterTestMap.get("cargoTypeId").equals(cargoType), false);
 
-        accountSettingsPage.setSoundNotification(soundNotificaitonBT);
-        accountSettingsPage.setCoordinatesIcon(locationIconWarningBT);
-        accountSettingsPage.setScoreCard(showScoreCardBT);
-        accountSettingsPage.setNotificationBox(newNotificaitonsBoxBT);
+        accountSettingsFPage.setSoundNotification(soundNotificaitonBT);
+        accountSettingsFPage.setCoordinatesIcon(locationIconWarningBT);
+        accountSettingsFPage.setScoreCard(showScoreCardBT);
+        accountSettingsFPage.setNotificationBox(newNotificaitonsBoxBT);
 
         waitABit(5);
         String soundNotificaiton = getValueCookieNamed("soundNotificaiton");

@@ -141,6 +141,12 @@
             <artifactId>generex</artifactId>
             <version>1.0.2</version>
         </dependency>
+        <dependency>
+            <groupId>com.sun.mail</groupId>
+            <artifactId>javax.mail</artifactId>
+            <version>1.6.2</version>
+        </dependency>
+
 
 
 
@@ -183,6 +189,7 @@
                         <version>${aspectj.version}</version>
                     </dependency>
                 </dependencies>
+
             </plugin>
             <plugin>
                 <groupId>io.qameta.allure</groupId>

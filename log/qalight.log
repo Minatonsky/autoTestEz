@@ -3437,3 +3437,1691 @@ Session ID: 186ebc728131a8091a61d4a04e0dd4c8
 2020-13-03 15:32:07   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
 2020-13-03 15:32:07   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
 2020-13-03 15:32:07   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-03 17:11:57   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-13-03 17:11:59   INFO [unitTest.TestMethods] :  DB Connection Closed 
+2020-13-03 17:12:45   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-13-03 17:12:47   INFO [unitTest.TestMethods] :  DB Connection Closed 
+2020-13-03 17:16:10   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-13-03 17:16:12   INFO [unitTest.TestMethods] :  DB Connection Closed 
+2020-13-03 17:18:50   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-13-03 17:18:52   INFO [unitTest.TestMethods] :  DB Connection Closed 
+2020-16-03 13:50:09   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-16-03 13:50:11   INFO [unitTest.TestMethods] :  DB Connection Closed 
+2020-16-03 14:04:01   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : Chrome will be started
+2020-16-03 14:04:23   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : Chrome is started
+2020-16-03 14:04:27   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-16-03 14:04:36   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-16-03 14:04:36   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:04:37   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2020-16-03 14:04:37   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-16-03 14:04:37   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:07:25   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : Chrome will be started
+2020-16-03 14:07:31   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : Chrome is started
+2020-16-03 14:07:35   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-16-03 14:07:43   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-16-03 14:07:43   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:07:44   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2020-16-03 14:07:44   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-16-03 14:07:44   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:08:29   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2020-16-03 14:08:29   INFO [pagesFrankestein.LoginFPage] : There is not phone verification pop up
+2020-16-03 14:08:31   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:08:32   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:08:32   INFO [pagesFrankestein.EldFPage] : User have not Order with status New
+2020-16-03 14:08:35   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:08:37   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:08:40   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-16-03 14:08:42   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:08:42   INFO [libs.ActionsWithOurElements] : 1 was selected in Drop-down
+2020-16-03 14:08:42   INFO [libs.ActionsWithOurElements] : Nick was inputted into element
+2020-16-03 14:08:42   INFO [libs.ActionsWithOurElements] : Caved was inputted into element
+2020-16-03 14:08:43   INFO [libs.ActionsWithOurElements] : 0676475006 was inputted into element
+2020-16-03 14:08:43   INFO [libs.ActionsWithOurElements] : Kyiv was inputted into element
+2020-16-03 14:08:43   INFO [libs.ActionsWithOurElements] : 5 was inputted into element
+2020-16-03 14:08:43   INFO [libs.ActionsWithOurElements] : Kyiv was inputted into element
+2020-16-03 14:08:43   INFO [libs.ActionsWithOurElements] : 36206 was inputted into element
+2020-16-03 14:08:44   INFO [libs.ActionsWithOurElements] : 2 was selected in Drop-down
+2020-16-03 14:08:46   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2020-16-03 14:08:51   INFO [pagesFrankestein.ModalOrderFPage] : No Pin Cable in order
+2020-16-03 14:08:51   INFO [pagesFrankestein.ModalOrderFPage] : No OBDP Cable in order
+2020-16-03 14:08:51   INFO [pagesFrankestein.ModalOrderFPage] : No Sticker in order
+2020-16-03 14:08:51   INFO [pagesFrankestein.ModalOrderFPage] : No Camera CP in order
+2020-16-03 14:08:51   INFO [pagesFrankestein.ModalOrderFPage] : No cd card in order
+2020-16-03 14:08:51   INFO [pagesFrankestein.ModalOrderFPage] : No camera sva in order
+2020-16-03 14:08:53   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:08:53   INFO [libs.ActionsWithOurElements] : checkbox was checked
+2020-16-03 14:08:53   INFO [libs.ActionsWithOurElements] : checkbox is already unchecked
+2020-16-03 14:08:53   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:08:54   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:08:54   INFO [pagesFrankestein.ModalOrderFPage] : Payment Method Smart oneYearSubscription was selected
+2020-16-03 14:08:54   INFO [pagesFrankestein.ModalOrderFPage] : Payment Method Camera was not selected, no camera in order
+2020-16-03 14:08:55   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : AC passed
+2020-16-03 14:08:56   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : AC passed
+2020-16-03 14:09:16   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2020-16-03 14:09:17   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : AC passed
+2020-16-03 14:09:18   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : AC passed
+2020-16-03 14:09:19   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : AC passed
+2020-16-03 14:09:20   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : AC passed
+2020-16-03 14:09:21   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : AC passed
+2020-16-03 14:09:22   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : AC passed
+2020-16-03 14:09:23   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : AC passed
+2020-16-03 14:09:24   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : AC passed
+2020-16-03 14:09:25   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : AC passed
+2020-16-03 14:09:26   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : AC passed
+2020-16-03 14:09:46   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2020-16-03 14:09:47   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : AC passed
+2020-16-03 14:09:47   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:09:51   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : AC passed
+2020-16-03 14:09:52   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : AC passed
+2020-16-03 14:09:54   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : AC passed
+2020-16-03 14:09:54   INFO [frankesteinParamsTest.ManagerOrderParamsTest] :  DB connection closed 
+2020-16-03 14:09:54   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : Chrome will be started
+2020-16-03 14:09:59   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : Chrome is started
+2020-16-03 14:10:03   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-16-03 14:10:10   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-16-03 14:10:10   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:10:10   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-16-03 14:10:10   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-16-03 14:10:10   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:10:16   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-16-03 14:10:16   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:10:16   INFO [pagesFrankestein.LoginFPage] : Phone verification pop up Closed
+2020-16-03 14:10:29   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-16-03 14:10:32   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-16-03 14:10:34   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:10:34   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:10:44   INFO [pagesFrankestein.ModalOrderFPage] : Order was approve
+2020-16-03 14:10:56   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:10:56   INFO [pagesFrankestein.FinancesFPage] : Do not need pay invoice
+2020-16-03 14:10:57   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : AC passed
+2020-16-03 14:10:57   INFO [pagesFrankestein.FinancesFPage] : orderStatus = 3
+2020-16-03 14:10:58   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : AC passed
+2020-16-03 14:11:00   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : AC passed
+2020-16-03 14:11:00   INFO [frankesteinParamsTest.ManagerOrderParamsTest] :  DB connection closed 
+2020-16-03 14:11:00   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : Chrome will be started
+2020-16-03 14:11:05   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : Chrome is started
+2020-16-03 14:11:09   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-16-03 14:11:17   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-16-03 14:11:17   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:11:17   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2020-16-03 14:11:17   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-16-03 14:11:17   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:12:02   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2020-16-03 14:12:02   INFO [pagesFrankestein.LoginFPage] : There is not phone verification pop up
+2020-16-03 14:12:05   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:12:07   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:12:09   INFO [libs.ActionsWithOurElements] : 4245 was inputted into element
+2020-16-03 14:12:11   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:12:13   INFO [pagesFrankestein.OrderInfoFPage] : getFullOrderPrice 499.88
+2020-16-03 14:12:13   INFO [pagesFrankestein.OrderInfoFPage] : dueForLastOrder 499.88
+2020-16-03 14:12:14   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : AC passed
+2020-16-03 14:12:16   INFO [libs.ActionsWithOurElements] : 4 was selected in Drop-down
+2020-16-03 14:12:19   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:12:21   INFO [libs.ActionsWithOurElements] : 1 was selected in Drop-down
+2020-16-03 14:12:23   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:12:24  ERROR [frankesteinParamsTest.ManagerOrderParamsTest] : AC failed: Order is not completed
+2020-16-03 14:12:24   INFO [frankesteinParamsTest.ManagerOrderParamsTest] :  DB connection closed 
+2020-16-03 14:12:25   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : Chrome will be started
+2020-16-03 14:12:30   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : Chrome is started
+2020-16-03 14:12:34   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-16-03 14:16:28   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : Chrome will be started
+2020-16-03 14:16:35   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : Chrome is started
+2020-16-03 14:16:39   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-16-03 14:16:46   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-16-03 14:16:47   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:16:47   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2020-16-03 14:16:47   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-16-03 14:16:47   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:17:33   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2020-16-03 14:17:33   INFO [pagesFrankestein.LoginFPage] : There is not phone verification pop up
+2020-16-03 14:17:35   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:17:36   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:17:36   INFO [pagesFrankestein.EldFPage] : User have not Order with status New
+2020-16-03 14:17:38   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:17:41   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:17:43   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-16-03 14:17:45   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:17:45   INFO [libs.ActionsWithOurElements] : 1 was selected in Drop-down
+2020-16-03 14:17:46   INFO [libs.ActionsWithOurElements] : Nick was inputted into element
+2020-16-03 14:17:46   INFO [libs.ActionsWithOurElements] : Caved was inputted into element
+2020-16-03 14:17:46   INFO [libs.ActionsWithOurElements] : 0676475006 was inputted into element
+2020-16-03 14:17:46   INFO [libs.ActionsWithOurElements] : Kyiv was inputted into element
+2020-16-03 14:17:46   INFO [libs.ActionsWithOurElements] : 5 was inputted into element
+2020-16-03 14:17:47   INFO [libs.ActionsWithOurElements] : Kyiv was inputted into element
+2020-16-03 14:17:47   INFO [libs.ActionsWithOurElements] : 36206 was inputted into element
+2020-16-03 14:17:47   INFO [libs.ActionsWithOurElements] : 2 was selected in Drop-down
+2020-16-03 14:17:49   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2020-16-03 14:17:54   INFO [pagesFrankestein.ModalOrderFPage] : No Pin Cable in order
+2020-16-03 14:17:54   INFO [pagesFrankestein.ModalOrderFPage] : No OBDP Cable in order
+2020-16-03 14:17:54   INFO [pagesFrankestein.ModalOrderFPage] : No Sticker in order
+2020-16-03 14:17:54   INFO [pagesFrankestein.ModalOrderFPage] : No Camera CP in order
+2020-16-03 14:17:54   INFO [pagesFrankestein.ModalOrderFPage] : No cd card in order
+2020-16-03 14:17:54   INFO [pagesFrankestein.ModalOrderFPage] : No camera sva in order
+2020-16-03 14:17:57   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:17:57   INFO [libs.ActionsWithOurElements] : checkbox was checked
+2020-16-03 14:17:57   INFO [libs.ActionsWithOurElements] : checkbox is already unchecked
+2020-16-03 14:17:57   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:17:57   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:17:57   INFO [pagesFrankestein.ModalOrderFPage] : Payment Method Smart oneYearSubscription was selected
+2020-16-03 14:17:57   INFO [pagesFrankestein.ModalOrderFPage] : Payment Method Camera was not selected, no camera in order
+2020-16-03 14:17:58   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : AC passed
+2020-16-03 14:17:59   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : AC passed
+2020-16-03 14:18:19   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2020-16-03 14:18:20   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : AC passed
+2020-16-03 14:18:21   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : AC passed
+2020-16-03 14:18:22   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : AC passed
+2020-16-03 14:18:23   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : AC passed
+2020-16-03 14:18:24   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : AC passed
+2020-16-03 14:18:25   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : AC passed
+2020-16-03 14:18:26   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : AC passed
+2020-16-03 14:18:27   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : AC passed
+2020-16-03 14:18:28   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : AC passed
+2020-16-03 14:18:29   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : AC passed
+2020-16-03 14:18:49   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2020-16-03 14:18:50   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : AC passed
+2020-16-03 14:18:51   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:18:55   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : AC passed
+2020-16-03 14:18:56   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : AC passed
+2020-16-03 14:18:57   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : AC passed
+2020-16-03 14:18:57   INFO [frankesteinParamsTest.ManagerOrderParamsTest] :  DB connection closed 
+2020-16-03 14:18:58   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : Chrome will be started
+2020-16-03 14:19:03   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : Chrome is started
+2020-16-03 14:19:07   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-16-03 14:19:14   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-16-03 14:19:14   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:19:14   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-16-03 14:19:14   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-16-03 14:19:14   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:19:20   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-16-03 14:19:20   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:19:20   INFO [pagesFrankestein.LoginFPage] : Phone verification pop up Closed
+2020-16-03 14:19:33   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-16-03 14:19:35   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-16-03 14:19:38   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:19:38   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:19:48   INFO [pagesFrankestein.ModalOrderFPage] : Order was approve
+2020-16-03 14:20:00   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:20:00   INFO [pagesFrankestein.FinancesFPage] : Do not need pay invoice
+2020-16-03 14:20:01   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : AC passed
+2020-16-03 14:20:01   INFO [pagesFrankestein.FinancesFPage] : orderStatus = 3
+2020-16-03 14:20:02   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : AC passed
+2020-16-03 14:20:04   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : AC passed
+2020-16-03 14:20:04   INFO [frankesteinParamsTest.ManagerOrderParamsTest] :  DB connection closed 
+2020-16-03 14:20:04   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : Chrome will be started
+2020-16-03 14:20:09   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : Chrome is started
+2020-16-03 14:20:13   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-16-03 14:20:20   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-16-03 14:20:20   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:20:20   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2020-16-03 14:20:21   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-16-03 14:20:21   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:21:06   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2020-16-03 14:21:06   INFO [pagesFrankestein.LoginFPage] : There is not phone verification pop up
+2020-16-03 14:21:08   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:21:10   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:21:13   INFO [libs.ActionsWithOurElements] : 4246 was inputted into element
+2020-16-03 14:21:15   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:21:17   INFO [pagesFrankestein.OrderInfoFPage] : getFullOrderPrice 499.88
+2020-16-03 14:21:17   INFO [pagesFrankestein.OrderInfoFPage] : dueForLastOrder 499.88
+2020-16-03 14:21:18   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : AC passed
+2020-16-03 14:21:20   INFO [libs.ActionsWithOurElements] : 4 was selected in Drop-down
+2020-16-03 14:21:22   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:21:24   INFO [libs.ActionsWithOurElements] : 1 was selected in Drop-down
+2020-16-03 14:21:27   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:21:31   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : AC passed
+2020-16-03 14:21:32   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : AC passed
+2020-16-03 14:21:33   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : AC passed
+2020-16-03 14:21:33   INFO [frankesteinParamsTest.ManagerOrderParamsTest] :  DB connection closed 
+2020-16-03 14:21:34   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : Chrome will be started
+2020-16-03 14:21:39   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : Chrome is started
+2020-16-03 14:21:43   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-16-03 14:21:50   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-16-03 14:21:50   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:21:50   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2020-16-03 14:21:50   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-16-03 14:21:50   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:25:37   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : Chrome will be started
+2020-16-03 14:25:43   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : Chrome is started
+2020-16-03 14:25:48   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-16-03 14:25:55   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-16-03 14:25:55   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:25:55   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2020-16-03 14:25:55   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-16-03 14:25:56   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:26:41   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2020-16-03 14:26:41   INFO [pagesFrankestein.LoginFPage] : There is not phone verification pop up
+2020-16-03 14:26:43   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:26:44   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:26:44   INFO [pagesFrankestein.EldFPage] : User have not Order with status New
+2020-16-03 14:26:47   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:26:49   INFO [libs.ActionsWithOurElements] : 45645647 was inputted into element
+2020-16-03 14:26:51   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:26:53   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:26:55   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:26:56   INFO [libs.ActionsWithOurElements] : 1 was selected in Drop-down
+2020-16-03 14:26:56   INFO [libs.ActionsWithOurElements] : Nick was inputted into element
+2020-16-03 14:26:56   INFO [libs.ActionsWithOurElements] : Caved was inputted into element
+2020-16-03 14:26:56   INFO [libs.ActionsWithOurElements] : 0676475006 was inputted into element
+2020-16-03 14:26:56   INFO [libs.ActionsWithOurElements] : Kyiv was inputted into element
+2020-16-03 14:26:57   INFO [libs.ActionsWithOurElements] : 5 was inputted into element
+2020-16-03 14:26:57   INFO [libs.ActionsWithOurElements] : Kyiv was inputted into element
+2020-16-03 14:26:57   INFO [libs.ActionsWithOurElements] : 36206 was inputted into element
+2020-16-03 14:26:57   INFO [libs.ActionsWithOurElements] : 2 was selected in Drop-down
+2020-16-03 14:26:59   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2020-16-03 14:27:04   INFO [pagesFrankestein.ModalOrderFPage] : No Pin Cable in order
+2020-16-03 14:27:04   INFO [pagesFrankestein.ModalOrderFPage] : No OBDP Cable in order
+2020-16-03 14:27:04   INFO [pagesFrankestein.ModalOrderFPage] : No Sticker in order
+2020-16-03 14:27:04   INFO [pagesFrankestein.ModalOrderFPage] : No Camera CP in order
+2020-16-03 14:27:04   INFO [pagesFrankestein.ModalOrderFPage] : No cd card in order
+2020-16-03 14:27:04   INFO [pagesFrankestein.ModalOrderFPage] : No camera sva in order
+2020-16-03 14:27:07   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:27:07   INFO [libs.ActionsWithOurElements] : checkbox was checked
+2020-16-03 14:27:07   INFO [libs.ActionsWithOurElements] : checkbox is already unchecked
+2020-16-03 14:27:07   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:27:07   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:27:07   INFO [pagesFrankestein.ModalOrderFPage] : Payment Method Smart oneYearSubscription was selected
+2020-16-03 14:27:07   INFO [pagesFrankestein.ModalOrderFPage] : Payment Method Camera was not selected, no camera in order
+2020-16-03 14:27:08   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : AC passed
+2020-16-03 14:27:09   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : AC passed
+2020-16-03 14:27:29   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2020-16-03 14:27:30   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : AC passed
+2020-16-03 14:27:31   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : AC passed
+2020-16-03 14:27:32   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : AC passed
+2020-16-03 14:27:33   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : AC passed
+2020-16-03 14:27:34   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : AC passed
+2020-16-03 14:27:35   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : AC passed
+2020-16-03 14:27:36   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : AC passed
+2020-16-03 14:27:37   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : AC passed
+2020-16-03 14:27:38   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : AC passed
+2020-16-03 14:27:39   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : AC passed
+2020-16-03 14:28:00   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2020-16-03 14:28:01   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : AC passed
+2020-16-03 14:28:01   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:28:05   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : AC passed
+2020-16-03 14:28:06   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : AC passed
+2020-16-03 14:28:07   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : AC passed
+2020-16-03 14:28:07   INFO [frankesteinParamsTest.ManagerOrderParamsTest] :  DB connection closed 
+2020-16-03 14:28:08   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : Chrome will be started
+2020-16-03 14:28:13   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : Chrome is started
+2020-16-03 14:28:17   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-16-03 14:28:27   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-16-03 14:28:27   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:28:27   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-16-03 14:28:27   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-16-03 14:28:28   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:28:54   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2020-16-03 14:28:54   INFO [pagesFrankestein.LoginFPage] : There is not phone verification pop up
+2020-16-03 14:29:00   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-16-03 14:29:02   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-16-03 14:29:04   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:29:04   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:29:07   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:29:10   INFO [pagesFrankestein.ModalOrderFPage] : Order was canceled
+2020-16-03 14:29:14   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : AC passed
+2020-16-03 14:29:16   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : AC passed
+2020-16-03 14:29:16   INFO [pagesFrankestein.FinancesFPage] : usersBalance -10000.0
+2020-16-03 14:29:17   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : AC passed
+2020-16-03 14:29:17   INFO [frankesteinParamsTest.ManagerOrderParamsTest] :  DB connection closed 
+2020-16-03 14:29:17   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : Chrome will be started
+2020-16-03 14:29:23   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : Chrome is started
+2020-16-03 14:29:27   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-16-03 14:29:37   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-16-03 14:29:37   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:29:37   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2020-16-03 14:29:37   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-16-03 14:29:37   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:30:22   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2020-16-03 14:30:22   INFO [pagesFrankestein.LoginFPage] : There is not phone verification pop up
+2020-16-03 14:30:24   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:30:26   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:30:26   INFO [pagesFrankestein.EldFPage] : User have not Order with status New
+2020-16-03 14:30:28   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:30:30   INFO [libs.ActionsWithOurElements] : 45645647 was inputted into element
+2020-16-03 14:30:33   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:30:35   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:30:37   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:30:37   INFO [libs.ActionsWithOurElements] : 1 was selected in Drop-down
+2020-16-03 14:30:37   INFO [libs.ActionsWithOurElements] : Nick was inputted into element
+2020-16-03 14:30:38   INFO [libs.ActionsWithOurElements] : Caved was inputted into element
+2020-16-03 14:30:38   INFO [libs.ActionsWithOurElements] : 0676475006 was inputted into element
+2020-16-03 14:30:38   INFO [libs.ActionsWithOurElements] : Kyiv was inputted into element
+2020-16-03 14:30:38   INFO [libs.ActionsWithOurElements] : 5 was inputted into element
+2020-16-03 14:30:38   INFO [libs.ActionsWithOurElements] : Kyiv was inputted into element
+2020-16-03 14:30:39   INFO [libs.ActionsWithOurElements] : 36206 was inputted into element
+2020-16-03 14:30:39   INFO [libs.ActionsWithOurElements] : 2 was selected in Drop-down
+2020-16-03 14:30:41   INFO [libs.ActionsWithOurElements] : 10 was inputted into element
+2020-16-03 14:30:46   INFO [libs.ActionsWithOurElements] : 2 was inputted into element
+2020-16-03 14:30:47   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2020-16-03 14:30:57   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : Chrome will be started
+2020-16-03 14:31:04   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : Chrome is started
+2020-16-03 14:31:08   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-16-03 14:31:16   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-16-03 14:31:16   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:31:16   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2020-16-03 14:31:16   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-16-03 14:31:16   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:32:01   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2020-16-03 14:32:01   INFO [pagesFrankestein.LoginFPage] : There is not phone verification pop up
+2020-16-03 14:32:04   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:32:05   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:32:05   INFO [pagesFrankestein.EldFPage] : User have not Order with status New
+2020-16-03 14:32:07   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:32:10   INFO [libs.ActionsWithOurElements] : 45645647 was inputted into element
+2020-16-03 14:32:12   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:32:14   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:32:16   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:32:16   INFO [libs.ActionsWithOurElements] : 1 was selected in Drop-down
+2020-16-03 14:32:17   INFO [libs.ActionsWithOurElements] : Nick was inputted into element
+2020-16-03 14:32:17   INFO [libs.ActionsWithOurElements] : Caved was inputted into element
+2020-16-03 14:32:17   INFO [libs.ActionsWithOurElements] : 0676475006 was inputted into element
+2020-16-03 14:32:17   INFO [libs.ActionsWithOurElements] : Kyiv was inputted into element
+2020-16-03 14:32:17   INFO [libs.ActionsWithOurElements] : 5 was inputted into element
+2020-16-03 14:32:17   INFO [libs.ActionsWithOurElements] : Kyiv was inputted into element
+2020-16-03 14:32:18   INFO [libs.ActionsWithOurElements] : 36206 was inputted into element
+2020-16-03 14:32:18   INFO [libs.ActionsWithOurElements] : 2 was selected in Drop-down
+2020-16-03 14:32:20   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2020-16-03 14:32:25   INFO [pagesFrankestein.ModalOrderFPage] : No Pin Cable in order
+2020-16-03 14:32:25   INFO [pagesFrankestein.ModalOrderFPage] : No OBDP Cable in order
+2020-16-03 14:32:25   INFO [pagesFrankestein.ModalOrderFPage] : No Sticker in order
+2020-16-03 14:32:25   INFO [pagesFrankestein.ModalOrderFPage] : No Camera CP in order
+2020-16-03 14:32:25   INFO [pagesFrankestein.ModalOrderFPage] : No cd card in order
+2020-16-03 14:32:25   INFO [pagesFrankestein.ModalOrderFPage] : No camera sva in order
+2020-16-03 14:32:27   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:32:27   INFO [libs.ActionsWithOurElements] : checkbox was checked
+2020-16-03 14:32:28   INFO [libs.ActionsWithOurElements] : checkbox is already unchecked
+2020-16-03 14:32:28   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:32:28   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:32:28   INFO [pagesFrankestein.ModalOrderFPage] : Payment Method Smart oneYearSubscription was selected
+2020-16-03 14:32:28   INFO [pagesFrankestein.ModalOrderFPage] : Payment Method Camera was not selected, no camera in order
+2020-16-03 14:32:29   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : AC passed
+2020-16-03 14:32:30   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : AC passed
+2020-16-03 14:32:50   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2020-16-03 14:32:51   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : AC passed
+2020-16-03 14:32:52   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : AC passed
+2020-16-03 14:32:53   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : AC passed
+2020-16-03 14:32:54   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : AC passed
+2020-16-03 14:32:55   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : AC passed
+2020-16-03 14:32:56   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : AC passed
+2020-16-03 14:32:57   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : AC passed
+2020-16-03 14:32:58   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : AC passed
+2020-16-03 14:32:59   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : AC passed
+2020-16-03 14:33:00   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : AC passed
+2020-16-03 14:33:20   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2020-16-03 14:33:21   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : AC passed
+2020-16-03 14:33:21   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:33:26   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : AC passed
+2020-16-03 14:33:27   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : AC passed
+2020-16-03 14:33:28   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : AC passed
+2020-16-03 14:33:28   INFO [frankesteinParamsTest.ManagerOrderParamsTest] :  DB connection closed 
+2020-16-03 14:33:28   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : Chrome will be started
+2020-16-03 14:33:34   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : Chrome is started
+2020-16-03 14:33:38   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-16-03 14:33:44   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-16-03 14:33:44   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:33:44   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-16-03 14:33:45   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-16-03 14:33:45   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:34:11   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2020-16-03 14:34:11   INFO [pagesFrankestein.LoginFPage] : There is not phone verification pop up
+2020-16-03 14:34:14   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-16-03 14:34:16   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-16-03 14:34:18   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:34:18   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:34:28   INFO [pagesFrankestein.ModalOrderFPage] : Order was approve
+2020-16-03 14:34:54  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (c74cf670fb4efed3525858c4beb677f9)] -> xpath: .//a[@href='/dash/finances/']] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'DESKTOP-0PTGLHV', ip: '192.168.88.57', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.132, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\1\AppData\Local\Te...}, goog:chromeOptions: {debuggerAddress: localhost:57628}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c74cf670fb4efed3525858c4beb677f9
+2020-16-03 14:34:54   INFO [frankesteinParamsTest.ManagerOrderParamsTest] :  DB connection closed 
+2020-16-03 14:34:54   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : Chrome will be started
+2020-16-03 14:36:36   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : Chrome will be started
+2020-16-03 14:36:43   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : Chrome is started
+2020-16-03 14:36:47   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-16-03 14:36:56   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-16-03 14:36:56   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:36:56   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2020-16-03 14:36:56   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-16-03 14:36:56   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:37:41   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2020-16-03 14:37:41   INFO [pagesFrankestein.LoginFPage] : There is not phone verification pop up
+2020-16-03 14:37:44   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:37:45   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:37:45   INFO [pagesFrankestein.EldFPage] : User have not Order with status New
+2020-16-03 14:37:47   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:37:50   INFO [libs.ActionsWithOurElements] : 45645647 was inputted into element
+2020-16-03 14:37:52   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:37:54   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:37:56   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:37:57   INFO [libs.ActionsWithOurElements] : 1 was selected in Drop-down
+2020-16-03 14:37:57   INFO [libs.ActionsWithOurElements] : Nick was inputted into element
+2020-16-03 14:37:57   INFO [libs.ActionsWithOurElements] : Caved was inputted into element
+2020-16-03 14:37:57   INFO [libs.ActionsWithOurElements] : 0676475006 was inputted into element
+2020-16-03 14:37:57   INFO [libs.ActionsWithOurElements] : Kyiv was inputted into element
+2020-16-03 14:37:57   INFO [libs.ActionsWithOurElements] : 5 was inputted into element
+2020-16-03 14:37:58   INFO [libs.ActionsWithOurElements] : Kyiv was inputted into element
+2020-16-03 14:37:58   INFO [libs.ActionsWithOurElements] : 36206 was inputted into element
+2020-16-03 14:37:58   INFO [libs.ActionsWithOurElements] : 2 was selected in Drop-down
+2020-16-03 14:38:00   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2020-16-03 14:38:05   INFO [pagesFrankestein.ModalOrderFPage] : No Pin Cable in order
+2020-16-03 14:38:05   INFO [pagesFrankestein.ModalOrderFPage] : No OBDP Cable in order
+2020-16-03 14:38:05   INFO [pagesFrankestein.ModalOrderFPage] : No Sticker in order
+2020-16-03 14:38:05   INFO [pagesFrankestein.ModalOrderFPage] : No Camera CP in order
+2020-16-03 14:38:05   INFO [pagesFrankestein.ModalOrderFPage] : No cd card in order
+2020-16-03 14:38:05   INFO [pagesFrankestein.ModalOrderFPage] : No camera sva in order
+2020-16-03 14:38:08   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:38:08   INFO [libs.ActionsWithOurElements] : checkbox was checked
+2020-16-03 14:38:08   INFO [libs.ActionsWithOurElements] : checkbox is already unchecked
+2020-16-03 14:38:08   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:38:08   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:38:08   INFO [pagesFrankestein.ModalOrderFPage] : Payment Method Smart oneYearSubscription was selected
+2020-16-03 14:38:08   INFO [pagesFrankestein.ModalOrderFPage] : Payment Method Camera was not selected, no camera in order
+2020-16-03 14:38:10   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : AC passed
+2020-16-03 14:38:11   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : AC passed
+2020-16-03 14:38:31   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2020-16-03 14:38:32   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : AC passed
+2020-16-03 14:38:33   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : AC passed
+2020-16-03 14:38:34   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : AC passed
+2020-16-03 14:38:35   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : AC passed
+2020-16-03 14:38:36   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : AC passed
+2020-16-03 14:38:37   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : AC passed
+2020-16-03 14:38:38   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : AC passed
+2020-16-03 14:38:39   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : AC passed
+2020-16-03 14:38:40   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : AC passed
+2020-16-03 14:38:41   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : AC passed
+2020-16-03 14:39:01   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2020-16-03 14:39:02   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : AC passed
+2020-16-03 14:39:02   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:39:06   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : AC passed
+2020-16-03 14:39:07   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : AC passed
+2020-16-03 14:39:08   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : AC passed
+2020-16-03 14:39:08   INFO [frankesteinParamsTest.ManagerOrderParamsTest] :  DB connection closed 
+2020-16-03 14:39:09   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : Chrome will be started
+2020-16-03 14:39:14   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : Chrome is started
+2020-16-03 14:39:18   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-16-03 14:39:25   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-16-03 14:39:25   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:39:25   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-16-03 14:39:25   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-16-03 14:39:25   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:39:51   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2020-16-03 14:39:51   INFO [pagesFrankestein.LoginFPage] : There is not phone verification pop up
+2020-16-03 14:39:54   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-16-03 14:39:56   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-16-03 14:39:59   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:39:59   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:40:09   INFO [pagesFrankestein.ModalOrderFPage] : Order was approve
+2020-16-03 14:40:14   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:40:16   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:40:16   INFO [pagesFrankestein.FinancesFPage] : Do not need pay invoice
+2020-16-03 14:40:23   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : AC passed
+2020-16-03 14:40:23   INFO [pagesFrankestein.FinancesFPage] : orderStatus = 3
+2020-16-03 14:40:24   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : AC passed
+2020-16-03 14:40:25   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : AC passed
+2020-16-03 14:40:25   INFO [frankesteinParamsTest.ManagerOrderParamsTest] :  DB connection closed 
+2020-16-03 14:40:25   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : Chrome will be started
+2020-16-03 14:40:31   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : Chrome is started
+2020-16-03 14:40:35   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-16-03 14:40:42   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-16-03 14:40:42   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:40:42   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2020-16-03 14:40:42   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-16-03 14:40:42   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:41:27   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2020-16-03 14:41:27   INFO [pagesFrankestein.LoginFPage] : There is not phone verification pop up
+2020-16-03 14:41:30   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:41:32   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:41:34   INFO [libs.ActionsWithOurElements] : 4249 was inputted into element
+2020-16-03 14:41:36   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:41:38   INFO [pagesFrankestein.OrderInfoFPage] : getFullOrderPrice 499.88
+2020-16-03 14:41:38   INFO [pagesFrankestein.OrderInfoFPage] : dueForLastOrder 499.88
+2020-16-03 14:41:39   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : AC passed
+2020-16-03 14:41:41   INFO [libs.ActionsWithOurElements] : 4 was selected in Drop-down
+2020-16-03 14:41:44   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:41:46   INFO [libs.ActionsWithOurElements] : 1 was selected in Drop-down
+2020-16-03 14:41:48   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:41:49  ERROR [frankesteinParamsTest.ManagerOrderParamsTest] : AC failed: Order is not completed
+2020-16-03 14:41:49   INFO [frankesteinParamsTest.ManagerOrderParamsTest] :  DB connection closed 
+2020-16-03 14:41:50   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : Chrome will be started
+2020-16-03 14:42:44   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : Chrome will be started
+2020-16-03 14:42:51   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : Chrome is started
+2020-16-03 14:42:55   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-16-03 14:43:03   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-16-03 14:43:03   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:43:04   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2020-16-03 14:43:04   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-16-03 14:43:04   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:43:49   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2020-16-03 14:43:49   INFO [pagesFrankestein.LoginFPage] : There is not phone verification pop up
+2020-16-03 14:43:51   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:43:52   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:43:52   INFO [pagesFrankestein.EldFPage] : User have not Order with status New
+2020-16-03 14:43:55   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:43:57   INFO [libs.ActionsWithOurElements] : 45645647 was inputted into element
+2020-16-03 14:43:59   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:44:02   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:44:04   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:44:04   INFO [libs.ActionsWithOurElements] : 1 was selected in Drop-down
+2020-16-03 14:44:04   INFO [libs.ActionsWithOurElements] : Nick was inputted into element
+2020-16-03 14:44:04   INFO [libs.ActionsWithOurElements] : Caved was inputted into element
+2020-16-03 14:44:05   INFO [libs.ActionsWithOurElements] : 0676475006 was inputted into element
+2020-16-03 14:44:05   INFO [libs.ActionsWithOurElements] : Kyiv was inputted into element
+2020-16-03 14:44:05   INFO [libs.ActionsWithOurElements] : 5 was inputted into element
+2020-16-03 14:44:05   INFO [libs.ActionsWithOurElements] : Kyiv was inputted into element
+2020-16-03 14:44:05   INFO [libs.ActionsWithOurElements] : 36206 was inputted into element
+2020-16-03 14:44:06   INFO [libs.ActionsWithOurElements] : 2 was selected in Drop-down
+2020-16-03 14:44:08   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2020-16-03 14:44:13   INFO [pagesFrankestein.ModalOrderFPage] : No Pin Cable in order
+2020-16-03 14:44:13   INFO [pagesFrankestein.ModalOrderFPage] : No OBDP Cable in order
+2020-16-03 14:44:13   INFO [pagesFrankestein.ModalOrderFPage] : No Sticker in order
+2020-16-03 14:44:13   INFO [pagesFrankestein.ModalOrderFPage] : No Camera CP in order
+2020-16-03 14:44:13   INFO [pagesFrankestein.ModalOrderFPage] : No cd card in order
+2020-16-03 14:44:13   INFO [pagesFrankestein.ModalOrderFPage] : No camera sva in order
+2020-16-03 14:44:15   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:44:15   INFO [libs.ActionsWithOurElements] : checkbox was checked
+2020-16-03 14:44:15   INFO [libs.ActionsWithOurElements] : checkbox is already unchecked
+2020-16-03 14:44:15   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:44:15   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:44:15   INFO [pagesFrankestein.ModalOrderFPage] : Payment Method Smart oneYearSubscription was selected
+2020-16-03 14:44:15   INFO [pagesFrankestein.ModalOrderFPage] : Payment Method Camera was not selected, no camera in order
+2020-16-03 14:44:17   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : AC passed
+2020-16-03 14:44:18   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : AC passed
+2020-16-03 14:44:38   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2020-16-03 14:44:39   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : AC passed
+2020-16-03 14:44:40   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : AC passed
+2020-16-03 14:44:41   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : AC passed
+2020-16-03 14:44:42   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : AC passed
+2020-16-03 14:44:43   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : AC passed
+2020-16-03 14:44:44   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : AC passed
+2020-16-03 14:44:45   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : AC passed
+2020-16-03 14:44:46   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : AC passed
+2020-16-03 14:44:47   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : AC passed
+2020-16-03 14:44:48   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : AC passed
+2020-16-03 14:45:08   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2020-16-03 14:45:09   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : AC passed
+2020-16-03 14:45:09   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:45:14   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : AC passed
+2020-16-03 14:45:15   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : AC passed
+2020-16-03 14:45:16   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : AC passed
+2020-16-03 14:45:16   INFO [frankesteinParamsTest.ManagerOrderParamsTest] :  DB connection closed 
+2020-16-03 14:45:16   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : Chrome will be started
+2020-16-03 14:45:22   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : Chrome is started
+2020-16-03 14:45:26   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-16-03 14:45:33   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-16-03 14:45:33   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:45:34   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-16-03 14:45:34   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-16-03 14:45:34   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:46:00   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2020-16-03 14:46:00   INFO [pagesFrankestein.LoginFPage] : There is not phone verification pop up
+2020-16-03 14:46:06   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-16-03 14:46:08   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-16-03 14:46:10   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:46:10   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:46:13   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:46:16   INFO [pagesFrankestein.ModalOrderFPage] : Order was canceled
+2020-16-03 14:46:21   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : AC passed
+2020-16-03 14:46:22   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : AC passed
+2020-16-03 14:46:22   INFO [pagesFrankestein.FinancesFPage] : usersBalance -10000.0
+2020-16-03 14:46:23   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : AC passed
+2020-16-03 14:46:23   INFO [frankesteinParamsTest.ManagerOrderParamsTest] :  DB connection closed 
+2020-16-03 14:46:24   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : Chrome will be started
+2020-16-03 14:46:29   INFO [frankesteinParamsTest.ManagerOrderParamsTest] : Chrome is started
+2020-16-03 14:47:05   INFO [frankesteinParamsTest.FleetOrderParamsTest] : Chrome will be started
+2020-16-03 14:47:11   INFO [frankesteinParamsTest.FleetOrderParamsTest] : Chrome is started
+2020-16-03 14:47:16   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-16-03 14:47:18   INFO [pagesFrankestein.EldFPage] : User have not Order with status New
+2020-16-03 14:47:23   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-16-03 14:47:24   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:47:24   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-16-03 14:47:24   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-16-03 14:47:24   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:47:50   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2020-16-03 14:47:50   INFO [pagesFrankestein.LoginFPage] : There is not phone verification pop up
+2020-16-03 14:47:53   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:47:55   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:47:55   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:47:56   INFO [libs.ActionsWithOurElements] : 1 was selected in Drop-down
+2020-16-03 14:47:56   INFO [libs.ActionsWithOurElements] : Nick was inputted into element
+2020-16-03 14:47:57   INFO [libs.ActionsWithOurElements] : Caved was inputted into element
+2020-16-03 14:47:57   INFO [libs.ActionsWithOurElements] : 0676475006 was inputted into element
+2020-16-03 14:47:57   INFO [libs.ActionsWithOurElements] : Kyiv was inputted into element
+2020-16-03 14:47:57   INFO [libs.ActionsWithOurElements] : 5 was inputted into element
+2020-16-03 14:47:57   INFO [libs.ActionsWithOurElements] : Kyiv was inputted into element
+2020-16-03 14:47:58   INFO [libs.ActionsWithOurElements] : 36206 was inputted into element
+2020-16-03 14:47:58   INFO [libs.ActionsWithOurElements] : 2 was selected in Drop-down
+2020-16-03 14:48:00   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2020-16-03 14:48:05   INFO [pagesFrankestein.ModalOrderFPage] : No Pin Cable in order
+2020-16-03 14:48:05   INFO [pagesFrankestein.ModalOrderFPage] : No OBDP Cable in order
+2020-16-03 14:48:05   INFO [pagesFrankestein.ModalOrderFPage] : No Sticker in order
+2020-16-03 14:48:05   INFO [pagesFrankestein.ModalOrderFPage] : No Camera CP in order
+2020-16-03 14:48:05   INFO [pagesFrankestein.ModalOrderFPage] : No cd card in order
+2020-16-03 14:48:05   INFO [pagesFrankestein.ModalOrderFPage] : No camera sva in order
+2020-16-03 14:48:07   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:48:07   INFO [libs.ActionsWithOurElements] : checkbox was checked
+2020-16-03 14:48:08   INFO [libs.ActionsWithOurElements] : checkbox is already unchecked
+2020-16-03 14:48:08   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:48:08   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:48:08   INFO [pagesFrankestein.ModalOrderFPage] : Payment Method Smart oneYearSubscription was selected
+2020-16-03 14:48:08   INFO [pagesFrankestein.ModalOrderFPage] : Payment Method Camera was not selected, no camera in order
+2020-16-03 14:48:12   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 14:48:13   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 14:48:33   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2020-16-03 14:48:34   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 14:48:35   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 14:48:36   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 14:48:37   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 14:48:38   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 14:48:39   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 14:48:40   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 14:48:41   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 14:48:42   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 14:48:43   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 14:49:03   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2020-16-03 14:49:04   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 14:49:04   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:49:07   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-16-03 14:49:09   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-16-03 14:49:12   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:49:12   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:49:12   INFO [pagesFrankestein.ModalOrderFPage] : Agreement ELD was agreed
+2020-16-03 14:49:12   INFO [pagesFrankestein.ModalOrderFPage] : No agreement camera in order
+2020-16-03 14:49:12   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:49:18   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 14:49:18   INFO [pagesFrankestein.FinancesFPage] : orderStatus = 3
+2020-16-03 14:49:19   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 14:49:20   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 14:49:21   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 14:49:23   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 14:49:25   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:49:28   INFO [libs.ActionsWithOurElements] : 1136 was inputted into element
+2020-16-03 14:49:32   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:49:35   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:49:38   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:49:49   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 14:49:50   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 14:49:50   INFO [pagesFrankestein.FinancesFPage] : usersBalance -10000.0
+2020-16-03 14:49:51   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 14:49:51   INFO [frankesteinParamsTest.FleetOrderParamsTest] :  DB connection closed 
+2020-16-03 14:49:52   INFO [frankesteinParamsTest.FleetOrderParamsTest] : Chrome will be started
+2020-16-03 14:49:57   INFO [frankesteinParamsTest.FleetOrderParamsTest] : Chrome is started
+2020-16-03 14:50:01   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-16-03 14:50:03   INFO [pagesFrankestein.EldFPage] : User have not Order with status New
+2020-16-03 14:50:09   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-16-03 14:50:09   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:50:09   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-16-03 14:50:09   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-16-03 14:50:09   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:50:35   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2020-16-03 14:50:35   INFO [pagesFrankestein.LoginFPage] : There is not phone verification pop up
+2020-16-03 14:50:37   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:50:40   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:50:40   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:50:41   INFO [libs.ActionsWithOurElements] : 1 was selected in Drop-down
+2020-16-03 14:50:41   INFO [libs.ActionsWithOurElements] : Nick was inputted into element
+2020-16-03 14:50:41   INFO [libs.ActionsWithOurElements] : Caved was inputted into element
+2020-16-03 14:50:42   INFO [libs.ActionsWithOurElements] : 0676475006 was inputted into element
+2020-16-03 14:50:42   INFO [libs.ActionsWithOurElements] : Kyiv was inputted into element
+2020-16-03 14:50:42   INFO [libs.ActionsWithOurElements] : 5 was inputted into element
+2020-16-03 14:50:42   INFO [libs.ActionsWithOurElements] : Kyiv was inputted into element
+2020-16-03 14:50:42   INFO [libs.ActionsWithOurElements] : 36206 was inputted into element
+2020-16-03 14:50:43   INFO [libs.ActionsWithOurElements] : 2 was selected in Drop-down
+2020-16-03 14:50:45   INFO [libs.ActionsWithOurElements] : 10 was inputted into element
+2020-16-03 14:50:50   INFO [libs.ActionsWithOurElements] : 2 was inputted into element
+2020-16-03 14:50:50   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2020-16-03 14:50:51   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2020-16-03 14:50:51   INFO [pagesFrankestein.ModalOrderFPage] : No Camera CP in order
+2020-16-03 14:50:51   INFO [pagesFrankestein.ModalOrderFPage] : No cd card in order
+2020-16-03 14:50:51   INFO [pagesFrankestein.ModalOrderFPage] : No camera sva in order
+2020-16-03 14:50:53   INFO [libs.ActionsWithOurElements] : checkbox is already unchecked
+2020-16-03 14:50:53   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:50:53   INFO [libs.ActionsWithOurElements] : checkbox was checked
+2020-16-03 14:50:53   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:50:54   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:50:54   INFO [pagesFrankestein.ModalOrderFPage] : Payment Method Smart monthToMonth was selected
+2020-16-03 14:50:54   INFO [pagesFrankestein.ModalOrderFPage] : Payment Method Camera was not selected, no camera in order
+2020-16-03 14:50:58   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 14:50:59   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 14:50:59   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-16-03 14:51:00   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 14:51:01   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 14:51:02   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 14:51:03   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 14:51:04   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 14:51:05   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 14:51:06   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 14:51:07   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 14:51:08   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 14:51:09   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 14:51:09   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-16-03 14:51:10   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 14:51:10   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:51:13   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-16-03 14:51:15   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-16-03 14:51:17   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:51:18   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:51:18   INFO [pagesFrankestein.ModalOrderFPage] : Agreement ELD was agreed
+2020-16-03 14:51:18   INFO [pagesFrankestein.ModalOrderFPage] : No agreement camera in order
+2020-16-03 14:51:18   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:51:24   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 14:51:24   INFO [pagesFrankestein.FinancesFPage] : orderStatus = 3
+2020-16-03 14:51:25   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 14:51:26   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 14:51:27   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 14:51:28   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 14:51:31   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:51:34   INFO [libs.ActionsWithOurElements] : 1136 was inputted into element
+2020-16-03 14:51:37   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:51:40   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:51:44   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:51:47   INFO [libs.ActionsWithOurElements] : 1137 was inputted into element
+2020-16-03 14:51:50   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:51:53   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:51:56   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:51:59   INFO [libs.ActionsWithOurElements] : 1138 was inputted into element
+2020-16-03 14:52:03   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:52:06   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:52:09   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:52:12   INFO [libs.ActionsWithOurElements] : 1139 was inputted into element
+2020-16-03 14:52:15   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:52:18   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:52:22   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:52:25   INFO [libs.ActionsWithOurElements] : 1140 was inputted into element
+2020-16-03 14:52:28   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:52:31   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:52:34   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:52:37   INFO [libs.ActionsWithOurElements] : 1141 was inputted into element
+2020-16-03 14:52:40   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:52:44   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:52:47   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:52:50   INFO [libs.ActionsWithOurElements] : 1142 was inputted into element
+2020-16-03 14:52:53   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:52:56   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:52:59   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:53:03   INFO [libs.ActionsWithOurElements] : 1143 was inputted into element
+2020-16-03 14:53:06   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:53:09   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:53:12   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:53:15   INFO [libs.ActionsWithOurElements] : 1144 was inputted into element
+2020-16-03 14:53:18   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:53:21   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:53:25   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:53:28   INFO [libs.ActionsWithOurElements] : 1145 was inputted into element
+2020-16-03 14:53:31   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:53:34   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:53:37   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:53:48   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 14:53:49   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 14:53:50   INFO [pagesFrankestein.FinancesFPage] : usersBalance -10000.0
+2020-16-03 14:53:51   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 14:53:51   INFO [frankesteinParamsTest.FleetOrderParamsTest] :  DB connection closed 
+2020-16-03 14:53:51   INFO [frankesteinParamsTest.FleetOrderParamsTest] : Chrome will be started
+2020-16-03 14:54:15   INFO [frankesteinParamsTest.FleetOrderParamsTest] : Chrome will be started
+2020-16-03 14:54:21   INFO [frankesteinParamsTest.FleetOrderParamsTest] : Chrome is started
+2020-16-03 14:54:25   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-16-03 14:54:27   INFO [pagesFrankestein.EldFPage] : User have not Order with status New
+2020-16-03 14:54:34   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-16-03 14:54:34   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:54:34   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-16-03 14:54:34   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-16-03 14:54:34   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:55:01   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2020-16-03 14:55:01   INFO [pagesFrankestein.LoginFPage] : There is not phone verification pop up
+2020-16-03 14:55:03   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:55:06   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:55:06   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:55:07   INFO [libs.ActionsWithOurElements] : 1 was selected in Drop-down
+2020-16-03 14:55:07   INFO [libs.ActionsWithOurElements] : Nick was inputted into element
+2020-16-03 14:55:07   INFO [libs.ActionsWithOurElements] : Caved was inputted into element
+2020-16-03 14:55:08   INFO [libs.ActionsWithOurElements] : 0676475006 was inputted into element
+2020-16-03 14:55:08   INFO [libs.ActionsWithOurElements] : Kyiv was inputted into element
+2020-16-03 14:55:08   INFO [libs.ActionsWithOurElements] : 5 was inputted into element
+2020-16-03 14:55:08   INFO [libs.ActionsWithOurElements] : Kyiv was inputted into element
+2020-16-03 14:55:08   INFO [libs.ActionsWithOurElements] : 36206 was inputted into element
+2020-16-03 14:55:09   INFO [libs.ActionsWithOurElements] : 2 was selected in Drop-down
+2020-16-03 14:55:11   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2020-16-03 14:55:16   INFO [pagesFrankestein.ModalOrderFPage] : No Pin Cable in order
+2020-16-03 14:55:16   INFO [pagesFrankestein.ModalOrderFPage] : No OBDP Cable in order
+2020-16-03 14:55:16   INFO [pagesFrankestein.ModalOrderFPage] : No Sticker in order
+2020-16-03 14:55:16   INFO [pagesFrankestein.ModalOrderFPage] : No Camera CP in order
+2020-16-03 14:55:16   INFO [pagesFrankestein.ModalOrderFPage] : No cd card in order
+2020-16-03 14:55:16   INFO [pagesFrankestein.ModalOrderFPage] : No camera sva in order
+2020-16-03 14:55:18   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:55:18   INFO [libs.ActionsWithOurElements] : checkbox was checked
+2020-16-03 14:55:18   INFO [libs.ActionsWithOurElements] : checkbox is already unchecked
+2020-16-03 14:55:18   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:55:19   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:55:19   INFO [pagesFrankestein.ModalOrderFPage] : Payment Method Smart oneYearSubscription was selected
+2020-16-03 14:55:19   INFO [pagesFrankestein.ModalOrderFPage] : Payment Method Camera was not selected, no camera in order
+2020-16-03 14:55:23   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 14:55:24   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 14:55:44   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2020-16-03 14:55:45   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 14:55:46   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 14:55:47   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 14:55:48   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 14:55:49   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 14:55:50   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 14:55:51   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 14:55:52   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 14:55:53   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 14:55:54   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 14:56:14   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2020-16-03 14:56:15   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 14:56:15   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:56:18   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-16-03 14:56:20   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-16-03 14:56:22   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:56:22   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:56:22   INFO [pagesFrankestein.ModalOrderFPage] : Agreement ELD was agreed
+2020-16-03 14:56:22   INFO [pagesFrankestein.ModalOrderFPage] : No agreement camera in order
+2020-16-03 14:56:23   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:56:29   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 14:56:29   INFO [pagesFrankestein.FinancesFPage] : orderStatus = 3
+2020-16-03 14:56:30   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 14:56:31   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 14:56:32   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 14:56:33   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 14:56:35   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-16-03 14:56:55  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (deb2ee8458351c808e04082e16fc6711)] -> xpath: .//*[@class='log_in btn-login']] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'DESKTOP-0PTGLHV', ip: '192.168.88.57', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.132, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\1\AppData\Local\Te...}, goog:chromeOptions: {debuggerAddress: localhost:59059}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: deb2ee8458351c808e04082e16fc6711
+2020-16-03 14:56:55   INFO [frankesteinParamsTest.FleetOrderParamsTest] :  DB connection closed 
+2020-16-03 14:56:56   INFO [frankesteinParamsTest.FleetOrderParamsTest] : Chrome will be started
+2020-16-03 14:57:01   INFO [frankesteinParamsTest.FleetOrderParamsTest] : Chrome is started
+2020-16-03 14:57:05   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-16-03 14:57:07   INFO [pagesFrankestein.EldFPage] : User have not Order with status New
+2020-16-03 14:57:12   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-16-03 14:57:12   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:57:13   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-16-03 14:57:13   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-16-03 14:57:13   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:57:40   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2020-16-03 14:57:40   INFO [pagesFrankestein.LoginFPage] : There is not phone verification pop up
+2020-16-03 14:57:42   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:57:44   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:57:45   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:57:46   INFO [libs.ActionsWithOurElements] : 1 was selected in Drop-down
+2020-16-03 14:57:46   INFO [libs.ActionsWithOurElements] : Nick was inputted into element
+2020-16-03 14:57:46   INFO [libs.ActionsWithOurElements] : Caved was inputted into element
+2020-16-03 14:57:46   INFO [libs.ActionsWithOurElements] : 0676475006 was inputted into element
+2020-16-03 14:57:47   INFO [libs.ActionsWithOurElements] : Kyiv was inputted into element
+2020-16-03 14:57:47   INFO [libs.ActionsWithOurElements] : 5 was inputted into element
+2020-16-03 14:57:47   INFO [libs.ActionsWithOurElements] : Kyiv was inputted into element
+2020-16-03 14:57:47   INFO [libs.ActionsWithOurElements] : 36206 was inputted into element
+2020-16-03 14:57:47   INFO [libs.ActionsWithOurElements] : 2 was selected in Drop-down
+2020-16-03 14:57:50   INFO [libs.ActionsWithOurElements] : 10 was inputted into element
+2020-16-03 14:57:55   INFO [libs.ActionsWithOurElements] : 2 was inputted into element
+2020-16-03 14:57:55   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2020-16-03 14:57:55   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2020-16-03 14:57:55   INFO [pagesFrankestein.ModalOrderFPage] : No Camera CP in order
+2020-16-03 14:57:55   INFO [pagesFrankestein.ModalOrderFPage] : No cd card in order
+2020-16-03 14:57:55   INFO [pagesFrankestein.ModalOrderFPage] : No camera sva in order
+2020-16-03 14:57:58   INFO [libs.ActionsWithOurElements] : checkbox is already unchecked
+2020-16-03 14:57:58   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:57:58   INFO [libs.ActionsWithOurElements] : checkbox was checked
+2020-16-03 14:57:58   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:57:58   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:57:58   INFO [pagesFrankestein.ModalOrderFPage] : Payment Method Smart monthToMonth was selected
+2020-16-03 14:57:58   INFO [pagesFrankestein.ModalOrderFPage] : Payment Method Camera was not selected, no camera in order
+2020-16-03 14:58:02   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 14:58:03   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 14:58:03   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-16-03 14:58:04   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 14:58:05   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 14:58:06   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 14:58:07   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 14:58:08   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 14:58:09   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 14:58:10   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 14:58:11   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 14:58:12   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 14:58:13   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 14:58:14   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-16-03 14:58:15   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 14:58:15   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:58:18   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-16-03 14:58:20   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-16-03 14:58:22   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:58:22   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:58:22   INFO [pagesFrankestein.ModalOrderFPage] : Agreement ELD was agreed
+2020-16-03 14:58:22   INFO [pagesFrankestein.ModalOrderFPage] : No agreement camera in order
+2020-16-03 14:58:22   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:58:29   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 14:58:29   INFO [pagesFrankestein.FinancesFPage] : orderStatus = 3
+2020-16-03 14:58:30   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 14:58:31   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 14:58:32   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 14:58:33   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 14:58:35   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-16-03 14:58:55  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (ad5434810dee3ce339fae733fe41f2e0)] -> xpath: .//*[@class='log_in btn-login']] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'DESKTOP-0PTGLHV', ip: '192.168.88.57', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.132, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\1\AppData\Local\Te...}, goog:chromeOptions: {debuggerAddress: localhost:59244}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: ad5434810dee3ce339fae733fe41f2e0
+2020-16-03 14:58:55   INFO [frankesteinParamsTest.FleetOrderParamsTest] :  DB connection closed 
+2020-16-03 14:58:56   INFO [frankesteinParamsTest.FleetOrderParamsTest] : Chrome will be started
+2020-16-03 14:59:01   INFO [frankesteinParamsTest.FleetOrderParamsTest] : Chrome is started
+2020-16-03 14:59:05   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-16-03 14:59:07   INFO [pagesFrankestein.EldFPage] : User have not Order with status New
+2020-16-03 14:59:12   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-16-03 14:59:13   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 14:59:13   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-16-03 14:59:13   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-16-03 14:59:13   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 15:38:51   INFO [frankesteinParamsTest.FleetOrderParamsTest] : Chrome will be started
+2020-16-03 15:38:58   INFO [frankesteinParamsTest.FleetOrderParamsTest] : Chrome is started
+2020-16-03 15:39:02   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-16-03 15:39:04   INFO [pagesFrankestein.EldFPage] : User have not Order with status New
+2020-16-03 15:39:10   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-16-03 15:39:10   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 15:39:10   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-16-03 15:39:11   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-16-03 15:39:11   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 15:39:37   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2020-16-03 15:39:37   INFO [pagesFrankestein.LoginFPage] : There is not phone verification pop up
+2020-16-03 15:39:39   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 15:39:41   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 15:39:41   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 15:39:42   INFO [libs.ActionsWithOurElements] : 1 was selected in Drop-down
+2020-16-03 15:39:43   INFO [libs.ActionsWithOurElements] : Nick was inputted into element
+2020-16-03 15:39:43   INFO [libs.ActionsWithOurElements] : Caved was inputted into element
+2020-16-03 15:39:43   INFO [libs.ActionsWithOurElements] : 0676475006 was inputted into element
+2020-16-03 15:39:43   INFO [libs.ActionsWithOurElements] : Kyiv was inputted into element
+2020-16-03 15:39:43   INFO [libs.ActionsWithOurElements] : 5 was inputted into element
+2020-16-03 15:39:44   INFO [libs.ActionsWithOurElements] : Kyiv was inputted into element
+2020-16-03 15:39:44   INFO [libs.ActionsWithOurElements] : 36206 was inputted into element
+2020-16-03 15:39:44   INFO [libs.ActionsWithOurElements] : 2 was selected in Drop-down
+2020-16-03 15:39:46   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2020-16-03 15:39:51   INFO [pagesFrankestein.ModalOrderFPage] : No Pin Cable in order
+2020-16-03 15:39:51   INFO [pagesFrankestein.ModalOrderFPage] : No OBDP Cable in order
+2020-16-03 15:39:51   INFO [pagesFrankestein.ModalOrderFPage] : No Sticker in order
+2020-16-03 15:39:51   INFO [pagesFrankestein.ModalOrderFPage] : No Camera CP in order
+2020-16-03 15:39:51   INFO [pagesFrankestein.ModalOrderFPage] : No cd card in order
+2020-16-03 15:39:51   INFO [pagesFrankestein.ModalOrderFPage] : No camera sva in order
+2020-16-03 15:39:54   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 15:39:54   INFO [libs.ActionsWithOurElements] : checkbox was checked
+2020-16-03 15:39:54   INFO [libs.ActionsWithOurElements] : checkbox is already unchecked
+2020-16-03 15:39:54   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 15:39:54   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 15:39:54   INFO [pagesFrankestein.ModalOrderFPage] : Payment Method Smart oneYearSubscription was selected
+2020-16-03 15:39:54   INFO [pagesFrankestein.ModalOrderFPage] : Payment Method Camera was not selected, no camera in order
+2020-16-03 15:39:58   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 15:39:59   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 15:40:19   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2020-16-03 15:40:20   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 15:40:21   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 15:40:22   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 15:40:23   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 15:40:24   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 15:40:25   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 15:40:26   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 15:40:27   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 15:40:28   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 15:40:29   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 15:40:49   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2020-16-03 15:40:50   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 15:40:51   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 15:40:54   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-16-03 15:40:56   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-16-03 15:40:58   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 15:40:58   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 15:40:58   INFO [pagesFrankestein.ModalOrderFPage] : Agreement ELD was agreed
+2020-16-03 15:40:58   INFO [pagesFrankestein.ModalOrderFPage] : No agreement camera in order
+2020-16-03 15:40:58   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 15:41:04   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 15:41:04   INFO [pagesFrankestein.FinancesFPage] : orderStatus = 3
+2020-16-03 15:41:05   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 15:41:07   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 15:41:08   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 15:41:09   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 15:41:10   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-16-03 15:41:31  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (2332ea745c3f8309a3ddc03a10627bb5)] -> xpath: .//*[@class='log_in btn-login']] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'DESKTOP-0PTGLHV', ip: '192.168.88.57', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.132, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\1\AppData\Local\Te...}, goog:chromeOptions: {debuggerAddress: localhost:61009}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 2332ea745c3f8309a3ddc03a10627bb5
+2020-16-03 15:41:31   INFO [frankesteinParamsTest.FleetOrderParamsTest] :  DB connection closed 
+2020-16-03 15:41:32   INFO [frankesteinParamsTest.FleetOrderParamsTest] : Chrome will be started
+2020-16-03 15:41:37   INFO [frankesteinParamsTest.FleetOrderParamsTest] : Chrome is started
+2020-16-03 15:42:48   INFO [frankesteinParamsTest.FleetOrderParamsTest] : Chrome will be started
+2020-16-03 15:42:55   INFO [frankesteinParamsTest.FleetOrderParamsTest] : Chrome is started
+2020-16-03 15:42:59   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-16-03 15:43:02   INFO [pagesFrankestein.EldFPage] : User have not Order with status New
+2020-16-03 15:43:08   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-16-03 15:43:08   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 15:43:08   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-16-03 15:43:08   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-16-03 15:43:08   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 15:43:34   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2020-16-03 15:43:34   INFO [pagesFrankestein.LoginFPage] : There is not phone verification pop up
+2020-16-03 15:43:36   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 15:43:39   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 15:43:39   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 15:43:40   INFO [libs.ActionsWithOurElements] : 1 was selected in Drop-down
+2020-16-03 15:43:40   INFO [libs.ActionsWithOurElements] : Nick was inputted into element
+2020-16-03 15:43:40   INFO [libs.ActionsWithOurElements] : Caved was inputted into element
+2020-16-03 15:43:41   INFO [libs.ActionsWithOurElements] : 0676475006 was inputted into element
+2020-16-03 15:43:41   INFO [libs.ActionsWithOurElements] : Kyiv was inputted into element
+2020-16-03 15:43:41   INFO [libs.ActionsWithOurElements] : 5 was inputted into element
+2020-16-03 15:43:41   INFO [libs.ActionsWithOurElements] : Kyiv was inputted into element
+2020-16-03 15:43:41   INFO [libs.ActionsWithOurElements] : 36206 was inputted into element
+2020-16-03 15:43:42   INFO [libs.ActionsWithOurElements] : 2 was selected in Drop-down
+2020-16-03 15:43:44   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2020-16-03 15:43:49   INFO [pagesFrankestein.ModalOrderFPage] : No Pin Cable in order
+2020-16-03 15:43:49   INFO [pagesFrankestein.ModalOrderFPage] : No OBDP Cable in order
+2020-16-03 15:43:49   INFO [pagesFrankestein.ModalOrderFPage] : No Sticker in order
+2020-16-03 15:43:49   INFO [pagesFrankestein.ModalOrderFPage] : No Camera CP in order
+2020-16-03 15:43:49   INFO [pagesFrankestein.ModalOrderFPage] : No cd card in order
+2020-16-03 15:43:49   INFO [pagesFrankestein.ModalOrderFPage] : No camera sva in order
+2020-16-03 15:43:51   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 15:43:51   INFO [libs.ActionsWithOurElements] : checkbox was checked
+2020-16-03 15:43:51   INFO [libs.ActionsWithOurElements] : checkbox is already unchecked
+2020-16-03 15:43:51   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 15:43:52   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 15:43:52   INFO [pagesFrankestein.ModalOrderFPage] : Payment Method Smart oneYearSubscription was selected
+2020-16-03 15:43:52   INFO [pagesFrankestein.ModalOrderFPage] : Payment Method Camera was not selected, no camera in order
+2020-16-03 15:43:56   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 15:43:57   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 15:44:17   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2020-16-03 15:44:18   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 15:44:19   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 15:44:20   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 15:44:21   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 15:44:22   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 15:44:23   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 15:44:24   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 15:44:25   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 15:44:26   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 15:44:27   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 15:44:47   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2020-16-03 15:44:48   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 15:44:48   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 15:44:51   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-16-03 15:44:53   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-16-03 15:44:55   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 15:44:55   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 15:44:55   INFO [pagesFrankestein.ModalOrderFPage] : Agreement ELD was agreed
+2020-16-03 15:44:55   INFO [pagesFrankestein.ModalOrderFPage] : No agreement camera in order
+2020-16-03 15:44:56   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 15:45:02   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 15:45:02   INFO [pagesFrankestein.FinancesFPage] : orderStatus = 3
+2020-16-03 15:45:03   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 15:45:04   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 15:45:05   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 15:45:06   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 15:45:06   INFO [frankesteinParamsTest.FleetOrderParamsTest] :  DB connection closed 
+2020-16-03 15:45:07   INFO [frankesteinParamsTest.FleetOrderParamsTest] : Chrome will be started
+2020-16-03 15:45:12   INFO [frankesteinParamsTest.FleetOrderParamsTest] : Chrome is started
+2020-16-03 15:45:16   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-16-03 15:45:24   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-16-03 15:45:24   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 15:45:24   INFO [libs.ActionsWithOurElements] : manager@ezlogz.com was inputted into element
+2020-16-03 15:45:25   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-16-03 15:45:25   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 15:46:10   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2020-16-03 15:46:10   INFO [pagesFrankestein.LoginFPage] : There is not phone verification pop up
+2020-16-03 15:46:12   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 15:46:14   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 15:46:17   INFO [libs.ActionsWithOurElements] : 4256 was inputted into element
+2020-16-03 15:46:19   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 15:46:21   INFO [pagesFrankestein.OrderInfoFPage] : getFullOrderPrice 499.88
+2020-16-03 15:46:21   INFO [pagesFrankestein.OrderInfoFPage] : dueForLastOrder 499.88
+2020-16-03 15:46:22   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 15:46:22   INFO [libs.ActionsWithOurElements] : 2 was selected in Drop-down
+2020-16-03 15:46:22   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 15:46:33   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 15:46:34   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 15:46:35   INFO [pagesFrankestein.FinancesFPage] : usersBalance -10000.0
+2020-16-03 15:46:35   INFO [pagesFrankestein.FinancesFPage] : CurrentDue 10000.0
+2020-16-03 15:46:36   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 15:46:36   INFO [frankesteinParamsTest.FleetOrderParamsTest] :  DB connection closed 
+2020-16-03 15:46:36   INFO [frankesteinParamsTest.FleetOrderParamsTest] : Chrome will be started
+2020-16-03 15:46:41   INFO [frankesteinParamsTest.FleetOrderParamsTest] : Chrome is started
+2020-16-03 15:46:45   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-16-03 15:46:47   INFO [pagesFrankestein.EldFPage] : User have not Order with status New
+2020-16-03 15:46:53   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-16-03 15:46:53   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 15:46:53   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-16-03 15:46:53   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-16-03 15:46:53   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 15:47:19   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2020-16-03 15:47:19   INFO [pagesFrankestein.LoginFPage] : There is not phone verification pop up
+2020-16-03 15:47:22   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 15:47:24   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 15:47:24   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 15:47:25   INFO [libs.ActionsWithOurElements] : 1 was selected in Drop-down
+2020-16-03 15:47:25   INFO [libs.ActionsWithOurElements] : Nick was inputted into element
+2020-16-03 15:47:26   INFO [libs.ActionsWithOurElements] : Caved was inputted into element
+2020-16-03 15:47:26   INFO [libs.ActionsWithOurElements] : 0676475006 was inputted into element
+2020-16-03 15:47:26   INFO [libs.ActionsWithOurElements] : Kyiv was inputted into element
+2020-16-03 15:47:26   INFO [libs.ActionsWithOurElements] : 5 was inputted into element
+2020-16-03 15:47:26   INFO [libs.ActionsWithOurElements] : Kyiv was inputted into element
+2020-16-03 15:47:26   INFO [libs.ActionsWithOurElements] : 36206 was inputted into element
+2020-16-03 15:47:27   INFO [libs.ActionsWithOurElements] : 2 was selected in Drop-down
+2020-16-03 15:47:29   INFO [libs.ActionsWithOurElements] : 10 was inputted into element
+2020-16-03 15:47:34   INFO [libs.ActionsWithOurElements] : 2 was inputted into element
+2020-16-03 15:47:35   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2020-16-03 15:47:35   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2020-16-03 15:47:35   INFO [pagesFrankestein.ModalOrderFPage] : No Camera CP in order
+2020-16-03 15:47:35   INFO [pagesFrankestein.ModalOrderFPage] : No cd card in order
+2020-16-03 15:47:35   INFO [pagesFrankestein.ModalOrderFPage] : No camera sva in order
+2020-16-03 15:47:37   INFO [libs.ActionsWithOurElements] : checkbox is already unchecked
+2020-16-03 15:47:37   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 15:47:37   INFO [libs.ActionsWithOurElements] : checkbox was checked
+2020-16-03 15:47:38   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 15:47:38   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 15:47:38   INFO [pagesFrankestein.ModalOrderFPage] : Payment Method Smart monthToMonth was selected
+2020-16-03 15:47:38   INFO [pagesFrankestein.ModalOrderFPage] : Payment Method Camera was not selected, no camera in order
+2020-16-03 15:47:42   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 15:47:43   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 15:47:43   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-16-03 15:47:44   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 15:47:45   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 15:47:46   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 15:47:47   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 15:47:48   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 15:47:49   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 15:47:50   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 15:47:51   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 15:47:52   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 15:47:53   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 15:47:53   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-16-03 15:47:54   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 15:47:54   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 15:47:57   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-16-03 15:47:59   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-16-03 15:48:02   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 15:48:02   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 15:48:02   INFO [pagesFrankestein.ModalOrderFPage] : Agreement ELD was agreed
+2020-16-03 15:48:02   INFO [pagesFrankestein.ModalOrderFPage] : No agreement camera in order
+2020-16-03 15:48:02   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 15:48:08   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 15:48:08   INFO [pagesFrankestein.FinancesFPage] : orderStatus = 3
+2020-16-03 15:48:09   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 15:48:10   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 15:48:11   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 15:48:13   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 15:48:13   INFO [frankesteinParamsTest.FleetOrderParamsTest] :  DB connection closed 
+2020-16-03 15:48:13   INFO [frankesteinParamsTest.FleetOrderParamsTest] : Chrome will be started
+2020-16-03 15:48:18   INFO [frankesteinParamsTest.FleetOrderParamsTest] : Chrome is started
+2020-16-03 15:48:22   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-16-03 15:48:40   INFO [frankesteinParamsTest.FleetOrderParamsTest] : Chrome will be started
+2020-16-03 15:48:47   INFO [frankesteinParamsTest.FleetOrderParamsTest] : Chrome is started
+2020-16-03 15:48:51   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-16-03 15:48:54   INFO [pagesFrankestein.EldFPage] : User have not Order with status New
+2020-16-03 15:49:00   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-16-03 15:49:00   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 15:49:00   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-16-03 15:49:00   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-16-03 15:49:01   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 15:49:27   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2020-16-03 15:49:27   INFO [pagesFrankestein.LoginFPage] : There is not phone verification pop up
+2020-16-03 15:49:29   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 15:49:31   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 15:49:32   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 15:49:33   INFO [libs.ActionsWithOurElements] : 1 was selected in Drop-down
+2020-16-03 15:49:33   INFO [libs.ActionsWithOurElements] : Nick was inputted into element
+2020-16-03 15:49:33   INFO [libs.ActionsWithOurElements] : Caved was inputted into element
+2020-16-03 15:49:33   INFO [libs.ActionsWithOurElements] : 0676475006 was inputted into element
+2020-16-03 15:49:34   INFO [libs.ActionsWithOurElements] : Kyiv was inputted into element
+2020-16-03 15:49:34   INFO [libs.ActionsWithOurElements] : 5 was inputted into element
+2020-16-03 15:49:34   INFO [libs.ActionsWithOurElements] : Kyiv was inputted into element
+2020-16-03 15:49:34   INFO [libs.ActionsWithOurElements] : 36206 was inputted into element
+2020-16-03 15:49:34   INFO [libs.ActionsWithOurElements] : 2 was selected in Drop-down
+2020-16-03 15:49:37   INFO [libs.ActionsWithOurElements] : 1 was inputted into element
+2020-16-03 15:49:42   INFO [pagesFrankestein.ModalOrderFPage] : No Pin Cable in order
+2020-16-03 15:49:42   INFO [pagesFrankestein.ModalOrderFPage] : No OBDP Cable in order
+2020-16-03 15:49:42   INFO [pagesFrankestein.ModalOrderFPage] : No Sticker in order
+2020-16-03 15:49:42   INFO [pagesFrankestein.ModalOrderFPage] : No Camera CP in order
+2020-16-03 15:49:42   INFO [pagesFrankestein.ModalOrderFPage] : No cd card in order
+2020-16-03 15:49:42   INFO [pagesFrankestein.ModalOrderFPage] : No camera sva in order
+2020-16-03 15:49:44   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 15:49:44   INFO [libs.ActionsWithOurElements] : checkbox was checked
+2020-16-03 15:49:44   INFO [libs.ActionsWithOurElements] : checkbox is already unchecked
+2020-16-03 15:49:44   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 15:49:44   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 15:49:44   INFO [pagesFrankestein.ModalOrderFPage] : Payment Method Smart oneYearSubscription was selected
+2020-16-03 15:49:44   INFO [pagesFrankestein.ModalOrderFPage] : Payment Method Camera was not selected, no camera in order
+2020-16-03 15:49:48   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 15:49:49   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 15:50:09   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2020-16-03 15:50:10   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 15:50:11   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 15:50:12   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 15:50:13   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 15:50:14   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 15:50:15   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 15:50:16   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 15:50:17   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 15:50:18   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 15:50:19   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 15:50:40   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2020-16-03 15:50:41   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 15:50:41   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 15:50:44   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-16-03 15:50:46   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-16-03 15:50:48   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 15:50:48   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 15:50:48   INFO [pagesFrankestein.ModalOrderFPage] : Agreement ELD was agreed
+2020-16-03 15:50:48   INFO [pagesFrankestein.ModalOrderFPage] : No agreement camera in order
+2020-16-03 15:50:48   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 15:50:54   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 15:50:55   INFO [pagesFrankestein.FinancesFPage] : orderStatus = 3
+2020-16-03 15:50:56   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 15:50:57   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 15:50:58   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 15:50:59   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 15:51:01   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 15:51:05   INFO [libs.ActionsWithOurElements] : 1158 was inputted into element
+2020-16-03 15:51:08   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 15:51:11   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 15:51:14   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 15:51:25   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 15:51:27   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 15:51:27   INFO [pagesFrankestein.FinancesFPage] : usersBalance -10000.0
+2020-16-03 15:51:28   INFO [frankesteinParamsTest.FleetOrderParamsTest] : AC passed
+2020-16-03 15:51:28   INFO [frankesteinParamsTest.FleetOrderParamsTest] :  DB connection closed 
+2020-16-03 15:51:28   INFO [frankesteinParamsTest.FleetOrderParamsTest] : Chrome will be started
+2020-16-03 15:51:34   INFO [frankesteinParamsTest.FleetOrderParamsTest] : Chrome is started
+2020-16-03 15:52:59   INFO [frankesteinParamsTest.SafetyAddCardParamsTest] : Chrome will be started
+2020-16-03 15:53:05   INFO [frankesteinParamsTest.SafetyAddCardParamsTest] : Chrome is started
+2020-16-03 15:53:09   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-16-03 15:53:17   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-16-03 15:53:18   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 15:53:18   INFO [libs.ActionsWithOurElements] : fltTst@test.test was inputted into element
+2020-16-03 15:53:18   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-16-03 15:53:18   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 15:53:24   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-16-03 15:53:24   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 15:53:24   INFO [pagesFrankestein.LoginFPage] : Phone verification pop up Closed
+2020-16-03 15:54:05   INFO [libs.ActionsWithOurElements] : Element is enabled - > false
+2020-16-03 15:54:06  ERROR [frankesteinParamsTest.SafetyAddCardParamsTest] : AC failed: User wasn`t logined
+2020-16-03 15:54:06   INFO [frankesteinParamsTest.SafetyAddCardParamsTest] :  DB connection closed 
+2020-16-03 15:54:06   INFO [frankesteinParamsTest.SafetyAddCardParamsTest] : Chrome will be started
+2020-16-03 17:15:29   INFO [frankesteinParamsTest.SafetyAddCardParamsTest] : Chrome will be started
+2020-16-03 17:15:35   INFO [frankesteinParamsTest.SafetyAddCardParamsTest] : Chrome is started
+2020-16-03 17:15:39   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-16-03 17:15:47   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-16-03 17:15:47   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 17:15:47   INFO [libs.ActionsWithOurElements] : fltTst@test.test was inputted into element
+2020-16-03 17:15:47   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-16-03 17:15:47   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 17:15:53   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-16-03 17:15:53   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 17:15:53   INFO [pagesFrankestein.LoginFPage] : Phone verification pop up Closed
+2020-16-03 17:16:16  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (da8d843bc9d57241c5c1ab21ea18568f)] -> xpath: .//a[@href='/dash/finances/']] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'DESKTOP-0PTGLHV', ip: '192.168.88.57', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.132, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\1\AppData\Local\Te...}, goog:chromeOptions: {debuggerAddress: localhost:65311}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: da8d843bc9d57241c5c1ab21ea18568f
+2020-16-03 17:16:16   INFO [frankesteinParamsTest.SafetyAddCardParamsTest] :  DB connection closed 
+2020-16-03 17:16:16   INFO [frankesteinParamsTest.SafetyAddCardParamsTest] : Chrome will be started
+2020-16-03 17:16:21   INFO [frankesteinParamsTest.SafetyAddCardParamsTest] : Chrome is started
+2020-16-03 17:16:55   INFO [frankesteinParamsTest.SafetyAddCardParamsTest] : Chrome will be started
+2020-16-03 17:17:02   INFO [frankesteinParamsTest.SafetyAddCardParamsTest] : Chrome is started
+2020-16-03 17:17:06   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-16-03 17:17:14   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-16-03 17:17:14   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 17:17:14   INFO [libs.ActionsWithOurElements] : fltTst@test.test was inputted into element
+2020-16-03 17:17:14   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-16-03 17:17:14   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 17:17:20   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-16-03 17:17:20   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 17:17:20   INFO [pagesFrankestein.LoginFPage] : Phone verification pop up Closed
+2020-16-03 17:17:23   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 17:17:25   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 17:17:27   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 17:17:29   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 17:17:31   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 17:17:34   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 17:17:38   INFO [libs.ActionsWithOurElements] : 2223000010309711 was inputted into element
+2020-16-03 17:17:38   INFO [libs.ActionsWithOurElements] : 1234 was inputted into element
+2020-16-03 17:17:38   INFO [libs.ActionsWithOurElements] : 2025 was inputted into element
+2020-16-03 17:17:38   INFO [libs.ActionsWithOurElements] : 10 was inputted into element
+2020-16-03 17:17:41   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 17:17:44   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 17:17:48   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 17:17:54  ERROR [frankesteinParamsTest.SafetyAddCardParamsTest] : AC failed: Card failed
+2020-16-03 17:17:54   INFO [frankesteinParamsTest.SafetyAddCardParamsTest] :  DB connection closed 
+2020-16-03 17:17:54   INFO [frankesteinParamsTest.SafetyAddCardParamsTest] : Chrome will be started
+2020-16-03 17:18:00   INFO [frankesteinParamsTest.SafetyAddCardParamsTest] : Chrome is started
+2020-16-03 17:18:04   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-16-03 17:18:11   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-16-03 17:18:11   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 17:18:11   INFO [libs.ActionsWithOurElements] : lk@lk.lk was inputted into element
+2020-16-03 17:18:11   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-16-03 17:18:11   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 17:18:17   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-16-03 17:18:17   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 17:18:17   INFO [pagesFrankestein.LoginFPage] : Phone verification pop up Closed
+2020-16-03 17:18:19   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 17:18:22   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 17:18:24   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 17:18:26   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 17:18:28   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 17:18:31   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 17:18:35   INFO [libs.ActionsWithOurElements] : 4111111111111111 was inputted into element
+2020-16-03 17:18:35   INFO [libs.ActionsWithOurElements] : 1234 was inputted into element
+2020-16-03 17:18:35   INFO [libs.ActionsWithOurElements] : 2025 was inputted into element
+2020-16-03 17:18:35   INFO [libs.ActionsWithOurElements] : 10 was inputted into element
+2020-16-03 17:18:38   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 17:18:42   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 17:18:45   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 17:18:51   INFO [frankesteinParamsTest.SafetyAddCardParamsTest] : AC passed
+2020-16-03 17:18:51   INFO [frankesteinParamsTest.SafetyAddCardParamsTest] :  DB connection closed 
+2020-16-03 17:18:52   INFO [frankesteinParamsTest.SafetyAddCardParamsTest] : Chrome will be started
+2020-16-03 17:18:57   INFO [frankesteinParamsTest.SafetyAddCardParamsTest] : Chrome is started
+2020-16-03 17:19:01   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-16-03 17:19:07   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-16-03 17:19:08   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 17:19:08   INFO [libs.ActionsWithOurElements] : fleet_test!!@test.test was inputted into element
+2020-16-03 17:19:08   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-16-03 17:19:08   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 17:19:14   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-16-03 17:19:14   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 17:19:14   INFO [pagesFrankestein.LoginFPage] : Phone verification pop up Closed
+2020-16-03 17:19:17   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 17:19:19   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 17:19:21   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 17:19:23   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 17:19:25   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 17:19:28   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 17:19:32   INFO [libs.ActionsWithOurElements] : 4111111111111111 was inputted into element
+2020-16-03 17:19:32   INFO [libs.ActionsWithOurElements] : 1234 was inputted into element
+2020-16-03 17:19:32   INFO [libs.ActionsWithOurElements] : 2025 was inputted into element
+2020-16-03 17:19:32   INFO [libs.ActionsWithOurElements] : 10 was inputted into element
+2020-16-03 17:19:35   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 17:19:39   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 17:19:42   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 17:19:48   INFO [frankesteinParamsTest.SafetyAddCardParamsTest] : AC passed
+2020-16-03 17:19:48   INFO [frankesteinParamsTest.SafetyAddCardParamsTest] :  DB connection closed 
+2020-16-03 17:19:49   INFO [frankesteinParamsTest.SafetyAddCardParamsTest] : Chrome will be started
+2020-16-03 17:24:10   INFO [frankesteinParamsTest.SafetyCreateEquipmentParamTest] : Chrome will be started
+2020-16-03 17:24:17   INFO [frankesteinParamsTest.SafetyCreateEquipmentParamTest] : Chrome is started
+2020-16-03 17:24:22   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-16-03 17:24:30   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-16-03 17:24:30   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 17:24:31   INFO [libs.ActionsWithOurElements] : fltTst@test.test was inputted into element
+2020-16-03 17:24:31   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-16-03 17:24:31   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 17:24:38   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-16-03 17:24:38   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 17:24:38   INFO [pagesFrankestein.LoginFPage] : Phone verification pop up Closed
+2020-16-03 17:24:39   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 17:24:40   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 17:24:43   INFO [libs.ActionsWithOurElements] : LvIpB was inputted into element
+2020-16-03 17:24:43   INFO [libs.ActionsWithOurElements] : hPlKGOS1Ki was inputted into element
+2020-16-03 17:24:43   INFO [libs.ActionsWithOurElements] : 2008 was inputted into element
+2020-16-03 17:24:44   INFO [libs.ActionsWithOurElements] : 2 was selected in Drop-down
+2020-16-03 17:24:44   INFO [libs.ActionsWithOurElements] : 1GNEK12ZX2R298984 was inputted into element
+2020-16-03 17:24:44   INFO [libs.ActionsWithOurElements] : W2sYIC was inputted into element
+2020-16-03 17:24:44   INFO [libs.ActionsWithOurElements] : 54 was selected in Drop-down
+2020-16-03 17:24:44   INFO [libs.ActionsWithOurElements] : Uq1z4O was inputted into element
+2020-16-03 17:24:45   INFO [libs.ActionsWithOurElements] : 1Pg6RR was inputted into element
+2020-16-03 17:24:45   INFO [libs.ActionsWithOurElements] : 11111111 was inputted into element
+2020-16-03 17:24:45   INFO [libs.ActionsWithOurElements] : 11111111 was inputted into element
+2020-16-03 17:24:45   INFO [libs.ActionsWithOurElements] : 11111111 was inputted into element
+2020-16-03 17:24:46   INFO [libs.ActionsWithOurElements] : 11111111 was inputted into element
+2020-16-03 17:24:46   INFO [libs.ActionsWithOurElements] : 667 was inputted into element
+2020-16-03 17:24:46   INFO [libs.ActionsWithOurElements] : 927 was inputted into element
+2020-16-03 17:24:46   INFO [libs.ActionsWithOurElements] : E-85 was selected in Drop-down
+2020-16-03 17:24:46   INFO [libs.ActionsWithOurElements] : 1yw4pI was inputted into element
+2020-16-03 17:24:46   INFO [libs.ActionsWithOurElements] : 9SIcv6 was inputted into element
+2020-16-03 17:24:47   INFO [libs.ActionsWithOurElements] : 44gfOQ was inputted into element
+2020-16-03 17:24:47   INFO [libs.ActionsWithOurElements] : 59 was inputted into element
+2020-16-03 17:24:47   INFO [libs.ActionsWithOurElements] : 52 was inputted into element
+2020-16-03 17:24:47   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 17:24:50   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 17:24:59   INFO [frankesteinParamsTest.SafetyCreateEquipmentParamTest] : AC passed
+2020-16-03 17:25:00   INFO [frankesteinParamsTest.SafetyCreateEquipmentParamTest] : AC passed
+2020-16-03 17:25:01   INFO [frankesteinParamsTest.SafetyCreateEquipmentParamTest] : AC passed
+2020-16-03 17:25:02   INFO [frankesteinParamsTest.SafetyCreateEquipmentParamTest] : AC passed
+2020-16-03 17:25:03   INFO [frankesteinParamsTest.SafetyCreateEquipmentParamTest] : AC passed
+2020-16-03 17:25:04   INFO [frankesteinParamsTest.SafetyCreateEquipmentParamTest] : AC passed
+2020-16-03 17:25:05   INFO [frankesteinParamsTest.SafetyCreateEquipmentParamTest] : AC passed
+2020-16-03 17:25:06   INFO [frankesteinParamsTest.SafetyCreateEquipmentParamTest] : AC passed
+2020-16-03 17:25:07   INFO [frankesteinParamsTest.SafetyCreateEquipmentParamTest] : AC passed
+2020-16-03 17:25:08   INFO [frankesteinParamsTest.SafetyCreateEquipmentParamTest] : AC passed
+2020-16-03 17:25:09   INFO [frankesteinParamsTest.SafetyCreateEquipmentParamTest] : AC passed
+2020-16-03 17:25:10   INFO [frankesteinParamsTest.SafetyCreateEquipmentParamTest] : AC passed
+2020-16-03 17:25:11   INFO [frankesteinParamsTest.SafetyCreateEquipmentParamTest] : AC passed
+2020-16-03 17:25:12  ERROR [frankesteinParamsTest.SafetyCreateEquipmentParamTest] : AC failed: Model failed
+2020-16-03 17:25:12   INFO [frankesteinParamsTest.SafetyCreateEquipmentParamTest] :  DB connection closed 
+2020-16-03 17:25:13   INFO [frankesteinParamsTest.SafetyCreateEquipmentParamTest] : Chrome will be started
+2020-16-03 17:25:47   INFO [frankesteinParamsTest.SafetyCreateEquipmentParamTest] : Chrome will be started
+2020-16-03 17:25:54   INFO [frankesteinParamsTest.SafetyCreateEquipmentParamTest] : Chrome is started
+2020-16-03 17:25:58   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-16-03 17:26:06   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-16-03 17:26:06   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 17:26:06   INFO [libs.ActionsWithOurElements] : fltTst@test.test was inputted into element
+2020-16-03 17:26:07   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-16-03 17:26:07   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 17:26:13   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-16-03 17:26:13   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 17:26:13   INFO [pagesFrankestein.LoginFPage] : Phone verification pop up Closed
+2020-16-03 17:26:14   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 17:26:17   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 17:26:20   INFO [libs.ActionsWithOurElements] : FYK8Rcsxm was inputted into element
+2020-16-03 17:26:21   INFO [libs.ActionsWithOurElements] : cgyq4HG3eq was inputted into element
+2020-16-03 17:26:21   INFO [libs.ActionsWithOurElements] : 1505 was inputted into element
+2020-16-03 17:26:21   INFO [libs.ActionsWithOurElements] : 0 was selected in Drop-down
+2020-16-03 17:26:21   INFO [libs.ActionsWithOurElements] : 1GNEK12ZX2R298984 was inputted into element
+2020-16-03 17:26:21   INFO [libs.ActionsWithOurElements] : vtsp1N was inputted into element
+2020-16-03 17:26:22   INFO [libs.ActionsWithOurElements] : 4 was selected in Drop-down
+2020-16-03 17:26:22   INFO [libs.ActionsWithOurElements] : 157 was inputted into element
+2020-16-03 17:26:22   INFO [libs.ActionsWithOurElements] : 784 was inputted into element
+2020-16-03 17:26:22   INFO [libs.ActionsWithOurElements] : Ethanol was selected in Drop-down
+2020-16-03 17:26:22   INFO [libs.ActionsWithOurElements] : PkraE5 was inputted into element
+2020-16-03 17:26:22   INFO [libs.ActionsWithOurElements] : RzQQDb was inputted into element
+2020-16-03 17:26:23   INFO [libs.ActionsWithOurElements] : m6Vt8z was inputted into element
+2020-16-03 17:26:23   INFO [libs.ActionsWithOurElements] : 82 was inputted into element
+2020-16-03 17:26:23   INFO [libs.ActionsWithOurElements] : 54 was inputted into element
+2020-16-03 17:26:23   INFO [libs.ActionsWithOurElements] : Dtx4HK was inputted into element
+2020-16-03 17:26:23   INFO [libs.ActionsWithOurElements] : 9laV27 was inputted into element
+2020-16-03 17:26:23   INFO [libs.ActionsWithOurElements] : 11111111 was inputted into element
+2020-16-03 17:26:24   INFO [libs.ActionsWithOurElements] : 11111111 was inputted into element
+2020-16-03 17:26:24   INFO [libs.ActionsWithOurElements] : 11111111 was inputted into element
+2020-16-03 17:26:24   INFO [libs.ActionsWithOurElements] : 11111111 was inputted into element
+2020-16-03 17:26:24   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 17:26:27   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 17:26:37   INFO [frankesteinParamsTest.SafetyCreateEquipmentParamTest] : AC passed
+2020-16-03 17:26:38   INFO [frankesteinParamsTest.SafetyCreateEquipmentParamTest] : AC passed
+2020-16-03 17:26:39   INFO [frankesteinParamsTest.SafetyCreateEquipmentParamTest] : AC passed
+2020-16-03 17:26:40   INFO [frankesteinParamsTest.SafetyCreateEquipmentParamTest] : AC passed
+2020-16-03 17:26:41   INFO [frankesteinParamsTest.SafetyCreateEquipmentParamTest] : AC passed
+2020-16-03 17:26:42   INFO [frankesteinParamsTest.SafetyCreateEquipmentParamTest] : AC passed
+2020-16-03 17:26:43   INFO [frankesteinParamsTest.SafetyCreateEquipmentParamTest] : AC passed
+2020-16-03 17:26:44   INFO [frankesteinParamsTest.SafetyCreateEquipmentParamTest] : AC passed
+2020-16-03 17:26:45   INFO [frankesteinParamsTest.SafetyCreateEquipmentParamTest] : AC passed
+2020-16-03 17:26:46   INFO [frankesteinParamsTest.SafetyCreateEquipmentParamTest] : AC passed
+2020-16-03 17:26:47   INFO [frankesteinParamsTest.SafetyCreateEquipmentParamTest] : AC passed
+2020-16-03 17:26:48   INFO [frankesteinParamsTest.SafetyCreateEquipmentParamTest] : AC passed
+2020-16-03 17:26:49   INFO [frankesteinParamsTest.SafetyCreateEquipmentParamTest] : AC passed
+2020-16-03 17:26:50   INFO [frankesteinParamsTest.SafetyCreateEquipmentParamTest] : AC passed
+2020-16-03 17:26:51   INFO [frankesteinParamsTest.SafetyCreateEquipmentParamTest] : AC passed
+2020-16-03 17:26:52   INFO [frankesteinParamsTest.SafetyCreateEquipmentParamTest] : AC passed
+2020-16-03 17:26:53   INFO [frankesteinParamsTest.SafetyCreateEquipmentParamTest] : AC passed
+2020-16-03 17:26:54   INFO [frankesteinParamsTest.SafetyCreateEquipmentParamTest] : AC passed
+2020-16-03 17:26:55   INFO [frankesteinParamsTest.SafetyCreateEquipmentParamTest] : AC passed
+2020-16-03 17:26:56   INFO [frankesteinParamsTest.SafetyCreateEquipmentParamTest] : AC passed
+2020-16-03 17:26:57   INFO [frankesteinParamsTest.SafetyCreateEquipmentParamTest] : AC passed
+2020-16-03 17:26:58   INFO [frankesteinParamsTest.SafetyCreateEquipmentParamTest] : AC passed
+2020-16-03 17:26:58   INFO [frankesteinParamsTest.SafetyCreateEquipmentParamTest] :  DB connection closed 
+2020-16-03 17:26:58   INFO [frankesteinParamsTest.SafetyCreateEquipmentParamTest] : Chrome will be started
+2020-16-03 17:27:03   INFO [frankesteinParamsTest.SafetyCreateEquipmentParamTest] : Chrome is started
+2020-16-03 17:27:08   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-16-03 17:27:15   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-16-03 17:27:15   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 17:27:16   INFO [libs.ActionsWithOurElements] : lk@lk.lk was inputted into element
+2020-16-03 17:27:16   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-16-03 17:27:16   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 17:27:23   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-16-03 17:27:23   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 17:27:23   INFO [pagesFrankestein.LoginFPage] : Phone verification pop up Closed
+2020-16-03 17:27:24   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 17:27:27   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 17:27:31   INFO [libs.ActionsWithOurElements] : cNHCav0H was inputted into element
+2020-16-03 17:27:31   INFO [libs.ActionsWithOurElements] : oZn4JnkO5p was inputted into element
+2020-16-03 17:27:31   INFO [libs.ActionsWithOurElements] : 421 was inputted into element
+2020-16-03 17:27:31   INFO [libs.ActionsWithOurElements] : 0 was selected in Drop-down
+2020-16-03 17:27:31   INFO [libs.ActionsWithOurElements] : 1GNEK12ZX2R298984 was inputted into element
+2020-16-03 17:27:32   INFO [libs.ActionsWithOurElements] : j1v9ev was inputted into element
+2020-16-03 17:27:32   INFO [libs.ActionsWithOurElements] : 59 was selected in Drop-down
+2020-16-03 17:27:32   INFO [libs.ActionsWithOurElements] : 328 was inputted into element
+2020-16-03 17:27:32   INFO [libs.ActionsWithOurElements] : 479 was inputted into element
+2020-16-03 17:27:32   INFO [libs.ActionsWithOurElements] : Ethanol was selected in Drop-down
+2020-16-03 17:27:32   INFO [libs.ActionsWithOurElements] : Z4q1j3 was inputted into element
+2020-16-03 17:27:33   INFO [libs.ActionsWithOurElements] : o4Uffd was inputted into element
+2020-16-03 17:27:33   INFO [libs.ActionsWithOurElements] : 7hyC5W was inputted into element
+2020-16-03 17:27:33   INFO [libs.ActionsWithOurElements] : 40 was inputted into element
+2020-16-03 17:27:33   INFO [libs.ActionsWithOurElements] : 05 was inputted into element
+2020-16-03 17:27:33   INFO [libs.ActionsWithOurElements] : MMW4K1 was inputted into element
+2020-16-03 17:27:33   INFO [libs.ActionsWithOurElements] : 2pq08a was inputted into element
+2020-16-03 17:27:34   INFO [libs.ActionsWithOurElements] : 11111111 was inputted into element
+2020-16-03 17:27:34   INFO [libs.ActionsWithOurElements] : 11111111 was inputted into element
+2020-16-03 17:27:34   INFO [libs.ActionsWithOurElements] : 11111111 was inputted into element
+2020-16-03 17:27:34   INFO [libs.ActionsWithOurElements] : 11111111 was inputted into element
+2020-16-03 17:27:34   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 17:27:38   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 17:27:47   INFO [frankesteinParamsTest.SafetyCreateEquipmentParamTest] : AC passed
+2020-16-03 17:27:48   INFO [frankesteinParamsTest.SafetyCreateEquipmentParamTest] : AC passed
+2020-16-03 17:27:49   INFO [frankesteinParamsTest.SafetyCreateEquipmentParamTest] : AC passed
+2020-16-03 17:27:50   INFO [frankesteinParamsTest.SafetyCreateEquipmentParamTest] : AC passed
+2020-16-03 17:27:51   INFO [frankesteinParamsTest.SafetyCreateEquipmentParamTest] : AC passed
+2020-16-03 17:27:52   INFO [frankesteinParamsTest.SafetyCreateEquipmentParamTest] : AC passed
+2020-16-03 17:27:53   INFO [frankesteinParamsTest.SafetyCreateEquipmentParamTest] : AC passed
+2020-16-03 17:27:54   INFO [frankesteinParamsTest.SafetyCreateEquipmentParamTest] : AC passed
+2020-16-03 17:27:55   INFO [frankesteinParamsTest.SafetyCreateEquipmentParamTest] : AC passed
+2020-16-03 17:27:56   INFO [frankesteinParamsTest.SafetyCreateEquipmentParamTest] : AC passed
+2020-16-03 17:27:57   INFO [frankesteinParamsTest.SafetyCreateEquipmentParamTest] : AC passed
+2020-16-03 17:27:58   INFO [frankesteinParamsTest.SafetyCreateEquipmentParamTest] : AC passed
+2020-16-03 17:27:59   INFO [frankesteinParamsTest.SafetyCreateEquipmentParamTest] : AC passed
+2020-16-03 17:28:00   INFO [frankesteinParamsTest.SafetyCreateEquipmentParamTest] : AC passed
+2020-16-03 17:28:01   INFO [frankesteinParamsTest.SafetyCreateEquipmentParamTest] : AC passed
+2020-16-03 17:28:02   INFO [frankesteinParamsTest.SafetyCreateEquipmentParamTest] : AC passed
+2020-16-03 17:28:03   INFO [frankesteinParamsTest.SafetyCreateEquipmentParamTest] : AC passed
+2020-16-03 17:28:04   INFO [frankesteinParamsTest.SafetyCreateEquipmentParamTest] : AC passed
+2020-16-03 17:28:05   INFO [frankesteinParamsTest.SafetyCreateEquipmentParamTest] : AC passed
+2020-16-03 17:28:06   INFO [frankesteinParamsTest.SafetyCreateEquipmentParamTest] : AC passed
+2020-16-03 17:28:07   INFO [frankesteinParamsTest.SafetyCreateEquipmentParamTest] : AC passed
+2020-16-03 17:28:08   INFO [frankesteinParamsTest.SafetyCreateEquipmentParamTest] : AC passed
+2020-16-03 17:28:08   INFO [frankesteinParamsTest.SafetyCreateEquipmentParamTest] :  DB connection closed 
+2020-16-03 17:28:09   INFO [frankesteinParamsTest.SafetyCreateEquipmentParamTest] : Chrome will be started
+2020-16-03 17:28:14   INFO [frankesteinParamsTest.SafetyCreateEquipmentParamTest] : Chrome is started
+2020-16-03 17:28:18   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-16-03 17:28:25   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-16-03 17:28:25   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 17:28:25   INFO [libs.ActionsWithOurElements] : fleet_test!!@test.test was inputted into element
+2020-16-03 17:28:25   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-16-03 17:28:25   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 17:28:31   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-16-03 17:28:31   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 17:28:31   INFO [pagesFrankestein.LoginFPage] : Phone verification pop up Closed
+2020-16-03 17:28:33   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 17:28:36   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 17:28:39   INFO [libs.ActionsWithOurElements] : rr was inputted into element
+2020-16-03 17:28:39   INFO [libs.ActionsWithOurElements] : a3FbTNQUz5 was inputted into element
+2020-16-03 17:28:39   INFO [libs.ActionsWithOurElements] : 961 was inputted into element
+2020-16-03 17:28:39   INFO [libs.ActionsWithOurElements] : 3 was selected in Drop-down
+2020-16-03 17:28:40   INFO [libs.ActionsWithOurElements] : 1GNEK12ZX2R298984 was inputted into element
+2020-16-03 17:28:40   INFO [libs.ActionsWithOurElements] : A8LcJd was inputted into element
+2020-16-03 17:28:40   INFO [libs.ActionsWithOurElements] : 25 was selected in Drop-down
+2020-16-03 17:28:40   INFO [libs.ActionsWithOurElements] : 110 was inputted into element
+2020-16-03 17:28:40   INFO [libs.ActionsWithOurElements] : 371 was inputted into element
+2020-16-03 17:28:41   INFO [libs.ActionsWithOurElements] : M-85 was selected in Drop-down
+2020-16-03 17:28:41   INFO [libs.ActionsWithOurElements] : zGgT3P was inputted into element
+2020-16-03 17:28:41   INFO [libs.ActionsWithOurElements] : tKLfGQ was inputted into element
+2020-16-03 17:28:41   INFO [libs.ActionsWithOurElements] : KQROU9 was inputted into element
+2020-16-03 17:28:41   INFO [libs.ActionsWithOurElements] : 57 was inputted into element
+2020-16-03 17:28:41   INFO [libs.ActionsWithOurElements] : 74 was inputted into element
+2020-16-03 17:28:42   INFO [libs.ActionsWithOurElements] : CJUms7 was inputted into element
+2020-16-03 17:28:42   INFO [libs.ActionsWithOurElements] : HeSolE was inputted into element
+2020-16-03 17:28:42   INFO [libs.ActionsWithOurElements] : 11111111 was inputted into element
+2020-16-03 17:28:42   INFO [libs.ActionsWithOurElements] : 11111111 was inputted into element
+2020-16-03 17:28:42   INFO [libs.ActionsWithOurElements] : 11111111 was inputted into element
+2020-16-03 17:28:43   INFO [libs.ActionsWithOurElements] : 11111111 was inputted into element
+2020-16-03 17:28:43   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 17:28:46   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 17:28:55   INFO [frankesteinParamsTest.SafetyCreateEquipmentParamTest] : AC passed
+2020-16-03 17:28:56   INFO [frankesteinParamsTest.SafetyCreateEquipmentParamTest] : AC passed
+2020-16-03 17:28:57   INFO [frankesteinParamsTest.SafetyCreateEquipmentParamTest] : AC passed
+2020-16-03 17:28:58   INFO [frankesteinParamsTest.SafetyCreateEquipmentParamTest] : AC passed
+2020-16-03 17:28:59   INFO [frankesteinParamsTest.SafetyCreateEquipmentParamTest] : AC passed
+2020-16-03 17:29:00   INFO [frankesteinParamsTest.SafetyCreateEquipmentParamTest] : AC passed
+2020-16-03 17:29:01   INFO [frankesteinParamsTest.SafetyCreateEquipmentParamTest] : AC passed
+2020-16-03 17:29:02   INFO [frankesteinParamsTest.SafetyCreateEquipmentParamTest] : AC passed
+2020-16-03 17:29:03   INFO [frankesteinParamsTest.SafetyCreateEquipmentParamTest] : AC passed
+2020-16-03 17:29:04   INFO [frankesteinParamsTest.SafetyCreateEquipmentParamTest] : AC passed
+2020-16-03 17:31:15   INFO [frankesteinParamsTest.SoloAddCardParamsTest] : Chrome will be started
+2020-16-03 17:31:22   INFO [frankesteinParamsTest.SoloAddCardParamsTest] : Chrome is started
+2020-16-03 17:31:26   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-16-03 17:31:34   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-16-03 17:31:34   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 17:31:35   INFO [libs.ActionsWithOurElements] : test121@test.test was inputted into element
+2020-16-03 17:31:35   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-16-03 17:31:35   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 17:31:41   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-16-03 17:31:41   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 17:31:41   INFO [pagesFrankestein.LoginFPage] : Phone verification pop up Closed
+2020-16-03 17:31:41   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2020-16-03 17:31:42   INFO [frankesteinParamsTest.SoloAddCardParamsTest] : AC passed
+2020-16-03 17:31:44   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 17:31:46   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 17:31:49   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 17:31:51   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 17:31:53   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 17:31:55   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 17:31:57   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 17:31:59   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 17:32:02   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 17:32:05   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 17:32:08   INFO [libs.ActionsWithOurElements] : 4007000000027 was inputted into element
+2020-16-03 17:32:08   INFO [libs.ActionsWithOurElements] : 1234 was inputted into element
+2020-16-03 17:32:08   INFO [libs.ActionsWithOurElements] : 2025 was inputted into element
+2020-16-03 17:32:08   INFO [libs.ActionsWithOurElements] : 10 was inputted into element
+2020-16-03 17:32:08   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 17:32:12   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 17:32:15   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 17:32:21  ERROR [frankesteinParamsTest.SoloAddCardParamsTest] : AC failed: Card failed
+2020-16-03 17:32:21   INFO [frankesteinParamsTest.SoloAddCardParamsTest] :  DB connection closed 
+2020-16-03 17:32:22   INFO [frankesteinParamsTest.SoloAddCardParamsTest] : Chrome will be started
+2020-16-03 17:32:27   INFO [frankesteinParamsTest.SoloAddCardParamsTest] : Chrome is started
+2020-16-03 17:32:31   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-16-03 17:32:38   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-16-03 17:32:38   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 17:32:38   INFO [libs.ActionsWithOurElements] : eld2@test.test was inputted into element
+2020-16-03 17:32:38   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-16-03 17:32:38   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 17:32:45   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-16-03 17:32:45   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 17:32:45   INFO [pagesFrankestein.LoginFPage] : Phone verification pop up Closed
+2020-16-03 17:32:45   INFO [libs.ActionsWithOurElements] : Element is enabled - >true
+2020-16-03 17:32:46   INFO [frankesteinParamsTest.SoloAddCardParamsTest] : AC passed
+2020-16-03 17:32:48   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 17:32:50   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 17:32:52   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 17:32:55   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 17:32:57   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 17:32:59   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 17:33:01   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 17:33:03   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 17:33:05   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 17:33:09   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 17:33:12   INFO [libs.ActionsWithOurElements] : 6011000000000012 was inputted into element
+2020-16-03 17:33:12   INFO [libs.ActionsWithOurElements] : 1234 was inputted into element
+2020-16-03 17:33:12   INFO [libs.ActionsWithOurElements] : 2025 was inputted into element
+2020-16-03 17:33:12   INFO [libs.ActionsWithOurElements] : 10 was inputted into element
+2020-16-03 17:33:12   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 17:33:16   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 17:33:19   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-03 17:33:25   INFO [frankesteinParamsTest.SoloAddCardParamsTest] : AC passed
+2020-16-03 17:33:25   INFO [frankesteinParamsTest.SoloAddCardParamsTest] :  DB connection closed 
+2020-16-03 17:33:26   INFO [frankesteinParamsTest.SoloAddCardParamsTest] : Chrome will be started

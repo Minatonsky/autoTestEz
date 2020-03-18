@@ -36,27 +36,26 @@ public class SafetyAddCardParamsTest extends ParentTest {
 
         String cardNumber = genRandomCreditCard();
         String userId = utilsForDB.getUserIdByEmail(login);
-        loginPage.userValidLogIn(login, pass);
-        checkAC("User wasn`t logined", dashboardPage.isDashboardPresent(), true);
-
-        dashboardPage.goToFinancesPage();
-        financesPage.goToRefunds();
-        financesPage.goToOrders();
-        financesPage.goToCards();
+        loginFPage.logInWithOutOpenMenu(login, pass);
+        dashboardFPage.goToSafetyPage();
+        dashboardFPage.goToFinancesPage();
+        financesFPage.goToRefunds();
+        financesFPage.goToOrders();
+        financesFPage.goToCards();
 //        add card
         waitABit(3);
-        financesPage.clickOnAddCard();
+        financesFPage.clickOnAddCard();
         waitABit(3);
-        financesPage.enterNumberCard(cardNumber);
-        financesPage.enterCvv("1234");
-        financesPage.enterExpiryDateYY("2025");
-        financesPage.enterExpiryDateMM("10");
+        financesFPage.enterNumberCard(cardNumber);
+        financesFPage.enterCvv("1234");
+        financesFPage.enterExpiryDateYY("2025");
+        financesFPage.enterExpiryDateMM("10");
         waitABit(3);
-        financesPage.clickOnPrimaryCard();
+        financesFPage.clickOnPrimaryCard();
         waitABit(3);
-        financesPage.clickOnCreateButton();
+        financesFPage.clickOnCreateButton();
         waitABit(3);
-        financesPage.clickOnCreateButtonConfirm();
+        financesFPage.clickOnCreateButtonConfirm();
         waitABit(5);
 
         checkAC("Card failed", utilsForDB.isCurrentCardSame(userId, cardNumber), true);
