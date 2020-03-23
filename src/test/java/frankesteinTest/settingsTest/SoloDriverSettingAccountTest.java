@@ -65,6 +65,8 @@ public class SoloDriverSettingAccountTest extends ParentTest {
         accountSettingsPage.setCargoType(cargoType, cargoTypeRandomValue);
         accountSettingsPage.clickSaveDriverInfo();
 
+        waitABit(3);
+
         List<ArrayList> tempDataList = utilsForDB.getUsersAndDriversRulesData(login);
         Map<String, Object> userDataAfterTestMap = listArrayToMap(tempDataList);
 

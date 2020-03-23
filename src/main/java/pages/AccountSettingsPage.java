@@ -98,8 +98,8 @@ public class AccountSettingsPage extends ParentPage {
             String tempValue = Integer.toString(Math.abs(Integer.parseInt(cycleTypeValue) - 1));
             actionsWithOurElements.selectValueInDropDown(cycleSelect, tempValue);
             logger.info("Cycle set " + tempValue);
-        } else actionsWithOurElements.selectValueInDropDown(cycleSelect, cycleTypeValue);
-        logger.info("Cycle set " + cycleTypeValue);
+        } else actionsWithOurElements.selectValueInDropDown(cycleSelect, cycleTypeValue);{
+        logger.info("Cycle set " + cycleTypeValue);}
     }
     public void setTimeZone(String timeZoneValue, String timeZoneRandomValue) {
         if (timeZoneValue.equals(timeZoneRandomValue)) {

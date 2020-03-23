@@ -405,6 +405,10 @@ public class UtilsForDB {
         dBMySQL.changeTable("UPDATE driversRules dr SET dr.aobrdMPH = 0 WHERE userId = " + userId + ";");
     }
     @Step
+    public void set_0_AobrdMPHCarrierSettings(String carrierId) throws SQLException{
+        dBMySQL.changeTable("UPDATE carriers c SET c.aobrdMPH = 0 WHERE c.id = " + carrierId + ";");
+    }
+    @Step
     public boolean checkAobrdMPHDriverSettings(String userId) throws SQLException{
         boolean tempResult = dBMySQL.isRowPresent("SELECT * FROM driversRules WHERE userId = " + userId + " AND aobrdMPH > 0;");
         return tempResult;
@@ -463,6 +467,13 @@ public class UtilsForDB {
         List<ArrayList> tempData = dBMySQL.selectTable("SELECT dr.carrierName, dr.carrierAddress, dr.carrierCity, dr.carrierState, dr.carrierZip, dr.homeTerminal, dr.coDrivers, dr.cycleId, dr.timeZoneId, dr.usdot, dr.odometerId,dr.restBreakId, \n" +
                 "dr.logIncrementId, dr.cargoTypeId, dr.wellSiteId, dr.restartId, dr.iftaDistances, dr.old_allow_edit, dr.aobrdMPH, dr.teamDriver, dr.teamDriverPassword, u.id, u.name, u.`last`, u.phone, \n" +
                 "u.password, u.googleId, u.fbId, u.carrierId, u.companyPosition, u.banned FROM driversRules dr LEFT JOIN users u ON u.id = dr.userId WHERE u.email = '" + userEmail + "';");
+        return tempData;
+    }
+    @Step
+    public List<ArrayList> getCarrierRulesData(String carrierId) throws SQLException {
+        List<ArrayList> tempData = dBMySQL.selectTable("SELECT c.usdot, c.name, c.state, c.city, c.address, c.zip, c.size, c.registrationDate, c.aobrdMPH, c.ownerId, c.ein, c.banned, f.cycleId, f.timeZoneId, f.agricultureDeliveries FROM carriers c\n" +
+                "LEFT JOIN fleetRules f ON f.carrierId = c.id\n" +
+                " WHERE c.id = " + carrierId + ";");
         return tempData;
     }
     @Step

@@ -18,7 +18,6 @@ import java.time.temporal.TemporalAdjusters;
 import java.util.List;
 
 import static libs.Utils.genRandomDataByRegex;
-import static libs.Utils.isValidEmailAddress;
 // This test page is not using on test project, it just for check some methods
 
 
@@ -192,7 +191,8 @@ public class TestMethods extends ParentTestWithoutWebDriver {
     }
     @Test
     public void test(){
-        System.out.println(isValidEmailAddress("qqq.qq@r"));
+
+        System.out.println("5".equals("5"));
     }
 
 
