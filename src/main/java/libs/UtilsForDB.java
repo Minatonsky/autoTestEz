@@ -442,6 +442,23 @@ public class UtilsForDB {
     }
 
     @Step
+    public String getRandomEquipmentIdCarrier(String carrierId, String truckTrailer) throws SQLException{
+        String tempCurrentDue = dBMySQL.selectValue("SELECT e.id FROM equipment e WHERE e.carrierId = " + carrierId + " AND e.truckTrailer = " + truckTrailer + "  ORDER BY RAND()LIMIT 1;");
+        return tempCurrentDue;
+    }
+
+    @Step
+    public String getRandomUserIdCarrier(String carrierId) throws SQLException{
+        String tempCurrentDue = dBMySQL.selectValue("SELECT id FROM users u WHERE u.carrierId = " + carrierId + " ORDER BY RAND()LIMIT 1;");
+        return tempCurrentDue;
+    }
+    @Step
+    public String getRandomDriverIdInFleet(String carrierId) throws SQLException{
+        String tempCurrentDue = dBMySQL.selectValue("SELECT id FROM users u WHERE u.carrierId = " + carrierId + " AND u.companyPosition = 7 ORDER BY RAND()LIMIT 1;");
+        return tempCurrentDue;
+    }
+
+    @Step
     public String getDocInfoData(String docId, String infoName) throws SQLException{
         String tempData = dBMySQL.selectValue("SELECT infoData from docsInfo di WHERE di.docId = " + docId + " AND infoName = '" + infoName + "';");
         return tempData;

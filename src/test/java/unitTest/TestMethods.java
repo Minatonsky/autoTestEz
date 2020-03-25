@@ -1,5 +1,6 @@
 package unitTest;
 
+import com.github.javafaker.Faker;
 import org.apache.log4j.Logger;
 import org.json.JSONObject;
 import org.junit.Test;
@@ -137,11 +138,14 @@ public class TestMethods extends ParentTestWithoutWebDriver {
 
     @Test
     public void compareEldStatusInCompletedOrder() throws SQLException, IOException, ClassNotFoundException {
-        LocalDateTime oneYear = LocalDateTime.parse(LocalDateTime.now().minusMonths(12).toString()).with(TemporalAdjusters.firstDayOfNextMonth());
-        long firstDayOfNextMonth = oneYear.toEpochSecond(ZoneOffset.UTC);
-        String tempOneYear = Long.toString(firstDayOfNextMonth);
-        System.out.println("firstDayOfNextMonth = " + tempOneYear);
+
+        LocalDate today = LocalDate.now(ZoneOffset.UTC);
+        LocalDateTime startOfDay = today.atStartOfDay();
+        String formatted = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss").format(startOfDay);
+
+        System.out.println(today);
     }
+
 
     @Test
     public void checkProratedAndNotReturnedFee() throws SQLException, IOException, ClassNotFoundException {
@@ -184,15 +188,22 @@ public class TestMethods extends ParentTestWithoutWebDriver {
 
     @Test
     public void getAmountEzDueMonthToMonth() throws SQLException, IOException, ClassNotFoundException {
-        String data = genRandomDataByRegex("[A-Z]{1}[a-z]{11}") + genRandomDataByRegex("[A-Z]{1}[a-z]{11}");
+        String data = genRandomDataByRegex("[0-9]{2}[-]{1}[0-9]{7}");
 
         System.out.println(data);
 
     }
     @Test
     public void test(){
+        Faker faker = new Faker();
+        String name = faker.code().ean8(); // Miss Samanta Schmidt
+//        genRandomDataByRegex();
+        String firstName = faker.name().firstName(); // Emory
+        String lastName = faker.name().lastName(); // Barton
 
-        System.out.println("5".equals("5"));
+        String streetAddress = faker.address().streetAddress(); // 60018 Sawayn Brooks Suite 449
+
+        System.out.println(name);
     }
 
 

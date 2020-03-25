@@ -6,6 +6,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+import static libs.Utils.waitABit;
+
 public class AccountSettingsFPage extends ParentFPage {
     public AccountSettingsFPage(WebDriver webDriver, UtilsForDB utilsForDB) {
         super(webDriver, "/dash/settings/account/", utilsForDB);
@@ -244,20 +246,20 @@ public class AccountSettingsFPage extends ParentFPage {
 
 //    FLEET INFO
     public void enterUsdot(String usdot){
-        actionsWithOurElements.clearAndEnterTextToElement(fleetUsdot, usdot);
+        actionsWithOurElements.clearElement(fleetUsdot);
+        actionsWithOurElements.enterTextOnElementJs(".//*[@id='fleet_usdot']", usdot);
     }
     public void enterFleetName(String name){
         actionsWithOurElements.clearAndEnterTextToElement(fleetName, name);
     }
     public void enterFleetEIN(String ein){
-        actionsWithOurElements.clearAndEnterTextToElement(fleetEIN, ein);
+        actionsWithOurElements.clearElement(fleetEIN);
+        waitABit(3);
+        actionsWithOurElements.enterTextOnElementJs(".//*[@id='fleet_ein']", ein);
+//        actionsWithOurElements.clearAndEnterTextToElement(fleetEIN, ein);
     }
-    public void setFleetState(String fleetStateValue, String stateRandomValue) {
-        if (fleetStateValue.equals(stateRandomValue)) {
-            String tempValue = Integer.toString(Math.abs(Integer.parseInt(stateRandomValue) - 1));
-            actionsWithOurElements.selectValueInDropDown(fleetState, tempValue);
-            logger.info("Fleet state set " + tempValue);
-        } else actionsWithOurElements.selectValueInDropDown(fleetState, stateRandomValue);
+    public void setFleetState(String stateRandomValue) {
+        actionsWithOurElements.selectValueInDropDown(fleetState, stateRandomValue);
         logger.info("Fleet state set " + stateRandomValue);
     }
     public void enterFleetCity(String city){
@@ -272,21 +274,13 @@ public class AccountSettingsFPage extends ParentFPage {
     public void enterFleetSize(String size){
         actionsWithOurElements.clearAndEnterTextToElement(fleetSize, size);
     }
-    public void setFleetCycle(String cycleValue, String cycleRandomValue){
-        if (cycleValue.equals(cycleRandomValue)){
-            String tempValue = Integer.toString(Math.abs(Integer.parseInt(cycleRandomValue) - 1));
-            actionsWithOurElements.selectValueInDropDown(fleetCycle, tempValue);
-            logger.info("Cycle set " + tempValue);
-        } else actionsWithOurElements.selectValueInDropDown(fleetCycle, cycleRandomValue);
-        logger.info("Cycle set " + cycleRandomValue);
+    public void setFleetCycle(String cycleRandomValue){
+        actionsWithOurElements.selectValueInDropDown(fleetCycle, cycleRandomValue);
+        logger.info("Cycle Set " + cycleRandomValue);
     }
-    public void setFleetTimeZone(String timeZoneValue, String timeZoneRandomValue) {
-        if (timeZoneValue.equals(timeZoneRandomValue)) {
-            String tempValue = Integer.toString(Math.abs(Integer.parseInt(timeZoneRandomValue) - 1));
-            actionsWithOurElements.selectValueInDropDown(fleetTimeZone, tempValue);
-            logger.info("Time zone set " + tempValue);
-        } else actionsWithOurElements.selectValueInDropDown(fleetTimeZone, timeZoneRandomValue);
-        logger.info("Time zone set " + timeZoneRandomValue);
+    public void setFleetTimeZone(String timeZoneRandomValue) {
+       actionsWithOurElements.selectValueInDropDown(fleetTimeZone, timeZoneRandomValue);
+       logger.info("Time zone set " + timeZoneRandomValue);
     }
     public void moveSliderAobrd(int value){
         actionsWithOurElements.sliderMove("//*[@id='aobrdMPH']", value);

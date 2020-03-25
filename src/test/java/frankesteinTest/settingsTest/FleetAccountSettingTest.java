@@ -28,11 +28,8 @@ public class FleetAccountSettingTest extends ParentTest {
         List<ArrayList> tempDataListBeforeTest = utilsForDB.getUsersAndDriversRulesData(login);
         Map<String, Object> userDataBeforeTestMap = listArrayToMap(tempDataListBeforeTest);
 
-        String odometer = userDataBeforeTestMap.get("odometerId").toString();
-        String firstName = genRandomDataByRegex("[A-Z]{1}[a-z]{11}");
-        String LastName = genRandomDataByRegex("[A-Z]{1}[a-z]{11}");
-        String phone = RandomStringUtils.randomNumeric(10);
-
+        String firstName = faker.name().firstName();
+        String LastName = faker.name().lastName();
         String soundNotificaitonBT = "1";
         String locationIconWarningBT = "1";
         String showScoreCardBT = "1";
@@ -45,7 +42,6 @@ public class FleetAccountSettingTest extends ParentTest {
         //ACCOUNT INFO
         accountSettingsFPage.enterFirstName(firstName);
         accountSettingsFPage.enterLastName(LastName);
-//        accountSettingsFPage.enterPhone(phone);
         accountSettingsFPage.clickSaveAccountInfo();
 
         waitABit(3);
@@ -55,7 +51,6 @@ public class FleetAccountSettingTest extends ParentTest {
 
         checkAC("First name failed", firstName.equals(userDataAfterTestMap.get("name")), true);
         checkAC("Last name failed", LastName.equals(userDataAfterTestMap.get("last")), true);
-//        checkAC("Phone failed", phone.equals(userDataAfterTestMap.get("phone")), true);
 
         accountSettingsFPage.setSoundNotification(soundNotificaitonBT);
         accountSettingsFPage.setCoordinatesIcon(locationIconWarningBT);
@@ -81,51 +76,53 @@ public class FleetAccountSettingTest extends ParentTest {
         List<ArrayList> tempDataListBeforeTest = utilsForDB.getCarrierRulesData(carrierId);
         Map<String, Object> fleetDataBeforeTestMap = listArrayToMap(tempDataListBeforeTest);
 
-        String fleetName = genRandomDataByRegex("[A-Z]{1}[a-z]{11}");
-        String cycle = fleetDataBeforeTestMap.get("cycleId").toString();
-        String timeZone = fleetDataBeforeTestMap.get("timeZoneId").toString();
         String state = fleetDataBeforeTestMap.get("state").toString();
         String agricultureDeliveries = fleetDataBeforeTestMap.get("agricultureDeliveries").toString();
 
         String cycleTypeRandomValue = Integer.toString(genRandomNumberBetweenTwoValues(0 , 8));
         String timeZoneTypeRandomValue = Integer.toString(genRandomNumberBetweenTwoValues(0 , 8));
         String fleetUsdot = RandomStringUtils.randomNumeric(9);
-        String fleetEIN = RandomStringUtils.randomNumeric(9);
+        String fleetEIN = genRandomDataByRegex("[0-9]{2}[-]{1}[0-9]{7}");
         String randomState = Integer.toString(genRandomNumberBetweenTwoValues(0 , 63));
-        String city = genRandomDataByRegex("[A-Z]{1}[a-z]{11}");
-        String street = genRandomDataByRegex("[A-Z]{1}[a-z]{11}");
+        String city = faker.address().city();
+        String street = faker.address().streetAddress();
         String zip = RandomStringUtils.randomNumeric(5);
-        String size = RandomStringUtils.randomNumeric(5);
+        String size = RandomStringUtils.randomNumeric(1);
+        String fleetName = faker.beer().name();
 
         loginFPage.logInWithOutOpenMenu(login, pass);
         dashboardFPage.openDashHeadMenu();
         dashboardFPage.goToSettingPage();
         waitABit(3);
         accountSettingsFPage.clickOnFleetSettings();
+        waitABit(3);
         accountSettingsFPage.enterUsdot(fleetUsdot);
         accountSettingsFPage.enterFleetName(fleetName);
-        accountSettingsFPage.enterFleetEIN(fleetEIN);
-        accountSettingsFPage.setFleetState(state, randomState);
+//        accountSettingsFPage.enterFleetEIN(fleetEIN);
+        accountSettingsFPage.setFleetState(randomState);
         accountSettingsFPage.enterFleetCity(city);
         accountSettingsFPage.enterFleetStreet(street);
         accountSettingsFPage.enterFleetZip(zip);
         accountSettingsFPage.enterFleetSize(size);
-        accountSettingsFPage.setFleetCycle(cycle, cycleTypeRandomValue);
-        accountSettingsFPage.setFleetTimeZone(timeZone, timeZoneTypeRandomValue);
+        accountSettingsFPage.setFleetCycle(cycleTypeRandomValue);
+        accountSettingsFPage.setFleetTimeZone(timeZoneTypeRandomValue);
         accountSettingsFPage.moveSliderAobrd(3);
         accountSettingsFPage.checkAgricultureDelivery(agricultureDeliveries);
         accountSettingsFPage.clickOnSaveFleetInfoButton();
-        waitABit(3);
+        waitABit(20);
 
         List<ArrayList> tempDataListAfterTest = utilsForDB.getCarrierRulesData(carrierId);
         Map<String, Object> fleetDataAfterTestMap = listArrayToMap(tempDataListAfterTest);
 
-        checkAC("Usdot failed", fleetDataAfterTestMap.equals(fleetDataAfterTestMap.get("usdot").equals(fleetUsdot)), true);
-        checkAC("Name failed", fleetDataAfterTestMap.equals(fleetDataAfterTestMap.get("name")), true);
-        checkAC("Cycle failed", fleetDataAfterTestMap.get("cycleId").equals(cycle), true);
-        checkAC("Time zone failed", fleetDataAfterTestMap.get("timeZoneId").equals(timeZone), true);
-        checkAC("EIN failed", fleetDataAfterTestMap.get("ein").equals(fleetEIN), true);
-        checkAC("State failed", fleetDataAfterTestMap.get("restBreakId").equals(randomState), true);
+        System.out.println(fleetDataAfterTestMap.get("state"));
+        System.out.println(randomState);
+
+        checkAC("Usdot failed", fleetDataAfterTestMap.get("usdot").equals(fleetUsdot), true);
+        checkAC("Name failed", fleetDataAfterTestMap.get("name").equals(fleetName), true);
+        checkAC("Cycle failed", fleetDataAfterTestMap.get("cycleId").equals(cycleTypeRandomValue), true);
+        checkAC("Time zone failed", fleetDataAfterTestMap.get("timeZoneId").equals(timeZoneTypeRandomValue), true);
+//        checkAC("EIN failed", fleetDataAfterTestMap.get("ein").equals(fleetEIN), true);
+        checkAC("State failed", fleetDataAfterTestMap.get("state").equals(randomState), true);
         checkAC("City failed", fleetDataAfterTestMap.get("city").equals(city), true);
         checkAC("Street failed", fleetDataAfterTestMap.get("address").equals(street), true);
         checkAC("Zip failed", fleetDataAfterTestMap.get("zip").equals(zip), true);
