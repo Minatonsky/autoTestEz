@@ -95,9 +95,9 @@ public class ChargeMethods {
     @Step
     public String runCronCheckFleet() throws SQLException {
         LocalDateTime startCronTime = LocalDateTime.parse(LocalDateTime.now(ZoneId.from(ZoneOffset.UTC)).toString());
-        String startCronTimeLong = startCronTime.format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));
         utilsForDB.setFleetsCronRunTime(startOfDay());
         initDriver();
+        String startCronTimeLong = startCronTime.format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));
         webDriver.get(checkFleets);
         logger.info("Cron check fleets was run: " + startCronTimeLong);
         webDriver.quit();
@@ -106,11 +106,13 @@ public class ChargeMethods {
     @Step
     public String runCronCheckDrivers() throws SQLException {
         LocalDateTime startCronTime = LocalDateTime.parse(LocalDateTime.now(ZoneId.from(ZoneOffset.UTC)).toString());
-        String startCronTimeLong = startCronTime.format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));
-        logger.info("Cron check Drivers was run: " + startCronTimeLong);
+
+
         utilsForDB.setDriversCronRunTime(startOfDay());
         initDriver();
+        String startCronTimeLong = startCronTime.format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));
         webDriver.get(checkDrivers);
+        logger.info("Cron check Drivers was run: " + startCronTimeLong);
         webDriver.quit();
         return startCronTimeLong;
     }
@@ -136,19 +138,15 @@ public class ChargeMethods {
     }
 
     @Step
-    public boolean checkIfTariffPresent(int monthIOSXTariff, int oneYearIOSXTariff, int twoYearsIOSXTariff, int monthGeometricsTariff, int oneYearGeometricsTariff, int twoYearsGeometricsTariff, int countScannerMonthEzHardTariff,
-                                        int countScannerOneYearEzHardTariff, int countScannerTwoYearsEzHardTariff){
+    public boolean checkIfTariffPresent(int monthIOSXTariff, int oneYearIOSXTariff, int twoYearsIOSXTariff, int monthGeometricsTariff, int oneYearGeometricsTariff, int twoYearsGeometricsTariff){
         logger.info("# COUNT MONTH TO MONTH IOSX TARIFF = " + monthIOSXTariff);
         logger.info("# COUNT ONE YEAR IOSX TARIFF = " + oneYearIOSXTariff);
         logger.info("# COUNT TWO YEARS IOSX TARIFF = " + twoYearsIOSXTariff);
         logger.info("# COUNT MONTH TO MONTH GEOMETRICS TARIFF = " + monthGeometricsTariff);
         logger.info("# COUNT ONE YEAR GEOMETRICS TARIFF = " + oneYearGeometricsTariff);
         logger.info("# COUNT TWO YEARS GEOMETRICS TARIFF = " + twoYearsGeometricsTariff);
-        logger.info("# COUNT MONTH TO MONTH EZ HARD TARIFF = " + countScannerMonthEzHardTariff);
-        logger.info("# COUNT ONE YEAR EZ HARD TARIFF = " + countScannerOneYearEzHardTariff);
-        logger.info("# COUNT TWO YEARS EZ HARD TARIFF = " + countScannerTwoYearsEzHardTariff);
-        if (monthIOSXTariff > 0 & oneYearIOSXTariff > 0 & twoYearsIOSXTariff > 0 & monthGeometricsTariff > 0 & oneYearGeometricsTariff > 0 & twoYearsGeometricsTariff > 0 & countScannerMonthEzHardTariff > 0
-        & countScannerOneYearEzHardTariff > 0 & countScannerTwoYearsEzHardTariff > 0) {
+
+        if (monthIOSXTariff > 0 & oneYearIOSXTariff > 0 & twoYearsIOSXTariff > 0 & monthGeometricsTariff > 0 & oneYearGeometricsTariff > 0 & twoYearsGeometricsTariff > 0 ) {
             return true;
         } else return false;
     }
@@ -481,7 +479,7 @@ public class ChargeMethods {
         return tempResult;
     }
 
-    public void informationOfDeactivatedAndReturnedScanners(int countDeactivatedScannerMonthIOSXTariff, int countScannerMonthIOSXChargeReturned, int countScannerOneYearIOSXChargeReturned, int countScannerTwoYearIOSXChargeReturned, int countGeometricsMonthChargeReturnedScanner, int countGeometricsOneYearChargeReturnedScanner, int countGeometricsTwoYearChargeReturnedScanner, int countEzHardMonthChargeReturnedScanner, int countEzHardOneYearChargeReturnedScanner, int countEzHardTwoYearChargeReturnedScanner) {
+    public void informationOfDeactivatedAndReturnedScanners(int countDeactivatedScannerMonthIOSXTariff, int countScannerMonthIOSXChargeReturned, int countScannerOneYearIOSXChargeReturned, int countScannerTwoYearIOSXChargeReturned, int countGeometricsMonthChargeReturnedScanner, int countGeometricsOneYearChargeReturnedScanner, int countGeometricsTwoYearChargeReturnedScanner) {
         logger.info("# Deactivated Month IOSX Tariff = " + countDeactivatedScannerMonthIOSXTariff);
         logger.info("# Month IOSX Charge Returned = " + countScannerMonthIOSXChargeReturned);
         logger.info("# One Year IOSX Charge Returned = " + countScannerOneYearIOSXChargeReturned);
@@ -491,9 +489,6 @@ public class ChargeMethods {
         logger.info("# Geometrics One Year Charge Returned = " + countGeometricsOneYearChargeReturnedScanner);
         logger.info("# Geometrics Two Year Charge Returned = " + countGeometricsTwoYearChargeReturnedScanner);
 
-        logger.info("# EZ HARD Month Charge Returned = " + countEzHardMonthChargeReturnedScanner);
-        logger.info("# EZ HARD One Year Charge Returned = " + countEzHardOneYearChargeReturnedScanner);
-        logger.info("# EZ HARD Two Year Charge Returned = " + countEzHardTwoYearChargeReturnedScanner);
     }
 
     public void informationOfScannersMonth(int countScannerMonthIOSXTariff, int countDeactivatedScannerMonthIOSXTariff, int countMonthIOSXChargeReturnedScanner, int countScannerMonthGeometricsTariff, int countMonthGeometricsChargeReturnedScanner, int countScannerMonthEzHardTariff, int countMonthEzHardChargeReturnedScanner) {

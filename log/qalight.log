@@ -2512,3 +2512,326 @@ Session ID: a3afb07d536d955688a1a156335f3468
 2020-27-03 11:06:50   INFO [localSiteTest.SoloDriverDocumentsUpdateLocalSiteTest] :  DB connection closed 
 2020-27-03 14:07:21   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
 2020-27-03 14:07:24   INFO [unitTest.TestMethods] :  DB Connection Closed 
+2020-27-03 16:07:15   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-27-03 16:07:22   INFO [libs.ChargeMethods] : # Temp Tariff Month Start 2019-10-25T16:07:22.397
+2020-27-03 16:07:22   INFO [libs.ChargeMethods] : # Temp Tariff Month Start 2019-12-21T16:07:22.400
+2020-27-03 16:07:22   INFO [libs.ChargeMethods] : # Temp Tariff Month Start 2019-12-24T16:07:22.401
+2020-27-03 16:07:22   INFO [libs.ChargeMethods] : # COUNT MONTH TO MONTH IOSX TARIFF = 76
+2020-27-03 16:07:22   INFO [libs.ChargeMethods] : # COUNT ONE YEAR IOSX TARIFF = 39
+2020-27-03 16:07:22   INFO [libs.ChargeMethods] : # COUNT TWO YEARS IOSX TARIFF = 100
+2020-27-03 16:07:22   INFO [libs.ChargeMethods] : # COUNT MONTH TO MONTH GEOMETRICS TARIFF = 53
+2020-27-03 16:07:22   INFO [libs.ChargeMethods] : # COUNT ONE YEAR GEOMETRICS TARIFF = 32
+2020-27-03 16:07:22   INFO [libs.ChargeMethods] : # COUNT TWO YEARS GEOMETRICS TARIFF = 38
+2020-27-03 16:07:22   INFO [libs.ChargeMethods] : # COUNT MONTH TO MONTH EZ HARD TARIFF = 7
+2020-27-03 16:07:22   INFO [libs.ChargeMethods] : # COUNT ONE YEAR EZ HARD TARIFF = 5
+2020-27-03 16:07:22   INFO [libs.ChargeMethods] : # COUNT TWO YEARS EZ HARD TARIFF = 1
+2020-27-03 16:07:23   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-27-03 16:07:23   INFO [libs.ChargeMethods] : # Deactivated Month IOSX Tariff = 0
+2020-27-03 16:07:23   INFO [libs.ChargeMethods] : # Month IOSX Charge Returned = 6
+2020-27-03 16:07:23   INFO [libs.ChargeMethods] : # One Year IOSX Charge Returned = 1
+2020-27-03 16:07:23   INFO [libs.ChargeMethods] : # Two Year IOSX Charge Returned = 6
+2020-27-03 16:07:23   INFO [libs.ChargeMethods] : # Geometrics Month Charge Returned = 2
+2020-27-03 16:07:23   INFO [libs.ChargeMethods] : # Geometrics One Year Charge Returned = 2
+2020-27-03 16:07:23   INFO [libs.ChargeMethods] : # Geometrics Two Year Charge Returned = 0
+2020-27-03 16:07:23   INFO [libs.ChargeMethods] : # EZ HARD Month Charge Returned = 2
+2020-27-03 16:07:23   INFO [libs.ChargeMethods] : # EZ HARD One Year Charge Returned = 0
+2020-27-03 16:07:23   INFO [libs.ChargeMethods] : # EZ HARD Two Year Charge Returned = 3
+2020-27-03 16:07:25   INFO [libs.ChargeMethods] : # Temp Tariff Month Start 2020-03-21T16:07:25.519
+2020-27-03 16:07:25   INFO [libs.ChargeMethods] : # Temp Tariff Month Start 2020-03-04T16:07:25.521
+2020-27-03 16:07:25   INFO [libs.ChargeMethods] : # Temp Tariff Month Start 2020-03-04T16:07:25.522
+2020-27-03 16:07:32   INFO [libs.ChargeMethods] : Chrome is started
+2020-27-03 16:09:27   INFO [libs.ChargeMethods] : Cron check fleets was run: 2020-03-27 14:07:28
+2020-27-03 16:09:28   INFO [libs.ChargeMethods] : dateTime: [2020-03-27 14:08:57]
+2020-27-03 16:09:29   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-27-03 16:09:29   INFO [libs.ChargeMethods] : # MONTH CHARGE IOSX = 2429.19
+2020-27-03 16:09:29   INFO [libs.ChargeMethods] : # ONE YEAR CHARGE IOSX = 13195.6
+2020-27-03 16:09:29   INFO [libs.ChargeMethods] : # TWO YEARS CHARGE IOSX = 66757.74
+2020-27-03 16:09:29   INFO [libs.ChargeMethods] : # SUM DUE CHARGE IOSX = 82382.53
+2020-27-03 16:09:29   INFO [libs.ChargeMethods] : # MONTH CHARGE Geometrics = 1619.46
+2020-27-03 16:09:29   INFO [libs.ChargeMethods] : # ONE YEAR CHARGE Geometrics = 11216.26
+2020-27-03 16:09:29   INFO [libs.ChargeMethods] : # TWO YEARS CHARGE Geometrics = 23932.02
+2020-27-03 16:09:29   INFO [libs.ChargeMethods] : # SUM DUE CHARGE Geometrics = 36767.74
+2020-27-03 16:09:29   INFO [libs.ChargeMethods] : # MONTH CHARGE EzHard = 239.92
+2020-27-03 16:09:29   INFO [libs.ChargeMethods] : # ONE YEAR CHARGE EzHard = 1649.45
+2020-27-03 16:09:29   INFO [libs.ChargeMethods] : # TWO YEARS CHARGE EzHard = 2519.16
+2020-27-03 16:09:29   INFO [libs.ChargeMethods] : # SUM DUE CHARGE EzHard = 4408.53
+2020-27-03 16:09:29   INFO [libs.ChargeMethods] : # activationDate = 1584806845
+2020-27-03 16:09:29   INFO [libs.ChargeMethods] : # countScannerMonthToMonthTariffChargeByDays = 1
+2020-27-03 16:09:29   INFO [libs.ChargeMethods] : ***** Month Days = 31
+2020-27-03 16:09:29   INFO [libs.ChargeMethods] : ***** Price For One Day = 0.9674193548387097
+2020-27-03 16:09:29   INFO [libs.ChargeMethods] : ***** Active Charge Days = 5
+2020-27-03 16:09:29   INFO [libs.ChargeMethods] : ***** chargeByDevice = 4.84
+2020-27-03 16:09:29   INFO [libs.ChargeMethods] : ***** chargeByAllDevices = 4.84
+2020-27-03 16:09:29   INFO [libs.ChargeMethods] : # activationDate = 1583338045
+2020-27-03 16:09:29   INFO [libs.ChargeMethods] : # countScannerMonthToMonthTariffChargeByDays = 1
+2020-27-03 16:09:29   INFO [libs.ChargeMethods] : ***** Month Days = 31
+2020-27-03 16:09:29   INFO [libs.ChargeMethods] : ***** Price For One Day = 0.9674193548387097
+2020-27-03 16:09:29   INFO [libs.ChargeMethods] : ***** Active Charge Days = 22
+2020-27-03 16:09:29   INFO [libs.ChargeMethods] : ***** chargeByDevice = 21.28
+2020-27-03 16:09:29   INFO [libs.ChargeMethods] : ***** chargeByAllDevices = 21.28
+2020-27-03 16:09:29   INFO [libs.ChargeMethods] : # activationDate = 1583338045
+2020-27-03 16:09:29   INFO [libs.ChargeMethods] : # countScannerMonthToMonthTariffChargeByDays = 1
+2020-27-03 16:09:29   INFO [libs.ChargeMethods] : ***** Month Days = 31
+2020-27-03 16:09:29   INFO [libs.ChargeMethods] : ***** Price For One Day = 0.9674193548387097
+2020-27-03 16:09:29   INFO [libs.ChargeMethods] : ***** Active Charge Days = 22
+2020-27-03 16:09:29   INFO [libs.ChargeMethods] : ***** chargeByDevice = 21.28
+2020-27-03 16:09:29   INFO [libs.ChargeMethods] : ***** chargeByAllDevices = 21.28
+2020-27-03 16:09:29   INFO [libs.ChargeMethods] : # LIST AMOUNT DUE FROM DB = [13195.60, 2434.03, 66757.74, 11216.26, 1640.74, 23932.02]
+2020-27-03 16:09:29   INFO [libs.ChargeMethods] : # PROGRAM COUNT CHARGE  = 123606.2
+2020-27-03 16:09:29   INFO [libs.ChargeMethods] : # SUM DB DUE (CHARGE) = 119176.39
+2020-27-03 16:09:30  ERROR [chargeTest.ChargeFleetSoloTest] : AC failed: Charge due is not correct
+2020-27-03 16:09:30   INFO [chargeTest.ChargeFleetSoloTest] :  DB Connection Closed 
+2020-27-03 17:02:06   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-27-03 17:02:12   INFO [libs.ChargeMethods] : # Temp Tariff Month Start 2019-10-25T17:02:12.709
+2020-27-03 17:02:12   INFO [libs.ChargeMethods] : # Temp Tariff Month Start 2019-12-21T17:02:12.712
+2020-27-03 17:02:12   INFO [libs.ChargeMethods] : # Deactivated Month IOSX Tariff = 0
+2020-27-03 17:02:12   INFO [libs.ChargeMethods] : # Month IOSX Charge Returned = 6
+2020-27-03 17:02:12   INFO [libs.ChargeMethods] : # One Year IOSX Charge Returned = 1
+2020-27-03 17:02:12   INFO [libs.ChargeMethods] : # Two Year IOSX Charge Returned = 6
+2020-27-03 17:02:12   INFO [libs.ChargeMethods] : # Geometrics Month Charge Returned = 2
+2020-27-03 17:02:12   INFO [libs.ChargeMethods] : # Geometrics One Year Charge Returned = 2
+2020-27-03 17:02:12   INFO [libs.ChargeMethods] : # Geometrics Two Year Charge Returned = 0
+2020-27-03 17:02:14   INFO [libs.ChargeMethods] : # Temp Tariff Month Start 2020-03-21T17:02:14.074
+2020-27-03 17:02:14   INFO [libs.ChargeMethods] : # Temp Tariff Month Start 2020-03-04T17:02:14.076
+2020-27-03 17:02:14   INFO [libs.ChargeMethods] : # Temp Tariff Month Start 2020-03-04T17:02:14.078
+2020-27-03 17:02:20   INFO [libs.ChargeMethods] : Chrome is started
+2020-27-03 17:03:53   INFO [libs.ChargeMethods] : Cron check fleets was run: 2020-03-27 15:02:15
+2020-27-03 17:03:54   INFO [libs.ChargeMethods] : dateTime: [2020-03-27 15:03:23]
+2020-27-03 17:03:55   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-27-03 17:03:55   INFO [libs.ChargeMethods] : # MONTH CHARGE IOSX = 2429.19
+2020-27-03 17:03:55   INFO [libs.ChargeMethods] : # ONE YEAR CHARGE IOSX = 13195.6
+2020-27-03 17:03:55   INFO [libs.ChargeMethods] : # TWO YEARS CHARGE IOSX = 66757.74
+2020-27-03 17:03:55   INFO [libs.ChargeMethods] : # SUM DUE CHARGE IOSX = 82382.53
+2020-27-03 17:03:55   INFO [libs.ChargeMethods] : # MONTH CHARGE Geometrics = 1619.46
+2020-27-03 17:03:55   INFO [libs.ChargeMethods] : # ONE YEAR CHARGE Geometrics = 11216.26
+2020-27-03 17:03:55   INFO [libs.ChargeMethods] : # TWO YEARS CHARGE Geometrics = 23932.02
+2020-27-03 17:03:55   INFO [libs.ChargeMethods] : # SUM DUE CHARGE Geometrics = 36767.74
+2020-27-03 17:03:55   INFO [libs.ChargeMethods] : # activationDate = 1584810134
+2020-27-03 17:03:55   INFO [libs.ChargeMethods] : # countScannerMonthToMonthTariffChargeByDays = 1
+2020-27-03 17:03:55   INFO [libs.ChargeMethods] : ***** Month Days = 31
+2020-27-03 17:03:55   INFO [libs.ChargeMethods] : ***** Price For One Day = 0.9674193548387097
+2020-27-03 17:03:55   INFO [libs.ChargeMethods] : ***** Active Charge Days = 5
+2020-27-03 17:03:55   INFO [libs.ChargeMethods] : ***** chargeByDevice = 4.84
+2020-27-03 17:03:55   INFO [libs.ChargeMethods] : ***** chargeByAllDevices = 4.84
+2020-27-03 17:03:55   INFO [libs.ChargeMethods] : # activationDate = 1583341334
+2020-27-03 17:03:55   INFO [libs.ChargeMethods] : # countScannerMonthToMonthTariffChargeByDays = 1
+2020-27-03 17:03:55   INFO [libs.ChargeMethods] : ***** Month Days = 31
+2020-27-03 17:03:55   INFO [libs.ChargeMethods] : ***** Price For One Day = 0.9674193548387097
+2020-27-03 17:03:55   INFO [libs.ChargeMethods] : ***** Active Charge Days = 22
+2020-27-03 17:03:55   INFO [libs.ChargeMethods] : ***** chargeByDevice = 21.28
+2020-27-03 17:03:55   INFO [libs.ChargeMethods] : ***** chargeByAllDevices = 21.28
+2020-27-03 17:03:56   INFO [libs.ChargeMethods] : # LIST AMOUNT DUE FROM DB = [13195.60, 2434.03, 66757.74, 11216.26, 1640.74, 23932.02]
+2020-27-03 17:03:56   INFO [libs.ChargeMethods] : # PROGRAM COUNT CHARGE  = 119176.39
+2020-27-03 17:03:56   INFO [libs.ChargeMethods] : # SUM DB DUE (CHARGE) = 119176.39
+2020-27-03 17:03:57   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-27-03 17:03:58   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-27-03 17:03:59   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-27-03 17:04:00   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-27-03 17:04:00   INFO [libs.ChargeMethods] : tempEstimatedTill: 2020-04-01
+2020-27-03 17:04:01   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-27-03 17:04:01   INFO [libs.ChargeMethods] : tempPaidTill: 2020-04-01
+2020-27-03 17:04:02   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-27-03 17:04:02   INFO [chargeTest.ChargeFleetSoloTest] :  DB Connection Closed 
+2020-27-03 17:17:20   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-27-03 17:17:27   INFO [libs.ChargeMethods] : # Temp Tariff Month Start 2019-12-22T17:17:27.865
+2020-27-03 17:17:27   INFO [libs.ChargeMethods] : # Temp Tariff Month Start 2020-01-22T17:17:27.867
+2020-27-03 17:17:27   INFO [libs.ChargeMethods] : # Temp Tariff Month Start 2020-01-05T17:17:27.868
+2020-27-03 17:17:27   INFO [libs.ChargeMethods] : # COUNT MONTH TO MONTH IOSX TARIFF = 76
+2020-27-03 17:17:27   INFO [libs.ChargeMethods] : # COUNT ONE YEAR IOSX TARIFF = 39
+2020-27-03 17:17:27   INFO [libs.ChargeMethods] : # COUNT TWO YEARS IOSX TARIFF = 100
+2020-27-03 17:17:27   INFO [libs.ChargeMethods] : # COUNT MONTH TO MONTH GEOMETRICS TARIFF = 53
+2020-27-03 17:17:27   INFO [libs.ChargeMethods] : # COUNT ONE YEAR GEOMETRICS TARIFF = 32
+2020-27-03 17:17:27   INFO [libs.ChargeMethods] : # COUNT TWO YEARS GEOMETRICS TARIFF = 38
+2020-27-03 17:17:28   INFO [chargeTest.ChargeDefaultersTest] : AC passed
+2020-27-03 17:17:28   INFO [libs.ChargeMethods] : # Deactivated Month IOSX Tariff = 0
+2020-27-03 17:17:28   INFO [libs.ChargeMethods] : # Month IOSX Charge Returned = 6
+2020-27-03 17:17:28   INFO [libs.ChargeMethods] : # One Year IOSX Charge Returned = 1
+2020-27-03 17:17:28   INFO [libs.ChargeMethods] : # Two Year IOSX Charge Returned = 6
+2020-27-03 17:17:28   INFO [libs.ChargeMethods] : # Geometrics Month Charge Returned = 2
+2020-27-03 17:17:28   INFO [libs.ChargeMethods] : # Geometrics One Year Charge Returned = 2
+2020-27-03 17:17:28   INFO [libs.ChargeMethods] : # Geometrics Two Year Charge Returned = 0
+2020-27-03 17:17:35   INFO [libs.ChargeMethods] : Chrome is started
+2020-27-03 17:18:08   INFO [libs.ChargeMethods] : Cron check fleets was run: 2020-03-27 15:17:31
+2020-27-03 17:18:09   INFO [libs.ChargeMethods] : dateTime: [2020-03-27 15:17:49]
+2020-27-03 17:18:10   INFO [chargeTest.ChargeDefaultersTest] : AC passed
+2020-27-03 17:18:10   INFO [libs.ChargeMethods] : # MONTH CHARGE IOSX = 2459.18
+2020-27-03 17:18:10   INFO [libs.ChargeMethods] : # ONE YEAR CHARGE IOSX = 13195.6
+2020-27-03 17:18:10   INFO [libs.ChargeMethods] : # TWO YEARS CHARGE IOSX = 66757.74
+2020-27-03 17:18:10   INFO [libs.ChargeMethods] : # SUM DUE CHARGE IOSX = 82412.52
+2020-27-03 17:18:10   INFO [libs.ChargeMethods] : # MONTH CHARGE Geometrics = 1649.45
+2020-27-03 17:18:10   INFO [libs.ChargeMethods] : # ONE YEAR CHARGE Geometrics = 11216.26
+2020-27-03 17:18:10   INFO [libs.ChargeMethods] : # TWO YEARS CHARGE Geometrics = 23932.02
+2020-27-03 17:18:10   INFO [libs.ChargeMethods] : # SUM DUE CHARGE Geometrics = 36797.73
+2020-27-03 17:18:10   INFO [libs.ChargeMethods] : # MONTH CHARGE EzHard = 269.91
+2020-27-03 17:18:10   INFO [libs.ChargeMethods] : # ONE YEAR CHARGE EzHard = 1649.45
+2020-27-03 17:18:10   INFO [libs.ChargeMethods] : # TWO YEARS CHARGE EzHard = 2519.16
+2020-27-03 17:18:10   INFO [libs.ChargeMethods] : # SUM DUE CHARGE EzHard = 4438.52
+2020-27-03 17:18:11   INFO [chargeTest.ChargeDefaultersTest] : AC passed
+2020-27-03 17:18:13   INFO [libs.ChargeMethods] : Chrome is started
+2020-27-03 17:18:36   INFO [libs.ChargeMethods] : Cron check fleets was run: 2020-03-27 15:18:11
+2020-27-03 17:18:39   INFO [libs.ChargeMethods] : Chrome is started
+2020-27-03 17:19:04   INFO [libs.ChargeMethods] : Cron check fleets was run: 2020-03-27 15:18:37
+2020-27-03 17:19:06   INFO [chargeTest.ChargeDefaultersTest] : AC passed
+2020-27-03 17:19:07   INFO [chargeTest.ChargeDefaultersTest] : AC passed
+2020-27-03 17:19:09   INFO [libs.ChargeMethods] : Chrome is started
+2020-27-03 17:19:35   INFO [libs.ChargeMethods] : Cron check fleets was run: 2020-03-27 15:19:07
+2020-27-03 17:19:36   INFO [libs.ChargeMethods] : listDevicesTariffStart = [1553620647, 1577035047, 1577035047, 1577035047, 1577035047, 1553620647, 1553620647, 1577035047, 1522084647, 1522084647, 1522084647, 1522084647, 1577035047, 1577035047, 1577035047, 1577035047, 1577035047, 1577035047, 1577035047, 1577035047, 1553620647, 1553620647, 1553620647, 1553620647, 1553620647, 1553620647, 1553620647, 1553620647, 1553620647, 1553620647, 1553620647, 1553620647, 1553620647, 1553620647, 1553620647, 1553620647, 1553620647, 1553620647, 1553620647, 1553620647, 1577035047, 1577035047, 1577035047, 1522084647, 1522084647, 1522084647, 1522084647, 1522084647, 1522084647, 1577035047, 1577035047, 1577035047, 1577035047, 1577035047, 1577035047, 1577035047, 1577035047, 1577035047, 1577035047, 1577035047, 1553620647, 1553620647, 1522084647, 1522084647, 1577035047, 1577035047, 1522084647, 1577035047, 1577035047, 1553620647, 1522084647, 1522084647, 1577035047, 1553620647, 1522084647, 1522084647, 1522084647, 1577035047, 1522084647, 1577035047, 1553620647, 1522084647, 1522084647, 1522084647, 1522084647, 1522084647, 1553620647, 1577035047, 1577035047, 1522084647, 1522084647, 1522084647, 1553620647, 1522084647, 1522084647, 1522084647, 1577035047, 1577035047, 1577035047, 1553620647, 1553620647, 1522084647, 1553620647, 1577035047, 1522084647, 1553620647, 1577035047, 1577035047, 1577035047, 1577035047, 1577035047, 1553620647, 1577035047, 1577035047, 1522084647, 1522084647, 1522084647, 1522084647, 1522084647, 1522084647, 1577035047, 1577035047, 1577035047, 1577035047, 1577035047, 1522084647, 1577035047, 1579713447, 1579713447, 1522084647, 1577035047, 1553620647, 1553620647, 1577035047, 1579713447, 1579713447, 1579713447, 1579713447, 1579713447, 1579713447, 1579713447, 1553620647, 1522084647, 1553620647, 1553620647, 1553620647, 1553620647, 1553620647, 1579713447, 1522084647, 1522084647, 1522084647, 1522084647, 1522084647, 1522084647, 1522084647, 1522084647, 1553620647, 1553620647, 1553620647, 1553620647, 1553620647, 1553620647, 1522084647, 1522084647, 1522084647, 1522084647, 1522084647, 1522084647, 1577035047, 1577035047, 1553620647, 1553620647, 1553620647, 1553620647, 1553620647, 1553620647, 1577035047, 1577035047, 1579713447, 1579713447, 1579713447, 1579713447, 1579713447, 1579713447, 1522084647, 1522084647, 1522084647, 1522084647, 1522084647, 1522084647, 1522084647, 1522084647, 1522084647, 1522084647, 1553620647, 1553620647, 1553620647, 1553620647, 1577035047, 1577035047, 1579713447, 1579713447, 1579713447, 1579713447, 1579713447, 1579713447, 1579713447, 1579713447, 1579713447, 1579713447, 1579713447, 1522084647, 1522084647, 1522084647, 1522084647, 1522084647, 1522084647, 1522084647, 1522084647, 1522084647, 1522084647, 1522084647, 1522084647, 1577035047, 1579713447, 1579713447, 1579713447, 1579713447, 1579713447, 1553620647, 1553620647, 1553620647, 1553620647, 1553620647, 1522084647, 1579713447, 1579713447, 1553620647, 1579713447, 1579713447, 1579713447, 1579713447, 1579713447, 1579713447, 1579713447, 1579713447, 1579713447, 1579713447, 1522084647, 1522084647, 1522084647, 1522084647, 1522084647, 1522084647, 1522084647, 1522084647, 1553620647, 1579713447, 1522084647, 1522084647, 1522084647, 1553620647, 1579713447, 1579713447, 1579713447, 1579713447, 1579713447, 1579713447, 1579713447, 1579713447, 1579713447, 1579713447, 1522084647, 1522084647, 1522084647, 1522084647, 1522084647, 1579713447, 1522084647, 1522084647, 1522084647, 1577035047, 1577035047, 1553620647, 1553620647, 1553620647, 1553620647, 1579713447, 1577035047, 1577035047, 1522084647, 1522084647, 1522084647, 1522084647, 1522084647, 1579713447, 1522084647, 1522084647, 1522084647, 1577035047, 1577035047, 1522084647, 1522084647, 1522084647, 1522084647, 1522084647, 1522084647, 1522084647, 1522084647, 1522084647, 1522084647, 1579713447, 1577035047, 1577035047, 1522084647, 1522084647, 1522084647, 1522084647, 1522084647, 1522084647, 1522084647, 1522084647, 1522084647, 1522084647, 1553620647, 1579713447, 1522084647, 1522084647, 1522084647, 1577035047, 1577035047, 1522084647, 1522084647, 1522084647, 1522084647, 1522084647, 1522084647, 1522084647, 1522084647, 1522084647, 1522084647, 1577035047, 1577035047, 1577035047, 1553620647, 1553620647, 1553620647, 1553620647]
+2020-27-03 17:19:36   INFO [libs.ChargeMethods] : countDevicesAfter_12Month = 138
+2020-27-03 17:19:37   INFO [chargeTest.ChargeDefaultersTest] : AC passed
+2020-27-03 17:19:38   INFO [chargeTest.ChargeDefaultersTest] : AC passed
+2020-27-03 17:19:39   INFO [chargeTest.ChargeDefaultersTest] :  DB Connection Closed 
+2020-27-03 17:20:32   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-27-03 17:20:39   INFO [libs.ChargeMethods] : # Temp Tariff Month Start 2019-12-22T17:20:39.640
+2020-27-03 17:20:39   INFO [libs.ChargeMethods] : # Temp Tariff Month Start 2020-01-22T17:20:39.643
+2020-27-03 17:20:39   INFO [libs.ChargeMethods] : # Temp Tariff Month Start 2020-01-05T17:20:39.644
+2020-27-03 17:20:39   INFO [libs.ChargeMethods] : # COUNT MONTH TO MONTH IOSX TARIFF = 76
+2020-27-03 17:20:39   INFO [libs.ChargeMethods] : # COUNT ONE YEAR IOSX TARIFF = 39
+2020-27-03 17:20:39   INFO [libs.ChargeMethods] : # COUNT TWO YEARS IOSX TARIFF = 100
+2020-27-03 17:20:39   INFO [libs.ChargeMethods] : # COUNT MONTH TO MONTH GEOMETRICS TARIFF = 53
+2020-27-03 17:20:39   INFO [libs.ChargeMethods] : # COUNT ONE YEAR GEOMETRICS TARIFF = 32
+2020-27-03 17:20:39   INFO [libs.ChargeMethods] : # COUNT TWO YEARS GEOMETRICS TARIFF = 38
+2020-27-03 17:20:40   INFO [chargeTest.ChargeDefaultersTest] : AC passed
+2020-27-03 17:20:40   INFO [libs.ChargeMethods] : # Deactivated Month IOSX Tariff = 0
+2020-27-03 17:20:40   INFO [libs.ChargeMethods] : # Month IOSX Charge Returned = 6
+2020-27-03 17:20:40   INFO [libs.ChargeMethods] : # One Year IOSX Charge Returned = 1
+2020-27-03 17:20:40   INFO [libs.ChargeMethods] : # Two Year IOSX Charge Returned = 6
+2020-27-03 17:20:40   INFO [libs.ChargeMethods] : # Geometrics Month Charge Returned = 2
+2020-27-03 17:20:40   INFO [libs.ChargeMethods] : # Geometrics One Year Charge Returned = 2
+2020-27-03 17:20:40   INFO [libs.ChargeMethods] : # Geometrics Two Year Charge Returned = 0
+2020-27-03 17:20:47   INFO [libs.ChargeMethods] : Chrome is started
+2020-27-03 17:21:21   INFO [libs.ChargeMethods] : Cron check fleets was run: 2020-03-27 15:20:43
+2020-27-03 17:21:22   INFO [libs.ChargeMethods] : dateTime: [2020-03-27 15:21:02]
+2020-27-03 17:21:23   INFO [chargeTest.ChargeDefaultersTest] : AC passed
+2020-27-03 17:21:23   INFO [libs.ChargeMethods] : # MONTH CHARGE IOSX = 2459.18
+2020-27-03 17:21:23   INFO [libs.ChargeMethods] : # ONE YEAR CHARGE IOSX = 13195.6
+2020-27-03 17:21:23   INFO [libs.ChargeMethods] : # TWO YEARS CHARGE IOSX = 66757.74
+2020-27-03 17:21:23   INFO [libs.ChargeMethods] : # SUM DUE CHARGE IOSX = 82412.52
+2020-27-03 17:21:23   INFO [libs.ChargeMethods] : # MONTH CHARGE Geometrics = 1649.45
+2020-27-03 17:21:23   INFO [libs.ChargeMethods] : # ONE YEAR CHARGE Geometrics = 11216.26
+2020-27-03 17:21:23   INFO [libs.ChargeMethods] : # TWO YEARS CHARGE Geometrics = 23932.02
+2020-27-03 17:21:23   INFO [libs.ChargeMethods] : # SUM DUE CHARGE Geometrics = 36797.73
+2020-27-03 17:21:23   INFO [libs.ChargeMethods] : # MONTH CHARGE EzHard = 269.91
+2020-27-03 17:21:23   INFO [libs.ChargeMethods] : # ONE YEAR CHARGE EzHard = 1649.45
+2020-27-03 17:21:23   INFO [libs.ChargeMethods] : # TWO YEARS CHARGE EzHard = 2519.16
+2020-27-03 17:21:23   INFO [libs.ChargeMethods] : # SUM DUE CHARGE EzHard = 4438.52
+2020-27-03 17:21:23   INFO [libs.ChargeMethods] : # LIST AMOUNT DUE FROM DB = [13195.60, 2459.18, 66757.74, 11216.26, 1649.45, 23932.02]
+2020-27-03 17:21:23   INFO [libs.ChargeMethods] : # PROGRAM COUNT CHARGE  = 123648.77
+2020-27-03 17:21:23   INFO [libs.ChargeMethods] : # SUM DB DUE (CHARGE) = 119210.25
+2020-27-03 17:21:24  ERROR [chargeTest.ChargeDefaultersTest] : AC failed: Charge due is not correct
+2020-27-03 17:21:24   INFO [chargeTest.ChargeDefaultersTest] :  DB Connection Closed 
+2020-27-03 17:23:23   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-27-03 17:23:29   INFO [libs.ChargeMethods] : # Temp Tariff Month Start 2019-12-22T17:23:29.720
+2020-27-03 17:23:29   INFO [libs.ChargeMethods] : # Temp Tariff Month Start 2020-01-22T17:23:29.722
+2020-27-03 17:23:29   INFO [libs.ChargeMethods] : # COUNT MONTH TO MONTH IOSX TARIFF = 76
+2020-27-03 17:23:29   INFO [libs.ChargeMethods] : # COUNT ONE YEAR IOSX TARIFF = 39
+2020-27-03 17:23:29   INFO [libs.ChargeMethods] : # COUNT TWO YEARS IOSX TARIFF = 100
+2020-27-03 17:23:29   INFO [libs.ChargeMethods] : # COUNT MONTH TO MONTH GEOMETRICS TARIFF = 53
+2020-27-03 17:23:29   INFO [libs.ChargeMethods] : # COUNT ONE YEAR GEOMETRICS TARIFF = 32
+2020-27-03 17:23:29   INFO [libs.ChargeMethods] : # COUNT TWO YEARS GEOMETRICS TARIFF = 38
+2020-27-03 17:23:30   INFO [chargeTest.ChargeDefaultersTest] : AC passed
+2020-27-03 17:23:30   INFO [libs.ChargeMethods] : # Deactivated Month IOSX Tariff = 0
+2020-27-03 17:23:30   INFO [libs.ChargeMethods] : # Month IOSX Charge Returned = 6
+2020-27-03 17:23:30   INFO [libs.ChargeMethods] : # One Year IOSX Charge Returned = 1
+2020-27-03 17:23:30   INFO [libs.ChargeMethods] : # Two Year IOSX Charge Returned = 6
+2020-27-03 17:23:30   INFO [libs.ChargeMethods] : # Geometrics Month Charge Returned = 2
+2020-27-03 17:23:30   INFO [libs.ChargeMethods] : # Geometrics One Year Charge Returned = 2
+2020-27-03 17:23:30   INFO [libs.ChargeMethods] : # Geometrics Two Year Charge Returned = 0
+2020-27-03 17:23:37   INFO [libs.ChargeMethods] : Chrome is started
+2020-27-03 17:24:13   INFO [libs.ChargeMethods] : Cron check fleets was run: 2020-03-27 15:23:32
+2020-27-03 17:24:13   INFO [libs.ChargeMethods] : dateTime: [2020-03-27 15:23:53]
+2020-27-03 17:24:14   INFO [chargeTest.ChargeDefaultersTest] : AC passed
+2020-27-03 17:24:14   INFO [libs.ChargeMethods] : # MONTH CHARGE IOSX = 2459.18
+2020-27-03 17:24:14   INFO [libs.ChargeMethods] : # ONE YEAR CHARGE IOSX = 13195.6
+2020-27-03 17:24:14   INFO [libs.ChargeMethods] : # TWO YEARS CHARGE IOSX = 66757.74
+2020-27-03 17:24:14   INFO [libs.ChargeMethods] : # SUM DUE CHARGE IOSX = 82412.52
+2020-27-03 17:24:14   INFO [libs.ChargeMethods] : # MONTH CHARGE Geometrics = 1649.45
+2020-27-03 17:24:14   INFO [libs.ChargeMethods] : # ONE YEAR CHARGE Geometrics = 11216.26
+2020-27-03 17:24:15   INFO [libs.ChargeMethods] : # TWO YEARS CHARGE Geometrics = 23932.02
+2020-27-03 17:24:15   INFO [libs.ChargeMethods] : # SUM DUE CHARGE Geometrics = 36797.73
+2020-27-03 17:24:15   INFO [libs.ChargeMethods] : # LIST AMOUNT DUE FROM DB = [13195.60, 2459.18, 66757.74, 11216.26, 1649.45, 23932.02, 69796.51, 14605.13]
+2020-27-03 17:24:15   INFO [libs.ChargeMethods] : # PROGRAM COUNT CHARGE  = 119210.25
+2020-27-03 17:24:15   INFO [libs.ChargeMethods] : # SUM DB DUE (CHARGE) = 203611.89
+2020-27-03 17:24:16  ERROR [chargeTest.ChargeDefaultersTest] : AC failed: Charge due is not correct
+2020-27-03 17:24:16   INFO [chargeTest.ChargeDefaultersTest] :  DB Connection Closed 
+2020-27-03 17:29:17   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-27-03 17:29:23   INFO [libs.ChargeMethods] : # Temp Tariff Month Start 2019-12-22T17:29:23.608
+2020-27-03 17:29:23   INFO [libs.ChargeMethods] : # Temp Tariff Month Start 2020-01-22T17:29:23.611
+2020-27-03 17:29:23   INFO [libs.ChargeMethods] : # COUNT MONTH TO MONTH IOSX TARIFF = 1
+2020-27-03 17:29:23   INFO [libs.ChargeMethods] : # COUNT ONE YEAR IOSX TARIFF = 0
+2020-27-03 17:29:23   INFO [libs.ChargeMethods] : # COUNT TWO YEARS IOSX TARIFF = 0
+2020-27-03 17:29:23   INFO [libs.ChargeMethods] : # COUNT MONTH TO MONTH GEOMETRICS TARIFF = 0
+2020-27-03 17:29:23   INFO [libs.ChargeMethods] : # COUNT ONE YEAR GEOMETRICS TARIFF = 0
+2020-27-03 17:29:23   INFO [libs.ChargeMethods] : # COUNT TWO YEARS GEOMETRICS TARIFF = 1
+2020-27-03 17:29:24  ERROR [chargeTest.ChargeDefaultersTest] : AC failed: * No all tariffs are presented on fleet
+2020-27-03 17:29:24   INFO [chargeTest.ChargeDefaultersTest] :  DB Connection Closed 
+2020-27-03 17:33:37   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-27-03 17:33:43   INFO [libs.ChargeMethods] : # Temp Tariff Month Start 2019-12-22T17:33:43.937
+2020-27-03 17:33:43   INFO [libs.ChargeMethods] : # Temp Tariff Month Start 2020-01-22T17:33:43.940
+2020-27-03 17:33:43   INFO [libs.ChargeMethods] : # COUNT MONTH TO MONTH IOSX TARIFF = 1
+2020-27-03 17:33:43   INFO [libs.ChargeMethods] : # COUNT ONE YEAR IOSX TARIFF = 0
+2020-27-03 17:33:43   INFO [libs.ChargeMethods] : # COUNT TWO YEARS IOSX TARIFF = 0
+2020-27-03 17:33:43   INFO [libs.ChargeMethods] : # COUNT MONTH TO MONTH GEOMETRICS TARIFF = 0
+2020-27-03 17:33:43   INFO [libs.ChargeMethods] : # COUNT ONE YEAR GEOMETRICS TARIFF = 0
+2020-27-03 17:33:43   INFO [libs.ChargeMethods] : # COUNT TWO YEARS GEOMETRICS TARIFF = 1
+2020-27-03 17:33:44  ERROR [chargeTest.ChargeDefaultersTest] : AC failed: * No all tariffs are presented on fleet
+2020-27-03 17:33:49   INFO [libs.ChargeMethods] : Chrome is started
+2020-27-03 17:34:12   INFO [libs.ChargeMethods] : Cron check fleets was run: 2020-03-27 15:33:45
+2020-27-03 17:34:13   INFO [chargeTest.ChargeDefaultersTest] :  DB Connection Closed 
+2020-27-03 17:35:27   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-27-03 17:35:34   INFO [libs.ChargeMethods] : # Temp Tariff Month Start 2019-12-22T17:35:34.616
+2020-27-03 17:35:34   INFO [libs.ChargeMethods] : # Temp Tariff Month Start 2020-01-22T17:35:34.619
+2020-27-03 17:35:34   INFO [libs.ChargeMethods] : # COUNT MONTH TO MONTH IOSX TARIFF = 76
+2020-27-03 17:35:34   INFO [libs.ChargeMethods] : # COUNT ONE YEAR IOSX TARIFF = 39
+2020-27-03 17:35:34   INFO [libs.ChargeMethods] : # COUNT TWO YEARS IOSX TARIFF = 100
+2020-27-03 17:35:34   INFO [libs.ChargeMethods] : # COUNT MONTH TO MONTH GEOMETRICS TARIFF = 53
+2020-27-03 17:35:34   INFO [libs.ChargeMethods] : # COUNT ONE YEAR GEOMETRICS TARIFF = 32
+2020-27-03 17:35:34   INFO [libs.ChargeMethods] : # COUNT TWO YEARS GEOMETRICS TARIFF = 38
+2020-27-03 17:35:35   INFO [chargeTest.ChargeDefaultersTest] : AC passed
+2020-27-03 17:35:35   INFO [libs.ChargeMethods] : # Deactivated Month IOSX Tariff = 0
+2020-27-03 17:35:35   INFO [libs.ChargeMethods] : # Month IOSX Charge Returned = 6
+2020-27-03 17:35:35   INFO [libs.ChargeMethods] : # One Year IOSX Charge Returned = 1
+2020-27-03 17:35:35   INFO [libs.ChargeMethods] : # Two Year IOSX Charge Returned = 6
+2020-27-03 17:35:35   INFO [libs.ChargeMethods] : # Geometrics Month Charge Returned = 2
+2020-27-03 17:35:35   INFO [libs.ChargeMethods] : # Geometrics One Year Charge Returned = 2
+2020-27-03 17:35:35   INFO [libs.ChargeMethods] : # Geometrics Two Year Charge Returned = 0
+2020-27-03 17:35:42   INFO [libs.ChargeMethods] : Chrome is started
+2020-27-03 17:36:15   INFO [libs.ChargeMethods] : Cron check fleets was run: 2020-03-27 15:35:37
+2020-27-03 17:36:16   INFO [libs.ChargeMethods] : dateTime: [2020-03-27 15:35:56]
+2020-27-03 17:36:17   INFO [chargeTest.ChargeDefaultersTest] : AC passed
+2020-27-03 17:36:17   INFO [libs.ChargeMethods] : # MONTH CHARGE IOSX = 2459.18
+2020-27-03 17:36:17   INFO [libs.ChargeMethods] : # ONE YEAR CHARGE IOSX = 13195.6
+2020-27-03 17:36:17   INFO [libs.ChargeMethods] : # TWO YEARS CHARGE IOSX = 66757.74
+2020-27-03 17:36:17   INFO [libs.ChargeMethods] : # SUM DUE CHARGE IOSX = 82412.52
+2020-27-03 17:36:17   INFO [libs.ChargeMethods] : # MONTH CHARGE Geometrics = 1649.45
+2020-27-03 17:36:17   INFO [libs.ChargeMethods] : # ONE YEAR CHARGE Geometrics = 11216.26
+2020-27-03 17:36:17   INFO [libs.ChargeMethods] : # TWO YEARS CHARGE Geometrics = 23932.02
+2020-27-03 17:36:17   INFO [libs.ChargeMethods] : # SUM DUE CHARGE Geometrics = 36797.73
+2020-27-03 17:36:17   INFO [libs.ChargeMethods] : # LIST AMOUNT DUE FROM DB = [13195.60, 2459.18, 66757.74, 11216.26, 1649.45, 23932.02]
+2020-27-03 17:36:17   INFO [libs.ChargeMethods] : # PROGRAM COUNT CHARGE  = 119210.25
+2020-27-03 17:36:17   INFO [libs.ChargeMethods] : # SUM DB DUE (CHARGE) = 119210.25
+2020-27-03 17:36:18   INFO [chargeTest.ChargeDefaultersTest] : AC passed
+2020-27-03 17:36:19   INFO [chargeTest.ChargeDefaultersTest] : AC passed
+2020-27-03 17:36:21   INFO [libs.ChargeMethods] : Chrome is started
+2020-27-03 17:36:44   INFO [libs.ChargeMethods] : Cron check fleets was run: 2020-03-27 15:36:19
+2020-27-03 17:36:45   INFO [libs.ChargeMethods] : currentDue = 120448.70
+2020-27-03 17:36:45   INFO [libs.ChargeMethods] : countChargeLateFeeDevices = 155
+2020-27-03 17:36:45   INFO [libs.ChargeMethods] : tempDueWithLateFee = 120448.7
+2020-27-03 17:36:46   INFO [chargeTest.ChargeDefaultersTest] : AC passed
+2020-27-03 17:36:48   INFO [libs.ChargeMethods] : Chrome is started
+2020-27-03 17:37:14   INFO [libs.ChargeMethods] : Cron check fleets was run: 2020-03-27 15:36:47
+2020-27-03 17:37:16   INFO [chargeTest.ChargeDefaultersTest] : AC passed
+2020-27-03 17:37:18   INFO [chargeTest.ChargeDefaultersTest] : AC passed
+2020-27-03 17:37:19   INFO [libs.ChargeMethods] : Chrome is started
+2020-27-03 17:37:44   INFO [libs.ChargeMethods] : Cron check fleets was run: 2020-03-27 15:37:18
+2020-27-03 17:37:46   INFO [libs.ChargeMethods] : listDevicesTariffStart = [1553621734, 1577036134, 1577036134, 1577036134, 1577036134, 1553621734, 1553621734, 1577036134, 1522085734, 1522085734, 1522085734, 1522085734, 1577036134, 1577036134, 1577036134, 1577036134, 1577036134, 1577036134, 1577036134, 1577036134, 1553621734, 1553621734, 1553621734, 1553621734, 1553621734, 1553621734, 1553621734, 1553621734, 1553621734, 1553621734, 1553621734, 1553621734, 1553621734, 1553621734, 1553621734, 1553621734, 1553621734, 1553621734, 1553621734, 1553621734, 1577036134, 1577036134, 1577036134, 1522085734, 1522085734, 1522085734, 1522085734, 1522085734, 1522085734, 1577036134, 1577036134, 1577036134, 1577036134, 1577036134, 1577036134, 1577036134, 1577036134, 1577036134, 1577036134, 1577036134, 1553621734, 1553621734, 1522085734, 1522085734, 1577036134, 1577036134, 1522085734, 1577036134, 1577036134, 1553621734, 1522085734, 1522085734, 1577036134, 1553621734, 1522085734, 1522085734, 1522085734, 1577036134, 1522085734, 1577036134, 1553621734, 1522085734, 1522085734, 1522085734, 1522085734, 1522085734, 1553621734, 1577036134, 1577036134, 1522085734, 1522085734, 1522085734, 1553621734, 1522085734, 1522085734, 1522085734, 1577036134, 1577036134, 1577036134, 1553621734, 1553621734, 1522085734, 1553621734, 1577036134, 1522085734, 1553621734, 1577036134, 1577036134, 1577036134, 1577036134, 1577036134, 1553621734, 1577036134, 1577036134, 1522085734, 1522085734, 1522085734, 1522085734, 1522085734, 1522085734, 1577036134, 1577036134, 1577036134, 1577036134, 1577036134, 1522085734, 1577036134, 1579714534, 1579714534, 1522085734, 1577036134, 1553621734, 1553621734, 1577036134, 1579714534, 1579714534, 1579714534, 1579714534, 1579714534, 1579714534, 1579714534, 1553621734, 1522085734, 1553621734, 1553621734, 1553621734, 1553621734, 1553621734, 1579714534, 1522085734, 1522085734, 1522085734, 1522085734, 1522085734, 1522085734, 1522085734, 1522085734, 1553621734, 1553621734, 1553621734, 1553621734, 1553621734, 1553621734, 1522085734, 1522085734, 1522085734, 1522085734, 1522085734, 1522085734, 1577036134, 1577036134, 1553621734, 1553621734, 1553621734, 1553621734, 1553621734, 1553621734, 1577036134, 1577036134, 1579714534, 1579714534, 1579714534, 1579714534, 1579714534, 1579714534, 1522085734, 1522085734, 1522085734, 1522085734, 1522085734, 1522085734, 1522085734, 1522085734, 1522085734, 1522085734, 1553621734, 1553621734, 1553621734, 1553621734, 1577036134, 1577036134, 1579714534, 1579714534, 1579714534, 1579714534, 1579714534, 1579714534, 1579714534, 1579714534, 1579714534, 1579714534, 1579714534, 1522085734, 1522085734, 1522085734, 1522085734, 1522085734, 1522085734, 1522085734, 1522085734, 1522085734, 1522085734, 1522085734, 1522085734, 1577036134, 1579713639, 1579713639, 1579713639, 1579713639, 1579713639, 1553620839, 1553620839, 1553620839, 1553620839, 1553620839, 1522084839, 1579713639, 1579713639, 1553621734, 1579714534, 1579714534, 1579714534, 1579714534, 1579714534, 1579714534, 1579714534, 1579714534, 1579714534, 1579714534, 1522085734, 1522085734, 1522085734, 1522085734, 1522085734, 1522085734, 1522085734, 1522085734, 1553621734, 1579714534, 1522085734, 1522085734, 1522085734, 1553621734, 1579714534, 1579714534, 1579714534, 1579714534, 1579714534, 1579714534, 1579714534, 1579714534, 1579714534, 1579714534, 1522085734, 1522085734, 1522085734, 1522085734, 1522085734, 1579714534, 1522085734, 1522085734, 1522085734, 1577036134, 1577036134, 1553621734, 1553621734, 1553621734, 1553621734, 1579714534, 1577036134, 1577036134, 1522085734, 1522085734, 1522085734, 1522085734, 1522085734, 1579714534, 1522085734, 1522085734, 1522085734, 1577036134, 1577036134, 1522085734, 1522085734, 1522085734, 1522085734, 1522085734, 1522085734, 1522085734, 1522085734, 1522085734, 1522085734, 1579714534, 1577036134, 1577036134, 1522085734, 1522085734, 1522085734, 1522085734, 1522085734, 1522085734, 1522085734, 1522085734, 1522085734, 1522085734, 1553621734, 1579714534, 1522085734, 1522085734, 1522085734, 1577036134, 1577036134, 1522085734, 1522085734, 1522085734, 1522085734, 1522085734, 1522085734, 1522085734, 1522085734, 1522085734, 1522085734, 1577036134, 1577036134, 1577036134, 1553621734, 1553621734, 1553621734, 1553621734]
+2020-27-03 17:37:46   INFO [libs.ChargeMethods] : countDevicesAfter_12Month = 138
+2020-27-03 17:37:46   INFO [libs.ChargeMethods] : countDevices = 349
+2020-27-03 17:37:46   INFO [libs.ChargeMethods] : tempNotReturnedFee = 69796.51
+2020-27-03 17:37:46   INFO [libs.ChargeMethods] : tempProratedFee = 14605.13
+2020-27-03 17:37:46   INFO [libs.ChargeMethods] : tempDueWithReturnedProratedFee = 204850.34
+2020-27-03 17:37:47   INFO [chargeTest.ChargeDefaultersTest] : AC passed
+2020-27-03 17:37:48   INFO [chargeTest.ChargeDefaultersTest] : AC passed
+2020-27-03 17:37:49   INFO [chargeTest.ChargeDefaultersTest] : AC passed
+2020-27-03 17:37:52   INFO [libs.ChargeMethods] : Chrome is started
+2020-27-03 17:38:19   INFO [libs.ChargeMethods] : Cron check fleets was run: 2020-03-27 15:37:50
+2020-27-03 17:38:20   INFO [chargeTest.ChargeDefaultersTest] :  DB Connection Closed 

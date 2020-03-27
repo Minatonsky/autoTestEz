@@ -46,19 +46,11 @@ public class ChargeDefaultersTest extends ParentTestWithoutWebDriver {
             int countGeometricsOneYearChargeReturnedScanner = utilsForDB.countChargeReturnedScannerByTariff(fleetString, fleetId, oneYearGeometricsTariffId);
             int countGeometricsTwoYearChargeReturnedScanner = utilsForDB.countChargeReturnedScannerByTariff(fleetString, fleetId, twoYearsGeometricsTariffId);
 
-//   COUNT EZ HARD TARIFF
-            int countScannerMonthEzHardTariff = utilsForDB.countChargeScannersByTariff(fleetString, fleetId, monthEzHardTariffId);
-            int countScannerOneYearEzHardTariff = utilsForDB.countChargeScannersByTariff(fleetString, fleetId, oneYearEzHardTariffId);
-            int countScannerTwoYearsEzHardTariff = utilsForDB.countChargeScannersByTariff(fleetString, fleetId, twoYearsEzHardTariffId);
-            int countEzHardMonthChargeReturnedScanner = utilsForDB.countChargeReturnedScannerByTariff(fleetString, fleetId, monthEzHardTariffId);
-            int countEzHardOneYearChargeReturnedScanner = utilsForDB.countChargeReturnedScannerByTariff(fleetString, fleetId, oneYearEzHardTariffId);
-            int countEzHardTwoYearChargeReturnedScanner = utilsForDB.countChargeReturnedScannerByTariff(fleetString, fleetId, twoYearsEzHardTariffId);
 
             String setPaidTillForAllTariff = chargeMethods.paidTillForAllTariff();
 
             String setTariffStartMonthIOSX = chargeMethods.tariffStartForMonthToMonth(countMonthForTariffStartMonthIOSX, 5);
             String setTariffStartMonthGeometrics = chargeMethods.tariffStartForMonthToMonth(countMonthForTariffStartMonthGeometrics, 5);
-            String setTariffStartMonthEzHard = chargeMethods.tariffStartForMonthToMonth(countMonthForTariffStartMonthEzHard, 22);
 
             String setTariffStartOneYear = chargeMethods.tariffStartForOneYear(1);
             String setTariffStartTwoYears = chargeMethods.tariffStartForTwoYears(2);
@@ -67,13 +59,10 @@ public class ChargeDefaultersTest extends ParentTestWithoutWebDriver {
             checkAC("* No all tariffs are presented on fleet",
                     chargeMethods.checkIfTariffPresent(
                             countScannerMonthIOSXTariff, countScannerOneYearIOSXTariff, countScannerTwoYearsIOSXTariff,
-                            countScannerMonthGeometricsTariff, countScannerOneYearGeometricsTariff, countScannerTwoYearsGeometricsTariff,
-                            countScannerMonthEzHardTariff, countScannerOneYearEzHardTariff, countScannerTwoYearsEzHardTariff
-                    ), true);
+                            countScannerMonthGeometricsTariff, countScannerOneYearGeometricsTariff, countScannerTwoYearsGeometricsTariff), true);
 
             chargeMethods.informationOfDeactivatedAndReturnedScanners(countDeactivatedScannerMonthIOSXTariff, countScannerMonthIOSXChargeReturned, countScannerOneYearIOSXChargeReturned, countScannerTwoYearIOSXChargeReturned,
-                    countGeometricsMonthChargeReturnedScanner, countGeometricsOneYearChargeReturnedScanner, countGeometricsTwoYearChargeReturnedScanner,
-                    countEzHardMonthChargeReturnedScanner, countEzHardOneYearChargeReturnedScanner, countEzHardTwoYearChargeReturnedScanner);
+                    countGeometricsMonthChargeReturnedScanner, countGeometricsOneYearChargeReturnedScanner, countGeometricsTwoYearChargeReturnedScanner);
 
 
 //  SET PAID TILL AND ORDER DATE FOR IOSX TARIFF
@@ -91,12 +80,6 @@ public class ChargeDefaultersTest extends ParentTestWithoutWebDriver {
             utilsForDB.setPaidTillAndTariffStartScannerForFleet(fleetId, setPaidTillForAllTariff, setTariffStartOneYear, oneYearGeometricsTariffId);
             utilsForDB.setPaidTillAndTariffStartScannerForFleet(fleetId, setPaidTillForAllTariff, setTariffStartTwoYears, twoYearsGeometricsTariffId);
 
-//  SET PAID TILL AND ORDER DATE FOR EZ HARD TARIFF
-
-            utilsForDB.setPaidTillAndTariffStartScannerForFleet(fleetId, setPaidTillForAllTariff, setTariffStartMonthGeometrics, monthEzHardTariffId);
-            utilsForDB.setOrderDateByTariffId(fleetString, fleetId, setTariffStartMonthEzHard, monthEzHardTariffId);
-            utilsForDB.setPaidTillAndTariffStartScannerForFleet(fleetId, setPaidTillForAllTariff, setTariffStartOneYear, oneYearEzHardTariffId);
-            utilsForDB.setPaidTillAndTariffStartScannerForFleet(fleetId, setPaidTillForAllTariff, setTariffStartTwoYears, twoYearsEzHardTariffId);
 
 //  SET PAID TILL FOR USER FINANCES
 
@@ -114,11 +97,8 @@ public class ChargeDefaultersTest extends ParentTestWithoutWebDriver {
                     countScannerMonthGeometricsTariff + countGeometricsMonthChargeReturnedScanner,
                     countScannerOneYearGeometricsTariff + countGeometricsOneYearChargeReturnedScanner,
                     countScannerTwoYearsGeometricsTariff + countGeometricsTwoYearChargeReturnedScanner, "Geometrics");
-            double sumEzHardCharge = chargeMethods.sumCharge(
-                    countScannerMonthEzHardTariff + countEzHardMonthChargeReturnedScanner,
-                    countScannerOneYearEzHardTariff + countEzHardOneYearChargeReturnedScanner,
-                    countScannerTwoYearsEzHardTariff + countEzHardTwoYearChargeReturnedScanner, "EzHard");
-//            checkAC("Charge due is not correct", chargeMethods.compareDueCharge(carrierIdString, fleetId, sumIOSXCharge + sumDeactivatedScannerMonthIOSXTariff + sumGeometricsCharge + sumEzHardCharge, timeRunCron), true);
+
+            checkAC("Charge due is not correct", chargeMethods.compareDueCharge(carrierIdString, fleetId, sumIOSXCharge + sumDeactivatedScannerMonthIOSXTariff + sumGeometricsCharge, timeRunCron), true);
 
             checkAC("Fleet is not in defaulters", utilsForDB.checkFleetInDefaulters(fleetId), true);
 
@@ -126,7 +106,7 @@ public class ChargeDefaultersTest extends ParentTestWithoutWebDriver {
             chargeMethods.runCronCheckFleet();
             List<String> listOfStatusDevices = utilsForDB.getIdScannersByStatus(fleetString, fleetId, "4");
             String stringOfStatusesDevices = String.join(",", listOfStatusDevices);
-//            checkAC("Late Fee is not correct", chargeMethods.checkLateFeeFleet(fleetId, sumIOSXCharge + sumDeactivatedScannerMonthIOSXTariff + sumGeometricsCharge + sumEzHardCharge, fleetString), true);
+            checkAC("Late Fee is not correct", chargeMethods.checkLateFeeFleet(fleetId, sumIOSXCharge + sumDeactivatedScannerMonthIOSXTariff + sumGeometricsCharge, fleetString), true);
 
             chargeMethods.setDaysDefaulterFleet(fleetId, 15);
             chargeMethods.runCronCheckFleet();
@@ -137,7 +117,7 @@ public class ChargeDefaultersTest extends ParentTestWithoutWebDriver {
             chargeMethods.runCronCheckFleet();
             String currentDueWithLateReturnedProratedFee = utilsForDB.getCurrentDueEzFinancesFleet(fleetId);
             int countDevicesAfter_12Month = chargeMethods.countScannersByTariffStart(listOfStatusDevices);
-//            checkAC("ProratedAndNotReturnedFee is not correct", chargeMethods.checkProratedAndNotReturnedFee(listOfStatusDevices, currentDueWithLateFee, currentDueWithLateReturnedProratedFee, countDevicesAfter_12Month), true);
+            checkAC("ProratedAndNotReturnedFee is not correct", chargeMethods.checkProratedAndNotReturnedFee(listOfStatusDevices, currentDueWithLateFee, currentDueWithLateReturnedProratedFee, countDevicesAfter_12Month), true);
             checkAC("Devices does not have status Not disconnected", chargeMethods.checkStatusesDevices(listOfStatusDevices, "12"), true);
             checkAC("Fleet is not Banned", utilsForDB.checkFleetIsBanned(fleetId), true);
             utilsForDB.setCurrentCard(carrierIdString, fleetId);
@@ -145,10 +125,11 @@ public class ChargeDefaultersTest extends ParentTestWithoutWebDriver {
             utilsForDB.set_0_DeactivatedFleet(fleetId);
             utilsForDB.setStatusesForDevices(stringOfStatusesDevices, "8");
 
-//            chargeMethods.runCronCheckFleet();
+
         } finally {
             utilsForDB.setCurrentCard(carrierIdString, fleetId);
             utilsForDB.setCurrentDueForFleet("0", fleetId);
+            chargeMethods.runCronCheckFleet();
         }
 
     }
@@ -196,12 +177,10 @@ public class ChargeDefaultersTest extends ParentTestWithoutWebDriver {
 
             checkAC("No all tariffs are presented in eld scanners",
                     chargeMethods.checkIfTariffPresent(countScannerMonthIOSXTariff, countScannerOneYearIOSXTariff, countScannerTwoYearsIOSXTariff,
-                            countScannerMonthGeometricsTariff, countScannerOneYearGeometricsTariff, countScannerTwoYearsGeometricsTariff,
-                            countScannerMonthEzHardTariff, countScannerOneYearEzHardTariff, countScannerTwoYearsEzHardTariff), true);
+                            countScannerMonthGeometricsTariff, countScannerOneYearGeometricsTariff, countScannerTwoYearsGeometricsTariff), true);
 
             chargeMethods.informationOfDeactivatedAndReturnedScanners(countDeactivatedScannerMonthIOSXTariff, countScannerMonthIOSXChargeReturned, countScannerOneYearIOSXChargeReturned, countScannerTwoYearIOSXChargeReturned,
-                    countGeometricsMonthChargeReturnedScanner, countGeometricsOneYearChargeReturnedScanner, countGeometricsTwoYearChargeReturnedScanner,
-                    countEzHardMonthChargeReturnedScanner, countEzHardOneYearChargeReturnedScanner, countEzHardTwoYearChargeReturnedScanner);
+                    countGeometricsMonthChargeReturnedScanner, countGeometricsOneYearChargeReturnedScanner, countGeometricsTwoYearChargeReturnedScanner);
 
 //  SET PAID TILL AND ORDER DATE FOR IOSX TARIFF
 
