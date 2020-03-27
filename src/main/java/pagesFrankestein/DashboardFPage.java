@@ -34,10 +34,10 @@ public class DashboardFPage extends ParentFPage {
     @FindBy(xpath = ".//a[@href='/dash/live_scan/']")
     private WebElement pageDocuments;
 
-    @FindBy(xpath = ".//a[@href='/dash/fleet/equipment/']")
+    @FindBy(xpath = ".//a[@href='/safety/']")
     private WebElement pageEquipment;
 
-    @FindBy(xpath = ".//a[@href='/dash/finances/']")
+    @FindBy(xpath = ".//a[@href='/safety/documents']")
     private WebElement pageFinances;
 
     @FindBy(xpath = ".//a[@href='/dash/ezchat/']")

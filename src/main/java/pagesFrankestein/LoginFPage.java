@@ -95,7 +95,7 @@ public class LoginFPage extends ParentFPage {
         enterPass(passWord);
         clickOnSubmitButton();
         waitABit(3);
-        closePhoneVerificationPopUp();
+//        closePhoneVerificationPopUp();
     }
     public void logInAndOpenMenu(String login, String passWord) {
         openPage();

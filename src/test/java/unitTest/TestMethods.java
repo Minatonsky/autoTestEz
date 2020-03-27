@@ -196,14 +196,12 @@ public class TestMethods extends ParentTestWithoutWebDriver {
     @Test
     public void test(){
         Faker faker = new Faker();
-        String name = faker.code().ean8(); // Miss Samanta Schmidt
-//        genRandomDataByRegex();
-        String firstName = faker.name().firstName(); // Emory
-        String lastName = faker.name().lastName(); // Barton
+        String name = faker.date().birthday().toString(); // Miss Samanta Schmidt
 
-        String streetAddress = faker.address().streetAddress(); // 60018 Sawayn Brooks Suite 449
 
-        System.out.println(name);
+        String streetAddress = faker.twinPeaks().location();
+
+        System.out.println(streetAddress);
     }
 
 

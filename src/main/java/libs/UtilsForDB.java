@@ -551,7 +551,15 @@ public class UtilsForDB {
     }
     @Step
     public List<ArrayList> getEldReturnsData(String deviceId) throws SQLException {
-        List<ArrayList> tempEldReturnData = dBMySQL.selectTable("SELECT e.userId, e.`status`, e.description, e.returnReason FROM eld_returns e WHERE e.id = 20234;");
+        List<ArrayList> tempEldReturnData = dBMySQL.selectTable("SELECT e.userId, e.`status`, e.description, e.returnReason FROM eld_returns e WHERE e.id = " + deviceId + ";");
         return tempEldReturnData;
+    }
+    @Step
+    public void setFleetsCronRunTime(String time) throws SQLException {
+        dBMySQL.changeTable("UPDATE cronCheck SET `dateTime` = '" + time + "' WHERE NAME = '/cron/check_fleets.php';");
+    }
+    @Step
+    public void setDriversCronRunTime(String time) throws SQLException {
+        dBMySQL.changeTable("UPDATE cronCheck SET `dateTime` = '" + time + "' WHERE NAME = '/cron/check_drivers.php';");
     }
 }

@@ -7,6 +7,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+import static libs.Utils.waitABit;
+
 public class LoginLocalSitePage extends ParentLocalSitePage {
 
     public LoginLocalSitePage(WebDriver webDriver, UtilsForDB utilsForDB) {
@@ -24,6 +26,9 @@ public class LoginLocalSitePage extends ParentLocalSitePage {
 
     @FindBy(xpath = ".//button[@class='btn btn-transparent' and @type='submit']")
     private WebElement submitButton;
+
+    @FindBy(xpath = ".//*[@id='validatePhone']//../*[@aria-label='Close']")
+    private WebElement phoneVerificationClose;
 
 
 
@@ -58,6 +63,17 @@ public class LoginLocalSitePage extends ParentLocalSitePage {
     @Step
     public void clickOnSubmitButton() { actionsWithOurElements.clickOnElement(submitButton); }
 
+    @Step
+    public void closePhoneVerificationPopUp(){
+        if (actionsWithOurElements.isElementDisplay(phoneVerificationClose)){
+            actionsWithOurElements.clickOnElement(phoneVerificationClose);
+            logger.info("Phone verification pop up Closed");
+        } else {
+            logger.info("There is not phone verification pop up");
+        }
+
+    }
+
     /**
      * Method valid Login
      * @param login (ONLY Valid Login)
@@ -71,5 +87,14 @@ public class LoginLocalSitePage extends ParentLocalSitePage {
         enterPass(passWord);
         clickOnSubmitButton();
 
+    }
+    public void logInWithOutOpenMenu(String login, String passWord) {
+        openPage();
+        openLoginForm();
+        enterLogin(login);
+        enterPass(passWord);
+        clickOnSubmitButton();
+        waitABit(3);
+        closePhoneVerificationPopUp();
     }
 }

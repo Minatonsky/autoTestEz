@@ -5,6 +5,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+import static libs.Utils.waitABit;
+
 public class DocumentsLocalSitePage extends ParentLocalSitePage {
 
     public DocumentsLocalSitePage(WebDriver webDriver, UtilsForDB utilsForDB) {
@@ -77,14 +79,19 @@ public class DocumentsLocalSitePage extends ParentLocalSitePage {
     @FindBy(xpath = ".//button[@type='submit']")
     private WebElement saveButton;
 
-    @FindBy(xpath = "//*[@placeholder='Reference #']")
+//    LIST PAGE
+
+    @FindBy(xpath = "//*[text()='Reference #']/../input")
     private WebElement referencePlaceHolder;
 
-    @FindBy(xpath = "//div[@class='table-container__table-item' and text()='TruckRepair 01/28/2020 18:33:31']")
-    private WebElement documentInRow;
+    @FindBy(name="date")
+    private WebElement datePlaceHolder;
 
     @FindBy(xpath = ".//input[@type='file']")
     private WebElement addFile;
+
+    @FindBy(xpath = ".//*[text()='Today']")
+    private WebElement toDayInCalendar;
 
     public void clickOnCreateButton(){actionsWithOurElements.clickOnElement(addDocumentButton);}
     public void clickOnSaveButton(){actionsWithOurElements.clickOnElement(saveButton);}
@@ -109,5 +116,11 @@ public class DocumentsLocalSitePage extends ParentLocalSitePage {
     public void enterReferenceInPlaceHolder(String referenceName){actionsWithOurElements.enterTextToElement(referencePlaceHolder, referenceName);}
     public void addPictureByJs(String path){actionsWithOurElements.addFileByJs(addFile, path);}
     public void clickOnDocumentInRow(String referenceName){actionsWithOurElements.clickOnElement("//div[@class='table-container__table-item' and text()='" + referenceName +"");}
+    public void documentDate(){
+        actionsWithOurElements.clickOnElement(dateInput);
+        waitABit(5);
+        actionsWithOurElements.clickOnElement(toDayInCalendar);
+//        actionsWithOurElements.enterTextToElement(dateInput, date);
+    }
 
 }

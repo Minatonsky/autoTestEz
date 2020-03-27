@@ -17,14 +17,15 @@ import java.time.temporal.TemporalAdjusters;
 import java.util.List;
 
 import static libs.Prices.*;
+import static libs.Utils.startOfDay;
 
 public class ChargeMethods {
 
     Logger logger = Logger.getLogger(getClass());
     WebDriver webDriver;
 
-    String checkFleets = "https://dev.ezlogz.com/cron/check_fleets.php";
-    String checkDrivers = "https://dev.ezlogz.com/cron/check_drivers.php";
+    String checkFleets = "https://testing.ezlogz.com/cron/check_fleets.php";
+    String checkDrivers = "https://testing.ezlogz.com/cron/check_drivers.php";
 
     protected static ConfigProperties configProperties = ConfigFactory.create(ConfigProperties.class);
     UtilsForDB utilsForDB;
@@ -92,9 +93,10 @@ public class ChargeMethods {
     }
 
     @Step
-    public String runCronCheckFleet(){
+    public String runCronCheckFleet() throws SQLException {
         LocalDateTime startCronTime = LocalDateTime.parse(LocalDateTime.now(ZoneId.from(ZoneOffset.UTC)).toString());
         String startCronTimeLong = startCronTime.format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));
+        utilsForDB.setFleetsCronRunTime(startOfDay());
         initDriver();
         webDriver.get(checkFleets);
         logger.info("Cron check fleets was run: " + startCronTimeLong);
@@ -102,10 +104,11 @@ public class ChargeMethods {
         return startCronTimeLong;
     }
     @Step
-    public String runCronCheckDrivers(){
+    public String runCronCheckDrivers() throws SQLException {
         LocalDateTime startCronTime = LocalDateTime.parse(LocalDateTime.now(ZoneId.from(ZoneOffset.UTC)).toString());
         String startCronTimeLong = startCronTime.format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));
         logger.info("Cron check Drivers was run: " + startCronTimeLong);
+        utilsForDB.setDriversCronRunTime(startOfDay());
         initDriver();
         webDriver.get(checkDrivers);
         webDriver.quit();
