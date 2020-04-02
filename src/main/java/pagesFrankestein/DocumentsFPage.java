@@ -14,16 +14,19 @@ public class DocumentsFPage extends ParentFPage {
     @FindBy(xpath = ".//button[text() = 'Create Document']")
     private WebElement addDocumentButton;
 
-    @FindBy(id="edit_doc_type")
+    @FindBy(xpath = ".//*[@class='document-popup']//./input[@type='search']")
     private WebElement dropDawnTypeDocument;
 
-    @FindBy(id="edit_reference")
+    @FindBy(xpath = ".//*[@role='listbox']")
+    private WebElement docInMenu;
+
+    @FindBy(xpath = "//*[text()='Reference#']//..//input")
     private WebElement referenceInput;
 
-    @FindBy(id="edit_dateTime")
+    @FindBy(xpath = "//*[@class='document-popup__body']//*[@name='date']")
     private WebElement dateInput;
 
-    @FindBy(id="edit_truck")
+    @FindBy(xpath = ".//select[@id='edit_truck']")
     private WebElement selectTruckValue;
 
     @FindBy(id = "edit_trailer")
@@ -32,68 +35,73 @@ public class DocumentsFPage extends ParentFPage {
     @FindBy(id = "edit_driver")
     private WebElement selectDriverValue;
 
-    @FindBy(id="edit_amount")
+    @FindBy(xpath = ".//*[@placeholder='Amount']")
     private WebElement amountInput;
 
-    @FindBy(id="edit_gallons")
+    @FindBy(xpath = ".//*[@placeholder='Gallons']")
     private WebElement gallonsInput;
 
-    @FindBy(id="edit_reefer_amount")
+    @FindBy(xpath = ".//*[@placeholder='Reefer Amount']")
     private WebElement reeferAmountInput;
 
-    @FindBy(id="edit_reefer_gallons")
+    @FindBy(xpath = ".//*[@placeholder='Reefer Gallons']")
     private WebElement reeferGallonsInput;
 
-    @FindBy(id="edit_scale")
+    @FindBy(xpath = ".//*[@placeholder='Scale']")
     private WebElement scaleInput;
 
-    @FindBy(id="edit_location")
+    @FindBy(xpath = ".//*[@placeholder='Location']")
     private WebElement locationInput;
 
-    @FindBy(id="edit_shipper")
+    @FindBy(xpath = ".//*[@placeholder='Shipper']")
     private WebElement shipperInput;
 
-    @FindBy(id="edit_dealer")
+    @FindBy(xpath = ".//*[@placeholder='Dealer']")
     private WebElement dealerInput;
 
-    @FindBy(id="edit_ship_date")
+    @FindBy(xpath = ".//*[text()='Ship date']/..//input")
     private WebElement shipDateInput;
 
-    @FindBy(id="edit_delivery_date")
+    @FindBy(xpath = ".//*[text()='Delivery date']/..//input")
     private WebElement deliveryDateInput;
 
     @FindBy(id = "edit_state")
     private WebElement selectStateValue;
 
-    @FindBy(id="doc_image")
+    @FindBy(name = "image")
     private WebElement imageButton;
 
     @FindBy(xpath = "//input[@type='file']")
     private WebElement fileInput;
 
-    @FindBy(id="edit_notes")
+    @FindBy(xpath = ".//*[@placeholder='Note']")
     private WebElement textArea;
 
-    @FindBy(xpath = ".//button[text()='Save']")
+    @FindBy(xpath = ".//button[@type='submit']")
     private WebElement saveButton;
+
+//    LIST PAGE
+
+    @FindBy(xpath = "//*[text()='Reference #']/../input")
+    private WebElement referencePlaceHolder;
+
+    @FindBy(name="date")
+    private WebElement datePlaceHolder;
+
+    @FindBy(xpath = ".//input[@type='file']")
+    private WebElement addFile;
 
     @FindBy(xpath = ".//*[text()='Today']")
     private WebElement toDayInCalendar;
 
 
-
-    @FindBy(xpath = "//*[@placeholder='Reference #']")
-    private WebElement referencePlaceHolder;
-
-    @FindBy(xpath = "//div[@class='table-container__table-item' and text()='TruckRepair 01/28/2020 18:33:31']")
-    private WebElement documentInRow;
-
-    @FindBy(xpath = ".//input[@type='file']")
-    private WebElement addFile;
-
     public void clickOnCreateButton(){actionsWithOurElements.clickOnElement(addDocumentButton);}
     public void clickOnSaveButton(){actionsWithOurElements.clickOnElement(saveButton);}
-    public void selectTypeDocument(String documentTypeValue){actionsWithOurElements.selectValueInDropDown(dropDawnTypeDocument, documentTypeValue);}
+    public void selectTypeDocument(String documentTypeValue){
+        actionsWithOurElements.clickOnElement(dropDawnTypeDocument);
+        actionsWithOurElements.enterTextToElement(dropDawnTypeDocument, documentTypeValue);
+        actionsWithOurElements.clickOnElement(docInMenu);
+    }
     public void notesText(String tempText){actionsWithOurElements.enterTextToElement(textArea, tempText);}
     public void selectState(String value){actionsWithOurElements.selectValueInDropDown(selectStateValue, value);}
     public void deliveryDate(String date){actionsWithOurElements.clearAndEnterTextToElement(deliveryDateInput, date);}
@@ -109,18 +117,16 @@ public class DocumentsFPage extends ParentFPage {
     public void driverValue(String driverValue){actionsWithOurElements.selectValueInDropDown(selectDriverValue, driverValue);}
     public void trailerValue(String trailerValue){actionsWithOurElements.selectValueInDropDown(selectTrailerValue, trailerValue);}
     public void truckValue(String truckValue){actionsWithOurElements.selectValueInDropDown(selectTruckValue, truckValue);}
+    public void documentDate(String date){actionsWithOurElements.clearAndEnterTextToElement(dateInput, date);}
+    public void reference(String reference){actionsWithOurElements.enterTextToElement(referenceInput, reference);}
+    public void enterReferenceInPlaceHolder(String referenceName){actionsWithOurElements.enterTextToElement(referencePlaceHolder, referenceName);}
+    public void addPictureByJs(String path){actionsWithOurElements.addFileByJs(addFile, path);}
+    public void clickOnDocumentInRow(String referenceName){actionsWithOurElements.clickOnElement("//div[@class='table-container__table-item' and text()='" + referenceName +"");}
     public void documentDate(){
         actionsWithOurElements.clickOnElement(dateInput);
         waitABit(5);
         actionsWithOurElements.clickOnElement(toDayInCalendar);
 //        actionsWithOurElements.enterTextToElement(dateInput, date);
-    }
-    public void reference(String reference){actionsWithOurElements.enterTextToElement(referenceInput, reference);}
-    public void enterReferenceInPlaceHolder(String referenceName){actionsWithOurElements.enterTextToElement(referencePlaceHolder, referenceName);}
-    public void addPictureByJs(String path){actionsWithOurElements.addFileByJs(addFile, path);}
-    public void clickOnDocumentInRow(String referenceName){actionsWithOurElements.clickOnElement("//div[@class='table-container__table-item' and text()='" + referenceName +"");}
-    public void clickOnToDayInCalendar(){
-
     }
 
 }

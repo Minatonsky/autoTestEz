@@ -31,11 +31,11 @@ public class DashboardFPage extends ParentFPage {
     @FindBy(xpath = ".//a[@href='/dash/trucks/']")
     private WebElement pageDvir;
 
-    @FindBy(xpath = ".//a[@href='/dash/live_scan/']")
+    @FindBy(xpath = ".//a[@href='/safety/documents']")
     private WebElement pageDocuments;
 
-    @FindBy(xpath = ".//a[@href='/safety/']")
-    private WebElement pageEquipment;
+    @FindBy(xpath = ".//*[@class='dashboard-content__main-navigation mobile-hiden']//../a[@href='/dash/fleet/equipment/']")
+    private WebElement pageSafety;
 
     @FindBy(xpath = ".//a[@href='/safety/documents']")
     private WebElement pageFinances;
@@ -95,7 +95,7 @@ public class DashboardFPage extends ParentFPage {
     }
     public void goToSafetyPage(){
         waitABit(2);
-        actionsWithOurElements.clickOnElement(pageEquipment);}
+        actionsWithOurElements.clickOnElement(pageSafety);}
     public void goToEzChatPage(){
         waitABit(2);
         actionsWithOurElements.clickOnElement(pageEzChat);}

@@ -19,20 +19,20 @@ public class CarrierCreateDocumentsTest extends ParentTest {
     String pass = dataForValidLogIn.get("pass").toString();
     String carrierId = dataForValidLogIn.get("fleetId").toString();
 
-    String fuelReceipts = "0";
-    String lumper = "1";
-    String scale = "2";
-    String toll = "3";
-    String truckRepairReceipts = "4";
-    String trailerRepairReceipt = "5";
-    String citationVehicleExaminationReport = "7";
-    String accidentPhotoPoliceReport = "8";
-    String annualInspectionReport = "10";
-    String insurance = "11";
-    String truckRegistration = "12";
-    String trailerRegistration = "13";
-    String others = "9";
-    String BOL = "6";
+    String fuelReceipts = "Fuel";
+    String lumper = "Lumper";
+    String scale = "Scale";
+    String toll = "Toll";
+    String truckRepairReceipts = "Truck repair";
+    String trailerRepairReceipt = "Trailer Repair";
+    String citationVehicleExaminationReport = "Citation";
+    String accidentPhotoPoliceReport = "Accident";
+    String annualInspectionReport = "Annual";
+    String insurance = "Insurance";
+    String truckRegistration = "Truck registration";
+    String trailerRegistration = "Trailer registration";
+    String others = "Others";
+    String BOL = "BOL";
     String picturePath = "C:\\workspace\\testdevEzlogz\\src\\main\\java\\data\\Pink-Floyd.jpg";
 
 
@@ -58,6 +58,7 @@ public class CarrierCreateDocumentsTest extends ParentTest {
 
         documentsFPage.clickOnCreateButton();
         documentsFPage.selectTypeDocument(fuelReceipts);
+        waitABit(5);
         documentsFPage.reference(referenceRV);
         documentsFPage.truckValue(truckId);
         documentsFPage.driverValue(driverId);

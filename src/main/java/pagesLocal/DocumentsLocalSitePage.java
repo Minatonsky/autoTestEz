@@ -13,10 +13,10 @@ public class DocumentsLocalSitePage extends ParentLocalSitePage {
         super(webDriver, "/dash/settings/account/", utilsForDB);
     }
 
-    @FindBy(xpath = ".//button[text() = 'Create document']")
+    @FindBy(xpath = ".//button[text() = 'Create Document']")
     private WebElement addDocumentButton;
 
-    @FindBy(name = "type")
+    @FindBy(xpath = ".//*[@class='document-popup']//./input[@type='search']")
     private WebElement dropDawnTypeDocument;
 
     @FindBy(name = "reference")
@@ -73,7 +73,7 @@ public class DocumentsLocalSitePage extends ParentLocalSitePage {
     @FindBy(xpath = "//input[@type='file']")
     private WebElement fileInput;
 
-    @FindBy(xpath = ".//textarea")
+    @FindBy(xpath = ".//*[@placeholder='Note']")
     private WebElement textArea;
 
     @FindBy(xpath = ".//button[@type='submit']")
@@ -95,7 +95,7 @@ public class DocumentsLocalSitePage extends ParentLocalSitePage {
 
     public void clickOnCreateButton(){actionsWithOurElements.clickOnElement(addDocumentButton);}
     public void clickOnSaveButton(){actionsWithOurElements.clickOnElement(saveButton);}
-    public void selectTypeDocument(String documentTypeValue){actionsWithOurElements.selectValueInDropDown(dropDawnTypeDocument, documentTypeValue);}
+    public void selectTypeDocument(String documentTypeValue){actionsWithOurElements.clickOnElement(dropDawnTypeDocument);}
     public void notesText(String tempText){actionsWithOurElements.enterTextToElement(textArea, tempText);}
     public void selectState(String value){actionsWithOurElements.selectValueInDropDown(selectStateValue, value);}
     public void deliveryDate(String date){actionsWithOurElements.clearAndEnterTextToElement(deliveryDateInput, date);}

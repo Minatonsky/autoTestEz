@@ -40,11 +40,11 @@ public class DashboardLocalSitePage extends ParentLocalSitePage {
     @FindBy(xpath = ".//a[@href='/dash/logbook']")
     private WebElement pageLogs;
 
-    @FindBy(xpath = ".//a[@href='/dash/live_scan/']")
+    @FindBy(xpath = ".//a[@href='/safety/documents']")
     private WebElement pageDocuments;
 
-    @FindBy(xpath = ".//a[@href='/dash/fleet/equipment/']")
-    private WebElement pageEquipment;
+    @FindBy(xpath = ".//a[@href='/safety']")
+    private WebElement safetyPage;
 
 
 
@@ -118,7 +118,7 @@ public class DashboardLocalSitePage extends ParentLocalSitePage {
     @Step
     public void goToSafetyPage(){
         waitABit(2);
-        actionsWithOurElements.clickOnElement(pageEquipment);
+        actionsWithOurElements.clickOnElement(safetyPage);
     }
     @Step
     public void goToDocumentsPage(){

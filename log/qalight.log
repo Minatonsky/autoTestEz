@@ -2835,3 +2835,532 @@ Session ID: a3afb07d536d955688a1a156335f3468
 2020-27-03 17:37:52   INFO [libs.ChargeMethods] : Chrome is started
 2020-27-03 17:38:19   INFO [libs.ChargeMethods] : Cron check fleets was run: 2020-03-27 15:37:50
 2020-27-03 17:38:20   INFO [chargeTest.ChargeDefaultersTest] :  DB Connection Closed 
+2020-28-03 14:23:14   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-28-03 14:23:21   INFO [libs.ChargeMethods] : # Temp Tariff Month Start 2019-10-26T14:23:21.379
+2020-28-03 14:23:21   INFO [libs.ChargeMethods] : # Temp Tariff Month Start 2019-12-22T14:23:21.382
+2020-28-03 14:23:21   INFO [libs.ChargeMethods] : # COUNT MONTH TO MONTH IOSX TARIFF = 75
+2020-28-03 14:23:21   INFO [libs.ChargeMethods] : # COUNT ONE YEAR IOSX TARIFF = 39
+2020-28-03 14:23:21   INFO [libs.ChargeMethods] : # COUNT TWO YEARS IOSX TARIFF = 100
+2020-28-03 14:23:21   INFO [libs.ChargeMethods] : # COUNT MONTH TO MONTH GEOMETRICS TARIFF = 53
+2020-28-03 14:23:21   INFO [libs.ChargeMethods] : # COUNT ONE YEAR GEOMETRICS TARIFF = 32
+2020-28-03 14:23:21   INFO [libs.ChargeMethods] : # COUNT TWO YEARS GEOMETRICS TARIFF = 38
+2020-28-03 14:23:22   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-28-03 14:23:22   INFO [libs.ChargeMethods] : # Deactivated Month IOSX Tariff = 0
+2020-28-03 14:23:22   INFO [libs.ChargeMethods] : # Month IOSX Charge Returned = 6
+2020-28-03 14:23:22   INFO [libs.ChargeMethods] : # One Year IOSX Charge Returned = 1
+2020-28-03 14:23:22   INFO [libs.ChargeMethods] : # Two Year IOSX Charge Returned = 6
+2020-28-03 14:23:22   INFO [libs.ChargeMethods] : # Geometrics Month Charge Returned = 2
+2020-28-03 14:23:22   INFO [libs.ChargeMethods] : # Geometrics One Year Charge Returned = 2
+2020-28-03 14:23:22   INFO [libs.ChargeMethods] : # Geometrics Two Year Charge Returned = 0
+2020-28-03 14:23:23   INFO [libs.ChargeMethods] : # Temp Tariff Month Start 2020-03-22T14:23:23.926
+2020-28-03 14:23:23   INFO [libs.ChargeMethods] : # Temp Tariff Month Start 2020-03-05T14:23:23.928
+2020-28-03 14:23:23   INFO [libs.ChargeMethods] : # Temp Tariff Month Start 2020-03-05T14:23:23.930
+2020-28-03 14:23:31   INFO [libs.ChargeMethods] : Chrome is started
+2020-28-03 14:25:03   INFO [libs.ChargeMethods] : Cron check fleets was run: 2020-03-28 12:23:25
+2020-28-03 14:25:04   INFO [libs.ChargeMethods] : dateTime: [2020-03-28 12:24:35]
+2020-28-03 14:25:05   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-28-03 14:25:05   INFO [libs.ChargeMethods] : # MONTH CHARGE IOSX = 2399.2
+2020-28-03 14:25:05   INFO [libs.ChargeMethods] : # ONE YEAR CHARGE IOSX = 13195.6
+2020-28-03 14:25:05   INFO [libs.ChargeMethods] : # TWO YEARS CHARGE IOSX = 66757.74
+2020-28-03 14:25:05   INFO [libs.ChargeMethods] : # SUM DUE CHARGE IOSX = 82352.54
+2020-28-03 14:25:05   INFO [libs.ChargeMethods] : # MONTH CHARGE Geometrics = 1619.46
+2020-28-03 14:25:05   INFO [libs.ChargeMethods] : # ONE YEAR CHARGE Geometrics = 11216.26
+2020-28-03 14:25:05   INFO [libs.ChargeMethods] : # TWO YEARS CHARGE Geometrics = 23932.02
+2020-28-03 14:25:05   INFO [libs.ChargeMethods] : # SUM DUE CHARGE Geometrics = 36767.74
+2020-28-03 14:25:05   INFO [libs.ChargeMethods] : # activationDate = 1584887003
+2020-28-03 14:25:05   INFO [libs.ChargeMethods] : # countScannerMonthToMonthTariffChargeByDays = 1
+2020-28-03 14:25:05   INFO [libs.ChargeMethods] : ***** Month Days = 31
+2020-28-03 14:25:05   INFO [libs.ChargeMethods] : ***** Price For One Day = 0.9674193548387097
+2020-28-03 14:25:05   INFO [libs.ChargeMethods] : ***** Active Charge Days = 5
+2020-28-03 14:25:05   INFO [libs.ChargeMethods] : ***** chargeByDevice = 4.84
+2020-28-03 14:25:05   INFO [libs.ChargeMethods] : ***** chargeByAllDevices = 4.84
+2020-28-03 14:25:05   INFO [libs.ChargeMethods] : # activationDate = 1583418203
+2020-28-03 14:25:05   INFO [libs.ChargeMethods] : # countScannerMonthToMonthTariffChargeByDays = 1
+2020-28-03 14:25:05   INFO [libs.ChargeMethods] : ***** Month Days = 31
+2020-28-03 14:25:05   INFO [libs.ChargeMethods] : ***** Price For One Day = 0.9674193548387097
+2020-28-03 14:25:05   INFO [libs.ChargeMethods] : ***** Active Charge Days = 22
+2020-28-03 14:25:05   INFO [libs.ChargeMethods] : ***** chargeByDevice = 21.28
+2020-28-03 14:25:05   INFO [libs.ChargeMethods] : ***** chargeByAllDevices = 21.28
+2020-28-03 14:25:05   INFO [libs.ChargeMethods] : # LIST AMOUNT DUE FROM DB = [13195.60, 2404.04, 66757.74, 11216.26, 1640.74, 23932.02]
+2020-28-03 14:25:05   INFO [libs.ChargeMethods] : # PROGRAM COUNT CHARGE  = 119146.4
+2020-28-03 14:25:05   INFO [libs.ChargeMethods] : # SUM DB DUE (CHARGE) = 119146.4
+2020-28-03 14:25:06   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-28-03 14:25:07   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-28-03 14:25:08   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-28-03 14:25:09   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-28-03 14:25:10   INFO [libs.ChargeMethods] : tempEstimatedTill: 2020-04-01
+2020-28-03 14:25:11   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-28-03 14:25:11   INFO [libs.ChargeMethods] : tempPaidTill: 2020-04-01
+2020-28-03 14:25:12   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-28-03 14:25:12   INFO [chargeTest.ChargeFleetSoloTest] :  DB Connection Closed 
+2020-28-03 14:52:39   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-28-03 14:52:46   INFO [libs.ChargeMethods] : # Temp Tariff Month Start 2019-10-26T14:52:46.245
+2020-28-03 14:52:46   INFO [libs.ChargeMethods] : # Temp Tariff Month Start 2019-12-22T14:52:46.247
+2020-28-03 14:52:46   INFO [libs.ChargeMethods] : # COUNT MONTH TO MONTH IOSX TARIFF = 75
+2020-28-03 14:52:46   INFO [libs.ChargeMethods] : # COUNT ONE YEAR IOSX TARIFF = 39
+2020-28-03 14:52:46   INFO [libs.ChargeMethods] : # COUNT TWO YEARS IOSX TARIFF = 100
+2020-28-03 14:52:46   INFO [libs.ChargeMethods] : # COUNT MONTH TO MONTH GEOMETRICS TARIFF = 53
+2020-28-03 14:52:46   INFO [libs.ChargeMethods] : # COUNT ONE YEAR GEOMETRICS TARIFF = 32
+2020-28-03 14:52:46   INFO [libs.ChargeMethods] : # COUNT TWO YEARS GEOMETRICS TARIFF = 38
+2020-28-03 14:52:47   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-28-03 14:52:47   INFO [libs.ChargeMethods] : # Deactivated Month IOSX Tariff = 0
+2020-28-03 14:52:47   INFO [libs.ChargeMethods] : # Month IOSX Charge Returned = 6
+2020-28-03 14:52:47   INFO [libs.ChargeMethods] : # One Year IOSX Charge Returned = 1
+2020-28-03 14:52:47   INFO [libs.ChargeMethods] : # Two Year IOSX Charge Returned = 6
+2020-28-03 14:52:47   INFO [libs.ChargeMethods] : # Geometrics Month Charge Returned = 2
+2020-28-03 14:52:47   INFO [libs.ChargeMethods] : # Geometrics One Year Charge Returned = 2
+2020-28-03 14:52:47   INFO [libs.ChargeMethods] : # Geometrics Two Year Charge Returned = 0
+2020-28-03 14:52:48   INFO [libs.ChargeMethods] : # Temp Tariff Month Start 2020-03-22T14:52:48.625
+2020-28-03 14:52:48   INFO [libs.ChargeMethods] : # Temp Tariff Month Start 2020-03-05T14:52:48.626
+2020-28-03 14:52:48   INFO [libs.ChargeMethods] : # Temp Tariff Month Start 2020-03-05T14:52:48.626
+2020-28-03 14:52:55   INFO [libs.ChargeMethods] : Chrome is started
+2020-28-03 14:54:26   INFO [libs.ChargeMethods] : Cron check fleets was run: 2020-03-28 12:52:50
+2020-28-03 14:54:27   INFO [libs.ChargeMethods] : dateTime: [2020-03-28 12:53:58]
+2020-28-03 14:54:28   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-28-03 14:54:28   INFO [libs.ChargeMethods] : # MONTH CHARGE IOSX = 2399.2
+2020-28-03 14:54:28   INFO [libs.ChargeMethods] : # ONE YEAR CHARGE IOSX = 13195.6
+2020-28-03 14:54:28   INFO [libs.ChargeMethods] : # TWO YEARS CHARGE IOSX = 66757.74
+2020-28-03 14:54:28   INFO [libs.ChargeMethods] : # SUM DUE CHARGE IOSX = 82352.54
+2020-28-03 14:54:28   INFO [libs.ChargeMethods] : # MONTH CHARGE Geometrics = 1619.46
+2020-28-03 14:54:28   INFO [libs.ChargeMethods] : # ONE YEAR CHARGE Geometrics = 11216.26
+2020-28-03 14:54:28   INFO [libs.ChargeMethods] : # TWO YEARS CHARGE Geometrics = 23932.02
+2020-28-03 14:54:28   INFO [libs.ChargeMethods] : # SUM DUE CHARGE Geometrics = 36767.74
+2020-28-03 14:54:28   INFO [libs.ChargeMethods] : # activationDate = 1584888768
+2020-28-03 14:54:28   INFO [libs.ChargeMethods] : # countScannerMonthToMonthTariffChargeByDays = 1
+2020-28-03 14:54:28   INFO [libs.ChargeMethods] : ***** Month Days = 31
+2020-28-03 14:54:28   INFO [libs.ChargeMethods] : ***** Price For One Day = 0.9674193548387097
+2020-28-03 14:54:28   INFO [libs.ChargeMethods] : ***** Active Charge Days = 5
+2020-28-03 14:54:28   INFO [libs.ChargeMethods] : ***** chargeByDevice = 4.84
+2020-28-03 14:54:28   INFO [libs.ChargeMethods] : ***** chargeByAllDevices = 4.84
+2020-28-03 14:54:28   INFO [libs.ChargeMethods] : # activationDate = 1583419968
+2020-28-03 14:54:28   INFO [libs.ChargeMethods] : # countScannerMonthToMonthTariffChargeByDays = 1
+2020-28-03 14:54:28   INFO [libs.ChargeMethods] : ***** Month Days = 31
+2020-28-03 14:54:28   INFO [libs.ChargeMethods] : ***** Price For One Day = 0.9674193548387097
+2020-28-03 14:54:28   INFO [libs.ChargeMethods] : ***** Active Charge Days = 22
+2020-28-03 14:54:28   INFO [libs.ChargeMethods] : ***** chargeByDevice = 21.28
+2020-28-03 14:54:28   INFO [libs.ChargeMethods] : ***** chargeByAllDevices = 21.28
+2020-28-03 14:54:28   INFO [libs.ChargeMethods] : # LIST AMOUNT DUE FROM DB = [13195.60, 2404.04, 66757.74, 11216.26, 1640.74, 23932.02]
+2020-28-03 14:54:28   INFO [libs.ChargeMethods] : # PROGRAM COUNT CHARGE  = 119146.4
+2020-28-03 14:54:28   INFO [libs.ChargeMethods] : # SUM DB DUE (CHARGE) = 119146.4
+2020-28-03 14:54:29   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-28-03 14:54:30   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-28-03 14:54:32   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-28-03 14:54:33   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-28-03 14:54:33   INFO [libs.ChargeMethods] : tempEstimatedTill: 2020-04-01
+2020-28-03 14:54:34   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-28-03 14:54:34   INFO [libs.ChargeMethods] : tempPaidTill: 2020-04-01
+2020-28-03 14:54:35   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-28-03 14:54:35   INFO [chargeTest.ChargeFleetSoloTest] :  DB Connection Closed 
+2020-31-03 15:18:45   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-31-03 15:18:53   INFO [libs.ChargeMethods] : # Temp Tariff Month Start 2019-10-29T15:18:53.140
+2020-31-03 15:18:53   INFO [libs.ChargeMethods] : # Temp Tariff Month Start 2019-12-25T15:18:53.143
+2020-31-03 15:18:53   INFO [libs.ChargeMethods] : # COUNT MONTH TO MONTH IOSX TARIFF = 75
+2020-31-03 15:18:53   INFO [libs.ChargeMethods] : # COUNT ONE YEAR IOSX TARIFF = 39
+2020-31-03 15:18:53   INFO [libs.ChargeMethods] : # COUNT TWO YEARS IOSX TARIFF = 100
+2020-31-03 15:18:53   INFO [libs.ChargeMethods] : # COUNT MONTH TO MONTH GEOMETRICS TARIFF = 53
+2020-31-03 15:18:53   INFO [libs.ChargeMethods] : # COUNT ONE YEAR GEOMETRICS TARIFF = 32
+2020-31-03 15:18:53   INFO [libs.ChargeMethods] : # COUNT TWO YEARS GEOMETRICS TARIFF = 38
+2020-31-03 15:18:54   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-31-03 15:18:54   INFO [libs.ChargeMethods] : # Deactivated Month IOSX Tariff = 0
+2020-31-03 15:18:54   INFO [libs.ChargeMethods] : # Month IOSX Charge Returned = 6
+2020-31-03 15:18:54   INFO [libs.ChargeMethods] : # One Year IOSX Charge Returned = 1
+2020-31-03 15:18:54   INFO [libs.ChargeMethods] : # Two Year IOSX Charge Returned = 6
+2020-31-03 15:18:54   INFO [libs.ChargeMethods] : # Geometrics Month Charge Returned = 2
+2020-31-03 15:18:54   INFO [libs.ChargeMethods] : # Geometrics One Year Charge Returned = 2
+2020-31-03 15:18:54   INFO [libs.ChargeMethods] : # Geometrics Two Year Charge Returned = 0
+2020-31-03 15:18:55   INFO [libs.ChargeMethods] : # Temp Tariff Month Start 2020-03-25T15:18:55.583
+2020-31-03 15:18:55   INFO [libs.ChargeMethods] : # Temp Tariff Month Start 2020-03-08T15:18:55.585
+2020-31-03 15:18:55   INFO [libs.ChargeMethods] : # Temp Tariff Month Start 2020-03-08T15:18:55.586
+2020-31-03 15:18:56   INFO [chargeTest.ChargeFleetSoloTest] :  DB Connection Closed 
+2020-31-03 15:20:17   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-31-03 15:20:23   INFO [libs.ChargeMethods] : # Temp Tariff Month Start 2019-10-29T15:20:23.919
+2020-31-03 15:20:23   INFO [libs.ChargeMethods] : # Temp Tariff Month Start 2019-12-25T15:20:23.922
+2020-31-03 15:20:23   INFO [libs.ChargeMethods] : # COUNT MONTH TO MONTH IOSX TARIFF = 75
+2020-31-03 15:20:23   INFO [libs.ChargeMethods] : # COUNT ONE YEAR IOSX TARIFF = 39
+2020-31-03 15:20:23   INFO [libs.ChargeMethods] : # COUNT TWO YEARS IOSX TARIFF = 100
+2020-31-03 15:20:23   INFO [libs.ChargeMethods] : # COUNT MONTH TO MONTH GEOMETRICS TARIFF = 53
+2020-31-03 15:20:23   INFO [libs.ChargeMethods] : # COUNT ONE YEAR GEOMETRICS TARIFF = 32
+2020-31-03 15:20:23   INFO [libs.ChargeMethods] : # COUNT TWO YEARS GEOMETRICS TARIFF = 38
+2020-31-03 15:20:24   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-31-03 15:20:24   INFO [libs.ChargeMethods] : # Deactivated Month IOSX Tariff = 0
+2020-31-03 15:20:24   INFO [libs.ChargeMethods] : # Month IOSX Charge Returned = 6
+2020-31-03 15:20:24   INFO [libs.ChargeMethods] : # One Year IOSX Charge Returned = 1
+2020-31-03 15:20:24   INFO [libs.ChargeMethods] : # Two Year IOSX Charge Returned = 6
+2020-31-03 15:20:24   INFO [libs.ChargeMethods] : # Geometrics Month Charge Returned = 2
+2020-31-03 15:20:24   INFO [libs.ChargeMethods] : # Geometrics One Year Charge Returned = 2
+2020-31-03 15:20:24   INFO [libs.ChargeMethods] : # Geometrics Two Year Charge Returned = 0
+2020-31-03 15:20:26   INFO [libs.ChargeMethods] : # Temp Tariff Month Start 2020-03-25T15:20:26.324
+2020-31-03 15:20:26   INFO [libs.ChargeMethods] : # Temp Tariff Month Start 2020-03-08T15:20:26.325
+2020-31-03 15:20:26   INFO [libs.ChargeMethods] : # Temp Tariff Month Start 2020-03-08T15:20:26.327
+2020-31-03 15:20:33   INFO [libs.ChargeMethods] : Chrome is started
+2020-31-03 15:22:06   INFO [libs.ChargeMethods] : Cron check fleets was run: 2020-03-31 12:20:28
+2020-31-03 15:22:07   INFO [libs.ChargeMethods] : dateTime: [2020-03-31 12:21:38]
+2020-31-03 15:22:08   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-31-03 15:22:08   INFO [libs.ChargeMethods] : # MONTH CHARGE IOSX = 2000.0
+2020-31-03 15:22:08   INFO [libs.ChargeMethods] : # ONE YEAR CHARGE IOSX = 13195.6
+2020-31-03 15:22:08   INFO [libs.ChargeMethods] : # TWO YEARS CHARGE IOSX = 66757.74
+2020-31-03 15:22:08   INFO [libs.ChargeMethods] : # SUM DUE CHARGE IOSX = 81953.34
+2020-31-03 15:22:08   INFO [libs.ChargeMethods] : # MONTH CHARGE Geometrics = 1350.0
+2020-31-03 15:22:08   INFO [libs.ChargeMethods] : # ONE YEAR CHARGE Geometrics = 11216.26
+2020-31-03 15:22:08   INFO [libs.ChargeMethods] : # TWO YEARS CHARGE Geometrics = 23932.02
+2020-31-03 15:22:08   INFO [libs.ChargeMethods] : # SUM DUE CHARGE Geometrics = 36498.28
+2020-31-03 15:22:08   INFO [libs.ChargeMethods] : # activationDate = 1585149626
+2020-31-03 15:22:08   INFO [libs.ChargeMethods] : # countScannerMonthToMonthTariffChargeByDays = 1
+2020-31-03 15:22:08   INFO [libs.ChargeMethods] : ***** Month Days = 31
+2020-31-03 15:22:08   INFO [libs.ChargeMethods] : ***** Price For One Day = 0.8064516129032258
+2020-31-03 15:22:08   INFO [libs.ChargeMethods] : ***** Active Charge Days = 5
+2020-31-03 15:22:08   INFO [libs.ChargeMethods] : ***** chargeByDevice = 4.03
+2020-31-03 15:22:08   INFO [libs.ChargeMethods] : ***** chargeByAllDevices = 4.03
+2020-31-03 15:22:08   INFO [libs.ChargeMethods] : # activationDate = 1583680826
+2020-31-03 15:22:08   INFO [libs.ChargeMethods] : # countScannerMonthToMonthTariffChargeByDays = 1
+2020-31-03 15:22:08   INFO [libs.ChargeMethods] : ***** Month Days = 31
+2020-31-03 15:22:08   INFO [libs.ChargeMethods] : ***** Price For One Day = 0.8064516129032258
+2020-31-03 15:22:08   INFO [libs.ChargeMethods] : ***** Active Charge Days = 22
+2020-31-03 15:22:08   INFO [libs.ChargeMethods] : ***** chargeByDevice = 17.74
+2020-31-03 15:22:08   INFO [libs.ChargeMethods] : ***** chargeByAllDevices = 17.74
+2020-31-03 15:22:08   INFO [libs.ChargeMethods] : # LIST AMOUNT DUE FROM DB = [13195.60, 2004.84, 66757.74, 11216.26, 1371.28, 23932.02]
+2020-31-03 15:22:08   INFO [libs.ChargeMethods] : # PROGRAM COUNT CHARGE  = 118473.39
+2020-31-03 15:22:08   INFO [libs.ChargeMethods] : # SUM DB DUE (CHARGE) = 118477.74
+2020-31-03 15:22:09  ERROR [chargeTest.ChargeFleetSoloTest] : AC failed: Charge due is not correct
+2020-31-03 15:22:09   INFO [chargeTest.ChargeFleetSoloTest] :  DB Connection Closed 
+2020-31-03 16:17:44   INFO [localSiteTest.documentsTest.CarrierCreateDocumentsTest] : Chrome will be started
+2020-31-03 16:17:49   INFO [localSiteTest.documentsTest.CarrierCreateDocumentsTest] : Chrome is started
+2020-31-03 16:17:49   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-31-03 16:18:00   INFO [pagesLocal.LoginLocalSitePage] : Login Page was opened
+2020-31-03 16:18:00   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-31-03 16:18:01   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-31-03 16:18:01   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-31-03 16:18:02   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-31-03 16:18:25   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2020-31-03 16:18:25   INFO [pagesLocal.LoginLocalSitePage] : There is not phone verification pop up
+2020-31-03 16:19:07  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: .//a[@href='/dash/fleet/equipment/']' (tried for 20 second(s) with 500 milliseconds interval)
+2020-31-03 16:19:07   INFO [localSiteTest.documentsTest.CarrierCreateDocumentsTest] :  DB connection closed 
+2020-31-03 16:23:24   INFO [localSiteTest.documentsTest.CarrierCreateDocumentsTest] : Chrome will be started
+2020-31-03 16:23:30   INFO [localSiteTest.documentsTest.CarrierCreateDocumentsTest] : Chrome is started
+2020-31-03 16:23:30   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-31-03 16:23:42   INFO [pagesLocal.LoginLocalSitePage] : Login Page was opened
+2020-31-03 16:23:42   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-31-03 16:23:43   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-31-03 16:23:43   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-31-03 16:23:43   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-31-03 16:24:06   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2020-31-03 16:24:06   INFO [pagesLocal.LoginLocalSitePage] : There is not phone verification pop up
+2020-31-03 16:24:09   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-31-03 16:24:11   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-31-03 16:24:11   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-31-03 16:25:10   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-31-03 16:25:16   INFO [libs.ChargeMethods] : # Temp Tariff Month Start 2019-10-29T16:25:16.721
+2020-31-03 16:25:16   INFO [libs.ChargeMethods] : # Temp Tariff Month Start 2019-12-25T16:25:16.725
+2020-31-03 16:25:16   INFO [libs.ChargeMethods] : # Deactivated Month IOSX Tariff = 0
+2020-31-03 16:25:16   INFO [libs.ChargeMethods] : # Month IOSX Charge Returned = 0
+2020-31-03 16:25:16   INFO [libs.ChargeMethods] : # One Year IOSX Charge Returned = 0
+2020-31-03 16:25:16   INFO [libs.ChargeMethods] : # Two Year IOSX Charge Returned = 0
+2020-31-03 16:25:16   INFO [libs.ChargeMethods] : # Geometrics Month Charge Returned = 0
+2020-31-03 16:25:16   INFO [libs.ChargeMethods] : # Geometrics One Year Charge Returned = 0
+2020-31-03 16:25:16   INFO [libs.ChargeMethods] : # Geometrics Two Year Charge Returned = 0
+2020-31-03 16:25:17   INFO [libs.ChargeMethods] : # Temp Tariff Month Start 2020-03-25T16:25:17.926
+2020-31-03 16:25:17   INFO [libs.ChargeMethods] : # Temp Tariff Month Start 2020-03-08T16:25:17.928
+2020-31-03 16:25:17   INFO [libs.ChargeMethods] : # Temp Tariff Month Start 2020-03-08T16:25:17.930
+2020-31-03 16:25:18   INFO [chargeTest.ChargeFleetSoloTest] :  DB Connection Closed 
+2020-31-03 16:32:27   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-31-03 16:32:33   INFO [libs.ChargeMethods] : # Temp Tariff Month Start 2019-10-29T16:32:33.449
+2020-31-03 16:32:33   INFO [libs.ChargeMethods] : # Temp Tariff Month Start 2019-12-25T16:32:33.452
+2020-31-03 16:32:33   INFO [libs.ChargeMethods] : # COUNT MONTH TO MONTH IOSX TARIFF = 3
+2020-31-03 16:32:33   INFO [libs.ChargeMethods] : # COUNT ONE YEAR IOSX TARIFF = 1
+2020-31-03 16:32:33   INFO [libs.ChargeMethods] : # COUNT TWO YEARS IOSX TARIFF = 1
+2020-31-03 16:32:33   INFO [libs.ChargeMethods] : # COUNT MONTH TO MONTH GEOMETRICS TARIFF = 3
+2020-31-03 16:32:33   INFO [libs.ChargeMethods] : # COUNT ONE YEAR GEOMETRICS TARIFF = 1
+2020-31-03 16:32:33   INFO [libs.ChargeMethods] : # COUNT TWO YEARS GEOMETRICS TARIFF = 1
+2020-31-03 16:32:34   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-31-03 16:32:34   INFO [libs.ChargeMethods] : # Deactivated Month IOSX Tariff = 0
+2020-31-03 16:32:34   INFO [libs.ChargeMethods] : # Month IOSX Charge Returned = 0
+2020-31-03 16:32:34   INFO [libs.ChargeMethods] : # One Year IOSX Charge Returned = 0
+2020-31-03 16:32:34   INFO [libs.ChargeMethods] : # Two Year IOSX Charge Returned = 0
+2020-31-03 16:32:34   INFO [libs.ChargeMethods] : # Geometrics Month Charge Returned = 0
+2020-31-03 16:32:34   INFO [libs.ChargeMethods] : # Geometrics One Year Charge Returned = 0
+2020-31-03 16:32:34   INFO [libs.ChargeMethods] : # Geometrics Two Year Charge Returned = 0
+2020-31-03 16:32:35   INFO [libs.ChargeMethods] : # Temp Tariff Month Start 2020-03-25T16:32:35.863
+2020-31-03 16:32:35   INFO [libs.ChargeMethods] : # Temp Tariff Month Start 2020-03-08T16:32:35.863
+2020-31-03 16:32:35   INFO [libs.ChargeMethods] : # Temp Tariff Month Start 2020-03-08T16:32:35.864
+2020-31-03 16:32:42   INFO [libs.ChargeMethods] : Chrome is started
+2020-31-03 16:33:20   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-31-03 16:33:27   INFO [libs.ChargeMethods] : # Temp Tariff Month Start 2019-10-29T16:33:27.251
+2020-31-03 16:33:27   INFO [libs.ChargeMethods] : # Temp Tariff Month Start 2019-12-25T16:33:27.253
+2020-31-03 16:33:27   INFO [libs.ChargeMethods] : # COUNT MONTH TO MONTH IOSX TARIFF = 3
+2020-31-03 16:33:27   INFO [libs.ChargeMethods] : # COUNT ONE YEAR IOSX TARIFF = 1
+2020-31-03 16:33:27   INFO [libs.ChargeMethods] : # COUNT TWO YEARS IOSX TARIFF = 1
+2020-31-03 16:33:27   INFO [libs.ChargeMethods] : # COUNT MONTH TO MONTH GEOMETRICS TARIFF = 3
+2020-31-03 16:33:27   INFO [libs.ChargeMethods] : # COUNT ONE YEAR GEOMETRICS TARIFF = 1
+2020-31-03 16:33:27   INFO [libs.ChargeMethods] : # COUNT TWO YEARS GEOMETRICS TARIFF = 1
+2020-31-03 16:33:28   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-31-03 16:33:28   INFO [libs.ChargeMethods] : # Deactivated Month IOSX Tariff = 0
+2020-31-03 16:33:28   INFO [libs.ChargeMethods] : # Month IOSX Charge Returned = 0
+2020-31-03 16:33:28   INFO [libs.ChargeMethods] : # One Year IOSX Charge Returned = 0
+2020-31-03 16:33:28   INFO [libs.ChargeMethods] : # Two Year IOSX Charge Returned = 0
+2020-31-03 16:33:28   INFO [libs.ChargeMethods] : # Geometrics Month Charge Returned = 0
+2020-31-03 16:33:28   INFO [libs.ChargeMethods] : # Geometrics One Year Charge Returned = 0
+2020-31-03 16:33:28   INFO [libs.ChargeMethods] : # Geometrics Two Year Charge Returned = 0
+2020-31-03 16:33:29   INFO [libs.ChargeMethods] : # Temp Tariff Month Start 2020-03-25T16:33:29.642
+2020-31-03 16:33:29   INFO [libs.ChargeMethods] : # Temp Tariff Month Start 2020-03-08T16:33:29.644
+2020-31-03 16:33:29   INFO [libs.ChargeMethods] : # Temp Tariff Month Start 2020-03-08T16:33:29.645
+2020-31-03 16:33:36   INFO [libs.ChargeMethods] : Chrome is started
+2020-31-03 16:34:07   INFO [libs.ChargeMethods] : Cron check fleets was run: 2020-03-31 13:33:31
+2020-31-03 16:34:08   INFO [libs.ChargeMethods] : dateTime: [2020-03-31 13:33:45]
+2020-31-03 16:34:09   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-31-03 16:34:09   INFO [libs.ChargeMethods] : # MONTH CHARGE IOSX = 59.98
+2020-31-03 16:34:09   INFO [libs.ChargeMethods] : # ONE YEAR CHARGE IOSX = 329.89
+2020-31-03 16:34:09   INFO [libs.ChargeMethods] : # TWO YEARS CHARGE IOSX = 629.79
+2020-31-03 16:34:09   INFO [libs.ChargeMethods] : # SUM DUE CHARGE IOSX = 1019.66
+2020-31-03 16:34:09   INFO [libs.ChargeMethods] : # MONTH CHARGE Geometrics = 59.98
+2020-31-03 16:34:09   INFO [libs.ChargeMethods] : # ONE YEAR CHARGE Geometrics = 329.89
+2020-31-03 16:34:09   INFO [libs.ChargeMethods] : # TWO YEARS CHARGE Geometrics = 629.79
+2020-31-03 16:34:09   INFO [libs.ChargeMethods] : # SUM DUE CHARGE Geometrics = 1019.66
+2020-31-03 16:34:09   INFO [libs.ChargeMethods] : # activationDate = 1585154009
+2020-31-03 16:34:09   INFO [libs.ChargeMethods] : # countScannerMonthToMonthTariffChargeByDays = 1
+2020-31-03 16:34:09   INFO [libs.ChargeMethods] : ***** Month Days = 31
+2020-31-03 16:34:09   INFO [libs.ChargeMethods] : ***** Price For One Day = 0.9674193548387097
+2020-31-03 16:34:09   INFO [libs.ChargeMethods] : ***** Active Charge Days = 5
+2020-31-03 16:34:09   INFO [libs.ChargeMethods] : ***** chargeByDevice = 4.84
+2020-31-03 16:34:09   INFO [libs.ChargeMethods] : ***** chargeByAllDevices = 4.84
+2020-31-03 16:34:09   INFO [libs.ChargeMethods] : # activationDate = 1583685209
+2020-31-03 16:34:09   INFO [libs.ChargeMethods] : # countScannerMonthToMonthTariffChargeByDays = 1
+2020-31-03 16:34:09   INFO [libs.ChargeMethods] : ***** Month Days = 31
+2020-31-03 16:34:09   INFO [libs.ChargeMethods] : ***** Price For One Day = 0.9674193548387097
+2020-31-03 16:34:09   INFO [libs.ChargeMethods] : ***** Active Charge Days = 22
+2020-31-03 16:34:09   INFO [libs.ChargeMethods] : ***** chargeByDevice = 21.28
+2020-31-03 16:34:09   INFO [libs.ChargeMethods] : ***** chargeByAllDevices = 21.28
+2020-31-03 16:34:09   INFO [libs.ChargeMethods] : # LIST AMOUNT DUE FROM DB = [64.82, 329.89, 629.79, 81.26, 329.89, 629.79]
+2020-31-03 16:34:09   INFO [libs.ChargeMethods] : # PROGRAM COUNT CHARGE  = 2065.44
+2020-31-03 16:34:09   INFO [libs.ChargeMethods] : # SUM DB DUE (CHARGE) = 2065.44
+2020-31-03 16:34:10   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-31-03 16:34:11   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-31-03 16:34:12   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-31-03 16:34:13   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-31-03 16:34:13   INFO [libs.ChargeMethods] : tempEstimatedTill: 2020-04-01
+2020-31-03 16:34:14   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-31-03 16:34:15   INFO [libs.ChargeMethods] : tempPaidTill: 2020-04-01
+2020-31-03 16:34:16   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-31-03 16:34:16   INFO [chargeTest.ChargeFleetSoloTest] :  DB Connection Closed 
+2020-31-03 16:41:49   INFO [localSiteTest.documentsTest.CarrierCreateDocumentsTest] : Chrome will be started
+2020-31-03 16:41:54   INFO [localSiteTest.documentsTest.CarrierCreateDocumentsTest] : Chrome is started
+2020-31-03 16:41:55   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-31-03 16:42:07   INFO [pagesLocal.LoginLocalSitePage] : Login Page was opened
+2020-31-03 16:42:07   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-31-03 16:42:08   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-31-03 16:42:08   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-31-03 16:42:08   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-31-03 16:42:31   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2020-31-03 16:42:31   INFO [pagesLocal.LoginLocalSitePage] : There is not phone verification pop up
+2020-31-03 16:42:34   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-31-03 16:42:36   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-31-03 16:42:36   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-31-03 16:42:37  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.support.ui.UnexpectedTagNameException: Element should have been "select" but was "input"
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'DESKTOP-UD8IPI4', ip: '192.168.0.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: driver.version: unknown
+2020-31-03 16:42:37   INFO [localSiteTest.documentsTest.CarrierCreateDocumentsTest] :  DB connection closed 
+2020-31-03 17:39:53   INFO [localSiteTest.documentsTest.CarrierCreateDocumentsTest] : Chrome will be started
+2020-31-03 17:39:59   INFO [localSiteTest.documentsTest.CarrierCreateDocumentsTest] : Chrome is started
+2020-31-03 17:39:59   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-31-03 17:40:13   INFO [pagesLocal.LoginLocalSitePage] : Login Page was opened
+2020-31-03 17:40:13   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-31-03 17:40:14   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-31-03 17:40:14   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-31-03 17:40:14   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-31-03 17:40:37   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2020-31-03 17:40:37   INFO [pagesLocal.LoginLocalSitePage] : There is not phone verification pop up
+2020-31-03 17:40:40   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-31-03 17:40:42   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-31-03 17:40:42   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-31-03 17:40:43   INFO [libs.ActionsWithOurElements] : FuelReceipts 03/31/2020 17:40:04 was inputted into element
+2020-31-03 17:44:00   INFO [localSiteTest.documentsTest.CarrierCreateDocumentsTest] : Chrome will be started
+2020-31-03 17:44:06   INFO [localSiteTest.documentsTest.CarrierCreateDocumentsTest] : Chrome is started
+2020-31-03 17:44:06   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-31-03 17:44:17   INFO [pagesLocal.LoginLocalSitePage] : Login Page was opened
+2020-31-03 17:44:17   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-31-03 17:44:18   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-31-03 17:44:18   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-31-03 17:44:19   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-31-03 17:44:42   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2020-31-03 17:44:42   INFO [pagesLocal.LoginLocalSitePage] : There is not phone verification pop up
+2020-31-03 17:44:44   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-31-03 17:44:46   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-31-03 17:44:47   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-31-03 17:44:47   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-31-03 17:44:48   INFO [libs.ActionsWithOurElements] : FuelReceipts 03/31/2020 17:44:10 was inputted into element
+2020-31-03 17:45:28  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: .//select[@id='edit_truck']' (tried for 20 second(s) with 500 milliseconds interval)
+2020-31-03 17:45:28   INFO [localSiteTest.documentsTest.CarrierCreateDocumentsTest] :  DB connection closed 
+2020-31-03 18:07:54   INFO [localSiteTest.documentsTest.CarrierCreateDocumentsTest] : Chrome will be started
+2020-31-03 18:08:01   INFO [localSiteTest.documentsTest.CarrierCreateDocumentsTest] : Chrome is started
+2020-31-03 18:08:01   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-31-03 18:08:16   INFO [pagesLocal.LoginLocalSitePage] : Login Page was opened
+2020-31-03 18:08:16   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-31-03 18:08:18   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-31-03 18:08:18   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-31-03 18:08:19   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-31-03 18:08:42   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2020-31-03 18:08:42   INFO [pagesLocal.LoginLocalSitePage] : There is not phone verification pop up
+2020-31-03 18:08:44   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-31-03 18:08:46   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-31-03 18:08:47   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-31-03 18:08:47   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-31-03 18:08:49   INFO [libs.ActionsWithOurElements] : FuelReceipts 03/31/2020 18:08:07 was inputted into element
+2020-31-03 18:09:47   INFO [localSiteTest.documentsTest.CarrierCreateDocumentsTest] : Chrome will be started
+2020-31-03 18:09:54   INFO [localSiteTest.documentsTest.CarrierCreateDocumentsTest] : Chrome is started
+2020-31-03 18:09:54   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-31-03 18:10:10   INFO [pagesLocal.LoginLocalSitePage] : Login Page was opened
+2020-31-03 18:10:11   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-31-03 18:10:12   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-31-03 18:10:13   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-31-03 18:10:13   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-31-03 18:10:36   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2020-31-03 18:10:36   INFO [pagesLocal.LoginLocalSitePage] : There is not phone verification pop up
+2020-31-03 18:10:39   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-31-03 18:10:41   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-31-03 18:10:41   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-31-03 18:10:51   INFO [localSiteTest.documentsTest.CarrierCreateDocumentsTest] :  DB connection closed 
+2020-31-03 18:14:40   INFO [localSiteTest.documentsTest.CarrierCreateDocumentsTest] : Chrome will be started
+2020-31-03 18:14:46   INFO [localSiteTest.documentsTest.CarrierCreateDocumentsTest] : Chrome is started
+2020-31-03 18:14:47   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-31-03 18:15:00   INFO [pagesLocal.LoginLocalSitePage] : Login Page was opened
+2020-31-03 18:15:00   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-31-03 18:15:01   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-31-03 18:15:02   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-31-03 18:15:02   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-31-03 18:15:25   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2020-31-03 18:15:25   INFO [pagesLocal.LoginLocalSitePage] : There is not phone verification pop up
+2020-31-03 18:15:27   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-31-03 18:15:30   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-31-03 18:15:30   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-31-03 18:15:30   INFO [libs.ActionsWithOurElements] : S was inputted into element
+2020-31-03 19:33:49   INFO [localSiteTest.documentsTest.CarrierCreateDocumentsTest] : Chrome will be started
+2020-31-03 19:33:56   INFO [localSiteTest.documentsTest.CarrierCreateDocumentsTest] : Chrome is started
+2020-31-03 19:33:56   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-31-03 19:34:07   INFO [pagesLocal.LoginLocalSitePage] : Login Page was opened
+2020-31-03 19:34:07   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-31-03 19:34:08   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-31-03 19:34:09   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-31-03 19:34:09   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-31-03 19:34:32   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2020-31-03 19:34:32   INFO [pagesLocal.LoginLocalSitePage] : There is not phone verification pop up
+2020-31-03 19:34:34   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-31-03 19:34:37   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-31-03 19:34:37   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-31-03 19:34:37   INFO [libs.ActionsWithOurElements] : lYZRdYb was inputted into element
+2020-31-03 19:34:37   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-31-03 19:34:57   INFO [localSiteTest.documentsTest.CarrierCreateDocumentsTest] :  DB connection closed 
+2020-02-04 15:28:01   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome will be started
+2020-02-04 15:28:08   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome is started
+2020-02-04 15:28:09   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-02-04 15:28:19   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-02-04 15:28:19   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-02-04 15:28:20   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-02-04 15:28:20   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-02-04 15:28:21   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-02-04 15:29:09  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: .//a[@href='/safety/']' (tried for 20 second(s) with 500 milliseconds interval)
+2020-02-04 15:29:09   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] :  DB connection closed 
+2020-02-04 16:03:03   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome will be started
+2020-02-04 16:03:08   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome is started
+2020-02-04 16:03:08   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-02-04 16:03:21   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-02-04 16:03:22   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-02-04 16:03:22   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-02-04 16:03:23   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-02-04 16:03:23   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-02-04 16:04:11  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: .//a[@href='/safety/']' (tried for 20 second(s) with 500 milliseconds interval)
+2020-02-04 16:04:11   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] :  DB connection closed 
+2020-02-04 16:04:34   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome will be started
+2020-02-04 16:04:39   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome is started
+2020-02-04 16:04:39   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-02-04 16:04:49   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-02-04 16:04:49   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-02-04 16:04:50   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-02-04 16:04:50   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-02-04 16:04:51   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-02-04 16:05:38  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: .//a[@href='/safety/']' (tried for 20 second(s) with 500 milliseconds interval)
+2020-02-04 16:05:38   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] :  DB connection closed 
+2020-02-04 16:35:49   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome will be started
+2020-02-04 16:35:54   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome is started
+2020-02-04 16:35:54   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-02-04 16:36:04   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-02-04 16:36:04   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-02-04 16:36:05   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-02-04 16:36:05   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-02-04 16:36:06   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-02-04 16:36:53  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: .//a[@href='/safety/']' (tried for 20 second(s) with 500 milliseconds interval)
+2020-02-04 16:36:53   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] :  DB connection closed 
+2020-02-04 16:40:33   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome will be started
+2020-02-04 16:40:38   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome is started
+2020-02-04 16:40:38   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-02-04 16:40:48   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-02-04 16:40:49   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-02-04 16:40:49   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-02-04 16:40:49   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-02-04 16:40:50   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-02-04 16:41:15  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: .//a[@href='/dash/fleet/equipment/'' (tried for 20 second(s) with 500 milliseconds interval)
+2020-02-04 16:41:15   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] :  DB connection closed 
+2020-02-04 16:46:30   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome will be started
+2020-02-04 16:46:35   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome is started
+2020-02-04 16:46:35   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-02-04 16:46:45   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-02-04 16:46:46   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-02-04 16:46:46   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-02-04 16:46:47   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-02-04 16:46:47   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-02-04 16:46:55   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-02-04 16:46:59   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-02-04 16:46:59   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-02-04 16:47:00   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-02-04 16:47:00   INFO [libs.ActionsWithOurElements] : Fuel was inputted into element
+2020-02-04 16:50:44   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome will be started
+2020-02-04 16:50:49   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome is started
+2020-02-04 16:50:49   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-02-04 16:50:59   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-02-04 16:50:59   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-02-04 16:51:00   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-02-04 16:51:00   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-02-04 16:51:01   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-02-04 16:51:09   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-02-04 16:51:13   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-02-04 16:51:13   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-02-04 16:51:13   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-02-04 16:51:13   INFO [libs.ActionsWithOurElements] : Fuel was inputted into element
+2020-02-04 16:51:14   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-02-04 16:51:35   INFO [libs.ActionsWithOurElements] : FuelReceipts 04/02/2020 16:50:53 was inputted into element
+2020-02-04 16:59:21   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome will be started
+2020-02-04 16:59:26   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome is started
+2020-02-04 16:59:26   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-02-04 16:59:36   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-02-04 16:59:36   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-02-04 16:59:37   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-02-04 16:59:37   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-02-04 16:59:38   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-02-04 16:59:45   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-02-04 16:59:51   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-02-04 16:59:51   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-02-04 16:59:51   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-02-04 16:59:52   INFO [libs.ActionsWithOurElements] : Fuel was inputted into element
+2020-02-04 16:59:52   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-02-04 16:59:57  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.InvalidElementStateException: invalid element state
+  (Session info: chrome=80.0.3987.149)
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'DESKTOP-UD8IPI4', ip: '192.168.0.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\denku\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64729}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: f5961c63b9368ad8ff12960bfdda44b9
+2020-02-04 16:59:57   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] :  DB connection closed 
+2020-02-04 17:17:45   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome will be started
+2020-02-04 17:17:51   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome is started
+2020-02-04 17:17:52   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-02-04 17:18:03   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-02-04 17:18:03   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-02-04 17:18:05   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-02-04 17:18:05   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-02-04 17:18:06   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-02-04 17:18:13   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-02-04 17:18:18   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-02-04 17:18:18   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-02-04 17:18:18   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-02-04 17:18:18   INFO [libs.ActionsWithOurElements] : Fuel was inputted into element
+2020-02-04 17:18:19   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-02-04 17:18:25   INFO [libs.ActionsWithOurElements] : FuelReceipts 04/02/2020 17:17:57 was inputted into element

@@ -1,4 +1,4 @@
-package localSiteTest.documentsTest;
+package frankesteinTest.documentsTest;
 
 import org.apache.commons.lang3.RandomStringUtils;
 import org.junit.Test;
@@ -12,7 +12,7 @@ import java.util.Map;
 
 import static libs.Utils.*;
 
-public class CarrierCreateDocumentsTest extends ParentTest {
+public class CarrierUpDateDocumentsTest extends ParentTest {
     Map dataForValidLogIn = excelDriver.getData(configProperties.DATA_FILE_PATH() + "testLogin.xls", "validFleetLogin");
 
     String login = dataForValidLogIn.get("login").toString();
@@ -35,12 +35,10 @@ public class CarrierCreateDocumentsTest extends ParentTest {
     String BOL = "6";
     String picturePath = "C:\\workspace\\testdevEzlogz\\src\\main\\java\\data\\Pink-Floyd.jpg";
 
-
-    public CarrierCreateDocumentsTest() throws IOException {
+    public CarrierUpDateDocumentsTest() throws IOException {
     }
-
     @Test
-    public void createFuelReceipts() throws SQLException{
+    public void upDateFuelReceipts() throws SQLException {
         String userId = utilsForDB.getUserIdByEmail(login);
         String dateTime = getDateAndTimeFormated();
         String referenceRV = "FuelReceipts " + dateTime + "";
@@ -51,27 +49,27 @@ public class CarrierCreateDocumentsTest extends ParentTest {
         String notesTextRV = RandomStringUtils.randomAlphanumeric(1, 10);
         String truckId = utilsForDB.getRandomEquipmentIdCarrier(carrierId, "0");
         String driverId = utilsForDB.getRandomDriverIdInFleet(carrierId);
+        String referenceRandom = utilsForDB.getRandomDocumentReference(driverId, fuelReceipts);
 
-        loginLocalSitePage.logInWithOutOpenMenu(login, pass);
-        dashboardLocalSitePage.goToSafetyPage();
-        dashboardLocalSitePage.goToDocumentsPage();
+        loginFPage.logInWithOutOpenMenu(login, pass);
+        dashboardFPage.goToSafetyPage();
+        dashboardFPage.goToDocumentsPage();
 
-        documentsLocalSitePage.clickOnCreateButton();
-        documentsLocalSitePage.notesText(notesTextRV);
-        waitABit(10);
-        documentsLocalSitePage.selectTypeDocument(fuelReceipts);
-        documentsLocalSitePage.reference(referenceRV);
-        documentsLocalSitePage.truckValue(truckId);
-        documentsLocalSitePage.driverValue(driverId);
-        documentsLocalSitePage.amount(amountRV);
-        documentsLocalSitePage.gallons(gallonsRV);
-        documentsLocalSitePage.reeferAmount(reeferAmountRV);
-        documentsLocalSitePage.reeferGallons(reeferGallonsRV);
-        documentsLocalSitePage.selectState("2");
-        documentsLocalSitePage.notesText(notesTextRV);
-        documentsLocalSitePage.addPictureByJs(picturePath);
-        documentsLocalSitePage.documentDate();
-        documentsLocalSitePage.clickOnSaveButton();
+        documentsFPage.enterReferenceInPlaceHolder(referenceRandom);
+        documentsFPage.clickOnDocumentInRow(referenceRandom);
+        documentsFPage.selectTypeDocument(fuelReceipts);
+        documentsFPage.reference(referenceRV);
+        documentsFPage.truckValue(truckId);
+        documentsFPage.driverValue(driverId);
+        documentsFPage.amount(amountRV);
+        documentsFPage.gallons(gallonsRV);
+        documentsFPage.reeferAmount(reeferAmountRV);
+        documentsFPage.reeferGallons(reeferGallonsRV);
+        documentsFPage.selectState("2");
+        documentsFPage.notesText(notesTextRV);
+        documentsFPage.addPictureByJs(picturePath);
+        documentsFPage.documentDate();
+        documentsFPage.clickOnSaveButton();
         waitABit(5);
 
         List<ArrayList> tempDataDocList = utilsForDB.getDocData(driverId, referenceRV);
@@ -85,7 +83,7 @@ public class CarrierCreateDocumentsTest extends ParentTest {
         checkAC("InitiatorId is not correct", tempDataDocMap.get("initiatorId").equals(userId), true);
         checkAC("CarrierId is not correct", tempDataDocMap.get("carrierId").equals(carrierId), true);
         checkAC("Note is not correct", tempDataDocMap.get("note").equals(notesTextRV), true);
-        checkAC("AWSName is empty", tempDataDocMap.get("awsName").toString().substring(0, 34).equals("https://s3.us-east-2.amazonaws.com"), true);
+//        checkAC("AWSName is empty", tempDataDocMap.get("awsName").toString().substring(0, 34).equals("https://s3.us-east-2.amazonaws.com"), true);
 
         checkAC("Amount is not correct", utilsForDB.getDocInfoData(docId, "amount").equals(amountRV), true);
         checkAC("Gallons is not correct", utilsForDB.getDocInfoData(docId, "gallons").equals(gallonsRV), true);
@@ -94,7 +92,7 @@ public class CarrierCreateDocumentsTest extends ParentTest {
         checkAC("State is not correct", utilsForDB.getDocInfoData(docId, "state").equals("2"), true);
     }
     @Test
-    public void createLumper() throws SQLException{
+    public void upDateLumper() throws SQLException{
         String dateTime = getDateAndTimeFormated();
         String referenceRV = "Lumper " + dateTime + "";
         String amountRV = RandomStringUtils.randomAlphanumeric(1, 10);
@@ -104,21 +102,24 @@ public class CarrierCreateDocumentsTest extends ParentTest {
         String userId = utilsForDB.getUserIdByEmail(login);
         String truckId = utilsForDB.getRandomEquipmentIdCarrier(carrierId, "0");
         String driverId = utilsForDB.getRandomDriverIdInFleet(carrierId);
+        String referenceRandom = utilsForDB.getRandomDocumentReference(driverId, lumper);
 
-        loginLocalSitePage.logInWithOutOpenMenu(login, pass);
-        dashboardLocalSitePage.goToSafetyPage();
-        dashboardLocalSitePage.goToDocumentsPage();
-        documentsLocalSitePage.clickOnCreateButton();
-        documentsLocalSitePage.selectTypeDocument(lumper);
-        documentsLocalSitePage.reference(referenceRV);
-        documentsLocalSitePage.truckValue(truckId);
-        documentsLocalSitePage.driverValue(driverId);
-        documentsLocalSitePage.amount(amountRV);
-        documentsLocalSitePage.location(locationRV);
-        documentsLocalSitePage.notesText(notesTextRV);
-        documentsLocalSitePage.addPictureByJs(picturePath);
-        documentsLocalSitePage.documentDate();
-        documentsLocalSitePage.clickOnSaveButton();
+        loginFPage.logInWithOutOpenMenu(login, pass);
+        dashboardFPage.goToSafetyPage();
+        dashboardFPage.goToDocumentsPage();
+
+        documentsFPage.enterReferenceInPlaceHolder(referenceRandom);
+        documentsFPage.clickOnDocumentInRow(referenceRandom);
+        documentsFPage.selectTypeDocument(lumper);
+        documentsFPage.reference(referenceRV);
+        documentsFPage.truckValue(truckId);
+        documentsFPage.driverValue(driverId);
+        documentsFPage.amount(amountRV);
+        documentsFPage.location(locationRV);
+        documentsFPage.notesText(notesTextRV);
+        documentsFPage.addPictureByJs(picturePath);
+        documentsFPage.documentDate();
+        documentsFPage.clickOnSaveButton();
         waitABit(5);
 
         List<ArrayList> tempDataDocList = utilsForDB.getDocData(driverId, referenceRV);
@@ -138,7 +139,7 @@ public class CarrierCreateDocumentsTest extends ParentTest {
 
     }
     @Test
-    public void createScale() throws SQLException{
+    public void upDateScale() throws SQLException{
         String dateTime = getDateAndTimeFormated();
         String referenceRV = "Scale " + dateTime + "";
         String scaleRV = RandomStringUtils.randomAlphanumeric(1, 10);
@@ -146,20 +147,23 @@ public class CarrierCreateDocumentsTest extends ParentTest {
         String userId = utilsForDB.getUserIdByEmail(login);
         String truckId = utilsForDB.getRandomEquipmentIdCarrier(carrierId, "0");
         String driverId = utilsForDB.getRandomDriverIdInFleet(carrierId);
+        String referenceRandom = utilsForDB.getRandomDocumentReference(driverId, scale);
 
-        loginLocalSitePage.logInWithOutOpenMenu(login, pass);
-        dashboardLocalSitePage.goToSafetyPage();
-        dashboardLocalSitePage.goToDocumentsPage();
-        documentsLocalSitePage.clickOnCreateButton();
-        documentsLocalSitePage.selectTypeDocument(scale);
-        documentsLocalSitePage.reference(referenceRV);
-        documentsLocalSitePage.truckValue(truckId);
-        documentsLocalSitePage.driverValue(driverId);
-        documentsLocalSitePage.scale(scaleRV);
-        documentsLocalSitePage.notesText(notesTextRV);
-        documentsLocalSitePage.addPictureByJs(picturePath);
-        documentsLocalSitePage.documentDate();
-        documentsLocalSitePage.clickOnSaveButton();
+        loginFPage.logInWithOutOpenMenu(login, pass);
+        dashboardFPage.goToSafetyPage();
+        dashboardFPage.goToDocumentsPage();
+
+        documentsFPage.enterReferenceInPlaceHolder(referenceRandom);
+        documentsFPage.clickOnDocumentInRow(referenceRandom);
+        documentsFPage.selectTypeDocument(scale);
+        documentsFPage.reference(referenceRV);
+        documentsFPage.truckValue(truckId);
+        documentsFPage.driverValue(driverId);
+        documentsFPage.scale(scaleRV);
+        documentsFPage.notesText(notesTextRV);
+        documentsFPage.addPictureByJs(picturePath);
+        documentsFPage.documentDate();
+        documentsFPage.clickOnSaveButton();
         waitABit(5);
 
         List<ArrayList> tempDataDocList = utilsForDB.getDocData(driverId, referenceRV);
@@ -178,7 +182,7 @@ public class CarrierCreateDocumentsTest extends ParentTest {
 
     }
     @Test
-    public void createToll() throws SQLException{
+    public void upDateToll() throws SQLException{
         String dateTime = getDateAndTimeFormated();
         String referenceRV = "Toll " + dateTime + "";
         String amountRV = RandomStringUtils.randomAlphanumeric(1, 10);
@@ -186,20 +190,23 @@ public class CarrierCreateDocumentsTest extends ParentTest {
         String userId = utilsForDB.getUserIdByEmail(login);
         String truckId = utilsForDB.getRandomEquipmentIdCarrier(carrierId, "0");
         String driverId = utilsForDB.getRandomDriverIdInFleet(carrierId);
+        String referenceRandom = utilsForDB.getRandomDocumentReference(driverId, toll);
 
-        loginLocalSitePage.logInWithOutOpenMenu(login, pass);
-        dashboardLocalSitePage.goToSafetyPage();
-        dashboardLocalSitePage.goToDocumentsPage();
-        documentsLocalSitePage.clickOnCreateButton();
-        documentsLocalSitePage.selectTypeDocument(toll);
-        documentsLocalSitePage.reference(referenceRV);
-        documentsLocalSitePage.truckValue(truckId);
-        documentsLocalSitePage.driverValue(driverId);
-        documentsLocalSitePage.amount(amountRV);
-        documentsLocalSitePage.notesText(notesTextRV);
-        documentsLocalSitePage.addPictureByJs(picturePath);
-        documentsLocalSitePage.documentDate();
-        documentsLocalSitePage.clickOnSaveButton();
+        loginFPage.logInWithOutOpenMenu(login, pass);
+        dashboardFPage.goToSafetyPage();
+        dashboardFPage.goToDocumentsPage();
+
+        documentsFPage.enterReferenceInPlaceHolder(referenceRandom);
+        documentsFPage.clickOnDocumentInRow(referenceRandom);
+        documentsFPage.selectTypeDocument(toll);
+        documentsFPage.reference(referenceRV);
+        documentsFPage.truckValue(truckId);
+        documentsFPage.driverValue(driverId);
+        documentsFPage.amount(amountRV);
+        documentsFPage.notesText(notesTextRV);
+        documentsFPage.addPictureByJs(picturePath);
+        documentsFPage.documentDate();
+        documentsFPage.clickOnSaveButton();
         waitABit(10);
 
         List<ArrayList> tempDataDocList = utilsForDB.getDocData(driverId, referenceRV);
@@ -217,7 +224,7 @@ public class CarrierCreateDocumentsTest extends ParentTest {
         checkAC("Amount is not correct", utilsForDB.getDocInfoData(docId, "amount").equals(amountRV), true);
     }
     @Test
-    public void createTruckRepairReceipts() throws SQLException{
+    public void upDateTruckRepairReceipts() throws SQLException{
         String dateTime = getDateAndTimeFormated();
         String referenceRV = "TruckRepair " + dateTime + "";
         String amountRV = RandomStringUtils.randomAlphanumeric(1, 10);
@@ -226,21 +233,24 @@ public class CarrierCreateDocumentsTest extends ParentTest {
         String userId = utilsForDB.getUserIdByEmail(login);
         String truckId = utilsForDB.getRandomEquipmentIdCarrier(carrierId, "0");
         String driverId = utilsForDB.getRandomDriverIdInFleet(carrierId);
+        String referenceRandom = utilsForDB.getRandomDocumentReference(driverId, truckRepairReceipts);
 
-        loginLocalSitePage.logInWithOutOpenMenu(login, pass);
-        dashboardLocalSitePage.goToSafetyPage();
-        dashboardLocalSitePage.goToDocumentsPage();
-        documentsLocalSitePage.clickOnCreateButton();
-        documentsLocalSitePage.selectTypeDocument(truckRepairReceipts);
-        documentsLocalSitePage.reference(referenceRV);
-        documentsLocalSitePage.truckValue(truckId);
-        documentsLocalSitePage.driverValue(driverId);
-        documentsLocalSitePage.amount(amountRV);
-        documentsLocalSitePage.dealer(dealerRV);
-        documentsLocalSitePage.notesText(notesTextRV);
-        documentsLocalSitePage.addPictureByJs(picturePath);
-        documentsLocalSitePage.documentDate();
-        documentsLocalSitePage.clickOnSaveButton();
+        loginFPage.logInWithOutOpenMenu(login, pass);
+        dashboardFPage.goToSafetyPage();
+        dashboardFPage.goToDocumentsPage();
+
+        documentsFPage.enterReferenceInPlaceHolder(referenceRandom);
+        documentsFPage.clickOnDocumentInRow(referenceRandom);
+        documentsFPage.selectTypeDocument(truckRepairReceipts);
+        documentsFPage.reference(referenceRV);
+        documentsFPage.truckValue(truckId);
+        documentsFPage.driverValue(driverId);
+        documentsFPage.amount(amountRV);
+        documentsFPage.dealer(dealerRV);
+        documentsFPage.notesText(notesTextRV);
+        documentsFPage.addPictureByJs(picturePath);
+        documentsFPage.documentDate();
+        documentsFPage.clickOnSaveButton();
         waitABit(5);
 
         List<ArrayList> tempDataDocList = utilsForDB.getDocData(driverId, referenceRV);
@@ -260,7 +270,7 @@ public class CarrierCreateDocumentsTest extends ParentTest {
 
     }
     @Test
-    public void createTrailerRepairReceipts() throws SQLException{
+    public void upDateTrailerRepairReceipts() throws SQLException{
         String dateTime = getDateAndTimeFormated();
         String referenceRV = "TrailerRepair " + dateTime + "";
         String amountRV = RandomStringUtils.randomAlphanumeric(1, 10);
@@ -269,21 +279,24 @@ public class CarrierCreateDocumentsTest extends ParentTest {
         String userId = utilsForDB.getUserIdByEmail(login);
         String trailerId = utilsForDB.getRandomEquipmentIdCarrier(carrierId, "1");
         String driverId = utilsForDB.getRandomDriverIdInFleet(carrierId);
+        String referenceRandom = utilsForDB.getRandomDocumentReference(driverId, trailerRepairReceipt);
 
-        loginLocalSitePage.logInWithOutOpenMenu(login, pass);
-        dashboardLocalSitePage.goToSafetyPage();
-        dashboardLocalSitePage.goToDocumentsPage();
-        documentsLocalSitePage.clickOnCreateButton();
-        documentsLocalSitePage.selectTypeDocument(trailerRepairReceipt);
-        documentsLocalSitePage.reference(referenceRV);
-        documentsLocalSitePage.trailerValue(trailerId);
-        documentsLocalSitePage.driverValue(driverId);
-        documentsLocalSitePage.amount(amountRV);
-        documentsLocalSitePage.dealer(dealerRV);
-        documentsLocalSitePage.notesText(notesTextRV);
-        documentsLocalSitePage.addPictureByJs(picturePath);
-        documentsLocalSitePage.documentDate();
-        documentsLocalSitePage.clickOnSaveButton();
+        loginFPage.logInWithOutOpenMenu(login, pass);
+        dashboardFPage.goToSafetyPage();
+        dashboardFPage.goToDocumentsPage();
+
+        documentsFPage.enterReferenceInPlaceHolder(referenceRandom);
+        documentsFPage.clickOnDocumentInRow(referenceRandom);
+        documentsFPage.selectTypeDocument(trailerRepairReceipt);
+        documentsFPage.reference(referenceRV);
+        documentsFPage.trailerValue(trailerId);
+        documentsFPage.driverValue(driverId);
+        documentsFPage.amount(amountRV);
+        documentsFPage.dealer(dealerRV);
+        documentsFPage.notesText(notesTextRV);
+        documentsFPage.addPictureByJs(picturePath);
+        documentsFPage.documentDate();
+        documentsFPage.clickOnSaveButton();
         waitABit(5);
 
         List<ArrayList> tempDataDocList = utilsForDB.getDocData(driverId, referenceRV);
@@ -304,28 +317,31 @@ public class CarrierCreateDocumentsTest extends ParentTest {
 
     }
     @Test
-    public void createCitationVehicleExaminationReport() throws SQLException{
+    public void upDateCitationVehicleExaminationReport() throws SQLException{
         String referenceRV = "CitationReport " + getDateAndTimeFormated() + "";
         String amountRV = RandomStringUtils.randomAlphanumeric(1, 10);
         String notesTextRV = RandomStringUtils.randomAlphanumeric(1, 10);
         String userId = utilsForDB.getUserIdByEmail(login);
         String truckId = utilsForDB.getRandomEquipmentIdCarrier(carrierId, "0");
         String driverId = utilsForDB.getRandomDriverIdInFleet(carrierId);
+        String referenceRandom = utilsForDB.getRandomDocumentReference(driverId, citationVehicleExaminationReport);
 
-        loginLocalSitePage.logInWithOutOpenMenu(login, pass);
-        dashboardLocalSitePage.goToSafetyPage();
-        dashboardLocalSitePage.goToDocumentsPage();
-        documentsLocalSitePage.clickOnCreateButton();
-        documentsLocalSitePage.selectTypeDocument(citationVehicleExaminationReport);
-        documentsLocalSitePage.reference(referenceRV);
-        documentsLocalSitePage.truckValue(truckId);
-        documentsLocalSitePage.driverValue(driverId);
-        documentsLocalSitePage.amount(amountRV);
-        documentsLocalSitePage.selectState("2");
-        documentsLocalSitePage.notesText(notesTextRV);
-        documentsLocalSitePage.addPictureByJs(picturePath);
-        documentsLocalSitePage.documentDate();
-        documentsLocalSitePage.clickOnSaveButton();
+        loginFPage.logInWithOutOpenMenu(login, pass);
+        dashboardFPage.goToSafetyPage();
+        dashboardFPage.goToDocumentsPage();
+
+        documentsFPage.enterReferenceInPlaceHolder(referenceRandom);
+        documentsFPage.clickOnDocumentInRow(referenceRandom);
+        documentsFPage.selectTypeDocument(citationVehicleExaminationReport);
+        documentsFPage.reference(referenceRV);
+        documentsFPage.truckValue(truckId);
+        documentsFPage.driverValue(driverId);
+        documentsFPage.amount(amountRV);
+        documentsFPage.selectState("2");
+        documentsFPage.notesText(notesTextRV);
+        documentsFPage.addPictureByJs(picturePath);
+        documentsFPage.documentDate();
+        documentsFPage.clickOnSaveButton();
         waitABit(5);
 
         List<ArrayList> tempDataDocList = utilsForDB.getDocData(driverId, referenceRV);
@@ -344,27 +360,30 @@ public class CarrierCreateDocumentsTest extends ParentTest {
         checkAC("State is not correct", utilsForDB.getDocInfoData(docId, "state").equals("2"), true);
     }
     @Test
-    public void createAccidentPhotoPoliceReport() throws SQLException{
+    public void upDateAccidentPhotoPoliceReport() throws SQLException{
         String referenceRV = "AccidentReport " + getDateAndTimeFormated() + "";
         String locationRV = RandomStringUtils.randomAlphanumeric(1, 10);
         String notesTextRV = RandomStringUtils.randomAlphanumeric(1, 10);
         String userId = utilsForDB.getUserIdByEmail(login);
         String truckId = utilsForDB.getRandomEquipmentIdCarrier(carrierId, "0");
         String driverId = utilsForDB.getRandomDriverIdInFleet(carrierId);
+        String referenceRandom = utilsForDB.getRandomDocumentReference(driverId, accidentPhotoPoliceReport);
 
-        loginLocalSitePage.logInWithOutOpenMenu(login, pass);
-        dashboardLocalSitePage.goToSafetyPage();
-        dashboardLocalSitePage.goToDocumentsPage();
-        documentsLocalSitePage.clickOnCreateButton();
-        documentsLocalSitePage.selectTypeDocument(accidentPhotoPoliceReport);
-        documentsLocalSitePage.reference(referenceRV);
-        documentsLocalSitePage.truckValue(truckId);
-        documentsLocalSitePage.driverValue(driverId);
-        documentsLocalSitePage.location(locationRV);
-        documentsLocalSitePage.notesText(notesTextRV);
-        documentsLocalSitePage.addPictureByJs(picturePath);
-        documentsLocalSitePage.documentDate();
-        documentsLocalSitePage.clickOnSaveButton();
+        loginFPage.logInWithOutOpenMenu(login, pass);
+        dashboardFPage.goToSafetyPage();
+        dashboardFPage.goToDocumentsPage();
+
+        documentsFPage.enterReferenceInPlaceHolder(referenceRandom);
+        documentsFPage.clickOnDocumentInRow(referenceRandom);
+        documentsFPage.selectTypeDocument(accidentPhotoPoliceReport);
+        documentsFPage.reference(referenceRV);
+        documentsFPage.truckValue(truckId);
+        documentsFPage.driverValue(driverId);
+        documentsFPage.location(locationRV);
+        documentsFPage.notesText(notesTextRV);
+        documentsFPage.addPictureByJs(picturePath);
+        documentsFPage.documentDate();
+        documentsFPage.clickOnSaveButton();
         waitABit(5);
 
         List<ArrayList> tempDataDocList = utilsForDB.getDocData(driverId, referenceRV);
@@ -382,26 +401,29 @@ public class CarrierCreateDocumentsTest extends ParentTest {
         checkAC("Amount is not correct", utilsForDB.getDocInfoData(docId, "location").equals(locationRV), true);
     }
     @Test
-    public void createAnnualInspectionReport() throws SQLException{
+    public void upDateAnnualInspectionReport() throws SQLException{
 
         String referenceRV = "AnnualInspection " + getDateAndTimeFormated() + "";
         String notesTextRV = RandomStringUtils.randomAlphanumeric(1, 10);
         String userId = utilsForDB.getUserIdByEmail(login);
         String truckId = utilsForDB.getRandomEquipmentIdCarrier(carrierId, "0");
         String driverId = utilsForDB.getRandomDriverIdInFleet(carrierId);
+        String referenceRandom = utilsForDB.getRandomDocumentReference(driverId, annualInspectionReport);
 
-        loginLocalSitePage.logInWithOutOpenMenu(login, pass);
-        dashboardLocalSitePage.goToSafetyPage();
-        dashboardLocalSitePage.goToDocumentsPage();
-        documentsLocalSitePage.clickOnCreateButton();
-        documentsLocalSitePage.selectTypeDocument(annualInspectionReport);
-        documentsLocalSitePage.reference(referenceRV);
-        documentsLocalSitePage.truckValue(truckId);
-        documentsLocalSitePage.driverValue(driverId);
-        documentsLocalSitePage.notesText(notesTextRV);
-        documentsLocalSitePage.addPictureByJs(picturePath);
-        documentsLocalSitePage.documentDate();
-        documentsLocalSitePage.clickOnSaveButton();
+        loginFPage.logInWithOutOpenMenu(login, pass);
+        dashboardFPage.goToSafetyPage();
+        dashboardFPage.goToDocumentsPage();
+
+        documentsFPage.enterReferenceInPlaceHolder(referenceRandom);
+        documentsFPage.clickOnDocumentInRow(referenceRandom);
+        documentsFPage.selectTypeDocument(annualInspectionReport);
+        documentsFPage.reference(referenceRV);
+        documentsFPage.truckValue(truckId);
+        documentsFPage.driverValue(driverId);
+        documentsFPage.notesText(notesTextRV);
+        documentsFPage.addPictureByJs(picturePath);
+        documentsFPage.documentDate();
+        documentsFPage.clickOnSaveButton();
         waitABit(5);
 
         List<ArrayList> tempDataDocList = utilsForDB.getDocData(driverId, referenceRV);
@@ -417,26 +439,29 @@ public class CarrierCreateDocumentsTest extends ParentTest {
 
     }
     @Test
-    public void createInsurance() throws SQLException{
+    public void upDateInsurance() throws SQLException{
 
         String referenceRV = "Insurance " + getDateAndTimeFormated() + "";
         String notesTextRV = RandomStringUtils.randomAlphanumeric(1, 10);
         String userId = utilsForDB.getUserIdByEmail(login);
         String truckId = utilsForDB.getRandomEquipmentIdCarrier(carrierId, "0");
         String driverId = utilsForDB.getRandomDriverIdInFleet(carrierId);
+        String referenceRandom = utilsForDB.getRandomDocumentReference(driverId,insurance);
 
-        loginLocalSitePage.logInWithOutOpenMenu(login, pass);
-        dashboardLocalSitePage.goToSafetyPage();
-        dashboardLocalSitePage.goToDocumentsPage();
-        documentsLocalSitePage.clickOnCreateButton();
-        documentsLocalSitePage.selectTypeDocument(insurance);
-        documentsLocalSitePage.reference(referenceRV);
-        documentsLocalSitePage.truckValue(truckId);
-        documentsLocalSitePage.driverValue(driverId);
-        documentsLocalSitePage.notesText(notesTextRV);
-        documentsLocalSitePage.addPictureByJs(picturePath);
-        documentsLocalSitePage.documentDate();
-        documentsLocalSitePage.clickOnSaveButton();
+        loginFPage.logInWithOutOpenMenu(login, pass);
+        dashboardFPage.goToSafetyPage();
+        dashboardFPage.goToDocumentsPage();
+
+        documentsFPage.enterReferenceInPlaceHolder(referenceRandom);
+        documentsFPage.clickOnDocumentInRow(referenceRandom);
+        documentsFPage.selectTypeDocument(insurance);
+        documentsFPage.reference(referenceRV);
+        documentsFPage.truckValue(truckId);
+        documentsFPage.driverValue(driverId);
+        documentsFPage.notesText(notesTextRV);
+        documentsFPage.addPictureByJs(picturePath);
+        documentsFPage.documentDate();
+        documentsFPage.clickOnSaveButton();
         waitABit(5);
 
         List<ArrayList> tempDataDocList = utilsForDB.getDocData(driverId, referenceRV);
@@ -452,26 +477,29 @@ public class CarrierCreateDocumentsTest extends ParentTest {
 
     }
     @Test
-    public void createTruckRegistration() throws SQLException{
+    public void upDateTruckRegistration() throws SQLException{
 
         String referenceRV = "TruckRegistration " + getDateAndTimeFormated() + "";
         String notesTextRV = RandomStringUtils.randomAlphanumeric(1, 10);
         String userId = utilsForDB.getUserIdByEmail(login);
         String truckId = utilsForDB.getRandomEquipmentIdCarrier(carrierId, "0");
         String driverId = utilsForDB.getRandomDriverIdInFleet(carrierId);
+        String referenceRandom = utilsForDB.getRandomDocumentReference(driverId, truckRegistration);
 
-        loginLocalSitePage.logInWithOutOpenMenu(login, pass);
-        dashboardLocalSitePage.goToSafetyPage();
-        dashboardLocalSitePage.goToDocumentsPage();
-        documentsLocalSitePage.clickOnCreateButton();
-        documentsLocalSitePage.selectTypeDocument(truckRegistration);
-        documentsLocalSitePage.reference(referenceRV);
-        documentsLocalSitePage.truckValue(truckId);
-        documentsLocalSitePage.driverValue(driverId);
-        documentsLocalSitePage.notesText(notesTextRV);
-        documentsLocalSitePage.addPictureByJs(picturePath);
-        documentsLocalSitePage.documentDate();
-        documentsLocalSitePage.clickOnSaveButton();
+        loginFPage.logInWithOutOpenMenu(login, pass);
+        dashboardFPage.goToSafetyPage();
+        dashboardFPage.goToDocumentsPage();
+
+        documentsFPage.enterReferenceInPlaceHolder(referenceRandom);
+        documentsFPage.clickOnDocumentInRow(referenceRandom);
+        documentsFPage.selectTypeDocument(truckRegistration);
+        documentsFPage.reference(referenceRV);
+        documentsFPage.truckValue(truckId);
+        documentsFPage.driverValue(driverId);
+        documentsFPage.notesText(notesTextRV);
+        documentsFPage.addPictureByJs(picturePath);
+        documentsFPage.documentDate();
+        documentsFPage.clickOnSaveButton();
         waitABit(5);
 
         List<ArrayList> tempDataDocList = utilsForDB.getDocData(driverId, referenceRV);
@@ -487,26 +515,29 @@ public class CarrierCreateDocumentsTest extends ParentTest {
 
     }
     @Test
-    public void createTrailerRegistration() throws SQLException{
+    public void upDateTrailerRegistration() throws SQLException{
 
         String referenceRV = "TrailerRegistration " + getDateAndTimeFormated() + "";
         String notesTextRV = RandomStringUtils.randomAlphanumeric(1, 10);
         String userId = utilsForDB.getUserIdByEmail(login);
         String trailerId = utilsForDB.getRandomEquipmentIdCarrier(carrierId, "1");
         String driverId = utilsForDB.getRandomDriverIdInFleet(carrierId);
+        String referenceRandom = utilsForDB.getRandomDocumentReference(driverId, trailerRegistration);
 
-        loginLocalSitePage.logInWithOutOpenMenu(login, pass);
-        dashboardLocalSitePage.goToSafetyPage();
-        dashboardLocalSitePage.goToDocumentsPage();
-        documentsLocalSitePage.clickOnCreateButton();
-        documentsLocalSitePage.selectTypeDocument(trailerRegistration);
-        documentsLocalSitePage.reference(referenceRV);
-        documentsLocalSitePage.trailerValue(trailerId);
-        documentsLocalSitePage.driverValue(driverId);
-        documentsLocalSitePage.notesText(notesTextRV);
-        documentsLocalSitePage.addPictureByJs(picturePath);
-        documentsLocalSitePage.documentDate();
-        documentsLocalSitePage.clickOnSaveButton();
+        loginFPage.logInWithOutOpenMenu(login, pass);
+        dashboardFPage.goToSafetyPage();
+        dashboardFPage.goToDocumentsPage();
+
+        documentsFPage.enterReferenceInPlaceHolder(referenceRandom);
+        documentsFPage.clickOnDocumentInRow(referenceRandom);
+        documentsFPage.selectTypeDocument(trailerRegistration);
+        documentsFPage.reference(referenceRV);
+        documentsFPage.trailerValue(trailerId);
+        documentsFPage.driverValue(driverId);
+        documentsFPage.notesText(notesTextRV);
+        documentsFPage.addPictureByJs(picturePath);
+        documentsFPage.documentDate();
+        documentsFPage.clickOnSaveButton();
         waitABit(5);
 
         List<ArrayList> tempDataDocList = utilsForDB.getDocData(driverId, referenceRV);
@@ -524,25 +555,28 @@ public class CarrierCreateDocumentsTest extends ParentTest {
 
     }
     @Test
-    public void createOthers() throws SQLException{
+    public void upDateOthers() throws SQLException{
         String referenceRV = "Others" + getDateAndTimeFormated() + "";
         String notesTextRV = RandomStringUtils.randomAlphanumeric(1, 10);
         String userId = utilsForDB.getUserIdByEmail(login);
         String truckId = utilsForDB.getRandomEquipmentIdCarrier(carrierId, "0");
         String driverId = utilsForDB.getRandomDriverIdInFleet(carrierId);
+        String referenceRandom = utilsForDB.getRandomDocumentReference(driverId, others);
 
-        loginLocalSitePage.logInWithOutOpenMenu(login, pass);
-        dashboardLocalSitePage.goToSafetyPage();
-        dashboardLocalSitePage.goToDocumentsPage();
-        documentsLocalSitePage.clickOnCreateButton();
-        documentsLocalSitePage.selectTypeDocument(others);
-        documentsLocalSitePage.reference(referenceRV);
-        documentsLocalSitePage.truckValue(truckId);
-        documentsLocalSitePage.driverValue(driverId);
-        documentsLocalSitePage.notesText(notesTextRV);
-        documentsLocalSitePage.addPictureByJs(picturePath);
-        documentsLocalSitePage.documentDate();
-        documentsLocalSitePage.clickOnSaveButton();
+        loginFPage.logInWithOutOpenMenu(login, pass);
+        dashboardFPage.goToSafetyPage();
+        dashboardFPage.goToDocumentsPage();
+
+        documentsFPage.enterReferenceInPlaceHolder(referenceRandom);
+        documentsFPage.clickOnDocumentInRow(referenceRandom);
+        documentsFPage.selectTypeDocument(others);
+        documentsFPage.reference(referenceRV);
+        documentsFPage.truckValue(truckId);
+        documentsFPage.driverValue(driverId);
+        documentsFPage.notesText(notesTextRV);
+        documentsFPage.addPictureByJs(picturePath);
+        documentsFPage.documentDate();
+        documentsFPage.clickOnSaveButton();
         waitABit(5);
 
         List<ArrayList> tempDataDocList = utilsForDB.getDocData(driverId, referenceRV);
@@ -558,7 +592,7 @@ public class CarrierCreateDocumentsTest extends ParentTest {
 
     }
     @Test
-    public void createBOL() throws SQLException{
+    public void upDateBOL() throws SQLException{
         String dateTime = getDateAndTimeFormated();
         String referenceRV = "BOL" + dateTime + "";
         String shipperRV = RandomStringUtils.randomAlphanumeric(1, 10);
@@ -568,22 +602,25 @@ public class CarrierCreateDocumentsTest extends ParentTest {
         String userId = utilsForDB.getUserIdByEmail(login);
         String truckId = utilsForDB.getRandomEquipmentIdCarrier(carrierId, "0");
         String driverId = utilsForDB.getRandomDriverIdInFleet(carrierId);
+        String referenceRandom = utilsForDB.getRandomDocumentReference(driverId, BOL);
 
-        loginLocalSitePage.logInWithOutOpenMenu(login, pass);
-        dashboardLocalSitePage.goToSafetyPage();
-        dashboardLocalSitePage.goToDocumentsPage();
-        documentsLocalSitePage.clickOnCreateButton();
-        documentsLocalSitePage.selectTypeDocument(BOL);
-        documentsLocalSitePage.reference(referenceRV);
-        documentsLocalSitePage.truckValue(truckId);
-        documentsLocalSitePage.driverValue(driverId);
-        documentsLocalSitePage.shipper(shipperRV);
-        documentsLocalSitePage.shipDate(shipDateRV);
-        documentsLocalSitePage.deliveryDate(deliveryDateRV);
-        documentsLocalSitePage.notesText(notesTextRV);
-        documentsLocalSitePage.addPictureByJs(picturePath);
-        documentsLocalSitePage.documentDate();
-        documentsLocalSitePage.clickOnSaveButton();
+        loginFPage.logInWithOutOpenMenu(login, pass);
+        dashboardFPage.goToSafetyPage();
+        dashboardFPage.goToDocumentsPage();
+
+        documentsFPage.enterReferenceInPlaceHolder(referenceRandom);
+        documentsFPage.clickOnDocumentInRow(referenceRandom);
+        documentsFPage.selectTypeDocument(BOL);
+        documentsFPage.reference(referenceRV);
+        documentsFPage.truckValue(truckId);
+        documentsFPage.driverValue(driverId);
+        documentsFPage.shipper(shipperRV);
+        documentsFPage.shipDate(shipDateRV);
+        documentsFPage.deliveryDate(deliveryDateRV);
+        documentsFPage.notesText(notesTextRV);
+        documentsFPage.addPictureByJs(picturePath);
+        documentsFPage.documentDate();
+        documentsFPage.clickOnSaveButton();
         waitABit(5);
 
         List<ArrayList> tempDataDocList = utilsForDB.getDocData(driverId, referenceRV);
