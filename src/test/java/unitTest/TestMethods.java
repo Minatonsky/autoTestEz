@@ -17,8 +17,9 @@ import java.time.format.DateTimeFormatter;
 import java.time.temporal.ChronoUnit;
 import java.time.temporal.TemporalAdjusters;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
-import static libs.Utils.genRandomDataByRegex;
+import static libs.Utils.*;
 // This test page is not using on test project, it just for check some methods
 
 
@@ -196,12 +197,11 @@ public class TestMethods extends ParentTestWithoutWebDriver {
     @Test
     public void test(){
         Faker faker = new Faker();
-        String name = faker.date().birthday().toString(); // Miss Samanta Schmidt
+        String name = faker.date().future(2030, TimeUnit.DAYS).toString(); // Miss Samanta Schmidt
 
+        String date = getCurrentDateTimePlusDays("yyyy-MM-dd", 2) + " " + "12:00:00";
 
-        String streetAddress = faker.twinPeaks().location();
-
-        System.out.println(streetAddress);
+        System.out.println(date);
     }
 
 

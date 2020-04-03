@@ -446,6 +446,11 @@ public class UtilsForDB {
         String tempCurrentDue = dBMySQL.selectValue("SELECT e.id FROM equipment e WHERE e.carrierId = " + carrierId + " AND e.truckTrailer = " + truckTrailer + "  ORDER BY RAND()LIMIT 1;");
         return tempCurrentDue;
     }
+    @Step
+    public String getEquipmentName(String equipmentId) throws SQLException{
+        String tempCurrentDue = dBMySQL.selectValue("SELECT e.Name FROM equipment e WHERE e.id = " + equipmentId + " ;");
+        return tempCurrentDue;
+    }
 
     @Step
     public String getRandomUserIdCarrier(String carrierId) throws SQLException{
@@ -455,6 +460,11 @@ public class UtilsForDB {
     @Step
     public String getRandomDriverIdInFleet(String carrierId) throws SQLException{
         String tempCurrentDue = dBMySQL.selectValue("SELECT id FROM users u WHERE u.carrierId = " + carrierId + " AND u.companyPosition = 7 ORDER BY RAND()LIMIT 1;");
+        return tempCurrentDue;
+    }
+    @Step
+    public String getRandomDriverNameInFleet(String userId) throws SQLException{
+        String tempCurrentDue = dBMySQL.selectValue("SELECT CONCAT(u.name, \" \", u.`last`) FROM users u WHERE u.id = " + userId + ";");
         return tempCurrentDue;
     }
 

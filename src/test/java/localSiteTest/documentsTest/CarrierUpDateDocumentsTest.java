@@ -77,7 +77,7 @@ public class CarrierUpDateDocumentsTest extends ParentTest {
         String docId = tempDataDocMap.get("id").toString();
 
         checkAC("DocType is not correct", tempDataDocMap.get("type").equals(fuelReceipts), true);
-        checkAC("DocDate is not correct", tempDataDocMap.get("date").equals(startOfDay()), true);
+        checkAC("DocDate is not correct", tempDataDocMap.get("date").equals(startDayPlusHours(12)), true);
 
         checkAC("TruckId is not correct", tempDataDocMap.get("truckId").equals(truckId), true);
         checkAC("InitiatorId is not correct", tempDataDocMap.get("initiatorId").equals(userId), true);
@@ -127,7 +127,7 @@ public class CarrierUpDateDocumentsTest extends ParentTest {
         String docId = tempDataDocMap.get("id").toString();
 
         checkAC("DocType is not correct", tempDataDocMap.get("type").equals(lumper), true);
-        checkAC("DocDate is not correct", tempDataDocMap.get("date").equals(startOfDay()), true);
+        checkAC("DocDate is not correct", tempDataDocMap.get("date").equals(startDayPlusHours(12)), true);
         checkAC("TruckId is not correct", tempDataDocMap.get("truckId").equals(truckId), true);
         checkAC("InitiatorId is not correct", tempDataDocMap.get("initiatorId").equals(userId), true);
         checkAC("Note is not correct", tempDataDocMap.get("note").equals(notesTextRV), true);
@@ -171,7 +171,7 @@ public class CarrierUpDateDocumentsTest extends ParentTest {
         String docId = tempDataDocMap.get("id").toString();
 
         checkAC("DocType is not correct", tempDataDocMap.get("type").equals(scale), true);
-        checkAC("DocDate is not correct", tempDataDocMap.get("date").equals(startOfDay()), true);
+        checkAC("DocDate is not correct", tempDataDocMap.get("date").equals(startDayPlusHours(12)), true);
         checkAC("TruckId is not correct", tempDataDocMap.get("truckId").equals(truckId), true);
         checkAC("InitiatorId is not correct", tempDataDocMap.get("initiatorId").equals(userId), true);
         checkAC("Note is not correct", tempDataDocMap.get("note").equals(notesTextRV), true);
@@ -214,7 +214,7 @@ public class CarrierUpDateDocumentsTest extends ParentTest {
         String docId = tempDataDocMap.get("id").toString();
 
         checkAC("DocType is not correct", tempDataDocMap.get("type").equals(toll), true);
-        checkAC("DocDate is not correct", tempDataDocMap.get("date").equals(startOfDay()), true);
+        checkAC("DocDate is not correct", tempDataDocMap.get("date").equals(startDayPlusHours(12)), true);
         checkAC("TruckId is not correct", tempDataDocMap.get("truckId").equals(truckId), true);
         checkAC("InitiatorId is not correct", tempDataDocMap.get("initiatorId").equals(userId), true);
         checkAC("Note is not correct", tempDataDocMap.get("note").equals(notesTextRV), true);
@@ -258,7 +258,7 @@ public class CarrierUpDateDocumentsTest extends ParentTest {
         String docId = tempDataDocMap.get("id").toString();
 
         checkAC("DocType is not correct", tempDataDocMap.get("type").equals(truckRepairReceipts), true);
-        checkAC("DocDate is not correct", tempDataDocMap.get("date").equals(startOfDay()), true);
+        checkAC("DocDate is not correct", tempDataDocMap.get("date").equals(startDayPlusHours(12)), true);
         checkAC("TruckId is not correct", tempDataDocMap.get("truckId").equals(truckId), true);
         checkAC("InitiatorId is not correct", tempDataDocMap.get("initiatorId").equals(userId), true);
         checkAC("Note is not correct", tempDataDocMap.get("note").equals(notesTextRV), true);
@@ -304,7 +304,7 @@ public class CarrierUpDateDocumentsTest extends ParentTest {
         String docId = tempDataDocMap.get("id").toString();
 
         checkAC("DocType is not correct", tempDataDocMap.get("type").equals(trailerRepairReceipt), true);
-        checkAC("DocDate is not correct", tempDataDocMap.get("date").equals(startOfDay()), true);
+        checkAC("DocDate is not correct", tempDataDocMap.get("date").equals(startDayPlusHours(12)), true);
         checkAC("TruckId is not correct", tempDataDocMap.get("truckId").equals("0"), true);
         checkAC("InitiatorId is not correct", tempDataDocMap.get("initiatorId").equals(userId), true);
         checkAC("Note is not correct", tempDataDocMap.get("note").equals(notesTextRV), true);
@@ -349,7 +349,7 @@ public class CarrierUpDateDocumentsTest extends ParentTest {
         String docId = tempDataDocMap.get("id").toString();
 
         checkAC("DocType is not correct", tempDataDocMap.get("type").equals(citationVehicleExaminationReport), true);
-        checkAC("DocDate is not correct", tempDataDocMap.get("date").equals(startOfDay()), true);
+        checkAC("DocDate is not correct", tempDataDocMap.get("date").equals(startDayPlusHours(12)), true);
         checkAC("TruckId is not correct", tempDataDocMap.get("truckId").equals(truckId), true);
         checkAC("InitiatorId is not correct", tempDataDocMap.get("initiatorId").equals(userId), true);
         checkAC("Note is not correct", tempDataDocMap.get("note").equals(notesTextRV), true);
@@ -391,7 +391,7 @@ public class CarrierUpDateDocumentsTest extends ParentTest {
         String docId = tempDataDocMap.get("id").toString();
 
         checkAC("DocType is not correct", tempDataDocMap.get("type").equals(accidentPhotoPoliceReport), true);
-        checkAC("DocDate is not correct", tempDataDocMap.get("date").equals(startOfDay()), true);
+        checkAC("DocDate is not correct", tempDataDocMap.get("date").equals(startDayPlusHours(12)), true);
         checkAC("TruckId is not correct", tempDataDocMap.get("truckId").equals(truckId), true);
         checkAC("InitiatorId is not correct", tempDataDocMap.get("initiatorId").equals(userId), true);
         checkAC("Note is not correct", tempDataDocMap.get("note").equals(notesTextRV), true);
@@ -430,7 +430,7 @@ public class CarrierUpDateDocumentsTest extends ParentTest {
         Map<String, Object> tempDataDocMap = listArrayToMap(tempDataDocList);
 
         checkAC("DocType is not correct", tempDataDocMap.get("type").equals(annualInspectionReport), true);
-        checkAC("DocDate is not correct", tempDataDocMap.get("date").equals(startOfDay()), true);
+        checkAC("DocDate is not correct", tempDataDocMap.get("date").equals(startDayPlusHours(12)), true);
         checkAC("TruckId is not correct", tempDataDocMap.get("truckId").equals(truckId), true);
         checkAC("InitiatorId is not correct", tempDataDocMap.get("initiatorId").equals(userId), true);
         checkAC("Note is not correct", tempDataDocMap.get("note").equals(notesTextRV), true);
@@ -468,7 +468,7 @@ public class CarrierUpDateDocumentsTest extends ParentTest {
         Map<String, Object> tempDataDocMap = listArrayToMap(tempDataDocList);
 
         checkAC("DocType is not correct", tempDataDocMap.get("type").equals(insurance), true);
-        checkAC("DocDate is not correct", tempDataDocMap.get("date").equals(startOfDay()), true);
+        checkAC("DocDate is not correct", tempDataDocMap.get("date").equals(startDayPlusHours(12)), true);
         checkAC("TruckId is not correct", tempDataDocMap.get("truckId").equals(truckId), true);
         checkAC("InitiatorId is not correct", tempDataDocMap.get("initiatorId").equals(userId), true);
         checkAC("Note is not correct", tempDataDocMap.get("note").equals(notesTextRV), true);
@@ -506,7 +506,7 @@ public class CarrierUpDateDocumentsTest extends ParentTest {
         Map<String, Object> tempDataDocMap = listArrayToMap(tempDataDocList);
 
         checkAC("DocType is not correct", tempDataDocMap.get("type").equals(truckRegistration), true);
-        checkAC("DocDate is not correct", tempDataDocMap.get("date").equals(startOfDay()), true);
+        checkAC("DocDate is not correct", tempDataDocMap.get("date").equals(startDayPlusHours(12)), true);
         checkAC("TruckId is not correct", tempDataDocMap.get("truckId").equals(truckId), true);
         checkAC("InitiatorId is not correct", tempDataDocMap.get("initiatorId").equals(userId), true);
         checkAC("Note is not correct", tempDataDocMap.get("note").equals(notesTextRV), true);
@@ -545,7 +545,7 @@ public class CarrierUpDateDocumentsTest extends ParentTest {
         String docId = tempDataDocMap.get("id").toString();
 
         checkAC("DocType is not correct", tempDataDocMap.get("type").equals(trailerRegistration), true);
-        checkAC("DocDate is not correct", tempDataDocMap.get("date").equals(startOfDay()), true);
+        checkAC("DocDate is not correct", tempDataDocMap.get("date").equals(startDayPlusHours(12)), true);
         checkAC("TruckId is not correct", tempDataDocMap.get("truckId").equals("0"), true);
         checkAC("InitiatorId is not correct", tempDataDocMap.get("initiatorId").equals(userId), true);
         checkAC("Note is not correct", tempDataDocMap.get("note").equals(notesTextRV), true);
@@ -583,7 +583,7 @@ public class CarrierUpDateDocumentsTest extends ParentTest {
         Map<String, Object> tempDataDocMap = listArrayToMap(tempDataDocList);
 
         checkAC("DocType is not correct", tempDataDocMap.get("type").equals(others), true);
-        checkAC("DocDate is not correct", tempDataDocMap.get("date").equals(startOfDay()), true);
+        checkAC("DocDate is not correct", tempDataDocMap.get("date").equals(startDayPlusHours(12)), true);
         checkAC("TruckId is not correct", tempDataDocMap.get("truckId").equals(truckId), true);
         checkAC("InitiatorId is not correct", tempDataDocMap.get("initiatorId").equals(userId), true);
         checkAC("Note is not correct", tempDataDocMap.get("note").equals(notesTextRV), true);
@@ -628,7 +628,7 @@ public class CarrierUpDateDocumentsTest extends ParentTest {
         String docId = tempDataDocMap.get("id").toString();
 
         checkAC("DocType is not correct", tempDataDocMap.get("type").equals(BOL), true);
-        checkAC("DocDate is not correct", tempDataDocMap.get("date").equals(startOfDay()), true);
+        checkAC("DocDate is not correct", tempDataDocMap.get("date").equals(startDayPlusHours(12)), true);
         checkAC("TruckId is not correct", tempDataDocMap.get("truckId").equals(truckId), true);
         checkAC("InitiatorId is not correct", tempDataDocMap.get("initiatorId").equals(userId), true);
         checkAC("Note is not correct", tempDataDocMap.get("note").equals(notesTextRV), true);

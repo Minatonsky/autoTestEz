@@ -5,8 +5,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-import static libs.Utils.waitABit;
-
 public class DocumentsFPage extends ParentFPage {
     public DocumentsFPage(WebDriver webDriver, UtilsForDB utilsForDB) {
         super(webDriver, "dash/eld/",  utilsForDB);
@@ -18,7 +16,7 @@ public class DocumentsFPage extends ParentFPage {
     private WebElement dropDawnTypeDocument;
 
     @FindBy(xpath = ".//*[@role='listbox']")
-    private WebElement docInMenu;
+    private WebElement elementInDropDownMenu;
 
     @FindBy(xpath = "//*[text()='Reference#']//..//input")
     private WebElement referenceInput;
@@ -26,37 +24,37 @@ public class DocumentsFPage extends ParentFPage {
     @FindBy(xpath = "//*[@class='document-popup__body']//*[@name='date']")
     private WebElement dateInput;
 
-    @FindBy(xpath = ".//select[@id='edit_truck']")
-    private WebElement selectTruckValue;
+    @FindBy(xpath = ".//*[@class='document-popup']//./input[@placeholder='Truck']")
+    private WebElement truckPlaceHolder;
 
-    @FindBy(id = "edit_trailer")
-    private WebElement selectTrailerValue;
+    @FindBy(xpath = ".//*[@class='document-popup']//./input[@placeholder='Trailer']")
+    private WebElement trailerPlaceHolder;
 
-    @FindBy(id = "edit_driver")
-    private WebElement selectDriverValue;
+    @FindBy(xpath = ".//*[@class='document-popup']//./input[@placeholder='Driver']")
+    private WebElement driverPlaceHolder;
 
-    @FindBy(xpath = ".//*[@placeholder='Amount']")
+    @FindBy(xpath = ".//*[text()='Amount']//..//input")
     private WebElement amountInput;
 
-    @FindBy(xpath = ".//*[@placeholder='Gallons']")
+    @FindBy(xpath = ".//*[text()='Gallons']//..//input")
     private WebElement gallonsInput;
 
-    @FindBy(xpath = ".//*[@placeholder='Reefer Amount']")
+    @FindBy(xpath = ".//*[text()='Reefer Amount']//..//input")
     private WebElement reeferAmountInput;
 
-    @FindBy(xpath = ".//*[@placeholder='Reefer Gallons']")
+    @FindBy(xpath = ".//*[text()='Reefer Gallons']//..//input")
     private WebElement reeferGallonsInput;
 
-    @FindBy(xpath = ".//*[@placeholder='Scale']")
+    @FindBy(xpath = ".//*[text()='Scale']//..//input")
     private WebElement scaleInput;
 
-    @FindBy(xpath = ".//*[@placeholder='Location']")
+    @FindBy(xpath = ".//*[text()='Location']//..//input")
     private WebElement locationInput;
 
-    @FindBy(xpath = ".//*[@placeholder='Shipper']")
+    @FindBy(xpath = ".//*[text()='Shipper']//..//input")
     private WebElement shipperInput;
 
-    @FindBy(xpath = ".//*[@placeholder='Dealer']")
+    @FindBy(xpath = ".//*[text()='Dealer']/..//input")
     private WebElement dealerInput;
 
     @FindBy(xpath = ".//*[text()='Ship date']/..//input")
@@ -65,11 +63,8 @@ public class DocumentsFPage extends ParentFPage {
     @FindBy(xpath = ".//*[text()='Delivery date']/..//input")
     private WebElement deliveryDateInput;
 
-    @FindBy(id = "edit_state")
-    private WebElement selectStateValue;
-
-    @FindBy(name = "image")
-    private WebElement imageButton;
+    @FindBy(xpath = ".//*[@class='document-popup']//./input[@placeholder='Select State']")
+    private WebElement statePlaceHolder;
 
     @FindBy(xpath = "//input[@type='file']")
     private WebElement fileInput;
@@ -100,10 +95,13 @@ public class DocumentsFPage extends ParentFPage {
     public void selectTypeDocument(String documentTypeValue){
         actionsWithOurElements.clickOnElement(dropDawnTypeDocument);
         actionsWithOurElements.enterTextToElement(dropDawnTypeDocument, documentTypeValue);
-        actionsWithOurElements.clickOnElement(docInMenu);
+        actionsWithOurElements.clickOnElement(elementInDropDownMenu);
     }
     public void notesText(String tempText){actionsWithOurElements.enterTextToElement(textArea, tempText);}
-    public void selectState(String value){actionsWithOurElements.selectValueInDropDown(selectStateValue, value);}
+    public void selectState(String value){
+        actionsWithOurElements.enterTextToElement(statePlaceHolder, value);
+        actionsWithOurElements.clickOnElement(elementInDropDownMenu);
+    }
     public void deliveryDate(String date){actionsWithOurElements.clearAndEnterTextToElement(deliveryDateInput, date);}
     public void shipDate(String date){actionsWithOurElements.clearAndEnterTextToElement(shipDateInput, date);}
     public void dealer(String dealer){actionsWithOurElements.enterTextToElement(dealerInput, dealer);}
@@ -114,19 +112,22 @@ public class DocumentsFPage extends ParentFPage {
     public void reeferAmount(String reeferAmount){actionsWithOurElements.enterTextToElement(reeferAmountInput, reeferAmount);}
     public void gallons(String gallons){actionsWithOurElements.enterTextToElement(gallonsInput, gallons);}
     public void amount(String amount){actionsWithOurElements.enterTextToElement(amountInput, amount);}
-    public void driverValue(String driverValue){actionsWithOurElements.selectValueInDropDown(selectDriverValue, driverValue);}
-    public void trailerValue(String trailerValue){actionsWithOurElements.selectValueInDropDown(selectTrailerValue, trailerValue);}
-    public void truckValue(String truckValue){actionsWithOurElements.selectValueInDropDown(selectTruckValue, truckValue);}
+    public void driverValue(String driverValue){
+        actionsWithOurElements.enterTextToElement(driverPlaceHolder, driverValue);
+        actionsWithOurElements.clickOnElement(elementInDropDownMenu);
+    }
+    public void trailerValue(String trailerValue){
+        actionsWithOurElements.enterTextToElement(trailerPlaceHolder, trailerValue);
+        actionsWithOurElements.clickOnElement(elementInDropDownMenu);
+    }
+    public void truckValue(String truckValue){
+        actionsWithOurElements.enterTextToElement(truckPlaceHolder, truckValue);
+        actionsWithOurElements.clickOnElement(elementInDropDownMenu);
+    }
     public void documentDate(String date){actionsWithOurElements.clearAndEnterTextToElement(dateInput, date);}
     public void reference(String reference){actionsWithOurElements.enterTextToElement(referenceInput, reference);}
     public void enterReferenceInPlaceHolder(String referenceName){actionsWithOurElements.enterTextToElement(referencePlaceHolder, referenceName);}
     public void addPictureByJs(String path){actionsWithOurElements.addFileByJs(addFile, path);}
     public void clickOnDocumentInRow(String referenceName){actionsWithOurElements.clickOnElement("//div[@class='table-container__table-item' and text()='" + referenceName +"");}
-    public void documentDate(){
-        actionsWithOurElements.clickOnElement(dateInput);
-        waitABit(5);
-        actionsWithOurElements.clickOnElement(toDayInCalendar);
-//        actionsWithOurElements.enterTextToElement(dateInput, date);
-    }
 
 }

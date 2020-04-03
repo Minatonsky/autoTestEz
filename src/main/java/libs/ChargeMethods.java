@@ -17,7 +17,7 @@ import java.time.temporal.TemporalAdjusters;
 import java.util.List;
 
 import static libs.Prices.*;
-import static libs.Utils.startOfDay;
+import static libs.Utils.startDayPlusHours;
 
 public class ChargeMethods {
 
@@ -95,7 +95,7 @@ public class ChargeMethods {
     @Step
     public String runCronCheckFleet() throws SQLException {
         LocalDateTime startCronTime = LocalDateTime.parse(LocalDateTime.now(ZoneId.from(ZoneOffset.UTC)).toString());
-        utilsForDB.setFleetsCronRunTime(startOfDay());
+        utilsForDB.setFleetsCronRunTime(startDayPlusHours(0));
         initDriver();
         String startCronTimeLong = startCronTime.format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));
         webDriver.get(checkFleets);
@@ -108,7 +108,7 @@ public class ChargeMethods {
         LocalDateTime startCronTime = LocalDateTime.parse(LocalDateTime.now(ZoneId.from(ZoneOffset.UTC)).toString());
 
 
-        utilsForDB.setDriversCronRunTime(startOfDay());
+        utilsForDB.setDriversCronRunTime(startDayPlusHours(0));
         initDriver();
         String startCronTimeLong = startCronTime.format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));
         webDriver.get(checkDrivers);

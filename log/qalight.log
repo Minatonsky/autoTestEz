@@ -3364,3 +3364,885 @@ Session ID: f5961c63b9368ad8ff12960bfdda44b9
 2020-02-04 17:18:18   INFO [libs.ActionsWithOurElements] : Fuel was inputted into element
 2020-02-04 17:18:19   INFO [libs.ActionsWithOurElements] : Element was clicked
 2020-02-04 17:18:25   INFO [libs.ActionsWithOurElements] : FuelReceipts 04/02/2020 17:17:57 was inputted into element
+2020-03-04 11:40:53   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome will be started
+2020-03-04 11:40:59   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome is started
+2020-03-04 11:40:59   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-03-04 11:41:09   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-03-04 11:41:09   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 11:41:10   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-03-04 11:41:10   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-03-04 11:41:10   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 11:41:18   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 11:41:22   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 11:41:23   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 11:41:23   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 11:41:23   INFO [libs.ActionsWithOurElements] : Fuel was inputted into element
+2020-03-04 11:41:24   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 11:41:29   INFO [libs.ActionsWithOurElements] : FuelReceipts 03/04/2020 was inputted into element
+2020-03-04 11:41:30   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 11:42:34   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome will be started
+2020-03-04 11:42:39   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome is started
+2020-03-04 11:42:39   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-03-04 11:42:50   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-03-04 11:42:50   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 11:42:51   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-03-04 11:42:51   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-03-04 11:42:51   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 11:42:59   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 11:43:03   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 11:43:03   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 11:43:04   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 11:43:04   INFO [libs.ActionsWithOurElements] : Fuel was inputted into element
+2020-03-04 11:43:04   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 11:43:10   INFO [libs.ActionsWithOurElements] : FuelReceipts 03/04/2020 was inputted into element
+2020-03-04 11:43:10   INFO [libs.ActionsWithOurElements] : 03/04/2020 was inputted into element
+2020-03-04 12:22:04   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome will be started
+2020-03-04 12:22:09   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome is started
+2020-03-04 12:22:10   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-03-04 12:22:20   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-03-04 12:22:21   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 12:22:21   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-03-04 12:22:22   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-03-04 12:22:22   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 12:22:30   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 12:22:34   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 12:22:34   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 12:22:34   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 12:22:34   INFO [libs.ActionsWithOurElements] : Fuel was inputted into element
+2020-03-04 12:22:35   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 12:22:40   INFO [libs.ActionsWithOurElements] : FuelReceipts 03/04/2020 was inputted into element
+2020-03-04 12:22:41   INFO [libs.ActionsWithOurElements] : 03/04/2020 was inputted into element
+2020-03-04 12:22:42  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <input placeholder="Truck" aria-label="Search for option" role="combobox" type="search" autocomplete="off" class="vs__search"> is not clickable at point (670, 292). Other element would receive the click: <div class="mx-calendar-header">...</div>
+  (Session info: chrome=80.0.3987.163)
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'DESKTOP-UD8IPI4', ip: '46.119.88.96', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.163, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\denku\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58312}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: d34c002938f146738207bd72f1f8707f
+2020-03-04 12:22:42   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] :  DB connection closed 
+2020-03-04 12:24:39   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome will be started
+2020-03-04 12:24:44   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome is started
+2020-03-04 12:24:44   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-03-04 12:24:53   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-03-04 12:24:54   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 12:24:54   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-03-04 12:24:54   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-03-04 12:24:55   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 12:25:03   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 12:25:07   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 12:25:07   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 12:25:07   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 12:25:07   INFO [libs.ActionsWithOurElements] : Fuel was inputted into element
+2020-03-04 12:25:08   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 12:25:13   INFO [libs.ActionsWithOurElements] : FuelReceipts 03/04/2020 was inputted into element
+2020-03-04 12:25:14   INFO [libs.ActionsWithOurElements] : 03/04/2020 was inputted into element
+2020-03-04 12:25:14   INFO [libs.ActionsWithOurElements] : 7476 was inputted into element
+2020-03-04 12:26:14  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.id: edit_driver' (tried for 20 second(s) with 500 milliseconds interval)
+2020-03-04 12:26:14   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] :  DB connection closed 
+2020-03-04 12:30:38   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome will be started
+2020-03-04 12:30:43   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome is started
+2020-03-04 12:30:43   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-03-04 12:30:54   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-03-04 12:30:54   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 12:30:55   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-03-04 12:30:55   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-03-04 12:30:55   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 12:31:03   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 12:31:07   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 12:31:08   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 12:31:08   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 12:31:08   INFO [libs.ActionsWithOurElements] : Fuel was inputted into element
+2020-03-04 12:31:08   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 12:31:14   INFO [libs.ActionsWithOurElements] : FuelReceipts 03/04/2020 was inputted into element
+2020-03-04 12:31:14   INFO [libs.ActionsWithOurElements] : 03/04/2020 was inputted into element
+2020-03-04 12:31:15   INFO [libs.ActionsWithOurElements] : D1s2d3 was inputted into element
+2020-03-04 12:32:35  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.id: edit_driver' (tried for 20 second(s) with 500 milliseconds interval)
+2020-03-04 12:32:35   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] :  DB connection closed 
+2020-03-04 12:34:58   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome will be started
+2020-03-04 12:35:03   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome is started
+2020-03-04 12:35:04   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-03-04 12:35:13   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-03-04 12:35:14   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 12:35:14   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-03-04 12:35:14   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-03-04 12:35:15   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 12:35:22   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 12:35:27   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 12:35:27   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 12:35:27   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 12:35:27   INFO [libs.ActionsWithOurElements] : Fuel was inputted into element
+2020-03-04 12:35:28   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 12:35:33   INFO [libs.ActionsWithOurElements] : FuelReceipts 03/04/2020 was inputted into element
+2020-03-04 12:35:34   INFO [libs.ActionsWithOurElements] : 03/04/2020 was inputted into element
+2020-03-04 12:35:34   INFO [libs.ActionsWithOurElements] : qwe was inputted into element
+2020-03-04 12:36:54  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.id: edit_driver' (tried for 20 second(s) with 500 milliseconds interval)
+2020-03-04 12:36:54   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] :  DB connection closed 
+2020-03-04 12:40:00   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome will be started
+2020-03-04 12:40:05   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome is started
+2020-03-04 12:40:05   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-03-04 12:40:18   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-03-04 12:40:19   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 12:40:19   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-03-04 12:40:20   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-03-04 12:40:20   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 12:40:27   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 12:40:31   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 12:40:32   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 12:40:32   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 12:40:32   INFO [libs.ActionsWithOurElements] : Fuel was inputted into element
+2020-03-04 12:40:32   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 12:40:38   INFO [libs.ActionsWithOurElements] : FuelReceipts 03/04/2020 was inputted into element
+2020-03-04 12:40:38   INFO [libs.ActionsWithOurElements] : 03/04/2020 was inputted into element
+2020-03-04 12:40:39   INFO [libs.ActionsWithOurElements] : 3453bdgd was inputted into element
+2020-03-04 16:17:35   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome will be started
+2020-03-04 16:17:42   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome is started
+2020-03-04 16:17:42   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-03-04 16:17:47   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] :  DB connection closed 
+2020-03-04 16:19:02   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome will be started
+2020-03-04 16:19:08   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome is started
+2020-03-04 16:19:09   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-03-04 16:19:20   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-03-04 16:19:20   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 16:19:21   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-03-04 16:19:22   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-03-04 16:19:22   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 16:19:30   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 16:19:34   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 16:19:35   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 16:19:35   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 16:19:35   INFO [libs.ActionsWithOurElements] : Fuel was inputted into element
+2020-03-04 16:19:35   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 16:19:41   INFO [libs.ActionsWithOurElements] : FuelReceipts 03/04/2020 was inputted into element
+2020-03-04 16:19:42   INFO [libs.ActionsWithOurElements] : 03/04/2020 was inputted into element
+2020-03-04 16:19:42   INFO [libs.ActionsWithOurElements] : 4574dthdghd was inputted into element
+2020-03-04 16:19:42   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 16:23:36   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome will be started
+2020-03-04 16:23:42   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome is started
+2020-03-04 16:23:42   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-03-04 16:23:53   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-03-04 16:23:54   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 16:23:55   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-03-04 16:23:55   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-03-04 16:23:55   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 16:24:03   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 16:24:08   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 16:24:08   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 16:24:08   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 16:24:08   INFO [libs.ActionsWithOurElements] : Fuel was inputted into element
+2020-03-04 16:24:09   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 16:24:15   INFO [libs.ActionsWithOurElements] : FuelReceipts 03/04/2020 was inputted into element
+2020-03-04 16:24:15   INFO [libs.ActionsWithOurElements] : 03/04/2020 was inputted into element
+2020-03-04 16:24:15   INFO [libs.ActionsWithOurElements] : sdfbavrarebt was inputted into element
+2020-03-04 16:24:16   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 16:24:16   INFO [libs.ActionsWithOurElements] : Lou Reed was inputted into element
+2020-03-04 16:24:16   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 16:33:05   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome will be started
+2020-03-04 16:33:10   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome is started
+2020-03-04 16:33:11   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-03-04 16:33:21   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-03-04 16:33:21   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 16:33:22   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-03-04 16:33:23   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-03-04 16:33:23   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 16:33:31   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 16:33:35   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 16:33:35   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 16:33:35   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 16:33:36   INFO [libs.ActionsWithOurElements] : Fuel was inputted into element
+2020-03-04 16:33:36   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 16:33:40   INFO [libs.ActionsWithOurElements] : FuelReceipts 03/04/2020 was inputted into element
+2020-03-04 16:33:40   INFO [libs.ActionsWithOurElements] : 03/04/2020 was inputted into element
+2020-03-04 16:33:41   INFO [libs.ActionsWithOurElements] : eryedfbd was inputted into element
+2020-03-04 16:33:41   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 16:33:41   INFO [libs.ActionsWithOurElements] : Smart Driver was inputted into element
+2020-03-04 16:33:41   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 16:33:42   INFO [libs.ActionsWithOurElements] : t was inputted into element
+2020-03-04 16:33:42   INFO [libs.ActionsWithOurElements] : Z was inputted into element
+2020-03-04 16:33:42   INFO [libs.ActionsWithOurElements] : PXdosBX was inputted into element
+2020-03-04 16:33:42   INFO [libs.ActionsWithOurElements] : c5XcFX was inputted into element
+2020-03-04 16:33:47  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.support.ui.UnexpectedTagNameException: Element should have been "select" but was "input"
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'DESKTOP-UD8IPI4', ip: '46.119.88.96', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: driver.version: unknown
+2020-03-04 16:33:48   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] :  DB connection closed 
+2020-03-04 16:45:41   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome will be started
+2020-03-04 16:45:47   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome is started
+2020-03-04 16:45:47   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-03-04 16:46:02   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-03-04 16:46:03   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 16:46:04   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-03-04 16:46:04   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-03-04 16:46:04   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 16:46:12   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 16:46:17   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 16:46:17   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 16:46:18   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 16:46:18   INFO [libs.ActionsWithOurElements] : Fuel was inputted into element
+2020-03-04 16:46:18   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 16:46:22   INFO [libs.ActionsWithOurElements] : FuelReceipts 03/04/2020 was inputted into element
+2020-03-04 16:46:23   INFO [libs.ActionsWithOurElements] : 03/04/2020 was inputted into element
+2020-03-04 16:46:23   INFO [libs.ActionsWithOurElements] : 12 was inputted into element
+2020-03-04 16:46:23   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 16:46:24   INFO [libs.ActionsWithOurElements] : Den Test was inputted into element
+2020-03-04 16:46:24   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 16:46:24   INFO [libs.ActionsWithOurElements] : 1EgtY was inputted into element
+2020-03-04 16:46:24   INFO [libs.ActionsWithOurElements] : CPokD was inputted into element
+2020-03-04 16:46:25   INFO [libs.ActionsWithOurElements] : G61U was inputted into element
+2020-03-04 16:46:25   INFO [libs.ActionsWithOurElements] : 3dkDv was inputted into element
+2020-03-04 16:46:25   INFO [libs.ActionsWithOurElements] : Indiana was inputted into element
+2020-03-04 16:46:26   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 16:46:31   INFO [libs.ActionsWithOurElements] : CZkekIB was inputted into element
+2020-03-04 16:46:31   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 16:46:36   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] :  DB connection closed 
+2020-03-04 16:54:19   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome will be started
+2020-03-04 16:54:27   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome is started
+2020-03-04 16:54:28   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-03-04 16:54:41   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-03-04 16:54:41   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 16:54:42   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-03-04 16:54:42   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-03-04 16:54:42   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 16:54:50   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 16:54:55   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 16:54:55   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 16:54:56   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 16:54:56   INFO [libs.ActionsWithOurElements] : Fuel was inputted into element
+2020-03-04 16:54:56   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 16:55:00   INFO [libs.ActionsWithOurElements] : FuelReceipts 2020-04-03 13:54:35 was inputted into element
+2020-03-04 16:55:01   INFO [libs.ActionsWithOurElements] : 03/04/2020 was inputted into element
+2020-03-04 16:55:01   INFO [libs.ActionsWithOurElements] : 123 was inputted into element
+2020-03-04 16:55:02   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 16:55:02   INFO [libs.ActionsWithOurElements] :  was inputted into element
+2020-03-04 16:55:02  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=80.0.3987.163)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'DESKTOP-UD8IPI4', ip: '46.119.88.96', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.163, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\denku\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54372}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 9e7e1807ec41646f8abd041fe3dbfea8
+2020-03-04 16:55:02   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] :  DB connection closed 
+2020-03-04 16:56:48   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome will be started
+2020-03-04 16:56:54   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome is started
+2020-03-04 16:56:54   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-03-04 16:57:04   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-03-04 16:57:05   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 16:57:06   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-03-04 16:57:06   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-03-04 16:57:07   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 16:57:15   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 16:57:19   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 16:57:19   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 16:57:20   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 16:57:20   INFO [libs.ActionsWithOurElements] : Fuel was inputted into element
+2020-03-04 16:57:20   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 16:57:24   INFO [libs.ActionsWithOurElements] : FuelReceipts 2020-04-03 13:56:59 was inputted into element
+2020-03-04 16:57:24   INFO [libs.ActionsWithOurElements] : 03/04/2020 was inputted into element
+2020-03-04 16:57:25   INFO [libs.ActionsWithOurElements] : ggsg56 was inputted into element
+2020-03-04 16:57:25   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 16:57:25   INFO [libs.ActionsWithOurElements] : Sonya matveeva was inputted into element
+2020-03-04 16:57:26   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 16:57:26   INFO [libs.ActionsWithOurElements] : DPS9wf was inputted into element
+2020-03-04 16:57:26   INFO [libs.ActionsWithOurElements] : CEfq was inputted into element
+2020-03-04 16:57:27   INFO [libs.ActionsWithOurElements] : ks2afe39B was inputted into element
+2020-03-04 16:57:27   INFO [libs.ActionsWithOurElements] : YN was inputted into element
+2020-03-04 16:57:27   INFO [libs.ActionsWithOurElements] : Virginia was inputted into element
+2020-03-04 16:57:27   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 16:57:33   INFO [libs.ActionsWithOurElements] : fCmaECgq was inputted into element
+2020-03-04 16:57:33   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 16:57:38   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] :  DB connection closed 
+2020-03-04 16:58:22   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome will be started
+2020-03-04 16:58:27   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome is started
+2020-03-04 16:58:28   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-03-04 16:58:38   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-03-04 16:58:38   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 16:58:39   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-03-04 16:58:39   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-03-04 16:58:40   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 16:58:48   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 16:58:52   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 16:58:52   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 16:58:52   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 16:58:53   INFO [libs.ActionsWithOurElements] : Fuel was inputted into element
+2020-03-04 16:58:53   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 16:58:57   INFO [libs.ActionsWithOurElements] : FuelReceipts 2020-04-03 13:58:32 was inputted into element
+2020-03-04 16:58:57   INFO [libs.ActionsWithOurElements] : 03/04/2020 was inputted into element
+2020-03-04 16:58:58   INFO [libs.ActionsWithOurElements] : tytj66785 was inputted into element
+2020-03-04 16:58:58   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 16:58:58   INFO [libs.ActionsWithOurElements] : Lou Reed was inputted into element
+2020-03-04 16:58:58   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 16:58:59   INFO [libs.ActionsWithOurElements] : f was inputted into element
+2020-03-04 16:58:59   INFO [libs.ActionsWithOurElements] : 9hYVOeAS was inputted into element
+2020-03-04 16:58:59   INFO [libs.ActionsWithOurElements] : Yo9 was inputted into element
+2020-03-04 16:59:00   INFO [libs.ActionsWithOurElements] : AZNSsocma was inputted into element
+2020-03-04 16:59:00   INFO [libs.ActionsWithOurElements] : Virginia was inputted into element
+2020-03-04 16:59:00   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 16:59:05   INFO [libs.ActionsWithOurElements] : iZ was inputted into element
+2020-03-04 16:59:06   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 16:59:12  ERROR [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC failed: DocType is not correct
+2020-03-04 16:59:12   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] :  DB connection closed 
+2020-03-04 17:05:37   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome will be started
+2020-03-04 17:05:43   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome is started
+2020-03-04 17:05:43   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-03-04 17:05:54   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-03-04 17:05:54   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 17:05:55   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-03-04 17:05:55   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-03-04 17:05:56   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 17:06:04   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 17:06:08   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 17:06:08   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 17:06:08   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 17:06:09   INFO [libs.ActionsWithOurElements] : Fuel Receipts was inputted into element
+2020-03-04 17:06:09   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 17:06:13   INFO [libs.ActionsWithOurElements] : FuelReceipts 2020-04-03 14:05:48 was inputted into element
+2020-03-04 17:06:13   INFO [libs.ActionsWithOurElements] : 03/04/2020 was inputted into element
+2020-03-04 17:06:14   INFO [libs.ActionsWithOurElements] : 35676547 was inputted into element
+2020-03-04 17:06:14   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 17:06:14   INFO [libs.ActionsWithOurElements] : Nosmart Driver was inputted into element
+2020-03-04 17:06:15   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 17:06:15   INFO [libs.ActionsWithOurElements] : apxRxo5Pi was inputted into element
+2020-03-04 17:06:15   INFO [libs.ActionsWithOurElements] : tIfDR was inputted into element
+2020-03-04 17:06:15   INFO [libs.ActionsWithOurElements] : 7G was inputted into element
+2020-03-04 17:06:16   INFO [libs.ActionsWithOurElements] : gR was inputted into element
+2020-03-04 17:06:16   INFO [libs.ActionsWithOurElements] : Louisiana was inputted into element
+2020-03-04 17:06:16   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 17:06:21   INFO [libs.ActionsWithOurElements] : OlO was inputted into element
+2020-03-04 17:06:22   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 17:06:28   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-03-04 17:06:29  ERROR [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC failed: DocDate is not correct
+2020-03-04 17:06:29   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] :  DB connection closed 
+2020-03-04 17:08:01   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-03-04 17:08:04   INFO [unitTest.TestMethods] :  DB Connection Closed 
+2020-03-04 17:42:40   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-03-04 17:42:43   INFO [unitTest.TestMethods] :  DB Connection Closed 
+2020-03-04 18:02:07   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome will be started
+2020-03-04 18:02:15   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome is started
+2020-03-04 18:02:15   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-03-04 18:02:26   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-03-04 18:02:28   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 18:02:29   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-03-04 18:02:29   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-03-04 18:02:30   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 18:02:39   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 18:02:43   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 18:02:44   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 18:02:44   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 18:02:45   INFO [libs.ActionsWithOurElements] : Fuel Receipts was inputted into element
+2020-03-04 18:02:45   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 18:02:49   INFO [libs.ActionsWithOurElements] : FuelReceipts 2020-04-03 15:02:20 was inputted into element
+2020-03-04 18:02:52   INFO [libs.ActionsWithOurElements] : 03/04/2020 was inputted into element
+2020-03-04 18:02:52   INFO [libs.ActionsWithOurElements] : qwe was inputted into element
+2020-03-04 18:02:53   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 18:02:53   INFO [libs.ActionsWithOurElements] : Den Driver was inputted into element
+2020-03-04 18:02:53   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 18:02:54   INFO [libs.ActionsWithOurElements] : 8iPOCtSi was inputted into element
+2020-03-04 18:02:54   INFO [libs.ActionsWithOurElements] : dsgiC4 was inputted into element
+2020-03-04 18:02:55   INFO [libs.ActionsWithOurElements] : CnfPJo was inputted into element
+2020-03-04 18:02:55   INFO [libs.ActionsWithOurElements] : 1QAD was inputted into element
+2020-03-04 18:02:56   INFO [libs.ActionsWithOurElements] : Rhode Island was inputted into element
+2020-03-04 18:02:56   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 18:03:01   INFO [libs.ActionsWithOurElements] : zt0e was inputted into element
+2020-03-04 18:03:01   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 18:03:08   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-03-04 18:03:09   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-03-04 18:03:10  ERROR [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC failed: TruckId is not correct
+2020-03-04 18:03:10   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] :  DB connection closed 
+2020-03-04 18:08:54   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome will be started
+2020-03-04 18:09:02   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome is started
+2020-03-04 18:09:02   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-03-04 18:09:14   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-03-04 18:09:15   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 18:09:16   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-03-04 18:09:16   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-03-04 18:09:16   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 18:09:25   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 18:09:29   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 18:09:29   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 18:09:30   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 18:09:31   INFO [libs.ActionsWithOurElements] : Fuel Receipts was inputted into element
+2020-03-04 18:09:31   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 18:09:35   INFO [libs.ActionsWithOurElements] : FuelReceipts 2020-04-03 15:09:08 was inputted into element
+2020-03-04 18:09:36   INFO [libs.ActionsWithOurElements] : 03/04/2020 was inputted into element
+2020-03-04 18:09:36   INFO [libs.ActionsWithOurElements] : qweqwe was inputted into element
+2020-03-04 18:09:36   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 18:09:37   INFO [libs.ActionsWithOurElements] : Den Driver was inputted into element
+2020-03-04 18:09:37   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 18:09:38   INFO [libs.ActionsWithOurElements] : bVD3i4Gi7 was inputted into element
+2020-03-04 18:09:38   INFO [libs.ActionsWithOurElements] : f9vZylU was inputted into element
+2020-03-04 18:09:38   INFO [libs.ActionsWithOurElements] : pBo was inputted into element
+2020-03-04 18:09:39   INFO [libs.ActionsWithOurElements] : tvLUW was inputted into element
+2020-03-04 18:09:39   INFO [libs.ActionsWithOurElements] : Oregon was inputted into element
+2020-03-04 18:09:39   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 18:09:44   INFO [libs.ActionsWithOurElements] : 9 was inputted into element
+2020-03-04 18:09:45   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 18:09:51   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-03-04 18:09:52   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-03-04 18:09:53   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-03-04 18:09:54   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-03-04 18:09:55   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-03-04 18:09:56   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-03-04 18:09:57   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-03-04 18:09:58   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-03-04 18:09:59   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-03-04 18:10:00   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-03-04 18:10:02   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-03-04 18:10:03  ERROR [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC failed: State is not correct
+2020-03-04 18:10:03   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] :  DB connection closed 
+2020-03-04 18:32:38   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-03-04 18:32:42   INFO [unitTest.TestMethods] :  DB Connection Closed 
+2020-03-04 18:33:57   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-03-04 18:34:01   INFO [unitTest.TestMethods] :  DB Connection Closed 
+2020-03-04 20:52:24   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-03-04 20:52:27   INFO [unitTest.TestMethods] :  DB Connection Closed 
+2020-03-04 20:55:09   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-03-04 20:55:12   INFO [unitTest.TestMethods] :  DB Connection Closed 
+2020-03-04 20:58:56   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-03-04 20:58:58   INFO [unitTest.TestMethods] :  DB Connection Closed 
+2020-03-04 21:02:34   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-03-04 21:02:37   INFO [unitTest.TestMethods] :  DB Connection Closed 
+2020-03-04 21:07:40   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-03-04 21:07:43   INFO [unitTest.TestMethods] :  DB Connection Closed 
+2020-03-04 21:08:04   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-03-04 21:08:07   INFO [unitTest.TestMethods] :  DB Connection Closed 
+2020-03-04 21:35:51   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-03-04 21:35:54   INFO [unitTest.TestMethods] :  DB Connection Closed 
+2020-03-04 21:39:43   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome will be started
+2020-03-04 21:39:48   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome is started
+2020-03-04 21:39:48   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-03-04 21:39:59   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-03-04 21:40:00   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:40:00   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-03-04 21:40:01   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-03-04 21:40:01   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:40:09   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:40:13   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:40:13   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:40:13   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:40:14   INFO [libs.ActionsWithOurElements] : Truck Repair was inputted into element
+2020-03-04 21:40:14   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:40:15   INFO [libs.ActionsWithOurElements] : TruckRepair 04/03/2020 21:39:51 was inputted into element
+2020-03-04 21:40:15  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.InvalidElementStateException: invalid element state: Element is not currently interactable and may not be manipulated
+  (Session info: chrome=80.0.3987.163)
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'DESKTOP-UD8IPI4', ip: '46.119.88.96', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.163, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\denku\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51605}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: a6fd3fa1af79c0c1e005bdad0ed6d24e
+2020-03-04 21:40:15   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] :  DB connection closed 
+2020-03-04 21:40:16   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome will be started
+2020-03-04 21:40:17   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome is started
+2020-03-04 21:40:18   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-03-04 21:40:26   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-03-04 21:40:26   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:40:26   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-03-04 21:40:27   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-03-04 21:40:27   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:40:34   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:40:38   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:40:39   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:40:39   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:40:39   INFO [libs.ActionsWithOurElements] : Insurance was inputted into element
+2020-03-04 21:40:40   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:40:40   INFO [libs.ActionsWithOurElements] : Insurance 04/03/2020 21:40:19 was inputted into element
+2020-03-04 21:40:40  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.InvalidElementStateException: invalid element state: Element is not currently interactable and may not be manipulated
+  (Session info: chrome=80.0.3987.163)
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'DESKTOP-UD8IPI4', ip: '46.119.88.96', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.163, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\denku\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51692}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: f19d793988b4173f1623eb0029e1d038
+2020-03-04 21:40:40   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] :  DB connection closed 
+2020-03-04 21:40:41   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome will be started
+2020-03-04 21:40:43   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome is started
+2020-03-04 21:40:43   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-03-04 21:42:26   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome will be started
+2020-03-04 21:42:30   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome is started
+2020-03-04 21:42:31   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-03-04 21:42:41   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-03-04 21:42:41   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:42:41   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-03-04 21:42:42   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-03-04 21:42:42   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:42:50   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:42:54   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:42:54   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:42:54   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:42:55   INFO [libs.ActionsWithOurElements] : Truck Repair was inputted into element
+2020-03-04 21:42:55   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:42:59   INFO [libs.ActionsWithOurElements] : TruckRepair 04/03/2020 21:42:34 was inputted into element
+2020-03-04 21:42:59   INFO [libs.ActionsWithOurElements] : erye4564 was inputted into element
+2020-03-04 21:42:59   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:42:59   INFO [libs.ActionsWithOurElements] : Lou Reed was inputted into element
+2020-03-04 21:43:00   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:43:01   INFO [libs.ActionsWithOurElements] : DKz was inputted into element
+2020-03-04 21:43:41  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: .//*[@placeholder='Dealer']' (tried for 20 second(s) with 500 milliseconds interval)
+2020-03-04 21:43:41   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] :  DB connection closed 
+2020-03-04 21:43:42   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome will be started
+2020-03-04 21:43:43   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome is started
+2020-03-04 21:43:43   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-03-04 21:43:51   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-03-04 21:43:52   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:43:52   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-03-04 21:43:52   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-03-04 21:43:53   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:44:01   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:44:05   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:44:05   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:44:05   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:44:06   INFO [libs.ActionsWithOurElements] : Insurance was inputted into element
+2020-03-04 21:44:06   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:44:10   INFO [libs.ActionsWithOurElements] : Insurance 04/03/2020 21:43:45 was inputted into element
+2020-03-04 21:44:10   INFO [libs.ActionsWithOurElements] : tytj66785 was inputted into element
+2020-03-04 21:44:10   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:44:10   INFO [libs.ActionsWithOurElements] : Den Driver was inputted into element
+2020-03-04 21:44:11   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:44:11   INFO [libs.ActionsWithOurElements] : Yzlo was inputted into element
+2020-03-04 21:44:11   INFO [libs.ActionsWithOurElements] : 03/04/2020 was inputted into element
+2020-03-04 21:44:12   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:44:18   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-03-04 21:44:19   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-03-04 21:44:20   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-03-04 21:44:21   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-03-04 21:44:22   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-03-04 21:44:23   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-03-04 21:44:24   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-03-04 21:44:24   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] :  DB connection closed 
+2020-03-04 21:44:25   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome will be started
+2020-03-04 21:44:26   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome is started
+2020-03-04 21:44:27   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-03-04 21:44:34   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-03-04 21:44:34   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:44:35   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-03-04 21:44:35   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-03-04 21:44:35   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:44:43   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:44:47   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:44:48   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:44:48   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:44:48   INFO [libs.ActionsWithOurElements] : Citation was inputted into element
+2020-03-04 21:44:48   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:44:52   INFO [libs.ActionsWithOurElements] : CitationReport 04/03/2020 21:44:28 was inputted into element
+2020-03-04 21:44:52   INFO [libs.ActionsWithOurElements] : 456rdg was inputted into element
+2020-03-04 21:44:52   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:44:53   INFO [libs.ActionsWithOurElements] : Den Driver was inputted into element
+2020-03-04 21:44:53   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:44:53   INFO [libs.ActionsWithOurElements] : 9pceBwfq was inputted into element
+2020-03-04 21:44:53   INFO [libs.ActionsWithOurElements] : 2 was inputted into element
+2020-03-04 21:44:53   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:44:54   INFO [libs.ActionsWithOurElements] : v3 was inputted into element
+2020-03-04 21:44:54   INFO [libs.ActionsWithOurElements] : 03/04/2020 was inputted into element
+2020-03-04 21:44:54   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:45:00   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-03-04 21:45:01   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-03-04 21:45:02   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-03-04 21:45:03   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-03-04 21:45:04   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-03-04 21:45:05   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-03-04 21:45:06   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-03-04 21:45:08   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-03-04 21:45:09  ERROR [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC failed: State is not correct
+2020-03-04 21:45:09   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] :  DB connection closed 
+2020-03-04 21:45:10   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome will be started
+2020-03-04 21:45:11   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome is started
+2020-03-04 21:45:11   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-03-04 21:45:18   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-03-04 21:45:19   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:45:19   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-03-04 21:45:19   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-03-04 21:45:20   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:45:27   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:45:32   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:45:32   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:45:32   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:45:33   INFO [libs.ActionsWithOurElements] : Trailer registration was inputted into element
+2020-03-04 21:45:33   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:45:37   INFO [libs.ActionsWithOurElements] : TrailerRegistration 04/03/2020 21:45:13 was inputted into element
+2020-03-04 21:46:17  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: .//*[@class='document-popup']//./input[@placeholder='Truck']' (tried for 20 second(s) with 500 milliseconds interval)
+2020-03-04 21:46:17   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] :  DB connection closed 
+2020-03-04 21:46:18   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome will be started
+2020-03-04 21:46:19   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome is started
+2020-03-04 21:46:19   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-03-04 21:46:26   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-03-04 21:46:27   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:46:27   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-03-04 21:46:27   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-03-04 21:46:28   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:46:35   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:46:39   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:46:40   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:46:40   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:46:40   INFO [libs.ActionsWithOurElements] : Annual was inputted into element
+2020-03-04 21:46:41   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:46:45   INFO [libs.ActionsWithOurElements] : AnnualInspection 04/03/2020 21:46:21 was inputted into element
+2020-03-04 21:46:45   INFO [libs.ActionsWithOurElements] : er4564 was inputted into element
+2020-03-04 21:46:46   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:46:46   INFO [libs.ActionsWithOurElements] : Nosmart Driver was inputted into element
+2020-03-04 21:46:46   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:46:46   INFO [libs.ActionsWithOurElements] : sxTSX3 was inputted into element
+2020-03-04 21:46:47   INFO [libs.ActionsWithOurElements] : 03/04/2020 was inputted into element
+2020-03-04 21:46:47   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:46:53   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-03-04 21:46:54   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-03-04 21:46:55   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-03-04 21:46:56   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-03-04 21:46:57   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-03-04 21:46:58   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-03-04 21:46:59   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-03-04 21:46:59   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] :  DB connection closed 
+2020-03-04 21:47:00   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome will be started
+2020-03-04 21:47:02   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome is started
+2020-03-04 21:47:02   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-03-04 21:47:10   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-03-04 21:47:10   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:47:10   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-03-04 21:47:11   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-03-04 21:47:11   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:47:25   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:47:29   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:47:29   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:47:29   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:47:30   INFO [libs.ActionsWithOurElements] : Truck registration was inputted into element
+2020-03-04 21:47:30   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:47:34   INFO [libs.ActionsWithOurElements] : TruckRegistration 04/03/2020 21:47:04 was inputted into element
+2020-03-04 21:47:34   INFO [libs.ActionsWithOurElements] : erye4564 was inputted into element
+2020-03-04 21:47:34   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:47:34   INFO [libs.ActionsWithOurElements] : Den Test was inputted into element
+2020-03-04 21:47:34   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:47:35   INFO [libs.ActionsWithOurElements] : uPAXW was inputted into element
+2020-03-04 21:47:35   INFO [libs.ActionsWithOurElements] : 03/04/2020 was inputted into element
+2020-03-04 21:47:35   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:47:41   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-03-04 21:47:42   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-03-04 21:47:43   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-03-04 21:47:44   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-03-04 21:47:45   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-03-04 21:47:46   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-03-04 21:47:47   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-03-04 21:47:47   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] :  DB connection closed 
+2020-03-04 21:47:48   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome will be started
+2020-03-04 21:47:50   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome is started
+2020-03-04 21:47:50   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-03-04 21:47:57   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-03-04 21:47:57   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:47:58   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-03-04 21:47:58   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-03-04 21:47:58   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:48:06   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:48:10   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:48:10   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:48:11   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:48:11   INFO [libs.ActionsWithOurElements] : Scale was inputted into element
+2020-03-04 21:48:11   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:48:15   INFO [libs.ActionsWithOurElements] : Scale 04/03/2020 21:47:52 was inputted into element
+2020-03-04 21:48:15   INFO [libs.ActionsWithOurElements] : r3ISPiUB1 was inputted into element
+2020-03-04 21:48:15   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:48:15   INFO [libs.ActionsWithOurElements] : Den Test was inputted into element
+2020-03-04 21:48:16   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:48:16   INFO [libs.ActionsWithOurElements] : Oif7a was inputted into element
+2020-03-04 21:48:17   INFO [libs.ActionsWithOurElements] : evIX409 was inputted into element
+2020-03-04 21:48:17   INFO [libs.ActionsWithOurElements] : 03/04/2020 was inputted into element
+2020-03-04 21:48:17   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:48:23   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-03-04 21:48:24   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-03-04 21:48:25   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-03-04 21:48:26   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-03-04 21:48:27   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-03-04 21:48:28   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-03-04 21:48:29   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-03-04 21:48:31   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-03-04 21:48:31   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] :  DB connection closed 
+2020-03-04 21:48:31   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome will be started
+2020-03-04 21:48:33   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome is started
+2020-03-04 21:48:33   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-03-04 21:48:41   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-03-04 21:48:41   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:48:42   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-03-04 21:48:42   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-03-04 21:48:42   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:48:50   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:48:54   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:48:54   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:48:55   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:48:55   INFO [libs.ActionsWithOurElements] : BOL was inputted into element
+2020-03-04 21:48:55   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:48:58   INFO [libs.ActionsWithOurElements] : BOL04/03/2020 21:48:35 was inputted into element
+2020-03-04 21:48:59   INFO [libs.ActionsWithOurElements] : 12 was inputted into element
+2020-03-04 21:48:59   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:48:59   INFO [libs.ActionsWithOurElements] : Lou Reed was inputted into element
+2020-03-04 21:48:59   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:49:00   INFO [libs.ActionsWithOurElements] : g2KMHe was inputted into element
+2020-03-04 21:49:00   INFO [libs.ActionsWithOurElements] : 05/04/2020 was inputted into element
+2020-03-04 21:49:01   INFO [libs.ActionsWithOurElements] : 13/04/2020 was inputted into element
+2020-03-04 21:49:01   INFO [libs.ActionsWithOurElements] : SLphfo8NL was inputted into element
+2020-03-04 21:49:01   INFO [libs.ActionsWithOurElements] : 03/04/2020 was inputted into element
+2020-03-04 21:49:01   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:49:08   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-03-04 21:49:09   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-03-04 21:49:10  ERROR [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC failed: TruckId is not correct
+2020-03-04 21:49:10   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] :  DB connection closed 
+2020-03-04 21:49:11   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome will be started
+2020-03-04 21:49:12   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome is started
+2020-03-04 21:49:12   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-03-04 21:49:19   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-03-04 21:49:19   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:49:20   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-03-04 21:49:20   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-03-04 21:49:20   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:49:28   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:49:32   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:49:32   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:49:33   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:49:33   INFO [libs.ActionsWithOurElements] : Accident was inputted into element
+2020-03-04 21:49:34   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:49:38   INFO [libs.ActionsWithOurElements] : AccidentReport 04/03/2020 21:49:14 was inputted into element
+2020-03-04 21:49:38   INFO [libs.ActionsWithOurElements] : test222 was inputted into element
+2020-03-04 21:49:38   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:49:39   INFO [libs.ActionsWithOurElements] : Lou Reed was inputted into element
+2020-03-04 21:49:39  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=80.0.3987.163)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'DESKTOP-UD8IPI4', ip: '46.119.88.96', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.163, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\denku\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52635}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: f9657faff6212a4c780394c931e4a5d0
+2020-03-04 21:49:39   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] :  DB connection closed 
+2020-03-04 21:49:40   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome will be started
+2020-03-04 21:49:41   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome is started
+2020-03-04 21:49:42   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-03-04 21:49:49   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-03-04 21:49:49   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:49:50   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-03-04 21:49:50   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-03-04 21:49:50   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:49:58   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:50:02   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:50:03   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:50:03   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:50:03   INFO [libs.ActionsWithOurElements] : Lumper was inputted into element
+2020-03-04 21:50:03   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:50:07   INFO [libs.ActionsWithOurElements] : Lumper 04/03/2020 21:49:43 was inputted into element
+2020-03-04 21:50:07   INFO [libs.ActionsWithOurElements] : 457457dthdtht was inputted into element
+2020-03-04 21:50:07   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:50:08   INFO [libs.ActionsWithOurElements] : Nosmart Driver was inputted into element
+2020-03-04 21:50:08   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:50:08   INFO [libs.ActionsWithOurElements] : libIHAA was inputted into element
+2020-03-04 21:50:08   INFO [libs.ActionsWithOurElements] : Owl Cave was inputted into element
+2020-03-04 21:50:08   INFO [libs.ActionsWithOurElements] : tct2cSg4p was inputted into element
+2020-03-04 21:50:09   INFO [libs.ActionsWithOurElements] : 03/04/2020 was inputted into element
+2020-03-04 21:50:09   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:50:15   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-03-04 21:50:16   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-03-04 21:50:17   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-03-04 21:50:18   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-03-04 21:50:19   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-03-04 21:50:20   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-03-04 21:50:21   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-03-04 21:50:22   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-03-04 21:50:23   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-03-04 21:50:23   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] :  DB connection closed 
+2020-03-04 21:50:24   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome will be started
+2020-03-04 21:50:26   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome is started
+2020-03-04 21:50:26   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-03-04 21:50:34   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-03-04 21:50:34   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:50:34   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-03-04 21:50:35   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-03-04 21:50:35   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:50:42   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:50:47   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:50:47   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:50:47   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:50:47   INFO [libs.ActionsWithOurElements] : Toll was inputted into element
+2020-03-04 21:50:47   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:50:51   INFO [libs.ActionsWithOurElements] : Toll 04/03/2020 21:50:28 was inputted into element
+2020-03-04 21:50:51   INFO [libs.ActionsWithOurElements] : Den was inputted into element
+2020-03-04 21:50:51   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:50:52   INFO [libs.ActionsWithOurElements] : Smart Driver was inputted into element
+2020-03-04 21:50:52   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:50:52   INFO [libs.ActionsWithOurElements] : LXYlm1Xw was inputted into element
+2020-03-04 21:50:52   INFO [libs.ActionsWithOurElements] : tjnJPMTF was inputted into element
+2020-03-04 21:50:53   INFO [libs.ActionsWithOurElements] : 03/04/2020 was inputted into element
+2020-03-04 21:50:53   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:51:04   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-03-04 21:51:05   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-03-04 21:51:06   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-03-04 21:51:07   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-03-04 21:51:08   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-03-04 21:51:09   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-03-04 21:51:10   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-03-04 21:51:11   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-03-04 21:51:11   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] :  DB connection closed 
+2020-03-04 21:51:12   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome will be started
+2020-03-04 21:51:14   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome is started
+2020-03-04 21:51:14   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-03-04 21:51:22   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-03-04 21:51:22   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:51:23   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-03-04 21:51:23   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-03-04 21:51:23   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:51:31   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:51:35   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:51:35   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:51:35   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:51:36   INFO [libs.ActionsWithOurElements] : Others was inputted into element
+2020-03-04 21:51:36   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:51:39   INFO [libs.ActionsWithOurElements] : Others04/03/2020 21:51:15 was inputted into element
+2020-03-04 21:51:40   INFO [libs.ActionsWithOurElements] : r3ISPiUB1 was inputted into element
+2020-03-04 21:51:40   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:51:40   INFO [libs.ActionsWithOurElements] : Nosmart Driver was inputted into element
+2020-03-04 21:51:40  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=80.0.3987.163)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'DESKTOP-UD8IPI4', ip: '46.119.88.96', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.163, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\denku\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52908}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 77412e9090ad788ee983ecb9db8ecb9c
+2020-03-04 21:51:40   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] :  DB connection closed 
+2020-03-04 21:51:41   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome will be started
+2020-03-04 21:51:43   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome is started
+2020-03-04 21:51:43   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-03-04 21:51:50   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-03-04 21:51:51   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:51:51   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-03-04 21:51:51   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-03-04 21:51:52   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:52:00   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:52:04   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:52:04   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:52:05   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:52:06   INFO [libs.ActionsWithOurElements] : Fuel Receipts was inputted into element
+2020-03-04 21:52:07   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:52:11   INFO [libs.ActionsWithOurElements] : FuelReceipts 04/03/2020 21:51:45 was inputted into element
+2020-03-04 21:52:11   INFO [libs.ActionsWithOurElements] : 03/04/2020 was inputted into element
+2020-03-04 21:52:12   INFO [libs.ActionsWithOurElements] : 4574dthdghd was inputted into element
+2020-03-04 21:52:12   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:52:12   INFO [libs.ActionsWithOurElements] : Lou Reed was inputted into element
+2020-03-04 21:52:12  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=80.0.3987.163)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'DESKTOP-UD8IPI4', ip: '46.119.88.96', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.163, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\denku\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52992}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 0fa2f9580f01c703f2a404dcc7cb3913
+2020-03-04 21:52:12   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] :  DB connection closed 
+2020-03-04 21:52:13   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome will be started
+2020-03-04 21:52:15   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome is started
+2020-03-04 21:52:15   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-03-04 21:52:22   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-03-04 21:52:22   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:52:23   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-03-04 21:52:23   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-03-04 21:52:24   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:52:32   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:52:36   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:52:36   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:52:36   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:52:37   INFO [libs.ActionsWithOurElements] : Trailer Repair was inputted into element
+2020-03-04 21:52:39   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-03-04 21:52:42   INFO [libs.ActionsWithOurElements] : TrailerRepair 04/03/2020 21:52:17 was inputted into element
+2020-03-04 21:53:22  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: .//*[@class='document-popup']//./input[@placeholder='Truck']' (tried for 20 second(s) with 500 milliseconds interval)
+2020-03-04 21:53:22   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] :  DB connection closed 

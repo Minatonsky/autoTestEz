@@ -68,7 +68,7 @@ public class CarrierUpDateDocumentsTest extends ParentTest {
         documentsFPage.selectState("2");
         documentsFPage.notesText(notesTextRV);
         documentsFPage.addPictureByJs(picturePath);
-        documentsFPage.documentDate();
+        documentsFPage.documentDate(dateTime);
         documentsFPage.clickOnSaveButton();
         waitABit(5);
 
@@ -77,7 +77,7 @@ public class CarrierUpDateDocumentsTest extends ParentTest {
         String docId = tempDataDocMap.get("id").toString();
 
         checkAC("DocType is not correct", tempDataDocMap.get("type").equals(fuelReceipts), true);
-        checkAC("DocDate is not correct", tempDataDocMap.get("date").equals(startOfDay()), true);
+        checkAC("DocDate is not correct", tempDataDocMap.get("date").equals(startDayPlusHours(12)), true);
 
         checkAC("TruckId is not correct", tempDataDocMap.get("truckId").equals(truckId), true);
         checkAC("InitiatorId is not correct", tempDataDocMap.get("initiatorId").equals(userId), true);
@@ -118,7 +118,7 @@ public class CarrierUpDateDocumentsTest extends ParentTest {
         documentsFPage.location(locationRV);
         documentsFPage.notesText(notesTextRV);
         documentsFPage.addPictureByJs(picturePath);
-        documentsFPage.documentDate();
+        documentsFPage.documentDate(dateTime);
         documentsFPage.clickOnSaveButton();
         waitABit(5);
 
@@ -127,7 +127,7 @@ public class CarrierUpDateDocumentsTest extends ParentTest {
         String docId = tempDataDocMap.get("id").toString();
 
         checkAC("DocType is not correct", tempDataDocMap.get("type").equals(lumper), true);
-        checkAC("DocDate is not correct", tempDataDocMap.get("date").equals(startOfDay()), true);
+        checkAC("DocDate is not correct", tempDataDocMap.get("date").equals(startDayPlusHours(12)), true);
         checkAC("TruckId is not correct", tempDataDocMap.get("truckId").equals(truckId), true);
         checkAC("InitiatorId is not correct", tempDataDocMap.get("initiatorId").equals(userId), true);
         checkAC("Note is not correct", tempDataDocMap.get("note").equals(notesTextRV), true);
@@ -162,7 +162,7 @@ public class CarrierUpDateDocumentsTest extends ParentTest {
         documentsFPage.scale(scaleRV);
         documentsFPage.notesText(notesTextRV);
         documentsFPage.addPictureByJs(picturePath);
-        documentsFPage.documentDate();
+        documentsFPage.documentDate(dateTime);
         documentsFPage.clickOnSaveButton();
         waitABit(5);
 
@@ -171,7 +171,7 @@ public class CarrierUpDateDocumentsTest extends ParentTest {
         String docId = tempDataDocMap.get("id").toString();
 
         checkAC("DocType is not correct", tempDataDocMap.get("type").equals(scale), true);
-        checkAC("DocDate is not correct", tempDataDocMap.get("date").equals(startOfDay()), true);
+        checkAC("DocDate is not correct", tempDataDocMap.get("date").equals(startDayPlusHours(12)), true);
         checkAC("TruckId is not correct", tempDataDocMap.get("truckId").equals(truckId), true);
         checkAC("InitiatorId is not correct", tempDataDocMap.get("initiatorId").equals(userId), true);
         checkAC("Note is not correct", tempDataDocMap.get("note").equals(notesTextRV), true);
@@ -205,7 +205,7 @@ public class CarrierUpDateDocumentsTest extends ParentTest {
         documentsFPage.amount(amountRV);
         documentsFPage.notesText(notesTextRV);
         documentsFPage.addPictureByJs(picturePath);
-        documentsFPage.documentDate();
+        documentsFPage.documentDate(dateTime);
         documentsFPage.clickOnSaveButton();
         waitABit(10);
 
@@ -214,7 +214,7 @@ public class CarrierUpDateDocumentsTest extends ParentTest {
         String docId = tempDataDocMap.get("id").toString();
 
         checkAC("DocType is not correct", tempDataDocMap.get("type").equals(toll), true);
-        checkAC("DocDate is not correct", tempDataDocMap.get("date").equals(startOfDay()), true);
+        checkAC("DocDate is not correct", tempDataDocMap.get("date").equals(startDayPlusHours(12)), true);
         checkAC("TruckId is not correct", tempDataDocMap.get("truckId").equals(truckId), true);
         checkAC("InitiatorId is not correct", tempDataDocMap.get("initiatorId").equals(userId), true);
         checkAC("Note is not correct", tempDataDocMap.get("note").equals(notesTextRV), true);
@@ -249,7 +249,7 @@ public class CarrierUpDateDocumentsTest extends ParentTest {
         documentsFPage.dealer(dealerRV);
         documentsFPage.notesText(notesTextRV);
         documentsFPage.addPictureByJs(picturePath);
-        documentsFPage.documentDate();
+        documentsFPage.documentDate(dateTime);
         documentsFPage.clickOnSaveButton();
         waitABit(5);
 
@@ -258,7 +258,7 @@ public class CarrierUpDateDocumentsTest extends ParentTest {
         String docId = tempDataDocMap.get("id").toString();
 
         checkAC("DocType is not correct", tempDataDocMap.get("type").equals(truckRepairReceipts), true);
-        checkAC("DocDate is not correct", tempDataDocMap.get("date").equals(startOfDay()), true);
+        checkAC("DocDate is not correct", tempDataDocMap.get("date").equals(startDayPlusHours(12)), true);
         checkAC("TruckId is not correct", tempDataDocMap.get("truckId").equals(truckId), true);
         checkAC("InitiatorId is not correct", tempDataDocMap.get("initiatorId").equals(userId), true);
         checkAC("Note is not correct", tempDataDocMap.get("note").equals(notesTextRV), true);
@@ -295,7 +295,7 @@ public class CarrierUpDateDocumentsTest extends ParentTest {
         documentsFPage.dealer(dealerRV);
         documentsFPage.notesText(notesTextRV);
         documentsFPage.addPictureByJs(picturePath);
-        documentsFPage.documentDate();
+        documentsFPage.documentDate(dateTime);
         documentsFPage.clickOnSaveButton();
         waitABit(5);
 
@@ -304,7 +304,7 @@ public class CarrierUpDateDocumentsTest extends ParentTest {
         String docId = tempDataDocMap.get("id").toString();
 
         checkAC("DocType is not correct", tempDataDocMap.get("type").equals(trailerRepairReceipt), true);
-        checkAC("DocDate is not correct", tempDataDocMap.get("date").equals(startOfDay()), true);
+        checkAC("DocDate is not correct", tempDataDocMap.get("date").equals(startDayPlusHours(12)), true);
         checkAC("TruckId is not correct", tempDataDocMap.get("truckId").equals("0"), true);
         checkAC("InitiatorId is not correct", tempDataDocMap.get("initiatorId").equals(userId), true);
         checkAC("Note is not correct", tempDataDocMap.get("note").equals(notesTextRV), true);
@@ -319,6 +319,7 @@ public class CarrierUpDateDocumentsTest extends ParentTest {
     @Test
     public void upDateCitationVehicleExaminationReport() throws SQLException{
         String referenceRV = "CitationReport " + getDateAndTimeFormated() + "";
+        String dateTime = getDateAndTimeFormated();
         String amountRV = RandomStringUtils.randomAlphanumeric(1, 10);
         String notesTextRV = RandomStringUtils.randomAlphanumeric(1, 10);
         String userId = utilsForDB.getUserIdByEmail(login);
@@ -340,7 +341,7 @@ public class CarrierUpDateDocumentsTest extends ParentTest {
         documentsFPage.selectState("2");
         documentsFPage.notesText(notesTextRV);
         documentsFPage.addPictureByJs(picturePath);
-        documentsFPage.documentDate();
+        documentsFPage.documentDate(dateTime);
         documentsFPage.clickOnSaveButton();
         waitABit(5);
 
@@ -349,7 +350,7 @@ public class CarrierUpDateDocumentsTest extends ParentTest {
         String docId = tempDataDocMap.get("id").toString();
 
         checkAC("DocType is not correct", tempDataDocMap.get("type").equals(citationVehicleExaminationReport), true);
-        checkAC("DocDate is not correct", tempDataDocMap.get("date").equals(startOfDay()), true);
+        checkAC("DocDate is not correct", tempDataDocMap.get("date").equals(startDayPlusHours(12)), true);
         checkAC("TruckId is not correct", tempDataDocMap.get("truckId").equals(truckId), true);
         checkAC("InitiatorId is not correct", tempDataDocMap.get("initiatorId").equals(userId), true);
         checkAC("Note is not correct", tempDataDocMap.get("note").equals(notesTextRV), true);
@@ -362,6 +363,7 @@ public class CarrierUpDateDocumentsTest extends ParentTest {
     @Test
     public void upDateAccidentPhotoPoliceReport() throws SQLException{
         String referenceRV = "AccidentReport " + getDateAndTimeFormated() + "";
+        String dateTime = getDateAndTimeFormated();
         String locationRV = RandomStringUtils.randomAlphanumeric(1, 10);
         String notesTextRV = RandomStringUtils.randomAlphanumeric(1, 10);
         String userId = utilsForDB.getUserIdByEmail(login);
@@ -382,7 +384,7 @@ public class CarrierUpDateDocumentsTest extends ParentTest {
         documentsFPage.location(locationRV);
         documentsFPage.notesText(notesTextRV);
         documentsFPage.addPictureByJs(picturePath);
-        documentsFPage.documentDate();
+        documentsFPage.documentDate(dateTime);
         documentsFPage.clickOnSaveButton();
         waitABit(5);
 
@@ -391,7 +393,7 @@ public class CarrierUpDateDocumentsTest extends ParentTest {
         String docId = tempDataDocMap.get("id").toString();
 
         checkAC("DocType is not correct", tempDataDocMap.get("type").equals(accidentPhotoPoliceReport), true);
-        checkAC("DocDate is not correct", tempDataDocMap.get("date").equals(startOfDay()), true);
+        checkAC("DocDate is not correct", tempDataDocMap.get("date").equals(startDayPlusHours(12)), true);
         checkAC("TruckId is not correct", tempDataDocMap.get("truckId").equals(truckId), true);
         checkAC("InitiatorId is not correct", tempDataDocMap.get("initiatorId").equals(userId), true);
         checkAC("Note is not correct", tempDataDocMap.get("note").equals(notesTextRV), true);
@@ -404,6 +406,7 @@ public class CarrierUpDateDocumentsTest extends ParentTest {
     public void upDateAnnualInspectionReport() throws SQLException{
 
         String referenceRV = "AnnualInspection " + getDateAndTimeFormated() + "";
+        String dateTime = getDateAndTimeFormated();
         String notesTextRV = RandomStringUtils.randomAlphanumeric(1, 10);
         String userId = utilsForDB.getUserIdByEmail(login);
         String truckId = utilsForDB.getRandomEquipmentIdCarrier(carrierId, "0");
@@ -422,7 +425,7 @@ public class CarrierUpDateDocumentsTest extends ParentTest {
         documentsFPage.driverValue(driverId);
         documentsFPage.notesText(notesTextRV);
         documentsFPage.addPictureByJs(picturePath);
-        documentsFPage.documentDate();
+        documentsFPage.documentDate(dateTime);
         documentsFPage.clickOnSaveButton();
         waitABit(5);
 
@@ -430,7 +433,7 @@ public class CarrierUpDateDocumentsTest extends ParentTest {
         Map<String, Object> tempDataDocMap = listArrayToMap(tempDataDocList);
 
         checkAC("DocType is not correct", tempDataDocMap.get("type").equals(annualInspectionReport), true);
-        checkAC("DocDate is not correct", tempDataDocMap.get("date").equals(startOfDay()), true);
+        checkAC("DocDate is not correct", tempDataDocMap.get("date").equals(startDayPlusHours(12)), true);
         checkAC("TruckId is not correct", tempDataDocMap.get("truckId").equals(truckId), true);
         checkAC("InitiatorId is not correct", tempDataDocMap.get("initiatorId").equals(userId), true);
         checkAC("Note is not correct", tempDataDocMap.get("note").equals(notesTextRV), true);
@@ -442,6 +445,7 @@ public class CarrierUpDateDocumentsTest extends ParentTest {
     public void upDateInsurance() throws SQLException{
 
         String referenceRV = "Insurance " + getDateAndTimeFormated() + "";
+        String dateTime = getDateAndTimeFormated();
         String notesTextRV = RandomStringUtils.randomAlphanumeric(1, 10);
         String userId = utilsForDB.getUserIdByEmail(login);
         String truckId = utilsForDB.getRandomEquipmentIdCarrier(carrierId, "0");
@@ -460,7 +464,7 @@ public class CarrierUpDateDocumentsTest extends ParentTest {
         documentsFPage.driverValue(driverId);
         documentsFPage.notesText(notesTextRV);
         documentsFPage.addPictureByJs(picturePath);
-        documentsFPage.documentDate();
+        documentsFPage.documentDate(dateTime);
         documentsFPage.clickOnSaveButton();
         waitABit(5);
 
@@ -468,7 +472,7 @@ public class CarrierUpDateDocumentsTest extends ParentTest {
         Map<String, Object> tempDataDocMap = listArrayToMap(tempDataDocList);
 
         checkAC("DocType is not correct", tempDataDocMap.get("type").equals(insurance), true);
-        checkAC("DocDate is not correct", tempDataDocMap.get("date").equals(startOfDay()), true);
+        checkAC("DocDate is not correct", tempDataDocMap.get("date").equals(startDayPlusHours(12)), true);
         checkAC("TruckId is not correct", tempDataDocMap.get("truckId").equals(truckId), true);
         checkAC("InitiatorId is not correct", tempDataDocMap.get("initiatorId").equals(userId), true);
         checkAC("Note is not correct", tempDataDocMap.get("note").equals(notesTextRV), true);
@@ -480,6 +484,7 @@ public class CarrierUpDateDocumentsTest extends ParentTest {
     public void upDateTruckRegistration() throws SQLException{
 
         String referenceRV = "TruckRegistration " + getDateAndTimeFormated() + "";
+        String dateTime = getDateAndTimeFormated();
         String notesTextRV = RandomStringUtils.randomAlphanumeric(1, 10);
         String userId = utilsForDB.getUserIdByEmail(login);
         String truckId = utilsForDB.getRandomEquipmentIdCarrier(carrierId, "0");
@@ -498,7 +503,7 @@ public class CarrierUpDateDocumentsTest extends ParentTest {
         documentsFPage.driverValue(driverId);
         documentsFPage.notesText(notesTextRV);
         documentsFPage.addPictureByJs(picturePath);
-        documentsFPage.documentDate();
+        documentsFPage.documentDate(dateTime);
         documentsFPage.clickOnSaveButton();
         waitABit(5);
 
@@ -506,7 +511,7 @@ public class CarrierUpDateDocumentsTest extends ParentTest {
         Map<String, Object> tempDataDocMap = listArrayToMap(tempDataDocList);
 
         checkAC("DocType is not correct", tempDataDocMap.get("type").equals(truckRegistration), true);
-        checkAC("DocDate is not correct", tempDataDocMap.get("date").equals(startOfDay()), true);
+        checkAC("DocDate is not correct", tempDataDocMap.get("date").equals(startDayPlusHours(12)), true);
         checkAC("TruckId is not correct", tempDataDocMap.get("truckId").equals(truckId), true);
         checkAC("InitiatorId is not correct", tempDataDocMap.get("initiatorId").equals(userId), true);
         checkAC("Note is not correct", tempDataDocMap.get("note").equals(notesTextRV), true);
@@ -518,6 +523,7 @@ public class CarrierUpDateDocumentsTest extends ParentTest {
     public void upDateTrailerRegistration() throws SQLException{
 
         String referenceRV = "TrailerRegistration " + getDateAndTimeFormated() + "";
+        String dateTime = getDateAndTimeFormated();
         String notesTextRV = RandomStringUtils.randomAlphanumeric(1, 10);
         String userId = utilsForDB.getUserIdByEmail(login);
         String trailerId = utilsForDB.getRandomEquipmentIdCarrier(carrierId, "1");
@@ -536,7 +542,7 @@ public class CarrierUpDateDocumentsTest extends ParentTest {
         documentsFPage.driverValue(driverId);
         documentsFPage.notesText(notesTextRV);
         documentsFPage.addPictureByJs(picturePath);
-        documentsFPage.documentDate();
+        documentsFPage.documentDate(dateTime);
         documentsFPage.clickOnSaveButton();
         waitABit(5);
 
@@ -545,7 +551,7 @@ public class CarrierUpDateDocumentsTest extends ParentTest {
         String docId = tempDataDocMap.get("id").toString();
 
         checkAC("DocType is not correct", tempDataDocMap.get("type").equals(trailerRegistration), true);
-        checkAC("DocDate is not correct", tempDataDocMap.get("date").equals(startOfDay()), true);
+        checkAC("DocDate is not correct", tempDataDocMap.get("date").equals(startDayPlusHours(12)), true);
         checkAC("TruckId is not correct", tempDataDocMap.get("truckId").equals("0"), true);
         checkAC("InitiatorId is not correct", tempDataDocMap.get("initiatorId").equals(userId), true);
         checkAC("Note is not correct", tempDataDocMap.get("note").equals(notesTextRV), true);
@@ -556,6 +562,7 @@ public class CarrierUpDateDocumentsTest extends ParentTest {
     }
     @Test
     public void upDateOthers() throws SQLException{
+        String dateTime = getDateAndTimeFormated();
         String referenceRV = "Others" + getDateAndTimeFormated() + "";
         String notesTextRV = RandomStringUtils.randomAlphanumeric(1, 10);
         String userId = utilsForDB.getUserIdByEmail(login);
@@ -575,7 +582,7 @@ public class CarrierUpDateDocumentsTest extends ParentTest {
         documentsFPage.driverValue(driverId);
         documentsFPage.notesText(notesTextRV);
         documentsFPage.addPictureByJs(picturePath);
-        documentsFPage.documentDate();
+        documentsFPage.documentDate(dateTime);
         documentsFPage.clickOnSaveButton();
         waitABit(5);
 
@@ -583,7 +590,7 @@ public class CarrierUpDateDocumentsTest extends ParentTest {
         Map<String, Object> tempDataDocMap = listArrayToMap(tempDataDocList);
 
         checkAC("DocType is not correct", tempDataDocMap.get("type").equals(others), true);
-        checkAC("DocDate is not correct", tempDataDocMap.get("date").equals(startOfDay()), true);
+        checkAC("DocDate is not correct", tempDataDocMap.get("date").equals(startDayPlusHours(12)), true);
         checkAC("TruckId is not correct", tempDataDocMap.get("truckId").equals(truckId), true);
         checkAC("InitiatorId is not correct", tempDataDocMap.get("initiatorId").equals(userId), true);
         checkAC("Note is not correct", tempDataDocMap.get("note").equals(notesTextRV), true);
@@ -619,7 +626,7 @@ public class CarrierUpDateDocumentsTest extends ParentTest {
         documentsFPage.deliveryDate(deliveryDateRV);
         documentsFPage.notesText(notesTextRV);
         documentsFPage.addPictureByJs(picturePath);
-        documentsFPage.documentDate();
+        documentsFPage.documentDate(dateTime);
         documentsFPage.clickOnSaveButton();
         waitABit(5);
 
@@ -628,7 +635,7 @@ public class CarrierUpDateDocumentsTest extends ParentTest {
         String docId = tempDataDocMap.get("id").toString();
 
         checkAC("DocType is not correct", tempDataDocMap.get("type").equals(BOL), true);
-        checkAC("DocDate is not correct", tempDataDocMap.get("date").equals(startOfDay()), true);
+        checkAC("DocDate is not correct", tempDataDocMap.get("date").equals(startDayPlusHours(12)), true);
         checkAC("TruckId is not correct", tempDataDocMap.get("truckId").equals(truckId), true);
         checkAC("InitiatorId is not correct", tempDataDocMap.get("initiatorId").equals(userId), true);
         checkAC("Note is not correct", tempDataDocMap.get("note").equals(notesTextRV), true);

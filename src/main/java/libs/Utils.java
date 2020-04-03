@@ -117,6 +117,17 @@ public class Utils {
         int randomNumber=r.nextInt(arr.length);
         return arr[randomNumber];
     }
+
+    public static String genRandomStateName(){
+        String[] arr={"Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut", "Delaware", "Florida", "Georgia", "Hawaii", "Idaho", "Illinois", "Indiana", "Iowa",
+                "Kansas", "Kentucky", "Louisiana", "Maine", "Maryland", "Massachusetts", "Michigan", "Minnesota", "Mississippi", "Missouri", "Montana", "Nebraska", "Nevada", "New Hampshire",
+                "New Jersey", "New Mexico", "New York", "North Carolina", "North Dakota", "Ohio", "Oklahoma", "Oregon", "Pennsylvania", "Rhode Island", "South Carolina", "South Dakota", "Tennessee",
+                "Texas", "Utah", "Vermont", "Virginia", "Washington", "West Virginia", "Wisconsin", "Wyoming", "Alberta", "British Columbia", "Manitoba", "New Brunswick", "Newfoundland and Labrador",
+                "Northwest Territories", "Nova Scotia", "Nunavut", "Ontario", "Prince Edward Island", "Quebec", "Saskatchewan", "Yukon"};
+        Random r=new Random();
+        int randomNumber=r.nextInt(arr.length);
+        return arr[randomNumber];
+    }
     public static String genRandomDataByRegex(String regEx) throws SQLException, IOException, ClassNotFoundException {
         Generex generex = new Generex(regEx);
         String randomStr = generex.random();
@@ -177,13 +188,18 @@ public class Utils {
         String formatted = DateTimeFormatter.ofPattern(format).format(datetime);
         return formatted;
     }
+    public static String getCurrentDateTimePlusDays(String format, int days){
+        LocalDateTime datetime = LocalDateTime.now(ZoneOffset.UTC).plusDays(days);
+        String formatted = DateTimeFormatter.ofPattern(format).format(datetime);
+        return formatted;
+    }
     public static LocalDateTime getLocalDateTimeUTC(){
         LocalDateTime tempDateTimeUTC = LocalDateTime.now(ZoneOffset.UTC);
         return tempDateTimeUTC;
     }
-    public static String startOfDay(){
+    public static String startDayPlusHours(int hours){
         LocalDate day = LocalDate.now(ZoneOffset.UTC);
-        LocalDateTime startOfDay = day.atStartOfDay();
+        LocalDateTime startOfDay = day.atStartOfDay().plusHours(hours);
         String formatted = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss").format(startOfDay);
         return formatted;
     }
