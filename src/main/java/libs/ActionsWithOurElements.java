@@ -144,6 +144,17 @@ public class ActionsWithOurElements {
             printErrorAndStopTest(e);
         }
     }
+    public void enterTextToElement(String xPathLocator, String text){
+        try{
+            WebElement webElement = webDriver.findElement(By.xpath(xPathLocator));
+            webDriverWait20.until(ExpectedConditions.visibilityOf(webElement));
+            webElement.clear();
+            webElement.sendKeys(text);
+            logger.info(text + " was inputted into element");
+        } catch (Exception e){
+            printErrorAndStopTest(e);
+        }
+    }
 
     public boolean isElementDisplay(WebElement webElement){
         try{

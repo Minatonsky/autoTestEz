@@ -77,8 +77,14 @@ public class DocumentsFPage extends ParentFPage {
 
 //    LIST PAGE
 
-    @FindBy(xpath = "//*[text()='Reference #']/../input")
+    @FindBy(name = "reference")
     private WebElement referencePlaceHolder;
+
+    @FindBy(xpath = ".//*[@class='icon-icons-navigation-ic-action']")
+    private WebElement actionButton;
+
+    @FindBy(xpath = ".//*[@class='action-dropdown-picker__hidden-item' and text()='Edit']")
+    private WebElement actionEdit;
 
     @FindBy(name="date")
     private WebElement datePlaceHolder;
@@ -86,48 +92,54 @@ public class DocumentsFPage extends ParentFPage {
     @FindBy(xpath = ".//input[@type='file']")
     private WebElement addFile;
 
-    @FindBy(xpath = ".//*[text()='Today']")
-    private WebElement toDayInCalendar;
+    @FindBy(xpath = ".//button[text()='Edit']")
+    private WebElement buttonEdit;
 
 
     public void clickOnCreateButton(){actionsWithOurElements.clickOnElement(addDocumentButton);}
     public void clickOnSaveButton(){actionsWithOurElements.clickOnElement(saveButton);}
+    public void clickOnEditButton(){actionsWithOurElements.clickOnElement(buttonEdit);}
     public void selectTypeDocument(String documentTypeValue){
         actionsWithOurElements.clickOnElement(dropDawnTypeDocument);
         actionsWithOurElements.enterTextToElement(dropDawnTypeDocument, documentTypeValue);
         actionsWithOurElements.clickOnElement(elementInDropDownMenu);
     }
-    public void notesText(String tempText){actionsWithOurElements.enterTextToElement(textArea, tempText);}
+    public void notesText(String tempText){actionsWithOurElements.clearAndEnterTextToElement(textArea, tempText);}
     public void selectState(String value){
         actionsWithOurElements.enterTextToElement(statePlaceHolder, value);
         actionsWithOurElements.clickOnElement(elementInDropDownMenu);
     }
     public void deliveryDate(String date){actionsWithOurElements.clearAndEnterTextToElement(deliveryDateInput, date);}
     public void shipDate(String date){actionsWithOurElements.clearAndEnterTextToElement(shipDateInput, date);}
-    public void dealer(String dealer){actionsWithOurElements.enterTextToElement(dealerInput, dealer);}
-    public void shipper(String shipper){actionsWithOurElements.enterTextToElement(shipperInput, shipper);}
-    public void location(String location){actionsWithOurElements.enterTextToElement(locationInput, location);}
-    public void scale(String scale){actionsWithOurElements.enterTextToElement(scaleInput, scale);}
-    public void reeferGallons(String reeferGallons){actionsWithOurElements.enterTextToElement(reeferGallonsInput, reeferGallons);}
-    public void reeferAmount(String reeferAmount){actionsWithOurElements.enterTextToElement(reeferAmountInput, reeferAmount);}
-    public void gallons(String gallons){actionsWithOurElements.enterTextToElement(gallonsInput, gallons);}
-    public void amount(String amount){actionsWithOurElements.enterTextToElement(amountInput, amount);}
+    public void dealer(String dealer){actionsWithOurElements.clearAndEnterTextToElement(dealerInput, dealer);}
+    public void shipper(String shipper){actionsWithOurElements.clearAndEnterTextToElement(shipperInput, shipper);}
+    public void location(String location){actionsWithOurElements.clearAndEnterTextToElement(locationInput, location);}
+    public void scale(String scale){actionsWithOurElements.clearAndEnterTextToElement(scaleInput, scale);}
+    public void reeferGallons(String reeferGallons){actionsWithOurElements.clearAndEnterTextToElement(reeferGallonsInput, reeferGallons);}
+    public void reeferAmount(String reeferAmount){actionsWithOurElements.clearAndEnterTextToElement(reeferAmountInput, reeferAmount);}
+    public void gallons(String gallons){actionsWithOurElements.clearAndEnterTextToElement(gallonsInput, gallons);}
+    public void amount(String amount){actionsWithOurElements.clearAndEnterTextToElement(amountInput, amount);}
     public void driverValue(String driverValue){
         actionsWithOurElements.enterTextToElement(driverPlaceHolder, driverValue);
-        actionsWithOurElements.clickOnElement(elementInDropDownMenu);
+        actionsWithOurElements.clickOnElement(".//li[@role='option']//../*[contains(text(),'" + driverValue + "')]");
     }
     public void trailerValue(String trailerValue){
-        actionsWithOurElements.enterTextToElement(trailerPlaceHolder, trailerValue);
-        actionsWithOurElements.clickOnElement(elementInDropDownMenu);
+        actionsWithOurElements.clearAndEnterTextToElement(trailerPlaceHolder, trailerValue);
+        actionsWithOurElements.clickOnElement(".//li[@role='option']//../*[contains(text(),'" + trailerValue + "')]");
     }
     public void truckValue(String truckValue){
-        actionsWithOurElements.enterTextToElement(truckPlaceHolder, truckValue);
-        actionsWithOurElements.clickOnElement(elementInDropDownMenu);
+        actionsWithOurElements.clearAndEnterTextToElement(truckPlaceHolder, truckValue);
+        actionsWithOurElements.clickOnElement(".//li[@role='option']//../*[contains(text(),'" + truckValue + "')]");
     }
     public void documentDate(String date){actionsWithOurElements.clearAndEnterTextToElement(dateInput, date);}
-    public void reference(String reference){actionsWithOurElements.enterTextToElement(referenceInput, reference);}
-    public void enterReferenceInPlaceHolder(String referenceName){actionsWithOurElements.enterTextToElement(referencePlaceHolder, referenceName);}
+    public void reference(String reference){actionsWithOurElements.clearAndEnterTextToElement(referenceInput, reference);}
+    public void enterReferenceInPlaceHolder(String referenceName){actionsWithOurElements.clearAndEnterTextToElement(referencePlaceHolder, referenceName);}
     public void addPictureByJs(String path){actionsWithOurElements.addFileByJs(addFile, path);}
-    public void clickOnDocumentInRow(String referenceName){actionsWithOurElements.clickOnElement("//div[@class='table-container__table-item' and text()='" + referenceName +"");}
+    public void clickOnActionButton(String referenceName){actionsWithOurElements.clickOnElement(".//*[text()='" + referenceName + "']//..//*[@class='icon-icons-navigation-ic-action']");}
+    public void clickOnEdidButton(){actionsWithOurElements.clickOnElement(actionEdit);}
+    public void clickOnDropDownWithValue(String value, String element){
+        actionsWithOurElements.enterTextToElement(".//*[@class='document-popup']//./*[contains(text(),'" + value + "')]//../input", element);
+        actionsWithOurElements.clickOnElement(".//li[@role='option']//../*[contains(text(),'" + element + "')]");
+    }
 
 }

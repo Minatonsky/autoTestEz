@@ -39,40 +39,53 @@ public class CarrierUpDateDocumentsTest extends ParentTest {
     }
     @Test
     public void upDateFuelReceipts() throws SQLException {
+
         String userId = utilsForDB.getUserIdByEmail(login);
-        String dateTime = getDateAndTimeFormated();
-        String referenceRV = "FuelReceipts " + dateTime + "";
+        String dateTime = getDateAndTime("dd/MM/yyyy");
+        String referenceRV = "FuelReceipts " + getDateAndTimeFormated() + "";
         String amountRV = RandomStringUtils.randomAlphanumeric(1, 10);
         String gallonsRV = RandomStringUtils.randomAlphanumeric(1, 10);
         String reeferAmountRV = RandomStringUtils.randomAlphanumeric(1, 10);
         String reeferGallonsRV = RandomStringUtils.randomAlphanumeric(1, 10);
         String notesTextRV = RandomStringUtils.randomAlphanumeric(1, 10);
         String truckId = utilsForDB.getRandomEquipmentIdCarrier(carrierId, "0");
+        String truckName = utilsForDB.getEquipmentName(truckId);
         String driverId = utilsForDB.getRandomDriverIdInFleet(carrierId);
-        String referenceRandom = utilsForDB.getRandomDocumentReference(driverId, fuelReceipts);
+        String driverName = utilsForDB.getDriverNameById(driverId);
+
+
+        String state = genRandomStateName();
+        String referenceRandom = utilsForDB.getRandomDocumentReference(carrierId, fuelReceipts);
+
+        List<ArrayList> tempDataDocListBeforeTest = utilsForDB.getDocData(carrierId, referenceRandom);
+        Map<String, Object> tempDataDocMapBeforeTest = listArrayToMap(tempDataDocListBeforeTest);
+        String driverNameBeforeTest = utilsForDB.getDriverNameById(tempDataDocMapBeforeTest.get("userId").toString());
+        String truckNameBeforeTest = utilsForDB.getEquipmentName(tempDataDocMapBeforeTest.get("truckId").toString());
 
         loginFPage.logInWithOutOpenMenu(login, pass);
         dashboardFPage.goToSafetyPage();
         dashboardFPage.goToDocumentsPage();
 
         documentsFPage.enterReferenceInPlaceHolder(referenceRandom);
-        documentsFPage.clickOnDocumentInRow(referenceRandom);
-        documentsFPage.selectTypeDocument(fuelReceipts);
+        waitABit(3);
+        documentsFPage.clickOnActionButton(referenceRandom);
+        documentsFPage.clickOnEdidButton();
+        waitABit(3);
         documentsFPage.reference(referenceRV);
-        documentsFPage.truckValue(truckId);
-        documentsFPage.driverValue(driverId);
+        documentsFPage.clickOnDropDownWithValue(truckNameBeforeTest, truckName);
+        documentsFPage.clickOnDropDownWithValue(driverNameBeforeTest, driverName);
         documentsFPage.amount(amountRV);
         documentsFPage.gallons(gallonsRV);
         documentsFPage.reeferAmount(reeferAmountRV);
         documentsFPage.reeferGallons(reeferGallonsRV);
-        documentsFPage.selectState("2");
+        documentsFPage.selectState(state);
         documentsFPage.notesText(notesTextRV);
         documentsFPage.addPictureByJs(picturePath);
         documentsFPage.documentDate(dateTime);
-        documentsFPage.clickOnSaveButton();
+        documentsFPage.clickOnEditButton();
         waitABit(5);
 
-        List<ArrayList> tempDataDocList = utilsForDB.getDocData(driverId, referenceRV);
+        List<ArrayList> tempDataDocList = utilsForDB.getDocData(carrierId, referenceRV);
         Map<String, Object> tempDataDocMap = listArrayToMap(tempDataDocList);
         String docId = tempDataDocMap.get("id").toString();
 
@@ -83,17 +96,17 @@ public class CarrierUpDateDocumentsTest extends ParentTest {
         checkAC("InitiatorId is not correct", tempDataDocMap.get("initiatorId").equals(userId), true);
         checkAC("CarrierId is not correct", tempDataDocMap.get("carrierId").equals(carrierId), true);
         checkAC("Note is not correct", tempDataDocMap.get("note").equals(notesTextRV), true);
-//        checkAC("AWSName is empty", tempDataDocMap.get("awsName").toString().substring(0, 34).equals("https://s3.us-east-2.amazonaws.com"), true);
+        checkAC("AWSName is empty", tempDataDocMap.get("awsName").toString().substring(0, 34).equals("https://s3.us-east-2.amazonaws.com"), true);
 
         checkAC("Amount is not correct", utilsForDB.getDocInfoData(docId, "amount").equals(amountRV), true);
         checkAC("Gallons is not correct", utilsForDB.getDocInfoData(docId, "gallons").equals(gallonsRV), true);
         checkAC("ReeferAmount is not correct", utilsForDB.getDocInfoData(docId, "reefer_amount").equals(reeferAmountRV), true);
         checkAC("ReeferGallons is not correct", utilsForDB.getDocInfoData(docId, "reefer_gallons").equals(reeferGallonsRV), true);
-        checkAC("State is not correct", utilsForDB.getDocInfoData(docId, "state").equals("2"), true);
+//        checkAC("State is not correct", utilsForDB.getDocInfoData(docId, "state").equals("2"), true);
     }
     @Test
     public void upDateLumper() throws SQLException{
-        String dateTime = getDateAndTimeFormated();
+        String dateTime = getDateAndTime("dd/MM/yyyy");
         String referenceRV = "Lumper " + dateTime + "";
         String amountRV = RandomStringUtils.randomAlphanumeric(1, 10);
         String locationRV = RandomStringUtils.randomAlphanumeric(1, 10);
@@ -102,27 +115,36 @@ public class CarrierUpDateDocumentsTest extends ParentTest {
         String userId = utilsForDB.getUserIdByEmail(login);
         String truckId = utilsForDB.getRandomEquipmentIdCarrier(carrierId, "0");
         String driverId = utilsForDB.getRandomDriverIdInFleet(carrierId);
-        String referenceRandom = utilsForDB.getRandomDocumentReference(driverId, lumper);
+        String driverName = utilsForDB.getDriverNameById(driverId);
+        String truckName = utilsForDB.getEquipmentName(truckId);
+        String referenceRandom = utilsForDB.getRandomDocumentReference(carrierId, lumper);
+
+        List<ArrayList> tempDataDocListBeforeTest = utilsForDB.getDocData(carrierId, referenceRandom);
+        Map<String, Object> tempDataDocMapBeforeTest = listArrayToMap(tempDataDocListBeforeTest);
+        String driverNameBeforeTest = utilsForDB.getDriverNameById(tempDataDocMapBeforeTest.get("userId").toString());
+        String truckNameBeforeTest = utilsForDB.getEquipmentName(tempDataDocMapBeforeTest.get("truckId").toString());
 
         loginFPage.logInWithOutOpenMenu(login, pass);
         dashboardFPage.goToSafetyPage();
         dashboardFPage.goToDocumentsPage();
 
         documentsFPage.enterReferenceInPlaceHolder(referenceRandom);
-        documentsFPage.clickOnDocumentInRow(referenceRandom);
-        documentsFPage.selectTypeDocument(lumper);
+        waitABit(3);
+        documentsFPage.clickOnActionButton(referenceRandom);
+        documentsFPage.clickOnEdidButton();
+        waitABit(3);
         documentsFPage.reference(referenceRV);
-        documentsFPage.truckValue(truckId);
-        documentsFPage.driverValue(driverId);
+        documentsFPage.clickOnDropDownWithValue(truckNameBeforeTest, truckName);
+        documentsFPage.clickOnDropDownWithValue(driverNameBeforeTest, driverName);
         documentsFPage.amount(amountRV);
         documentsFPage.location(locationRV);
         documentsFPage.notesText(notesTextRV);
         documentsFPage.addPictureByJs(picturePath);
         documentsFPage.documentDate(dateTime);
-        documentsFPage.clickOnSaveButton();
+        documentsFPage.clickOnEditButton();
         waitABit(5);
 
-        List<ArrayList> tempDataDocList = utilsForDB.getDocData(driverId, referenceRV);
+        List<ArrayList> tempDataDocList = utilsForDB.getDocData(carrierId, referenceRV);
         Map<String, Object> tempDataDocMap = listArrayToMap(tempDataDocList);
         String docId = tempDataDocMap.get("id").toString();
 
@@ -132,7 +154,7 @@ public class CarrierUpDateDocumentsTest extends ParentTest {
         checkAC("InitiatorId is not correct", tempDataDocMap.get("initiatorId").equals(userId), true);
         checkAC("Note is not correct", tempDataDocMap.get("note").equals(notesTextRV), true);
         checkAC("CarrierId is not correct", tempDataDocMap.get("carrierId").equals(carrierId), true);
-//        checkAC("AWSName is empty", tempDataDocMap.get("awsName").toString().substring(0, 34).equals("https://s3.us-east-2.amazonaws.com"), true);
+        checkAC("AWSName is empty", tempDataDocMap.get("awsName").toString().substring(0, 34).equals("https://s3.us-east-2.amazonaws.com"), true);
 
         checkAC("Amount is not correct", utilsForDB.getDocInfoData(docId, "amount").equals(amountRV), true);
         checkAC("Location is not correct", utilsForDB.getDocInfoData(docId, "location").equals(locationRV), true);
@@ -140,33 +162,42 @@ public class CarrierUpDateDocumentsTest extends ParentTest {
     }
     @Test
     public void upDateScale() throws SQLException{
-        String dateTime = getDateAndTimeFormated();
+        String dateTime = getDateAndTime("dd/MM/yyyy");
         String referenceRV = "Scale " + dateTime + "";
         String scaleRV = RandomStringUtils.randomAlphanumeric(1, 10);
         String notesTextRV = RandomStringUtils.randomAlphanumeric(1, 10);
         String userId = utilsForDB.getUserIdByEmail(login);
         String truckId = utilsForDB.getRandomEquipmentIdCarrier(carrierId, "0");
         String driverId = utilsForDB.getRandomDriverIdInFleet(carrierId);
-        String referenceRandom = utilsForDB.getRandomDocumentReference(driverId, scale);
+        String driverName = utilsForDB.getDriverNameById(driverId);
+        String truckName = utilsForDB.getEquipmentName(truckId);
+        String referenceRandom = utilsForDB.getRandomDocumentReference(carrierId, scale);
+
+        List<ArrayList> tempDataDocListBeforeTest = utilsForDB.getDocData(carrierId, referenceRandom);
+        Map<String, Object> tempDataDocMapBeforeTest = listArrayToMap(tempDataDocListBeforeTest);
+        String driverNameBeforeTest = utilsForDB.getDriverNameById(tempDataDocMapBeforeTest.get("userId").toString());
+        String truckNameBeforeTest = utilsForDB.getEquipmentName(tempDataDocMapBeforeTest.get("truckId").toString());
 
         loginFPage.logInWithOutOpenMenu(login, pass);
         dashboardFPage.goToSafetyPage();
         dashboardFPage.goToDocumentsPage();
 
         documentsFPage.enterReferenceInPlaceHolder(referenceRandom);
-        documentsFPage.clickOnDocumentInRow(referenceRandom);
-        documentsFPage.selectTypeDocument(scale);
+        waitABit(3);
+        documentsFPage.clickOnActionButton(referenceRandom);
+        documentsFPage.clickOnEdidButton();
+        waitABit(3);
         documentsFPage.reference(referenceRV);
-        documentsFPage.truckValue(truckId);
-        documentsFPage.driverValue(driverId);
+        documentsFPage.clickOnDropDownWithValue(truckNameBeforeTest, truckName);
+        documentsFPage.clickOnDropDownWithValue(driverNameBeforeTest, driverName);
         documentsFPage.scale(scaleRV);
         documentsFPage.notesText(notesTextRV);
         documentsFPage.addPictureByJs(picturePath);
         documentsFPage.documentDate(dateTime);
-        documentsFPage.clickOnSaveButton();
+        documentsFPage.clickOnEditButton();
         waitABit(5);
 
-        List<ArrayList> tempDataDocList = utilsForDB.getDocData(driverId, referenceRV);
+        List<ArrayList> tempDataDocList = utilsForDB.getDocData(carrierId, referenceRV);
         Map<String, Object> tempDataDocMap = listArrayToMap(tempDataDocList);
         String docId = tempDataDocMap.get("id").toString();
 
@@ -176,40 +207,49 @@ public class CarrierUpDateDocumentsTest extends ParentTest {
         checkAC("InitiatorId is not correct", tempDataDocMap.get("initiatorId").equals(userId), true);
         checkAC("Note is not correct", tempDataDocMap.get("note").equals(notesTextRV), true);
         checkAC("CarrierId Id is not correct", tempDataDocMap.get("carrierId").equals(carrierId), true);
-//        checkAC("AWSName is empty", tempDataDocMap.get("awsName").toString().substring(0, 34).equals("https://s3.us-east-2.amazonaws.com"), true);
+        checkAC("AWSName is empty", tempDataDocMap.get("awsName").toString().substring(0, 34).equals("https://s3.us-east-2.amazonaws.com"), true);
 
         checkAC("Scale is not correct", utilsForDB.getDocInfoData(docId, "scale").equals(scaleRV), true);
 
     }
     @Test
     public void upDateToll() throws SQLException{
-        String dateTime = getDateAndTimeFormated();
+        String dateTime = getDateAndTime("dd/MM/yyyy");
         String referenceRV = "Toll " + dateTime + "";
         String amountRV = RandomStringUtils.randomAlphanumeric(1, 10);
         String notesTextRV = RandomStringUtils.randomAlphanumeric(1, 10);
         String userId = utilsForDB.getUserIdByEmail(login);
         String truckId = utilsForDB.getRandomEquipmentIdCarrier(carrierId, "0");
         String driverId = utilsForDB.getRandomDriverIdInFleet(carrierId);
-        String referenceRandom = utilsForDB.getRandomDocumentReference(driverId, toll);
+        String driverName = utilsForDB.getDriverNameById(driverId);
+        String truckName = utilsForDB.getEquipmentName(truckId);
+        String referenceRandom = utilsForDB.getRandomDocumentReference(carrierId, toll);
+
+        List<ArrayList> tempDataDocListBeforeTest = utilsForDB.getDocData(carrierId, referenceRandom);
+        Map<String, Object> tempDataDocMapBeforeTest = listArrayToMap(tempDataDocListBeforeTest);
+        String driverNameBeforeTest = utilsForDB.getDriverNameById(tempDataDocMapBeforeTest.get("userId").toString());
+        String truckNameBeforeTest = utilsForDB.getEquipmentName(tempDataDocMapBeforeTest.get("truckId").toString());
 
         loginFPage.logInWithOutOpenMenu(login, pass);
         dashboardFPage.goToSafetyPage();
         dashboardFPage.goToDocumentsPage();
 
         documentsFPage.enterReferenceInPlaceHolder(referenceRandom);
-        documentsFPage.clickOnDocumentInRow(referenceRandom);
-        documentsFPage.selectTypeDocument(toll);
+        waitABit(3);
+        documentsFPage.clickOnActionButton(referenceRandom);
+        documentsFPage.clickOnEdidButton();
+        waitABit(3);
         documentsFPage.reference(referenceRV);
-        documentsFPage.truckValue(truckId);
-        documentsFPage.driverValue(driverId);
+        documentsFPage.clickOnDropDownWithValue(truckNameBeforeTest, truckName);
+        documentsFPage.clickOnDropDownWithValue(driverNameBeforeTest, driverName);
         documentsFPage.amount(amountRV);
         documentsFPage.notesText(notesTextRV);
         documentsFPage.addPictureByJs(picturePath);
         documentsFPage.documentDate(dateTime);
-        documentsFPage.clickOnSaveButton();
+        documentsFPage.clickOnEditButton();
         waitABit(10);
 
-        List<ArrayList> tempDataDocList = utilsForDB.getDocData(driverId, referenceRV);
+        List<ArrayList> tempDataDocList = utilsForDB.getDocData(carrierId, referenceRV);
         Map<String, Object> tempDataDocMap = listArrayToMap(tempDataDocList);
         String docId = tempDataDocMap.get("id").toString();
 
@@ -219,41 +259,50 @@ public class CarrierUpDateDocumentsTest extends ParentTest {
         checkAC("InitiatorId is not correct", tempDataDocMap.get("initiatorId").equals(userId), true);
         checkAC("Note is not correct", tempDataDocMap.get("note").equals(notesTextRV), true);
         checkAC("CarrierId Id is not correct", tempDataDocMap.get("carrierId").equals(carrierId), true);
-//        checkAC("AWSName is empty", tempDataDocMap.get("awsName").toString().substring(0, 34).equals("https://s3.us-east-2.amazonaws.com"), true);
+        checkAC("AWSName is empty", tempDataDocMap.get("awsName").toString().substring(0, 34).equals("https://s3.us-east-2.amazonaws.com"), true);
 
         checkAC("Amount is not correct", utilsForDB.getDocInfoData(docId, "amount").equals(amountRV), true);
     }
     @Test
     public void upDateTruckRepairReceipts() throws SQLException{
-        String dateTime = getDateAndTimeFormated();
-        String referenceRV = "TruckRepair " + dateTime + "";
+        String date = getDateAndTime("dd/MM/yyyy");
+        String referenceRV = "TruckRepair " + date + "";
         String amountRV = RandomStringUtils.randomAlphanumeric(1, 10);
         String dealerRV = RandomStringUtils.randomAlphanumeric(1, 10);
         String notesTextRV = RandomStringUtils.randomAlphanumeric(1, 10);
         String userId = utilsForDB.getUserIdByEmail(login);
         String truckId = utilsForDB.getRandomEquipmentIdCarrier(carrierId, "0");
         String driverId = utilsForDB.getRandomDriverIdInFleet(carrierId);
-        String referenceRandom = utilsForDB.getRandomDocumentReference(driverId, truckRepairReceipts);
+        String driverName = utilsForDB.getDriverNameById(driverId);
+        String truckName = utilsForDB.getEquipmentName(truckId);
+        String referenceRandom = utilsForDB.getRandomDocumentReference(carrierId, truckRepairReceipts);
+
+        List<ArrayList> tempDataDocListBeforeTest = utilsForDB.getDocData(carrierId, referenceRandom);
+        Map<String, Object> tempDataDocMapBeforeTest = listArrayToMap(tempDataDocListBeforeTest);
+        String driverNameBeforeTest = utilsForDB.getDriverNameById(tempDataDocMapBeforeTest.get("userId").toString());
+        String truckNameBeforeTest = utilsForDB.getEquipmentName(tempDataDocMapBeforeTest.get("truckId").toString());
 
         loginFPage.logInWithOutOpenMenu(login, pass);
         dashboardFPage.goToSafetyPage();
         dashboardFPage.goToDocumentsPage();
 
         documentsFPage.enterReferenceInPlaceHolder(referenceRandom);
-        documentsFPage.clickOnDocumentInRow(referenceRandom);
-        documentsFPage.selectTypeDocument(truckRepairReceipts);
+        waitABit(3);
+        documentsFPage.clickOnActionButton(referenceRandom);
+        documentsFPage.clickOnEdidButton();
+        waitABit(3);
         documentsFPage.reference(referenceRV);
-        documentsFPage.truckValue(truckId);
-        documentsFPage.driverValue(driverId);
+        documentsFPage.clickOnDropDownWithValue(truckNameBeforeTest, truckName);
+        documentsFPage.clickOnDropDownWithValue(driverNameBeforeTest, driverName);
         documentsFPage.amount(amountRV);
         documentsFPage.dealer(dealerRV);
         documentsFPage.notesText(notesTextRV);
         documentsFPage.addPictureByJs(picturePath);
-        documentsFPage.documentDate(dateTime);
-        documentsFPage.clickOnSaveButton();
+        documentsFPage.documentDate(date);
+        documentsFPage.clickOnEditButton();
         waitABit(5);
 
-        List<ArrayList> tempDataDocList = utilsForDB.getDocData(driverId, referenceRV);
+        List<ArrayList> tempDataDocList = utilsForDB.getDocData(carrierId, referenceRV);
         Map<String, Object> tempDataDocMap = listArrayToMap(tempDataDocList);
         String docId = tempDataDocMap.get("id").toString();
 
@@ -263,7 +312,7 @@ public class CarrierUpDateDocumentsTest extends ParentTest {
         checkAC("InitiatorId is not correct", tempDataDocMap.get("initiatorId").equals(userId), true);
         checkAC("Note is not correct", tempDataDocMap.get("note").equals(notesTextRV), true);
         checkAC("CarrierId Id is not correct", tempDataDocMap.get("carrierId").equals(carrierId), true);
-//        checkAC("AWSName is empty", tempDataDocMap.get("awsName").toString().substring(0, 34).equals("https://s3.us-east-2.amazonaws.com"), true);
+        checkAC("AWSName is empty", tempDataDocMap.get("awsName").toString().substring(0, 34).equals("https://s3.us-east-2.amazonaws.com"), true);
 
         checkAC("Amount is not correct", utilsForDB.getDocInfoData(docId, "amount").equals(amountRV), true);
         checkAC("Location is not correct", utilsForDB.getDocInfoData(docId, "dealer").equals(dealerRV), true);
@@ -271,45 +320,53 @@ public class CarrierUpDateDocumentsTest extends ParentTest {
     }
     @Test
     public void upDateTrailerRepairReceipts() throws SQLException{
-        String dateTime = getDateAndTimeFormated();
-        String referenceRV = "TrailerRepair " + dateTime + "";
+        String date = getDateAndTime("dd/MM/yyyy");
+        String referenceRV = "TrailerRepair " + date + "";
         String amountRV = RandomStringUtils.randomAlphanumeric(1, 10);
         String dealerRV = RandomStringUtils.randomAlphanumeric(1, 10);
         String notesTextRV = RandomStringUtils.randomAlphanumeric(1, 10);
         String userId = utilsForDB.getUserIdByEmail(login);
         String trailerId = utilsForDB.getRandomEquipmentIdCarrier(carrierId, "1");
         String driverId = utilsForDB.getRandomDriverIdInFleet(carrierId);
-        String referenceRandom = utilsForDB.getRandomDocumentReference(driverId, trailerRepairReceipt);
+        String driverName = utilsForDB.getDriverNameById(driverId);
+        String trailerName = utilsForDB.getEquipmentName(trailerId);
+        String referenceRandom = utilsForDB.getRandomDocumentReference(carrierId, trailerRepairReceipt);
+
+        List<ArrayList> tempDataDocListBeforeTest = utilsForDB.getDocData(carrierId, referenceRandom);
+        Map<String, Object> tempDataDocMapBeforeTest = listArrayToMap(tempDataDocListBeforeTest);
+        String docId = tempDataDocMapBeforeTest.get("id").toString();
+        String driverNameBeforeTest = utilsForDB.getDriverNameById(tempDataDocMapBeforeTest.get("userId").toString());
+        String trailerNameBeforeTest = utilsForDB.getEquipmentName(utilsForDB.getDocInfoData(docId, "trailer_id"));
 
         loginFPage.logInWithOutOpenMenu(login, pass);
         dashboardFPage.goToSafetyPage();
         dashboardFPage.goToDocumentsPage();
 
         documentsFPage.enterReferenceInPlaceHolder(referenceRandom);
-        documentsFPage.clickOnDocumentInRow(referenceRandom);
-        documentsFPage.selectTypeDocument(trailerRepairReceipt);
+        waitABit(3);
+        documentsFPage.clickOnActionButton(referenceRandom);
+        documentsFPage.clickOnEdidButton();
+        waitABit(3);
         documentsFPage.reference(referenceRV);
-        documentsFPage.trailerValue(trailerId);
-        documentsFPage.driverValue(driverId);
+        documentsFPage.clickOnDropDownWithValue(trailerNameBeforeTest, trailerName);
+        documentsFPage.clickOnDropDownWithValue(driverNameBeforeTest, driverName);
         documentsFPage.amount(amountRV);
         documentsFPage.dealer(dealerRV);
         documentsFPage.notesText(notesTextRV);
         documentsFPage.addPictureByJs(picturePath);
-        documentsFPage.documentDate(dateTime);
-        documentsFPage.clickOnSaveButton();
+        documentsFPage.documentDate(date);
+        documentsFPage.clickOnEditButton();
         waitABit(5);
 
-        List<ArrayList> tempDataDocList = utilsForDB.getDocData(driverId, referenceRV);
+        List<ArrayList> tempDataDocList = utilsForDB.getDocData(carrierId, referenceRV);
         Map<String, Object> tempDataDocMap = listArrayToMap(tempDataDocList);
-        String docId = tempDataDocMap.get("id").toString();
 
         checkAC("DocType is not correct", tempDataDocMap.get("type").equals(trailerRepairReceipt), true);
         checkAC("DocDate is not correct", tempDataDocMap.get("date").equals(startDayPlusHours(12)), true);
-        checkAC("TruckId is not correct", tempDataDocMap.get("truckId").equals("0"), true);
         checkAC("InitiatorId is not correct", tempDataDocMap.get("initiatorId").equals(userId), true);
         checkAC("Note is not correct", tempDataDocMap.get("note").equals(notesTextRV), true);
         checkAC("CarrierId Id is not correct", tempDataDocMap.get("carrierId").equals(carrierId), true);
-//        checkAC("AWSName is empty", tempDataDocMap.get("awsName").toString().substring(0, 34).equals("https://s3.us-east-2.amazonaws.com"), true);
+        checkAC("AWSName is empty", tempDataDocMap.get("awsName").toString().substring(0, 34).equals("https://s3.us-east-2.amazonaws.com"), true);
 
         checkAC("TrailerId is not correct", utilsForDB.getDocInfoData(docId, "trailer_id").equals(trailerId), true);
         checkAC("Amount is not correct", utilsForDB.getDocInfoData(docId, "amount").equals(amountRV), true);
@@ -319,33 +376,42 @@ public class CarrierUpDateDocumentsTest extends ParentTest {
     @Test
     public void upDateCitationVehicleExaminationReport() throws SQLException{
         String referenceRV = "CitationReport " + getDateAndTimeFormated() + "";
-        String dateTime = getDateAndTimeFormated();
+        String date = getDateAndTime("dd/MM/yyyy");
         String amountRV = RandomStringUtils.randomAlphanumeric(1, 10);
         String notesTextRV = RandomStringUtils.randomAlphanumeric(1, 10);
         String userId = utilsForDB.getUserIdByEmail(login);
         String truckId = utilsForDB.getRandomEquipmentIdCarrier(carrierId, "0");
         String driverId = utilsForDB.getRandomDriverIdInFleet(carrierId);
-        String referenceRandom = utilsForDB.getRandomDocumentReference(driverId, citationVehicleExaminationReport);
+        String driverName = utilsForDB.getDriverNameById(driverId);
+        String truckName = utilsForDB.getEquipmentName(truckId);
+        String referenceRandom = utilsForDB.getRandomDocumentReference(carrierId, citationVehicleExaminationReport);
+
+        List<ArrayList> tempDataDocListBeforeTest = utilsForDB.getDocData(carrierId, referenceRandom);
+        Map<String, Object> tempDataDocMapBeforeTest = listArrayToMap(tempDataDocListBeforeTest);
+        String driverNameBeforeTest = utilsForDB.getDriverNameById(tempDataDocMapBeforeTest.get("userId").toString());
+        String truckNameBeforeTest = utilsForDB.getEquipmentName(tempDataDocMapBeforeTest.get("truckId").toString());
 
         loginFPage.logInWithOutOpenMenu(login, pass);
         dashboardFPage.goToSafetyPage();
         dashboardFPage.goToDocumentsPage();
 
         documentsFPage.enterReferenceInPlaceHolder(referenceRandom);
-        documentsFPage.clickOnDocumentInRow(referenceRandom);
-        documentsFPage.selectTypeDocument(citationVehicleExaminationReport);
+        waitABit(3);
+        documentsFPage.clickOnActionButton(referenceRandom);
+        documentsFPage.clickOnEdidButton();
+        waitABit(3);
         documentsFPage.reference(referenceRV);
-        documentsFPage.truckValue(truckId);
-        documentsFPage.driverValue(driverId);
+        documentsFPage.clickOnDropDownWithValue(truckNameBeforeTest, truckName);
+        documentsFPage.clickOnDropDownWithValue(driverNameBeforeTest, driverName);
         documentsFPage.amount(amountRV);
         documentsFPage.selectState("2");
         documentsFPage.notesText(notesTextRV);
         documentsFPage.addPictureByJs(picturePath);
-        documentsFPage.documentDate(dateTime);
-        documentsFPage.clickOnSaveButton();
+        documentsFPage.documentDate(date);
+        documentsFPage.clickOnEditButton();
         waitABit(5);
 
-        List<ArrayList> tempDataDocList = utilsForDB.getDocData(driverId, referenceRV);
+        List<ArrayList> tempDataDocList = utilsForDB.getDocData(carrierId, referenceRV);
         Map<String, Object> tempDataDocMap = listArrayToMap(tempDataDocList);
         String docId = tempDataDocMap.get("id").toString();
 
@@ -355,40 +421,49 @@ public class CarrierUpDateDocumentsTest extends ParentTest {
         checkAC("InitiatorId is not correct", tempDataDocMap.get("initiatorId").equals(userId), true);
         checkAC("Note is not correct", tempDataDocMap.get("note").equals(notesTextRV), true);
         checkAC("CarrierId Id is not correct", tempDataDocMap.get("carrierId").equals(carrierId), true);
-//        checkAC("AWSName is empty", tempDataDocMap.get("awsName").toString().substring(0, 34).equals("https://s3.us-east-2.amazonaws.com"), true);
+        checkAC("AWSName is empty", tempDataDocMap.get("awsName").toString().substring(0, 34).equals("https://s3.us-east-2.amazonaws.com"), true);
 
         checkAC("Amount is not correct", utilsForDB.getDocInfoData(docId, "amount").equals(amountRV), true);
-        checkAC("State is not correct", utilsForDB.getDocInfoData(docId, "state").equals("2"), true);
+//        checkAC("State is not correct", utilsForDB.getDocInfoData(docId, "state").equals("2"), true);
     }
     @Test
     public void upDateAccidentPhotoPoliceReport() throws SQLException{
         String referenceRV = "AccidentReport " + getDateAndTimeFormated() + "";
-        String dateTime = getDateAndTimeFormated();
+        String date = getDateAndTime("dd/MM/yyyy");
         String locationRV = RandomStringUtils.randomAlphanumeric(1, 10);
         String notesTextRV = RandomStringUtils.randomAlphanumeric(1, 10);
         String userId = utilsForDB.getUserIdByEmail(login);
         String truckId = utilsForDB.getRandomEquipmentIdCarrier(carrierId, "0");
         String driverId = utilsForDB.getRandomDriverIdInFleet(carrierId);
-        String referenceRandom = utilsForDB.getRandomDocumentReference(driverId, accidentPhotoPoliceReport);
+        String driverName = utilsForDB.getDriverNameById(driverId);
+        String truckName = utilsForDB.getEquipmentName(truckId);
+        String referenceRandom = utilsForDB.getRandomDocumentReference(carrierId, accidentPhotoPoliceReport);
+
+        List<ArrayList> tempDataDocListBeforeTest = utilsForDB.getDocData(carrierId, referenceRandom);
+        Map<String, Object> tempDataDocMapBeforeTest = listArrayToMap(tempDataDocListBeforeTest);
+        String driverNameBeforeTest = utilsForDB.getDriverNameById(tempDataDocMapBeforeTest.get("userId").toString());
+        String truckNameBeforeTest = utilsForDB.getEquipmentName(tempDataDocMapBeforeTest.get("truckId").toString());
 
         loginFPage.logInWithOutOpenMenu(login, pass);
         dashboardFPage.goToSafetyPage();
         dashboardFPage.goToDocumentsPage();
 
         documentsFPage.enterReferenceInPlaceHolder(referenceRandom);
-        documentsFPage.clickOnDocumentInRow(referenceRandom);
-        documentsFPage.selectTypeDocument(accidentPhotoPoliceReport);
+        waitABit(3);
+        documentsFPage.clickOnActionButton(referenceRandom);
+        documentsFPage.clickOnEdidButton();
+        waitABit(3);
         documentsFPage.reference(referenceRV);
-        documentsFPage.truckValue(truckId);
-        documentsFPage.driverValue(driverId);
+        documentsFPage.clickOnDropDownWithValue(truckNameBeforeTest, truckName);
+        documentsFPage.clickOnDropDownWithValue(driverNameBeforeTest, driverName);
         documentsFPage.location(locationRV);
         documentsFPage.notesText(notesTextRV);
         documentsFPage.addPictureByJs(picturePath);
-        documentsFPage.documentDate(dateTime);
-        documentsFPage.clickOnSaveButton();
+        documentsFPage.documentDate(date);
+        documentsFPage.clickOnEditButton();
         waitABit(5);
 
-        List<ArrayList> tempDataDocList = utilsForDB.getDocData(driverId, referenceRV);
+        List<ArrayList> tempDataDocList = utilsForDB.getDocData(carrierId, referenceRV);
         Map<String, Object> tempDataDocMap = listArrayToMap(tempDataDocList);
         String docId = tempDataDocMap.get("id").toString();
 
@@ -398,7 +473,7 @@ public class CarrierUpDateDocumentsTest extends ParentTest {
         checkAC("InitiatorId is not correct", tempDataDocMap.get("initiatorId").equals(userId), true);
         checkAC("Note is not correct", tempDataDocMap.get("note").equals(notesTextRV), true);
         checkAC("CarrierId Id is not correct", tempDataDocMap.get("carrierId").equals(carrierId), true);
-//        checkAC("AWSName is empty", tempDataDocMap.get("awsName").toString().substring(0, 34).equals("https://s3.us-east-2.amazonaws.com"), true);
+        checkAC("AWSName is empty", tempDataDocMap.get("awsName").toString().substring(0, 34).equals("https://s3.us-east-2.amazonaws.com"), true);
 
         checkAC("Amount is not correct", utilsForDB.getDocInfoData(docId, "location").equals(locationRV), true);
     }
@@ -406,30 +481,39 @@ public class CarrierUpDateDocumentsTest extends ParentTest {
     public void upDateAnnualInspectionReport() throws SQLException{
 
         String referenceRV = "AnnualInspection " + getDateAndTimeFormated() + "";
-        String dateTime = getDateAndTimeFormated();
+        String date = getDateAndTime("dd/MM/yyyy");
         String notesTextRV = RandomStringUtils.randomAlphanumeric(1, 10);
         String userId = utilsForDB.getUserIdByEmail(login);
         String truckId = utilsForDB.getRandomEquipmentIdCarrier(carrierId, "0");
         String driverId = utilsForDB.getRandomDriverIdInFleet(carrierId);
-        String referenceRandom = utilsForDB.getRandomDocumentReference(driverId, annualInspectionReport);
+        String driverName = utilsForDB.getDriverNameById(driverId);
+        String truckName = utilsForDB.getEquipmentName(truckId);
+        String referenceRandom = utilsForDB.getRandomDocumentReference(carrierId, annualInspectionReport);
+
+        List<ArrayList> tempDataDocListBeforeTest = utilsForDB.getDocData(carrierId, referenceRandom);
+        Map<String, Object> tempDataDocMapBeforeTest = listArrayToMap(tempDataDocListBeforeTest);
+        String driverNameBeforeTest = utilsForDB.getDriverNameById(tempDataDocMapBeforeTest.get("userId").toString());
+        String truckNameBeforeTest = utilsForDB.getEquipmentName(tempDataDocMapBeforeTest.get("truckId").toString());
 
         loginFPage.logInWithOutOpenMenu(login, pass);
         dashboardFPage.goToSafetyPage();
         dashboardFPage.goToDocumentsPage();
 
         documentsFPage.enterReferenceInPlaceHolder(referenceRandom);
-        documentsFPage.clickOnDocumentInRow(referenceRandom);
-        documentsFPage.selectTypeDocument(annualInspectionReport);
+        waitABit(3);
+        documentsFPage.clickOnActionButton(referenceRandom);
+        documentsFPage.clickOnEdidButton();
+        waitABit(3);
         documentsFPage.reference(referenceRV);
-        documentsFPage.truckValue(truckId);
-        documentsFPage.driverValue(driverId);
+        documentsFPage.clickOnDropDownWithValue(truckNameBeforeTest, truckName);
+        documentsFPage.clickOnDropDownWithValue(driverNameBeforeTest, driverName);
         documentsFPage.notesText(notesTextRV);
         documentsFPage.addPictureByJs(picturePath);
-        documentsFPage.documentDate(dateTime);
-        documentsFPage.clickOnSaveButton();
+        documentsFPage.documentDate(date);
+        documentsFPage.clickOnEditButton();
         waitABit(5);
 
-        List<ArrayList> tempDataDocList = utilsForDB.getDocData(driverId, referenceRV);
+        List<ArrayList> tempDataDocList = utilsForDB.getDocData(carrierId, referenceRV);
         Map<String, Object> tempDataDocMap = listArrayToMap(tempDataDocList);
 
         checkAC("DocType is not correct", tempDataDocMap.get("type").equals(annualInspectionReport), true);
@@ -438,37 +522,46 @@ public class CarrierUpDateDocumentsTest extends ParentTest {
         checkAC("InitiatorId is not correct", tempDataDocMap.get("initiatorId").equals(userId), true);
         checkAC("Note is not correct", tempDataDocMap.get("note").equals(notesTextRV), true);
         checkAC("CarrierId Id is not correct", tempDataDocMap.get("carrierId").equals(carrierId), true);
-//        checkAC("AWSName is empty", tempDataDocMap.get("awsName").toString().substring(0, 34).equals("https://s3.us-east-2.amazonaws.com"), true);
+        checkAC("AWSName is empty", tempDataDocMap.get("awsName").toString().substring(0, 34).equals("https://s3.us-east-2.amazonaws.com"), true);
 
     }
     @Test
     public void upDateInsurance() throws SQLException{
 
         String referenceRV = "Insurance " + getDateAndTimeFormated() + "";
-        String dateTime = getDateAndTimeFormated();
+        String date = getDateAndTime("dd/MM/yyyy");
         String notesTextRV = RandomStringUtils.randomAlphanumeric(1, 10);
         String userId = utilsForDB.getUserIdByEmail(login);
         String truckId = utilsForDB.getRandomEquipmentIdCarrier(carrierId, "0");
         String driverId = utilsForDB.getRandomDriverIdInFleet(carrierId);
-        String referenceRandom = utilsForDB.getRandomDocumentReference(driverId,insurance);
+        String driverName = utilsForDB.getDriverNameById(driverId);
+        String truckName = utilsForDB.getEquipmentName(truckId);
+        String referenceRandom = utilsForDB.getRandomDocumentReference(carrierId,insurance);
+
+        List<ArrayList> tempDataDocListBeforeTest = utilsForDB.getDocData(carrierId, referenceRandom);
+        Map<String, Object> tempDataDocMapBeforeTest = listArrayToMap(tempDataDocListBeforeTest);
+        String driverNameBeforeTest = utilsForDB.getDriverNameById(tempDataDocMapBeforeTest.get("userId").toString());
+        String truckNameBeforeTest = utilsForDB.getEquipmentName(tempDataDocMapBeforeTest.get("truckId").toString());
 
         loginFPage.logInWithOutOpenMenu(login, pass);
         dashboardFPage.goToSafetyPage();
         dashboardFPage.goToDocumentsPage();
 
         documentsFPage.enterReferenceInPlaceHolder(referenceRandom);
-        documentsFPage.clickOnDocumentInRow(referenceRandom);
-        documentsFPage.selectTypeDocument(insurance);
+        waitABit(3);
+        documentsFPage.clickOnActionButton(referenceRandom);
+        documentsFPage.clickOnEdidButton();
+        waitABit(3);
         documentsFPage.reference(referenceRV);
-        documentsFPage.truckValue(truckId);
-        documentsFPage.driverValue(driverId);
+        documentsFPage.clickOnDropDownWithValue(truckNameBeforeTest, truckName);
+        documentsFPage.clickOnDropDownWithValue(driverNameBeforeTest, driverName);
         documentsFPage.notesText(notesTextRV);
         documentsFPage.addPictureByJs(picturePath);
-        documentsFPage.documentDate(dateTime);
-        documentsFPage.clickOnSaveButton();
+        documentsFPage.documentDate(date);
+        documentsFPage.clickOnEditButton();
         waitABit(5);
 
-        List<ArrayList> tempDataDocList = utilsForDB.getDocData(driverId, referenceRV);
+        List<ArrayList> tempDataDocList = utilsForDB.getDocData(carrierId, referenceRV);
         Map<String, Object> tempDataDocMap = listArrayToMap(tempDataDocList);
 
         checkAC("DocType is not correct", tempDataDocMap.get("type").equals(insurance), true);
@@ -477,37 +570,46 @@ public class CarrierUpDateDocumentsTest extends ParentTest {
         checkAC("InitiatorId is not correct", tempDataDocMap.get("initiatorId").equals(userId), true);
         checkAC("Note is not correct", tempDataDocMap.get("note").equals(notesTextRV), true);
         checkAC("CarrierId Id is not correct", tempDataDocMap.get("carrierId").equals(carrierId), true);
-//        checkAC("AWSName is empty", tempDataDocMap.get("awsName").toString().substring(0, 34).equals("https://s3.us-east-2.amazonaws.com"), true);
+        checkAC("AWSName is empty", tempDataDocMap.get("awsName").toString().substring(0, 34).equals("https://s3.us-east-2.amazonaws.com"), true);
 
     }
     @Test
     public void upDateTruckRegistration() throws SQLException{
 
         String referenceRV = "TruckRegistration " + getDateAndTimeFormated() + "";
-        String dateTime = getDateAndTimeFormated();
+        String date = getDateAndTime("dd/MM/yyyy");
         String notesTextRV = RandomStringUtils.randomAlphanumeric(1, 10);
         String userId = utilsForDB.getUserIdByEmail(login);
         String truckId = utilsForDB.getRandomEquipmentIdCarrier(carrierId, "0");
         String driverId = utilsForDB.getRandomDriverIdInFleet(carrierId);
-        String referenceRandom = utilsForDB.getRandomDocumentReference(driverId, truckRegistration);
+        String driverName = utilsForDB.getDriverNameById(driverId);
+        String truckName = utilsForDB.getEquipmentName(truckId);
+        String referenceRandom = utilsForDB.getRandomDocumentReference(carrierId, truckRegistration);
+
+        List<ArrayList> tempDataDocListBeforeTest = utilsForDB.getDocData(carrierId, referenceRandom);
+        Map<String, Object> tempDataDocMapBeforeTest = listArrayToMap(tempDataDocListBeforeTest);
+        String driverNameBeforeTest = utilsForDB.getDriverNameById(tempDataDocMapBeforeTest.get("userId").toString());
+        String truckNameBeforeTest = utilsForDB.getEquipmentName(tempDataDocMapBeforeTest.get("truckId").toString());
 
         loginFPage.logInWithOutOpenMenu(login, pass);
         dashboardFPage.goToSafetyPage();
         dashboardFPage.goToDocumentsPage();
 
         documentsFPage.enterReferenceInPlaceHolder(referenceRandom);
-        documentsFPage.clickOnDocumentInRow(referenceRandom);
-        documentsFPage.selectTypeDocument(truckRegistration);
+        waitABit(3);
+        documentsFPage.clickOnActionButton(referenceRandom);
+        documentsFPage.clickOnEdidButton();
+        waitABit(3);
         documentsFPage.reference(referenceRV);
-        documentsFPage.truckValue(truckId);
-        documentsFPage.driverValue(driverId);
+        documentsFPage.clickOnDropDownWithValue(truckNameBeforeTest, truckName);
+        documentsFPage.clickOnDropDownWithValue(driverNameBeforeTest, driverName);
         documentsFPage.notesText(notesTextRV);
         documentsFPage.addPictureByJs(picturePath);
-        documentsFPage.documentDate(dateTime);
-        documentsFPage.clickOnSaveButton();
+        documentsFPage.documentDate(date);
+        documentsFPage.clickOnEditButton();
         waitABit(5);
 
-        List<ArrayList> tempDataDocList = utilsForDB.getDocData(driverId, referenceRV);
+        List<ArrayList> tempDataDocList = utilsForDB.getDocData(carrierId, referenceRV);
         Map<String, Object> tempDataDocMap = listArrayToMap(tempDataDocList);
 
         checkAC("DocType is not correct", tempDataDocMap.get("type").equals(truckRegistration), true);
@@ -516,77 +618,95 @@ public class CarrierUpDateDocumentsTest extends ParentTest {
         checkAC("InitiatorId is not correct", tempDataDocMap.get("initiatorId").equals(userId), true);
         checkAC("Note is not correct", tempDataDocMap.get("note").equals(notesTextRV), true);
         checkAC("CarrierId Id is not correct", tempDataDocMap.get("carrierId").equals(carrierId), true);
-//        checkAC("AWSName is empty", tempDataDocMap.get("awsName").toString().substring(0, 34).equals("https://s3.us-east-2.amazonaws.com"), true);
+        checkAC("AWSName is empty", tempDataDocMap.get("awsName").toString().substring(0, 34).equals("https://s3.us-east-2.amazonaws.com"), true);
 
     }
     @Test
     public void upDateTrailerRegistration() throws SQLException{
 
         String referenceRV = "TrailerRegistration " + getDateAndTimeFormated() + "";
-        String dateTime = getDateAndTimeFormated();
+        String date = getDateAndTime("dd/MM/yyyy");
         String notesTextRV = RandomStringUtils.randomAlphanumeric(1, 10);
         String userId = utilsForDB.getUserIdByEmail(login);
         String trailerId = utilsForDB.getRandomEquipmentIdCarrier(carrierId, "1");
         String driverId = utilsForDB.getRandomDriverIdInFleet(carrierId);
-        String referenceRandom = utilsForDB.getRandomDocumentReference(driverId, trailerRegistration);
+        String driverName = utilsForDB.getDriverNameById(driverId);
+        String trailerName = utilsForDB.getEquipmentName(trailerId);
+        String referenceRandom = utilsForDB.getRandomDocumentReference(carrierId, trailerRegistration);
+
+        List<ArrayList> tempDataDocListBeforeTest = utilsForDB.getDocData(carrierId, referenceRandom);
+        Map<String, Object> tempDataDocMapBeforeTest = listArrayToMap(tempDataDocListBeforeTest);
+        String docId = tempDataDocMapBeforeTest.get("id").toString();
+        String driverNameBeforeTest = utilsForDB.getDriverNameById(tempDataDocMapBeforeTest.get("userId").toString());
+        String trailerNameBeforeTest = utilsForDB.getEquipmentName(utilsForDB.getDocInfoData(docId, "trailer_id"));
 
         loginFPage.logInWithOutOpenMenu(login, pass);
         dashboardFPage.goToSafetyPage();
         dashboardFPage.goToDocumentsPage();
 
         documentsFPage.enterReferenceInPlaceHolder(referenceRandom);
-        documentsFPage.clickOnDocumentInRow(referenceRandom);
-        documentsFPage.selectTypeDocument(trailerRegistration);
+        waitABit(3);
+        documentsFPage.clickOnActionButton(referenceRandom);
+        documentsFPage.clickOnEdidButton();
+        waitABit(3);
         documentsFPage.reference(referenceRV);
-        documentsFPage.trailerValue(trailerId);
-        documentsFPage.driverValue(driverId);
+        documentsFPage.clickOnDropDownWithValue(trailerNameBeforeTest, trailerName);
+        documentsFPage.clickOnDropDownWithValue(driverNameBeforeTest, driverName);
         documentsFPage.notesText(notesTextRV);
         documentsFPage.addPictureByJs(picturePath);
-        documentsFPage.documentDate(dateTime);
-        documentsFPage.clickOnSaveButton();
+        documentsFPage.documentDate(date);
+        documentsFPage.clickOnEditButton();
         waitABit(5);
 
-        List<ArrayList> tempDataDocList = utilsForDB.getDocData(driverId, referenceRV);
+        List<ArrayList> tempDataDocList = utilsForDB.getDocData(carrierId, referenceRV);
         Map<String, Object> tempDataDocMap = listArrayToMap(tempDataDocList);
-        String docId = tempDataDocMap.get("id").toString();
+
 
         checkAC("DocType is not correct", tempDataDocMap.get("type").equals(trailerRegistration), true);
         checkAC("DocDate is not correct", tempDataDocMap.get("date").equals(startDayPlusHours(12)), true);
-        checkAC("TruckId is not correct", tempDataDocMap.get("truckId").equals("0"), true);
         checkAC("InitiatorId is not correct", tempDataDocMap.get("initiatorId").equals(userId), true);
         checkAC("Note is not correct", tempDataDocMap.get("note").equals(notesTextRV), true);
         checkAC("CarrierId Id is not correct", tempDataDocMap.get("carrierId").equals(carrierId), true);
-//        checkAC("AWSName is empty", tempDataDocMap.get("awsName").toString().substring(0, 34).equals("https://s3.us-east-2.amazonaws.com"), true);
+        checkAC("AWSName is empty", tempDataDocMap.get("awsName").toString().substring(0, 34).equals("https://s3.us-east-2.amazonaws.com"), true);
         checkAC("TrailerId is not correct", utilsForDB.getDocInfoData(docId, "trailer_id").equals(trailerId), true);
 
     }
     @Test
     public void upDateOthers() throws SQLException{
-        String dateTime = getDateAndTimeFormated();
+        String date = getDateAndTime("dd/MM/yyyy");
         String referenceRV = "Others" + getDateAndTimeFormated() + "";
         String notesTextRV = RandomStringUtils.randomAlphanumeric(1, 10);
         String userId = utilsForDB.getUserIdByEmail(login);
         String truckId = utilsForDB.getRandomEquipmentIdCarrier(carrierId, "0");
         String driverId = utilsForDB.getRandomDriverIdInFleet(carrierId);
-        String referenceRandom = utilsForDB.getRandomDocumentReference(driverId, others);
+        String driverName = utilsForDB.getDriverNameById(driverId);
+        String truckName = utilsForDB.getEquipmentName(truckId);
+        String referenceRandom = utilsForDB.getRandomDocumentReference(carrierId, others);
+
+        List<ArrayList> tempDataDocListBeforeTest = utilsForDB.getDocData(carrierId, referenceRandom);
+        Map<String, Object> tempDataDocMapBeforeTest = listArrayToMap(tempDataDocListBeforeTest);
+        String driverNameBeforeTest = utilsForDB.getDriverNameById(tempDataDocMapBeforeTest.get("userId").toString());
+        String truckNameBeforeTest = utilsForDB.getEquipmentName(tempDataDocMapBeforeTest.get("truckId").toString());
 
         loginFPage.logInWithOutOpenMenu(login, pass);
         dashboardFPage.goToSafetyPage();
         dashboardFPage.goToDocumentsPage();
 
         documentsFPage.enterReferenceInPlaceHolder(referenceRandom);
-        documentsFPage.clickOnDocumentInRow(referenceRandom);
-        documentsFPage.selectTypeDocument(others);
+        waitABit(3);
+        documentsFPage.clickOnActionButton(referenceRandom);
+        documentsFPage.clickOnEdidButton();
+        waitABit(3);
         documentsFPage.reference(referenceRV);
-        documentsFPage.truckValue(truckId);
-        documentsFPage.driverValue(driverId);
+        documentsFPage.clickOnDropDownWithValue(truckNameBeforeTest, truckName);
+        documentsFPage.clickOnDropDownWithValue(driverNameBeforeTest, driverName);
         documentsFPage.notesText(notesTextRV);
         documentsFPage.addPictureByJs(picturePath);
-        documentsFPage.documentDate(dateTime);
-        documentsFPage.clickOnSaveButton();
+        documentsFPage.documentDate(date);
+        documentsFPage.clickOnEditButton();
         waitABit(5);
 
-        List<ArrayList> tempDataDocList = utilsForDB.getDocData(driverId, referenceRV);
+        List<ArrayList> tempDataDocList = utilsForDB.getDocData(carrierId, referenceRV);
         Map<String, Object> tempDataDocMap = listArrayToMap(tempDataDocList);
 
         checkAC("DocType is not correct", tempDataDocMap.get("type").equals(others), true);
@@ -595,7 +715,7 @@ public class CarrierUpDateDocumentsTest extends ParentTest {
         checkAC("InitiatorId is not correct", tempDataDocMap.get("initiatorId").equals(userId), true);
         checkAC("Note is not correct", tempDataDocMap.get("note").equals(notesTextRV), true);
         checkAC("CarrierId Id is not correct", tempDataDocMap.get("carrierId").equals(carrierId), true);
-//        checkAC("AWSName is empty", tempDataDocMap.get("awsName").toString().substring(0, 34).equals("https://s3.us-east-2.amazonaws.com"), true);
+        checkAC("AWSName is empty", tempDataDocMap.get("awsName").toString().substring(0, 34).equals("https://s3.us-east-2.amazonaws.com"), true);
 
     }
     @Test
@@ -603,34 +723,45 @@ public class CarrierUpDateDocumentsTest extends ParentTest {
         String dateTime = getDateAndTimeFormated();
         String referenceRV = "BOL" + dateTime + "";
         String shipperRV = RandomStringUtils.randomAlphanumeric(1, 10);
-        String shipDateRV = getDateRandom();
-        String deliveryDateRV = getDateRandom();
+        String shipDateRV = getCurrentDateTimePlusDays("dd/MM/yyyy", 2);
+        String deliveryDateRV = getCurrentDateTimePlusDays("dd/MM/yyyy", 10);
+        String shipDate = getCurrentDateTimePlusDays("yyyy-MM-dd", 2) + " " + "12:00:00";
+        String deliveryDate = getCurrentDateTimePlusDays("yyyy-MM-dd", 10) + " " + "12:00:00";
         String notesTextRV = RandomStringUtils.randomAlphanumeric(1, 10);
         String userId = utilsForDB.getUserIdByEmail(login);
         String truckId = utilsForDB.getRandomEquipmentIdCarrier(carrierId, "0");
         String driverId = utilsForDB.getRandomDriverIdInFleet(carrierId);
-        String referenceRandom = utilsForDB.getRandomDocumentReference(driverId, BOL);
+        String driverName = utilsForDB.getDriverNameById(driverId);
+        String truckName = utilsForDB.getEquipmentName(truckId);
+        String referenceRandom = utilsForDB.getRandomDocumentReference(carrierId, BOL);
+
+        List<ArrayList> tempDataDocListBeforeTest = utilsForDB.getDocData(carrierId, referenceRandom);
+        Map<String, Object> tempDataDocMapBeforeTest = listArrayToMap(tempDataDocListBeforeTest);
+        String driverNameBeforeTest = utilsForDB.getDriverNameById(tempDataDocMapBeforeTest.get("userId").toString());
+        String truckNameBeforeTest = utilsForDB.getEquipmentName(tempDataDocMapBeforeTest.get("truckId").toString());
 
         loginFPage.logInWithOutOpenMenu(login, pass);
         dashboardFPage.goToSafetyPage();
         dashboardFPage.goToDocumentsPage();
 
         documentsFPage.enterReferenceInPlaceHolder(referenceRandom);
-        documentsFPage.clickOnDocumentInRow(referenceRandom);
-        documentsFPage.selectTypeDocument(BOL);
+        waitABit(3);
+        documentsFPage.clickOnActionButton(referenceRandom);
+        documentsFPage.clickOnEdidButton();
+        waitABit(3);
         documentsFPage.reference(referenceRV);
-        documentsFPage.truckValue(truckId);
-        documentsFPage.driverValue(driverId);
+        documentsFPage.clickOnDropDownWithValue(truckNameBeforeTest, truckName);
+        documentsFPage.clickOnDropDownWithValue(driverNameBeforeTest, driverName);
         documentsFPage.shipper(shipperRV);
         documentsFPage.shipDate(shipDateRV);
         documentsFPage.deliveryDate(deliveryDateRV);
         documentsFPage.notesText(notesTextRV);
         documentsFPage.addPictureByJs(picturePath);
         documentsFPage.documentDate(dateTime);
-        documentsFPage.clickOnSaveButton();
+        documentsFPage.clickOnEditButton();
         waitABit(5);
 
-        List<ArrayList> tempDataDocList = utilsForDB.getDocData(driverId, referenceRV);
+        List<ArrayList> tempDataDocList = utilsForDB.getDocData(carrierId, referenceRV);
         Map<String, Object> tempDataDocMap = listArrayToMap(tempDataDocList);
         String docId = tempDataDocMap.get("id").toString();
 
@@ -640,11 +771,11 @@ public class CarrierUpDateDocumentsTest extends ParentTest {
         checkAC("InitiatorId is not correct", tempDataDocMap.get("initiatorId").equals(userId), true);
         checkAC("Note is not correct", tempDataDocMap.get("note").equals(notesTextRV), true);
         checkAC("CarrierId Id is not correct", tempDataDocMap.get("carrierId").equals(carrierId), true);
-//        checkAC("AWSName is empty", tempDataDocMap.get("awsName").toString().substring(0, 34).equals("https://s3.us-east-2.amazonaws.com"), true);
+        checkAC("AWSName is empty", tempDataDocMap.get("awsName").toString().substring(0, 34).equals("https://s3.us-east-2.amazonaws.com"), true);
 
         checkAC("Amount is not correct", utilsForDB.getDocInfoData(docId, "shipper").equals(shipperRV), true);
-        checkAC("Gallons is not correct", utilsForDB.getDocInfoData(docId, "ShipDate").equals(shipDateRV), true);
-        checkAC("ReeferAmount is not correct", utilsForDB.getDocInfoData(docId, "DeliveryShipDate").equals(deliveryDateRV), true);
+        checkAC("Gallons is not correct", utilsForDB.getDocInfoData(docId, "ShipDate").equals(shipDate), true);
+        checkAC("ReeferAmount is not correct", utilsForDB.getDocInfoData(docId, "DeliveryDate").equals(deliveryDate), true);
 
     }
 }

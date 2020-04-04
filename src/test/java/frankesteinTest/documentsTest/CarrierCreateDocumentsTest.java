@@ -54,7 +54,7 @@ public class CarrierCreateDocumentsTest extends ParentTest {
         String truckId = utilsForDB.getRandomEquipmentIdCarrier(carrierId, "0");
         String truckName = utilsForDB.getEquipmentName(truckId);
         String driverId = utilsForDB.getRandomDriverIdInFleet(carrierId);
-        String driverName = utilsForDB.getRandomDriverNameInFleet(driverId);
+        String driverName = utilsForDB.getDriverNameById(driverId);
 
         String state = genRandomStateName();
 
@@ -82,7 +82,7 @@ public class CarrierCreateDocumentsTest extends ParentTest {
         documentsFPage.clickOnSaveButton();
         waitABit(5);
 
-        List<ArrayList> tempDataDocList = utilsForDB.getDocData(driverId, referenceRV);
+        List<ArrayList> tempDataDocList = utilsForDB.getDocData(carrierId, referenceRV);
         Map<String, Object> tempDataDocMap = listArrayToMap(tempDataDocList);
         String docId = tempDataDocMap.get("id").toString();
 
@@ -113,7 +113,7 @@ public class CarrierCreateDocumentsTest extends ParentTest {
         String truckId = utilsForDB.getRandomEquipmentIdCarrier(carrierId, "0");
         String truckName = utilsForDB.getEquipmentName(truckId);
         String driverId = utilsForDB.getRandomDriverIdInFleet(carrierId);
-        String driverName = utilsForDB.getRandomDriverNameInFleet(driverId);
+        String driverName = utilsForDB.getDriverNameById(driverId);
 
         loginFPage.logInWithOutOpenMenu(login, pass);
         dashboardFPage.goToSafetyPage();
@@ -132,7 +132,7 @@ public class CarrierCreateDocumentsTest extends ParentTest {
         documentsFPage.clickOnSaveButton();
         waitABit(5);
 
-        List<ArrayList> tempDataDocList = utilsForDB.getDocData(driverId, referenceRV);
+        List<ArrayList> tempDataDocList = utilsForDB.getDocData(carrierId, referenceRV);
         Map<String, Object> tempDataDocMap = listArrayToMap(tempDataDocList);
         String docId = tempDataDocMap.get("id").toString();
 
@@ -156,7 +156,7 @@ public class CarrierCreateDocumentsTest extends ParentTest {
         String userId = utilsForDB.getUserIdByEmail(login);
         String truckId = utilsForDB.getRandomEquipmentIdCarrier(carrierId, "0");
         String driverId = utilsForDB.getRandomDriverIdInFleet(carrierId);
-        String driverName = utilsForDB.getRandomDriverNameInFleet(driverId);
+        String driverName = utilsForDB.getDriverNameById(driverId);
         String truckName = utilsForDB.getEquipmentName(truckId);
 
         loginFPage.logInWithOutOpenMenu(login, pass);
@@ -175,7 +175,7 @@ public class CarrierCreateDocumentsTest extends ParentTest {
         documentsFPage.clickOnSaveButton();
         waitABit(5);
 
-        List<ArrayList> tempDataDocList = utilsForDB.getDocData(driverId, referenceRV);
+        List<ArrayList> tempDataDocList = utilsForDB.getDocData(carrierId, referenceRV);
         Map<String, Object> tempDataDocMap = listArrayToMap(tempDataDocList);
         String docId = tempDataDocMap.get("id").toString();
 
@@ -198,7 +198,7 @@ public class CarrierCreateDocumentsTest extends ParentTest {
         String userId = utilsForDB.getUserIdByEmail(login);
         String truckId = utilsForDB.getRandomEquipmentIdCarrier(carrierId, "0");
         String driverId = utilsForDB.getRandomDriverIdInFleet(carrierId);
-        String driverName = utilsForDB.getRandomDriverNameInFleet(driverId);
+        String driverName = utilsForDB.getDriverNameById(driverId);
         String truckName = utilsForDB.getEquipmentName(truckId);
 
         loginFPage.logInWithOutOpenMenu(login, pass);
@@ -217,7 +217,7 @@ public class CarrierCreateDocumentsTest extends ParentTest {
         documentsFPage.clickOnSaveButton();
         waitABit(10);
 
-        List<ArrayList> tempDataDocList = utilsForDB.getDocData(driverId, referenceRV);
+        List<ArrayList> tempDataDocList = utilsForDB.getDocData(carrierId, referenceRV);
         Map<String, Object> tempDataDocMap = listArrayToMap(tempDataDocList);
         String docId = tempDataDocMap.get("id").toString();
 
@@ -240,7 +240,7 @@ public class CarrierCreateDocumentsTest extends ParentTest {
         String userId = utilsForDB.getUserIdByEmail(login);
         String truckId = utilsForDB.getRandomEquipmentIdCarrier(carrierId, "0");
         String driverId = utilsForDB.getRandomDriverIdInFleet(carrierId);
-        String driverName = utilsForDB.getRandomDriverNameInFleet(driverId);
+        String driverName = utilsForDB.getDriverNameById(driverId);
         String truckName = utilsForDB.getEquipmentName(truckId);
 
         loginFPage.logInWithOutOpenMenu(login, pass);
@@ -260,7 +260,7 @@ public class CarrierCreateDocumentsTest extends ParentTest {
         documentsFPage.clickOnSaveButton();
         waitABit(5);
 
-        List<ArrayList> tempDataDocList = utilsForDB.getDocData(driverId, referenceRV);
+        List<ArrayList> tempDataDocList = utilsForDB.getDocData(carrierId, referenceRV);
         Map<String, Object> tempDataDocMap = listArrayToMap(tempDataDocList);
         String docId = tempDataDocMap.get("id").toString();
 
@@ -285,7 +285,7 @@ public class CarrierCreateDocumentsTest extends ParentTest {
         String userId = utilsForDB.getUserIdByEmail(login);
         String trailerId = utilsForDB.getRandomEquipmentIdCarrier(carrierId, "1");
         String driverId = utilsForDB.getRandomDriverIdInFleet(carrierId);
-        String driverName = utilsForDB.getRandomDriverNameInFleet(driverId);
+        String driverName = utilsForDB.getDriverNameById(driverId);
         String trailerName = utilsForDB.getEquipmentName(trailerId);
 
         loginFPage.logInWithOutOpenMenu(login, pass);
@@ -305,13 +305,12 @@ public class CarrierCreateDocumentsTest extends ParentTest {
         documentsFPage.clickOnSaveButton();
         waitABit(5);
 
-        List<ArrayList> tempDataDocList = utilsForDB.getDocData(driverId, referenceRV);
+        List<ArrayList> tempDataDocList = utilsForDB.getDocData(carrierId, referenceRV);
         Map<String, Object> tempDataDocMap = listArrayToMap(tempDataDocList);
         String docId = tempDataDocMap.get("id").toString();
 
         checkAC("DocType is not correct", tempDataDocMap.get("type").equals(trailerRepairReceipt), true);
         checkAC("DocDate is not correct", tempDataDocMap.get("date").equals(startDayPlusHours(12)), true);
-        checkAC("TruckId is not correct", tempDataDocMap.get("truckId").equals("0"), true);
         checkAC("InitiatorId is not correct", tempDataDocMap.get("initiatorId").equals(userId), true);
         checkAC("Note is not correct", tempDataDocMap.get("note").equals(notesTextRV), true);
         checkAC("CarrierId Id is not correct", tempDataDocMap.get("carrierId").equals(carrierId), true);
@@ -331,8 +330,9 @@ public class CarrierCreateDocumentsTest extends ParentTest {
         String userId = utilsForDB.getUserIdByEmail(login);
         String truckId = utilsForDB.getRandomEquipmentIdCarrier(carrierId, "0");
         String driverId = utilsForDB.getRandomDriverIdInFleet(carrierId);
-        String driverName = utilsForDB.getRandomDriverNameInFleet(driverId);
+        String driverName = utilsForDB.getDriverNameById(driverId);
         String truckName = utilsForDB.getEquipmentName(truckId);
+        String state = genRandomStateName();
 
         loginFPage.logInWithOutOpenMenu(login, pass);
         dashboardFPage.goToSafetyPage();
@@ -344,14 +344,14 @@ public class CarrierCreateDocumentsTest extends ParentTest {
         documentsFPage.truckValue(truckName);
         documentsFPage.driverValue(driverName);
         documentsFPage.amount(amountRV);
-        documentsFPage.selectState("2");
+        documentsFPage.selectState(state);
         documentsFPage.notesText(notesTextRV);
         documentsFPage.addPictureByJs(picturePath);
         documentsFPage.documentDate(date);
         documentsFPage.clickOnSaveButton();
         waitABit(5);
 
-        List<ArrayList> tempDataDocList = utilsForDB.getDocData(driverId, referenceRV);
+        List<ArrayList> tempDataDocList = utilsForDB.getDocData(carrierId, referenceRV);
         Map<String, Object> tempDataDocMap = listArrayToMap(tempDataDocList);
         String docId = tempDataDocMap.get("id").toString();
 
@@ -375,7 +375,7 @@ public class CarrierCreateDocumentsTest extends ParentTest {
         String userId = utilsForDB.getUserIdByEmail(login);
         String truckId = utilsForDB.getRandomEquipmentIdCarrier(carrierId, "0");
         String driverId = utilsForDB.getRandomDriverIdInFleet(carrierId);
-        String driverName = utilsForDB.getRandomDriverNameInFleet(driverId);
+        String driverName = utilsForDB.getDriverNameById(driverId);
         String truckName = utilsForDB.getEquipmentName(truckId);
 
         loginFPage.logInWithOutOpenMenu(login, pass);
@@ -394,7 +394,7 @@ public class CarrierCreateDocumentsTest extends ParentTest {
         documentsFPage.clickOnSaveButton();
         waitABit(5);
 
-        List<ArrayList> tempDataDocList = utilsForDB.getDocData(driverId, referenceRV);
+        List<ArrayList> tempDataDocList = utilsForDB.getDocData(carrierId, referenceRV);
         Map<String, Object> tempDataDocMap = listArrayToMap(tempDataDocList);
         String docId = tempDataDocMap.get("id").toString();
 
@@ -417,7 +417,7 @@ public class CarrierCreateDocumentsTest extends ParentTest {
         String userId = utilsForDB.getUserIdByEmail(login);
         String truckId = utilsForDB.getRandomEquipmentIdCarrier(carrierId, "0");
         String driverId = utilsForDB.getRandomDriverIdInFleet(carrierId);
-        String driverName = utilsForDB.getRandomDriverNameInFleet(driverId);
+        String driverName = utilsForDB.getDriverNameById(driverId);
         String truckName = utilsForDB.getEquipmentName(truckId);
 
         loginFPage.logInWithOutOpenMenu(login, pass);
@@ -435,7 +435,7 @@ public class CarrierCreateDocumentsTest extends ParentTest {
         documentsFPage.clickOnSaveButton();
         waitABit(5);
 
-        List<ArrayList> tempDataDocList = utilsForDB.getDocData(driverId, referenceRV);
+        List<ArrayList> tempDataDocList = utilsForDB.getDocData(carrierId, referenceRV);
         Map<String, Object> tempDataDocMap = listArrayToMap(tempDataDocList);
 
         checkAC("DocType is not correct", tempDataDocMap.get("type").equals(annualInspectionReport), true);
@@ -456,7 +456,7 @@ public class CarrierCreateDocumentsTest extends ParentTest {
         String userId = utilsForDB.getUserIdByEmail(login);
         String truckId = utilsForDB.getRandomEquipmentIdCarrier(carrierId, "0");
         String driverId = utilsForDB.getRandomDriverIdInFleet(carrierId);
-        String driverName = utilsForDB.getRandomDriverNameInFleet(driverId);
+        String driverName = utilsForDB.getDriverNameById(driverId);
         String truckName = utilsForDB.getEquipmentName(truckId);
 
         loginFPage.logInWithOutOpenMenu(login, pass);
@@ -474,7 +474,7 @@ public class CarrierCreateDocumentsTest extends ParentTest {
         documentsFPage.clickOnSaveButton();
         waitABit(5);
 
-        List<ArrayList> tempDataDocList = utilsForDB.getDocData(driverId, referenceRV);
+        List<ArrayList> tempDataDocList = utilsForDB.getDocData(carrierId, referenceRV);
         Map<String, Object> tempDataDocMap = listArrayToMap(tempDataDocList);
 
         checkAC("DocType is not correct", tempDataDocMap.get("type").equals(insurance), true);
@@ -495,7 +495,7 @@ public class CarrierCreateDocumentsTest extends ParentTest {
         String userId = utilsForDB.getUserIdByEmail(login);
         String truckId = utilsForDB.getRandomEquipmentIdCarrier(carrierId, "0");
         String driverId = utilsForDB.getRandomDriverIdInFleet(carrierId);
-        String driverName = utilsForDB.getRandomDriverNameInFleet(driverId);
+        String driverName = utilsForDB.getDriverNameById(driverId);
         String truckName = utilsForDB.getEquipmentName(truckId);
 
         loginFPage.logInWithOutOpenMenu(login, pass);
@@ -513,7 +513,7 @@ public class CarrierCreateDocumentsTest extends ParentTest {
         documentsFPage.clickOnSaveButton();
         waitABit(5);
 
-        List<ArrayList> tempDataDocList = utilsForDB.getDocData(driverId, referenceRV);
+        List<ArrayList> tempDataDocList = utilsForDB.getDocData(carrierId, referenceRV);
         Map<String, Object> tempDataDocMap = listArrayToMap(tempDataDocList);
 
         checkAC("DocType is not correct", tempDataDocMap.get("type").equals(truckRegistration), true);
@@ -534,7 +534,7 @@ public class CarrierCreateDocumentsTest extends ParentTest {
         String userId = utilsForDB.getUserIdByEmail(login);
         String trailerId = utilsForDB.getRandomEquipmentIdCarrier(carrierId, "1");
         String driverId = utilsForDB.getRandomDriverIdInFleet(carrierId);
-        String driverName = utilsForDB.getRandomDriverNameInFleet(driverId);
+        String driverName = utilsForDB.getDriverNameById(driverId);
         String trailerName = utilsForDB.getEquipmentName(trailerId);
 
         loginFPage.logInWithOutOpenMenu(login, pass);
@@ -552,13 +552,12 @@ public class CarrierCreateDocumentsTest extends ParentTest {
         documentsFPage.clickOnSaveButton();
         waitABit(5);
 
-        List<ArrayList> tempDataDocList = utilsForDB.getDocData(driverId, referenceRV);
+        List<ArrayList> tempDataDocList = utilsForDB.getDocData(carrierId, referenceRV);
         Map<String, Object> tempDataDocMap = listArrayToMap(tempDataDocList);
         String docId = tempDataDocMap.get("id").toString();
 
         checkAC("DocType is not correct", tempDataDocMap.get("type").equals(trailerRegistration), true);
         checkAC("DocDate is not correct", tempDataDocMap.get("date").equals(startDayPlusHours(12)), true);
-        checkAC("TruckId is not correct", tempDataDocMap.get("truckId").equals("0"), true);
         checkAC("InitiatorId is not correct", tempDataDocMap.get("initiatorId").equals(userId), true);
         checkAC("Note is not correct", tempDataDocMap.get("note").equals(notesTextRV), true);
         checkAC("CarrierId Id is not correct", tempDataDocMap.get("carrierId").equals(carrierId), true);
@@ -574,7 +573,7 @@ public class CarrierCreateDocumentsTest extends ParentTest {
         String userId = utilsForDB.getUserIdByEmail(login);
         String truckId = utilsForDB.getRandomEquipmentIdCarrier(carrierId, "0");
         String driverId = utilsForDB.getRandomDriverIdInFleet(carrierId);
-        String driverName = utilsForDB.getRandomDriverNameInFleet(driverId);
+        String driverName = utilsForDB.getDriverNameById(driverId);
         String truckName = utilsForDB.getEquipmentName(truckId);
 
         loginFPage.logInWithOutOpenMenu(login, pass);
@@ -592,7 +591,7 @@ public class CarrierCreateDocumentsTest extends ParentTest {
         documentsFPage.clickOnSaveButton();
         waitABit(5);
 
-        List<ArrayList> tempDataDocList = utilsForDB.getDocData(driverId, referenceRV);
+        List<ArrayList> tempDataDocList = utilsForDB.getDocData(carrierId, referenceRV);
         Map<String, Object> tempDataDocMap = listArrayToMap(tempDataDocList);
 
         checkAC("DocType is not correct", tempDataDocMap.get("type").equals(others), true);
@@ -617,7 +616,7 @@ public class CarrierCreateDocumentsTest extends ParentTest {
         String userId = utilsForDB.getUserIdByEmail(login);
         String truckId = utilsForDB.getRandomEquipmentIdCarrier(carrierId, "0");
         String driverId = utilsForDB.getRandomDriverIdInFleet(carrierId);
-        String driverName = utilsForDB.getRandomDriverNameInFleet(driverId);
+        String driverName = utilsForDB.getDriverNameById(driverId);
         String truckName = utilsForDB.getEquipmentName(truckId);
 
         loginFPage.logInWithOutOpenMenu(login, pass);
@@ -638,7 +637,7 @@ public class CarrierCreateDocumentsTest extends ParentTest {
         documentsFPage.clickOnSaveButton();
         waitABit(5);
 
-        List<ArrayList> tempDataDocList = utilsForDB.getDocData(driverId, referenceRV);
+        List<ArrayList> tempDataDocList = utilsForDB.getDocData(carrierId, referenceRV);
         Map<String, Object> tempDataDocMap = listArrayToMap(tempDataDocList);
         String docId = tempDataDocMap.get("id").toString();
 
@@ -650,9 +649,9 @@ public class CarrierCreateDocumentsTest extends ParentTest {
         checkAC("CarrierId Id is not correct", tempDataDocMap.get("carrierId").equals(carrierId), true);
         checkAC("AWSName is empty", tempDataDocMap.get("awsName").toString().substring(0, 34).equals("https://s3.us-east-2.amazonaws.com"), true);
 
-        checkAC("Amount is not correct", utilsForDB.getDocInfoData(docId, "shipper").equals(shipperRV), true);
-        checkAC("Gallons is not correct", utilsForDB.getDocInfoData(docId, "ShipDate").equals(shipDate), true);
-        checkAC("ReeferAmount is not correct", utilsForDB.getDocInfoData(docId, "DeliveryShipDate").equals(deliveryDate), true);
+        checkAC("Shipper is not correct", utilsForDB.getDocInfoData(docId, "shipper").equals(shipperRV), true);
+        checkAC("ShipDate is not correct", utilsForDB.getDocInfoData(docId, "ShipDate").equals(shipDate), true);
+        checkAC("DeliveryShipDate is not correct", utilsForDB.getDocInfoData(docId, "DeliveryDate").equals(deliveryDate), true);
 
     }
 }

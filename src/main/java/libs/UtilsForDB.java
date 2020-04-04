@@ -463,7 +463,7 @@ public class UtilsForDB {
         return tempCurrentDue;
     }
     @Step
-    public String getRandomDriverNameInFleet(String userId) throws SQLException{
+    public String getDriverNameById(String userId) throws SQLException{
         String tempCurrentDue = dBMySQL.selectValue("SELECT CONCAT(u.name, \" \", u.`last`) FROM users u WHERE u.id = " + userId + ";");
         return tempCurrentDue;
     }
@@ -474,13 +474,13 @@ public class UtilsForDB {
         return tempData;
     }
     @Step
-    public List<ArrayList> getDocData(String userId, String reference) throws SQLException{
-        List<ArrayList> tempData = dBMySQL.selectTable("SELECT d.id, d.awsName, d.`type`, d.date, d.carrierId, d.initiatorId, d.truckId, d.note FROM documents d WHERE d.userId = " + userId + " and d.reference = '" + reference + "';");
+    public List<ArrayList> getDocData(String carrierId, String reference) throws SQLException{
+        List<ArrayList> tempData = dBMySQL.selectTable("SELECT d.id, d.awsName, d.`type`, d.date, d.carrierId, d.initiatorId, d.truckId, d.note, d.userId FROM documents d WHERE d.carrierId = " + carrierId + " and d.reference = '" + reference + "';");
         return tempData;
     }
     @Step
-    public String getRandomDocumentReference(String userId, String typeDoc) throws SQLException{
-        String tempCurrentDue = dBMySQL.selectValue("SELECT reference FROM documents d WHERE d.`type` = " + typeDoc + " AND d.userId = " + userId + " ORDER BY RAND()LIMIT 1;");
+    public String getRandomDocumentReference(String carrierId, String typeDoc) throws SQLException{
+        String tempCurrentDue = dBMySQL.selectValue("SELECT reference FROM documents d WHERE d.`type` = " + typeDoc + " AND d.carrierId = " + carrierId + " ORDER BY RAND()LIMIT 1;");
         return tempCurrentDue;
     }
     @Step
