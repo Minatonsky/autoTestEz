@@ -57,7 +57,6 @@ public class ChargeMethods {
         LocalDateTime tariffStart = LocalDateTime.parse(LocalDateTime.now().minusMonths(countMonth).minusDays(countDays).toString());
         long previousMonthMinusDay = tariffStart.toEpochSecond(ZoneOffset.UTC);
         String tempTariffMonthStart = Long.toString(previousMonthMinusDay);
-        logger.info("# Temp Tariff Month Start " + tariffStart);
         return tempTariffMonthStart;
     }
     @Step
@@ -65,7 +64,6 @@ public class ChargeMethods {
         LocalDateTime dateTimeEldHistory = LocalDateTime.parse(LocalDateTime.now().minusMonths(countMonth).minusDays(countDays).toString());
         long previousMonthMinusDay = dateTimeEldHistory.toEpochSecond(ZoneOffset.UTC);
         String tempDateTimeEldHistory = Long.toString(previousMonthMinusDay);
-        logger.info("# Temp Date Time Eld History " + dateTimeEldHistory);
         return tempDateTimeEldHistory;
     }
 
@@ -194,7 +192,6 @@ public class ChargeMethods {
         double tempTwoYearsTariff = Math.round((countScannerTwoYearsTariff * eld2YearsSubscriptionPrice) * 100.0) / 100.0;
         logger.info("# TWO YEARS CHARGE " + typeTariff + " = "  + tempTwoYearsTariff);
         double tempCountDueCharge = Math.round((tempMonthToMonth + tempOneYearTariff + tempTwoYearsTariff) * 100.0) / 100.0;
-        logger.info("# SUM DUE CHARGE " + typeTariff + " = "  + tempCountDueCharge);
         return tempCountDueCharge;
     }
 
@@ -353,31 +350,29 @@ public class ChargeMethods {
     }
     @Step
     public double sumChargeMonthToMonthTariffByDays(String activationDate, int countScanner) throws SQLException, IOException, ClassNotFoundException {
-        logger.info("# activationDate = " + activationDate);
         logger.info("# countScannerMonthToMonthTariffChargeByDays = " + countScanner);
+        if (countScanner > 0) {
+            LocalDateTime currentTime = LocalDateTime.parse(LocalDateTime.now().toString());
+            LocalDateTime tempActivationDate = LocalDateTime.ofEpochSecond(Long.parseLong(activationDate), 0, ZoneOffset.UTC);
+            int monthDays = currentTime.getMonth().length(true);
+            double priceOneDay = eldMonthToMonthPrice / monthDays;
+            int activeChargeDays = (int) ChronoUnit.DAYS.between(tempActivationDate, currentTime) - 1;
 
-        LocalDateTime currentTime = LocalDateTime.parse(LocalDateTime.now().toString());
-        LocalDateTime tempActivationDate = LocalDateTime.ofEpochSecond(Long.parseLong(activationDate), 0, ZoneOffset.UTC);
-        int monthDays =  currentTime.getMonth().length(true);
-        double priceOneDay = eldMonthToMonthPrice / monthDays;
-        int activeChargeDays = (int) ChronoUnit.DAYS.between(tempActivationDate, currentTime) - 1;
+            if (activeChargeDays <= monthDays) {
+                double chargeByDevice = Math.round((activeChargeDays * priceOneDay) * 100.0) / 100.0;
+                double chargeByAllDevices = Math.round((countScanner * chargeByDevice) * 100.0) / 100.0;
 
-        if (activeChargeDays <= monthDays) {
-            double chargeByDevice = Math.round((activeChargeDays * priceOneDay) * 100.0) / 100.0;
-            double chargeByAllDevices = Math.round((countScanner * chargeByDevice) * 100.0) / 100.0;
+                logger.info("***** Month Days = " + monthDays);
+                logger.info("***** Active Charge Days = " + activeChargeDays);
+                logger.info("***** chargeByDevice = " + chargeByDevice);
+                logger.info("***** chargeByAllDevices = " + chargeByAllDevices);
+                return chargeByAllDevices;
 
-            logger.info("***** Month Days = " + monthDays);
-            logger.info("***** Price For One Day = " + priceOneDay);
-            logger.info("***** Active Charge Days = " + activeChargeDays);
-            logger.info("***** chargeByDevice = " + chargeByDevice);
-            logger.info("***** chargeByAllDevices = " + chargeByAllDevices);
-            return chargeByAllDevices;
-
-
-        } else {
-            logger.info("***** activeChargeDays > monthDays  " );
-            return 0;
-        }
+            } else {
+                logger.info("***** activeChargeDays > monthDays  ");
+                return 0;
+            }
+        } else return 0;
     }
 
     @Step
@@ -405,7 +400,6 @@ public class ChargeMethods {
         LocalDate firstDayOfMonth = LocalDate.parse(LocalDate.now().toString()).with(TemporalAdjusters.firstDayOfNextMonth());
         long tempDayOfNextMonth = firstDayOfMonth.atStartOfDay().plusSeconds(1).toEpochSecond(ZoneOffset.UTC);
         String firstDayOfNextMonth = Long.toString(tempDayOfNextMonth);
-        System.out.println("firstDayOfNextMonth = " + firstDayOfNextMonth);
         String currentDue = utilsForDB.getCurrentDueEzFinancesFleet(fleetId);
         int countChargeScanners = utilsForDB.countChargeScanners(fleetString, fleetId, firstDayOfNextMonth);
         int countReturnDevices = utilsForDB.countChargeReturnedScanners(fleetString, fleetId, firstDayOfNextMonth);
@@ -421,7 +415,6 @@ public class ChargeMethods {
         LocalDate firstDayOfMonth = LocalDate.parse(LocalDate.now().toString()).with(TemporalAdjusters.firstDayOfNextMonth());
         long tempDayOfNextMonth = firstDayOfMonth.atStartOfDay().plusSeconds(1).toEpochSecond(ZoneOffset.UTC);
         String firstDayOfNextMonth = Long.toString(tempDayOfNextMonth);
-        System.out.println("firstDayOfNextMonth = " + firstDayOfNextMonth);
         String currentDue = utilsForDB.getCurrentDueEzFinancesSolo(soloId);
         int countChargeScanners = utilsForDB.countChargeScanners(userIdString, soloId, firstDayOfNextMonth);
         int countReturnDevices = utilsForDB.countChargeReturnedScanners(userIdString, soloId, firstDayOfNextMonth);
@@ -497,8 +490,32 @@ public class ChargeMethods {
         logger.info("# count Month IOSX Charge Returned Scanner = " + countMonthIOSXChargeReturnedScanner);
         logger.info("# count Scanner Month Geometrics Tariff = " + countScannerMonthGeometricsTariff);
         logger.info("# count Month Geometric sCharge Returned Scanner = " + countMonthGeometricsChargeReturnedScanner);
-        logger.info("# count Scanner Month Ez hard Tariff = " + countScannerMonthEzHardTariff);
-        logger.info("# count Month Ez Hard sCharge Returned Scanner = " + countMonthEzHardChargeReturnedScanner);
+    }
+    public void setPaidTillAndTariffStartScannerForSolo(String soloId, String setPaidTillForAllTariff, String setTariffStart, String typeDevice, int countDevice) throws SQLException {
+        if (countDevice > 0) {
+            utilsForDB.setPaidTillAndTariffStartScannerForSolo(soloId, setPaidTillForAllTariff, setTariffStart, typeDevice);
+        } else logger.info("Any device on this type: " + typeDevice);
+
+    }
+    public void setPaidTillAndTariffStartScannerForFleet(String fleetId, String setPaidTillForAllTariff, String setTariffStart, String typeDevice, int countDevice) throws SQLException {
+        if (countDevice > 0) {
+            utilsForDB.setPaidTillAndTariffStartScannerForFleet(fleetId, setPaidTillForAllTariff, setTariffStart, typeDevice);
+        } else logger.info("Any device on this type: " + typeDevice);
+
+    }
+    public int setPaidTillChargeByDays(String soloOrFleetString, String userId, String tariffId, int countDevice, String paidTillForAllTariffValue, String tariffStartChargeByDaysValue) throws SQLException {
+        int countDeviceByDays = countDevice/2;
+        if (countDeviceByDays > 0) {
+            List<String> tempIdDeviceChargeByDays = utilsForDB.getIdChargeScannersByTariff(soloOrFleetString, userId, tariffId, countDeviceByDays);
+            String idDeviceChargeByDays = String.join(", ", tempIdDeviceChargeByDays);
+
+            utilsForDB.setPaidTillAndTariffStartScannerById(paidTillForAllTariffValue, tariffStartChargeByDaysValue, idDeviceChargeByDays);
+            utilsForDB.delete_102_StatusByIdDevice(idDeviceChargeByDays);
+            utilsForDB.setOrderDateByDeviceId(tariffStartChargeByDaysValue, idDeviceChargeByDays);
+            utilsForDB.setDateTimeEldHistoryByIdDevice(tariffStartChargeByDaysValue, idDeviceChargeByDays);
+            return countDeviceByDays;
+        } else return 0;
+
     }
 }
 

@@ -99,7 +99,7 @@ public class UtilsForDB {
     }
     @Step
     public int countChargeScannersByTariff(String soloOrFleetString, String userId, String tariffId) throws SQLException {
-        int tempCountScanner =dBMySQL.getRowNumber("SELECT count(*) FROM eld_scanners WHERE " + soloOrFleetString + " = " + userId + " AND status IN (4, 8, 103) AND tariffId = " + tariffId + ";");
+        int tempCountScanner =dBMySQL.getRowNumber("SELECT COUNT(DISTINCT es.id) FROM eld_scanners es LEFT JOIN eld_returns er ON es.id = er.scannerId WHERE es." + soloOrFleetString + " = " + userId + " AND es.status IN (4, 8, 103) AND es.tariffId = " + tariffId + " or es." + soloOrFleetString + " = " + userId + " AND es.status = 11 and er.returnReason IN (2, 1) AND er.status IN (0, 1, 3) AND es.tariffId = " + tariffId + ";");
         return tempCountScanner;
     }
     @Step

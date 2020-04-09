@@ -2,13 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="660eb711-957d-418e-9483-8b2931da6e6e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/frankesteinTest/settingsTest/SafetyDriverSettings.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log/qalight.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/qalight.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/libs/ActionsWithOurElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/libs/ActionsWithOurElements.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/libs/ChargeMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/libs/ChargeMethods.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/libs/UtilsForDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/libs/UtilsForDB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pagesFrankestein/DocumentsFPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pagesFrankestein/DocumentsFPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/chargeTest/ChargeDefaultersTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/chargeTest/ChargeDefaultersTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/chargeTest/ChargeFleetSoloTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/chargeTest/ChargeFleetSoloTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/chargeTest/ChargeMonthToMonthTariff.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/chargeTest/ChargeMonthToMonthTariff.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/frankesteinTest/documentsTest/CarrierCreateDocumentsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/frankesteinTest/documentsTest/CarrierCreateDocumentsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/frankesteinTest/documentsTest/CarrierUpDateDocumentsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/frankesteinTest/documentsTest/CarrierUpDateDocumentsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/unitTest/TestMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/unitTest/TestMethods.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,81 +96,66 @@
       <recent name="C:\workspace\testdevEzlogz\src" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CarrierUpDateDocumentsTest.upDateTrailerRegistration">
-    <configuration name="CarrierCreateDocumentsTest.createFuelReceipts" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.ChargeFleetSoloTest.chargeFleetTest">
+    <configuration name="ChargeFleetSoloTest.chargeFleetTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="testdevEzlogz" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="frankesteinTest.documentsTest.*" />
+          <option name="PATTERN" value="chargeTest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="frankesteinTest.documentsTest" />
-      <option name="MAIN_CLASS_NAME" value="frankesteinTest.documentsTest.CarrierCreateDocumentsTest" />
-      <option name="METHOD_NAME" value="createFuelReceipts" />
+      <option name="PACKAGE_NAME" value="chargeTest" />
+      <option name="MAIN_CLASS_NAME" value="chargeTest.ChargeFleetSoloTest" />
+      <option name="METHOD_NAME" value="chargeFleetTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CarrierUpDateDocumentsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ChargeFleetSoloTest.chargeSoloTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="testdevEzlogz" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="frankesteinTest.documentsTest.*" />
+          <option name="PATTERN" value="chargeTest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="frankesteinTest.documentsTest" />
-      <option name="MAIN_CLASS_NAME" value="frankesteinTest.documentsTest.CarrierUpDateDocumentsTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CarrierUpDateDocumentsTest.upDateBOL" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="testdevEzlogz" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="frankesteinTest.documentsTest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="frankesteinTest.documentsTest" />
-      <option name="MAIN_CLASS_NAME" value="frankesteinTest.documentsTest.CarrierUpDateDocumentsTest" />
-      <option name="METHOD_NAME" value="upDateBOL" />
+      <option name="PACKAGE_NAME" value="chargeTest" />
+      <option name="MAIN_CLASS_NAME" value="chargeTest.ChargeFleetSoloTest" />
+      <option name="METHOD_NAME" value="chargeSoloTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CarrierUpDateDocumentsTest.upDateFuelReceipts" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ChargeMethods.compareCurrentDueFleetDefaulter" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="testdevEzlogz" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="frankesteinTest.documentsTest.*" />
+          <option name="PATTERN" value="libs.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="frankesteinTest.documentsTest" />
-      <option name="MAIN_CLASS_NAME" value="frankesteinTest.documentsTest.CarrierUpDateDocumentsTest" />
-      <option name="METHOD_NAME" value="upDateFuelReceipts" />
+      <option name="PACKAGE_NAME" value="libs" />
+      <option name="MAIN_CLASS_NAME" value="libs.ChargeMethods" />
+      <option name="METHOD_NAME" value="compareCurrentDueFleetDefaulter" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CarrierUpDateDocumentsTest.upDateTrailerRegistration" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ChargeMonthToMonthTariff.unitTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="testdevEzlogz" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="frankesteinTest.documentsTest.*" />
+          <option name="PATTERN" value="chargeTest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="frankesteinTest.documentsTest" />
-      <option name="MAIN_CLASS_NAME" value="frankesteinTest.documentsTest.CarrierUpDateDocumentsTest" />
-      <option name="METHOD_NAME" value="upDateTrailerRegistration" />
+      <option name="PACKAGE_NAME" value="chargeTest" />
+      <option name="MAIN_CLASS_NAME" value="chargeTest.ChargeMonthToMonthTariff" />
+      <option name="METHOD_NAME" value="unitTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -184,6 +172,22 @@
       <option name="PACKAGE_NAME" value="unitTest" />
       <option name="MAIN_CLASS_NAME" value="unitTest.TestMethods" />
       <option name="METHOD_NAME" value="getEventNewOrder" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestMethods.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="testdevEzlogz" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="unitTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="unitTest" />
+      <option name="MAIN_CLASS_NAME" value="unitTest.TestMethods" />
+      <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -234,20 +238,20 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.TestMethods.getEventNewOrder" />
+      <item itemvalue="JUnit.ChargeFleetSoloTest.chargeSoloTest" />
       <item itemvalue="Maven.SoloOrders" />
-      <item itemvalue="JUnit.CarrierCreateDocumentsTest.createFuelReceipts" />
-      <item itemvalue="JUnit.CarrierUpDateDocumentsTest.upDateFuelReceipts" />
-      <item itemvalue="JUnit.CarrierUpDateDocumentsTest" />
-      <item itemvalue="JUnit.CarrierUpDateDocumentsTest.upDateBOL" />
-      <item itemvalue="JUnit.CarrierUpDateDocumentsTest.upDateTrailerRegistration" />
+      <item itemvalue="JUnit.ChargeMethods.compareCurrentDueFleetDefaulter" />
+      <item itemvalue="JUnit.ChargeMonthToMonthTariff.unitTest" />
+      <item itemvalue="JUnit.TestMethods.test" />
+      <item itemvalue="JUnit.ChargeFleetSoloTest.chargeFleetTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CarrierUpDateDocumentsTest.upDateTrailerRegistration" />
-        <item itemvalue="JUnit.CarrierUpDateDocumentsTest.upDateBOL" />
-        <item itemvalue="JUnit.CarrierUpDateDocumentsTest" />
-        <item itemvalue="JUnit.CarrierUpDateDocumentsTest.upDateFuelReceipts" />
-        <item itemvalue="JUnit.CarrierCreateDocumentsTest.createFuelReceipts" />
+        <item itemvalue="JUnit.ChargeFleetSoloTest.chargeFleetTest" />
+        <item itemvalue="JUnit.ChargeFleetSoloTest.chargeSoloTest" />
+        <item itemvalue="JUnit.TestMethods.test" />
+        <item itemvalue="JUnit.ChargeMonthToMonthTariff.unitTest" />
+        <item itemvalue="JUnit.ChargeMethods.compareCurrentDueFleetDefaulter" />
       </list>
     </recent_temporary>
   </component>
@@ -280,13 +284,6 @@
       <workItem from="1562665338918" duration="52834000" />
       <workItem from="1562782581468" duration="9021000" />
       <workItem from="1562822119836" duration="58303000" />
-    </task>
-    <task id="LOCAL-00030" summary="refactor fleet test with excel was add">
-      <created>1565814593112</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1565814593112</updated>
     </task>
     <task id="LOCAL-00031" summary="count methods was add">
       <created>1565979870989</created>
@@ -624,7 +621,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585940931909</updated>
     </task>
-    <option name="localTasksCounter" value="79" />
+    <task id="LOCAL-00079" summary=" up date doc test2 refactoring test was add">
+      <created>1586034273666</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1586034273667</updated>
+    </task>
+    <option name="localTasksCounter" value="80" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -661,7 +665,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="month-to-month 12 test was add" />
     <MESSAGE value="new month-to-month 12 test was add" />
     <MESSAGE value="charge defaulters was add" />
     <MESSAGE value="ban unban was add" />
@@ -686,43 +689,51 @@
     <MESSAGE value=" charge refactoring test was add" />
     <MESSAGE value=" doc test refactoring test was add" />
     <MESSAGE value=" doc test2 refactoring test was add" />
-    <option name="LAST_COMMIT_MESSAGE" value=" doc test2 refactoring test was add" />
+    <MESSAGE value=" up date doc test2 refactoring test was add" />
+    <option name="LAST_COMMIT_MESSAGE" value=" up date doc test2 refactoring test was add" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="1918" y="178" key="#Notifications" timestamp="1586427238655">
+      <screen x="1366" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1918" y="178" key="#Notifications/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1586427238655" />
+    <state x="2056" y="274" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1586177512236">
+      <screen x="1366" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2056" y="274" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1586177512236" />
     <state x="2053" y="445" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1585162567001">
       <screen x="1366" y="0" width="1920" height="1040" />
     </state>
     <state x="2053" y="445" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1585162567001" />
-    <state x="1980" y="0" key="CommitChangelistDialog2" timestamp="1585940929479">
+    <state x="1980" y="0" key="CommitChangelistDialog2" timestamp="1586034271105">
       <screen x="1366" y="0" width="1920" height="1040" />
     </state>
     <state x="437" y="0" key="CommitChangelistDialog2/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1585855536969" />
-    <state x="1980" y="0" key="CommitChangelistDialog2/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1585940929479" />
-    <state x="614" y="115" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1577721069202" />
-    <state width="1877" height="146" key="GridCell.Tab.0.bottom" timestamp="1586034241183">
+    <state x="1980" y="0" key="CommitChangelistDialog2/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1586034271105" />
+    <state width="1877" height="321" key="GridCell.Tab.0.bottom" timestamp="1586450445490">
       <screen x="1366" y="0" width="1920" height="1040" />
     </state>
     <state width="1323" height="303" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1585855564902" />
-    <state width="1877" height="146" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1586034241183" />
-    <state width="1877" height="289" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1578930316325" />
-    <state width="1877" height="146" key="GridCell.Tab.0.center" timestamp="1586034241183">
+    <state width="1877" height="321" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1586450445490" />
+    <state width="1892" height="146" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1586046234897" />
+    <state width="1877" height="321" key="GridCell.Tab.0.center" timestamp="1586450445490">
       <screen x="1366" y="0" width="1920" height="1040" />
     </state>
     <state width="1323" height="303" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1585855564901" />
-    <state width="1877" height="146" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1586034241183" />
-    <state width="1877" height="289" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1578930316325" />
-    <state width="1877" height="146" key="GridCell.Tab.0.left" timestamp="1586034241183">
+    <state width="1877" height="321" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1586450445490" />
+    <state width="1892" height="146" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1586046234897" />
+    <state width="1877" height="321" key="GridCell.Tab.0.left" timestamp="1586450445489">
       <screen x="1366" y="0" width="1920" height="1040" />
     </state>
     <state width="1323" height="303" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1585855564901" />
-    <state width="1877" height="146" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1586034241183" />
-    <state width="1877" height="289" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1578930316325" />
-    <state width="1877" height="146" key="GridCell.Tab.0.right" timestamp="1586034241183">
+    <state width="1877" height="321" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1586450445489" />
+    <state width="1892" height="146" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1586046234896" />
+    <state width="1877" height="321" key="GridCell.Tab.0.right" timestamp="1586450445490">
       <screen x="1366" y="0" width="1920" height="1040" />
     </state>
     <state width="1323" height="303" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1585855564902" />
-    <state width="1877" height="146" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1586034241183" />
-    <state width="1877" height="289" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1578930316325" />
+    <state width="1877" height="321" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1586450445490" />
+    <state width="1892" height="146" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1586046234897" />
     <state width="1877" height="196" key="GridCell.Tab.1.bottom" timestamp="1585418842371">
       <screen x="1366" y="0" width="1920" height="1040" />
     </state>
@@ -749,12 +760,11 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="395" y="79" key="MultipleFileMergeDialog/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1584524748598" />
-    <state x="393" y="178" key="Vcs.Push.Dialog.v2" timestamp="1585855551273">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="1918" y="254" key="Vcs.Push.Dialog.v2" timestamp="1586034283684">
+      <screen x="1366" y="0" width="1920" height="1040" />
     </state>
     <state x="393" y="178" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1585855551273" />
-    <state x="1918" y="254" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1585323610773" />
-    <state x="552" y="254" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1577721078625" />
+    <state x="1918" y="254" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1586034283684" />
     <state x="391" y="155" key="git4idea.merge.GitPullDialog" timestamp="1584524735313">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

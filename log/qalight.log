@@ -943,3 +943,1447 @@ Session ID: 444f8ecb064c38651f295423088472e1
 2020-05-04 00:00:27   INFO [frankesteinTest.documentsTest.CarrierUpDateDocumentsTest] : AC passed
 2020-05-04 00:00:28   INFO [frankesteinTest.documentsTest.CarrierUpDateDocumentsTest] : AC passed
 2020-05-04 00:00:28   INFO [frankesteinTest.documentsTest.CarrierUpDateDocumentsTest] :  DB connection closed 
+2020-05-04 03:17:58   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome will be started
+2020-05-04 03:18:03   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome is started
+2020-05-04 03:18:03   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-05-04 03:18:15   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-05-04 03:18:16   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-05-04 03:18:17   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-05-04 03:18:17   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-05-04 03:18:18   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-05-04 03:18:26   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-05-04 03:18:33   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-05-04 03:18:33   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-05-04 03:18:34   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-05-04 03:18:34   INFO [libs.ActionsWithOurElements] : Fuel Receipts was inputted into element
+2020-05-04 03:18:34   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-05-04 03:18:38   INFO [libs.ActionsWithOurElements] : FuelReceipts 04/05/2020 03:18:07 was inputted into element
+2020-05-04 03:18:38   INFO [libs.ActionsWithOurElements] : 05/04/2020 was inputted into element
+2020-05-04 03:18:39   INFO [libs.ActionsWithOurElements] : erye4564 was inputted into element
+2020-05-04 03:18:39   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-05-04 03:18:39   INFO [libs.ActionsWithOurElements] : Smart Driver was inputted into element
+2020-05-04 03:18:39   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-05-04 03:18:40   INFO [libs.ActionsWithOurElements] : Co was inputted into element
+2020-05-04 03:18:40   INFO [libs.ActionsWithOurElements] : eqNBrAdz was inputted into element
+2020-05-04 03:18:40   INFO [libs.ActionsWithOurElements] : NiG was inputted into element
+2020-05-04 03:18:40   INFO [libs.ActionsWithOurElements] : t6T0 was inputted into element
+2020-05-04 03:18:41   INFO [libs.ActionsWithOurElements] : Hawaii was inputted into element
+2020-05-04 03:18:41   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-05-04 03:18:46   INFO [libs.ActionsWithOurElements] : RGoXzYCC2jlvYC was inputted into element
+2020-05-04 03:18:46   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-05-04 03:18:53   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-05-04 03:18:54   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-05-04 03:18:55   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-05-04 03:18:56   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-05-04 03:18:57   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-05-04 03:18:58   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-05-04 03:18:59   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-05-04 03:19:00   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-05-04 03:19:01   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-05-04 03:19:02   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-05-04 03:19:03   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-05-04 03:19:03   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] :  DB connection closed 
+2020-06-04 11:55:54   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome will be started
+2020-06-04 11:56:01   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome is started
+2020-06-04 11:56:01   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-06-04 11:56:12   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-06-04 11:56:13   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 11:56:13   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-06-04 11:56:14   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-06-04 11:56:14   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 11:56:22   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 11:56:27   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 11:56:27   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 11:56:28   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 11:56:28   INFO [libs.ActionsWithOurElements] : Truck Repair was inputted into element
+2020-06-04 11:56:28   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 11:56:32   INFO [libs.ActionsWithOurElements] : TruckRepair 04/06/2020 11:56:04 was inputted into element
+2020-06-04 11:56:32   INFO [libs.ActionsWithOurElements] : gbfghfj33 was inputted into element
+2020-06-04 11:56:32   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 11:56:33   INFO [libs.ActionsWithOurElements] : Den Test was inputted into element
+2020-06-04 11:56:33   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 11:56:33   INFO [libs.ActionsWithOurElements] : rBb was inputted into element
+2020-06-04 11:56:34   INFO [libs.ActionsWithOurElements] : Ginger Rayl was inputted into element
+2020-06-04 11:56:34   INFO [libs.ActionsWithOurElements] : ic was inputted into element
+2020-06-04 11:56:34   INFO [libs.ActionsWithOurElements] : 06/04/2020 was inputted into element
+2020-06-04 11:56:34   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 11:56:41   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-06-04 11:56:42   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-06-04 11:56:43   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-06-04 11:56:44   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-06-04 11:56:45   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-06-04 11:56:46   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-06-04 11:56:47   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-06-04 11:56:48   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-06-04 11:56:49   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-06-04 11:56:49   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] :  DB connection closed 
+2020-06-04 11:56:50   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome will be started
+2020-06-04 11:56:52   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome is started
+2020-06-04 11:56:52   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-06-04 11:57:00   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-06-04 11:57:00   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 11:57:01   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-06-04 11:57:01   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-06-04 11:57:01   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 11:57:11   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 11:57:16   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 11:57:16   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 11:57:17   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 11:57:17   INFO [libs.ActionsWithOurElements] : Insurance was inputted into element
+2020-06-04 11:57:17   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 11:57:21   INFO [libs.ActionsWithOurElements] : Insurance 04/06/2020 11:56:54 was inputted into element
+2020-06-04 11:57:21   INFO [libs.ActionsWithOurElements] : 4574fgbfbgbf was inputted into element
+2020-06-04 11:57:21   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 11:57:22   INFO [libs.ActionsWithOurElements] : Den Driver was inputted into element
+2020-06-04 11:57:22   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 11:57:22   INFO [libs.ActionsWithOurElements] : XC8FP4FP was inputted into element
+2020-06-04 11:57:23   INFO [libs.ActionsWithOurElements] : 06/04/2020 was inputted into element
+2020-06-04 11:57:23   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 11:57:29   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-06-04 11:57:30   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-06-04 11:57:31   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-06-04 11:57:32   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-06-04 11:57:33   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-06-04 11:57:34   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-06-04 11:57:35   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-06-04 11:57:35   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] :  DB connection closed 
+2020-06-04 11:57:36   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome will be started
+2020-06-04 11:57:38   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome is started
+2020-06-04 11:57:38   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-06-04 11:57:46   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-06-04 11:57:46   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 11:57:46   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-06-04 11:57:46   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-06-04 11:57:47   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 11:57:55   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 11:57:59   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 11:58:00   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 11:58:00   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 11:58:00   INFO [libs.ActionsWithOurElements] : Citation was inputted into element
+2020-06-04 11:58:01   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 11:58:04   INFO [libs.ActionsWithOurElements] : CitationReport 04/06/2020 11:57:39 was inputted into element
+2020-06-04 11:58:05   INFO [libs.ActionsWithOurElements] : 35676547 was inputted into element
+2020-06-04 11:58:05   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 11:58:05   INFO [libs.ActionsWithOurElements] : Den Driver was inputted into element
+2020-06-04 11:58:05   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 11:58:06   INFO [libs.ActionsWithOurElements] : XAV0 was inputted into element
+2020-06-04 11:58:06   INFO [libs.ActionsWithOurElements] : Nebraska was inputted into element
+2020-06-04 11:58:06   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 11:58:06   INFO [libs.ActionsWithOurElements] : fu4c was inputted into element
+2020-06-04 11:58:07   INFO [libs.ActionsWithOurElements] : 06/04/2020 was inputted into element
+2020-06-04 11:58:07   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 11:58:13   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-06-04 11:58:14   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-06-04 11:58:15   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-06-04 11:58:16   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-06-04 11:58:17   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-06-04 11:58:18   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-06-04 11:58:19   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-06-04 11:58:20   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-06-04 11:58:20   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] :  DB connection closed 
+2020-06-04 11:58:21   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome will be started
+2020-06-04 11:58:23   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome is started
+2020-06-04 11:58:23   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-06-04 11:58:32   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-06-04 11:58:33   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 11:58:33   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-06-04 11:58:33   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-06-04 11:58:34   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 11:58:41   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 11:58:46   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 11:58:46   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 11:58:47   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 11:58:47   INFO [libs.ActionsWithOurElements] : Trailer registration was inputted into element
+2020-06-04 11:58:47   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 11:58:51   INFO [libs.ActionsWithOurElements] : TrailerRegistration 04/06/2020 11:58:25 was inputted into element
+2020-06-04 11:58:52   INFO [libs.ActionsWithOurElements] : y was inputted into element
+2020-06-04 11:58:52   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 11:58:52   INFO [libs.ActionsWithOurElements] : Den Driver was inputted into element
+2020-06-04 11:58:52   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 11:58:52   INFO [libs.ActionsWithOurElements] : PQxaH was inputted into element
+2020-06-04 11:58:53   INFO [libs.ActionsWithOurElements] : 06/04/2020 was inputted into element
+2020-06-04 11:58:53   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 11:58:59   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-06-04 11:59:00   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-06-04 11:59:01   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-06-04 11:59:02   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-06-04 11:59:03   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-06-04 11:59:04   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-06-04 11:59:05   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-06-04 11:59:05   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] :  DB connection closed 
+2020-06-04 11:59:06   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome will be started
+2020-06-04 11:59:08   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome is started
+2020-06-04 11:59:08   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-06-04 11:59:16   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-06-04 11:59:16   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 11:59:16   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-06-04 11:59:17   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-06-04 11:59:17   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 11:59:25   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 11:59:30   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 11:59:30   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 11:59:30   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 11:59:30   INFO [libs.ActionsWithOurElements] : Annual was inputted into element
+2020-06-04 11:59:31   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 11:59:34   INFO [libs.ActionsWithOurElements] : AnnualInspection 04/06/2020 11:59:10 was inputted into element
+2020-06-04 11:59:35   INFO [libs.ActionsWithOurElements] : 3453bdgd was inputted into element
+2020-06-04 11:59:35   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 11:59:35   INFO [libs.ActionsWithOurElements] : Nosmart Driver was inputted into element
+2020-06-04 11:59:35   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 11:59:36   INFO [libs.ActionsWithOurElements] : cTE0BT3uy was inputted into element
+2020-06-04 11:59:36   INFO [libs.ActionsWithOurElements] : 06/04/2020 was inputted into element
+2020-06-04 11:59:36   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 11:59:42   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-06-04 11:59:43   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-06-04 11:59:44   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-06-04 11:59:45   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-06-04 11:59:46   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-06-04 11:59:47   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-06-04 11:59:48   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-06-04 11:59:48   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] :  DB connection closed 
+2020-06-04 11:59:49   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome will be started
+2020-06-04 11:59:51   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome is started
+2020-06-04 11:59:51   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-06-04 11:59:59   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-06-04 11:59:59   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 12:00:00   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-06-04 12:00:00   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-06-04 12:00:01   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 12:00:09   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 12:00:13   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 12:00:13   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 12:00:13   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 12:00:14   INFO [libs.ActionsWithOurElements] : Truck registration was inputted into element
+2020-06-04 12:00:14   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 12:00:18   INFO [libs.ActionsWithOurElements] : TruckRegistration 04/06/2020 11:59:53 was inputted into element
+2020-06-04 12:00:18   INFO [libs.ActionsWithOurElements] : 457457dthdtht was inputted into element
+2020-06-04 12:00:18   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 12:00:18   INFO [libs.ActionsWithOurElements] : Nosmart Driver was inputted into element
+2020-06-04 12:00:19   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 12:00:19   INFO [libs.ActionsWithOurElements] : d was inputted into element
+2020-06-04 12:00:19   INFO [libs.ActionsWithOurElements] : 06/04/2020 was inputted into element
+2020-06-04 12:00:19   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 12:00:25   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-06-04 12:00:26   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-06-04 12:00:27   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-06-04 12:00:28   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-06-04 12:00:29   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-06-04 12:00:30   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-06-04 12:00:31   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-06-04 12:00:31   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] :  DB connection closed 
+2020-06-04 12:00:32   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome will be started
+2020-06-04 12:00:34   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome is started
+2020-06-04 12:00:34   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-06-04 12:00:42   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-06-04 12:00:42   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 12:00:42   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-06-04 12:00:43   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-06-04 12:00:43   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 12:00:51   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 12:00:55   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 12:00:56   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 12:00:56   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 12:00:56   INFO [libs.ActionsWithOurElements] : Scale was inputted into element
+2020-06-04 12:00:57   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 12:01:00   INFO [libs.ActionsWithOurElements] : Scale 04/06/2020 12:00:36 was inputted into element
+2020-06-04 12:01:00   INFO [libs.ActionsWithOurElements] : 3453bdgd was inputted into element
+2020-06-04 12:01:01   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 12:01:01   INFO [libs.ActionsWithOurElements] : Den Driver was inputted into element
+2020-06-04 12:01:01   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 12:01:01   INFO [libs.ActionsWithOurElements] : SP6N was inputted into element
+2020-06-04 12:01:01   INFO [libs.ActionsWithOurElements] : qdRK8Q7 was inputted into element
+2020-06-04 12:01:02   INFO [libs.ActionsWithOurElements] : 06/04/2020 was inputted into element
+2020-06-04 12:01:02   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 12:01:08   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-06-04 12:01:09   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-06-04 12:01:10   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-06-04 12:01:11   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-06-04 12:01:12   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-06-04 12:01:13   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-06-04 12:01:14   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-06-04 12:01:15   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-06-04 12:01:15   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] :  DB connection closed 
+2020-06-04 12:01:16   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome will be started
+2020-06-04 12:01:18   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome is started
+2020-06-04 12:01:18   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-06-04 12:01:25   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-06-04 12:01:26   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 12:01:26   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-06-04 12:01:26   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-06-04 12:01:27   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 12:01:35   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 12:01:39   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 12:01:39   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 12:01:39   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 12:01:40   INFO [libs.ActionsWithOurElements] : BOL was inputted into element
+2020-06-04 12:01:40   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 12:01:43   INFO [libs.ActionsWithOurElements] : BOL04/06/2020 12:01:20 was inputted into element
+2020-06-04 12:01:44   INFO [libs.ActionsWithOurElements] : r3ISPiUB1 was inputted into element
+2020-06-04 12:01:44   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 12:01:44   INFO [libs.ActionsWithOurElements] : Den Driver was inputted into element
+2020-06-04 12:01:44   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 12:01:45   INFO [libs.ActionsWithOurElements] : m was inputted into element
+2020-06-04 12:01:45   INFO [libs.ActionsWithOurElements] : 08/04/2020 was inputted into element
+2020-06-04 12:01:45   INFO [libs.ActionsWithOurElements] : 16/04/2020 was inputted into element
+2020-06-04 12:01:46   INFO [libs.ActionsWithOurElements] : F6AF was inputted into element
+2020-06-04 12:01:46   INFO [libs.ActionsWithOurElements] : 06/04/2020 was inputted into element
+2020-06-04 12:01:46   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 12:01:52   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-06-04 12:01:53   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-06-04 12:01:54   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-06-04 12:01:55   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-06-04 12:01:56   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-06-04 12:01:57   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-06-04 12:01:58   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-06-04 12:01:59   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-06-04 12:02:01   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-06-04 12:02:02   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-06-04 12:02:02   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] :  DB connection closed 
+2020-06-04 12:02:03   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome will be started
+2020-06-04 12:02:04   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome is started
+2020-06-04 12:02:04   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-06-04 12:02:12   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-06-04 12:02:12   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 12:02:13   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-06-04 12:02:13   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-06-04 12:02:13   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 12:02:21   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 12:02:25   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 12:02:26   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 12:02:26   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 12:02:26   INFO [libs.ActionsWithOurElements] : Accident was inputted into element
+2020-06-04 12:02:26   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 12:02:30   INFO [libs.ActionsWithOurElements] : AccidentReport 04/06/2020 12:02:06 was inputted into element
+2020-06-04 12:02:30   INFO [libs.ActionsWithOurElements] : 56848fghthfth was inputted into element
+2020-06-04 12:02:31   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 12:02:31   INFO [libs.ActionsWithOurElements] : Den Test was inputted into element
+2020-06-04 12:02:31   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 12:02:31   INFO [libs.ActionsWithOurElements] : Great Northern Hotel was inputted into element
+2020-06-04 12:02:32   INFO [libs.ActionsWithOurElements] : 47mmSgT was inputted into element
+2020-06-04 12:02:32   INFO [libs.ActionsWithOurElements] : 06/04/2020 was inputted into element
+2020-06-04 12:02:32   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 12:02:38   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-06-04 12:02:39   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-06-04 12:02:40   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-06-04 12:02:41   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-06-04 12:02:42   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-06-04 12:02:43   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-06-04 12:02:44   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-06-04 12:02:46   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-06-04 12:02:46   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] :  DB connection closed 
+2020-06-04 12:02:47   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome will be started
+2020-06-04 12:02:48   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome is started
+2020-06-04 12:02:48   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-06-04 12:02:56   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-06-04 12:02:57   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 12:02:57   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-06-04 12:02:57   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-06-04 12:02:57   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 12:03:05   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 12:03:10   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 12:03:10   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 12:03:10   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 12:03:10   INFO [libs.ActionsWithOurElements] : Lumper was inputted into element
+2020-06-04 12:03:11   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 12:03:14   INFO [libs.ActionsWithOurElements] : Lumper 04/06/2020 12:02:50 was inputted into element
+2020-06-04 12:03:15   INFO [libs.ActionsWithOurElements] : er4564 was inputted into element
+2020-06-04 12:03:15   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 12:03:15   INFO [libs.ActionsWithOurElements] : Den Driver was inputted into element
+2020-06-04 12:03:15   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 12:03:15   INFO [libs.ActionsWithOurElements] : ImLsJwJD was inputted into element
+2020-06-04 12:03:16   INFO [libs.ActionsWithOurElements] : Ghostwood National Forest was inputted into element
+2020-06-04 12:03:16   INFO [libs.ActionsWithOurElements] : af7u0QkxF was inputted into element
+2020-06-04 12:03:16   INFO [libs.ActionsWithOurElements] : 06/04/2020 was inputted into element
+2020-06-04 12:03:17   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 12:03:23   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-06-04 12:03:24   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-06-04 12:03:25   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-06-04 12:03:26   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-06-04 12:03:27   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-06-04 12:03:28   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-06-04 12:03:29   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-06-04 12:03:30   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-06-04 12:03:31   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-06-04 12:03:31   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] :  DB connection closed 
+2020-06-04 12:03:32   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome will be started
+2020-06-04 12:03:34   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome is started
+2020-06-04 12:03:34   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-06-04 12:03:41   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-06-04 12:03:41   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 12:03:42   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-06-04 12:03:42   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-06-04 12:03:42   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 12:03:50   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 12:03:54   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 12:03:55   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 12:03:55   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 12:03:55   INFO [libs.ActionsWithOurElements] : Toll was inputted into element
+2020-06-04 12:03:56   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 12:03:59   INFO [libs.ActionsWithOurElements] : Toll 04/06/2020 12:03:35 was inputted into element
+2020-06-04 12:03:59   INFO [libs.ActionsWithOurElements] : 345346dghdffgh was inputted into element
+2020-06-04 12:04:00   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 12:04:00   INFO [libs.ActionsWithOurElements] : Den Driver was inputted into element
+2020-06-04 12:04:00   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 12:04:00   INFO [libs.ActionsWithOurElements] : TztEn was inputted into element
+2020-06-04 12:04:01   INFO [libs.ActionsWithOurElements] : 7DolS8 was inputted into element
+2020-06-04 12:04:01   INFO [libs.ActionsWithOurElements] : 06/04/2020 was inputted into element
+2020-06-04 12:04:01   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 12:04:12   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-06-04 12:04:13   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-06-04 12:04:14   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-06-04 12:04:15   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-06-04 12:04:16   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-06-04 12:04:17   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-06-04 12:04:18   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-06-04 12:04:19   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-06-04 12:04:19   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] :  DB connection closed 
+2020-06-04 12:04:20   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome will be started
+2020-06-04 12:04:22   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome is started
+2020-06-04 12:04:22   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-06-04 12:04:30   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-06-04 12:04:30   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 12:04:30   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-06-04 12:04:31   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-06-04 12:04:31   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 12:04:39   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 12:04:44   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 12:04:44   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 12:04:44   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 12:04:45   INFO [libs.ActionsWithOurElements] : Others was inputted into element
+2020-06-04 12:04:45   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 12:04:48   INFO [libs.ActionsWithOurElements] : Others04/06/2020 12:04:24 was inputted into element
+2020-06-04 12:04:49   INFO [libs.ActionsWithOurElements] : 4574fgbfbgbf was inputted into element
+2020-06-04 12:04:49   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 12:04:49   INFO [libs.ActionsWithOurElements] : Nosmart Driver was inputted into element
+2020-06-04 12:04:49   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 12:04:50   INFO [libs.ActionsWithOurElements] : 3VG1GWY was inputted into element
+2020-06-04 12:04:50   INFO [libs.ActionsWithOurElements] : 06/04/2020 was inputted into element
+2020-06-04 12:04:50   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 12:04:56   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-06-04 12:04:57   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-06-04 12:04:58   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-06-04 12:04:59   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-06-04 12:05:00   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-06-04 12:05:01   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-06-04 12:05:02   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-06-04 12:05:02   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] :  DB connection closed 
+2020-06-04 12:05:03   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome will be started
+2020-06-04 12:05:05   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome is started
+2020-06-04 12:05:05   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-06-04 12:05:13   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-06-04 12:05:13   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 12:05:14   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-06-04 12:05:14   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-06-04 12:05:14   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 12:05:22   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 12:05:26   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 12:05:27   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 12:05:27   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 12:05:27   INFO [libs.ActionsWithOurElements] : Fuel Receipts was inputted into element
+2020-06-04 12:05:28   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 12:05:31   INFO [libs.ActionsWithOurElements] : FuelReceipts 04/06/2020 12:05:07 was inputted into element
+2020-06-04 12:05:31   INFO [libs.ActionsWithOurElements] : 06/04/2020 was inputted into element
+2020-06-04 12:05:32   INFO [libs.ActionsWithOurElements] : 456rdg was inputted into element
+2020-06-04 12:05:32   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 12:05:32   INFO [libs.ActionsWithOurElements] : Den Driver was inputted into element
+2020-06-04 12:05:32   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 12:05:33   INFO [libs.ActionsWithOurElements] : 2mxmauzrb was inputted into element
+2020-06-04 12:05:33   INFO [libs.ActionsWithOurElements] : U was inputted into element
+2020-06-04 12:05:33   INFO [libs.ActionsWithOurElements] : t2 was inputted into element
+2020-06-04 12:05:33   INFO [libs.ActionsWithOurElements] : 7evnGzi was inputted into element
+2020-06-04 12:05:34   INFO [libs.ActionsWithOurElements] : Minnesota was inputted into element
+2020-06-04 12:05:34   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 12:05:39   INFO [libs.ActionsWithOurElements] : zU7ufSFIweq0Gypcsjc was inputted into element
+2020-06-04 12:05:39   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 12:05:46   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-06-04 12:05:47   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-06-04 12:05:48   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-06-04 12:05:49   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-06-04 12:05:50   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-06-04 12:05:51   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-06-04 12:05:52   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-06-04 12:05:53   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-06-04 12:05:54   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-06-04 12:05:55   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-06-04 12:05:56   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-06-04 12:05:56   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] :  DB connection closed 
+2020-06-04 12:05:57   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome will be started
+2020-06-04 12:05:59   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome is started
+2020-06-04 12:05:59   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-06-04 12:06:07   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-06-04 12:06:07   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 12:06:08   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-06-04 12:06:08   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-06-04 12:06:08   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 12:06:16   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 12:06:20   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 12:06:21   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 12:06:21   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 12:06:21   INFO [libs.ActionsWithOurElements] : Trailer Repair was inputted into element
+2020-06-04 12:06:21   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 12:06:25   INFO [libs.ActionsWithOurElements] : TrailerRepair 04/06/2020 12:06:01 was inputted into element
+2020-06-04 12:06:25   INFO [libs.ActionsWithOurElements] : mOMZ was inputted into element
+2020-06-04 12:06:26   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 12:06:26   INFO [libs.ActionsWithOurElements] : Den Driver was inputted into element
+2020-06-04 12:06:26   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 12:06:26   INFO [libs.ActionsWithOurElements] : J was inputted into element
+2020-06-04 12:06:26   INFO [libs.ActionsWithOurElements] : Haywood Jashootmee was inputted into element
+2020-06-04 12:06:27   INFO [libs.ActionsWithOurElements] : rQ95 was inputted into element
+2020-06-04 12:06:27   INFO [libs.ActionsWithOurElements] : 06/04/2020 was inputted into element
+2020-06-04 12:06:27   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 12:06:33   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-06-04 12:06:34   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-06-04 12:06:35   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-06-04 12:06:36   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-06-04 12:06:37   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-06-04 12:06:38   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-06-04 12:06:40   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-06-04 12:06:41   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-06-04 12:06:42   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : AC passed
+2020-06-04 12:06:42   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] :  DB connection closed 
+2020-06-04 12:07:27   INFO [frankesteinTest.documentsTest.CarrierUpDateDocumentsTest] : Chrome will be started
+2020-06-04 12:07:32   INFO [frankesteinTest.documentsTest.CarrierUpDateDocumentsTest] : Chrome is started
+2020-06-04 12:07:33   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-06-04 12:07:43   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-06-04 12:07:43   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 12:07:44   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-06-04 12:07:44   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-06-04 12:07:45   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 12:07:53   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 12:07:57   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 12:07:58   INFO [libs.ActionsWithOurElements] : BOL04/04/2020 23:55:26 was inputted into element
+2020-06-04 12:08:01   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 12:08:01   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 12:08:05   INFO [libs.ActionsWithOurElements] : BOL04/06/2020 12:07:35 was inputted into element
+2020-06-04 12:08:05   INFO [libs.ActionsWithOurElements] : gbfghfj33 was inputted into element
+2020-06-04 12:08:05   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 12:08:25  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":".//*[@class='document-popup']//./*[contains(text(),'Lou Reed')]//../input"}
+  (Session info: chrome=80.0.3987.163)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'DESKTOP-UD8IPI4', ip: '192.168.0.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.163, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\denku\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64835}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 5fa230b93f2076e1caef93d9b84272d5
+*** Element info: {Using=xpath, value=.//*[@class='document-popup']//./*[contains(text(),'Lou Reed')]//../input}
+2020-06-04 12:08:25   INFO [frankesteinTest.documentsTest.CarrierUpDateDocumentsTest] :  DB connection closed 
+2020-06-04 12:08:26   INFO [frankesteinTest.documentsTest.CarrierUpDateDocumentsTest] : Chrome will be started
+2020-06-04 12:08:28   INFO [frankesteinTest.documentsTest.CarrierUpDateDocumentsTest] : Chrome is started
+2020-06-04 12:08:28   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-06-04 12:08:36   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-06-04 12:08:37   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 12:08:37   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-06-04 12:08:37   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-06-04 12:08:38   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 12:08:45   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 12:08:50   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 12:08:52   INFO [libs.ActionsWithOurElements] : Toll 04/06/2020 12:03:35 was inputted into element
+2020-06-04 12:08:55   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 12:08:55   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 12:08:59   INFO [libs.ActionsWithOurElements] : Toll 06/04/2020 was inputted into element
+2020-06-04 12:08:59   INFO [libs.ActionsWithOurElements] : dfdfdf was inputted into element
+2020-06-04 12:08:59   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 12:09:19  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":".//*[@class='document-popup']//./*[contains(text(),'Den Driver')]//../input"}
+  (Session info: chrome=80.0.3987.163)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'DESKTOP-UD8IPI4', ip: '192.168.0.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.163, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\denku\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64944}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 8fa50e8ff9ebd1de0ef6f313f9861425
+*** Element info: {Using=xpath, value=.//*[@class='document-popup']//./*[contains(text(),'Den Driver')]//../input}
+2020-06-04 12:09:19   INFO [frankesteinTest.documentsTest.CarrierUpDateDocumentsTest] :  DB connection closed 
+2020-06-04 12:09:20   INFO [frankesteinTest.documentsTest.CarrierUpDateDocumentsTest] : Chrome will be started
+2020-06-04 12:09:22   INFO [frankesteinTest.documentsTest.CarrierUpDateDocumentsTest] : Chrome is started
+2020-06-04 12:09:22   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-06-04 12:09:31   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-06-04 12:09:31   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 12:09:31   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-06-04 12:09:32   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-06-04 12:09:32   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 12:09:40   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 12:09:44   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 12:09:45   INFO [libs.ActionsWithOurElements] : AnnualInspection 04/04/2020 12:08:49 was inputted into element
+2020-06-04 12:09:48   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 12:09:48   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 12:09:51   INFO [libs.ActionsWithOurElements] : AnnualInspection 04/06/2020 12:09:24 was inputted into element
+2020-06-04 12:09:52   INFO [libs.ActionsWithOurElements] : bfyj897 was inputted into element
+2020-06-04 12:09:52   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 12:10:12  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":".//*[@class='document-popup']//./*[contains(text(),'Nosmart Driver')]//../input"}
+  (Session info: chrome=80.0.3987.163)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'DESKTOP-UD8IPI4', ip: '192.168.0.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.163, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\denku\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65067}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c822b2f9aeca5ef74fca5a2bd2ef8c5b
+*** Element info: {Using=xpath, value=.//*[@class='document-popup']//./*[contains(text(),'Nosmart Driver')]//../input}
+2020-06-04 12:10:12   INFO [frankesteinTest.documentsTest.CarrierUpDateDocumentsTest] :  DB connection closed 
+2020-06-04 12:10:13   INFO [frankesteinTest.documentsTest.CarrierUpDateDocumentsTest] : Chrome will be started
+2020-06-04 12:10:15   INFO [frankesteinTest.documentsTest.CarrierUpDateDocumentsTest] : Chrome is started
+2020-06-04 12:10:15   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-06-04 12:10:23   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-06-04 12:10:24   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 12:10:24   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-06-04 12:10:25   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-06-04 12:10:25   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 12:10:33   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 12:10:37   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 12:10:38   INFO [libs.ActionsWithOurElements] : Lumper 04/06/2020 12:02:50 was inputted into element
+2020-06-04 12:10:41   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 12:10:41   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 12:10:45   INFO [libs.ActionsWithOurElements] : Lumper 06/04/2020 was inputted into element
+2020-06-04 12:10:45   INFO [libs.ActionsWithOurElements] : ggsg56 was inputted into element
+2020-06-04 12:10:45   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-06-04 19:33:02   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-06-04 19:33:09   INFO [libs.ChargeMethods] : # Temp Tariff Month Start 2019-11-04T19:33:09.541
+2020-06-04 19:33:09   INFO [libs.ChargeMethods] : # Temp Tariff Month Start 2019-12-31T19:33:09.545
+2020-06-04 19:33:09   INFO [libs.ChargeMethods] : # COUNT MONTH TO MONTH IOSX TARIFF = 3
+2020-06-04 19:33:09   INFO [libs.ChargeMethods] : # COUNT ONE YEAR IOSX TARIFF = 1
+2020-06-04 19:33:09   INFO [libs.ChargeMethods] : # COUNT TWO YEARS IOSX TARIFF = 1
+2020-06-04 19:33:09   INFO [libs.ChargeMethods] : # COUNT MONTH TO MONTH GEOMETRICS TARIFF = 3
+2020-06-04 19:33:09   INFO [libs.ChargeMethods] : # COUNT ONE YEAR GEOMETRICS TARIFF = 1
+2020-06-04 19:33:09   INFO [libs.ChargeMethods] : # COUNT TWO YEARS GEOMETRICS TARIFF = 1
+2020-06-04 19:33:10   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-06-04 19:33:10   INFO [libs.ChargeMethods] : # Deactivated Month IOSX Tariff = 0
+2020-06-04 19:33:10   INFO [libs.ChargeMethods] : # Month IOSX Charge Returned = 0
+2020-06-04 19:33:10   INFO [libs.ChargeMethods] : # One Year IOSX Charge Returned = 0
+2020-06-04 19:33:10   INFO [libs.ChargeMethods] : # Two Year IOSX Charge Returned = 0
+2020-06-04 19:33:10   INFO [libs.ChargeMethods] : # Geometrics Month Charge Returned = 0
+2020-06-04 19:33:10   INFO [libs.ChargeMethods] : # Geometrics One Year Charge Returned = 0
+2020-06-04 19:33:10   INFO [libs.ChargeMethods] : # Geometrics Two Year Charge Returned = 0
+2020-06-04 19:33:11   INFO [libs.ChargeMethods] : # Temp Tariff Month Start 2020-03-31T19:33:11.961
+2020-06-04 19:33:11   INFO [libs.ChargeMethods] : # Temp Tariff Month Start 2020-03-14T19:33:11.963
+2020-06-04 19:33:11   INFO [libs.ChargeMethods] : # Temp Tariff Month Start 2020-03-14T19:33:11.966
+2020-06-04 19:33:19   INFO [libs.ChargeMethods] : Chrome is started
+2020-06-04 19:33:49   INFO [libs.ChargeMethods] : Cron check fleets was run: 2020-04-06 16:33:13
+2020-06-04 19:33:50   INFO [libs.ChargeMethods] : dateTime: [2020-04-06 16:33:27]
+2020-06-04 19:33:51   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-06-04 19:33:51   INFO [libs.ChargeMethods] : # MONTH CHARGE IOSX = 59.98
+2020-06-04 19:33:51   INFO [libs.ChargeMethods] : # ONE YEAR CHARGE IOSX = 329.89
+2020-06-04 19:33:51   INFO [libs.ChargeMethods] : # TWO YEARS CHARGE IOSX = 629.79
+2020-06-04 19:33:51   INFO [libs.ChargeMethods] : # SUM DUE CHARGE IOSX = 1019.66
+2020-06-04 19:33:51   INFO [libs.ChargeMethods] : # MONTH CHARGE Geometrics = 59.98
+2020-06-04 19:33:51   INFO [libs.ChargeMethods] : # ONE YEAR CHARGE Geometrics = 329.89
+2020-06-04 19:33:51   INFO [libs.ChargeMethods] : # TWO YEARS CHARGE Geometrics = 629.79
+2020-06-04 19:33:51   INFO [libs.ChargeMethods] : # SUM DUE CHARGE Geometrics = 1019.66
+2020-06-04 19:33:51   INFO [libs.ChargeMethods] : # activationDate = 1585683191
+2020-06-04 19:33:51   INFO [libs.ChargeMethods] : # countScannerMonthToMonthTariffChargeByDays = 1
+2020-06-04 19:33:51   INFO [libs.ChargeMethods] : ***** Month Days = 30
+2020-06-04 19:33:51   INFO [libs.ChargeMethods] : ***** Price For One Day = 0.9996666666666666
+2020-06-04 19:33:51   INFO [libs.ChargeMethods] : ***** Active Charge Days = 5
+2020-06-04 19:33:51   INFO [libs.ChargeMethods] : ***** chargeByDevice = 5.0
+2020-06-04 19:33:51   INFO [libs.ChargeMethods] : ***** chargeByAllDevices = 5.0
+2020-06-04 19:33:51   INFO [libs.ChargeMethods] : # activationDate = 1584214391
+2020-06-04 19:33:51   INFO [libs.ChargeMethods] : # countScannerMonthToMonthTariffChargeByDays = 1
+2020-06-04 19:33:51   INFO [libs.ChargeMethods] : ***** Month Days = 30
+2020-06-04 19:33:51   INFO [libs.ChargeMethods] : ***** Price For One Day = 0.9996666666666666
+2020-06-04 19:33:51   INFO [libs.ChargeMethods] : ***** Active Charge Days = 22
+2020-06-04 19:33:51   INFO [libs.ChargeMethods] : ***** chargeByDevice = 21.99
+2020-06-04 19:33:51   INFO [libs.ChargeMethods] : ***** chargeByAllDevices = 21.99
+2020-06-04 19:33:51   INFO [libs.ChargeMethods] : # LIST AMOUNT DUE FROM DB = [64.98, 329.89, 629.79, 81.97, 329.89, 629.79]
+2020-06-04 19:33:51   INFO [libs.ChargeMethods] : # PROGRAM COUNT CHARGE  = 2066.31
+2020-06-04 19:33:51   INFO [libs.ChargeMethods] : # SUM DB DUE (CHARGE) = 2066.31
+2020-06-04 19:33:52   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-06-04 19:33:53   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-06-04 19:33:54   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-06-04 19:33:56   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-06-04 19:33:56   INFO [libs.ChargeMethods] : tempEstimatedTill: 2020-05-01
+2020-06-04 19:33:57   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-06-04 19:33:57   INFO [libs.ChargeMethods] : tempPaidTill: 2020-05-01
+2020-06-04 19:33:58   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-06-04 19:33:58   INFO [chargeTest.ChargeFleetSoloTest] :  DB Connection Closed 
+2020-06-04 19:34:22   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-06-04 19:34:29   INFO [libs.ChargeMethods] : # Temp Tariff Month Start 2020-01-01T19:34:29.861
+2020-06-04 19:34:29   INFO [libs.ChargeMethods] : # Temp Tariff Month Start 2020-02-01T19:34:29.863
+2020-06-04 19:34:29   INFO [libs.ChargeMethods] : # COUNT MONTH TO MONTH IOSX TARIFF = 75
+2020-06-04 19:34:29   INFO [libs.ChargeMethods] : # COUNT ONE YEAR IOSX TARIFF = 39
+2020-06-04 19:34:29   INFO [libs.ChargeMethods] : # COUNT TWO YEARS IOSX TARIFF = 100
+2020-06-04 19:34:29   INFO [libs.ChargeMethods] : # COUNT MONTH TO MONTH GEOMETRICS TARIFF = 53
+2020-06-04 19:34:29   INFO [libs.ChargeMethods] : # COUNT ONE YEAR GEOMETRICS TARIFF = 32
+2020-06-04 19:34:29   INFO [libs.ChargeMethods] : # COUNT TWO YEARS GEOMETRICS TARIFF = 38
+2020-06-04 19:34:30   INFO [chargeTest.ChargeDefaultersTest] : AC passed
+2020-06-04 19:34:30   INFO [libs.ChargeMethods] : # Deactivated Month IOSX Tariff = 0
+2020-06-04 19:34:30   INFO [libs.ChargeMethods] : # Month IOSX Charge Returned = 6
+2020-06-04 19:34:30   INFO [libs.ChargeMethods] : # One Year IOSX Charge Returned = 1
+2020-06-04 19:34:30   INFO [libs.ChargeMethods] : # Two Year IOSX Charge Returned = 6
+2020-06-04 19:34:30   INFO [libs.ChargeMethods] : # Geometrics Month Charge Returned = 2
+2020-06-04 19:34:30   INFO [libs.ChargeMethods] : # Geometrics One Year Charge Returned = 2
+2020-06-04 19:34:30   INFO [libs.ChargeMethods] : # Geometrics Two Year Charge Returned = 0
+2020-06-04 19:34:37   INFO [libs.ChargeMethods] : Chrome is started
+2020-06-04 19:35:11   INFO [libs.ChargeMethods] : Cron check fleets was run: 2020-04-06 16:34:32
+2020-06-04 19:35:12   INFO [libs.ChargeMethods] : dateTime: [2020-04-06 16:34:51]
+2020-06-04 19:35:13   INFO [chargeTest.ChargeDefaultersTest] : AC passed
+2020-06-04 19:35:13   INFO [libs.ChargeMethods] : # MONTH CHARGE IOSX = 2429.19
+2020-06-04 19:35:13   INFO [libs.ChargeMethods] : # ONE YEAR CHARGE IOSX = 13195.6
+2020-06-04 19:35:13   INFO [libs.ChargeMethods] : # TWO YEARS CHARGE IOSX = 66757.74
+2020-06-04 19:35:13   INFO [libs.ChargeMethods] : # SUM DUE CHARGE IOSX = 82382.53
+2020-06-04 19:35:13   INFO [libs.ChargeMethods] : # MONTH CHARGE Geometrics = 1649.45
+2020-06-04 19:35:13   INFO [libs.ChargeMethods] : # ONE YEAR CHARGE Geometrics = 11216.26
+2020-06-04 19:35:13   INFO [libs.ChargeMethods] : # TWO YEARS CHARGE Geometrics = 23932.02
+2020-06-04 19:35:13   INFO [libs.ChargeMethods] : # SUM DUE CHARGE Geometrics = 36797.73
+2020-06-04 19:35:13   INFO [libs.ChargeMethods] : # LIST AMOUNT DUE FROM DB = [13195.60, 2025.00, 66757.74, 11216.26, 1375.00, 23932.02]
+2020-06-04 19:35:13   INFO [libs.ChargeMethods] : # PROGRAM COUNT CHARGE  = 119180.26
+2020-06-04 19:35:13   INFO [libs.ChargeMethods] : # SUM DB DUE (CHARGE) = 118501.62
+2020-06-04 19:35:14  ERROR [chargeTest.ChargeDefaultersTest] : AC failed: Charge due is not correct
+2020-06-04 19:35:16   INFO [libs.ChargeMethods] : Chrome is started
+2020-06-04 19:35:39   INFO [libs.ChargeMethods] : Cron check fleets was run: 2020-04-06 16:35:14
+2020-06-04 19:35:39   INFO [chargeTest.ChargeDefaultersTest] :  DB Connection Closed 
+2020-07-04 14:36:29   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-07-04 14:36:35   INFO [libs.ChargeMethods] : # Temp Tariff Month Start 2020-01-02T14:36:35.604
+2020-07-04 14:36:35   INFO [libs.ChargeMethods] : # Temp Tariff Month Start 2020-02-02T14:36:35.608
+2020-07-04 14:36:35   INFO [libs.ChargeMethods] : # COUNT MONTH TO MONTH IOSX TARIFF = 75
+2020-07-04 14:36:35   INFO [libs.ChargeMethods] : # COUNT ONE YEAR IOSX TARIFF = 39
+2020-07-04 14:36:35   INFO [libs.ChargeMethods] : # COUNT TWO YEARS IOSX TARIFF = 100
+2020-07-04 14:36:35   INFO [libs.ChargeMethods] : # COUNT MONTH TO MONTH GEOMETRICS TARIFF = 53
+2020-07-04 14:36:35   INFO [libs.ChargeMethods] : # COUNT ONE YEAR GEOMETRICS TARIFF = 32
+2020-07-04 14:36:35   INFO [libs.ChargeMethods] : # COUNT TWO YEARS GEOMETRICS TARIFF = 38
+2020-07-04 14:36:36   INFO [chargeTest.ChargeDefaultersTest] : AC passed
+2020-07-04 14:36:36   INFO [libs.ChargeMethods] : # Deactivated Month IOSX Tariff = 0
+2020-07-04 14:36:36   INFO [libs.ChargeMethods] : # Month IOSX Charge Returned = 6
+2020-07-04 14:36:36   INFO [libs.ChargeMethods] : # One Year IOSX Charge Returned = 1
+2020-07-04 14:36:36   INFO [libs.ChargeMethods] : # Two Year IOSX Charge Returned = 6
+2020-07-04 14:36:36   INFO [libs.ChargeMethods] : # Geometrics Month Charge Returned = 2
+2020-07-04 14:36:36   INFO [libs.ChargeMethods] : # Geometrics One Year Charge Returned = 2
+2020-07-04 14:36:36   INFO [libs.ChargeMethods] : # Geometrics Two Year Charge Returned = 0
+2020-07-04 14:36:43   INFO [libs.ChargeMethods] : Chrome is started
+2020-07-04 14:37:16   INFO [libs.ChargeMethods] : Cron check fleets was run: 2020-04-07 11:36:38
+2020-07-04 14:37:17   INFO [libs.ChargeMethods] : dateTime: [2020-04-07 11:36:57]
+2020-07-04 14:37:18   INFO [chargeTest.ChargeDefaultersTest] : AC passed
+2020-07-04 14:37:18   INFO [libs.ChargeMethods] : # MONTH CHARGE IOSX = 2429.19
+2020-07-04 14:37:18   INFO [libs.ChargeMethods] : # ONE YEAR CHARGE IOSX = 13195.6
+2020-07-04 14:37:18   INFO [libs.ChargeMethods] : # TWO YEARS CHARGE IOSX = 66757.74
+2020-07-04 14:37:18   INFO [libs.ChargeMethods] : # SUM DUE CHARGE IOSX = 82382.53
+2020-07-04 14:37:18   INFO [libs.ChargeMethods] : # MONTH CHARGE Geometrics = 1649.45
+2020-07-04 14:37:18   INFO [libs.ChargeMethods] : # ONE YEAR CHARGE Geometrics = 11216.26
+2020-07-04 14:37:18   INFO [libs.ChargeMethods] : # TWO YEARS CHARGE Geometrics = 23932.02
+2020-07-04 14:37:18   INFO [libs.ChargeMethods] : # SUM DUE CHARGE Geometrics = 36797.73
+2020-07-04 14:37:18   INFO [libs.ChargeMethods] : # LIST AMOUNT DUE FROM DB = [13195.60, 2025.00, 66757.74, 11216.26, 1375.00, 23932.02]
+2020-07-04 14:37:18   INFO [libs.ChargeMethods] : # PROGRAM COUNT CHARGE  = 119180.26
+2020-07-04 14:37:18   INFO [libs.ChargeMethods] : # SUM DB DUE (CHARGE) = 118501.62
+2020-07-04 14:37:19  ERROR [chargeTest.ChargeDefaultersTest] : AC failed: Charge due is not correct
+2020-07-04 14:37:21   INFO [libs.ChargeMethods] : Chrome is started
+2020-07-04 14:37:44   INFO [libs.ChargeMethods] : Cron check fleets was run: 2020-04-07 11:37:19
+2020-07-04 14:37:45   INFO [chargeTest.ChargeDefaultersTest] :  DB Connection Closed 
+2020-07-04 14:42:21   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-07-04 14:42:28   INFO [libs.ChargeMethods] : # Temp Tariff Month Start 2020-01-02T14:42:28.515
+2020-07-04 14:42:28   INFO [libs.ChargeMethods] : # Temp Tariff Month Start 2020-02-02T14:42:28.517
+2020-07-04 14:42:28   INFO [libs.ChargeMethods] : # COUNT MONTH TO MONTH IOSX TARIFF = 3
+2020-07-04 14:42:28   INFO [libs.ChargeMethods] : # COUNT ONE YEAR IOSX TARIFF = 1
+2020-07-04 14:42:28   INFO [libs.ChargeMethods] : # COUNT TWO YEARS IOSX TARIFF = 1
+2020-07-04 14:42:28   INFO [libs.ChargeMethods] : # COUNT MONTH TO MONTH GEOMETRICS TARIFF = 3
+2020-07-04 14:42:28   INFO [libs.ChargeMethods] : # COUNT ONE YEAR GEOMETRICS TARIFF = 1
+2020-07-04 14:42:28   INFO [libs.ChargeMethods] : # COUNT TWO YEARS GEOMETRICS TARIFF = 1
+2020-07-04 14:42:29   INFO [chargeTest.ChargeDefaultersTest] : AC passed
+2020-07-04 14:42:29   INFO [libs.ChargeMethods] : # Deactivated Month IOSX Tariff = 0
+2020-07-04 14:42:29   INFO [libs.ChargeMethods] : # Month IOSX Charge Returned = 0
+2020-07-04 14:42:29   INFO [libs.ChargeMethods] : # One Year IOSX Charge Returned = 0
+2020-07-04 14:42:29   INFO [libs.ChargeMethods] : # Two Year IOSX Charge Returned = 0
+2020-07-04 14:42:29   INFO [libs.ChargeMethods] : # Geometrics Month Charge Returned = 0
+2020-07-04 14:42:29   INFO [libs.ChargeMethods] : # Geometrics One Year Charge Returned = 0
+2020-07-04 14:42:29   INFO [libs.ChargeMethods] : # Geometrics Two Year Charge Returned = 0
+2020-07-04 14:42:35   INFO [libs.ChargeMethods] : Chrome is started
+2020-07-04 14:42:58   INFO [libs.ChargeMethods] : Cron check fleets was run: 2020-04-07 11:42:31
+2020-07-04 14:42:59   INFO [libs.ChargeMethods] : dateTime: [2020-04-07 11:42:38]
+2020-07-04 14:43:00   INFO [chargeTest.ChargeDefaultersTest] : AC passed
+2020-07-04 14:43:00   INFO [libs.ChargeMethods] : # MONTH CHARGE IOSX = 89.97
+2020-07-04 14:43:00   INFO [libs.ChargeMethods] : # ONE YEAR CHARGE IOSX = 329.89
+2020-07-04 14:43:00   INFO [libs.ChargeMethods] : # TWO YEARS CHARGE IOSX = 629.79
+2020-07-04 14:43:00   INFO [libs.ChargeMethods] : # SUM DUE CHARGE IOSX = 1049.65
+2020-07-04 14:43:00   INFO [libs.ChargeMethods] : # MONTH CHARGE Geometrics = 89.97
+2020-07-04 14:43:00   INFO [libs.ChargeMethods] : # ONE YEAR CHARGE Geometrics = 329.89
+2020-07-04 14:43:00   INFO [libs.ChargeMethods] : # TWO YEARS CHARGE Geometrics = 629.79
+2020-07-04 14:43:00   INFO [libs.ChargeMethods] : # SUM DUE CHARGE Geometrics = 1049.65
+2020-07-04 14:43:00   INFO [libs.ChargeMethods] : # LIST AMOUNT DUE FROM DB = [89.97, 329.89, 629.79, 89.97, 329.89, 629.79]
+2020-07-04 14:43:00   INFO [libs.ChargeMethods] : # PROGRAM COUNT CHARGE  = 2099.3
+2020-07-04 14:43:00   INFO [libs.ChargeMethods] : # SUM DB DUE (CHARGE) = 2099.3
+2020-07-04 14:43:01   INFO [chargeTest.ChargeDefaultersTest] : AC passed
+2020-07-04 14:43:02   INFO [chargeTest.ChargeDefaultersTest] : AC passed
+2020-07-04 14:43:04   INFO [libs.ChargeMethods] : Chrome is started
+2020-07-04 14:43:27   INFO [libs.ChargeMethods] : Cron check fleets was run: 2020-04-07 11:43:02
+2020-07-04 14:43:28   INFO [libs.ChargeMethods] : currentDue = 2147.24
+2020-07-04 14:43:28   INFO [libs.ChargeMethods] : countChargeLateFeeDevices = 6
+2020-07-04 14:43:28   INFO [libs.ChargeMethods] : tempDueWithLateFee = 2147.24
+2020-07-04 14:43:29   INFO [chargeTest.ChargeDefaultersTest] : AC passed
+2020-07-04 14:43:31   INFO [libs.ChargeMethods] : Chrome is started
+2020-07-04 14:43:53   INFO [libs.ChargeMethods] : Cron check fleets was run: 2020-04-07 11:43:29
+2020-07-04 14:43:55   INFO [chargeTest.ChargeDefaultersTest] : AC passed
+2020-07-04 14:43:56   INFO [chargeTest.ChargeDefaultersTest] : AC passed
+2020-07-04 14:43:58   INFO [libs.ChargeMethods] : Chrome is started
+2020-07-04 14:44:21   INFO [libs.ChargeMethods] : Cron check fleets was run: 2020-04-07 11:43:56
+2020-07-04 14:44:23   INFO [libs.ChargeMethods] : listDevicesTariffStart = [1577976148, 1554561748, 1523025748, 1580654548, 1577976148, 1577976148, 1580654548, 1580654548, 1554561748, 1523025748]
+2020-07-04 14:44:23   INFO [libs.ChargeMethods] : countDevicesAfter_12Month = 2
+2020-07-04 14:44:23   INFO [libs.ChargeMethods] : countDevices = 10
+2020-07-04 14:44:23   INFO [libs.ChargeMethods] : tempNotReturnedFee = 1999.9
+2020-07-04 14:44:23   INFO [libs.ChargeMethods] : tempProratedFee = 359.88
+2020-07-04 14:44:23   INFO [libs.ChargeMethods] : tempDueWithReturnedProratedFee = 4507.02
+2020-07-04 14:44:24   INFO [chargeTest.ChargeDefaultersTest] : AC passed
+2020-07-04 14:44:25   INFO [chargeTest.ChargeDefaultersTest] : AC passed
+2020-07-04 14:44:26   INFO [chargeTest.ChargeDefaultersTest] : AC passed
+2020-07-04 14:44:28   INFO [libs.ChargeMethods] : Chrome is started
+2020-07-04 14:44:51   INFO [libs.ChargeMethods] : Cron check fleets was run: 2020-04-07 11:44:27
+2020-07-04 14:44:52   INFO [chargeTest.ChargeDefaultersTest] :  DB Connection Closed 
+2020-07-04 14:55:38   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-07-04 14:55:44   INFO [libs.ChargeMethods] : # Temp Tariff Month Start 2019-11-04T14:55:44.781
+2020-07-04 14:55:44   INFO [libs.ChargeMethods] : # Temp Tariff Month Start 2020-01-02T14:55:44.784
+2020-07-04 14:55:44   INFO [libs.ChargeMethods] : # COUNT MONTH TO MONTH IOSX TARIFF = 1
+2020-07-04 14:55:44   INFO [libs.ChargeMethods] : # COUNT ONE YEAR IOSX TARIFF = 1
+2020-07-04 14:55:44   INFO [libs.ChargeMethods] : # COUNT TWO YEARS IOSX TARIFF = 1
+2020-07-04 14:55:44   INFO [libs.ChargeMethods] : # COUNT MONTH TO MONTH GEOMETRICS TARIFF = 2
+2020-07-04 14:55:44   INFO [libs.ChargeMethods] : # COUNT ONE YEAR GEOMETRICS TARIFF = 3
+2020-07-04 14:55:44   INFO [libs.ChargeMethods] : # COUNT TWO YEARS GEOMETRICS TARIFF = 1
+2020-07-04 14:55:45   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-07-04 14:55:45   INFO [libs.ChargeMethods] : # Deactivated Month IOSX Tariff = 0
+2020-07-04 14:55:45   INFO [libs.ChargeMethods] : # Month IOSX Charge Returned = 0
+2020-07-04 14:55:45   INFO [libs.ChargeMethods] : # One Year IOSX Charge Returned = 0
+2020-07-04 14:55:45   INFO [libs.ChargeMethods] : # Two Year IOSX Charge Returned = 0
+2020-07-04 14:55:45   INFO [libs.ChargeMethods] : # Geometrics Month Charge Returned = 0
+2020-07-04 14:55:45   INFO [libs.ChargeMethods] : # Geometrics One Year Charge Returned = 0
+2020-07-04 14:55:45   INFO [libs.ChargeMethods] : # Geometrics Two Year Charge Returned = 0
+2020-07-04 14:58:51   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-07-04 14:58:57   INFO [libs.ChargeMethods] : # Temp Tariff Month Start 2019-11-04T14:58:57.524
+2020-07-04 14:58:57   INFO [libs.ChargeMethods] : # Temp Tariff Month Start 2020-01-02T14:58:57.526
+2020-07-04 14:58:57   INFO [libs.ChargeMethods] : # COUNT MONTH TO MONTH IOSX TARIFF = 1
+2020-07-04 14:58:57   INFO [libs.ChargeMethods] : # COUNT ONE YEAR IOSX TARIFF = 1
+2020-07-04 14:58:57   INFO [libs.ChargeMethods] : # COUNT TWO YEARS IOSX TARIFF = 1
+2020-07-04 14:58:57   INFO [libs.ChargeMethods] : # COUNT MONTH TO MONTH GEOMETRICS TARIFF = 2
+2020-07-04 14:58:57   INFO [libs.ChargeMethods] : # COUNT ONE YEAR GEOMETRICS TARIFF = 3
+2020-07-04 14:58:57   INFO [libs.ChargeMethods] : # COUNT TWO YEARS GEOMETRICS TARIFF = 1
+2020-07-04 14:58:58   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-07-04 14:58:58   INFO [libs.ChargeMethods] : # Deactivated Month IOSX Tariff = 0
+2020-07-04 14:58:58   INFO [libs.ChargeMethods] : # Month IOSX Charge Returned = 0
+2020-07-04 14:58:58   INFO [libs.ChargeMethods] : # One Year IOSX Charge Returned = 0
+2020-07-04 14:58:58   INFO [libs.ChargeMethods] : # Two Year IOSX Charge Returned = 0
+2020-07-04 14:58:58   INFO [libs.ChargeMethods] : # Geometrics Month Charge Returned = 0
+2020-07-04 14:58:58   INFO [libs.ChargeMethods] : # Geometrics One Year Charge Returned = 0
+2020-07-04 14:58:58   INFO [libs.ChargeMethods] : # Geometrics Two Year Charge Returned = 0
+2020-07-04 14:58:59   INFO [libs.ChargeMethods] : # Temp Tariff Month Start 2020-03-28T14:58:59.995
+2020-07-04 14:58:59   INFO [libs.ChargeMethods] : # Temp Tariff Month Start 2020-03-30T14:58:59.996
+2020-07-04 14:59:06   INFO [libs.ChargeMethods] : Chrome is started
+2020-07-04 14:59:30   INFO [libs.ChargeMethods] : Cron check Drivers was run: 2020-04-07 11:59:01
+2020-07-04 14:59:31   INFO [libs.ChargeMethods] : dateTime: [2020-04-07 11:59:18]
+2020-07-04 14:59:32   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-07-04 14:59:32   INFO [libs.ChargeMethods] : # MONTH CHARGE IOSX = 0.0
+2020-07-04 14:59:32   INFO [libs.ChargeMethods] : # ONE YEAR CHARGE IOSX = 329.89
+2020-07-04 14:59:32   INFO [libs.ChargeMethods] : # TWO YEARS CHARGE IOSX = 629.79
+2020-07-04 14:59:32   INFO [libs.ChargeMethods] : # SUM DUE CHARGE IOSX = 959.68
+2020-07-04 14:59:32   INFO [libs.ChargeMethods] : # MONTH CHARGE Geometrics = 29.99
+2020-07-04 14:59:32   INFO [libs.ChargeMethods] : # ONE YEAR CHARGE Geometrics = 989.67
+2020-07-04 14:59:32   INFO [libs.ChargeMethods] : # TWO YEARS CHARGE Geometrics = 629.79
+2020-07-04 14:59:32   INFO [libs.ChargeMethods] : # SUM DUE CHARGE Geometrics = 1649.45
+2020-07-04 14:59:32   INFO [libs.ChargeMethods] : # activationDate = 1585407539
+2020-07-04 14:59:32   INFO [libs.ChargeMethods] : # countScannerMonthToMonthTariffChargeByDays = 1
+2020-07-04 14:59:32   INFO [libs.ChargeMethods] : ***** Month Days = 30
+2020-07-04 14:59:32   INFO [libs.ChargeMethods] : ***** Price For One Day = 0.9996666666666666
+2020-07-04 14:59:32   INFO [libs.ChargeMethods] : ***** Active Charge Days = 9
+2020-07-04 14:59:32   INFO [libs.ChargeMethods] : ***** chargeByDevice = 9.0
+2020-07-04 14:59:32   INFO [libs.ChargeMethods] : ***** chargeByAllDevices = 9.0
+2020-07-04 14:59:32   INFO [libs.ChargeMethods] : # activationDate = 1585580339
+2020-07-04 14:59:32   INFO [libs.ChargeMethods] : # countScannerMonthToMonthTariffChargeByDays = 1
+2020-07-04 14:59:32   INFO [libs.ChargeMethods] : ***** Month Days = 30
+2020-07-04 14:59:32   INFO [libs.ChargeMethods] : ***** Price For One Day = 0.9996666666666666
+2020-07-04 14:59:32   INFO [libs.ChargeMethods] : ***** Active Charge Days = 7
+2020-07-04 14:59:32   INFO [libs.ChargeMethods] : ***** chargeByDevice = 7.0
+2020-07-04 14:59:32   INFO [libs.ChargeMethods] : ***** chargeByAllDevices = 7.0
+2020-07-04 14:59:32   INFO [libs.ChargeMethods] : # LIST AMOUNT DUE FROM DB = [7.00, 989.67, 9.00, 329.89, 629.79, 629.79]
+2020-07-04 14:59:32   INFO [libs.ChargeMethods] : # PROGRAM COUNT CHARGE  = 2625.13
+2020-07-04 14:59:32   INFO [libs.ChargeMethods] : # SUM DB DUE (CHARGE) = 2595.14
+2020-07-04 14:59:33  ERROR [chargeTest.ChargeFleetSoloTest] : AC failed: Charge due is not correct
+2020-07-04 14:59:33   INFO [chargeTest.ChargeFleetSoloTest] :  DB Connection Closed 
+2020-07-04 15:07:31   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-07-04 15:07:37   INFO [libs.ChargeMethods] : # Temp Tariff Month Start 2019-11-04T15:07:37.316
+2020-07-04 15:07:37   INFO [libs.ChargeMethods] : # Temp Tariff Month Start 2020-02-02T15:07:37.319
+2020-07-04 15:07:37   INFO [libs.ChargeMethods] : # COUNT MONTH TO MONTH IOSX TARIFF = 3
+2020-07-04 15:07:37   INFO [libs.ChargeMethods] : # COUNT ONE YEAR IOSX TARIFF = 1
+2020-07-04 15:07:37   INFO [libs.ChargeMethods] : # COUNT TWO YEARS IOSX TARIFF = 1
+2020-07-04 15:07:37   INFO [libs.ChargeMethods] : # COUNT MONTH TO MONTH GEOMETRICS TARIFF = 5
+2020-07-04 15:07:37   INFO [libs.ChargeMethods] : # COUNT ONE YEAR GEOMETRICS TARIFF = 3
+2020-07-04 15:07:37   INFO [libs.ChargeMethods] : # COUNT TWO YEARS GEOMETRICS TARIFF = 1
+2020-07-04 15:07:38   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-07-04 15:07:38   INFO [libs.ChargeMethods] : # Deactivated Month IOSX Tariff = 0
+2020-07-04 15:07:38   INFO [libs.ChargeMethods] : # Month IOSX Charge Returned = 0
+2020-07-04 15:07:38   INFO [libs.ChargeMethods] : # One Year IOSX Charge Returned = 0
+2020-07-04 15:07:38   INFO [libs.ChargeMethods] : # Two Year IOSX Charge Returned = 0
+2020-07-04 15:07:38   INFO [libs.ChargeMethods] : # Geometrics Month Charge Returned = 0
+2020-07-04 15:07:38   INFO [libs.ChargeMethods] : # Geometrics One Year Charge Returned = 0
+2020-07-04 15:07:38   INFO [libs.ChargeMethods] : # Geometrics Two Year Charge Returned = 0
+2020-07-04 15:07:39   INFO [libs.ChargeMethods] : # Temp Tariff Month Start 2020-03-28T15:07:39.734
+2020-07-04 15:07:39   INFO [libs.ChargeMethods] : # Temp Tariff Month Start 2020-03-30T15:07:39.735
+2020-07-04 15:07:46   INFO [libs.ChargeMethods] : Chrome is started
+2020-07-04 15:08:10   INFO [libs.ChargeMethods] : Cron check Drivers was run: 2020-04-07 12:07:41
+2020-07-04 15:08:11   INFO [libs.ChargeMethods] : dateTime: [2020-04-07 12:07:57]
+2020-07-04 15:08:12   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-07-04 15:08:12   INFO [libs.ChargeMethods] : # MONTH CHARGE IOSX = 59.98
+2020-07-04 15:08:12   INFO [libs.ChargeMethods] : # ONE YEAR CHARGE IOSX = 329.89
+2020-07-04 15:08:12   INFO [libs.ChargeMethods] : # TWO YEARS CHARGE IOSX = 629.79
+2020-07-04 15:08:12   INFO [libs.ChargeMethods] : # SUM DUE CHARGE IOSX = 1019.66
+2020-07-04 15:08:12   INFO [libs.ChargeMethods] : # MONTH CHARGE Geometrics = 119.96
+2020-07-04 15:08:12   INFO [libs.ChargeMethods] : # ONE YEAR CHARGE Geometrics = 989.67
+2020-07-04 15:08:12   INFO [libs.ChargeMethods] : # TWO YEARS CHARGE Geometrics = 629.79
+2020-07-04 15:08:12   INFO [libs.ChargeMethods] : # SUM DUE CHARGE Geometrics = 1739.42
+2020-07-04 15:08:12   INFO [libs.ChargeMethods] : # activationDate = 1585408059
+2020-07-04 15:08:12   INFO [libs.ChargeMethods] : # countScannerMonthToMonthTariffChargeByDays = 1
+2020-07-04 15:08:12   INFO [libs.ChargeMethods] : ***** Month Days = 30
+2020-07-04 15:08:12   INFO [libs.ChargeMethods] : ***** Price For One Day = 0.9996666666666666
+2020-07-04 15:08:12   INFO [libs.ChargeMethods] : ***** Active Charge Days = 9
+2020-07-04 15:08:12   INFO [libs.ChargeMethods] : ***** chargeByDevice = 9.0
+2020-07-04 15:08:12   INFO [libs.ChargeMethods] : ***** chargeByAllDevices = 9.0
+2020-07-04 15:08:12   INFO [libs.ChargeMethods] : # activationDate = 1585580859
+2020-07-04 15:08:12   INFO [libs.ChargeMethods] : # countScannerMonthToMonthTariffChargeByDays = 1
+2020-07-04 15:08:12   INFO [libs.ChargeMethods] : ***** Month Days = 30
+2020-07-04 15:08:12   INFO [libs.ChargeMethods] : ***** Price For One Day = 0.9996666666666666
+2020-07-04 15:08:12   INFO [libs.ChargeMethods] : ***** Active Charge Days = 7
+2020-07-04 15:08:12   INFO [libs.ChargeMethods] : ***** chargeByDevice = 7.0
+2020-07-04 15:08:12   INFO [libs.ChargeMethods] : ***** chargeByAllDevices = 7.0
+2020-07-04 15:08:12   INFO [libs.ChargeMethods] : # LIST AMOUNT DUE FROM DB = [66.98, 989.67, 38.99, 329.89, 629.79, 629.79]
+2020-07-04 15:08:12   INFO [libs.ChargeMethods] : # PROGRAM COUNT CHARGE  = 2775.08
+2020-07-04 15:08:12   INFO [libs.ChargeMethods] : # SUM DB DUE (CHARGE) = 2685.11
+2020-07-04 15:08:13  ERROR [chargeTest.ChargeFleetSoloTest] : AC failed: Charge due is not correct
+2020-07-04 15:08:13   INFO [chargeTest.ChargeFleetSoloTest] :  DB Connection Closed 
+2020-07-04 15:42:05   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-07-04 15:42:11   INFO [libs.ChargeMethods] : # Temp Tariff Month Start 2019-11-04T15:42:11.789
+2020-07-04 15:42:11   INFO [libs.ChargeMethods] : # Temp Tariff Month Start 2020-02-02T15:42:11.792
+2020-07-04 15:42:11   INFO [libs.ChargeMethods] : # COUNT MONTH TO MONTH IOSX TARIFF = 3
+2020-07-04 15:42:11   INFO [libs.ChargeMethods] : # COUNT ONE YEAR IOSX TARIFF = 1
+2020-07-04 15:42:11   INFO [libs.ChargeMethods] : # COUNT TWO YEARS IOSX TARIFF = 1
+2020-07-04 15:42:11   INFO [libs.ChargeMethods] : # COUNT MONTH TO MONTH GEOMETRICS TARIFF = 5
+2020-07-04 15:42:11   INFO [libs.ChargeMethods] : # COUNT ONE YEAR GEOMETRICS TARIFF = 3
+2020-07-04 15:42:11   INFO [libs.ChargeMethods] : # COUNT TWO YEARS GEOMETRICS TARIFF = 1
+2020-07-04 15:42:12   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-07-04 15:42:12   INFO [libs.ChargeMethods] : # Deactivated Month IOSX Tariff = 0
+2020-07-04 15:42:12   INFO [libs.ChargeMethods] : # Month IOSX Charge Returned = 0
+2020-07-04 15:42:12   INFO [libs.ChargeMethods] : # One Year IOSX Charge Returned = 0
+2020-07-04 15:42:12   INFO [libs.ChargeMethods] : # Two Year IOSX Charge Returned = 0
+2020-07-04 15:42:12   INFO [libs.ChargeMethods] : # Geometrics Month Charge Returned = 0
+2020-07-04 15:42:12   INFO [libs.ChargeMethods] : # Geometrics One Year Charge Returned = 0
+2020-07-04 15:42:12   INFO [libs.ChargeMethods] : # Geometrics Two Year Charge Returned = 0
+2020-07-04 15:42:14   INFO [libs.ChargeMethods] : # Temp Tariff Month Start 2020-03-28T15:42:14.269
+2020-07-04 15:42:14   INFO [libs.ChargeMethods] : # Temp Tariff Month Start 2020-03-30T15:42:14.269
+2020-07-04 15:42:21   INFO [libs.ChargeMethods] : Chrome is started
+2020-07-04 15:42:45   INFO [libs.ChargeMethods] : Cron check Drivers was run: 2020-04-07 12:42:15
+2020-07-04 15:42:46   INFO [libs.ChargeMethods] : dateTime: [2020-04-07 12:42:33]
+2020-07-04 15:42:47   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-07-04 15:42:47   INFO [libs.ChargeMethods] : # MONTH CHARGE IOSX = 59.98
+2020-07-04 15:42:47   INFO [libs.ChargeMethods] : # ONE YEAR CHARGE IOSX = 329.89
+2020-07-04 15:42:47   INFO [libs.ChargeMethods] : # TWO YEARS CHARGE IOSX = 629.79
+2020-07-04 15:42:47   INFO [libs.ChargeMethods] : # SUM DUE CHARGE IOSX = 1019.66
+2020-07-04 15:42:47   INFO [libs.ChargeMethods] : # MONTH CHARGE Geometrics = 119.96
+2020-07-04 15:42:47   INFO [libs.ChargeMethods] : # ONE YEAR CHARGE Geometrics = 989.67
+2020-07-04 15:42:47   INFO [libs.ChargeMethods] : # TWO YEARS CHARGE Geometrics = 629.79
+2020-07-04 15:42:47   INFO [libs.ChargeMethods] : # SUM DUE CHARGE Geometrics = 1739.42
+2020-07-04 15:42:47   INFO [libs.ChargeMethods] : # activationDate = 1585410134
+2020-07-04 15:42:47   INFO [libs.ChargeMethods] : # countScannerMonthToMonthTariffChargeByDays = 1
+2020-07-04 15:42:47   INFO [libs.ChargeMethods] : ***** Month Days = 30
+2020-07-04 15:42:47   INFO [libs.ChargeMethods] : ***** Price For One Day = 0.9996666666666666
+2020-07-04 15:42:47   INFO [libs.ChargeMethods] : ***** Active Charge Days = 9
+2020-07-04 15:42:47   INFO [libs.ChargeMethods] : ***** chargeByDevice = 9.0
+2020-07-04 15:42:47   INFO [libs.ChargeMethods] : ***** chargeByAllDevices = 9.0
+2020-07-04 15:42:47   INFO [libs.ChargeMethods] : # activationDate = 1585582934
+2020-07-04 15:42:47   INFO [libs.ChargeMethods] : # countScannerMonthToMonthTariffChargeByDays = 1
+2020-07-04 15:42:47   INFO [libs.ChargeMethods] : ***** Month Days = 30
+2020-07-04 15:42:47   INFO [libs.ChargeMethods] : ***** Price For One Day = 0.9996666666666666
+2020-07-04 15:42:47   INFO [libs.ChargeMethods] : ***** Active Charge Days = 7
+2020-07-04 15:42:47   INFO [libs.ChargeMethods] : ***** chargeByDevice = 7.0
+2020-07-04 15:42:47   INFO [libs.ChargeMethods] : ***** chargeByAllDevices = 7.0
+2020-07-04 15:42:47   INFO [libs.ChargeMethods] : # LIST AMOUNT DUE FROM DB = [126.96, 989.67, 68.98, 329.89, 629.79, 629.79]
+2020-07-04 15:42:47   INFO [libs.ChargeMethods] : # PROGRAM COUNT CHARGE  = 2775.08
+2020-07-04 15:42:47   INFO [libs.ChargeMethods] : # SUM DB DUE (CHARGE) = 2775.08
+2020-07-04 15:42:48   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-07-04 15:42:49   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-07-04 15:42:50   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-07-04 15:42:51   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-07-04 15:42:51   INFO [libs.ChargeMethods] : # tempEstimatedTill: 2020-05-01
+2020-07-04 15:42:52   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-07-04 15:42:53   INFO [libs.ChargeMethods] : # tempPaidTill: 2020-05-01
+2020-07-04 15:42:54   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-07-04 15:42:54   INFO [chargeTest.ChargeFleetSoloTest] :  DB Connection Closed 
+2020-07-04 15:53:26   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-07-04 15:53:32   INFO [libs.ChargeMethods] : # Temp Tariff Month Start 2019-11-04T15:53:32.368
+2020-07-04 15:53:32   INFO [libs.ChargeMethods] : # Temp Tariff Month Start 2020-02-02T15:53:32.372
+2020-07-04 15:53:32   INFO [libs.ChargeMethods] : # COUNT MONTH TO MONTH IOSX TARIFF = 3
+2020-07-04 15:53:32   INFO [libs.ChargeMethods] : # COUNT ONE YEAR IOSX TARIFF = 1
+2020-07-04 15:53:32   INFO [libs.ChargeMethods] : # COUNT TWO YEARS IOSX TARIFF = 1
+2020-07-04 15:53:32   INFO [libs.ChargeMethods] : # COUNT MONTH TO MONTH GEOMETRICS TARIFF = 5
+2020-07-04 15:53:32   INFO [libs.ChargeMethods] : # COUNT ONE YEAR GEOMETRICS TARIFF = 3
+2020-07-04 15:53:32   INFO [libs.ChargeMethods] : # COUNT TWO YEARS GEOMETRICS TARIFF = 1
+2020-07-04 15:53:33   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-07-04 15:53:33   INFO [libs.ChargeMethods] : # Deactivated Month IOSX Tariff = 0
+2020-07-04 15:53:33   INFO [libs.ChargeMethods] : # Month IOSX Charge Returned = 0
+2020-07-04 15:53:33   INFO [libs.ChargeMethods] : # One Year IOSX Charge Returned = 0
+2020-07-04 15:53:33   INFO [libs.ChargeMethods] : # Two Year IOSX Charge Returned = 0
+2020-07-04 15:53:33   INFO [libs.ChargeMethods] : # Geometrics Month Charge Returned = 0
+2020-07-04 15:53:33   INFO [libs.ChargeMethods] : # Geometrics One Year Charge Returned = 0
+2020-07-04 15:53:33   INFO [libs.ChargeMethods] : # Geometrics Two Year Charge Returned = 0
+2020-07-04 15:53:34   INFO [libs.ChargeMethods] : # Temp Tariff Month Start 2020-03-28T15:53:34.891
+2020-07-04 15:53:34   INFO [libs.ChargeMethods] : # Temp Tariff Month Start 2020-03-30T15:53:34.891
+2020-07-04 15:53:41   INFO [libs.ChargeMethods] : Chrome is started
+2020-07-04 15:54:05   INFO [libs.ChargeMethods] : Cron check Drivers was run: 2020-04-07 12:53:36
+2020-07-04 15:54:06   INFO [libs.ChargeMethods] : dateTime: [2020-04-07 12:53:53]
+2020-07-04 15:54:07   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-07-04 15:54:07   INFO [libs.ChargeMethods] : # MONTH CHARGE IOSX = 59.98
+2020-07-04 15:54:07   INFO [libs.ChargeMethods] : # ONE YEAR CHARGE IOSX = 329.89
+2020-07-04 15:54:07   INFO [libs.ChargeMethods] : # TWO YEARS CHARGE IOSX = 629.79
+2020-07-04 15:54:07   INFO [libs.ChargeMethods] : # SUM DUE CHARGE IOSX = 1019.66
+2020-07-04 15:54:07   INFO [libs.ChargeMethods] : # MONTH CHARGE Geometrics = 119.96
+2020-07-04 15:54:07   INFO [libs.ChargeMethods] : # ONE YEAR CHARGE Geometrics = 989.67
+2020-07-04 15:54:07   INFO [libs.ChargeMethods] : # TWO YEARS CHARGE Geometrics = 629.79
+2020-07-04 15:54:07   INFO [libs.ChargeMethods] : # SUM DUE CHARGE Geometrics = 1739.42
+2020-07-04 15:54:07   INFO [libs.ChargeMethods] : # activationDate = 1585410814
+2020-07-04 15:54:07   INFO [libs.ChargeMethods] : # countScannerMonthToMonthTariffChargeByDays = 1
+2020-07-04 15:54:07   INFO [libs.ChargeMethods] : ***** Month Days = 30
+2020-07-04 15:54:07   INFO [libs.ChargeMethods] : ***** Price For One Day = 0.9996666666666666
+2020-07-04 15:54:07   INFO [libs.ChargeMethods] : ***** Active Charge Days = 9
+2020-07-04 15:54:07   INFO [libs.ChargeMethods] : ***** chargeByDevice = 9.0
+2020-07-04 15:54:07   INFO [libs.ChargeMethods] : ***** chargeByAllDevices = 9.0
+2020-07-04 15:54:07   INFO [libs.ChargeMethods] : # activationDate = 1585583614
+2020-07-04 15:54:07   INFO [libs.ChargeMethods] : # countScannerMonthToMonthTariffChargeByDays = 1
+2020-07-04 15:54:07   INFO [libs.ChargeMethods] : ***** Month Days = 30
+2020-07-04 15:54:07   INFO [libs.ChargeMethods] : ***** Price For One Day = 0.9996666666666666
+2020-07-04 15:54:07   INFO [libs.ChargeMethods] : ***** Active Charge Days = 7
+2020-07-04 15:54:07   INFO [libs.ChargeMethods] : ***** chargeByDevice = 7.0
+2020-07-04 15:54:07   INFO [libs.ChargeMethods] : ***** chargeByAllDevices = 7.0
+2020-07-04 15:54:08   INFO [libs.ChargeMethods] : # LIST AMOUNT DUE FROM DB = [126.96, 989.67, 68.98, 329.89, 629.79, 629.79]
+2020-07-04 15:54:08   INFO [libs.ChargeMethods] : # PROGRAM COUNT CHARGE  = 2775.08
+2020-07-04 15:54:08   INFO [libs.ChargeMethods] : # SUM DB DUE (CHARGE) = 2775.08
+2020-07-04 15:54:09   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-07-04 15:54:10   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-07-04 15:54:11   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-07-04 15:54:12   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-07-04 15:54:12   INFO [libs.ChargeMethods] : # tempEstimatedTill: 2020-05-01
+2020-07-04 15:54:13   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-07-04 15:54:13   INFO [libs.ChargeMethods] : # tempPaidTill: 2020-05-01
+2020-07-04 15:54:14   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-07-04 15:54:14   INFO [chargeTest.ChargeFleetSoloTest] :  DB Connection Closed 
+2020-07-04 16:33:06   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome will be started
+2020-07-04 16:33:11   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome is started
+2020-07-04 16:33:11   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-07-04 16:33:22   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-07-04 16:33:22   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-07-04 16:33:23   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-07-04 16:33:23   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-07-04 16:33:23   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-07-04 16:33:31   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-07-04 16:33:36   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-07-04 16:33:36   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-07-04 16:33:36   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-07-04 16:33:37   INFO [libs.ActionsWithOurElements] : Fuel Receipts was inputted into element
+2020-07-04 16:33:57  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (d2778dc5680c7fdc84be4a8fc8b4e2b1)] -> xpath: .//*[@role='listbox']] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'DESKTOP-UD8IPI4', ip: '192.168.0.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.163, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\denku\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65369}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: d2778dc5680c7fdc84be4a8fc8b4e2b1
+2020-07-04 16:33:57   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] :  DB connection closed 
+2020-08-04 18:56:44   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-08-04 18:56:52   INFO [libs.ChargeMethods] : # Temp Tariff Month Start 2019-11-06T18:56:52.016
+2020-08-04 18:56:52   INFO [libs.ChargeMethods] : # Temp Tariff Month Start 2020-02-02T18:56:52.020
+2020-08-04 18:56:52   INFO [libs.ChargeMethods] : # COUNT MONTH TO MONTH IOSX TARIFF = 3
+2020-08-04 18:56:52   INFO [libs.ChargeMethods] : # COUNT ONE YEAR IOSX TARIFF = 1
+2020-08-04 18:56:52   INFO [libs.ChargeMethods] : # COUNT TWO YEARS IOSX TARIFF = 1
+2020-08-04 18:56:52   INFO [libs.ChargeMethods] : # COUNT MONTH TO MONTH GEOMETRICS TARIFF = 3
+2020-08-04 18:56:52   INFO [libs.ChargeMethods] : # COUNT ONE YEAR GEOMETRICS TARIFF = 1
+2020-08-04 18:56:52   INFO [libs.ChargeMethods] : # COUNT TWO YEARS GEOMETRICS TARIFF = 1
+2020-08-04 18:56:53   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-08-04 18:56:53   INFO [libs.ChargeMethods] : # Deactivated Month IOSX Tariff = 0
+2020-08-04 18:56:53   INFO [libs.ChargeMethods] : # Month IOSX Charge Returned = 0
+2020-08-04 18:56:53   INFO [libs.ChargeMethods] : # One Year IOSX Charge Returned = 0
+2020-08-04 18:56:53   INFO [libs.ChargeMethods] : # Two Year IOSX Charge Returned = 0
+2020-08-04 18:56:53   INFO [libs.ChargeMethods] : # Geometrics Month Charge Returned = 0
+2020-08-04 18:56:53   INFO [libs.ChargeMethods] : # Geometrics One Year Charge Returned = 0
+2020-08-04 18:56:53   INFO [libs.ChargeMethods] : # Geometrics Two Year Charge Returned = 0
+2020-08-04 18:56:54   INFO [libs.ChargeMethods] : # Temp Tariff Month Start 2020-04-02T18:56:54.403
+2020-08-04 18:56:54   INFO [libs.ChargeMethods] : # Temp Tariff Month Start 2020-03-16T18:56:54.405
+2020-08-04 18:57:01   INFO [libs.ChargeMethods] : Chrome is started
+2020-08-04 18:57:27   INFO [libs.ChargeMethods] : Cron check fleets was run: 2020-04-08 15:56:56
+2020-08-04 18:57:28   INFO [libs.ChargeMethods] : dateTime: [2020-04-08 15:57:07]
+2020-08-04 18:57:29   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-08-04 18:57:29   INFO [libs.ChargeMethods] : # MONTH CHARGE IOSX = 59.98
+2020-08-04 18:57:29   INFO [libs.ChargeMethods] : # ONE YEAR CHARGE IOSX = 329.89
+2020-08-04 18:57:29   INFO [libs.ChargeMethods] : # TWO YEARS CHARGE IOSX = 629.79
+2020-08-04 18:57:29   INFO [libs.ChargeMethods] : # SUM DUE CHARGE IOSX = 1019.66
+2020-08-04 18:57:29   INFO [libs.ChargeMethods] : # MONTH CHARGE Geometrics = 59.98
+2020-08-04 18:57:29   INFO [libs.ChargeMethods] : # ONE YEAR CHARGE Geometrics = 329.89
+2020-08-04 18:57:29   INFO [libs.ChargeMethods] : # TWO YEARS CHARGE Geometrics = 629.79
+2020-08-04 18:57:29   INFO [libs.ChargeMethods] : # SUM DUE CHARGE Geometrics = 1019.66
+2020-08-04 18:57:29   INFO [libs.ChargeMethods] : # activationDate = 1585853814
+2020-08-04 18:57:29   INFO [libs.ChargeMethods] : # countScannerMonthToMonthTariffChargeByDays = 1
+2020-08-04 18:57:29   INFO [libs.ChargeMethods] : ***** Month Days = 30
+2020-08-04 18:57:29   INFO [libs.ChargeMethods] : ***** Price For One Day = 0.9996666666666666
+2020-08-04 18:57:29   INFO [libs.ChargeMethods] : ***** Active Charge Days = 5
+2020-08-04 18:57:29   INFO [libs.ChargeMethods] : ***** chargeByDevice = 5.0
+2020-08-04 18:57:29   INFO [libs.ChargeMethods] : ***** chargeByAllDevices = 5.0
+2020-08-04 18:57:29   INFO [libs.ChargeMethods] : # activationDate = 1584385014
+2020-08-04 18:57:29   INFO [libs.ChargeMethods] : # countScannerMonthToMonthTariffChargeByDays = 1
+2020-08-04 18:57:29   INFO [libs.ChargeMethods] : ***** Month Days = 30
+2020-08-04 18:57:29   INFO [libs.ChargeMethods] : ***** Price For One Day = 0.9996666666666666
+2020-08-04 18:57:29   INFO [libs.ChargeMethods] : ***** Active Charge Days = 22
+2020-08-04 18:57:29   INFO [libs.ChargeMethods] : ***** chargeByDevice = 21.99
+2020-08-04 18:57:29   INFO [libs.ChargeMethods] : ***** chargeByAllDevices = 21.99
+2020-08-04 18:57:29   INFO [libs.ChargeMethods] : # LIST AMOUNT DUE FROM DB = [64.98, 329.89, 629.79, 81.97, 329.89, 629.79]
+2020-08-04 18:57:29   INFO [libs.ChargeMethods] : # PROGRAM COUNT CHARGE  = 2066.31
+2020-08-04 18:57:29   INFO [libs.ChargeMethods] : # SUM DB DUE (CHARGE) = 2066.31
+2020-08-04 18:57:30   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-08-04 18:57:31   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-08-04 18:57:32   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-08-04 18:57:33   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-08-04 18:57:34   INFO [libs.ChargeMethods] : tempEstimatedTill: 2020-05-01
+2020-08-04 18:57:35   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-08-04 18:57:35   INFO [libs.ChargeMethods] : tempPaidTill: 2020-05-01
+2020-08-04 18:57:36   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-08-04 18:57:36   INFO [chargeTest.ChargeFleetSoloTest] :  DB Connection Closed 
+2020-08-04 19:17:57   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-08-04 19:18:03   INFO [libs.ChargeMethods] : # Temp Tariff Month Start 2019-11-05T19:18:03.525
+2020-08-04 19:18:03   INFO [libs.ChargeMethods] : # Temp Tariff Month Start 2020-02-03T19:18:03.528
+2020-08-04 19:18:03   INFO [libs.ChargeMethods] : # COUNT MONTH TO MONTH IOSX TARIFF = 3
+2020-08-04 19:18:03   INFO [libs.ChargeMethods] : # COUNT ONE YEAR IOSX TARIFF = 1
+2020-08-04 19:18:03   INFO [libs.ChargeMethods] : # COUNT TWO YEARS IOSX TARIFF = 1
+2020-08-04 19:18:03   INFO [libs.ChargeMethods] : # COUNT MONTH TO MONTH GEOMETRICS TARIFF = 5
+2020-08-04 19:18:03   INFO [libs.ChargeMethods] : # COUNT ONE YEAR GEOMETRICS TARIFF = 3
+2020-08-04 19:18:03   INFO [libs.ChargeMethods] : # COUNT TWO YEARS GEOMETRICS TARIFF = 1
+2020-08-04 19:18:04   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-08-04 19:18:04   INFO [libs.ChargeMethods] : # Deactivated Month IOSX Tariff = 0
+2020-08-04 19:18:04   INFO [libs.ChargeMethods] : # Month IOSX Charge Returned = 0
+2020-08-04 19:18:04   INFO [libs.ChargeMethods] : # One Year IOSX Charge Returned = 0
+2020-08-04 19:18:04   INFO [libs.ChargeMethods] : # Two Year IOSX Charge Returned = 0
+2020-08-04 19:18:04   INFO [libs.ChargeMethods] : # Geometrics Month Charge Returned = 0
+2020-08-04 19:18:04   INFO [libs.ChargeMethods] : # Geometrics One Year Charge Returned = 0
+2020-08-04 19:18:04   INFO [libs.ChargeMethods] : # Geometrics Two Year Charge Returned = 0
+2020-08-04 19:18:06   INFO [libs.ChargeMethods] : # Temp Tariff Month Start 2020-03-29T19:18:06.117
+2020-08-04 19:18:06   INFO [libs.ChargeMethods] : # Temp Tariff Month Start 2020-03-31T19:18:06.119
+2020-08-04 19:18:13   INFO [libs.ChargeMethods] : Chrome is started
+2020-08-04 19:18:38   INFO [libs.ChargeMethods] : Cron check Drivers was run: 2020-04-08 16:18:07
+2020-08-04 19:18:39   INFO [libs.ChargeMethods] : dateTime: [2020-04-08 16:18:27]
+2020-08-04 19:18:40   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-08-04 19:18:40   INFO [libs.ChargeMethods] : # MONTH CHARGE IOSX = 59.98
+2020-08-04 19:18:40   INFO [libs.ChargeMethods] : # ONE YEAR CHARGE IOSX = 329.89
+2020-08-04 19:18:40   INFO [libs.ChargeMethods] : # TWO YEARS CHARGE IOSX = 629.79
+2020-08-04 19:18:40   INFO [libs.ChargeMethods] : # SUM DUE CHARGE IOSX = 1019.66
+2020-08-04 19:18:40   INFO [libs.ChargeMethods] : # MONTH CHARGE Geometrics = 119.96
+2020-08-04 19:18:40   INFO [libs.ChargeMethods] : # ONE YEAR CHARGE Geometrics = 989.67
+2020-08-04 19:18:40   INFO [libs.ChargeMethods] : # TWO YEARS CHARGE Geometrics = 629.79
+2020-08-04 19:18:40   INFO [libs.ChargeMethods] : # SUM DUE CHARGE Geometrics = 1739.42
+2020-08-04 19:18:40   INFO [libs.ChargeMethods] : # activationDate = 1585509486
+2020-08-04 19:18:40   INFO [libs.ChargeMethods] : # countScannerMonthToMonthTariffChargeByDays = 1
+2020-08-04 19:18:40   INFO [libs.ChargeMethods] : ***** Month Days = 30
+2020-08-04 19:18:40   INFO [libs.ChargeMethods] : ***** Price For One Day = 0.9996666666666666
+2020-08-04 19:18:40   INFO [libs.ChargeMethods] : ***** Active Charge Days = 9
+2020-08-04 19:18:40   INFO [libs.ChargeMethods] : ***** chargeByDevice = 9.0
+2020-08-04 19:18:40   INFO [libs.ChargeMethods] : ***** chargeByAllDevices = 9.0
+2020-08-04 19:18:40   INFO [libs.ChargeMethods] : # activationDate = 1585682286
+2020-08-04 19:18:40   INFO [libs.ChargeMethods] : # countScannerMonthToMonthTariffChargeByDays = 1
+2020-08-04 19:18:40   INFO [libs.ChargeMethods] : ***** Month Days = 30
+2020-08-04 19:18:40   INFO [libs.ChargeMethods] : ***** Price For One Day = 0.9996666666666666
+2020-08-04 19:18:40   INFO [libs.ChargeMethods] : ***** Active Charge Days = 7
+2020-08-04 19:18:40   INFO [libs.ChargeMethods] : ***** chargeByDevice = 7.0
+2020-08-04 19:18:40   INFO [libs.ChargeMethods] : ***** chargeByAllDevices = 7.0
+2020-08-04 19:18:40   INFO [libs.ChargeMethods] : # LIST AMOUNT DUE FROM DB = [126.96, 989.67, 68.98, 329.89, 629.79, 629.79]
+2020-08-04 19:18:40   INFO [libs.ChargeMethods] : # PROGRAM COUNT CHARGE  = 2775.08
+2020-08-04 19:18:40   INFO [libs.ChargeMethods] : # SUM DB DUE (CHARGE) = 2775.08
+2020-08-04 19:18:41   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-08-04 19:18:43   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-08-04 19:18:44   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-08-04 19:18:45   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-08-04 19:18:45   INFO [libs.ChargeMethods] : # tempEstimatedTill: 2020-05-01
+2020-08-04 19:18:46   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-08-04 19:18:46   INFO [libs.ChargeMethods] : # tempPaidTill: 2020-05-01
+2020-08-04 19:18:47   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-08-04 19:18:47   INFO [chargeTest.ChargeFleetSoloTest] :  DB Connection Closed 
+2020-08-04 19:19:53   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-08-04 19:19:59   INFO [libs.ChargeMethods] : # Temp Tariff Month Start 2020-01-03T19:19:59.832
+2020-08-04 19:19:59   INFO [libs.ChargeMethods] : # Temp Tariff Month Start 2020-02-03T19:19:59.835
+2020-08-04 19:19:59   INFO [libs.ChargeMethods] : # COUNT MONTH TO MONTH IOSX TARIFF = 3
+2020-08-04 19:19:59   INFO [libs.ChargeMethods] : # COUNT ONE YEAR IOSX TARIFF = 1
+2020-08-04 19:19:59   INFO [libs.ChargeMethods] : # COUNT TWO YEARS IOSX TARIFF = 1
+2020-08-04 19:19:59   INFO [libs.ChargeMethods] : # COUNT MONTH TO MONTH GEOMETRICS TARIFF = 3
+2020-08-04 19:19:59   INFO [libs.ChargeMethods] : # COUNT ONE YEAR GEOMETRICS TARIFF = 1
+2020-08-04 19:19:59   INFO [libs.ChargeMethods] : # COUNT TWO YEARS GEOMETRICS TARIFF = 1
+2020-08-04 19:20:00   INFO [chargeTest.ChargeDefaultersTest] : AC passed
+2020-08-04 19:20:00   INFO [libs.ChargeMethods] : # Deactivated Month IOSX Tariff = 0
+2020-08-04 19:20:00   INFO [libs.ChargeMethods] : # Month IOSX Charge Returned = 0
+2020-08-04 19:20:00   INFO [libs.ChargeMethods] : # One Year IOSX Charge Returned = 0
+2020-08-04 19:20:00   INFO [libs.ChargeMethods] : # Two Year IOSX Charge Returned = 0
+2020-08-04 19:20:00   INFO [libs.ChargeMethods] : # Geometrics Month Charge Returned = 0
+2020-08-04 19:20:00   INFO [libs.ChargeMethods] : # Geometrics One Year Charge Returned = 0
+2020-08-04 19:20:00   INFO [libs.ChargeMethods] : # Geometrics Two Year Charge Returned = 0
+2020-08-04 19:20:08   INFO [libs.ChargeMethods] : Chrome is started
+2020-08-04 19:20:32   INFO [libs.ChargeMethods] : Cron check fleets was run: 2020-04-08 16:20:02
+2020-08-04 19:20:33   INFO [libs.ChargeMethods] : dateTime: [2020-04-08 16:20:12]
+2020-08-04 19:20:34   INFO [chargeTest.ChargeDefaultersTest] : AC passed
+2020-08-04 19:20:34   INFO [libs.ChargeMethods] : # MONTH CHARGE IOSX = 89.97
+2020-08-04 19:20:34   INFO [libs.ChargeMethods] : # ONE YEAR CHARGE IOSX = 329.89
+2020-08-04 19:20:34   INFO [libs.ChargeMethods] : # TWO YEARS CHARGE IOSX = 629.79
+2020-08-04 19:20:34   INFO [libs.ChargeMethods] : # SUM DUE CHARGE IOSX = 1049.65
+2020-08-04 19:20:34   INFO [libs.ChargeMethods] : # MONTH CHARGE Geometrics = 89.97
+2020-08-04 19:20:34   INFO [libs.ChargeMethods] : # ONE YEAR CHARGE Geometrics = 329.89
+2020-08-04 19:20:34   INFO [libs.ChargeMethods] : # TWO YEARS CHARGE Geometrics = 629.79
+2020-08-04 19:20:34   INFO [libs.ChargeMethods] : # SUM DUE CHARGE Geometrics = 1049.65
+2020-08-04 19:20:34   INFO [libs.ChargeMethods] : # LIST AMOUNT DUE FROM DB = [89.97, 329.89, 629.79, 89.97, 329.89, 629.79]
+2020-08-04 19:20:34   INFO [libs.ChargeMethods] : # PROGRAM COUNT CHARGE  = 2099.3
+2020-08-04 19:20:34   INFO [libs.ChargeMethods] : # SUM DB DUE (CHARGE) = 2099.3
+2020-08-04 19:20:35   INFO [chargeTest.ChargeDefaultersTest] : AC passed
+2020-08-04 19:20:36   INFO [chargeTest.ChargeDefaultersTest] : AC passed
+2020-08-04 19:20:38   INFO [libs.ChargeMethods] : Chrome is started
+2020-08-04 19:21:01   INFO [libs.ChargeMethods] : Cron check fleets was run: 2020-04-08 16:20:36
+2020-08-04 19:21:02   INFO [libs.ChargeMethods] : currentDue = 2147.24
+2020-08-04 19:21:02   INFO [libs.ChargeMethods] : countChargeLateFeeDevices = 6
+2020-08-04 19:21:02   INFO [libs.ChargeMethods] : tempDueWithLateFee = 2147.24
+2020-08-04 19:21:03   INFO [chargeTest.ChargeDefaultersTest] : AC passed
+2020-08-04 19:21:05   INFO [libs.ChargeMethods] : Chrome is started
+2020-08-04 19:21:28   INFO [libs.ChargeMethods] : Cron check fleets was run: 2020-04-08 16:21:03
+2020-08-04 19:21:30   INFO [chargeTest.ChargeDefaultersTest] : AC passed
+2020-08-04 19:21:31   INFO [chargeTest.ChargeDefaultersTest] : AC passed
+2020-08-04 19:21:33   INFO [libs.ChargeMethods] : Chrome is started
+2020-08-04 19:21:55   INFO [libs.ChargeMethods] : Cron check fleets was run: 2020-04-08 16:21:31
+2020-08-04 19:21:56   INFO [libs.ChargeMethods] : listDevicesTariffStart = [1578079199, 1554664799, 1523128799, 1580757599, 1578079199, 1578079199, 1580757599, 1580757599, 1554664799, 1523128799]
+2020-08-04 19:21:56   INFO [libs.ChargeMethods] : countDevicesAfter_12Month = 2
+2020-08-04 19:21:56   INFO [libs.ChargeMethods] : countDevices = 10
+2020-08-04 19:21:56   INFO [libs.ChargeMethods] : tempNotReturnedFee = 1999.9
+2020-08-04 19:21:56   INFO [libs.ChargeMethods] : tempProratedFee = 359.88
+2020-08-04 19:21:56   INFO [libs.ChargeMethods] : tempDueWithReturnedProratedFee = 4507.02
+2020-08-04 19:21:57   INFO [chargeTest.ChargeDefaultersTest] : AC passed
+2020-08-04 19:21:58   INFO [chargeTest.ChargeDefaultersTest] : AC passed
+2020-08-04 19:21:59   INFO [chargeTest.ChargeDefaultersTest] : AC passed
+2020-08-04 19:22:02   INFO [libs.ChargeMethods] : Chrome is started
+2020-08-04 19:22:25   INFO [libs.ChargeMethods] : Cron check fleets was run: 2020-04-08 16:22:00
+2020-08-04 19:22:26   INFO [chargeTest.ChargeDefaultersTest] :  DB Connection Closed 
+2020-08-04 19:23:50   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-08-04 19:23:58   INFO [libs.ChargeMethods] : # Temp Tariff Month Start 2020-01-03T19:23:58.026
+2020-08-04 19:23:58   INFO [libs.ChargeMethods] : # Temp Tariff Month Start 2020-02-03T19:23:58.029
+2020-08-04 19:23:58   INFO [libs.ChargeMethods] : # COUNT MONTH TO MONTH IOSX TARIFF = 3
+2020-08-04 19:23:58   INFO [libs.ChargeMethods] : # COUNT ONE YEAR IOSX TARIFF = 1
+2020-08-04 19:23:58   INFO [libs.ChargeMethods] : # COUNT TWO YEARS IOSX TARIFF = 1
+2020-08-04 19:23:58   INFO [libs.ChargeMethods] : # COUNT MONTH TO MONTH GEOMETRICS TARIFF = 5
+2020-08-04 19:23:58   INFO [libs.ChargeMethods] : # COUNT ONE YEAR GEOMETRICS TARIFF = 3
+2020-08-04 19:23:58   INFO [libs.ChargeMethods] : # COUNT TWO YEARS GEOMETRICS TARIFF = 1
+2020-08-04 19:23:59   INFO [chargeTest.ChargeDefaultersTest] : AC passed
+2020-08-04 19:23:59   INFO [libs.ChargeMethods] : # Deactivated Month IOSX Tariff = 0
+2020-08-04 19:23:59   INFO [libs.ChargeMethods] : # Month IOSX Charge Returned = 0
+2020-08-04 19:23:59   INFO [libs.ChargeMethods] : # One Year IOSX Charge Returned = 0
+2020-08-04 19:23:59   INFO [libs.ChargeMethods] : # Two Year IOSX Charge Returned = 0
+2020-08-04 19:23:59   INFO [libs.ChargeMethods] : # Geometrics Month Charge Returned = 0
+2020-08-04 19:23:59   INFO [libs.ChargeMethods] : # Geometrics One Year Charge Returned = 0
+2020-08-04 19:23:59   INFO [libs.ChargeMethods] : # Geometrics Two Year Charge Returned = 0
+2020-08-04 19:24:05   INFO [libs.ChargeMethods] : Chrome is started
+2020-08-04 19:24:21   INFO [libs.ChargeMethods] : Cron check Drivers was run: 2020-04-08 16:24:00
+2020-08-04 19:24:22   INFO [libs.ChargeMethods] : dateTime: [2020-04-08 16:24:11]
+2020-08-04 19:24:23   INFO [chargeTest.ChargeDefaultersTest] : AC passed
+2020-08-04 19:24:23   INFO [libs.ChargeMethods] : # MONTH CHARGE IOSX = 89.97
+2020-08-04 19:24:23   INFO [libs.ChargeMethods] : # ONE YEAR CHARGE IOSX = 329.89
+2020-08-04 19:24:23   INFO [libs.ChargeMethods] : # TWO YEARS CHARGE IOSX = 629.79
+2020-08-04 19:24:23   INFO [libs.ChargeMethods] : # SUM DUE CHARGE IOSX = 1049.65
+2020-08-04 19:24:23   INFO [libs.ChargeMethods] : # MONTH CHARGE Geometrics = 149.95
+2020-08-04 19:24:23   INFO [libs.ChargeMethods] : # ONE YEAR CHARGE Geometrics = 989.67
+2020-08-04 19:24:23   INFO [libs.ChargeMethods] : # TWO YEARS CHARGE Geometrics = 629.79
+2020-08-04 19:24:23   INFO [libs.ChargeMethods] : # SUM DUE CHARGE Geometrics = 1769.41
+2020-08-04 19:24:23   INFO [libs.ChargeMethods] : # MONTH CHARGE EzHard = 0.0
+2020-08-04 19:24:23   INFO [libs.ChargeMethods] : # ONE YEAR CHARGE EzHard = 0.0
+2020-08-04 19:24:23   INFO [libs.ChargeMethods] : # TWO YEARS CHARGE EzHard = 0.0
+2020-08-04 19:24:23   INFO [libs.ChargeMethods] : # SUM DUE CHARGE EzHard = 0.0
+2020-08-04 19:24:23   INFO [libs.ChargeMethods] : # LIST AMOUNT DUE FROM DB = [149.95, 989.67, 89.97, 329.89, 629.79, 629.79]
+2020-08-04 19:24:23   INFO [libs.ChargeMethods] : # PROGRAM COUNT CHARGE  = 2819.06
+2020-08-04 19:24:23   INFO [libs.ChargeMethods] : # SUM DB DUE (CHARGE) = 2819.06
+2020-08-04 19:24:24   INFO [chargeTest.ChargeDefaultersTest] : AC passed
+2020-08-04 19:24:25   INFO [chargeTest.ChargeDefaultersTest] : AC passed
+2020-08-04 19:24:27   INFO [libs.ChargeMethods] : Chrome is started
+2020-08-04 19:24:42   INFO [libs.ChargeMethods] : Cron check Drivers was run: 2020-04-08 16:24:25
+2020-08-04 19:24:43   INFO [libs.ChargeMethods] : currentDue = 2882.98
+2020-08-04 19:24:43   INFO [libs.ChargeMethods] : countChargeLateFeeDevices = 8
+2020-08-04 19:24:43   INFO [libs.ChargeMethods] : tempDueWithLateFee = 2882.98
+2020-08-04 19:24:44   INFO [chargeTest.ChargeDefaultersTest] : AC passed
+2020-08-04 19:24:46   INFO [libs.ChargeMethods] : Chrome is started
+2020-08-04 19:25:01   INFO [libs.ChargeMethods] : Cron check Drivers was run: 2020-04-08 16:24:44
+2020-08-04 19:25:03   INFO [chargeTest.ChargeDefaultersTest] : AC passed
+2020-08-04 19:25:04   INFO [chargeTest.ChargeDefaultersTest] : AC passed
+2020-08-04 19:25:06   INFO [libs.ChargeMethods] : Chrome is started
+2020-08-04 19:25:21   INFO [libs.ChargeMethods] : Cron check Drivers was run: 2020-04-08 16:25:04
+2020-08-04 19:25:22   INFO [libs.ChargeMethods] : listDevicesTariffStart = [1580757838, 1580757838, 1554665038, 1554665038, 1554665038, 1578079438, 1554665038, 1523129038, 1523129038, 1578079438, 1578079438, 1580757838, 1580757838, 1580757838]
+2020-08-04 19:25:22   INFO [libs.ChargeMethods] : countDevicesAfter_12Month = 2
+2020-08-04 19:25:22   INFO [libs.ChargeMethods] : countDevices = 14
+2020-08-04 19:25:22   INFO [libs.ChargeMethods] : tempNotReturnedFee = 2799.86
+2020-08-04 19:25:22   INFO [libs.ChargeMethods] : tempProratedFee = 479.84
+2020-08-04 19:25:22   INFO [libs.ChargeMethods] : tempDueWithReturnedProratedFee = 6162.68
+2020-08-04 19:25:23   INFO [chargeTest.ChargeDefaultersTest] : AC passed
+2020-08-04 19:25:25   INFO [chargeTest.ChargeDefaultersTest] : AC passed
+2020-08-04 19:25:26   INFO [chargeTest.ChargeDefaultersTest] : AC passed
+2020-08-04 19:25:28   INFO [libs.ChargeMethods] : Chrome is started
+2020-08-04 19:25:43   INFO [libs.ChargeMethods] : Cron check Drivers was run: 2020-04-08 16:25:26
+2020-08-04 19:25:44   INFO [chargeTest.ChargeDefaultersTest] :  DB Connection Closed 
+2020-09-04 16:16:53   INFO [chargeTest.ChargeMonthToMonthTariff] : Chrome will be started
+2020-09-04 16:16:58   INFO [chargeTest.ChargeMonthToMonthTariff] : Chrome is started
+2020-09-04 16:16:58   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-09-04 16:17:02   INFO [chargeTest.ChargeMonthToMonthTariff] :  DB connection closed 
+2020-09-04 16:18:00   INFO [chargeTest.ChargeMonthToMonthTariff] : Chrome will be started
+2020-09-04 16:18:05   INFO [chargeTest.ChargeMonthToMonthTariff] : Chrome is started
+2020-09-04 16:18:05   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-09-04 16:18:08   INFO [chargeTest.ChargeMonthToMonthTariff] :  DB connection closed 
+2020-09-04 16:23:03   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-09-04 16:23:07   INFO [chargeTest.ChargeMonthToMonthTariff] :  DB Connection Closed 
+2020-09-04 16:24:08   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-09-04 16:24:12   INFO [chargeTest.ChargeMonthToMonthTariff] :  DB Connection Closed 
+2020-09-04 18:27:35   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-09-04 18:27:42   INFO [libs.ChargeMethods] : # COUNT MONTH TO MONTH IOSX TARIFF = 3
+2020-09-04 18:27:42   INFO [libs.ChargeMethods] : # COUNT ONE YEAR IOSX TARIFF = 1
+2020-09-04 18:27:42   INFO [libs.ChargeMethods] : # COUNT TWO YEARS IOSX TARIFF = 1
+2020-09-04 18:27:42   INFO [libs.ChargeMethods] : # COUNT MONTH TO MONTH GEOMETRICS TARIFF = 5
+2020-09-04 18:27:42   INFO [libs.ChargeMethods] : # COUNT ONE YEAR GEOMETRICS TARIFF = 3
+2020-09-04 18:27:42   INFO [libs.ChargeMethods] : # COUNT TWO YEARS GEOMETRICS TARIFF = 1
+2020-09-04 18:27:43   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-09-04 18:27:52   INFO [libs.ChargeMethods] : Chrome is started
+2020-09-04 18:28:17   INFO [libs.ChargeMethods] : Cron check Drivers was run: 2020-04-09 15:27:46
+2020-09-04 18:28:18   INFO [libs.ChargeMethods] : dateTime: [2020-04-09 15:28:03]
+2020-09-04 18:28:19   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-09-04 18:28:19   INFO [libs.ChargeMethods] : # MONTH CHARGE IOSX = 59.98
+2020-09-04 18:28:19   INFO [libs.ChargeMethods] : # ONE YEAR CHARGE IOSX = 329.89
+2020-09-04 18:28:19   INFO [libs.ChargeMethods] : # TWO YEARS CHARGE IOSX = 629.79
+2020-09-04 18:28:19   INFO [libs.ChargeMethods] : # SUM DUE CHARGE IOSX = 1019.66
+2020-09-04 18:28:19   INFO [libs.ChargeMethods] : # MONTH CHARGE Geometrics = 119.96
+2020-09-04 18:28:19   INFO [libs.ChargeMethods] : # ONE YEAR CHARGE Geometrics = 989.67
+2020-09-04 18:28:19   INFO [libs.ChargeMethods] : # TWO YEARS CHARGE Geometrics = 629.79
+2020-09-04 18:28:19   INFO [libs.ChargeMethods] : # SUM DUE CHARGE Geometrics = 1739.42
+2020-09-04 18:28:19   INFO [libs.ChargeMethods] : # activationDate = 1585592864
+2020-09-04 18:28:19   INFO [libs.ChargeMethods] : # countScannerMonthToMonthTariffChargeByDays = 1
+2020-09-04 18:28:19   INFO [libs.ChargeMethods] : ***** Month Days = 30
+2020-09-04 18:28:19   INFO [libs.ChargeMethods] : ***** Active Charge Days = 9
+2020-09-04 18:28:19   INFO [libs.ChargeMethods] : ***** chargeByDevice = 9.0
+2020-09-04 18:28:19   INFO [libs.ChargeMethods] : ***** chargeByAllDevices = 9.0
+2020-09-04 18:28:19   INFO [libs.ChargeMethods] : # activationDate = 1585765664
+2020-09-04 18:28:19   INFO [libs.ChargeMethods] : # countScannerMonthToMonthTariffChargeByDays = 1
+2020-09-04 18:28:19   INFO [libs.ChargeMethods] : ***** Month Days = 30
+2020-09-04 18:28:19   INFO [libs.ChargeMethods] : ***** Active Charge Days = 7
+2020-09-04 18:28:19   INFO [libs.ChargeMethods] : ***** chargeByDevice = 7.0
+2020-09-04 18:28:19   INFO [libs.ChargeMethods] : ***** chargeByAllDevices = 7.0
+2020-09-04 18:28:19   INFO [libs.ChargeMethods] : # LIST AMOUNT DUE FROM DB = [126.96, 989.67, 68.98, 329.89, 629.79, 629.79]
+2020-09-04 18:28:19   INFO [libs.ChargeMethods] : # PROGRAM COUNT CHARGE  = 2775.08
+2020-09-04 18:28:19   INFO [libs.ChargeMethods] : # SUM DB DUE (CHARGE) = 2775.08
+2020-09-04 18:28:20   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-09-04 18:28:21   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-09-04 18:28:22   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-09-04 18:28:23   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-09-04 18:28:23   INFO [libs.ChargeMethods] : # tempEstimatedTill: 2020-05-01
+2020-09-04 18:28:24   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-09-04 18:28:25   INFO [libs.ChargeMethods] : # tempPaidTill: 2020-05-01
+2020-09-04 18:28:26   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-09-04 18:28:26   INFO [chargeTest.ChargeFleetSoloTest] :  DB Connection Closed 
+2020-09-04 18:35:40   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-09-04 18:35:42   INFO [unitTest.TestMethods] :  DB Connection Closed 
+2020-09-04 18:38:27   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-09-04 18:38:29   INFO [unitTest.TestMethods] :  DB Connection Closed 
+2020-09-04 18:38:53   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-09-04 18:38:55   INFO [unitTest.TestMethods] :  DB Connection Closed 
+2020-09-04 18:39:31   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-09-04 18:39:33   INFO [unitTest.TestMethods] :  DB Connection Closed 
+2020-09-04 19:14:25   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-09-04 19:14:30   INFO [libs.ChargeMethods] : # COUNT MONTH TO MONTH IOSX TARIFF = 3
+2020-09-04 19:14:30   INFO [libs.ChargeMethods] : # COUNT ONE YEAR IOSX TARIFF = 1
+2020-09-04 19:14:30   INFO [libs.ChargeMethods] : # COUNT TWO YEARS IOSX TARIFF = 1
+2020-09-04 19:14:30   INFO [libs.ChargeMethods] : # COUNT MONTH TO MONTH GEOMETRICS TARIFF = 5
+2020-09-04 19:14:30   INFO [libs.ChargeMethods] : # COUNT ONE YEAR GEOMETRICS TARIFF = 3
+2020-09-04 19:14:30   INFO [libs.ChargeMethods] : # COUNT TWO YEARS GEOMETRICS TARIFF = 1
+2020-09-04 19:14:31   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-09-04 19:14:38   INFO [libs.ChargeMethods] : Chrome is started
+2020-09-04 19:15:03   INFO [libs.ChargeMethods] : Cron check Drivers was run: 2020-04-09 16:14:34
+2020-09-04 19:15:04   INFO [libs.ChargeMethods] : dateTime: [2020-04-09 16:14:49]
+2020-09-04 19:15:05   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-09-04 19:15:05   INFO [libs.ChargeMethods] : # MONTH CHARGE IOSX = 59.98
+2020-09-04 19:15:05   INFO [libs.ChargeMethods] : # ONE YEAR CHARGE IOSX = 329.89
+2020-09-04 19:15:05   INFO [libs.ChargeMethods] : # TWO YEARS CHARGE IOSX = 629.79
+2020-09-04 19:15:05   INFO [libs.ChargeMethods] : # SUM DUE CHARGE IOSX = 1019.66
+2020-09-04 19:15:05   INFO [libs.ChargeMethods] : # MONTH CHARGE Geometrics = 89.97
+2020-09-04 19:15:05   INFO [libs.ChargeMethods] : # ONE YEAR CHARGE Geometrics = 989.67
+2020-09-04 19:15:05   INFO [libs.ChargeMethods] : # TWO YEARS CHARGE Geometrics = 629.79
+2020-09-04 19:15:05   INFO [libs.ChargeMethods] : # SUM DUE CHARGE Geometrics = 1709.43
+2020-09-04 19:15:05   INFO [libs.ChargeMethods] : # countScannerMonthToMonthTariffChargeByDays = 1
+2020-09-04 19:15:05   INFO [libs.ChargeMethods] : ***** Month Days = 30
+2020-09-04 19:15:05   INFO [libs.ChargeMethods] : ***** Active Charge Days = 9
+2020-09-04 19:15:05   INFO [libs.ChargeMethods] : ***** chargeByDevice = 9.0
+2020-09-04 19:15:05   INFO [libs.ChargeMethods] : ***** chargeByAllDevices = 9.0
+2020-09-04 19:15:05   INFO [libs.ChargeMethods] : # countScannerMonthToMonthTariffChargeByDays = 2
+2020-09-04 19:15:05   INFO [libs.ChargeMethods] : ***** Month Days = 30
+2020-09-04 19:15:05   INFO [libs.ChargeMethods] : ***** Active Charge Days = 7
+2020-09-04 19:15:05   INFO [libs.ChargeMethods] : ***** chargeByDevice = 7.0
+2020-09-04 19:15:05   INFO [libs.ChargeMethods] : ***** chargeByAllDevices = 14.0
+2020-09-04 19:15:05   INFO [libs.ChargeMethods] : # LIST AMOUNT DUE FROM DB = [103.97, 989.67, 68.98, 329.89, 629.79, 629.79]
+2020-09-04 19:15:05   INFO [libs.ChargeMethods] : # PROGRAM COUNT CHARGE  = 2752.09
+2020-09-04 19:15:05   INFO [libs.ChargeMethods] : # SUM DB DUE (CHARGE) = 2752.09
+2020-09-04 19:15:06   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-09-04 19:15:07   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-09-04 19:15:08   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-09-04 19:15:09   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-09-04 19:15:10   INFO [libs.ChargeMethods] : # tempEstimatedTill: 2020-05-01
+2020-09-04 19:15:11   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-09-04 19:15:11   INFO [libs.ChargeMethods] : # tempPaidTill: 2020-05-01
+2020-09-04 19:15:12   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-09-04 19:15:12   INFO [chargeTest.ChargeFleetSoloTest] :  DB Connection Closed 
+2020-09-04 19:27:03   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-09-04 19:27:08   INFO [libs.ChargeMethods] : # COUNT MONTH TO MONTH IOSX TARIFF = 4
+2020-09-04 19:27:08   INFO [libs.ChargeMethods] : # COUNT ONE YEAR IOSX TARIFF = 1
+2020-09-04 19:27:08   INFO [libs.ChargeMethods] : # COUNT TWO YEARS IOSX TARIFF = 1
+2020-09-04 19:27:08   INFO [libs.ChargeMethods] : # COUNT MONTH TO MONTH GEOMETRICS TARIFF = 3
+2020-09-04 19:27:08   INFO [libs.ChargeMethods] : # COUNT ONE YEAR GEOMETRICS TARIFF = 1
+2020-09-04 19:27:08   INFO [libs.ChargeMethods] : # COUNT TWO YEARS GEOMETRICS TARIFF = 1
+2020-09-04 19:27:09   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-09-04 19:27:17   INFO [libs.ChargeMethods] : Chrome is started
+2020-09-04 19:27:49   INFO [libs.ChargeMethods] : Cron check fleets was run: 2020-04-09 16:27:12
+2020-09-04 19:27:50   INFO [libs.ChargeMethods] : dateTime: [2020-04-09 16:27:26]
+2020-09-04 19:27:51   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-09-04 19:27:51   INFO [libs.ChargeMethods] : # MONTH CHARGE IOSX = 59.98
+2020-09-04 19:27:51   INFO [libs.ChargeMethods] : # ONE YEAR CHARGE IOSX = 329.89
+2020-09-04 19:27:51   INFO [libs.ChargeMethods] : # TWO YEARS CHARGE IOSX = 629.79
+2020-09-04 19:27:51   INFO [libs.ChargeMethods] : # MONTH CHARGE Geometrics = 59.98
+2020-09-04 19:27:51   INFO [libs.ChargeMethods] : # ONE YEAR CHARGE Geometrics = 329.89
+2020-09-04 19:27:51   INFO [libs.ChargeMethods] : # TWO YEARS CHARGE Geometrics = 629.79
+2020-09-04 19:27:51   INFO [libs.ChargeMethods] : # countScannerMonthToMonthTariffChargeByDays = 2
+2020-09-04 19:27:51   INFO [libs.ChargeMethods] : ***** Month Days = 30
+2020-09-04 19:27:51   INFO [libs.ChargeMethods] : ***** Active Charge Days = 5
+2020-09-04 19:27:51   INFO [libs.ChargeMethods] : ***** chargeByDevice = 5.0
+2020-09-04 19:27:51   INFO [libs.ChargeMethods] : ***** chargeByAllDevices = 10.0
+2020-09-04 19:27:51   INFO [libs.ChargeMethods] : # countScannerMonthToMonthTariffChargeByDays = 1
+2020-09-04 19:27:51   INFO [libs.ChargeMethods] : ***** Month Days = 30
+2020-09-04 19:27:51   INFO [libs.ChargeMethods] : ***** Active Charge Days = 22
+2020-09-04 19:27:51   INFO [libs.ChargeMethods] : ***** chargeByDevice = 21.99
+2020-09-04 19:27:51   INFO [libs.ChargeMethods] : ***** chargeByAllDevices = 21.99
+2020-09-04 19:27:51   INFO [libs.ChargeMethods] : # LIST AMOUNT DUE FROM DB = [119.96, 329.89, 629.79, 89.97, 329.89, 629.79]
+2020-09-04 19:27:51   INFO [libs.ChargeMethods] : # PROGRAM COUNT CHARGE  = 2071.31
+2020-09-04 19:27:51   INFO [libs.ChargeMethods] : # SUM DB DUE (CHARGE) = 2129.29
+2020-09-04 19:27:52  ERROR [chargeTest.ChargeFleetSoloTest] : AC failed: Charge due is not correct
+2020-09-04 19:27:52   INFO [chargeTest.ChargeFleetSoloTest] :  DB Connection Closed 
+2020-09-04 19:39:20   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-09-04 19:39:25   INFO [libs.ChargeMethods] : # COUNT MONTH TO MONTH IOSX TARIFF = 4
+2020-09-04 19:39:25   INFO [libs.ChargeMethods] : # COUNT ONE YEAR IOSX TARIFF = 1
+2020-09-04 19:39:25   INFO [libs.ChargeMethods] : # COUNT TWO YEARS IOSX TARIFF = 1
+2020-09-04 19:39:25   INFO [libs.ChargeMethods] : # COUNT MONTH TO MONTH GEOMETRICS TARIFF = 3
+2020-09-04 19:39:25   INFO [libs.ChargeMethods] : # COUNT ONE YEAR GEOMETRICS TARIFF = 1
+2020-09-04 19:39:25   INFO [libs.ChargeMethods] : # COUNT TWO YEARS GEOMETRICS TARIFF = 1
+2020-09-04 19:39:26   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-09-04 19:39:34   INFO [libs.ChargeMethods] : Chrome is started
+2020-09-04 19:40:05   INFO [libs.ChargeMethods] : Cron check fleets was run: 2020-04-09 16:39:29
+2020-09-04 19:40:06   INFO [libs.ChargeMethods] : dateTime: [2020-04-09 16:39:42]
+2020-09-04 19:40:07   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-09-04 19:40:07   INFO [libs.ChargeMethods] : # MONTH CHARGE IOSX = 59.98
+2020-09-04 19:40:07   INFO [libs.ChargeMethods] : # ONE YEAR CHARGE IOSX = 329.89
+2020-09-04 19:40:07   INFO [libs.ChargeMethods] : # TWO YEARS CHARGE IOSX = 629.79
+2020-09-04 19:40:07   INFO [libs.ChargeMethods] : # MONTH CHARGE Geometrics = 59.98
+2020-09-04 19:40:07   INFO [libs.ChargeMethods] : # ONE YEAR CHARGE Geometrics = 329.89
+2020-09-04 19:40:07   INFO [libs.ChargeMethods] : # TWO YEARS CHARGE Geometrics = 629.79
+2020-09-04 19:40:07   INFO [libs.ChargeMethods] : # countScannerMonthToMonthTariffChargeByDays = 2
+2020-09-04 19:40:07   INFO [libs.ChargeMethods] : ***** Month Days = 30
+2020-09-04 19:40:07   INFO [libs.ChargeMethods] : ***** Active Charge Days = 5
+2020-09-04 19:40:07   INFO [libs.ChargeMethods] : ***** chargeByDevice = 5.0
+2020-09-04 19:40:07   INFO [libs.ChargeMethods] : ***** chargeByAllDevices = 10.0
+2020-09-04 19:40:07   INFO [libs.ChargeMethods] : # countScannerMonthToMonthTariffChargeByDays = 1
+2020-09-04 19:40:07   INFO [libs.ChargeMethods] : ***** Month Days = 30
+2020-09-04 19:40:07   INFO [libs.ChargeMethods] : ***** Active Charge Days = 22
+2020-09-04 19:40:07   INFO [libs.ChargeMethods] : ***** chargeByDevice = 21.99
+2020-09-04 19:40:07   INFO [libs.ChargeMethods] : ***** chargeByAllDevices = 21.99
+2020-09-04 19:40:07   INFO [libs.ChargeMethods] : # LIST AMOUNT DUE FROM DB = [69.98, 329.89, 629.79, 81.97, 329.89, 629.79]
+2020-09-04 19:40:07   INFO [libs.ChargeMethods] : # PROGRAM COUNT CHARGE  = 2071.31
+2020-09-04 19:40:07   INFO [libs.ChargeMethods] : # SUM DB DUE (CHARGE) = 2071.31
+2020-09-04 19:40:08   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-09-04 19:40:09   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-09-04 19:40:11   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-09-04 19:40:12   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-09-04 19:40:12   INFO [libs.ChargeMethods] : tempEstimatedTill: 2020-05-01
+2020-09-04 19:40:13   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-09-04 19:40:13   INFO [libs.ChargeMethods] : tempPaidTill: 2020-05-01
+2020-09-04 19:40:14   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-09-04 19:40:14   INFO [chargeTest.ChargeFleetSoloTest] :  DB Connection Closed 

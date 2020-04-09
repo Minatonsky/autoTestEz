@@ -1,6 +1,5 @@
 package unitTest;
 
-import com.github.javafaker.Faker;
 import org.apache.log4j.Logger;
 import org.json.JSONObject;
 import org.junit.Test;
@@ -17,9 +16,8 @@ import java.time.format.DateTimeFormatter;
 import java.time.temporal.ChronoUnit;
 import java.time.temporal.TemporalAdjusters;
 import java.util.List;
-import java.util.concurrent.TimeUnit;
 
-import static libs.Utils.*;
+import static libs.Utils.genRandomDataByRegex;
 // This test page is not using on test project, it just for check some methods
 
 
@@ -110,12 +108,8 @@ public class TestMethods extends ParentTestWithoutWebDriver {
     @Test
     public void compareCurrentDueFleetDefaulter() throws SQLException, IOException, ClassNotFoundException {
         double sumCharge = 29.99;
-        String currentDueFleet = utilsForDB.getCurrentDueEzFinancesFleet("582");
-        boolean tempCompareDueFleet = -sumCharge == Double.parseDouble(currentDueFleet);
-
+        String currentDueFleet = utilsForDB.getCurrentDueEzFinancesFleet("518");
         System.out.println(currentDueFleet);
-        System.out.println(tempCompareDueFleet);
-
 
     }
 
@@ -196,10 +190,7 @@ public class TestMethods extends ParentTestWithoutWebDriver {
     }
     @Test
     public void test(){
-        Faker faker = new Faker();
-        String name = faker.date().future(2030, TimeUnit.DAYS).toString(); // Miss Samanta Schmidt
-
-        String date = getCurrentDateTimePlusDays("yyyy-MM-dd", 2) + " " + "12:00:00";
+       int date = 1/2 ;
 
         System.out.println(date);
     }

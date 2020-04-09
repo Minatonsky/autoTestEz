@@ -99,7 +99,7 @@ public class CarrierCreateDocumentsTest extends ParentTest {
         checkAC("Gallons is not correct", utilsForDB.getDocInfoData(docId, "gallons").equals(gallonsRV), true);
         checkAC("ReeferAmount is not correct", utilsForDB.getDocInfoData(docId, "reefer_amount").equals(reeferAmountRV), true);
         checkAC("ReeferGallons is not correct", utilsForDB.getDocInfoData(docId, "reefer_gallons").equals(reeferGallonsRV), true);
-//        checkAC("State is not correct", utilsForDB.getDocInfoData(docId, "state").equals("2"), true);
+        checkAC("State is not correct", utilsForDB.getDocInfoData(docId, "state").equals("2"), true);
     }
     @Test
     public void createLumper() throws SQLException{

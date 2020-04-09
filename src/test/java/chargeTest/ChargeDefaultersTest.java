@@ -12,12 +12,11 @@ import static libs.DataForTests.*;
 
 public class ChargeDefaultersTest extends ParentTestWithoutWebDriver {
 
-    String soloId = "4401";
-    String fleetId = "518";
+    String soloId = "3470";
+    String fleetId = "572";
 
     int countMonthForTariffStartMonthIOSX = 3;
     int countMonthForTariffStartMonthGeometrics = 2;
-    int countMonthForTariffStartMonthEzHard = 2;
 
     String currentDue = "0";
 
@@ -97,7 +96,7 @@ public class ChargeDefaultersTest extends ParentTestWithoutWebDriver {
                     countScannerMonthGeometricsTariff + countGeometricsMonthChargeReturnedScanner,
                     countScannerOneYearGeometricsTariff + countGeometricsOneYearChargeReturnedScanner,
                     countScannerTwoYearsGeometricsTariff + countGeometricsTwoYearChargeReturnedScanner, "Geometrics");
-
+            System.out.println();
             checkAC("Charge due is not correct", chargeMethods.compareDueCharge(carrierIdString, fleetId, sumIOSXCharge + sumDeactivatedScannerMonthIOSXTariff + sumGeometricsCharge, timeRunCron), true);
 
             checkAC("Fleet is not in defaulters", utilsForDB.checkFleetInDefaulters(fleetId), true);
@@ -157,20 +156,12 @@ public class ChargeDefaultersTest extends ParentTestWithoutWebDriver {
             int countGeometricsOneYearChargeReturnedScanner = utilsForDB.countChargeReturnedScannerByTariff(userIdString, soloId, oneYearGeometricsTariffId);
             int countGeometricsTwoYearChargeReturnedScanner = utilsForDB.countChargeReturnedScannerByTariff(userIdString, soloId, twoYearsGeometricsTariffId);
 
-//   COUNT EZ HARD TARIFF
-            int countScannerMonthEzHardTariff = utilsForDB.countChargeScannersByTariff(userIdString, soloId, monthEzHardTariffId);
-            int countScannerOneYearEzHardTariff = utilsForDB.countChargeScannersByTariff(userIdString, soloId, oneYearEzHardTariffId);
-            int countScannerTwoYearsEzHardTariff = utilsForDB.countChargeScannersByTariff(userIdString, soloId, twoYearsEzHardTariffId);
-            int countEzHardMonthChargeReturnedScanner = utilsForDB.countChargeReturnedScannerByTariff(userIdString, soloId, monthEzHardTariffId);
-            int countEzHardOneYearChargeReturnedScanner = utilsForDB.countChargeReturnedScannerByTariff(userIdString, soloId, oneYearEzHardTariffId);
-            int countEzHardTwoYearChargeReturnedScanner = utilsForDB.countChargeReturnedScannerByTariff(userIdString, soloId, twoYearsEzHardTariffId);
 
 
             String setPaidTillForAllTariff = chargeMethods.paidTillForAllTariff();
 
             String setTariffStartMonthIOSX = chargeMethods.tariffStartForMonthToMonth(countMonthForTariffStartMonthIOSX, 5);
             String setTariffStartMonthGeometrics = chargeMethods.tariffStartForMonthToMonth(countMonthForTariffStartMonthGeometrics, 5);
-            String setTariffStartMonthEzHard = chargeMethods.tariffStartForMonthToMonth(countMonthForTariffStartMonthEzHard, 22);
 
             String setTariffStartOneYear = chargeMethods.tariffStartForOneYear(1);
             String setTariffStartTwoYears = chargeMethods.tariffStartForTwoYears(2);
@@ -197,12 +188,6 @@ public class ChargeDefaultersTest extends ParentTestWithoutWebDriver {
             utilsForDB.setPaidTillAndTariffStartScannerForSolo(soloId, setPaidTillForAllTariff, setTariffStartOneYear, oneYearGeometricsTariffId);
             utilsForDB.setPaidTillAndTariffStartScannerForSolo(soloId, setPaidTillForAllTariff, setTariffStartTwoYears, twoYearsGeometricsTariffId);
 
-//  SET PAID TILL AND ORDER DATE FOR EZ HARD TARIFF
-
-            utilsForDB.setPaidTillAndTariffStartScannerForSolo(soloId, setPaidTillForAllTariff, setTariffStartMonthGeometrics, monthEzHardTariffId);
-            utilsForDB.setOrderDateByTariffId(userIdString, soloId, setTariffStartMonthEzHard, monthEzHardTariffId);
-            utilsForDB.setPaidTillAndTariffStartScannerForSolo(soloId, setPaidTillForAllTariff, setTariffStartOneYear, oneYearEzHardTariffId);
-            utilsForDB.setPaidTillAndTariffStartScannerForSolo(soloId, setPaidTillForAllTariff, setTariffStartTwoYears, twoYearsEzHardTariffId);
 
 //  SET PAID TILL FOR USER FINANCES
             String paidTillForEzFinances = chargeMethods.paidTillForEzFinances();
@@ -219,12 +204,9 @@ public class ChargeDefaultersTest extends ParentTestWithoutWebDriver {
                     countScannerMonthGeometricsTariff + countGeometricsMonthChargeReturnedScanner,
                     countScannerOneYearGeometricsTariff + countGeometricsOneYearChargeReturnedScanner,
                     countScannerTwoYearsGeometricsTariff + countGeometricsTwoYearChargeReturnedScanner, "Geometrics");
-            double sumEzHardCharge = chargeMethods.sumCharge(
-                    countScannerMonthEzHardTariff + countEzHardMonthChargeReturnedScanner,
-                    countScannerOneYearEzHardTariff + countEzHardOneYearChargeReturnedScanner,
-                    countScannerTwoYearsEzHardTariff + countEzHardTwoYearChargeReturnedScanner, "EzHard");
 
-            checkAC("Charge due is not correct", chargeMethods.compareDueCharge(userIdString, soloId, sumIOSXCharge + sumDeactivatedScannerMonthIOSXTariff + sumGeometricsCharge + sumEzHardCharge, timeRunCron), true);
+
+            checkAC("Charge due is not correct", chargeMethods.compareDueCharge(userIdString, soloId, sumIOSXCharge + sumDeactivatedScannerMonthIOSXTariff + sumGeometricsCharge, timeRunCron), true);
 
 
             checkAC("Solo is not in defaulters", utilsForDB.checkSoloInDefaulters(soloId), true);
@@ -233,7 +215,7 @@ public class ChargeDefaultersTest extends ParentTestWithoutWebDriver {
             chargeMethods.runCronCheckDrivers();
             List<String> listOfStatusDevices = utilsForDB.getIdScannersByStatus(userIdString, soloId, "4");
             String stringOfStatusesDevices = String.join(",", listOfStatusDevices);
-            checkAC("Late Fee is not correct", chargeMethods.checkLateFeeSolo(soloId, sumIOSXCharge + sumDeactivatedScannerMonthIOSXTariff + sumGeometricsCharge + sumEzHardCharge, userIdString), true);
+            checkAC("Late Fee is not correct", chargeMethods.checkLateFeeSolo(soloId, sumIOSXCharge + sumDeactivatedScannerMonthIOSXTariff + sumGeometricsCharge, userIdString), true);
 
             chargeMethods.setDaysDefaulterSolo(soloId, 15);
             chargeMethods.runCronCheckDrivers();
