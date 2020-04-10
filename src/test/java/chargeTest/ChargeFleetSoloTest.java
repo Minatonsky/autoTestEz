@@ -18,9 +18,7 @@ public class ChargeFleetSoloTest extends ParentTestWithoutWebDriver {
     String unionTwoYearsTariffId = twoYearsIOSXTariffId + ", " + twoYearsGeometricsTariffId;
 
     int countMonthForTariffStartMonthIOSX = 5;
-
     int countMonthForTariffStartMonthGeometrics = 2;
-
 
     @Test
     public void chargeFleetTest() throws SQLException, IOException, ClassNotFoundException{
