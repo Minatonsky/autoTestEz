@@ -91,7 +91,7 @@ public class SoloDriverCreateEquipmentParameterizedLocalSiteTest extends ParentT
         waitABit(5);
         String equipId = utilsForDB.getEquipmentId("userId", userId, unitName);
 
-        List<ArrayList> tempDataSettingsList = utilsForDB.getDataEquipment("userId", userId, equipId);
+        List<ArrayList> tempDataSettingsList = utilsForDB.getDataEquipment(equipId);
         Map<String, Object> tempDataSettingsMap = listArrayToMap(tempDataSettingsList);
 
         checkAC("TruckTrailer failed", tempDataSettingsMap.get("truckTrailer").equals("0"), true);
@@ -180,7 +180,7 @@ public class SoloDriverCreateEquipmentParameterizedLocalSiteTest extends ParentT
         waitABit(5);
         String equipId = utilsForDB.getEquipmentId("userId", userId, unitName);
 
-        List<ArrayList> tempDataSettingsList = utilsForDB.getDataEquipment("userId", userId, equipId);
+        List<ArrayList> tempDataSettingsList = utilsForDB.getDataEquipment(equipId);
         Map<String, Object> tempDataSettingsMap = listArrayToMap(tempDataSettingsList);
 
         checkAC("TruckTrailer failed", tempDataSettingsMap.get("truckTrailer").equals("1"), true);

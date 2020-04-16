@@ -91,7 +91,7 @@ public class SafetyCreateEquipmentParamTest extends ParentTest {
         waitABit(5);
         String equipId = utilsForDB.getEquipmentId("carrierId", fleetId, unitName);
 
-        List<ArrayList> tempDataSettingsList = utilsForDB.getDataEquipment("carrierId", fleetId, equipId);
+        List<ArrayList> tempDataSettingsList = utilsForDB.getDataEquipment(equipId);
         Map<String, Object> tempDataSettingsMap = listArrayToMap(tempDataSettingsList);
 
         checkAC("TruckTrailer failed", tempDataSettingsMap.get("truckTrailer").equals("0"), true);
@@ -180,7 +180,7 @@ public class SafetyCreateEquipmentParamTest extends ParentTest {
         waitABit(5);
         String equipId = utilsForDB.getEquipmentId("carrierId", fleetId, unitName);
 
-        List<ArrayList> tempDataSettingsList = utilsForDB.getDataEquipment("carrierId", fleetId, equipId);
+        List<ArrayList> tempDataSettingsList = utilsForDB.getDataEquipment(equipId);
         Map<String, Object> tempDataSettingsMap = listArrayToMap(tempDataSettingsList);
 
         checkAC("TruckTrailer failed", tempDataSettingsMap.get("truckTrailer").equals("1"), true);

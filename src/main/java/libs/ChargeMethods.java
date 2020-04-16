@@ -472,17 +472,6 @@ public class ChargeMethods {
         return tempResult;
     }
 
-    public void informationOfDeactivatedAndReturnedScanners(int countDeactivatedScannerMonthIOSXTariff, int countScannerMonthIOSXChargeReturned, int countScannerOneYearIOSXChargeReturned, int countScannerTwoYearIOSXChargeReturned, int countGeometricsMonthChargeReturnedScanner, int countGeometricsOneYearChargeReturnedScanner, int countGeometricsTwoYearChargeReturnedScanner) {
-        logger.info("# Deactivated Month IOSX Tariff = " + countDeactivatedScannerMonthIOSXTariff);
-        logger.info("# Month IOSX Charge Returned = " + countScannerMonthIOSXChargeReturned);
-        logger.info("# One Year IOSX Charge Returned = " + countScannerOneYearIOSXChargeReturned);
-        logger.info("# Two Year IOSX Charge Returned = " + countScannerTwoYearIOSXChargeReturned);
-
-        logger.info("# Geometrics Month Charge Returned = " + countGeometricsMonthChargeReturnedScanner);
-        logger.info("# Geometrics One Year Charge Returned = " + countGeometricsOneYearChargeReturnedScanner);
-        logger.info("# Geometrics Two Year Charge Returned = " + countGeometricsTwoYearChargeReturnedScanner);
-
-    }
 
     public void informationOfScannersMonth(int countScannerMonthIOSXTariff, int countDeactivatedScannerMonthIOSXTariff, int countMonthIOSXChargeReturnedScanner, int countScannerMonthGeometricsTariff, int countMonthGeometricsChargeReturnedScanner, int countScannerMonthEzHardTariff, int countMonthEzHardChargeReturnedScanner) {
         logger.info("# COUNT Scanner Month IOSX Tariff = " + countScannerMonthIOSXTariff);
@@ -500,6 +489,7 @@ public class ChargeMethods {
     public void setPaidTillAndTariffStartScannerForFleet(String fleetId, String setPaidTillForAllTariff, String setTariffStart, String typeDevice, int countDevice) throws SQLException {
         if (countDevice > 0) {
             utilsForDB.setPaidTillAndTariffStartScannerForFleet(fleetId, setPaidTillForAllTariff, setTariffStart, typeDevice);
+            logger.info("Count device on this type: " + typeDevice + " = " + countDevice);
         } else logger.info("Any device on this type: " + typeDevice);
 
     }
@@ -516,6 +506,11 @@ public class ChargeMethods {
             return countDeviceByDays;
         } else return 0;
 
+    }
+    public void setOrderDateByTariffId(String soloOrFleetString, String userId, String tariffStartMonthValue, String typeDevice, int countDevice) throws SQLException {
+        if (countDevice > 0) {
+            utilsForDB.setOrderDateByTariffId(soloOrFleetString, userId, tariffStartMonthValue, typeDevice);
+        } else logger.info("Any device for set order date on this type: " + typeDevice);
     }
 }
 

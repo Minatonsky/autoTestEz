@@ -9,8 +9,10 @@ import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 import org.openqa.selenium.Cookie;
+import org.openqa.selenium.PageLoadStrategy;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -142,6 +144,8 @@ public class ParentTest extends ParentTestWithoutWebDriver{
             File file = new File("./src/drivers/chromedriver.exe");
             System.setProperty("webdriver.chrome.driver", file.getAbsolutePath());
             webDriver = new ChromeDriver();
+            ChromeOptions options = new ChromeOptions();
+            options.setPageLoadStrategy(PageLoadStrategy.NORMAL);
             logger.info("Chrome is started");
         } else if ("fireFox".equals(browserName)){
             logger.info("FireFox will be started");

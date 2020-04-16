@@ -15,6 +15,7 @@ import java.time.ZoneOffset;
 import java.time.format.DateTimeFormatter;
 import java.time.temporal.ChronoUnit;
 import java.time.temporal.TemporalAdjusters;
+import java.util.ArrayList;
 import java.util.List;
 
 import static libs.Utils.genRandomDataByRegex;
@@ -189,10 +190,10 @@ public class TestMethods extends ParentTestWithoutWebDriver {
 
     }
     @Test
-    public void test(){
-       int date = 1/2 ;
+    public void test() throws SQLException {
+        List<ArrayList> tempDataSettingsList = utilsForDB.getDataEquipment("6883");
 
-        System.out.println(date);
+        System.out.println(tempDataSettingsList);
     }
 
 

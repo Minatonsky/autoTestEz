@@ -5,6 +5,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+import static libs.Utils.waitABit;
+
 public class DocumentsFPage extends ParentFPage {
     public DocumentsFPage(WebDriver webDriver, UtilsForDB utilsForDB) {
         super(webDriver, "dash/eld/",  utilsForDB);
@@ -96,13 +98,17 @@ public class DocumentsFPage extends ParentFPage {
     private WebElement buttonEdit;
 
 
-    public void clickOnCreateButton(){actionsWithOurElements.clickOnElement(addDocumentButton);}
+    public void clickOnCreateButton(){actionsWithOurElements.clickOnElement(addDocumentButton);
+        waitABit(6);}
     public void clickOnSaveButton(){actionsWithOurElements.clickOnElement(saveButton);}
     public void clickOnEditButton(){actionsWithOurElements.clickOnElement(buttonEdit);}
     public void selectTypeDocument(String documentTypeValue){
         actionsWithOurElements.clickOnElement(dropDawnTypeDocument);
+        waitABit(3);
         actionsWithOurElements.enterTextToElement(dropDawnTypeDocument, documentTypeValue);
+        waitABit(3);
         actionsWithOurElements.clickOnElement(elementInDropDownMenu);
+        waitABit(3);
     }
     public void notesText(String tempText){actionsWithOurElements.clearAndEnterTextToElement(textArea, tempText);}
     public void selectState(String value){

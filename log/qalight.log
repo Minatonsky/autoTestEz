@@ -2387,3 +2387,1350 @@ Session ID: d2778dc5680c7fdc84be4a8fc8b4e2b1
 2020-09-04 19:40:13   INFO [libs.ChargeMethods] : tempPaidTill: 2020-05-01
 2020-09-04 19:40:14   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
 2020-09-04 19:40:14   INFO [chargeTest.ChargeFleetSoloTest] :  DB Connection Closed 
+2020-10-04 10:56:56   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-10-04 10:57:01   INFO [libs.ChargeMethods] : # COUNT MONTH TO MONTH IOSX TARIFF = 4
+2020-10-04 10:57:01   INFO [libs.ChargeMethods] : # COUNT ONE YEAR IOSX TARIFF = 1
+2020-10-04 10:57:01   INFO [libs.ChargeMethods] : # COUNT TWO YEARS IOSX TARIFF = 1
+2020-10-04 10:57:01   INFO [libs.ChargeMethods] : # COUNT MONTH TO MONTH GEOMETRICS TARIFF = 3
+2020-10-04 10:57:01   INFO [libs.ChargeMethods] : # COUNT ONE YEAR GEOMETRICS TARIFF = 1
+2020-10-04 10:57:01   INFO [libs.ChargeMethods] : # COUNT TWO YEARS GEOMETRICS TARIFF = 1
+2020-10-04 10:57:02   INFO [chargeTest.ChargeDefaultersTest] : AC passed
+2020-10-04 10:57:09   INFO [libs.ChargeMethods] : Chrome is started
+2020-10-04 10:57:32   INFO [libs.ChargeMethods] : Cron check fleets was run: 2020-04-10 07:57:04
+2020-10-04 10:57:33   INFO [libs.ChargeMethods] : dateTime: [2020-04-10 07:57:10]
+2020-10-04 10:57:34   INFO [chargeTest.ChargeDefaultersTest] : AC passed
+2020-10-04 10:57:34   INFO [libs.ChargeMethods] : # MONTH CHARGE IOSX = 119.96
+2020-10-04 10:57:34   INFO [libs.ChargeMethods] : # ONE YEAR CHARGE IOSX = 329.89
+2020-10-04 10:57:34   INFO [libs.ChargeMethods] : # TWO YEARS CHARGE IOSX = 629.79
+2020-10-04 10:57:34   INFO [libs.ChargeMethods] : # MONTH CHARGE Geometrics = 89.97
+2020-10-04 10:57:34   INFO [libs.ChargeMethods] : # ONE YEAR CHARGE Geometrics = 329.89
+2020-10-04 10:57:34   INFO [libs.ChargeMethods] : # TWO YEARS CHARGE Geometrics = 629.79
+2020-10-04 10:57:34   INFO [libs.ChargeMethods] : # LIST AMOUNT DUE FROM DB = [119.96, 329.89, 629.79, 89.97, 329.89, 629.79]
+2020-10-04 10:57:34   INFO [libs.ChargeMethods] : # PROGRAM COUNT CHARGE  = 2129.29
+2020-10-04 10:57:34   INFO [libs.ChargeMethods] : # SUM DB DUE (CHARGE) = 2129.29
+2020-10-04 10:57:35   INFO [chargeTest.ChargeDefaultersTest] : AC passed
+2020-10-04 10:57:36   INFO [chargeTest.ChargeDefaultersTest] : AC passed
+2020-10-04 10:57:38   INFO [libs.ChargeMethods] : Chrome is started
+2020-10-04 10:58:00   INFO [libs.ChargeMethods] : Cron check fleets was run: 2020-04-10 07:57:36
+2020-10-04 10:58:02   INFO [libs.ChargeMethods] : currentDue = 2185.22
+2020-10-04 10:58:02   INFO [libs.ChargeMethods] : countChargeLateFeeDevices = 7
+2020-10-04 10:58:02   INFO [libs.ChargeMethods] : tempDueWithLateFee = 2185.22
+2020-10-04 10:58:03   INFO [chargeTest.ChargeDefaultersTest] : AC passed
+2020-10-04 10:58:05   INFO [libs.ChargeMethods] : Chrome is started
+2020-10-04 10:58:28   INFO [libs.ChargeMethods] : Cron check fleets was run: 2020-04-10 07:58:03
+2020-10-04 10:58:30   INFO [chargeTest.ChargeDefaultersTest] : AC passed
+2020-10-04 10:58:31   INFO [chargeTest.ChargeDefaultersTest] : AC passed
+2020-10-04 10:58:33   INFO [libs.ChargeMethods] : Chrome is started
+2020-10-04 10:58:55   INFO [libs.ChargeMethods] : Cron check fleets was run: 2020-04-10 07:58:31
+2020-10-04 10:58:56   INFO [libs.ChargeMethods] : listDevicesTariffStart = [1578481021, 1554807421, 1523271421, 1580813821, 1578481021, 1578481021, 1580813821, 1580813821, 1554807421, 1523271421]
+2020-10-04 10:58:56   INFO [libs.ChargeMethods] : countDevicesAfter_12Month = 2
+2020-10-04 10:58:56   INFO [libs.ChargeMethods] : countDevices = 10
+2020-10-04 10:58:56   INFO [libs.ChargeMethods] : tempNotReturnedFee = 1999.9
+2020-10-04 10:58:56   INFO [libs.ChargeMethods] : tempProratedFee = 359.88
+2020-10-04 10:58:56   INFO [libs.ChargeMethods] : tempDueWithReturnedProratedFee = 4545.0
+2020-10-04 10:58:57   INFO [chargeTest.ChargeDefaultersTest] : AC passed
+2020-10-04 10:58:58   INFO [chargeTest.ChargeDefaultersTest] : AC passed
+2020-10-04 10:59:00   INFO [chargeTest.ChargeDefaultersTest] : AC passed
+2020-10-04 10:59:02   INFO [libs.ChargeMethods] : Chrome is started
+2020-10-04 10:59:25   INFO [libs.ChargeMethods] : Cron check fleets was run: 2020-04-10 07:59:01
+2020-10-04 10:59:25   INFO [chargeTest.ChargeDefaultersTest] :  DB Connection Closed 
+2020-10-04 11:01:53   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-10-04 11:01:58   INFO [libs.ChargeMethods] : Any device on this type: 1
+2020-10-04 11:01:58   INFO [libs.ChargeMethods] : Any device on this type: 2
+2020-10-04 11:01:58   INFO [libs.ChargeMethods] : Any device on this type: 9
+2020-10-04 11:01:58   INFO [libs.ChargeMethods] : Any device on this type: 10
+2020-10-04 11:01:58   INFO [libs.ChargeMethods] : Any device on this type: 11
+2020-10-04 11:02:05   INFO [libs.ChargeMethods] : Chrome is started
+2020-10-04 11:02:29   INFO [libs.ChargeMethods] : Cron check fleets was run: 2020-04-10 08:01:59
+2020-10-04 11:02:30   INFO [libs.ChargeMethods] : dateTime: [2020-04-10 08:02:21]
+2020-10-04 11:02:31   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-10-04 11:02:31   INFO [libs.ChargeMethods] : # MONTH CHARGE IOSX = 29.99
+2020-10-04 11:02:31   INFO [libs.ChargeMethods] : # ONE YEAR CHARGE IOSX = 0.0
+2020-10-04 11:02:31   INFO [libs.ChargeMethods] : # TWO YEARS CHARGE IOSX = 0.0
+2020-10-04 11:02:31   INFO [libs.ChargeMethods] : # MONTH CHARGE Geometrics = 0.0
+2020-10-04 11:02:31   INFO [libs.ChargeMethods] : # ONE YEAR CHARGE Geometrics = 0.0
+2020-10-04 11:02:31   INFO [libs.ChargeMethods] : # TWO YEARS CHARGE Geometrics = 0.0
+2020-10-04 11:02:31   INFO [libs.ChargeMethods] : # countScannerMonthToMonthTariffChargeByDays = 0
+2020-10-04 11:02:31   INFO [libs.ChargeMethods] : # countScannerMonthToMonthTariffChargeByDays = 0
+2020-10-04 11:02:31   INFO [libs.ChargeMethods] : # LIST AMOUNT DUE FROM DB = [89.97]
+2020-10-04 11:02:31   INFO [libs.ChargeMethods] : # PROGRAM COUNT CHARGE  = 29.99
+2020-10-04 11:02:31   INFO [libs.ChargeMethods] : # SUM DB DUE (CHARGE) = 89.97
+2020-10-04 11:02:32  ERROR [chargeTest.ChargeFleetSoloTest] : AC failed: Charge due is not correct
+2020-10-04 11:02:32   INFO [chargeTest.ChargeFleetSoloTest] :  DB Connection Closed 
+2020-10-04 11:10:44   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-10-04 11:10:50   INFO [libs.ChargeMethods] : Count device on this type: 3
+2020-10-04 11:10:50   INFO [libs.ChargeMethods] : Any device on this type: 1
+2020-10-04 11:10:50   INFO [libs.ChargeMethods] : Any device on this type: 2
+2020-10-04 11:10:50   INFO [libs.ChargeMethods] : Any device on this type: 9
+2020-10-04 11:10:50   INFO [libs.ChargeMethods] : Any device on this type: 10
+2020-10-04 11:10:50   INFO [libs.ChargeMethods] : Any device on this type: 11
+2020-10-04 11:10:56   INFO [libs.ChargeMethods] : Chrome is started
+2020-10-04 11:11:21   INFO [libs.ChargeMethods] : Cron check fleets was run: 2020-04-10 08:10:51
+2020-10-04 11:11:22   INFO [libs.ChargeMethods] : dateTime: [2020-04-10 08:11:13]
+2020-10-04 11:11:23   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-10-04 11:11:23   INFO [libs.ChargeMethods] : # MONTH CHARGE IOSX = 59.98
+2020-10-04 11:11:23   INFO [libs.ChargeMethods] : # ONE YEAR CHARGE IOSX = 0.0
+2020-10-04 11:11:23   INFO [libs.ChargeMethods] : # TWO YEARS CHARGE IOSX = 0.0
+2020-10-04 11:11:23   INFO [libs.ChargeMethods] : # MONTH CHARGE Geometrics = 0.0
+2020-10-04 11:11:23   INFO [libs.ChargeMethods] : # ONE YEAR CHARGE Geometrics = 0.0
+2020-10-04 11:11:23   INFO [libs.ChargeMethods] : # TWO YEARS CHARGE Geometrics = 0.0
+2020-10-04 11:11:23   INFO [libs.ChargeMethods] : # countScannerMonthToMonthTariffChargeByDays = 1
+2020-10-04 11:11:23   INFO [libs.ChargeMethods] : ***** Month Days = 30
+2020-10-04 11:11:23   INFO [libs.ChargeMethods] : ***** Active Charge Days = 5
+2020-10-04 11:11:23   INFO [libs.ChargeMethods] : ***** chargeByDevice = 5.0
+2020-10-04 11:11:23   INFO [libs.ChargeMethods] : ***** chargeByAllDevices = 5.0
+2020-10-04 11:11:23   INFO [libs.ChargeMethods] : # countScannerMonthToMonthTariffChargeByDays = 0
+2020-10-04 11:11:23   INFO [libs.ChargeMethods] : # LIST AMOUNT DUE FROM DB = [64.98]
+2020-10-04 11:11:23   INFO [libs.ChargeMethods] : # PROGRAM COUNT CHARGE  = 64.98
+2020-10-04 11:11:23   INFO [libs.ChargeMethods] : # SUM DB DUE (CHARGE) = 64.98
+2020-10-04 11:11:24   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-10-04 11:11:25   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-10-04 11:11:27   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-10-04 11:11:28   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-10-04 11:11:28   INFO [libs.ChargeMethods] : tempEstimatedTill: 2020-05-01
+2020-10-04 11:11:29   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-10-04 11:11:29   INFO [libs.ChargeMethods] : tempPaidTill: 2020-05-01
+2020-10-04 11:11:30   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-10-04 11:11:30   INFO [chargeTest.ChargeFleetSoloTest] :  DB Connection Closed 
+2020-10-04 11:22:41   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-10-04 11:22:47   INFO [libs.ChargeMethods] : Count device on this type: 0 = 3
+2020-10-04 11:22:47   INFO [libs.ChargeMethods] : Any device on this type: 1
+2020-10-04 11:22:47   INFO [libs.ChargeMethods] : Any device on this type: 2
+2020-10-04 11:22:47   INFO [libs.ChargeMethods] : Any device on this type: 9
+2020-10-04 11:22:47   INFO [libs.ChargeMethods] : Any device on this type: 10
+2020-10-04 11:22:47   INFO [libs.ChargeMethods] : Any device on this type: 11
+2020-10-04 11:22:47   INFO [libs.ChargeMethods] : Any device for set order date on this type: 9
+2020-10-04 11:22:53   INFO [libs.ChargeMethods] : Chrome is started
+2020-10-04 11:23:18   INFO [libs.ChargeMethods] : Cron check fleets was run: 2020-04-10 08:22:48
+2020-10-04 11:23:19   INFO [libs.ChargeMethods] : dateTime: [2020-04-10 08:23:10]
+2020-10-04 11:23:20   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-10-04 11:23:20   INFO [libs.ChargeMethods] : # MONTH CHARGE IOSX = 59.98
+2020-10-04 11:23:20   INFO [libs.ChargeMethods] : # ONE YEAR CHARGE IOSX = 0.0
+2020-10-04 11:23:20   INFO [libs.ChargeMethods] : # TWO YEARS CHARGE IOSX = 0.0
+2020-10-04 11:23:20   INFO [libs.ChargeMethods] : # MONTH CHARGE Geometrics = 0.0
+2020-10-04 11:23:20   INFO [libs.ChargeMethods] : # ONE YEAR CHARGE Geometrics = 0.0
+2020-10-04 11:23:20   INFO [libs.ChargeMethods] : # TWO YEARS CHARGE Geometrics = 0.0
+2020-10-04 11:23:20   INFO [libs.ChargeMethods] : # countScannerMonthToMonthTariffChargeByDays = 1
+2020-10-04 11:23:20   INFO [libs.ChargeMethods] : ***** Month Days = 30
+2020-10-04 11:23:20   INFO [libs.ChargeMethods] : ***** Active Charge Days = 5
+2020-10-04 11:23:20   INFO [libs.ChargeMethods] : ***** chargeByDevice = 5.0
+2020-10-04 11:23:20   INFO [libs.ChargeMethods] : ***** chargeByAllDevices = 5.0
+2020-10-04 11:23:20   INFO [libs.ChargeMethods] : # countScannerMonthToMonthTariffChargeByDays = 0
+2020-10-04 11:23:20   INFO [libs.ChargeMethods] : # LIST AMOUNT DUE FROM DB = [64.98]
+2020-10-04 11:23:20   INFO [libs.ChargeMethods] : # PROGRAM COUNT CHARGE  = 64.98
+2020-10-04 11:23:20   INFO [libs.ChargeMethods] : # SUM DB DUE (CHARGE) = 64.98
+2020-10-04 11:23:21   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-10-04 11:23:22   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-10-04 11:23:23   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-10-04 11:23:24   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-10-04 11:23:24   INFO [libs.ChargeMethods] : tempEstimatedTill: 2020-05-01
+2020-10-04 11:23:25   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-10-04 11:23:26   INFO [libs.ChargeMethods] : tempPaidTill: 2020-05-01
+2020-10-04 11:23:27   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-10-04 11:23:27   INFO [chargeTest.ChargeFleetSoloTest] :  DB Connection Closed 
+2020-13-04 11:24:43   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-13-04 11:24:49   INFO [libs.ChargeMethods] : Count device on this type: 0 = 4
+2020-13-04 11:24:49   INFO [libs.ChargeMethods] : Count device on this type: 1 = 1
+2020-13-04 11:24:49   INFO [libs.ChargeMethods] : Count device on this type: 2 = 1
+2020-13-04 11:24:49   INFO [libs.ChargeMethods] : Count device on this type: 9 = 3
+2020-13-04 11:24:50   INFO [libs.ChargeMethods] : Count device on this type: 10 = 1
+2020-13-04 11:24:50   INFO [libs.ChargeMethods] : Count device on this type: 11 = 1
+2020-13-04 11:24:57   INFO [chargeTest.ChargeFleetSoloTest] :  DB Connection Closed 
+2020-13-04 11:26:02   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-13-04 11:26:07   INFO [libs.ChargeMethods] : Count device on this type: 0 = 4
+2020-13-04 11:26:08   INFO [libs.ChargeMethods] : Count device on this type: 1 = 1
+2020-13-04 11:26:08   INFO [libs.ChargeMethods] : Count device on this type: 2 = 1
+2020-13-04 11:26:08   INFO [libs.ChargeMethods] : Count device on this type: 9 = 3
+2020-13-04 11:26:08   INFO [libs.ChargeMethods] : Count device on this type: 10 = 1
+2020-13-04 11:26:08   INFO [libs.ChargeMethods] : Count device on this type: 11 = 1
+2020-13-04 11:26:15   INFO [chargeTest.ChargeFleetSoloTest] :  DB Connection Closed 
+2020-13-04 11:26:57   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome will be started
+2020-13-04 11:27:02   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] :  DB connection closed 
+2020-13-04 11:38:42   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome will be started
+2020-13-04 11:38:48   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome is started
+2020-13-04 11:38:48   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-13-04 11:38:55   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-13-04 11:38:56   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-04 11:38:57   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-13-04 11:38:58   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-13-04 11:38:58   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-04 11:39:06   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-13-04 11:39:28  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (b51995b96a59af32d32eb7ffdc05a13b)] -> xpath: .//a[@href='/safety/documents']] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'DESKTOP-UD8IPI4', ip: '37.229.252.39', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.92, chrome: {chromedriverVersion: 81.0.4044.69 (6813546031a4b..., userDataDir: C:\Users\denku\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49892}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: b51995b96a59af32d32eb7ffdc05a13b
+2020-13-04 11:39:28   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] :  DB connection closed 
+2020-13-04 11:40:13   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-13-04 11:40:19   INFO [libs.ChargeMethods] : Count device on this type: 0 = 4
+2020-13-04 11:40:19   INFO [libs.ChargeMethods] : Count device on this type: 1 = 1
+2020-13-04 11:40:19   INFO [libs.ChargeMethods] : Count device on this type: 2 = 1
+2020-13-04 11:40:19   INFO [libs.ChargeMethods] : Count device on this type: 9 = 3
+2020-13-04 11:40:20   INFO [libs.ChargeMethods] : Count device on this type: 10 = 1
+2020-13-04 11:40:20   INFO [libs.ChargeMethods] : Count device on this type: 11 = 1
+2020-13-04 11:40:26   INFO [libs.ChargeMethods] : Chrome is started
+2020-13-04 11:40:54   INFO [libs.ChargeMethods] : Cron check fleets was run: 2020-04-13 08:40:22
+2020-13-04 11:40:55   INFO [libs.ChargeMethods] : dateTime: [2020-04-13 08:40:31]
+2020-13-04 11:40:56   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-13-04 11:40:56   INFO [libs.ChargeMethods] : # MONTH CHARGE IOSX = 59.98
+2020-13-04 11:40:56   INFO [libs.ChargeMethods] : # ONE YEAR CHARGE IOSX = 329.89
+2020-13-04 11:40:56   INFO [libs.ChargeMethods] : # TWO YEARS CHARGE IOSX = 629.79
+2020-13-04 11:40:56   INFO [libs.ChargeMethods] : # MONTH CHARGE Geometrics = 59.98
+2020-13-04 11:40:56   INFO [libs.ChargeMethods] : # ONE YEAR CHARGE Geometrics = 329.89
+2020-13-04 11:40:56   INFO [libs.ChargeMethods] : # TWO YEARS CHARGE Geometrics = 629.79
+2020-13-04 11:40:56   INFO [libs.ChargeMethods] : # countScannerMonthToMonthTariffChargeByDays = 2
+2020-13-04 11:40:56   INFO [libs.ChargeMethods] : ***** Month Days = 30
+2020-13-04 11:40:56   INFO [libs.ChargeMethods] : ***** Active Charge Days = 5
+2020-13-04 11:40:56   INFO [libs.ChargeMethods] : ***** chargeByDevice = 5.0
+2020-13-04 11:40:56   INFO [libs.ChargeMethods] : ***** chargeByAllDevices = 10.0
+2020-13-04 11:40:56   INFO [libs.ChargeMethods] : # countScannerMonthToMonthTariffChargeByDays = 1
+2020-13-04 11:40:56   INFO [libs.ChargeMethods] : ***** Month Days = 30
+2020-13-04 11:40:56   INFO [libs.ChargeMethods] : ***** Active Charge Days = 22
+2020-13-04 11:40:56   INFO [libs.ChargeMethods] : ***** chargeByDevice = 21.99
+2020-13-04 11:40:56   INFO [libs.ChargeMethods] : ***** chargeByAllDevices = 21.99
+2020-13-04 11:40:56   INFO [libs.ChargeMethods] : # LIST AMOUNT DUE FROM DB = [69.98, 329.89, 629.79, 81.97, 329.89, 629.79]
+2020-13-04 11:40:56   INFO [libs.ChargeMethods] : # PROGRAM COUNT CHARGE  = 2071.31
+2020-13-04 11:40:56   INFO [libs.ChargeMethods] : # SUM DB DUE (CHARGE) = 2071.31
+2020-13-04 11:40:57   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-13-04 11:40:58   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-13-04 11:41:00   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-13-04 11:41:01   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-13-04 11:41:01   INFO [libs.ChargeMethods] : tempEstimatedTill: 2020-05-01
+2020-13-04 11:41:02   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-13-04 11:41:02   INFO [libs.ChargeMethods] : tempPaidTill: 2020-05-01
+2020-13-04 11:41:03   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-13-04 11:41:03   INFO [chargeTest.ChargeFleetSoloTest] :  DB Connection Closed 
+2020-13-04 11:41:28   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-13-04 11:41:34   INFO [libs.ChargeMethods] : # COUNT MONTH TO MONTH IOSX TARIFF = 3
+2020-13-04 11:41:34   INFO [libs.ChargeMethods] : # COUNT ONE YEAR IOSX TARIFF = 1
+2020-13-04 11:41:34   INFO [libs.ChargeMethods] : # COUNT TWO YEARS IOSX TARIFF = 1
+2020-13-04 11:41:34   INFO [libs.ChargeMethods] : # COUNT MONTH TO MONTH GEOMETRICS TARIFF = 5
+2020-13-04 11:41:34   INFO [libs.ChargeMethods] : # COUNT ONE YEAR GEOMETRICS TARIFF = 3
+2020-13-04 11:41:34   INFO [libs.ChargeMethods] : # COUNT TWO YEARS GEOMETRICS TARIFF = 1
+2020-13-04 11:41:35   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-13-04 11:41:43   INFO [libs.ChargeMethods] : Chrome is started
+2020-13-04 11:42:08   INFO [libs.ChargeMethods] : Cron check Drivers was run: 2020-04-13 08:41:38
+2020-13-04 11:42:09   INFO [libs.ChargeMethods] : dateTime: [2020-04-13 08:41:54]
+2020-13-04 11:42:10   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-13-04 11:42:10   INFO [libs.ChargeMethods] : # MONTH CHARGE IOSX = 59.98
+2020-13-04 11:42:10   INFO [libs.ChargeMethods] : # ONE YEAR CHARGE IOSX = 329.89
+2020-13-04 11:42:10   INFO [libs.ChargeMethods] : # TWO YEARS CHARGE IOSX = 629.79
+2020-13-04 11:42:10   INFO [libs.ChargeMethods] : # MONTH CHARGE Geometrics = 89.97
+2020-13-04 11:42:10   INFO [libs.ChargeMethods] : # ONE YEAR CHARGE Geometrics = 989.67
+2020-13-04 11:42:10   INFO [libs.ChargeMethods] : # TWO YEARS CHARGE Geometrics = 629.79
+2020-13-04 11:42:10   INFO [libs.ChargeMethods] : # countScannerMonthToMonthTariffChargeByDays = 1
+2020-13-04 11:42:10   INFO [libs.ChargeMethods] : ***** Month Days = 30
+2020-13-04 11:42:10   INFO [libs.ChargeMethods] : ***** Active Charge Days = 9
+2020-13-04 11:42:10   INFO [libs.ChargeMethods] : ***** chargeByDevice = 9.0
+2020-13-04 11:42:10   INFO [libs.ChargeMethods] : ***** chargeByAllDevices = 9.0
+2020-13-04 11:42:10   INFO [libs.ChargeMethods] : # countScannerMonthToMonthTariffChargeByDays = 2
+2020-13-04 11:42:10   INFO [libs.ChargeMethods] : ***** Month Days = 30
+2020-13-04 11:42:10   INFO [libs.ChargeMethods] : ***** Active Charge Days = 7
+2020-13-04 11:42:10   INFO [libs.ChargeMethods] : ***** chargeByDevice = 7.0
+2020-13-04 11:42:10   INFO [libs.ChargeMethods] : ***** chargeByAllDevices = 14.0
+2020-13-04 11:42:10   INFO [libs.ChargeMethods] : # LIST AMOUNT DUE FROM DB = [103.97, 989.67, 68.98, 329.89, 629.79, 629.79]
+2020-13-04 11:42:10   INFO [libs.ChargeMethods] : # PROGRAM COUNT CHARGE  = 2752.09
+2020-13-04 11:42:10   INFO [libs.ChargeMethods] : # SUM DB DUE (CHARGE) = 2752.09
+2020-13-04 11:42:11   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-13-04 11:42:12   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-13-04 11:42:13   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-13-04 11:42:15   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-13-04 11:42:15   INFO [libs.ChargeMethods] : # tempEstimatedTill: 2020-05-01
+2020-13-04 11:42:16   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-13-04 11:42:16   INFO [libs.ChargeMethods] : # tempPaidTill: 2020-05-01
+2020-13-04 11:42:17   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-13-04 11:42:17   INFO [chargeTest.ChargeFleetSoloTest] :  DB Connection Closed 
+2020-13-04 11:42:43   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-13-04 11:42:49   INFO [libs.ChargeMethods] : # COUNT MONTH TO MONTH IOSX TARIFF = 4
+2020-13-04 11:42:49   INFO [libs.ChargeMethods] : # COUNT ONE YEAR IOSX TARIFF = 1
+2020-13-04 11:42:49   INFO [libs.ChargeMethods] : # COUNT TWO YEARS IOSX TARIFF = 1
+2020-13-04 11:42:49   INFO [libs.ChargeMethods] : # COUNT MONTH TO MONTH GEOMETRICS TARIFF = 3
+2020-13-04 11:42:49   INFO [libs.ChargeMethods] : # COUNT ONE YEAR GEOMETRICS TARIFF = 1
+2020-13-04 11:42:49   INFO [libs.ChargeMethods] : # COUNT TWO YEARS GEOMETRICS TARIFF = 1
+2020-13-04 11:42:50   INFO [chargeTest.ChargeDefaultersTest] : AC passed
+2020-13-04 11:42:50   INFO [libs.ChargeMethods] : Count device on this type: 0 = 4
+2020-13-04 11:42:50   INFO [libs.ChargeMethods] : Count device on this type: 1 = 1
+2020-13-04 11:42:50   INFO [libs.ChargeMethods] : Count device on this type: 2 = 1
+2020-13-04 11:42:51   INFO [libs.ChargeMethods] : Count device on this type: 9 = 3
+2020-13-04 11:42:51   INFO [libs.ChargeMethods] : Count device on this type: 10 = 1
+2020-13-04 11:42:51   INFO [libs.ChargeMethods] : Count device on this type: 11 = 1
+2020-13-04 11:42:56   INFO [libs.ChargeMethods] : Chrome is started
+2020-13-04 11:43:20   INFO [libs.ChargeMethods] : Cron check fleets was run: 2020-04-13 08:42:51
+2020-13-04 11:43:21   INFO [libs.ChargeMethods] : dateTime: [2020-04-13 08:42:58]
+2020-13-04 11:43:22   INFO [chargeTest.ChargeDefaultersTest] : AC passed
+2020-13-04 11:43:22   INFO [libs.ChargeMethods] : # MONTH CHARGE IOSX = 119.96
+2020-13-04 11:43:22   INFO [libs.ChargeMethods] : # ONE YEAR CHARGE IOSX = 329.89
+2020-13-04 11:43:22   INFO [libs.ChargeMethods] : # TWO YEARS CHARGE IOSX = 629.79
+2020-13-04 11:43:22   INFO [libs.ChargeMethods] : # MONTH CHARGE Geometrics = 89.97
+2020-13-04 11:43:22   INFO [libs.ChargeMethods] : # ONE YEAR CHARGE Geometrics = 329.89
+2020-13-04 11:43:22   INFO [libs.ChargeMethods] : # TWO YEARS CHARGE Geometrics = 629.79
+2020-13-04 11:43:22   INFO [libs.ChargeMethods] : # LIST AMOUNT DUE FROM DB = [119.96, 329.89, 629.79, 89.97, 329.89, 629.79]
+2020-13-04 11:43:22   INFO [libs.ChargeMethods] : # PROGRAM COUNT CHARGE  = 2129.29
+2020-13-04 11:43:22   INFO [libs.ChargeMethods] : # SUM DB DUE (CHARGE) = 2129.29
+2020-13-04 11:43:23   INFO [chargeTest.ChargeDefaultersTest] : AC passed
+2020-13-04 11:43:24   INFO [chargeTest.ChargeDefaultersTest] : AC passed
+2020-13-04 11:43:26   INFO [libs.ChargeMethods] : Chrome is started
+2020-13-04 11:43:49   INFO [libs.ChargeMethods] : Cron check fleets was run: 2020-04-13 08:43:24
+2020-13-04 11:43:51   INFO [libs.ChargeMethods] : currentDue = 2185.22
+2020-13-04 11:43:51   INFO [libs.ChargeMethods] : countChargeLateFeeDevices = 7
+2020-13-04 11:43:51   INFO [libs.ChargeMethods] : tempDueWithLateFee = 2185.22
+2020-13-04 11:43:52   INFO [chargeTest.ChargeDefaultersTest] : AC passed
+2020-13-04 11:43:54   INFO [libs.ChargeMethods] : Chrome is started
+2020-13-04 11:44:16   INFO [libs.ChargeMethods] : Cron check fleets was run: 2020-04-13 08:43:52
+2020-13-04 11:44:18   INFO [chargeTest.ChargeDefaultersTest] : AC passed
+2020-13-04 11:44:19   INFO [chargeTest.ChargeDefaultersTest] : AC passed
+2020-13-04 11:44:21   INFO [libs.ChargeMethods] : Chrome is started
+2020-13-04 11:44:44   INFO [libs.ChargeMethods] : Cron check fleets was run: 2020-04-13 08:44:19
+2020-13-04 11:44:45   INFO [libs.ChargeMethods] : listDevicesTariffStart = [1578742969, 1555069369, 1523533369, 1581075769, 1578742969, 1578742969, 1581075769, 1581075769, 1555069369, 1523533369]
+2020-13-04 11:44:45   INFO [libs.ChargeMethods] : countDevicesAfter_12Month = 2
+2020-13-04 11:44:45   INFO [libs.ChargeMethods] : countDevices = 10
+2020-13-04 11:44:45   INFO [libs.ChargeMethods] : tempNotReturnedFee = 1999.9
+2020-13-04 11:44:45   INFO [libs.ChargeMethods] : tempProratedFee = 359.88
+2020-13-04 11:44:45   INFO [libs.ChargeMethods] : tempDueWithReturnedProratedFee = 4545.0
+2020-13-04 11:44:46   INFO [chargeTest.ChargeDefaultersTest] : AC passed
+2020-13-04 11:44:47   INFO [chargeTest.ChargeDefaultersTest] : AC passed
+2020-13-04 11:44:48   INFO [chargeTest.ChargeDefaultersTest] : AC passed
+2020-13-04 11:44:50   INFO [libs.ChargeMethods] : Chrome is started
+2020-13-04 11:45:15   INFO [libs.ChargeMethods] : Cron check fleets was run: 2020-04-13 08:44:49
+2020-13-04 11:45:16   INFO [chargeTest.ChargeDefaultersTest] :  DB Connection Closed 
+2020-13-04 11:45:37   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-13-04 11:45:44   INFO [libs.ChargeMethods] : # COUNT MONTH TO MONTH IOSX TARIFF = 3
+2020-13-04 11:45:44   INFO [libs.ChargeMethods] : # COUNT ONE YEAR IOSX TARIFF = 1
+2020-13-04 11:45:44   INFO [libs.ChargeMethods] : # COUNT TWO YEARS IOSX TARIFF = 1
+2020-13-04 11:45:44   INFO [libs.ChargeMethods] : # COUNT MONTH TO MONTH GEOMETRICS TARIFF = 5
+2020-13-04 11:45:44   INFO [libs.ChargeMethods] : # COUNT ONE YEAR GEOMETRICS TARIFF = 3
+2020-13-04 11:45:44   INFO [libs.ChargeMethods] : # COUNT TWO YEARS GEOMETRICS TARIFF = 1
+2020-13-04 11:45:45   INFO [chargeTest.ChargeDefaultersTest] : AC passed
+2020-13-04 11:45:51   INFO [libs.ChargeMethods] : Chrome is started
+2020-13-04 11:46:09   INFO [libs.ChargeMethods] : Cron check Drivers was run: 2020-04-13 08:45:46
+2020-13-04 11:46:10   INFO [libs.ChargeMethods] : dateTime: [2020-04-13 08:45:56]
+2020-13-04 11:46:11   INFO [chargeTest.ChargeDefaultersTest] : AC passed
+2020-13-04 11:46:11   INFO [libs.ChargeMethods] : # MONTH CHARGE IOSX = 89.97
+2020-13-04 11:46:11   INFO [libs.ChargeMethods] : # ONE YEAR CHARGE IOSX = 329.89
+2020-13-04 11:46:11   INFO [libs.ChargeMethods] : # TWO YEARS CHARGE IOSX = 629.79
+2020-13-04 11:46:11   INFO [libs.ChargeMethods] : # MONTH CHARGE Geometrics = 149.95
+2020-13-04 11:46:11   INFO [libs.ChargeMethods] : # ONE YEAR CHARGE Geometrics = 989.67
+2020-13-04 11:46:11   INFO [libs.ChargeMethods] : # TWO YEARS CHARGE Geometrics = 629.79
+2020-13-04 11:46:11   INFO [libs.ChargeMethods] : # LIST AMOUNT DUE FROM DB = [149.95, 989.67, 89.97, 329.89, 629.79, 629.79]
+2020-13-04 11:46:11   INFO [libs.ChargeMethods] : # PROGRAM COUNT CHARGE  = 2819.06
+2020-13-04 11:46:11   INFO [libs.ChargeMethods] : # SUM DB DUE (CHARGE) = 2819.06
+2020-13-04 11:46:12   INFO [chargeTest.ChargeDefaultersTest] : AC passed
+2020-13-04 11:46:13   INFO [chargeTest.ChargeDefaultersTest] : AC passed
+2020-13-04 11:46:15   INFO [libs.ChargeMethods] : Chrome is started
+2020-13-04 11:46:32   INFO [libs.ChargeMethods] : Cron check Drivers was run: 2020-04-13 08:46:13
+2020-13-04 11:46:33   INFO [libs.ChargeMethods] : currentDue = 2882.98
+2020-13-04 11:46:33   INFO [libs.ChargeMethods] : countChargeLateFeeDevices = 8
+2020-13-04 11:46:33   INFO [libs.ChargeMethods] : tempDueWithLateFee = 2882.98
+2020-13-04 11:46:34   INFO [chargeTest.ChargeDefaultersTest] : AC passed
+2020-13-04 11:46:36   INFO [libs.ChargeMethods] : Chrome is started
+2020-13-04 11:46:50   INFO [libs.ChargeMethods] : Cron check Drivers was run: 2020-04-13 08:46:34
+2020-13-04 11:46:52   INFO [chargeTest.ChargeDefaultersTest] : AC passed
+2020-13-04 11:46:54   INFO [chargeTest.ChargeDefaultersTest] : AC passed
+2020-13-04 11:46:56   INFO [libs.ChargeMethods] : Chrome is started
+2020-13-04 11:47:13   INFO [libs.ChargeMethods] : Cron check Drivers was run: 2020-04-13 08:46:54
+2020-13-04 11:47:14   INFO [libs.ChargeMethods] : listDevicesTariffStart = [1581162344, 1581162344, 1555069544, 1555069544, 1555069544, 1578656744, 1555069544, 1523533544, 1523533544, 1578656744, 1578656744, 1581162344, 1581162344, 1581162344]
+2020-13-04 11:47:14   INFO [libs.ChargeMethods] : countDevicesAfter_12Month = 2
+2020-13-04 11:47:14   INFO [libs.ChargeMethods] : countDevices = 14
+2020-13-04 11:47:14   INFO [libs.ChargeMethods] : tempNotReturnedFee = 2799.86
+2020-13-04 11:47:14   INFO [libs.ChargeMethods] : tempProratedFee = 479.84
+2020-13-04 11:47:14   INFO [libs.ChargeMethods] : tempDueWithReturnedProratedFee = 6162.68
+2020-13-04 11:47:15   INFO [chargeTest.ChargeDefaultersTest] : AC passed
+2020-13-04 11:47:16   INFO [chargeTest.ChargeDefaultersTest] : AC passed
+2020-13-04 11:47:17   INFO [chargeTest.ChargeDefaultersTest] : AC passed
+2020-13-04 11:47:19   INFO [libs.ChargeMethods] : Chrome is started
+2020-13-04 11:47:36   INFO [libs.ChargeMethods] : Cron check Drivers was run: 2020-04-13 08:47:18
+2020-13-04 11:47:37   INFO [chargeTest.ChargeDefaultersTest] :  DB Connection Closed 
+2020-14-04 17:58:47   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome will be started
+2020-14-04 17:58:54   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome is started
+2020-14-04 17:58:54   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-14-04 17:59:05   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-14-04 17:59:06   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-14-04 17:59:07   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-14-04 17:59:07   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-14-04 17:59:08   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-14-04 17:59:15   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-14-04 17:59:37  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (9177ba7f81542dd6c7af94fe9863644f)] -> xpath: .//a[@href='/safety/documents']] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'DESKTOP-UD8IPI4', ip: '134.249.126.153', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.92, chrome: {chromedriverVersion: 81.0.4044.69 (6813546031a4b..., userDataDir: C:\Users\denku\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59243}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 9177ba7f81542dd6c7af94fe9863644f
+2020-14-04 17:59:37   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] :  DB connection closed 
+2020-14-04 18:02:30   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome will be started
+2020-14-04 18:02:37   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome is started
+2020-14-04 18:02:37   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-14-04 18:02:45   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-14-04 18:02:46   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-14-04 18:02:47   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-14-04 18:02:47   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-14-04 18:02:48   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-14-04 18:02:58   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-14-04 18:03:21  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (a12cd5f7cff558646c163f05308e51ec)] -> xpath: .//a[@href='/safety/documents']] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'DESKTOP-UD8IPI4', ip: '134.249.126.153', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.92, chrome: {chromedriverVersion: 81.0.4044.69 (6813546031a4b..., userDataDir: C:\Users\denku\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59440}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: a12cd5f7cff558646c163f05308e51ec
+2020-14-04 18:03:21   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] :  DB connection closed 
+2020-14-04 18:03:59   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome will be started
+2020-14-04 18:04:03   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome is started
+2020-14-04 18:04:03   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-14-04 18:04:11   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-14-04 18:04:12   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-14-04 18:04:13   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-14-04 18:04:13   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-14-04 18:04:13   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-14-04 18:04:20   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-14-04 18:04:33   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-14-04 18:04:33   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-14-04 18:04:35  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <input placeholder="Select Doc Type" aria-autocomplete="list" aria-labelledby="vs2__combobox" aria-controls="vs2__listbox" type="search" autocomplete="off" class="vs__search"> is not clickable at point (670, 176). Other element would receive the click: <div data-v-5b770765="" class="preloader">...</div>
+  (Session info: chrome=81.0.4044.92)
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'DESKTOP-UD8IPI4', ip: '134.249.126.153', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.92, chrome: {chromedriverVersion: 81.0.4044.69 (6813546031a4b..., userDataDir: C:\Users\denku\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59564}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 8e7731db49abdb1d7eddedfe3d71f65f
+2020-14-04 18:04:35   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] :  DB connection closed 
+2020-14-04 18:05:20   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome will be started
+2020-14-04 18:05:26   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome is started
+2020-14-04 18:05:26   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-14-04 18:05:34   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-14-04 18:05:34   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-14-04 18:05:35   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-14-04 18:05:36   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-14-04 18:05:36   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-14-04 18:05:42   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-14-04 18:05:53   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-14-04 18:05:53   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-14-04 18:05:54  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <input placeholder="Select Doc Type" aria-autocomplete="list" aria-labelledby="vs2__combobox" aria-controls="vs2__listbox" type="search" autocomplete="off" class="vs__search"> is not clickable at point (670, 176). Other element would receive the click: <div data-v-5b770765="" class="preloader">...</div>
+  (Session info: chrome=81.0.4044.92)
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'DESKTOP-UD8IPI4', ip: '134.249.126.153', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.92, chrome: {chromedriverVersion: 81.0.4044.69 (6813546031a4b..., userDataDir: C:\Users\denku\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59684}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: f2b8c8c98225fd5636aea90bb64f385d
+2020-14-04 18:05:54   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] :  DB connection closed 
+2020-14-04 18:11:24   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome will be started
+2020-14-04 18:11:29   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome is started
+2020-14-04 18:11:30   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-14-04 18:11:39   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-14-04 18:11:40   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-14-04 18:11:41   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-14-04 18:11:41   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-14-04 18:11:41   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-14-04 18:11:48   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-14-04 18:12:10  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (e8debdc8e6ff05932d598a82d6ad72b2)] -> xpath: .//a[@href='/safety/documents']] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'DESKTOP-UD8IPI4', ip: '134.249.126.153', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.92, chrome: {chromedriverVersion: 81.0.4044.69 (6813546031a4b..., userDataDir: C:\Users\denku\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59990}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: e8debdc8e6ff05932d598a82d6ad72b2
+2020-14-04 18:12:10   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] :  DB connection closed 
+2020-14-04 18:17:29   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome will be started
+2020-14-04 18:17:34   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome is started
+2020-14-04 18:17:35   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-14-04 18:17:43   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-14-04 18:17:44   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-14-04 18:17:44   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-14-04 18:17:45   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-14-04 18:17:45   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-14-04 18:17:52   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-14-04 18:17:52   INFO [pagesFrankestein.DashboardFPage] :  pageSafety
+2020-14-04 18:18:14  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (a738864f48d1a01a9cd5b06372552b43)] -> xpath: .//a[@href='/safety/documents']] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'DESKTOP-UD8IPI4', ip: '134.249.126.153', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.92, chrome: {chromedriverVersion: 81.0.4044.69 (6813546031a4b..., userDataDir: C:\Users\denku\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60286}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: a738864f48d1a01a9cd5b06372552b43
+2020-14-04 18:18:14   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] :  DB connection closed 
+2020-14-04 18:30:54   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome will be started
+2020-14-04 18:30:59   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome is started
+2020-14-04 18:30:59   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-14-04 18:31:07   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-14-04 18:31:07   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-14-04 18:31:08   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-14-04 18:31:09   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-14-04 18:31:09   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-14-04 18:31:16   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-14-04 18:31:16   INFO [pagesFrankestein.DashboardFPage] :  pageSafety
+2020-14-04 18:31:27   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-14-04 18:31:27   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-14-04 18:31:29  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <input placeholder="Select Doc Type" aria-autocomplete="list" aria-labelledby="vs2__combobox" aria-controls="vs2__listbox" type="search" autocomplete="off" class="vs__search"> is not clickable at point (670, 148). Other element would receive the click: <div data-v-5b770765="" class="preloader">...</div>
+  (Session info: chrome=81.0.4044.92)
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'DESKTOP-UD8IPI4', ip: '134.249.126.153', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.92, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\denku\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60842}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 0ed9dc026916467e04e5df54336b6037
+2020-14-04 18:31:29   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] :  DB connection closed 
+2020-14-04 18:39:15   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome will be started
+2020-14-04 18:39:20   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome is started
+2020-14-04 18:39:21   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-14-04 18:39:29   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-14-04 18:39:30   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-14-04 18:39:30   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-14-04 18:39:31   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-14-04 18:39:31   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-14-04 18:39:38   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-14-04 18:39:38   INFO [pagesFrankestein.DashboardFPage] :  pageSafety
+2020-14-04 18:39:49   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-14-04 18:39:49   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-14-04 18:39:51  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <input placeholder="Select Doc Type" aria-autocomplete="list" aria-labelledby="vs2__combobox" aria-controls="vs2__listbox" type="search" autocomplete="off" class="vs__search"> is not clickable at point (670, 167). Other element would receive the click: <div data-v-5b770765="" class="preloader">...</div>
+  (Session info: chrome=81.0.4044.92)
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'DESKTOP-UD8IPI4', ip: '134.249.126.153', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.92, chrome: {chromedriverVersion: 81.0.4044.69 (6813546031a4b..., userDataDir: C:\Users\denku\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61227}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 28837223bf07299f0883784161b29d0d
+2020-14-04 18:39:51   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] :  DB connection closed 
+2020-14-04 18:50:09   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome will be started
+2020-14-04 18:50:18   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome is started
+2020-14-04 18:50:18   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-14-04 18:50:30   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-14-04 18:50:31   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-14-04 18:50:32   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-14-04 18:50:33   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-14-04 18:50:33   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-14-04 18:50:41   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-14-04 18:50:41   INFO [pagesFrankestein.DashboardFPage] :  pageSafety
+2020-14-04 18:50:55   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-14-04 18:50:55   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-14-04 18:50:57  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <input placeholder="Select Doc Type" aria-autocomplete="list" aria-labelledby="vs2__combobox" aria-controls="vs2__listbox" type="search" autocomplete="off" class="vs__search"> is not clickable at point (670, 148). Other element would receive the click: <div data-v-5b770765="" class="preloader preloader-leave-active preloader-leave-to">...</div>
+  (Session info: chrome=81.0.4044.92)
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'DESKTOP-UD8IPI4', ip: '134.249.126.153', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.92, chrome: {chromedriverVersion: 81.0.4044.69 (6813546031a4b..., userDataDir: C:\Users\denku\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61657}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 88aede85bf8add0eda734928d36fe313
+2020-14-04 18:50:57   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] :  DB connection closed 
+2020-14-04 18:52:23   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome will be started
+2020-14-04 18:52:31   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome is started
+2020-14-04 18:52:32   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-14-04 19:00:13   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : FireFox will be started
+2020-14-04 19:00:25   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] :  DB connection closed 
+2020-14-04 20:15:27   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome will be started
+2020-14-04 20:15:34   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome is started
+2020-14-04 20:15:34   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-14-04 20:15:42   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-14-04 20:15:43   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-14-04 20:15:43   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-14-04 20:15:44   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-14-04 20:15:44   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-14-04 20:15:50   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-14-04 20:15:50   INFO [pagesFrankestein.DashboardFPage] :  pageSafety
+2020-14-04 20:16:12   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-14-04 20:16:12   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-14-04 20:16:13  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <input placeholder="Select Doc Type" aria-autocomplete="list" aria-labelledby="vs2__combobox" aria-controls="vs2__listbox" type="search" autocomplete="off" class="vs__search"> is not clickable at point (670, 410). Other element would receive the click: <div data-v-5b770765="" class="preloader">...</div>
+  (Session info: chrome=81.0.4044.92)
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'DESKTOP-UD8IPI4', ip: '134.249.126.153', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.92, chrome: {chromedriverVersion: 81.0.4044.69 (6813546031a4b..., userDataDir: C:\Users\denku\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65188}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 632851de67956b10dd926853ec41308f
+2020-14-04 20:16:13   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] :  DB connection closed 
+2020-14-04 20:16:46   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome will be started
+2020-14-04 20:16:51   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome is started
+2020-14-04 20:16:51   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-14-04 20:16:59   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-14-04 20:17:00   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-14-04 20:17:00   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-14-04 20:17:01   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-14-04 20:17:01   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-14-04 20:17:09   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-14-04 20:17:09   INFO [pagesFrankestein.DashboardFPage] :  pageSafety
+2020-14-04 20:17:14   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-14-04 20:17:14   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-14-04 20:17:15  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <input placeholder="Select Doc Type" aria-autocomplete="list" aria-labelledby="vs2__combobox" aria-controls="vs2__listbox" type="search" autocomplete="off" class="vs__search"> is not clickable at point (670, 410). Other element would receive the click: <div data-v-5b770765="" class="preloader">...</div>
+  (Session info: chrome=81.0.4044.92)
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'DESKTOP-UD8IPI4', ip: '134.249.126.153', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.92, chrome: {chromedriverVersion: 81.0.4044.69 (6813546031a4b..., userDataDir: C:\Users\denku\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65308}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: bcd875333f3da7d2c5fe1dc0421c9288
+2020-14-04 20:17:15   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] :  DB connection closed 
+2020-14-04 20:18:23   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome will be started
+2020-14-04 20:18:29   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome is started
+2020-14-04 20:18:29   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-14-04 20:18:38   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-14-04 20:18:38   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-14-04 20:18:39   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-14-04 20:18:40   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-14-04 20:18:40   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-14-04 20:18:48   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-14-04 20:18:48   INFO [pagesFrankestein.DashboardFPage] :  pageSafety
+2020-14-04 20:18:54   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-14-04 20:18:54   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-14-04 20:19:00   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-14-04 20:19:01   INFO [libs.ActionsWithOurElements] : Fuel Receipts was inputted into element
+2020-14-04 20:19:21  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (7ed5dd974a71662ea2150e2500054349)] -> xpath: .//*[@role='listbox']] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'DESKTOP-UD8IPI4', ip: '134.249.126.153', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.92, chrome: {chromedriverVersion: 81.0.4044.69 (6813546031a4b..., userDataDir: C:\Users\denku\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65433}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 7ed5dd974a71662ea2150e2500054349
+2020-14-04 20:19:21   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] :  DB connection closed 
+2020-14-04 20:20:48   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome will be started
+2020-14-04 20:20:53   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] : Chrome is started
+2020-14-04 20:20:53   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-14-04 20:21:01   INFO [pagesFrankestein.LoginFPage] : Login Page was opened
+2020-14-04 20:21:01   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-14-04 20:21:02   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-14-04 20:21:02   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-14-04 20:21:03   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-14-04 20:21:11   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-14-04 20:21:11   INFO [pagesFrankestein.DashboardFPage] :  pageSafety
+2020-14-04 20:21:15   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-14-04 20:21:16   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-14-04 20:21:22   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-14-04 20:21:22   INFO [libs.ActionsWithOurElements] : Fuel Receipts was inputted into element
+2020-14-04 20:21:43  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (8caccb25239114c34ec1a4184cbc7b77)] -> xpath: .//*[@role='listbox']] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'DESKTOP-UD8IPI4', ip: '134.249.126.153', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.92, chrome: {chromedriverVersion: 81.0.4044.69 (6813546031a4b..., userDataDir: C:\Users\denku\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49195}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 8caccb25239114c34ec1a4184cbc7b77
+2020-14-04 20:21:43   INFO [frankesteinTest.documentsTest.CarrierCreateDocumentsTest] :  DB connection closed 
+2020-15-04 11:51:01   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-15-04 11:51:10   INFO [libs.ChargeMethods] : Count device on this type: 0 = 4
+2020-15-04 11:51:10   INFO [libs.ChargeMethods] : Count device on this type: 1 = 1
+2020-15-04 11:51:10   INFO [libs.ChargeMethods] : Count device on this type: 2 = 2
+2020-15-04 11:51:11   INFO [libs.ChargeMethods] : Count device on this type: 9 = 3
+2020-15-04 11:51:11   INFO [libs.ChargeMethods] : Count device on this type: 10 = 1
+2020-15-04 11:51:11   INFO [libs.ChargeMethods] : Count device on this type: 11 = 1
+2020-15-04 11:51:19   INFO [libs.ChargeMethods] : Chrome is started
+2020-15-04 11:51:49   INFO [libs.ChargeMethods] : Cron check fleets was run: 2020-04-15 08:51:13
+2020-15-04 11:51:50   INFO [libs.ChargeMethods] : dateTime: [2020-04-15 08:51:28]
+2020-15-04 11:51:51   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-15-04 11:51:51   INFO [libs.ChargeMethods] : # MONTH CHARGE IOSX = 59.98
+2020-15-04 11:51:51   INFO [libs.ChargeMethods] : # ONE YEAR CHARGE IOSX = 329.89
+2020-15-04 11:51:51   INFO [libs.ChargeMethods] : # TWO YEARS CHARGE IOSX = 1259.58
+2020-15-04 11:51:51   INFO [libs.ChargeMethods] : # MONTH CHARGE Geometrics = 59.98
+2020-15-04 11:51:51   INFO [libs.ChargeMethods] : # ONE YEAR CHARGE Geometrics = 329.89
+2020-15-04 11:51:51   INFO [libs.ChargeMethods] : # TWO YEARS CHARGE Geometrics = 629.79
+2020-15-04 11:51:51   INFO [libs.ChargeMethods] : # countScannerMonthToMonthTariffChargeByDays = 2
+2020-15-04 11:51:51   INFO [libs.ChargeMethods] : ***** Month Days = 30
+2020-15-04 11:51:51   INFO [libs.ChargeMethods] : ***** Active Charge Days = 5
+2020-15-04 11:51:51   INFO [libs.ChargeMethods] : ***** chargeByDevice = 5.0
+2020-15-04 11:51:51   INFO [libs.ChargeMethods] : ***** chargeByAllDevices = 10.0
+2020-15-04 11:51:51   INFO [libs.ChargeMethods] : # countScannerMonthToMonthTariffChargeByDays = 1
+2020-15-04 11:51:51   INFO [libs.ChargeMethods] : ***** Month Days = 30
+2020-15-04 11:51:51   INFO [libs.ChargeMethods] : ***** Active Charge Days = 22
+2020-15-04 11:51:51   INFO [libs.ChargeMethods] : ***** chargeByDevice = 21.99
+2020-15-04 11:51:51   INFO [libs.ChargeMethods] : ***** chargeByAllDevices = 21.99
+2020-15-04 11:51:51   INFO [libs.ChargeMethods] : # LIST AMOUNT DUE FROM DB = [39.99, 329.89, 1259.58, 81.97, 329.89, 629.79, 29.99]
+2020-15-04 11:51:51   INFO [libs.ChargeMethods] : # PROGRAM COUNT CHARGE  = 2701.1
+2020-15-04 11:51:51   INFO [libs.ChargeMethods] : # SUM DB DUE (CHARGE) = 2701.1
+2020-15-04 11:51:52   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-15-04 11:51:53   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-15-04 11:51:55   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-15-04 11:51:56   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-15-04 11:51:56   INFO [libs.ChargeMethods] : tempEstimatedTill: 2020-05-01
+2020-15-04 11:51:57   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-15-04 11:51:57   INFO [libs.ChargeMethods] : tempPaidTill: 2020-05-01
+2020-15-04 11:51:58   INFO [chargeTest.ChargeFleetSoloTest] : AC passed
+2020-15-04 11:51:58   INFO [chargeTest.ChargeFleetSoloTest] :  DB Connection Closed 
+2020-15-04 15:32:44   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : Chrome will be started
+2020-15-04 15:32:49   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : Chrome is started
+2020-15-04 15:32:50   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-15-04 15:33:00   INFO [pagesLocal.LoginLocalSitePage] : Login Page was opened
+2020-15-04 15:33:01   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 15:33:02   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-15-04 15:33:02   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-15-04 15:33:03   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 15:33:26   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2020-15-04 15:33:26   INFO [pagesLocal.LoginLocalSitePage] : There is not phone verification pop up
+2020-15-04 15:33:28   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 15:33:30  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <div class="dropdown-title">...</div> is not clickable at point (1280, 454). Other element would receive the click: <div class="preloader">...</div>
+  (Session info: chrome=81.0.4044.92)
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'DESKTOP-UD8IPI4', ip: '134.249.126.153', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.92, chrome: {chromedriverVersion: 81.0.4044.69 (6813546031a4b..., userDataDir: C:\Users\denku\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61583}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 173ce81c9ec03b97b6d6143054ae542f
+2020-15-04 15:33:30   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] :  DB connection closed 
+2020-15-04 15:34:34   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : Chrome will be started
+2020-15-04 15:34:40   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : Chrome is started
+2020-15-04 15:34:40   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-15-04 15:34:50   INFO [pagesLocal.LoginLocalSitePage] : Login Page was opened
+2020-15-04 15:34:51   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 15:34:52   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-15-04 15:34:52   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-15-04 15:34:53   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 15:35:16   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2020-15-04 15:35:16   INFO [pagesLocal.LoginLocalSitePage] : There is not phone verification pop up
+2020-15-04 15:35:18   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 15:35:21   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 15:35:25   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 15:35:35   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] :  DB connection closed 
+2020-15-04 17:06:18   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : Chrome will be started
+2020-15-04 17:06:24   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : Chrome is started
+2020-15-04 17:06:24   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-15-04 17:06:35   INFO [pagesLocal.LoginLocalSitePage] : Login Page was opened
+2020-15-04 17:06:35   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 17:06:36   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-15-04 17:06:37   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-15-04 17:06:37   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 17:07:00   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2020-15-04 17:07:00   INFO [pagesLocal.LoginLocalSitePage] : There is not phone verification pop up
+2020-15-04 17:07:02   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 17:07:06   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 17:07:09   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 17:07:13   INFO [libs.ActionsWithOurElements] : com.github.javafaker.FunnyName@315bb2bb was inputted into element
+2020-15-04 17:07:13   INFO [libs.ActionsWithOurElements] : Norma Jennings was inputted into element
+2020-15-04 17:07:14   INFO [libs.ActionsWithOurElements] : 1965 was inputted into element
+2020-15-04 17:08:18   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : Chrome will be started
+2020-15-04 17:08:24   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : Chrome is started
+2020-15-04 17:08:24   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-15-04 17:08:34   INFO [pagesLocal.LoginLocalSitePage] : Login Page was opened
+2020-15-04 17:08:34   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 17:08:35   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-15-04 17:08:35   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-15-04 17:08:35   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 17:08:58   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2020-15-04 17:08:58   INFO [pagesLocal.LoginLocalSitePage] : There is not phone verification pop up
+2020-15-04 17:09:01   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 17:09:03   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 17:09:05   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 17:09:08   INFO [libs.ActionsWithOurElements] : Art Major was inputted into element
+2020-15-04 17:09:08   INFO [libs.ActionsWithOurElements] : Denise Bryson was inputted into element
+2020-15-04 17:09:09   INFO [libs.ActionsWithOurElements] : 1996 was inputted into element
+2020-15-04 17:17:49   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : Chrome will be started
+2020-15-04 17:17:54   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : Chrome is started
+2020-15-04 17:17:55   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-15-04 17:18:06   INFO [pagesLocal.LoginLocalSitePage] : Login Page was opened
+2020-15-04 17:18:06   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 17:18:07   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-15-04 17:18:07   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-15-04 17:18:07   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 17:18:30   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2020-15-04 17:18:30   INFO [pagesLocal.LoginLocalSitePage] : There is not phone verification pop up
+2020-15-04 17:18:33   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 17:18:35   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 17:18:37   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 17:18:40   INFO [libs.ActionsWithOurElements] : Mary Thonn was inputted into element
+2020-15-04 17:18:40   INFO [libs.ActionsWithOurElements] : Sam Stanley was inputted into element
+2020-15-04 17:18:40   INFO [libs.ActionsWithOurElements] : 1977 was inputted into element
+2020-15-04 17:18:41   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 17:18:44  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression .//*[@id='vs12__option-3] because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string './/*[@id='vs12__option-3]' is not a valid XPath expression.
+  (Session info: chrome=81.0.4044.92)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'DESKTOP-UD8IPI4', ip: '134.249.126.153', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.92, chrome: {chromedriverVersion: 81.0.4044.69 (6813546031a4b..., userDataDir: C:\Users\denku\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65055}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: b718926b844143c01c101665ecd96925
+*** Element info: {Using=xpath, value=.//*[@id='vs12__option-3]}
+2020-15-04 17:18:44   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] :  DB connection closed 
+2020-15-04 17:20:23   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : Chrome will be started
+2020-15-04 17:20:28   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : Chrome is started
+2020-15-04 17:20:28   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-15-04 17:20:39   INFO [pagesLocal.LoginLocalSitePage] : Login Page was opened
+2020-15-04 17:20:39   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 17:20:40   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-15-04 17:20:40   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-15-04 17:20:40   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 17:21:03   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2020-15-04 17:21:03   INFO [pagesLocal.LoginLocalSitePage] : There is not phone verification pop up
+2020-15-04 17:21:06   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 17:21:08   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 17:21:10   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 17:21:13   INFO [libs.ActionsWithOurElements] : Lou Stooth was inputted into element
+2020-15-04 17:21:13   INFO [libs.ActionsWithOurElements] : Leo Johnson was inputted into element
+2020-15-04 17:21:14   INFO [libs.ActionsWithOurElements] : 2004 was inputted into element
+2020-15-04 17:21:14   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 17:21:37  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":".//*[@id='vs12__option-1']"}
+  (Session info: chrome=81.0.4044.92)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'DESKTOP-UD8IPI4', ip: '134.249.126.153', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.92, chrome: {chromedriverVersion: 81.0.4044.69 (6813546031a4b..., userDataDir: C:\Users\denku\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65184}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: bd29fde76b4cd5cfb24d124b7cf78ee5
+*** Element info: {Using=xpath, value=.//*[@id='vs12__option-1']}
+2020-15-04 17:21:37   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] :  DB connection closed 
+2020-15-04 17:26:12   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : Chrome will be started
+2020-15-04 17:26:17   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : Chrome is started
+2020-15-04 17:26:17   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-15-04 17:26:29   INFO [pagesLocal.LoginLocalSitePage] : Login Page was opened
+2020-15-04 17:26:29   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 17:26:30   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-15-04 17:26:30   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-15-04 17:26:30   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 17:26:53   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2020-15-04 17:26:53   INFO [pagesLocal.LoginLocalSitePage] : There is not phone verification pop up
+2020-15-04 17:26:56   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 17:26:58   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 17:27:00   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 17:27:03   INFO [libs.ActionsWithOurElements] : U. P. Freehly was inputted into element
+2020-15-04 17:27:03   INFO [libs.ActionsWithOurElements] : Bernard Renault was inputted into element
+2020-15-04 17:27:04   INFO [libs.ActionsWithOurElements] : 1959 was inputted into element
+2020-15-04 17:27:04   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 17:27:27  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":".//*[@id='vs9__option-3']"}
+  (Session info: chrome=81.0.4044.92)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'DESKTOP-UD8IPI4', ip: '134.249.126.153', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.92, chrome: {chromedriverVersion: 81.0.4044.69 (6813546031a4b..., userDataDir: C:\Users\denku\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65417}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: d3226aa74ee82331cf2fb922908a9ecc
+*** Element info: {Using=xpath, value=.//*[@id='vs9__option-3']}
+2020-15-04 17:27:27   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] :  DB connection closed 
+2020-15-04 17:35:21   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : Chrome will be started
+2020-15-04 17:35:26   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : Chrome is started
+2020-15-04 17:35:26   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-15-04 17:35:37   INFO [pagesLocal.LoginLocalSitePage] : Login Page was opened
+2020-15-04 17:35:38   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 17:35:38   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-15-04 17:35:39   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-15-04 17:35:39   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 17:36:02   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2020-15-04 17:36:02   INFO [pagesLocal.LoginLocalSitePage] : There is not phone verification pop up
+2020-15-04 17:36:04   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 17:36:06   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 17:36:09   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 17:36:11   INFO [libs.ActionsWithOurElements] : Manny Kinn was inputted into element
+2020-15-04 17:36:12   INFO [libs.ActionsWithOurElements] : James Hurley was inputted into element
+2020-15-04 17:36:12   INFO [libs.ActionsWithOurElements] : 1986 was inputted into element
+2020-15-04 17:36:12   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 17:36:35  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":".//li[@role='option']//../*[@id='vs9__option-3']"}
+  (Session info: chrome=81.0.4044.92)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'DESKTOP-UD8IPI4', ip: '134.249.126.153', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.92, chrome: {chromedriverVersion: 81.0.4044.69 (6813546031a4b..., userDataDir: C:\Users\denku\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49369}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: dbe67cdd9ce90e2ec35a709021cc7873
+*** Element info: {Using=xpath, value=.//li[@role='option']//../*[@id='vs9__option-3']}
+2020-15-04 17:36:35   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] :  DB connection closed 
+2020-15-04 17:41:51   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : Chrome will be started
+2020-15-04 17:41:57   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : Chrome is started
+2020-15-04 17:41:57   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-15-04 17:42:09   INFO [pagesLocal.LoginLocalSitePage] : Login Page was opened
+2020-15-04 17:42:09   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 17:42:10   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-15-04 17:42:10   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-15-04 17:42:10   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 17:42:34   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2020-15-04 17:42:34   INFO [pagesLocal.LoginLocalSitePage] : There is not phone verification pop up
+2020-15-04 17:42:36   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 17:42:38   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 17:42:40   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 17:42:43   INFO [libs.ActionsWithOurElements] : Cal Seeium was inputted into element
+2020-15-04 17:42:43   INFO [libs.ActionsWithOurElements] : Annie Blackburn was inputted into element
+2020-15-04 17:42:44   INFO [libs.ActionsWithOurElements] : 1981 was inputted into element
+2020-15-04 17:42:44   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 17:42:47   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 17:42:48   INFO [libs.ActionsWithOurElements] : QQdmOlD0ie2cwduxn was inputted into element
+2020-15-04 17:42:48   INFO [libs.ActionsWithOurElements] : QN9IQQ was inputted into element
+2020-15-04 17:42:48   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 17:43:11  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":".//*[@id='vs10__option-9']"}
+  (Session info: chrome=81.0.4044.92)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'DESKTOP-UD8IPI4', ip: '134.249.126.153', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.92, chrome: {chromedriverVersion: 81.0.4044.69 (6813546031a4b..., userDataDir: C:\Users\denku\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49622}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 94cc03943268d6e7653646e5c69020f3
+*** Element info: {Using=xpath, value=.//*[@id='vs10__option-9']}
+2020-15-04 17:43:11   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] :  DB connection closed 
+2020-15-04 17:48:19   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : Chrome will be started
+2020-15-04 17:48:24   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : Chrome is started
+2020-15-04 17:48:25   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-15-04 17:48:35   INFO [pagesLocal.LoginLocalSitePage] : Login Page was opened
+2020-15-04 17:48:36   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 17:48:36   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-15-04 17:48:37   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-15-04 17:48:37   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 17:49:00   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2020-15-04 17:49:00   INFO [pagesLocal.LoginLocalSitePage] : There is not phone verification pop up
+2020-15-04 17:49:02   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 17:49:05   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 17:49:07   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 17:49:09   INFO [libs.ActionsWithOurElements] : Leigh King was inputted into element
+2020-15-04 17:49:10   INFO [libs.ActionsWithOurElements] : Eileen Hayward was inputted into element
+2020-15-04 17:49:10   INFO [libs.ActionsWithOurElements] : 1973 was inputted into element
+2020-15-04 17:49:10   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 17:49:14   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 17:49:14   INFO [libs.ActionsWithOurElements] : C0FcdgsVAFwtkyFlk was inputted into element
+2020-15-04 17:49:14   INFO [libs.ActionsWithOurElements] : mzTSOL was inputted into element
+2020-15-04 17:49:15   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 17:49:18   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 17:49:18   INFO [libs.ActionsWithOurElements] : 277432 was inputted into element
+2020-15-04 17:49:19   INFO [libs.ActionsWithOurElements] : 974203 was inputted into element
+2020-15-04 17:49:59  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: .//input[@aria-labelledby='vs14__combobox']' (tried for 20 second(s) with 500 milliseconds interval)
+2020-15-04 17:49:59   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] :  DB connection closed 
+2020-15-04 17:59:25   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : Chrome will be started
+2020-15-04 17:59:30   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : Chrome is started
+2020-15-04 17:59:31   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-15-04 17:59:41   INFO [pagesLocal.LoginLocalSitePage] : Login Page was opened
+2020-15-04 17:59:41   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 17:59:42   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-15-04 17:59:42   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-15-04 17:59:42   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 18:00:06   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2020-15-04 18:00:06   INFO [pagesLocal.LoginLocalSitePage] : There is not phone verification pop up
+2020-15-04 18:00:08   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 18:00:10   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 18:00:12   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 18:00:15   INFO [libs.ActionsWithOurElements] : Jed I. Knight was inputted into element
+2020-15-04 18:00:16   INFO [libs.ActionsWithOurElements] : Mrs Tremond was inputted into element
+2020-15-04 18:00:16   INFO [libs.ActionsWithOurElements] : 1977 was inputted into element
+2020-15-04 18:00:16   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 18:00:19   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 18:00:20   INFO [libs.ActionsWithOurElements] : L8paVdLZ4oeXyvWaA was inputted into element
+2020-15-04 18:00:20   INFO [libs.ActionsWithOurElements] : jG3NHZ was inputted into element
+2020-15-04 18:00:20   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 18:00:23   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 18:00:24   INFO [libs.ActionsWithOurElements] : 644653 was inputted into element
+2020-15-04 18:00:24   INFO [libs.ActionsWithOurElements] : 858055 was inputted into element
+2020-15-04 18:00:24   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 18:00:47  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":".//li[@role='option']//../*[contains(text(),'Short-Haul')]"}
+  (Session info: chrome=81.0.4044.92)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'DESKTOP-UD8IPI4', ip: '134.249.126.153', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.92, chrome: {chromedriverVersion: 81.0.4044.69 (6813546031a4b..., userDataDir: C:\Users\denku\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50299}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: baf9e78bb7bc3c69803708447385ad58
+*** Element info: {Using=xpath, value=.//li[@role='option']//../*[contains(text(),'Short-Haul')]}
+2020-15-04 18:00:47   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] :  DB connection closed 
+2020-15-04 18:05:05   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : Chrome will be started
+2020-15-04 18:05:10   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : Chrome is started
+2020-15-04 18:05:10   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-15-04 18:05:21   INFO [pagesLocal.LoginLocalSitePage] : Login Page was opened
+2020-15-04 18:05:21   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 18:05:22   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-15-04 18:05:22   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-15-04 18:05:22   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 18:05:45   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2020-15-04 18:05:45   INFO [pagesLocal.LoginLocalSitePage] : There is not phone verification pop up
+2020-15-04 18:05:48   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 18:05:50   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 18:05:52   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 18:05:55   INFO [libs.ActionsWithOurElements] : Heather N. Yonn was inputted into element
+2020-15-04 18:05:55   INFO [libs.ActionsWithOurElements] : Audrey Horne was inputted into element
+2020-15-04 18:05:56   INFO [libs.ActionsWithOurElements] : 1995 was inputted into element
+2020-15-04 18:05:56   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 18:05:59   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 18:06:00   INFO [libs.ActionsWithOurElements] : Pkqrj42A6imTdLkGG was inputted into element
+2020-15-04 18:06:00   INFO [libs.ActionsWithOurElements] : 2rXzOR was inputted into element
+2020-15-04 18:06:00   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 18:06:03   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 18:06:04   INFO [libs.ActionsWithOurElements] : 489942 was inputted into element
+2020-15-04 18:06:04   INFO [libs.ActionsWithOurElements] : 302826 was inputted into element
+2020-15-04 18:06:04   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 18:06:07   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 18:06:08   INFO [libs.ActionsWithOurElements] : xZPIGx was inputted into element
+2020-15-04 18:06:08   INFO [libs.ActionsWithOurElements] : QEZeuX was inputted into element
+2020-15-04 18:06:09   INFO [libs.ActionsWithOurElements] : Nugget Nectar was inputted into element
+2020-15-04 18:06:09   INFO [libs.ActionsWithOurElements] : anyKSB was inputted into element
+2020-15-04 18:06:09   INFO [libs.ActionsWithOurElements] : 3ZIBhR was inputted into element
+2020-15-04 18:06:09   INFO [libs.ActionsWithOurElements] : mint green was inputted into element
+2020-15-04 18:06:10   INFO [libs.ActionsWithOurElements] : z9aIEB was inputted into element
+2020-15-04 18:06:10   INFO [libs.ActionsWithOurElements] : 15/04/2020 was inputted into element
+2020-15-04 18:06:11   INFO [libs.ActionsWithOurElements] : 15/04/2020 was inputted into element
+2020-15-04 18:06:11   INFO [libs.ActionsWithOurElements] : 15/04/2020 was inputted into element
+2020-15-04 18:06:11   INFO [libs.ActionsWithOurElements] : 15/04/2020 was inputted into element
+2020-15-04 18:06:12   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 18:06:17   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] :  DB connection closed 
+2020-15-04 18:48:28   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : Chrome will be started
+2020-15-04 18:48:34   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : Chrome is started
+2020-15-04 18:48:34   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-15-04 18:48:46   INFO [pagesLocal.LoginLocalSitePage] : Login Page was opened
+2020-15-04 18:48:46   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 18:48:47   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-15-04 18:48:48   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-15-04 18:48:48   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 18:49:11   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2020-15-04 18:49:11   INFO [pagesLocal.LoginLocalSitePage] : There is not phone verification pop up
+2020-15-04 18:49:13   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 18:49:16   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 18:49:18   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 18:49:21   INFO [libs.ActionsWithOurElements] : Leo Tarred was inputted into element
+2020-15-04 18:49:21   INFO [libs.ActionsWithOurElements] : Andrew Packard was inputted into element
+2020-15-04 18:49:21   INFO [libs.ActionsWithOurElements] : 1961 was inputted into element
+2020-15-04 18:49:22   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 18:49:25   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 18:49:25   INFO [libs.ActionsWithOurElements] : gJYHhsVioaPAZq8nw was inputted into element
+2020-15-04 18:49:26   INFO [libs.ActionsWithOurElements] : e4gjFZ was inputted into element
+2020-15-04 18:49:26   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 18:49:29   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 18:49:30   INFO [libs.ActionsWithOurElements] : 644367 was inputted into element
+2020-15-04 18:49:30   INFO [libs.ActionsWithOurElements] : 118026 was inputted into element
+2020-15-04 18:49:30   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 18:49:33   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 18:49:34   INFO [libs.ActionsWithOurElements] : i8HDlr was inputted into element
+2020-15-04 18:49:34   INFO [libs.ActionsWithOurElements] : D4mbP3 was inputted into element
+2020-15-04 18:49:35   INFO [libs.ActionsWithOurElements] : St. Bernardus Abt 12 was inputted into element
+2020-15-04 18:49:35   INFO [libs.ActionsWithOurElements] : 155 was inputted into element
+2020-15-04 18:49:35   INFO [libs.ActionsWithOurElements] : 135 was inputted into element
+2020-15-04 18:49:36   INFO [libs.ActionsWithOurElements] : grey was inputted into element
+2020-15-04 18:49:36   INFO [libs.ActionsWithOurElements] : zgL1Ff was inputted into element
+2020-15-04 18:49:37   INFO [libs.ActionsWithOurElements] : 15/04/2020 was inputted into element
+2020-15-04 18:49:37   INFO [libs.ActionsWithOurElements] : 15/04/2020 was inputted into element
+2020-15-04 18:49:38   INFO [libs.ActionsWithOurElements] : 15/04/2020 was inputted into element
+2020-15-04 18:49:38   INFO [libs.ActionsWithOurElements] : 15/04/2020 was inputted into element
+2020-15-04 18:49:38   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 18:49:44   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] :  DB connection closed 
+2020-15-04 19:02:08   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : Chrome will be started
+2020-15-04 19:02:14   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : Chrome is started
+2020-15-04 19:02:14   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-15-04 19:02:25   INFO [pagesLocal.LoginLocalSitePage] : Login Page was opened
+2020-15-04 19:02:25   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 19:02:26   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-15-04 19:02:26   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-15-04 19:02:27   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 19:02:50   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2020-15-04 19:02:50   INFO [pagesLocal.LoginLocalSitePage] : There is not phone verification pop up
+2020-15-04 19:02:52   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 19:02:54   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 19:02:56   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 19:02:59   INFO [libs.ActionsWithOurElements] : Pat Downe was inputted into element
+2020-15-04 19:03:00   INFO [libs.ActionsWithOurElements] : Phillip Jeffries was inputted into element
+2020-15-04 19:03:00   INFO [libs.ActionsWithOurElements] : 1980 was inputted into element
+2020-15-04 19:03:00   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 19:03:03   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 19:03:04   INFO [libs.ActionsWithOurElements] : HmMdtnQj7EJ0eZ7IG was inputted into element
+2020-15-04 19:03:04   INFO [libs.ActionsWithOurElements] : EVX8ns was inputted into element
+2020-15-04 19:03:05   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 19:03:08   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 19:03:08   INFO [libs.ActionsWithOurElements] : 703938 was inputted into element
+2020-15-04 19:03:08   INFO [libs.ActionsWithOurElements] : 453055 was inputted into element
+2020-15-04 19:03:09   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 19:03:12   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 19:03:12   INFO [libs.ActionsWithOurElements] : Gp1sp9 was inputted into element
+2020-15-04 19:03:12   INFO [libs.ActionsWithOurElements] : W82V0o was inputted into element
+2020-15-04 19:03:13   INFO [libs.ActionsWithOurElements] : Sapporo Premium was inputted into element
+2020-15-04 19:03:13   INFO [libs.ActionsWithOurElements] : 020 was inputted into element
+2020-15-04 19:03:14   INFO [libs.ActionsWithOurElements] : 287 was inputted into element
+2020-15-04 19:03:14   INFO [libs.ActionsWithOurElements] : blue was inputted into element
+2020-15-04 19:03:14   INFO [libs.ActionsWithOurElements] : OEW8Df was inputted into element
+2020-15-04 19:03:15   INFO [libs.ActionsWithOurElements] : 15/04/2020 was inputted into element
+2020-15-04 19:03:15   INFO [libs.ActionsWithOurElements] : 15/04/2020 was inputted into element
+2020-15-04 19:03:15   INFO [libs.ActionsWithOurElements] : 15/04/2020 was inputted into element
+2020-15-04 19:03:16   INFO [libs.ActionsWithOurElements] : 15/04/2020 was inputted into element
+2020-15-04 19:03:16   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 19:03:21   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] :  DB connection closed 
+2020-15-04 19:05:09   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : Chrome will be started
+2020-15-04 19:05:15   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : Chrome is started
+2020-15-04 19:05:15   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-15-04 19:05:27   INFO [pagesLocal.LoginLocalSitePage] : Login Page was opened
+2020-15-04 19:05:27   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 19:05:28   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-15-04 19:05:28   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-15-04 19:05:29   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 19:05:52   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2020-15-04 19:05:52   INFO [pagesLocal.LoginLocalSitePage] : There is not phone verification pop up
+2020-15-04 19:05:54   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 19:05:56   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 19:05:59   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 19:06:01   INFO [libs.ActionsWithOurElements] : Simon Swindells was inputted into element
+2020-15-04 19:06:01   INFO [libs.ActionsWithOurElements] : MIKE was inputted into element
+2020-15-04 19:06:02   INFO [libs.ActionsWithOurElements] : 1950 was inputted into element
+2020-15-04 19:06:02   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 19:06:05   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 19:06:06   INFO [libs.ActionsWithOurElements] : xN2TkrQnbnHH19eFQ was inputted into element
+2020-15-04 19:06:06   INFO [libs.ActionsWithOurElements] : ejlPqO was inputted into element
+2020-15-04 19:06:06   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 19:06:09   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 19:06:10   INFO [libs.ActionsWithOurElements] : 953884 was inputted into element
+2020-15-04 19:06:10   INFO [libs.ActionsWithOurElements] : 595393 was inputted into element
+2020-15-04 19:06:10   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 19:06:14   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 19:06:14   INFO [libs.ActionsWithOurElements] : SS6w94 was inputted into element
+2020-15-04 19:06:14   INFO [libs.ActionsWithOurElements] : JqSyCG was inputted into element
+2020-15-04 19:06:15   INFO [libs.ActionsWithOurElements] : Oak Aged Yeti Imperial Stout was inputted into element
+2020-15-04 19:06:15   INFO [libs.ActionsWithOurElements] : 345 was inputted into element
+2020-15-04 19:06:15   INFO [libs.ActionsWithOurElements] : 654 was inputted into element
+2020-15-04 19:06:16   INFO [libs.ActionsWithOurElements] : azure was inputted into element
+2020-15-04 19:06:16   INFO [libs.ActionsWithOurElements] : VLgkXa was inputted into element
+2020-15-04 19:06:17   INFO [libs.ActionsWithOurElements] : 15/04/2020 was inputted into element
+2020-15-04 19:06:17   INFO [libs.ActionsWithOurElements] : 15/04/2020 was inputted into element
+2020-15-04 19:06:17   INFO [libs.ActionsWithOurElements] : 15/04/2020 was inputted into element
+2020-15-04 19:06:18   INFO [libs.ActionsWithOurElements] : 15/04/2020 was inputted into element
+2020-15-04 19:06:18   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 19:06:23   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] :  DB connection closed 
+2020-15-04 20:43:25   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : Chrome will be started
+2020-15-04 20:43:30   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : Chrome is started
+2020-15-04 20:43:31   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-15-04 20:43:42   INFO [pagesLocal.LoginLocalSitePage] : Login Page was opened
+2020-15-04 20:43:42   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 20:43:42   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-15-04 20:43:43   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-15-04 20:43:43   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 20:44:06   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2020-15-04 20:44:06   INFO [pagesLocal.LoginLocalSitePage] : There is not phone verification pop up
+2020-15-04 20:44:08   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 20:44:11   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 20:44:13   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 20:44:15   INFO [libs.ActionsWithOurElements] : name was inputted into element
+2020-15-04 20:44:16   INFO [libs.ActionsWithOurElements] : owner was inputted into element
+2020-15-04 20:44:16   INFO [libs.ActionsWithOurElements] : 2001 was inputted into element
+2020-15-04 20:44:16   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 20:44:19   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 20:44:20   INFO [libs.ActionsWithOurElements] : mOzgpUXeU3V8QFA82 was inputted into element
+2020-15-04 20:44:20   INFO [libs.ActionsWithOurElements] : gn6yjK was inputted into element
+2020-15-04 20:44:20   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 20:44:24   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 20:44:24   INFO [libs.ActionsWithOurElements] : 226827 was inputted into element
+2020-15-04 20:44:24   INFO [libs.ActionsWithOurElements] : 830961 was inputted into element
+2020-15-04 20:44:24   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 20:44:28   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 20:44:28   INFO [libs.ActionsWithOurElements] : IcXIRN was inputted into element
+2020-15-04 20:44:28   INFO [libs.ActionsWithOurElements] : z0XxUz was inputted into element
+2020-15-04 20:44:29   INFO [libs.ActionsWithOurElements] : model was inputted into element
+2020-15-04 20:44:29   INFO [libs.ActionsWithOurElements] : 737 was inputted into element
+2020-15-04 20:44:29   INFO [libs.ActionsWithOurElements] : 022 was inputted into element
+2020-15-04 20:44:30   INFO [libs.ActionsWithOurElements] : color was inputted into element
+2020-15-04 20:44:30   INFO [libs.ActionsWithOurElements] : 3vXyeC was inputted into element
+2020-15-04 20:44:31   INFO [libs.ActionsWithOurElements] : 15/04/2020 was inputted into element
+2020-15-04 20:44:31   INFO [libs.ActionsWithOurElements] : 15/04/2020 was inputted into element
+2020-15-04 20:44:32   INFO [libs.ActionsWithOurElements] : 15/04/2020 was inputted into element
+2020-15-04 20:44:32   INFO [libs.ActionsWithOurElements] : 15/04/2020 was inputted into element
+2020-15-04 20:44:32   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 20:44:38   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] :  DB connection closed 
+2020-15-04 20:45:26   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : Chrome will be started
+2020-15-04 20:45:31   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : Chrome is started
+2020-15-04 20:45:31   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-15-04 20:45:42   INFO [pagesLocal.LoginLocalSitePage] : Login Page was opened
+2020-15-04 20:45:43   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 20:45:43   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-15-04 20:45:43   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-15-04 20:45:44   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 20:46:07   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2020-15-04 20:46:07   INFO [pagesLocal.LoginLocalSitePage] : There is not phone verification pop up
+2020-15-04 20:46:09   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 20:46:11   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 20:46:14   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 20:46:16   INFO [libs.ActionsWithOurElements] : name was inputted into element
+2020-15-04 20:46:16   INFO [libs.ActionsWithOurElements] : owner was inputted into element
+2020-15-04 20:46:17   INFO [libs.ActionsWithOurElements] : 1966 was inputted into element
+2020-15-04 20:46:17   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 20:46:20   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 20:46:21   INFO [libs.ActionsWithOurElements] : uR2bbtG1wsGex2XZi was inputted into element
+2020-15-04 20:46:21   INFO [libs.ActionsWithOurElements] : mJa6fs was inputted into element
+2020-15-04 20:46:21   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 20:46:24   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 20:46:25   INFO [libs.ActionsWithOurElements] : 127810 was inputted into element
+2020-15-04 20:46:25   INFO [libs.ActionsWithOurElements] : 220585 was inputted into element
+2020-15-04 20:46:25   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 20:46:28   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 20:46:29   INFO [libs.ActionsWithOurElements] : k0PIGk was inputted into element
+2020-15-04 20:46:29   INFO [libs.ActionsWithOurElements] : Nr7tdd was inputted into element
+2020-15-04 20:46:29   INFO [libs.ActionsWithOurElements] : model was inputted into element
+2020-15-04 20:46:30   INFO [libs.ActionsWithOurElements] : 264 was inputted into element
+2020-15-04 20:46:30   INFO [libs.ActionsWithOurElements] : 024 was inputted into element
+2020-15-04 20:46:30   INFO [libs.ActionsWithOurElements] : color was inputted into element
+2020-15-04 20:46:31   INFO [libs.ActionsWithOurElements] : GKqlDZ was inputted into element
+2020-15-04 20:46:31   INFO [libs.ActionsWithOurElements] : 15/04/2020 was inputted into element
+2020-15-04 20:46:31   INFO [libs.ActionsWithOurElements] : 15/04/2020 was inputted into element
+2020-15-04 20:46:32   INFO [libs.ActionsWithOurElements] : 15/04/2020 was inputted into element
+2020-15-04 20:46:32   INFO [libs.ActionsWithOurElements] : 15/04/2020 was inputted into element
+2020-15-04 20:46:32   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-15-04 20:51:19   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] :  DB connection closed 
+2020-16-04 11:37:36   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : Chrome will be started
+2020-16-04 11:37:43   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : Chrome is started
+2020-16-04 11:37:43   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-16-04 11:37:56   INFO [pagesLocal.LoginLocalSitePage] : Login Page was opened
+2020-16-04 11:37:57   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-04 11:37:58   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-16-04 11:37:58   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-16-04 11:37:58   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-04 11:38:21   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2020-16-04 11:38:21   INFO [pagesLocal.LoginLocalSitePage] : There is not phone verification pop up
+2020-16-04 11:38:24   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-04 11:38:26   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-04 11:38:28   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-04 11:38:31   INFO [libs.ActionsWithOurElements] : name was inputted into element
+2020-16-04 11:38:31   INFO [libs.ActionsWithOurElements] : owner was inputted into element
+2020-16-04 11:38:31   INFO [libs.ActionsWithOurElements] : 1977 was inputted into element
+2020-16-04 11:38:32   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-04 11:38:35   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-04 11:38:36   INFO [libs.ActionsWithOurElements] : CQhQVLSjXSvxVcXPa was inputted into element
+2020-16-04 11:38:36   INFO [libs.ActionsWithOurElements] : PjQUPI was inputted into element
+2020-16-04 11:38:36   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-04 11:38:40   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-04 11:38:40   INFO [libs.ActionsWithOurElements] : 908602 was inputted into element
+2020-16-04 11:38:40   INFO [libs.ActionsWithOurElements] : 990932 was inputted into element
+2020-16-04 11:38:40   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-04 11:38:44   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-04 11:38:44   INFO [libs.ActionsWithOurElements] : mTpXtK was inputted into element
+2020-16-04 11:38:44   INFO [libs.ActionsWithOurElements] : 97zRie was inputted into element
+2020-16-04 11:38:45   INFO [libs.ActionsWithOurElements] : model was inputted into element
+2020-16-04 11:38:45   INFO [libs.ActionsWithOurElements] : 147 was inputted into element
+2020-16-04 11:38:45   INFO [libs.ActionsWithOurElements] : 090 was inputted into element
+2020-16-04 11:38:46   INFO [libs.ActionsWithOurElements] : color was inputted into element
+2020-16-04 11:38:46   INFO [libs.ActionsWithOurElements] : 3MlGoM was inputted into element
+2020-16-04 11:38:47   INFO [libs.ActionsWithOurElements] : 16/04/2020 was inputted into element
+2020-16-04 11:38:47   INFO [libs.ActionsWithOurElements] : 16/04/2020 was inputted into element
+2020-16-04 11:38:48   INFO [libs.ActionsWithOurElements] : 16/04/2020 was inputted into element
+2020-16-04 11:38:48   INFO [libs.ActionsWithOurElements] : 16/04/2020 was inputted into element
+2020-16-04 11:38:48   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-04 11:38:54   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] :  DB connection closed 
+2020-16-04 15:54:19   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-16-04 15:54:23   INFO [unitTest.TestMethods] :  DB Connection Closed 
+2020-16-04 15:55:27   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-16-04 15:55:31   INFO [unitTest.TestMethods] :  DB Connection Closed 
+2020-16-04 16:00:55   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-16-04 16:01:00   INFO [unitTest.TestMethods] :  DB Connection Closed 
+2020-16-04 16:02:58   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-16-04 16:03:03   INFO [unitTest.TestMethods] :  DB Connection Closed 
+2020-16-04 16:04:08   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : Chrome will be started
+2020-16-04 16:04:13   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : Chrome is started
+2020-16-04 16:04:14   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-16-04 16:04:24   INFO [pagesLocal.LoginLocalSitePage] : Login Page was opened
+2020-16-04 16:04:25   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-04 16:04:25   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-16-04 16:04:26   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-16-04 16:04:26   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-04 16:04:49   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2020-16-04 16:04:49   INFO [pagesLocal.LoginLocalSitePage] : There is not phone verification pop up
+2020-16-04 16:04:51   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-04 16:04:54   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-04 16:04:56   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-04 16:04:58   INFO [libs.ActionsWithOurElements] : name was inputted into element
+2020-16-04 16:04:59   INFO [libs.ActionsWithOurElements] : owner was inputted into element
+2020-16-04 16:04:59   INFO [libs.ActionsWithOurElements] : 1957 was inputted into element
+2020-16-04 16:04:59   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-04 16:05:02   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-04 16:05:03   INFO [libs.ActionsWithOurElements] : q0mX5hqMJxX5hwdEC was inputted into element
+2020-16-04 16:05:03   INFO [libs.ActionsWithOurElements] : bIskeC was inputted into element
+2020-16-04 16:05:03   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-04 16:05:06   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-04 16:05:07   INFO [libs.ActionsWithOurElements] : 753147 was inputted into element
+2020-16-04 16:05:07   INFO [libs.ActionsWithOurElements] : 504088 was inputted into element
+2020-16-04 16:05:07   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-04 16:05:10   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-04 16:05:11   INFO [libs.ActionsWithOurElements] : qYZKLE was inputted into element
+2020-16-04 16:05:11   INFO [libs.ActionsWithOurElements] : nGPGJe was inputted into element
+2020-16-04 16:05:12   INFO [libs.ActionsWithOurElements] : model was inputted into element
+2020-16-04 16:05:12   INFO [libs.ActionsWithOurElements] : 424 was inputted into element
+2020-16-04 16:05:12   INFO [libs.ActionsWithOurElements] : 782 was inputted into element
+2020-16-04 16:05:12   INFO [libs.ActionsWithOurElements] : color was inputted into element
+2020-16-04 16:05:13   INFO [libs.ActionsWithOurElements] : ck6XqT was inputted into element
+2020-16-04 16:05:13   INFO [libs.ActionsWithOurElements] : 16/04/2020 was inputted into element
+2020-16-04 16:05:13   INFO [libs.ActionsWithOurElements] : 16/04/2020 was inputted into element
+2020-16-04 16:05:14   INFO [libs.ActionsWithOurElements] : 16/04/2020 was inputted into element
+2020-16-04 16:05:14   INFO [libs.ActionsWithOurElements] : 16/04/2020 was inputted into element
+2020-16-04 16:05:14   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-04 16:13:25   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : Chrome will be started
+2020-16-04 16:13:31   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : Chrome is started
+2020-16-04 16:13:31   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-16-04 16:13:42   INFO [pagesLocal.LoginLocalSitePage] : Login Page was opened
+2020-16-04 16:13:42   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-04 16:13:43   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-16-04 16:13:44   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-16-04 16:13:44   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-04 16:14:07   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2020-16-04 16:14:07   INFO [pagesLocal.LoginLocalSitePage] : There is not phone verification pop up
+2020-16-04 16:14:09   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-04 16:14:11   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-04 16:14:14   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-04 16:14:16   INFO [libs.ActionsWithOurElements] : name was inputted into element
+2020-16-04 16:14:16   INFO [libs.ActionsWithOurElements] : owner was inputted into element
+2020-16-04 16:14:17   INFO [libs.ActionsWithOurElements] : 1972 was inputted into element
+2020-16-04 16:14:17   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-04 16:14:20   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-04 16:14:21   INFO [libs.ActionsWithOurElements] : eF62ziy8P78NJUIxf was inputted into element
+2020-16-04 16:14:21   INFO [libs.ActionsWithOurElements] : ZATndn was inputted into element
+2020-16-04 16:14:21   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-04 16:14:25   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-04 16:14:25   INFO [libs.ActionsWithOurElements] : 557864 was inputted into element
+2020-16-04 16:14:25   INFO [libs.ActionsWithOurElements] : 955581 was inputted into element
+2020-16-04 16:14:25   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-04 16:14:29   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-04 16:14:29   INFO [libs.ActionsWithOurElements] : HwHpVr was inputted into element
+2020-16-04 16:14:29   INFO [libs.ActionsWithOurElements] : 5NGKwI was inputted into element
+2020-16-04 16:14:30   INFO [libs.ActionsWithOurElements] : model was inputted into element
+2020-16-04 16:14:30   INFO [libs.ActionsWithOurElements] : 677 was inputted into element
+2020-16-04 16:14:30   INFO [libs.ActionsWithOurElements] : 721 was inputted into element
+2020-16-04 16:14:31   INFO [libs.ActionsWithOurElements] : color was inputted into element
+2020-16-04 16:14:31   INFO [libs.ActionsWithOurElements] : Hid3T3 was inputted into element
+2020-16-04 16:14:31   INFO [libs.ActionsWithOurElements] : 16/04/2020 was inputted into element
+2020-16-04 16:14:32   INFO [libs.ActionsWithOurElements] : 16/04/2020 was inputted into element
+2020-16-04 16:14:32   INFO [libs.ActionsWithOurElements] : 16/04/2020 was inputted into element
+2020-16-04 16:14:33   INFO [libs.ActionsWithOurElements] : 16/04/2020 was inputted into element
+2020-16-04 16:14:33   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-04 16:14:44   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] :  DB connection closed 
+2020-16-04 16:16:12   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-16-04 16:16:16   INFO [unitTest.TestMethods] :  DB Connection Closed 
+2020-16-04 16:18:31   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : Chrome will be started
+2020-16-04 16:18:36   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : Chrome is started
+2020-16-04 16:18:36   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-16-04 16:18:47   INFO [pagesLocal.LoginLocalSitePage] : Login Page was opened
+2020-16-04 16:18:47   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-04 16:18:48   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-16-04 16:18:48   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-16-04 16:18:48   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-04 16:19:11   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2020-16-04 16:19:11   INFO [pagesLocal.LoginLocalSitePage] : There is not phone verification pop up
+2020-16-04 16:19:14   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-04 16:19:16   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-04 16:19:18   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-04 16:19:21   INFO [libs.ActionsWithOurElements] : name was inputted into element
+2020-16-04 16:19:21   INFO [libs.ActionsWithOurElements] : owner was inputted into element
+2020-16-04 16:19:21   INFO [libs.ActionsWithOurElements] : 2005 was inputted into element
+2020-16-04 16:19:22   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-04 16:19:25   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-04 16:19:25   INFO [libs.ActionsWithOurElements] : pGzM2X4BgyOeiYcKE was inputted into element
+2020-16-04 16:19:26   INFO [libs.ActionsWithOurElements] : O3EfBy was inputted into element
+2020-16-04 16:19:26   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-04 16:19:29   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-04 16:19:29   INFO [libs.ActionsWithOurElements] : 606104 was inputted into element
+2020-16-04 16:19:30   INFO [libs.ActionsWithOurElements] : 282723 was inputted into element
+2020-16-04 16:19:30   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-04 16:19:33   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-04 16:19:33   INFO [libs.ActionsWithOurElements] : EfHwga was inputted into element
+2020-16-04 16:19:34   INFO [libs.ActionsWithOurElements] : kK4DAU was inputted into element
+2020-16-04 16:19:34   INFO [libs.ActionsWithOurElements] : model was inputted into element
+2020-16-04 16:19:34   INFO [libs.ActionsWithOurElements] : 629 was inputted into element
+2020-16-04 16:19:35   INFO [libs.ActionsWithOurElements] : 405 was inputted into element
+2020-16-04 16:19:35   INFO [libs.ActionsWithOurElements] : color was inputted into element
+2020-16-04 16:19:35   INFO [libs.ActionsWithOurElements] : v65lPT was inputted into element
+2020-16-04 16:19:36   INFO [libs.ActionsWithOurElements] : 16/04/2020 was inputted into element
+2020-16-04 16:19:36   INFO [libs.ActionsWithOurElements] : 16/04/2020 was inputted into element
+2020-16-04 16:19:36   INFO [libs.ActionsWithOurElements] : 16/04/2020 was inputted into element
+2020-16-04 16:19:37   INFO [libs.ActionsWithOurElements] : 16/04/2020 was inputted into element
+2020-16-04 16:19:37   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-04 16:19:47   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] :  DB connection closed 
+2020-16-04 16:21:27   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : Chrome will be started
+2020-16-04 16:21:33   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : Chrome is started
+2020-16-04 16:21:34   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-16-04 16:21:44   INFO [pagesLocal.LoginLocalSitePage] : Login Page was opened
+2020-16-04 16:21:45   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-04 16:21:45   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-16-04 16:21:46   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-16-04 16:21:46   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-04 16:22:09   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2020-16-04 16:22:09   INFO [pagesLocal.LoginLocalSitePage] : There is not phone verification pop up
+2020-16-04 16:22:11   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-04 16:22:14   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-04 16:22:16   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-04 16:22:18   INFO [libs.ActionsWithOurElements] : name was inputted into element
+2020-16-04 16:22:19   INFO [libs.ActionsWithOurElements] : owner was inputted into element
+2020-16-04 16:22:19   INFO [libs.ActionsWithOurElements] : 2014 was inputted into element
+2020-16-04 16:22:19   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-04 16:22:22   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-04 16:22:23   INFO [libs.ActionsWithOurElements] : 2kgfw6Ddo6fRv1J2U was inputted into element
+2020-16-04 16:22:23   INFO [libs.ActionsWithOurElements] : GsbDD2 was inputted into element
+2020-16-04 16:22:23   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-04 16:22:27   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-04 16:22:27   INFO [libs.ActionsWithOurElements] : 430900 was inputted into element
+2020-16-04 16:22:27   INFO [libs.ActionsWithOurElements] : 957550 was inputted into element
+2020-16-04 16:22:27   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-04 16:22:31   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-04 16:22:31   INFO [libs.ActionsWithOurElements] : a14O5d was inputted into element
+2020-16-04 16:22:31   INFO [libs.ActionsWithOurElements] : QtfsyN was inputted into element
+2020-16-04 16:22:32   INFO [libs.ActionsWithOurElements] : model was inputted into element
+2020-16-04 16:22:32   INFO [libs.ActionsWithOurElements] : 194 was inputted into element
+2020-16-04 16:22:32   INFO [libs.ActionsWithOurElements] : 203 was inputted into element
+2020-16-04 16:22:32   INFO [libs.ActionsWithOurElements] : color was inputted into element
+2020-16-04 16:22:33   INFO [libs.ActionsWithOurElements] : wZ6Yaw was inputted into element
+2020-16-04 16:22:33   INFO [libs.ActionsWithOurElements] : 16/04/2020 was inputted into element
+2020-16-04 16:22:34   INFO [libs.ActionsWithOurElements] : 16/04/2020 was inputted into element
+2020-16-04 16:22:34   INFO [libs.ActionsWithOurElements] : 16/04/2020 was inputted into element
+2020-16-04 16:22:34   INFO [libs.ActionsWithOurElements] : 16/04/2020 was inputted into element
+2020-16-04 16:22:35   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-04 16:22:55   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] :  DB connection closed 

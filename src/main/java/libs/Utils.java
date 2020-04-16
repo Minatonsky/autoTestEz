@@ -158,12 +158,20 @@ public class Utils {
         content = new String(Files.readAllBytes(Paths.get(bearerToken)));
         return content;
     }
+    public static String genRandomEquipmentType(){
+        String[] arr={"Property", "Agriculture", "Passenger", "Oil and Gas", "Short-Haul"};
+        Random r=new Random();
+        int randomNumber=r.nextInt(arr.length);
+        return arr[randomNumber];
+    }
+
     public static String genRandomFuelType(){
         String[] arr={"Gasoline", "Diesel", "Gasohol", "Propane", "LNG", "CNG", "Ethanol", "Methanol", "E-85", "M-85", "A55", "Biodiesel"};
         Random r=new Random();
         int randomNumber=r.nextInt(arr.length);
         return arr[randomNumber];
     }
+
     public static String genRandomCreditCard(){
         String[] arr={"4007000000027", "4111111111111111", "5424000000000015", "4012888818888", "370000000000002", "2223000010309711", "6011000000000012"};
         Random r=new Random();

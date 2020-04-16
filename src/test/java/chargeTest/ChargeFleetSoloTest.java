@@ -46,9 +46,9 @@ public class ChargeFleetSoloTest extends ParentTestWithoutWebDriver {
         String setTariffStartTwoYears = chargeMethods.tariffStartForTwoYears(2);
 
 
-        checkAC("* No all tariffs are presented on fleet",
-                chargeMethods.checkIfTariffPresent(countScannerMonthIOSXTariff, countScannerOneYearIOSXTariff, countScannerTwoYearsIOSXTariff ,
-                        countScannerMonthGeometricsTariff, countScannerOneYearGeometricsTariff, countScannerTwoYearsGeometricsTariff), true);
+//        checkAC("* No all tariffs are presented on fleet",
+//                chargeMethods.checkIfTariffPresent(countScannerMonthIOSXTariff, countScannerOneYearIOSXTariff, countScannerTwoYearsIOSXTariff ,
+//                        countScannerMonthGeometricsTariff, countScannerOneYearGeometricsTariff, countScannerTwoYearsGeometricsTariff), true);
 
 
 //  SET PAID TILL AND ORDER DATE FOR IOSX TARIFF
@@ -56,18 +56,14 @@ public class ChargeFleetSoloTest extends ParentTestWithoutWebDriver {
         chargeMethods.setPaidTillAndTariffStartScannerForFleet(fleetId, paidTillForAllTariffValue, tariffStartMonthIOSXValue, IOSXMonthTariffId, countScannerMonthIOSXTariff);
         chargeMethods.setPaidTillAndTariffStartScannerForFleet(fleetId, paidTillForAllTariffValue, setTariffStartOneYear, oneYearIOSXTariffId, countScannerOneYearIOSXTariff);
         chargeMethods.setPaidTillAndTariffStartScannerForFleet(fleetId, paidTillForAllTariffValue, setTariffStartTwoYears, twoYearsIOSXTariffId, countScannerTwoYearsIOSXTariff);
-
-        utilsForDB.setOrderDateByTariffId(fleetString, fleetId, tariffStartMonthIOSXValue, IOSXMonthTariffId);
+        chargeMethods.setOrderDateByTariffId(fleetString, fleetId, tariffStartMonthIOSXValue, IOSXMonthTariffId, countScannerMonthIOSXTariff);
 
 
 //  SET PAID TILL AND ORDER DATE FOR GEOMETRICS TARIFF
         chargeMethods.setPaidTillAndTariffStartScannerForFleet(fleetId, paidTillForAllTariffValue, tariffStartMonthGeometricsValue, geometricsMonthTariffId, countScannerMonthGeometricsTariff);
         chargeMethods.setPaidTillAndTariffStartScannerForFleet(fleetId, paidTillForAllTariffValue, setTariffStartOneYear, oneYearGeometricsTariffId, countScannerOneYearGeometricsTariff);
         chargeMethods.setPaidTillAndTariffStartScannerForFleet(fleetId, paidTillForAllTariffValue, setTariffStartTwoYears, twoYearsGeometricsTariffId, countScannerTwoYearsGeometricsTariff);
-
-        utilsForDB.setOrderDateByTariffId(fleetString, fleetId, tariffStartMonthGeometricsValue, geometricsMonthTariffId);
-
-
+        chargeMethods.setOrderDateByTariffId(fleetString, fleetId, tariffStartMonthGeometricsValue, geometricsMonthTariffId, countScannerMonthGeometricsTariff);
 
 // charge by days ***************************************************************************
         String setTariffStartChargeByDaysMonthIOSX = chargeMethods.tariffStartForMonthToMonth(0, 6);
@@ -133,16 +129,14 @@ public class ChargeFleetSoloTest extends ParentTestWithoutWebDriver {
         chargeMethods.setPaidTillAndTariffStartScannerForSolo(soloId, paidTillForAllTariffValue, tariffStartMonthIOSXValue,IOSXMonthTariffId, countScannerMonthIOSXTariff);
         chargeMethods.setPaidTillAndTariffStartScannerForSolo(soloId, paidTillForAllTariffValue, tariffStartOneYearValue,oneYearIOSXTariffId, countScannerOneYearIOSXTariff);
         chargeMethods.setPaidTillAndTariffStartScannerForSolo(soloId, paidTillForAllTariffValue, tariffStartTwoYearsValue,twoYearsIOSXTariffId, countScannerTwoYearsIOSXTariff);
-
-        utilsForDB.setOrderDateByTariffId(userIdString, soloId, tariffStartMonthIOSXValue, IOSXMonthTariffId);
+        chargeMethods.setOrderDateByTariffId(userIdString, soloId, tariffStartMonthIOSXValue, IOSXMonthTariffId, countScannerMonthIOSXTariff);
 
 //  SET PAID TILL AND ORDER DATE FOR GEOMETRICS TARIFF
 
         chargeMethods.setPaidTillAndTariffStartScannerForSolo(soloId, paidTillForAllTariffValue, tariffStartMonthGeometricsValue,geometricsMonthTariffId, countScannerMonthGeometricsTariff);
         chargeMethods.setPaidTillAndTariffStartScannerForSolo(soloId, paidTillForAllTariffValue, tariffStartOneYearValue,oneYearGeometricsTariffId, countScannerOneYearGeometricsTariff);
         chargeMethods.setPaidTillAndTariffStartScannerForSolo(soloId, paidTillForAllTariffValue, tariffStartTwoYearsValue,twoYearsGeometricsTariffId, countScannerTwoYearsGeometricsTariff);
-
-        utilsForDB.setOrderDateByTariffId(userIdString, soloId, tariffStartMonthGeometricsValue, geometricsMonthTariffId);
+        chargeMethods.setOrderDateByTariffId(userIdString, soloId, tariffStartMonthGeometricsValue, geometricsMonthTariffId, countScannerMonthGeometricsTariff);
 
 
 // charge by days ***************************************************************************

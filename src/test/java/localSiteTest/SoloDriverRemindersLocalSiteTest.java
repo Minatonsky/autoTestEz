@@ -28,7 +28,7 @@ public class SoloDriverRemindersLocalSiteTest extends ParentTest {
         String userId = utilsForDB.getUserIdByEmail(login);
         String equipId = utilsForDB.getRandomEquipmentId(userId, "0");
 
-        List<ArrayList> tempDataEquipmentList = utilsForDB.getDataEquipment("userId", userId, equipId);
+        List<ArrayList> tempDataEquipmentList = utilsForDB.getDataEquipment(equipId);
         Map<String, Object> tempDataEquipmentMap = listArrayToMap(tempDataEquipmentList);
 
         String nameTruck = tempDataEquipmentMap.get("Name").toString();
@@ -62,7 +62,7 @@ public class SoloDriverRemindersLocalSiteTest extends ParentTest {
     public void addReminderByDateForTrailer() throws SQLException, IOException, ClassNotFoundException {
         String userId = utilsForDB.getUserIdByEmail(login);
         String equipId = utilsForDB.getRandomEquipmentId(userId, "0");
-        List<ArrayList> tempDataSettingsList = utilsForDB.getDataEquipment("userId", userId, equipId);
+        List<ArrayList> tempDataSettingsList = utilsForDB.getDataEquipment(equipId);
         Map<String, Object> tempDataSettingsMap = listArrayToMap(tempDataSettingsList);
         String nameTrailer = tempDataSettingsMap.get("Name").toString();
         String nameReminder = RandomStringUtils.randomAlphanumeric(1, 10) + " " + RandomStringUtils.randomAlphanumeric(1, 10) + ".";
@@ -96,7 +96,7 @@ public class SoloDriverRemindersLocalSiteTest extends ParentTest {
     public void addReminderByMileForTruck() throws SQLException, IOException, ClassNotFoundException {
         String userId = utilsForDB.getUserIdByEmail(login);
         String equipId = utilsForDB.getRandomEquipmentId(userId, "0");
-        List<ArrayList> tempDataSettingsList = utilsForDB.getDataEquipment("userId", userId, equipId);
+        List<ArrayList> tempDataSettingsList = utilsForDB.getDataEquipment(equipId);
         Map<String, Object> tempDataSettingsMap = listArrayToMap(tempDataSettingsList);
         String nameTruck = tempDataSettingsMap.get("Name").toString();
         String nameReminder = RandomStringUtils.randomAlphanumeric(1, 10) + " " + RandomStringUtils.randomAlphanumeric(1, 10) + ".";
