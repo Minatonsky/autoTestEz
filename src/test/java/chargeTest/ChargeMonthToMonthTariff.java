@@ -1,14 +1,14 @@
 package chargeTest;
 
 import org.junit.Test;
-import parentTest.ParentTest;
+import parentTest.ParentTestWithoutWebDriver;
 
 import java.io.IOException;
 import java.sql.SQLException;
 
 import static libs.DataForTests.*;
 
-public class ChargeMonthToMonthTariff extends ParentTest {
+public class ChargeMonthToMonthTariff extends ParentTestWithoutWebDriver {
 
     String soloId = "3455";
     String fleetId = "518";
@@ -149,4 +149,5 @@ public class ChargeMonthToMonthTariff extends ParentTest {
         checkAC("* PaidTill in ez_finance is not correct", chargeMethods.comparePaidTillSolo(soloId), true);
 
     }
+
 }

@@ -33,10 +33,19 @@ public class ActionsWithOurElements {
             printErrorAndStopTest(e);
         }
     }
+    public void clearElement(WebElement webElement){
+        try{
+            webDriverWait20.until(ExpectedConditions.visibilityOf(webElement));
+            webElement.clear();
+            logger.info("WebElement was cleared");
+        } catch (Exception e){
+            printErrorAndStopTest(e);
+        }
+    }
     public void clearAndEnterTextToElement(WebElement webElement, String text){
         try{
             webDriverWait20.until(ExpectedConditions.visibilityOf(webElement));
-            webElement.sendKeys(Keys.chord(Keys.CONTROL,"a", Keys.DELETE));;
+            webElement.sendKeys(Keys.chord(Keys.CONTROL,"a", Keys.DELETE));
             webElement.sendKeys(text);
             logger.info(text + " was inputted into element");
         } catch (Exception e){
@@ -135,6 +144,17 @@ public class ActionsWithOurElements {
             printErrorAndStopTest(e);
         }
     }
+    public void enterTextToElement(String xPathLocator, String text){
+        try{
+            WebElement webElement = webDriver.findElement(By.xpath(xPathLocator));
+            webDriverWait20.until(ExpectedConditions.visibilityOf(webElement));
+            webElement.clear();
+            webElement.sendKeys(text);
+            logger.info(text + " was inputted into element");
+        } catch (Exception e){
+            printErrorAndStopTest(e);
+        }
+    }
 
     public boolean isElementDisplay(WebElement webElement){
         try{
@@ -163,6 +183,16 @@ public class ActionsWithOurElements {
         try {
             JavascriptExecutor executor = (JavascriptExecutor) webDriver;
             executor.executeScript("arguments[0].click();", webElement);
+        } catch (Exception e){
+            printErrorAndStopTest(e);
+        }
+    }
+    public void enterTextOnElementJs(String xpath, String text){
+        try {
+            WebElement wb = webDriver.findElement(By.xpath(xpath));
+            JavascriptExecutor jse = (JavascriptExecutor)webDriver;
+            jse.executeScript("arguments[0].value=" + text + ";", wb);
+            logger.info( text + " was input to element");
         } catch (Exception e){
             printErrorAndStopTest(e);
         }

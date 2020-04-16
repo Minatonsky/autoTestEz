@@ -5,16 +5,18 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+import static libs.Utils.waitABit;
+
 public class DocumentsLocalSitePage extends ParentLocalSitePage {
 
     public DocumentsLocalSitePage(WebDriver webDriver, UtilsForDB utilsForDB) {
         super(webDriver, "/dash/settings/account/", utilsForDB);
     }
 
-    @FindBy(xpath = ".//button[text() = 'Create document']")
+    @FindBy(xpath = ".//button[text() = 'Create Document']")
     private WebElement addDocumentButton;
 
-    @FindBy(name = "type")
+    @FindBy(xpath = ".//*[@class='document-popup']//./input[@type='search']")
     private WebElement dropDawnTypeDocument;
 
     @FindBy(name = "reference")
@@ -71,24 +73,29 @@ public class DocumentsLocalSitePage extends ParentLocalSitePage {
     @FindBy(xpath = "//input[@type='file']")
     private WebElement fileInput;
 
-    @FindBy(xpath = ".//textarea")
+    @FindBy(xpath = ".//*[@placeholder='Note']")
     private WebElement textArea;
 
     @FindBy(xpath = ".//button[@type='submit']")
     private WebElement saveButton;
 
-    @FindBy(xpath = "//*[@placeholder='Reference #']")
+//    LIST PAGE
+
+    @FindBy(xpath = "//*[text()='Reference #']/../input")
     private WebElement referencePlaceHolder;
 
-    @FindBy(xpath = "//div[@class='table-container__table-item' and text()='TruckRepair 01/28/2020 18:33:31']")
-    private WebElement documentInRow;
+    @FindBy(name="date")
+    private WebElement datePlaceHolder;
 
     @FindBy(xpath = ".//input[@type='file']")
     private WebElement addFile;
 
+    @FindBy(xpath = ".//*[text()='Today']")
+    private WebElement toDayInCalendar;
+
     public void clickOnCreateButton(){actionsWithOurElements.clickOnElement(addDocumentButton);}
     public void clickOnSaveButton(){actionsWithOurElements.clickOnElement(saveButton);}
-    public void selectTypeDocument(String documentTypeValue){actionsWithOurElements.selectValueInDropDown(dropDawnTypeDocument, documentTypeValue);}
+    public void selectTypeDocument(String documentTypeValue){actionsWithOurElements.clickOnElement(dropDawnTypeDocument);}
     public void notesText(String tempText){actionsWithOurElements.enterTextToElement(textArea, tempText);}
     public void selectState(String value){actionsWithOurElements.selectValueInDropDown(selectStateValue, value);}
     public void deliveryDate(String date){actionsWithOurElements.clearAndEnterTextToElement(deliveryDateInput, date);}
@@ -109,5 +116,11 @@ public class DocumentsLocalSitePage extends ParentLocalSitePage {
     public void enterReferenceInPlaceHolder(String referenceName){actionsWithOurElements.enterTextToElement(referencePlaceHolder, referenceName);}
     public void addPictureByJs(String path){actionsWithOurElements.addFileByJs(addFile, path);}
     public void clickOnDocumentInRow(String referenceName){actionsWithOurElements.clickOnElement("//div[@class='table-container__table-item' and text()='" + referenceName +"");}
+    public void documentDate(){
+        actionsWithOurElements.clickOnElement(dateInput);
+        waitABit(5);
+        actionsWithOurElements.clickOnElement(toDayInCalendar);
+//        actionsWithOurElements.enterTextToElement(dateInput, date);
+    }
 
 }

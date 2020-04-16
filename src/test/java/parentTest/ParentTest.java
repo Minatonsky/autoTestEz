@@ -1,5 +1,6 @@
 package parentTest;
 
+import com.github.javafaker.Faker;
 import libs.ConfigProperties;
 import libs.Database;
 import libs.UtilsForDB;
@@ -75,6 +76,9 @@ public class ParentTest extends ParentTestWithoutWebDriver{
     protected FleetDriversFPage fleetDriversFPage;
     protected ReturnsFPage returnsFPage;
     protected AccountSettingsFPage accountSettingsFPage;
+    protected DocumentsFPage documentsFPage;
+
+    protected Faker faker;
 
     String browser = System.getProperty("browser");
 
@@ -87,6 +91,7 @@ public class ParentTest extends ParentTestWithoutWebDriver{
         webDriver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         dBMySQL = new Database(nameDB, driverDB);
         utilsForDB = new UtilsForDB(dBMySQL);
+        faker = new Faker();
 
         loginPage = new LoginPage(webDriver, utilsForDB);
         dashboardPage = new DashboardPage(webDriver, utilsForDB);
@@ -126,6 +131,7 @@ public class ParentTest extends ParentTestWithoutWebDriver{
         accountSettingsFPage = new AccountSettingsFPage(webDriver, utilsForDB);
         fleetDriversFPage = new FleetDriversFPage(webDriver, utilsForDB);
         returnsFPage = new ReturnsFPage(webDriver, utilsForDB);
+        documentsFPage = new DocumentsFPage(webDriver, utilsForDB);
 
 
     }

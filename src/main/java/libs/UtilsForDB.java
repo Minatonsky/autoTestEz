@@ -99,7 +99,7 @@ public class UtilsForDB {
     }
     @Step
     public int countChargeScannersByTariff(String soloOrFleetString, String userId, String tariffId) throws SQLException {
-        int tempCountScanner =dBMySQL.getRowNumber("SELECT count(*) FROM eld_scanners WHERE " + soloOrFleetString + " = " + userId + " AND status IN (4, 8, 103) AND tariffId = " + tariffId + ";");
+        int tempCountScanner =dBMySQL.getRowNumber("SELECT COUNT(DISTINCT es.id) FROM eld_scanners es LEFT JOIN eld_returns er ON es.id = er.scannerId WHERE es." + soloOrFleetString + " = " + userId + " AND es.status IN (4, 8, 103) AND es.tariffId = " + tariffId + " or es." + soloOrFleetString + " = " + userId + " AND es.status = 11 and er.returnReason IN (2, 1) AND er.status IN (0, 1, 3) AND es.tariffId = " + tariffId + ";");
         return tempCountScanner;
     }
     @Step
@@ -405,6 +405,10 @@ public class UtilsForDB {
         dBMySQL.changeTable("UPDATE driversRules dr SET dr.aobrdMPH = 0 WHERE userId = " + userId + ";");
     }
     @Step
+    public void set_0_AobrdMPHCarrierSettings(String carrierId) throws SQLException{
+        dBMySQL.changeTable("UPDATE carriers c SET c.aobrdMPH = 0 WHERE c.id = " + carrierId + ";");
+    }
+    @Step
     public boolean checkAobrdMPHDriverSettings(String userId) throws SQLException{
         boolean tempResult = dBMySQL.isRowPresent("SELECT * FROM driversRules WHERE userId = " + userId + " AND aobrdMPH > 0;");
         return tempResult;
@@ -438,18 +442,45 @@ public class UtilsForDB {
     }
 
     @Step
+    public String getRandomEquipmentIdCarrier(String carrierId, String truckTrailer) throws SQLException{
+        String tempCurrentDue = dBMySQL.selectValue("SELECT e.id FROM equipment e WHERE e.carrierId = " + carrierId + " AND e.truckTrailer = " + truckTrailer + "  ORDER BY RAND()LIMIT 1;");
+        return tempCurrentDue;
+    }
+    @Step
+    public String getEquipmentName(String equipmentId) throws SQLException{
+        String tempCurrentDue = dBMySQL.selectValue("SELECT e.Name FROM equipment e WHERE e.id = " + equipmentId + " ;");
+        return tempCurrentDue;
+    }
+
+    @Step
+    public String getRandomUserIdCarrier(String carrierId) throws SQLException{
+        String tempCurrentDue = dBMySQL.selectValue("SELECT id FROM users u WHERE u.carrierId = " + carrierId + " ORDER BY RAND()LIMIT 1;");
+        return tempCurrentDue;
+    }
+    @Step
+    public String getRandomDriverIdInFleet(String carrierId) throws SQLException{
+        String tempCurrentDue = dBMySQL.selectValue("SELECT id FROM users u WHERE u.carrierId = " + carrierId + " AND u.companyPosition = 7 ORDER BY RAND()LIMIT 1;");
+        return tempCurrentDue;
+    }
+    @Step
+    public String getDriverNameById(String userId) throws SQLException{
+        String tempCurrentDue = dBMySQL.selectValue("SELECT CONCAT(u.name, \" \", u.`last`) FROM users u WHERE u.id = " + userId + ";");
+        return tempCurrentDue;
+    }
+
+    @Step
     public String getDocInfoData(String docId, String infoName) throws SQLException{
         String tempData = dBMySQL.selectValue("SELECT infoData from docsInfo di WHERE di.docId = " + docId + " AND infoName = '" + infoName + "';");
         return tempData;
     }
     @Step
-    public List<ArrayList> getDocData(String userId, String reference) throws SQLException{
-        List<ArrayList> tempData = dBMySQL.selectTable("SELECT d.id, d.awsName, d.`type`, d.date, d.carrierId, d.initiatorId, d.truckId, d.note FROM documents d WHERE d.userId = " + userId + " and d.reference = '" + reference + "';");
+    public List<ArrayList> getDocData(String carrierId, String reference) throws SQLException{
+        List<ArrayList> tempData = dBMySQL.selectTable("SELECT d.id, d.awsName, d.`type`, d.date, d.carrierId, d.initiatorId, d.truckId, d.note, d.userId FROM documents d WHERE d.carrierId = " + carrierId + " and d.reference = '" + reference + "';");
         return tempData;
     }
     @Step
-    public String getRandomDocumentReference(String userId, String typeDoc) throws SQLException{
-        String tempCurrentDue = dBMySQL.selectValue("SELECT reference FROM documents d WHERE d.`type` = " + typeDoc + " AND d.userId = " + userId + " ORDER BY RAND()LIMIT 1;");
+    public String getRandomDocumentReference(String carrierId, String typeDoc) throws SQLException{
+        String tempCurrentDue = dBMySQL.selectValue("SELECT reference FROM documents d WHERE d.`type` = " + typeDoc + " AND d.carrierId = " + carrierId + " ORDER BY RAND()LIMIT 1;");
         return tempCurrentDue;
     }
     @Step
@@ -463,6 +494,13 @@ public class UtilsForDB {
         List<ArrayList> tempData = dBMySQL.selectTable("SELECT dr.carrierName, dr.carrierAddress, dr.carrierCity, dr.carrierState, dr.carrierZip, dr.homeTerminal, dr.coDrivers, dr.cycleId, dr.timeZoneId, dr.usdot, dr.odometerId,dr.restBreakId, \n" +
                 "dr.logIncrementId, dr.cargoTypeId, dr.wellSiteId, dr.restartId, dr.iftaDistances, dr.old_allow_edit, dr.aobrdMPH, dr.teamDriver, dr.teamDriverPassword, u.id, u.name, u.`last`, u.phone, \n" +
                 "u.password, u.googleId, u.fbId, u.carrierId, u.companyPosition, u.banned FROM driversRules dr LEFT JOIN users u ON u.id = dr.userId WHERE u.email = '" + userEmail + "';");
+        return tempData;
+    }
+    @Step
+    public List<ArrayList> getCarrierRulesData(String carrierId) throws SQLException {
+        List<ArrayList> tempData = dBMySQL.selectTable("SELECT c.usdot, c.name, c.state, c.city, c.address, c.zip, c.size, c.registrationDate, c.aobrdMPH, c.ownerId, c.ein, c.banned, f.cycleId, f.timeZoneId, f.agricultureDeliveries FROM carriers c\n" +
+                "LEFT JOIN fleetRules f ON f.carrierId = c.id\n" +
+                " WHERE c.id = " + carrierId + ";");
         return tempData;
     }
     @Step
@@ -523,7 +561,15 @@ public class UtilsForDB {
     }
     @Step
     public List<ArrayList> getEldReturnsData(String deviceId) throws SQLException {
-        List<ArrayList> tempEldReturnData = dBMySQL.selectTable("SELECT e.userId, e.`status`, e.description, e.returnReason FROM eld_returns e WHERE e.id = 20234;");
+        List<ArrayList> tempEldReturnData = dBMySQL.selectTable("SELECT e.userId, e.`status`, e.description, e.returnReason FROM eld_returns e WHERE e.id = " + deviceId + ";");
         return tempEldReturnData;
+    }
+    @Step
+    public void setFleetsCronRunTime(String time) throws SQLException {
+        dBMySQL.changeTable("UPDATE cronCheck SET `dateTime` = '" + time + "' WHERE NAME = '/cron/check_fleets.php';");
+    }
+    @Step
+    public void setDriversCronRunTime(String time) throws SQLException {
+        dBMySQL.changeTable("UPDATE cronCheck SET `dateTime` = '" + time + "' WHERE NAME = '/cron/check_drivers.php';");
     }
 }

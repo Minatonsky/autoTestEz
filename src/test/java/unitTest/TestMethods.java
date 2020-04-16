@@ -18,7 +18,6 @@ import java.time.temporal.TemporalAdjusters;
 import java.util.List;
 
 import static libs.Utils.genRandomDataByRegex;
-import static libs.Utils.isValidEmailAddress;
 // This test page is not using on test project, it just for check some methods
 
 
@@ -109,12 +108,8 @@ public class TestMethods extends ParentTestWithoutWebDriver {
     @Test
     public void compareCurrentDueFleetDefaulter() throws SQLException, IOException, ClassNotFoundException {
         double sumCharge = 29.99;
-        String currentDueFleet = utilsForDB.getCurrentDueEzFinancesFleet("582");
-        boolean tempCompareDueFleet = -sumCharge == Double.parseDouble(currentDueFleet);
-
+        String currentDueFleet = utilsForDB.getCurrentDueEzFinancesFleet("518");
         System.out.println(currentDueFleet);
-        System.out.println(tempCompareDueFleet);
-
 
     }
 
@@ -138,11 +133,14 @@ public class TestMethods extends ParentTestWithoutWebDriver {
 
     @Test
     public void compareEldStatusInCompletedOrder() throws SQLException, IOException, ClassNotFoundException {
-        LocalDateTime oneYear = LocalDateTime.parse(LocalDateTime.now().minusMonths(12).toString()).with(TemporalAdjusters.firstDayOfNextMonth());
-        long firstDayOfNextMonth = oneYear.toEpochSecond(ZoneOffset.UTC);
-        String tempOneYear = Long.toString(firstDayOfNextMonth);
-        System.out.println("firstDayOfNextMonth = " + tempOneYear);
+
+        LocalDate today = LocalDate.now(ZoneOffset.UTC);
+        LocalDateTime startOfDay = today.atStartOfDay();
+        String formatted = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss").format(startOfDay);
+
+        System.out.println(today);
     }
+
 
     @Test
     public void checkProratedAndNotReturnedFee() throws SQLException, IOException, ClassNotFoundException {
@@ -185,14 +183,16 @@ public class TestMethods extends ParentTestWithoutWebDriver {
 
     @Test
     public void getAmountEzDueMonthToMonth() throws SQLException, IOException, ClassNotFoundException {
-        String data = genRandomDataByRegex("[A-Z]{1}[a-z]{11}") + genRandomDataByRegex("[A-Z]{1}[a-z]{11}");
+        String data = genRandomDataByRegex("[0-9]{2}[-]{1}[0-9]{7}");
 
         System.out.println(data);
 
     }
     @Test
     public void test(){
-        System.out.println(isValidEmailAddress("qqq.qq@r"));
+       int date = 1/2 ;
+
+        System.out.println(date);
     }
 
 
