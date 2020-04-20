@@ -227,7 +227,7 @@ public class SoloDriverEquipmentTestLocal extends ParentTest {
         String proRateDueDate = getDateRandom();
         String expDateDate = getDateRandom();
 
-        String idTruckRandom = utilsForDB.getRandomEquipmentId(userId, "0");
+        String idTruckRandom = utilsForDB.getRandomEquipmentId("userId", userId, "0");
         String notes = RandomStringUtils.randomAlphanumeric(15) + " " + RandomStringUtils.randomAlphanumeric(15) + " " + RandomStringUtils.randomAlphanumeric(10) + ".";
 
         List<ArrayList> tempDataList = utilsForDB.getDataEquipment(idTruckRandom);
@@ -240,7 +240,7 @@ public class SoloDriverEquipmentTestLocal extends ParentTest {
         dashboardLocalSitePage.goToEquipmentPage();
         equipmentLocalSitePage.enterOnEquipmentPlaceHolder(tempDataEquipmentBeforeTestMap.get("Name").toString());
         waitABit(3);
-        equipmentLocalSitePage.clickOnEquipmentOnRow();
+//        equipmentLocalSitePage.clickOnEquipmentOnRow();
         waitABit(2);
         equipmentLocalSitePage.clickOnEditButton();
         waitABit(2);
@@ -339,7 +339,7 @@ public class SoloDriverEquipmentTestLocal extends ParentTest {
         String proRateDueDate = getDateRandom();
         String expDateDate = getDateRandom();
 
-        String idTrailerRandom = utilsForDB.getRandomEquipmentId(userId, "1");
+        String idTrailerRandom = utilsForDB.getRandomEquipmentId("userId", userId, "1");
         String notes = RandomStringUtils.randomAlphanumeric(15) + " " + RandomStringUtils.randomAlphanumeric(15) + " " + RandomStringUtils.randomAlphanumeric(10) + ".";
 
         List<ArrayList> tempDataList = utilsForDB.getDataEquipment(idTrailerRandom);
@@ -350,7 +350,7 @@ public class SoloDriverEquipmentTestLocal extends ParentTest {
         dashboardLocalSitePage.goToEquipmentPage();
         equipmentLocalSitePage.enterOnEquipmentPlaceHolder(tempDataEquipmentBeforeTestMap.get("Name").toString());
         waitABit(3);
-        equipmentLocalSitePage.clickOnEquipmentOnRow();
+//        equipmentLocalSitePage.clickOnEquipmentOnRow();
         waitABit(2);
         equipmentLocalSitePage.clickOnEditButton();
         waitABit(2);

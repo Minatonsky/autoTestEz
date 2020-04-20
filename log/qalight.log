@@ -3734,3 +3734,454 @@ Session ID: baf9e78bb7bc3c69803708447385ad58
 2020-16-04 16:22:34   INFO [libs.ActionsWithOurElements] : 16/04/2020 was inputted into element
 2020-16-04 16:22:35   INFO [libs.ActionsWithOurElements] : Element was clicked
 2020-16-04 16:22:55   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] :  DB connection closed 
+2020-16-04 16:25:24   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : Chrome will be started
+2020-16-04 16:25:29   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : Chrome is started
+2020-16-04 16:25:29   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-16-04 16:25:40   INFO [pagesLocal.LoginLocalSitePage] : Login Page was opened
+2020-16-04 16:25:40   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-04 16:25:41   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-16-04 16:25:41   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-16-04 16:25:42   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-04 16:26:05   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2020-16-04 16:26:05   INFO [pagesLocal.LoginLocalSitePage] : There is not phone verification pop up
+2020-16-04 16:26:07   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-04 16:26:09   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-04 16:26:12   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-04 16:26:14   INFO [libs.ActionsWithOurElements] : name was inputted into element
+2020-16-04 16:26:14   INFO [libs.ActionsWithOurElements] : owner was inputted into element
+2020-16-04 16:26:15   INFO [libs.ActionsWithOurElements] : 1994 was inputted into element
+2020-16-04 16:26:15   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-04 16:26:18   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-04 16:26:19   INFO [libs.ActionsWithOurElements] : VmeyTpp3BmTIdebkY was inputted into element
+2020-16-04 16:26:19   INFO [libs.ActionsWithOurElements] : 1VmK2d was inputted into element
+2020-16-04 16:26:19   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-04 16:26:22   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-04 16:26:23   INFO [libs.ActionsWithOurElements] : 602256 was inputted into element
+2020-16-04 16:26:23   INFO [libs.ActionsWithOurElements] : 826184 was inputted into element
+2020-16-04 16:26:23   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-04 16:26:26   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-04 16:26:27   INFO [libs.ActionsWithOurElements] : I2QWqb was inputted into element
+2020-16-04 16:26:27   INFO [libs.ActionsWithOurElements] : VZWw9Z was inputted into element
+2020-16-04 16:26:27   INFO [libs.ActionsWithOurElements] : model was inputted into element
+2020-16-04 16:26:28   INFO [libs.ActionsWithOurElements] : 082 was inputted into element
+2020-16-04 16:26:28   INFO [libs.ActionsWithOurElements] : 729 was inputted into element
+2020-16-04 16:26:28   INFO [libs.ActionsWithOurElements] : color was inputted into element
+2020-16-04 16:26:29   INFO [libs.ActionsWithOurElements] : vhDavJ was inputted into element
+2020-16-04 16:26:29   INFO [libs.ActionsWithOurElements] : 16/04/2020 was inputted into element
+2020-16-04 16:26:29   INFO [libs.ActionsWithOurElements] : 16/04/2020 was inputted into element
+2020-16-04 16:26:30   INFO [libs.ActionsWithOurElements] : 16/04/2020 was inputted into element
+2020-16-04 16:26:30   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-04 16:26:50   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] :  DB connection closed 
+2020-16-04 16:41:34   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : Chrome will be started
+2020-16-04 16:41:40   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : Chrome is started
+2020-16-04 16:41:40   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-16-04 16:41:52   INFO [pagesLocal.LoginLocalSitePage] : Login Page was opened
+2020-16-04 16:41:52   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-04 16:41:52   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-16-04 16:41:53   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-16-04 16:41:53   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-04 16:42:16   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2020-16-04 16:42:16   INFO [pagesLocal.LoginLocalSitePage] : There is not phone verification pop up
+2020-16-04 16:42:18   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-04 16:42:21   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-04 16:42:23   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-04 16:42:25   INFO [libs.ActionsWithOurElements] : ZQUOE3t1 was inputted into element
+2020-16-04 16:42:26   INFO [libs.ActionsWithOurElements] : Albert Rosenfield was inputted into element
+2020-16-04 16:42:26   INFO [libs.ActionsWithOurElements] : 2018 was inputted into element
+2020-16-04 16:42:26   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-04 16:42:30   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-04 16:42:30   INFO [libs.ActionsWithOurElements] : RTgO3xL04AoWdBTpR was inputted into element
+2020-16-04 16:42:30   INFO [libs.ActionsWithOurElements] : 1Argvm was inputted into element
+2020-16-04 16:42:31   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-04 16:42:34   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-04 16:42:34   INFO [libs.ActionsWithOurElements] : 577394 was inputted into element
+2020-16-04 16:42:34   INFO [libs.ActionsWithOurElements] : 843556 was inputted into element
+2020-16-04 16:42:35   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-04 16:42:38   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-04 16:42:38   INFO [libs.ActionsWithOurElements] : M4YCxl was inputted into element
+2020-16-04 16:42:38   INFO [libs.ActionsWithOurElements] : zVdWPx was inputted into element
+2020-16-04 16:42:39   INFO [libs.ActionsWithOurElements] : l1f7QFCwy was inputted into element
+2020-16-04 16:42:39   INFO [libs.ActionsWithOurElements] : 300 was inputted into element
+2020-16-04 16:42:39   INFO [libs.ActionsWithOurElements] : 262 was inputted into element
+2020-16-04 16:42:40   INFO [libs.ActionsWithOurElements] : salmon was inputted into element
+2020-16-04 16:42:40   INFO [libs.ActionsWithOurElements] : gCUAWi was inputted into element
+2020-16-04 16:42:40   INFO [libs.ActionsWithOurElements] : 16/04/2020 was inputted into element
+2020-16-04 16:42:41   INFO [libs.ActionsWithOurElements] : 16/04/2020 was inputted into element
+2020-16-04 16:42:41   INFO [libs.ActionsWithOurElements] : 16/04/2020 was inputted into element
+2020-16-04 16:42:41   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-16-04 16:43:03   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : AC passed
+2020-16-04 16:43:04   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : AC passed
+2020-16-04 16:43:05   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : AC passed
+2020-16-04 16:43:06   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : AC passed
+2020-16-04 16:43:07   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : AC passed
+2020-16-04 16:43:08   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : AC passed
+2020-16-04 16:43:09   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : AC passed
+2020-16-04 16:43:10  ERROR [localSiteTest.equipmentTest.CarrierCreateEquipment] : AC failed: State failed
+2020-16-04 16:43:10   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] :  DB connection closed 
+2020-17-04 10:25:44   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : Chrome will be started
+2020-17-04 10:25:53   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : Chrome is started
+2020-17-04 10:28:58   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : Chrome will be started
+2020-17-04 10:29:05   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : Chrome is started
+2020-17-04 10:29:05   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-17-04 10:29:17   INFO [pagesLocal.LoginLocalSitePage] : Login Page was opened
+2020-17-04 10:29:18   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-17-04 10:29:19   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-17-04 10:29:19   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-17-04 10:29:19   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-17-04 10:29:42   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2020-17-04 10:29:42   INFO [pagesLocal.LoginLocalSitePage] : There is not phone verification pop up
+2020-17-04 10:29:45   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-17-04 10:29:47   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-17-04 10:29:49   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-17-04 10:29:52   INFO [libs.ActionsWithOurElements] : HmD0xkc was inputted into element
+2020-17-04 10:29:52   INFO [libs.ActionsWithOurElements] : Thomas Eckhardt was inputted into element
+2020-17-04 10:29:53   INFO [libs.ActionsWithOurElements] : 2015 was inputted into element
+2020-17-04 10:29:53   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-17-04 10:29:55   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-17-04 10:29:55   INFO [pagesLocal.EquipmentLocalSitePage] : Type is: Agriculture
+2020-17-04 10:29:56   INFO [libs.ActionsWithOurElements] : yfmB5moeZmrJAObuW was inputted into element
+2020-17-04 10:29:56   INFO [libs.ActionsWithOurElements] : JicTRi was inputted into element
+2020-17-04 10:29:57   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-17-04 10:29:59   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-17-04 10:29:59   INFO [pagesLocal.EquipmentLocalSitePage] : State is: Florida
+2020-17-04 10:29:59   INFO [libs.ActionsWithOurElements] : 766409 was inputted into element
+2020-17-04 10:30:00   INFO [libs.ActionsWithOurElements] : 209781 was inputted into element
+2020-17-04 10:30:00   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-17-04 10:30:02   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-17-04 10:30:02   INFO [pagesLocal.EquipmentLocalSitePage] : Fuel is: A55
+2020-17-04 10:30:02   INFO [libs.ActionsWithOurElements] : 3zHJl5 was inputted into element
+2020-17-04 10:30:03   INFO [libs.ActionsWithOurElements] : eK89NE was inputted into element
+2020-17-04 10:30:03   INFO [libs.ActionsWithOurElements] : xP9 was inputted into element
+2020-17-04 10:30:03   INFO [libs.ActionsWithOurElements] : 228 was inputted into element
+2020-17-04 10:30:04   INFO [libs.ActionsWithOurElements] : 876 was inputted into element
+2020-17-04 10:30:04   INFO [libs.ActionsWithOurElements] : silver was inputted into element
+2020-17-04 10:30:04   INFO [libs.ActionsWithOurElements] : 6iqPnP was inputted into element
+2020-17-04 10:30:05   INFO [libs.ActionsWithOurElements] : 17/04/2020 was inputted into element
+2020-17-04 10:30:05   INFO [libs.ActionsWithOurElements] : 17/04/2020 was inputted into element
+2020-17-04 10:30:06   INFO [libs.ActionsWithOurElements] : 17/04/2020 was inputted into element
+2020-17-04 10:30:06   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-17-04 10:30:27   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : AC passed
+2020-17-04 10:30:28   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : AC passed
+2020-17-04 10:30:29   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : AC passed
+2020-17-04 10:30:30   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : AC passed
+2020-17-04 10:30:31   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : AC passed
+2020-17-04 10:30:32   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : AC passed
+2020-17-04 10:30:33   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : AC passed
+2020-17-04 10:30:34  ERROR [localSiteTest.equipmentTest.CarrierCreateEquipment] : AC failed: State failed
+2020-17-04 10:30:34   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] :  DB connection closed 
+2020-17-04 13:39:08   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : Chrome will be started
+2020-17-04 13:39:13   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : Chrome is started
+2020-17-04 13:39:13   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-17-04 13:39:25   INFO [pagesLocal.LoginLocalSitePage] : Login Page was opened
+2020-17-04 13:39:25   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-17-04 13:39:26   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-17-04 13:39:26   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-17-04 13:39:26   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-17-04 13:39:49   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2020-17-04 13:39:49   INFO [pagesLocal.LoginLocalSitePage] : There is not phone verification pop up
+2020-17-04 13:39:52   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-17-04 13:39:54   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-17-04 13:39:56   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-17-04 13:39:58   INFO [libs.ActionsWithOurElements] : OEx8q was inputted into element
+2020-17-04 13:39:59   INFO [libs.ActionsWithOurElements] : Dr Jacoby was inputted into element
+2020-17-04 13:39:59   INFO [libs.ActionsWithOurElements] : 1952 was inputted into element
+2020-17-04 13:39:59   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-17-04 13:40:02   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-17-04 13:40:02   INFO [pagesLocal.EquipmentLocalSitePage] : Type is: Property
+2020-17-04 13:40:02   INFO [libs.ActionsWithOurElements] : KVOifScq9oTic7Xaj was inputted into element
+2020-17-04 13:40:02   INFO [libs.ActionsWithOurElements] : TPmc6l was inputted into element
+2020-17-04 13:40:03   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-17-04 13:40:05   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-17-04 13:40:05   INFO [pagesLocal.EquipmentLocalSitePage] : State is: Manitoba
+2020-17-04 13:40:05   INFO [libs.ActionsWithOurElements] : 491659 was inputted into element
+2020-17-04 13:40:05   INFO [libs.ActionsWithOurElements] : 540382 was inputted into element
+2020-17-04 13:40:06   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-17-04 13:40:08   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-17-04 13:40:08   INFO [pagesLocal.EquipmentLocalSitePage] : Fuel is: M-85
+2020-17-04 13:40:08   INFO [libs.ActionsWithOurElements] : CiHWeK was inputted into element
+2020-17-04 13:40:08   INFO [libs.ActionsWithOurElements] : ZT8XAI was inputted into element
+2020-17-04 13:40:09   INFO [libs.ActionsWithOurElements] : XnCMmARYT was inputted into element
+2020-17-04 13:40:09   INFO [libs.ActionsWithOurElements] : 101 was inputted into element
+2020-17-04 13:40:09   INFO [libs.ActionsWithOurElements] : 998 was inputted into element
+2020-17-04 13:40:10   INFO [libs.ActionsWithOurElements] : salmon was inputted into element
+2020-17-04 13:40:10   INFO [libs.ActionsWithOurElements] : 5yMklW was inputted into element
+2020-17-04 13:40:11   INFO [libs.ActionsWithOurElements] : 17/04/2020 was inputted into element
+2020-17-04 13:40:11   INFO [libs.ActionsWithOurElements] : 17/04/2020 was inputted into element
+2020-17-04 13:40:11   INFO [libs.ActionsWithOurElements] : 17/04/2020 was inputted into element
+2020-17-04 13:40:12   INFO [libs.ActionsWithOurElements] : 17/04/2020 was inputted into element
+2020-17-04 13:40:12   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-17-04 13:40:33   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : AC passed
+2020-17-04 13:40:34   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : AC passed
+2020-17-04 13:40:35   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : AC passed
+2020-17-04 13:40:36   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : AC passed
+2020-17-04 13:40:37   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : AC passed
+2020-17-04 13:40:38   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : AC passed
+2020-17-04 13:40:39   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : AC passed
+2020-17-04 13:40:40   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : AC passed
+2020-17-04 13:40:41   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : AC passed
+2020-17-04 13:40:42   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : AC passed
+2020-17-04 13:40:43  ERROR [localSiteTest.equipmentTest.CarrierCreateEquipment] : AC failed: Fuel failed
+2020-17-04 13:40:43   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] :  DB connection closed 
+2020-17-04 13:43:07   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : Chrome will be started
+2020-17-04 13:43:12   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : Chrome is started
+2020-17-04 13:43:12   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-17-04 13:43:24   INFO [pagesLocal.LoginLocalSitePage] : Login Page was opened
+2020-17-04 13:43:24   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-17-04 13:43:25   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-17-04 13:43:25   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-17-04 13:43:25   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-17-04 13:43:48   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2020-17-04 13:43:48   INFO [pagesLocal.LoginLocalSitePage] : There is not phone verification pop up
+2020-17-04 13:43:51   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-17-04 13:43:53   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-17-04 13:43:55   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-17-04 13:43:57   INFO [libs.ActionsWithOurElements] : lF3dwYg4 was inputted into element
+2020-17-04 13:43:58   INFO [libs.ActionsWithOurElements] : Dick Tremayne was inputted into element
+2020-17-04 13:43:58   INFO [libs.ActionsWithOurElements] : 1966 was inputted into element
+2020-17-04 13:43:59   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-17-04 13:44:01   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-17-04 13:44:01   INFO [pagesLocal.EquipmentLocalSitePage] : Type is: Oil and Gas
+2020-17-04 13:44:01   INFO [libs.ActionsWithOurElements] : P1yjGGDkDuRe82dc6 was inputted into element
+2020-17-04 13:44:02   INFO [libs.ActionsWithOurElements] : zVhggx was inputted into element
+2020-17-04 13:44:02   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-17-04 13:44:04   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-17-04 13:44:04   INFO [pagesLocal.EquipmentLocalSitePage] : State is: South Dakota
+2020-17-04 13:44:04   INFO [libs.ActionsWithOurElements] : 861537 was inputted into element
+2020-17-04 13:44:05   INFO [libs.ActionsWithOurElements] : 416275 was inputted into element
+2020-17-04 13:44:05   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-17-04 13:44:07   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-17-04 13:44:07   INFO [pagesLocal.EquipmentLocalSitePage] : Fuel is: E-85
+2020-17-04 13:44:07   INFO [libs.ActionsWithOurElements] : M6Bgaq was inputted into element
+2020-17-04 13:44:08   INFO [libs.ActionsWithOurElements] : yxcXC0 was inputted into element
+2020-17-04 13:44:08   INFO [libs.ActionsWithOurElements] : Fjw6p was inputted into element
+2020-17-04 13:44:08   INFO [libs.ActionsWithOurElements] : 000 was inputted into element
+2020-17-04 13:44:08   INFO [libs.ActionsWithOurElements] : 358 was inputted into element
+2020-17-04 13:44:09   INFO [libs.ActionsWithOurElements] : plum was inputted into element
+2020-17-04 13:44:09   INFO [libs.ActionsWithOurElements] : 7Rg0Mw was inputted into element
+2020-17-04 13:44:10   INFO [libs.ActionsWithOurElements] : 17/04/2020 was inputted into element
+2020-17-04 13:44:10   INFO [libs.ActionsWithOurElements] : 17/04/2020 was inputted into element
+2020-17-04 13:44:11   INFO [libs.ActionsWithOurElements] : 17/04/2020 was inputted into element
+2020-17-04 13:44:11   INFO [libs.ActionsWithOurElements] : 17/04/2020 was inputted into element
+2020-17-04 13:44:12   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-17-04 13:44:33   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : AC passed
+2020-17-04 13:44:34   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : AC passed
+2020-17-04 13:44:35   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : AC passed
+2020-17-04 13:44:36   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : AC passed
+2020-17-04 13:44:37   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : AC passed
+2020-17-04 13:44:38   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : AC passed
+2020-17-04 13:44:39   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : AC passed
+2020-17-04 13:44:40   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : AC passed
+2020-17-04 13:44:41   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : AC passed
+2020-17-04 13:44:42   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : AC passed
+2020-17-04 13:44:43   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : AC passed
+2020-17-04 13:44:44   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : AC passed
+2020-17-04 13:44:45   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : AC passed
+2020-17-04 13:44:46   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : AC passed
+2020-17-04 13:44:47  ERROR [localSiteTest.equipmentTest.CarrierCreateEquipment] : AC failed: GrossWeight failed
+2020-17-04 13:44:47   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] :  DB connection closed 
+2020-17-04 13:48:51   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : Chrome will be started
+2020-17-04 13:48:56   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : Chrome is started
+2020-17-04 13:48:56   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-17-04 13:49:08   INFO [pagesLocal.LoginLocalSitePage] : Login Page was opened
+2020-17-04 13:49:08   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-17-04 13:49:08   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-17-04 13:49:09   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-17-04 13:49:09   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-17-04 13:49:32   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2020-17-04 13:49:32   INFO [pagesLocal.LoginLocalSitePage] : There is not phone verification pop up
+2020-17-04 13:49:35   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-17-04 13:49:37   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-17-04 13:49:39   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-17-04 13:49:41   INFO [libs.ActionsWithOurElements] : X7v01cp0 was inputted into element
+2020-17-04 13:49:42   INFO [libs.ActionsWithOurElements] : Mrs Tremond was inputted into element
+2020-17-04 13:49:42   INFO [libs.ActionsWithOurElements] : 1991 was inputted into element
+2020-17-04 13:49:42   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-17-04 13:49:45   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-17-04 13:49:45   INFO [pagesLocal.EquipmentLocalSitePage] : Type is: Oil and Gas
+2020-17-04 13:49:45   INFO [libs.ActionsWithOurElements] : DvvpTlO85HKwmyB1C was inputted into element
+2020-17-04 13:49:45   INFO [libs.ActionsWithOurElements] : Y5p20J was inputted into element
+2020-17-04 13:49:46   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-17-04 13:49:48   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-17-04 13:49:48   INFO [pagesLocal.EquipmentLocalSitePage] : State is: Tennessee
+2020-17-04 13:49:48   INFO [libs.ActionsWithOurElements] : 94 was inputted into element
+2020-17-04 13:49:49   INFO [libs.ActionsWithOurElements] : 89618998 was inputted into element
+2020-17-04 13:49:49   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-17-04 13:49:51   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-17-04 13:49:51   INFO [pagesLocal.EquipmentLocalSitePage] : Fuel is: A55
+2020-17-04 13:49:51   INFO [libs.ActionsWithOurElements] : oWkeX5 was inputted into element
+2020-17-04 13:49:51   INFO [libs.ActionsWithOurElements] : wEugJM was inputted into element
+2020-17-04 13:49:52   INFO [libs.ActionsWithOurElements] : vPD was inputted into element
+2020-17-04 13:49:52   INFO [libs.ActionsWithOurElements] : 78435148 was inputted into element
+2020-17-04 13:49:52   INFO [libs.ActionsWithOurElements] : 2942 was inputted into element
+2020-17-04 13:49:53   INFO [libs.ActionsWithOurElements] : lavender was inputted into element
+2020-17-04 13:49:53   INFO [libs.ActionsWithOurElements] : LgaYzS was inputted into element
+2020-17-04 13:49:53   INFO [libs.ActionsWithOurElements] : 17/04/2020 was inputted into element
+2020-17-04 13:49:54   INFO [libs.ActionsWithOurElements] : 17/04/2020 was inputted into element
+2020-17-04 13:49:54   INFO [libs.ActionsWithOurElements] : 17/04/2020 was inputted into element
+2020-17-04 13:49:55   INFO [libs.ActionsWithOurElements] : 17/04/2020 was inputted into element
+2020-17-04 13:49:55   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-17-04 13:50:16   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : AC passed
+2020-17-04 13:50:17   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : AC passed
+2020-17-04 13:50:18   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : AC passed
+2020-17-04 13:50:19   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : AC passed
+2020-17-04 13:50:20   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : AC passed
+2020-17-04 13:50:21   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : AC passed
+2020-17-04 13:50:22   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : AC passed
+2020-17-04 13:50:23   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : AC passed
+2020-17-04 13:50:24   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : AC passed
+2020-17-04 13:50:25   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : AC passed
+2020-17-04 13:50:26   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : AC passed
+2020-17-04 13:50:27   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : AC passed
+2020-17-04 13:50:28   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : AC passed
+2020-17-04 13:50:29   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : AC passed
+2020-17-04 13:50:30   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : AC passed
+2020-17-04 13:50:31   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : AC passed
+2020-17-04 13:50:32   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : AC passed
+2020-17-04 13:50:33   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : AC passed
+2020-17-04 13:50:34  ERROR [localSiteTest.equipmentTest.CarrierCreateEquipment] : AC failed: InspectionDue failed
+2020-17-04 13:50:34   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] :  DB connection closed 
+2020-17-04 13:54:10   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : Chrome will be started
+2020-17-04 13:54:15   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : Chrome is started
+2020-17-04 13:54:15   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-17-04 13:54:27   INFO [pagesLocal.LoginLocalSitePage] : Login Page was opened
+2020-17-04 13:54:27   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-17-04 13:54:27   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-17-04 13:54:28   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-17-04 13:54:28   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-17-04 13:54:51   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2020-17-04 13:54:51   INFO [pagesLocal.LoginLocalSitePage] : There is not phone verification pop up
+2020-17-04 13:54:53   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-17-04 13:54:55   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-17-04 13:54:58   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-17-04 13:55:00   INFO [libs.ActionsWithOurElements] : jfnl5g was inputted into element
+2020-17-04 13:55:01   INFO [libs.ActionsWithOurElements] : Audrey Horne was inputted into element
+2020-17-04 13:55:01   INFO [libs.ActionsWithOurElements] : 2005 was inputted into element
+2020-17-04 13:55:01   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-17-04 13:55:03   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-17-04 13:55:03   INFO [pagesLocal.EquipmentLocalSitePage] : Type is: Property
+2020-17-04 13:55:04   INFO [libs.ActionsWithOurElements] : p9NMMbY128gcIKinG was inputted into element
+2020-17-04 13:55:04   INFO [libs.ActionsWithOurElements] : uGRJmT was inputted into element
+2020-17-04 13:55:04   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-17-04 13:55:07   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-17-04 13:55:07   INFO [pagesLocal.EquipmentLocalSitePage] : State is: North Dakota
+2020-17-04 13:55:07   INFO [libs.ActionsWithOurElements] : 75267 was inputted into element
+2020-17-04 13:55:07   INFO [libs.ActionsWithOurElements] : 91101086 was inputted into element
+2020-17-04 13:55:07   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-17-04 13:55:10   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-17-04 13:55:10   INFO [pagesLocal.EquipmentLocalSitePage] : Fuel is: Gasohol
+2020-17-04 13:55:10   INFO [libs.ActionsWithOurElements] : RMkKyq was inputted into element
+2020-17-04 13:55:11   INFO [libs.ActionsWithOurElements] : vCaepv was inputted into element
+2020-17-04 13:55:11   INFO [libs.ActionsWithOurElements] : mnkoLZ was inputted into element
+2020-17-04 13:55:11   INFO [libs.ActionsWithOurElements] : 953 was inputted into element
+2020-17-04 13:55:12   INFO [libs.ActionsWithOurElements] : 45626154 was inputted into element
+2020-17-04 13:55:12   INFO [libs.ActionsWithOurElements] : gold was inputted into element
+2020-17-04 13:55:12   INFO [libs.ActionsWithOurElements] : LRfmhC was inputted into element
+2020-17-04 13:55:13   INFO [libs.ActionsWithOurElements] : 17/04/2020 was inputted into element
+2020-17-04 13:55:13   INFO [libs.ActionsWithOurElements] : 17/04/2020 was inputted into element
+2020-17-04 13:55:13   INFO [libs.ActionsWithOurElements] : 17/04/2020 was inputted into element
+2020-17-04 13:55:14   INFO [libs.ActionsWithOurElements] : 17/04/2020 was inputted into element
+2020-17-04 13:55:14   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-17-04 13:55:35   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : AC passed
+2020-17-04 13:55:36   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : AC passed
+2020-17-04 13:55:37   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : AC passed
+2020-17-04 13:55:38   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : AC passed
+2020-17-04 13:55:39   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : AC passed
+2020-17-04 13:55:40   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : AC passed
+2020-17-04 13:55:41   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : AC passed
+2020-17-04 13:55:42   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : AC passed
+2020-17-04 13:55:43   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : AC passed
+2020-17-04 13:55:44   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : AC passed
+2020-17-04 13:55:45   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : AC passed
+2020-17-04 13:55:46   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : AC passed
+2020-17-04 13:55:47   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : AC passed
+2020-17-04 13:55:48   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : AC passed
+2020-17-04 13:55:49   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : AC passed
+2020-17-04 13:55:50   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : AC passed
+2020-17-04 13:55:51   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : AC passed
+2020-17-04 13:55:52   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : AC passed
+2020-17-04 13:55:53   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : AC passed
+2020-17-04 13:55:54   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : AC passed
+2020-17-04 13:55:55   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : AC passed
+2020-17-04 13:55:56   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : AC passed
+2020-17-04 13:55:57   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : AC passed
+2020-17-04 13:55:57   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] :  DB connection closed 
+2020-17-04 14:10:58   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : Chrome will be started
+2020-17-04 14:11:04   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : Chrome is started
+2020-17-04 14:11:04   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-17-04 14:11:15   INFO [pagesLocal.LoginLocalSitePage] : Login Page was opened
+2020-17-04 14:11:15   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-17-04 14:11:16   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-17-04 14:11:16   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-17-04 14:11:16   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-17-04 14:11:39   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2020-17-04 14:11:39   INFO [pagesLocal.LoginLocalSitePage] : There is not phone verification pop up
+2020-17-04 14:11:42   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-17-04 14:11:44   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-17-04 14:11:46   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-17-04 14:11:49   INFO [libs.ActionsWithOurElements] : 0kRPneMDb was inputted into element
+2020-17-04 14:11:49   INFO [libs.ActionsWithOurElements] : Windom Earle was inputted into element
+2020-17-04 14:11:50   INFO [libs.ActionsWithOurElements] : 1998 was inputted into element
+2020-17-04 14:11:50   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-17-04 14:11:52   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-17-04 14:11:52   INFO [pagesLocal.EquipmentLocalSitePage] : Type is: Agriculture
+2020-17-04 14:11:53   INFO [libs.ActionsWithOurElements] : QinFIWXoqqZtHAaLu was inputted into element
+2020-17-04 14:11:53   INFO [libs.ActionsWithOurElements] : s0dA9Y was inputted into element
+2020-17-04 14:11:53   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-17-04 14:11:55   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-17-04 14:11:55   INFO [pagesLocal.EquipmentLocalSitePage] : State is: North Carolina
+2020-17-04 14:11:56   INFO [libs.ActionsWithOurElements] : 6732193 was inputted into element
+2020-17-04 14:11:56   INFO [libs.ActionsWithOurElements] : 775 was inputted into element
+2020-17-04 14:11:56   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-17-04 14:11:58   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-17-04 14:11:58   INFO [pagesLocal.EquipmentLocalSitePage] : Fuel is: Propane
+2020-17-04 14:11:58   INFO [libs.ActionsWithOurElements] : 6ExB1B was inputted into element
+2020-17-04 14:11:59   INFO [libs.ActionsWithOurElements] : LW57lq was inputted into element
+2020-17-04 14:11:59   INFO [libs.ActionsWithOurElements] : QN4TPo was inputted into element
+2020-17-04 14:11:59   INFO [libs.ActionsWithOurElements] : 9 was inputted into element
+2020-17-04 14:12:00   INFO [libs.ActionsWithOurElements] : 3202548 was inputted into element
+2020-17-04 14:12:00   INFO [libs.ActionsWithOurElements] : magenta was inputted into element
+2020-17-04 14:12:00   INFO [libs.ActionsWithOurElements] : vdgdT5 was inputted into element
+2020-17-04 14:12:01   INFO [libs.ActionsWithOurElements] : 17/04/2020 was inputted into element
+2020-17-04 14:12:01   INFO [libs.ActionsWithOurElements] : 17/04/2020 was inputted into element
+2020-17-04 14:12:01   INFO [libs.ActionsWithOurElements] : 17/04/2020 was inputted into element
+2020-17-04 14:12:02   INFO [libs.ActionsWithOurElements] : 17/04/2020 was inputted into element
+2020-17-04 14:12:02   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-17-04 14:12:23   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : AC passed
+2020-17-04 14:12:24   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : AC passed
+2020-17-04 14:12:25   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : AC passed
+2020-17-04 14:12:26   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : AC passed
+2020-17-04 14:12:27   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : AC passed
+2020-17-04 14:12:28   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : AC passed
+2020-17-04 14:12:29   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : AC passed
+2020-17-04 14:12:30   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : AC passed
+2020-17-04 14:12:31   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : AC passed
+2020-17-04 14:12:32   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : AC passed
+2020-17-04 14:12:33   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : AC passed
+2020-17-04 14:12:34   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : AC passed
+2020-17-04 14:12:35   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : AC passed
+2020-17-04 14:12:36   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : AC passed
+2020-17-04 14:12:37   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : AC passed
+2020-17-04 14:12:38   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : AC passed
+2020-17-04 14:12:39   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : AC passed
+2020-17-04 14:12:40   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : AC passed
+2020-17-04 14:12:41   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : AC passed
+2020-17-04 14:12:42   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : AC passed
+2020-17-04 14:12:43   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : AC passed
+2020-17-04 14:12:44   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : AC passed
+2020-17-04 14:12:45   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : AC passed
+2020-17-04 14:12:45   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] :  DB connection closed 
+2020-20-04 16:26:28   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : Chrome will be started
+2020-20-04 16:26:33   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] : Chrome is started
+2020-20-04 16:26:33   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-20-04 16:26:44   INFO [pagesLocal.LoginLocalSitePage] : Login Page was opened
+2020-20-04 16:26:44   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-20-04 16:26:46   INFO [libs.ActionsWithOurElements] : xeboz@mail-card.com was inputted into element
+2020-20-04 16:26:46   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-20-04 16:26:46   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-20-04 16:27:09   INFO [libs.ActionsWithOurElements] : Element is display - > false
+2020-20-04 16:27:09   INFO [pagesLocal.LoginLocalSitePage] : There is not phone verification pop up
+2020-20-04 16:27:12   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-20-04 16:27:14   INFO [libs.ActionsWithOurElements] : gbfghfj33 was inputted into element
+2020-20-04 16:27:17   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-20-04 16:27:19   INFO [libs.ActionsWithOurElements] : Element was clicked
+2020-20-04 16:27:42   INFO [localSiteTest.equipmentTest.CarrierCreateEquipment] :  DB connection closed 

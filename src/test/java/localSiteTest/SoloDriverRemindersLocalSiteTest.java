@@ -26,7 +26,7 @@ public class SoloDriverRemindersLocalSiteTest extends ParentTest {
     @Test
     public void addReminderByDateForTruck() throws SQLException, IOException, ClassNotFoundException {
         String userId = utilsForDB.getUserIdByEmail(login);
-        String equipId = utilsForDB.getRandomEquipmentId(userId, "0");
+        String equipId = utilsForDB.getRandomEquipmentId("userId", userId, "0");
 
         List<ArrayList> tempDataEquipmentList = utilsForDB.getDataEquipment(equipId);
         Map<String, Object> tempDataEquipmentMap = listArrayToMap(tempDataEquipmentList);
@@ -39,7 +39,7 @@ public class SoloDriverRemindersLocalSiteTest extends ParentTest {
         dashboardLocalSitePage.goToEquipmentPage();
         equipmentLocalSitePage.enterOnEquipmentPlaceHolder(nameTruck);
         waitABit(3);
-        equipmentLocalSitePage.clickOnEquipmentOnRow();
+//        equipmentLocalSitePage.clickOnEquipmentOnRow();
         waitABit(3);
         String idTruck = equipmentLocalSitePage.getVehicleIdText();
         equipmentLocalSitePage.clickOnRemindersButton();
@@ -61,7 +61,7 @@ public class SoloDriverRemindersLocalSiteTest extends ParentTest {
     @Test
     public void addReminderByDateForTrailer() throws SQLException, IOException, ClassNotFoundException {
         String userId = utilsForDB.getUserIdByEmail(login);
-        String equipId = utilsForDB.getRandomEquipmentId(userId, "0");
+        String equipId = utilsForDB.getRandomEquipmentId("userId", userId, "0");
         List<ArrayList> tempDataSettingsList = utilsForDB.getDataEquipment(equipId);
         Map<String, Object> tempDataSettingsMap = listArrayToMap(tempDataSettingsList);
         String nameTrailer = tempDataSettingsMap.get("Name").toString();
@@ -72,7 +72,7 @@ public class SoloDriverRemindersLocalSiteTest extends ParentTest {
         dashboardLocalSitePage.goToEquipmentPage();
         equipmentLocalSitePage.enterOnEquipmentPlaceHolder(nameTrailer);
         waitABit(3);
-        equipmentLocalSitePage.clickOnEquipmentOnRow();
+//        equipmentLocalSitePage.clickOnEquipmentOnRow();
         waitABit(3);
         String idTruck = equipmentLocalSitePage.getVehicleIdText();
         equipmentLocalSitePage.clickOnRemindersButton();
@@ -95,7 +95,7 @@ public class SoloDriverRemindersLocalSiteTest extends ParentTest {
     @Test
     public void addReminderByMileForTruck() throws SQLException, IOException, ClassNotFoundException {
         String userId = utilsForDB.getUserIdByEmail(login);
-        String equipId = utilsForDB.getRandomEquipmentId(userId, "0");
+        String equipId = utilsForDB.getRandomEquipmentId("userId", userId, "0");
         List<ArrayList> tempDataSettingsList = utilsForDB.getDataEquipment(equipId);
         Map<String, Object> tempDataSettingsMap = listArrayToMap(tempDataSettingsList);
         String nameTruck = tempDataSettingsMap.get("Name").toString();
@@ -106,7 +106,7 @@ public class SoloDriverRemindersLocalSiteTest extends ParentTest {
         dashboardLocalSitePage.goToEquipmentPage();
         equipmentLocalSitePage.enterOnEquipmentPlaceHolder(nameTruck);
         waitABit(3);
-        equipmentLocalSitePage.clickOnEquipmentOnRow();
+//        equipmentLocalSitePage.clickOnEquipmentOnRow();
         waitABit(3);
         String idTruck = equipmentLocalSitePage.getVehicleIdText();
         equipmentLocalSitePage.clickOnRemindersButton();

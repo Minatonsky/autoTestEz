@@ -84,7 +84,7 @@ public class EquipmentLocalSitePage extends ParentLocalSitePage {
     @FindBy(xpath = ".//*[text()='Pro Rate Exp']//..//input[@name='date']")
     private WebElement pro_rate_expInput;
 
-    @FindBy(xpath = ".//*[text()='Exp Date']//..//input[@name='date']")
+    @FindBy(xpath = ".//*[@class='popup-container']//*[text()='Exp Date']//..//input[@name='date']")
     private WebElement exp_dateInput;
 
     @FindBy(xpath = ".//input[@type='checkbox']")
@@ -93,13 +93,10 @@ public class EquipmentLocalSitePage extends ParentLocalSitePage {
     @FindBy(xpath = ".//button[text()='Add']")
     private WebElement submitButton;
 
-    @FindBy(xpath = ".//*[@placeholder='UNIT']")
+    @FindBy(xpath = ".//input[@name='name']")
     private WebElement truckNameHolder;
 
-    @FindBy(xpath = ".//*[@class='btn-link__text']")
-    private WebElement equipmentInRow;
-
-    @FindBy(xpath = ".//*[text()='Edit ']")
+    @FindBy(xpath = ".//button[text()='Truck Settings ']")
     private WebElement editButton;
 
     @FindBy(xpath = ".//button[text()='Save']")
@@ -151,21 +148,27 @@ public class EquipmentLocalSitePage extends ParentLocalSitePage {
 
     public void selectType(String type){
         actionsWithOurElements.clickOnElement(typeMenu);
-        waitABit(3);
-        actionsWithOurElements.clickOnElement(".//li[@role='option']//../*[contains(text(),'" + type + "')]");}
+        waitABit(2);
+        actionsWithOurElements.clickOnElement(".//li[@role='option']//../*[contains(text(),'" + type + "')]");
+        logger.info("Type is: " + type);
+    }
     public void enterVin(String vin){actionsWithOurElements.enterTextToElement(vinInput, vin);}
     public void enterPlate(String plate){actionsWithOurElements.enterTextToElement(plateInput, plate);}
     public void selectState(String state){
         actionsWithOurElements.clickOnElement(stateValue);
-        waitABit(3);
-        actionsWithOurElements.clickOnElement(".//li[@role='option']//../*[contains(text(),'" + state + "')]");}
+        waitABit(2);
+        actionsWithOurElements.clickOnElement(".//li[@role='option']//../*[contains(text(),'" + state + "')]");
+        logger.info("State is: " + state);
+    }
 //    Parameters
     public void enterTireSize(String tireSize){actionsWithOurElements.enterTextToElement(tire_sizeInput, tireSize);}
     public void enterLength(String length){actionsWithOurElements.enterTextToElement(lengthInput, length);}
     public void selectFuel(String fuel){
         actionsWithOurElements.clickOnElement(fuelInput);
-        waitABit(3);
-        actionsWithOurElements.clickOnElement(".//li[@role='option']//../*[contains(text(),'" + fuel + "')]");}
+        waitABit(2);
+        actionsWithOurElements.clickOnElement(".//li[@role='option']//../*[contains(text(),'" + fuel + "')]");
+        logger.info("Fuel is: " + fuel);
+    }
     public void enterAxel(String axel){actionsWithOurElements.enterTextToElement(axelInput, axel);}
     public void enterMake(String make){actionsWithOurElements.enterTextToElement(makeInput, make);}
     public void enterModel(String model){actionsWithOurElements.enterTextToElement(modelInput, model);}
@@ -182,7 +185,7 @@ public class EquipmentLocalSitePage extends ParentLocalSitePage {
     public void clickOnSubmit(){actionsWithOurElements.clickOnElement(submitButton);}
 
     public void enterOnEquipmentPlaceHolder(String equipmentName){actionsWithOurElements.enterTextToElement(truckNameHolder, equipmentName);}
-    public void clickOnEquipmentOnRow(){actionsWithOurElements.clickOnElement(equipmentInRow);}
+    public void clickOnEquipmentOnRow(String name){actionsWithOurElements.clickOnElement(".//*[text()='" + name + "']");}
     public void clickOnEditButton(){actionsWithOurElements.clickOnElement(editButton);}
     public void clickOnSave(){actionsWithOurElements.clickOnElement(saveButton);}
     public void enterNote(String note){actionsWithOurElements.clearAndEnterTextToElement(textArea, note);}
