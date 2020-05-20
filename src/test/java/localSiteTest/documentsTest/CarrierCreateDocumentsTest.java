@@ -49,7 +49,7 @@ public class CarrierCreateDocumentsTest extends ParentTest {
         String reeferAmountRV = RandomStringUtils.randomAlphanumeric(1, 10);
         String reeferGallonsRV = RandomStringUtils.randomAlphanumeric(1, 10);
         String notesTextRV = RandomStringUtils.randomAlphanumeric(1, 10);
-        String truckId = utilsForDB.getRandomEquipmentIdCarrier(carrierId, "0");
+        String truckId = utilsForDB.getRandomEquipmentId("carrierId", carrierId, "0");
         String driverId = utilsForDB.getRandomDriverIdInFleet(carrierId);
 
         loginLocalSitePage.logInWithOutOpenMenu(login, pass);
@@ -102,7 +102,7 @@ public class CarrierCreateDocumentsTest extends ParentTest {
         String notesTextRV = RandomStringUtils.randomAlphanumeric(1, 10);
 
         String userId = utilsForDB.getUserIdByEmail(login);
-        String truckId = utilsForDB.getRandomEquipmentIdCarrier(carrierId, "0");
+        String truckId = utilsForDB.getRandomEquipmentId("carrierId", carrierId, "0");
         String driverId = utilsForDB.getRandomDriverIdInFleet(carrierId);
 
         loginLocalSitePage.logInWithOutOpenMenu(login, pass);
@@ -144,7 +144,7 @@ public class CarrierCreateDocumentsTest extends ParentTest {
         String scaleRV = RandomStringUtils.randomAlphanumeric(1, 10);
         String notesTextRV = RandomStringUtils.randomAlphanumeric(1, 10);
         String userId = utilsForDB.getUserIdByEmail(login);
-        String truckId = utilsForDB.getRandomEquipmentIdCarrier(carrierId, "0");
+        String truckId = utilsForDB.getRandomEquipmentId("carrierId", carrierId, "0");
         String driverId = utilsForDB.getRandomDriverIdInFleet(carrierId);
 
         loginLocalSitePage.logInWithOutOpenMenu(login, pass);
@@ -184,7 +184,7 @@ public class CarrierCreateDocumentsTest extends ParentTest {
         String amountRV = RandomStringUtils.randomAlphanumeric(1, 10);
         String notesTextRV = RandomStringUtils.randomAlphanumeric(1, 10);
         String userId = utilsForDB.getUserIdByEmail(login);
-        String truckId = utilsForDB.getRandomEquipmentIdCarrier(carrierId, "0");
+        String truckId = utilsForDB.getRandomEquipmentId("carrierId", carrierId, "0");
         String driverId = utilsForDB.getRandomDriverIdInFleet(carrierId);
 
         loginLocalSitePage.logInWithOutOpenMenu(login, pass);
@@ -224,7 +224,7 @@ public class CarrierCreateDocumentsTest extends ParentTest {
         String dealerRV = RandomStringUtils.randomAlphanumeric(1, 10);
         String notesTextRV = RandomStringUtils.randomAlphanumeric(1, 10);
         String userId = utilsForDB.getUserIdByEmail(login);
-        String truckId = utilsForDB.getRandomEquipmentIdCarrier(carrierId, "0");
+        String truckId = utilsForDB.getRandomEquipmentId("carrierId", carrierId, "0");
         String driverId = utilsForDB.getRandomDriverIdInFleet(carrierId);
 
         loginLocalSitePage.logInWithOutOpenMenu(login, pass);
@@ -267,7 +267,7 @@ public class CarrierCreateDocumentsTest extends ParentTest {
         String dealerRV = RandomStringUtils.randomAlphanumeric(1, 10);
         String notesTextRV = RandomStringUtils.randomAlphanumeric(1, 10);
         String userId = utilsForDB.getUserIdByEmail(login);
-        String trailerId = utilsForDB.getRandomEquipmentIdCarrier(carrierId, "1");
+        String trailerId = utilsForDB.getRandomEquipmentId("carrierId", carrierId, "1");
         String driverId = utilsForDB.getRandomDriverIdInFleet(carrierId);
 
         loginLocalSitePage.logInWithOutOpenMenu(login, pass);
@@ -309,7 +309,7 @@ public class CarrierCreateDocumentsTest extends ParentTest {
         String amountRV = RandomStringUtils.randomAlphanumeric(1, 10);
         String notesTextRV = RandomStringUtils.randomAlphanumeric(1, 10);
         String userId = utilsForDB.getUserIdByEmail(login);
-        String truckId = utilsForDB.getRandomEquipmentIdCarrier(carrierId, "0");
+        String truckId = utilsForDB.getRandomEquipmentId("carrierId", carrierId, "0");
         String driverId = utilsForDB.getRandomDriverIdInFleet(carrierId);
 
         loginLocalSitePage.logInWithOutOpenMenu(login, pass);
@@ -349,7 +349,7 @@ public class CarrierCreateDocumentsTest extends ParentTest {
         String locationRV = RandomStringUtils.randomAlphanumeric(1, 10);
         String notesTextRV = RandomStringUtils.randomAlphanumeric(1, 10);
         String userId = utilsForDB.getUserIdByEmail(login);
-        String truckId = utilsForDB.getRandomEquipmentIdCarrier(carrierId, "0");
+        String truckId = utilsForDB.getRandomEquipmentId("carrierId", carrierId, "0");
         String driverId = utilsForDB.getRandomDriverIdInFleet(carrierId);
 
         loginLocalSitePage.logInWithOutOpenMenu(login, pass);
@@ -387,7 +387,7 @@ public class CarrierCreateDocumentsTest extends ParentTest {
         String referenceRV = "AnnualInspection " + getDateAndTimeFormated() + "";
         String notesTextRV = RandomStringUtils.randomAlphanumeric(1, 10);
         String userId = utilsForDB.getUserIdByEmail(login);
-        String truckId = utilsForDB.getRandomEquipmentIdCarrier(carrierId, "0");
+        String truckId = utilsForDB.getRandomEquipmentId("carrierId", carrierId, "0");
         String driverId = utilsForDB.getRandomDriverIdInFleet(carrierId);
 
         loginLocalSitePage.logInWithOutOpenMenu(login, pass);
@@ -422,7 +422,7 @@ public class CarrierCreateDocumentsTest extends ParentTest {
         String referenceRV = "Insurance " + getDateAndTimeFormated() + "";
         String notesTextRV = RandomStringUtils.randomAlphanumeric(1, 10);
         String userId = utilsForDB.getUserIdByEmail(login);
-        String truckId = utilsForDB.getRandomEquipmentIdCarrier(carrierId, "0");
+        String truckId = utilsForDB.getRandomEquipmentId("carrierId", carrierId, "0");
         String driverId = utilsForDB.getRandomDriverIdInFleet(carrierId);
 
         loginLocalSitePage.logInWithOutOpenMenu(login, pass);
@@ -457,7 +457,7 @@ public class CarrierCreateDocumentsTest extends ParentTest {
         String referenceRV = "TruckRegistration " + getDateAndTimeFormated() + "";
         String notesTextRV = RandomStringUtils.randomAlphanumeric(1, 10);
         String userId = utilsForDB.getUserIdByEmail(login);
-        String truckId = utilsForDB.getRandomEquipmentIdCarrier(carrierId, "0");
+        String truckId = utilsForDB.getRandomEquipmentId("carrierId", carrierId, "0");
         String driverId = utilsForDB.getRandomDriverIdInFleet(carrierId);
 
         loginLocalSitePage.logInWithOutOpenMenu(login, pass);
@@ -492,7 +492,7 @@ public class CarrierCreateDocumentsTest extends ParentTest {
         String referenceRV = "TrailerRegistration " + getDateAndTimeFormated() + "";
         String notesTextRV = RandomStringUtils.randomAlphanumeric(1, 10);
         String userId = utilsForDB.getUserIdByEmail(login);
-        String trailerId = utilsForDB.getRandomEquipmentIdCarrier(carrierId, "1");
+        String trailerId = utilsForDB.getRandomEquipmentId("carrierId", carrierId, "1");
         String driverId = utilsForDB.getRandomDriverIdInFleet(carrierId);
 
         loginLocalSitePage.logInWithOutOpenMenu(login, pass);
@@ -528,7 +528,7 @@ public class CarrierCreateDocumentsTest extends ParentTest {
         String referenceRV = "Others" + getDateAndTimeFormated() + "";
         String notesTextRV = RandomStringUtils.randomAlphanumeric(1, 10);
         String userId = utilsForDB.getUserIdByEmail(login);
-        String truckId = utilsForDB.getRandomEquipmentIdCarrier(carrierId, "0");
+        String truckId = utilsForDB.getRandomEquipmentId("carrierId", carrierId, "0");
         String driverId = utilsForDB.getRandomDriverIdInFleet(carrierId);
 
         loginLocalSitePage.logInWithOutOpenMenu(login, pass);
@@ -566,7 +566,7 @@ public class CarrierCreateDocumentsTest extends ParentTest {
         String deliveryDateRV = getDateRandom();
         String notesTextRV = RandomStringUtils.randomAlphanumeric(1, 10);
         String userId = utilsForDB.getUserIdByEmail(login);
-        String truckId = utilsForDB.getRandomEquipmentIdCarrier(carrierId, "0");
+        String truckId = utilsForDB.getRandomEquipmentId("carrierId", carrierId, "0");
         String driverId = utilsForDB.getRandomDriverIdInFleet(carrierId);
 
         loginLocalSitePage.logInWithOutOpenMenu(login, pass);

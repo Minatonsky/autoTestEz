@@ -32,52 +32,39 @@ public class ChargeDefaultersTest extends ParentTestWithoutWebDriver {
             int countDeactivatedScannerMonthIOSXTariff = utilsForDB.countDeactivatedChargeScannersMonthToMonth(fleetString, fleetId);
             int countScannerOneYearIOSXTariff = utilsForDB.countChargeScannersByTariff(fleetString, fleetId, oneYearIOSXTariffId);
             int countScannerTwoYearsIOSXTariff = utilsForDB.countChargeScannersByTariff(fleetString, fleetId, twoYearsIOSXTariffId);
-            int countScannerMonthIOSXChargeReturned = utilsForDB.countChargeReturnedScannerByTariff(fleetString, fleetId, IOSXMonthTariffId);
-            int countScannerOneYearIOSXChargeReturned = utilsForDB.countChargeReturnedScannerByTariff(fleetString, fleetId, oneYearIOSXTariffId);
-            int countScannerTwoYearIOSXChargeReturned = utilsForDB.countChargeReturnedScannerByTariff(fleetString, fleetId, twoYearsIOSXTariffId);
-
 
 //   COUNT GEOMETRICS TARIFF
             int countScannerMonthGeometricsTariff = utilsForDB.countChargeScannersByTariff(fleetString, fleetId, geometricsMonthTariffId);
             int countScannerOneYearGeometricsTariff = utilsForDB.countChargeScannersByTariff(fleetString, fleetId, oneYearGeometricsTariffId);
             int countScannerTwoYearsGeometricsTariff = utilsForDB.countChargeScannersByTariff(fleetString, fleetId, twoYearsGeometricsTariffId);
-            int countGeometricsMonthChargeReturnedScanner = utilsForDB.countChargeReturnedScannerByTariff(fleetString, fleetId, geometricsMonthTariffId);
-            int countGeometricsOneYearChargeReturnedScanner = utilsForDB.countChargeReturnedScannerByTariff(fleetString, fleetId, oneYearGeometricsTariffId);
-            int countGeometricsTwoYearChargeReturnedScanner = utilsForDB.countChargeReturnedScannerByTariff(fleetString, fleetId, twoYearsGeometricsTariffId);
 
+            String paidTillForAllTariffValue = chargeMethods.paidTillForAllTariff();
 
-            String setPaidTillForAllTariff = chargeMethods.paidTillForAllTariff();
-
-            String setTariffStartMonthIOSX = chargeMethods.tariffStartForMonthToMonth(countMonthForTariffStartMonthIOSX, 5);
-            String setTariffStartMonthGeometrics = chargeMethods.tariffStartForMonthToMonth(countMonthForTariffStartMonthGeometrics, 5);
+            String tariffStartMonthIOSXValue = chargeMethods.tariffStartForMonthToMonth(countMonthForTariffStartMonthIOSX, 2);
+            String tariffStartMonthGeometricsValue = chargeMethods.tariffStartForMonthToMonth(countMonthForTariffStartMonthGeometrics, 6);
 
             String setTariffStartOneYear = chargeMethods.tariffStartForOneYear(1);
             String setTariffStartTwoYears = chargeMethods.tariffStartForTwoYears(2);
 
 
             checkAC("* No all tariffs are presented on fleet",
-                    chargeMethods.checkIfTariffPresent(
-                            countScannerMonthIOSXTariff, countScannerOneYearIOSXTariff, countScannerTwoYearsIOSXTariff,
+                    chargeMethods.checkIfTariffPresent(countScannerMonthIOSXTariff, countScannerOneYearIOSXTariff, countScannerTwoYearsIOSXTariff,
                             countScannerMonthGeometricsTariff, countScannerOneYearGeometricsTariff, countScannerTwoYearsGeometricsTariff), true);
-
-            chargeMethods.informationOfDeactivatedAndReturnedScanners(countDeactivatedScannerMonthIOSXTariff, countScannerMonthIOSXChargeReturned, countScannerOneYearIOSXChargeReturned, countScannerTwoYearIOSXChargeReturned,
-                    countGeometricsMonthChargeReturnedScanner, countGeometricsOneYearChargeReturnedScanner, countGeometricsTwoYearChargeReturnedScanner);
 
 
 //  SET PAID TILL AND ORDER DATE FOR IOSX TARIFF
 
-            utilsForDB.setPaidTillAndTariffStartScannerForFleet(fleetId, setPaidTillForAllTariff, setTariffStartMonthIOSX, IOSXMonthTariffId);
-            utilsForDB.setOrderDateByTariffId(fleetString, fleetId, setTariffStartMonthIOSX, IOSXMonthTariffId);
-            utilsForDB.setPaidTillAndTariffStartScannerForFleet(fleetId, setPaidTillForAllTariff, setTariffStartOneYear, oneYearIOSXTariffId);
-            utilsForDB.setPaidTillAndTariffStartScannerForFleet(fleetId, setPaidTillForAllTariff, setTariffStartTwoYears, twoYearsIOSXTariffId);
+            chargeMethods.setPaidTillAndTariffStartScannerForFleet(fleetId, paidTillForAllTariffValue, tariffStartMonthIOSXValue, IOSXMonthTariffId, countScannerMonthIOSXTariff);
+            chargeMethods.setPaidTillAndTariffStartScannerForFleet(fleetId, paidTillForAllTariffValue, setTariffStartOneYear, oneYearIOSXTariffId, countScannerOneYearIOSXTariff);
+            chargeMethods.setPaidTillAndTariffStartScannerForFleet(fleetId, paidTillForAllTariffValue, setTariffStartTwoYears, twoYearsIOSXTariffId, countScannerTwoYearsIOSXTariff);
+            chargeMethods.setOrderDateByTariffId(fleetString, fleetId, tariffStartMonthIOSXValue, IOSXMonthTariffId, countScannerMonthIOSXTariff);
 
 
 //  SET PAID TILL AND ORDER DATE FOR GEOMETRICS TARIFF
-
-            utilsForDB.setPaidTillAndTariffStartScannerForFleet(fleetId, setPaidTillForAllTariff, setTariffStartMonthGeometrics, geometricsMonthTariffId);
-            utilsForDB.setOrderDateByTariffId(fleetString, fleetId, setTariffStartMonthGeometrics, geometricsMonthTariffId);
-            utilsForDB.setPaidTillAndTariffStartScannerForFleet(fleetId, setPaidTillForAllTariff, setTariffStartOneYear, oneYearGeometricsTariffId);
-            utilsForDB.setPaidTillAndTariffStartScannerForFleet(fleetId, setPaidTillForAllTariff, setTariffStartTwoYears, twoYearsGeometricsTariffId);
+            chargeMethods.setPaidTillAndTariffStartScannerForFleet(fleetId, paidTillForAllTariffValue, tariffStartMonthGeometricsValue, geometricsMonthTariffId, countScannerMonthGeometricsTariff);
+            chargeMethods.setPaidTillAndTariffStartScannerForFleet(fleetId, paidTillForAllTariffValue, setTariffStartOneYear, oneYearGeometricsTariffId, countScannerOneYearGeometricsTariff);
+            chargeMethods.setPaidTillAndTariffStartScannerForFleet(fleetId, paidTillForAllTariffValue, setTariffStartTwoYears, twoYearsGeometricsTariffId, countScannerTwoYearsGeometricsTariff);
+            chargeMethods.setOrderDateByTariffId(fleetString, fleetId, tariffStartMonthGeometricsValue, geometricsMonthTariffId, countScannerMonthGeometricsTariff);
 
 
 //  SET PAID TILL FOR USER FINANCES
@@ -88,15 +75,9 @@ public class ChargeDefaultersTest extends ParentTestWithoutWebDriver {
             checkAC("DateTime dues are not correct", chargeMethods.checkDateTimeDue(carrierIdString, fleetId, timeRunCron), true);
 
             double sumDeactivatedScannerMonthIOSXTariff = chargeMethods.sumDeactivatedScannerMonthToMonthTariff(fleetString, fleetId, countDeactivatedScannerMonthIOSXTariff);
-            double sumIOSXCharge = chargeMethods.sumCharge(
-                    countScannerMonthIOSXTariff + countScannerMonthIOSXChargeReturned,
-                    countScannerOneYearIOSXTariff + countScannerOneYearIOSXChargeReturned,
-                    countScannerTwoYearsIOSXTariff + countScannerTwoYearIOSXChargeReturned, "IOSX");
-            double sumGeometricsCharge = chargeMethods.sumCharge(
-                    countScannerMonthGeometricsTariff + countGeometricsMonthChargeReturnedScanner,
-                    countScannerOneYearGeometricsTariff + countGeometricsOneYearChargeReturnedScanner,
-                    countScannerTwoYearsGeometricsTariff + countGeometricsTwoYearChargeReturnedScanner, "Geometrics");
-            System.out.println();
+            double sumIOSXCharge = chargeMethods.sumCharge(countScannerMonthIOSXTariff, countScannerOneYearIOSXTariff, countScannerTwoYearsIOSXTariff, "IOSX");
+            double sumGeometricsCharge = chargeMethods.sumCharge(countScannerMonthGeometricsTariff, countScannerOneYearGeometricsTariff, countScannerTwoYearsGeometricsTariff, "Geometrics");
+
             checkAC("Charge due is not correct", chargeMethods.compareDueCharge(carrierIdString, fleetId, sumIOSXCharge + sumDeactivatedScannerMonthIOSXTariff + sumGeometricsCharge, timeRunCron), true);
 
             checkAC("Fleet is not in defaulters", utilsForDB.checkFleetInDefaulters(fleetId), true);
@@ -144,49 +125,35 @@ public class ChargeDefaultersTest extends ParentTestWithoutWebDriver {
             int countScannerOneYearIOSXTariff = utilsForDB.countChargeScannersByTariff(userIdString, soloId, oneYearIOSXTariffId);
             int countScannerTwoYearsIOSXTariff = utilsForDB.countChargeScannersByTariff(userIdString, soloId, twoYearsIOSXTariffId);
 
-            int countScannerMonthIOSXChargeReturned = utilsForDB.countChargeReturnedScannerByTariff(userIdString, soloId, IOSXMonthTariffId);
-            int countScannerOneYearIOSXChargeReturned = utilsForDB.countChargeReturnedScannerByTariff(userIdString, soloId, oneYearIOSXTariffId);
-            int countScannerTwoYearIOSXChargeReturned = utilsForDB.countChargeReturnedScannerByTariff(userIdString, soloId, twoYearsIOSXTariffId);
-
 //   COUNT GEOMETRICS TARIFF
             int countScannerMonthGeometricsTariff = utilsForDB.countChargeScannersByTariff(userIdString, soloId, geometricsMonthTariffId);
             int countScannerOneYearGeometricsTariff = utilsForDB.countChargeScannersByTariff(userIdString, soloId, oneYearGeometricsTariffId);
             int countScannerTwoYearsGeometricsTariff = utilsForDB.countChargeScannersByTariff(userIdString, soloId, twoYearsGeometricsTariffId);
-            int countGeometricsMonthChargeReturnedScanner = utilsForDB.countChargeReturnedScannerByTariff(userIdString, soloId, geometricsMonthTariffId);
-            int countGeometricsOneYearChargeReturnedScanner = utilsForDB.countChargeReturnedScannerByTariff(userIdString, soloId, oneYearGeometricsTariffId);
-            int countGeometricsTwoYearChargeReturnedScanner = utilsForDB.countChargeReturnedScannerByTariff(userIdString, soloId, twoYearsGeometricsTariffId);
 
+            String paidTillForAllTariffValue = chargeMethods.paidTillForAllTariff();
+            String tariffStartMonthIOSXValue = chargeMethods.tariffStartForMonthToMonth(countMonthForTariffStartMonthIOSX, 3);
+            String tariffStartMonthGeometricsValue = chargeMethods.tariffStartForMonthToMonth(countMonthForTariffStartMonthGeometrics, 5);
 
-
-            String setPaidTillForAllTariff = chargeMethods.paidTillForAllTariff();
-
-            String setTariffStartMonthIOSX = chargeMethods.tariffStartForMonthToMonth(countMonthForTariffStartMonthIOSX, 5);
-            String setTariffStartMonthGeometrics = chargeMethods.tariffStartForMonthToMonth(countMonthForTariffStartMonthGeometrics, 5);
-
-            String setTariffStartOneYear = chargeMethods.tariffStartForOneYear(1);
-            String setTariffStartTwoYears = chargeMethods.tariffStartForTwoYears(2);
+            String tariffStartOneYearValue = chargeMethods.tariffStartForOneYear(1);
+            String tariffStartTwoYearsValue = chargeMethods.tariffStartForTwoYears(2);
 
             checkAC("No all tariffs are presented in eld scanners",
-                    chargeMethods.checkIfTariffPresent(countScannerMonthIOSXTariff, countScannerOneYearIOSXTariff, countScannerTwoYearsIOSXTariff,
-                            countScannerMonthGeometricsTariff, countScannerOneYearGeometricsTariff, countScannerTwoYearsGeometricsTariff), true);
+                    chargeMethods.checkIfTariffPresent(countScannerMonthIOSXTariff, countScannerOneYearIOSXTariff, countScannerTwoYearsIOSXTariff, countScannerMonthGeometricsTariff, countScannerOneYearGeometricsTariff, countScannerTwoYearsGeometricsTariff), true);
 
-            chargeMethods.informationOfDeactivatedAndReturnedScanners(countDeactivatedScannerMonthIOSXTariff, countScannerMonthIOSXChargeReturned, countScannerOneYearIOSXChargeReturned, countScannerTwoYearIOSXChargeReturned,
-                    countGeometricsMonthChargeReturnedScanner, countGeometricsOneYearChargeReturnedScanner, countGeometricsTwoYearChargeReturnedScanner);
 
 //  SET PAID TILL AND ORDER DATE FOR IOSX TARIFF
-
-            utilsForDB.setPaidTillAndTariffStartScannerForSolo(soloId, setPaidTillForAllTariff, setTariffStartMonthIOSX, IOSXMonthTariffId);
-            utilsForDB.setOrderDateByTariffId(userIdString, soloId, setTariffStartMonthIOSX, IOSXMonthTariffId);
-            utilsForDB.setPaidTillAndTariffStartScannerForSolo(soloId, setPaidTillForAllTariff, setTariffStartOneYear, oneYearIOSXTariffId);
-            utilsForDB.setPaidTillAndTariffStartScannerForSolo(soloId, setPaidTillForAllTariff, setTariffStartTwoYears, twoYearsIOSXTariffId);
-
+            chargeMethods.setPaidTillAndTariffStartScannerForSolo(soloId, paidTillForAllTariffValue, tariffStartMonthIOSXValue,IOSXMonthTariffId, countScannerMonthIOSXTariff);
+            chargeMethods.setPaidTillAndTariffStartScannerForSolo(soloId, paidTillForAllTariffValue, tariffStartOneYearValue,oneYearIOSXTariffId, countScannerOneYearIOSXTariff);
+            chargeMethods.setPaidTillAndTariffStartScannerForSolo(soloId, paidTillForAllTariffValue, tariffStartTwoYearsValue,twoYearsIOSXTariffId, countScannerTwoYearsIOSXTariff);
+            chargeMethods.setOrderDateByTariffId(userIdString, soloId, tariffStartMonthIOSXValue, IOSXMonthTariffId, countScannerMonthIOSXTariff);
 
 //  SET PAID TILL AND ORDER DATE FOR GEOMETRICS TARIFF
 
-            utilsForDB.setPaidTillAndTariffStartScannerForSolo(soloId, setPaidTillForAllTariff, setTariffStartMonthGeometrics, geometricsMonthTariffId);
-            utilsForDB.setOrderDateByTariffId(userIdString, soloId, setTariffStartMonthGeometrics, geometricsMonthTariffId);
-            utilsForDB.setPaidTillAndTariffStartScannerForSolo(soloId, setPaidTillForAllTariff, setTariffStartOneYear, oneYearGeometricsTariffId);
-            utilsForDB.setPaidTillAndTariffStartScannerForSolo(soloId, setPaidTillForAllTariff, setTariffStartTwoYears, twoYearsGeometricsTariffId);
+            chargeMethods.setPaidTillAndTariffStartScannerForSolo(soloId, paidTillForAllTariffValue, tariffStartMonthGeometricsValue,geometricsMonthTariffId, countScannerMonthGeometricsTariff);
+            chargeMethods.setPaidTillAndTariffStartScannerForSolo(soloId, paidTillForAllTariffValue, tariffStartOneYearValue,oneYearGeometricsTariffId, countScannerOneYearGeometricsTariff);
+            chargeMethods.setPaidTillAndTariffStartScannerForSolo(soloId, paidTillForAllTariffValue, tariffStartTwoYearsValue,twoYearsGeometricsTariffId, countScannerTwoYearsGeometricsTariff);
+            chargeMethods.setOrderDateByTariffId(userIdString, soloId, tariffStartMonthGeometricsValue, geometricsMonthTariffId, countScannerMonthGeometricsTariff);
+
 
 
 //  SET PAID TILL FOR USER FINANCES
@@ -196,19 +163,10 @@ public class ChargeDefaultersTest extends ParentTestWithoutWebDriver {
             checkAC("DateTime dues are not correct", chargeMethods.checkDateTimeDue(userIdString, soloId, timeRunCron), true);
 
             double sumDeactivatedScannerMonthIOSXTariff = chargeMethods.sumDeactivatedScannerMonthToMonthTariff(userIdString, soloId, countDeactivatedScannerMonthIOSXTariff);
-            double sumIOSXCharge = chargeMethods.sumCharge(
-                    countScannerMonthIOSXTariff + countScannerMonthIOSXChargeReturned,
-                    countScannerOneYearIOSXTariff + countScannerOneYearIOSXChargeReturned,
-                    countScannerTwoYearsIOSXTariff + countScannerTwoYearIOSXChargeReturned, "IOSX");
-            double sumGeometricsCharge = chargeMethods.sumCharge(
-                    countScannerMonthGeometricsTariff + countGeometricsMonthChargeReturnedScanner,
-                    countScannerOneYearGeometricsTariff + countGeometricsOneYearChargeReturnedScanner,
-                    countScannerTwoYearsGeometricsTariff + countGeometricsTwoYearChargeReturnedScanner, "Geometrics");
-
+            double sumIOSXCharge = chargeMethods.sumCharge(countScannerMonthIOSXTariff, countScannerOneYearIOSXTariff, countScannerTwoYearsIOSXTariff, "IOSX");
+            double sumGeometricsCharge = chargeMethods.sumCharge(countScannerMonthGeometricsTariff, countScannerOneYearGeometricsTariff, countScannerTwoYearsGeometricsTariff, "Geometrics");
 
             checkAC("Charge due is not correct", chargeMethods.compareDueCharge(userIdString, soloId, sumIOSXCharge + sumDeactivatedScannerMonthIOSXTariff + sumGeometricsCharge, timeRunCron), true);
-
-
             checkAC("Solo is not in defaulters", utilsForDB.checkSoloInDefaulters(soloId), true);
 
             chargeMethods.setDaysDefaulterSolo(soloId, 10);

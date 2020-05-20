@@ -95,7 +95,8 @@ public class DashboardFPage extends ParentFPage {
     }
     public void goToSafetyPage(){
         waitABit(2);
-        actionsWithOurElements.clickOnElement(pageSafety);}
+        actionsWithOurElements.clickOnElement(pageSafety);
+    logger.info(" pageSafety");}
     public void goToEzChatPage(){
         waitABit(2);
         actionsWithOurElements.clickOnElement(pageEzChat);}

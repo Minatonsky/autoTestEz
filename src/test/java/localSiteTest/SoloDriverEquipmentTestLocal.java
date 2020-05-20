@@ -83,7 +83,7 @@ public class SoloDriverEquipmentTestLocal extends ParentTest {
 
         String equipId = utilsForDB.getEquipmentId("userId", userId, unitName);
 
-        List<ArrayList> tempDataSettingsList = utilsForDB.getDataEquipment("userId", userId, equipId);
+        List<ArrayList> tempDataSettingsList = utilsForDB.getDataEquipment(equipId);
         Map<String, Object> tempDataSettingsMap = listArrayToMap(tempDataSettingsList);
 
         checkAC("TruckTrailer failed", tempDataSettingsMap.get("truckTrailer").equals("0"), true);
@@ -172,7 +172,7 @@ public class SoloDriverEquipmentTestLocal extends ParentTest {
         waitABit(5);
         String equipId = utilsForDB.getEquipmentId("userId", userId, unitName);
 
-        List<ArrayList> tempDataSettingsList = utilsForDB.getDataEquipment("userId", userId, equipId);
+        List<ArrayList> tempDataSettingsList = utilsForDB.getDataEquipment(equipId);
         Map<String, Object> tempDataSettingsMap = listArrayToMap(tempDataSettingsList);
 
         checkAC("TruckTrailer failed", tempDataSettingsMap.get("truckTrailer").equals("1"), true);
@@ -227,10 +227,10 @@ public class SoloDriverEquipmentTestLocal extends ParentTest {
         String proRateDueDate = getDateRandom();
         String expDateDate = getDateRandom();
 
-        String idTruckRandom = utilsForDB.getRandomEquipmentId(userId, "0");
+        String idTruckRandom = utilsForDB.getRandomEquipmentId("userId", userId, "0");
         String notes = RandomStringUtils.randomAlphanumeric(15) + " " + RandomStringUtils.randomAlphanumeric(15) + " " + RandomStringUtils.randomAlphanumeric(10) + ".";
 
-        List<ArrayList> tempDataList = utilsForDB.getDataEquipment("userId", userId, idTruckRandom);
+        List<ArrayList> tempDataList = utilsForDB.getDataEquipment(idTruckRandom);
         Map<String, Object> tempDataEquipmentBeforeTestMap = listArrayToMap(tempDataList);
 
         String isActive = tempDataEquipmentBeforeTestMap.get("isActive").toString();
@@ -240,7 +240,7 @@ public class SoloDriverEquipmentTestLocal extends ParentTest {
         dashboardLocalSitePage.goToEquipmentPage();
         equipmentLocalSitePage.enterOnEquipmentPlaceHolder(tempDataEquipmentBeforeTestMap.get("Name").toString());
         waitABit(3);
-        equipmentLocalSitePage.clickOnEquipmentOnRow();
+//        equipmentLocalSitePage.clickOnEquipmentOnRow();
         waitABit(2);
         equipmentLocalSitePage.clickOnEditButton();
         waitABit(2);
@@ -281,7 +281,7 @@ public class SoloDriverEquipmentTestLocal extends ParentTest {
         equipmentLocalSitePage.clickOnSave();
         waitABit(5);
 
-        List<ArrayList> tempDataListUpdatedTruck = utilsForDB.getDataEquipment("userId", userId, idTruck);
+        List<ArrayList> tempDataListUpdatedTruck = utilsForDB.getDataEquipment(idTruck);
         Map<String, Object> tempDataEquipmentMap = listArrayToMap(tempDataListUpdatedTruck);
 
         checkAC("TruckTrailer failed", tempDataEquipmentMap.get("truckTrailer").equals("0"), true);
@@ -339,10 +339,10 @@ public class SoloDriverEquipmentTestLocal extends ParentTest {
         String proRateDueDate = getDateRandom();
         String expDateDate = getDateRandom();
 
-        String idTrailerRandom = utilsForDB.getRandomEquipmentId(userId, "1");
+        String idTrailerRandom = utilsForDB.getRandomEquipmentId("userId", userId, "1");
         String notes = RandomStringUtils.randomAlphanumeric(15) + " " + RandomStringUtils.randomAlphanumeric(15) + " " + RandomStringUtils.randomAlphanumeric(10) + ".";
 
-        List<ArrayList> tempDataList = utilsForDB.getDataEquipment("userId", userId, idTrailerRandom);
+        List<ArrayList> tempDataList = utilsForDB.getDataEquipment(idTrailerRandom);
         Map<String, Object> tempDataEquipmentBeforeTestMap = listArrayToMap(tempDataList);
         String isActive = tempDataEquipmentBeforeTestMap.get("isActive").toString();
 
@@ -350,7 +350,7 @@ public class SoloDriverEquipmentTestLocal extends ParentTest {
         dashboardLocalSitePage.goToEquipmentPage();
         equipmentLocalSitePage.enterOnEquipmentPlaceHolder(tempDataEquipmentBeforeTestMap.get("Name").toString());
         waitABit(3);
-        equipmentLocalSitePage.clickOnEquipmentOnRow();
+//        equipmentLocalSitePage.clickOnEquipmentOnRow();
         waitABit(2);
         equipmentLocalSitePage.clickOnEditButton();
         waitABit(2);
@@ -391,7 +391,7 @@ public class SoloDriverEquipmentTestLocal extends ParentTest {
         equipmentLocalSitePage.clickOnSave();
         waitABit(5);
 
-        List<ArrayList> tempDataListUpdatedTruck = utilsForDB.getDataEquipment("userId", userId, idTrailer);
+        List<ArrayList> tempDataListUpdatedTruck = utilsForDB.getDataEquipment(idTrailer);
         Map<String, Object> tempDataEquipmentMap = listArrayToMap(tempDataListUpdatedTruck);
 
         checkAC("TruckTrailer failed", tempDataEquipmentMap.get("truckTrailer").equals("1"), true);

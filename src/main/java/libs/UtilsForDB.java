@@ -424,10 +424,9 @@ public class UtilsForDB {
 
 
     @Step
-    public List<ArrayList> getDataEquipment(String carrierUser, String userId, String idEquipment) throws SQLException{
-        List<ArrayList> tempData = dBMySQL.selectTable("SELECT e.id, e.truckTrailer, e.Notes, e.Name, e.Owner, e.Year, e.`Type`, e.TireSize, e.Fuel, e.Axel, e.Color, e.Make, e.Model, e.VIN, e.GrossWeight, " +
-                "e.UnlandWeight, e.Plate, e.State, e.NYCert, e.InspectionDue, e.`90DayExp`, e.ProRateExp, e.ExpDate, e.isActive, e.Length FROM equipment e WHERE " + carrierUser + " = " + userId + " and e.id = '" + idEquipment + "' ORDER BY e.id DESC LIMIT 1;");
-        return tempData;
+    public List<ArrayList> getDataEquipment(String idEquipment) throws SQLException{
+        List<ArrayList> tempDataEq = dBMySQL.selectTable("SELECT id, truckTrailer, Notes, Name, Owner, Year, Type, TireSize, Fuel, Axel, Color, Make, Model, VIN, GrossWeight, UnlandWeight, Plate, State, NYCert, InspectionDue, ProRateExp, isActive, Length, 90DayExp, ExpDate FROM equipment e WHERE e.id = '" + idEquipment + "' ORDER BY e.id DESC LIMIT 1;");
+        return tempDataEq;
     }
     @Step
     public String getEquipmentId(String carrierUser, String soloId, String equipName) throws SQLException{
@@ -436,16 +435,11 @@ public class UtilsForDB {
     }
 
     @Step
-    public String getRandomEquipmentId(String soloId, String truckTrailer) throws SQLException{
-        String tempCurrentDue = dBMySQL.selectValue("SELECT e.id FROM equipment e WHERE e.userId = " + soloId + " AND e.truckTrailer = " + truckTrailer + "  ORDER BY RAND()LIMIT 1;");
+    public String getRandomEquipmentId(String carrierUserId, String soloId, String truckTrailer) throws SQLException{
+        String tempCurrentDue = dBMySQL.selectValue("SELECT e.id FROM equipment e WHERE " + carrierUserId + " = " + soloId + " AND e.truckTrailer = " + truckTrailer + "  ORDER BY RAND()LIMIT 1;");
         return tempCurrentDue;
     }
 
-    @Step
-    public String getRandomEquipmentIdCarrier(String carrierId, String truckTrailer) throws SQLException{
-        String tempCurrentDue = dBMySQL.selectValue("SELECT e.id FROM equipment e WHERE e.carrierId = " + carrierId + " AND e.truckTrailer = " + truckTrailer + "  ORDER BY RAND()LIMIT 1;");
-        return tempCurrentDue;
-    }
     @Step
     public String getEquipmentName(String equipmentId) throws SQLException{
         String tempCurrentDue = dBMySQL.selectValue("SELECT e.Name FROM equipment e WHERE e.id = " + equipmentId + " ;");

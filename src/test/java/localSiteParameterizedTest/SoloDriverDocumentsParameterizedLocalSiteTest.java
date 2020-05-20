@@ -61,7 +61,7 @@ public class SoloDriverDocumentsParameterizedLocalSiteTest extends ParentTest {
         String notesTextRV = RandomStringUtils.randomAlphanumeric(1, 10);
         String documentDateRV = getDateFormat();
         String userId = utilsForDB.getUserIdByEmail(login);
-        String truckId = utilsForDB.getRandomEquipmentId(userId, "0");
+        String truckId = utilsForDB.getRandomEquipmentId("userId", userId, "0");
 
         loginLocalSitePage.userValidLogIn(login, pass);
         dashboardLocalSitePage.goToDocumentPage();
@@ -110,7 +110,7 @@ public class SoloDriverDocumentsParameterizedLocalSiteTest extends ParentTest {
         String notesTextRV = RandomStringUtils.randomAlphanumeric(1, 10);
         String documentDateRV = getDateFormat();
         String userId = utilsForDB.getUserIdByEmail(login);
-        String truckId = utilsForDB.getRandomEquipmentId(userId, "0");
+        String truckId = utilsForDB.getRandomEquipmentId("userId", userId, "0");
 
         loginLocalSitePage.userValidLogIn(login, pass);
         dashboardLocalSitePage.goToDocumentPage();
@@ -151,7 +151,7 @@ public class SoloDriverDocumentsParameterizedLocalSiteTest extends ParentTest {
         String notesTextRV = RandomStringUtils.randomAlphanumeric(1, 10);
         String documentDateRV = getDateFormat();
         String userId = utilsForDB.getUserIdByEmail(login);
-        String truckId = utilsForDB.getRandomEquipmentId(userId, "0");
+        String truckId = utilsForDB.getRandomEquipmentId("userId", userId, "0");
 
         loginLocalSitePage.userValidLogIn(login, pass);
         dashboardLocalSitePage.goToDocumentPage();
@@ -190,7 +190,7 @@ public class SoloDriverDocumentsParameterizedLocalSiteTest extends ParentTest {
         String notesTextRV = RandomStringUtils.randomAlphanumeric(1, 10);
         String documentDateRV = getDateFormat();
         String userId = utilsForDB.getUserIdByEmail(login);
-        String truckId = utilsForDB.getRandomEquipmentId(userId, "0");
+        String truckId = utilsForDB.getRandomEquipmentId("userId", userId, "0");
 
         loginLocalSitePage.userValidLogIn(login, pass);
         dashboardLocalSitePage.goToDocumentPage();
@@ -229,7 +229,7 @@ public class SoloDriverDocumentsParameterizedLocalSiteTest extends ParentTest {
         String notesTextRV = RandomStringUtils.randomAlphanumeric(1, 10);
         String documentDateRV = getDateFormat();
         String userId = utilsForDB.getUserIdByEmail(login);
-        String truckId = utilsForDB.getRandomEquipmentId(userId, "0");
+        String truckId = utilsForDB.getRandomEquipmentId("userId", userId, "0");
 
         loginLocalSitePage.userValidLogIn(login, pass);
         dashboardLocalSitePage.goToDocumentPage();
@@ -271,7 +271,7 @@ public class SoloDriverDocumentsParameterizedLocalSiteTest extends ParentTest {
         String notesTextRV = RandomStringUtils.randomAlphanumeric(1, 10);
         String documentDateRV = getDateFormat();
         String userId = utilsForDB.getUserIdByEmail(login);
-        String trailerId = utilsForDB.getRandomEquipmentId(userId, "1");
+        String trailerId = utilsForDB.getRandomEquipmentId("userId", userId, "1");
 
         loginLocalSitePage.userValidLogIn(login, pass);
         dashboardLocalSitePage.goToDocumentPage();
@@ -313,7 +313,7 @@ public class SoloDriverDocumentsParameterizedLocalSiteTest extends ParentTest {
         String notesTextRV = RandomStringUtils.randomAlphanumeric(1, 10);
         String documentDateRV = getDateFormat();
         String userId = utilsForDB.getUserIdByEmail(login);
-        String truckId = utilsForDB.getRandomEquipmentId(userId, "0");
+        String truckId = utilsForDB.getRandomEquipmentId("userId", userId, "0");
 
         loginLocalSitePage.userValidLogIn(login, pass);
         dashboardLocalSitePage.goToDocumentPage();
@@ -355,8 +355,8 @@ public class SoloDriverDocumentsParameterizedLocalSiteTest extends ParentTest {
         String notesTextRV = RandomStringUtils.randomAlphanumeric(1, 10);
         String documentDateRV = getDateFormat();
         String userId = utilsForDB.getUserIdByEmail(login);
-        String truckId = utilsForDB.getRandomEquipmentId(userId, "0");
-        String trailerId = utilsForDB.getRandomEquipmentId(userId, "1");
+        String truckId = utilsForDB.getRandomEquipmentId("userId", userId, "0");
+        String trailerId = utilsForDB.getRandomEquipmentId("userId", userId, "1");
 
         loginLocalSitePage.userValidLogIn(login, pass);
         dashboardLocalSitePage.goToDocumentPage();
@@ -396,7 +396,7 @@ public class SoloDriverDocumentsParameterizedLocalSiteTest extends ParentTest {
         String notesTextRV = RandomStringUtils.randomAlphanumeric(1, 10);
         String documentDateRV = getDateFormat();
         String userId = utilsForDB.getUserIdByEmail(login);
-        String truckId = utilsForDB.getRandomEquipmentId(userId, "0");
+        String truckId = utilsForDB.getRandomEquipmentId("userId", userId, "0");
 
         loginLocalSitePage.userValidLogIn(login, pass);
         dashboardLocalSitePage.goToDocumentPage();
@@ -432,7 +432,7 @@ public class SoloDriverDocumentsParameterizedLocalSiteTest extends ParentTest {
         String notesTextRV = RandomStringUtils.randomAlphanumeric(1, 10);
         String documentDateRV = getDateFormat();
         String userId = utilsForDB.getUserIdByEmail(login);
-        String truckId = utilsForDB.getRandomEquipmentId(userId, "0");
+        String truckId = utilsForDB.getRandomEquipmentId("userId", userId, "0");
 
         loginLocalSitePage.userValidLogIn(login, pass);
         dashboardLocalSitePage.goToDocumentPage();
@@ -468,7 +468,7 @@ public class SoloDriverDocumentsParameterizedLocalSiteTest extends ParentTest {
         String notesTextRV = RandomStringUtils.randomAlphanumeric(1, 10);
         String documentDateRV = getDateFormat();
         String userId = utilsForDB.getUserIdByEmail(login);
-        String truckId = utilsForDB.getRandomEquipmentId(userId, "0");
+        String truckId = utilsForDB.getRandomEquipmentId("userId", userId, "0");
 
         loginLocalSitePage.userValidLogIn(login, pass);
         dashboardLocalSitePage.goToDocumentPage();
@@ -504,7 +504,7 @@ public class SoloDriverDocumentsParameterizedLocalSiteTest extends ParentTest {
         String notesTextRV = RandomStringUtils.randomAlphanumeric(1, 10);
         String documentDateRV = getDateFormat();
         String userId = utilsForDB.getUserIdByEmail(login);
-        String trailerId = utilsForDB.getRandomEquipmentId(userId, "1");
+        String trailerId = utilsForDB.getRandomEquipmentId("userId", userId, "1");
 
         loginLocalSitePage.userValidLogIn(login, pass);
         dashboardLocalSitePage.goToDocumentPage();
@@ -542,7 +542,7 @@ public class SoloDriverDocumentsParameterizedLocalSiteTest extends ParentTest {
         String notesTextRV = RandomStringUtils.randomAlphanumeric(1, 10);
         String documentDateRV = getDateFormat();
         String userId = utilsForDB.getUserIdByEmail(login);
-        String truckId = utilsForDB.getRandomEquipmentId(userId, "0");
+        String truckId = utilsForDB.getRandomEquipmentId("userId", userId, "0");
 
         loginLocalSitePage.userValidLogIn(login, pass);
         dashboardLocalSitePage.goToDocumentPage();
@@ -581,7 +581,7 @@ public class SoloDriverDocumentsParameterizedLocalSiteTest extends ParentTest {
         String notesTextRV = RandomStringUtils.randomAlphanumeric(1, 10);
         String documentDateRV = getDateFormat();
         String userId = utilsForDB.getUserIdByEmail(login);
-        String truckId = utilsForDB.getRandomEquipmentId(userId, "0");
+        String truckId = utilsForDB.getRandomEquipmentId("userId", userId, "0");
 
         loginLocalSitePage.userValidLogIn(login, pass);
         dashboardLocalSitePage.goToDocumentPage();

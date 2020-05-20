@@ -5,96 +5,98 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+import static libs.Utils.waitABit;
+
 public class EquipmentLocalSitePage extends ParentLocalSitePage {
     public EquipmentLocalSitePage(WebDriver webDriver, UtilsForDB utilsForDB) {
         super(webDriver, "/dash/equipment/", utilsForDB);
     }
 
-    @FindBy(xpath = "//button[text() = 'Add Truck']")
+    @FindBy(xpath = ".//*[text() = 'ADD ']")
+    private WebElement addButton;
+
+    @FindBy(xpath = ".//button[text() = 'Unit']")
     private WebElement addTruckButton;
 
-    @FindBy(xpath = "//button[text() = 'Add Trailer']")
+    @FindBy(xpath = "//button[text() = 'Trailer']")
     private WebElement addTrailerButton;
 
 //GENERAL
-    @FindBy(name = "name")
+    @FindBy(xpath = ".//*[@class='form-container__inputs form-container__form-section']//..//*[text()='Unit']//../input")
     private WebElement unitInput;
 
-    @FindBy(name = "owner")
+    @FindBy(xpath = ".//*[@class='form-container__inputs form-container__form-section']//..//*[text()='Owner']//../input")
     private WebElement ownerInput;
 
-    @FindBy(name = "year")
+    @FindBy(xpath = ".//*[@class='form-container__inputs form-container__form-section']//..//*[text()='Year']//../input")
     private WebElement yearInput;
 
-    @FindBy(name = "type")
-    private WebElement typeValue;
+    @FindBy(xpath = ".//*[@class='popup-container__body']//..//input[@placeholder='Type']")
+    private WebElement typeMenu;
 
-    @FindBy(name = "vin")
+    @FindBy(xpath = ".//*[@class='form-container__inputs form-container__form-section']//..//*[text()='VIN']//../input")
     private WebElement vinInput;
 
-    @FindBy(name = "plate")
+    @FindBy(xpath = ".//*[@class='form-container__inputs form-container__form-section']//..//*[text()='Plate']//../input")
     private WebElement plateInput;
 
-    @FindBy(name = "state")
+    @FindBy(xpath = ".//*[@placeholder='State']")
     private WebElement stateValue;
 
 //Parameters
-    @FindBy(name = "tire_size")
+    @FindBy(xpath = ".//*[text()='Tire Size']//../input")
     private WebElement tire_sizeInput;
 
-    @FindBy(name = "length")
+    @FindBy(xpath = ".//*[text()='Length']//../input")
     private WebElement lengthInput;
 
-    @FindBy(name = "fuel")
+    @FindBy(xpath = ".//*[contains(text(),'Gasoline')]")
     private WebElement fuelInput;
 
-    @FindBy(name = "axel")
+    @FindBy(xpath = ".//*[@class='form-container__inputs form-container__form-section']//..//*[text()='Axel']//../input")
     private WebElement axelInput;
 
-    @FindBy(name = "make")
+    @FindBy(xpath = ".//*[@class='form-container__inputs form-container__form-section']//..//*[text()='Make']//../input")
     private WebElement makeInput;
 
-    @FindBy(name = "model")
+    @FindBy(xpath = ".//*[@class='form-container__inputs form-container__form-section']//..//*[text()='Model']//../input")
     private WebElement modelInput;
 
-    @FindBy(name = "gross_weight")
+    @FindBy(xpath = ".//*[text()='Gross Weight']//../input")
     private WebElement gross_weightInput;
 
-    @FindBy(name = "unland_weight")
+    @FindBy(xpath = ".//*[text()='Unland Weight']//../input")
     private WebElement unland_weightInput;
 
 //Others
-    @FindBy(name = "color")
+    @FindBy(xpath = ".//*[@class='form-container__inputs form-container__form-section']//..//*[text()='Color']//../input")
     private WebElement colorInput;
 
-    @FindBy(name = "ny_cert")
+    @FindBy(xpath = ".//*[@class='form-container__inputs form-container__form-section']//..//*[text()='NY Certificate']//../input")
     private WebElement ny_certInput;
 
-    @FindBy(xpath = ".//*[@name='inspection_due']//..//*[@type='text']")
+    @FindBy(xpath = ".//*[text()='Inspection Due']//..//input[@name='date']")
     private WebElement inspection_dueInput;
 
-    @FindBy(xpath = ".//*[@name='ninety_day_exp']//..//*[@type='text']")
+    @FindBy(xpath = ".//*[text()='90 Day Exp']//..//input[@name='date']")
     private WebElement ninety_day_expInput;
 
-    @FindBy(xpath = ".//*[@name='pro_rate_exp']//..//*[@type='text']")
+    @FindBy(xpath = ".//*[text()='Pro Rate Exp']//..//input[@name='date']")
     private WebElement pro_rate_expInput;
 
-    @FindBy(xpath = ".//*[@name='exp_date']//..//*[@type='text']")
+    @FindBy(xpath = ".//*[@class='popup-container']//*[text()='Exp Date']//..//input[@name='date']")
     private WebElement exp_dateInput;
 
-    @FindBy(id = "checkboxTruckState")
+    @FindBy(xpath = ".//input[@type='checkbox']")
     private WebElement checkboxTruckState;
 
-    @FindBy(xpath = ".//button[@type='submit']")
+    @FindBy(xpath = ".//button[text()='Add']")
     private WebElement submitButton;
 
-    @FindBy(xpath = ".//*[@placeholder='UNIT']")
+    @FindBy(xpath = ".//input[@name='name']")
     private WebElement truckNameHolder;
 
-    @FindBy(xpath = ".//*[@class='btn-link__text']")
-    private WebElement equipmentInRow;
-
-    @FindBy(xpath = ".//*[text()='Edit ']")
+    @FindBy(xpath = ".//button[text()='Truck Settings ']")
     private WebElement editButton;
 
     @FindBy(xpath = ".//button[text()='Save']")
@@ -134,7 +136,7 @@ public class EquipmentLocalSitePage extends ParentLocalSitePage {
     private WebElement milesInput;
 
 
-
+    public void clickOnAddButton(){actionsWithOurElements.clickOnElement(addButton);}
     public void clickOnAddTruckButton(){actionsWithOurElements.clickOnElement(addTruckButton);}
     public void clickOnAddTrailerButton(){actionsWithOurElements.clickOnElement(addTrailerButton);}
     public String getVehicleIdText(){return vehicleId.getText();}
@@ -143,14 +145,30 @@ public class EquipmentLocalSitePage extends ParentLocalSitePage {
     public void enterUnitName(String unitName){actionsWithOurElements.enterTextToElement(unitInput, unitName);}
     public void enterOwner(String owner){actionsWithOurElements.enterTextToElement(ownerInput, owner);}
     public void enterYear(String year){actionsWithOurElements.enterTextToElement(yearInput, year);}
-    public void selectType(String type){actionsWithOurElements.selectValueInDropDown(typeValue, type);}
+
+    public void selectType(String type){
+        actionsWithOurElements.clickOnElement(typeMenu);
+        waitABit(2);
+        actionsWithOurElements.clickOnElement(".//li[@role='option']//../*[contains(text(),'" + type + "')]");
+        logger.info("Type is: " + type);
+    }
     public void enterVin(String vin){actionsWithOurElements.enterTextToElement(vinInput, vin);}
     public void enterPlate(String plate){actionsWithOurElements.enterTextToElement(plateInput, plate);}
-    public void selectState(String state){actionsWithOurElements.selectValueInDropDown(stateValue, state);}
+    public void selectState(String state){
+        actionsWithOurElements.clickOnElement(stateValue);
+        waitABit(2);
+        actionsWithOurElements.clickOnElement(".//li[@role='option']//../*[contains(text(),'" + state + "')]");
+        logger.info("State is: " + state);
+    }
 //    Parameters
     public void enterTireSize(String tireSize){actionsWithOurElements.enterTextToElement(tire_sizeInput, tireSize);}
     public void enterLength(String length){actionsWithOurElements.enterTextToElement(lengthInput, length);}
-    public void selectFuel(String fuel){actionsWithOurElements.selectValueInDropDown(fuelInput, fuel);}
+    public void selectFuel(String fuel){
+        actionsWithOurElements.clickOnElement(fuelInput);
+        waitABit(2);
+        actionsWithOurElements.clickOnElement(".//li[@role='option']//../*[contains(text(),'" + fuel + "')]");
+        logger.info("Fuel is: " + fuel);
+    }
     public void enterAxel(String axel){actionsWithOurElements.enterTextToElement(axelInput, axel);}
     public void enterMake(String make){actionsWithOurElements.enterTextToElement(makeInput, make);}
     public void enterModel(String model){actionsWithOurElements.enterTextToElement(modelInput, model);}
@@ -167,7 +185,7 @@ public class EquipmentLocalSitePage extends ParentLocalSitePage {
     public void clickOnSubmit(){actionsWithOurElements.clickOnElement(submitButton);}
 
     public void enterOnEquipmentPlaceHolder(String equipmentName){actionsWithOurElements.enterTextToElement(truckNameHolder, equipmentName);}
-    public void clickOnEquipmentOnRow(){actionsWithOurElements.clickOnElement(equipmentInRow);}
+    public void clickOnEquipmentOnRow(String name){actionsWithOurElements.clickOnElement(".//*[text()='" + name + "']");}
     public void clickOnEditButton(){actionsWithOurElements.clickOnElement(editButton);}
     public void clickOnSave(){actionsWithOurElements.clickOnElement(saveButton);}
     public void enterNote(String note){actionsWithOurElements.clearAndEnterTextToElement(textArea, note);}

@@ -48,7 +48,7 @@ public class CarrierUpDateDocumentsTest extends ParentTest {
         String reeferAmountRV = RandomStringUtils.randomAlphanumeric(1, 10);
         String reeferGallonsRV = RandomStringUtils.randomAlphanumeric(1, 10);
         String notesTextRV = RandomStringUtils.randomAlphanumeric(1, 10);
-        String truckId = utilsForDB.getRandomEquipmentIdCarrier(carrierId, "0");
+        String truckId = utilsForDB.getRandomEquipmentId("carrierId", carrierId, "0");
         String truckName = utilsForDB.getEquipmentName(truckId);
         String driverId = utilsForDB.getRandomDriverIdInFleet(carrierId);
         String driverName = utilsForDB.getDriverNameById(driverId);
@@ -113,7 +113,7 @@ public class CarrierUpDateDocumentsTest extends ParentTest {
         String notesTextRV = RandomStringUtils.randomAlphanumeric(1, 10);
 
         String userId = utilsForDB.getUserIdByEmail(login);
-        String truckId = utilsForDB.getRandomEquipmentIdCarrier(carrierId, "0");
+        String truckId = utilsForDB.getRandomEquipmentId("carrierId", carrierId, "0");
         String driverId = utilsForDB.getRandomDriverIdInFleet(carrierId);
         String driverName = utilsForDB.getDriverNameById(driverId);
         String truckName = utilsForDB.getEquipmentName(truckId);
@@ -167,7 +167,7 @@ public class CarrierUpDateDocumentsTest extends ParentTest {
         String scaleRV = RandomStringUtils.randomAlphanumeric(1, 10);
         String notesTextRV = RandomStringUtils.randomAlphanumeric(1, 10);
         String userId = utilsForDB.getUserIdByEmail(login);
-        String truckId = utilsForDB.getRandomEquipmentIdCarrier(carrierId, "0");
+        String truckId = utilsForDB.getRandomEquipmentId("carrierId", carrierId, "0");
         String driverId = utilsForDB.getRandomDriverIdInFleet(carrierId);
         String driverName = utilsForDB.getDriverNameById(driverId);
         String truckName = utilsForDB.getEquipmentName(truckId);
@@ -219,7 +219,7 @@ public class CarrierUpDateDocumentsTest extends ParentTest {
         String amountRV = RandomStringUtils.randomAlphanumeric(1, 10);
         String notesTextRV = RandomStringUtils.randomAlphanumeric(1, 10);
         String userId = utilsForDB.getUserIdByEmail(login);
-        String truckId = utilsForDB.getRandomEquipmentIdCarrier(carrierId, "0");
+        String truckId = utilsForDB.getRandomEquipmentId("carrierId", carrierId, "0");
         String driverId = utilsForDB.getRandomDriverIdInFleet(carrierId);
         String driverName = utilsForDB.getDriverNameById(driverId);
         String truckName = utilsForDB.getEquipmentName(truckId);
@@ -271,7 +271,7 @@ public class CarrierUpDateDocumentsTest extends ParentTest {
         String dealerRV = RandomStringUtils.randomAlphanumeric(1, 10);
         String notesTextRV = RandomStringUtils.randomAlphanumeric(1, 10);
         String userId = utilsForDB.getUserIdByEmail(login);
-        String truckId = utilsForDB.getRandomEquipmentIdCarrier(carrierId, "0");
+        String truckId = utilsForDB.getRandomEquipmentId("carrierId", carrierId, "0");
         String driverId = utilsForDB.getRandomDriverIdInFleet(carrierId);
         String driverName = utilsForDB.getDriverNameById(driverId);
         String truckName = utilsForDB.getEquipmentName(truckId);
@@ -326,7 +326,7 @@ public class CarrierUpDateDocumentsTest extends ParentTest {
         String dealerRV = RandomStringUtils.randomAlphanumeric(1, 10);
         String notesTextRV = RandomStringUtils.randomAlphanumeric(1, 10);
         String userId = utilsForDB.getUserIdByEmail(login);
-        String trailerId = utilsForDB.getRandomEquipmentIdCarrier(carrierId, "1");
+        String trailerId = utilsForDB.getRandomEquipmentId("carrierId", carrierId, "1");
         String driverId = utilsForDB.getRandomDriverIdInFleet(carrierId);
         String driverName = utilsForDB.getDriverNameById(driverId);
         String trailerName = utilsForDB.getEquipmentName(trailerId);
@@ -380,7 +380,7 @@ public class CarrierUpDateDocumentsTest extends ParentTest {
         String amountRV = RandomStringUtils.randomAlphanumeric(1, 10);
         String notesTextRV = RandomStringUtils.randomAlphanumeric(1, 10);
         String userId = utilsForDB.getUserIdByEmail(login);
-        String truckId = utilsForDB.getRandomEquipmentIdCarrier(carrierId, "0");
+        String truckId = utilsForDB.getRandomEquipmentId("carrierId", carrierId, "0");
         String driverId = utilsForDB.getRandomDriverIdInFleet(carrierId);
         String driverName = utilsForDB.getDriverNameById(driverId);
         String truckName = utilsForDB.getEquipmentName(truckId);
@@ -433,7 +433,7 @@ public class CarrierUpDateDocumentsTest extends ParentTest {
         String locationRV = RandomStringUtils.randomAlphanumeric(1, 10);
         String notesTextRV = RandomStringUtils.randomAlphanumeric(1, 10);
         String userId = utilsForDB.getUserIdByEmail(login);
-        String truckId = utilsForDB.getRandomEquipmentIdCarrier(carrierId, "0");
+        String truckId = utilsForDB.getRandomEquipmentId("carrierId", carrierId, "0");
         String driverId = utilsForDB.getRandomDriverIdInFleet(carrierId);
         String driverName = utilsForDB.getDriverNameById(driverId);
         String truckName = utilsForDB.getEquipmentName(truckId);
@@ -484,7 +484,7 @@ public class CarrierUpDateDocumentsTest extends ParentTest {
         String date = getDateAndTime("dd/MM/yyyy");
         String notesTextRV = RandomStringUtils.randomAlphanumeric(1, 10);
         String userId = utilsForDB.getUserIdByEmail(login);
-        String truckId = utilsForDB.getRandomEquipmentIdCarrier(carrierId, "0");
+        String truckId = utilsForDB.getRandomEquipmentId("carrierId", carrierId, "0");
         String driverId = utilsForDB.getRandomDriverIdInFleet(carrierId);
         String driverName = utilsForDB.getDriverNameById(driverId);
         String truckName = utilsForDB.getEquipmentName(truckId);
@@ -532,7 +532,7 @@ public class CarrierUpDateDocumentsTest extends ParentTest {
         String date = getDateAndTime("dd/MM/yyyy");
         String notesTextRV = RandomStringUtils.randomAlphanumeric(1, 10);
         String userId = utilsForDB.getUserIdByEmail(login);
-        String truckId = utilsForDB.getRandomEquipmentIdCarrier(carrierId, "0");
+        String truckId = utilsForDB.getRandomEquipmentId("carrierId", carrierId, "0");
         String driverId = utilsForDB.getRandomDriverIdInFleet(carrierId);
         String driverName = utilsForDB.getDriverNameById(driverId);
         String truckName = utilsForDB.getEquipmentName(truckId);
@@ -580,7 +580,7 @@ public class CarrierUpDateDocumentsTest extends ParentTest {
         String date = getDateAndTime("dd/MM/yyyy");
         String notesTextRV = RandomStringUtils.randomAlphanumeric(1, 10);
         String userId = utilsForDB.getUserIdByEmail(login);
-        String truckId = utilsForDB.getRandomEquipmentIdCarrier(carrierId, "0");
+        String truckId = utilsForDB.getRandomEquipmentId("carrierId", carrierId, "0");
         String driverId = utilsForDB.getRandomDriverIdInFleet(carrierId);
         String driverName = utilsForDB.getDriverNameById(driverId);
         String truckName = utilsForDB.getEquipmentName(truckId);
@@ -628,7 +628,7 @@ public class CarrierUpDateDocumentsTest extends ParentTest {
         String date = getDateAndTime("dd/MM/yyyy");
         String notesTextRV = RandomStringUtils.randomAlphanumeric(1, 10);
         String userId = utilsForDB.getUserIdByEmail(login);
-        String trailerId = utilsForDB.getRandomEquipmentIdCarrier(carrierId, "1");
+        String trailerId = utilsForDB.getRandomEquipmentId("carrierId", carrierId, "1");
         String driverId = utilsForDB.getRandomDriverIdInFleet(carrierId);
         String driverName = utilsForDB.getDriverNameById(driverId);
         String trailerName = utilsForDB.getEquipmentName(trailerId);
@@ -677,7 +677,7 @@ public class CarrierUpDateDocumentsTest extends ParentTest {
         String referenceRV = "Others" + getDateAndTimeFormated() + "";
         String notesTextRV = RandomStringUtils.randomAlphanumeric(1, 10);
         String userId = utilsForDB.getUserIdByEmail(login);
-        String truckId = utilsForDB.getRandomEquipmentIdCarrier(carrierId, "0");
+        String truckId = utilsForDB.getRandomEquipmentId("carrierId", carrierId, "0");
         String driverId = utilsForDB.getRandomDriverIdInFleet(carrierId);
         String driverName = utilsForDB.getDriverNameById(driverId);
         String truckName = utilsForDB.getEquipmentName(truckId);
@@ -729,7 +729,7 @@ public class CarrierUpDateDocumentsTest extends ParentTest {
         String deliveryDate = getCurrentDateTimePlusDays("yyyy-MM-dd", 10) + " " + "12:00:00";
         String notesTextRV = RandomStringUtils.randomAlphanumeric(1, 10);
         String userId = utilsForDB.getUserIdByEmail(login);
-        String truckId = utilsForDB.getRandomEquipmentIdCarrier(carrierId, "0");
+        String truckId = utilsForDB.getRandomEquipmentId("carrierId", carrierId, "0");
         String driverId = utilsForDB.getRandomDriverIdInFleet(carrierId);
         String driverName = utilsForDB.getDriverNameById(driverId);
         String truckName = utilsForDB.getEquipmentName(truckId);
