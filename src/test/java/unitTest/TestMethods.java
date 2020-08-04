@@ -15,7 +15,6 @@ import java.time.ZoneOffset;
 import java.time.format.DateTimeFormatter;
 import java.time.temporal.ChronoUnit;
 import java.time.temporal.TemporalAdjusters;
-import java.util.ArrayList;
 import java.util.List;
 
 import static libs.Utils.genRandomDataByRegex;
@@ -189,14 +188,19 @@ public class TestMethods extends ParentTestWithoutWebDriver {
         System.out.println(data);
 
     }
+
+    public boolean checkAlerts(String driverId, String date) throws SQLException {
+        List<String> tempDataSettingsList = utilsForDB.getAlertsData(driverId, date);
+        for (String element :
+                tempDataSettingsList ) {
+            if (element.equals("4") | element.equals("5") | element.equals("6") | element.equals("7") | element.equals("8") | element.equals("9") | element.equals("10")){
+                return true;
+            }
+        } return false;
+    }
     @Test
     public void test() throws SQLException {
-        List<ArrayList> tempDataSettingsList = utilsForDB.getDataEquipment("6883");
-
-        System.out.println(tempDataSettingsList);
+        System.out.println(checkAlerts("4483", "2020-06-02"));
     }
-
-
-
 }
 

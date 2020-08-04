@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="WorkSpace" />
         <module name="testdevEzlogz" />
+        <module name="autoTestEz" />
       </profile>
     </annotationProcessing>
   </component>

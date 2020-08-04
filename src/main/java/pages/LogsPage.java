@@ -1,9 +1,13 @@
 package pages;
 
 import libs.UtilsForDB;
+import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+
+import java.sql.SQLException;
+import java.util.List;
 
 import static libs.Utils.waitABit;
 
@@ -18,10 +22,10 @@ public class LogsPage extends ParentPage {
     private WebElement buttonInsertStatus;
 
     @FindBy(xpath = ".//input[@id='time_to']")
-    private WebElement timeTo;
+    private WebElement timeToInput;
 
     @FindBy(xpath = ".//input[@id='time_from']")
-    private WebElement timeFrom;
+    private WebElement timeFromInput;
 
     @FindBy(xpath = ".//input[@id='time_control']")
     private WebElement timeInput;
@@ -64,25 +68,90 @@ public class LogsPage extends ParentPage {
         waitABit(3);
     }
 
-    public void clickOnTimeTo(){
-        actionsWithOurElements.scrollByVisibleElement(timeTo);
-        actionsWithOurElements.clickOnElement(timeTo);}
-    public void clickOnTimeFrom(){
-        actionsWithOurElements.scrollByVisibleElement(timeFrom);
-        actionsWithOurElements.clickOnElement(timeFrom);}
+    public void addStatus(String timeFrom, String timeTo, String status){
+        actionsWithOurElements.scrollByVisibleElement(timeToInput);
+        actionsWithOurElements.clickOnElement(timeToInput);
+        actionsWithOurElements.enterTextToElement(timeInput, timeTo);
+        actionsWithOurElements.clickOnElement(saveButton);
 
-    public void clickOnStatusOn(){actionsWithOurElements.clickOnElement(statusOn);}
-    public void clickOnStatusDr(){actionsWithOurElements.clickOnElement(statusDr);}
-    public void clickOnStatusSb(){actionsWithOurElements.clickOnElement(statusSb);}
-    public void clickOnStatusOff(){actionsWithOurElements.clickOnElement(statusOff);}
+        actionsWithOurElements.scrollByVisibleElement(timeFromInput);
+        actionsWithOurElements.clickOnElement(timeFromInput);
+        actionsWithOurElements.enterTextToElement(timeInput, timeFrom);
+        actionsWithOurElements.clickOnElement(saveButton);
+
+        if (status.equals("On")){
+            actionsWithOurElements.clickOnElement(statusOn);
+        } else if (status.equals("Dr")){
+            actionsWithOurElements.clickOnElement(statusDr);
+        } else if (status.equals("Sb")){
+            actionsWithOurElements.clickOnElement(statusDr);
+        } else if (status.equals("Off")){
+            actionsWithOurElements.clickOnElement(statusDr);
+        } else Assert.fail("Unexpected status");
+
+        actionsWithOurElements.scrollByVisibleElement(buttonInsertStatus);
+        actionsWithOurElements.clickOnElement(buttonInsertStatus);
+        waitABit(3);
+    }
+    public void addLastStatus(String timeFrom, String timeTo, String status){
+        actionsWithOurElements.scrollByVisibleElement(timeToInput);
+        actionsWithOurElements.clickOnElement(timeToInput);
+        actionsWithOurElements.enterTextToElement(timeInput, timeTo);
+        actionsWithOurElements.clickOnElement(saveButton);
+
+        actionsWithOurElements.scrollByVisibleElement(timeFromInput);
+        actionsWithOurElements.clickOnElement(timeFromInput);
+        actionsWithOurElements.enterTextToElement(timeInput, timeFrom);
+        actionsWithOurElements.clickOnElement(saveButton);
+
+        if (status.equals("On")){
+            actionsWithOurElements.clickOnElement(statusOn);
+        } else if (status.equals("Dr")){
+            actionsWithOurElements.clickOnElement(statusDr);
+        } else if (status.equals("Sb")){
+            actionsWithOurElements.clickOnElement(statusDr);
+        } else if (status.equals("Off")){
+            actionsWithOurElements.clickOnElement(statusDr);
+        } else Assert.fail("Unexpected status");
+
+        waitABit(3);
+    }
 
     public void clickOnSaveInfoButton(){
         actionsWithOurElements.scrollByVisibleElement(saveInfoButton);
-        actionsWithOurElements.clickOnElement(saveInfoButton);}
-    public void timeToInput(String time){actionsWithOurElements.enterTextToElement(timeInput, time);}
+        actionsWithOurElements.clickOnElement(saveInfoButton);
+        waitABit(10);
+    }
+
     public void clickOnSaveButton(){ actionsWithOurElements.clickOnElement(saveButton); }
+
     public boolean isDriveHoursViolationPresent(){return actionsWithOurElements.isElementDisplay(driveHoursViolation);}
     public boolean isBreakViolationPresent(){return actionsWithOurElements.isElementDisplay(breakViolation);}
     public boolean isShiftHoursViolationPresent(){return actionsWithOurElements.isElementDisplay(shiftHoursViolation);}
+
     public void closeCorrectionSavePopUp(){actionsWithOurElements.clickOnElement(correctionSavedPopUpClose);}
+
+    public boolean checkAlertsId(String driverId, String date, String violationId) throws SQLException {
+        List<String> tempDataSettingsList = utilsForDB.getAlertsData(driverId, date);
+        for (String element :
+                tempDataSettingsList ) {
+            if (element.equals(violationId)){
+                return true;
+            }
+        } return false;
+    } public boolean checkAlertsExist(String driverId, String date) throws SQLException {
+        List<String> tempDataSettingsList = utilsForDB.getAlertsData(driverId, date);
+        for (String element :
+                tempDataSettingsList ) {
+            if (element.equals("4") | element.equals("5") | element.equals("6") | element.equals("7") | element.equals("8") | element.equals("9") | element.equals("10")){
+                return true;
+            }
+        } return false;
+    }
+
+    public void cleanStatusesViolation(String userId) throws SQLException {
+        utilsForDB.deleteStatuses(userId);
+        utilsForDB.deleteViolation(userId);
+        utilsForDB.updateLastStatus(userId);
+    }
 }

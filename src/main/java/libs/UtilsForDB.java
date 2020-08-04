@@ -467,50 +467,50 @@ public class UtilsForDB {
         String tempData = dBMySQL.selectValue("SELECT infoData from docsInfo di WHERE di.docId = " + docId + " AND infoName = '" + infoName + "';");
         return tempData;
     }
-    @Step
+
     public List<ArrayList> getDocData(String carrierId, String reference) throws SQLException{
         List<ArrayList> tempData = dBMySQL.selectTable("SELECT d.id, d.awsName, d.`type`, d.date, d.carrierId, d.initiatorId, d.truckId, d.note, d.userId FROM documents d WHERE d.carrierId = " + carrierId + " and d.reference = '" + reference + "';");
         return tempData;
     }
-    @Step
+
     public String getRandomDocumentReference(String carrierId, String typeDoc) throws SQLException{
         String tempCurrentDue = dBMySQL.selectValue("SELECT reference FROM documents d WHERE d.`type` = " + typeDoc + " AND d.carrierId = " + carrierId + " ORDER BY RAND()LIMIT 1;");
         return tempCurrentDue;
     }
-    @Step
+
     public String getUrlPermitDoc(String equipmentId, String shortName) throws SQLException{
         String tempUrl = dBMySQL.selectValue("SELECT url FROM permitDocs pd WHERE pd.equipmentId = " + equipmentId + " AND pd.shortName = '" + shortName + "';");
         return tempUrl;
     }
 
-    @Step
+
     public List<ArrayList> getUsersAndDriversRulesData(String userEmail) throws SQLException{
         List<ArrayList> tempData = dBMySQL.selectTable("SELECT dr.carrierName, dr.carrierAddress, dr.carrierCity, dr.carrierState, dr.carrierZip, dr.homeTerminal, dr.coDrivers, dr.cycleId, dr.timeZoneId, dr.usdot, dr.odometerId,dr.restBreakId, \n" +
                 "dr.logIncrementId, dr.cargoTypeId, dr.wellSiteId, dr.restartId, dr.iftaDistances, dr.old_allow_edit, dr.aobrdMPH, dr.teamDriver, dr.teamDriverPassword, u.id, u.name, u.`last`, u.phone, \n" +
                 "u.password, u.googleId, u.fbId, u.carrierId, u.companyPosition, u.banned FROM driversRules dr LEFT JOIN users u ON u.id = dr.userId WHERE u.email = '" + userEmail + "';");
         return tempData;
     }
-    @Step
+
     public List<ArrayList> getCarrierRulesData(String carrierId) throws SQLException {
         List<ArrayList> tempData = dBMySQL.selectTable("SELECT c.usdot, c.name, c.state, c.city, c.address, c.zip, c.size, c.registrationDate, c.aobrdMPH, c.ownerId, c.ein, c.banned, f.cycleId, f.timeZoneId, f.agricultureDeliveries FROM carriers c\n" +
                 "LEFT JOIN fleetRules f ON f.carrierId = c.id\n" +
                 " WHERE c.id = " + carrierId + ";");
         return tempData;
     }
-    @Step
+
     public List<ArrayList> getReminderData(String id, String name) throws SQLException{
         List<ArrayList> tempData = dBMySQL.selectTable("SELECT e.`type`, e.`status`, case when e.remindDateTime = 0 then '0' ELSE e.remindDateTime end as remindDateTime, e.term, e.odometerStart, e.currentOdometer, e.whatSend FROM equipment_reminder e WHERE e.equipId = " + id + " AND e.name = '" + name + "';");
         return tempData;
     }
-    @Step
+
     public void deleteStatuses(String userId) throws SQLException{
         dBMySQL.changeTable("DELETE FROM status WHERE userId = " + userId + " AND DATETIME != '2019-11-14 00:00:00';");
     }
-    @Step
+
     public void updateLastStatus(String userId) throws SQLException{
         dBMySQL.changeTable("UPDATE driver_last_status d SET d.dateTime = '2019-11-14 00:00:00', d.dateTimeUtc = '2019-11-14 05:00:00', d.drive = 39600, d.shift = 50400, d.cycle = 216000, d.eight = 28800, d.shiftWork = 9999999, d.restart34 = 0 WHERE d.userId = " + userId + ";");
     }
-    @Step
+
     public boolean isCurrentCardSame(String userId, String cardNumber) throws SQLException{
         boolean tempResult = dBMySQL.isRowPresent("SELECT * FROM authorize_clients a WHERE a.userId = " + userId + " AND a.currentCard = 1 AND a.creditCard = '" + cardNumber + "';");
         return tempResult;
@@ -518,52 +518,61 @@ public class UtilsForDB {
 
 //    SERVICES
 
-    @Step
+
     public String getSmartSafetyUserId(String fleetId) throws SQLException{
         String tempId = dBMySQL.selectValue("SELECT u.id FROM user_app_info uai LEFT JOIN users u ON uai.userId = u.id WHERE u.carrierId = " + fleetId + " AND uai.field = 'smart_safety' ORDER BY RAND() LIMIT 1;");
         return tempId;
     }
-    @Step
+
     public void updateServicesConnections(String fleetId, String userId, String dateTimeAt, String dateTimeTill) throws SQLException{
         dBMySQL.changeTable("UPDATE services_connections SET created_at = '" + dateTimeAt + "', subscribed_till = '" + dateTimeTill + "' WHERE user_id = " + userId + " AND carrier_id = " + fleetId + ";");
     }
-    @Step
+
     public boolean checkForTransactions(String fleetId, String dateTime) throws SQLException{
         boolean tempResult = dBMySQL.isRowPresent("SELECT * FROM services_transactions s WHERE s.carrier_id = " + fleetId + " AND s.created_at > '" + dateTime + "';");
         return tempResult;
     }
-    @Step
+
     public String getSubscribedTillDateTime(String fleetId, String userId) throws SQLException {
         String tempDateTime = dBMySQL.selectValue("SELECT s.subscribed_till FROM services_connections s WHERE s.carrier_id = " + fleetId + " AND s.user_id = " + userId + " AND s.service_id = 1;");
         return tempDateTime;
     }
-    @Step
+
     public List<ArrayList> getAtTillDateTimeServices(String fleetId, String userId) throws SQLException {
         List<ArrayList> tempData = dBMySQL.selectTable("SELECT s.created_at, s.updated_at, s.subscribed_till,  s.noticed_at FROM services_connections s WHERE s.carrier_id = " + fleetId + " AND s.user_id = " + userId + " AND s.service_id = 1;");
         return tempData;
     }
-    @Step
+
     public void deleteSmartSafetyFoDriver(String driverId) throws SQLException {
         dBMySQL.changeTable("DELETE FROM user_app_info WHERE userId = " + driverId + ";");
         dBMySQL.changeTable("DELETE FROM services_history WHERE user_id = " + driverId + ";");
         dBMySQL.changeTable("DELETE FROM services_connections WHERE user_id = " + driverId + ";");
     }
-    @Step
+
     public boolean isSmartSafetyInUserApp(String driverId) throws SQLException {
         boolean tempResult = dBMySQL.isRowPresent("SELECT * FROM user_app_info u WHERE u.field = 'smart_safety' AND u.userId = " + driverId + " AND u.value = 1;");
         return tempResult;
     }
-    @Step
+
     public List<ArrayList> getEldReturnsData(String deviceId) throws SQLException {
         List<ArrayList> tempEldReturnData = dBMySQL.selectTable("SELECT e.userId, e.`status`, e.description, e.returnReason FROM eld_returns e WHERE e.id = " + deviceId + ";");
         return tempEldReturnData;
     }
-    @Step
+
     public void setFleetsCronRunTime(String time) throws SQLException {
         dBMySQL.changeTable("UPDATE cronCheck SET `dateTime` = '" + time + "' WHERE NAME = '/cron/check_fleets.php';");
     }
-    @Step
+
     public void setDriversCronRunTime(String time) throws SQLException {
         dBMySQL.changeTable("UPDATE cronCheck SET `dateTime` = '" + time + "' WHERE NAME = '/cron/check_drivers.php';");
+    }
+//    LOGBOOK
+
+    public void deleteViolation(String driverId) throws SQLException {
+        dBMySQL.changeTable("DELETE FROM alerts WHERE userId = " + driverId + ";");
+
+    }
+    public List<String> getAlertsData(String driverId, String date) throws SQLException {
+        return (List<String>) dBMySQL.selectResultSet("SELECT a.alertId FROM alerts a WHERE a.userId = " + driverId + " AND a.dateTime LIKE '" + date + "%'");
     }
 }
