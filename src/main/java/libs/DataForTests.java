@@ -1,7 +1,7 @@
 package libs;
 
 public class DataForTests {
-    // type of devices
+// type of devices
     public static String IOSXMonthTariffId = "0";
     public static String geometricsMonthTariffId = "9";
     public static String ezHardMonthTariffId = "12";
@@ -13,6 +13,7 @@ public class DataForTests {
     public static String oneYearEzHardTariffId = "13";
     public static String twoYearsEzHardTariffId = "14";
 
+// strings type users
     public static String carrierIdString = "carrierId";
     public static String fleetString = "fleet";
     public static String userIdString = "userId";
@@ -29,4 +30,16 @@ public class DataForTests {
     public static String Canada10HoursOff = "9";
     public static String CanadaChangeCycleBreak = "10";
     public static String RevisedLogsResult = "11";
+
+//    cycle type
+    public static String USA_70hr_8days = "0";
+    public static String USA_60hr_7days = "1";
+    public static String Alaska_70hr_7days = "2";
+    public static String Alaska_80hr_8days = "3";
+    public static String Canada_70hr_7days = "4";
+    public static String Canada_120hr_14days = "5";
+    public static String Texas70hr_7days = "6";
+    public static String California_80hr_7days = "7";
+    public static String CanadaNorth_60_80_7 = "8";
+    public static String Other = "9";
 }

@@ -566,6 +566,7 @@ public class UtilsForDB {
     public void setDriversCronRunTime(String time) throws SQLException {
         dBMySQL.changeTable("UPDATE cronCheck SET `dateTime` = '" + time + "' WHERE NAME = '/cron/check_drivers.php';");
     }
+
 //    LOGBOOK
 
     public void deleteViolation(String driverId) throws SQLException {
@@ -573,6 +574,15 @@ public class UtilsForDB {
 
     }
     public List<String> getAlertsData(String driverId, String date) throws SQLException {
-        return (List<String>) dBMySQL.selectResultSet("SELECT a.alertId FROM alerts a WHERE a.userId = " + driverId + " AND a.dateTime LIKE '" + date + "%'");
+        return dBMySQL.selectResultSet("SELECT a.alertId FROM alerts a WHERE a.userId = " + driverId + " AND a.dateTime LIKE '" + date + "%'");
+    }
+    public void setCycleDriversRules(String driverId, String cycleId) throws SQLException {
+        dBMySQL.changeTable("UPDATE driversRules SET `cycleId` = '" + cycleId + "' WHERE userId = " + driverId + ";");
+    }
+    public void setCycleStatuses(String driverId, String cycleId) throws SQLException {
+        dBMySQL.changeTable("UPDATE cycleStatuses SET `statusTypeId` = '" + cycleId + "' WHERE userId = " + driverId + ";");
+    }
+    public List<ArrayList> getCycleHoursLastStatus(String driverId, String date) throws SQLException {
+        return dBMySQL.selectTable("SELECT s.drive, s.shift, s.cycle, s.eight, s.shiftWork, s.restart34 FROM `status` s WHERE s.userId = " + driverId + " AND s.dateTime LIKE '" + date + "%' GROUP BY s.dateTime HAVING MAX(s.dateTime) order BY s.dateTime DESC LIMIT 1;");
     }
 }

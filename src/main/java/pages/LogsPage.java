@@ -7,8 +7,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
+import static libs.Utils.listArrayToMap;
 import static libs.Utils.waitABit;
 
 public class LogsPage extends ParentPage {
@@ -48,6 +51,9 @@ public class LogsPage extends ParentPage {
     @FindBy(id="save_info")
     private WebElement saveInfoButton;
 
+    @FindBy(id="datepicker")
+    private WebElement dateInput;
+
     @FindBy(xpath = "//*[@data-11='11' and text()='dr']")
     private WebElement driveHoursViolation;
 
@@ -69,12 +75,10 @@ public class LogsPage extends ParentPage {
     }
 
     public void addStatus(String timeFrom, String timeTo, String status){
-        actionsWithOurElements.scrollByVisibleElement(timeToInput);
         actionsWithOurElements.clickOnElement(timeToInput);
         actionsWithOurElements.enterTextToElement(timeInput, timeTo);
         actionsWithOurElements.clickOnElement(saveButton);
 
-        actionsWithOurElements.scrollByVisibleElement(timeFromInput);
         actionsWithOurElements.clickOnElement(timeFromInput);
         actionsWithOurElements.enterTextToElement(timeInput, timeFrom);
         actionsWithOurElements.clickOnElement(saveButton);
@@ -94,12 +98,10 @@ public class LogsPage extends ParentPage {
         waitABit(3);
     }
     public void addLastStatus(String timeFrom, String timeTo, String status){
-        actionsWithOurElements.scrollByVisibleElement(timeToInput);
         actionsWithOurElements.clickOnElement(timeToInput);
         actionsWithOurElements.enterTextToElement(timeInput, timeTo);
         actionsWithOurElements.clickOnElement(saveButton);
 
-        actionsWithOurElements.scrollByVisibleElement(timeFromInput);
         actionsWithOurElements.clickOnElement(timeFromInput);
         actionsWithOurElements.enterTextToElement(timeInput, timeFrom);
         actionsWithOurElements.clickOnElement(saveButton);
@@ -154,4 +156,18 @@ public class LogsPage extends ParentPage {
         utilsForDB.deleteViolation(userId);
         utilsForDB.updateLastStatus(userId);
     }
+
+    public void setCycle(String userId, String cycleId) throws SQLException {
+        utilsForDB.setCycleDriversRules(userId, cycleId);
+        utilsForDB.setCycleStatuses(userId, cycleId);
+    }
+
+    public String getStatusData(String userId, String data, String value) throws SQLException {
+        List<ArrayList> statusData = utilsForDB.getCycleHoursLastStatus(userId, data);
+        Map<String, Object> tempStatusData = listArrayToMap(statusData);
+        return tempStatusData.get(value).toString();
+
+    }
+
+
 }

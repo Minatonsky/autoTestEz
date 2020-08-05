@@ -18,6 +18,7 @@ import java.time.temporal.TemporalAdjusters;
 import java.util.List;
 
 import static libs.Utils.genRandomDataByRegex;
+import static libs.Utils.getLocalDateTimeUTC;
 // This test page is not using on test project, it just for check some methods
 
 
@@ -199,8 +200,9 @@ public class TestMethods extends ParentTestWithoutWebDriver {
         } return false;
     }
     @Test
-    public void test() throws SQLException {
-        System.out.println(checkAlerts("4483", "2020-06-02"));
+    public void test() {
+        String day1 = getLocalDateTimeUTC().minusDays(7).format(DateTimeFormatter.ofPattern("yyyy-MM-dd"));
+        System.out.println(day1);
     }
 }
 

@@ -205,6 +205,11 @@ public class Utils {
         LocalDateTime tempDateTimeUTC = LocalDateTime.now(ZoneOffset.UTC);
         return tempDateTimeUTC;
     }
+
+    public static String dateWithMinusDay(int countDays){
+        return getLocalDateTimeUTC().minusDays(countDays).format(DateTimeFormatter.ofPattern("yyyy-MM-dd"));
+    }
+
     public static String startDayPlusHours(int hours){
         LocalDate day = LocalDate.now(ZoneOffset.UTC);
         LocalDateTime startOfDay = day.atStartOfDay().plusHours(hours);
