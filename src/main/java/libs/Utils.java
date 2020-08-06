@@ -182,28 +182,23 @@ public class Utils {
         SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         Date date = format.parse(dateTime);
         long timestamp = date.getTime();
-        long droppedMillis = timestamp/1000;
-        return droppedMillis;
+        return timestamp/1000;
     }
     public static LocalDateTime getLocalDateTimeFromString(String dateTimeString){
         DateTimeFormatter format = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
-        LocalDateTime dateTime = LocalDateTime.parse(dateTimeString, format);
-        return dateTime;
+        return LocalDateTime.parse(dateTimeString, format);
     }
 
     public static String getStringDateTimeUTC(String format){
         LocalDateTime datetime = LocalDateTime.now(ZoneOffset.UTC);
-        String formatted = DateTimeFormatter.ofPattern(format).format(datetime);
-        return formatted;
+        return DateTimeFormatter.ofPattern(format).format(datetime);
     }
     public static String getCurrentDateTimePlusDays(String format, int days){
         LocalDateTime datetime = LocalDateTime.now(ZoneOffset.UTC).plusDays(days);
-        String formatted = DateTimeFormatter.ofPattern(format).format(datetime);
-        return formatted;
+        return DateTimeFormatter.ofPattern(format).format(datetime);
     }
     public static LocalDateTime getLocalDateTimeUTC(){
-        LocalDateTime tempDateTimeUTC = LocalDateTime.now(ZoneOffset.UTC);
-        return tempDateTimeUTC;
+        return LocalDateTime.now(ZoneOffset.UTC);
     }
 
     public static String dateWithMinusDay(int countDays){
@@ -213,8 +208,7 @@ public class Utils {
     public static String startDayPlusHours(int hours){
         LocalDate day = LocalDate.now(ZoneOffset.UTC);
         LocalDateTime startOfDay = day.atStartOfDay().plusHours(hours);
-        String formatted = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss").format(startOfDay);
-        return formatted;
+        return DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss").format(startOfDay);
     }
 
     public static boolean compareDiffDateTime(LocalDateTime firstDateTime, LocalDateTime secondTime, int countMinutes){

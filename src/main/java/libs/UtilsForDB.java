@@ -583,6 +583,7 @@ public class UtilsForDB {
         dBMySQL.changeTable("UPDATE cycleStatuses SET `statusTypeId` = '" + cycleId + "' WHERE userId = " + driverId + ";");
     }
     public List<ArrayList> getCycleHoursLastStatus(String driverId, String date) throws SQLException {
-        return dBMySQL.selectTable("SELECT s.drive, s.shift, s.cycle, s.eight, s.shiftWork, s.restart34 FROM `status` s WHERE s.userId = " + driverId + " AND s.dateTime LIKE '" + date + "%' GROUP BY s.dateTime HAVING MAX(s.dateTime) order BY s.dateTime DESC LIMIT 1;");
+        List<ArrayList> tempData = dBMySQL.selectTable("SELECT s.drive, s.shift, s.cycle, s.eight, s.shiftWork, s.restart34 FROM `status` s WHERE s.userId = " + driverId + " AND s.dateTime LIKE '" + date + "%' GROUP BY s.dateTime HAVING MAX(s.dateTime) order BY s.dateTime DESC LIMIT 1;");
+        return tempData;
     }
 }

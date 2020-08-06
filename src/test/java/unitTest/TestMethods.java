@@ -15,10 +15,11 @@ import java.time.ZoneOffset;
 import java.time.format.DateTimeFormatter;
 import java.time.temporal.ChronoUnit;
 import java.time.temporal.TemporalAdjusters;
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
-import static libs.Utils.genRandomDataByRegex;
-import static libs.Utils.getLocalDateTimeUTC;
+import static libs.Utils.*;
 // This test page is not using on test project, it just for check some methods
 
 
@@ -190,19 +191,21 @@ public class TestMethods extends ParentTestWithoutWebDriver {
 
     }
 
-    public boolean checkAlerts(String driverId, String date) throws SQLException {
-        List<String> tempDataSettingsList = utilsForDB.getAlertsData(driverId, date);
-        for (String element :
-                tempDataSettingsList ) {
-            if (element.equals("4") | element.equals("5") | element.equals("6") | element.equals("7") | element.equals("8") | element.equals("9") | element.equals("10")){
-                return true;
-            }
-        } return false;
+    public int getStatusData(String userId, String data, String value) throws SQLException {
+//      value =  drive, shift, cycle, eight, shiftWork, restart34
+        List<ArrayList> statusData = utilsForDB.getCycleHoursLastStatus(userId, data);
+        Map<String, Object> tempStatusData = listArrayToMap(statusData);
+        int temp = Integer.parseInt(tempStatusData.get(value).toString());
+        int result = temp / 3600;
+        return result;
+
     }
+
+
     @Test
-    public void test() {
-        String day1 = getLocalDateTimeUTC().minusDays(7).format(DateTimeFormatter.ofPattern("yyyy-MM-dd"));
-        System.out.println(day1);
+    public void test() throws SQLException {
+
+        System.out.println(getStatusData("4401", "2020-07-28", "drive"));
     }
 }
 

@@ -162,10 +162,13 @@ public class LogsPage extends ParentPage {
         utilsForDB.setCycleStatuses(userId, cycleId);
     }
 
-    public String getStatusData(String userId, String data, String value) throws SQLException {
+    public int getStatusData(String userId, String data, String value) throws SQLException {
+//      value =  drive, shift, cycle, eight, shiftWork, restart34
         List<ArrayList> statusData = utilsForDB.getCycleHoursLastStatus(userId, data);
         Map<String, Object> tempStatusData = listArrayToMap(statusData);
-        return tempStatusData.get(value).toString();
+        int temp = Integer.parseInt(tempStatusData.get(value).toString());
+        int result = temp / 3600;
+        return result;
 
     }
 

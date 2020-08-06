@@ -832,3 +832,938 @@
 2020-05-08 16:58:32   INFO [libs.ActionsWithOurElements] : Element was clicked
 2020-05-08 16:58:33   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
 2020-05-08 16:58:33   INFO [frankesteinTest.logbookTest.CycleTest] :  DB connection closed 
+2020-06-08 11:53:01   INFO [frankesteinTest.logbookTest.CycleTest] : Chrome will be started
+2020-06-08 11:53:04   INFO [frankesteinTest.logbookTest.CycleTest] : Chrome is started
+2020-06-08 11:53:04   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-06-08 11:53:09   INFO [pages.LoginPage] : Login Page was opened
+2020-06-08 11:53:10   INFO [libs.ActionsWithOurElements] : Element [[ChromeDriver: chrome on WINDOWS (e5c96b3efde229f925526b39f9c9e85e)] -> xpath: .//*[@class='log_in btn-login']] was clicked
+2020-06-08 11:53:10   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-06-08 11:53:10   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-06-08 11:53:10   INFO [libs.ActionsWithOurElements] : Element [[ChromeDriver: chrome on WINDOWS (e5c96b3efde229f925526b39f9c9e85e)] -> xpath: .//*[@id='btnLogin']] was clicked
+2020-06-08 11:53:17   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-06-08 11:53:37   INFO [libs.ActionsWithOurElements] : Element Proxy element for: DefaultElementLocator 'By.xpath: .//*[@id='validatePhone']//../*[@aria-label="Close"]' was clicked
+2020-06-08 11:53:37   INFO [pages.LoginPage] : Phone verification pop up Closed
+2020-06-08 11:53:39   INFO [libs.ActionsWithOurElements] : Element [[ChromeDriver: chrome on WINDOWS (e5c96b3efde229f925526b39f9c9e85e)] -> xpath: .//a[@href='/dash/drivers/']] was clicked
+2020-06-08 11:53:40   INFO [libs.ActionsWithOurElements] : Element [[ChromeDriver: chrome on WINDOWS (e5c96b3efde229f925526b39f9c9e85e)] -> xpath: .//*[@data-date='2020-07-28']] was clicked
+2020-06-08 11:54:02   INFO [libs.ActionsWithOurElements] : Element Proxy element for: DefaultElementLocator 'By.xpath: .//button[text()='Correction & Annotation']' was clicked
+2020-06-08 11:54:02   INFO [libs.ActionsWithOurElements] : Element [[ChromeDriver: chrome on WINDOWS (e5c96b3efde229f925526b39f9c9e85e)] -> xpath: .//*[text()=' Duty']] was clicked
+2020-06-08 11:54:05   INFO [libs.ActionsWithOurElements] : Element [[ChromeDriver: chrome on WINDOWS (e5c96b3efde229f925526b39f9c9e85e)] -> xpath: .//input[@id='time_to']] was clicked
+2020-06-08 11:54:05   INFO [libs.ActionsWithOurElements] : 100000AM was inputted into element
+2020-06-08 11:54:05   INFO [libs.ActionsWithOurElements] : Element [[ChromeDriver: chrome on WINDOWS (e5c96b3efde229f925526b39f9c9e85e)] -> xpath: .//button[@id='time_save']] was clicked
+2020-06-08 11:54:06   INFO [libs.ActionsWithOurElements] : Element [[ChromeDriver: chrome on WINDOWS (e5c96b3efde229f925526b39f9c9e85e)] -> xpath: .//input[@id='time_from']] was clicked
+2020-06-08 11:54:06   INFO [libs.ActionsWithOurElements] : 060000AM was inputted into element
+2020-06-08 11:54:06   INFO [libs.ActionsWithOurElements] : Element [[ChromeDriver: chrome on WINDOWS (e5c96b3efde229f925526b39f9c9e85e)] -> xpath: .//button[@id='time_save']] was clicked
+2020-06-08 11:54:06   INFO [libs.ActionsWithOurElements] : Element [[ChromeDriver: chrome on WINDOWS (e5c96b3efde229f925526b39f9c9e85e)] -> id: status_dr] was clicked
+2020-06-08 11:54:06   INFO [libs.ActionsWithOurElements] : Element [[ChromeDriver: chrome on WINDOWS (e5c96b3efde229f925526b39f9c9e85e)] -> xpath: .//*[text()=' Duty']] was clicked
+2020-06-08 11:54:10   INFO [libs.ActionsWithOurElements] : Element [[ChromeDriver: chrome on WINDOWS (e5c96b3efde229f925526b39f9c9e85e)] -> xpath: .//input[@id='time_to']] was clicked
+2020-06-08 11:54:10   INFO [libs.ActionsWithOurElements] : 050000PM was inputted into element
+2020-06-08 11:54:10   INFO [libs.ActionsWithOurElements] : Element [[ChromeDriver: chrome on WINDOWS (e5c96b3efde229f925526b39f9c9e85e)] -> xpath: .//button[@id='time_save']] was clicked
+2020-06-08 11:54:10   INFO [libs.ActionsWithOurElements] : Element [[ChromeDriver: chrome on WINDOWS (e5c96b3efde229f925526b39f9c9e85e)] -> xpath: .//input[@id='time_from']] was clicked
+2020-06-08 11:54:10   INFO [libs.ActionsWithOurElements] : 010000PM was inputted into element
+2020-06-08 11:54:10   INFO [libs.ActionsWithOurElements] : Element [[ChromeDriver: chrome on WINDOWS (e5c96b3efde229f925526b39f9c9e85e)] -> xpath: .//button[@id='time_save']] was clicked
+2020-06-08 11:54:10   INFO [libs.ActionsWithOurElements] : Element [[ChromeDriver: chrome on WINDOWS (e5c96b3efde229f925526b39f9c9e85e)] -> id: status_dr] was clicked
+2020-06-08 11:54:14   INFO [libs.ActionsWithOurElements] : Element [[ChromeDriver: chrome on WINDOWS (e5c96b3efde229f925526b39f9c9e85e)] -> id: save_info] was clicked
+2020-06-08 11:54:44   INFO [libs.ActionsWithOurElements] : Element Proxy element for: DefaultElementLocator 'By.xpath: //*[text()='Correction Saved']/../button[@type='button']' was clicked
+2020-06-08 11:54:44   INFO [frankesteinTest.logbookTest.CycleTest] :  DB connection closed 
+2020-06-08 11:59:28   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-06-08 11:59:30   INFO [unitTest.TestMethods] :  DB Connection Closed 
+2020-06-08 13:21:58   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-06-08 13:22:00   INFO [unitTest.TestMethods] :  DB Connection Closed 
+2020-06-08 13:25:23   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-06-08 13:25:25   INFO [unitTest.TestMethods] :  DB Connection Closed 
+2020-06-08 13:26:58   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-06-08 13:27:00   INFO [unitTest.TestMethods] :  DB Connection Closed 
+2020-06-08 13:27:55   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-06-08 13:27:57   INFO [unitTest.TestMethods] :  DB Connection Closed 
+2020-06-08 13:32:11   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-06-08 13:32:13   INFO [unitTest.TestMethods] :  DB Connection Closed 
+2020-06-08 13:32:44   INFO [frankesteinTest.logbookTest.CycleTest] : Chrome will be started
+2020-06-08 13:32:47   INFO [frankesteinTest.logbookTest.CycleTest] : Chrome is started
+2020-06-08 13:32:47   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-06-08 13:32:52   INFO [pages.LoginPage] : Login Page was opened
+2020-06-08 13:32:53   INFO [libs.ActionsWithOurElements] : Element [[ChromeDriver: chrome on WINDOWS (b5f374aada751bf11678745b7d776fbe)] -> xpath: .//*[@class='log_in btn-login']] was clicked
+2020-06-08 13:32:53   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-06-08 13:32:53   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-06-08 13:32:54   INFO [libs.ActionsWithOurElements] : Element [[ChromeDriver: chrome on WINDOWS (b5f374aada751bf11678745b7d776fbe)] -> xpath: .//*[@id='btnLogin']] was clicked
+2020-06-08 13:33:01   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-06-08 13:33:21   INFO [libs.ActionsWithOurElements] : Element Proxy element for: DefaultElementLocator 'By.xpath: .//*[@id='validatePhone']//../*[@aria-label="Close"]' was clicked
+2020-06-08 13:33:21   INFO [pages.LoginPage] : Phone verification pop up Closed
+2020-06-08 13:33:23   INFO [libs.ActionsWithOurElements] : Element [[ChromeDriver: chrome on WINDOWS (b5f374aada751bf11678745b7d776fbe)] -> xpath: .//a[@href='/dash/drivers/']] was clicked
+2020-06-08 13:33:25   INFO [libs.ActionsWithOurElements] : Element [[ChromeDriver: chrome on WINDOWS (b5f374aada751bf11678745b7d776fbe)] -> xpath: .//*[@data-date='2020-07-28']] was clicked
+2020-06-08 13:33:46   INFO [libs.ActionsWithOurElements] : Element Proxy element for: DefaultElementLocator 'By.xpath: .//button[text()='Correction & Annotation']' was clicked
+2020-06-08 13:33:46   INFO [libs.ActionsWithOurElements] : Element [[ChromeDriver: chrome on WINDOWS (b5f374aada751bf11678745b7d776fbe)] -> xpath: .//*[text()=' Duty']] was clicked
+2020-06-08 13:33:49   INFO [libs.ActionsWithOurElements] : Element [[ChromeDriver: chrome on WINDOWS (b5f374aada751bf11678745b7d776fbe)] -> xpath: .//input[@id='time_to']] was clicked
+2020-06-08 13:33:49   INFO [libs.ActionsWithOurElements] : 100000AM was inputted into element
+2020-06-08 13:33:50   INFO [libs.ActionsWithOurElements] : Element [[ChromeDriver: chrome on WINDOWS (b5f374aada751bf11678745b7d776fbe)] -> xpath: .//button[@id='time_save']] was clicked
+2020-06-08 13:33:50   INFO [libs.ActionsWithOurElements] : Element [[ChromeDriver: chrome on WINDOWS (b5f374aada751bf11678745b7d776fbe)] -> xpath: .//input[@id='time_from']] was clicked
+2020-06-08 13:33:50   INFO [libs.ActionsWithOurElements] : 060000AM was inputted into element
+2020-06-08 13:33:50   INFO [libs.ActionsWithOurElements] : Element [[ChromeDriver: chrome on WINDOWS (b5f374aada751bf11678745b7d776fbe)] -> xpath: .//button[@id='time_save']] was clicked
+2020-06-08 13:33:50   INFO [libs.ActionsWithOurElements] : Element [[ChromeDriver: chrome on WINDOWS (b5f374aada751bf11678745b7d776fbe)] -> id: status_dr] was clicked
+2020-06-08 13:33:51   INFO [libs.ActionsWithOurElements] : Element [[ChromeDriver: chrome on WINDOWS (b5f374aada751bf11678745b7d776fbe)] -> xpath: .//*[text()=' Duty']] was clicked
+2020-06-08 13:33:54   INFO [libs.ActionsWithOurElements] : Element [[ChromeDriver: chrome on WINDOWS (b5f374aada751bf11678745b7d776fbe)] -> xpath: .//input[@id='time_to']] was clicked
+2020-06-08 13:33:54   INFO [libs.ActionsWithOurElements] : 050000PM was inputted into element
+2020-06-08 13:33:54   INFO [libs.ActionsWithOurElements] : Element [[ChromeDriver: chrome on WINDOWS (b5f374aada751bf11678745b7d776fbe)] -> xpath: .//button[@id='time_save']] was clicked
+2020-06-08 13:33:54   INFO [libs.ActionsWithOurElements] : Element [[ChromeDriver: chrome on WINDOWS (b5f374aada751bf11678745b7d776fbe)] -> xpath: .//input[@id='time_from']] was clicked
+2020-06-08 13:33:54   INFO [libs.ActionsWithOurElements] : 010000PM was inputted into element
+2020-06-08 13:33:54   INFO [libs.ActionsWithOurElements] : Element [[ChromeDriver: chrome on WINDOWS (b5f374aada751bf11678745b7d776fbe)] -> xpath: .//button[@id='time_save']] was clicked
+2020-06-08 13:33:55   INFO [libs.ActionsWithOurElements] : Element [[ChromeDriver: chrome on WINDOWS (b5f374aada751bf11678745b7d776fbe)] -> id: status_dr] was clicked
+2020-06-08 13:33:58   INFO [libs.ActionsWithOurElements] : Element [[ChromeDriver: chrome on WINDOWS (b5f374aada751bf11678745b7d776fbe)] -> id: save_info] was clicked
+2020-06-08 13:34:28   INFO [libs.ActionsWithOurElements] : Element Proxy element for: DefaultElementLocator 'By.xpath: //*[text()='Correction Saved']/../button[@type='button']' was clicked
+2020-06-08 13:34:29   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 13:34:30   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 13:34:31   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 13:34:34   INFO [libs.ActionsWithOurElements] : Element [[ChromeDriver: chrome on WINDOWS (b5f374aada751bf11678745b7d776fbe)] -> xpath: .//a[@href='/dash/drivers/']] was clicked
+2020-06-08 13:34:35   INFO [libs.ActionsWithOurElements] : Element [[ChromeDriver: chrome on WINDOWS (b5f374aada751bf11678745b7d776fbe)] -> xpath: .//*[@data-date='2020-07-29']] was clicked
+2020-06-08 13:34:56   INFO [libs.ActionsWithOurElements] : Element Proxy element for: DefaultElementLocator 'By.xpath: .//button[text()='Correction & Annotation']' was clicked
+2020-06-08 13:34:56   INFO [libs.ActionsWithOurElements] : Element [[ChromeDriver: chrome on WINDOWS (b5f374aada751bf11678745b7d776fbe)] -> xpath: .//*[text()=' Duty']] was clicked
+2020-06-08 13:35:00   INFO [libs.ActionsWithOurElements] : Element [[ChromeDriver: chrome on WINDOWS (b5f374aada751bf11678745b7d776fbe)] -> xpath: .//input[@id='time_to']] was clicked
+2020-06-08 13:35:00   INFO [libs.ActionsWithOurElements] : 100000AM was inputted into element
+2020-06-08 13:35:00   INFO [libs.ActionsWithOurElements] : Element [[ChromeDriver: chrome on WINDOWS (b5f374aada751bf11678745b7d776fbe)] -> xpath: .//button[@id='time_save']] was clicked
+2020-06-08 13:35:00   INFO [libs.ActionsWithOurElements] : Element [[ChromeDriver: chrome on WINDOWS (b5f374aada751bf11678745b7d776fbe)] -> xpath: .//input[@id='time_from']] was clicked
+2020-06-08 13:35:00   INFO [libs.ActionsWithOurElements] : 060000AM was inputted into element
+2020-06-08 13:35:00   INFO [libs.ActionsWithOurElements] : Element [[ChromeDriver: chrome on WINDOWS (b5f374aada751bf11678745b7d776fbe)] -> xpath: .//button[@id='time_save']] was clicked
+2020-06-08 13:35:01   INFO [libs.ActionsWithOurElements] : Element [[ChromeDriver: chrome on WINDOWS (b5f374aada751bf11678745b7d776fbe)] -> id: status_dr] was clicked
+2020-06-08 13:35:01   INFO [libs.ActionsWithOurElements] : Element [[ChromeDriver: chrome on WINDOWS (b5f374aada751bf11678745b7d776fbe)] -> xpath: .//*[text()=' Duty']] was clicked
+2020-06-08 13:35:04   INFO [libs.ActionsWithOurElements] : Element [[ChromeDriver: chrome on WINDOWS (b5f374aada751bf11678745b7d776fbe)] -> xpath: .//input[@id='time_to']] was clicked
+2020-06-08 13:35:04   INFO [libs.ActionsWithOurElements] : 050000PM was inputted into element
+2020-06-08 13:35:04   INFO [libs.ActionsWithOurElements] : Element [[ChromeDriver: chrome on WINDOWS (b5f374aada751bf11678745b7d776fbe)] -> xpath: .//button[@id='time_save']] was clicked
+2020-06-08 13:35:04   INFO [libs.ActionsWithOurElements] : Element [[ChromeDriver: chrome on WINDOWS (b5f374aada751bf11678745b7d776fbe)] -> xpath: .//input[@id='time_from']] was clicked
+2020-06-08 13:35:04   INFO [libs.ActionsWithOurElements] : 010000PM was inputted into element
+2020-06-08 13:35:04   INFO [libs.ActionsWithOurElements] : Element [[ChromeDriver: chrome on WINDOWS (b5f374aada751bf11678745b7d776fbe)] -> xpath: .//button[@id='time_save']] was clicked
+2020-06-08 13:35:05   INFO [libs.ActionsWithOurElements] : Element [[ChromeDriver: chrome on WINDOWS (b5f374aada751bf11678745b7d776fbe)] -> id: status_dr] was clicked
+2020-06-08 13:35:08   INFO [libs.ActionsWithOurElements] : Element [[ChromeDriver: chrome on WINDOWS (b5f374aada751bf11678745b7d776fbe)] -> id: save_info] was clicked
+2020-06-08 13:35:38   INFO [libs.ActionsWithOurElements] : Element Proxy element for: DefaultElementLocator 'By.xpath: //*[text()='Correction Saved']/../button[@type='button']' was clicked
+2020-06-08 13:35:39   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 13:35:40   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 13:35:41  ERROR [frankesteinTest.logbookTest.CycleTest] : AC failed: Cycle hours is incorrect
+2020-06-08 13:35:41   INFO [frankesteinTest.logbookTest.CycleTest] :  DB connection closed 
+2020-06-08 13:38:50   INFO [frankesteinTest.logbookTest.CycleTest] : Chrome will be started
+2020-06-08 13:38:53   INFO [frankesteinTest.logbookTest.CycleTest] : Chrome is started
+2020-06-08 13:38:53   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-06-08 13:38:58   INFO [pages.LoginPage] : Login Page was opened
+2020-06-08 13:38:59   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-06-08 13:38:59   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-06-08 13:39:08   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-06-08 13:39:08   INFO [pages.LoginPage] : Phone verification pop up Closed
+2020-06-08 13:39:16   INFO [libs.ActionsWithOurElements] : 100000AM was inputted into element
+2020-06-08 13:39:16   INFO [libs.ActionsWithOurElements] : 060000AM was inputted into element
+2020-06-08 13:39:20   INFO [libs.ActionsWithOurElements] : 050000PM was inputted into element
+2020-06-08 13:39:20   INFO [libs.ActionsWithOurElements] : 010000PM was inputted into element
+2020-06-08 13:39:35   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 13:39:36   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 13:39:38   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 13:39:46   INFO [libs.ActionsWithOurElements] : 100000AM was inputted into element
+2020-06-08 13:39:46   INFO [libs.ActionsWithOurElements] : 060000AM was inputted into element
+2020-06-08 13:39:50   INFO [libs.ActionsWithOurElements] : 050000PM was inputted into element
+2020-06-08 13:39:50   INFO [libs.ActionsWithOurElements] : 010000PM was inputted into element
+2020-06-08 13:40:05   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 13:40:06   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 13:40:07   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 13:40:15   INFO [libs.ActionsWithOurElements] : 100000AM was inputted into element
+2020-06-08 13:40:15   INFO [libs.ActionsWithOurElements] : 060000AM was inputted into element
+2020-06-08 13:40:19   INFO [libs.ActionsWithOurElements] : 050000PM was inputted into element
+2020-06-08 13:40:19   INFO [libs.ActionsWithOurElements] : 010000PM was inputted into element
+2020-06-08 13:40:34   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 13:40:35   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 13:40:36   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 13:40:45   INFO [libs.ActionsWithOurElements] : 100000AM was inputted into element
+2020-06-08 13:40:45   INFO [libs.ActionsWithOurElements] : 060000AM was inputted into element
+2020-06-08 13:40:49   INFO [libs.ActionsWithOurElements] : 060000PM was inputted into element
+2020-06-08 13:40:49   INFO [libs.ActionsWithOurElements] : 010000PM was inputted into element
+2020-06-08 13:41:04   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 13:41:05   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 13:41:06   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 13:41:14   INFO [libs.ActionsWithOurElements] : 100000AM was inputted into element
+2020-06-08 13:41:15   INFO [libs.ActionsWithOurElements] : 060000AM was inputted into element
+2020-06-08 13:41:18   INFO [libs.ActionsWithOurElements] : 060000PM was inputted into element
+2020-06-08 13:41:19   INFO [libs.ActionsWithOurElements] : 010000PM was inputted into element
+2020-06-08 13:41:34   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 13:41:35   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 13:41:36   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 13:41:44   INFO [libs.ActionsWithOurElements] : 100000AM was inputted into element
+2020-06-08 13:41:44   INFO [libs.ActionsWithOurElements] : 060000AM was inputted into element
+2020-06-08 13:41:48   INFO [libs.ActionsWithOurElements] : 060000PM was inputted into element
+2020-06-08 13:41:48   INFO [libs.ActionsWithOurElements] : 010000PM was inputted into element
+2020-06-08 13:42:03   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 13:42:04   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 13:42:05   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 13:42:13   INFO [libs.ActionsWithOurElements] : 100000AM was inputted into element
+2020-06-08 13:42:14   INFO [libs.ActionsWithOurElements] : 060000AM was inputted into element
+2020-06-08 13:42:17   INFO [libs.ActionsWithOurElements] : 060000PM was inputted into element
+2020-06-08 13:42:18   INFO [libs.ActionsWithOurElements] : 010000PM was inputted into element
+2020-06-08 13:42:32   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 13:42:34   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 13:42:35   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 13:42:35   INFO [frankesteinTest.logbookTest.CycleTest] :  DB connection closed 
+2020-06-08 16:14:40   INFO [frankesteinTest.logbookTest.CycleTest] : Chrome will be started
+2020-06-08 16:14:42   INFO [frankesteinTest.logbookTest.CycleTest] : Chrome is started
+2020-06-08 16:14:43   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-06-08 16:14:48   INFO [pages.LoginPage] : Login Page was opened
+2020-06-08 16:14:48   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-06-08 16:14:49   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-06-08 16:14:55   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-06-08 16:14:56   INFO [pages.LoginPage] : Phone verification pop up Closed
+2020-06-08 16:15:04   INFO [libs.ActionsWithOurElements] : 100000AM was inputted into element
+2020-06-08 16:15:04   INFO [libs.ActionsWithOurElements] : 060000AM was inputted into element
+2020-06-08 16:15:08   INFO [libs.ActionsWithOurElements] : 050000PM was inputted into element
+2020-06-08 16:15:08   INFO [libs.ActionsWithOurElements] : 010000PM was inputted into element
+2020-06-08 16:15:23   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 16:15:24   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 16:15:25   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 16:15:33   INFO [libs.ActionsWithOurElements] : 100000AM was inputted into element
+2020-06-08 16:15:34   INFO [libs.ActionsWithOurElements] : 060000AM was inputted into element
+2020-06-08 16:15:37   INFO [libs.ActionsWithOurElements] : 050000PM was inputted into element
+2020-06-08 16:15:38   INFO [libs.ActionsWithOurElements] : 010000PM was inputted into element
+2020-06-08 16:15:52   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 16:15:53   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 16:15:55   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 16:16:02   INFO [libs.ActionsWithOurElements] : 100000AM was inputted into element
+2020-06-08 16:16:03   INFO [libs.ActionsWithOurElements] : 060000AM was inputted into element
+2020-06-08 16:16:07   INFO [libs.ActionsWithOurElements] : 050000PM was inputted into element
+2020-06-08 16:16:07   INFO [libs.ActionsWithOurElements] : 010000PM was inputted into element
+2020-06-08 16:16:22   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 16:16:23   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 16:16:24   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 16:16:32   INFO [libs.ActionsWithOurElements] : 100000AM was inputted into element
+2020-06-08 16:16:32   INFO [libs.ActionsWithOurElements] : 060000AM was inputted into element
+2020-06-08 16:16:36   INFO [libs.ActionsWithOurElements] : 050000PM was inputted into element
+2020-06-08 16:16:36   INFO [libs.ActionsWithOurElements] : 010000PM was inputted into element
+2020-06-08 16:16:51   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 16:16:52   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 16:16:53   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 16:17:01   INFO [libs.ActionsWithOurElements] : 100000AM was inputted into element
+2020-06-08 16:17:02   INFO [libs.ActionsWithOurElements] : 060000AM was inputted into element
+2020-06-08 16:17:05   INFO [libs.ActionsWithOurElements] : 050000PM was inputted into element
+2020-06-08 16:17:06   INFO [libs.ActionsWithOurElements] : 010000PM was inputted into element
+2020-06-08 16:17:20   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 16:17:22   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 16:17:23   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 16:17:31   INFO [libs.ActionsWithOurElements] : 110000AM was inputted into element
+2020-06-08 16:17:31   INFO [libs.ActionsWithOurElements] : 060000AM was inputted into element
+2020-06-08 16:17:35   INFO [libs.ActionsWithOurElements] : 060000PM was inputted into element
+2020-06-08 16:17:35   INFO [libs.ActionsWithOurElements] : 010000PM was inputted into element
+2020-06-08 16:17:50   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 16:17:51   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 16:17:52   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 16:18:00   INFO [libs.ActionsWithOurElements] : 110000AM was inputted into element
+2020-06-08 16:18:01   INFO [libs.ActionsWithOurElements] : 060000AM was inputted into element
+2020-06-08 16:18:04   INFO [libs.ActionsWithOurElements] : 060000PM was inputted into element
+2020-06-08 16:18:05   INFO [libs.ActionsWithOurElements] : 010000PM was inputted into element
+2020-06-08 16:18:19   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 16:18:20   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 16:18:22  ERROR [frankesteinTest.logbookTest.CycleTest] : AC failed: Cycle hours is incorrect
+2020-06-08 16:18:22   INFO [frankesteinTest.logbookTest.CycleTest] :  DB connection closed 
+2020-06-08 16:19:48   INFO [frankesteinTest.logbookTest.CycleTest] : Chrome will be started
+2020-06-08 16:19:50   INFO [frankesteinTest.logbookTest.CycleTest] : Chrome is started
+2020-06-08 16:19:50   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-06-08 16:19:55   INFO [pages.LoginPage] : Login Page was opened
+2020-06-08 16:19:56   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-06-08 16:19:56   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-06-08 16:20:03   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-06-08 16:20:03   INFO [pages.LoginPage] : Phone verification pop up Closed
+2020-06-08 16:20:11   INFO [libs.ActionsWithOurElements] : 100000AM was inputted into element
+2020-06-08 16:20:12   INFO [libs.ActionsWithOurElements] : 060000AM was inputted into element
+2020-06-08 16:20:16   INFO [libs.ActionsWithOurElements] : 050000PM was inputted into element
+2020-06-08 16:20:16   INFO [libs.ActionsWithOurElements] : 010000PM was inputted into element
+2020-06-08 16:20:31   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 16:20:32   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 16:20:33   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 16:20:41   INFO [libs.ActionsWithOurElements] : 100000AM was inputted into element
+2020-06-08 16:20:42   INFO [libs.ActionsWithOurElements] : 060000AM was inputted into element
+2020-06-08 16:20:45   INFO [libs.ActionsWithOurElements] : 050000PM was inputted into element
+2020-06-08 16:20:46   INFO [libs.ActionsWithOurElements] : 010000PM was inputted into element
+2020-06-08 16:21:00   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 16:21:01   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 16:21:03   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 16:21:11   INFO [libs.ActionsWithOurElements] : 100000AM was inputted into element
+2020-06-08 16:21:11   INFO [libs.ActionsWithOurElements] : 060000AM was inputted into element
+2020-06-08 16:21:15   INFO [libs.ActionsWithOurElements] : 050000PM was inputted into element
+2020-06-08 16:21:15   INFO [libs.ActionsWithOurElements] : 010000PM was inputted into element
+2020-06-08 16:21:30   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 16:21:31   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 16:21:32   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 16:21:40   INFO [libs.ActionsWithOurElements] : 100000AM was inputted into element
+2020-06-08 16:21:40   INFO [libs.ActionsWithOurElements] : 060000AM was inputted into element
+2020-06-08 16:21:44   INFO [libs.ActionsWithOurElements] : 050000PM was inputted into element
+2020-06-08 16:21:44   INFO [libs.ActionsWithOurElements] : 010000PM was inputted into element
+2020-06-08 16:21:59   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 16:22:00   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 16:22:01   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 16:22:09   INFO [libs.ActionsWithOurElements] : 100000AM was inputted into element
+2020-06-08 16:22:10   INFO [libs.ActionsWithOurElements] : 060000AM was inputted into element
+2020-06-08 16:22:14   INFO [libs.ActionsWithOurElements] : 050000PM was inputted into element
+2020-06-08 16:22:14   INFO [libs.ActionsWithOurElements] : 010000PM was inputted into element
+2020-06-08 16:22:29   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 16:22:30   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 16:22:31   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 16:22:39   INFO [libs.ActionsWithOurElements] : 110000AM was inputted into element
+2020-06-08 16:22:39   INFO [libs.ActionsWithOurElements] : 060000AM was inputted into element
+2020-06-08 16:22:43   INFO [libs.ActionsWithOurElements] : 060000PM was inputted into element
+2020-06-08 16:22:43   INFO [libs.ActionsWithOurElements] : 010000PM was inputted into element
+2020-06-08 16:22:58   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 16:22:59   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 16:23:00   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 16:23:08   INFO [libs.ActionsWithOurElements] : 110000AM was inputted into element
+2020-06-08 16:23:09   INFO [libs.ActionsWithOurElements] : 060000AM was inputted into element
+2020-06-08 16:23:12   INFO [libs.ActionsWithOurElements] : 060000PM was inputted into element
+2020-06-08 16:23:13   INFO [libs.ActionsWithOurElements] : 010000PM was inputted into element
+2020-06-08 16:23:28   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 16:23:29   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 16:23:30   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 16:23:38   INFO [libs.ActionsWithOurElements] : 100000AM was inputted into element
+2020-06-08 16:23:39   INFO [libs.ActionsWithOurElements] : 060000AM was inputted into element
+2020-06-08 16:23:42   INFO [libs.ActionsWithOurElements] : 060000PM was inputted into element
+2020-06-08 16:23:43   INFO [libs.ActionsWithOurElements] : 010000PM was inputted into element
+2020-06-08 16:23:58  ERROR [frankesteinTest.logbookTest.CycleTest] : AC failed: Cycle hours is incorrect
+2020-06-08 16:23:58   INFO [frankesteinTest.logbookTest.CycleTest] :  DB connection closed 
+2020-06-08 16:31:44   INFO [frankesteinTest.logbookTest.CycleTest] : Chrome will be started
+2020-06-08 16:31:47   INFO [frankesteinTest.logbookTest.CycleTest] : Chrome is started
+2020-06-08 16:31:47   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-06-08 16:31:52   INFO [pages.LoginPage] : Login Page was opened
+2020-06-08 16:31:52   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-06-08 16:31:53   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-06-08 16:31:59   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-06-08 16:32:00   INFO [pages.LoginPage] : Phone verification pop up Closed
+2020-06-08 16:32:08   INFO [libs.ActionsWithOurElements] : 100000AM was inputted into element
+2020-06-08 16:32:08   INFO [libs.ActionsWithOurElements] : 060000AM was inputted into element
+2020-06-08 16:32:12   INFO [libs.ActionsWithOurElements] : 050000PM was inputted into element
+2020-06-08 16:32:12   INFO [libs.ActionsWithOurElements] : 010000PM was inputted into element
+2020-06-08 16:32:27   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 16:32:28   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 16:32:29   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 16:32:37   INFO [libs.ActionsWithOurElements] : 100000AM was inputted into element
+2020-06-08 16:32:38   INFO [libs.ActionsWithOurElements] : 060000AM was inputted into element
+2020-06-08 16:32:41   INFO [libs.ActionsWithOurElements] : 050000PM was inputted into element
+2020-06-08 16:32:42   INFO [libs.ActionsWithOurElements] : 010000PM was inputted into element
+2020-06-08 16:32:57   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 16:32:58   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 16:32:59   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 16:33:07   INFO [libs.ActionsWithOurElements] : 100000AM was inputted into element
+2020-06-08 16:33:07   INFO [libs.ActionsWithOurElements] : 060000AM was inputted into element
+2020-06-08 16:33:11   INFO [libs.ActionsWithOurElements] : 050000PM was inputted into element
+2020-06-08 16:33:11   INFO [libs.ActionsWithOurElements] : 010000PM was inputted into element
+2020-06-08 16:33:26   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 16:33:27   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 16:33:28   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 16:33:36   INFO [libs.ActionsWithOurElements] : 100000AM was inputted into element
+2020-06-08 16:33:37   INFO [libs.ActionsWithOurElements] : 060000AM was inputted into element
+2020-06-08 16:33:40   INFO [libs.ActionsWithOurElements] : 050000PM was inputted into element
+2020-06-08 16:33:41   INFO [libs.ActionsWithOurElements] : 010000PM was inputted into element
+2020-06-08 16:33:56   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 16:33:57   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 16:33:58   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 16:34:06   INFO [libs.ActionsWithOurElements] : 100000AM was inputted into element
+2020-06-08 16:34:06   INFO [libs.ActionsWithOurElements] : 060000AM was inputted into element
+2020-06-08 16:34:10   INFO [libs.ActionsWithOurElements] : 050000PM was inputted into element
+2020-06-08 16:34:10   INFO [libs.ActionsWithOurElements] : 010000PM was inputted into element
+2020-06-08 16:34:25   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 16:34:26   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 16:34:27   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 16:34:35   INFO [libs.ActionsWithOurElements] : 110000AM was inputted into element
+2020-06-08 16:34:36   INFO [libs.ActionsWithOurElements] : 060000AM was inputted into element
+2020-06-08 16:34:40   INFO [libs.ActionsWithOurElements] : 060000PM was inputted into element
+2020-06-08 16:34:40   INFO [libs.ActionsWithOurElements] : 010000PM was inputted into element
+2020-06-08 16:34:55   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 16:34:56   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 16:34:57   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 16:35:05   INFO [libs.ActionsWithOurElements] : 110000AM was inputted into element
+2020-06-08 16:35:06   INFO [libs.ActionsWithOurElements] : 060000AM was inputted into element
+2020-06-08 16:35:10   INFO [libs.ActionsWithOurElements] : 060000PM was inputted into element
+2020-06-08 16:35:10   INFO [libs.ActionsWithOurElements] : 010000PM was inputted into element
+2020-06-08 16:35:25   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 16:35:26   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 16:35:27   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 16:35:35   INFO [libs.ActionsWithOurElements] : 110000AM was inputted into element
+2020-06-08 16:35:35   INFO [libs.ActionsWithOurElements] : 060000AM was inputted into element
+2020-06-08 16:35:39   INFO [libs.ActionsWithOurElements] : 060000PM was inputted into element
+2020-06-08 16:35:39   INFO [libs.ActionsWithOurElements] : 010000PM was inputted into element
+2020-06-08 16:35:54   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 16:35:55   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 16:35:56   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 16:35:56   INFO [frankesteinTest.logbookTest.CycleTest] :  DB connection closed 
+2020-06-08 16:48:01   INFO [frankesteinTest.logbookTest.CycleTest] : Chrome will be started
+2020-06-08 16:48:04   INFO [frankesteinTest.logbookTest.CycleTest] : Chrome is started
+2020-06-08 16:48:04   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-06-08 16:48:09   INFO [pages.LoginPage] : Login Page was opened
+2020-06-08 16:48:09   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-06-08 16:48:10   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-06-08 16:48:16   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-06-08 16:48:16   INFO [pages.LoginPage] : Phone verification pop up Closed
+2020-06-08 16:48:24   INFO [libs.ActionsWithOurElements] : 110000AM was inputted into element
+2020-06-08 16:48:25   INFO [libs.ActionsWithOurElements] : 060000AM was inputted into element
+2020-06-08 16:48:29   INFO [libs.ActionsWithOurElements] : 060000PM was inputted into element
+2020-06-08 16:48:29   INFO [libs.ActionsWithOurElements] : 010000PM was inputted into element
+2020-06-08 16:48:44   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 16:48:45   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 16:48:46   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 16:48:54   INFO [libs.ActionsWithOurElements] : 110000AM was inputted into element
+2020-06-08 16:48:55   INFO [libs.ActionsWithOurElements] : 060000AM was inputted into element
+2020-06-08 16:48:58   INFO [libs.ActionsWithOurElements] : 060000PM was inputted into element
+2020-06-08 16:48:59   INFO [libs.ActionsWithOurElements] : 010000PM was inputted into element
+2020-06-08 16:49:13   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 16:49:14   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 16:49:16   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 16:49:24   INFO [libs.ActionsWithOurElements] : 110000AM was inputted into element
+2020-06-08 16:49:24   INFO [libs.ActionsWithOurElements] : 060000AM was inputted into element
+2020-06-08 16:49:28   INFO [libs.ActionsWithOurElements] : 060000PM was inputted into element
+2020-06-08 16:49:28   INFO [libs.ActionsWithOurElements] : 010000PM was inputted into element
+2020-06-08 16:49:43   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 16:49:44   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 16:49:45   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 16:49:53   INFO [libs.ActionsWithOurElements] : 110000AM was inputted into element
+2020-06-08 16:49:53   INFO [libs.ActionsWithOurElements] : 060000AM was inputted into element
+2020-06-08 16:49:57   INFO [libs.ActionsWithOurElements] : 060000PM was inputted into element
+2020-06-08 16:49:58   INFO [libs.ActionsWithOurElements] : 010000PM was inputted into element
+2020-06-08 16:50:12   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 16:50:13   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 16:50:14   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 16:50:22   INFO [libs.ActionsWithOurElements] : 100000AM was inputted into element
+2020-06-08 16:50:23   INFO [libs.ActionsWithOurElements] : 060000AM was inputted into element
+2020-06-08 16:50:26   INFO [libs.ActionsWithOurElements] : 050000PM was inputted into element
+2020-06-08 16:50:27   INFO [libs.ActionsWithOurElements] : 010000PM was inputted into element
+2020-06-08 16:50:42  ERROR [frankesteinTest.logbookTest.CycleTest] : AC failed: Cycle hours is incorrect
+2020-06-08 16:50:42   INFO [frankesteinTest.logbookTest.CycleTest] :  DB connection closed 
+2020-06-08 16:51:57   INFO [frankesteinTest.logbookTest.CycleTest] : Chrome will be started
+2020-06-08 16:52:00   INFO [frankesteinTest.logbookTest.CycleTest] : Chrome is started
+2020-06-08 16:52:00   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-06-08 16:52:05   INFO [pages.LoginPage] : Login Page was opened
+2020-06-08 16:52:06   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-06-08 16:52:06   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-06-08 16:52:13   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-06-08 16:52:13   INFO [pages.LoginPage] : Phone verification pop up Closed
+2020-06-08 16:52:21   INFO [libs.ActionsWithOurElements] : 110000AM was inputted into element
+2020-06-08 16:52:22   INFO [libs.ActionsWithOurElements] : 060000AM was inputted into element
+2020-06-08 16:52:25   INFO [libs.ActionsWithOurElements] : 060000PM was inputted into element
+2020-06-08 16:52:26   INFO [libs.ActionsWithOurElements] : 010000PM was inputted into element
+2020-06-08 16:52:41   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 16:52:42   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 16:52:43   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 16:52:51   INFO [libs.ActionsWithOurElements] : 110000AM was inputted into element
+2020-06-08 16:52:51   INFO [libs.ActionsWithOurElements] : 060000AM was inputted into element
+2020-06-08 16:52:55   INFO [libs.ActionsWithOurElements] : 060000PM was inputted into element
+2020-06-08 16:52:55   INFO [libs.ActionsWithOurElements] : 010000PM was inputted into element
+2020-06-08 16:53:10   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 16:53:11   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 16:53:12   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 16:53:20   INFO [libs.ActionsWithOurElements] : 110000AM was inputted into element
+2020-06-08 16:53:21   INFO [libs.ActionsWithOurElements] : 060000AM was inputted into element
+2020-06-08 16:53:24   INFO [libs.ActionsWithOurElements] : 060000PM was inputted into element
+2020-06-08 16:53:25   INFO [libs.ActionsWithOurElements] : 010000PM was inputted into element
+2020-06-08 16:53:39   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 16:53:41   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 16:53:42   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 16:53:50   INFO [libs.ActionsWithOurElements] : 110000AM was inputted into element
+2020-06-08 16:53:50   INFO [libs.ActionsWithOurElements] : 060000AM was inputted into element
+2020-06-08 16:53:54   INFO [libs.ActionsWithOurElements] : 060000PM was inputted into element
+2020-06-08 16:53:54   INFO [libs.ActionsWithOurElements] : 010000PM was inputted into element
+2020-06-08 16:54:09   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 16:54:10   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 16:54:11   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 16:54:19   INFO [libs.ActionsWithOurElements] : 110000AM was inputted into element
+2020-06-08 16:54:20   INFO [libs.ActionsWithOurElements] : 060000AM was inputted into element
+2020-06-08 16:54:23   INFO [libs.ActionsWithOurElements] : 060000PM was inputted into element
+2020-06-08 16:54:24   INFO [libs.ActionsWithOurElements] : 010000PM was inputted into element
+2020-06-08 16:54:38   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 16:54:39   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 16:54:41   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 16:54:49   INFO [libs.ActionsWithOurElements] : 110000AM was inputted into element
+2020-06-08 16:54:50   INFO [libs.ActionsWithOurElements] : 060000AM was inputted into element
+2020-06-08 16:54:53   INFO [libs.ActionsWithOurElements] : 060000PM was inputted into element
+2020-06-08 16:54:54   INFO [libs.ActionsWithOurElements] : 010000PM was inputted into element
+2020-06-08 16:55:08   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 16:55:09   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 16:55:11   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 16:55:19   INFO [libs.ActionsWithOurElements] : 110000AM was inputted into element
+2020-06-08 16:55:20   INFO [libs.ActionsWithOurElements] : 060000AM was inputted into element
+2020-06-08 16:55:23   INFO [libs.ActionsWithOurElements] : 060000PM was inputted into element
+2020-06-08 16:55:24   INFO [libs.ActionsWithOurElements] : 010000PM was inputted into element
+2020-06-08 16:55:38   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 16:55:39   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 16:55:41   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 16:55:41   INFO [frankesteinTest.logbookTest.CycleTest] :  DB connection closed 
+2020-06-08 17:01:28   INFO [frankesteinTest.logbookTest.CycleTest] : Chrome will be started
+2020-06-08 17:01:31   INFO [frankesteinTest.logbookTest.CycleTest] : Chrome is started
+2020-06-08 17:01:31   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-06-08 17:01:36   INFO [pages.LoginPage] : Login Page was opened
+2020-06-08 17:01:36   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-06-08 17:01:37   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-06-08 17:01:43   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-06-08 17:01:43   INFO [pages.LoginPage] : Phone verification pop up Closed
+2020-06-08 17:01:51   INFO [libs.ActionsWithOurElements] : 110000AM was inputted into element
+2020-06-08 17:01:52   INFO [libs.ActionsWithOurElements] : 060000AM was inputted into element
+2020-06-08 17:01:56   INFO [libs.ActionsWithOurElements] : 060000PM was inputted into element
+2020-06-08 17:01:56   INFO [libs.ActionsWithOurElements] : 010000PM was inputted into element
+2020-06-08 17:02:11   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 17:02:12   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 17:02:13  ERROR [frankesteinTest.logbookTest.CycleTest] : AC failed: Cycle hours is incorrect
+2020-06-08 17:02:13   INFO [frankesteinTest.logbookTest.CycleTest] :  DB connection closed 
+2020-06-08 17:03:07   INFO [frankesteinTest.logbookTest.CycleTest] : Chrome will be started
+2020-06-08 17:03:10   INFO [frankesteinTest.logbookTest.CycleTest] : Chrome is started
+2020-06-08 17:03:10   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-06-08 17:03:15   INFO [pages.LoginPage] : Login Page was opened
+2020-06-08 17:03:15   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-06-08 17:03:16   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-06-08 17:03:22   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-06-08 17:03:22   INFO [pages.LoginPage] : Phone verification pop up Closed
+2020-06-08 17:03:30   INFO [libs.ActionsWithOurElements] : 110000AM was inputted into element
+2020-06-08 17:03:31   INFO [libs.ActionsWithOurElements] : 060000AM was inputted into element
+2020-06-08 17:03:35   INFO [libs.ActionsWithOurElements] : 060000PM was inputted into element
+2020-06-08 17:03:35   INFO [libs.ActionsWithOurElements] : 010000PM was inputted into element
+2020-06-08 17:03:50   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 17:03:51   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 17:03:52   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 17:04:00   INFO [libs.ActionsWithOurElements] : 110000AM was inputted into element
+2020-06-08 17:04:00   INFO [libs.ActionsWithOurElements] : 060000AM was inputted into element
+2020-06-08 17:04:04   INFO [libs.ActionsWithOurElements] : 060000PM was inputted into element
+2020-06-08 17:04:05   INFO [libs.ActionsWithOurElements] : 010000PM was inputted into element
+2020-06-08 17:04:19   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 17:04:20   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 17:04:22   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 17:04:30   INFO [libs.ActionsWithOurElements] : 110000AM was inputted into element
+2020-06-08 17:04:30   INFO [libs.ActionsWithOurElements] : 060000AM was inputted into element
+2020-06-08 17:04:34   INFO [libs.ActionsWithOurElements] : 060000PM was inputted into element
+2020-06-08 17:04:34   INFO [libs.ActionsWithOurElements] : 010000PM was inputted into element
+2020-06-08 17:04:49   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 17:04:50   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 17:04:51   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 17:04:59   INFO [libs.ActionsWithOurElements] : 110000AM was inputted into element
+2020-06-08 17:04:59   INFO [libs.ActionsWithOurElements] : 060000AM was inputted into element
+2020-06-08 17:05:03   INFO [libs.ActionsWithOurElements] : 060000PM was inputted into element
+2020-06-08 17:05:03   INFO [libs.ActionsWithOurElements] : 010000PM was inputted into element
+2020-06-08 17:05:18   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 17:05:19   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 17:05:20   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 17:05:29   INFO [libs.ActionsWithOurElements] : 110000AM was inputted into element
+2020-06-08 17:05:29   INFO [libs.ActionsWithOurElements] : 060000AM was inputted into element
+2020-06-08 17:05:33   INFO [libs.ActionsWithOurElements] : 060000PM was inputted into element
+2020-06-08 17:05:33   INFO [libs.ActionsWithOurElements] : 010000PM was inputted into element
+2020-06-08 17:05:48   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 17:05:49   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 17:05:50   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 17:05:59   INFO [libs.ActionsWithOurElements] : 110000AM was inputted into element
+2020-06-08 17:05:59   INFO [libs.ActionsWithOurElements] : 060000AM was inputted into element
+2020-06-08 17:06:03   INFO [libs.ActionsWithOurElements] : 060000PM was inputted into element
+2020-06-08 17:06:04   INFO [libs.ActionsWithOurElements] : 010000PM was inputted into element
+2020-06-08 17:06:18   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 17:06:19   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 17:06:21   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 17:06:29   INFO [libs.ActionsWithOurElements] : 110000AM was inputted into element
+2020-06-08 17:06:30   INFO [libs.ActionsWithOurElements] : 060000AM was inputted into element
+2020-06-08 17:06:33   INFO [libs.ActionsWithOurElements] : 060000PM was inputted into element
+2020-06-08 17:06:34   INFO [libs.ActionsWithOurElements] : 010000PM was inputted into element
+2020-06-08 17:06:48   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 17:06:49   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 17:06:51   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 17:06:59   INFO [libs.ActionsWithOurElements] : 110000AM was inputted into element
+2020-06-08 17:07:00   INFO [libs.ActionsWithOurElements] : 060000AM was inputted into element
+2020-06-08 17:07:03   INFO [libs.ActionsWithOurElements] : 060000PM was inputted into element
+2020-06-08 17:07:04   INFO [libs.ActionsWithOurElements] : 010000PM was inputted into element
+2020-06-08 17:07:18   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 17:07:19   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 17:07:21   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 17:07:21   INFO [frankesteinTest.logbookTest.CycleTest] :  DB connection closed 
+2020-06-08 17:12:24   INFO [frankesteinTest.logbookTest.CycleTest] : Chrome will be started
+2020-06-08 17:12:26   INFO [frankesteinTest.logbookTest.CycleTest] : Chrome is started
+2020-06-08 17:12:27   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-06-08 17:12:31   INFO [pages.LoginPage] : Login Page was opened
+2020-06-08 17:12:32   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-06-08 17:12:32   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-06-08 17:12:39   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-06-08 17:12:39   INFO [pages.LoginPage] : Phone verification pop up Closed
+2020-06-08 17:12:47   INFO [libs.ActionsWithOurElements] : 110000AM was inputted into element
+2020-06-08 17:12:47   INFO [libs.ActionsWithOurElements] : 060000AM was inputted into element
+2020-06-08 17:12:51   INFO [libs.ActionsWithOurElements] : 060000PM was inputted into element
+2020-06-08 17:12:52   INFO [libs.ActionsWithOurElements] : 010000PM was inputted into element
+2020-06-08 17:13:06   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 17:13:08   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 17:13:09   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 17:13:17   INFO [libs.ActionsWithOurElements] : 110000AM was inputted into element
+2020-06-08 17:13:17   INFO [libs.ActionsWithOurElements] : 060000AM was inputted into element
+2020-06-08 17:13:21   INFO [libs.ActionsWithOurElements] : 060000PM was inputted into element
+2020-06-08 17:13:21   INFO [libs.ActionsWithOurElements] : 010000PM was inputted into element
+2020-06-08 17:13:36   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 17:13:37   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 17:13:38   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 17:13:46   INFO [libs.ActionsWithOurElements] : 110000AM was inputted into element
+2020-06-08 17:13:46   INFO [libs.ActionsWithOurElements] : 060000AM was inputted into element
+2020-06-08 17:13:50   INFO [libs.ActionsWithOurElements] : 060000PM was inputted into element
+2020-06-08 17:13:51   INFO [libs.ActionsWithOurElements] : 010000PM was inputted into element
+2020-06-08 17:14:06   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 17:14:07   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 17:14:08   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 17:14:16   INFO [libs.ActionsWithOurElements] : 110000AM was inputted into element
+2020-06-08 17:14:16   INFO [libs.ActionsWithOurElements] : 060000AM was inputted into element
+2020-06-08 17:14:20   INFO [libs.ActionsWithOurElements] : 060000PM was inputted into element
+2020-06-08 17:14:20   INFO [libs.ActionsWithOurElements] : 010000PM was inputted into element
+2020-06-08 17:14:35   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 17:14:36   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 17:14:37   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 17:14:45   INFO [libs.ActionsWithOurElements] : 110000AM was inputted into element
+2020-06-08 17:14:46   INFO [libs.ActionsWithOurElements] : 060000AM was inputted into element
+2020-06-08 17:14:50   INFO [libs.ActionsWithOurElements] : 060000PM was inputted into element
+2020-06-08 17:14:50   INFO [libs.ActionsWithOurElements] : 010000PM was inputted into element
+2020-06-08 17:15:05   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 17:15:06   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 17:15:07   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 17:15:15   INFO [libs.ActionsWithOurElements] : 110000AM was inputted into element
+2020-06-08 17:15:15   INFO [libs.ActionsWithOurElements] : 060000AM was inputted into element
+2020-06-08 17:15:19   INFO [libs.ActionsWithOurElements] : 060000PM was inputted into element
+2020-06-08 17:15:20   INFO [libs.ActionsWithOurElements] : 010000PM was inputted into element
+2020-06-08 17:15:34   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 17:15:35   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 17:15:37   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 17:15:44   INFO [libs.ActionsWithOurElements] : 110000AM was inputted into element
+2020-06-08 17:15:45   INFO [libs.ActionsWithOurElements] : 060000AM was inputted into element
+2020-06-08 17:15:49   INFO [libs.ActionsWithOurElements] : 060000PM was inputted into element
+2020-06-08 17:15:49   INFO [libs.ActionsWithOurElements] : 010000PM was inputted into element
+2020-06-08 17:16:04   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 17:16:05   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 17:16:06   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 17:16:06   INFO [frankesteinTest.logbookTest.CycleTest] :  DB connection closed 
+2020-06-08 17:26:53   INFO [frankesteinTest.logbookTest.CycleTest] : Chrome will be started
+2020-06-08 17:26:56   INFO [frankesteinTest.logbookTest.CycleTest] : Chrome is started
+2020-06-08 17:26:56   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-06-08 17:27:01   INFO [pages.LoginPage] : Login Page was opened
+2020-06-08 17:27:01   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-06-08 17:27:02   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-06-08 17:27:08   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-06-08 17:27:08   INFO [pages.LoginPage] : Phone verification pop up Closed
+2020-06-08 17:27:16   INFO [libs.ActionsWithOurElements] : 110000AM was inputted into element
+2020-06-08 17:27:17   INFO [libs.ActionsWithOurElements] : 060000AM was inputted into element
+2020-06-08 17:27:21   INFO [libs.ActionsWithOurElements] : 060000PM was inputted into element
+2020-06-08 17:27:21   INFO [libs.ActionsWithOurElements] : 010000PM was inputted into element
+2020-06-08 17:27:36   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 17:27:37   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 17:27:38   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 17:27:46   INFO [libs.ActionsWithOurElements] : 110000AM was inputted into element
+2020-06-08 17:27:46   INFO [libs.ActionsWithOurElements] : 060000AM was inputted into element
+2020-06-08 17:27:50   INFO [libs.ActionsWithOurElements] : 060000PM was inputted into element
+2020-06-08 17:27:50   INFO [libs.ActionsWithOurElements] : 010000PM was inputted into element
+2020-06-08 17:28:05   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 17:28:06   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 17:28:07   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 17:28:15   INFO [libs.ActionsWithOurElements] : 110000AM was inputted into element
+2020-06-08 17:28:16   INFO [libs.ActionsWithOurElements] : 060000AM was inputted into element
+2020-06-08 17:28:19   INFO [libs.ActionsWithOurElements] : 060000PM was inputted into element
+2020-06-08 17:28:20   INFO [libs.ActionsWithOurElements] : 010000PM was inputted into element
+2020-06-08 17:28:35   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 17:28:36   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 17:28:37   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 17:28:45   INFO [libs.ActionsWithOurElements] : 110000AM was inputted into element
+2020-06-08 17:28:45   INFO [libs.ActionsWithOurElements] : 060000AM was inputted into element
+2020-06-08 17:28:49   INFO [libs.ActionsWithOurElements] : 060000PM was inputted into element
+2020-06-08 17:28:49   INFO [libs.ActionsWithOurElements] : 010000PM was inputted into element
+2020-06-08 17:29:04   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 17:29:05   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 17:29:06   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 17:29:14   INFO [libs.ActionsWithOurElements] : 110000AM was inputted into element
+2020-06-08 17:29:15   INFO [libs.ActionsWithOurElements] : 060000AM was inputted into element
+2020-06-08 17:29:18   INFO [libs.ActionsWithOurElements] : 060000PM was inputted into element
+2020-06-08 17:29:19   INFO [libs.ActionsWithOurElements] : 010000PM was inputted into element
+2020-06-08 17:29:34   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 17:29:35   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 17:29:36   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 17:29:44   INFO [libs.ActionsWithOurElements] : 110000AM was inputted into element
+2020-06-08 17:29:44   INFO [libs.ActionsWithOurElements] : 060000AM was inputted into element
+2020-06-08 17:29:48   INFO [libs.ActionsWithOurElements] : 060000PM was inputted into element
+2020-06-08 17:29:48   INFO [libs.ActionsWithOurElements] : 010000PM was inputted into element
+2020-06-08 17:30:03   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 17:30:04   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 17:30:05   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 17:30:14   INFO [libs.ActionsWithOurElements] : 110000AM was inputted into element
+2020-06-08 17:30:14   INFO [libs.ActionsWithOurElements] : 060000AM was inputted into element
+2020-06-08 17:30:18   INFO [libs.ActionsWithOurElements] : 060000PM was inputted into element
+2020-06-08 17:30:18   INFO [libs.ActionsWithOurElements] : 010000PM was inputted into element
+2020-06-08 17:30:33   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 17:30:34   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 17:30:35   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 17:30:43   INFO [libs.ActionsWithOurElements] : 110000AM was inputted into element
+2020-06-08 17:30:44   INFO [libs.ActionsWithOurElements] : 060000AM was inputted into element
+2020-06-08 17:30:48   INFO [libs.ActionsWithOurElements] : 060000PM was inputted into element
+2020-06-08 17:30:48   INFO [libs.ActionsWithOurElements] : 010000PM was inputted into element
+2020-06-08 17:31:03   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 17:31:04   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 17:31:05   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 17:31:13   INFO [libs.ActionsWithOurElements] : 110000AM was inputted into element
+2020-06-08 17:31:14   INFO [libs.ActionsWithOurElements] : 060000AM was inputted into element
+2020-06-08 17:31:18   INFO [libs.ActionsWithOurElements] : 060000PM was inputted into element
+2020-06-08 17:31:18   INFO [libs.ActionsWithOurElements] : 010000PM was inputted into element
+2020-06-08 17:31:33   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 17:31:34   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 17:31:35   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 17:31:43   INFO [libs.ActionsWithOurElements] : 110000AM was inputted into element
+2020-06-08 17:31:44   INFO [libs.ActionsWithOurElements] : 060000AM was inputted into element
+2020-06-08 17:31:47   INFO [libs.ActionsWithOurElements] : 060000PM was inputted into element
+2020-06-08 17:31:48   INFO [libs.ActionsWithOurElements] : 010000PM was inputted into element
+2020-06-08 17:32:03   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 17:32:04   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 17:32:05   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 17:32:13   INFO [libs.ActionsWithOurElements] : 090000AM was inputted into element
+2020-06-08 17:32:14   INFO [libs.ActionsWithOurElements] : 060000AM was inputted into element
+2020-06-08 17:32:17   INFO [libs.ActionsWithOurElements] : 060000PM was inputted into element
+2020-06-08 17:32:18   INFO [libs.ActionsWithOurElements] : 040000PM was inputted into element
+2020-06-08 17:32:33  ERROR [frankesteinTest.logbookTest.CycleTest] : AC failed: Cycle hours is incorrect
+2020-06-08 17:32:33   INFO [frankesteinTest.logbookTest.CycleTest] :  DB connection closed 
+2020-06-08 17:33:57   INFO [frankesteinTest.logbookTest.CycleTest] : Chrome will be started
+2020-06-08 17:34:00   INFO [frankesteinTest.logbookTest.CycleTest] : Chrome is started
+2020-06-08 17:34:00   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-06-08 17:34:05   INFO [pages.LoginPage] : Login Page was opened
+2020-06-08 17:34:06   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-06-08 17:34:06   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-06-08 17:34:12   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-06-08 17:34:13   INFO [pages.LoginPage] : Phone verification pop up Closed
+2020-06-08 17:34:21   INFO [libs.ActionsWithOurElements] : 110000AM was inputted into element
+2020-06-08 17:34:21   INFO [libs.ActionsWithOurElements] : 060000AM was inputted into element
+2020-06-08 17:34:25   INFO [libs.ActionsWithOurElements] : 060000PM was inputted into element
+2020-06-08 17:34:25   INFO [libs.ActionsWithOurElements] : 010000PM was inputted into element
+2020-06-08 17:34:40   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 17:34:41   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 17:34:42   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 17:34:50   INFO [libs.ActionsWithOurElements] : 110000AM was inputted into element
+2020-06-08 17:34:51   INFO [libs.ActionsWithOurElements] : 060000AM was inputted into element
+2020-06-08 17:34:55   INFO [libs.ActionsWithOurElements] : 060000PM was inputted into element
+2020-06-08 17:34:55   INFO [libs.ActionsWithOurElements] : 010000PM was inputted into element
+2020-06-08 17:35:10   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 17:35:11   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 17:35:12   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 17:35:20   INFO [libs.ActionsWithOurElements] : 110000AM was inputted into element
+2020-06-08 17:35:20   INFO [libs.ActionsWithOurElements] : 060000AM was inputted into element
+2020-06-08 17:35:24   INFO [libs.ActionsWithOurElements] : 060000PM was inputted into element
+2020-06-08 17:35:24   INFO [libs.ActionsWithOurElements] : 010000PM was inputted into element
+2020-06-08 17:35:39   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 17:35:40   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 17:35:41   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 17:35:49   INFO [libs.ActionsWithOurElements] : 110000AM was inputted into element
+2020-06-08 17:35:50   INFO [libs.ActionsWithOurElements] : 060000AM was inputted into element
+2020-06-08 17:35:53   INFO [libs.ActionsWithOurElements] : 060000PM was inputted into element
+2020-06-08 17:35:54   INFO [libs.ActionsWithOurElements] : 010000PM was inputted into element
+2020-06-08 17:36:08   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 17:36:10   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 17:36:11   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 17:36:19   INFO [libs.ActionsWithOurElements] : 110000AM was inputted into element
+2020-06-08 17:36:20   INFO [libs.ActionsWithOurElements] : 060000AM was inputted into element
+2020-06-08 17:36:23   INFO [libs.ActionsWithOurElements] : 060000PM was inputted into element
+2020-06-08 17:36:24   INFO [libs.ActionsWithOurElements] : 010000PM was inputted into element
+2020-06-08 17:36:38   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 17:36:40   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 17:36:41   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 17:36:49   INFO [libs.ActionsWithOurElements] : 110000AM was inputted into element
+2020-06-08 17:36:50   INFO [libs.ActionsWithOurElements] : 060000AM was inputted into element
+2020-06-08 17:36:53   INFO [libs.ActionsWithOurElements] : 060000PM was inputted into element
+2020-06-08 17:36:54   INFO [libs.ActionsWithOurElements] : 010000PM was inputted into element
+2020-06-08 17:37:08   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 17:37:09   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 17:37:11   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 17:37:19   INFO [libs.ActionsWithOurElements] : 110000AM was inputted into element
+2020-06-08 17:37:19   INFO [libs.ActionsWithOurElements] : 060000AM was inputted into element
+2020-06-08 17:37:23   INFO [libs.ActionsWithOurElements] : 060000PM was inputted into element
+2020-06-08 17:37:24   INFO [libs.ActionsWithOurElements] : 010000PM was inputted into element
+2020-06-08 17:37:38   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 17:37:39   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 17:37:41   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 17:37:49   INFO [libs.ActionsWithOurElements] : 110000AM was inputted into element
+2020-06-08 17:37:49   INFO [libs.ActionsWithOurElements] : 060000AM was inputted into element
+2020-06-08 17:37:53   INFO [libs.ActionsWithOurElements] : 060000PM was inputted into element
+2020-06-08 17:37:53   INFO [libs.ActionsWithOurElements] : 010000PM was inputted into element
+2020-06-08 17:38:08   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 17:38:09   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 17:38:10   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 17:38:19   INFO [libs.ActionsWithOurElements] : 110000AM was inputted into element
+2020-06-08 17:38:19   INFO [libs.ActionsWithOurElements] : 060000AM was inputted into element
+2020-06-08 17:38:23   INFO [libs.ActionsWithOurElements] : 060000PM was inputted into element
+2020-06-08 17:38:23   INFO [libs.ActionsWithOurElements] : 010000PM was inputted into element
+2020-06-08 17:38:38   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 17:38:39   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 17:38:40   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 17:38:49   INFO [libs.ActionsWithOurElements] : 110000AM was inputted into element
+2020-06-08 17:38:49   INFO [libs.ActionsWithOurElements] : 060000AM was inputted into element
+2020-06-08 17:38:53   INFO [libs.ActionsWithOurElements] : 060000PM was inputted into element
+2020-06-08 17:38:53   INFO [libs.ActionsWithOurElements] : 010000PM was inputted into element
+2020-06-08 17:39:08   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 17:39:09   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 17:39:10   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 17:39:19   INFO [libs.ActionsWithOurElements] : 090000AM was inputted into element
+2020-06-08 17:39:19   INFO [libs.ActionsWithOurElements] : 060000AM was inputted into element
+2020-06-08 17:39:23   INFO [libs.ActionsWithOurElements] : 060000PM was inputted into element
+2020-06-08 17:39:23   INFO [libs.ActionsWithOurElements] : 040000PM was inputted into element
+2020-06-08 17:39:38  ERROR [frankesteinTest.logbookTest.CycleTest] : AC failed: Cycle hours is incorrect
+2020-06-08 17:39:38   INFO [frankesteinTest.logbookTest.CycleTest] :  DB connection closed 
+2020-06-08 18:06:30   INFO [frankesteinTest.logbookTest.CycleTest] : Chrome will be started
+2020-06-08 18:06:33   INFO [frankesteinTest.logbookTest.CycleTest] : Chrome is started
+2020-06-08 18:06:33   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-06-08 18:06:38   INFO [pages.LoginPage] : Login Page was opened
+2020-06-08 18:06:39   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-06-08 18:06:39   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-06-08 18:06:46   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-06-08 18:06:46   INFO [pages.LoginPage] : Phone verification pop up Closed
+2020-06-08 18:06:54   INFO [libs.ActionsWithOurElements] : 110000AM was inputted into element
+2020-06-08 18:06:54   INFO [libs.ActionsWithOurElements] : 060000AM was inputted into element
+2020-06-08 18:06:58   INFO [libs.ActionsWithOurElements] : 060000PM was inputted into element
+2020-06-08 18:06:59   INFO [libs.ActionsWithOurElements] : 010000PM was inputted into element
+2020-06-08 18:07:13   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 18:07:15   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 18:07:16   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 18:07:24   INFO [libs.ActionsWithOurElements] : 110000AM was inputted into element
+2020-06-08 18:07:24   INFO [libs.ActionsWithOurElements] : 060000AM was inputted into element
+2020-06-08 18:07:28   INFO [libs.ActionsWithOurElements] : 060000PM was inputted into element
+2020-06-08 18:07:28   INFO [libs.ActionsWithOurElements] : 010000PM was inputted into element
+2020-06-08 18:07:43   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 18:07:44   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 18:07:45   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 18:07:53   INFO [libs.ActionsWithOurElements] : 110000AM was inputted into element
+2020-06-08 18:07:53   INFO [libs.ActionsWithOurElements] : 060000AM was inputted into element
+2020-06-08 18:07:57   INFO [libs.ActionsWithOurElements] : 060000PM was inputted into element
+2020-06-08 18:07:58   INFO [libs.ActionsWithOurElements] : 010000PM was inputted into element
+2020-06-08 18:08:12   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 18:08:14   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 18:08:15   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 18:08:24   INFO [libs.ActionsWithOurElements] : 110000AM was inputted into element
+2020-06-08 18:08:25   INFO [libs.ActionsWithOurElements] : 060000AM was inputted into element
+2020-06-08 18:08:29   INFO [libs.ActionsWithOurElements] : 060000PM was inputted into element
+2020-06-08 18:08:29   INFO [libs.ActionsWithOurElements] : 010000PM was inputted into element
+2020-06-08 18:08:44   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 18:08:45   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 18:08:46   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 18:08:54   INFO [libs.ActionsWithOurElements] : 110000AM was inputted into element
+2020-06-08 18:08:55   INFO [libs.ActionsWithOurElements] : 060000AM was inputted into element
+2020-06-08 18:08:58   INFO [libs.ActionsWithOurElements] : 060000PM was inputted into element
+2020-06-08 18:08:59   INFO [libs.ActionsWithOurElements] : 010000PM was inputted into element
+2020-06-08 18:09:14   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 18:09:15   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 18:09:16   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 18:09:25   INFO [libs.ActionsWithOurElements] : 110000AM was inputted into element
+2020-06-08 18:09:25   INFO [libs.ActionsWithOurElements] : 060000AM was inputted into element
+2020-06-08 18:09:29   INFO [libs.ActionsWithOurElements] : 060000PM was inputted into element
+2020-06-08 18:09:29   INFO [libs.ActionsWithOurElements] : 010000PM was inputted into element
+2020-06-08 18:09:44   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 18:09:45   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 18:09:46   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 18:09:55   INFO [libs.ActionsWithOurElements] : 110000AM was inputted into element
+2020-06-08 18:09:55   INFO [libs.ActionsWithOurElements] : 060000AM was inputted into element
+2020-06-08 18:09:59   INFO [libs.ActionsWithOurElements] : 060000PM was inputted into element
+2020-06-08 18:09:59   INFO [libs.ActionsWithOurElements] : 010000PM was inputted into element
+2020-06-08 18:10:14   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 18:10:15   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 18:10:16   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 18:10:25   INFO [libs.ActionsWithOurElements] : 110000AM was inputted into element
+2020-06-08 18:10:25   INFO [libs.ActionsWithOurElements] : 060000AM was inputted into element
+2020-06-08 18:10:29   INFO [libs.ActionsWithOurElements] : 060000PM was inputted into element
+2020-06-08 18:10:29   INFO [libs.ActionsWithOurElements] : 010000PM was inputted into element
+2020-06-08 18:10:44   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 18:10:45   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 18:10:46   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 18:10:55   INFO [libs.ActionsWithOurElements] : 110000AM was inputted into element
+2020-06-08 18:10:55   INFO [libs.ActionsWithOurElements] : 060000AM was inputted into element
+2020-06-08 18:10:59   INFO [libs.ActionsWithOurElements] : 060000PM was inputted into element
+2020-06-08 18:11:00   INFO [libs.ActionsWithOurElements] : 010000PM was inputted into element
+2020-06-08 18:11:14   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 18:11:15   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 18:11:17   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 18:11:25   INFO [libs.ActionsWithOurElements] : 110000AM was inputted into element
+2020-06-08 18:11:26   INFO [libs.ActionsWithOurElements] : 060000AM was inputted into element
+2020-06-08 18:11:30   INFO [libs.ActionsWithOurElements] : 060000PM was inputted into element
+2020-06-08 18:11:30   INFO [libs.ActionsWithOurElements] : 010000PM was inputted into element
+2020-06-08 18:11:45   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 18:11:46   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 18:11:47   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 18:11:56   INFO [libs.ActionsWithOurElements] : 090000AM was inputted into element
+2020-06-08 18:11:56   INFO [libs.ActionsWithOurElements] : 060000AM was inputted into element
+2020-06-08 18:12:00   INFO [libs.ActionsWithOurElements] : 060000PM was inputted into element
+2020-06-08 18:12:00   INFO [libs.ActionsWithOurElements] : 040000PM was inputted into element
+2020-06-08 18:12:15   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 18:12:16   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 18:12:17   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 18:12:26   INFO [libs.ActionsWithOurElements] : 090000AM was inputted into element
+2020-06-08 18:12:26   INFO [libs.ActionsWithOurElements] : 060000AM was inputted into element
+2020-06-08 18:12:30   INFO [libs.ActionsWithOurElements] : 060000PM was inputted into element
+2020-06-08 18:12:30   INFO [libs.ActionsWithOurElements] : 040000PM was inputted into element
+2020-06-08 18:12:45   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 18:12:46   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 18:12:47   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 18:12:56   INFO [libs.ActionsWithOurElements] : 090000AM was inputted into element
+2020-06-08 18:12:56   INFO [libs.ActionsWithOurElements] : 060000AM was inputted into element
+2020-06-08 18:13:00   INFO [libs.ActionsWithOurElements] : 060000PM was inputted into element
+2020-06-08 18:13:00   INFO [libs.ActionsWithOurElements] : 040000PM was inputted into element
+2020-06-08 18:13:15   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 18:13:16   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 18:13:17   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 18:13:26   INFO [libs.ActionsWithOurElements] : 090000AM was inputted into element
+2020-06-08 18:13:26   INFO [libs.ActionsWithOurElements] : 060000AM was inputted into element
+2020-06-08 18:13:30   INFO [libs.ActionsWithOurElements] : 060000PM was inputted into element
+2020-06-08 18:13:30   INFO [libs.ActionsWithOurElements] : 040000PM was inputted into element
+2020-06-08 18:13:45   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 18:13:46   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 18:13:47   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 18:13:47   INFO [frankesteinTest.logbookTest.CycleTest] :  DB connection closed 
+2020-06-08 18:16:06   INFO [frankesteinTest.logbookTest.CycleTest] : Chrome will be started
+2020-06-08 18:16:09   INFO [frankesteinTest.logbookTest.CycleTest] : Chrome is started
+2020-06-08 18:16:09   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-06-08 18:16:14   INFO [pages.LoginPage] : Login Page was opened
+2020-06-08 18:16:14   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-06-08 18:16:15   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-06-08 18:16:21   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-06-08 18:16:21   INFO [pages.LoginPage] : Phone verification pop up Closed
+2020-06-08 18:16:29   INFO [libs.ActionsWithOurElements] : 110000AM was inputted into element
+2020-06-08 18:16:30   INFO [libs.ActionsWithOurElements] : 060000AM was inputted into element
+2020-06-08 18:16:34   INFO [libs.ActionsWithOurElements] : 060000PM was inputted into element
+2020-06-08 18:16:34   INFO [libs.ActionsWithOurElements] : 010000PM was inputted into element
+2020-06-08 18:16:49  ERROR [frankesteinTest.logbookTest.CycleTest] : AC failed: Cycle hours is incorrect
+2020-06-08 18:16:49   INFO [frankesteinTest.logbookTest.CycleTest] :  DB connection closed 
+2020-06-08 18:24:07   INFO [frankesteinTest.logbookTest.CycleTest] : Chrome will be started
+2020-06-08 18:24:10   INFO [frankesteinTest.logbookTest.CycleTest] : Chrome is started
+2020-06-08 18:24:10   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-06-08 18:24:15   INFO [pages.LoginPage] : Login Page was opened
+2020-06-08 18:24:15   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-06-08 18:24:16   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-06-08 18:24:22   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-06-08 18:24:22   INFO [pages.LoginPage] : Phone verification pop up Closed
+2020-06-08 18:24:30   INFO [libs.ActionsWithOurElements] : 110000AM was inputted into element
+2020-06-08 18:24:31   INFO [libs.ActionsWithOurElements] : 060000AM was inputted into element
+2020-06-08 18:24:35   INFO [libs.ActionsWithOurElements] : 060000PM was inputted into element
+2020-06-08 18:24:35   INFO [libs.ActionsWithOurElements] : 010000PM was inputted into element
+2020-06-08 18:24:50   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 18:24:51   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 18:24:52   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 18:25:00   INFO [libs.ActionsWithOurElements] : 110000AM was inputted into element
+2020-06-08 18:25:01   INFO [libs.ActionsWithOurElements] : 060000AM was inputted into element
+2020-06-08 18:25:05   INFO [libs.ActionsWithOurElements] : 060000PM was inputted into element
+2020-06-08 18:25:05   INFO [libs.ActionsWithOurElements] : 010000PM was inputted into element
+2020-06-08 18:25:20   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 18:25:21   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 18:25:22   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 18:25:30   INFO [libs.ActionsWithOurElements] : 110000AM was inputted into element
+2020-06-08 18:25:30   INFO [libs.ActionsWithOurElements] : 060000AM was inputted into element
+2020-06-08 18:25:34   INFO [libs.ActionsWithOurElements] : 060000PM was inputted into element
+2020-06-08 18:25:35   INFO [libs.ActionsWithOurElements] : 010000PM was inputted into element
+2020-06-08 18:25:49   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 18:25:50   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 18:25:52   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 18:25:59   INFO [libs.ActionsWithOurElements] : 110000AM was inputted into element
+2020-06-08 18:26:00   INFO [libs.ActionsWithOurElements] : 060000AM was inputted into element
+2020-06-08 18:26:04   INFO [libs.ActionsWithOurElements] : 060000PM was inputted into element
+2020-06-08 18:26:04   INFO [libs.ActionsWithOurElements] : 010000PM was inputted into element
+2020-06-08 18:26:19   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 18:26:20   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 18:26:21   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 18:26:29   INFO [libs.ActionsWithOurElements] : 110000AM was inputted into element
+2020-06-08 18:26:30   INFO [libs.ActionsWithOurElements] : 060000AM was inputted into element
+2020-06-08 18:26:33   INFO [libs.ActionsWithOurElements] : 060000PM was inputted into element
+2020-06-08 18:26:34   INFO [libs.ActionsWithOurElements] : 010000PM was inputted into element
+2020-06-08 18:26:48   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 18:26:49   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 18:26:51   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 18:26:59   INFO [libs.ActionsWithOurElements] : 110000AM was inputted into element
+2020-06-08 18:27:00   INFO [libs.ActionsWithOurElements] : 060000AM was inputted into element
+2020-06-08 18:27:03   INFO [libs.ActionsWithOurElements] : 060000PM was inputted into element
+2020-06-08 18:27:04   INFO [libs.ActionsWithOurElements] : 010000PM was inputted into element
+2020-06-08 18:27:18   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 18:27:20   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 18:27:21   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 18:27:29   INFO [libs.ActionsWithOurElements] : 110000AM was inputted into element
+2020-06-08 18:27:30   INFO [libs.ActionsWithOurElements] : 060000AM was inputted into element
+2020-06-08 18:27:33   INFO [libs.ActionsWithOurElements] : 060000PM was inputted into element
+2020-06-08 18:27:34   INFO [libs.ActionsWithOurElements] : 010000PM was inputted into element
+2020-06-08 18:27:48   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 18:27:50   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 18:27:51   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-06-08 18:27:51   INFO [frankesteinTest.logbookTest.CycleTest] :  DB connection closed 

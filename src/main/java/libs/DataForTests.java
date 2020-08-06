@@ -32,14 +32,14 @@ public class DataForTests {
     public static String RevisedLogsResult = "11";
 
 //    cycle type
-    public static String USA_70hr_8days = "0";
-    public static String USA_60hr_7days = "1";
-    public static String Alaska_70hr_7days = "2";
-    public static String Alaska_80hr_8days = "3";
-    public static String Canada_70hr_7days = "4";
-    public static String Canada_120hr_14days = "5";
-    public static String Texas70hr_7days = "6";
-    public static String California_80hr_7days = "7";
-    public static String CanadaNorth_60_80_7 = "8";
+    public static String USA_70hr_8days = "0"; //numbers['shiftHours'] = 14; numbers['driveHours'] = 11;
+    public static String USA_60hr_7days = "1"; //numbers['shiftHours'] = 14; numbers['driveHours'] = 11;
+    public static String Alaska_70hr_7days = "2"; //numbers['shiftHours'] = 20; numbers['driveHours'] = 15;
+    public static String Alaska_80hr_8days = "3"; //numbers['shiftHours'] = 20; numbers['driveHours'] = 15;
+    public static String Canada_70hr_7days = "4"; //numbers['shiftHours'] = 16; numbers['driveHours'] = 13;
+    public static String Canada_120hr_14days = "5"; //numbers['shiftHours'] = 16; numbers['driveHours'] = 13;
+    public static String Texas70hr_7days = "6"; //numbers['shiftHours'] = 15; numbers['driveHours'] = 12;
+    public static String California_80hr_7days = "7"; //numbers['shiftHours'] = 16; numbers['driveHours'] = 14;
+    public static String CanadaNorth_60_80_7 = "8"; //numbers['shiftHours'] = ; numbers['driveHours'] = ;
     public static String Other = "9";
 }
