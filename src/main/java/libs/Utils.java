@@ -3,6 +3,7 @@ package libs;
 import com.mifmif.common.regex.Generex;
 import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Logger;
+import org.json.simple.parser.JSONParser;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -10,6 +11,7 @@ import org.openqa.selenium.WebDriver;
 import javax.mail.internet.AddressException;
 import javax.mail.internet.InternetAddress;
 import java.io.File;
+import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.nio.file.Files;
@@ -225,6 +227,10 @@ public class Utils {
         }
         return result;
     }
-
+    public static Object readJsonSimpleDemo(String filename) throws Exception {
+        FileReader reader = new FileReader(filename);
+        JSONParser jsonParser = new JSONParser();
+        return jsonParser.parse(reader);
+    }
 
 }

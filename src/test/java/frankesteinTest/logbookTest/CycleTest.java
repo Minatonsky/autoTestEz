@@ -1,5 +1,7 @@
 package frankesteinTest.logbookTest;
 
+import com.google.gson.Gson;
+import org.json.simple.JSONObject;
 import org.junit.Test;
 import parentTest.ParentTest;
 
@@ -9,6 +11,7 @@ import java.util.Map;
 
 import static libs.DataForTests.*;
 import static libs.Utils.dateWithMinusDay;
+import static libs.Utils.readJsonSimpleDemo;
 
 public class CycleTest extends ParentTest {
 
@@ -20,7 +23,11 @@ public class CycleTest extends ParentTest {
     }
 
     @Test
-    public void usa_60hr_7days() throws SQLException {
+    public void usa_60hr_7days() throws Exception {
+        JSONObject jo = (JSONObject) readJsonSimpleDemo(configProperties.DATA_FILE_PATH()+"60hr_7days.json");
+        new Gson().toJson("");
+
+        String login = jo.get("login").toString();
         String userId = utilsForDB.getUserIdByEmail(login);
 
         logsPage.cleanStatusesViolation(userId);
@@ -33,8 +40,8 @@ public class CycleTest extends ParentTest {
         logsPage.clickOnRowDay(dateWithMinusDay(9));
         logsPage.clickOnCorrectionButton();
         logsPage.clickOnInsertStatusButton();
-        logsPage.addStatus("060000AM", "100000AM", "Dr");
-        logsPage.addLastStatus("010000PM", "050000PM", "Dr");
+        logsPage.addStatus("06:00:00 AM", "10:00:00 AM", "Dr");
+        logsPage.addLastStatus("01:00:00 PM", "05:00:00 PM", "Dr");
         logsPage.clickOnSaveInfoButton();
         logsPage.closeCorrectionSavePopUp();
         checkAC("Drive hours is incorrect", logsPage.getStatusData(userId, dateWithMinusDay(9), "drive") == 3, true);
@@ -851,13 +858,214 @@ public class CycleTest extends ParentTest {
     }
 
     @Test
-    public void California_80hr_7days() throws SQLException {
+    public void california_80hr_7days() throws SQLException {
+        String userId = utilsForDB.getUserIdByEmail(login);
+
+        logsPage.cleanStatusesViolation(userId);
+        logsPage.setCycle(userId, California_80hr_7days);
+
+        loginPage.userValidLogIn(login, pass);
+
+        //        1 day
+        dashboardPage.goToLogsPage();
+        logsPage.clickOnRowDay(dateWithMinusDay(9));
+        logsPage.clickOnCorrectionButton();
+        logsPage.clickOnInsertStatusButton();
+        logsPage.addStatus("060000AM", "110000AM", "Dr");
+        logsPage.addLastStatus("010000PM", "070000PM", "Dr");
+        logsPage.clickOnSaveInfoButton();
+        logsPage.closeCorrectionSavePopUp();
+        System.out.println(logsPage.getStatusData(userId, dateWithMinusDay(9), "drive"));
+        checkAC("Drive hours is incorrect", logsPage.getStatusData(userId, dateWithMinusDay(9), "drive") == 3, true);
+        checkAC("Shift hours is incorrect", logsPage.getStatusData(userId, dateWithMinusDay(9), "shift") == 3, true);
+        checkAC("Cycle hours is incorrect", logsPage.getStatusData(userId, dateWithMinusDay(9), "cycle") == 69, true);
+        checkAC("Shift work hours is incorrect", logsPage.getStatusData(userId, dateWithMinusDay(9), "shiftWork") == 7, true);
+        checkAC("Restart cycle hours is incorrect", logsPage.getStatusData(userId, dateWithMinusDay(9), "restart34") == 36, true);
+
+        //        2 day
+        dashboardPage.goToLogsPage();
+        logsPage.clickOnRowDay(dateWithMinusDay(8));
+        logsPage.clickOnCorrectionButton();
+        logsPage.clickOnInsertStatusButton();
+        logsPage.addStatus("060000AM", "110000AM", "Dr");//5
+        logsPage.addLastStatus("010000PM", "070000PM", "Dr");//6
+        int driveHours = 11;
+        logsPage.clickOnSaveInfoButton();
+        logsPage.closeCorrectionSavePopUp();
+        checkAC("Drive hours is incorrect", logsPage.getStatusData(userId, dateWithMinusDay(8), "drive") == 3, true);
+        checkAC("Shift hours is incorrect", logsPage.getStatusData(userId, dateWithMinusDay(8), "shift") == 3, true);
+        checkAC("Cycle hours is incorrect", logsPage.getStatusData(userId, dateWithMinusDay(8), "cycle") == 58, true);
+
+        //        3 day
+        dashboardPage.goToLogsPage();
+        logsPage.clickOnRowDay(dateWithMinusDay(7));
+        logsPage.clickOnCorrectionButton();
+        logsPage.clickOnInsertStatusButton();
+        logsPage.addStatus("060000AM", "110000AM", "Dr");
+        logsPage.addLastStatus("010000PM", "070000PM", "Dr");
+        logsPage.clickOnSaveInfoButton();
+        logsPage.closeCorrectionSavePopUp();
+        checkAC("Drive hours is incorrect", logsPage.getStatusData(userId, dateWithMinusDay(7), "drive") == 3, true);
+        checkAC("Shift hours is incorrect", logsPage.getStatusData(userId, dateWithMinusDay(7), "shift") == 3, true);
+        checkAC("Cycle hours is incorrect", logsPage.getStatusData(userId, dateWithMinusDay(7), "cycle") == 47, true);
+
+        //        4 day
+        dashboardPage.goToLogsPage();
+        logsPage.clickOnRowDay(dateWithMinusDay(6));
+        logsPage.clickOnCorrectionButton();
+        logsPage.clickOnInsertStatusButton();
+        logsPage.addStatus("060000AM", "110000AM", "Dr");
+        logsPage.addLastStatus("010000PM", "070000PM", "Dr");
+        logsPage.clickOnSaveInfoButton();
+        logsPage.closeCorrectionSavePopUp();
+        checkAC("Drive hours is incorrect", logsPage.getStatusData(userId, dateWithMinusDay(6), "drive") == 3, true);
+        checkAC("Shift hours is incorrect", logsPage.getStatusData(userId, dateWithMinusDay(6), "shift") == 3, true);
+        checkAC("Cycle hours is incorrect", logsPage.getStatusData(userId, dateWithMinusDay(6), "cycle") == 36, true);
+
+        //        5 day
+        dashboardPage.goToLogsPage();
+        logsPage.clickOnRowDay(dateWithMinusDay(5));
+        logsPage.clickOnCorrectionButton();
+        logsPage.clickOnInsertStatusButton();
+        logsPage.addStatus("050000AM", "110000AM", "Dr");
+        logsPage.addLastStatus("010000PM", "070000PM", "Dr");
+        logsPage.clickOnSaveInfoButton();
+        logsPage.closeCorrectionSavePopUp();
+        checkAC("Drive hours is incorrect", logsPage.getStatusData(userId, dateWithMinusDay(5), "drive") == 2, true);
+        checkAC("Shift hours is incorrect", logsPage.getStatusData(userId, dateWithMinusDay(5), "shift") == 2, true);
+        checkAC("Cycle hours is incorrect", logsPage.getStatusData(userId, dateWithMinusDay(5), "cycle") == 24, true);
+
+        //        6 day
+        dashboardPage.goToLogsPage();
+        logsPage.clickOnRowDay(dateWithMinusDay(4));
+        logsPage.clickOnCorrectionButton();
+        logsPage.clickOnInsertStatusButton();
+        logsPage.addStatus("050000AM", "110000AM", "Dr");
+        logsPage.addLastStatus("010000PM", "070000PM", "Dr");
+        logsPage.clickOnSaveInfoButton();
+        logsPage.closeCorrectionSavePopUp();
+        checkAC("Drive hours is incorrect", logsPage.getStatusData(userId, dateWithMinusDay(4), "drive") == 2, true);
+        checkAC("Shift hours is incorrect", logsPage.getStatusData(userId, dateWithMinusDay(4), "shift") == 2, true);
+        checkAC("Cycle hours is incorrect", logsPage.getStatusData(userId, dateWithMinusDay(4), "cycle") == 12, true);
+
+        //        7 day
+        dashboardPage.goToLogsPage();
+        logsPage.clickOnRowDay(dateWithMinusDay(3));
+        logsPage.clickOnCorrectionButton();
+        logsPage.clickOnInsertStatusButton();
+        logsPage.addStatus("050000AM", "110000AM", "Dr");
+        logsPage.addLastStatus("010000PM", "070000PM", "Dr");
+        logsPage.clickOnSaveInfoButton();
+        logsPage.closeCorrectionSavePopUp();
+        checkAC("Drive hours is incorrect", logsPage.getStatusData(userId, dateWithMinusDay(3), "drive") == 2, true);
+        checkAC("Shift hours is incorrect", logsPage.getStatusData(userId, dateWithMinusDay(3), "shift") == 2, true);
+        checkAC("Cycle hours is incorrect", logsPage.getStatusData(userId, dateWithMinusDay(3), "cycle") == 0, true);
 
     }
+
     @Test
-    public void CanadaNorth_60_80_7() throws SQLException {
+    public void canadaNorth_60_80_7() throws SQLException {
+        String userId = utilsForDB.getUserIdByEmail(login);
+
+        logsPage.cleanStatusesViolation(userId);
+        logsPage.setCycle(userId, CanadaNorth_60_80_7);
+
+        loginPage.userValidLogIn(login, pass);
+
+        //        1 day
+        dashboardPage.goToLogsPage();
+        logsPage.clickOnRowDay(dateWithMinusDay(9));
+        logsPage.clickOnCorrectionButton();
+        logsPage.clickOnInsertStatusButton();
+        logsPage.addStatus("060000AM", "110000AM", "Dr");
+        logsPage.addLastStatus("010000PM", "070000PM", "Dr");
+        logsPage.clickOnSaveInfoButton();
+        logsPage.closeCorrectionSavePopUp();
+        System.out.println(logsPage.getStatusData(userId, dateWithMinusDay(9), "drive"));
+        checkAC("Drive hours is incorrect", logsPage.getStatusData(userId, dateWithMinusDay(9), "drive") == 4, true);
+        checkAC("Shift hours is incorrect", logsPage.getStatusData(userId, dateWithMinusDay(9), "shift") == 7, true);
+        checkAC("Cycle hours is incorrect", logsPage.getStatusData(userId, dateWithMinusDay(9), "cycle") == 69, true);
+
+        //        2 day
+        dashboardPage.goToLogsPage();
+        logsPage.clickOnRowDay(dateWithMinusDay(8));
+        logsPage.clickOnCorrectionButton();
+        logsPage.clickOnInsertStatusButton();
+        logsPage.addStatus("060000AM", "110000AM", "Dr");
+        logsPage.addLastStatus("010000PM", "070000PM", "Dr");
+        logsPage.clickOnSaveInfoButton();
+        logsPage.closeCorrectionSavePopUp();
+        checkAC("Drive hours is incorrect", logsPage.getStatusData(userId, dateWithMinusDay(8), "drive") == 4, true);
+        checkAC("Shift hours is incorrect", logsPage.getStatusData(userId, dateWithMinusDay(8), "shift") == 7, true);
+        checkAC("Cycle hours is incorrect", logsPage.getStatusData(userId, dateWithMinusDay(8), "cycle") == 58, true);
+
+        //        3 day
+        dashboardPage.goToLogsPage();
+        logsPage.clickOnRowDay(dateWithMinusDay(7));
+        logsPage.clickOnCorrectionButton();
+        logsPage.clickOnInsertStatusButton();
+        logsPage.addStatus("060000AM", "110000AM", "Dr");
+        logsPage.addLastStatus("010000PM", "070000PM", "Dr");
+        logsPage.clickOnSaveInfoButton();
+        logsPage.closeCorrectionSavePopUp();
+        checkAC("Drive hours is incorrect", logsPage.getStatusData(userId, dateWithMinusDay(7), "drive") == 4, true);
+        checkAC("Shift hours is incorrect", logsPage.getStatusData(userId, dateWithMinusDay(7), "shift") == 7, true);
+        checkAC("Cycle hours is incorrect", logsPage.getStatusData(userId, dateWithMinusDay(7), "cycle") == 47, true);
+
+        //        4 day
+        dashboardPage.goToLogsPage();
+        logsPage.clickOnRowDay(dateWithMinusDay(6));
+        logsPage.clickOnCorrectionButton();
+        logsPage.clickOnInsertStatusButton();
+        logsPage.addStatus("060000AM", "110000AM", "Dr");
+        logsPage.addLastStatus("010000PM", "070000PM", "Dr");
+        logsPage.clickOnSaveInfoButton();
+        logsPage.closeCorrectionSavePopUp();
+        checkAC("Drive hours is incorrect", logsPage.getStatusData(userId, dateWithMinusDay(6), "drive") == 4, true);
+        checkAC("Shift hours is incorrect", logsPage.getStatusData(userId, dateWithMinusDay(6), "shift") == 7, true);
+        checkAC("Cycle hours is incorrect", logsPage.getStatusData(userId, dateWithMinusDay(6), "cycle") == 36, true);
+
+        //        5 day
+        dashboardPage.goToLogsPage();
+        logsPage.clickOnRowDay(dateWithMinusDay(5));
+        logsPage.clickOnCorrectionButton();
+        logsPage.clickOnInsertStatusButton();
+        logsPage.addStatus("050000AM", "110000AM", "Dr");
+        logsPage.addLastStatus("010000PM", "070000PM", "Dr");
+        logsPage.clickOnSaveInfoButton();
+        logsPage.closeCorrectionSavePopUp();
+        checkAC("Drive hours is incorrect", logsPage.getStatusData(userId, dateWithMinusDay(5), "drive") == 3, true);
+        checkAC("Shift hours is incorrect", logsPage.getStatusData(userId, dateWithMinusDay(5), "shift") == 6, true);
+        checkAC("Cycle hours is incorrect", logsPage.getStatusData(userId, dateWithMinusDay(5), "cycle") == 24, true);
+
+        //        6 day
+        dashboardPage.goToLogsPage();
+        logsPage.clickOnRowDay(dateWithMinusDay(4));
+        logsPage.clickOnCorrectionButton();
+        logsPage.clickOnInsertStatusButton();
+        logsPage.addStatus("050000AM", "110000AM", "Dr");
+        logsPage.addLastStatus("010000PM", "070000PM", "Dr");
+        logsPage.clickOnSaveInfoButton();
+        logsPage.closeCorrectionSavePopUp();
+        checkAC("Drive hours is incorrect", logsPage.getStatusData(userId, dateWithMinusDay(4), "drive") == 3, true);
+        checkAC("Shift hours is incorrect", logsPage.getStatusData(userId, dateWithMinusDay(4), "shift") == 6, true);
+        checkAC("Cycle hours is incorrect", logsPage.getStatusData(userId, dateWithMinusDay(4), "cycle") == 12, true);
+
+        //        7 day
+        dashboardPage.goToLogsPage();
+        logsPage.clickOnRowDay(dateWithMinusDay(3));
+        logsPage.clickOnCorrectionButton();
+        logsPage.clickOnInsertStatusButton();
+        logsPage.addStatus("050000AM", "110000AM", "Dr");
+        logsPage.addLastStatus("010000PM", "070000PM", "Dr");
+        logsPage.clickOnSaveInfoButton();
+        logsPage.closeCorrectionSavePopUp();
+        checkAC("Drive hours is incorrect", logsPage.getStatusData(userId, dateWithMinusDay(3), "drive") == 3, true);
+        checkAC("Shift hours is incorrect", logsPage.getStatusData(userId, dateWithMinusDay(3), "shift") == 6, true);
+        checkAC("Cycle hours is incorrect", logsPage.getStatusData(userId, dateWithMinusDay(3), "cycle") == 0, true);
 
     }
+
     @Test
     public void other() throws SQLException {
 

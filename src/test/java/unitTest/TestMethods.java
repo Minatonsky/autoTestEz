@@ -15,9 +15,7 @@ import java.time.ZoneOffset;
 import java.time.format.DateTimeFormatter;
 import java.time.temporal.ChronoUnit;
 import java.time.temporal.TemporalAdjusters;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 import static libs.Utils.*;
 // This test page is not using on test project, it just for check some methods
@@ -203,9 +201,10 @@ public class TestMethods extends ParentTestWithoutWebDriver {
 
 
     @Test
-    public void test() throws SQLException {
+    public void recurseKeys() throws Exception {
+        org.json.simple.JSONObject jo = (org.json.simple.JSONObject) readJsonSimpleDemo(configProperties.DATA_FILE_PATH()+"60hr_7days.json");
 
-        System.out.println(getStatusData("4401", "2020-07-28", "drive"));
     }
+
 }
 

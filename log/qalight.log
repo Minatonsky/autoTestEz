@@ -1767,3 +1767,115 @@
 2020-06-08 18:27:50   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
 2020-06-08 18:27:51   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
 2020-06-08 18:27:51   INFO [frankesteinTest.logbookTest.CycleTest] :  DB connection closed 
+2020-07-08 10:32:09   INFO [frankesteinTest.logbookTest.CycleTest] : Chrome will be started
+2020-07-08 10:32:11   INFO [frankesteinTest.logbookTest.CycleTest] : Chrome is started
+2020-07-08 10:32:12   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-07-08 10:32:17   INFO [pages.LoginPage] : Login Page was opened
+2020-07-08 10:32:17   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-07-08 10:32:18   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-07-08 10:32:25   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-07-08 10:32:25   INFO [pages.LoginPage] : Phone verification pop up Closed
+2020-07-08 10:32:33   INFO [libs.ActionsWithOurElements] : 110000AM was inputted into element
+2020-07-08 10:32:33   INFO [libs.ActionsWithOurElements] : 060000AM was inputted into element
+2020-07-08 10:32:37   INFO [libs.ActionsWithOurElements] : 073000PM was inputted into element
+2020-07-08 10:32:38   INFO [libs.ActionsWithOurElements] : 010000PM was inputted into element
+2020-07-08 10:32:52  ERROR [frankesteinTest.logbookTest.CycleTest] : AC failed: Drive hours is incorrect
+2020-07-08 10:32:52   INFO [frankesteinTest.logbookTest.CycleTest] :  DB connection closed 
+2020-07-08 10:46:19   INFO [frankesteinTest.logbookTest.CycleTest] : Chrome will be started
+2020-07-08 10:46:22   INFO [frankesteinTest.logbookTest.CycleTest] : Chrome is started
+2020-07-08 10:46:22   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-07-08 10:46:27   INFO [pages.LoginPage] : Login Page was opened
+2020-07-08 10:46:27   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-07-08 10:46:28   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-07-08 10:46:34   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-07-08 10:46:34   INFO [pages.LoginPage] : Phone verification pop up Closed
+2020-07-08 10:46:42   INFO [libs.ActionsWithOurElements] : 110000AM was inputted into element
+2020-07-08 10:46:43   INFO [libs.ActionsWithOurElements] : 060000AM was inputted into element
+2020-07-08 10:46:46   INFO [libs.ActionsWithOurElements] : 070000PM was inputted into element
+2020-07-08 10:46:47   INFO [libs.ActionsWithOurElements] : 010000PM was inputted into element
+2020-07-08 10:47:02   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-07-08 10:47:03   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-07-08 10:47:04   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-07-08 10:47:12   INFO [libs.ActionsWithOurElements] : 110000AM was inputted into element
+2020-07-08 10:47:12   INFO [libs.ActionsWithOurElements] : 060000AM was inputted into element
+2020-07-08 10:47:16   INFO [libs.ActionsWithOurElements] : 070000PM was inputted into element
+2020-07-08 10:47:16   INFO [libs.ActionsWithOurElements] : 010000PM was inputted into element
+2020-07-08 10:47:31   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-07-08 10:47:32   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-07-08 10:47:33   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-07-08 10:47:41   INFO [libs.ActionsWithOurElements] : 110000AM was inputted into element
+2020-07-08 10:47:42   INFO [libs.ActionsWithOurElements] : 060000AM was inputted into element
+2020-07-08 10:47:45   INFO [libs.ActionsWithOurElements] : 070000PM was inputted into element
+2020-07-08 10:47:46   INFO [libs.ActionsWithOurElements] : 010000PM was inputted into element
+2020-07-08 10:48:00   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-07-08 10:48:02   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-07-08 10:48:03   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-07-08 10:48:11   INFO [libs.ActionsWithOurElements] : 110000AM was inputted into element
+2020-07-08 10:48:11   INFO [libs.ActionsWithOurElements] : 060000AM was inputted into element
+2020-07-08 10:48:15   INFO [libs.ActionsWithOurElements] : 070000PM was inputted into element
+2020-07-08 10:48:15   INFO [libs.ActionsWithOurElements] : 010000PM was inputted into element
+2020-07-08 10:48:30   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-07-08 10:48:31   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-07-08 10:48:32   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-07-08 10:48:40   INFO [libs.ActionsWithOurElements] : 110000AM was inputted into element
+2020-07-08 10:48:40   INFO [libs.ActionsWithOurElements] : 050000AM was inputted into element
+2020-07-08 10:48:44   INFO [libs.ActionsWithOurElements] : 070000PM was inputted into element
+2020-07-08 10:48:44   INFO [libs.ActionsWithOurElements] : 010000PM was inputted into element
+2020-07-08 10:48:59   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-07-08 10:49:00   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-07-08 10:49:01   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-07-08 10:49:09   INFO [libs.ActionsWithOurElements] : 110000AM was inputted into element
+2020-07-08 10:49:10   INFO [libs.ActionsWithOurElements] : 050000AM was inputted into element
+2020-07-08 10:49:13   INFO [libs.ActionsWithOurElements] : 070000PM was inputted into element
+2020-07-08 10:49:14   INFO [libs.ActionsWithOurElements] : 010000PM was inputted into element
+2020-07-08 10:49:29   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-07-08 10:49:30   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-07-08 10:49:31   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-07-08 10:49:39   INFO [libs.ActionsWithOurElements] : 110000AM was inputted into element
+2020-07-08 10:49:39   INFO [libs.ActionsWithOurElements] : 050000AM was inputted into element
+2020-07-08 10:49:43   INFO [libs.ActionsWithOurElements] : 070000PM was inputted into element
+2020-07-08 10:49:43   INFO [libs.ActionsWithOurElements] : 010000PM was inputted into element
+2020-07-08 10:49:58   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-07-08 10:49:59   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-07-08 10:50:00   INFO [frankesteinTest.logbookTest.CycleTest] : AC passed
+2020-07-08 10:50:00   INFO [frankesteinTest.logbookTest.CycleTest] :  DB connection closed 
+2020-07-08 11:31:50   INFO [frankesteinTest.logbookTest.CycleTest] : Chrome will be started
+2020-07-08 11:31:53   INFO [frankesteinTest.logbookTest.CycleTest] : Chrome is started
+2020-07-08 11:31:53   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-07-08 11:31:58   INFO [pages.LoginPage] : Login Page was opened
+2020-07-08 11:31:58   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-07-08 11:31:58   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-07-08 11:32:05   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-07-08 11:32:05   INFO [pages.LoginPage] : Phone verification pop up Closed
+2020-07-08 11:32:13   INFO [libs.ActionsWithOurElements] : 110000AM was inputted into element
+2020-07-08 11:32:13   INFO [libs.ActionsWithOurElements] : 060000AM was inputted into element
+2020-07-08 11:32:17   INFO [libs.ActionsWithOurElements] : 070000PM was inputted into element
+2020-07-08 11:32:17   INFO [libs.ActionsWithOurElements] : 010000PM was inputted into element
+2020-07-08 11:32:32  ERROR [frankesteinTest.logbookTest.CycleTest] : AC failed: Drive hours is incorrect
+2020-07-08 11:32:32   INFO [frankesteinTest.logbookTest.CycleTest] :  DB connection closed 
+2020-07-08 14:41:27   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-07-08 14:41:28   INFO [unitTest.TestMethods] :  DB Connection Closed 
+2020-07-08 14:41:47   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-07-08 14:41:49   INFO [unitTest.TestMethods] :  DB Connection Closed 
+2020-07-08 14:50:08   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-07-08 14:50:10   INFO [unitTest.TestMethods] :  DB Connection Closed 
+2020-07-08 14:52:00   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-07-08 14:52:02   INFO [unitTest.TestMethods] :  DB Connection Closed 
+2020-07-08 14:53:05   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-07-08 14:53:07   INFO [unitTest.TestMethods] :  DB Connection Closed 
+2020-07-08 15:39:45   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-07-08 15:39:47   INFO [unitTest.TestMethods] :  DB Connection Closed 
+2020-07-08 15:40:21   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-07-08 15:40:23   INFO [unitTest.TestMethods] :  DB Connection Closed 
+2020-07-08 15:41:20   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-07-08 15:41:22   INFO [unitTest.TestMethods] :  DB Connection Closed 
+2020-07-08 15:41:35   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-07-08 15:41:37   INFO [unitTest.TestMethods] :  DB Connection Closed 
+2020-07-08 15:41:54   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-07-08 15:41:56   INFO [unitTest.TestMethods] :  DB Connection Closed 
+2020-07-08 15:51:39   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-07-08 15:51:41   INFO [unitTest.TestMethods] :  DB Connection Closed 
+2020-07-08 15:52:01   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-07-08 15:52:03   INFO [unitTest.TestMethods] :  DB Connection Closed 
+2020-07-08 15:53:42   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-07-08 15:53:44   INFO [unitTest.TestMethods] :  DB Connection Closed 

@@ -18,6 +18,7 @@ public class LogsPage extends ParentPage {
     public LogsPage(WebDriver webDriver, UtilsForDB utilsForDB) {
         super(webDriver, "/dash/drivers/", utilsForDB);
     }
+
     @FindBy(xpath = ".//button[text()='Correction & Annotation']")
     private WebElement buttonCorrection;
 
@@ -76,11 +77,11 @@ public class LogsPage extends ParentPage {
 
     public void addStatus(String timeFrom, String timeTo, String status){
         actionsWithOurElements.clickOnElement(timeToInput);
-        actionsWithOurElements.enterTextToElement(timeInput, timeTo);
+        actionsWithOurElements.enterTextToElement(timeInput, timeTo.replaceAll("\\W", ""));
         actionsWithOurElements.clickOnElement(saveButton);
 
         actionsWithOurElements.clickOnElement(timeFromInput);
-        actionsWithOurElements.enterTextToElement(timeInput, timeFrom);
+        actionsWithOurElements.enterTextToElement(timeInput, timeFrom.replaceAll("\\W", ""));
         actionsWithOurElements.clickOnElement(saveButton);
 
         if (status.equals("On")){
@@ -99,11 +100,11 @@ public class LogsPage extends ParentPage {
     }
     public void addLastStatus(String timeFrom, String timeTo, String status){
         actionsWithOurElements.clickOnElement(timeToInput);
-        actionsWithOurElements.enterTextToElement(timeInput, timeTo);
+        actionsWithOurElements.enterTextToElement(timeInput, timeTo.replaceAll("\\W", ""));
         actionsWithOurElements.clickOnElement(saveButton);
 
         actionsWithOurElements.clickOnElement(timeFromInput);
-        actionsWithOurElements.enterTextToElement(timeInput, timeFrom);
+        actionsWithOurElements.enterTextToElement(timeInput, timeFrom.replaceAll("\\W", ""));
         actionsWithOurElements.clickOnElement(saveButton);
 
         if (status.equals("On")){
