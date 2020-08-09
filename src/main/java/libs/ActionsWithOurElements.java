@@ -57,7 +57,6 @@ public class ActionsWithOurElements {
         try{
             webDriverWait20.until(ExpectedConditions.elementToBeClickable(webElement));
             webElement.click();
-            logger.info("Element was clicked");
         } catch (Exception e){
             printErrorAndStopTest(e);
         }
@@ -67,7 +66,6 @@ public class ActionsWithOurElements {
         try{
             webDriverWait20.until(ExpectedConditions.elementToBeClickable(webElement));
             webElement.submit();
-            logger.info("Element was clicked");
         } catch (Exception e){
             printErrorAndStopTest(e);
         }

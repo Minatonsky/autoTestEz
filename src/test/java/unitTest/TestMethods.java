@@ -15,10 +15,9 @@ import java.time.ZoneOffset;
 import java.time.format.DateTimeFormatter;
 import java.time.temporal.ChronoUnit;
 import java.time.temporal.TemporalAdjusters;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
-import static libs.Utils.genRandomDataByRegex;
+import static libs.Utils.*;
 // This test page is not using on test project, it just for check some methods
 
 
@@ -189,14 +188,23 @@ public class TestMethods extends ParentTestWithoutWebDriver {
         System.out.println(data);
 
     }
-    @Test
-    public void test() throws SQLException {
-        List<ArrayList> tempDataSettingsList = utilsForDB.getDataEquipment("6883");
 
-        System.out.println(tempDataSettingsList);
+    public int getStatusData(String userId, String data, String value) throws SQLException {
+//      value =  drive, shift, cycle, eight, shiftWork, restart34
+        List<ArrayList> statusData = utilsForDB.getCycleHoursLastStatus(userId, data);
+        Map<String, Object> tempStatusData = listArrayToMap(statusData);
+        int temp = Integer.parseInt(tempStatusData.get(value).toString());
+        int result = temp / 3600;
+        return result;
+
     }
 
 
+    @Test
+    public void recurseKeys() throws Exception {
+        org.json.simple.JSONObject jo = (org.json.simple.JSONObject) readJsonSimpleDemo(configProperties.DATA_FILE_PATH()+"60hr_7days.json");
+
+    }
 
 }
 

@@ -9,7 +9,8 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Map;
 
-import static libs.Utils.waitABit;
+import static libs.DataForTests.*;
+import static libs.Utils.getLocalDateTimeUTC;
 
 public class FourteenHourDrivingWindow extends ParentTest {
     Map dataForValidLogIn = excelDriver.getData(configProperties.DATA_FILE_PATH() + "testLogin.xls", "driverLogin");
@@ -20,14 +21,14 @@ public class FourteenHourDrivingWindow extends ParentTest {
     public FourteenHourDrivingWindow() throws IOException {
     }
     @Test
-    public void fourteenHourDrivingWindowNoViolation() throws SQLException, IOException, ClassNotFoundException {
-//        14-HOUR “DRIVING WINDOW” no violation
-        String userId = utilsForDB.getUserIdByEmail(login);
-        LocalDateTime yesterday = LocalDateTime.parse(LocalDateTime.now().minusDays(1).toString());
-        String date = yesterday.format(DateTimeFormatter.ofPattern("yyyy-MM-dd"));
+    public void fourteenHourDrivingWindowNoViolation() throws SQLException{
 
-        utilsForDB.deleteStatuses(userId);
-        utilsForDB.updateLastStatus(userId);
+//        14-HOUR “DRIVING WINDOW” no violation
+
+        String userId = utilsForDB.getUserIdByEmail(login);
+        String date = getLocalDateTimeUTC().minusDays(1).format(DateTimeFormatter.ofPattern("yyyy-MM-dd"));
+
+        logsPage.cleanStatusesViolation(userId);
 
         loginPage.userValidLogIn(login, pass);
         dashboardPage.goToLogsPage();
@@ -35,66 +36,31 @@ public class FourteenHourDrivingWindow extends ParentTest {
         logsPage.clickOnCorrectionButton();
         logsPage.clickOnInsertStatusButton();
 
-        logsPage.clickOnTimeTo();
-        logsPage.timeToInput("010000AM");
-        logsPage.clickOnSaveButton();
-        logsPage.clickOnTimeFrom();
-        logsPage.timeToInput("000000AM");
-        logsPage.clickOnSaveButton();
-        logsPage.clickOnStatusOn();
-        logsPage.clickOnInsertStatusButton();
+        logsPage.addStatus("000000AM", "010000AM", "On");
 
-        logsPage.clickOnTimeTo();
-        logsPage.timeToInput("060000AM");
-        logsPage.clickOnSaveButton();
-        logsPage.clickOnTimeFrom();
-        logsPage.timeToInput("010000AM");
-        logsPage.clickOnSaveButton();
-        logsPage.clickOnStatusDr();
-        logsPage.clickOnInsertStatusButton();
+        logsPage.addStatus("010000AM", "060000AM", "Dr");
 
-        logsPage.clickOnTimeTo();
-        logsPage.timeToInput("100000AM");
-        logsPage.clickOnSaveButton();
-        logsPage.clickOnTimeFrom();
-        logsPage.timeToInput("070000AM");
-        logsPage.clickOnSaveButton();
-        logsPage.clickOnStatusDr();
-        logsPage.clickOnInsertStatusButton();
+        logsPage.addStatus("070000AM", "100000AM", "Dr");
 
-        logsPage.clickOnTimeTo();
-        logsPage.timeToInput("120000PM");
-        logsPage.clickOnSaveButton();
-        logsPage.clickOnTimeFrom();
-        logsPage.timeToInput("100000AM");
-        logsPage.clickOnSaveButton();
-        logsPage.clickOnStatusOn();
-        logsPage.clickOnInsertStatusButton();
+        logsPage.addStatus("100000AM", "120000PM", "On");
 
-        logsPage.clickOnTimeTo();
-        logsPage.timeToInput("020000PM");
-        logsPage.clickOnSaveButton();
-        logsPage.clickOnTimeFrom();
-        logsPage.timeToInput("120000PM");
-        logsPage.clickOnSaveButton();
-        logsPage.clickOnStatusDr();
-        logsPage.clickOnInsertStatusButton();
+        logsPage.addLastStatus("120000PM", "020000PM", "Dr");
 
         logsPage.clickOnSaveInfoButton();
-        waitABit(20);
         logsPage.closeCorrectionSavePopUp();
-        checkAC("Break Violation failed", logsPage.isBreakViolationPresent(), false);
-        checkAC("Drive Hours Violation failed", logsPage.isDriveHoursViolationPresent(), false);
-        checkAC("Shift Hours Violation failed", logsPage.isShiftHoursViolationPresent(), false);
+        checkAC("Violation exist", logsPage.checkAlertsExist(userId, date), false);
 
     }
     @Test
-    public void fourteenHourDrivingWindowWithViolation() throws SQLException, IOException, ClassNotFoundException {
+    public void fourteenHourDrivingWindowWithViolation() throws SQLException {
+
 //       11 Hours Driving Within 14-Hour “Driving Window” (With Violations)
+
         String userId = utilsForDB.getUserIdByEmail(login);
         LocalDateTime yesterday = LocalDateTime.parse(LocalDateTime.now().minusDays(1).toString());
         String date = yesterday.format(DateTimeFormatter.ofPattern("yyyy-MM-dd"));
 
+        utilsForDB.deleteViolation(userId);
         utilsForDB.deleteStatuses(userId);
         utilsForDB.updateLastStatus(userId);
 
@@ -105,25 +71,14 @@ public class FourteenHourDrivingWindow extends ParentTest {
         logsPage.clickOnCorrectionButton();
         logsPage.clickOnInsertStatusButton();
 
-        logsPage.clickOnTimeTo();
-        logsPage.timeToInput("060000PM");
-        logsPage.clickOnSaveButton();
-        waitABit(10);
-        logsPage.clickOnTimeFrom();
-        waitABit(10);
-        logsPage.timeToInput("1100000AM");
-        waitABit(10);
-        logsPage.clickOnSaveButton();
-        logsPage.clickOnStatusDr();
-        logsPage.clickOnInsertStatusButton();
+        logsPage.addStatus("1100000AM", "060000PM", "Dr");
 
         logsPage.clickOnSaveInfoButton();
-        waitABit(20);
         logsPage.closeCorrectionSavePopUp();
 
-        checkAC("Break Violation(8) failed", logsPage.isBreakViolationPresent(), false);
-        checkAC("Drive Hours Violation(11) failed", logsPage.isDriveHoursViolationPresent(), true);
-        checkAC("Shift Hours Violation(14) failed", logsPage.isShiftHoursViolationPresent(), true);
+        checkAC("Break Violation(8) failed", logsPage.checkAlertsId(userId, date, DrivingTime8), false);
+        checkAC("Drive Hours Violation(11) failed", logsPage.checkAlertsId(userId, date, DrivingTime11), true);
+        checkAC("Shift Hours Violation(14) failed", logsPage.checkAlertsId(userId, date, DrivingTime14), true);
 
 
     }
