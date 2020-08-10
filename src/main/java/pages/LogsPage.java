@@ -11,6 +11,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
+import static libs.CycleRules.getCycleRules;
+import static libs.StatusTime.getStatusTime;
 import static libs.Utils.listArrayToMap;
 import static libs.Utils.waitABit;
 
@@ -158,20 +160,35 @@ public class LogsPage extends ParentPage {
         utilsForDB.updateLastStatus(userId);
     }
 
-    public void setCycle(String userId, String cycleId) throws SQLException {
+    public void setCycle(String userId, int cycleId) throws SQLException {
         utilsForDB.setCycleDriversRules(userId, cycleId);
         utilsForDB.setCycleStatuses(userId, cycleId);
+
     }
 
     public int getStatusData(String userId, String data, String value) throws SQLException {
 //      value =  drive, shift, cycle, eight, shiftWork, restart34
         List<ArrayList> statusData = utilsForDB.getCycleHoursLastStatus(userId, data);
         Map<String, Object> tempStatusData = listArrayToMap(statusData);
-        int temp = Integer.parseInt(tempStatusData.get(value).toString());
-        int result = temp / 3600;
-        return result;
+        return Integer.parseInt(tempStatusData.get(value).toString());
 
     }
 
+    public int getCycleHours(int cycleId, int cargoType, int duration){
+        int cycleRulesHours = getCycleRules(cycleId, cargoType).getCycleHours();
+        return (cycleRulesHours * 3600) - duration;
+    }
+
+    public int getDrivingHour(int cycleId, int cargoType, int typeTime){
+        int drivingRulesHours = getCycleRules(cycleId, cargoType).getCycleHours();
+        int drivingTime = getStatusTime(typeTime).getDrivingTime();
+        return (drivingRulesHours * 3600) - drivingTime;
+    }
+
+    public int getShiftHour(int cycleId, int cargoType, int typeTime){
+        int shiftRulesHours = getCycleRules(cycleId, cargoType).getShiftHours();
+        int shiftHours = getStatusTime(typeTime).getShiftTime();
+        return (shiftRulesHours * 3600) - shiftHours;
+    }
 
 }

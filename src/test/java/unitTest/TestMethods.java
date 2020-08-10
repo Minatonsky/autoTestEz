@@ -1,5 +1,6 @@
 package unitTest;
 
+import libs.CycleRules;
 import org.apache.log4j.Logger;
 import org.json.JSONObject;
 import org.junit.Test;
@@ -15,8 +16,11 @@ import java.time.ZoneOffset;
 import java.time.format.DateTimeFormatter;
 import java.time.temporal.ChronoUnit;
 import java.time.temporal.TemporalAdjusters;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
 
+import static libs.StatusTime.getStatusTime;
 import static libs.Utils.*;
 // This test page is not using on test project, it just for check some methods
 
@@ -202,7 +206,16 @@ public class TestMethods extends ParentTestWithoutWebDriver {
 
     @Test
     public void recurseKeys() throws Exception {
-        org.json.simple.JSONObject jo = (org.json.simple.JSONObject) readJsonSimpleDemo(configProperties.DATA_FILE_PATH()+"60hr_7days.json");
+        int cycleRulesHours = CycleRules.getCycleRules(0, 0).getCycleHours();
+
+        long duration = getDurationBetweenTime(getStatusTime(8).getStatus1From(), getStatusTime(8).getStatus2To());
+        System.out.println(cycleRulesHours);
+        System.out.println((int)duration);
+        System.out.println((cycleRulesHours * 3600) - (int)duration);
+
+//        System.out.println(getDurationBetweenTime("06:00:10 AM", "10:00:00 PM"));
+
+
 
     }
 

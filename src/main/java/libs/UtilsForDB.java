@@ -576,10 +576,10 @@ public class UtilsForDB {
     public List<String> getAlertsData(String driverId, String date) throws SQLException {
         return dBMySQL.selectResultSet("SELECT a.alertId FROM alerts a WHERE a.userId = " + driverId + " AND a.dateTime LIKE '" + date + "%'");
     }
-    public void setCycleDriversRules(String driverId, String cycleId) throws SQLException {
+    public void setCycleDriversRules(String driverId, int cycleId) throws SQLException {
         dBMySQL.changeTable("UPDATE driversRules SET `cycleId` = '" + cycleId + "' WHERE userId = " + driverId + ";");
     }
-    public void setCycleStatuses(String driverId, String cycleId) throws SQLException {
+    public void setCycleStatuses(String driverId, int cycleId) throws SQLException {
         dBMySQL.changeTable("UPDATE cycleStatuses SET `statusTypeId` = '" + cycleId + "' WHERE userId = " + driverId + ";");
     }
     public List<ArrayList> getCycleHoursLastStatus(String driverId, String date) throws SQLException {

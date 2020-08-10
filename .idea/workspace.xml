@@ -32,11 +32,17 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="660eb711-957d-418e-9483-8b2931da6e6e" name="Default Changelist" comment=" cycle2 test was add">
-      <change afterPath="$PROJECT_DIR$/src/main/java/data/60hr_7days.json" afterDir="false" />
+    <list default="true" id="660eb711-957d-418e-9483-8b2931da6e6e" name="Default Changelist" comment=" cycle3 test was add">
+      <change afterPath="$PROJECT_DIR$/src/main/java/libs/CycleRules.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/libs/ECycleRules.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/libs/EStatusTime.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/libs/StatusTime.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log/qalight.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/qalight.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/libs/DataForTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/libs/DataForTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/libs/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/libs/Utils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/libs/UtilsForDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/libs/UtilsForDB.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/LogsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/LogsPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/frankesteinTest/logbookTest/CycleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/frankesteinTest/logbookTest/CycleTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/unitTest/TestMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/unitTest/TestMethods.java" afterDir="false" />
@@ -56,6 +62,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="AnnotationType" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -124,23 +131,7 @@
       <recent name="parameterizedOrders" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TestMethods.test">
-    <configuration name="CycleTest.california_80hr_7days" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="autoTestEz" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="frankesteinTest.logbookTest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="frankesteinTest.logbookTest" />
-      <option name="MAIN_CLASS_NAME" value="frankesteinTest.logbookTest.CycleTest" />
-      <option name="METHOD_NAME" value="california_80hr_7days" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.CycleTest.usa_60hr_7days">
     <configuration name="CycleTest.canadaNorth_60_80_7" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="autoTestEz" />
       <extension name="coverage">
@@ -157,7 +148,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CycleTest.texas70hr_7days" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CycleTest.usa_60hr_7days" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="autoTestEz" />
       <extension name="coverage">
         <pattern>
@@ -167,7 +158,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="frankesteinTest.logbookTest" />
       <option name="MAIN_CLASS_NAME" value="frankesteinTest.logbookTest.CycleTest" />
-      <option name="METHOD_NAME" value="texas70hr_7days" />
+      <option name="METHOD_NAME" value="usa_60hr_7days" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -184,6 +175,22 @@
       <option name="PACKAGE_NAME" value="unitTest" />
       <option name="MAIN_CLASS_NAME" value="unitTest.TestMethods" />
       <option name="METHOD_NAME" value="getEventNewOrder" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestMethods.recurseKeys" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="autoTestEz" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="unitTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="unitTest" />
+      <option name="MAIN_CLASS_NAME" value="unitTest.TestMethods" />
+      <option name="METHOD_NAME" value="recurseKeys" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -266,20 +273,20 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.TestMethods.getEventNewOrder" />
-      <item itemvalue="Maven.SoloOrders" />
-      <item itemvalue="JUnit.CycleTest.texas70hr_7days" />
-      <item itemvalue="JUnit.CycleTest.california_80hr_7days" />
       <item itemvalue="JUnit.CycleTest.canadaNorth_60_80_7" />
       <item itemvalue="JUnit.TestMethods.test" />
       <item itemvalue="JUnit.TestMethods.testRegex" />
+      <item itemvalue="Maven.SoloOrders" />
+      <item itemvalue="JUnit.TestMethods.recurseKeys" />
+      <item itemvalue="JUnit.CycleTest.usa_60hr_7days" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CycleTest.usa_60hr_7days" />
+        <item itemvalue="JUnit.TestMethods.recurseKeys" />
         <item itemvalue="JUnit.TestMethods.test" />
         <item itemvalue="JUnit.TestMethods.testRegex" />
         <item itemvalue="JUnit.CycleTest.canadaNorth_60_80_7" />
-        <item itemvalue="JUnit.CycleTest.california_80hr_7days" />
-        <item itemvalue="JUnit.CycleTest.texas70hr_7days" />
       </list>
     </recent_temporary>
   </component>
@@ -300,13 +307,6 @@
       <workItem from="1562665338918" duration="52834000" />
       <workItem from="1562782581468" duration="9021000" />
       <workItem from="1562822119836" duration="58303000" />
-    </task>
-    <task id="LOCAL-00037" summary="params manager test refactor was add">
-      <created>1567096209799</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1567096209799</updated>
     </task>
     <task id="LOCAL-00038" summary="checkAC ELD status was add">
       <created>1567186321706</created>
@@ -644,7 +644,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596728083828</updated>
     </task>
-    <option name="localTasksCounter" value="86" />
+    <task id="LOCAL-00086" summary=" cycle3 test was add">
+      <created>1596810109799</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1596810109799</updated>
+    </task>
+    <option name="localTasksCounter" value="87" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -680,7 +687,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="test new tariff was add" />
     <MESSAGE value="test agreement new tariff was add" />
     <MESSAGE value="test charge new tariff was add" />
     <MESSAGE value="test charge default new tariff was add" />
@@ -705,48 +711,84 @@
     <MESSAGE value=" logbook test was add" />
     <MESSAGE value=" cycle test was add" />
     <MESSAGE value=" cycle2 test was add" />
-    <option name="LAST_COMMIT_MESSAGE" value=" cycle2 test was add" />
+    <MESSAGE value=" cycle3 test was add" />
+    <option name="LAST_COMMIT_MESSAGE" value=" cycle3 test was add" />
   </component>
   <component name="WindowStateProjectService">
     <state x="-1828" y="92" width="1736" height="856" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1596721912372">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1828" y="92" width="1736" height="856" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1596721912371" />
+    <state x="-1155" y="221" key="#com.intellij.ide.util.MemberChooser" timestamp="1597072807100">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1155" y="221" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1597072807100" />
     <state x="-1180" y="275" key="FileChooserDialogImpl" timestamp="1596797375678">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1180" y="275" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1596797375678" />
-    <state width="1877" height="245" key="GridCell.Tab.0.bottom" timestamp="1596804820461">
+    <state width="1877" height="225" key="GridCell.Tab.0.bottom" timestamp="1597076530303">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="245" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1596804820461" />
+    <state width="1877" height="225" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1597076530303" />
     <state width="1877" height="343" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1596529245354" />
-    <state width="1877" height="245" key="GridCell.Tab.0.center" timestamp="1596804820461">
+    <state width="1877" height="225" key="GridCell.Tab.0.center" timestamp="1597076530303">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="245" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1596804820461" />
+    <state width="1877" height="225" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1597076530303" />
     <state width="1877" height="343" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1596529245354" />
-    <state width="1877" height="245" key="GridCell.Tab.0.left" timestamp="1596804820461">
+    <state width="1877" height="225" key="GridCell.Tab.0.left" timestamp="1597076530303">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="245" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1596804820461" />
+    <state width="1877" height="225" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1597076530303" />
     <state width="1877" height="343" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1596529245353" />
-    <state width="1877" height="245" key="GridCell.Tab.0.right" timestamp="1596804820461">
+    <state width="1877" height="225" key="GridCell.Tab.0.right" timestamp="1597076530303">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="245" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1596804820461" />
+    <state width="1877" height="225" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1597076530303" />
     <state width="1877" height="343" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1596529245354" />
+    <state width="1877" height="225" key="GridCell.Tab.1.bottom" timestamp="1597076575515">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="225" key="GridCell.Tab.1.bottom/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1597076575515" />
+    <state width="1877" height="225" key="GridCell.Tab.1.center" timestamp="1597076575515">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="225" key="GridCell.Tab.1.center/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1597076575515" />
+    <state width="1877" height="225" key="GridCell.Tab.1.left" timestamp="1597076575515">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="225" key="GridCell.Tab.1.left/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1597076575515" />
+    <state width="1877" height="225" key="GridCell.Tab.1.right" timestamp="1597076575515">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="225" key="GridCell.Tab.1.right/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1597076575515" />
     <state x="-1459" y="165" key="SettingsEditor" timestamp="1596807282906">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1459" y="165" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1596807282906" />
-    <state x="-1368" y="253" key="Vcs.Push.Dialog.v2" timestamp="1596728093452">
+    <state x="-1368" y="253" key="Vcs.Push.Dialog.v2" timestamp="1596810123671">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="-1368" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1596728093452" />
-    <state x="-1297" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1596536414097">
+    <state x="-1368" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1596810123671" />
+    <state x="-1828" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1597065879990">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="-1297" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1596536414097" />
+    <state x="-1828" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1597065879990" />
+    <state x="-1297" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1597054791001">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1297" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1597054791001" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/frankesteinTest/logbookTest/CycleTest.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
