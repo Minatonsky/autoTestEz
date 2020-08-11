@@ -586,4 +586,7 @@ public class UtilsForDB {
         List<ArrayList> tempData = dBMySQL.selectTable("SELECT s.drive, s.shift, s.cycle, s.eight, s.shiftWork, s.restart34 FROM `status` s WHERE s.userId = " + driverId + " AND s.dateTime LIKE '" + date + "%' GROUP BY s.dateTime HAVING MAX(s.dateTime) order BY s.dateTime DESC LIMIT 1;");
         return tempData;
     }
+    public void setCargoTypeId(String driverId, int cargoTypeId) throws SQLException {
+        dBMySQL.changeTable("UPDATE driversRules SET `cargoTypeId` = '" + cargoTypeId + "' WHERE userId = " + driverId + ";");
+    }
 }

@@ -1,24 +1,44 @@
 package frankesteinTest.logbookTest;
 
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.junit.runners.Parameterized;
 import parentTest.ParentTest;
 
 import java.io.IOException;
 import java.sql.SQLException;
+import java.util.Arrays;
+import java.util.Collection;
 import java.util.Map;
 
 import static libs.DataForTests.*;
 import static libs.StatusTime.getStatusTime;
 import static libs.Utils.dateWithMinusDay;
 
+@RunWith(Parameterized.class)
+
 public class CycleTest extends ParentTest {
+    int cargoType;
+
 
     Map dataForValidLogIn = excelDriver.getData(configProperties.DATA_FILE_PATH() + "testLogin.xls", "driverLogin");
     String login = dataForValidLogIn.get("login").toString();
     String pass = dataForValidLogIn.get("pass").toString();
 
-    public CycleTest() throws IOException {
+    public CycleTest(int cargoType) throws IOException {
+        this.cargoType = cargoType;
     }
+    @Parameterized.Parameters(name = "Type cargo: {0}")
+    public static Collection testData() {
+        return Arrays.asList(new Object[][] {
+                { 0 },
+                { 1 },
+                { 2 },
+                { 3 },
+                { 4 }
+        });
+    }
+
 
     @Test
     public void usa_60hr_7days() throws Exception {
@@ -27,7 +47,7 @@ public class CycleTest extends ParentTest {
 
         logsPage.cleanStatusesViolation(userId);
         logsPage.setCycle(userId, USA_60hr_7days);
-
+        utilsForDB.setCargoTypeId(userId, cargoType);
         loginPage.userValidLogIn(login, pass);
 
         //        1 day
@@ -35,99 +55,92 @@ public class CycleTest extends ParentTest {
         logsPage.clickOnRowDay(dateWithMinusDay(9));
         logsPage.clickOnCorrectionButton();
         logsPage.clickOnInsertStatusButton();
-        logsPage.addStatus(getStatusTime(8).getStatus1From(), getStatusTime(8).getStatus1To(), getStatusTime(8).getStatus1Type());
-        logsPage.addLastStatus(getStatusTime(8).getStatus2From(), getStatusTime(8).getStatus2To(), getStatusTime(8).getStatus2Type());
+        logsPage.addStatus("06:00:00 AM", "10:00:00 AM", "Dr");
+        logsPage.addStatus("10:00:00 AM", "11:00:00 AM", "On");
+        logsPage.addLastStatus("01:00:00 PM", "05:00:00 PM", "Dr");
         logsPage.clickOnSaveInfoButton();
         logsPage.closeCorrectionSavePopUp();
-        int cycleDuration1 = getStatusTime(8).getDrivingTime();
-        checkAC("Drive hours is incorrect", logsPage.getStatusData(userId, dateWithMinusDay(9), "drive") == logsPage.getDrivingHour(USA_60hr_7days, Property, 8), true);
-        checkAC("Shift hours is incorrect", logsPage.getStatusData(userId, dateWithMinusDay(9), "shift") == logsPage.getShiftHour(USA_60hr_7days, Property, 8), true);
-        checkAC("Cycle hours is incorrect", logsPage.getStatusData(userId, dateWithMinusDay(9), "cycle") == logsPage.getCycleHours(USA_60hr_7days, Property, cycleDuration1), true);
+        int cycleHours = logsPage.countHoursStatuses(Arrays.asList("06:00:00 AM/10:00:00 AM", "01:00:00 PM/05:00:00 PM", "10:00:00 AM/11:00:00 AM"));
+        checkAC("Cycle hours is incorrect", logsPage.getStatusData(userId, dateWithMinusDay(9), "cycle") == logsPage.getCycleHours(USA_60hr_7days, cargoType, cycleHours), true);
 
         //        2 day
         dashboardPage.goToLogsPage();
         logsPage.clickOnRowDay(dateWithMinusDay(8));
         logsPage.clickOnCorrectionButton();
         logsPage.clickOnInsertStatusButton();
-        logsPage.addStatus(getStatusTime(8).getStatus1From(), getStatusTime(8).getStatus1To(), getStatusTime(8).getStatus1Type());
-        logsPage.addLastStatus(getStatusTime(8).getStatus2From(), getStatusTime(8).getStatus2To(), getStatusTime(8).getStatus2Type());
+        logsPage.addStatus("06:00:00 AM", "10:00:00 AM", "Dr");
+        logsPage.addStatus("10:00:00 AM", "11:00:00 AM", "On");
+        logsPage.addLastStatus("01:00:00 PM", "05:00:00 PM", "Dr");
         logsPage.clickOnSaveInfoButton();
         logsPage.closeCorrectionSavePopUp();
-        int cycleDuration2 =  getStatusTime(8).getDrivingTime();
-        checkAC("Drive hours is incorrect", logsPage.getStatusData(userId, dateWithMinusDay(8), "drive") == logsPage.getDrivingHour(USA_60hr_7days, Property, 8), true);
-        checkAC("Shift hours is incorrect", logsPage.getStatusData(userId, dateWithMinusDay(8), "shift") == logsPage.getShiftHour(USA_60hr_7days, Property, 8), true);
-        checkAC("Cycle hours is incorrect", logsPage.getStatusData(userId, dateWithMinusDay(8), "cycle") == logsPage.getCycleHours(USA_60hr_7days, Property, cycleDuration2), true);
+        int cycleHours2 = cycleHours + (logsPage.countHoursStatuses(Arrays.asList("06:00:00 AM/10:00:00 AM", "01:00:00 PM/05:00:00 PM", "10:00:00 AM/11:00:00 AM")));
+        checkAC("Cycle hours is incorrect", logsPage.getStatusData(userId, dateWithMinusDay(8), "cycle") == logsPage.getCycleHours(USA_60hr_7days, cargoType, cycleHours2), true);
 
         //        3 day
         dashboardPage.goToLogsPage();
         logsPage.clickOnRowDay(dateWithMinusDay(7));
         logsPage.clickOnCorrectionButton();
         logsPage.clickOnInsertStatusButton();
-        logsPage.addStatus(getStatusTime(8).getStatus1From(), getStatusTime(8).getStatus1To(), getStatusTime(8).getStatus1Type());
-        logsPage.addLastStatus(getStatusTime(8).getStatus2From(), getStatusTime(8).getStatus2To(), getStatusTime(8).getStatus2Type());
+        logsPage.addStatus("06:00:00 AM", "10:00:00 AM", "Dr");
+        logsPage.addStatus("10:00:00 AM", "11:00:00 AM", "On");
+        logsPage.addLastStatus("01:00:00 PM", "05:00:00 PM", "Dr");
         logsPage.clickOnSaveInfoButton();
         logsPage.closeCorrectionSavePopUp();
-        int cycleDuration3 =  getStatusTime(8).getDrivingTime();
-        checkAC("Drive hours is incorrect", logsPage.getStatusData(userId, dateWithMinusDay(7), "drive") == logsPage.getDrivingHour(USA_60hr_7days, Property, 8), true);
-        checkAC("Shift hours is incorrect", logsPage.getStatusData(userId, dateWithMinusDay(7), "shift") == logsPage.getShiftHour(USA_60hr_7days, Property, 8), true);
-        checkAC("Cycle hours is incorrect", logsPage.getStatusData(userId, dateWithMinusDay(7), "cycle") == logsPage.getCycleHours(USA_60hr_7days, Property, cycleDuration3), true);
+        int cycleHours3 = cycleHours2 + (logsPage.countHoursStatuses(Arrays.asList("06:00:00 AM/10:00:00 AM", "01:00:00 PM/05:00:00 PM", "10:00:00 AM/11:00:00 AM")));
+        checkAC("Cycle hours is incorrect", logsPage.getStatusData(userId, dateWithMinusDay(7), "cycle") == logsPage.getCycleHours(USA_60hr_7days, cargoType, cycleHours3), true);
 
         //        4 day
         dashboardPage.goToLogsPage();
         logsPage.clickOnRowDay(dateWithMinusDay(6));
         logsPage.clickOnCorrectionButton();
         logsPage.clickOnInsertStatusButton();
-        logsPage.addStatus(getStatusTime(8).getStatus1From(), getStatusTime(8).getStatus1To(), getStatusTime(8).getStatus1Type());
-        logsPage.addLastStatus(getStatusTime(8).getStatus2From(), getStatusTime(8).getStatus2To(), getStatusTime(8).getStatus2Type());
+        logsPage.addStatus("06:00:00 AM", "10:00:00 AM", "Dr");
+        logsPage.addStatus("10:00:00 AM", "11:00:00 AM", "On");
+        logsPage.addLastStatus("01:00:00 PM", "05:00:00 PM", "Dr");
         logsPage.clickOnSaveInfoButton();
         logsPage.closeCorrectionSavePopUp();
-        int cycleDuration4 =  getStatusTime(8).getDrivingTime();
-        checkAC("Drive hours is incorrect", logsPage.getStatusData(userId, dateWithMinusDay(6), "drive") == logsPage.getDrivingHour(USA_60hr_7days, Property, 8), true);
-        checkAC("Shift hours is incorrect", logsPage.getStatusData(userId, dateWithMinusDay(6), "shift") == logsPage.getShiftHour(USA_60hr_7days, Property, 8), true);
-        checkAC("Cycle hours is incorrect", logsPage.getStatusData(userId, dateWithMinusDay(6), "cycle") == logsPage.getCycleHours(USA_60hr_7days, Property, cycleDuration4), true);
+        int cycleHours4 = cycleHours3 + (logsPage.countHoursStatuses(Arrays.asList("06:00:00 AM/10:00:00 AM", "01:00:00 PM/05:00:00 PM", "10:00:00 AM/11:00:00 AM")));
+        checkAC("Cycle hours is incorrect", logsPage.getStatusData(userId, dateWithMinusDay(6), "cycle") == logsPage.getCycleHours(USA_60hr_7days, cargoType, cycleHours4), true);
 
         //        5 day
         dashboardPage.goToLogsPage();
         logsPage.clickOnRowDay(dateWithMinusDay(5));
         logsPage.clickOnCorrectionButton();
         logsPage.clickOnInsertStatusButton();
-        logsPage.addStatus(getStatusTime(8).getStatus1From(), getStatusTime(8).getStatus1To(), getStatusTime(8).getStatus1Type());
-        logsPage.addLastStatus(getStatusTime(8).getStatus2From(), getStatusTime(8).getStatus2To(), getStatusTime(8).getStatus2Type());
+        logsPage.addStatus("06:00:00 AM", "10:00:00 AM", "Dr");
+        logsPage.addStatus("10:00:00 AM", "11:00:00 AM", "On");
+        logsPage.addLastStatus("01:00:00 PM", "05:00:00 PM", "Dr");
         logsPage.clickOnSaveInfoButton();
         logsPage.closeCorrectionSavePopUp();
-        int cycleDuration5 =  getStatusTime(8).getDrivingTime();
-        checkAC("Drive hours is incorrect", logsPage.getStatusData(userId, dateWithMinusDay(5), "drive") == logsPage.getDrivingHour(USA_60hr_7days, Property, 8), true);
-        checkAC("Shift hours is incorrect", logsPage.getStatusData(userId, dateWithMinusDay(5), "shift") == logsPage.getShiftHour(USA_60hr_7days, Property, 8), true);
-        checkAC("Cycle hours is incorrect", logsPage.getStatusData(userId, dateWithMinusDay(5), "cycle") == logsPage.getCycleHours(USA_60hr_7days, Property, cycleDuration5), true);
+        int cycleHours5 = cycleHours4 + (logsPage.countHoursStatuses(Arrays.asList("06:00:00 AM/10:00:00 AM", "01:00:00 PM/05:00:00 PM", "10:00:00 AM/11:00:00 AM")));
+        checkAC("Cycle hours is incorrect", logsPage.getStatusData(userId, dateWithMinusDay(5), "cycle") == logsPage.getCycleHours(USA_60hr_7days, cargoType, cycleHours5), true);
 
         //        6 day
         dashboardPage.goToLogsPage();
         logsPage.clickOnRowDay(dateWithMinusDay(4));
         logsPage.clickOnCorrectionButton();
         logsPage.clickOnInsertStatusButton();
-        logsPage.addStatus(getStatusTime(8).getStatus1From(), getStatusTime(8).getStatus1To(), getStatusTime(8).getStatus1Type());
-        logsPage.addLastStatus(getStatusTime(8).getStatus2From(), getStatusTime(8).getStatus2To(), getStatusTime(8).getStatus2Type());
+        logsPage.addStatus("06:00:00 AM", "10:00:00 AM", "Dr");
+        logsPage.addStatus("10:00:00 AM", "11:00:00 AM", "On");
+        logsPage.addLastStatus("01:00:00 PM", "05:00:00 PM", "Dr");
         logsPage.clickOnSaveInfoButton();
         logsPage.closeCorrectionSavePopUp();
-        int cycleDuration6 =  getStatusTime(8).getDrivingTime();
-        checkAC("Drive hours is incorrect", logsPage.getStatusData(userId, dateWithMinusDay(4), "drive") == logsPage.getDrivingHour(USA_60hr_7days, Property, 8), true);
-        checkAC("Shift hours is incorrect", logsPage.getStatusData(userId, dateWithMinusDay(4), "shift") == logsPage.getShiftHour(USA_60hr_7days, Property, 8), true);
-        checkAC("Cycle hours is incorrect", logsPage.getStatusData(userId, dateWithMinusDay(4), "cycle") == logsPage.getCycleHours(USA_60hr_7days, Property, cycleDuration6), true);
+        int cycleHours6 = cycleHours5 + (logsPage.countHoursStatuses(Arrays.asList("06:00:00 AM/10:00:00 AM", "01:00:00 PM/05:00:00 PM", "10:00:00 AM/11:00:00 AM")));
+        checkAC("Cycle hours is incorrect", logsPage.getStatusData(userId, dateWithMinusDay(4), "cycle") == logsPage.getCycleHours(USA_60hr_7days, cargoType, cycleHours6), true);
 
         //        7 day
         dashboardPage.goToLogsPage();
         logsPage.clickOnRowDay(dateWithMinusDay(3));
         logsPage.clickOnCorrectionButton();
         logsPage.clickOnInsertStatusButton();
-        logsPage.addStatus(getStatusTime(8).getStatus1From(), getStatusTime(8).getStatus1To(), getStatusTime(8).getStatus1Type());
-        logsPage.addLastStatus(getStatusTime(8).getStatus2From(), getStatusTime(8).getStatus2To(), getStatusTime(8).getStatus2Type());
+        logsPage.addStatus("06:00:00 AM", "10:00:00 AM", "Dr");
+        logsPage.addStatus("10:00:00 AM", "11:00:00 AM", "On");
+        logsPage.addLastStatus("01:00:00 PM", "02:01:00 PM", "Dr");
         logsPage.clickOnSaveInfoButton();
         logsPage.closeCorrectionSavePopUp();
-        int cycleDuration7 =  getStatusTime(8).getDrivingTime();
-        checkAC("Drive hours is incorrect", logsPage.getStatusData(userId, dateWithMinusDay(3), "drive") == logsPage.getDrivingHour(USA_60hr_7days, Property, 8), true);
-        checkAC("Shift hours is incorrect", logsPage.getStatusData(userId, dateWithMinusDay(3), "shift") == logsPage.getShiftHour(USA_60hr_7days, Property, 8), true);
-        checkAC("Cycle hours is incorrect", logsPage.getStatusData(userId, dateWithMinusDay(3), "cycle") == logsPage.getCycleHours(USA_60hr_7days, Property, cycleDuration7), true);
-
+        int cycleHours7 = cycleHours6 + (logsPage.countHoursStatuses(Arrays.asList("06:00:00 AM/10:00:00 AM", "01:00:00 PM/02:01:00 PM", "10:00:00 AM/11:00:00 AM")));
+        checkAC("Cycle hours is incorrect", logsPage.getStatusData(userId, dateWithMinusDay(3), "cycle") == logsPage.getCycleHours(USA_60hr_7days, cargoType, cycleHours7), true);
+        checkAC("Overworked Cycle Violation(7) failed", logsPage.checkAlertsId(userId, dateWithMinusDay(3), OverworkedCycle), true);
     }
 
     @Test

@@ -12,9 +12,7 @@ import java.util.List;
 import java.util.Map;
 
 import static libs.CycleRules.getCycleRules;
-import static libs.StatusTime.getStatusTime;
-import static libs.Utils.listArrayToMap;
-import static libs.Utils.waitABit;
+import static libs.Utils.*;
 
 public class LogsPage extends ParentPage {
     public LogsPage(WebDriver webDriver, UtilsForDB utilsForDB) {
@@ -170,25 +168,41 @@ public class LogsPage extends ParentPage {
 //      value =  drive, shift, cycle, eight, shiftWork, restart34
         List<ArrayList> statusData = utilsForDB.getCycleHoursLastStatus(userId, data);
         Map<String, Object> tempStatusData = listArrayToMap(statusData);
-        return Integer.parseInt(tempStatusData.get(value).toString());
+        int temp = Integer.parseInt(tempStatusData.get(value).toString());
+        logger.info("getStatusDataFromDB " + value + " " + temp);
+        return temp;
 
     }
 
     public int getCycleHours(int cycleId, int cargoType, int duration){
         int cycleRulesHours = getCycleRules(cycleId, cargoType).getCycleHours();
-        return (cycleRulesHours * 3600) - duration;
+        int temp = (cycleRulesHours * 3600) - duration;
+        logger.info("countCycleHours " + temp);
+        return temp;
     }
 
-    public int getDrivingHour(int cycleId, int cargoType, int typeTime){
-        int drivingRulesHours = getCycleRules(cycleId, cargoType).getCycleHours();
-        int drivingTime = getStatusTime(typeTime).getDrivingTime();
-        return (drivingRulesHours * 3600) - drivingTime;
+    public int getDrivingHour(int cycleId, int cargoType, int drivingTime){
+        int drivingRulesHours = getCycleRules(cycleId, cargoType).getDriveHours();
+        int temp = (drivingRulesHours * 3600) - drivingTime;
+        logger.info("countDrivingHour " + temp);
+        return temp;
     }
 
-    public int getShiftHour(int cycleId, int cargoType, int typeTime){
+    public int getShiftHour(int cycleId, int cargoType, int duration){
         int shiftRulesHours = getCycleRules(cycleId, cargoType).getShiftHours();
-        int shiftHours = getStatusTime(typeTime).getShiftTime();
-        return (shiftRulesHours * 3600) - shiftHours;
+        int shiftHours = (shiftRulesHours * 3600) - duration;
+        logger.info("countShiftHour " + shiftHours);
+        return shiftHours;
+    }
+
+    public int countHoursStatuses(List<String> list){
+        int temp = 0;
+        for (String i :
+                list) {
+            String[] parts = i.split("/");
+            temp += (int) getDurationBetweenTime(parts[0], parts[1]);
+        }
+        return temp;
     }
 
 }

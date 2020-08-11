@@ -19,17 +19,17 @@ public class DataForTests {
     public static String userIdString = "userId";
 
 //    type of violations
-    public static String MissingSignature = "1";
-    public static String DVIR = "2";
-    public static String FormManner = "3";
-    public static String DrivingTime8 = "4";
-    public static String DrivingTime11 = "5";
-    public static String DrivingTime14 = "6";
-    public static String DrivingTime70_8 = "7";
+    public static String MissingSignature = "1";//Not signed logbook on working day || dvir not signed
+    public static String DVIR = "2";//No dvir on date when driver was driving || some defects not fixed
+    public static String FormManner = "3";//No info about truck/trailer/bol || No info about mileage || no logbook info on driving day
+    public static String DrivingTime8 = "4";//start driving with 8 hours violation || driving with 8 hours violation
+    public static String DrivingTime11 = "5";//start driving with 11 hours violation || driving with 11 hours violation
+    public static String DrivingTime14 = "6";//start driving with 14 hours violation || driving with 14 hours violation
+    public static String OverworkedCycle = "7";//start driving with Overworked violation || driving with Overworked cycle
     public static String DrivingTime60_7 = "8";
-    public static String Canada10HoursOff = "9";
-    public static String CanadaChangeCycleBreak = "10";
-    public static String RevisedLogsResult = "11";
+    public static String Canada10HoursOff = "9";//Canada 10 hours off duty a day violation
+    public static String CanadaChangeCycleBreak = "10";//Canada cycle change violation
+    public static String RevisedLogsResult = "11";//driver accepted/rejected logs
 
 //    cycle type
     public static int USA_70hr_8days = 0; //numbers['shiftHours'] = 14; numbers['driveHours'] = 11;
