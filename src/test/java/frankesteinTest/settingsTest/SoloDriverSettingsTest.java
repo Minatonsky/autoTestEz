@@ -18,7 +18,7 @@ public class SoloDriverSettingsTest extends ParentTest {
 
     String login = dataForValidLogIn.get("login").toString();
     String pass = dataForValidLogIn.get("pass").toString();
-    String userId = utilsForDB.getUserIdByEmail(login);
+    String userId = dataForValidLogIn.get("userId").toString();
     String scannerType = "1";
 
     public SoloDriverSettingsTest() throws IOException, SQLException, ClassNotFoundException {

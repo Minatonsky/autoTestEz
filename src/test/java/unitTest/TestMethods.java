@@ -9,71 +9,23 @@ import java.io.IOException;
 import java.sql.SQLException;
 import java.text.ParseException;
 import java.time.LocalDate;
-import java.time.LocalDateTime;
 import java.time.Period;
-import java.time.ZoneOffset;
-import java.time.format.DateTimeFormatter;
 import java.time.temporal.ChronoUnit;
 import java.time.temporal.TemporalAdjusters;
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import java.util.Map;
 
-import static libs.Utils.*;
+import static libs.CycleRules.getCycleRules;
+import static libs.DataForTests.Property;
+import static libs.DataForTests.USA_70hr_8days;
+import static libs.Utils.getDurationBetweenTime;
 // This test page is not using on test project, it just for check some methods
 
 
 public class TestMethods extends ParentTestWithoutWebDriver {
     org.apache.log4j.Logger logger = Logger.getLogger(getClass());
 
-    @Test
-    public void testDBSetCurrentDueForFleet() throws SQLException, IOException, ClassNotFoundException {
-        LocalDateTime yesterday = LocalDateTime.parse(LocalDateTime.now().minusDays(1).toString());
-        String startYesterday = yesterday.format(DateTimeFormatter.ofPattern("yyyy-MM-dd"));
-        System.out.println(startYesterday);
-    }
 
-    @Test
-    public void testCancelEldDevices() throws SQLException, IOException, ClassNotFoundException {
-        String idLastOrderAfterTest = "2460";
-        List<String> localId = utilsForDB.getLocalIdDevices(idLastOrderAfterTest);
-        logger.info(" result = " + localId.get(1));
-        for (String element :
-                localId
-        ) {
-            System.out.println(element);
-
-        }
-        for (int i = 0; i < localId.size(); i++) {
-            System.out.println(localId.get(i));
-
-        }
-    }
-
-
-    @Test
-    public void testIsEldBlinded() throws SQLException, IOException, ClassNotFoundException {
-
-        String orderId = "3066";
-        System.out.println(utilsForDB.isEldBlinded(orderId));
-    }
-
-    @Test
-    public void testGetEldId() throws SQLException, IOException, ClassNotFoundException {
-        String idOrder = "3064";
-        List<String> tempIdEld = utilsForDB.getIdEldFromOrder(idOrder);
-        for (String element : tempIdEld
-        ) {
-            System.out.println(element);
-        }
-    }
-
-    @Test
-    public void testActionNewOrder() throws SQLException, IOException, ClassNotFoundException {
-        String idOrder = "3075";
-        utilsForDB.deleteEventNewOrder(idOrder);
-    }
 
     @Test
     public void testGetParams() throws SQLException, IOException, ClassNotFoundException, ParseException {
@@ -108,72 +60,6 @@ public class TestMethods extends ParentTestWithoutWebDriver {
 
     }
 
-    @Test
-    public void compareCurrentDueFleetDefaulter() throws SQLException, IOException, ClassNotFoundException {
-        double sumCharge = 29.99;
-        String currentDueFleet = utilsForDB.getCurrentDueEzFinancesFleet("518");
-        System.out.println(currentDueFleet);
-
-    }
-
-    @Test
-    public void checkDevicesIsNotPaid() throws SQLException, IOException, ClassNotFoundException {
-        String fleetString = "fleet";
-        String fleetId = "518";
-        List<String> listOfActiveDevices = utilsForDB.getIdScannersByStatus(fleetString, fleetId, "11");
-        String stringOfActiveDevices = String.join(",", listOfActiveDevices);
-        List<String> listOfStatuses = utilsForDB.getScannersStatus(stringOfActiveDevices);
-        System.out.println("listOfStatuses count = " + listOfStatuses.size());
-        System.out.println("listOfStatuses " + listOfStatuses);
-        for (String element : listOfStatuses) {
-            if (element.equals("1")) {
-                System.out.println("Ok ");
-            } else System.out.println("No Ok ");
-        }
-        System.out.println("#");
-
-    }
-
-    @Test
-    public void compareEldStatusInCompletedOrder() throws SQLException, IOException, ClassNotFoundException {
-
-        LocalDate today = LocalDate.now(ZoneOffset.UTC);
-        LocalDateTime startOfDay = today.atStartOfDay();
-        String formatted = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss").format(startOfDay);
-
-        System.out.println(today);
-    }
-
-
-    @Test
-    public void checkProratedAndNotReturnedFee() throws SQLException, IOException, ClassNotFoundException {
-        String fleetId = "581";
-        String fleetString = "fleet";
-        String currentDueWithLateFee = "10";
-
-        List<String> listOfActiveDevices = utilsForDB.getIdScannersByStatus(fleetString, fleetId, "4");
-
-        LocalDateTime tempDate = LocalDateTime.parse(LocalDateTime.now().toString());
-        long date = tempDate.toEpochSecond(ZoneOffset.UTC);
-        String tempDateToday = Long.toString(date);
-
-        logger.info("tempDateToday = " + tempDateToday);
-        String stringOfActiveDevices = String.join(",", listOfActiveDevices);
-        logger.info("listOfActiveDevices = " + listOfActiveDevices);
-        List<String> listDevicesTariffStart = utilsForDB.getScannersTariffStart(stringOfActiveDevices);
-
-        int count = 0;
-        for (String element :
-                listDevicesTariffStart) {
-            if (Integer.parseInt(element) < Integer.parseInt(tempDateToday)) {
-                int tempCount = count++;
-                System.out.println("tempCount" + tempCount);
-
-            } else System.out.println("0");
-        }
-
-
-    }
 
     @Test
     public void testFor() throws SQLException, IOException, ClassNotFoundException {
@@ -184,25 +70,24 @@ public class TestMethods extends ParentTestWithoutWebDriver {
         System.out.println(test);
     }
 
-    @Test
-    public void getAmountEzDueMonthToMonth() throws SQLException, IOException, ClassNotFoundException {
-        String data = genRandomDataByRegex("[0-9]{2}[-]{1}[0-9]{7}");
-
-        System.out.println(data);
-
-    }
-
-    public int getStatusData(String userId, String data, String value) throws SQLException {
-//      value =  drive, shift, cycle, eight, shiftWork, restart34
-        List<ArrayList> statusData = utilsForDB.getCycleHoursLastStatus(userId, data);
-        Map<String, Object> tempStatusData = listArrayToMap(statusData);
-        int temp = Integer.parseInt(tempStatusData.get(value).toString());
-        int result = temp / 3600;
-        return result;
-
-    }
-
-
+    //    cycle type
+//    public static int USA_70hr_8days = 0; //numbers['shiftHours'] = 14; numbers['driveHours'] = 11;
+//    public static int USA_60hr_7days = 1; //numbers['shiftHours'] = 14; numbers['driveHours'] = 11;
+//    public static int Alaska_70hr_7days = 2; //numbers['shiftHours'] = 20; numbers['driveHours'] = 15;
+//    public static int Alaska_80hr_8days = 3; //numbers['shiftHours'] = 20; numbers['driveHours'] = 15;
+//    public static int Canada_70hr_7days = 4; //numbers['shiftHours'] = 16; numbers['driveHours'] = 13;
+//    public static int Canada_120hr_14days = 5; //numbers['shiftHours'] = 16; numbers['driveHours'] = 13;
+//    public static int Texas70hr_7days = 6; //numbers['shiftHours'] = 15; numbers['driveHours'] = 12;
+//    public static int California_80hr_7days = 7; //numbers['shiftHours'] = 16; numbers['driveHours'] = 14;
+//    public static int CanadaNorth_60_80_7 = 8; //numbers['shiftHours'] = ; numbers['driveHours'] = ;
+//    public static int Other = 9;
+//
+//    //    CARGO TYPE
+//    public static int Property = 0;
+//    public static int Agriculture = 1;
+//    public static int Passenger = 2;
+//    public static int OilGas = 3;
+//    public static int ShortHaul = 4;
 
     public int recurseKeys() throws Exception {
         List<String> list = Arrays.asList("06:00:00 AM/10:00:00 AM", "01:00:00 PM/05:00:00 PM");
@@ -216,9 +101,15 @@ public class TestMethods extends ParentTestWithoutWebDriver {
         return temp;
 
     }
+
+
     @Test
-    public void test() throws Exception {
-        System.out.println(recurseKeys());
+    public void test() {
+        int cycleId = USA_70hr_8days;
+        int cargoType = Property;
+        int data = getCycleRules(cycleId, cargoType).getCycleHours();
+
+        System.out.println(data);
     }
 
 }

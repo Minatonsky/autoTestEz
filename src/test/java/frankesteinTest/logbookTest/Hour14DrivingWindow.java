@@ -10,45 +10,42 @@ import java.time.format.DateTimeFormatter;
 import java.util.Map;
 
 import static libs.DataForTests.*;
-import static libs.Utils.getLocalDateTimeUTC;
+import static libs.Utils.dateWithMinusDay;
 
-public class FourteenHourDrivingWindow extends ParentTest {
+public class Hour14DrivingWindow extends ParentTest {
     Map dataForValidLogIn = excelDriver.getData(configProperties.DATA_FILE_PATH() + "testLogin.xls", "driverLogin");
     String login = dataForValidLogIn.get("login").toString();
     String pass = dataForValidLogIn.get("pass").toString();
 
 
-    public FourteenHourDrivingWindow() throws IOException {
+    public Hour14DrivingWindow() throws IOException {
     }
     @Test
-    public void fourteenHourDrivingWindowNoViolation() throws SQLException{
+    public void Hour14DrivingWindowNoViolation() throws SQLException{
 
 //        14-HOUR “DRIVING WINDOW” no violation
 
         String userId = utilsForDB.getUserIdByEmail(login);
-        String date = getLocalDateTimeUTC().minusDays(1).format(DateTimeFormatter.ofPattern("yyyy-MM-dd"));
 
         logsPage.cleanStatusesViolation(userId);
+        logsPage.setCycle(userId, USA_60hr_7days);
+        utilsForDB.setCargoTypeId(userId, Property);
 
         loginPage.userValidLogIn(login, pass);
         dashboardPage.goToLogsPage();
-        logsPage.clickOnRowDay(date);
+        logsPage.clickOnRowDay(dateWithMinusDay(3));
         logsPage.clickOnCorrectionButton();
         logsPage.clickOnInsertStatusButton();
 
-        logsPage.addStatus("000000AM", "010000AM", "On");
-
-        logsPage.addStatus("010000AM", "060000AM", "Dr");
-
-        logsPage.addStatus("070000AM", "100000AM", "Dr");
-
-        logsPage.addStatus("100000AM", "120000PM", "On");
-
-        logsPage.addLastStatus("120000PM", "020000PM", "Dr");
+        logsPage.addStatus("00:00:00 AM", "01:00:00 AM", "On");
+        logsPage.addStatus("01:00:00 AM", "06:00:00 AM", "Dr");
+        logsPage.addStatus("07:00:00 AM", "10:00:00 AM", "Dr");
+        logsPage.addStatus("10:00:00 AM", "12:00:00 PM", "On");
+        logsPage.addLastStatus("12:00:00 PM", "02:00:00 PM", "Dr");
 
         logsPage.clickOnSaveInfoButton();
         logsPage.closeCorrectionSavePopUp();
-        checkAC("Violation exist", logsPage.checkAlertsExist(userId, date), false);
+        checkAC("Violation exist", logsPage.checkAlertsExist(userId, dateWithMinusDay(3)), false);
 
     }
     @Test

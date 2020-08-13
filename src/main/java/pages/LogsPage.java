@@ -195,6 +195,13 @@ public class LogsPage extends ParentPage {
         return shiftHours;
     }
 
+    public int getRestart34(int cycleId, int cargoType){
+        int restartRulesHours = getCycleRules(cycleId, cargoType).getRestartHours();
+        int restartHours = (restartRulesHours * 3600);
+        logger.info("restartHours " + restartHours);
+        return restartHours;
+    }
+
     public int countHoursStatuses(List<String> list){
         int temp = 0;
         for (String i :
@@ -203,6 +210,55 @@ public class LogsPage extends ParentPage {
             temp += (int) getDurationBetweenTime(parts[0], parts[1]);
         }
         return temp;
+    }
+
+    public void enterShiftHours(int cycleId, int cargoType){
+        switch (cycleId){
+            case 0:
+                if (cargoType != 2){
+                    //14 hours
+                    addStatus("00:00:00 AM", "01:00:00 AM", "On");
+                    addStatus("01:00:00 AM", "06:00:00 AM", "Dr");
+                    addStatus("07:00:00 AM", "10:00:00 AM", "Dr");
+                    addStatus("10:00:00 AM", "12:00:00 PM", "On");
+                    addLastStatus("12:00:00 PM", "02:00:00 PM", "Dr");
+                } else {
+                    //15 hours
+                    addStatus("00:00:00 AM", "01:00:00 AM", "On");
+                    addStatus("01:00:00 AM", "06:00:00 AM", "Dr");
+                    addStatus("07:00:00 AM", "09:00:00 AM", "Dr");
+                    addStatus("09:00:00 AM", "12:00:00 PM", "On");
+                    addLastStatus("12:00:00 PM", "02:00:00 PM", "Dr");
+                }
+            case 1:
+                if (cargoType != 2){
+                    //14 hours
+                    addStatus("00:00:00 AM", "01:00:00 AM", "On");
+                    addStatus("01:00:00 AM", "06:00:00 AM", "Dr");
+                    addStatus("07:00:00 AM", "10:00:00 AM", "Dr");
+                    addStatus("10:00:00 AM", "12:00:00 PM", "On");
+                    addLastStatus("12:00:00 PM", "02:00:00 PM", "Dr");
+                } else {
+                    //15 hours
+                    addStatus("00:00:00 AM", "01:00:00 AM", "On");
+                    addStatus("01:00:00 AM", "06:00:00 AM", "Dr");
+                    addStatus("07:00:00 AM", "10:00:00 AM", "Dr");
+                    addStatus("10:00:00 AM", "12:00:00 PM", "On");
+                    addLastStatus("12:00:00 PM", "03:00:00 PM", "Dr");
+                }
+            case 2:
+                //20 hours
+                addStatus("00:00:00 AM", "03:00:00 AM", "On");
+                addStatus("03:00:00 AM", "07:00:00 AM", "Dr");
+                addStatus("07:00:00 AM", "10:00:00 AM", "Dr");
+                addStatus("10:00:00 AM", "12:00:00 PM", "On");
+                addLastStatus("12:00:00 PM", "03:00:00 PM", "Dr");
+
+        }
+
+
+
+
     }
 
 }
