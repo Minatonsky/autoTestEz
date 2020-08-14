@@ -88,6 +88,7 @@ public class Hour14DrivingWindow extends ParentTest {
         logsPage.clickOnSaveInfoButton();
         logsPage.closeCorrectionSavePopUp();
         checkAC("driving with 14 hours violation(6) failed", logsPage.checkAlertsId(userId, dateWithMinusDay(3), DrivingTime14), true);
+        checkAC("driving with 11 hours violation hours violation(5) failed", logsPage.checkAlertsId(userId, dateWithMinusDay(3), DrivingTime14), true);
 
     }
     @Test

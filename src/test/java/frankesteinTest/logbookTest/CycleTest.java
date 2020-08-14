@@ -142,7 +142,7 @@ public class CycleTest extends ParentTest {
         int cycleHours7 = cycleHours6 + (logsPage.countHoursStatuses(Arrays.asList("06:00:00 AM/10:00:00 AM", "01:00:00 PM/02:00:00 PM", "10:00:00 AM/11:00:00 AM")));
         checkAC("Cycle hours is incorrect", logsPage.getStatusData(userId, dateWithMinusDay(3), "cycle") == logsPage.getCycleHours(USA_60hr_7days, cargoType, cycleHours7), true);
         checkAC("Restart hours are incorrect", logsPage.getStatusData(userId, dateWithMinusDay(3), "restart34") == logsPage.getRestart34(USA_60hr_7days, cargoType), true);
-        checkAC("Overworked Cycle Violation(7) failed", logsPage.checkAlertsId(userId, dateWithMinusDay(3), OverworkedCycle), false);
+        checkAC("Violation exist", logsPage.checkAlertsExist(userId, dateWithMinusDay(3)), false);
 
         //        7 day with violation
         dashboardPage.goToLogsPage();
@@ -278,7 +278,7 @@ public class CycleTest extends ParentTest {
         int cycleHours8 = cycleHours7 + (logsPage.countHoursStatuses(Arrays.asList("06:00:00 AM/10:00:00 AM", "01:00:00 PM/04:00:00 PM", "10:00:00 AM/11:00:00 AM")));
         checkAC("Cycle hours is incorrect", logsPage.getStatusData(userId, dateWithMinusDay(2), "cycle") == logsPage.getCycleHours(USA_70hr_8days, cargoType, cycleHours8), true);
         checkAC("Restart hours are incorrect", logsPage.getStatusData(userId, dateWithMinusDay(2), "restart34") == logsPage.getRestart34(USA_70hr_8days, cargoType), true);
-        checkAC("Overworked Cycle Violation(7) failed", logsPage.checkAlertsId(userId, dateWithMinusDay(2), OverworkedCycle), false);
+        checkAC("Violation exist", logsPage.checkAlertsExist(userId, dateWithMinusDay(2)), false);
 
         // 8 day with violation
         dashboardPage.goToLogsPage();
@@ -400,7 +400,7 @@ public class CycleTest extends ParentTest {
         int cycleHours7 = cycleHours6 + logsPage.countHoursStatuses(Arrays.asList("06:00:00 AM/10:00:00 AM", "10:00:00 AM/11:00:00 AM", "01:00:00 PM/06:00:00 PM"));
         checkAC("Cycle hours is incorrect", logsPage.getStatusData(userId, dateWithMinusDay(3), "cycle") == logsPage.getCycleHours(Alaska_70hr_7days, cargoType, cycleHours7), true);
         checkAC("Restart hours are incorrect", logsPage.getStatusData(userId, dateWithMinusDay(3), "restart34") == logsPage.getRestart34(Alaska_70hr_7days, cargoType), true);
-        checkAC("Overworked Cycle Violation(7) failed", logsPage.checkAlertsId(userId, dateWithMinusDay(3), OverworkedCycle), false);
+        checkAC("Violation exist", logsPage.checkAlertsExist(userId, dateWithMinusDay(3)), false);
 
         // 7 day with violation
         dashboardPage.goToLogsPage();
@@ -536,7 +536,7 @@ public class CycleTest extends ParentTest {
         int cycleHours8 = cycleHours7 + logsPage.countHoursStatuses(Arrays.asList("06:00:00 AM/10:00:00 AM", "10:00:00 AM/11:00:00 AM", "01:00:00 PM/06:00:00 PM"));
         checkAC("Cycle hours is incorrect", logsPage.getStatusData(userId, dateWithMinusDay(2), "cycle") == logsPage.getCycleHours(Alaska_80hr_8days, cargoType, cycleHours8), true);
         checkAC("Restart hours are incorrect", logsPage.getStatusData(userId, dateWithMinusDay(2), "restart34") == logsPage.getRestart34(Alaska_80hr_8days, cargoType), true);
-        checkAC("Overworked Cycle Violation(7) failed", logsPage.checkAlertsId(userId, dateWithMinusDay(2), OverworkedCycle), false);
+        checkAC("Violation exist", logsPage.checkAlertsExist(userId, dateWithMinusDay(2)), false);
 
         // 8 day with violation
         dashboardPage.goToLogsPage();
@@ -659,7 +659,7 @@ public class CycleTest extends ParentTest {
         int cycleHours7 = cycleHours6 + logsPage.countHoursStatuses(Arrays.asList("06:00:00 AM/10:00:00 AM", "10:00:00 AM/11:00:00 AM", "01:00:00 PM/06:00:00 PM"));
         checkAC("Cycle hours is incorrect", logsPage.getStatusData(userId, dateWithMinusDay(3), "cycle") == logsPage.getCycleHours(Canada_70hr_7days, cargoType, cycleHours7), true);
         checkAC("Restart hours are incorrect", logsPage.getStatusData(userId, dateWithMinusDay(3), "restart34") == logsPage.getRestart34(Canada_70hr_7days, cargoType), true);
-        checkAC("Overworked Cycle Violation(7) failed", logsPage.checkAlertsId(userId, dateWithMinusDay(3), OverworkedCycle), false);
+        checkAC("Violation exist", logsPage.checkAlertsExist(userId, dateWithMinusDay(3)), false);
 
         // 7 day with violation
         dashboardPage.goToLogsPage();
@@ -879,7 +879,7 @@ public class CycleTest extends ParentTest {
         int cycleHours14 = cycleHours13 + logsPage.countHoursStatuses(Arrays.asList("08:00:00 AM/10:00:00 AM", "10:00:00 AM/11:00:00 AM", "04:00:00 PM/06:00:00 PM"));
         checkAC("Cycle hours is incorrect", logsPage.getStatusData(userId, dateWithMinusDay(3), "cycle") == logsPage.getCycleHours(Canada_120hr_14days, cargoType, cycleHours14), true);
         checkAC("Restart hours are incorrect", logsPage.getStatusData(userId, dateWithMinusDay(3), "restart34") == logsPage.getRestart34(Canada_120hr_14days, cargoType), true);
-        checkAC("Overworked Cycle Violation(7) failed", logsPage.checkAlertsId(userId, dateWithMinusDay(3), OverworkedCycle), false);
+        checkAC("Violation exist", logsPage.checkAlertsExist(userId, dateWithMinusDay(3)), false);
 
         // 14 day with violation
         dashboardPage.goToLogsPage();
@@ -1001,7 +1001,7 @@ public class CycleTest extends ParentTest {
         int cycleHours7 = cycleHours6 + logsPage.countHoursStatuses(Arrays.asList("06:00:00 AM/10:00:00 AM", "10:00:00 AM/11:00:00 AM", "01:00:00 PM/06:00:00 PM"));
         checkAC("Cycle hours is incorrect", logsPage.getStatusData(userId, dateWithMinusDay(3), "cycle") == logsPage.getCycleHours(Texas70hr_7days, cargoType, cycleHours7), true);
         checkAC("Restart hours are incorrect", logsPage.getStatusData(userId, dateWithMinusDay(3), "restart34") == logsPage.getRestart34(Texas70hr_7days, cargoType), true);
-        checkAC("Overworked Cycle Violation(7) failed", logsPage.checkAlertsId(userId, dateWithMinusDay(3), OverworkedCycle), false);
+        checkAC("Violation exist", logsPage.checkAlertsExist(userId, dateWithMinusDay(3)), false);
 
         // 7 day with violation
         dashboardPage.goToLogsPage();
@@ -1122,7 +1122,7 @@ public class CycleTest extends ParentTest {
         int cycleHours7 = cycleHours6 + logsPage.countHoursStatuses(Arrays.asList("06:00:00 AM/11:00:00 AM", "01:00:00 PM/07:00:00 PM"));
         checkAC("Cycle hours is incorrect", logsPage.getStatusData(userId, dateWithMinusDay(3), "cycle") == logsPage.getCycleHours(California_80hr_7days, cargoType, cycleHours7), true);
         checkAC("Restart hours are incorrect", logsPage.getStatusData(userId, dateWithMinusDay(3), "restart34") == logsPage.getRestart34(California_80hr_7days, cargoType), true);
-        checkAC("Overworked Cycle Violation(7) failed", logsPage.checkAlertsId(userId, dateWithMinusDay(3), OverworkedCycle), false);
+        checkAC("Violation exist", logsPage.checkAlertsExist(userId, dateWithMinusDay(3)), false);
 
         // 7 day with violation
         dashboardPage.goToLogsPage();
@@ -1243,7 +1243,7 @@ public class CycleTest extends ParentTest {
         int cycleHours7 = cycleHours6 + logsPage.countHoursStatuses(Arrays.asList("06:00:00 AM/11:00:00 AM", "01:00:00 PM/07:00:00 PM"));
         checkAC("Cycle hours is incorrect", logsPage.getStatusData(userId, dateWithMinusDay(3), "cycle") == logsPage.getCycleHours(CanadaNorth_60_80_7, cargoType, cycleHours7), true);
         checkAC("Restart hours are incorrect", logsPage.getStatusData(userId, dateWithMinusDay(3), "restart34") == logsPage.getRestart34(CanadaNorth_60_80_7, cargoType), true);
-        checkAC("Overworked Cycle Violation(7) failed", logsPage.checkAlertsId(userId, dateWithMinusDay(3), OverworkedCycle), false);
+        checkAC("Violation exist", logsPage.checkAlertsExist(userId, dateWithMinusDay(3)), false);
 
         // 7 day with violation
         dashboardPage.goToLogsPage();

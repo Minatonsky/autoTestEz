@@ -3839,3 +3839,24 @@ Session ID: 6d1fe4db144242311a5f171a769ecf9c
 2020-14-08 15:34:24   INFO [frankesteinTest.logbookTest.Hour14DrivingWindow] : Chrome will be started
 2020-14-08 15:34:25   INFO [frankesteinTest.logbookTest.Hour14DrivingWindow] : Chrome is started
 2020-14-08 15:34:25   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-14-08 16:39:09   INFO [frankesteinTest.logbookTest.Hour14DrivingWindow] : Chrome will be started
+2020-14-08 16:39:11   INFO [frankesteinTest.logbookTest.Hour14DrivingWindow] : Chrome is started
+2020-14-08 16:39:11   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-14-08 16:39:17   INFO [pages.LoginPage] : Login Page was opened
+2020-14-08 16:39:17   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-14-08 16:39:17   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-14-08 16:39:24   INFO [libs.ActionsWithOurElements] : Element is display - > true
+2020-14-08 16:39:24   INFO [pages.LoginPage] : Phone verification pop up Closed
+2020-14-08 16:39:32   INFO [libs.ActionsWithOurElements] : 010000AM was inputted into element
+2020-14-08 16:39:33   INFO [libs.ActionsWithOurElements] : 000000AM was inputted into element
+2020-14-08 16:39:37   INFO [libs.ActionsWithOurElements] : 060000AM was inputted into element
+2020-14-08 16:39:38   INFO [libs.ActionsWithOurElements] : 010000AM was inputted into element
+2020-14-08 16:39:41   INFO [libs.ActionsWithOurElements] : 100000AM was inputted into element
+2020-14-08 16:39:42   INFO [libs.ActionsWithOurElements] : 070000AM was inputted into element
+2020-14-08 16:39:46   INFO [libs.ActionsWithOurElements] : 120000PM was inputted into element
+2020-14-08 16:39:46   INFO [libs.ActionsWithOurElements] : 100000AM was inputted into element
+2020-14-08 16:39:50   INFO [libs.ActionsWithOurElements] : 020000PM was inputted into element
+2020-14-08 16:39:51   INFO [libs.ActionsWithOurElements] : 120000PM was inputted into element
+2020-14-08 16:40:06   INFO [frankesteinTest.logbookTest.Hour14DrivingWindow] : AC passed
+2020-14-08 16:40:14   INFO [libs.ActionsWithOurElements] : 020100PM was inputted into element
+2020-14-08 16:40:14   INFO [libs.ActionsWithOurElements] : 020000PM was inputted into element
