@@ -30,9 +30,9 @@ public class CycleTest extends ParentTest {
     @Parameterized.Parameters(name = "Type cargo: {0}")
     public static Collection testData() {
         return Arrays.asList(new Object[][] {
-//                { Property },
-//                { Agriculture },
-//                { Passenger },
+                { Property },
+                { Agriculture },
+                { Passenger },
                 { OilGas },
                 { ShortHaul }
         });

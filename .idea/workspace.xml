@@ -32,15 +32,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="660eb711-957d-418e-9483-8b2931da6e6e" name="Default Changelist" comment=" cycle5 test was add">
+    <list default="true" id="660eb711-957d-418e-9483-8b2931da6e6e" name="Default Changelist" comment=" cycle finish test was add">
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log/qalight.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/qalight.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/LogsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/LogsPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/frankesteinTest/logbookTest/CycleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/frankesteinTest/logbookTest/CycleTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/frankesteinTest/logbookTest/FourteenHourDrivingWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/frankesteinTest/logbookTest/Hour14DrivingWindow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/frankesteinTest/settingsTest/SoloDriverSettingsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/frankesteinTest/settingsTest/SoloDriverSettingsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/unitTest/TestMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/unitTest/TestMethods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/frankesteinTest/logbookTest/Hour14DrivingWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/frankesteinTest/logbookTest/Hour14DrivingWindow.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -267,12 +265,12 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.TestMethods.getEventNewOrder" />
-      <item itemvalue="Maven.SoloOrders" />
       <item itemvalue="JUnit.CycleTest.alaska_70hr_7days" />
       <item itemvalue="JUnit.CycleTest.usa_70hr_8days" />
       <item itemvalue="JUnit.CycleTest" />
       <item itemvalue="JUnit.TestMethods.test" />
       <item itemvalue="JUnit.Hour14DrivingWindow.Hour14DrivingWindowNoViolation" />
+      <item itemvalue="Maven.SoloOrders" />
     </list>
     <recent_temporary>
       <list>
@@ -301,13 +299,6 @@
       <workItem from="1562665338918" duration="52834000" />
       <workItem from="1562782581468" duration="9021000" />
       <workItem from="1562822119836" duration="58303000" />
-    </task>
-    <task id="LOCAL-00040" summary="checkAC ELD status2 Paid\Completed was add">
-      <created>1567449479891</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1567449479891</updated>
     </task>
     <task id="LOCAL-00041" summary="checkAC if user has order with status New before test was add">
       <created>1567523127669</created>
@@ -645,7 +636,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597157448882</updated>
     </task>
-    <option name="localTasksCounter" value="89" />
+    <task id="LOCAL-00089" summary=" cycle finish test was add">
+      <created>1597323333980</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1597323333981</updated>
+    </task>
+    <option name="localTasksCounter" value="90" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -681,7 +679,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="test charge default new tariff was add" />
     <MESSAGE value="test charge by days new tariff was add" />
     <MESSAGE value="test2 charge by days was add" />
     <MESSAGE value="deleted old order test was add" />
@@ -706,7 +703,8 @@
     <MESSAGE value=" cycle3 test was add" />
     <MESSAGE value=" cycle4 test was add" />
     <MESSAGE value=" cycle5 test was add" />
-    <option name="LAST_COMMIT_MESSAGE" value=" cycle5 test was add" />
+    <MESSAGE value=" cycle finish test was add" />
+    <option name="LAST_COMMIT_MESSAGE" value=" cycle finish test was add" />
   </component>
   <component name="WindowStateProjectService">
     <state x="-1828" y="92" width="1736" height="856" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1596721912372">
@@ -721,25 +719,25 @@
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1180" y="275" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1596797375678" />
-    <state width="1877" height="243" key="GridCell.Tab.0.bottom" timestamp="1597319850630">
+    <state width="1877" height="91" key="GridCell.Tab.0.bottom" timestamp="1597407573488">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="243" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1597319850630" />
+    <state width="1877" height="91" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1597407573488" />
     <state width="1877" height="343" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1596529245354" />
-    <state width="1877" height="243" key="GridCell.Tab.0.center" timestamp="1597319850629">
+    <state width="1877" height="91" key="GridCell.Tab.0.center" timestamp="1597407573487">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="243" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1597319850629" />
+    <state width="1877" height="91" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1597407573487" />
     <state width="1877" height="343" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1596529245354" />
-    <state width="1877" height="243" key="GridCell.Tab.0.left" timestamp="1597319850629">
+    <state width="1877" height="91" key="GridCell.Tab.0.left" timestamp="1597407573487">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="243" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1597319850629" />
+    <state width="1877" height="91" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1597407573487" />
     <state width="1877" height="343" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1596529245353" />
-    <state width="1877" height="243" key="GridCell.Tab.0.right" timestamp="1597319850630">
+    <state width="1877" height="91" key="GridCell.Tab.0.right" timestamp="1597407573487">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="243" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1597319850630" />
+    <state width="1877" height="91" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1597407573487" />
     <state width="1877" height="343" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1596529245354" />
     <state width="1877" height="113" key="GridCell.Tab.1.bottom" timestamp="1597157549497">
       <screen x="-1920" y="0" width="1920" height="1040" />
@@ -761,10 +759,10 @@
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1459" y="165" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1596807282906" />
-    <state x="-1368" y="253" key="Vcs.Push.Dialog.v2" timestamp="1597157463835">
+    <state x="-1368" y="253" key="Vcs.Push.Dialog.v2" timestamp="1597323347671">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="-1368" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1597157463835" />
+    <state x="-1368" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1597323347671" />
     <state x="-1828" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1597065879990">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>

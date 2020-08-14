@@ -215,21 +215,6 @@ public class LogsPage extends ParentPage {
     public void enterShiftHours(int cycleId, int cargoType){
         switch (cycleId){
             case 0:
-                if (cargoType != 2){
-                    //14 hours
-                    addStatus("00:00:00 AM", "01:00:00 AM", "On");
-                    addStatus("01:00:00 AM", "06:00:00 AM", "Dr");
-                    addStatus("07:00:00 AM", "10:00:00 AM", "Dr");
-                    addStatus("10:00:00 AM", "12:00:00 PM", "On");
-                    addLastStatus("12:00:00 PM", "02:00:00 PM", "Dr");
-                } else {
-                    //15 hours
-                    addStatus("00:00:00 AM", "01:00:00 AM", "On");
-                    addStatus("01:00:00 AM", "06:00:00 AM", "Dr");
-                    addStatus("07:00:00 AM", "09:00:00 AM", "Dr");
-                    addStatus("09:00:00 AM", "12:00:00 PM", "On");
-                    addLastStatus("12:00:00 PM", "02:00:00 PM", "Dr");
-                }
             case 1:
                 if (cargoType != 2){
                     //14 hours
@@ -244,21 +229,108 @@ public class LogsPage extends ParentPage {
                     addStatus("01:00:00 AM", "06:00:00 AM", "Dr");
                     addStatus("07:00:00 AM", "10:00:00 AM", "Dr");
                     addStatus("10:00:00 AM", "12:00:00 PM", "On");
-                    addLastStatus("12:00:00 PM", "03:00:00 PM", "Dr");
-                }
+                    addLastStatus("01:00:00 PM", "03:00:00 PM", "Dr");
+                } break;
             case 2:
                 //20 hours
                 addStatus("00:00:00 AM", "03:00:00 AM", "On");
                 addStatus("03:00:00 AM", "07:00:00 AM", "Dr");
                 addStatus("07:00:00 AM", "10:00:00 AM", "Dr");
                 addStatus("10:00:00 AM", "12:00:00 PM", "On");
-                addLastStatus("12:00:00 PM", "03:00:00 PM", "Dr");
-
+                addLastStatus("01:00:00 PM", "08:00:00 PM", "Dr");
+            case 3:
+                //20 hours
+                addStatus("00:00:00 AM", "03:00:00 AM", "On");
+                addStatus("03:00:00 AM", "07:00:00 AM", "Dr");
+                addStatus("07:00:00 AM", "10:00:00 AM", "Dr");
+                addStatus("10:00:00 AM", "12:00:00 PM", "On");
+                addLastStatus("01:00:00 PM", "08:00:00 PM", "Dr");
+                break;
+            case 4:
+            case 5:
+                //16 hours
+                addStatus("00:00:00 AM", "01:00:00 AM", "On");
+                addStatus("01:00:00 AM", "06:00:00 AM", "Dr");
+                addStatus("07:00:00 AM", "10:00:00 AM", "Dr");
+                addStatus("10:00:00 AM", "11:00:00 AM", "On");
+                addLastStatus("11:00:00 AM", "04:00:00 PM", "Dr");
+                break;
+            case 6:
+                //15 hours
+                addStatus("00:00:00 AM", "01:00:00 AM", "On");
+                addStatus("01:00:00 AM", "06:00:00 AM", "Dr");
+                addStatus("07:00:00 AM", "10:00:00 AM", "Dr");
+                addStatus("10:00:00 AM", "11:00:00 AM", "On");
+                addLastStatus("11:00:00 PM", "03:00:00 PM", "Dr");
+                break;
+            case 7:
+                if (cargoType == 2){
+                    //15 hours
+                    addStatus("00:00:00 AM", "01:00:00 AM", "On");
+                    addStatus("01:00:00 AM", "06:00:00 AM", "Dr");
+                    addStatus("07:00:00 AM", "10:00:00 AM", "Dr");
+                    addStatus("10:00:00 AM", "11:00:00 AM", "On");
+                    addLastStatus("11:00:00 PM", "03:00:00 PM", "Dr");
+                } else {
+                    //16 hours
+                    addStatus("00:00:00 AM", "06:00:00 AM", "Dr");
+                    addStatus("07:00:00 AM", "10:00:00 AM", "Dr");
+                    addStatus("10:00:00 AM", "11:00:00 AM", "On");
+                    addLastStatus("11:00:00 AM", "04:00:00 PM", "Dr");
+                } break;
+            case 8:
+                //20 hours
+                addStatus("00:00:00 AM", "03:00:00 AM", "On");
+                addStatus("03:00:00 AM", "07:00:00 AM", "Dr");
+                addStatus("07:00:00 AM", "10:00:00 AM", "Dr");
+                addStatus("10:00:00 AM", "12:00:00 PM", "On");
+                addLastStatus("01:00:00 PM", "08:00:00 PM", "Dr");
+                break;
         }
-
-
-
 
     }
 
+    public void addLastMinuteWithViolationShiftHours(int cycleId, int cargoType) {
+        switch (cycleId) {
+            case 0:
+            case 1:
+                if (cargoType != 2) {
+                    //14 hours
+                    addLastStatus("02:00:00 PM", "02:01:00 PM", "Dr");
+                } else {
+                    //15 hours
+                    addLastStatus("03:00:00 PM", "03:01:00 PM", "Dr");
+                }
+                break;
+            case 2:
+                //20 hours
+                addLastStatus("08:00:00 PM", "08:01:00 PM", "Dr");
+            case 3:
+                //20 hours
+                addLastStatus("08:00:00 PM", "08:01:00 PM", "Dr");
+                break;
+            case 4:
+            case 5:
+                //16 hours
+                addLastStatus("04:00:00 AM", "04:01:00 PM", "Dr");
+                break;
+            case 6:
+                //15 hours
+                addLastStatus("03:00:00 PM", "03:01:00 PM", "Dr");
+                break;
+            case 7:
+                if (cargoType == 2) {
+                    //15 hours
+                    addLastStatus("03:00:00 PM", "03:01:00 PM", "Dr");
+                } else {
+                    //16 hours
+                    addLastStatus("04:00:00 AM", "04:01:00 PM", "Dr");
+                }
+                break;
+            case 8:
+                //20 hours
+                addLastStatus("08:00:00 PM", "08:01:00 PM", "Dr");
+                break;
+        }
+    }
 }
