@@ -32,13 +32,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="660eb711-957d-418e-9483-8b2931da6e6e" name="Default Changelist" comment=" cycle finish test was add">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/qalight.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/qalight.log" afterDir="false" />
+    <list default="true" id="660eb711-957d-418e-9483-8b2931da6e6e" name="Default Changelist" comment=" 14 hour rules test was add">
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/LogsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/LogsPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/frankesteinTest/logbookTest/CycleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/frankesteinTest/logbookTest/CycleTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/frankesteinTest/logbookTest/Hour14DrivingWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/frankesteinTest/logbookTest/Hour14DrivingWindow.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -299,13 +294,6 @@
       <workItem from="1562665338918" duration="52834000" />
       <workItem from="1562782581468" duration="9021000" />
       <workItem from="1562822119836" duration="58303000" />
-    </task>
-    <task id="LOCAL-00041" summary="checkAC if user has order with status New before test was add">
-      <created>1567523127669</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1567523127669</updated>
     </task>
     <task id="LOCAL-00042" summary="new method if user has order with status New before test was add">
       <created>1567705707560</created>
@@ -643,7 +631,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597323333981</updated>
     </task>
-    <option name="localTasksCounter" value="90" />
+    <task id="LOCAL-00090" summary=" 14 hour rules test was add">
+      <created>1597410622320</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1597410622321</updated>
+    </task>
+    <option name="localTasksCounter" value="91" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -679,7 +674,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="test charge by days new tariff was add" />
     <MESSAGE value="test2 charge by days was add" />
     <MESSAGE value="deleted old order test was add" />
     <MESSAGE value="some changes was add" />
@@ -704,7 +698,8 @@
     <MESSAGE value=" cycle4 test was add" />
     <MESSAGE value=" cycle5 test was add" />
     <MESSAGE value=" cycle finish test was add" />
-    <option name="LAST_COMMIT_MESSAGE" value=" cycle finish test was add" />
+    <MESSAGE value=" 14 hour rules test was add" />
+    <option name="LAST_COMMIT_MESSAGE" value=" 14 hour rules test was add" />
   </component>
   <component name="WindowStateProjectService">
     <state x="-1828" y="92" width="1736" height="856" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1596721912372">
@@ -759,10 +754,10 @@
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1459" y="165" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1596807282906" />
-    <state x="-1368" y="253" key="Vcs.Push.Dialog.v2" timestamp="1597323347671">
+    <state x="-1368" y="253" key="Vcs.Push.Dialog.v2" timestamp="1597410635722">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="-1368" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1597323347671" />
+    <state x="-1368" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1597410635722" />
     <state x="-1828" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1597065879990">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>

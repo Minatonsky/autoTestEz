@@ -232,13 +232,8 @@ public class LogsPage extends ParentPage {
                     addLastStatus("01:00:00 PM", "03:00:00 PM", "Dr");
                 } break;
             case 2:
-                //20 hours
-                addStatus("00:00:00 AM", "03:00:00 AM", "On");
-                addStatus("03:00:00 AM", "07:00:00 AM", "Dr");
-                addStatus("07:00:00 AM", "10:00:00 AM", "Dr");
-                addStatus("10:00:00 AM", "12:00:00 PM", "On");
-                addLastStatus("01:00:00 PM", "08:00:00 PM", "Dr");
             case 3:
+            case 8:
                 //20 hours
                 addStatus("00:00:00 AM", "03:00:00 AM", "On");
                 addStatus("03:00:00 AM", "07:00:00 AM", "Dr");
@@ -278,18 +273,9 @@ public class LogsPage extends ParentPage {
                     addStatus("10:00:00 AM", "11:00:00 AM", "On");
                     addLastStatus("11:00:00 AM", "04:00:00 PM", "Dr");
                 } break;
-            case 8:
-                //20 hours
-                addStatus("00:00:00 AM", "03:00:00 AM", "On");
-                addStatus("03:00:00 AM", "07:00:00 AM", "Dr");
-                addStatus("07:00:00 AM", "10:00:00 AM", "Dr");
-                addStatus("10:00:00 AM", "12:00:00 PM", "On");
-                addLastStatus("01:00:00 PM", "08:00:00 PM", "Dr");
-                break;
         }
 
     }
-
     public void addLastMinuteWithViolationShiftHours(int cycleId, int cargoType) {
         switch (cycleId) {
             case 0:
@@ -333,4 +319,5 @@ public class LogsPage extends ParentPage {
                 break;
         }
     }
+
 }
