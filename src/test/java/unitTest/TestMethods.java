@@ -15,9 +15,6 @@ import java.time.temporal.TemporalAdjusters;
 import java.util.Arrays;
 import java.util.List;
 
-import static libs.CycleRules.getCycleRules;
-import static libs.DataForTests.Property;
-import static libs.DataForTests.USA_70hr_8days;
 import static libs.Utils.getDurationBetweenTime;
 // This test page is not using on test project, it just for check some methods
 
@@ -105,11 +102,12 @@ public class TestMethods extends ParentTestWithoutWebDriver {
 
     @Test
     public void test() {
-        int cycleId = USA_70hr_8days;
-        int cargoType = Property;
-        int data = getCycleRules(cycleId, cargoType).getCycleHours();
-
-        System.out.println(data);
+        String time = "00:00:00";
+        if (time.equals("00:00:00")){
+            System.out.println("ura");
+        } else {
+            System.out.println("blat");
+        }
     }
 
 }

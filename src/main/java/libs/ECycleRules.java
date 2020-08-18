@@ -16,9 +16,13 @@ public enum ECycleRules {
 
 // CYCLE ID 2
     Alaska_70hr_7days(7, 70, 20, 15, 34, 999, 10, 8),
+    Alaska_70hr_7days_Cargo3(7, 70, 20, 15, 24, 999, 10, 8),
+    Alaska_70hr_7days_Cargo4(7, 70, 20, 15, 24, 999, 10, 999),
 
 //    CYCLE ID 3
     Alaska_80hr_8days(8, 80, 20, 15, 34, 999, 10, 8),
+    Alaska_80hr_8days_Cargo3(8, 80, 20, 15, 24, 999, 10, 8),
+    Alaska_80hr_8days_Cargo4(8, 80, 20, 15, 34, 999, 10, 999),
 
 //    CYCLE ID 4
     Canada_70hr_7days(7, 70, 16, 13, 36, 14, 8, 999),

@@ -46,7 +46,7 @@ public class CycleTest extends ParentTest {
 
         String userId = utilsForDB.getUserIdByEmail(login);
 
-        logsPage.cleanStatusesViolation(userId);
+        logsPage.cleanStatusesAndViolation(userId);
         logsPage.setCycle(userId, USA_60hr_7days);
         utilsForDB.setCargoTypeId(userId, cargoType);
         loginPage.userValidLogIn(login, pass);
@@ -58,7 +58,7 @@ public class CycleTest extends ParentTest {
         logsPage.clickOnInsertStatusButton();
         logsPage.addStatus("06:00:00 AM", "10:00:00 AM", "Dr");//4
         logsPage.addStatus("10:00:00 AM", "11:00:00 AM", "On");//1
-        logsPage.addLastStatus("01:00:00 PM", "05:00:00 PM", "Dr");//4
+        logsPage.addStatus("01:00:00 PM", "05:00:00 PM", "Dr");//4
         logsPage.clickOnSaveInfoButton();
         logsPage.closeCorrectionSavePopUp();
         int cycleHours = logsPage.countHoursStatuses(Arrays.asList("06:00:00 AM/10:00:00 AM", "01:00:00 PM/05:00:00 PM", "10:00:00 AM/11:00:00 AM"));
@@ -71,7 +71,7 @@ public class CycleTest extends ParentTest {
         logsPage.clickOnInsertStatusButton();
         logsPage.addStatus("06:00:00 AM", "10:00:00 AM", "Dr");
         logsPage.addStatus("10:00:00 AM", "11:00:00 AM", "On");
-        logsPage.addLastStatus("01:00:00 PM", "05:00:00 PM", "Dr");
+        logsPage.addStatus("01:00:00 PM", "05:00:00 PM", "Dr");
         logsPage.clickOnSaveInfoButton();
         logsPage.closeCorrectionSavePopUp();
         int cycleHours2 = cycleHours + (logsPage.countHoursStatuses(Arrays.asList("06:00:00 AM/10:00:00 AM", "01:00:00 PM/05:00:00 PM", "10:00:00 AM/11:00:00 AM")));
@@ -84,7 +84,7 @@ public class CycleTest extends ParentTest {
         logsPage.clickOnInsertStatusButton();
         logsPage.addStatus("06:00:00 AM", "10:00:00 AM", "Dr");
         logsPage.addStatus("10:00:00 AM", "11:00:00 AM", "On");
-        logsPage.addLastStatus("01:00:00 PM", "05:00:00 PM", "Dr");
+        logsPage.addStatus("01:00:00 PM", "05:00:00 PM", "Dr");
         logsPage.clickOnSaveInfoButton();
         logsPage.closeCorrectionSavePopUp();
         int cycleHours3 = cycleHours2 + (logsPage.countHoursStatuses(Arrays.asList("06:00:00 AM/10:00:00 AM", "01:00:00 PM/05:00:00 PM", "10:00:00 AM/11:00:00 AM")));
@@ -97,7 +97,7 @@ public class CycleTest extends ParentTest {
         logsPage.clickOnInsertStatusButton();
         logsPage.addStatus("06:00:00 AM", "10:00:00 AM", "Dr");
         logsPage.addStatus("10:00:00 AM", "11:00:00 AM", "On");
-        logsPage.addLastStatus("01:00:00 PM", "05:00:00 PM", "Dr");
+        logsPage.addStatus("01:00:00 PM", "05:00:00 PM", "Dr");
         logsPage.clickOnSaveInfoButton();
         logsPage.closeCorrectionSavePopUp();
         int cycleHours4 = cycleHours3 + (logsPage.countHoursStatuses(Arrays.asList("06:00:00 AM/10:00:00 AM", "01:00:00 PM/05:00:00 PM", "10:00:00 AM/11:00:00 AM")));
@@ -110,7 +110,7 @@ public class CycleTest extends ParentTest {
         logsPage.clickOnInsertStatusButton();
         logsPage.addStatus("06:00:00 AM", "10:00:00 AM", "Dr");
         logsPage.addStatus("10:00:00 AM", "11:00:00 AM", "On");
-        logsPage.addLastStatus("01:00:00 PM", "05:00:00 PM", "Dr");
+        logsPage.addStatus("01:00:00 PM", "05:00:00 PM", "Dr");
         logsPage.clickOnSaveInfoButton();
         logsPage.closeCorrectionSavePopUp();
         int cycleHours5 = cycleHours4 + (logsPage.countHoursStatuses(Arrays.asList("06:00:00 AM/10:00:00 AM", "01:00:00 PM/05:00:00 PM", "10:00:00 AM/11:00:00 AM")));
@@ -123,7 +123,7 @@ public class CycleTest extends ParentTest {
         logsPage.clickOnInsertStatusButton();
         logsPage.addStatus("06:00:00 AM", "10:00:00 AM", "Dr");
         logsPage.addStatus("10:00:00 AM", "11:00:00 AM", "On");
-        logsPage.addLastStatus("01:00:00 PM", "05:00:00 PM", "Dr");
+        logsPage.addStatus("01:00:00 PM", "05:00:00 PM", "Dr");
         logsPage.clickOnSaveInfoButton();
         logsPage.closeCorrectionSavePopUp();
         int cycleHours6 = cycleHours5 + (logsPage.countHoursStatuses(Arrays.asList("06:00:00 AM/10:00:00 AM", "01:00:00 PM/05:00:00 PM", "10:00:00 AM/11:00:00 AM")));
@@ -136,7 +136,7 @@ public class CycleTest extends ParentTest {
         logsPage.clickOnInsertStatusButton();
         logsPage.addStatus("06:00:00 AM", "10:00:00 AM", "Dr");//4
         logsPage.addStatus("10:00:00 AM", "11:00:00 AM", "On");//1
-        logsPage.addLastStatus("01:00:00 PM", "02:00:00 PM", "Dr");//1
+        logsPage.addStatus("01:00:00 PM", "02:00:00 PM", "Dr");//1
         logsPage.clickOnSaveInfoButton();
         logsPage.closeCorrectionSavePopUp();
         int cycleHours7 = cycleHours6 + (logsPage.countHoursStatuses(Arrays.asList("06:00:00 AM/10:00:00 AM", "01:00:00 PM/02:00:00 PM", "10:00:00 AM/11:00:00 AM")));
@@ -159,7 +159,7 @@ public class CycleTest extends ParentTest {
     public void usa_70hr_8days() throws SQLException {
         String userId = utilsForDB.getUserIdByEmail(login);
 
-        logsPage.cleanStatusesViolation(userId);
+        logsPage.cleanStatusesAndViolation(userId);
         logsPage.setCycle(userId, USA_70hr_8days);
         utilsForDB.setCargoTypeId(userId, cargoType);
 
@@ -172,7 +172,7 @@ public class CycleTest extends ParentTest {
         logsPage.clickOnInsertStatusButton();
         logsPage.addStatus("06:00:00 AM", "10:00:00 AM", "Dr");//4
         logsPage.addStatus("10:00:00 AM", "11:00:00 AM", "On");//1
-        logsPage.addLastStatus("01:00:00 PM", "05:00:00 PM", "Dr");//4
+        logsPage.addStatus("01:00:00 PM", "05:00:00 PM", "Dr");//4
         logsPage.clickOnSaveInfoButton();
         logsPage.closeCorrectionSavePopUp();
 
@@ -187,7 +187,7 @@ public class CycleTest extends ParentTest {
         logsPage.clickOnInsertStatusButton();
         logsPage.addStatus("06:00:00 AM", "10:00:00 AM", "Dr");
         logsPage.addStatus("10:00:00 AM", "11:00:00 AM", "On");
-        logsPage.addLastStatus("01:00:00 PM", "05:00:00 PM", "Dr");
+        logsPage.addStatus("01:00:00 PM", "05:00:00 PM", "Dr");
         logsPage.clickOnSaveInfoButton();
         logsPage.closeCorrectionSavePopUp();
 
@@ -201,7 +201,7 @@ public class CycleTest extends ParentTest {
         logsPage.clickOnInsertStatusButton();
         logsPage.addStatus("06:00:00 AM", "10:00:00 AM", "Dr");
         logsPage.addStatus("10:00:00 AM", "11:00:00 AM", "On");
-        logsPage.addLastStatus("01:00:00 PM", "05:00:00 PM", "Dr");
+        logsPage.addStatus("01:00:00 PM", "05:00:00 PM", "Dr");
         logsPage.clickOnSaveInfoButton();
         logsPage.closeCorrectionSavePopUp();
 
@@ -215,7 +215,7 @@ public class CycleTest extends ParentTest {
         logsPage.clickOnInsertStatusButton();
         logsPage.addStatus("06:00:00 AM", "10:00:00 AM", "Dr");
         logsPage.addStatus("10:00:00 AM", "11:00:00 AM", "On");
-        logsPage.addLastStatus("01:00:00 PM", "05:00:00 PM", "Dr");
+        logsPage.addStatus("01:00:00 PM", "05:00:00 PM", "Dr");
         logsPage.clickOnSaveInfoButton();
         logsPage.closeCorrectionSavePopUp();
 
@@ -229,7 +229,7 @@ public class CycleTest extends ParentTest {
         logsPage.clickOnInsertStatusButton();
         logsPage.addStatus("06:00:00 AM", "10:00:00 AM", "Dr");
         logsPage.addStatus("10:00:00 AM", "11:00:00 AM", "On");
-        logsPage.addLastStatus("01:00:00 PM", "05:00:00 PM", "Dr");
+        logsPage.addStatus("01:00:00 PM", "05:00:00 PM", "Dr");
         logsPage.clickOnSaveInfoButton();
         logsPage.closeCorrectionSavePopUp();
 
@@ -243,7 +243,7 @@ public class CycleTest extends ParentTest {
         logsPage.clickOnInsertStatusButton();
         logsPage.addStatus("06:00:00 AM", "10:00:00 AM", "Dr");
         logsPage.addStatus("10:00:00 AM", "11:00:00 AM", "On");
-        logsPage.addLastStatus("01:00:00 PM", "05:00:00 PM", "Dr");
+        logsPage.addStatus("01:00:00 PM", "05:00:00 PM", "Dr");
         logsPage.clickOnSaveInfoButton();
         logsPage.closeCorrectionSavePopUp();
 
@@ -257,7 +257,7 @@ public class CycleTest extends ParentTest {
         logsPage.clickOnInsertStatusButton();
         logsPage.addStatus("06:00:00 AM", "10:00:00 AM", "Dr");//4
         logsPage.addStatus("10:00:00 AM", "11:00:00 AM", "On");//1
-        logsPage.addLastStatus("01:00:00 PM", "04:00:00 PM", "Dr");//3
+        logsPage.addStatus("01:00:00 PM", "04:00:00 PM", "Dr");//3
         logsPage.clickOnSaveInfoButton();
         logsPage.closeCorrectionSavePopUp();
 
@@ -271,7 +271,7 @@ public class CycleTest extends ParentTest {
         logsPage.clickOnInsertStatusButton();
         logsPage.addStatus("06:00:00 AM", "10:00:00 AM", "Dr");
         logsPage.addStatus("10:00:00 AM", "11:00:00 AM", "On");
-        logsPage.addLastStatus("01:00:00 PM", "04:00:00 PM", "Dr");
+        logsPage.addStatus("01:00:00 PM", "04:00:00 PM", "Dr");
         logsPage.clickOnSaveInfoButton();
         logsPage.closeCorrectionSavePopUp();
 
@@ -296,7 +296,7 @@ public class CycleTest extends ParentTest {
     public void alaska_70hr_7days() throws SQLException {
         String userId = utilsForDB.getUserIdByEmail(login);
 
-        logsPage.cleanStatusesViolation(userId);
+        logsPage.cleanStatusesAndViolation(userId);
         logsPage.setCycle(userId, Alaska_70hr_7days);
         utilsForDB.setCargoTypeId(userId, cargoType);
 
@@ -309,7 +309,7 @@ public class CycleTest extends ParentTest {
         logsPage.clickOnInsertStatusButton();
         logsPage.addStatus("06:00:00 AM", "10:00:00 AM", "Dr");
         logsPage.addStatus("10:00:00 AM", "11:00:00 AM", "On");
-        logsPage.addLastStatus("01:00:00 PM", "06:00:00 PM", "Dr");
+        logsPage.addStatus("01:00:00 PM", "06:00:00 PM", "Dr");
         logsPage.clickOnSaveInfoButton();
         logsPage.closeCorrectionSavePopUp();
 
@@ -323,7 +323,7 @@ public class CycleTest extends ParentTest {
         logsPage.clickOnInsertStatusButton();
         logsPage.addStatus("06:00:00 AM", "10:00:00 AM", "Dr");
         logsPage.addStatus("10:00:00 AM", "11:00:00 AM", "On");
-        logsPage.addLastStatus("01:00:00 PM", "06:00:00 PM", "Dr");
+        logsPage.addStatus("01:00:00 PM", "06:00:00 PM", "Dr");
         logsPage.clickOnSaveInfoButton();
         logsPage.closeCorrectionSavePopUp();
 
@@ -337,7 +337,7 @@ public class CycleTest extends ParentTest {
         logsPage.clickOnInsertStatusButton();
         logsPage.addStatus("06:00:00 AM", "10:00:00 AM", "Dr");
         logsPage.addStatus("10:00:00 AM", "11:00:00 AM", "On");
-        logsPage.addLastStatus("01:00:00 PM", "06:00:00 PM", "Dr");
+        logsPage.addStatus("01:00:00 PM", "06:00:00 PM", "Dr");
         logsPage.clickOnSaveInfoButton();
         logsPage.closeCorrectionSavePopUp();
 
@@ -351,7 +351,7 @@ public class CycleTest extends ParentTest {
         logsPage.clickOnInsertStatusButton();
         logsPage.addStatus("06:00:00 AM", "10:00:00 AM", "Dr");
         logsPage.addStatus("10:00:00 AM", "11:00:00 AM", "On");
-        logsPage.addLastStatus("01:00:00 PM", "06:00:00 PM", "Dr");
+        logsPage.addStatus("01:00:00 PM", "06:00:00 PM", "Dr");
         logsPage.clickOnSaveInfoButton();
         logsPage.closeCorrectionSavePopUp();
 
@@ -365,7 +365,7 @@ public class CycleTest extends ParentTest {
         logsPage.clickOnInsertStatusButton();
         logsPage.addStatus("06:00:00 AM", "10:00:00 AM", "Dr");
         logsPage.addStatus("10:00:00 AM", "11:00:00 AM", "On");
-        logsPage.addLastStatus("01:00:00 PM", "06:00:00 PM", "Dr");
+        logsPage.addStatus("01:00:00 PM", "06:00:00 PM", "Dr");
         logsPage.clickOnSaveInfoButton();
         logsPage.closeCorrectionSavePopUp();
 
@@ -379,7 +379,7 @@ public class CycleTest extends ParentTest {
         logsPage.clickOnInsertStatusButton();
         logsPage.addStatus("06:00:00 AM", "10:00:00 AM", "Dr");
         logsPage.addStatus("10:00:00 AM", "11:00:00 AM", "On");
-        logsPage.addLastStatus("01:00:00 PM", "06:00:00 PM", "Dr");
+        logsPage.addStatus("01:00:00 PM", "06:00:00 PM", "Dr");
         logsPage.clickOnSaveInfoButton();
         logsPage.closeCorrectionSavePopUp();
 
@@ -393,7 +393,7 @@ public class CycleTest extends ParentTest {
         logsPage.clickOnInsertStatusButton();
         logsPage.addStatus("06:00:00 AM", "10:00:00 AM", "Dr");//4
         logsPage.addStatus("10:00:00 AM", "11:00:00 AM", "On");//1
-        logsPage.addLastStatus("01:00:00 PM", "06:00:00 PM", "Dr");//5
+        logsPage.addStatus("01:00:00 PM", "06:00:00 PM", "Dr");//5
         logsPage.clickOnSaveInfoButton();
         logsPage.closeCorrectionSavePopUp();
 
@@ -418,7 +418,7 @@ public class CycleTest extends ParentTest {
     public void alaska_80hr_8days() throws SQLException {
         String userId = utilsForDB.getUserIdByEmail(login);
 
-        logsPage.cleanStatusesViolation(userId);
+        logsPage.cleanStatusesAndViolation(userId);
         logsPage.setCycle(userId, Alaska_80hr_8days);
         utilsForDB.setCargoTypeId(userId, cargoType);
 
@@ -431,7 +431,7 @@ public class CycleTest extends ParentTest {
         logsPage.clickOnInsertStatusButton();
         logsPage.addStatus("06:00:00 AM", "10:00:00 AM", "Dr");//4
         logsPage.addStatus("10:00:00 AM", "11:00:00 AM", "On");//1
-        logsPage.addLastStatus("01:00:00 PM", "06:00:00 PM", "Dr");//5
+        logsPage.addStatus("01:00:00 PM", "06:00:00 PM", "Dr");//5
         logsPage.clickOnSaveInfoButton();
         logsPage.closeCorrectionSavePopUp();
 
@@ -445,7 +445,7 @@ public class CycleTest extends ParentTest {
         logsPage.clickOnInsertStatusButton();
         logsPage.addStatus("06:00:00 AM", "10:00:00 AM", "Dr");//4
         logsPage.addStatus("10:00:00 AM", "11:00:00 AM", "On");//1
-        logsPage.addLastStatus("01:00:00 PM", "06:00:00 PM", "Dr");//5
+        logsPage.addStatus("01:00:00 PM", "06:00:00 PM", "Dr");//5
         logsPage.clickOnSaveInfoButton();
         logsPage.closeCorrectionSavePopUp();
 
@@ -459,7 +459,7 @@ public class CycleTest extends ParentTest {
         logsPage.clickOnInsertStatusButton();
         logsPage.addStatus("06:00:00 AM", "10:00:00 AM", "Dr");//4
         logsPage.addStatus("10:00:00 AM", "11:00:00 AM", "On");//1
-        logsPage.addLastStatus("01:00:00 PM", "06:00:00 PM", "Dr");//5
+        logsPage.addStatus("01:00:00 PM", "06:00:00 PM", "Dr");//5
         logsPage.clickOnSaveInfoButton();
         logsPage.closeCorrectionSavePopUp();
 
@@ -473,7 +473,7 @@ public class CycleTest extends ParentTest {
         logsPage.clickOnInsertStatusButton();
         logsPage.addStatus("06:00:00 AM", "10:00:00 AM", "Dr");//4
         logsPage.addStatus("10:00:00 AM", "11:00:00 AM", "On");//1
-        logsPage.addLastStatus("01:00:00 PM", "06:00:00 PM", "Dr");//5
+        logsPage.addStatus("01:00:00 PM", "06:00:00 PM", "Dr");//5
         logsPage.clickOnSaveInfoButton();
         logsPage.closeCorrectionSavePopUp();
 
@@ -487,7 +487,7 @@ public class CycleTest extends ParentTest {
         logsPage.clickOnInsertStatusButton();
         logsPage.addStatus("06:00:00 AM", "10:00:00 AM", "Dr");//4
         logsPage.addStatus("10:00:00 AM", "11:00:00 AM", "On");//1
-        logsPage.addLastStatus("01:00:00 PM", "06:00:00 PM", "Dr");//5
+        logsPage.addStatus("01:00:00 PM", "06:00:00 PM", "Dr");//5
         logsPage.clickOnSaveInfoButton();
         logsPage.closeCorrectionSavePopUp();
 
@@ -501,7 +501,7 @@ public class CycleTest extends ParentTest {
         logsPage.clickOnInsertStatusButton();
         logsPage.addStatus("06:00:00 AM", "10:00:00 AM", "Dr");//4
         logsPage.addStatus("10:00:00 AM", "11:00:00 AM", "On");//1
-        logsPage.addLastStatus("01:00:00 PM", "06:00:00 PM", "Dr");//5
+        logsPage.addStatus("01:00:00 PM", "06:00:00 PM", "Dr");//5
         logsPage.clickOnSaveInfoButton();
         logsPage.closeCorrectionSavePopUp();
 
@@ -515,7 +515,7 @@ public class CycleTest extends ParentTest {
         logsPage.clickOnInsertStatusButton();
         logsPage.addStatus("06:00:00 AM", "10:00:00 AM", "Dr");//4
         logsPage.addStatus("10:00:00 AM", "11:00:00 AM", "On");//1
-        logsPage.addLastStatus("01:00:00 PM", "06:00:00 PM", "Dr");//5
+        logsPage.addStatus("01:00:00 PM", "06:00:00 PM", "Dr");//5
         logsPage.clickOnSaveInfoButton();
         logsPage.closeCorrectionSavePopUp();
 
@@ -529,7 +529,7 @@ public class CycleTest extends ParentTest {
         logsPage.clickOnInsertStatusButton();
         logsPage.addStatus("06:00:00 AM", "10:00:00 AM", "Dr");//4
         logsPage.addStatus("10:00:00 AM", "11:00:00 AM", "On");//1
-        logsPage.addLastStatus("01:00:00 PM", "06:00:00 PM", "Dr");//5
+        logsPage.addStatus("01:00:00 PM", "06:00:00 PM", "Dr");//5
         logsPage.clickOnSaveInfoButton();
         logsPage.closeCorrectionSavePopUp();
 
@@ -555,7 +555,7 @@ public class CycleTest extends ParentTest {
     public void canada_70hr_7days() throws SQLException {
         String userId = utilsForDB.getUserIdByEmail(login);
 
-        logsPage.cleanStatusesViolation(userId);
+        logsPage.cleanStatusesAndViolation(userId);
         logsPage.setCycle(userId, Canada_70hr_7days);
         utilsForDB.setCargoTypeId(userId, cargoType);
 
@@ -568,7 +568,7 @@ public class CycleTest extends ParentTest {
         logsPage.clickOnInsertStatusButton();
         logsPage.addStatus("06:00:00 AM", "10:00:00 AM", "Dr");//4
         logsPage.addStatus("10:00:00 AM", "11:00:00 AM", "On");//1
-        logsPage.addLastStatus("01:00:00 PM", "06:00:00 PM", "Dr");//5
+        logsPage.addStatus("01:00:00 PM", "06:00:00 PM", "Dr");//5
         logsPage.clickOnSaveInfoButton();
         logsPage.closeCorrectionSavePopUp();
 
@@ -582,7 +582,7 @@ public class CycleTest extends ParentTest {
         logsPage.clickOnInsertStatusButton();
         logsPage.addStatus("06:00:00 AM", "10:00:00 AM", "Dr");
         logsPage.addStatus("10:00:00 AM", "11:00:00 AM", "On");
-        logsPage.addLastStatus("01:00:00 PM", "06:00:00 PM", "Dr");
+        logsPage.addStatus("01:00:00 PM", "06:00:00 PM", "Dr");
         logsPage.clickOnSaveInfoButton();
         logsPage.closeCorrectionSavePopUp();
 
@@ -596,7 +596,7 @@ public class CycleTest extends ParentTest {
         logsPage.clickOnInsertStatusButton();
         logsPage.addStatus("06:00:00 AM", "10:00:00 AM", "Dr");
         logsPage.addStatus("10:00:00 AM", "11:00:00 AM", "On");
-        logsPage.addLastStatus("01:00:00 PM", "06:00:00 PM", "Dr");
+        logsPage.addStatus("01:00:00 PM", "06:00:00 PM", "Dr");
         logsPage.clickOnSaveInfoButton();
         logsPage.closeCorrectionSavePopUp();
 
@@ -610,7 +610,7 @@ public class CycleTest extends ParentTest {
         logsPage.clickOnInsertStatusButton();
         logsPage.addStatus("06:00:00 AM", "10:00:00 AM", "Dr");
         logsPage.addStatus("10:00:00 AM", "11:00:00 AM", "On");
-        logsPage.addLastStatus("01:00:00 PM", "06:00:00 PM", "Dr");
+        logsPage.addStatus("01:00:00 PM", "06:00:00 PM", "Dr");
         logsPage.clickOnSaveInfoButton();
         logsPage.closeCorrectionSavePopUp();
 
@@ -624,7 +624,7 @@ public class CycleTest extends ParentTest {
         logsPage.clickOnInsertStatusButton();
         logsPage.addStatus("06:00:00 AM", "10:00:00 AM", "Dr");
         logsPage.addStatus("10:00:00 AM", "11:00:00 AM", "On");
-        logsPage.addLastStatus("01:00:00 PM", "06:00:00 PM", "Dr");
+        logsPage.addStatus("01:00:00 PM", "06:00:00 PM", "Dr");
         logsPage.clickOnSaveInfoButton();
         logsPage.closeCorrectionSavePopUp();
 
@@ -638,7 +638,7 @@ public class CycleTest extends ParentTest {
         logsPage.clickOnInsertStatusButton();
         logsPage.addStatus("06:00:00 AM", "10:00:00 AM", "Dr");
         logsPage.addStatus("10:00:00 AM", "11:00:00 AM", "On");
-        logsPage.addLastStatus("01:00:00 PM", "06:00:00 PM", "Dr");
+        logsPage.addStatus("01:00:00 PM", "06:00:00 PM", "Dr");
         logsPage.clickOnSaveInfoButton();
         logsPage.closeCorrectionSavePopUp();
 
@@ -652,7 +652,7 @@ public class CycleTest extends ParentTest {
         logsPage.clickOnInsertStatusButton();
         logsPage.addStatus("06:00:00 AM", "10:00:00 AM", "Dr");
         logsPage.addStatus("10:00:00 AM", "11:00:00 AM", "On");
-        logsPage.addLastStatus("01:00:00 PM", "06:00:00 PM", "Dr");
+        logsPage.addStatus("01:00:00 PM", "06:00:00 PM", "Dr");
         logsPage.clickOnSaveInfoButton();
         logsPage.closeCorrectionSavePopUp();
 
@@ -677,7 +677,7 @@ public class CycleTest extends ParentTest {
     public void canada_120hr_14days() throws SQLException {
         String userId = utilsForDB.getUserIdByEmail(login);
 
-        logsPage.cleanStatusesViolation(userId);
+        logsPage.cleanStatusesAndViolation(userId);
         logsPage.setCycle(userId, Canada_120hr_14days);
         utilsForDB.setCargoTypeId(userId, cargoType);
 
@@ -690,7 +690,7 @@ public class CycleTest extends ParentTest {
         logsPage.clickOnInsertStatusButton();
         logsPage.addStatus("06:00:00 AM", "10:00:00 AM", "Dr");//4
         logsPage.addStatus("10:00:00 AM", "11:00:00 AM", "On");//1
-        logsPage.addLastStatus("01:00:00 PM", "06:00:00 PM", "Dr");//5
+        logsPage.addStatus("01:00:00 PM", "06:00:00 PM", "Dr");//5
         logsPage.clickOnSaveInfoButton();
         logsPage.closeCorrectionSavePopUp();
 
@@ -704,7 +704,7 @@ public class CycleTest extends ParentTest {
         logsPage.clickOnInsertStatusButton();
         logsPage.addStatus("06:00:00 AM", "10:00:00 AM", "Dr");//4
         logsPage.addStatus("10:00:00 AM", "11:00:00 AM", "On");//1
-        logsPage.addLastStatus("01:00:00 PM", "06:00:00 PM", "Dr");//5
+        logsPage.addStatus("01:00:00 PM", "06:00:00 PM", "Dr");//5
         logsPage.clickOnSaveInfoButton();
         logsPage.closeCorrectionSavePopUp();
 
@@ -718,7 +718,7 @@ public class CycleTest extends ParentTest {
         logsPage.clickOnInsertStatusButton();
         logsPage.addStatus("06:00:00 AM", "10:00:00 AM", "Dr");//4
         logsPage.addStatus("10:00:00 AM", "11:00:00 AM", "On");//1
-        logsPage.addLastStatus("01:00:00 PM", "06:00:00 PM", "Dr");//5
+        logsPage.addStatus("01:00:00 PM", "06:00:00 PM", "Dr");//5
         logsPage.clickOnSaveInfoButton();
         logsPage.closeCorrectionSavePopUp();
 
@@ -732,7 +732,7 @@ public class CycleTest extends ParentTest {
         logsPage.clickOnInsertStatusButton();
         logsPage.addStatus("06:00:00 AM", "10:00:00 AM", "Dr");//4
         logsPage.addStatus("10:00:00 AM", "11:00:00 AM", "On");//1
-        logsPage.addLastStatus("01:00:00 PM", "06:00:00 PM", "Dr");//5
+        logsPage.addStatus("01:00:00 PM", "06:00:00 PM", "Dr");//5
         logsPage.clickOnSaveInfoButton();
         logsPage.closeCorrectionSavePopUp();
 
@@ -746,7 +746,7 @@ public class CycleTest extends ParentTest {
         logsPage.clickOnInsertStatusButton();
         logsPage.addStatus("06:00:00 AM", "10:00:00 AM", "Dr");//4
         logsPage.addStatus("10:00:00 AM", "11:00:00 AM", "On");//1
-        logsPage.addLastStatus("01:00:00 PM", "06:00:00 PM", "Dr");//5
+        logsPage.addStatus("01:00:00 PM", "06:00:00 PM", "Dr");//5
         logsPage.clickOnSaveInfoButton();
         logsPage.closeCorrectionSavePopUp();
 
@@ -760,7 +760,7 @@ public class CycleTest extends ParentTest {
         logsPage.clickOnInsertStatusButton();
         logsPage.addStatus("06:00:00 AM", "10:00:00 AM", "Dr");//4
         logsPage.addStatus("10:00:00 AM", "11:00:00 AM", "On");//1
-        logsPage.addLastStatus("01:00:00 PM", "06:00:00 PM", "Dr");//5
+        logsPage.addStatus("01:00:00 PM", "06:00:00 PM", "Dr");//5
         logsPage.clickOnSaveInfoButton();
         logsPage.closeCorrectionSavePopUp();
 
@@ -774,7 +774,7 @@ public class CycleTest extends ParentTest {
         logsPage.clickOnInsertStatusButton();
         logsPage.addStatus("06:00:00 AM", "10:00:00 AM", "Dr");//4
         logsPage.addStatus("10:00:00 AM", "11:00:00 AM", "On");//1
-        logsPage.addLastStatus("01:00:00 PM", "06:00:00 PM", "Dr");//5
+        logsPage.addStatus("01:00:00 PM", "06:00:00 PM", "Dr");//5
         logsPage.clickOnSaveInfoButton();
         logsPage.closeCorrectionSavePopUp();
 
@@ -788,7 +788,7 @@ public class CycleTest extends ParentTest {
         logsPage.clickOnInsertStatusButton();
         logsPage.addStatus("06:00:00 AM", "10:00:00 AM", "Dr");//4
         logsPage.addStatus("10:00:00 AM", "11:00:00 AM", "On");//1
-        logsPage.addLastStatus("01:00:00 PM", "06:00:00 PM", "Dr");//5
+        logsPage.addStatus("01:00:00 PM", "06:00:00 PM", "Dr");//5
         logsPage.clickOnSaveInfoButton();
         logsPage.closeCorrectionSavePopUp();
 
@@ -802,7 +802,7 @@ public class CycleTest extends ParentTest {
         logsPage.clickOnInsertStatusButton();
         logsPage.addStatus("06:00:00 AM", "10:00:00 AM", "Dr");//4
         logsPage.addStatus("10:00:00 AM", "11:00:00 AM", "On");//1
-        logsPage.addLastStatus("01:00:00 PM", "06:00:00 PM", "Dr");//5
+        logsPage.addStatus("01:00:00 PM", "06:00:00 PM", "Dr");//5
         logsPage.clickOnSaveInfoButton();
         logsPage.closeCorrectionSavePopUp();
 
@@ -816,7 +816,7 @@ public class CycleTest extends ParentTest {
         logsPage.clickOnInsertStatusButton();
         logsPage.addStatus("06:00:00 AM", "10:00:00 AM", "Dr");//4
         logsPage.addStatus("10:00:00 AM", "11:00:00 AM", "On");//1
-        logsPage.addLastStatus("01:00:00 PM", "06:00:00 PM", "Dr");//5
+        logsPage.addStatus("01:00:00 PM", "06:00:00 PM", "Dr");//5
         logsPage.clickOnSaveInfoButton();
         logsPage.closeCorrectionSavePopUp();
 
@@ -830,7 +830,7 @@ public class CycleTest extends ParentTest {
         logsPage.clickOnInsertStatusButton();
         logsPage.addStatus("08:00:00 AM", "10:00:00 AM", "Dr");//2
         logsPage.addStatus("10:00:00 AM", "11:00:00 AM", "On");//1
-        logsPage.addLastStatus("04:00:00 PM", "06:00:00 PM", "Dr");//2
+        logsPage.addStatus("04:00:00 PM", "06:00:00 PM", "Dr");//2
         logsPage.clickOnSaveInfoButton();
         logsPage.closeCorrectionSavePopUp();
 
@@ -844,7 +844,7 @@ public class CycleTest extends ParentTest {
         logsPage.clickOnInsertStatusButton();
         logsPage.addStatus("08:00:00 AM", "10:00:00 AM", "Dr");//2
         logsPage.addStatus("10:00:00 AM", "11:00:00 AM", "On");//1
-        logsPage.addLastStatus("04:00:00 PM", "06:00:00 PM", "Dr");//2
+        logsPage.addStatus("04:00:00 PM", "06:00:00 PM", "Dr");//2
         logsPage.clickOnSaveInfoButton();
         logsPage.closeCorrectionSavePopUp();
 
@@ -858,7 +858,7 @@ public class CycleTest extends ParentTest {
         logsPage.clickOnInsertStatusButton();
         logsPage.addStatus("08:00:00 AM", "10:00:00 AM", "Dr");//2
         logsPage.addStatus("10:00:00 AM", "11:00:00 AM", "On");//1
-        logsPage.addLastStatus("04:00:00 PM", "06:00:00 PM", "Dr");//2
+        logsPage.addStatus("04:00:00 PM", "06:00:00 PM", "Dr");//2
         logsPage.clickOnSaveInfoButton();
         logsPage.closeCorrectionSavePopUp();
 
@@ -872,7 +872,7 @@ public class CycleTest extends ParentTest {
         logsPage.clickOnInsertStatusButton();
         logsPage.addStatus("08:00:00 AM", "10:00:00 AM", "Dr");//2
         logsPage.addStatus("10:00:00 AM", "11:00:00 AM", "On");//1
-        logsPage.addLastStatus("04:00:00 PM", "06:00:00 PM", "Dr");//2
+        logsPage.addStatus("04:00:00 PM", "06:00:00 PM", "Dr");//2
         logsPage.clickOnSaveInfoButton();
         logsPage.closeCorrectionSavePopUp();
 
@@ -897,7 +897,7 @@ public class CycleTest extends ParentTest {
     public void texas70hr_7days() throws SQLException {
         String userId = utilsForDB.getUserIdByEmail(login);
 
-        logsPage.cleanStatusesViolation(userId);
+        logsPage.cleanStatusesAndViolation(userId);
         logsPage.setCycle(userId, Texas70hr_7days);
         utilsForDB.setCargoTypeId(userId, cargoType);
 
@@ -910,7 +910,7 @@ public class CycleTest extends ParentTest {
         logsPage.clickOnInsertStatusButton();
         logsPage.addStatus("06:00:00 AM", "10:00:00 AM", "Dr");//4
         logsPage.addStatus("10:00:00 AM", "11:00:00 AM", "On");//1
-        logsPage.addLastStatus("01:00:00 PM", "06:00:00 PM", "Dr");//5
+        logsPage.addStatus("01:00:00 PM", "06:00:00 PM", "Dr");//5
         logsPage.clickOnSaveInfoButton();
         logsPage.closeCorrectionSavePopUp();
 
@@ -924,7 +924,7 @@ public class CycleTest extends ParentTest {
         logsPage.clickOnInsertStatusButton();
         logsPage.addStatus("06:00:00 AM", "10:00:00 AM", "Dr");//4
         logsPage.addStatus("10:00:00 AM", "11:00:00 AM", "On");//1
-        logsPage.addLastStatus("01:00:00 PM", "06:00:00 PM", "Dr");//5
+        logsPage.addStatus("01:00:00 PM", "06:00:00 PM", "Dr");//5
         logsPage.clickOnSaveInfoButton();
         logsPage.closeCorrectionSavePopUp();
 
@@ -938,7 +938,7 @@ public class CycleTest extends ParentTest {
         logsPage.clickOnInsertStatusButton();
         logsPage.addStatus("06:00:00 AM", "10:00:00 AM", "Dr");//4
         logsPage.addStatus("10:00:00 AM", "11:00:00 AM", "On");//1
-        logsPage.addLastStatus("01:00:00 PM", "06:00:00 PM", "Dr");//5
+        logsPage.addStatus("01:00:00 PM", "06:00:00 PM", "Dr");//5
         logsPage.clickOnSaveInfoButton();
         logsPage.closeCorrectionSavePopUp();
 
@@ -952,7 +952,7 @@ public class CycleTest extends ParentTest {
         logsPage.clickOnInsertStatusButton();
         logsPage.addStatus("06:00:00 AM", "10:00:00 AM", "Dr");//4
         logsPage.addStatus("10:00:00 AM", "11:00:00 AM", "On");//1
-        logsPage.addLastStatus("01:00:00 PM", "06:00:00 PM", "Dr");//5
+        logsPage.addStatus("01:00:00 PM", "06:00:00 PM", "Dr");//5
         logsPage.clickOnSaveInfoButton();
         logsPage.closeCorrectionSavePopUp();
 
@@ -966,7 +966,7 @@ public class CycleTest extends ParentTest {
         logsPage.clickOnInsertStatusButton();
         logsPage.addStatus("06:00:00 AM", "10:00:00 AM", "Dr");//4
         logsPage.addStatus("10:00:00 AM", "11:00:00 AM", "On");//1
-        logsPage.addLastStatus("01:00:00 PM", "06:00:00 PM", "Dr");//5
+        logsPage.addStatus("01:00:00 PM", "06:00:00 PM", "Dr");//5
         logsPage.clickOnSaveInfoButton();
         logsPage.closeCorrectionSavePopUp();
 
@@ -980,7 +980,7 @@ public class CycleTest extends ParentTest {
         logsPage.clickOnInsertStatusButton();
         logsPage.addStatus("06:00:00 AM", "10:00:00 AM", "Dr");//4
         logsPage.addStatus("10:00:00 AM", "11:00:00 AM", "On");//1
-        logsPage.addLastStatus("01:00:00 PM", "06:00:00 PM", "Dr");//5
+        logsPage.addStatus("01:00:00 PM", "06:00:00 PM", "Dr");//5
         logsPage.clickOnSaveInfoButton();
         logsPage.closeCorrectionSavePopUp();
 
@@ -994,7 +994,7 @@ public class CycleTest extends ParentTest {
         logsPage.clickOnInsertStatusButton();
         logsPage.addStatus("06:00:00 AM", "10:00:00 AM", "Dr");//4
         logsPage.addStatus("10:00:00 AM", "11:00:00 AM", "On");//1
-        logsPage.addLastStatus("01:00:00 PM", "06:00:00 PM", "Dr");//5
+        logsPage.addStatus("01:00:00 PM", "06:00:00 PM", "Dr");//5
         logsPage.clickOnSaveInfoButton();
         logsPage.closeCorrectionSavePopUp();
 
@@ -1019,7 +1019,7 @@ public class CycleTest extends ParentTest {
     public void california_80hr_7days() throws SQLException {
         String userId = utilsForDB.getUserIdByEmail(login);
 
-        logsPage.cleanStatusesViolation(userId);
+        logsPage.cleanStatusesAndViolation(userId);
         logsPage.setCycle(userId, California_80hr_7days);
         utilsForDB.setCargoTypeId(userId, cargoType);
 
@@ -1032,7 +1032,7 @@ public class CycleTest extends ParentTest {
         logsPage.clickOnInsertStatusButton();
         logsPage.addStatus("06:00:00 AM", "11:00:00 AM", "Dr");//5
         logsPage.addStatus("11:00:00 AM", "11:30:00 AM", "On");//0.5
-        logsPage.addLastStatus("01:00:00 PM", "07:00:00 PM", "Dr");//6
+        logsPage.addStatus("01:00:00 PM", "07:00:00 PM", "Dr");//6
         logsPage.clickOnSaveInfoButton();
         logsPage.closeCorrectionSavePopUp();
 
@@ -1046,7 +1046,7 @@ public class CycleTest extends ParentTest {
         logsPage.clickOnInsertStatusButton();
         logsPage.addStatus("06:00:00 AM", "11:00:00 AM", "Dr");
         logsPage.addStatus("11:00:00 AM", "11:30:00 AM", "On");
-        logsPage.addLastStatus("01:00:00 PM", "07:00:00 PM", "Dr");
+        logsPage.addStatus("01:00:00 PM", "07:00:00 PM", "Dr");
         logsPage.clickOnSaveInfoButton();
         logsPage.closeCorrectionSavePopUp();
 
@@ -1060,7 +1060,7 @@ public class CycleTest extends ParentTest {
         logsPage.clickOnInsertStatusButton();
         logsPage.addStatus("06:00:00 AM", "11:00:00 AM", "Dr");
         logsPage.addStatus("11:00:00 AM", "11:30:00 AM", "On");
-        logsPage.addLastStatus("01:00:00 PM", "07:00:00 PM", "Dr");
+        logsPage.addStatus("01:00:00 PM", "07:00:00 PM", "Dr");
         logsPage.clickOnSaveInfoButton();
         logsPage.closeCorrectionSavePopUp();
 
@@ -1074,7 +1074,7 @@ public class CycleTest extends ParentTest {
         logsPage.clickOnInsertStatusButton();
         logsPage.addStatus("06:00:00 AM", "11:00:00 AM", "Dr");
         logsPage.addStatus("11:00:00 AM", "11:30:00 AM", "On");
-        logsPage.addLastStatus("01:00:00 PM", "07:00:00 PM", "Dr");
+        logsPage.addStatus("01:00:00 PM", "07:00:00 PM", "Dr");
         logsPage.clickOnSaveInfoButton();
         logsPage.closeCorrectionSavePopUp();
 
@@ -1088,7 +1088,7 @@ public class CycleTest extends ParentTest {
         logsPage.clickOnInsertStatusButton();
         logsPage.addStatus("06:00:00 AM", "11:00:00 AM", "Dr");
         logsPage.addStatus("11:00:00 AM", "11:30:00 AM", "On");
-        logsPage.addLastStatus("01:00:00 PM", "07:00:00 PM", "Dr");
+        logsPage.addStatus("01:00:00 PM", "07:00:00 PM", "Dr");
         logsPage.clickOnSaveInfoButton();
         logsPage.closeCorrectionSavePopUp();
 
@@ -1102,7 +1102,7 @@ public class CycleTest extends ParentTest {
         logsPage.clickOnInsertStatusButton();
         logsPage.addStatus("06:00:00 AM", "11:00:00 AM", "Dr");
         logsPage.addStatus("11:00:00 AM", "11:30:00 AM", "On");
-        logsPage.addLastStatus("01:00:00 PM", "07:00:00 PM", "Dr");
+        logsPage.addStatus("01:00:00 PM", "07:00:00 PM", "Dr");
         logsPage.clickOnSaveInfoButton();
         logsPage.closeCorrectionSavePopUp();
 
@@ -1115,7 +1115,7 @@ public class CycleTest extends ParentTest {
         logsPage.clickOnCorrectionButton();
         logsPage.clickOnInsertStatusButton();
         logsPage.addStatus("06:00:00 AM", "11:00:00 AM", "Dr");
-        logsPage.addLastStatus("01:00:00 PM", "07:00:00 PM", "Dr");
+        logsPage.addStatus("01:00:00 PM", "07:00:00 PM", "Dr");
         logsPage.clickOnSaveInfoButton();
         logsPage.closeCorrectionSavePopUp();
 
@@ -1140,7 +1140,7 @@ public class CycleTest extends ParentTest {
     public void canadaNorth_60_80_7() throws SQLException {
         String userId = utilsForDB.getUserIdByEmail(login);
 
-        logsPage.cleanStatusesViolation(userId);
+        logsPage.cleanStatusesAndViolation(userId);
         logsPage.setCycle(userId, CanadaNorth_60_80_7);
         utilsForDB.setCargoTypeId(userId, cargoType);
 
@@ -1153,7 +1153,7 @@ public class CycleTest extends ParentTest {
         logsPage.clickOnInsertStatusButton();
         logsPage.addStatus("06:00:00 AM", "11:00:00 AM", "Dr");//5
         logsPage.addStatus("11:00:00 AM", "11:30:00 AM", "On");//0.5
-        logsPage.addLastStatus("01:00:00 PM", "07:00:00 PM", "Dr");//6
+        logsPage.addStatus("01:00:00 PM", "07:00:00 PM", "Dr");//6
         logsPage.clickOnSaveInfoButton();
         logsPage.closeCorrectionSavePopUp();
 
@@ -1167,7 +1167,7 @@ public class CycleTest extends ParentTest {
         logsPage.clickOnInsertStatusButton();
         logsPage.addStatus("06:00:00 AM", "11:00:00 AM", "Dr");//5
         logsPage.addStatus("11:00:00 AM", "11:30:00 AM", "On");//0.5
-        logsPage.addLastStatus("01:00:00 PM", "07:00:00 PM", "Dr");//6
+        logsPage.addStatus("01:00:00 PM", "07:00:00 PM", "Dr");//6
         logsPage.clickOnSaveInfoButton();
         logsPage.closeCorrectionSavePopUp();
 
@@ -1181,7 +1181,7 @@ public class CycleTest extends ParentTest {
         logsPage.clickOnInsertStatusButton();
         logsPage.addStatus("06:00:00 AM", "11:00:00 AM", "Dr");//5
         logsPage.addStatus("11:00:00 AM", "11:30:00 AM", "On");//0.5
-        logsPage.addLastStatus("01:00:00 PM", "07:00:00 PM", "Dr");//6
+        logsPage.addStatus("01:00:00 PM", "07:00:00 PM", "Dr");//6
         logsPage.clickOnSaveInfoButton();
         logsPage.closeCorrectionSavePopUp();
 
@@ -1195,7 +1195,7 @@ public class CycleTest extends ParentTest {
         logsPage.clickOnInsertStatusButton();
         logsPage.addStatus("06:00:00 AM", "11:00:00 AM", "Dr");//5
         logsPage.addStatus("11:00:00 AM", "11:30:00 AM", "On");//0.5
-        logsPage.addLastStatus("01:00:00 PM", "07:00:00 PM", "Dr");//6
+        logsPage.addStatus("01:00:00 PM", "07:00:00 PM", "Dr");//6
         logsPage.clickOnSaveInfoButton();
         logsPage.closeCorrectionSavePopUp();
 
@@ -1209,7 +1209,7 @@ public class CycleTest extends ParentTest {
         logsPage.clickOnInsertStatusButton();
         logsPage.addStatus("06:00:00 AM", "11:00:00 AM", "Dr");//5
         logsPage.addStatus("11:00:00 AM", "11:30:00 AM", "On");//0.5
-        logsPage.addLastStatus("01:00:00 PM", "07:00:00 PM", "Dr");//6
+        logsPage.addStatus("01:00:00 PM", "07:00:00 PM", "Dr");//6
         logsPage.clickOnSaveInfoButton();
         logsPage.closeCorrectionSavePopUp();
 
@@ -1223,7 +1223,7 @@ public class CycleTest extends ParentTest {
         logsPage.clickOnInsertStatusButton();
         logsPage.addStatus("06:00:00 AM", "11:00:00 AM", "Dr");//5
         logsPage.addStatus("11:00:00 AM", "11:30:00 AM", "On");//0.5
-        logsPage.addLastStatus("01:00:00 PM", "07:00:00 PM", "Dr");//6
+        logsPage.addStatus("01:00:00 PM", "07:00:00 PM", "Dr");//6
         logsPage.clickOnSaveInfoButton();
         logsPage.closeCorrectionSavePopUp();
 
@@ -1236,7 +1236,7 @@ public class CycleTest extends ParentTest {
         logsPage.clickOnCorrectionButton();
         logsPage.clickOnInsertStatusButton();
         logsPage.addStatus("06:00:00 AM", "11:00:00 AM", "Dr");//5
-        logsPage.addLastStatus("01:00:00 PM", "07:00:00 PM", "Dr");//6
+        logsPage.addStatus("01:00:00 PM", "07:00:00 PM", "Dr");//6
         logsPage.clickOnSaveInfoButton();
         logsPage.closeCorrectionSavePopUp();
 
