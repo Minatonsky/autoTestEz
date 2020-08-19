@@ -27,7 +27,7 @@ public class LoginPage extends ParentPage {
     @FindBy(xpath = ".//*[@id='loginPass']")
     private WebElement userPasswordInput;
 
-    @FindBy(xpath = ".//*[@id='btnLogin']")
+    @FindBy(id = "btnLogin")
     private WebElement submitButton;
 
     @FindBy(xpath = ".//*[@id='validatePhone']//../*[@aria-label=\"Close\"]")
@@ -95,7 +95,17 @@ public class LoginPage extends ParentPage {
         enterPass(passWord);
         clickOnSubmitButton();
         openDashBoardMenuByCookies();
-        waitABit(3);
+        waitABit(4);
         closePhoneVerificationPopUp();
+    }
+
+    public void userPhoneVerifiedValidLogIn(String login, String passWord) {
+        openPage();
+        openLoginForm();
+        enterLogin(login);
+        enterPass(passWord);
+        clickOnSubmitButton();
+        openDashBoardMenuByCookies();
+        waitABit(4);
     }
 }

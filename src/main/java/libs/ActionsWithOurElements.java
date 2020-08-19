@@ -8,6 +8,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.util.List;
+
 public class ActionsWithOurElements {
     WebDriver webDriver;
     Actions action;
@@ -207,6 +209,17 @@ public class ActionsWithOurElements {
             printErrorAndStopTest(e);
         }
     }
+    public void sliderMove2(String xPathLocator, int value){
+        try {
+            WebElement slider = webDriver.findElement(By.xpath(xPathLocator));
+            logger.info(slider.getSize());
+            Actions act = new Actions(webDriver);
+            act.moveToElement(slider, value, 0).click();
+            act.build().perform();
+        } catch (Exception e){
+            printErrorAndStopTest(e);
+        }
+    }
 
     public void scrollByVisibleElement(WebElement webElement){
         try {
@@ -236,6 +249,15 @@ public class ActionsWithOurElements {
             printErrorAndStopTest(e);
         }
 
+    }
+
+    public void setListOfElements(String xPathLocator){
+        try {
+            List<WebElement> elementName = webDriver.findElements(By.xpath(xPathLocator));
+            logger.info(elementName);
+        } catch (Exception e){
+            printErrorAndStopTest(e);
+        }
     }
 
 }

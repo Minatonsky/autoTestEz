@@ -22,6 +22,7 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.time.LocalTime;
 import java.time.ZoneOffset;
 import java.time.format.DateTimeFormatter;
 import java.time.temporal.ChronoUnit;
@@ -119,7 +120,6 @@ public class Utils {
         int randomNumber=r.nextInt(arr.length);
         return arr[randomNumber];
     }
-
     public static String genRandomStateName(){
         String[] arr={"Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut", "Delaware", "Florida", "Georgia", "Hawaii", "Idaho", "Illinois", "Indiana", "Iowa",
                 "Kansas", "Kentucky", "Louisiana", "Maine", "Maryland", "Massachusetts", "Michigan", "Minnesota", "Mississippi", "Missouri", "Montana", "Nebraska", "Nevada", "New Hampshire",
@@ -166,14 +166,12 @@ public class Utils {
         int randomNumber=r.nextInt(arr.length);
         return arr[randomNumber];
     }
-
     public static String genRandomFuelType(){
         String[] arr={"Gasoline", "Diesel", "Gasohol", "Propane", "LNG", "CNG", "Ethanol", "Methanol", "E-85", "M-85", "A55", "Biodiesel"};
         Random r=new Random();
         int randomNumber=r.nextInt(arr.length);
         return arr[randomNumber];
     }
-
     public static String genRandomCreditCard(){
         String[] arr={"4007000000027", "4111111111111111", "5424000000000015", "4012888818888", "370000000000002", "2223000010309711", "6011000000000012"};
         Random r=new Random();
@@ -190,7 +188,6 @@ public class Utils {
         DateTimeFormatter format = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
         return LocalDateTime.parse(dateTimeString, format);
     }
-
     public static String getStringDateTimeUTC(String format){
         LocalDateTime datetime = LocalDateTime.now(ZoneOffset.UTC);
         return DateTimeFormatter.ofPattern(format).format(datetime);
@@ -202,17 +199,14 @@ public class Utils {
     public static LocalDateTime getLocalDateTimeUTC(){
         return LocalDateTime.now(ZoneOffset.UTC);
     }
-
     public static String dateWithMinusDay(int countDays){
         return getLocalDateTimeUTC().minusDays(countDays).format(DateTimeFormatter.ofPattern("yyyy-MM-dd"));
     }
-
     public static String startDayPlusHours(int hours){
         LocalDate day = LocalDate.now(ZoneOffset.UTC);
         LocalDateTime startOfDay = day.atStartOfDay().plusHours(hours);
         return DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss").format(startOfDay);
     }
-
     public static boolean compareDiffDateTime(LocalDateTime firstDateTime, LocalDateTime secondTime, int countMinutes){
         long diffMinutes = ChronoUnit.MINUTES.between(firstDateTime, secondTime);
         return diffMinutes < countMinutes && diffMinutes > (-countMinutes);
@@ -231,6 +225,14 @@ public class Utils {
         FileReader reader = new FileReader(filename);
         JSONParser jsonParser = new JSONParser();
         return jsonParser.parse(reader);
+    }
+    public static long getDurationBetweenTime(String initTime, String finTime){
+        initTime = initTime.replace("p", "PM").replace("a", "AM");
+        finTime = finTime.replace("p", "PM").replace("a", "AM");
+        LocalTime initialTime = LocalTime.parse(initTime, DateTimeFormatter.ofPattern("hh:mm:ss a"));
+        LocalTime finalTime = LocalTime.parse(finTime, DateTimeFormatter.ofPattern("hh:mm:ss a"));
+        return ChronoUnit.SECONDS.between(initialTime, finalTime);
+
     }
 
 }

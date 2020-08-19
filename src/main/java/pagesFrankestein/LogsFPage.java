@@ -85,4 +85,5 @@ public class LogsFPage extends ParentFPage {
     public boolean isBreakViolationPresent(){return actionsWithOurElements.isElementDisplay(breakViolation);}
     public boolean isShiftHoursViolationPresent(){return actionsWithOurElements.isElementDisplay(shiftHoursViolation);}
     public void closeCorrectionSavePopUp(){actionsWithOurElements.clickOnElement(correctionSavedPopUpClose);}
+
 }
