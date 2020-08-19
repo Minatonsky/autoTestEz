@@ -1,5 +1,6 @@
 package unitTest;
 
+import com.github.javafaker.Faker;
 import org.apache.log4j.Logger;
 import org.json.JSONObject;
 import org.junit.Test;
@@ -21,6 +22,7 @@ import static libs.Utils.getDurationBetweenTime;
 
 public class TestMethods extends ParentTestWithoutWebDriver {
     org.apache.log4j.Logger logger = Logger.getLogger(getClass());
+    Faker faker = new Faker();
 
 
 
@@ -102,12 +104,9 @@ public class TestMethods extends ParentTestWithoutWebDriver {
 
     @Test
     public void test() {
-        String time = "00:00:00";
-        if (time.equals("00:00:00")){
-            System.out.println("ura");
-        } else {
-            System.out.println("blat");
-        }
+//        System.out.println(faker.date().future(5, TimeUnit.DAYS);
+//        System.out.println(faker.date().between(getDateFormat(), );
+
     }
 
 }

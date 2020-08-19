@@ -13,11 +13,12 @@ import static libs.Utils.*;
 
 public class DriverLicenseParameterizedTest extends ParentTest {
 
-    Map dataForValidLogIn = excelDriver.getData(configProperties.DATA_FILE_PATH() + "testSettings.xls", "USDLRegex");
+    Map dataForDL = excelDriver.getData(configProperties.DATA_FILE_PATH() + "testSettings.xls", "USDLRegex");
+    Map dataForValidLogIn = excelDriver.getData(configProperties.DATA_FILE_PATH() + "testLogin.xls", "driverLogin");
 
     String login = dataForValidLogIn.get("login").toString();
     String pass = dataForValidLogIn.get("pass").toString();
-    String userId = utilsForDB.getUserIdByEmail(login);
+    String userId = dataForValidLogIn.get("userId").toString();
 
     public DriverLicenseParameterizedTest() throws IOException, SQLException, ClassNotFoundException {
     }
@@ -31,7 +32,7 @@ public class DriverLicenseParameterizedTest extends ParentTest {
         dashboardPage.goToSettingPage();
         settingsPage.goToDriverSettings();
 
-        String dlAL = dataForValidLogIn.get("AL").toString();
+        String dlAL = dataForDL.get("AL").toString();
         settingsPage.enterNumberDl(dlAL);
         settingsPage.selectCountry("USA");
         settingsPage.selectStateDl(dlAL);

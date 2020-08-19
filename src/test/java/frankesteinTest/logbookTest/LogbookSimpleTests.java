@@ -52,8 +52,8 @@ public class LogbookSimpleTests extends ParentTest {
     @Test
     public void shiftAndDriving() throws SQLException{
 
-        int cycleType = 8;
-        int cargoType = 2;
+        int cycleType = 0;
+        int cargoType = 0;
 
         String userId = utilsForDB.getUserIdByEmail(login);
 
@@ -98,7 +98,7 @@ public class LogbookSimpleTests extends ParentTest {
         loginPage.userPhoneVerifiedValidLogIn(login, pass);
         dashboardPage.goToLogsPage();
         logsPage.clickOnRowDay(dateWithMinusDay(3));
-        logsPage.setListOfElements();
+//        logsPage.setListOfElements();
         logsPage.clickOnCorrectionButton();
         logsPage.clickOnInsertStatusButton();
         logsPage.enterSB_2_8_hours(cycleType, cargoType);

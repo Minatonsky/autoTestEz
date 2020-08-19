@@ -28,14 +28,15 @@ public class SoloDriverSettingAccountTest extends ParentTest {
         Map<String, Object> userDataBeforeTestMap = listArrayToMap(tempDataListBeforeTest);
 
         String odometer = userDataBeforeTestMap.get("odometerId").toString();
-        String firstName = genRandomDataByRegex("[A-Z]{1}[a-z]{11}");
-        String LastName = genRandomDataByRegex("[A-Z]{1}[a-z]{11}");
+        String firstName = faker.name().firstName();
+        String LastName = faker.name().lastName();
         String phone = RandomStringUtils.randomNumeric(10);
         String cycle = userDataBeforeTestMap.get("cycleId").toString();
         String timeZone = userDataBeforeTestMap.get("timeZoneId").toString();
         String restBreak = userDataBeforeTestMap.get("restBreakId").toString();
         String appLog = userDataBeforeTestMap.get("logIncrementId").toString();
         String cargoType = userDataBeforeTestMap.get("cargoTypeId").toString();
+        String date = "12-13-2021";
 
         String cargoTypeRandomValue = Integer.toString(genRandomNumberBetweenTwoValues(0 , 4));
         String cycleTypeRandomValue = Integer.toString(genRandomNumberBetweenTwoValues(0 , 8));

@@ -99,6 +99,28 @@ public class LogsPage extends ParentPage {
         waitABit(3);
     }
 
+    public void addLastStatus(String timeFrom, String timeTo, String status){
+        actionsWithOurElements.clickOnElement(timeToInput);
+        actionsWithOurElements.enterTextToElement(timeInput, timeTo.replaceAll("\\W", ""));
+        actionsWithOurElements.clickOnElement(saveButton);
+
+        actionsWithOurElements.clickOnElement(timeFromInput);
+        actionsWithOurElements.enterTextToElement(timeInput, timeFrom.replaceAll("\\W", ""));
+        actionsWithOurElements.clickOnElement(saveButton);
+
+        if (status.equals("On")){
+            actionsWithOurElements.clickOnElement(statusOn);
+        } else if (status.equals("Dr")){
+            actionsWithOurElements.clickOnElement(statusDr);
+        } else if (status.equals("Sb")){
+            actionsWithOurElements.clickOnElement(statusDr);
+        } else if (status.equals("Off")){
+            actionsWithOurElements.clickOnElement(statusDr);
+        } else Assert.fail("Unexpected status");
+
+        waitABit(3);
+    }
+
     public void clickOnSaveInfoButton(){
         actionsWithOurElements.scrollByVisibleElement(saveInfoButton);
         actionsWithOurElements.clickOnElement(saveInfoButton);
@@ -203,14 +225,14 @@ public class LogsPage extends ParentPage {
                     addStatus("01:00:00 AM", "06:00:00 AM", "Dr");
                     addStatus("07:00:00 AM", "10:00:00 AM", "Dr");
                     addStatus("10:00:00 AM", "12:00:00 PM", "On");
-                    addStatus("12:00:00 PM", "02:00:00 PM", "Dr");
+                    addLastStatus("12:00:00 PM", "02:00:00 PM", "Dr");
                 } else {
                     //15 hours
                     addStatus("00:00:00 AM", "01:00:00 AM", "On");
                     addStatus("01:00:00 AM", "06:00:00 AM", "Dr");
                     addStatus("07:00:00 AM", "10:00:00 AM", "Dr");
                     addStatus("10:00:00 AM", "12:00:00 PM", "On");
-                    addStatus("01:00:00 PM", "03:00:00 PM", "Dr");
+                    addLastStatus("01:00:00 PM", "03:00:00 PM", "Dr");
                 } break;
             case 2:
             case 3:
@@ -222,7 +244,7 @@ public class LogsPage extends ParentPage {
                 addStatus("12:00:00 PM", "01:00:00 PM", "On");
                 addStatus("01:00:00 PM", "03:00:00 PM", "Dr");
                 addStatus("04:00:00 PM", "05:00:00 PM", "On");
-                addStatus("05:00:00 PM", "09:00:00 PM", "Dr");
+                addLastStatus("05:00:00 PM", "09:00:00 PM", "Dr");
                 break;
             case 4:
             case 5:
@@ -231,7 +253,7 @@ public class LogsPage extends ParentPage {
                 addStatus("01:00:00 AM", "06:00:00 AM", "Dr");
                 addStatus("07:00:00 AM", "10:00:00 AM", "Dr");
                 addStatus("11:00:00 AM", "12:00:00 PM", "Dr");
-                addStatus("12:00:00 PM", "04:00:00 PM", "Dr");
+                addLastStatus("12:00:00 PM", "04:00:00 PM", "Dr");
                 break;
             case 6:
                 //15 hours
@@ -239,7 +261,7 @@ public class LogsPage extends ParentPage {
                 addStatus("01:00:00 AM", "06:00:00 AM", "Dr");
                 addStatus("07:00:00 AM", "10:00:00 AM", "Dr");
                 addStatus("10:00:00 AM", "11:00:00 AM", "On");
-                addStatus("11:00:00 PM", "03:00:00 PM", "Dr");
+                addLastStatus("11:00:00 PM", "03:00:00 PM", "Dr");
                 break;
             case 7:
                 if (cargoType == 2){
@@ -247,12 +269,12 @@ public class LogsPage extends ParentPage {
                     addStatus("02:00:00 AM", "03:00:00 AM", "On");
                     addStatus("03:00:00 AM", "07:00:00 AM", "Dr");
                     addStatus("08:00:00 AM", "11:00:00 AM", "Dr");
-                    addStatus("12:00:00 PM", "05:00:00 PM", "Dr");
+                    addLastStatus("12:00:00 PM", "05:00:00 PM", "Dr");
                 } else {
                     //16 hours
                     addStatus("01:00:00 AM", "07:00:00 AM", "Dr");
                     addStatus("08:00:00 AM", "11:00:00 AM", "Dr");
-                    addStatus("12:00:00 PM", "05:00:00 PM", "Dr");
+                    addLastStatus("12:00:00 PM", "05:00:00 PM", "Dr");
                 } break;
         }
 
@@ -264,30 +286,30 @@ public class LogsPage extends ParentPage {
             case 1:
                 if (cargoType == 2) {
                     //15 hours
-                    addStatus("03:00:00 PM", "03:01:00 PM", "Dr");
+                    addLastStatus("03:00:00 PM", "03:02:00 PM", "Dr");
 
                 } else {
                     //14 hours
-                    addStatus("02:00:00 PM", "02:01:00 PM", "Dr");
+                    addLastStatus("02:00:00 PM", "02:02:00 PM", "Dr");
                 }
                 break;
             case 2:
             case 3:
             case 8:
                 //20 hours
-                addStatus("09:00:00 PM", "09:01:00 PM", "Dr");
+                addLastStatus("09:00:00 PM", "09:02:00 PM", "Dr");
                 break;
             case 4:
             case 5:
-                addStatus("04:00:00 PM", "04:01:00 PM", "Dr");
+                addLastStatus("04:00:00 PM", "04:02:00 PM", "Dr");
                 break;
             case 7:
                 //16 hours
-                addStatus("05:00:00 PM", "05:01:00 PM", "Dr");
+                addLastStatus("05:00:00 PM", "05:02:00 PM", "Dr");
                 break;
             case 6:
                 //15 hours
-                addStatus("03:00:00 PM", "03:01:00 PM", "Dr");
+                addLastStatus("03:00:00 PM", "03:02:00 PM", "Dr");
                 break;
         }
     }
@@ -298,10 +320,10 @@ public class LogsPage extends ParentPage {
         addStatus("03:00:00 PM", "05:00:00 PM", "On");
         addStatus("05:30:00 PM", "09:00:00 PM", "Dr");
         addStatus("09:00:00 PM", "10:00:00 PM", "On");
-        addStatus("10:00:00 PM", "11:00:00 PM", "Dr");
+        addLastStatus("10:00:00 PM", "11:00:00 PM", "Dr");
     }
     public void addViolationForRestBreak(){
-        addStatus("05:00:00 PM", "05:30:00 PM", "Dr");
+        addLastStatus("05:00:00 PM", "05:30:00 PM", "Dr");
     }
     public boolean isRestBreakRequired(int cycleId, int cargoType){
         switch (cycleId){
