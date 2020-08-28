@@ -113,9 +113,9 @@ public class LogsPage extends ParentPage {
         } else if (status.equals("Dr")){
             actionsWithOurElements.clickOnElement(statusDr);
         } else if (status.equals("Sb")){
-            actionsWithOurElements.clickOnElement(statusDr);
+            actionsWithOurElements.clickOnElement(statusSb);
         } else if (status.equals("Off")){
-            actionsWithOurElements.clickOnElement(statusDr);
+            actionsWithOurElements.clickOnElement(statusOff);
         } else Assert.fail("Unexpected status");
 
         waitABit(3);
@@ -143,7 +143,8 @@ public class LogsPage extends ParentPage {
                 return true;
             }
         } return false;
-    } public boolean checkAlertsExist(String driverId, String date) throws SQLException {
+    }
+    public boolean checkAlertsExist(String driverId, String date) throws SQLException {
         List<String> tempDataSettingsList = utilsForDB.getAlertsData(driverId, date);
         for (String element :
                 tempDataSettingsList ) {

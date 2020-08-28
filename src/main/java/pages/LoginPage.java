@@ -93,7 +93,7 @@ public class LoginPage extends ParentPage {
         openLoginForm();
         enterLogin(login);
         enterPass(passWord);
-        waitABit(2);
+        waitABit(3);
         clickOnSubmitButton();
         openDashBoardMenuByCookies();
         waitABit(4);
@@ -105,9 +105,10 @@ public class LoginPage extends ParentPage {
         openLoginForm();
         enterLogin(login);
         enterPass(passWord);
-        waitABit(2);
+        waitABit(3);
         clickOnSubmitButton();
+        waitABit(1);
         openDashBoardMenuByCookies();
-        waitABit(4);
+        waitABit(5);
     }
 }

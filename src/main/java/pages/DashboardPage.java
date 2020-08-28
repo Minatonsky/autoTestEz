@@ -70,55 +70,55 @@ public class DashboardPage extends ParentPage {
     }
 
     public void goToStatusPage(){
-        waitABit(2);
+        waitABit(3);
         actionsWithOurElements.clickOnElement(pageStatus);
     }
     public void goToFleetPage(){
-        waitABit(1);
+        waitABit(3);
         actionsWithOurElements.clickOnElement(pageFleet);
     }
     public void goToReportsPage(){
-        waitABit(2);
+        waitABit(3);
         actionsWithOurElements.clickOnElement(pageReports);
     }
     public void goToLogsPage(){
-        waitABit(2);
+        waitABit(3);
         actionsWithOurElements.clickOnElement(pageLogs);
     }
     public void goToDVIRPage(){
-        waitABit(2);
+        waitABit(3);
         actionsWithOurElements.clickOnElement(pageDvir);
     }
     public void goToDocumentsPage(){
-        waitABit(2);
+        waitABit(3);
         actionsWithOurElements.clickOnElement(pageDocuments);
     }
     public void goToEquipmentPage(){
-        waitABit(2);
+        waitABit(3);
         actionsWithOurElements.clickOnElement(pageEquipment);}
     public void goToEzChatPage(){
-        waitABit(2);
+        waitABit(3);
         actionsWithOurElements.clickOnElement(pageEzChat);}
     public void goToEldPage(){
-        waitABit(2);
+        waitABit(3);
         actionsWithOurElements.clickOnElement(pageELD);
     }
     public void goToFinancesPage(){
-        waitABit(2);
+        waitABit(3);
         actionsWithOurElements.clickOnElement(pageFinances);
     }
     public void goToCalendarPage(){
-        waitABit(2);
+        waitABit(3);
         actionsWithOurElements.clickOnElement(pageCalendar);}
     public void goToHelpAndTrainingPage(){
-        waitABit(2);
+        waitABit(3);
         actionsWithOurElements.clickOnElement(pageHelp);}
     public void goToSettingPage(){
-        waitABit(2);
+        waitABit(3);
         actionsWithOurElements.clickOnElement(pageSettings);
     }
     public void goToReturnsPage() {
-        waitABit(2);
+        waitABit(3);
         actionsWithOurElements.clickOnElement(pageReturns);
     }
 
