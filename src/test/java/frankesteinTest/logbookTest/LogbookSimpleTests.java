@@ -101,7 +101,7 @@ public class LogbookSimpleTests extends ParentTest {
 //        logsPage.setListOfElements();
         logsPage.clickOnCorrectionButton();
         logsPage.clickOnInsertStatusButton();
-        logsPage.enterSB_2_8_hours(cycleType, cargoType);
+
         logsPage.clickOnSaveInfoButton();
         logsPage.closeCorrectionSavePopUp();
 

@@ -67,12 +67,27 @@ public class LogsPage extends ParentPage {
     @FindBy(xpath = "//*[text()='Correction Saved']/../button[@type='button']")
     private WebElement correctionSavedPopUpClose;
 
+    @FindBy(xpath = ".//*[text()='11:59:59PM']")
+    private WebElement lastMinute;
+
     public void clickOnRowDay(String dataDay){actionsWithOurElements.clickOnElement(".//*[@data-date='" + dataDay + "']");}
     public void clickOnCorrectionButton(){actionsWithOurElements.clickOnElement(buttonCorrection);}
     public void clickOnInsertStatusButton(){
         actionsWithOurElements.scrollByVisibleElement(buttonInsertStatus);
         actionsWithOurElements.clickOnElement(buttonInsertStatus);
         waitABit(3);
+    }
+    public void clickOnLastMinuteOnStatusList(){actionsWithOurElements.clickOnElement(lastMinute);}
+    public void selectStatus(String status){
+        if (status.equals("On")){
+            actionsWithOurElements.clickOnElement(statusOn);
+        } else if (status.equals("Dr")){
+            actionsWithOurElements.clickOnElement(statusDr);
+        } else if (status.equals("Sb")){
+            actionsWithOurElements.clickOnElement(statusSb);
+        } else if (status.equals("Off")){
+            actionsWithOurElements.clickOnElement(statusOff);
+        } else Assert.fail("Unexpected status");
     }
 
     public void addStatus(String timeFrom, String timeTo, String status){
@@ -83,17 +98,7 @@ public class LogsPage extends ParentPage {
         actionsWithOurElements.clickOnElement(timeFromInput);
         actionsWithOurElements.enterTextToElement(timeInput, timeFrom.replaceAll("\\W", ""));
         actionsWithOurElements.clickOnElement(saveButton);
-
-        if (status.equals("On")){
-            actionsWithOurElements.clickOnElement(statusOn);
-        } else if (status.equals("Dr")){
-            actionsWithOurElements.clickOnElement(statusDr);
-        } else if (status.equals("Sb")){
-            actionsWithOurElements.clickOnElement(statusSb);
-        } else if (status.equals("Off")){
-            actionsWithOurElements.clickOnElement(statusOff);
-        } else Assert.fail("Unexpected status");
-
+        selectStatus(status);
         actionsWithOurElements.scrollByVisibleElement(buttonInsertStatus);
         actionsWithOurElements.clickOnElement(buttonInsertStatus);
         waitABit(3);
@@ -107,17 +112,7 @@ public class LogsPage extends ParentPage {
         actionsWithOurElements.clickOnElement(timeFromInput);
         actionsWithOurElements.enterTextToElement(timeInput, timeFrom.replaceAll("\\W", ""));
         actionsWithOurElements.clickOnElement(saveButton);
-
-        if (status.equals("On")){
-            actionsWithOurElements.clickOnElement(statusOn);
-        } else if (status.equals("Dr")){
-            actionsWithOurElements.clickOnElement(statusDr);
-        } else if (status.equals("Sb")){
-            actionsWithOurElements.clickOnElement(statusSb);
-        } else if (status.equals("Off")){
-            actionsWithOurElements.clickOnElement(statusOff);
-        } else Assert.fail("Unexpected status");
-
+        selectStatus(status);
         waitABit(3);
     }
 
@@ -136,6 +131,7 @@ public class LogsPage extends ParentPage {
     public void closeCorrectionSavePopUp(){actionsWithOurElements.clickOnElement(correctionSavedPopUpClose);}
 
     public boolean checkAlertsId(String driverId, String date, String violationId) throws SQLException {
+        waitABit(5);
         List<String> tempDataSettingsList = utilsForDB.getAlertsData(driverId, date);
         for (String element :
                 tempDataSettingsList ) {
@@ -145,6 +141,7 @@ public class LogsPage extends ParentPage {
         } return false;
     }
     public boolean checkAlertsExist(String driverId, String date) throws SQLException {
+        waitABit(5);
         List<String> tempDataSettingsList = utilsForDB.getAlertsData(driverId, date);
         for (String element :
                 tempDataSettingsList ) {
@@ -349,17 +346,4 @@ public class LogsPage extends ParentPage {
         }
 
     }
-    public void enterSB_2_8_hours(int cycleId, int cargoType){
-        addStatus("02:00:00 AM", "03:00:00 AM", "On");
-        addStatus("03:00:00 AM", "08:00:00 AM", "Dr");
-        addStatus("08:00:00 AM", "10:00:00 AM", "Sb");
-        addStatus("10:00:00 AM", "12:00:00 PM", "Dr");
-        addStatus("12:00:00 PM", "04:00:00 PM", "Dr");
-        addStatus("04:00:00 PM", "00:00:00", "Sb");
-    }
-    public void changeLastStatus(String userId, String date) throws SQLException {
-        utilsForDB.getLastStatusOnDay(userId, date);
-    }
-
-
 }

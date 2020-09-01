@@ -443,7 +443,7 @@ public class UtilsForDB {
     }
 
     public void deleteStatuses(String userId) throws SQLException{
-        dBMySQL.changeTable("DELETE FROM status WHERE userId = " + userId + " AND DATETIME != '2019-11-14 00:00:00';");
+        dBMySQL.changeTable("DELETE FROM status WHERE userId = " + userId + " AND DATETIME > '2020-07-01 00:00:00';");
     }
 
     public void updateLastStatus(String userId) throws SQLException{
@@ -527,4 +527,5 @@ public class UtilsForDB {
     public String getLastStatusOnDay(String driverId, String date) throws SQLException {
         return dBMySQL.selectValue("SELECT MIN(s.id) FROM status s WHERE s.userId = " + driverId + " AND s.dateTime LIKE '" + date + "%';");
     }
+
 }

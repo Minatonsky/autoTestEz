@@ -49,7 +49,7 @@ public class ShiftAndDrivingHoursWithParamsTest extends ParentTest {
         logsPage.setCycle(userId, Integer.parseInt(cycleType));
         utilsForDB.setCargoTypeId(userId, Integer.parseInt(cargoType));
 
-        loginPage.userPhoneVerifiedValidLogIn(login, pass);
+        loginPage.userValidLogIn(login, pass);
         dashboardPage.goToLogsPage();
         logsPage.clickOnRowDay(dateWithMinusDay(3));
         logsPage.clickOnCorrectionButton();
@@ -80,7 +80,7 @@ public class ShiftAndDrivingHoursWithParamsTest extends ParentTest {
         logsPage.setCycle(userId, Integer.parseInt(cycleType));
         utilsForDB.setCargoTypeId(userId, Integer.parseInt(cargoType));
 
-        loginPage.userPhoneVerifiedValidLogIn(login, pass);
+        loginPage.userValidLogIn(login, pass);
         dashboardPage.goToLogsPage();
         logsPage.clickOnRowDay(dateWithMinusDay(3));
         logsPage.clickOnCorrectionButton();
