@@ -1,6 +1,5 @@
 package pages;
 
-import io.qameta.allure.Step;
 import libs.UtilsForDB;
 import org.junit.Assert;
 import org.openqa.selenium.Cookie;
@@ -8,8 +7,11 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+import java.sql.SQLException;
 import java.util.Date;
+import java.util.Map;
 
+import static libs.Utils.listArrayToMap;
 import static libs.Utils.waitABit;
 
 public class LoginPage extends ParentPage {
@@ -34,9 +36,6 @@ public class LoginPage extends ParentPage {
     private WebElement phoneVerificationClose;
 
 
-
-
-    @Step
     public void openPage() {
         try {
             webDriver.get(baseUrl + "/");
@@ -47,25 +46,21 @@ public class LoginPage extends ParentPage {
             Assert.fail("Can not open LoginPage");
         }
     }
-    @Step
+
     public void openLoginForm() {
         actionsWithOurElements.clickOnElement(loginButton);
     }
 
-    @Step
     public void enterLogin(String login) {
        actionsWithOurElements.enterTextToElement(userLoginInput, login);
     }
 
-    @Step
     public void enterPass(String pass) {
         actionsWithOurElements.enterTextToElement(userPasswordInput, pass);
     }
 
-    @Step
     public void clickOnSubmitButton() { actionsWithOurElements.clickOnElement(submitButton); }
 
-    @Step
     public void openDashBoardMenuByCookies(){
         Cookie cookie = new Cookie.Builder("minimize-menu", "1")
                 .domain(baseUrl.substring(8))
@@ -77,7 +72,6 @@ public class LoginPage extends ParentPage {
         webDriver.manage().addCookie(cookie);
     }
 
-    @Step
     public void closePhoneVerificationPopUp(){
         if (actionsWithOurElements.isElementDisplay(phoneVerificationClose)){
             actionsWithOurElements.clickOnElement(phoneVerificationClose);
@@ -88,7 +82,8 @@ public class LoginPage extends ParentPage {
 
     }
 
-    public void userValidLogIn(String login, String passWord) {
+    public void userValidLogIn(String login, String passWord) throws SQLException {
+        verificationPhone(login);
         openPage();
         openLoginForm();
         enterLogin(login);
@@ -110,5 +105,27 @@ public class LoginPage extends ParentPage {
         waitABit(1);
         openDashBoardMenuByCookies();
         waitABit(5);
+    }
+
+    public void verificationPhone(String login) throws SQLException {
+        String userId = utilsForDB.getUserIdByEmail(login);
+        String date = "2021-06-03 12:23:10";
+        String phone = "067 647 5011";
+        Map<String, Object> tempStatusData = listArrayToMap(utilsForDB.getUserPhoneVerificationData(userId));
+        if (!tempStatusData.get("userPhone").toString().isEmpty()){
+            if (!tempStatusData.get("userPhone").toString().equals(tempStatusData.get("verificationPhone").toString())){
+                utilsForDB.setVerificationPhone(userId, tempStatusData.get("userPhone").toString());
+                utilsForDB.setVerificationExpireDatePhone(userId, tempStatusData.get("userPhone").toString());
+
+            } else {
+                logger.info("Phone verified already");
+
+            }
+        } else {
+            utilsForDB.setUserPhone(userId, phone);
+            utilsForDB.insertVerificationPhone(Integer.parseInt(userId), phone, date);
+            utilsForDB.insertVerificationExpireDatePhone(Integer.parseInt(userId), date);
+
+        }
     }
 }

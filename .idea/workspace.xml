@@ -32,14 +32,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="660eb711-957d-418e-9483-8b2931da6e6e" name="Default Changelist" comment="sb test was add">
+    <list default="true" id="660eb711-957d-418e-9483-8b2931da6e6e" name="Default Changelist" comment="sb 8/2 test was add">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log/qalight.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/qalight.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/libs/UtilsForDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/libs/UtilsForDB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/LogsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/LogsPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/frankesteinTest/logbookTest/LogbookSimpleTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/frankesteinTest/logbookTest/LogbookSimpleTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/frankesteinTest/logbookTest/ShiftAndDrivingHoursWithParamsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/frankesteinTest/logbookTest/ShiftAndDrivingHoursWithParamsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/frankesteinTest/logbookTest/SplitSleeperBerthTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/frankesteinTest/logbookTest/SplitSleeperBerthTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/chargeTest/ChargeFleetSoloTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/chargeTest/ChargeFleetSoloTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,7 +123,7 @@
       <recent name="parameterizedOrders" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SplitSleeperBerthTest.split_8_2_Test">
+  <component name="RunManager" selected="JUnit.SplitSleeperBerthTest.split_2_8_Test">
     <configuration name="CycleTest.usa_60hr_7days" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="autoTestEz" />
       <extension name="coverage">
@@ -267,20 +265,20 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.TestMethods.getEventNewOrder" />
-      <item itemvalue="JUnit.ShiftAndDrivingHoursWithParamsTest.shiftAndDriving" />
-      <item itemvalue="JUnit.SplitSleeperBerthTest.split_2_8_Test" />
       <item itemvalue="Maven.SoloOrders" />
-      <item itemvalue="JUnit.ShiftAndDrivingHoursWithParamsTest.restBreak" />
       <item itemvalue="JUnit.CycleTest.usa_60hr_7days" />
+      <item itemvalue="JUnit.ShiftAndDrivingHoursWithParamsTest.shiftAndDriving" />
+      <item itemvalue="JUnit.ShiftAndDrivingHoursWithParamsTest.restBreak" />
+      <item itemvalue="JUnit.SplitSleeperBerthTest.split_2_8_Test" />
       <item itemvalue="JUnit.SplitSleeperBerthTest.split_8_2_Test" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.SplitSleeperBerthTest.split_8_2_Test" />
         <item itemvalue="JUnit.SplitSleeperBerthTest.split_2_8_Test" />
-        <item itemvalue="JUnit.CycleTest.usa_60hr_7days" />
+        <item itemvalue="JUnit.SplitSleeperBerthTest.split_8_2_Test" />
         <item itemvalue="JUnit.ShiftAndDrivingHoursWithParamsTest.restBreak" />
         <item itemvalue="JUnit.ShiftAndDrivingHoursWithParamsTest.shiftAndDriving" />
+        <item itemvalue="JUnit.CycleTest.usa_60hr_7days" />
       </list>
     </recent_temporary>
   </component>
@@ -301,13 +299,6 @@
       <workItem from="1562665338918" duration="52834000" />
       <workItem from="1562782581468" duration="9021000" />
       <workItem from="1562822119836" duration="58303000" />
-    </task>
-    <task id="LOCAL-00047" summary="charge refactor test was add">
-      <created>1571046936696</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1571046936696</updated>
     </task>
     <task id="LOCAL-00048" summary="new charge refactor test was add">
       <created>1571140969029</created>
@@ -645,7 +636,14 @@
       <option name="project" value="LOCAL" />
       <updated>1598627952914</updated>
     </task>
-    <option name="localTasksCounter" value="96" />
+    <task id="LOCAL-00096" summary="sb 8/2 test was add">
+      <created>1598971739063</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1598971739063</updated>
+    </task>
+    <option name="localTasksCounter" value="97" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -681,7 +679,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="refactoring was add" />
     <MESSAGE value="refactoring 2 was add" />
     <MESSAGE value=" was add" />
     <MESSAGE value=" was add accoun fleet test" />
@@ -706,7 +703,8 @@
     <MESSAGE value=" 2_8 SB test was add vol3" />
     <MESSAGE value="settings test was add" />
     <MESSAGE value="sb test was add" />
-    <option name="LAST_COMMIT_MESSAGE" value="sb test was add" />
+    <MESSAGE value="sb 8/2 test was add" />
+    <option name="LAST_COMMIT_MESSAGE" value="sb 8/2 test was add" />
   </component>
   <component name="WindowStateProjectService">
     <state x="-1230" y="275" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1598527830294">
@@ -725,25 +723,25 @@
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1180" y="275" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1596797375678" />
-    <state width="1877" height="181" key="GridCell.Tab.0.bottom" timestamp="1598971333622">
+    <state width="1877" height="32" key="GridCell.Tab.0.bottom" timestamp="1599125255180">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="181" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1598971333622" />
+    <state width="1877" height="32" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1599125255180" />
     <state width="1877" height="343" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1596529245354" />
-    <state width="1877" height="181" key="GridCell.Tab.0.center" timestamp="1598971333622">
+    <state width="1877" height="32" key="GridCell.Tab.0.center" timestamp="1599125255180">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="181" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1598971333622" />
+    <state width="1877" height="32" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1599125255180" />
     <state width="1877" height="343" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1596529245354" />
-    <state width="1877" height="181" key="GridCell.Tab.0.left" timestamp="1598971333622">
+    <state width="1877" height="32" key="GridCell.Tab.0.left" timestamp="1599125255180">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="181" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1598971333622" />
+    <state width="1877" height="32" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1599125255180" />
     <state width="1877" height="343" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1596529245353" />
-    <state width="1877" height="181" key="GridCell.Tab.0.right" timestamp="1598971333622">
+    <state width="1877" height="32" key="GridCell.Tab.0.right" timestamp="1599125255180">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="181" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1598971333622" />
+    <state width="1877" height="32" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1599125255180" />
     <state width="1877" height="343" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1596529245354" />
     <state width="1877" height="272" key="GridCell.Tab.1.bottom" timestamp="1598011108027">
       <screen x="-1920" y="0" width="1920" height="1040" />
@@ -765,10 +763,10 @@
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1459" y="165" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1596807282906" />
-    <state x="-1368" y="253" key="Vcs.Push.Dialog.v2" timestamp="1598627965476">
+    <state x="-1368" y="253" key="Vcs.Push.Dialog.v2" timestamp="1598971748303">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="-1368" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1598627965476" />
+    <state x="-1368" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1598971748303" />
     <state x="-1828" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1597065879990">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
@@ -777,9 +775,9 @@
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1407" y="249" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1597836173281" />
-    <state x="-1297" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1597054791001">
+    <state x="-1297" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1599137660995">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="-1297" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1597054791001" />
+    <state x="-1297" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1599137660995" />
   </component>
 </project>

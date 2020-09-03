@@ -528,4 +528,28 @@ public class UtilsForDB {
         return dBMySQL.selectValue("SELECT MIN(s.id) FROM status s WHERE s.userId = " + driverId + " AND s.dateTime LIKE '" + date + "%';");
     }
 
+//    PHONE VERIFICATION
+
+    public List<ArrayList> getUserPhoneVerificationData(String userId) throws SQLException {
+        return dBMySQL.selectTable("SELECT u.phone  AS userPhone, pv.phone AS verificationPhone, pv.verified, pve.dateTimeExpire FROM users u \n" +
+                "\tLEFT JOIN phoneVerification pv ON u.id = pv.userId\n" +
+                "\tLEFT JOIN phoneVerificationExpire pve ON u.id = pve.userId\n" +
+                "\t\tWHERE pv.userId = " + userId + ";");
+    }
+    public void setUserPhone(String userId, String phone) throws SQLException {
+        dBMySQL.changeTable("UPDATE users SET phone = " + phone + " WHERE userId = " + userId + ";");
+    }
+    public void setVerificationPhone(String userId, String phone) throws SQLException {
+        dBMySQL.changeTable("UPDATE phoneVerification SET phone = " + phone + ", verified = 1 WHERE userId = " + userId + ";");
+    }
+    public void setVerificationExpireDatePhone(String userId, String date) throws SQLException {
+        dBMySQL.changeTable("UPDATE phoneVerificationExpire SET dateTimeExpire = '" + date + "' WHERE userId = " + userId + ";");
+    }
+    public void insertVerificationPhone(int userId, String phone, String date) throws SQLException {
+        dBMySQL.changeTable("INSERT INTO phoneVerification (userId, phone, verified, dateTime) VALUE (" + userId + ", '" + phone + "', 1, '" + date + "');");
+    }
+    public void insertVerificationExpireDatePhone(int userId, String date) throws SQLException {
+        dBMySQL.changeTable("INSERT INTO phoneVerificationExpire (userId, dateTimeExpire) VALUE (" + userId + ", '" + date + "');");
+    }
+
 }

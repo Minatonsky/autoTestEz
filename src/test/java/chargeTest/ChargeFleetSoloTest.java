@@ -11,7 +11,7 @@ import static libs.DataForTests.*;
 public class ChargeFleetSoloTest extends ParentTestWithoutWebDriver {
 
     String soloId = "3470";
-    String fleetId = "572";
+    String fleetId = "581";
 
     String unionMonthTariffId = IOSXMonthTariffId + ", " + geometricsMonthTariffId;
     String unionOneYearTariffId = oneYearIOSXTariffId + ", " + oneYearGeometricsTariffId;
