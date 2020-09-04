@@ -91,8 +91,8 @@ public class LoginPage extends ParentPage {
         waitABit(3);
         clickOnSubmitButton();
         openDashBoardMenuByCookies();
-        waitABit(4);
-        closePhoneVerificationPopUp();
+        waitABit(3);
+
     }
 
     public void userPhoneVerifiedValidLogIn(String login, String passWord) {
@@ -109,13 +109,14 @@ public class LoginPage extends ParentPage {
 
     public void verificationPhone(String login) throws SQLException {
         String userId = utilsForDB.getUserIdByEmail(login);
+        String userPhone = utilsForDB.getUserPhoneById(userId);
         String date = "2021-06-03 12:23:10";
-        String phone = "067 647 5011";
+        String phone = "067 557 5011";
         Map<String, Object> tempStatusData = listArrayToMap(utilsForDB.getUserPhoneVerificationData(userId));
-        if (!tempStatusData.get("userPhone").toString().isEmpty()){
-            if (!tempStatusData.get("userPhone").toString().equals(tempStatusData.get("verificationPhone").toString())){
-                utilsForDB.setVerificationPhone(userId, tempStatusData.get("userPhone").toString());
-                utilsForDB.setVerificationExpireDatePhone(userId, tempStatusData.get("userPhone").toString());
+        if (!userPhone.isEmpty()){
+            if (!userPhone.equals(tempStatusData.get("phone").toString())){
+                utilsForDB.setVerificationPhone(userId, userPhone);
+                utilsForDB.setVerificationExpireDatePhone(userId, date);
 
             } else {
                 logger.info("Phone verified already");
@@ -123,8 +124,13 @@ public class LoginPage extends ParentPage {
             }
         } else {
             utilsForDB.setUserPhone(userId, phone);
-            utilsForDB.insertVerificationPhone(Integer.parseInt(userId), phone, date);
-            utilsForDB.insertVerificationExpireDatePhone(Integer.parseInt(userId), date);
+            if (tempStatusData.get("phone").toString().isEmpty()){
+                utilsForDB.insertVerificationPhone(Integer.parseInt(userId), phone, date);
+                utilsForDB.insertVerificationExpireDatePhone(Integer.parseInt(userId), date);
+            } else {
+                utilsForDB.setVerificationPhone(userId, userPhone);
+                utilsForDB.setVerificationExpireDatePhone(userId, date);
+            }
 
         }
     }

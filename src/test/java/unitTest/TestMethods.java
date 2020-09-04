@@ -13,10 +13,7 @@ import java.time.LocalDate;
 import java.time.Period;
 import java.time.temporal.ChronoUnit;
 import java.time.temporal.TemporalAdjusters;
-import java.util.Arrays;
 import java.util.List;
-
-import static libs.Utils.getDurationBetweenTime;
 // This test page is not using on test project, it just for check some methods
 
 
@@ -69,43 +66,34 @@ public class TestMethods extends ParentTestWithoutWebDriver {
         System.out.println(test);
     }
 
-    //    cycle type
-//    public static int USA_70hr_8days = 0; //numbers['shiftHours'] = 14; numbers['driveHours'] = 11;
-//    public static int USA_60hr_7days = 1; //numbers['shiftHours'] = 14; numbers['driveHours'] = 11;
-//    public static int Alaska_70hr_7days = 2; //numbers['shiftHours'] = 20; numbers['driveHours'] = 15;
-//    public static int Alaska_80hr_8days = 3; //numbers['shiftHours'] = 20; numbers['driveHours'] = 15;
-//    public static int Canada_70hr_7days = 4; //numbers['shiftHours'] = 16; numbers['driveHours'] = 13;
-//    public static int Canada_120hr_14days = 5; //numbers['shiftHours'] = 16; numbers['driveHours'] = 13;
-//    public static int Texas70hr_7days = 6; //numbers['shiftHours'] = 15; numbers['driveHours'] = 12;
-//    public static int California_80hr_7days = 7; //numbers['shiftHours'] = 16; numbers['driveHours'] = 14;
-//    public static int CanadaNorth_60_80_7 = 8; //numbers['shiftHours'] = ; numbers['driveHours'] = ;
-//    public static int Other = 9;
+//    @Test
+//    public Map<String, String> listArrayToMap()throws Exception {
 //
-//    //    CARGO TYPE
-//    public static int Property = 0;
-//    public static int Agriculture = 1;
-//    public static int Passenger = 2;
-//    public static int OilGas = 3;
-//    public static int ShortHaul = 4;
-
-    public int recurseKeys() throws Exception {
-        List<String> list = Arrays.asList("06:00:00 AM/10:00:00 AM", "01:00:00 PM/05:00:00 PM");
-        int temp = 0;
-        for (String i :
-                list) {
-            String[] parts = i.split("/");
-            temp += (int) getDurationBetweenTime(parts[0], parts[1]);
-
-        }
-        return temp;
-
-    }
+//        List<ArrayList> tempAmountList = utilsForDB.getUserPhoneVerificationData("4401");
+//
+//        List<String> placeHolderList = tempAmountList.get(0);
+//        List<String> valueList = tempAmountList.get(1);
+//
+//        Map<String, String> phoneBook =
+//                placeHolderList.stream()
+//                        .collect(Collectors.toMap(
+//                                valueList::get,
+//                                valueList::get,
+//                                (address1, address2) -> {
+//                                    System.out.println("duplicate key found!");
+//                                    return address1;
+//                                }
+//                        ));
+//
+//    }
 
 
     @Test
-    public void test() {
-//        System.out.println(faker.date().future(5, TimeUnit.DAYS);
-//        System.out.println(faker.date().between(getDateFormat(), );
+    public void test() throws SQLException {
+
+
+        System.out.println(utilsForDB.getUserPhoneById("4401"));
+
 
     }
 

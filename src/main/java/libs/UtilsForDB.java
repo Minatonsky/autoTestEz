@@ -308,6 +308,11 @@ public class UtilsForDB {
 
 //    users
 
+    public String getUserPhoneById(String userId) throws SQLException{
+        return dBMySQL.selectValue("SELECT phone FROM users WHERE id = '" + userId + "';");
+    }
+
+
     @Step
     public boolean checkSoloIsBanned(String soloId) throws SQLException{
         return dBMySQL.isRowPresent("SELECT * FROM users WHERE id = " + soloId + " AND banned = 1;");
@@ -531,16 +536,17 @@ public class UtilsForDB {
 //    PHONE VERIFICATION
 
     public List<ArrayList> getUserPhoneVerificationData(String userId) throws SQLException {
-        return dBMySQL.selectTable("SELECT u.phone  AS userPhone, pv.phone AS verificationPhone, pv.verified, pve.dateTimeExpire FROM users u \n" +
+        return dBMySQL.selectTable("SELECT pv.phone AS verificationPhone, pv.verified, pve.dateTimeExpire FROM users u \n" +
                 "\tLEFT JOIN phoneVerification pv ON u.id = pv.userId\n" +
                 "\tLEFT JOIN phoneVerificationExpire pve ON u.id = pve.userId\n" +
                 "\t\tWHERE pv.userId = " + userId + ";");
     }
+
     public void setUserPhone(String userId, String phone) throws SQLException {
-        dBMySQL.changeTable("UPDATE users SET phone = " + phone + " WHERE userId = " + userId + ";");
+        dBMySQL.changeTable("UPDATE users SET phone = '" + phone + "' WHERE id = " + userId + ";");
     }
     public void setVerificationPhone(String userId, String phone) throws SQLException {
-        dBMySQL.changeTable("UPDATE phoneVerification SET phone = " + phone + ", verified = 1 WHERE userId = " + userId + ";");
+        dBMySQL.changeTable("UPDATE phoneVerification SET phone = '" + phone + "', verified = 1 WHERE userId = " + userId + ";");
     }
     public void setVerificationExpireDatePhone(String userId, String date) throws SQLException {
         dBMySQL.changeTable("UPDATE phoneVerificationExpire SET dateTimeExpire = '" + date + "' WHERE userId = " + userId + ";");
@@ -551,5 +557,6 @@ public class UtilsForDB {
     public void insertVerificationExpireDatePhone(int userId, String date) throws SQLException {
         dBMySQL.changeTable("INSERT INTO phoneVerificationExpire (userId, dateTimeExpire) VALUE (" + userId + ", '" + date + "');");
     }
+
 
 }

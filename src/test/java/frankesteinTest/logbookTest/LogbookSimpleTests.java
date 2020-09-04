@@ -28,7 +28,7 @@ public class LogbookSimpleTests extends ParentTest {
         logsPage.setCycle(userId, 4);
         utilsForDB.setCargoTypeId(userId, 1);
 
-        loginPage.userPhoneVerifiedValidLogIn(login, pass);
+        loginPage.userValidLogIn(login, pass);
         dashboardPage.goToLogsPage();
         logsPage.clickOnRowDay(dateWithMinusDay(3));
         logsPage.clickOnCorrectionButton();
@@ -61,7 +61,7 @@ public class LogbookSimpleTests extends ParentTest {
         logsPage.setCycle(userId, cycleType);
         utilsForDB.setCargoTypeId(userId, cargoType);
 
-        loginPage.userPhoneVerifiedValidLogIn(login, pass);
+        loginPage.userValidLogIn(login, pass);
         dashboardPage.goToLogsPage();
         logsPage.clickOnRowDay(dateWithMinusDay(3));
         logsPage.clickOnCorrectionButton();
@@ -95,7 +95,7 @@ public class LogbookSimpleTests extends ParentTest {
         logsPage.setCycle(userId, cycleType);
         utilsForDB.setCargoTypeId(userId, cargoType);
 
-        loginPage.userPhoneVerifiedValidLogIn(login, pass);
+        loginPage.userValidLogIn(login, pass);
         dashboardPage.goToLogsPage();
         logsPage.clickOnRowDay(dateWithMinusDay(3));
 //        logsPage.setListOfElements();
