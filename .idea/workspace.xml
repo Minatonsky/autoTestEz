@@ -32,10 +32,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="660eb711-957d-418e-9483-8b2931da6e6e" name="Default Changelist" comment="phone verification2 was add">
+    <list default="true" id="660eb711-957d-418e-9483-8b2931da6e6e" name="Default Changelist" comment="phone verification3 was add">
+      <change afterPath="$PROJECT_DIR$/src/test/java/frankesteinTest/logbookTest/restart_34_Hours.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/libs/UtilsForDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/libs/UtilsForDB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/qalight.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/qalight.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/LogsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/LogsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/frankesteinTest/logbookTest/SplitSleeperBerthTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/frankesteinTest/logbookTest/SplitSleeperBerthTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,7 +123,7 @@
       <recent name="parameterizedOrders" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SplitSleeperBerthTest.split_2_8_Test">
+  <component name="RunManager" selected="JUnit.restart_34_Hours.restartSecondExample">
     <configuration name="SplitSleeperBerthTest.split_2_8_Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="autoTestEz" />
       <extension name="coverage">
@@ -134,37 +136,6 @@
       <option name="MAIN_CLASS_NAME" value="frankesteinTest.logbookTest.SplitSleeperBerthTest" />
       <option name="METHOD_NAME" value="split_2_8_Test" />
       <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SplitSleeperBerthTest.split_8_2_Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="autoTestEz" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="frankesteinTest.logbookTest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="frankesteinTest.logbookTest" />
-      <option name="MAIN_CLASS_NAME" value="frankesteinTest.logbookTest.SplitSleeperBerthTest" />
-      <option name="METHOD_NAME" value="split_8_2_Test" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestMethods" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="autoTestEz" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="unitTest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="unitTest" />
-      <option name="MAIN_CLASS_NAME" value="unitTest.TestMethods" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -217,6 +188,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="restart_34_Hours.restartFirstExample" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="autoTestEz" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="frankesteinTest.logbookTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="frankesteinTest.logbookTest" />
+      <option name="MAIN_CLASS_NAME" value="frankesteinTest.logbookTest.restart_34_Hours" />
+      <option name="METHOD_NAME" value="restartFirstExample" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="restart_34_Hours.restartSecondExample" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="autoTestEz" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="frankesteinTest.logbookTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="frankesteinTest.logbookTest" />
+      <option name="MAIN_CLASS_NAME" value="frankesteinTest.logbookTest.restart_34_Hours" />
+      <option name="METHOD_NAME" value="restartSecondExample" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SoloOrders" type="MavenRunConfiguration" factoryName="Maven">
       <MavenSettings>
         <option name="myGeneralSettings" />
@@ -264,18 +267,18 @@
       <item itemvalue="JUnit.TestMethods.getEventNewOrder" />
       <item itemvalue="Maven.SoloOrders" />
       <item itemvalue="JUnit.SplitSleeperBerthTest.split_2_8_Test" />
-      <item itemvalue="JUnit.SplitSleeperBerthTest.split_8_2_Test" />
       <item itemvalue="JUnit.TestMethods.test" />
-      <item itemvalue="JUnit.TestMethods" />
       <item itemvalue="JUnit.TestMethods.recurseKeys" />
+      <item itemvalue="JUnit.restart_34_Hours.restartFirstExample" />
+      <item itemvalue="JUnit.restart_34_Hours.restartSecondExample" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.restart_34_Hours.restartSecondExample" />
+        <item itemvalue="JUnit.restart_34_Hours.restartFirstExample" />
         <item itemvalue="JUnit.SplitSleeperBerthTest.split_2_8_Test" />
         <item itemvalue="JUnit.TestMethods.test" />
         <item itemvalue="JUnit.TestMethods.recurseKeys" />
-        <item itemvalue="JUnit.TestMethods" />
-        <item itemvalue="JUnit.SplitSleeperBerthTest.split_8_2_Test" />
       </list>
     </recent_temporary>
   </component>
@@ -296,13 +299,6 @@
       <workItem from="1562665338918" duration="52834000" />
       <workItem from="1562782581468" duration="9021000" />
       <workItem from="1562822119836" duration="58303000" />
-    </task>
-    <task id="LOCAL-00050" summary="new charge2 refactor test was add">
-      <created>1571320376717</created>
-      <option name="number" value="00050" />
-      <option name="presentableId" value="LOCAL-00050" />
-      <option name="project" value="LOCAL" />
-      <updated>1571320376719</updated>
     </task>
     <task id="LOCAL-00051" summary="new charge2 refactor test was add">
       <created>1571643737306</created>
@@ -640,7 +636,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599211238736</updated>
     </task>
-    <option name="localTasksCounter" value="99" />
+    <task id="LOCAL-00099" summary="phone verification3 was add">
+      <created>1599223742462</created>
+      <option name="number" value="00099" />
+      <option name="presentableId" value="LOCAL-00099" />
+      <option name="project" value="LOCAL" />
+      <updated>1599223742462</updated>
+    </task>
+    <option name="localTasksCounter" value="100" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -676,7 +679,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value=" was add accoun fleet test" />
     <MESSAGE value=" document fleet test was add" />
     <MESSAGE value=" up date document fleet test was add" />
     <MESSAGE value=" doc test refactoring test was add" />
@@ -701,7 +703,8 @@
     <MESSAGE value="sb 8/2 test was add" />
     <MESSAGE value="phone verification was add" />
     <MESSAGE value="phone verification2 was add" />
-    <option name="LAST_COMMIT_MESSAGE" value="phone verification2 was add" />
+    <MESSAGE value="phone verification3 was add" />
+    <option name="LAST_COMMIT_MESSAGE" value="phone verification3 was add" />
   </component>
   <component name="WindowStateProjectService">
     <state x="-1230" y="275" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1598527830294">
@@ -720,25 +723,25 @@
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1180" y="275" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1596797375678" />
-    <state width="1877" height="297" key="GridCell.Tab.0.bottom" timestamp="1599211054353">
+    <state width="1877" height="89" key="GridCell.Tab.0.bottom" timestamp="1599232144848">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="297" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1599211054353" />
+    <state width="1877" height="89" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1599232144848" />
     <state width="1877" height="343" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1596529245354" />
-    <state width="1877" height="297" key="GridCell.Tab.0.center" timestamp="1599211054352">
+    <state width="1877" height="89" key="GridCell.Tab.0.center" timestamp="1599232144848">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="297" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1599211054352" />
+    <state width="1877" height="89" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1599232144848" />
     <state width="1877" height="343" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1596529245354" />
-    <state width="1877" height="297" key="GridCell.Tab.0.left" timestamp="1599211054352">
+    <state width="1877" height="89" key="GridCell.Tab.0.left" timestamp="1599232144848">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="297" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1599211054352" />
+    <state width="1877" height="89" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1599232144848" />
     <state width="1877" height="343" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1596529245353" />
-    <state width="1877" height="297" key="GridCell.Tab.0.right" timestamp="1599211054353">
+    <state width="1877" height="89" key="GridCell.Tab.0.right" timestamp="1599232144848">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="297" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1599211054353" />
+    <state width="1877" height="89" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1599232144848" />
     <state width="1877" height="343" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1596529245354" />
     <state width="1877" height="272" key="GridCell.Tab.1.bottom" timestamp="1598011108027">
       <screen x="-1920" y="0" width="1920" height="1040" />
@@ -760,10 +763,10 @@
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1459" y="165" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1596807282906" />
-    <state x="-1368" y="253" key="Vcs.Push.Dialog.v2" timestamp="1599211249595">
+    <state x="-1368" y="253" key="Vcs.Push.Dialog.v2" timestamp="1599223821071">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="-1368" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1599211249595" />
+    <state x="-1368" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1599223821071" />
     <state x="-1828" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1597065879990">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>

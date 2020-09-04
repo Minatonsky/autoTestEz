@@ -39,8 +39,7 @@ public class SplitSleeperBerthTest extends ParentTest {
         logsPage.addStatus("10:00:00 AM", "12:00:00 PM", "Dr");
         logsPage.addStatus("12:00:00 PM", "04:00:00 PM", "Dr");
         logsPage.addStatus("04:00:00 PM", "11:59:59 PM", "Sb");
-        logsPage.clickOnLastMinuteOnStatusList();
-        logsPage.selectStatus("Sb");
+        logsPage.lifeHackDeliteLastMinuteOnLogbook("Sb");
         logsPage.clickOnSaveInfoButton();
         logsPage.closeCorrectionSavePopUp();
 
@@ -55,8 +54,7 @@ public class SplitSleeperBerthTest extends ParentTest {
         logsPage.addStatus("12:00:00 PM", "01:00:00 PM", "Dr");
         logsPage.addStatus("01:00:00 PM", "09:00:00 PM", "Sb");
         logsPage.addStatus("09:00:00 PM", "11:59:59 PM", "Dr");
-        logsPage.clickOnLastMinuteOnStatusList();
-        logsPage.selectStatus("Dr");
+        logsPage.lifeHackDeliteLastMinuteOnLogbook("Dr");
         logsPage.clickOnSaveInfoButton();
         logsPage.closeCorrectionSavePopUp();
 
@@ -83,8 +81,7 @@ public class SplitSleeperBerthTest extends ParentTest {
         logsPage.addStatus("12:00:00 PM", "04:00:00 PM", "Sb");
         logsPage.addStatus("04:00:00 PM", "10:00:00 PM", "Dr");
         logsPage.addStatus("10:00:00 PM", "11:59:59 PM", "Sb");
-        logsPage.clickOnLastMinuteOnStatusList();
-        logsPage.selectStatus("Sb");
+        logsPage.lifeHackDeliteLastMinuteOnLogbook("Sb");
         logsPage.clickOnSaveInfoButton();
         logsPage.closeCorrectionSavePopUp();
 
@@ -99,8 +96,7 @@ public class SplitSleeperBerthTest extends ParentTest {
         logsPage.addStatus("01:00:00 PM", "07:00:00 PM", "Dr");
         logsPage.addStatus("07:00:00 PM", "09:00:00 PM", "Sb");
         logsPage.addStatus("09:00:00 PM", "11:59:59 PM", "Dr");
-        logsPage.clickOnLastMinuteOnStatusList();
-        logsPage.selectStatus("Dr");
+        logsPage.lifeHackDeliteLastMinuteOnLogbook("Dr");
         logsPage.clickOnSaveInfoButton();
         logsPage.closeCorrectionSavePopUp();
 

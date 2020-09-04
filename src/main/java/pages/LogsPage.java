@@ -77,7 +77,10 @@ public class LogsPage extends ParentPage {
         actionsWithOurElements.clickOnElement(buttonInsertStatus);
         waitABit(3);
     }
-    public void clickOnLastMinuteOnStatusList(){actionsWithOurElements.clickOnElement(lastMinute);}
+    public void lifeHackDeliteLastMinuteOnLogbook(String status){
+        actionsWithOurElements.clickOnElement(lastMinute);
+        selectStatus(status);
+    }
     public void selectStatus(String status){
         if (status.equals("On")){
             actionsWithOurElements.clickOnElement(statusOn);

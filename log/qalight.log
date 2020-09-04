@@ -1694,3 +1694,97 @@ Session ID: 99b9d7e3cf3638bf58dff41ee397051a
 2020-04-09 12:17:45   INFO [pages.LoginPage] : Login Page was opened
 2020-04-09 12:17:45   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
 2020-04-09 12:17:46   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-04-09 17:19:54   INFO [frankesteinTest.logbookTest.restart_34_Hours] : Chrome will be started
+2020-04-09 17:19:56   INFO [frankesteinTest.logbookTest.restart_34_Hours] : Chrome is started
+2020-04-09 17:19:57   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-04-09 17:20:01   INFO [pages.LoginPage] : Phone verified already
+2020-04-09 17:20:03   INFO [pages.LoginPage] : Login Page was opened
+2020-04-09 17:20:04   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-04-09 17:20:04   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-04-09 17:20:20   INFO [libs.ActionsWithOurElements] : 120000PM was inputted into element
+2020-04-09 17:20:21   INFO [libs.ActionsWithOurElements] : 100000AM was inputted into element
+2020-04-09 17:20:25   INFO [libs.ActionsWithOurElements] : 040000PM was inputted into element
+2020-04-09 17:20:25   INFO [libs.ActionsWithOurElements] : 120000PM was inputted into element
+2020-04-09 17:20:29   INFO [libs.ActionsWithOurElements] : 090000PM was inputted into element
+2020-04-09 17:20:29   INFO [libs.ActionsWithOurElements] : 050000PM was inputted into element
+2020-04-09 17:20:33   INFO [libs.ActionsWithOurElements] : 110000PM was inputted into element
+2020-04-09 17:20:34   INFO [libs.ActionsWithOurElements] : 090000PM was inputted into element
+2020-04-09 17:20:38   INFO [libs.ActionsWithOurElements] : 115959PM was inputted into element
+2020-04-09 17:20:38   INFO [libs.ActionsWithOurElements] : 110000PM was inputted into element
+2020-04-09 17:21:02   INFO [libs.ActionsWithOurElements] : 120000PM was inputted into element
+2020-04-09 17:21:02   INFO [libs.ActionsWithOurElements] : 100000AM was inputted into element
+2020-04-09 17:21:06   INFO [libs.ActionsWithOurElements] : 030000PM was inputted into element
+2020-04-09 17:21:07   INFO [libs.ActionsWithOurElements] : 120000PM was inputted into element
+2020-04-09 17:21:11   INFO [libs.ActionsWithOurElements] : 090000PM was inputted into element
+2020-04-09 17:21:11   INFO [libs.ActionsWithOurElements] : 040000PM was inputted into element
+2020-04-09 17:21:15   INFO [libs.ActionsWithOurElements] : 110000PM was inputted into element
+2020-04-09 17:21:16   INFO [libs.ActionsWithOurElements] : 090000PM was inputted into element
+2020-04-09 17:21:19   INFO [libs.ActionsWithOurElements] : 115959PM was inputted into element
+2020-04-09 17:21:20   INFO [libs.ActionsWithOurElements] : 110000PM was inputted into element
+2020-04-09 17:21:34   INFO [frankesteinTest.logbookTest.restart_34_Hours] :  DB connection closed 
+2020-04-09 17:32:12   INFO [frankesteinTest.logbookTest.restart_34_Hours] : Chrome will be started
+2020-04-09 17:32:15   INFO [frankesteinTest.logbookTest.restart_34_Hours] : Chrome is started
+2020-04-09 17:32:15   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-04-09 17:32:19   INFO [pages.LoginPage] : Phone verified already
+2020-04-09 17:32:21   INFO [pages.LoginPage] : Login Page was opened
+2020-04-09 17:32:21   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-04-09 17:32:22   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-04-09 17:32:37   INFO [libs.ActionsWithOurElements] : 120000PM was inputted into element
+2020-04-09 17:32:38   INFO [libs.ActionsWithOurElements] : 100000AM was inputted into element
+2020-04-09 17:32:42   INFO [libs.ActionsWithOurElements] : 040000PM was inputted into element
+2020-04-09 17:32:42   INFO [libs.ActionsWithOurElements] : 120000PM was inputted into element
+2020-04-09 17:32:46   INFO [libs.ActionsWithOurElements] : 090000PM was inputted into element
+2020-04-09 17:32:47   INFO [libs.ActionsWithOurElements] : 050000PM was inputted into element
+2020-04-09 17:32:51   INFO [libs.ActionsWithOurElements] : 110000PM was inputted into element
+2020-04-09 17:32:51   INFO [libs.ActionsWithOurElements] : 090000PM was inputted into element
+2020-04-09 17:32:55   INFO [libs.ActionsWithOurElements] : 115959PM was inputted into element
+2020-04-09 17:32:56   INFO [libs.ActionsWithOurElements] : 110000PM was inputted into element
+2020-04-09 17:33:20   INFO [libs.ActionsWithOurElements] : 120000PM was inputted into element
+2020-04-09 17:33:20   INFO [libs.ActionsWithOurElements] : 100000AM was inputted into element
+2020-04-09 17:33:24   INFO [libs.ActionsWithOurElements] : 030000PM was inputted into element
+2020-04-09 17:33:25   INFO [libs.ActionsWithOurElements] : 120000PM was inputted into element
+2020-04-09 17:33:28   INFO [libs.ActionsWithOurElements] : 090000PM was inputted into element
+2020-04-09 17:33:29   INFO [libs.ActionsWithOurElements] : 040000PM was inputted into element
+2020-04-09 17:33:33   INFO [libs.ActionsWithOurElements] : 110000PM was inputted into element
+2020-04-09 17:33:33   INFO [libs.ActionsWithOurElements] : 090000PM was inputted into element
+2020-04-09 17:33:37   INFO [libs.ActionsWithOurElements] : 115959PM was inputted into element
+2020-04-09 17:33:38   INFO [libs.ActionsWithOurElements] : 110000PM was inputted into element
+2020-04-09 17:33:52   INFO [pages.LogsPage] : getStatusDataFromDB restart34 122400
+2020-04-09 17:33:52   INFO [pages.LogsPage] : restartHours 122400
+2020-04-09 17:33:53   INFO [frankesteinTest.logbookTest.restart_34_Hours] : AC passed
+2020-04-09 17:33:59   INFO [frankesteinTest.logbookTest.restart_34_Hours] : AC passed
+2020-04-09 17:33:59   INFO [frankesteinTest.logbookTest.restart_34_Hours] :  DB connection closed 
+2020-04-09 18:09:07   INFO [frankesteinTest.logbookTest.restart_34_Hours] : Chrome will be started
+2020-04-09 18:09:10   INFO [frankesteinTest.logbookTest.restart_34_Hours] : Chrome is started
+2020-04-09 18:09:10   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-04-09 18:09:14   INFO [pages.LoginPage] : Phone verified already
+2020-04-09 18:09:16   INFO [pages.LoginPage] : Login Page was opened
+2020-04-09 18:09:17   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-04-09 18:09:17   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-04-09 18:09:34   INFO [libs.ActionsWithOurElements] : 010000AM was inputted into element
+2020-04-09 18:09:35   INFO [libs.ActionsWithOurElements] : 120000AM was inputted into element
+2020-04-09 18:09:39   INFO [libs.ActionsWithOurElements] : 030000AM was inputted into element
+2020-04-09 18:09:39   INFO [libs.ActionsWithOurElements] : 010000AM was inputted into element
+2020-04-09 18:09:43   INFO [libs.ActionsWithOurElements] : 110000AM was inputted into element
+2020-04-09 18:09:44   INFO [libs.ActionsWithOurElements] : 050000AM was inputted into element
+2020-04-09 18:09:48   INFO [libs.ActionsWithOurElements] : 010000PM was inputted into element
+2020-04-09 18:09:48   INFO [libs.ActionsWithOurElements] : 120000PM was inputted into element
+2020-04-09 18:09:52   INFO [libs.ActionsWithOurElements] : 115959PM was inputted into element
+2020-04-09 18:09:52   INFO [libs.ActionsWithOurElements] : 090000PM was inputted into element
+2020-04-09 18:10:16   INFO [libs.ActionsWithOurElements] : 080000AM was inputted into element
+2020-04-09 18:10:16   INFO [libs.ActionsWithOurElements] : 120000AM was inputted into element
+2020-04-09 18:10:20   INFO [libs.ActionsWithOurElements] : 115959PM was inputted into element
+2020-04-09 18:10:21   INFO [libs.ActionsWithOurElements] : 110000PM was inputted into element
+2020-04-09 18:10:44   INFO [libs.ActionsWithOurElements] : 040000AM was inputted into element
+2020-04-09 18:10:45   INFO [libs.ActionsWithOurElements] : 120000AM was inputted into element
+2020-04-09 18:10:49   INFO [libs.ActionsWithOurElements] : 090000AM was inputted into element
+2020-04-09 18:10:49   INFO [libs.ActionsWithOurElements] : 050000AM was inputted into element
+2020-04-09 18:10:53   INFO [libs.ActionsWithOurElements] : 120000PM was inputted into element
+2020-04-09 18:10:54   INFO [libs.ActionsWithOurElements] : 100000AM was inputted into element
+2020-04-09 18:10:57   INFO [libs.ActionsWithOurElements] : 140000PM was inputted into element
+2020-04-09 18:10:58   INFO [libs.ActionsWithOurElements] : 120000PM was inputted into element
+2020-04-09 18:11:12   INFO [pages.LogsPage] : getStatusDataFromDB restart34 122400
+2020-04-09 18:11:12   INFO [pages.LogsPage] : restartHours 122400
+2020-04-09 18:11:13   INFO [frankesteinTest.logbookTest.restart_34_Hours] : AC passed
+2020-04-09 18:11:19   INFO [frankesteinTest.logbookTest.restart_34_Hours] : AC passed
+2020-04-09 18:11:19   INFO [frankesteinTest.logbookTest.restart_34_Hours] :  DB connection closed 
