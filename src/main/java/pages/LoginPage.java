@@ -9,9 +9,7 @@ import org.openqa.selenium.support.FindBy;
 
 import java.sql.SQLException;
 import java.util.Date;
-import java.util.Map;
 
-import static libs.Utils.listArrayToMap;
 import static libs.Utils.waitABit;
 
 public class LoginPage extends ParentPage {
@@ -95,26 +93,16 @@ public class LoginPage extends ParentPage {
 
     }
 
-    public void userPhoneVerifiedValidLogIn(String login, String passWord) {
-        openPage();
-        openLoginForm();
-        enterLogin(login);
-        enterPass(passWord);
-        waitABit(3);
-        clickOnSubmitButton();
-        waitABit(1);
-        openDashBoardMenuByCookies();
-        waitABit(5);
-    }
-
     public void verificationPhone(String login) throws SQLException {
         String userId = utilsForDB.getUserIdByEmail(login);
         String userPhone = utilsForDB.getUserPhoneById(userId);
+        String phoneVerification = utilsForDB.getUserPhoneVerification(userId);
+
         String date = "2021-06-03 12:23:10";
         String phone = "067 557 5011";
-        Map<String, Object> tempStatusData = listArrayToMap(utilsForDB.getUserPhoneVerificationData(userId));
+
         if (!userPhone.isEmpty()){
-            if (!userPhone.equals(tempStatusData.get("phone").toString())){
+            if (!userPhone.equals(phoneVerification)){
                 utilsForDB.setVerificationPhone(userId, userPhone);
                 utilsForDB.setVerificationExpireDatePhone(userId, date);
 
@@ -124,7 +112,7 @@ public class LoginPage extends ParentPage {
             }
         } else {
             utilsForDB.setUserPhone(userId, phone);
-            if (tempStatusData.get("phone").toString().isEmpty()){
+            if (phoneVerification.isEmpty()){
                 utilsForDB.insertVerificationPhone(Integer.parseInt(userId), phone, date);
                 utilsForDB.insertVerificationExpireDatePhone(Integer.parseInt(userId), date);
             } else {

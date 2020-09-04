@@ -535,13 +535,9 @@ public class UtilsForDB {
 
 //    PHONE VERIFICATION
 
-    public List<ArrayList> getUserPhoneVerificationData(String userId) throws SQLException {
-        return dBMySQL.selectTable("SELECT pv.phone AS verificationPhone, pv.verified, pve.dateTimeExpire FROM users u \n" +
-                "\tLEFT JOIN phoneVerification pv ON u.id = pv.userId\n" +
-                "\tLEFT JOIN phoneVerificationExpire pve ON u.id = pve.userId\n" +
-                "\t\tWHERE pv.userId = " + userId + ";");
+    public String getUserPhoneVerification(String userId) throws SQLException {
+        return dBMySQL.selectValue("SELECT pv.phone FROM phoneVerification pv WHERE pv.userId = " + userId + ";");
     }
-
     public void setUserPhone(String userId, String phone) throws SQLException {
         dBMySQL.changeTable("UPDATE users SET phone = '" + phone + "' WHERE id = " + userId + ";");
     }
