@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -32,12 +35,79 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="660eb711-957d-418e-9483-8b2931da6e6e" name="Default Changelist" comment="phone verification3 was add">
-      <change afterPath="$PROJECT_DIR$/src/test/java/frankesteinTest/logbookTest/restart_34_Hours.java" afterDir="false" />
+    <list default="true" id="660eb711-957d-418e-9483-8b2931da6e6e" name="Default Changelist" comment="restart 34 was add">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log/qalight.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/qalight.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/LogsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/LogsPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/frankesteinTest/logbookTest/SplitSleeperBerthTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/frankesteinTest/logbookTest/SplitSleeperBerthTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/libs/EStatusTime.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/libs/StatusTime.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/AccountSettingsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/AccountSettingsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/DashboardPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/DashboardPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pagesFrankestein/AccountSettingsFPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pagesFrankestein/DashboardFPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pagesFrankestein/DocumentsFPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/DocumentsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pagesFrankestein/EldFPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pagesFrankestein/EquipmentFPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pagesFrankestein/FinancesFPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pagesFrankestein/FleetDriversFPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pagesFrankestein/HelpAndTrainingFPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pagesFrankestein/LoginFPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pagesFrankestein/LogsFPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pagesFrankestein/ManagerEldFPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pagesFrankestein/ManagerModalEldFPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pagesFrankestein/ModalOrderFPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pagesFrankestein/OrderInfoFPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pagesFrankestein/ParentFPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pagesFrankestein/ReturnsFPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pagesFrankestein/SettingsFPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pagesLocal/AccountSettingsLocalSitePage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pagesLocal/DashboardLocalSitePage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pagesLocal/DocumentsLocalSitePage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pagesLocal/DriverSettingsLocalSitePage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pagesLocal/EquipmentLocalSitePage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pagesLocal/LoginLocalSitePage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pagesLocal/LogsLocalSitePage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pagesLocal/ParentLocalSitePage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/frankesteinParamsTest/FleetOrderParamsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/parameterizedTest/FleetOrderParamsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/frankesteinParamsTest/ManagerOrderParamsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/parameterizedTest/ManagerOrderParamsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/frankesteinParamsTest/SafetyAddCardParamsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/parameterizedTest/SafetyAddCardParamsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/frankesteinParamsTest/SafetyCreateEquipmentParamTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/parameterizedTest/SafetyCreateEquipmentParamTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/frankesteinParamsTest/SoloAddCardParamsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/parameterizedTest/SoloAddCardParamsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/frankesteinParamsTest/SoloDriverCreateEquipmentParamTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/parameterizedTest/SoloDriverCreateEquipmentParamTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/frankesteinParamsTest/SoloDriverSettingsParameterizedTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/parameterizedTest/SoloDriverSettingsParameterizedTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/frankesteinParamsTest/SoloOrderParamsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/parameterizedTest/SoloOrderParamsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/frankesteinTest/ReturnDevicesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/singleTest/ReturnDevicesTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/frankesteinTest/documentsTest/CarrierCreateDocumentsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/singleTest/documentsTest/CarrierCreateDocumentsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/frankesteinTest/documentsTest/CarrierUpDateDocumentsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/singleTest/documentsTest/CarrierUpDateDocumentsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/frankesteinTest/equipmentTest/SoloDriverEquipmentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/singleTest/equipmentTest/SoloDriverEquipmentTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/frankesteinTest/logbookTest/CycleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/singleTest/logbookTest/CycleTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/frankesteinTest/logbookTest/LogbookSimpleTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/singleTest/logbookTest/LogbookSimpleTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/frankesteinTest/logbookTest/ShiftAndDrivingHoursWithParamsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/singleTest/logbookTest/ShiftAndDrivingHoursWithParamsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/frankesteinTest/logbookTest/SplitSleeperBerthTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/singleTest/logbookTest/SplitSleeperBerthTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/frankesteinTest/logbookTest/restart_34_Hours.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/singleTest/logbookTest/restart_34_Hours.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/frankesteinTest/settingsTest/DriverLicenseParameterizedTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/singleTest/settingsTest/DriverLicenseParameterizedTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/frankesteinTest/settingsTest/FleetAccountSettingTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/singleTest/settingsTest/FleetAccountSettingTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/frankesteinTest/settingsTest/SafetyDriverSettings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/singleTest/settingsTest/SafetyDriverSettings.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/frankesteinTest/settingsTest/SoloDriverSettingAccountTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/singleTest/settingsTest/SoloDriverSettingAccountTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/frankesteinTest/settingsTest/SoloDriverSettingsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/singleTest/settingsTest/SoloDriverSettingsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/frankesteinTest/smartSafety/CancelSmartSafetyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/singleTest/smartSafety/CancelSmartSafetyTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/frankesteinTest/smartSafety/ChargeSmartSafety.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/singleTest/smartSafety/ChargeSmartSafety.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/frankesteinTest/smartSafety/SmartSafetyOrderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/singleTest/smartSafety/SmartSafetyOrderTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/localSiteParameterizedTest/SoloDriverCreateEquipmentParameterizedLocalSiteTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/localSiteParameterizedTest/SoloDriverDocumentsParameterizedLocalSiteTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/localSiteParameterizedTest/SoloDriverLicenseParameterizedLocalSiteTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/localSiteTest/SoloDriverDocumentsCreateLocalSiteTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/localSiteTest/SoloDriverDocumentsUpdateLocalSiteTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/localSiteTest/SoloDriverEquipmentTestLocal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/localSiteTest/SoloDriverRemindersLocalSiteTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/localSiteTest/SoloDriverSettingAccountTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/localSiteTest/SoloDriverSettingsLocalSiteTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/localSiteTest/documentsTest/CarrierCreateDocumentsTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/localSiteTest/documentsTest/CarrierUpDateDocumentsTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/localSiteTest/equipmentTest/CarrierCreateEquipment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/localSiteTest/logbookTest/FourteenHourDrivingWindow.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/parentTest/ParentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/parentTest/ParentTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,6 +138,11 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.1.1\plugins\maven\lib\maven3" />
+      </MavenGeneralSettings>
+    </option>
     <option name="importingSettings">
       <MavenImportingSettings>
         <option name="vmOptionsForImporter" value="-Xmx768m" />
@@ -123,19 +198,50 @@
       <recent name="parameterizedOrders" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.restart_34_Hours.restartSecondExample">
-    <configuration name="SplitSleeperBerthTest.split_2_8_Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="autoTestEz" />
+  <component name="RunManager" selected="JUnit.ReturnDevicesTest">
+    <configuration name="CarrierCreateDocumentsTest.createBOL" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="testdevEzlogz" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="frankesteinTest.logbookTest.*" />
+          <option name="PATTERN" value="singleTest.documentsTest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="frankesteinTest.logbookTest" />
-      <option name="MAIN_CLASS_NAME" value="frankesteinTest.logbookTest.SplitSleeperBerthTest" />
-      <option name="METHOD_NAME" value="split_2_8_Test" />
+      <option name="PACKAGE_NAME" value="singleTest.documentsTest" />
+      <option name="MAIN_CLASS_NAME" value="singleTest.documentsTest.CarrierCreateDocumentsTest" />
+      <option name="METHOD_NAME" value="createBOL" />
       <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CarrierCreateDocumentsTest.createFuelReceipts" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="testdevEzlogz" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="singleTest.documentsTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="singleTest.documentsTest" />
+      <option name="MAIN_CLASS_NAME" value="singleTest.documentsTest.CarrierCreateDocumentsTest" />
+      <option name="METHOD_NAME" value="createFuelReceipts" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReturnDevicesTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="testdevEzlogz" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="singleTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="singleTest" />
+      <option name="MAIN_CLASS_NAME" value="singleTest.ReturnDevicesTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -156,48 +262,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestMethods.recurseKeys" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="autoTestEz" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="unitTest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="unitTest" />
-      <option name="MAIN_CLASS_NAME" value="unitTest.TestMethods" />
-      <option name="METHOD_NAME" value="recurseKeys" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestMethods.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="autoTestEz" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="unitTest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="unitTest" />
-      <option name="MAIN_CLASS_NAME" value="unitTest.TestMethods" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="restart_34_Hours.restartFirstExample" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="autoTestEz" />
+      <module name="testdevEzlogz" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="frankesteinTest.logbookTest.*" />
+          <option name="PATTERN" value="singleTest.logbookTest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="frankesteinTest.logbookTest" />
-      <option name="MAIN_CLASS_NAME" value="frankesteinTest.logbookTest.restart_34_Hours" />
+      <option name="PACKAGE_NAME" value="singleTest.logbookTest" />
+      <option name="MAIN_CLASS_NAME" value="singleTest.logbookTest.restart_34_Hours" />
       <option name="METHOD_NAME" value="restartFirstExample" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -205,15 +279,15 @@
       </method>
     </configuration>
     <configuration name="restart_34_Hours.restartSecondExample" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="autoTestEz" />
+      <module name="testdevEzlogz" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="frankesteinTest.logbookTest.*" />
+          <option name="PATTERN" value="singleTest.logbookTest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="frankesteinTest.logbookTest" />
-      <option name="MAIN_CLASS_NAME" value="frankesteinTest.logbookTest.restart_34_Hours" />
+      <option name="PACKAGE_NAME" value="singleTest.logbookTest" />
+      <option name="MAIN_CLASS_NAME" value="singleTest.logbookTest.restart_34_Hours" />
       <option name="METHOD_NAME" value="restartSecondExample" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -264,24 +338,28 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="JUnit.CarrierCreateDocumentsTest.createBOL" />
+      <item itemvalue="JUnit.CarrierCreateDocumentsTest.createFuelReceipts" />
+      <item itemvalue="JUnit.ReturnDevicesTest" />
       <item itemvalue="JUnit.TestMethods.getEventNewOrder" />
-      <item itemvalue="Maven.SoloOrders" />
-      <item itemvalue="JUnit.SplitSleeperBerthTest.split_2_8_Test" />
-      <item itemvalue="JUnit.TestMethods.test" />
-      <item itemvalue="JUnit.TestMethods.recurseKeys" />
       <item itemvalue="JUnit.restart_34_Hours.restartFirstExample" />
       <item itemvalue="JUnit.restart_34_Hours.restartSecondExample" />
+      <item itemvalue="Maven.SoloOrders" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ReturnDevicesTest" />
+        <item itemvalue="JUnit.CarrierCreateDocumentsTest.createFuelReceipts" />
+        <item itemvalue="JUnit.CarrierCreateDocumentsTest.createBOL" />
         <item itemvalue="JUnit.restart_34_Hours.restartSecondExample" />
         <item itemvalue="JUnit.restart_34_Hours.restartFirstExample" />
-        <item itemvalue="JUnit.SplitSleeperBerthTest.split_2_8_Test" />
-        <item itemvalue="JUnit.TestMethods.test" />
-        <item itemvalue="JUnit.TestMethods.recurseKeys" />
       </list>
     </recent_temporary>
   </component>
+  <component name="SQLPlugin.ProjectConfiguration">
+    <queries />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -299,13 +377,6 @@
       <workItem from="1562665338918" duration="52834000" />
       <workItem from="1562782581468" duration="9021000" />
       <workItem from="1562822119836" duration="58303000" />
-    </task>
-    <task id="LOCAL-00051" summary="new charge2 refactor test was add">
-      <created>1571643737306</created>
-      <option name="number" value="00051" />
-      <option name="presentableId" value="LOCAL-00051" />
-      <option name="project" value="LOCAL" />
-      <updated>1571643737307</updated>
     </task>
     <task id="LOCAL-00052" summary="month-to-month 12 test was add">
       <created>1571666501270</created>
@@ -643,7 +714,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599223742462</updated>
     </task>
-    <option name="localTasksCounter" value="100" />
+    <task id="LOCAL-00100" summary="restart 34 was add">
+      <created>1599232786374</created>
+      <option name="number" value="00100" />
+      <option name="presentableId" value="LOCAL-00100" />
+      <option name="project" value="LOCAL" />
+      <updated>1599232786374</updated>
+    </task>
+    <option name="localTasksCounter" value="101" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -679,7 +757,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value=" document fleet test was add" />
     <MESSAGE value=" up date document fleet test was add" />
     <MESSAGE value=" doc test refactoring test was add" />
     <MESSAGE value=" doc test2 refactoring test was add" />
@@ -704,7 +781,8 @@
     <MESSAGE value="phone verification was add" />
     <MESSAGE value="phone verification2 was add" />
     <MESSAGE value="phone verification3 was add" />
-    <option name="LAST_COMMIT_MESSAGE" value="phone verification3 was add" />
+    <MESSAGE value="restart 34 was add" />
+    <option name="LAST_COMMIT_MESSAGE" value="restart 34 was add" />
   </component>
   <component name="WindowStateProjectService">
     <state x="-1230" y="275" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1598527830294">
@@ -719,29 +797,41 @@
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1155" y="221" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1597147302702" />
+    <state x="-1280" y="256" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1599232813301">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1280" y="256" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1599232813301" />
+    <state x="-1586" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1599557658516">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1586" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1599557658516" />
+    <state x="-1230" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1599557229772">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1230" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1599557229772" />
     <state x="-1180" y="275" key="FileChooserDialogImpl" timestamp="1596797375678">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1180" y="275" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1596797375678" />
-    <state width="1877" height="89" key="GridCell.Tab.0.bottom" timestamp="1599232144848">
+    <state width="1877" height="79" key="GridCell.Tab.0.bottom" timestamp="1599573141064">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="89" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1599232144848" />
+    <state width="1877" height="79" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1599573141064" />
     <state width="1877" height="343" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1596529245354" />
-    <state width="1877" height="89" key="GridCell.Tab.0.center" timestamp="1599232144848">
+    <state width="1877" height="79" key="GridCell.Tab.0.center" timestamp="1599573141064">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="89" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1599232144848" />
+    <state width="1877" height="79" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1599573141064" />
     <state width="1877" height="343" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1596529245354" />
-    <state width="1877" height="89" key="GridCell.Tab.0.left" timestamp="1599232144848">
+    <state width="1877" height="79" key="GridCell.Tab.0.left" timestamp="1599573141064">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="89" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1599232144848" />
+    <state width="1877" height="79" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1599573141064" />
     <state width="1877" height="343" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1596529245353" />
-    <state width="1877" height="89" key="GridCell.Tab.0.right" timestamp="1599232144848">
+    <state width="1877" height="79" key="GridCell.Tab.0.right" timestamp="1599573141064">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="89" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1599232144848" />
+    <state width="1877" height="79" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1599573141064" />
     <state width="1877" height="343" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1596529245354" />
     <state width="1877" height="272" key="GridCell.Tab.1.bottom" timestamp="1598011108027">
       <screen x="-1920" y="0" width="1920" height="1040" />
@@ -759,14 +849,14 @@
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="272" key="GridCell.Tab.1.right/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1598011108026" />
-    <state x="-1459" y="165" key="SettingsEditor" timestamp="1596807282906">
+    <state x="-1459" y="165" key="SettingsEditor" timestamp="1599573136868">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="-1459" y="165" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1596807282906" />
-    <state x="-1368" y="253" key="Vcs.Push.Dialog.v2" timestamp="1599223821071">
+    <state x="-1459" y="165" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1599573136868" />
+    <state x="-1368" y="253" key="Vcs.Push.Dialog.v2" timestamp="1599232795169">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="-1368" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1599223821071" />
+    <state x="-1368" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1599232795169" />
     <state x="-1828" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1597065879990">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
@@ -775,6 +865,10 @@
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1407" y="249" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1597836173281" />
+    <state x="-1304" y="240" key="run.anything.popup" timestamp="1599557263544">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1304" y="240" key="run.anything.popup/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1599557263544" />
     <state x="-1297" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1599209409113">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>

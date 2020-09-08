@@ -16,9 +16,6 @@ public class DashboardPage extends ParentPage {
     @FindBy(xpath = "//*[@id='dash_head']")
     private WebElement dashboard;
 
-    @FindBy(xpath = ".//div[@class='dash_nav']")
-    private WebElement menuDash;
-
     @FindBy(xpath = ".//a[@href='/dash/eld/']")
     private WebElement pageELD;
 
@@ -63,6 +60,13 @@ public class DashboardPage extends ParentPage {
 
     @FindBy(xpath = ".//i[@class='fa fa-angle-double-left minimize-arrow']")
     private WebElement menuSizeButton;
+
+    @FindBy(xpath = ".//*[@class='dashboard-content__main-navigation mobile-hiden']//../a[@href='/dash/fleet/equipment/']")
+    private WebElement pageSafety;
+
+    @FindBy(xpath = ".//*[@class='icon-icons-navigation-ic-arrow']")
+    private WebElement menuDash;
+
 
 
     public boolean isDashboardPresent(){
@@ -120,6 +124,13 @@ public class DashboardPage extends ParentPage {
     public void goToReturnsPage() {
         waitABit(3);
         actionsWithOurElements.clickOnElement(pageReturns);
+    }
+    public void goToSafetyPage(){
+        waitABit(3);
+        actionsWithOurElements.clickOnElement(pageSafety);
+    }
+    public void openDashHeadMenu(){
+        actionsWithOurElements.clickOnElement(menuDash);
     }
 
 }

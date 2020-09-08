@@ -34,7 +34,7 @@ public class LoginPage extends ParentPage {
     private WebElement phoneVerificationClose;
 
 
-    public void openPage() {
+    private void openPage() {
         try {
             webDriver.get(baseUrl + "/");
             checkCurrentUrl();
@@ -45,21 +45,21 @@ public class LoginPage extends ParentPage {
         }
     }
 
-    public void openLoginForm() {
+    private void openLoginForm() {
         actionsWithOurElements.clickOnElement(loginButton);
     }
 
-    public void enterLogin(String login) {
+    private void enterLogin(String login) {
        actionsWithOurElements.enterTextToElement(userLoginInput, login);
     }
 
-    public void enterPass(String pass) {
+    private void enterPass(String pass) {
         actionsWithOurElements.enterTextToElement(userPasswordInput, pass);
     }
 
-    public void clickOnSubmitButton() { actionsWithOurElements.clickOnElement(submitButton); }
+    private void clickOnSubmitButton() { actionsWithOurElements.clickOnElement(submitButton); }
 
-    public void openDashBoardMenuByCookies(){
+    private void openDashBoardMenuByCookies(){
         Cookie cookie = new Cookie.Builder("minimize-menu", "1")
                 .domain(baseUrl.substring(8))
                 .expiresOn(new Date(2021, 10, 28))
@@ -70,7 +70,7 @@ public class LoginPage extends ParentPage {
         webDriver.manage().addCookie(cookie);
     }
 
-    public void closePhoneVerificationPopUp(){
+    private void closePhoneVerificationPopUp(){
         if (actionsWithOurElements.isElementDisplay(phoneVerificationClose)){
             actionsWithOurElements.clickOnElement(phoneVerificationClose);
             logger.info("Phone verification pop up Closed");
@@ -80,20 +80,7 @@ public class LoginPage extends ParentPage {
 
     }
 
-    public void userValidLogIn(String login, String passWord) throws SQLException {
-        verificationPhone(login);
-        openPage();
-        openLoginForm();
-        enterLogin(login);
-        enterPass(passWord);
-        waitABit(3);
-        clickOnSubmitButton();
-        openDashBoardMenuByCookies();
-        waitABit(3);
-
-    }
-
-    public void verificationPhone(String login) throws SQLException {
+    private void verificationPhone(String login) throws SQLException {
         String userId = utilsForDB.getUserIdByEmail(login);
         String userPhone = utilsForDB.getUserPhoneById(userId);
         String phoneVerification = utilsForDB.getUserPhoneVerification(userId);
@@ -122,4 +109,19 @@ public class LoginPage extends ParentPage {
 
         }
     }
+
+    public void userValidLogIn(String login, String passWord) throws SQLException {
+        verificationPhone(login);
+        openPage();
+        openLoginForm();
+        enterLogin(login);
+        enterPass(passWord);
+        waitABit(3);
+        clickOnSubmitButton();
+        openDashBoardMenuByCookies();
+        waitABit(3);
+
+    }
+
+
 }

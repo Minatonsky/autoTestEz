@@ -6,9 +6,9 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="WorkSpace" />
         <module name="testdevEzlogz" />
         <module name="autoTestEz" />
+        <module name="WorkSpace" />
       </profile>
     </annotationProcessing>
   </component>
