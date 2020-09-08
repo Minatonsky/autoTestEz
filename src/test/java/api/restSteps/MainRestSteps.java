@@ -1,4 +1,4 @@
-package restSteps;
+package api.restSteps;
 
 import io.restassured.RestAssured;
 import io.restassured.path.json.JsonPath;

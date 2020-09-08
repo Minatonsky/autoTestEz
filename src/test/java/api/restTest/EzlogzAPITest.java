@@ -1,12 +1,12 @@
-package restTest;
+package api.restTest;
 
+import api.restSteps.MainRestSteps;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import org.json.JSONObject;
 import org.json.simple.parser.ParseException;
 import org.junit.Assert;
 import org.junit.Test;
-import restSteps.MainRestSteps;
 
 import java.io.File;
 import java.io.IOException;
