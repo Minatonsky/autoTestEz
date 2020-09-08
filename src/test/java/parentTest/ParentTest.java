@@ -1,10 +1,10 @@
 package parentTest;
 
 import com.github.javafaker.Faker;
-import libs.ConfigProperties;
-import libs.Database;
-import libs.UtilsForDB;
+import io.qameta.allure.Step;
+import libs.*;
 import org.aeonbits.owner.ConfigFactory;
+import org.apache.log4j.Logger;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
@@ -30,13 +30,17 @@ import java.util.Iterator;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
-public class ParentTest extends ParentTestWithoutWebDriver{
+import static libs.Utils.waitABit;
+
+public class ParentTest{
+    Logger logger = Logger.getLogger(getClass());
     WebDriver webDriver;
     Database dBMySQL;
     String nameDB = "MySQL_PADB_DB";
     String driverDB = "MySQL";
 
     protected UtilsForDB utilsForDB;
+    protected ExcelDriver excelDriver;
 
     protected LoginPage loginPage;
     protected DashboardPage dashboardPage;
@@ -57,6 +61,7 @@ public class ParentTest extends ParentTestWithoutWebDriver{
 
 
 
+
     protected Faker faker;
 
     String browser = System.getProperty("browser");
@@ -69,6 +74,7 @@ public class ParentTest extends ParentTestWithoutWebDriver{
         webDriver.manage().window().maximize();
         webDriver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         dBMySQL = new Database(nameDB, driverDB);
+        excelDriver = new ExcelDriver();
         utilsForDB = new UtilsForDB(dBMySQL);
         faker = new Faker();
 
@@ -88,6 +94,7 @@ public class ParentTest extends ParentTestWithoutWebDriver{
         fleetDriversPage = new FleetDriversPage(webDriver, utilsForDB);
         returnsPage = new ReturnsPage(webDriver, utilsForDB);
         documentsPage = new DocumentsPage(webDriver, utilsForDB);
+
 
     }
 
@@ -195,6 +202,15 @@ public class ParentTest extends ParentTestWithoutWebDriver{
         {
             ex.printStackTrace();
         }
+    }
+    @Step
+    protected void checkAC(String message, boolean actual, boolean expected){
+        waitABit(1);
+        if (actual != expected){
+            logger.error("AC failed: " + message);
+        }
+        Assert.assertEquals(message,expected,actual);
+        logger.info("AC passed");
     }
 
 

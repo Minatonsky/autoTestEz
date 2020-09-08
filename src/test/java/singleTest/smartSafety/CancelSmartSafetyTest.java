@@ -1,5 +1,6 @@
 package singleTest.smartSafety;
 
+import libs.ChargeSmartSafetyMethods;
 import org.junit.Test;
 import parentTest.ParentTest;
 
@@ -13,6 +14,7 @@ import java.util.Map;
 import static libs.Utils.*;
 
 public class CancelSmartSafetyTest extends ParentTest {
+    ChargeSmartSafetyMethods chargeSmartSafetyMethods = new ChargeSmartSafetyMethods();
     Map dataForFleet = excelDriver.getData(configProperties.DATA_FILE_PATH() + "testLogin.xls", "validFleetLogin");
 
     String login = dataForFleet.get("login").toString();
