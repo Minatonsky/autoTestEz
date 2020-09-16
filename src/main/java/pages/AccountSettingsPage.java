@@ -6,6 +6,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+import static libs.Utils.waitABit;
+
 public class AccountSettingsPage extends ParentPage {
     public AccountSettingsPage(WebDriver webDriver, UtilsForDB utilsForDB) {
         super(webDriver, "/dash/settings/account/", utilsForDB);
@@ -85,7 +87,56 @@ public class AccountSettingsPage extends ParentPage {
     @FindBy(xpath = "//*[@id='locationIconWarning']//..//*[text()='Off']")
     private WebElement iconCheckOff;
 
-//ACCOUNT INFO
+    //    FLEET INFO
+
+    @FindBy(xpath = ".//*[@class='active_tab']/..//a[@href='/dash/settings/fleet_settings/']")
+    private WebElement fleetSettingsPage;
+
+    @FindBy(id="fleet_usdot")
+    private WebElement fleetUsdot;
+
+    @FindBy(id="fleet_name")
+    private WebElement fleetName;
+
+    @FindBy(id="fleet_ein")
+    private WebElement fleetEIN;
+
+    @FindBy(id="fleet_state")
+    private WebElement fleetState;
+
+    @FindBy(id="fleet_jur")
+    private WebElement fleetJurisdiction;
+
+    @FindBy(id="fleet_city")
+    private WebElement fleetCity;
+
+    @FindBy(id="fleet_street")
+    private WebElement fleetStreet;
+
+    @FindBy(id="fleet_zip")
+    private WebElement fleetZip;
+
+    @FindBy(id="fleet_size")
+    private WebElement fleetSize;
+
+    @FindBy(id="fleet_cycle")
+    private WebElement fleetCycle;
+
+    @FindBy(id="fleet_tz")
+    private WebElement fleetTimeZone;
+
+    @FindBy(xpath = "//*[@id='agricultureDeliveries']//..//*[text()='On']")
+    private WebElement possibleAgricultureOn;
+
+    @FindBy(xpath = "//*[@id='agricultureDeliveries']//..//*[text()='Off']")
+    private WebElement possibleAgricultureOff;
+
+    @FindBy(id="updateFleetDataButton")
+    private WebElement saveFleetInfoButton;
+
+
+
+    //ACCOUNT INFO
     public void clickOnAccountSetting(){actionsWithOurElements.clickOnElement(accountSetting);}
     public void enterFirstName(String firsNameInput){actionsWithOurElements.clearAndEnterTextToElement(firstName, firsNameInput);}
     public void enterLastName(String lastNameInput){actionsWithOurElements.clearAndEnterTextToElement(lastName, lastNameInput);}
@@ -192,6 +243,62 @@ public class AccountSettingsPage extends ParentPage {
             logger.error("Coordinate Icon failed");
             Assert.fail("Cannot work with element");
         }
+    }
+    //    FLEET INFO
+
+    public void clickOnFleetSettings(){actionsWithOurElements.clickOnElement(fleetSettingsPage);}
+    public void enterUsdot(String usdot){
+        actionsWithOurElements.clearElement(fleetUsdot);
+        actionsWithOurElements.enterTextOnElementJs(".//*[@id='fleet_usdot']", usdot);
+    }
+    public void enterFleetName(String name){
+        actionsWithOurElements.clearAndEnterTextToElement(fleetName, name);
+    }
+    public void enterFleetEIN(String ein){
+        actionsWithOurElements.clearElement(fleetEIN);
+        waitABit(3);
+        actionsWithOurElements.enterTextOnElementJs(".//*[@id='fleet_ein']", ein);
+//        actionsWithOurElements.clearAndEnterTextToElement(fleetEIN, ein);
+    }
+    public void setFleetState(String stateRandomValue) {
+        actionsWithOurElements.selectValueInDropDown(fleetState, stateRandomValue);
+        logger.info("Fleet state set " + stateRandomValue);
+    }
+    public void enterFleetCity(String city){
+        actionsWithOurElements.clearAndEnterTextToElement(fleetCity, city);
+    }
+    public void enterFleetStreet(String street){
+        actionsWithOurElements.clearAndEnterTextToElement(fleetStreet, street);
+    }
+    public void enterFleetZip(String zip){
+        actionsWithOurElements.clearAndEnterTextToElement(fleetZip, zip);
+    }
+    public void enterFleetSize(String size){
+        actionsWithOurElements.clearAndEnterTextToElement(fleetSize, size);
+    }
+    public void setFleetCycle(String cycleRandomValue){
+        actionsWithOurElements.selectValueInDropDown(fleetCycle, cycleRandomValue);
+        logger.info("Cycle Set " + cycleRandomValue);
+    }
+    public void setFleetTimeZone(String timeZoneRandomValue) {
+        actionsWithOurElements.selectValueInDropDown(fleetTimeZone, timeZoneRandomValue);
+        logger.info("Time zone set " + timeZoneRandomValue);
+    }
+    public void moveSliderAobrd(int value){
+        actionsWithOurElements.sliderMove("//*[@id='aobrdMPH']", value);
+    }
+    public void checkAgricultureDelivery(String checkBoxValue){
+        if (checkBoxValue.equals("0") || checkBoxValue.equals("")){
+            actionsWithOurElements.clickJsOnElement(possibleAgricultureOn);
+        } else if(checkBoxValue.equals("1")){
+            actionsWithOurElements.clickJsOnElement(possibleAgricultureOff);
+        } else {
+            logger.error("Agriculture Delivery failed");
+            Assert.fail("Cannot work with element");
+        }
+    }
+    public void clickOnSaveFleetInfoButton(){
+        actionsWithOurElements.clickOnElement(saveFleetInfoButton);
     }
 
 

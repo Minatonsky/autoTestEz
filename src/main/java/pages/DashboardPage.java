@@ -16,9 +16,6 @@ public class DashboardPage extends ParentPage {
     @FindBy(xpath = "//*[@id='dash_head']")
     private WebElement dashboard;
 
-    @FindBy(xpath = ".//div[@class='dash_nav']")
-    private WebElement menuDash;
-
     @FindBy(xpath = ".//a[@href='/dash/eld/']")
     private WebElement pageELD;
 
@@ -64,62 +61,76 @@ public class DashboardPage extends ParentPage {
     @FindBy(xpath = ".//i[@class='fa fa-angle-double-left minimize-arrow']")
     private WebElement menuSizeButton;
 
+    @FindBy(xpath = ".//*[@class='dashboard-content__main-navigation mobile-hiden']//../a[@href='/dash/fleet/equipment/']")
+    private WebElement pageSafety;
+
+    @FindBy(xpath = ".//*[@class='icon-icons-navigation-ic-arrow']")
+    private WebElement menuDash;
+
+
 
     public boolean isDashboardPresent(){
         return actionsWithOurElements.isElementEnable(dashboard);
     }
 
     public void goToStatusPage(){
-        waitABit(2);
+        waitABit(3);
         actionsWithOurElements.clickOnElement(pageStatus);
     }
     public void goToFleetPage(){
-        waitABit(1);
+        waitABit(3);
         actionsWithOurElements.clickOnElement(pageFleet);
     }
     public void goToReportsPage(){
-        waitABit(2);
+        waitABit(3);
         actionsWithOurElements.clickOnElement(pageReports);
     }
     public void goToLogsPage(){
-        waitABit(2);
+        waitABit(3);
         actionsWithOurElements.clickOnElement(pageLogs);
     }
     public void goToDVIRPage(){
-        waitABit(2);
+        waitABit(3);
         actionsWithOurElements.clickOnElement(pageDvir);
     }
     public void goToDocumentsPage(){
-        waitABit(2);
+        waitABit(3);
         actionsWithOurElements.clickOnElement(pageDocuments);
     }
     public void goToEquipmentPage(){
-        waitABit(2);
+        waitABit(3);
         actionsWithOurElements.clickOnElement(pageEquipment);}
     public void goToEzChatPage(){
-        waitABit(2);
+        waitABit(3);
         actionsWithOurElements.clickOnElement(pageEzChat);}
     public void goToEldPage(){
-        waitABit(2);
+        waitABit(3);
         actionsWithOurElements.clickOnElement(pageELD);
     }
     public void goToFinancesPage(){
-        waitABit(2);
+        waitABit(3);
         actionsWithOurElements.clickOnElement(pageFinances);
     }
     public void goToCalendarPage(){
-        waitABit(2);
+        waitABit(3);
         actionsWithOurElements.clickOnElement(pageCalendar);}
     public void goToHelpAndTrainingPage(){
-        waitABit(2);
+        waitABit(3);
         actionsWithOurElements.clickOnElement(pageHelp);}
     public void goToSettingPage(){
-        waitABit(2);
+        waitABit(3);
         actionsWithOurElements.clickOnElement(pageSettings);
     }
     public void goToReturnsPage() {
-        waitABit(2);
+        waitABit(3);
         actionsWithOurElements.clickOnElement(pageReturns);
+    }
+    public void goToSafetyPage(){
+        waitABit(3);
+        actionsWithOurElements.clickOnElement(pageSafety);
+    }
+    public void openDashHeadMenu(){
+        actionsWithOurElements.clickOnElement(menuDash);
     }
 
 }

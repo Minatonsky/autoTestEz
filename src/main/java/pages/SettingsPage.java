@@ -120,11 +120,16 @@ public class SettingsPage extends ParentPage {
     @FindBy(id = "dr_lic_exp")
     private WebElement expirationInput;
 
-    @FindBy(id = "dr_lic_exp")
+    @FindBy(id = "dr_lic_st")
     private WebElement countryDlValue;
 
     @FindBy(xpath = "//*[text()='Save']")
     private WebElement buttonSave;
+
+    @FindBy(xpath = ".//*[@class = 'alert alert-success fade']")
+    private WebElement alertSaved;
+
+    public boolean isAlertDisplayed(){return actionsWithOurElements.isElementDisplay(alertSaved);}
 
     public void goToDriverSettings() {waitABit(2);actionsWithOurElements.clickOnElement(driverSettings); }
 
@@ -177,9 +182,9 @@ public class SettingsPage extends ParentPage {
 
 //     METHODS FOR CHECK BOXES
     public void checkEngineScoreStatus(String checkBoxValue){
-        if (checkBoxValue.equals("0") || checkBoxValue.equals("")){
+        if (checkBoxValue.equals("false") || checkBoxValue.equals("")){
             actionsWithOurElements.clickJsOnElement(hideEngineScoreStatusOn);
-        } else if(checkBoxValue.equals("1")){
+        } else if(checkBoxValue.equals("true")){
             actionsWithOurElements.clickJsOnElement(hideEngineScoreStatusOff);
         } else {
             logger.error("Engine Score status failed");
@@ -187,9 +192,9 @@ public class SettingsPage extends ParentPage {
         }
     }
     public void checkYardMode(String checkBoxValue){
-        if (checkBoxValue.equals("0") || checkBoxValue.equals("")){
+        if (checkBoxValue.equals("false") || checkBoxValue.equals("")){
             actionsWithOurElements.clickJsOnElement(yardModeCheckOn);
-        } else if(checkBoxValue.equals("1")){
+        } else if(checkBoxValue.equals("true")){
             actionsWithOurElements.clickJsOnElement(yardModeCheckOff);
         } else {
             logger.error("Yard Mode failed");
@@ -197,9 +202,9 @@ public class SettingsPage extends ParentPage {
         }
     }
     public void checkConveyance(String checkBoxValue){
-        if (checkBoxValue.equals("0") || checkBoxValue.equals("")){
+        if (checkBoxValue.equals("false") || checkBoxValue.equals("")){
             actionsWithOurElements.clickJsOnElement(conveyanceCheckOn);
-        } else if(checkBoxValue.equals("1")){
+        } else if(checkBoxValue.equals("true")){
             actionsWithOurElements.clickJsOnElement(conveyanceCheckOff);
         } else {
             logger.error("Conveyance Mode failed");

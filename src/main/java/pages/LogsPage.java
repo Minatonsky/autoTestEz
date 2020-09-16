@@ -67,12 +67,30 @@ public class LogsPage extends ParentPage {
     @FindBy(xpath = "//*[text()='Correction Saved']/../button[@type='button']")
     private WebElement correctionSavedPopUpClose;
 
+    @FindBy(xpath = ".//*[text()='11:59:59PM']")
+    private WebElement lastMinute;
+
     public void clickOnRowDay(String dataDay){actionsWithOurElements.clickOnElement(".//*[@data-date='" + dataDay + "']");}
     public void clickOnCorrectionButton(){actionsWithOurElements.clickOnElement(buttonCorrection);}
     public void clickOnInsertStatusButton(){
         actionsWithOurElements.scrollByVisibleElement(buttonInsertStatus);
         actionsWithOurElements.clickOnElement(buttonInsertStatus);
         waitABit(3);
+    }
+    public void lifeHackDeliteLastMinuteOnLogbook(String status){
+        actionsWithOurElements.clickOnElement(lastMinute);
+        selectStatus(status);
+    }
+    public void selectStatus(String status){
+        if (status.equals("On")){
+            actionsWithOurElements.clickOnElement(statusOn);
+        } else if (status.equals("Dr")){
+            actionsWithOurElements.clickOnElement(statusDr);
+        } else if (status.equals("Sb")){
+            actionsWithOurElements.clickOnElement(statusSb);
+        } else if (status.equals("Off")){
+            actionsWithOurElements.clickOnElement(statusOff);
+        } else Assert.fail("Unexpected status");
     }
 
     public void addStatus(String timeFrom, String timeTo, String status){
@@ -83,19 +101,21 @@ public class LogsPage extends ParentPage {
         actionsWithOurElements.clickOnElement(timeFromInput);
         actionsWithOurElements.enterTextToElement(timeInput, timeFrom.replaceAll("\\W", ""));
         actionsWithOurElements.clickOnElement(saveButton);
-
-        if (status.equals("On")){
-            actionsWithOurElements.clickOnElement(statusOn);
-        } else if (status.equals("Dr")){
-            actionsWithOurElements.clickOnElement(statusDr);
-        } else if (status.equals("Sb")){
-            actionsWithOurElements.clickOnElement(statusSb);
-        } else if (status.equals("Off")){
-            actionsWithOurElements.clickOnElement(statusOff);
-        } else Assert.fail("Unexpected status");
-
+        selectStatus(status);
         actionsWithOurElements.scrollByVisibleElement(buttonInsertStatus);
         actionsWithOurElements.clickOnElement(buttonInsertStatus);
+        waitABit(3);
+    }
+
+    public void addLastStatus(String timeFrom, String timeTo, String status){
+        actionsWithOurElements.clickOnElement(timeToInput);
+        actionsWithOurElements.enterTextToElement(timeInput, timeTo.replaceAll("\\W", ""));
+        actionsWithOurElements.clickOnElement(saveButton);
+
+        actionsWithOurElements.clickOnElement(timeFromInput);
+        actionsWithOurElements.enterTextToElement(timeInput, timeFrom.replaceAll("\\W", ""));
+        actionsWithOurElements.clickOnElement(saveButton);
+        selectStatus(status);
         waitABit(3);
     }
 
@@ -114,6 +134,7 @@ public class LogsPage extends ParentPage {
     public void closeCorrectionSavePopUp(){actionsWithOurElements.clickOnElement(correctionSavedPopUpClose);}
 
     public boolean checkAlertsId(String driverId, String date, String violationId) throws SQLException {
+        waitABit(5);
         List<String> tempDataSettingsList = utilsForDB.getAlertsData(driverId, date);
         for (String element :
                 tempDataSettingsList ) {
@@ -121,7 +142,9 @@ public class LogsPage extends ParentPage {
                 return true;
             }
         } return false;
-    } public boolean checkAlertsExist(String driverId, String date) throws SQLException {
+    }
+    public boolean checkAlertsExist(String driverId, String date) throws SQLException {
+        waitABit(5);
         List<String> tempDataSettingsList = utilsForDB.getAlertsData(driverId, date);
         for (String element :
                 tempDataSettingsList ) {
@@ -203,14 +226,14 @@ public class LogsPage extends ParentPage {
                     addStatus("01:00:00 AM", "06:00:00 AM", "Dr");
                     addStatus("07:00:00 AM", "10:00:00 AM", "Dr");
                     addStatus("10:00:00 AM", "12:00:00 PM", "On");
-                    addStatus("12:00:00 PM", "02:00:00 PM", "Dr");
+                    addLastStatus("12:00:00 PM", "02:00:00 PM", "Dr");
                 } else {
                     //15 hours
                     addStatus("00:00:00 AM", "01:00:00 AM", "On");
                     addStatus("01:00:00 AM", "06:00:00 AM", "Dr");
                     addStatus("07:00:00 AM", "10:00:00 AM", "Dr");
                     addStatus("10:00:00 AM", "12:00:00 PM", "On");
-                    addStatus("01:00:00 PM", "03:00:00 PM", "Dr");
+                    addLastStatus("01:00:00 PM", "03:00:00 PM", "Dr");
                 } break;
             case 2:
             case 3:
@@ -222,7 +245,7 @@ public class LogsPage extends ParentPage {
                 addStatus("12:00:00 PM", "01:00:00 PM", "On");
                 addStatus("01:00:00 PM", "03:00:00 PM", "Dr");
                 addStatus("04:00:00 PM", "05:00:00 PM", "On");
-                addStatus("05:00:00 PM", "09:00:00 PM", "Dr");
+                addLastStatus("05:00:00 PM", "09:00:00 PM", "Dr");
                 break;
             case 4:
             case 5:
@@ -231,7 +254,7 @@ public class LogsPage extends ParentPage {
                 addStatus("01:00:00 AM", "06:00:00 AM", "Dr");
                 addStatus("07:00:00 AM", "10:00:00 AM", "Dr");
                 addStatus("11:00:00 AM", "12:00:00 PM", "Dr");
-                addStatus("12:00:00 PM", "04:00:00 PM", "Dr");
+                addLastStatus("12:00:00 PM", "04:00:00 PM", "Dr");
                 break;
             case 6:
                 //15 hours
@@ -239,7 +262,7 @@ public class LogsPage extends ParentPage {
                 addStatus("01:00:00 AM", "06:00:00 AM", "Dr");
                 addStatus("07:00:00 AM", "10:00:00 AM", "Dr");
                 addStatus("10:00:00 AM", "11:00:00 AM", "On");
-                addStatus("11:00:00 PM", "03:00:00 PM", "Dr");
+                addLastStatus("11:00:00 PM", "03:00:00 PM", "Dr");
                 break;
             case 7:
                 if (cargoType == 2){
@@ -247,12 +270,12 @@ public class LogsPage extends ParentPage {
                     addStatus("02:00:00 AM", "03:00:00 AM", "On");
                     addStatus("03:00:00 AM", "07:00:00 AM", "Dr");
                     addStatus("08:00:00 AM", "11:00:00 AM", "Dr");
-                    addStatus("12:00:00 PM", "05:00:00 PM", "Dr");
+                    addLastStatus("12:00:00 PM", "05:00:00 PM", "Dr");
                 } else {
                     //16 hours
                     addStatus("01:00:00 AM", "07:00:00 AM", "Dr");
                     addStatus("08:00:00 AM", "11:00:00 AM", "Dr");
-                    addStatus("12:00:00 PM", "05:00:00 PM", "Dr");
+                    addLastStatus("12:00:00 PM", "05:00:00 PM", "Dr");
                 } break;
         }
 
@@ -264,30 +287,30 @@ public class LogsPage extends ParentPage {
             case 1:
                 if (cargoType == 2) {
                     //15 hours
-                    addStatus("03:00:00 PM", "03:01:00 PM", "Dr");
+                    addLastStatus("03:00:00 PM", "03:02:00 PM", "Dr");
 
                 } else {
                     //14 hours
-                    addStatus("02:00:00 PM", "02:01:00 PM", "Dr");
+                    addLastStatus("02:00:00 PM", "02:02:00 PM", "Dr");
                 }
                 break;
             case 2:
             case 3:
             case 8:
                 //20 hours
-                addStatus("09:00:00 PM", "09:01:00 PM", "Dr");
+                addLastStatus("09:00:00 PM", "09:02:00 PM", "Dr");
                 break;
             case 4:
             case 5:
-                addStatus("04:00:00 PM", "04:01:00 PM", "Dr");
+                addLastStatus("04:00:00 PM", "04:02:00 PM", "Dr");
                 break;
             case 7:
                 //16 hours
-                addStatus("05:00:00 PM", "05:01:00 PM", "Dr");
+                addLastStatus("05:00:00 PM", "05:02:00 PM", "Dr");
                 break;
             case 6:
                 //15 hours
-                addStatus("03:00:00 PM", "03:01:00 PM", "Dr");
+                addLastStatus("03:00:00 PM", "03:02:00 PM", "Dr");
                 break;
         }
     }
@@ -298,10 +321,10 @@ public class LogsPage extends ParentPage {
         addStatus("03:00:00 PM", "05:00:00 PM", "On");
         addStatus("05:30:00 PM", "09:00:00 PM", "Dr");
         addStatus("09:00:00 PM", "10:00:00 PM", "On");
-        addStatus("10:00:00 PM", "11:00:00 PM", "Dr");
+        addLastStatus("10:00:00 PM", "11:00:00 PM", "Dr");
     }
     public void addViolationForRestBreak(){
-        addStatus("05:00:00 PM", "05:30:00 PM", "Dr");
+        addLastStatus("05:00:00 PM", "05:30:00 PM", "Dr");
     }
     public boolean isRestBreakRequired(int cycleId, int cargoType){
         switch (cycleId){
@@ -326,17 +349,4 @@ public class LogsPage extends ParentPage {
         }
 
     }
-    public void enterSB_2_8_hours(int cycleId, int cargoType){
-        addStatus("02:00:00 AM", "03:00:00 AM", "On");
-        addStatus("03:00:00 AM", "08:00:00 AM", "Dr");
-        addStatus("08:00:00 AM", "10:00:00 AM", "Sb");
-        addStatus("10:00:00 AM", "12:00:00 PM", "Dr");
-        addStatus("12:00:00 PM", "04:00:00 PM", "Dr");
-        addStatus("04:00:00 PM", "00:00:00", "Sb");
-    }
-    public void changeLastStatus(String userId, String date) throws SQLException {
-        utilsForDB.getLastStatusOnDay(userId, date);
-    }
-
-
 }

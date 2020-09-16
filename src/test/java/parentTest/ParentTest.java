@@ -1,10 +1,10 @@
 package parentTest;
 
 import com.github.javafaker.Faker;
-import libs.ConfigProperties;
-import libs.Database;
-import libs.UtilsForDB;
+import io.qameta.allure.Step;
+import libs.*;
 import org.aeonbits.owner.ConfigFactory;
+import org.apache.log4j.Logger;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
@@ -18,8 +18,6 @@ import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import pages.*;
-import pagesFrankestein.*;
-import pagesLocal.*;
 
 import java.io.BufferedWriter;
 import java.io.File;
@@ -32,16 +30,21 @@ import java.util.Iterator;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
-public class ParentTest extends ParentTestWithoutWebDriver{
+import static libs.Utils.waitABit;
+
+public class ParentTest{
+    Logger logger = Logger.getLogger(getClass());
     WebDriver webDriver;
     Database dBMySQL;
     String nameDB = "MySQL_PADB_DB";
     String driverDB = "MySQL";
 
     protected UtilsForDB utilsForDB;
+    protected ExcelDriver excelDriver;
 
     protected LoginPage loginPage;
     protected DashboardPage dashboardPage;
+    protected DocumentsPage documentsPage;
     protected ModalOrderPage modalOrderPage;
     protected FinancesPage financesPage;
     protected ManagerEldPage managerEldPage;
@@ -54,31 +57,10 @@ public class ParentTest extends ParentTestWithoutWebDriver{
     protected FleetDriversPage fleetDriversPage;
     protected ReturnsPage returnsPage;
     protected AccountSettingsPage accountSettingsPage;
-
-    protected DashboardLocalSitePage dashboardLocalSitePage;
-    protected DocumentsLocalSitePage documentsLocalSitePage;
-    protected EquipmentLocalSitePage equipmentLocalSitePage;
-    protected LoginLocalSitePage loginLocalSitePage;
-    protected DriverSettingsLocalSitePage driverSettingsLocalSitePage;
-    protected AccountSettingsLocalSitePage accountSettingsLocalSitePage;
     protected HelpAndTrainingPage helpAndTrainingPage;
-    protected LogsLocalSitePage logsLocalSitePage;
 
-    protected LoginFPage loginFPage;
-    protected DashboardFPage dashboardFPage;
-    protected ModalOrderFPage modalOrderFPage;
-    protected FinancesFPage financesFPage;
-    protected ManagerEldFPage managerEldFPage;
-    protected OrderInfoFPage orderInfoFPage;
-    protected ManagerModalEldFPage managerModalEldFPage;
-    protected SettingsFPage settingsFPage;
-    protected EquipmentFPage equipmentFPage;
-    protected LogsFPage logsFPage;
-    protected EldFPage eldFPage;
-    protected FleetDriversFPage fleetDriversFPage;
-    protected ReturnsFPage returnsFPage;
-    protected AccountSettingsFPage accountSettingsFPage;
-    protected DocumentsFPage documentsFPage;
+
+
 
     protected Faker faker;
 
@@ -92,6 +74,7 @@ public class ParentTest extends ParentTestWithoutWebDriver{
         webDriver.manage().window().maximize();
         webDriver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         dBMySQL = new Database(nameDB, driverDB);
+        excelDriver = new ExcelDriver();
         utilsForDB = new UtilsForDB(dBMySQL);
         faker = new Faker();
 
@@ -110,30 +93,7 @@ public class ParentTest extends ParentTestWithoutWebDriver{
         accountSettingsPage = new AccountSettingsPage(webDriver, utilsForDB);
         fleetDriversPage = new FleetDriversPage(webDriver, utilsForDB);
         returnsPage = new ReturnsPage(webDriver, utilsForDB);
-
-        dashboardLocalSitePage = new DashboardLocalSitePage(webDriver, utilsForDB);
-        documentsLocalSitePage = new DocumentsLocalSitePage(webDriver, utilsForDB);
-        equipmentLocalSitePage = new EquipmentLocalSitePage(webDriver, utilsForDB);
-        loginLocalSitePage = new LoginLocalSitePage(webDriver, utilsForDB);
-        driverSettingsLocalSitePage = new DriverSettingsLocalSitePage(webDriver, utilsForDB);
-        accountSettingsLocalSitePage = new AccountSettingsLocalSitePage(webDriver, utilsForDB);
-        logsLocalSitePage = new LogsLocalSitePage(webDriver, utilsForDB);
-
-        loginFPage = new LoginFPage(webDriver, utilsForDB);
-        dashboardFPage = new DashboardFPage(webDriver, utilsForDB);
-        modalOrderFPage = new ModalOrderFPage(webDriver, utilsForDB);
-        financesFPage = new FinancesFPage(webDriver, utilsForDB);
-        managerEldFPage = new ManagerEldFPage(webDriver, utilsForDB);
-        orderInfoFPage = new OrderInfoFPage(webDriver, utilsForDB);
-        managerModalEldFPage = new ManagerModalEldFPage(webDriver, utilsForDB);
-        settingsFPage = new SettingsFPage(webDriver, utilsForDB);
-        equipmentFPage = new EquipmentFPage(webDriver, utilsForDB);
-        logsFPage = new LogsFPage(webDriver, utilsForDB);
-        eldFPage = new EldFPage(webDriver, utilsForDB);
-        accountSettingsFPage = new AccountSettingsFPage(webDriver, utilsForDB);
-        fleetDriversFPage = new FleetDriversFPage(webDriver, utilsForDB);
-        returnsFPage = new ReturnsFPage(webDriver, utilsForDB);
-        documentsFPage = new DocumentsFPage(webDriver, utilsForDB);
+        documentsPage = new DocumentsPage(webDriver, utilsForDB);
 
 
     }
@@ -242,6 +202,15 @@ public class ParentTest extends ParentTestWithoutWebDriver{
         {
             ex.printStackTrace();
         }
+    }
+    @Step
+    protected void checkAC(String message, boolean actual, boolean expected){
+        waitABit(1);
+        if (actual != expected){
+            logger.error("AC failed: " + message);
+        }
+        Assert.assertEquals(message,expected,actual);
+        logger.info("AC passed");
     }
 
 

@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -32,23 +35,16 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="660eb711-957d-418e-9483-8b2931da6e6e" name="Default Changelist" comment=" 14 hour rules test was add vol3">
-      <change afterPath="$PROJECT_DIR$/src/main/java/data/testCycle.xls" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/frankesteinTest/logbookTest/LogbookSimpleTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/frankesteinTest/logbookTest/SplitSleeperBerthTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+    <list default="true" id="660eb711-957d-418e-9483-8b2931da6e6e" name="Default Changelist" comment="refactoring3 was add">
+      <change afterPath="$PROJECT_DIR$/src/test/java/api/restSteps/RestStepsFlipFlop.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log/qalight.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/qalight.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/libs/ActionsWithOurElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/libs/ActionsWithOurElements.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/libs/CycleRules.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/libs/CycleRules.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/libs/ECycleRules.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/libs/ECycleRules.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/libs/UtilsForDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/libs/UtilsForDB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/LogsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/LogsPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pagesFrankestein/LogsFPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pagesFrankestein/LogsFPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/frankesteinTest/logbookTest/CycleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/frankesteinTest/logbookTest/CycleTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/frankesteinTest/logbookTest/Hour14DrivingWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/frankesteinTest/logbookTest/ShiftAndDrivingHoursWithParamsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/unitTest/TestMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/unitTest/TestMethods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/api/restSteps/MainRestSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/api/restSteps/MainRestSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/parameterizedTest/FleetOrderParamsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/parameterizedTest/ordersParamsTest/FleetOrderParamsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/parameterizedTest/ManagerOrderParamsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/parameterizedTest/ordersParamsTest/ManagerOrderParamsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/parameterizedTest/SoloOrderParamsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/parameterizedTest/ordersParamsTest/SoloOrderParamsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/singleTest/logbookTest/LogbookSimpleTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/singleTest/logbookTest/LogbookSimpleTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,6 +75,11 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.1.1\plugins\maven\lib\maven3" />
+      </MavenGeneralSettings>
+    </option>
     <option name="importingSettings">
       <MavenImportingSettings>
         <option name="vmOptionsForImporter" value="-Xmx768m" />
@@ -134,33 +135,17 @@
       <recent name="parameterizedOrders" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.LogbookSimpleTests.SB_2_8_hours">
-    <configuration name="LogbookSimpleTests.SB_2_8_hours" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="autoTestEz" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="frankesteinTest.logbookTest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="frankesteinTest.logbookTest" />
-      <option name="MAIN_CLASS_NAME" value="frankesteinTest.logbookTest.LogbookSimpleTests" />
-      <option name="METHOD_NAME" value="SB_2_8_hours" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.SplitSleeperBerthTest.split_8_2_Test">
     <configuration name="LogbookSimpleTests.restBreak" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="autoTestEz" />
+      <module name="testdevEzlogz" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="frankesteinTest.logbookTest.*" />
+          <option name="PATTERN" value="singleTest.logbookTest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="frankesteinTest.logbookTest" />
-      <option name="MAIN_CLASS_NAME" value="frankesteinTest.logbookTest.LogbookSimpleTests" />
+      <option name="PACKAGE_NAME" value="singleTest.logbookTest" />
+      <option name="MAIN_CLASS_NAME" value="singleTest.logbookTest.LogbookSimpleTests" />
       <option name="METHOD_NAME" value="restBreak" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -168,15 +153,15 @@
       </method>
     </configuration>
     <configuration name="LogbookSimpleTests.shiftAndDriving" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="autoTestEz" />
+      <module name="testdevEzlogz" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="frankesteinTest.logbookTest.*" />
+          <option name="PATTERN" value="singleTest.logbookTest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="frankesteinTest.logbookTest" />
-      <option name="MAIN_CLASS_NAME" value="frankesteinTest.logbookTest.LogbookSimpleTests" />
+      <option name="PACKAGE_NAME" value="singleTest.logbookTest" />
+      <option name="MAIN_CLASS_NAME" value="singleTest.logbookTest.LogbookSimpleTests" />
       <option name="METHOD_NAME" value="shiftAndDriving" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -184,31 +169,47 @@
       </method>
     </configuration>
     <configuration name="ShiftAndDrivingHoursWithParamsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="autoTestEz" />
+      <module name="testdevEzlogz" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="frankesteinTest.logbookTest.*" />
+          <option name="PATTERN" value="singleTest.logbookTest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="frankesteinTest.logbookTest" />
-      <option name="MAIN_CLASS_NAME" value="frankesteinTest.logbookTest.ShiftAndDrivingHoursWithParamsTest" />
+      <option name="PACKAGE_NAME" value="singleTest.logbookTest" />
+      <option name="MAIN_CLASS_NAME" value="singleTest.logbookTest.ShiftAndDrivingHoursWithParamsTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ShiftAndDrivingHoursWithParamsTest.restBreak" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="autoTestEz" />
+    <configuration name="SplitSleeperBerthTest.split_2_8_Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="testdevEzlogz" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="frankesteinTest.logbookTest.*" />
+          <option name="PATTERN" value="singleTest.logbookTest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="frankesteinTest.logbookTest" />
-      <option name="MAIN_CLASS_NAME" value="frankesteinTest.logbookTest.ShiftAndDrivingHoursWithParamsTest" />
-      <option name="METHOD_NAME" value="restBreak" />
+      <option name="PACKAGE_NAME" value="singleTest.logbookTest" />
+      <option name="MAIN_CLASS_NAME" value="singleTest.logbookTest.SplitSleeperBerthTest" />
+      <option name="METHOD_NAME" value="split_2_8_Test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SplitSleeperBerthTest.split_8_2_Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="testdevEzlogz" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="singleTest.logbookTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="singleTest.logbookTest" />
+      <option name="MAIN_CLASS_NAME" value="singleTest.logbookTest.SplitSleeperBerthTest" />
+      <option name="METHOD_NAME" value="split_8_2_Test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -276,22 +277,26 @@
     <list>
       <item itemvalue="JUnit.TestMethods.getEventNewOrder" />
       <item itemvalue="Maven.SoloOrders" />
-      <item itemvalue="JUnit.ShiftAndDrivingHoursWithParamsTest.restBreak" />
       <item itemvalue="JUnit.ShiftAndDrivingHoursWithParamsTest" />
       <item itemvalue="JUnit.LogbookSimpleTests.restBreak" />
       <item itemvalue="JUnit.LogbookSimpleTests.shiftAndDriving" />
-      <item itemvalue="JUnit.LogbookSimpleTests.SB_2_8_hours" />
+      <item itemvalue="JUnit.SplitSleeperBerthTest.split_2_8_Test" />
+      <item itemvalue="JUnit.SplitSleeperBerthTest.split_8_2_Test" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.LogbookSimpleTests.SB_2_8_hours" />
-        <item itemvalue="JUnit.LogbookSimpleTests.restBreak" />
+        <item itemvalue="JUnit.SplitSleeperBerthTest.split_8_2_Test" />
+        <item itemvalue="JUnit.SplitSleeperBerthTest.split_2_8_Test" />
         <item itemvalue="JUnit.LogbookSimpleTests.shiftAndDriving" />
+        <item itemvalue="JUnit.LogbookSimpleTests.restBreak" />
         <item itemvalue="JUnit.ShiftAndDrivingHoursWithParamsTest" />
-        <item itemvalue="JUnit.ShiftAndDrivingHoursWithParamsTest.restBreak" />
       </list>
     </recent_temporary>
   </component>
+  <component name="SQLPlugin.ProjectConfiguration">
+    <queries />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -309,83 +314,6 @@
       <workItem from="1562665338918" duration="52834000" />
       <workItem from="1562782581468" duration="9021000" />
       <workItem from="1562822119836" duration="58303000" />
-    </task>
-    <task id="LOCAL-00044" summary="refactor count was add">
-      <created>1569329907994</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1569329907994</updated>
-    </task>
-    <task id="LOCAL-00045" summary="refactor price was add">
-      <created>1569441596715</created>
-      <option name="number" value="00045" />
-      <option name="presentableId" value="LOCAL-00045" />
-      <option name="project" value="LOCAL" />
-      <updated>1569441596716</updated>
-    </task>
-    <task id="LOCAL-00046" summary="charge test was add">
-      <created>1569571389995</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1569571389995</updated>
-    </task>
-    <task id="LOCAL-00047" summary="charge refactor test was add">
-      <created>1571046936696</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1571046936696</updated>
-    </task>
-    <task id="LOCAL-00048" summary="new charge refactor test was add">
-      <created>1571140969029</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL-00048" />
-      <option name="project" value="LOCAL" />
-      <updated>1571140969029</updated>
-    </task>
-    <task id="LOCAL-00049" summary="new charge2 refactor test was add">
-      <created>1571151912544</created>
-      <option name="number" value="00049" />
-      <option name="presentableId" value="LOCAL-00049" />
-      <option name="project" value="LOCAL" />
-      <updated>1571151912544</updated>
-    </task>
-    <task id="LOCAL-00050" summary="new charge2 refactor test was add">
-      <created>1571320376717</created>
-      <option name="number" value="00050" />
-      <option name="presentableId" value="LOCAL-00050" />
-      <option name="project" value="LOCAL" />
-      <updated>1571320376719</updated>
-    </task>
-    <task id="LOCAL-00051" summary="new charge2 refactor test was add">
-      <created>1571643737306</created>
-      <option name="number" value="00051" />
-      <option name="presentableId" value="LOCAL-00051" />
-      <option name="project" value="LOCAL" />
-      <updated>1571643737307</updated>
-    </task>
-    <task id="LOCAL-00052" summary="month-to-month 12 test was add">
-      <created>1571666501270</created>
-      <option name="number" value="00052" />
-      <option name="presentableId" value="LOCAL-00052" />
-      <option name="project" value="LOCAL" />
-      <updated>1571666501270</updated>
-    </task>
-    <task id="LOCAL-00053" summary="new month-to-month 12 test was add">
-      <created>1572015658636</created>
-      <option name="number" value="00053" />
-      <option name="presentableId" value="LOCAL-00053" />
-      <option name="project" value="LOCAL" />
-      <updated>1572015658636</updated>
-    </task>
-    <task id="LOCAL-00054" summary="new month-to-month 12 test was add">
-      <created>1572448355356</created>
-      <option name="number" value="00054" />
-      <option name="presentableId" value="LOCAL-00054" />
-      <option name="project" value="LOCAL" />
-      <updated>1572448355356</updated>
     </task>
     <task id="LOCAL-00055" summary="charge defaulters was add">
       <created>1572624320232</created>
@@ -653,7 +581,84 @@
       <option name="project" value="LOCAL" />
       <updated>1597412759799</updated>
     </task>
-    <option name="localTasksCounter" value="93" />
+    <task id="LOCAL-00093" summary=" 2_8 SB test was add vol3">
+      <created>1597762797420</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1597762797420</updated>
+    </task>
+    <task id="LOCAL-00094" summary="settings test was add">
+      <created>1597849199661</created>
+      <option name="number" value="00094" />
+      <option name="presentableId" value="LOCAL-00094" />
+      <option name="project" value="LOCAL" />
+      <updated>1597849199661</updated>
+    </task>
+    <task id="LOCAL-00095" summary="sb test was add">
+      <created>1598627952913</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1598627952914</updated>
+    </task>
+    <task id="LOCAL-00096" summary="sb 8/2 test was add">
+      <created>1598971739063</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1598971739063</updated>
+    </task>
+    <task id="LOCAL-00097" summary="phone verification was add">
+      <created>1599147342584</created>
+      <option name="number" value="00097" />
+      <option name="presentableId" value="LOCAL-00097" />
+      <option name="project" value="LOCAL" />
+      <updated>1599147342584</updated>
+    </task>
+    <task id="LOCAL-00098" summary="phone verification2 was add">
+      <created>1599211238736</created>
+      <option name="number" value="00098" />
+      <option name="presentableId" value="LOCAL-00098" />
+      <option name="project" value="LOCAL" />
+      <updated>1599211238736</updated>
+    </task>
+    <task id="LOCAL-00099" summary="phone verification3 was add">
+      <created>1599223742462</created>
+      <option name="number" value="00099" />
+      <option name="presentableId" value="LOCAL-00099" />
+      <option name="project" value="LOCAL" />
+      <updated>1599223742462</updated>
+    </task>
+    <task id="LOCAL-00100" summary="restart 34 was add">
+      <created>1599232786374</created>
+      <option name="number" value="00100" />
+      <option name="presentableId" value="LOCAL-00100" />
+      <option name="project" value="LOCAL" />
+      <updated>1599232786374</updated>
+    </task>
+    <task id="LOCAL-00101" summary="refactoring was add">
+      <created>1599573231461</created>
+      <option name="number" value="00101" />
+      <option name="presentableId" value="LOCAL-00101" />
+      <option name="project" value="LOCAL" />
+      <updated>1599573231461</updated>
+    </task>
+    <task id="LOCAL-00102" summary="refactoring2 was add">
+      <created>1599580762919</created>
+      <option name="number" value="00102" />
+      <option name="presentableId" value="LOCAL-00102" />
+      <option name="project" value="LOCAL" />
+      <updated>1599580762919</updated>
+    </task>
+    <task id="LOCAL-00103" summary="refactoring3 was add">
+      <created>1599581035569</created>
+      <option name="number" value="00103" />
+      <option name="presentableId" value="LOCAL-00103" />
+      <option name="project" value="LOCAL" />
+      <updated>1599581035569</updated>
+    </task>
+    <option name="localTasksCounter" value="104" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -689,17 +694,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="some changes was add" />
-    <MESSAGE value="new tariff was add" />
-    <MESSAGE value="new tariff defaulters was add" />
-    <MESSAGE value="refactoring was add" />
-    <MESSAGE value="refactoring 2 was add" />
-    <MESSAGE value=" was add" />
-    <MESSAGE value=" was add accoun fleet test" />
-    <MESSAGE value=" document fleet test was add" />
-    <MESSAGE value=" up date document fleet test was add" />
-    <MESSAGE value=" doc test refactoring test was add" />
-    <MESSAGE value=" doc test2 refactoring test was add" />
     <MESSAGE value=" up date doc test2 refactoring test was add" />
     <MESSAGE value=" charge refactoring test was add" />
     <MESSAGE value=" defaulter refactoring test was add" />
@@ -714,9 +708,24 @@
     <MESSAGE value=" 14 hour rules test was add" />
     <MESSAGE value=" 14 hour rules test was add vol2" />
     <MESSAGE value=" 14 hour rules test was add vol3" />
-    <option name="LAST_COMMIT_MESSAGE" value=" 14 hour rules test was add vol3" />
+    <MESSAGE value=" 2_8 SB test was add vol3" />
+    <MESSAGE value="settings test was add" />
+    <MESSAGE value="sb test was add" />
+    <MESSAGE value="sb 8/2 test was add" />
+    <MESSAGE value="phone verification was add" />
+    <MESSAGE value="phone verification2 was add" />
+    <MESSAGE value="phone verification3 was add" />
+    <MESSAGE value="restart 34 was add" />
+    <MESSAGE value="refactoring was add" />
+    <MESSAGE value="refactoring2 was add" />
+    <MESSAGE value="refactoring3 was add" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactoring3 was add" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="-1230" y="275" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1598527830294">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1230" y="275" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1598527830294" />
     <state x="-1828" y="92" width="1736" height="856" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1596721912372">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
@@ -725,61 +734,89 @@
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1155" y="221" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1597147302702" />
+    <state x="-1280" y="256" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1599232813301">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1280" y="256" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1599232813301" />
+    <state x="-1228" y="444" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1599580918893">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1228" y="444" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1599580918893" />
+    <state x="-1586" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1599557658516">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1586" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1599557658516" />
+    <state x="-1230" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1599557229772">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1230" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1599557229772" />
     <state x="-1180" y="275" key="FileChooserDialogImpl" timestamp="1596797375678">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1180" y="275" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1596797375678" />
-    <state width="1877" height="278" key="GridCell.Tab.0.bottom" timestamp="1597762385138">
+    <state width="1877" height="286" key="GridCell.Tab.0.bottom" timestamp="1600260765476">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="278" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1597762385138" />
+    <state width="1877" height="286" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1600260765476" />
     <state width="1877" height="343" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1596529245354" />
-    <state width="1877" height="278" key="GridCell.Tab.0.center" timestamp="1597762385138">
+    <state width="1877" height="286" key="GridCell.Tab.0.center" timestamp="1600260765475">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="278" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1597762385138" />
+    <state width="1877" height="286" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1600260765475" />
     <state width="1877" height="343" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1596529245354" />
-    <state width="1877" height="278" key="GridCell.Tab.0.left" timestamp="1597762385138">
+    <state width="1877" height="286" key="GridCell.Tab.0.left" timestamp="1600260765475">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="278" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1597762385138" />
+    <state width="1877" height="286" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1600260765475" />
     <state width="1877" height="343" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1596529245353" />
-    <state width="1877" height="278" key="GridCell.Tab.0.right" timestamp="1597762385138">
+    <state width="1877" height="286" key="GridCell.Tab.0.right" timestamp="1600260765476">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="278" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1597762385138" />
+    <state width="1877" height="286" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1600260765476" />
     <state width="1877" height="343" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1596529245354" />
-    <state width="1877" height="113" key="GridCell.Tab.1.bottom" timestamp="1597157549497">
+    <state width="1877" height="272" key="GridCell.Tab.1.bottom" timestamp="1598011108027">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="113" key="GridCell.Tab.1.bottom/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1597157549497" />
-    <state width="1877" height="113" key="GridCell.Tab.1.center" timestamp="1597157549496">
+    <state width="1877" height="272" key="GridCell.Tab.1.bottom/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1598011108027" />
+    <state width="1877" height="272" key="GridCell.Tab.1.center" timestamp="1598011108026">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="113" key="GridCell.Tab.1.center/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1597157549496" />
-    <state width="1877" height="113" key="GridCell.Tab.1.left" timestamp="1597157549496">
+    <state width="1877" height="272" key="GridCell.Tab.1.center/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1598011108026" />
+    <state width="1877" height="272" key="GridCell.Tab.1.left" timestamp="1598011108026">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="113" key="GridCell.Tab.1.left/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1597157549496" />
-    <state width="1877" height="113" key="GridCell.Tab.1.right" timestamp="1597157549497">
+    <state width="1877" height="272" key="GridCell.Tab.1.left/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1598011108026" />
+    <state width="1877" height="272" key="GridCell.Tab.1.right" timestamp="1598011108026">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="113" key="GridCell.Tab.1.right/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1597157549497" />
-    <state x="-1459" y="165" key="SettingsEditor" timestamp="1596807282906">
+    <state width="1877" height="272" key="GridCell.Tab.1.right/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1598011108026" />
+    <state x="-1380" y="263" key="IDE.errors.dialog" timestamp="1599576405479">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="-1459" y="165" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1596807282906" />
-    <state x="-1368" y="253" key="Vcs.Push.Dialog.v2" timestamp="1597412768421">
+    <state x="-1380" y="263" key="IDE.errors.dialog/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1599576405479" />
+    <state x="-1459" y="165" key="SettingsEditor" timestamp="1599573136868">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="-1368" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1597412768421" />
+    <state x="-1459" y="165" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1599573136868" />
+    <state x="-1368" y="253" key="Vcs.Push.Dialog.v2" timestamp="1599581048534">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1368" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1599581048534" />
     <state x="-1828" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1597065879990">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1828" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1597065879990" />
-    <state x="-1297" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1597054791001">
+    <state x="-1407" y="249" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1597836173281">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="-1297" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1597054791001" />
+    <state x="-1407" y="249" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1597836173281" />
+    <state x="-1304" y="240" key="run.anything.popup" timestamp="1599557263544">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1304" y="240" key="run.anything.popup/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1599557263544" />
+    <state x="-1297" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1599209409113">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1297" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1599209409113" />
   </component>
 </project>
