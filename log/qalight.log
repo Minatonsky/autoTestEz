@@ -1884,3 +1884,559 @@ Driver info: driver.version: unknown
 2020-08-09 18:54:12   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
 2020-08-09 18:54:16   INFO [singleTest.smartSafety.CancelSmartSafetyTest] : AC passed
 2020-08-09 18:54:16   INFO [pages.LoginPage] : Phone verified already
+2020-16-09 10:54:06   INFO [singleTest.logbookTest.CycleTest] : Chrome will be started
+2020-16-09 10:54:10   INFO [singleTest.logbookTest.CycleTest] : Chrome is started
+2020-16-09 10:54:10   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-16-09 10:54:14   INFO [pages.LoginPage] : Phone verified already
+2020-16-09 10:54:16   INFO [pages.LoginPage] : Login Page was opened
+2020-16-09 10:54:16   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-16-09 10:54:16   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-16-09 14:38:14   INFO [singleTest.logbookTest.ShiftAndDrivingHoursWithParamsTest] : Chrome will be started
+2020-16-09 14:38:17   INFO [singleTest.logbookTest.ShiftAndDrivingHoursWithParamsTest] : Chrome is started
+2020-16-09 14:38:17   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-16-09 14:38:20   INFO [pages.LoginPage] : Phone verified already
+2020-16-09 14:38:22   INFO [pages.LoginPage] : Login Page was opened
+2020-16-09 14:38:23   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-16-09 14:38:23   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-16-09 14:38:38   INFO [libs.ActionsWithOurElements] : 100000AM was inputted into element
+2020-16-09 14:38:39   INFO [libs.ActionsWithOurElements] : 090000AM was inputted into element
+2020-16-09 14:38:43   INFO [libs.ActionsWithOurElements] : 120000PM was inputted into element
+2020-16-09 14:38:43   INFO [libs.ActionsWithOurElements] : 100000AM was inputted into element
+2020-16-09 14:38:47   INFO [libs.ActionsWithOurElements] : 030000PM was inputted into element
+2020-16-09 14:38:48   INFO [libs.ActionsWithOurElements] : 120000PM was inputted into element
+2020-16-09 14:38:52   INFO [libs.ActionsWithOurElements] : 050000PM was inputted into element
+2020-16-09 14:38:52   INFO [libs.ActionsWithOurElements] : 030000PM was inputted into element
+2020-16-09 14:38:56   INFO [libs.ActionsWithOurElements] : 090000PM was inputted into element
+2020-16-09 14:38:56   INFO [libs.ActionsWithOurElements] : 053000PM was inputted into element
+2020-16-09 14:39:00   INFO [libs.ActionsWithOurElements] : 100000PM was inputted into element
+2020-16-09 14:39:01   INFO [libs.ActionsWithOurElements] : 090000PM was inputted into element
+2020-16-09 14:39:05   INFO [libs.ActionsWithOurElements] : 110000PM was inputted into element
+2020-16-09 14:39:05   INFO [libs.ActionsWithOurElements] : 100000PM was inputted into element
+2020-16-09 14:39:26   INFO [singleTest.logbookTest.ShiftAndDrivingHoursWithParamsTest] : AC passed
+2020-16-09 14:39:36   INFO [libs.ActionsWithOurElements] : 053000PM was inputted into element
+2020-16-09 14:39:36   INFO [libs.ActionsWithOurElements] : 050000PM was inputted into element
+2020-16-09 14:39:56   INFO [singleTest.logbookTest.ShiftAndDrivingHoursWithParamsTest] : AC passed
+2020-16-09 14:39:56   INFO [singleTest.logbookTest.ShiftAndDrivingHoursWithParamsTest] :  DB connection closed 
+2020-16-09 14:39:57   INFO [singleTest.logbookTest.ShiftAndDrivingHoursWithParamsTest] : Chrome will be started
+2020-16-09 14:39:58   INFO [singleTest.logbookTest.ShiftAndDrivingHoursWithParamsTest] : Chrome is started
+2020-16-09 14:39:58   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-16-09 14:40:01   INFO [pages.LoginPage] : Phone verified already
+2020-16-09 14:40:03   INFO [pages.LoginPage] : Login Page was opened
+2020-16-09 14:40:03   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-16-09 14:40:04   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-16-09 14:40:19   INFO [libs.ActionsWithOurElements] : 010000AM was inputted into element
+2020-16-09 14:40:20   INFO [libs.ActionsWithOurElements] : 000000AM was inputted into element
+2020-16-09 14:40:24   INFO [libs.ActionsWithOurElements] : 060000AM was inputted into element
+2020-16-09 14:40:24   INFO [libs.ActionsWithOurElements] : 010000AM was inputted into element
+2020-16-09 14:40:28   INFO [libs.ActionsWithOurElements] : 100000AM was inputted into element
+2020-16-09 14:40:29   INFO [libs.ActionsWithOurElements] : 070000AM was inputted into element
+2020-16-09 14:40:33   INFO [libs.ActionsWithOurElements] : 120000PM was inputted into element
+2020-16-09 14:40:33   INFO [libs.ActionsWithOurElements] : 100000AM was inputted into element
+2020-16-09 14:40:37   INFO [libs.ActionsWithOurElements] : 020000PM was inputted into element
+2020-16-09 14:40:37   INFO [libs.ActionsWithOurElements] : 120000PM was inputted into element
+2020-16-09 14:40:57   INFO [singleTest.logbookTest.ShiftAndDrivingHoursWithParamsTest] : AC passed
+2020-16-09 14:41:07   INFO [libs.ActionsWithOurElements] : 020200PM was inputted into element
+2020-16-09 14:41:07   INFO [libs.ActionsWithOurElements] : 020000PM was inputted into element
+2020-16-09 14:41:27   INFO [singleTest.logbookTest.ShiftAndDrivingHoursWithParamsTest] : AC passed
+2020-16-09 14:41:34   INFO [singleTest.logbookTest.ShiftAndDrivingHoursWithParamsTest] : AC passed
+2020-16-09 14:41:34   INFO [singleTest.logbookTest.ShiftAndDrivingHoursWithParamsTest] :  DB connection closed 
+2020-16-09 14:41:34   INFO [singleTest.logbookTest.ShiftAndDrivingHoursWithParamsTest] : Chrome will be started
+2020-16-09 14:41:35   INFO [singleTest.logbookTest.ShiftAndDrivingHoursWithParamsTest] : Chrome is started
+2020-16-09 14:41:36   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-16-09 14:41:39   INFO [pages.LoginPage] : Phone verified already
+2020-16-09 14:41:40   INFO [pages.LoginPage] : Login Page was opened
+2020-16-09 14:41:41   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-16-09 14:41:41   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-16-09 14:41:57   INFO [libs.ActionsWithOurElements] : 100000AM was inputted into element
+2020-16-09 14:41:57   INFO [libs.ActionsWithOurElements] : 090000AM was inputted into element
+2020-16-09 14:42:01   INFO [libs.ActionsWithOurElements] : 120000PM was inputted into element
+2020-16-09 14:42:01   INFO [libs.ActionsWithOurElements] : 100000AM was inputted into element
+2020-16-09 14:42:05   INFO [libs.ActionsWithOurElements] : 030000PM was inputted into element
+2020-16-09 14:42:06   INFO [libs.ActionsWithOurElements] : 120000PM was inputted into element
+2020-16-09 14:42:10   INFO [libs.ActionsWithOurElements] : 050000PM was inputted into element
+2020-16-09 14:42:10   INFO [libs.ActionsWithOurElements] : 030000PM was inputted into element
+2020-16-09 14:42:14   INFO [libs.ActionsWithOurElements] : 090000PM was inputted into element
+2020-16-09 14:42:14   INFO [libs.ActionsWithOurElements] : 053000PM was inputted into element
+2020-16-09 14:42:18   INFO [libs.ActionsWithOurElements] : 100000PM was inputted into element
+2020-16-09 14:42:19   INFO [libs.ActionsWithOurElements] : 090000PM was inputted into element
+2020-16-09 14:42:23   INFO [libs.ActionsWithOurElements] : 110000PM was inputted into element
+2020-16-09 14:42:23   INFO [libs.ActionsWithOurElements] : 100000PM was inputted into element
+2020-16-09 14:42:43   INFO [singleTest.logbookTest.ShiftAndDrivingHoursWithParamsTest] : AC passed
+2020-16-09 14:42:52   INFO [libs.ActionsWithOurElements] : 053000PM was inputted into element
+2020-16-09 14:42:53   INFO [libs.ActionsWithOurElements] : 050000PM was inputted into element
+2020-16-09 14:43:13   INFO [singleTest.logbookTest.ShiftAndDrivingHoursWithParamsTest] : AC passed
+2020-16-09 14:43:13   INFO [singleTest.logbookTest.ShiftAndDrivingHoursWithParamsTest] :  DB connection closed 
+2020-16-09 14:43:13   INFO [singleTest.logbookTest.ShiftAndDrivingHoursWithParamsTest] : Chrome will be started
+2020-16-09 14:43:15   INFO [singleTest.logbookTest.ShiftAndDrivingHoursWithParamsTest] : Chrome is started
+2020-16-09 14:43:15   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-16-09 14:43:18   INFO [pages.LoginPage] : Phone verified already
+2020-16-09 14:43:19   INFO [pages.LoginPage] : Login Page was opened
+2020-16-09 14:43:20   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-16-09 14:43:20   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-16-09 14:43:35   INFO [libs.ActionsWithOurElements] : 010000AM was inputted into element
+2020-16-09 14:43:36   INFO [libs.ActionsWithOurElements] : 000000AM was inputted into element
+2020-16-09 14:43:40   INFO [libs.ActionsWithOurElements] : 060000AM was inputted into element
+2020-16-09 14:43:41   INFO [libs.ActionsWithOurElements] : 010000AM was inputted into element
+2020-16-09 14:43:45   INFO [libs.ActionsWithOurElements] : 100000AM was inputted into element
+2020-16-09 14:43:45   INFO [libs.ActionsWithOurElements] : 070000AM was inputted into element
+2020-16-09 14:43:49   INFO [libs.ActionsWithOurElements] : 120000PM was inputted into element
+2020-16-09 14:43:49   INFO [libs.ActionsWithOurElements] : 100000AM was inputted into element
+2020-16-09 14:43:53   INFO [libs.ActionsWithOurElements] : 020000PM was inputted into element
+2020-16-09 14:43:54   INFO [libs.ActionsWithOurElements] : 120000PM was inputted into element
+2020-16-09 14:44:14   INFO [singleTest.logbookTest.ShiftAndDrivingHoursWithParamsTest] : AC passed
+2020-16-09 14:44:23   INFO [libs.ActionsWithOurElements] : 020200PM was inputted into element
+2020-16-09 14:44:23   INFO [libs.ActionsWithOurElements] : 020000PM was inputted into element
+2020-16-09 14:44:43   INFO [singleTest.logbookTest.ShiftAndDrivingHoursWithParamsTest] : AC passed
+2020-16-09 14:44:49   INFO [singleTest.logbookTest.ShiftAndDrivingHoursWithParamsTest] : AC passed
+2020-16-09 14:44:49   INFO [singleTest.logbookTest.ShiftAndDrivingHoursWithParamsTest] :  DB connection closed 
+2020-16-09 14:44:50   INFO [singleTest.logbookTest.ShiftAndDrivingHoursWithParamsTest] : Chrome will be started
+2020-16-09 14:44:51   INFO [singleTest.logbookTest.ShiftAndDrivingHoursWithParamsTest] : Chrome is started
+2020-16-09 14:44:51   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-16-09 14:44:54   INFO [pages.LoginPage] : Phone verified already
+2020-16-09 14:44:56   INFO [pages.LoginPage] : Login Page was opened
+2020-16-09 14:44:56   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-16-09 14:44:57   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-16-09 14:45:12   INFO [libs.ActionsWithOurElements] : 100000AM was inputted into element
+2020-16-09 14:45:13   INFO [libs.ActionsWithOurElements] : 090000AM was inputted into element
+2020-16-09 14:45:17   INFO [libs.ActionsWithOurElements] : 120000PM was inputted into element
+2020-16-09 14:45:17   INFO [libs.ActionsWithOurElements] : 100000AM was inputted into element
+2020-16-09 14:45:21   INFO [libs.ActionsWithOurElements] : 030000PM was inputted into element
+2020-16-09 14:45:22   INFO [libs.ActionsWithOurElements] : 120000PM was inputted into element
+2020-16-09 14:45:25   INFO [libs.ActionsWithOurElements] : 050000PM was inputted into element
+2020-16-09 14:45:26   INFO [libs.ActionsWithOurElements] : 030000PM was inputted into element
+2020-16-09 14:45:30   INFO [libs.ActionsWithOurElements] : 090000PM was inputted into element
+2020-16-09 14:45:30   INFO [libs.ActionsWithOurElements] : 053000PM was inputted into element
+2020-16-09 14:45:34   INFO [libs.ActionsWithOurElements] : 100000PM was inputted into element
+2020-16-09 14:45:35   INFO [libs.ActionsWithOurElements] : 090000PM was inputted into element
+2020-16-09 14:45:38   INFO [libs.ActionsWithOurElements] : 110000PM was inputted into element
+2020-16-09 14:45:39   INFO [libs.ActionsWithOurElements] : 100000PM was inputted into element
+2020-16-09 14:45:59   INFO [singleTest.logbookTest.ShiftAndDrivingHoursWithParamsTest] : AC passed
+2020-16-09 14:46:08   INFO [libs.ActionsWithOurElements] : 053000PM was inputted into element
+2020-16-09 14:46:09   INFO [libs.ActionsWithOurElements] : 050000PM was inputted into element
+2020-16-09 14:46:29  ERROR [singleTest.logbookTest.ShiftAndDrivingHoursWithParamsTest] : AC failed: Break Violation(8) failed
+2020-16-09 14:46:29   INFO [singleTest.logbookTest.ShiftAndDrivingHoursWithParamsTest] :  DB connection closed 
+2020-16-09 14:46:29   INFO [singleTest.logbookTest.ShiftAndDrivingHoursWithParamsTest] : Chrome will be started
+2020-16-09 14:46:31   INFO [singleTest.logbookTest.ShiftAndDrivingHoursWithParamsTest] : Chrome is started
+2020-16-09 14:46:31   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-16-09 14:46:34   INFO [pages.LoginPage] : Phone verified already
+2020-16-09 14:46:36   INFO [pages.LoginPage] : Login Page was opened
+2020-16-09 14:46:36   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-16-09 14:46:37   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-16-09 14:46:52   INFO [libs.ActionsWithOurElements] : 010000AM was inputted into element
+2020-16-09 14:46:53   INFO [libs.ActionsWithOurElements] : 000000AM was inputted into element
+2020-16-09 14:46:57   INFO [libs.ActionsWithOurElements] : 060000AM was inputted into element
+2020-16-09 14:46:57   INFO [libs.ActionsWithOurElements] : 010000AM was inputted into element
+2020-16-09 14:47:01   INFO [libs.ActionsWithOurElements] : 100000AM was inputted into element
+2020-16-09 14:47:02   INFO [libs.ActionsWithOurElements] : 070000AM was inputted into element
+2020-16-09 14:47:05   INFO [libs.ActionsWithOurElements] : 120000PM was inputted into element
+2020-16-09 14:47:06   INFO [libs.ActionsWithOurElements] : 100000AM was inputted into element
+2020-16-09 14:47:10   INFO [libs.ActionsWithOurElements] : 030000PM was inputted into element
+2020-16-09 14:47:10   INFO [libs.ActionsWithOurElements] : 010000PM was inputted into element
+2020-16-09 14:47:30  ERROR [singleTest.logbookTest.ShiftAndDrivingHoursWithParamsTest] : AC failed: Violation exist
+2020-16-09 14:47:30   INFO [singleTest.logbookTest.ShiftAndDrivingHoursWithParamsTest] :  DB connection closed 
+2020-16-09 14:47:32   INFO [singleTest.logbookTest.ShiftAndDrivingHoursWithParamsTest] : Chrome will be started
+2020-16-09 14:47:33   INFO [singleTest.logbookTest.ShiftAndDrivingHoursWithParamsTest] : Chrome is started
+2020-16-09 14:47:33   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-16-09 14:47:36   INFO [pages.LoginPage] : Phone verified already
+2020-16-09 14:47:38   INFO [pages.LoginPage] : Login Page was opened
+2020-16-09 14:47:38   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-16-09 14:47:39   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-16-09 14:47:54   INFO [libs.ActionsWithOurElements] : 100000AM was inputted into element
+2020-16-09 14:47:55   INFO [libs.ActionsWithOurElements] : 090000AM was inputted into element
+2020-16-09 14:47:59   INFO [libs.ActionsWithOurElements] : 120000PM was inputted into element
+2020-16-09 14:47:59   INFO [libs.ActionsWithOurElements] : 100000AM was inputted into element
+2020-16-09 14:48:03   INFO [libs.ActionsWithOurElements] : 030000PM was inputted into element
+2020-16-09 14:48:04   INFO [libs.ActionsWithOurElements] : 120000PM was inputted into element
+2020-16-09 14:48:08   INFO [libs.ActionsWithOurElements] : 050000PM was inputted into element
+2020-16-09 14:48:08   INFO [libs.ActionsWithOurElements] : 030000PM was inputted into element
+2020-16-09 14:48:12   INFO [libs.ActionsWithOurElements] : 090000PM was inputted into element
+2020-16-09 14:48:12   INFO [libs.ActionsWithOurElements] : 053000PM was inputted into element
+2020-16-09 14:48:16   INFO [libs.ActionsWithOurElements] : 100000PM was inputted into element
+2020-16-09 14:48:17   INFO [libs.ActionsWithOurElements] : 090000PM was inputted into element
+2020-16-09 14:48:21   INFO [libs.ActionsWithOurElements] : 110000PM was inputted into element
+2020-16-09 14:48:21   INFO [libs.ActionsWithOurElements] : 100000PM was inputted into element
+2020-16-09 14:48:41   INFO [singleTest.logbookTest.ShiftAndDrivingHoursWithParamsTest] : AC passed
+2020-16-09 14:48:51   INFO [libs.ActionsWithOurElements] : 053000PM was inputted into element
+2020-16-09 14:48:51   INFO [libs.ActionsWithOurElements] : 050000PM was inputted into element
+2020-16-09 14:49:11   INFO [singleTest.logbookTest.ShiftAndDrivingHoursWithParamsTest] : AC passed
+2020-16-09 14:49:11   INFO [singleTest.logbookTest.ShiftAndDrivingHoursWithParamsTest] :  DB connection closed 
+2020-16-09 14:49:12   INFO [singleTest.logbookTest.ShiftAndDrivingHoursWithParamsTest] : Chrome will be started
+2020-16-09 14:49:13   INFO [singleTest.logbookTest.ShiftAndDrivingHoursWithParamsTest] : Chrome is started
+2020-16-09 14:49:13   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-16-09 14:49:16   INFO [pages.LoginPage] : Phone verified already
+2020-16-09 14:49:18   INFO [pages.LoginPage] : Login Page was opened
+2020-16-09 14:49:18   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-16-09 14:49:19   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-16-09 14:49:34   INFO [libs.ActionsWithOurElements] : 010000AM was inputted into element
+2020-16-09 14:49:35   INFO [libs.ActionsWithOurElements] : 000000AM was inputted into element
+2020-16-09 14:49:39   INFO [libs.ActionsWithOurElements] : 060000AM was inputted into element
+2020-16-09 14:49:39   INFO [libs.ActionsWithOurElements] : 010000AM was inputted into element
+2020-16-09 14:49:43   INFO [libs.ActionsWithOurElements] : 100000AM was inputted into element
+2020-16-09 14:49:43   INFO [libs.ActionsWithOurElements] : 070000AM was inputted into element
+2020-16-09 14:49:47   INFO [libs.ActionsWithOurElements] : 120000PM was inputted into element
+2020-16-09 14:49:48   INFO [libs.ActionsWithOurElements] : 100000AM was inputted into element
+2020-16-09 14:49:51   INFO [libs.ActionsWithOurElements] : 020000PM was inputted into element
+2020-16-09 14:49:52   INFO [libs.ActionsWithOurElements] : 120000PM was inputted into element
+2020-16-09 14:50:12   INFO [singleTest.logbookTest.ShiftAndDrivingHoursWithParamsTest] : AC passed
+2020-16-09 14:50:21   INFO [libs.ActionsWithOurElements] : 020200PM was inputted into element
+2020-16-09 14:50:22   INFO [libs.ActionsWithOurElements] : 020000PM was inputted into element
+2020-16-09 14:50:42   INFO [singleTest.logbookTest.ShiftAndDrivingHoursWithParamsTest] : AC passed
+2020-16-09 14:50:48   INFO [singleTest.logbookTest.ShiftAndDrivingHoursWithParamsTest] : AC passed
+2020-16-09 14:50:48   INFO [singleTest.logbookTest.ShiftAndDrivingHoursWithParamsTest] :  DB connection closed 
+2020-16-09 14:50:48   INFO [singleTest.logbookTest.ShiftAndDrivingHoursWithParamsTest] : Chrome will be started
+2020-16-09 14:50:50   INFO [singleTest.logbookTest.ShiftAndDrivingHoursWithParamsTest] : Chrome is started
+2020-16-09 14:50:50   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-16-09 14:50:53   INFO [pages.LoginPage] : Phone verified already
+2020-16-09 14:50:54   INFO [pages.LoginPage] : Login Page was opened
+2020-16-09 14:50:55   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-16-09 14:50:55   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-16-09 14:51:11   INFO [libs.ActionsWithOurElements] : 100000AM was inputted into element
+2020-16-09 14:51:11   INFO [libs.ActionsWithOurElements] : 090000AM was inputted into element
+2020-16-09 14:51:15   INFO [libs.ActionsWithOurElements] : 120000PM was inputted into element
+2020-16-09 14:51:16   INFO [libs.ActionsWithOurElements] : 100000AM was inputted into element
+2020-16-09 14:51:20   INFO [libs.ActionsWithOurElements] : 030000PM was inputted into element
+2020-16-09 14:51:20   INFO [libs.ActionsWithOurElements] : 120000PM was inputted into element
+2020-16-09 14:51:24   INFO [libs.ActionsWithOurElements] : 050000PM was inputted into element
+2020-16-09 14:51:24   INFO [libs.ActionsWithOurElements] : 030000PM was inputted into element
+2020-16-09 14:51:28   INFO [libs.ActionsWithOurElements] : 090000PM was inputted into element
+2020-16-09 14:51:29   INFO [libs.ActionsWithOurElements] : 053000PM was inputted into element
+2020-16-09 14:51:33   INFO [libs.ActionsWithOurElements] : 100000PM was inputted into element
+2020-16-09 14:51:33   INFO [libs.ActionsWithOurElements] : 090000PM was inputted into element
+2020-16-09 14:51:37   INFO [libs.ActionsWithOurElements] : 110000PM was inputted into element
+2020-16-09 14:51:37   INFO [libs.ActionsWithOurElements] : 100000PM was inputted into element
+2020-16-09 14:51:57   INFO [singleTest.logbookTest.ShiftAndDrivingHoursWithParamsTest] : AC passed
+2020-16-09 14:52:07   INFO [libs.ActionsWithOurElements] : 053000PM was inputted into element
+2020-16-09 14:52:07   INFO [libs.ActionsWithOurElements] : 050000PM was inputted into element
+2020-16-09 14:52:27  ERROR [singleTest.logbookTest.ShiftAndDrivingHoursWithParamsTest] : AC failed: Break Violation(8) failed
+2020-16-09 14:52:27   INFO [singleTest.logbookTest.ShiftAndDrivingHoursWithParamsTest] :  DB connection closed 
+2020-16-09 14:52:28   INFO [singleTest.logbookTest.ShiftAndDrivingHoursWithParamsTest] : Chrome will be started
+2020-16-09 14:52:29   INFO [singleTest.logbookTest.ShiftAndDrivingHoursWithParamsTest] : Chrome is started
+2020-16-09 14:52:29   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-16-09 14:52:32   INFO [pages.LoginPage] : Phone verified already
+2020-16-09 14:52:34   INFO [pages.LoginPage] : Login Page was opened
+2020-16-09 14:52:54  ERROR [libs.ActionsWithOurElements] : Cannot work with element org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on WINDOWS (89e880832413a941f0c7404266d41785)] -> xpath: .//*[@id='formLogin']/div[1]/input] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'DESKTOP-0PTGLHV', ip: '192.168.88.57', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.102, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: C:\Users\1\AppData\Local\Te...}, goog:chromeOptions: {debuggerAddress: localhost:50615}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 89e880832413a941f0c7404266d41785
+2020-16-09 14:52:54   INFO [singleTest.logbookTest.ShiftAndDrivingHoursWithParamsTest] :  DB connection closed 
+2020-16-09 14:52:55   INFO [singleTest.logbookTest.ShiftAndDrivingHoursWithParamsTest] : Chrome will be started
+2020-16-09 14:52:56   INFO [singleTest.logbookTest.ShiftAndDrivingHoursWithParamsTest] : Chrome is started
+2020-16-09 14:52:56   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-16-09 14:52:59   INFO [pages.LoginPage] : Phone verified already
+2020-16-09 14:53:01   INFO [pages.LoginPage] : Login Page was opened
+2020-16-09 14:53:02   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-16-09 14:53:02   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-16-09 14:53:18   INFO [libs.ActionsWithOurElements] : 100000AM was inputted into element
+2020-16-09 14:53:18   INFO [libs.ActionsWithOurElements] : 090000AM was inputted into element
+2020-16-09 14:53:22   INFO [libs.ActionsWithOurElements] : 120000PM was inputted into element
+2020-16-09 14:53:23   INFO [libs.ActionsWithOurElements] : 100000AM was inputted into element
+2020-16-09 14:53:26   INFO [libs.ActionsWithOurElements] : 030000PM was inputted into element
+2020-16-09 14:53:27   INFO [libs.ActionsWithOurElements] : 120000PM was inputted into element
+2020-16-09 14:53:31   INFO [libs.ActionsWithOurElements] : 050000PM was inputted into element
+2020-16-09 14:53:31   INFO [libs.ActionsWithOurElements] : 030000PM was inputted into element
+2020-16-09 14:53:35   INFO [libs.ActionsWithOurElements] : 090000PM was inputted into element
+2020-16-09 14:53:35   INFO [libs.ActionsWithOurElements] : 053000PM was inputted into element
+2020-16-09 14:53:39   INFO [libs.ActionsWithOurElements] : 100000PM was inputted into element
+2020-16-09 14:53:40   INFO [libs.ActionsWithOurElements] : 090000PM was inputted into element
+2020-16-09 14:53:44   INFO [libs.ActionsWithOurElements] : 110000PM was inputted into element
+2020-16-09 14:53:44   INFO [libs.ActionsWithOurElements] : 100000PM was inputted into element
+2020-16-09 14:54:04   INFO [singleTest.logbookTest.ShiftAndDrivingHoursWithParamsTest] : AC passed
+2020-16-09 14:54:13   INFO [libs.ActionsWithOurElements] : 053000PM was inputted into element
+2020-16-09 14:54:14   INFO [libs.ActionsWithOurElements] : 050000PM was inputted into element
+2020-16-09 14:54:34   INFO [singleTest.logbookTest.ShiftAndDrivingHoursWithParamsTest] : AC passed
+2020-16-09 14:54:34   INFO [singleTest.logbookTest.ShiftAndDrivingHoursWithParamsTest] :  DB connection closed 
+2020-16-09 14:54:34   INFO [singleTest.logbookTest.ShiftAndDrivingHoursWithParamsTest] : Chrome will be started
+2020-16-09 14:54:36   INFO [singleTest.logbookTest.ShiftAndDrivingHoursWithParamsTest] : Chrome is started
+2020-16-09 14:54:36   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-16-09 14:54:39   INFO [pages.LoginPage] : Phone verified already
+2020-16-09 14:54:40   INFO [pages.LoginPage] : Login Page was opened
+2020-16-09 14:54:41   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-16-09 14:54:41   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-16-09 14:54:57   INFO [libs.ActionsWithOurElements] : 010000AM was inputted into element
+2020-16-09 14:54:57   INFO [libs.ActionsWithOurElements] : 000000AM was inputted into element
+2020-16-09 14:55:01   INFO [libs.ActionsWithOurElements] : 060000AM was inputted into element
+2020-16-09 14:55:02   INFO [libs.ActionsWithOurElements] : 010000AM was inputted into element
+2020-16-09 14:55:06   INFO [libs.ActionsWithOurElements] : 100000AM was inputted into element
+2020-16-09 14:55:06   INFO [libs.ActionsWithOurElements] : 070000AM was inputted into element
+2020-16-09 14:55:10   INFO [libs.ActionsWithOurElements] : 120000PM was inputted into element
+2020-16-09 14:55:11   INFO [libs.ActionsWithOurElements] : 100000AM was inputted into element
+2020-16-09 14:55:14   INFO [libs.ActionsWithOurElements] : 020000PM was inputted into element
+2020-16-09 14:55:15   INFO [libs.ActionsWithOurElements] : 120000PM was inputted into element
+2020-16-09 14:55:35   INFO [singleTest.logbookTest.ShiftAndDrivingHoursWithParamsTest] : AC passed
+2020-16-09 14:55:44   INFO [libs.ActionsWithOurElements] : 020200PM was inputted into element
+2020-16-09 14:55:45   INFO [libs.ActionsWithOurElements] : 020000PM was inputted into element
+2020-16-09 14:56:05   INFO [singleTest.logbookTest.ShiftAndDrivingHoursWithParamsTest] : AC passed
+2020-16-09 14:56:11   INFO [singleTest.logbookTest.ShiftAndDrivingHoursWithParamsTest] : AC passed
+2020-16-09 14:56:11   INFO [singleTest.logbookTest.ShiftAndDrivingHoursWithParamsTest] :  DB connection closed 
+2020-16-09 14:56:11   INFO [singleTest.logbookTest.ShiftAndDrivingHoursWithParamsTest] : Chrome will be started
+2020-16-09 14:56:13   INFO [singleTest.logbookTest.ShiftAndDrivingHoursWithParamsTest] : Chrome is started
+2020-16-09 14:56:13   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-16-09 14:56:16   INFO [pages.LoginPage] : Phone verified already
+2020-16-09 14:56:18   INFO [pages.LoginPage] : Login Page was opened
+2020-16-09 14:56:18   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-16-09 14:56:18   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-16-09 14:56:35   INFO [libs.ActionsWithOurElements] : 100000AM was inputted into element
+2020-16-09 14:56:35   INFO [libs.ActionsWithOurElements] : 090000AM was inputted into element
+2020-16-09 14:56:39   INFO [libs.ActionsWithOurElements] : 120000PM was inputted into element
+2020-16-09 14:56:40   INFO [libs.ActionsWithOurElements] : 100000AM was inputted into element
+2020-16-09 14:56:44   INFO [libs.ActionsWithOurElements] : 030000PM was inputted into element
+2020-16-09 14:56:44   INFO [libs.ActionsWithOurElements] : 120000PM was inputted into element
+2020-16-09 14:56:48   INFO [libs.ActionsWithOurElements] : 050000PM was inputted into element
+2020-16-09 14:56:49   INFO [libs.ActionsWithOurElements] : 030000PM was inputted into element
+2020-16-09 14:56:52   INFO [libs.ActionsWithOurElements] : 090000PM was inputted into element
+2020-16-09 14:56:53   INFO [libs.ActionsWithOurElements] : 053000PM was inputted into element
+2020-16-09 14:56:57   INFO [libs.ActionsWithOurElements] : 100000PM was inputted into element
+2020-16-09 14:56:57   INFO [libs.ActionsWithOurElements] : 090000PM was inputted into element
+2020-16-09 14:57:01   INFO [libs.ActionsWithOurElements] : 110000PM was inputted into element
+2020-16-09 14:57:01   INFO [libs.ActionsWithOurElements] : 100000PM was inputted into element
+2020-16-09 14:58:41   INFO [singleTest.logbookTest.LogbookSimpleTests] : Chrome will be started
+2020-16-09 14:58:44   INFO [singleTest.logbookTest.LogbookSimpleTests] : Chrome is started
+2020-16-09 14:58:44   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-16-09 14:58:48   INFO [pages.LoginPage] : Phone verified already
+2020-16-09 14:58:49   INFO [pages.LoginPage] : Login Page was opened
+2020-16-09 14:58:50   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-16-09 14:58:50   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-16-09 14:59:06   INFO [libs.ActionsWithOurElements] : 100000AM was inputted into element
+2020-16-09 14:59:07   INFO [libs.ActionsWithOurElements] : 090000AM was inputted into element
+2020-16-09 14:59:11   INFO [libs.ActionsWithOurElements] : 120000PM was inputted into element
+2020-16-09 14:59:11   INFO [libs.ActionsWithOurElements] : 100000AM was inputted into element
+2020-16-09 14:59:15   INFO [libs.ActionsWithOurElements] : 030000PM was inputted into element
+2020-16-09 14:59:15   INFO [libs.ActionsWithOurElements] : 120000PM was inputted into element
+2020-16-09 14:59:19   INFO [libs.ActionsWithOurElements] : 050000PM was inputted into element
+2020-16-09 14:59:20   INFO [libs.ActionsWithOurElements] : 030000PM was inputted into element
+2020-16-09 14:59:24   INFO [libs.ActionsWithOurElements] : 090000PM was inputted into element
+2020-16-09 14:59:24   INFO [libs.ActionsWithOurElements] : 053000PM was inputted into element
+2020-16-09 14:59:28   INFO [libs.ActionsWithOurElements] : 100000PM was inputted into element
+2020-16-09 14:59:28   INFO [libs.ActionsWithOurElements] : 090000PM was inputted into element
+2020-16-09 14:59:32   INFO [libs.ActionsWithOurElements] : 110000PM was inputted into element
+2020-16-09 14:59:33   INFO [libs.ActionsWithOurElements] : 100000PM was inputted into element
+2020-16-09 14:59:53   INFO [singleTest.logbookTest.LogbookSimpleTests] : AC passed
+2020-16-09 15:00:03   INFO [libs.ActionsWithOurElements] : 053000PM was inputted into element
+2020-16-09 15:00:04   INFO [libs.ActionsWithOurElements] : 050000PM was inputted into element
+2020-16-09 15:00:24   INFO [singleTest.logbookTest.LogbookSimpleTests] : AC passed
+2020-16-09 15:00:24   INFO [singleTest.logbookTest.LogbookSimpleTests] :  DB connection closed 
+2020-16-09 15:00:48   INFO [singleTest.logbookTest.LogbookSimpleTests] : Chrome will be started
+2020-16-09 15:00:51   INFO [singleTest.logbookTest.LogbookSimpleTests] : Chrome is started
+2020-16-09 15:00:51   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-16-09 15:00:55   INFO [pages.LoginPage] : Phone verified already
+2020-16-09 15:00:56   INFO [pages.LoginPage] : Login Page was opened
+2020-16-09 15:00:57   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-16-09 15:00:57   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-16-09 15:01:13   INFO [libs.ActionsWithOurElements] : 100000AM was inputted into element
+2020-16-09 15:01:14   INFO [libs.ActionsWithOurElements] : 090000AM was inputted into element
+2020-16-09 15:01:18   INFO [libs.ActionsWithOurElements] : 120000PM was inputted into element
+2020-16-09 15:01:18   INFO [libs.ActionsWithOurElements] : 100000AM was inputted into element
+2020-16-09 15:01:22   INFO [libs.ActionsWithOurElements] : 030000PM was inputted into element
+2020-16-09 15:01:22   INFO [libs.ActionsWithOurElements] : 120000PM was inputted into element
+2020-16-09 15:01:26   INFO [libs.ActionsWithOurElements] : 050000PM was inputted into element
+2020-16-09 15:01:27   INFO [libs.ActionsWithOurElements] : 030000PM was inputted into element
+2020-16-09 15:01:31   INFO [libs.ActionsWithOurElements] : 090000PM was inputted into element
+2020-16-09 15:01:31   INFO [libs.ActionsWithOurElements] : 053000PM was inputted into element
+2020-16-09 15:01:35   INFO [libs.ActionsWithOurElements] : 100000PM was inputted into element
+2020-16-09 15:01:35   INFO [libs.ActionsWithOurElements] : 090000PM was inputted into element
+2020-16-09 15:01:39   INFO [libs.ActionsWithOurElements] : 110000PM was inputted into element
+2020-16-09 15:01:40   INFO [libs.ActionsWithOurElements] : 100000PM was inputted into element
+2020-16-09 15:02:00   INFO [singleTest.logbookTest.LogbookSimpleTests] : AC passed
+2020-16-09 15:02:10   INFO [libs.ActionsWithOurElements] : 053000PM was inputted into element
+2020-16-09 15:02:10   INFO [libs.ActionsWithOurElements] : 050000PM was inputted into element
+2020-16-09 15:02:30  ERROR [singleTest.logbookTest.LogbookSimpleTests] : AC failed: Break Violation(8) failed
+2020-16-09 15:02:30   INFO [singleTest.logbookTest.LogbookSimpleTests] :  DB connection closed 
+2020-16-09 15:13:23   INFO [singleTest.logbookTest.LogbookSimpleTests] : Chrome will be started
+2020-16-09 15:13:26   INFO [singleTest.logbookTest.LogbookSimpleTests] : Chrome is started
+2020-16-09 15:13:26   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-16-09 15:13:29   INFO [pages.LoginPage] : Phone verified already
+2020-16-09 15:13:31   INFO [pages.LoginPage] : Login Page was opened
+2020-16-09 15:13:31   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-16-09 15:13:32   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-16-09 15:13:47   INFO [libs.ActionsWithOurElements] : 100000AM was inputted into element
+2020-16-09 15:13:48   INFO [libs.ActionsWithOurElements] : 090000AM was inputted into element
+2020-16-09 15:13:52   INFO [libs.ActionsWithOurElements] : 120000PM was inputted into element
+2020-16-09 15:13:52   INFO [libs.ActionsWithOurElements] : 100000AM was inputted into element
+2020-16-09 15:13:56   INFO [libs.ActionsWithOurElements] : 030000PM was inputted into element
+2020-16-09 15:13:57   INFO [libs.ActionsWithOurElements] : 120000PM was inputted into element
+2020-16-09 15:14:01   INFO [libs.ActionsWithOurElements] : 050000PM was inputted into element
+2020-16-09 15:14:01   INFO [libs.ActionsWithOurElements] : 030000PM was inputted into element
+2020-16-09 15:14:05   INFO [libs.ActionsWithOurElements] : 090000PM was inputted into element
+2020-16-09 15:14:05   INFO [libs.ActionsWithOurElements] : 053000PM was inputted into element
+2020-16-09 15:14:09   INFO [libs.ActionsWithOurElements] : 100000PM was inputted into element
+2020-16-09 15:14:10   INFO [libs.ActionsWithOurElements] : 090000PM was inputted into element
+2020-16-09 15:14:14   INFO [libs.ActionsWithOurElements] : 110000PM was inputted into element
+2020-16-09 15:14:14   INFO [libs.ActionsWithOurElements] : 100000PM was inputted into element
+2020-16-09 15:14:35   INFO [singleTest.logbookTest.LogbookSimpleTests] : AC passed
+2020-16-09 15:14:44   INFO [libs.ActionsWithOurElements] : 053000PM was inputted into element
+2020-16-09 15:14:44   INFO [libs.ActionsWithOurElements] : 050000PM was inputted into element
+2020-16-09 15:15:04  ERROR [singleTest.logbookTest.LogbookSimpleTests] : AC failed: Break Violation(8) failed
+2020-16-09 15:15:04   INFO [singleTest.logbookTest.LogbookSimpleTests] :  DB connection closed 
+2020-16-09 15:19:36   INFO [singleTest.logbookTest.LogbookSimpleTests] : Chrome will be started
+2020-16-09 15:19:38   INFO [singleTest.logbookTest.LogbookSimpleTests] : Chrome is started
+2020-16-09 15:19:39   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-16-09 15:19:42   INFO [pages.LoginPage] : Phone verified already
+2020-16-09 15:19:44   INFO [pages.LoginPage] : Login Page was opened
+2020-16-09 15:19:44   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-16-09 15:19:45   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-16-09 15:20:10   INFO [libs.ActionsWithOurElements] : 100000AM was inputted into element
+2020-16-09 15:20:11   INFO [libs.ActionsWithOurElements] : 090000AM was inputted into element
+2020-16-09 15:20:15   INFO [libs.ActionsWithOurElements] : 120000PM was inputted into element
+2020-16-09 15:20:15   INFO [libs.ActionsWithOurElements] : 100000AM was inputted into element
+2020-16-09 15:20:19   INFO [libs.ActionsWithOurElements] : 030000PM was inputted into element
+2020-16-09 15:20:20   INFO [libs.ActionsWithOurElements] : 120000PM was inputted into element
+2020-16-09 15:20:24   INFO [libs.ActionsWithOurElements] : 050000PM was inputted into element
+2020-16-09 15:20:24   INFO [libs.ActionsWithOurElements] : 030000PM was inputted into element
+2020-16-09 15:20:28   INFO [libs.ActionsWithOurElements] : 090000PM was inputted into element
+2020-16-09 15:20:28   INFO [libs.ActionsWithOurElements] : 053000PM was inputted into element
+2020-16-09 15:20:32   INFO [libs.ActionsWithOurElements] : 100000PM was inputted into element
+2020-16-09 15:20:33   INFO [libs.ActionsWithOurElements] : 090000PM was inputted into element
+2020-16-09 15:20:36   INFO [libs.ActionsWithOurElements] : 110000PM was inputted into element
+2020-16-09 15:20:37   INFO [libs.ActionsWithOurElements] : 100000PM was inputted into element
+2020-16-09 15:20:57   INFO [singleTest.logbookTest.LogbookSimpleTests] : AC passed
+2020-16-09 15:21:07   INFO [libs.ActionsWithOurElements] : 053000PM was inputted into element
+2020-16-09 15:21:07   INFO [libs.ActionsWithOurElements] : 050000PM was inputted into element
+2020-16-09 15:21:27  ERROR [singleTest.logbookTest.LogbookSimpleTests] : AC failed: Break Violation(8) failed
+2020-16-09 15:21:27   INFO [singleTest.logbookTest.LogbookSimpleTests] :  DB connection closed 
+2020-16-09 15:28:06   INFO [singleTest.logbookTest.LogbookSimpleTests] : Chrome will be started
+2020-16-09 15:28:09   INFO [singleTest.logbookTest.LogbookSimpleTests] : Chrome is started
+2020-16-09 15:28:09   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-16-09 15:28:12   INFO [pages.LoginPage] : Phone verified already
+2020-16-09 15:28:14   INFO [pages.LoginPage] : Login Page was opened
+2020-16-09 15:28:15   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-16-09 15:28:15   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-16-09 15:28:31   INFO [libs.ActionsWithOurElements] : 100000AM was inputted into element
+2020-16-09 15:28:31   INFO [libs.ActionsWithOurElements] : 090000AM was inputted into element
+2020-16-09 15:28:35   INFO [libs.ActionsWithOurElements] : 120000PM was inputted into element
+2020-16-09 15:28:36   INFO [libs.ActionsWithOurElements] : 100000AM was inputted into element
+2020-16-09 15:28:40   INFO [libs.ActionsWithOurElements] : 030000PM was inputted into element
+2020-16-09 15:28:40   INFO [libs.ActionsWithOurElements] : 120000PM was inputted into element
+2020-16-09 15:28:44   INFO [libs.ActionsWithOurElements] : 050000PM was inputted into element
+2020-16-09 15:28:44   INFO [libs.ActionsWithOurElements] : 030000PM was inputted into element
+2020-16-09 15:28:48   INFO [libs.ActionsWithOurElements] : 090000PM was inputted into element
+2020-16-09 15:28:49   INFO [libs.ActionsWithOurElements] : 053000PM was inputted into element
+2020-16-09 15:28:52   INFO [libs.ActionsWithOurElements] : 100000PM was inputted into element
+2020-16-09 15:28:53   INFO [libs.ActionsWithOurElements] : 090000PM was inputted into element
+2020-16-09 15:28:57   INFO [libs.ActionsWithOurElements] : 110000PM was inputted into element
+2020-16-09 15:28:57   INFO [libs.ActionsWithOurElements] : 100000PM was inputted into element
+2020-16-09 15:29:18   INFO [singleTest.logbookTest.LogbookSimpleTests] : AC passed
+2020-16-09 15:29:29   INFO [libs.ActionsWithOurElements] : 053000PM was inputted into element
+2020-16-09 15:29:30   INFO [libs.ActionsWithOurElements] : 050000PM was inputted into element
+2020-16-09 15:29:50  ERROR [singleTest.logbookTest.LogbookSimpleTests] : AC failed: Break Violation(8) failed
+2020-16-09 15:29:50   INFO [singleTest.logbookTest.LogbookSimpleTests] :  DB connection closed 
+2020-16-09 15:43:23   INFO [singleTest.logbookTest.LogbookSimpleTests] : Chrome will be started
+2020-16-09 15:43:26   INFO [singleTest.logbookTest.LogbookSimpleTests] : Chrome is started
+2020-16-09 15:43:26   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-16-09 15:43:29   INFO [pages.LoginPage] : Phone verified already
+2020-16-09 15:43:31   INFO [pages.LoginPage] : Login Page was opened
+2020-16-09 15:43:32   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-16-09 15:43:32   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-16-09 15:43:47   INFO [libs.ActionsWithOurElements] : 100000AM was inputted into element
+2020-16-09 15:43:48   INFO [libs.ActionsWithOurElements] : 090000AM was inputted into element
+2020-16-09 15:43:52   INFO [libs.ActionsWithOurElements] : 120000PM was inputted into element
+2020-16-09 15:43:53   INFO [libs.ActionsWithOurElements] : 100000AM was inputted into element
+2020-16-09 15:43:57   INFO [libs.ActionsWithOurElements] : 030000PM was inputted into element
+2020-16-09 15:43:57   INFO [libs.ActionsWithOurElements] : 120000PM was inputted into element
+2020-16-09 15:44:01   INFO [libs.ActionsWithOurElements] : 050000PM was inputted into element
+2020-16-09 15:44:01   INFO [libs.ActionsWithOurElements] : 030000PM was inputted into element
+2020-16-09 15:44:05   INFO [libs.ActionsWithOurElements] : 090000PM was inputted into element
+2020-16-09 15:44:06   INFO [libs.ActionsWithOurElements] : 053000PM was inputted into element
+2020-16-09 15:44:10   INFO [libs.ActionsWithOurElements] : 100000PM was inputted into element
+2020-16-09 15:44:10   INFO [libs.ActionsWithOurElements] : 090000PM was inputted into element
+2020-16-09 15:44:14   INFO [libs.ActionsWithOurElements] : 110000PM was inputted into element
+2020-16-09 15:44:14   INFO [libs.ActionsWithOurElements] : 100000PM was inputted into element
+2020-16-09 15:44:35   INFO [singleTest.logbookTest.LogbookSimpleTests] : AC passed
+2020-16-09 15:44:44   INFO [libs.ActionsWithOurElements] : 053000PM was inputted into element
+2020-16-09 15:44:45   INFO [libs.ActionsWithOurElements] : 050000PM was inputted into element
+2020-16-09 15:45:05   INFO [singleTest.logbookTest.LogbookSimpleTests] : AC passed
+2020-16-09 15:45:05   INFO [singleTest.logbookTest.LogbookSimpleTests] :  DB connection closed 
+2020-16-09 15:46:31   INFO [singleTest.logbookTest.LogbookSimpleTests] : Chrome will be started
+2020-16-09 15:46:33   INFO [singleTest.logbookTest.LogbookSimpleTests] : Chrome is started
+2020-16-09 15:46:33   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-16-09 15:46:37   INFO [pages.LoginPage] : Phone verified already
+2020-16-09 15:46:39   INFO [pages.LoginPage] : Login Page was opened
+2020-16-09 15:46:39   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-16-09 15:46:40   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-16-09 15:46:55   INFO [libs.ActionsWithOurElements] : 010000AM was inputted into element
+2020-16-09 15:46:56   INFO [libs.ActionsWithOurElements] : 000000AM was inputted into element
+2020-16-09 15:47:00   INFO [libs.ActionsWithOurElements] : 060000AM was inputted into element
+2020-16-09 15:47:00   INFO [libs.ActionsWithOurElements] : 010000AM was inputted into element
+2020-16-09 15:47:04   INFO [libs.ActionsWithOurElements] : 100000AM was inputted into element
+2020-16-09 15:47:05   INFO [libs.ActionsWithOurElements] : 070000AM was inputted into element
+2020-16-09 15:47:09   INFO [libs.ActionsWithOurElements] : 120000PM was inputted into element
+2020-16-09 15:47:09   INFO [libs.ActionsWithOurElements] : 100000AM was inputted into element
+2020-16-09 15:47:13   INFO [libs.ActionsWithOurElements] : 020000PM was inputted into element
+2020-16-09 15:47:13   INFO [libs.ActionsWithOurElements] : 120000PM was inputted into element
+2020-16-09 15:47:34   INFO [singleTest.logbookTest.LogbookSimpleTests] : AC passed
+2020-16-09 15:47:43   INFO [libs.ActionsWithOurElements] : 020200PM was inputted into element
+2020-16-09 15:47:44   INFO [libs.ActionsWithOurElements] : 020000PM was inputted into element
+2020-16-09 15:48:04   INFO [singleTest.logbookTest.LogbookSimpleTests] : AC passed
+2020-16-09 15:48:10   INFO [singleTest.logbookTest.LogbookSimpleTests] : AC passed
+2020-16-09 15:48:10   INFO [singleTest.logbookTest.LogbookSimpleTests] :  DB connection closed 
+2020-16-09 15:48:40   INFO [singleTest.logbookTest.SplitSleeperBerthTest] : Chrome will be started
+2020-16-09 15:48:42   INFO [singleTest.logbookTest.SplitSleeperBerthTest] : Chrome is started
+2020-16-09 15:48:42   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-16-09 15:48:46   INFO [pages.LoginPage] : Phone verified already
+2020-16-09 15:48:48   INFO [pages.LoginPage] : Login Page was opened
+2020-16-09 15:48:48   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-16-09 15:48:49   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-16-09 15:49:16   INFO [libs.ActionsWithOurElements] : 030000AM was inputted into element
+2020-16-09 15:49:16   INFO [libs.ActionsWithOurElements] : 020000AM was inputted into element
+2020-16-09 15:49:20   INFO [libs.ActionsWithOurElements] : 080000AM was inputted into element
+2020-16-09 15:49:21   INFO [libs.ActionsWithOurElements] : 030000AM was inputted into element
+2020-16-09 15:49:25   INFO [libs.ActionsWithOurElements] : 100000AM was inputted into element
+2020-16-09 15:49:25   INFO [libs.ActionsWithOurElements] : 080000AM was inputted into element
+2020-16-09 15:49:29   INFO [libs.ActionsWithOurElements] : 120000PM was inputted into element
+2020-16-09 15:49:30   INFO [libs.ActionsWithOurElements] : 100000AM was inputted into element
+2020-16-09 15:49:33   INFO [libs.ActionsWithOurElements] : 040000PM was inputted into element
+2020-16-09 15:49:34   INFO [libs.ActionsWithOurElements] : 120000PM was inputted into element
+2020-16-09 15:49:38   INFO [libs.ActionsWithOurElements] : 115959PM was inputted into element
+2020-16-09 15:49:38   INFO [libs.ActionsWithOurElements] : 040000PM was inputted into element
+2020-16-09 15:50:02   INFO [libs.ActionsWithOurElements] : 010000AM was inputted into element
+2020-16-09 15:50:02   INFO [libs.ActionsWithOurElements] : 000000AM was inputted into element
+2020-16-09 15:50:06   INFO [libs.ActionsWithOurElements] : 050000AM was inputted into element
+2020-16-09 15:50:07   INFO [libs.ActionsWithOurElements] : 010000AM was inputted into element
+2020-16-09 15:50:11   INFO [libs.ActionsWithOurElements] : 070000AM was inputted into element
+2020-16-09 15:50:11   INFO [libs.ActionsWithOurElements] : 050000AM was inputted into element
+2020-16-09 15:50:15   INFO [libs.ActionsWithOurElements] : 120000PM was inputted into element
+2020-16-09 15:50:15   INFO [libs.ActionsWithOurElements] : 070000AM was inputted into element
+2020-16-09 15:50:19   INFO [libs.ActionsWithOurElements] : 010000PM was inputted into element
+2020-16-09 15:50:20   INFO [libs.ActionsWithOurElements] : 120000PM was inputted into element
+2020-16-09 15:50:24   INFO [libs.ActionsWithOurElements] : 090000PM was inputted into element
+2020-16-09 15:50:24   INFO [libs.ActionsWithOurElements] : 010000PM was inputted into element
+2020-16-09 15:50:28   INFO [libs.ActionsWithOurElements] : 115959PM was inputted into element
+2020-16-09 15:50:28   INFO [libs.ActionsWithOurElements] : 090000PM was inputted into element
+2020-16-09 15:50:49   INFO [singleTest.logbookTest.SplitSleeperBerthTest] : AC passed
+2020-16-09 15:50:49   INFO [singleTest.logbookTest.SplitSleeperBerthTest] :  DB connection closed 
+2020-16-09 15:52:48   INFO [singleTest.logbookTest.SplitSleeperBerthTest] : Chrome will be started
+2020-16-09 15:52:51   INFO [singleTest.logbookTest.SplitSleeperBerthTest] : Chrome is started
+2020-16-09 15:52:51   INFO [libs.Database] : jdbc:mysql://ezlogzbdtest.cflnpulkxl9d.us-east-2.rds.amazonaws.com:3309/admin_ezlogz_api
+2020-16-09 15:52:54   INFO [pages.LoginPage] : Phone verified already
+2020-16-09 15:52:56   INFO [pages.LoginPage] : Login Page was opened
+2020-16-09 15:52:57   INFO [libs.ActionsWithOurElements] : den36@gmail.com was inputted into element
+2020-16-09 15:52:57   INFO [libs.ActionsWithOurElements] : testtest was inputted into element
+2020-16-09 15:53:13   INFO [libs.ActionsWithOurElements] : 030000AM was inputted into element
+2020-16-09 15:53:13   INFO [libs.ActionsWithOurElements] : 020000AM was inputted into element
+2020-16-09 15:53:17   INFO [libs.ActionsWithOurElements] : 080000AM was inputted into element
+2020-16-09 15:53:18   INFO [libs.ActionsWithOurElements] : 030000AM was inputted into element
+2020-16-09 15:53:22   INFO [libs.ActionsWithOurElements] : 120000PM was inputted into element
+2020-16-09 15:53:22   INFO [libs.ActionsWithOurElements] : 080000AM was inputted into element
+2020-16-09 15:53:26   INFO [libs.ActionsWithOurElements] : 040000PM was inputted into element
+2020-16-09 15:53:27   INFO [libs.ActionsWithOurElements] : 120000PM was inputted into element
+2020-16-09 15:53:30   INFO [libs.ActionsWithOurElements] : 100000PM was inputted into element
+2020-16-09 15:53:31   INFO [libs.ActionsWithOurElements] : 040000PM was inputted into element
+2020-16-09 15:53:35   INFO [libs.ActionsWithOurElements] : 115959PM was inputted into element
+2020-16-09 15:53:35   INFO [libs.ActionsWithOurElements] : 100000PM was inputted into element
+2020-16-09 15:53:59   INFO [libs.ActionsWithOurElements] : 010000AM was inputted into element
+2020-16-09 15:53:59   INFO [libs.ActionsWithOurElements] : 000000AM was inputted into element
+2020-16-09 15:54:03   INFO [libs.ActionsWithOurElements] : 050000AM was inputted into element
+2020-16-09 15:54:04   INFO [libs.ActionsWithOurElements] : 010000AM was inputted into element
+2020-16-09 15:54:07   INFO [libs.ActionsWithOurElements] : 120000PM was inputted into element
+2020-16-09 15:54:08   INFO [libs.ActionsWithOurElements] : 050000AM was inputted into element
+2020-16-09 15:54:12   INFO [libs.ActionsWithOurElements] : 010000PM was inputted into element
+2020-16-09 15:54:12   INFO [libs.ActionsWithOurElements] : 120000PM was inputted into element
+2020-16-09 15:54:16   INFO [libs.ActionsWithOurElements] : 070000PM was inputted into element
+2020-16-09 15:54:17   INFO [libs.ActionsWithOurElements] : 010000PM was inputted into element
+2020-16-09 15:54:21   INFO [libs.ActionsWithOurElements] : 090000PM was inputted into element
+2020-16-09 15:54:21   INFO [libs.ActionsWithOurElements] : 070000PM was inputted into element
+2020-16-09 15:54:25   INFO [libs.ActionsWithOurElements] : 115959PM was inputted into element
+2020-16-09 15:54:25   INFO [libs.ActionsWithOurElements] : 090000PM was inputted into element
+2020-16-09 15:54:46   INFO [singleTest.logbookTest.SplitSleeperBerthTest] : AC passed
+2020-16-09 15:54:46   INFO [singleTest.logbookTest.SplitSleeperBerthTest] :  DB connection closed 

@@ -1,4 +1,4 @@
-package parameterizedTest;
+package parameterizedTest.ordersParamsTest;
 
 import libs.ExcelDriver;
 import libs.SpreadsheetData;

@@ -25,7 +25,6 @@ public class MainRestSteps {
         RestAssured.baseURI = baseUrl + "/api/registration";
         return RestAssured.given();
     }
-
     public void checkResponseCode(Response response, int expectedStatusCode) {
         // Get the status code from the Response. In case of
         // a successfull interaction with the web service, we
@@ -38,7 +37,6 @@ public class MainRestSteps {
         RestAssured.baseURI = baseUrl + addToUrl;
         return RestAssured.given().accept("application/json").contentType("application/json").header("Authorization", "Bearer "+ stringToken);
     }
-
     public ResponseBody getResponseBody(Response response) throws ParseException {
         // Now let us print the body of the message to see what response
         // we have recieved from the server
@@ -56,6 +54,7 @@ public class MainRestSteps {
         }
         return value;
     }
+
     public String prettyPrintJson(JsonObject jsonObject, int indent) {
 
         String indentStr = getIndentStr(indent);
@@ -86,7 +85,6 @@ public class MainRestSteps {
         prettyJson += "\n" + indentStr + "}";
         return prettyJson;
     }
-
     public String getIndentStr(int indent) {
         String indentStr = "";
         for (int i = 0; i < indent; i++) {

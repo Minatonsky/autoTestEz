@@ -22,11 +22,14 @@ public class LogbookSimpleTests extends ParentTest {
     @Test
     public void restBreak() throws SQLException {
 
+        int cycleType = 0;
+        int cargoType = 4;
+
         String userId = utilsForDB.getUserIdByEmail(login);
 
         logsPage.cleanStatusesAndViolation(userId);
-        logsPage.setCycle(userId, 4);
-        utilsForDB.setCargoTypeId(userId, 1);
+        logsPage.setCycle(userId, cycleType);
+        utilsForDB.setCargoTypeId(userId, cargoType);
 
         loginPage.userValidLogIn(login, pass);
         dashboardPage.goToLogsPage();
@@ -46,7 +49,7 @@ public class LogbookSimpleTests extends ParentTest {
         logsPage.addViolationForRestBreak();
         logsPage.clickOnSaveInfoButton();
         logsPage.closeCorrectionSavePopUp();
-        checkAC("Break Violation(8) failed", logsPage.checkAlertsId(userId, dateWithMinusDay(3), DrivingTime8), logsPage.isRestBreakRequired(4, 1));
+        checkAC("Break Violation(8) failed", logsPage.checkAlertsId(userId, dateWithMinusDay(3), DrivingTime8), logsPage.isRestBreakRequired(cycleType, cargoType));
 
     }
     @Test

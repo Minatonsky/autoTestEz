@@ -416,7 +416,7 @@ public class UtilsForDB {
     }
     public void setCargoTypeId(String driverId, int cargoTypeId) throws SQLException {
         dBMySQL.changeTable("UPDATE driversRules SET `cargoTypeId` = '" + cargoTypeId + "' WHERE userId = " + driverId + ";");
-        dBMySQL.changeTable("update usersParamsHistory SET params = JSON_REPLACE(params, '$.cargoTypeId', " + cargoTypeId + ") WHERE userId = " + driverId + " AND JSON_EXTRACT(params, '$.cargoTypeId');");
+        dBMySQL.changeTable("update usersParamsHistory SET dateTimeUTC = ('2019-08-31 13:17:38'), params = JSON_REPLACE(params, '$.cargoTypeId', " + cargoTypeId + ") WHERE userId = " + driverId + ";");
     }
     public void deleteStatusEvent(String driverId, String dateMonth) throws SQLException {
         dBMySQL.changeTable("DELETE FROM `status_events_" + dateMonth + "` WHERE userId = " + driverId + ";");
