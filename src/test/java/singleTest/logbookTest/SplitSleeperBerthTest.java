@@ -8,6 +8,7 @@ import java.sql.SQLException;
 import java.util.Map;
 
 import static libs.Utils.dateWithMinusDay;
+import static libs.Utils.waitABit;
 
 public class SplitSleeperBerthTest extends ParentTest {
     String cycleType = "0";
@@ -103,5 +104,48 @@ public class SplitSleeperBerthTest extends ParentTest {
         checkAC("Violation exist", logsPage.checkAlertsExist(userId, dateWithMinusDay(2)), false);
 
     }
+
+    @Test
+    public void split_3_7_Test() throws SQLException {
+        String userId = utilsForDB.getUserIdByEmail(login);
+
+        logsPage.cleanStatusesAndViolation(userId);
+        logsPage.setCycle(userId, Integer.parseInt(cycleType));
+        utilsForDB.setCargoTypeId(userId, Integer.parseInt(cargoType));
+
+        loginPage.userValidLogIn(login, pass);
+        dashboardPage.goToLogsPage();
+        logsPage.clickOnRowDay(dateWithMinusDay(3));
+        logsPage.clickOnCorrectionButton();
+        logsPage.clickOnInsertStatusButton();
+        logsPage.addStatus("00:00:00 AM", "01:00:00 AM", "On");
+        logsPage.addStatus("01:00:00 AM", "07:00:00 AM", "Dr");
+        logsPage.addStatus("10:00:00 AM", "12:00:00 PM", "On");
+        logsPage.addStatus("12:00:00 PM", "05:00:00 PM", "Dr");
+        logsPage.addStatus("05:00:00 PM", "11:59:59 PM", "Sb");
+        waitABit(5);
+        logsPage.lifeHackDeliteLastMinuteOnLogbook("Sb");
+        logsPage.clickOnSaveInfoButton();
+        logsPage.closeCorrectionSavePopUp();
+
+//        checkAC("Violation exist", logsPage.checkAlertsExist(userId, dateWithMinusDay(3)), false);
+
+        dashboardPage.goToLogsPage();
+        logsPage.clickOnRowDay(dateWithMinusDay(2));
+        logsPage.clickOnCorrectionButton();
+        logsPage.clickOnInsertStatusButton();
+        logsPage.addStatus("00:00:00 AM", "01:00:00 AM", "On");
+        logsPage.addStatus("01:00:00 AM", "07:00:00 AM", "Dr");
+        logsPage.addStatus("10:00:00 AM", "12:00:00 PM", "On");
+        logsPage.addStatus("12:00:00 PM", "05:00:00 PM", "Dr");
+        logsPage.addStatus("05:00:00 PM", "11:59:59 PM", "Sb");
+        logsPage.lifeHackDeliteLastMinuteOnLogbook("Sb");
+        logsPage.clickOnSaveInfoButton();
+        logsPage.closeCorrectionSavePopUp();
+
+        checkAC("Violation exist", logsPage.checkAlertsExist(userId, dateWithMinusDay(2)), false);
+
+    }
+
 
 }
