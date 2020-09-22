@@ -3,8 +3,19 @@ package api.restSteps;
 import io.restassured.RestAssured;
 import io.restassured.specification.RequestSpecification;
 
+import java.io.File;
+import java.io.IOException;
+
+import static libs.Utils.reedFile;
+
 public class RestStepsFlipFlop {
     final private String baseUrl = "http://lipflop";
+    MainRestSteps mainRestSteps = new MainRestSteps();
+    File file = new File("userToken.txt");
+    String bearerToken = reedFile("userToken.txt");
+
+    public RestStepsFlipFlop() throws IOException {
+    }
 
 
 //    dash
@@ -46,9 +57,12 @@ public class RestStepsFlipFlop {
         RestAssured.baseURI = baseUrl + "/api/auth/logout";
         return RestAssured.given();
     }
-    public RequestSpecification  setBaseUrlForCurrentGetUpdateUserInfo(){
-        RestAssured.baseURI = baseUrl + "/api/auth/me";
-        return RestAssured.given();
+    public RequestSpecification getCurrentUserInfo(){
+        return mainRestSteps.setBaseUrl(baseUrl,"/api/auth/me", bearerToken);
+    }
+
+    public RequestSpecification  updateCurrentUserInfo(String stringToken){
+        return mainRestSteps.setBaseUrl(baseUrl,"/api/auth/me", stringToken);
     }
 
 

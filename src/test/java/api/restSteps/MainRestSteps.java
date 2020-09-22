@@ -15,6 +15,7 @@ import java.io.StringReader;
 public class MainRestSteps {
 
     final private String baseUrl = "https://dev.api.ezlogz.com";
+    final private String baseUrlFlipFlop = "http://lipflop";
 
 
     public RequestSpecification setBaseUrlForAuthorization() {
@@ -34,6 +35,10 @@ public class MainRestSteps {
         Assert.assertEquals("Correct status code returned", statusCode /*actual value*/, expectedStatusCode /*expected value*/);
     }
     public RequestSpecification setBaseUrlForDevEzlogzApi(String addToUrl, String stringToken) {
+        RestAssured.baseURI = baseUrl + addToUrl;
+        return RestAssured.given().accept("application/json").contentType("application/json").header("Authorization", "Bearer "+ stringToken);
+    }
+    public RequestSpecification setBaseUrl(String baseUrl, String addToUrl, String stringToken) {
         RestAssured.baseURI = baseUrl + addToUrl;
         return RestAssured.given().accept("application/json").contentType("application/json").header("Authorization", "Bearer "+ stringToken);
     }

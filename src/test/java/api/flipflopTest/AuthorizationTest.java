@@ -5,12 +5,13 @@ import api.restSteps.RestStepsFlipFlop;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import org.json.JSONObject;
-import org.junit.Assert;
+import org.json.simple.parser.ParseException;
 import org.junit.Test;
 
 import java.io.File;
 import java.io.IOException;
 
+import static libs.Utils.createAndWriteStringToFile;
 import static libs.Utils.reedFile;
 
 public class AuthorizationTest {
@@ -24,17 +25,25 @@ public class AuthorizationTest {
     }
 
     @Test
-    public void authorizationTest() throws IOException {
+    public void authorizationTest() throws ParseException, IOException {
         RequestSpecification request = restStepsFlipFlop.setBaseUrlForAuthorization();
-        request.body("elyse.macejkovic74@hotmail.com");
-        request.body("testtest");
+        requestParams.put("email", "elyse.macejkovic74@hotmail.com");
+        requestParams.put("password", "testtest");
         request.header("Content-Type", "application/json");
         request.body(requestParams.toMap());
-
         Response response = request.post();
-        Assert.assertEquals(200, response.getStatusCode());
-//        String token = mainRestSteps.getValueForKeyFromResponseAsJsonObject(response, "token");
-//        System.out.println("token = " + token);
-//        createAndWriteStringToFile(file, token);
+        mainRestSteps.getResponseBody(response);
+        mainRestSteps.checkResponseCode(response, 200);
+        String token = mainRestSteps.getValueForKeyFromResponseAsJsonObject(response, "data.access_token");
+        System.out.println("token = " + token);
+        createAndWriteStringToFile(file, token);
+
+    }
+    @Test
+    public void infoCurrentUser() throws ParseException {
+        RequestSpecification request = restStepsFlipFlop.getCurrentUserInfo();
+        Response response = request.get();
+        mainRestSteps.getResponseBody(response);
+        mainRestSteps.checkResponseCode(response, 200);
     }
 }
