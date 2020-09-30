@@ -2,7 +2,10 @@ package parentTest;
 
 import com.github.javafaker.Faker;
 import io.qameta.allure.Step;
-import libs.*;
+import libs.ConfigProperties;
+import libs.Database;
+import libs.ExcelDriver;
+import libs.UtilsForDB;
 import org.aeonbits.owner.ConfigFactory;
 import org.apache.log4j.Logger;
 import org.junit.After;
@@ -28,8 +31,8 @@ import java.net.URL;
 import java.sql.SQLException;
 import java.util.Iterator;
 import java.util.Set;
-import java.util.concurrent.TimeUnit;
 
+import static java.util.concurrent.TimeUnit.SECONDS;
 import static libs.Utils.waitABit;
 
 public class ParentTest{
@@ -59,9 +62,6 @@ public class ParentTest{
     protected AccountSettingsPage accountSettingsPage;
     protected HelpAndTrainingPage helpAndTrainingPage;
 
-
-
-
     protected Faker faker;
 
     String browser = System.getProperty("browser");
@@ -72,7 +72,9 @@ public class ParentTest{
     public void setUp() throws SQLException, IOException, ClassNotFoundException {
         initDriver(browser);
         webDriver.manage().window().maximize();
-        webDriver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+        webDriver.manage().timeouts().implicitlyWait(20, SECONDS);
+//        webDriver.manage().timeouts().pageLoadTimeout(100, SECONDS);
+//        webDriver.manage().timeouts().setScriptTimeout(100,SECONDS);
         dBMySQL = new Database(nameDB, driverDB);
         excelDriver = new ExcelDriver();
         utilsForDB = new UtilsForDB(dBMySQL);

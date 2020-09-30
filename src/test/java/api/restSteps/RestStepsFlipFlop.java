@@ -3,7 +3,6 @@ package api.restSteps;
 import io.restassured.RestAssured;
 import io.restassured.specification.RequestSpecification;
 
-import java.io.File;
 import java.io.IOException;
 
 import static libs.Utils.reedFile;
@@ -11,7 +10,6 @@ import static libs.Utils.reedFile;
 public class RestStepsFlipFlop {
     final private String baseUrl = "http://lipflop";
     MainRestSteps mainRestSteps = new MainRestSteps();
-    File file = new File("userToken.txt");
     String bearerToken = reedFile("userToken.txt");
 
     public RestStepsFlipFlop() throws IOException {
@@ -34,8 +32,7 @@ public class RestStepsFlipFlop {
     }
 
     public RequestSpecification setBaseUrlForRegistration() {
-        RestAssured.baseURI = baseUrl + "/api/auth/register";
-        return RestAssured.given();
+        return mainRestSteps.setBaseUrl(baseUrl, "/api/auth/register");
     }
     public RequestSpecification  setBaseUrlForAuthorizationFacebook(){
         RestAssured.baseURI = baseUrl + "/api/auth/facebook";
@@ -54,15 +51,14 @@ public class RestStepsFlipFlop {
         return RestAssured.given();
     }
     public RequestSpecification  setBaseUrlForLogOutCurrentUser(){
-        RestAssured.baseURI = baseUrl + "/api/auth/logout";
-        return RestAssured.given();
+        return mainRestSteps.setBaseUrlWithToken(baseUrl,"/api/auth/logout", bearerToken);
     }
-    public RequestSpecification getCurrentUserInfo(){
-        return mainRestSteps.setBaseUrl(baseUrl,"/api/auth/me", bearerToken);
+    public RequestSpecification setBaseUrlForGetCurrentUserInfo(){
+        return mainRestSteps.setBaseUrlWithToken(baseUrl,"/api/auth/me", bearerToken);
     }
 
     public RequestSpecification  updateCurrentUserInfo(String stringToken){
-        return mainRestSteps.setBaseUrl(baseUrl,"/api/auth/me", stringToken);
+        return mainRestSteps.setBaseUrlWithToken(baseUrl,"/api/auth/me", stringToken);
     }
 
 

@@ -85,7 +85,10 @@ public class ShiftAndDrivingHoursWithParamsTest extends ParentTest {
         logsPage.clickOnRowDay(dateWithMinusDay(3));
         logsPage.clickOnCorrectionButton();
         logsPage.clickOnInsertStatusButton();
-        logsPage.enterRestBreak();
+        logsPage.addStatus("01:00:00 AM", "09:00:00 AM", "Dr");
+        logsPage.addStatus("09:00:00 AM", "09:30:00 AM", "On");
+        logsPage.addStatus("09:30:00 AM", "12:00:00 PM", "Dr");
+        logsPage.addStatus("12:00:00 PM", "12:30:00 PM", "Dr");
         logsPage.clickOnSaveInfoButton();
         logsPage.closeCorrectionSavePopUp();
         checkAC("Break Violation(8) failed", logsPage.checkAlertsId(userId, dateWithMinusDay(3), DrivingTime8), false);
@@ -95,7 +98,7 @@ public class ShiftAndDrivingHoursWithParamsTest extends ParentTest {
         logsPage.clickOnRowDay(dateWithMinusDay(3));
         logsPage.clickOnCorrectionButton();
         logsPage.clickOnInsertStatusButton();
-        logsPage.addViolationForRestBreak();
+        logsPage.addStatus("09:00:00 AM", "09:30:00 AM", "Dr");
         logsPage.clickOnSaveInfoButton();
         logsPage.closeCorrectionSavePopUp();
         checkAC("Break Violation(8) failed", logsPage.checkAlertsId(userId, dateWithMinusDay(3), DrivingTime8), logsPage.isRestBreakRequired(Integer.parseInt(cycleType), Integer.parseInt(cargoType)));

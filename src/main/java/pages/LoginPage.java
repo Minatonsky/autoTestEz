@@ -116,7 +116,6 @@ public class LoginPage extends ParentPage {
         openLoginForm();
         enterLogin(login);
         enterPass(passWord);
-        waitABit(3);
         clickOnSubmitButton();
         openDashBoardMenuByCookies();
         waitABit(3);

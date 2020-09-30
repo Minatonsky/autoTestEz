@@ -17,14 +17,14 @@ public class LogbookSimpleTests extends ParentTest {
     String login = dataForValidLogIn.get("login").toString();
     String pass = dataForValidLogIn.get("pass").toString();
 
-    public LogbookSimpleTests() throws IOException {
+    public LogbookSimpleTests() throws IOException, SQLException {
     }
 
     @Test
     public void restBreak() throws SQLException {
 
         int cycleType = 0;
-        int cargoType = 4;
+        int cargoType = 0;
 
         String userId = utilsForDB.getUserIdByEmail(login);
 
@@ -37,17 +37,22 @@ public class LogbookSimpleTests extends ParentTest {
         logsPage.clickOnRowDay(dateWithMinusDay(3));
         logsPage.clickOnCorrectionButton();
         logsPage.clickOnInsertStatusButton();
-        logsPage.enterRestBreak();
+        logsPage.addStatus("00:00:00 AM", "01:00:00 AM", "Dr");
+        logsPage.addStatus("01:15:00 AM", "01:30:00 AM", "On");
+        logsPage.addStatus("01:30:00 AM", "02:45:00 AM", "Dr");
+        logsPage.addStatus("02:45:00 AM", "03:00:00 AM", "On");
+        logsPage.addLastStatus("03:00:00 AM", "09:45:00 AM", "Dr");
+
         logsPage.clickOnSaveInfoButton();
         logsPage.closeCorrectionSavePopUp();
         checkAC("Break Violation(8) failed", logsPage.checkAlertsId(userId, dateWithMinusDay(3), DrivingTime8), false);
 
-        //        delete rest break for get violation
+        //        add last minute for get violation
         dashboardPage.goToLogsPage();
         logsPage.clickOnRowDay(dateWithMinusDay(3));
         logsPage.clickOnCorrectionButton();
         logsPage.clickOnInsertStatusButton();
-        logsPage.addViolationForRestBreak();
+        logsPage.addStatus("09:45:00 AM", "09:46:00 AM", "Dr");
         logsPage.clickOnSaveInfoButton();
         logsPage.closeCorrectionSavePopUp();
         checkAC("Break Violation(8) failed", logsPage.checkAlertsId(userId, dateWithMinusDay(3), DrivingTime8), logsPage.isRestBreakRequired(cycleType, cargoType));
@@ -88,28 +93,7 @@ public class LogbookSimpleTests extends ParentTest {
 //        checkAC("Canada hours off duty a day violation(9) failed", logsPage.checkAlertsId(userId, dateWithMinusDay(3), Canada10HoursOff), true);
 
     }
-    @Test
-    public void SB_2_8_hours() throws SQLException {
-        int cycleType = 1;
-        int cargoType = 0;
 
-        String userId = utilsForDB.getUserIdByEmail(login);
-
-        logsPage.cleanStatusesAndViolation(userId);
-        logsPage.setCycle(userId, cycleType);
-        utilsForDB.setCargoTypeId(userId, cargoType);
-
-        loginPage.userValidLogIn(login, pass);
-        dashboardPage.goToLogsPage();
-        logsPage.clickOnRowDay(dateWithMinusDay(3));
-//        logsPage.setListOfElements();
-        logsPage.clickOnCorrectionButton();
-        logsPage.clickOnInsertStatusButton();
-
-        logsPage.clickOnSaveInfoButton();
-        logsPage.closeCorrectionSavePopUp();
-
-    }
     @Test
     public void usa_60hr_7days() throws Exception {
 
@@ -226,4 +210,32 @@ public class LogbookSimpleTests extends ParentTest {
         checkAC("Overworked Cycle Violation(7) failed", logsPage.checkAlertsId(userId, dateWithMinusDay(3), OverworkedCycle), true);
     }
 
+    @Test
+    public void split_3_7_Test() throws SQLException {
+        String cycleType = "0";
+        String cargoType = "0";
+        int firstDay = 1;
+
+        String userId = utilsForDB.getUserIdByEmail(login);
+
+        logsPage.cleanStatusesAndViolation(userId);
+        logsPage.setCycle(userId, Integer.parseInt(cycleType));
+        utilsForDB.setCargoTypeId(userId, Integer.parseInt(cargoType));
+
+        loginPage.userValidLogIn(login, pass);
+        dashboardPage.goToLogsPage();
+        logsPage.clickOnRowDay(dateWithMinusDay(firstDay));
+        logsPage.clickOnCorrectionButton();
+        logsPage.clickOnInsertStatusButton();
+        logsPage.addStatus("00:00:00 AM", "01:00:00 AM", "On");
+        logsPage.addStatus("01:00:00 AM", "07:00:00 AM", "Dr");
+        logsPage.addStatus("10:00:00 AM", "12:00:00 PM", "On");
+        logsPage.addStatus("12:00:00 PM", "05:00:00 PM", "Dr");
+        logsPage.addStatus("05:00:00 PM", "11:59:59 PM", "Sb");
+        logsPage.lifeHackDeliteLastMinuteOnLogbook("Sb");
+        logsPage.clickOnSaveInfoButton();
+        logsPage.closeCorrectionSavePopUp();
+
+        checkAC("Violation exist", logsPage.checkAlertsExist(userId, dateWithMinusDay(firstDay)), false);
+    }
 }

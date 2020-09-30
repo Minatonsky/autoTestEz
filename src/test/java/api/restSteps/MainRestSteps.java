@@ -18,14 +18,7 @@ public class MainRestSteps {
     final private String baseUrlFlipFlop = "http://lipflop";
 
 
-    public RequestSpecification setBaseUrlForAuthorization() {
-        RestAssured.baseURI = baseUrl + "/api/login";
-        return RestAssured.given();
-    }
-    public RequestSpecification setBaseUrlForRegistration() {
-        RestAssured.baseURI = baseUrl + "/api/registration";
-        return RestAssured.given();
-    }
+
     public void checkResponseCode(Response response, int expectedStatusCode) {
         // Get the status code from the Response. In case of
         // a successfull interaction with the web service, we
@@ -34,14 +27,17 @@ public class MainRestSteps {
         // Assert that correct status code is returned.
         Assert.assertEquals("Correct status code returned", statusCode /*actual value*/, expectedStatusCode /*expected value*/);
     }
-    public RequestSpecification setBaseUrlForDevEzlogzApi(String addToUrl, String stringToken) {
+
+    public RequestSpecification setBaseUrlWithToken(String baseUrl, String addToUrl, String stringToken) {
         RestAssured.baseURI = baseUrl + addToUrl;
         return RestAssured.given().accept("application/json").contentType("application/json").header("Authorization", "Bearer "+ stringToken);
     }
-    public RequestSpecification setBaseUrl(String baseUrl, String addToUrl, String stringToken) {
+
+    public RequestSpecification setBaseUrl(String baseUrl, String addToUrl) {
         RestAssured.baseURI = baseUrl + addToUrl;
-        return RestAssured.given().accept("application/json").contentType("application/json").header("Authorization", "Bearer "+ stringToken);
+        return RestAssured.given().accept("application/json").contentType("application/json");
     }
+
     public ResponseBody getResponseBody(Response response) throws ParseException {
         // Now let us print the body of the message to see what response
         // we have recieved from the server
@@ -49,6 +45,7 @@ public class MainRestSteps {
         System.out.println("Response Body is =>  " + responseBody.asString());
         return responseBody;
     }
+
     public String getValueForKeyFromResponseAsJsonObject(Response response, String key) {
         // First get the JsonPath object instance from the Response interface
         JsonPath jsonPathEvaluator = response.jsonPath();
@@ -90,6 +87,7 @@ public class MainRestSteps {
         prettyJson += "\n" + indentStr + "}";
         return prettyJson;
     }
+
     public String getIndentStr(int indent) {
         String indentStr = "";
         for (int i = 0; i < indent; i++) {
@@ -101,6 +99,21 @@ public class MainRestSteps {
         JsonReader reader  =  Json.createReader(new StringReader(responseString));
         JsonObject jsonObject = reader.readObject();
         System.out.println(prettyPrintJson(jsonObject, 0));
+    }
+
+
+    ///////////////
+    public RequestSpecification setBaseUrlForAuthorization() {
+        RestAssured.baseURI = baseUrl + "/api/login";
+        return RestAssured.given();
+    }
+    public RequestSpecification setBaseUrlForRegistration() {
+        RestAssured.baseURI = baseUrl + "/api/registration";
+        return RestAssured.given();
+    }
+    public RequestSpecification setBaseUrlForDevEzlogzApi(String addToUrl, String stringToken) {
+        RestAssured.baseURI = baseUrl + addToUrl;
+        return RestAssured.given().accept("application/json").contentType("application/json").header("Authorization", "Bearer "+ stringToken);
     }
 
 
