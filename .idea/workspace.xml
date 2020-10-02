@@ -36,15 +36,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="660eb711-957d-418e-9483-8b2931da6e6e" name="Default Changelist" comment="refactoring3 was add">
-      <change afterPath="$PROJECT_DIR$/src/test/java/api/restSteps/RestStepsFlipFlop.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/singleTest/logbookTest/RestBreak.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log/qalight.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/qalight.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/libs/UtilsForDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/libs/UtilsForDB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/data/60hr_7days.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/libs/ActionsWithOurElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/libs/ActionsWithOurElements.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/LogsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/LogsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/api/flipflopTest/AuthorizationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/api/flipflopTest/FlipFlopAllTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/api/restSteps/MainRestSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/api/restSteps/MainRestSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/parameterizedTest/FleetOrderParamsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/parameterizedTest/ordersParamsTest/FleetOrderParamsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/parameterizedTest/ManagerOrderParamsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/parameterizedTest/ordersParamsTest/ManagerOrderParamsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/parameterizedTest/SoloOrderParamsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/parameterizedTest/ordersParamsTest/SoloOrderParamsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/api/restSteps/RestStepsFlipFlop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/api/restSteps/RestStepsFlipFlop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/parentTest/ParentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/parentTest/ParentTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/singleTest/logbookTest/LogbookSimpleTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/singleTest/logbookTest/LogbookSimpleTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/singleTest/logbookTest/ShiftAndDrivingHoursWithParamsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/singleTest/logbookTest/ShiftAndDrivingHoursWithParamsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/singleTest/logbookTest/SplitSleeperBerthTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/singleTest/logbookTest/SplitSleeperBerthTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/unitTest/TestMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/unitTest/TestMethods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userToken.txt" beforeDir="false" afterPath="$PROJECT_DIR$/userToken.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,7 +142,7 @@
       <recent name="parameterizedOrders" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SplitSleeperBerthTest.split_8_2_Test">
+  <component name="RunManager" selected="JUnit.LogbookSimpleTests.restBreak">
     <configuration name="LogbookSimpleTests.restBreak" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="testdevEzlogz" />
       <extension name="coverage">
@@ -152,7 +159,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LogbookSimpleTests.shiftAndDriving" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LogbookSimpleTests.split_3_7_Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="testdevEzlogz" />
       <extension name="coverage">
         <pattern>
@@ -162,13 +169,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="singleTest.logbookTest" />
       <option name="MAIN_CLASS_NAME" value="singleTest.logbookTest.LogbookSimpleTests" />
-      <option name="METHOD_NAME" value="shiftAndDriving" />
+      <option name="METHOD_NAME" value="split_3_7_Test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ShiftAndDrivingHoursWithParamsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LogbookSimpleTests.split_3_7_TransitoryFullStatusTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="testdevEzlogz" />
       <extension name="coverage">
         <pattern>
@@ -177,13 +184,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="singleTest.logbookTest" />
-      <option name="MAIN_CLASS_NAME" value="singleTest.logbookTest.ShiftAndDrivingHoursWithParamsTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="singleTest.logbookTest.LogbookSimpleTests" />
+      <option name="METHOD_NAME" value="split_3_7_TransitoryFullStatusTest" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SplitSleeperBerthTest.split_2_8_Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SplitSleeperBerthTest.split_2_8_MultiDayTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="testdevEzlogz" />
       <extension name="coverage">
         <pattern>
@@ -193,13 +201,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="singleTest.logbookTest" />
       <option name="MAIN_CLASS_NAME" value="singleTest.logbookTest.SplitSleeperBerthTest" />
-      <option name="METHOD_NAME" value="split_2_8_Test" />
+      <option name="METHOD_NAME" value="split_2_8_MultiDayTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SplitSleeperBerthTest.split_8_2_Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SplitSleeperBerthTest.split_3_7_TransitoryFullStatusTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="testdevEzlogz" />
       <extension name="coverage">
         <pattern>
@@ -209,7 +217,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="singleTest.logbookTest" />
       <option name="MAIN_CLASS_NAME" value="singleTest.logbookTest.SplitSleeperBerthTest" />
-      <option name="METHOD_NAME" value="split_8_2_Test" />
+      <option name="METHOD_NAME" value="split_3_7_TransitoryFullStatusTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -277,19 +285,19 @@
     <list>
       <item itemvalue="JUnit.TestMethods.getEventNewOrder" />
       <item itemvalue="Maven.SoloOrders" />
-      <item itemvalue="JUnit.ShiftAndDrivingHoursWithParamsTest" />
+      <item itemvalue="JUnit.SplitSleeperBerthTest.split_3_7_TransitoryFullStatusTest" />
+      <item itemvalue="JUnit.LogbookSimpleTests.split_3_7_TransitoryFullStatusTest" />
+      <item itemvalue="JUnit.LogbookSimpleTests.split_3_7_Test" />
+      <item itemvalue="JUnit.SplitSleeperBerthTest.split_2_8_MultiDayTest" />
       <item itemvalue="JUnit.LogbookSimpleTests.restBreak" />
-      <item itemvalue="JUnit.LogbookSimpleTests.shiftAndDriving" />
-      <item itemvalue="JUnit.SplitSleeperBerthTest.split_2_8_Test" />
-      <item itemvalue="JUnit.SplitSleeperBerthTest.split_8_2_Test" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.SplitSleeperBerthTest.split_8_2_Test" />
-        <item itemvalue="JUnit.SplitSleeperBerthTest.split_2_8_Test" />
-        <item itemvalue="JUnit.LogbookSimpleTests.shiftAndDriving" />
         <item itemvalue="JUnit.LogbookSimpleTests.restBreak" />
-        <item itemvalue="JUnit.ShiftAndDrivingHoursWithParamsTest" />
+        <item itemvalue="JUnit.SplitSleeperBerthTest.split_2_8_MultiDayTest" />
+        <item itemvalue="JUnit.LogbookSimpleTests.split_3_7_Test" />
+        <item itemvalue="JUnit.LogbookSimpleTests.split_3_7_TransitoryFullStatusTest" />
+        <item itemvalue="JUnit.SplitSleeperBerthTest.split_3_7_TransitoryFullStatusTest" />
       </list>
     </recent_temporary>
   </component>
@@ -314,27 +322,6 @@
       <workItem from="1562665338918" duration="52834000" />
       <workItem from="1562782581468" duration="9021000" />
       <workItem from="1562822119836" duration="58303000" />
-    </task>
-    <task id="LOCAL-00055" summary="charge defaulters was add">
-      <created>1572624320232</created>
-      <option name="number" value="00055" />
-      <option name="presentableId" value="LOCAL-00055" />
-      <option name="project" value="LOCAL" />
-      <updated>1572624320232</updated>
-    </task>
-    <task id="LOCAL-00056" summary="ban unban was add">
-      <created>1573026934001</created>
-      <option name="number" value="00056" />
-      <option name="presentableId" value="LOCAL-00056" />
-      <option name="project" value="LOCAL" />
-      <updated>1573026934002</updated>
-    </task>
-    <task id="LOCAL-00057" summary="test api login was add">
-      <created>1573137092271</created>
-      <option name="number" value="00057" />
-      <option name="presentableId" value="LOCAL-00057" />
-      <option name="project" value="LOCAL" />
-      <updated>1573137092272</updated>
     </task>
     <task id="LOCAL-00058" summary="test api3 login was add">
       <created>1573255672935</created>
@@ -658,7 +645,28 @@
       <option name="project" value="LOCAL" />
       <updated>1599581035569</updated>
     </task>
-    <option name="localTasksCounter" value="104" />
+    <task id="LOCAL-00104" summary="hot fix cargo type">
+      <created>1600261033412</created>
+      <option name="number" value="00104" />
+      <option name="presentableId" value="LOCAL-00104" />
+      <option name="project" value="LOCAL" />
+      <updated>1600261033412</updated>
+    </task>
+    <task id="LOCAL-00105" summary="api flipflop cargo type">
+      <created>1600444361690</created>
+      <option name="number" value="00105" />
+      <option name="presentableId" value="LOCAL-00105" />
+      <option name="project" value="LOCAL" />
+      <updated>1600444361690</updated>
+    </task>
+    <task id="LOCAL-00106" summary="split_7_3_TransitoryStatusTest">
+      <created>1600787723541</created>
+      <option name="number" value="00106" />
+      <option name="presentableId" value="LOCAL-00106" />
+      <option name="project" value="LOCAL" />
+      <updated>1600787723542</updated>
+    </task>
+    <option name="localTasksCounter" value="107" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -694,9 +702,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value=" up date doc test2 refactoring test was add" />
-    <MESSAGE value=" charge refactoring test was add" />
-    <MESSAGE value=" defaulter refactoring test was add" />
     <MESSAGE value=" equipment test was add" />
     <MESSAGE value=" logbook test was add" />
     <MESSAGE value=" cycle test was add" />
@@ -719,7 +724,10 @@
     <MESSAGE value="refactoring was add" />
     <MESSAGE value="refactoring2 was add" />
     <MESSAGE value="refactoring3 was add" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactoring3 was add" />
+    <MESSAGE value="hot fix cargo type" />
+    <MESSAGE value="api flipflop cargo type" />
+    <MESSAGE value="split_7_3_TransitoryStatusTest" />
+    <option name="LAST_COMMIT_MESSAGE" value="split_7_3_TransitoryStatusTest" />
   </component>
   <component name="WindowStateProjectService">
     <state x="-1230" y="275" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1598527830294">
@@ -734,10 +742,10 @@
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1155" y="221" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1597147302702" />
-    <state x="-1280" y="256" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1599232813301">
+    <state x="-1280" y="256" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1601279826572">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="-1280" y="256" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1599232813301" />
+    <state x="-1280" y="256" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1601279826572" />
     <state x="-1228" y="444" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1599580918893">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
@@ -754,26 +762,26 @@
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1180" y="275" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1596797375678" />
-    <state width="1877" height="286" key="GridCell.Tab.0.bottom" timestamp="1600260765476">
+    <state width="1877" height="150" key="GridCell.Tab.0.bottom" timestamp="1601480040818">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="286" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1600260765476" />
-    <state width="1877" height="343" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1596529245354" />
-    <state width="1877" height="286" key="GridCell.Tab.0.center" timestamp="1600260765475">
+    <state width="1877" height="150" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1601480040818" />
+    <state width="1877" height="235" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1600961399181" />
+    <state width="1877" height="150" key="GridCell.Tab.0.center" timestamp="1601480040818">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="286" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1600260765475" />
-    <state width="1877" height="343" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1596529245354" />
-    <state width="1877" height="286" key="GridCell.Tab.0.left" timestamp="1600260765475">
+    <state width="1877" height="150" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1601480040818" />
+    <state width="1877" height="235" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1600961399180" />
+    <state width="1877" height="150" key="GridCell.Tab.0.left" timestamp="1601480040818">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="286" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1600260765475" />
-    <state width="1877" height="343" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1596529245353" />
-    <state width="1877" height="286" key="GridCell.Tab.0.right" timestamp="1600260765476">
+    <state width="1877" height="150" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1601480040818" />
+    <state width="1877" height="235" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1600961399180" />
+    <state width="1877" height="150" key="GridCell.Tab.0.right" timestamp="1601480040818">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="286" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1600260765476" />
-    <state width="1877" height="343" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1596529245354" />
+    <state width="1877" height="150" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1601480040818" />
+    <state width="1877" height="235" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1600961399181" />
     <state width="1877" height="272" key="GridCell.Tab.1.bottom" timestamp="1598011108027">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
@@ -794,14 +802,14 @@
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1380" y="263" key="IDE.errors.dialog/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1599576405479" />
-    <state x="-1459" y="165" key="SettingsEditor" timestamp="1599573136868">
+    <state x="-1459" y="165" key="SettingsEditor" timestamp="1600956986599">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="-1459" y="165" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1599573136868" />
-    <state x="-1368" y="253" key="Vcs.Push.Dialog.v2" timestamp="1599581048534">
+    <state x="-1459" y="165" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1600956986599" />
+    <state x="-1368" y="253" key="Vcs.Push.Dialog.v2" timestamp="1600787732110">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="-1368" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1599581048534" />
+    <state x="-1368" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1600787732110" />
     <state x="-1828" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1597065879990">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>

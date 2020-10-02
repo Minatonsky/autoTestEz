@@ -31,7 +31,7 @@ public class restart_34_Hours extends ParentTest {
 
         loginPage.userValidLogIn(login, pass);
         dashboardPage.goToLogsPage();
-        logsPage.clickOnRowDay(dateWithMinusDay(3));
+        logsPage.clickOnRowDay(dateWithMinusDay(4));
         logsPage.clickOnCorrectionButton();
         logsPage.clickOnInsertStatusButton();
         logsPage.addStatus("10:00:00 AM", "12:00:00 PM", "Dr");
@@ -44,7 +44,7 @@ public class restart_34_Hours extends ParentTest {
         logsPage.closeCorrectionSavePopUp();
 
         dashboardPage.goToLogsPage();
-        logsPage.clickOnRowDay(dateWithMinusDay(2));
+        logsPage.clickOnRowDay(dateWithMinusDay(3));
         logsPage.clickOnCorrectionButton();
         logsPage.clickOnInsertStatusButton();
         logsPage.addStatus("10:00:00 AM", "12:00:00 PM", "Dr");

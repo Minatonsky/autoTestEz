@@ -67,7 +67,7 @@ public class LogsPage extends ParentPage {
     @FindBy(xpath = "//*[text()='Correction Saved']/../button[@type='button']")
     private WebElement correctionSavedPopUpClose;
 
-    @FindBy(xpath = ".//*[text()='11:59:59PM']")
+    @FindBy(xpath = ".//*[@data-start='23:59:59']")
     private WebElement lastMinute;
 
     public void clickOnRowDay(String dataDay){actionsWithOurElements.clickOnElement(".//*[@data-date='" + dataDay + "']");}
@@ -78,6 +78,7 @@ public class LogsPage extends ParentPage {
         waitABit(3);
     }
     public void lifeHackDeliteLastMinuteOnLogbook(String status){
+        actionsWithOurElements.scrollByVisibleElement(lastMinute);
         actionsWithOurElements.clickOnElement(lastMinute);
         selectStatus(status);
     }
@@ -314,18 +315,8 @@ public class LogsPage extends ParentPage {
                 break;
         }
     }
-    public void enterRestBreak(){
-        addStatus("09:00:00 AM", "10:00:00 AM", "On");
-        addStatus("10:00:00 AM", "12:00:00 PM", "Dr");
-        addStatus("12:00:00 PM", "03:00:00 PM", "Dr");
-        addStatus("03:00:00 PM", "05:00:00 PM", "On");
-        addStatus("05:30:00 PM", "09:00:00 PM", "Dr");
-        addStatus("09:00:00 PM", "10:00:00 PM", "On");
-        addLastStatus("10:00:00 PM", "11:00:00 PM", "Dr");
-    }
-    public void addViolationForRestBreak(){
-        addLastStatus("05:00:00 PM", "05:30:00 PM", "Dr");
-    }
+
+
     public boolean isRestBreakRequired(int cycleId, int cargoType){
         switch (cycleId){
             case 0:

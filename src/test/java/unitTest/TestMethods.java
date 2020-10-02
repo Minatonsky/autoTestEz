@@ -19,7 +19,7 @@ import java.util.List;
 
 public class TestMethods extends ParentTestWithoutWebDriver {
     org.apache.log4j.Logger logger = Logger.getLogger(getClass());
-    Faker faker = new Faker();
+    protected Faker faker = new Faker();
 
 
 
@@ -90,11 +90,8 @@ public class TestMethods extends ParentTestWithoutWebDriver {
 
     @Test
     public void test() throws SQLException {
-
-
-        System.out.println(utilsForDB.getUserPhoneById("4401"));
-
-
+        String name = faker.phoneNumber().subscriberNumber(10);
+        System.out.println(name);
     }
 
 }
