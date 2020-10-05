@@ -156,7 +156,7 @@ public class LogsPage extends ParentPage {
     }
 
     public void cleanStatusesAndViolation(String userId) throws SQLException {
-        String date = getDateAndTime("yyyy-MM");
+        String date = "2020-09";//getDateAndTime("yyyy-MM");
         utilsForDB.deleteStatuses(userId);
         utilsForDB.deleteViolation(userId);
         utilsForDB.deleteStatusEvent(userId, date);

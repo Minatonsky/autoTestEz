@@ -90,8 +90,8 @@ public class TestMethods extends ParentTestWithoutWebDriver {
 
     @Test
     public void test() throws SQLException {
-        String name = faker.phoneNumber().subscriberNumber(10);
-        System.out.println(name);
+
+        System.out.println();
     }
 
 }

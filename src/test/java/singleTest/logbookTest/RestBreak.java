@@ -35,25 +35,13 @@ public class RestBreak extends ParentTest {
         logsPage.clickOnRowDay(dateWithMinusDay(3));
         logsPage.clickOnCorrectionButton();
         logsPage.clickOnInsertStatusButton();
-        logsPage.addStatus("00:00:00 AM", "01:00:00 AM", "Dr");
-        logsPage.addStatus("01:15:00 AM", "01:30:00 AM", "On");
-        logsPage.addStatus("01:30:00 AM", "02:45:00 AM", "Dr");
-        logsPage.addStatus("02:45:00 AM", "03:00:00 AM", "On");
-        logsPage.addLastStatus("03:00:00 AM", "09:45:00 AM", "Dr");
+        logsPage.addStatus("12:00:00 AM", "08:00:00 AM", "Dr");
+        logsPage.addStatus("08:00:00 AM", "08:30:00 AM", "On");
+        logsPage.addLastStatus("08:30:00 AM", "11:30:00 AM", "Dr");
 
         logsPage.clickOnSaveInfoButton();
         logsPage.closeCorrectionSavePopUp();
         checkAC("Break Violation(8) failed", logsPage.checkAlertsId(userId, dateWithMinusDay(3), DrivingTime8), false);
-
-        //        add last minute for get violation
-        dashboardPage.goToLogsPage();
-        logsPage.clickOnRowDay(dateWithMinusDay(3));
-        logsPage.clickOnCorrectionButton();
-        logsPage.clickOnInsertStatusButton();
-        logsPage.addStatus("09:45:00 AM", "09:46:00 AM", "Dr");
-        logsPage.clickOnSaveInfoButton();
-        logsPage.closeCorrectionSavePopUp();
-        checkAC("Break Violation(8) failed", logsPage.checkAlertsId(userId, dateWithMinusDay(3), DrivingTime8), logsPage.isRestBreakRequired(cycleType, cargoType));
 
     }
 }
